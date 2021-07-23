@@ -162,7 +162,6 @@ Data files used to renerate the Tracker Radar
 |File|Use|
 |---|---|
 |[categorized_trackers](/build-data/static/categorized_trackers.csv)|CSV file with domains and which categories they belong to|
-|[surrogates](/build-data/static/surrogates.json)|Mapping domain resources to their surrogates.|
 |[breaking](/build-data/breaking)|Broken site data used for identifying whole sites or requests that cause breakage.|
 
 ### /generated
