@@ -4,12 +4,13 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00271,
-    "sites": 27,
+    "prevalence": 0.00302,
+    "sites": 30,
     "subdomains": [
         "rumcdn",
-        "gw",
-        "protect"
+        "wrappers",
+        "protect",
+        "gw"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -22,10 +23,11 @@
                 "rumcdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 15
+                "Navigator.prototype.userAgent": 12,
+                "Date.prototype.getTime": 1
             },
-            "sites": 15,
-            "prevalence": 0.00151,
+            "sites": 12,
+            "prevalence": 0.00121,
             "cnames": [],
             "responseHashes": [
                 "4dc4abcd99f7976c1a0938575631974c55fa42bf76681e84ca56aeea3180966e"
@@ -35,18 +37,15 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "boats.com",
-                "forums.sherdog.com",
                 "hfboards.mandatory.com",
                 "m.jpost.com",
-                "religionnews.com",
-                "wccftech.com",
                 "www.apartmenttherapy.com",
                 "www.boats.com",
                 "www.boattrader.com",
+                "www.contactmusic.com",
                 "www.gamerevolution.com",
                 "www.jpost.com",
                 "www.planetf1.com",
-                "www.sherdog.com",
                 "www.thekitchn.com",
                 "www.yachtworld.com"
             ]
@@ -76,33 +75,74 @@
             ]
         },
         {
-            "rule": "geoedge\\.be\\/api\\/init",
+            "rule": "geoedge\\.be\\/wrapper\\.html",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "gw"
+                "wrappers"
             ],
             "apis": {},
-            "sites": 10,
-            "prevalence": 0.001,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "8265c5aec9ae3882691303cec1b6993e75b12e8071fe6710826f7fc6b5cbccdb"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cookpad.com",
-                "golf.com",
-                "religionnews.com",
-                "wccftech.com",
-                "www.dmv.org",
-                "www.houseplans.com",
-                "www.macworld.co.uk",
-                "www.npr.org",
-                "www.nytimes.com",
-                "www.realclearpolitics.com"
+                "crooksandliars.com",
+                "populist.press",
+                "www.palmerreport.com"
+            ]
+        },
+        {
+            "rule": "geoedge\\.be\\/b9938b1c-6ece-4a51-bada-ae0fc5e1a3e1\\/grumi-ip\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rumcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "deadline.com",
+                "www.indiewire.com"
+            ]
+        },
+        {
+            "rule": "geoedge\\.be\\/2a236ed9-fb8c-429e-ab47-cacac34a3be6\\/grumi-ip\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "rumcdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 5,
+                "Date.prototype.getTime": 3
+            },
+            "sites": 5,
+            "prevalence": 0.000503,
+            "cnames": [],
+            "responseHashes": [
+                "4dc4abcd99f7976c1a0938575631974c55fa42bf76681e84ca56aeea3180966e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dogtime.com",
+                "forums.sherdog.com",
+                "hfboards.mandatory.com",
+                "www.playstationlifestyle.net",
+                "www.sherdog.com"
             ]
         },
         {
@@ -113,8 +153,8 @@
                 "rumcdn"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 6,
+            "prevalence": 0.000603,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -123,10 +163,11 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "sherdog.com",
+                "dogtime.com",
                 "forums.sherdog.com",
                 "hfboards.mandatory.com",
                 "www.gamerevolution.com",
+                "www.playstationlifestyle.net",
                 "www.sherdog.com"
             ]
         },
@@ -138,8 +179,8 @@
                 "protect"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.000804,
+            "sites": 9,
+            "prevalence": 0.000905,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -148,14 +189,63 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "sherdog.com",
+                "dogtime.com",
                 "forums.sherdog.com",
                 "hfboards.mandatory.com",
                 "m.jpost.com",
                 "www.boattrader.com",
                 "www.gamerevolution.com",
                 "www.jpost.com",
+                "www.playstationlifestyle.net",
                 "www.yachtworld.com"
+            ]
+        },
+        {
+            "rule": "geoedge\\.be\\/ham\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rumcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "9e9c83c780ecbfd0bc1be66c658d8c597312e6d6bbca4c560a7844607242e2f9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "golf.com",
+                "www.phonearena.com"
+            ]
+        },
+        {
+            "rule": "geoedge\\.be\\/api\\/init",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gw"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000603,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "golf.com",
+                "www.contactmusic.com",
+                "www.macworld.co.uk",
+                "www.nytimes.com",
+                "www.planetf1.com",
+                "www.realclearpolitics.com"
             ]
         },
         {
@@ -167,7 +257,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -182,54 +272,6 @@
             ]
         },
         {
-            "rule": "geoedge\\.be\\/191e27c7-e539-4da7-98e5-2d3c626338be\\/grumi\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "rumcdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "2f926818aa0aaee70a83ae0bbb09ece475b57f3ef87626fd6aa31d90917489dd"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "religionnews.com",
-                "www.realclearpolitics.com",
-                "www.revolver.news"
-            ]
-        },
-        {
-            "rule": "geoedge\\.be\\/35362513-af22-4abd-a2c3-bcf6c62814c8\\/grumi\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "rumcdn"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "aacf612d6e9e55583d114676414c0193107f866df406aeed47dba046a68ba61a"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "religionnews.com",
-                "www.realclearpolitics.com",
-                "www.revolver.news"
-            ]
-        },
-        {
             "rule": "geoedge\\.be\\/08124b21-e823-442b-b6c5-12c562f86444\\/grumi\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -241,7 +283,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "3db2f754f82fb1baedc9b9b0c2401290d0e6eb50c6b133a483265a6a7aa5f7a0"
+                "f26093aac7d1509d4e0efd9465ff510fa7b3ef7135380e933ad5c0819f498f57"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -252,89 +294,43 @@
             ]
         },
         {
-            "rule": "geoedge\\.be\\/a4bb4463-4bc0-4c99-b3fa-ebcd2efe450b\\/pbjs-wrapper\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "rumcdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "4ba750c2c40902859af1339e2d8bb949cfd927bb167f487f760db876cd78a511"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "catholiceducation.org",
-                "www.catholicnewsagency.com"
-            ]
-        },
-        {
-            "rule": "geoedge\\.be\\/api\\/stats",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "gw"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dmv.org",
-                "www.npr.org"
-            ]
-        },
-        {
-            "rule": "geoedge\\.be\\/5ef7483a-01f6-456c-946a-d1fe640769e7\\/grumi\\.js",
+            "rule": "geoedge\\.be\\/d0bfc7d3-77b7-4659-a562-a6c860a272d2\\/grumi\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "rumcdn"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 3
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "1451e44de57d88c876a8f981036b6fbb117919e5c329bc192e10c52a8a107487"
+                "e580859fc7fcd782022b364fc139ca5d6b4ff318593c4a2d4a73569fad3a8bbe"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "houseplans.com",
-                "www.houseplans.com"
+                "contactmusic.com",
+                "www.contactmusic.com",
+                "www.planetf1.com"
             ]
         },
         {
             "rule": "geoedge\\.be\\/859c0fcb-feae-4616-afed-20011b559baa\\/grumi\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "rumcdn"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "297afa7e7a313e3062d7169e8879a50fb887bb1d87154fa3b5d35e89bca422c8"
+                "9d4c686828bfceca678a78fb05c9492d25fb7951a412acf49ddf83a283d07aec"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -345,7 +341,7 @@
             ]
         },
         {
-            "rule": "geoedge\\.be\\/880a45f2-0015-49d2-b38f-2d26be44ae09\\/grumi\\.js",
+            "rule": "geoedge\\.be\\/b3960cc6-bfd2-4adc-910c-6e917e8a6a0e\\/grumi\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -358,29 +354,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "ac0d690f5b563da89c4ec20efe67b28d2efd36fc3bba5fa00c747dd460e2eb27"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "npr.org",
-                "www.npr.org"
-            ]
-        },
-        {
-            "rule": "geoedge\\.be\\/b3960cc6-bfd2-4adc-910c-6e917e8a6a0e\\/grumi\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "rumcdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "051c5ded7d179ff362f9707b9c1e0e2e003d1bd8cd509b7106204b0f29ec058c"
+                "209b0b478814c956cdbbd5abda06fbc9c579af7986fd8b43193541727210f6d7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -391,27 +365,27 @@
             ]
         },
         {
-            "rule": "geoedge\\.be\\/191e27c7-e539-4da7-98e5-2d3c626338be\\/grumi-ip\\.js",
+            "rule": "geoedge\\.be\\/191e27c7-e539-4da7-98e5-2d3c626338be\\/grumi\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "rumcdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "4dc4abcd99f7976c1a0938575631974c55fa42bf76681e84ca56aeea3180966e"
+                "a982617216b59c0146ad7ca1a16577af5028045ef370dbefad97f00a4797be7b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "realclearpolitics.com",
-                "www.revolver.news"
+                "www.realclearpolitics.com"
             ]
         }
     ],
@@ -424,9 +398,9 @@
     },
     "cookies": 0,
     "types": {
-        "Script": 47,
-        "XHR": 12,
-        "Other": 8
+        "Script": 45,
+        "XHR": 9,
+        "Other": 9
     },
     "nameservers": [
         "ns-189.awsdns-23.com",

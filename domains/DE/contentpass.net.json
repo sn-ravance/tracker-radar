@@ -7,10 +7,12 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000302,
-    "sites": 3,
+    "prevalence": 0.000603,
+    "sites": 6,
     "subdomains": [
-        "with"
+        "with",
+        "get",
+        "api"
     ],
     "cnames": [
         {
@@ -18,50 +20,76 @@
             "resolved": "with.contentpass.net"
         },
         {
-            "original": "cp.pc-magazin.de",
+            "original": "cp.elektroniknet.de",
             "resolved": "with.contentpass.net"
         },
         {
-            "original": "cp.we-go-wild.com",
+            "original": "cp.elektronikpraxis.vogel.de",
+            "resolved": "with.contentpass.net"
+        },
+        {
+            "original": "cp.goslarsche.de",
+            "resolved": "with.contentpass.net"
+        },
+        {
+            "original": "cp.pc-magazin.de",
             "resolved": "with.contentpass.net"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "contentpass\\.net\\/now\\.js",
-            "cookies": 0.000201,
-            "fingerprinting": 1,
+            "cookies": 0.000603,
+            "fingerprinting": 2,
             "subdomains": [
-                "with"
+                "with",
+                "get"
             ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "apis": {
+                "window.localStorage": 1,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.storage": 1
+            },
+            "sites": 6,
+            "prevalence": 0.000603,
             "cnames": [
                 {
                     "original": "cp.connect.de",
                     "resolved": "with.contentpass.net"
                 },
                 {
-                    "original": "cp.pc-magazin.de",
+                    "original": "cp.elektroniknet.de",
                     "resolved": "with.contentpass.net"
                 },
                 {
-                    "original": "cp.we-go-wild.com",
+                    "original": "cp.elektronikpraxis.vogel.de",
+                    "resolved": "with.contentpass.net"
+                },
+                {
+                    "original": "cp.goslarsche.de",
+                    "resolved": "with.contentpass.net"
+                },
+                {
+                    "original": "cp.pc-magazin.de",
                     "resolved": "with.contentpass.net"
                 }
             ],
             "responseHashes": [
-                "e5b61fc2d0d0b0cdba9d0f49e4f56e9f0d34259fdcc9116af42d3c1617b034db"
+                "a891010708274591d60b4a0c102e43726bfa9aace583ee4d022ecd74ea1c71f7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "connect.de",
-                "www.pc-magazin.de",
-                "www.we-go-wild.com"
+                "www.dewezet.de",
+                "www.elektroniknet.de",
+                "www.elektronikpraxis.vogel.de",
+                "www.goslarsche.de",
+                "www.pc-magazin.de"
             ]
         },
         {
@@ -72,19 +100,27 @@
                 "with"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [
                 {
                     "original": "cp.connect.de",
                     "resolved": "with.contentpass.net"
                 },
                 {
-                    "original": "cp.pc-magazin.de",
+                    "original": "cp.elektroniknet.de",
                     "resolved": "with.contentpass.net"
                 },
                 {
-                    "original": "cp.we-go-wild.com",
+                    "original": "cp.elektronikpraxis.vogel.de",
+                    "resolved": "with.contentpass.net"
+                },
+                {
+                    "original": "cp.goslarsche.de",
+                    "resolved": "with.contentpass.net"
+                },
+                {
+                    "original": "cp.pc-magazin.de",
                     "resolved": "with.contentpass.net"
                 }
             ],
@@ -94,8 +130,10 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "connect.de",
-                "www.pc-magazin.de",
-                "www.we-go-wild.com"
+                "www.elektroniknet.de",
+                "www.elektronikpraxis.vogel.de",
+                "www.goslarsche.de",
+                "www.pc-magazin.de"
             ]
         },
         {
@@ -106,43 +144,118 @@
                 "with"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [
                 {
                     "original": "cp.connect.de",
                     "resolved": "with.contentpass.net"
                 },
                 {
-                    "original": "cp.pc-magazin.de",
+                    "original": "cp.elektroniknet.de",
                     "resolved": "with.contentpass.net"
                 },
                 {
-                    "original": "cp.we-go-wild.com",
+                    "original": "cp.elektronikpraxis.vogel.de",
+                    "resolved": "with.contentpass.net"
+                },
+                {
+                    "original": "cp.goslarsche.de",
+                    "resolved": "with.contentpass.net"
+                },
+                {
+                    "original": "cp.pc-magazin.de",
                     "resolved": "with.contentpass.net"
                 }
             ],
             "responseHashes": [
-                "777874e39ade1d02f81287b462ac58128217cb634bdd3dca3d0ce9da154fdc2b",
-                "e35a484bef7648f45e0940b50719d097a1f1464e4304cea431c85b2eb8f2fdce"
+                "042638a25d16ff8b7ec55e850194a53b1dcc40c685db9f7521ba17c295bcc972",
+                "fa0c27a7d7895bd9d3d12e3a432983879bdbfba428fd937029b72a09a7ce9134",
+                "e97a2d749f762e3595edc0b543d0e737a7b9682c443eb3545837a553477f5ca6",
+                "a53660e0c59066f4cf0d0e258ecd2a36243fb7c49c4d09f041a01991cd988ba7"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "connect.de",
-                "www.pc-magazin.de",
-                "www.we-go-wild.com"
+                "www.elektroniknet.de",
+                "www.elektronikpraxis.vogel.de",
+                "www.goslarsche.de",
+                "www.pc-magazin.de"
+            ]
+        },
+        {
+            "rule": "contentpass\\.net\\/stats",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api",
+                "with"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "cp.goslarsche.de",
+                    "resolved": "with.contentpass.net"
+                }
+            ],
+            "responseHashes": [
+                "8337212354871836e6763a41e615916c89bac5b3f1f0adf60ba43c7c806e1015"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dewezet.de",
+                "www.dewezet.de",
+                "www.goslarsche.de"
+            ]
+        },
+        {
+            "rule": "contentpass\\.net\\/ui\\/da941c3b739014ce2d8e8776689f46a9\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "with"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cp.goslarsche.de",
+                    "resolved": "with.contentpass.net"
+                }
+            ],
+            "responseHashes": [
+                "f9bba27460b9836abf81fb74f66ce01b11aeebe183706bbc116ed2fdcb04433d"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goslarsche.de",
+                "www.goslarsche.de"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000603,
     "types": {
-        "Script": 3,
-        "Preflight": 3,
-        "XHR": 3
+        "Script": 6,
+        "Preflight": 5,
+        "XHR": 5,
+        "Image": 3,
+        "Font": 2
     },
-    "nameservers": []
+    "nameservers": [
+        "ns-cloud-d2.googledomains.com",
+        "ns-cloud-d3.googledomains.com",
+        "ns-cloud-d1.googledomains.com",
+        "ns-cloud-d4.googledomains.com"
+    ]
 }

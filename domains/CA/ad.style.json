@@ -4,16 +4,76 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
+        "widgets",
         "w"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "ad\\.style\\/image\\/",
+            "rule": "ad\\.style\\/native\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widgets"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "aa506a95a31574f0c54c87207baa26af36f7c367678a94a8822c54c0985875de"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cookietest": {
+                    "ttl": -1627062994,
+                    "length": 1,
+                    "prevalence": 0.0002010252286661976,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amren.com",
+                "www.theburningplatform.com"
+            ]
+        },
+        {
+            "rule": "ad\\.style\\/get",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "w"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1d497fc3f18314ec78e107bbe5ff586adb4ec84b0df03fe7c6b0e67f058b12f4"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amren.com",
+                "www.theburningplatform.com"
+            ]
+        },
+        {
+            "rule": "ad\\.style\\/img\\/aslogo\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -24,13 +84,37 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "bb67ca287df45d9546b0eb902f8ceb5d84d48eca5e008009cf6bb4c817bccb44"
+                "0ead49ad1520351760f2ec83f11a4c74bc9195507839d0424f57d93c46108a30"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "theburningplatform.com",
+                "amren.com",
+                "www.theburningplatform.com"
+            ]
+        },
+        {
+            "rule": "ad\\.style\\/image\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "w"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "1214c569a06e7fbdb2e90d20874b1162d9fc03ff1208e11228f06eb332b1b9e9",
+                "f2700eedca25a58efdfea8389ef386b5629ba582ca6cbd9576465d334c4e06e7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amren.com",
+                "www.amren.com",
                 "www.theburningplatform.com"
             ]
         }
@@ -42,16 +126,18 @@
         "cpu": 0,
         "cache": 3
     },
-    "cookies": 0.0001,
+    "cookies": 0.000201,
     "types": {
-        "Image": 2
+        "Script": 2,
+        "XHR": 2,
+        "Image": 5
     },
     "nameservers": [
+        "ns21.constellix.com",
+        "ns31.constellix.com",
         "ns41.constellix.net",
         "ns51.constellix.net",
         "ns61.constellix.net",
-        "ns11.constellix.com",
-        "ns21.constellix.com",
-        "ns31.constellix.com"
+        "ns11.constellix.com"
     ]
 }

@@ -7,13 +7,18 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000103,
-    "sites": 15,
+    "prevalence": 0.000118,
+    "sites": 17,
     "subdomains": [
         "netdreamersad",
-        "sankei2ad",
         "obunshaad",
         "proto2ad",
+        "sankei2ad",
+        "acceliaad",
+        "ala",
+        "obunshaimg",
+        "consumer-api",
+        "img-fujisan",
         "proto2img",
         "img-goo",
         "catalogphoto"
@@ -24,6 +29,10 @@
             "resolved": "catalogphoto.durasite.net"
         },
         {
+            "original": "img.fujisan.co.jp",
+            "resolved": "img-fujisan.durasite.net"
+        },
+        {
             "original": "img.goo-net.com",
             "resolved": "img-goo.durasite.net"
         }
@@ -32,23 +41,21 @@
     "resources": [
         {
             "rule": "durasite\\.net\\/A-affiliate2\\/mobile",
-            "cookies": 0.0000206,
+            "cookies": 0.0000278,
             "fingerprinting": 0,
             "subdomains": [
                 "netdreamersad",
-                "sankei2ad",
                 "obunshaad",
-                "proto2ad"
+                "proto2ad",
+                "sankei2ad"
             ],
             "apis": {},
             "sites": 7,
-            "prevalence": 0.000048,
+            "prevalence": 0.0000486,
             "cnames": [],
             "responseHashes": [
-                "d25e1626f8be9c7b8c8014563b8302fab5a81afe07fbcb74fc3b4feec63c81b4",
-                "e8b5d61e9e8502c157d78f0607987b5daca5c08bec944c756877b51ecb37d652",
+                "9ff5bf632efe3563b54067dfa7872d17ffa875154d571a91dccd0026342176dc",
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-                "f45aa3b6f5ae4a56cf8d432a306149885e698c5df95c40468e4905b5e2d7c9c0",
                 "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
             ],
             "type": "Script",
@@ -57,11 +64,151 @@
             "exampleSites": [
                 "netkeiba.com",
                 "db.netkeiba.com",
-                "ironna.jp",
                 "passnavi.evidus.com",
-                "race.netkeiba.com",
                 "www.goobike.com",
-                "www.goo-net.com"
+                "www.goo-net.com",
+                "www.sankeibiz.jp",
+                "www.zakzak.co.jp"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/A-affiliate2\\/mobile",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "acceliaad",
+                "obunshaad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "newswitch.jp",
+                "passnavi.evidus.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/DuraUidSegmentMap\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ala"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "9e027eac78f0f934656571d7bb7a5b4e72d8e5337f30209e49ad250e4334b121"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "evidus.com",
+                "passnavi.evidus.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/passnavi\\/duraAdMaster\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "obunshaimg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "16a14c46e8b696023baf41a65632c1d41340ffc36f2440c3347721574ea0d884"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "evidus.com",
+                "passnavi.evidus.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/stage\\/stage_ad\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "obunshaimg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "5d601f120d5427fc9c0e5ada47f1212bf816e68c6749e80df556556d121ac852"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "evidus.com",
+                "passnavi.evidus.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/DuraDmpTracking\\.js",
+            "cookies": 0.00000694,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ala"
+            ],
+            "apis": {
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 1,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "996416a3e46265a96bdcfe984d2316593f509d6bf8b9422550544cc2d6943d94"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "__duraid": {
+                    "ttl": 7776021,
+                    "length": 36,
+                    "prevalence": 0.0000069415521310565046,
+                    "uniqueness": 1
+                },
+                "o_uid": {
+                    "ttl": 7776021,
+                    "length": 36,
+                    "prevalence": 0.0000069415521310565046,
+                    "uniqueness": 1
+                },
+                "__bid": {
+                    "ttl": 23328021,
+                    "length": 36,
+                    "prevalence": 0.0000069415521310565046,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "evidus.com",
+                "passnavi.evidus.com"
             ]
         },
         {
@@ -73,7 +220,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -87,18 +234,71 @@
             ]
         },
         {
+            "rule": "durasite\\.net\\/bq_load",
+            "cookies": 0.0000139,
+            "fingerprinting": 0,
+            "subdomains": [
+                "consumer-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "__duraid": 0.0000069415521310565046,
+                "o_uid": 0.0000069415521310565046,
+                "__bid": 0.0000069415521310565046
+            },
+            "exampleSites": [
+                "evidus.com",
+                "passnavi.evidus.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/fujisanlogo\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img-fujisan"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [
+                {
+                    "original": "img.fujisan.co.jp",
+                    "resolved": "img-fujisan.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "6ba55e4803225b2181a4fa8fab3cc3b26382e8ae44bb0245fdf1689f3579f6a5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fujisan.co.jp",
+                "www.fujisan.co.jp"
+            ]
+        },
+        {
             "rule": "durasite\\.net\\/A-affiliate2\\/mobile",
-            "cookies": 0.0000137,
+            "cookies": 0.0000139,
             "fingerprinting": 0,
             "subdomains": [
                 "proto2ad"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [],
             "responseHashes": [
-                "5426a3014aa618572a94650e9db087889e8607cc48027eb534a9c0501452fe12"
+                "67f5ecacd1edc32ee1432c9454b4a19a80273c21e9e653a17728cbbaf8b26b51"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -117,7 +317,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [],
             "responseHashes": [
                 "5d65f9a0bdf2d4bf030bc5a05d3d980dfb6477a2c0f16fa97fddeee3990c275a"
@@ -131,6 +331,80 @@
             ]
         },
         {
+            "rule": "durasite\\.net\\/cache\\/common\\/newlogo_header_210519\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img-goo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [
+                {
+                    "original": "img.goo-net.com",
+                    "resolved": "img-goo.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "c51af08d1ae943a0444fe1828f6db83ecc8a7efb3826fb8f7e0a98d3eb2f94ff"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goo-net.com",
+                "www.goo-net.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/cache\\/common_v2\\/img_kurumaLogo_210519\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img-goo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [
+                {
+                    "original": "img.goo-net.com",
+                    "resolved": "img-goo.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "506dec7b9e48b138e1e23bf7175c148bd55465547c0daf85d9829d65c18fec88"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goo-net.com",
+                "www.goo-net.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/A-LogAnalyzer\\/a\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ala"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goo-net.com",
+                "www.goo-net.com"
+            ]
+        },
+        {
             "rule": "durasite\\.net\\/common_v2\\/img\\/bg_footer_line\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
@@ -139,7 +413,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [
                 {
                     "original": "img.goo-net.com",
@@ -166,7 +440,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [
                 {
                     "original": "img.goo-net.com",
@@ -185,6 +459,33 @@
             ]
         },
         {
+            "rule": "durasite\\.net\\/cache\\/common_v2\\/sprite_icon_kurumaService_v2\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img-goo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [
+                {
+                    "original": "img.goo-net.com",
+                    "resolved": "img-goo.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "64637658eca948481823772f6a4356840b9e0af6f82edc881ff91a588fe2244c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goo-net.com",
+                "www.goo-net.com"
+            ]
+        },
+        {
             "rule": "durasite\\.net\\/common_v2\\/img\\/bg_footer_line_left\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
@@ -193,7 +494,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [
                 {
                     "original": "img.goo-net.com",
@@ -220,7 +521,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [
                 {
                     "original": "img.goo-net.com",
@@ -247,7 +548,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [
                 {
                     "original": "catalogphoto.goo-net.com",
@@ -255,7 +556,7 @@
                 }
             ],
             "responseHashes": [
-                "f9ece571c147b2703409ab6b933ce7e59d1eef74f2a8aa6c3b691247d30bbf6a"
+                "3d5aaf0ced59cb424edd017be4877988c6f0d2f01fa957baadd532c6b55225a7"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -273,16 +574,16 @@
         "cpu": 0,
         "cache": 3
     },
-    "cookies": 0.0000343,
+    "cookies": 0.0000416,
     "types": {
-        "Script": 7,
-        "XHR": 2,
-        "Document": 2,
-        "Image": 12
+        "Script": 19,
+        "XHR": 4,
+        "Image": 20,
+        "Document": 2
     },
     "nameservers": [
+        "dns-a.iij.ad.jp",
         "vns01.accelia.net",
-        "ns-ocn-01.accelia.net",
-        "dns-a.iij.ad.jp"
+        "ns-ocn-01.accelia.net"
     ]
 }

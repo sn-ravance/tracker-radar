@@ -7,80 +7,290 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00251,
-    "sites": 25,
+    "prevalence": 0.00211,
+    "sites": 21,
     "subdomains": [
-        "imgs",
         "cdn-scripts",
-        "bt"
+        "bt",
+        "imgs"
     ],
     "cnames": [],
     "fingerprinting": 3,
     "resources": [
         {
+            "rule": "signifyd\\.com\\/shopify\\/script-tag\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn-scripts"
+            ],
+            "apis": {
+                "Document.cookie getter": 3,
+                "Date.prototype.getTime": 3,
+                "window.localStorage": 3,
+                "window.name": 3,
+                "Navigator.prototype.userAgent": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "8677603c79ea7b8ac5ff91a7d32558c1f8f381c5ed7127cdf291e6f9698a4162"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "endy.com",
+                "www.worldwidecyclery.com",
+                "yakima.com"
+            ]
+        },
+        {
+            "rule": "signifyd\\.com\\/onload",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bt"
+            ],
+            "apis": {},
+            "sites": 17,
+            "prevalence": 0.00171,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "endy.com",
+                "m.kmstools.com",
+                "www.babiesrus.ca",
+                "www.birkenstock.com",
+                "www.breville.com",
+                "www.dynamiteclothing.com",
+                "www.garageclothing.com",
+                "www.kmstools.com",
+                "www.msrgear.com",
+                "www.parktool.com",
+                "www.renspets.com",
+                "www.sram.com",
+                "www.structube.com",
+                "www.thermarest.com",
+                "www.toysrus.ca",
+                "www.worldwidecyclery.com",
+                "yakima.com"
+            ]
+        },
+        {
             "rule": "signifyd\\.com\\/fp\\/tags\\.js",
-            "cookies": 0.00221,
+            "cookies": 0.00171,
             "fingerprinting": 1,
             "subdomains": [
                 "imgs"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 22,
-                "Navigator.prototype.vendor": 22,
-                "Navigator.prototype.platform": 22,
-                "Navigator.prototype.appVersion": 22
+                "Navigator.prototype.userAgent": 16,
+                "Navigator.prototype.vendor": 16,
+                "Navigator.prototype.platform": 16,
+                "Navigator.prototype.appVersion": 16
             },
-            "sites": 22,
-            "prevalence": 0.00221,
+            "sites": 17,
+            "prevalence": 0.00171,
             "cnames": [],
             "responseHashes": [
-                "dc28814213ec0a1b6f7625cba3018a2fff3fef0075cb6594974126d03f597c20",
-                "3dfa4b4e6bbe0d81ed687a2b1648576fe8a9360c04fc09c05cc7c6b83cee8db0",
-                "ce32c029a59284595f3d200e3b9267955db734dde681ee234252853c7019ba85",
-                "599d65212d889529a5a46127e031f06c9eeca92adfb36f69dcf2c83230d94ea3",
-                "601457304d9fa6c85c9d25de80e33d439b865e23c195bcdb95277ded5bd7ab5a",
-                "010c94b6b1d35ab6d1ec99a0e3bf4503bab27917bffb686247bf986814564ab7",
-                "5752673eebdd3dcf3014ba596e67d211f14ea9e3e63ca0f1bfe5054af918730a",
-                "a6b907f01396f78dea64c19e5b3f6da190359b23e5c4914829422c684e4be8b9",
-                "b4954a049088545142fb4e0e7c8ba6847fbea3b71882ae095778397a19a417ff",
-                "81f0063d772c0c91f53cdba7be9f1f6aa214426f7361437038d24b42a23ae8f4",
-                "19d32f263c8a0266fd95fba64799920e847c3b34e2f4e4fa6bc764cb06e56bbb",
-                "6c444e3b297d89d31fbf6ef923a43e826b57b16d9a3c5e4a88e8da3153ad15fb",
-                "fc557a5e1fc6ab31396cf4c6ce666f5d2e33c0476b93be84fe662c7691c2a6e3",
-                "1e86ffcc5aaeced84fc8dcc55f87ff27bd00c05002eed6b6e54e372301ffcd28",
-                "c2df656333e9fc35615cdf143de63537d84fc99155e56acc7152450b4fa6ff02",
-                "4e0ebb605c713fb83b0bae17186e43d83f7984850c33d21a53e646598803b36f",
-                "4f7ad2430546795cd9ddd819ab6e3a76033b28a1a638a78c73c57fd8ca0b90df",
-                "4c59093df58424a725013b149e387a3dbed8c6d7e1de676cc60569ddbd0efa8a",
-                "b9e5fe9d717e188c521a005be1ff85698a036f0339614949736b0b40b9b123d4",
-                "96d13caefc6433206ac6319a59b226c6ee1525bdf767b0c2b2ca6b24e98b61bd"
+                "883a48a5146b1d8d9f80ee9f707f55d55a4176f10d75055df0e39e3597b9bc67",
+                "34b6138b372e6ebc951c9e4bd5ea71afe1d916a2a3f845a5f4f895e574cd58af",
+                "411142acd587a6c851dfde6d7e7b90865617edb683bafeb0f787a93be4cf484c",
+                "1e14ae954b91258d948aa715609c35ae063f0b409cef24c362f14f812cb45361",
+                "efaaafb00185efde07bfd6a33e62ffcfbe2a56192fe1931c1d5dc2d6055e1bec",
+                "9718d473cfdf4c3e2160335d971fd54829c4c47a54c4ee87c25f72a492e12d61",
+                "889ebc93b4f6f4389e4531393a8428c020bdab3d5032cdb0ecf5bbe596e6a2c4",
+                "93aecc9b2c728aff03ba00893fa43c07b14ab3111f646b61c3b317f55c64ed0f",
+                "c949ae535d432e81e461b80c0b6839df7354253248353a15e6f3ce9518c7f49a",
+                "352f4a8b3326145fa47b40bf94ccd3f1772c2fb8b6f33361fb3a98f3d51630d2",
+                "104cefe51f3b404234f20906ee621f3d3096d1a58bb11edc8bca298ba2f5a8cf",
+                "6c6548059739d853b997b636d8fa2086e082d3fb2fb3f58c0f480595731ff105",
+                "fdf7bd5d57b29231acccac3167f0a716d373648b9036b7dbadb6f67d38a2a958",
+                "13e6ae7eb6f2dfb7abd3edd973c30d0f24e07c460316ba94c3acc3f1644b5450",
+                "4595bf73e80f71e864429f32340240e260b2d2dcf228f375a13d15a32cb87f3a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "sig-bc-stores/zyhylwkdkw": 0.0001004419445560466
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.keenfootwear.com",
-                "www.deadstock.ca",
-                "www.sleepcountry.ca",
-                "www.birkenstock.com",
-                "www.babiesrus.ca",
-                "www.liveauctioneers.com",
-                "www.garageclothing.com",
-                "www.sram.com",
-                "www.dynamiteclothing.com",
-                "www.thermarest.com",
-                "yakima.com",
-                "www.braultetmartineau.com",
-                "www.radpowerbikes.com",
-                "www.holley.com",
-                "www.toysrus.ca",
-                "www.structube.com",
-                "www.worldwidecyclery.com",
+                "endy.com",
                 "m.kmstools.com",
+                "www.babiesrus.ca",
+                "www.birkenstock.com",
+                "www.braultetmartineau.com",
+                "www.dynamiteclothing.com",
+                "www.garageclothing.com",
+                "www.keenfootwear.com",
+                "www.kmstools.com",
                 "www.msrgear.com",
-                "www.kmstools.com"
+                "www.sleepcountry.ca",
+                "www.sram.com",
+                "www.structube.com",
+                "www.thermarest.com",
+                "www.toysrus.ca",
+                "www.worldwidecyclery.com",
+                "yakima.com"
+            ]
+        },
+        {
+            "rule": "signifyd\\.com\\/ingest",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bt"
+            ],
+            "apis": {},
+            "sites": 17,
+            "prevalence": 0.00171,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "endy.com",
+                "m.kmstools.com",
+                "www.babiesrus.ca",
+                "www.birkenstock.com",
+                "www.breville.com",
+                "www.dynamiteclothing.com",
+                "www.garageclothing.com",
+                "www.kmstools.com",
+                "www.msrgear.com",
+                "www.parktool.com",
+                "www.renspets.com",
+                "www.sram.com",
+                "www.structube.com",
+                "www.thermarest.com",
+                "www.toysrus.ca",
+                "www.worldwidecyclery.com",
+                "yakima.com"
+            ]
+        },
+        {
+            "rule": "signifyd\\.com\\/ingest",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bt"
+            ],
+            "apis": {},
+            "sites": 17,
+            "prevalence": 0.00171,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "endy.com",
+                "m.kmstools.com",
+                "www.babiesrus.ca",
+                "www.birkenstock.com",
+                "www.breville.com",
+                "www.dynamiteclothing.com",
+                "www.garageclothing.com",
+                "www.kmstools.com",
+                "www.msrgear.com",
+                "www.parktool.com",
+                "www.renspets.com",
+                "www.sram.com",
+                "www.structube.com",
+                "www.thermarest.com",
+                "www.toysrus.ca",
+                "www.worldwidecyclery.com",
+                "yakima.com"
+            ]
+        },
+        {
+            "rule": "signifyd\\.com\\/fp\\/check\\.js",
+            "cookies": 0,
+            "fingerprinting": 3,
+            "subdomains": [
+                "imgs"
+            ],
+            "apis": {
+                "Date.prototype.getTimezoneOffset": 16,
+                "window.devicePixelRatio": 16,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 16,
+                "window.localStorage": 16,
+                "window.indexedDB": 16,
+                "AudioBuffer.prototype.getChannelData": 10,
+                "Date.prototype.getTime": 16,
+                "RTCPeerConnectionIceEvent.prototype.candidate": 5,
+                "Navigator.prototype.mimeTypes": 9,
+                "Navigator.prototype.userAgent": 9,
+                "Navigator.prototype.vendor": 9,
+                "Navigator.prototype.platform": 9,
+                "Navigator.prototype.appVersion": 9,
+                "Screen.prototype.width": 9,
+                "Screen.prototype.height": 9,
+                "Screen.prototype.availWidth": 9,
+                "Screen.prototype.availHeight": 9,
+                "Screen.prototype.colorDepth": 9,
+                "Navigator.prototype.plugins": 9,
+                "Navigator.prototype.hardwareConcurrency": 9,
+                "Navigator.prototype.deviceMemory": 8,
+                "HTMLCanvasElement.prototype.toDataURL": 8,
+                "WebGLRenderingContext.prototype.getParameter": 8,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 8,
+                "WebGLRenderingContext.prototype.getExtension": 8,
+                "RTCPeerConnection.prototype.constructor": 8,
+                "Navigator.prototype.storage": 8,
+                "Navigator.prototype.getBattery": 9,
+                "OfflineAudioContext.prototype.constructor": 8,
+                "Navigator.prototype.mediaDevices": 8
+            },
+            "sites": 17,
+            "prevalence": 0.00171,
+            "cnames": [],
+            "responseHashes": [
+                "9ff9bccbf40d9608c706d3cbde193211e737815a493f0e0926edb8890675229c",
+                "834988dbd8b126ce92c54b9281ec695fc563c81058b5c900ff3a2c55b99b24cd",
+                "8646ff32fd41c1e83d2c7814e462c9f1f27ebf5f3e58f030a94deeaa2298ab8e",
+                "93ced4bb4d63961e8cd36847cd7ed473d86f7e4a07a509f732f641db7a0ca0ca",
+                "be2f45677d712dd0c3b57fc0662179c0a58741e7b44e203d35cd161a0628328b",
+                "3cff6d064a0c38003052fd5513ddfdee44dcec3f4f7305b3f33f8882220dfb24",
+                "5e1717b848674063171d1aed1fa390cdbd434cb865ca7222686afb9423804faf",
+                "9164a2d291a68af2a3431d05ea557a8bc2ea318151c0cdf739ecb1a09ccbe099",
+                "aac65ad52ec5ecb14b88a7cbc13db330e5c664ca4a9dff555ce8d3db9d8fa943",
+                "77eda8cc930ec966fd10a21e8287b8e109d21ade8c6739062c1bb7b6d8797469",
+                "57d768a150cf3a9ab4c6386713356d2b2575b35b9660a7bbfd430385515f8f91",
+                "791795ef9bea1856fa648178329f36f926bb804c7c4bbe8decc94bd113fba30b",
+                "ada83fcbab6d60638c332e49d7a5784334620c450ea8dd7558adf11756c04ca8",
+                "c583d5ade7356470e793938a0bf128e1567e1d9a0093df96fc716e5f6f83a71f",
+                "821cb33fc4236a30227c9651104d748f50b11ce8eef17772a209e4089f8bd30f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "endy.com",
+                "m.kmstools.com",
+                "www.babiesrus.ca",
+                "www.birkenstock.com",
+                "www.braultetmartineau.com",
+                "www.dynamiteclothing.com",
+                "www.garageclothing.com",
+                "www.keenfootwear.com",
+                "www.kmstools.com",
+                "www.msrgear.com",
+                "www.sleepcountry.ca",
+                "www.sram.com",
+                "www.structube.com",
+                "www.thermarest.com",
+                "www.toysrus.ca",
+                "www.worldwidecyclery.com",
+                "yakima.com"
             ]
         },
         {
@@ -91,8 +301,8 @@
                 "imgs"
             ],
             "apis": {},
-            "sites": 23,
-            "prevalence": 0.00231,
+            "sites": 18,
+            "prevalence": 0.00181,
             "cnames": [],
             "responseHashes": [
                 "95518cbec0d55a574a9c8ef72a2a7d62ac0d40a4de5dfe67a76a7d214dc8b743"
@@ -101,26 +311,128 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "yakima.com",
-                "www.dynamiteclothing.com",
-                "www.kmstools.com",
-                "www.thermarest.com",
-                "www.msrgear.com",
-                "www.sram.com",
+                "endy.com",
+                "ca.endy.com",
+                "m.kmstools.com",
                 "www.babiesrus.ca",
-                "www.bushnell.com",
-                "www.toysrus.ca",
-                "www.liveauctioneers.com",
-                "www.radpowerbikes.com",
-                "www.sleepcountry.ca",
-                "www.worldwidecyclery.com",
-                "www.structube.com",
                 "www.birkenstock.com",
-                "www.holley.com",
-                "www.deadstock.ca",
-                "en.nikon.ca",
+                "www.braultetmartineau.com",
+                "www.dynamiteclothing.com",
+                "www.garageclothing.com",
                 "www.keenfootwear.com",
-                "nikon.ca"
+                "www.kmstools.com",
+                "www.msrgear.com",
+                "www.sleepcountry.ca",
+                "www.sram.com",
+                "www.structube.com",
+                "www.thermarest.com",
+                "www.toysrus.ca",
+                "www.worldwidecyclery.com",
+                "yakima.com"
+            ]
+        },
+        {
+            "rule": "signifyd\\.com\\/fp\\/ls_fp\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "imgs"
+            ],
+            "apis": {
+                "window.localStorage": 16
+            },
+            "sites": 16,
+            "prevalence": 0.00161,
+            "cnames": [],
+            "responseHashes": [
+                "fbbacfaaeac3d8e9a84546120fc657e5a69ed40f23b1fbb96a27fc89bbd4aaca",
+                "549170964cc1bbb91ddcd901e8fb39f586ff87f47e173181a1fefcd4db13529f",
+                "7a8c596ce9652e86b0c06258e29493fac26adbc3761cca81f1ae2ccb76efeb0e",
+                "445bd3fc959b615a76fd8f005fef77441b671f84f55825ed6e9ea114cedeff64",
+                "0f318909168822a4fae6168c6eccb792b66b7c2278b31c79cf07114f14a5e4e4",
+                "f5f4d7d44e7c12d45852e88034ed39f28f04d6f41b05b2082bb3af85c263ac8d",
+                "a164e8599c476d014abddec356d53b4b3b6a1ba18ba1660e9c6fcd155e81c43e",
+                "31e03dff4400e82fe3849951781d32252f9d95a40a113389ba62ed2469c9f030",
+                "f6010867a42347800f0e74485f01ba505a9fce5cb33999cfef01b874ad9a58eb",
+                "f78fe6db6f02e4c8a048b69a4c1a26c60944894865a08a22d94ead432c1932c8",
+                "2bcc2e30ce27b82963505ca938b1465b83e0057b7066b82979009f68b7d2498d",
+                "1887a824945e3bc71ad1d3e1d1ef5c26ed7b923513fec9039c7ff45b3fc6811a",
+                "bac2363facedf8f5d967e57a1b3d088f2c4b142e71acc0cdc8074758e9935476",
+                "f0ec7e66f6290bb2e2ab76463ebb748ef3c32324611fbbe0a9bdc00be5a8e5e9",
+                "2999d8924bcb7f9831d65a58d1d96c72a691a8b4e226155f7b991a50dc9916af"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "endy.com",
+                "m.kmstools.com",
+                "www.babiesrus.ca",
+                "www.birkenstock.com",
+                "www.braultetmartineau.com",
+                "www.dynamiteclothing.com",
+                "www.garageclothing.com",
+                "www.kmstools.com",
+                "www.msrgear.com",
+                "www.sleepcountry.ca",
+                "www.sram.com",
+                "www.structube.com",
+                "www.thermarest.com",
+                "www.toysrus.ca",
+                "www.worldwidecyclery.com",
+                "yakima.com"
+            ]
+        },
+        {
+            "rule": "signifyd\\.com\\/fp\\/top_fp\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "imgs"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 16
+            },
+            "sites": 16,
+            "prevalence": 0.00161,
+            "cnames": [],
+            "responseHashes": [
+                "342a3baabdc07df756e361d4257327ce04bf5eaf1138c20a761dae7e2e3ff61f",
+                "5c75334a632729307e8025726f125155f85e61b0a71e3147ae827f3e015985c9",
+                "65e7aed263e3364e5abc5393444875a1418ae3c8b908b61cb149feec0067b0e4",
+                "81357e7348f4fa0671f90551edeb1161ec1a27c9343642a52451328558d0ae9d",
+                "2b0850707f12ea15e3d3a12ef8866b939384ff63d80bae3440144c2b254c9d4e",
+                "498d80ba56375018de9bb83a9bbb7608bc5a1db366d0403885a7d2cc489cbd41",
+                "d3ffb560837213f18bd58b8722ce522226ef4c53ac2bae43b13eb79904803035",
+                "a37b2d626f48b9259c933bd23a92c354f079ac3c1dc07ab642b814115dc6a2b3",
+                "fdff05d17187106ca973564d8fb5f219f8e438dff3df020bb8c8102fb52fc1e6",
+                "7a5b9a353708618c3e25b92ada327bc4096d69fd31f047b4778c1ed528825b9b",
+                "94561173ba0029baf436d94d2260264379546e0213a4e8cb316cfb7f202c7fb2",
+                "593f317e10739be9f998662737972df6e8450d38bc2a1f5f14c36da44f81f2f7",
+                "b9464fdf0cad70aae477498851f45a2fe5be666888abc14b8fd0de116d5b9a9b",
+                "d3d8a97c528fe8b53b40df334b5f84edb065452e4a3a225f2164c201afedb788",
+                "f60c767c2ab4713c43be70d9a7672b83af4e45c89848a4e21808cad5d32c43e2"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "endy.com",
+                "m.kmstools.com",
+                "www.babiesrus.ca",
+                "www.birkenstock.com",
+                "www.braultetmartineau.com",
+                "www.dynamiteclothing.com",
+                "www.garageclothing.com",
+                "www.kmstools.com",
+                "www.msrgear.com",
+                "www.sleepcountry.ca",
+                "www.sram.com",
+                "www.structube.com",
+                "www.thermarest.com",
+                "www.toysrus.ca",
+                "www.worldwidecyclery.com",
+                "yakima.com"
             ]
         },
         {
@@ -131,8 +443,8 @@
                 "imgs"
             ],
             "apis": {},
-            "sites": 21,
-            "prevalence": 0.00211,
+            "sites": 16,
+            "prevalence": 0.00161,
             "cnames": [],
             "responseHashes": [
                 "95518cbec0d55a574a9c8ef72a2a7d62ac0d40a4de5dfe67a76a7d214dc8b743"
@@ -141,26 +453,22 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.birkenstock.com",
-                "www.dynamiteclothing.com",
-                "www.radpowerbikes.com",
-                "www.bushnell.com",
-                "www.msrgear.com",
-                "www.sram.com",
-                "www.braultetmartineau.com",
-                "nikon.ca",
-                "www.structube.com",
-                "www.babiesrus.ca",
-                "www.kmstools.com",
-                "www.deadstock.ca",
-                "www.worldwidecyclery.com",
-                "www.toysrus.ca",
-                "www.holley.com",
-                "yakima.com",
+                "endy.com",
                 "m.kmstools.com",
-                "www.liveauctioneers.com",
+                "www.babiesrus.ca",
+                "www.birkenstock.com",
+                "www.braultetmartineau.com",
+                "www.dynamiteclothing.com",
                 "www.garageclothing.com",
-                "www.sleepcountry.ca"
+                "www.kmstools.com",
+                "www.msrgear.com",
+                "www.sleepcountry.ca",
+                "www.sram.com",
+                "www.structube.com",
+                "www.thermarest.com",
+                "www.toysrus.ca",
+                "www.worldwidecyclery.com",
+                "yakima.com"
             ]
         },
         {
@@ -171,8 +479,8 @@
                 "imgs"
             ],
             "apis": {},
-            "sites": 22,
-            "prevalence": 0.00221,
+            "sites": 17,
+            "prevalence": 0.00171,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -181,26 +489,59 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.dynamiteclothing.com",
-                "www.toysrus.ca",
-                "www.birkenstock.com",
-                "www.radpowerbikes.com",
-                "www.deadstock.ca",
-                "www.bushnell.com",
-                "www.sleepcountry.ca",
-                "en.nikon.ca",
-                "www.garageclothing.com",
-                "nikon.ca",
-                "www.worldwidecyclery.com",
-                "www.holley.com",
-                "www.liveauctioneers.com",
-                "yakima.com",
+                "endy.com",
+                "ca.endy.com",
                 "m.kmstools.com",
-                "www.structube.com",
+                "www.babiesrus.ca",
+                "www.birkenstock.com",
                 "www.braultetmartineau.com",
-                "www.thermarest.com",
+                "www.dynamiteclothing.com",
+                "www.garageclothing.com",
+                "www.kmstools.com",
                 "www.msrgear.com",
-                "www.sram.com"
+                "www.sleepcountry.ca",
+                "www.sram.com",
+                "www.structube.com",
+                "www.thermarest.com",
+                "www.toysrus.ca",
+                "www.worldwidecyclery.com",
+                "yakima.com"
+            ]
+        },
+        {
+            "rule": "signifyd\\.com\\/fp\\/clear1\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "imgs"
+            ],
+            "apis": {},
+            "sites": 16,
+            "prevalence": 0.00161,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "endy.com",
+                "m.kmstools.com",
+                "www.babiesrus.ca",
+                "www.birkenstock.com",
+                "www.braultetmartineau.com",
+                "www.dynamiteclothing.com",
+                "www.garageclothing.com",
+                "www.kmstools.com",
+                "www.msrgear.com",
+                "www.sleepcountry.ca",
+                "www.sram.com",
+                "www.structube.com",
+                "www.thermarest.com",
+                "www.toysrus.ca",
+                "www.worldwidecyclery.com",
+                "yakima.com"
             ]
         },
         {
@@ -211,12 +552,12 @@
                 "cdn-scripts"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 16,
-                "Date.prototype.getTime": 16,
-                "window.localStorage": 16
+                "Date.prototype.getTime": 14,
+                "window.localStorage": 14,
+                "Navigator.prototype.userAgent": 12
             },
-            "sites": 20,
-            "prevalence": 0.00201,
+            "sites": 17,
+            "prevalence": 0.00171,
             "cnames": [],
             "responseHashes": [
                 "e17857cb74ff8bb8c18929844a2d0ff42bd36dee42113f85a8831ad42ef6eb79",
@@ -232,13 +573,10 @@
                 "www.birkenstock.com",
                 "www.braultetmartineau.com",
                 "www.breville.com",
-                "www.bushnell.com",
                 "www.dynamiteclothing.com",
                 "www.garageclothing.com",
-                "www.holley.com",
                 "www.keenfootwear.com",
                 "www.kmstools.com",
-                "www.liveauctioneers.com",
                 "www.msrgear.com",
                 "www.parktool.com",
                 "www.renspets.com",
@@ -247,155 +585,6 @@
                 "www.structube.com",
                 "www.thermarest.com",
                 "www.toysrus.ca"
-            ]
-        },
-        {
-            "rule": "signifyd\\.com\\/onload",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bt"
-            ],
-            "apis": {},
-            "sites": 20,
-            "prevalence": 0.00201,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kmstools.com",
-                "www.babiesrus.ca",
-                "www.birkenstock.com",
-                "www.breville.com",
-                "www.bushnell.com",
-                "www.deadstock.ca",
-                "www.dynamiteclothing.com",
-                "www.garageclothing.com",
-                "www.holley.com",
-                "www.kmstools.com",
-                "www.liveauctioneers.com",
-                "www.msrgear.com",
-                "www.parktool.com",
-                "www.radpowerbikes.com",
-                "www.sram.com",
-                "www.structube.com",
-                "www.thermarest.com",
-                "www.toysrus.ca",
-                "www.worldwidecyclery.com",
-                "yakima.com"
-            ]
-        },
-        {
-            "rule": "signifyd\\.com\\/ingest",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bt"
-            ],
-            "apis": {},
-            "sites": 20,
-            "prevalence": 0.00201,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kmstools.com",
-                "www.babiesrus.ca",
-                "www.birkenstock.com",
-                "www.breville.com",
-                "www.bushnell.com",
-                "www.deadstock.ca",
-                "www.dynamiteclothing.com",
-                "www.garageclothing.com",
-                "www.holley.com",
-                "www.kmstools.com",
-                "www.liveauctioneers.com",
-                "www.msrgear.com",
-                "www.parktool.com",
-                "www.radpowerbikes.com",
-                "www.sram.com",
-                "www.structube.com",
-                "www.thermarest.com",
-                "www.toysrus.ca",
-                "www.worldwidecyclery.com",
-                "yakima.com"
-            ]
-        },
-        {
-            "rule": "signifyd\\.com\\/ingest",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bt"
-            ],
-            "apis": {},
-            "sites": 20,
-            "prevalence": 0.00201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kmstools.com",
-                "www.babiesrus.ca",
-                "www.birkenstock.com",
-                "www.breville.com",
-                "www.bushnell.com",
-                "www.deadstock.ca",
-                "www.dynamiteclothing.com",
-                "www.garageclothing.com",
-                "www.holley.com",
-                "www.kmstools.com",
-                "www.liveauctioneers.com",
-                "www.msrgear.com",
-                "www.parktool.com",
-                "www.radpowerbikes.com",
-                "www.sram.com",
-                "www.structube.com",
-                "www.thermarest.com",
-                "www.toysrus.ca",
-                "www.worldwidecyclery.com",
-                "yakima.com"
-            ]
-        },
-        {
-            "rule": "signifyd\\.com\\/shopify\\/script-tag\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn-scripts"
-            ],
-            "apis": {
-                "Document.cookie getter": 4,
-                "Date.prototype.getTime": 4,
-                "window.localStorage": 4,
-                "window.name": 4,
-                "Navigator.prototype.userAgent": 4
-            },
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [],
-            "responseHashes": [
-                "2baaafa4c7a5830ed83214286c76542505177bb65f6341011ce37e9d6c15005f",
-                "8677603c79ea7b8ac5ff91a7d32558c1f8f381c5ed7127cdf291e6f9698a4162"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "deadstock.ca",
-                "www.radpowerbikes.com",
-                "www.worldwidecyclery.com",
-                "yakima.com"
             ]
         }
     ],
@@ -406,17 +595,18 @@
         "cpu": 0,
         "cache": 3
     },
-    "cookies": 0.00221,
+    "cookies": 0.00171,
     "types": {
-        "Script": 68,
-        "Image": 23,
-        "XHR": 61,
-        "Preflight": 20
+        "Script": 71,
+        "XHR": 50,
+        "Preflight": 17,
+        "Image": 34,
+        "Document": 32
     },
     "nameservers": [
-        "ns-637.awsdns-15.net",
         "ns-1445.awsdns-52.org",
         "ns-1684.awsdns-18.co.uk",
-        "ns-304.awsdns-38.com"
+        "ns-304.awsdns-38.com",
+        "ns-637.awsdns-15.net"
     ]
 }

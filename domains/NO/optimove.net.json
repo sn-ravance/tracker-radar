@@ -7,34 +7,174 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
-        "stream-699"
+        "sdk-cdn",
+        "stream-10005",
+        "stream-161",
+        "stream-777",
+        "stream-696",
+        "sdkuaservice",
+        "realtime-161",
+        "realtime-777",
+        "realtime-696"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "optimove\\.net\\/",
+            "rule": "optimove\\.net\\/websdk\\/sdk-v2\\.0\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "stream-699"
+                "sdk-cdn"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.language": 2
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "4ce28a0fe3023c2b55da69a67965c60473dc1f52201078f1314f3648b997913e"
+                "8089a46243dddf77b5786cbc374f48e39a785a90674d7f8dee18b3f0e1951ecc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "displate.com",
+                "stake.com"
+            ]
+        },
+        {
+            "rule": "optimove\\.net\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "stream-10005",
+                "stream-161",
+                "stream-777",
+                "stream-696"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "displate.com",
+                "no.luckyvitamin.com",
+                "stake.com",
+                "www.naturalcycles.com"
+            ]
+        },
+        {
+            "rule": "optimove\\.net\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdkuaservice"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "01b0e618992b1c99d6966bc0473a73dea3d095a725db9071336d35f01d8b2aaf"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "displate.com",
+                "no.luckyvitamin.com",
+                "stake.com",
+                "www.naturalcycles.com"
+            ]
+        },
+        {
+            "rule": "optimove\\.net\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "stream-10005",
+                "stream-161",
+                "stream-777",
+                "stream-696"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "1a01db720b50397ef736096398247d79fa7197f2e582fc9aeabf69fe703cc46a",
+                "92aecacbb630eaf839d2b8b244e88edfaf89283bf0c102511ea677147b19bd6f",
+                "3f489442f007b764a580789a649a82eb336b41c674b368414cb4dedaae01ddb2"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "musti.no",
-                "www.musti.no"
+                "displate.com",
+                "no.luckyvitamin.com",
+                "stake.com",
+                "www.naturalcycles.com"
+            ]
+        },
+        {
+            "rule": "optimove\\.net\\/reportEvent",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "realtime-161",
+                "realtime-777",
+                "realtime-696"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "luckyvitamin.com",
+                "stake.com",
+                "www.naturalcycles.com"
+            ]
+        },
+        {
+            "rule": "optimove\\.net\\/reportEvent",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "realtime-161",
+                "realtime-777",
+                "realtime-696"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "14811480475c2171ce84c472a6d16a5355ce92a03e8955814fde8827e8a34d55"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "luckyvitamin.com",
+                "stake.com",
+                "www.naturalcycles.com"
             ]
         }
     ],
@@ -47,12 +187,15 @@
     },
     "cookies": 0,
     "types": {
-        "Fetch": 2
+        "Script": 2,
+        "Preflight": 7,
+        "XHR": 4,
+        "Fetch": 7
     },
     "nameservers": [
+        "ns-90.awsdns-11.com",
         "ns-1517.awsdns-61.org",
         "ns-1880.awsdns-43.co.uk",
-        "ns-858.awsdns-43.net",
-        "ns-90.awsdns-11.com"
+        "ns-858.awsdns-43.net"
     ]
 }

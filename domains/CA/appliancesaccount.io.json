@@ -7,34 +7,12 @@
     "prevalence": 0.000201,
     "sites": 2,
     "subdomains": [
-        "socialize",
-        "ge"
+        "ge",
+        "socialize"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
-        {
-            "rule": "appliancesaccount\\.io\\/sdk\\.config\\.get",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "socialize"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "f90db39185b6b1a96029d14e14f10d65139f9979316e94fab829d919d040c8f1"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "geappliances.com",
-                "products.geappliances.com"
-            ]
-        },
         {
             "rule": "appliancesaccount\\.io\\/MyAccount\\/getAccountInfo",
             "cookies": 0.000201,
@@ -52,6 +30,30 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "geappliances.com",
+                "www.geappliances.com"
+            ]
+        },
+        {
+            "rule": "appliancesaccount\\.io\\/sdk\\.config\\.get",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "socialize"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "433643438417fde1884fe4df6d7ce0e5f25951cd3a1a1261d251c147c0b14f88",
+                "68466650d5adc5935695f0db03b6a47a9090d92b6c72578cec9b85c35da03bf4"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "geappliances.com",
+                "products.geappliances.com",
                 "www.geappliances.com"
             ]
         },
@@ -93,7 +95,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "213b8bc3017f293e040ef4bdeb692c3d84bb3c6c0799c6dbd3a9dc3d89043e6f"
+                "51919f27b5999bbaf045308edc44aa03f7ef9aa3770006e862d06155920545d7"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -113,14 +115,16 @@
             "apis": {
                 "window.localStorage": 3,
                 "window.sessionStorage": 3,
-                "Date.prototype.getTime": 3
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.appVersion": 1,
+                "Navigator.prototype.mimeTypes": 1
             },
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "4c594ee354ddad37b5cb98a22c6b1a564221aeb8d2fd21155cbe7abda5d6031e",
-                "1b7d1a1c28fdd3b8e1ebf27a184a70c8f633c594c8a10d2a9df768b01da99c6c"
+                "7648e77382570814457d871b4b98d64d6a8f241bc035999427ccc68ebeac9a8e"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -128,28 +132,6 @@
             "exampleSites": [
                 "geappliances.com",
                 "products.geappliances.com",
-                "www.geappliances.com"
-            ]
-        },
-        {
-            "rule": "appliancesaccount\\.io\\/sdk\\.config\\.getSSO",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "socialize"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "036c3134fc9ce0c2f296bd789d5cc2d79e6ace9f4814b9629df8e9561cdd2eb2"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "geappliances.com",
                 "www.geappliances.com"
             ]
         }
@@ -163,8 +145,8 @@
     },
     "cookies": 0.000201,
     "types": {
-        "Fetch": 4,
         "Preflight": 2,
+        "Fetch": 3,
         "XHR": 2,
         "Document": 5
     },

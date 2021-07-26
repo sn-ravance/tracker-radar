@@ -4,17 +4,45 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
+        "doppler-config",
         "doppler-tasks",
         "livec0a3575.airspace-f",
         "livec0a3575.airspace-e",
+        "85510f39-081e-4ca6-ba6d-4eea66d15351.dns-clientinfo",
+        "2e88dc49-32f1-451e-b3ac-735b5e5d0dce.dns-clientinfo",
         "doppler-reporting"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "cbsivideo\\.com\\/doppler-0\\.1\\.17\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "doppler-config"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c8de3fc234d2fafe518a605bafbc985873fd701f54751b04c01d5ae9d0109f3f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cc.com",
+                "www.mtv.com"
+            ]
+        },
         {
             "rule": "cbsivideo\\.com\\/tasks\\.json",
             "cookies": 0,
@@ -23,8 +51,8 @@
                 "doppler-tasks"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "a5407dc99fa4f6117a61f50ed9833ac89dc7c2629b5f85b6a191a594083f8c94"
@@ -33,7 +61,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cbssports.com",
+                "cc.com",
+                "www.cbssports.com",
                 "www.mtv.com"
             ]
         },
@@ -46,8 +75,8 @@
                 "livec0a3575.airspace-e"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -56,7 +85,31 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mtv.com",
+                "cc.com",
+                "southpark.cc.com",
+                "www.mtv.com"
+            ]
+        },
+        {
+            "rule": "cbsivideo\\.com\\/clientinfo",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "85510f39-081e-4ca6-ba6d-4eea66d15351.dns-clientinfo",
+                "2e88dc49-32f1-451e-b3ac-735b5e5d0dce.dns-clientinfo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "66636ca735e305858033129f36fd80ad1c505f906eae99de06840d19690a875f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cc.com",
                 "www.mtv.com"
             ]
         },
@@ -72,11 +125,32 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cc.com",
+                "www.mtv.com"
+            ]
+        },
+        {
+            "rule": "cbsivideo\\.com\\/log",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "doppler-reporting"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mtv.com",
+                "cc.com",
+                "southpark.cc.com",
                 "www.mtv.com"
             ]
         },
@@ -88,8 +162,8 @@
                 "livec0a3575.airspace-f"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -98,8 +172,31 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mtv.com",
+                "cc.com",
+                "southpark.cc.com",
                 "www.mtv.com"
+            ]
+        },
+        {
+            "rule": "cbsivideo\\.com\\/doppler\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "doppler-config"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cbsnews.com",
+                "www.cbssports.com"
             ]
         }
     ],
@@ -107,7 +204,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Fetch": 8
+        "Script": 4,
+        "Fetch": 14,
+        "Preflight": 2
     },
     "nameservers": [
         "ns-399.awsdns-49.com",

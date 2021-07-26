@@ -9,13 +9,14 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.00462,
-    "sites": 46,
+    "prevalence": 0.00633,
+    "sites": 63,
     "subdomains": [
-        "passuraassets01.blob.core",
         "optanon.blob.core",
+        "passuraassets01.blob.core",
         "insitez.blob.core",
         "targetemsecure.blob.core",
+        "gjstatic.blob.core",
         "suweb.blob.core",
         "prod-sb-appanalytics-us1.servicebus",
         "bnj.blob.core"
@@ -23,6 +24,28 @@
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "windows\\.net\\/skins\\/6\\.20\\.0\\/default_flat_bottom_two_button_black\\/v2\\/css\\/optanon\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "optanon.blob.core"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "3e48e8dada6c1e8a5fb31c28a198f2931138504a6a292ee8635fadeff84f595c"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "huawei.com",
+                "en.aegeanair.com"
+            ]
+        },
         {
             "rule": "windows\\.net\\/blue\\/cockpit-assets\\/2021\\/03\\/22\\/6058becf626efHero_Image_3675x1358\\.jpg",
             "cookies": 0,
@@ -32,7 +55,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "a98f1f801ccb83fdca32b7f11118b1a4970dcf96e0cd751509d0984c4b41f662"
@@ -55,7 +78,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "b7fa448009a14641beff533995b73691aac3c971c1d47602c14d14a0b5bccbe5"
@@ -78,7 +101,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "35a3a21f018ed44ff47b959df3acdaef1c437e1aab1e0650f51cae246bc46298"
@@ -90,40 +113,6 @@
                 "assura.ch",
                 "fr.assura.ch",
                 "www.assura.ch"
-            ]
-        },
-        {
-            "rule": "windows\\.net\\/consent\\/8bcc5ac4-8859-46fe-b843-fe246f4188f1-test\\.js",
-            "cookies": 0.000201,
-            "fingerprinting": 1,
-            "subdomains": [
-                "optanon.blob.core"
-            ],
-            "apis": {
-                "Navigator.prototype.doNotTrack": 2,
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "15872bcd3e307c28b52119923d46d23949a626aa93fb86e11fbeccb4c48c13b3"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "OptanonConsent": {
-                    "ttl": 31536009,
-                    "length": 11,
-                    "prevalence": 0.00020074274816822243,
-                    "uniqueness": 0.5
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "paloaltonetworks.com",
-                "www.paloaltonetworks.com"
             ]
         },
         {
@@ -145,7 +134,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "paloaltonetworks.com",
-                "www.paloaltonetworks.com"
+                "www.thedoldergrand.com"
             ]
         },
         {
@@ -171,31 +160,57 @@
             ]
         },
         {
+            "rule": "windows\\.net\\/skins\\/default_flat_bottom_two_button_white\\/v2\\/css\\/optanon\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "optanon.blob.core"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c651bf84aeaf4a7ee424b9141f880bbd6fdef5a5b13a4abbbfe16c5c7487e1e7"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "teamtreehouse.com",
+                "www.grande-dixence.ch"
+            ]
+        },
+        {
             "rule": "windows\\.net\\/widget\\/IzCode\\.js",
-            "cookies": 0.0001,
+            "cookies": 0.000101,
             "fingerprinting": 2,
             "subdomains": [
                 "insitez.blob.core"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.platform": 2,
-                "Screen.prototype.availWidth": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie getter": 1,
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.platform": 3,
+                "Screen.prototype.availWidth": 3,
+                "Date.prototype.getTime": 3,
+                "window.sessionStorage": 1,
+                "Document.cookie getter": 2,
+                "window.localStorage": 1,
+                "Navigator.prototype.language": 1,
                 "Document.cookie setter": 1
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "554ec083ab72bee00f0b5ccc9015783af5283d320e4c7185b9c00782dee5631a"
+                "52a3949ee6d733e62a8cee3e9dc674c5ac0787383ddf69077de77023f7ce0e1e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "commonsensemedia.org",
+                "wise.com",
+                "www.commonsensemedia.org",
                 "www.motoscout24.ch"
             ]
         },
@@ -210,11 +225,10 @@
                 "window.name": 3
             },
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "344d6d7b21b50dba2ca246dc25a7040648069bbcfb857af05b9fcd45a8cca9db",
-                "80980f43518de7fb0438276cf5a0310e34a25983b661ef0c5a4ec06a051fb9ac"
+                "bb0f810e4170bc0bba30a62ae4daf15c9021ab6b7065e570e3103c452959f441"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -226,8 +240,8 @@
             ]
         },
         {
-            "rule": "windows\\.net\\/fb406dd1-74e3-4c2d-99e4-4b2b31cd755b\\/fb406dd174e34c2d99e44b2b31cd755b_2_1615326828\\.js",
-            "cookies": 0.000301,
+            "rule": "windows\\.net\\/fb406dd1-74e3-4c2d-99e4-4b2b31cd755b\\/fb406dd174e34c2d99e44b2b31cd755b_2_1626207751\\.js",
+            "cookies": 0.000302,
             "fingerprinting": 1,
             "subdomains": [
                 "targetemsecure.blob.core"
@@ -240,23 +254,23 @@
                 "Navigator.prototype.userAgent": 3
             },
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "1533f2d0dc81e7a64c565ad15dc6ef7c7c513608045741c9993a2f641954aae0"
+                "f2483be127ef9b117de8144948534303c013cb67fd95d50e759b4bc6092f207d"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "sbt_i": {
-                    "ttl": 31536004,
+                    "ttl": 31536005,
                     "length": 103,
-                    "prevalence": 0.00030111412225233364,
+                    "prevalence": 0.00030165912518853697,
                     "uniqueness": 1
                 },
                 "sbt_p": {
-                    "ttl": 31536004,
+                    "ttl": 31536005,
                     "length": 683,
-                    "prevalence": 0.00030111412225233364,
+                    "prevalence": 0.00030165912518853697,
                     "uniqueness": 1
                 }
             },
@@ -268,7 +282,7 @@
             ]
         },
         {
-            "rule": "windows\\.net\\/6dbf457a-faa6-469e-94f4-a3221d744c98\\/6dbf457afaa6469e94f4a3221d744c98_1\\.js",
+            "rule": "windows\\.net\\/48f39e1e-5f22-458f-bbea-2e5fd9f383ca\\/48f39e1e5f22458fbbea2e5fd9f383ca_1\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -281,18 +295,18 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "f8642f33efef9841df5d71b959d1fbf75eb9a3208bd8cad0a4446301bf673131"
+                "0a9f298737482e3ade4194d36bc7a7c77450f94fa32374105e44f269164d2ee7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cucchiaio.it",
-                "www.quattroruote.it"
+                "dhnet.be",
+                "www.lalibre.be"
             ]
         },
         {
-            "rule": "windows\\.net\\/6dbf457a-faa6-469e-94f4-a3221d744c98\\/6dbf457afaa6469e94f4a3221d744c98_2_1618949910\\.js",
+            "rule": "windows\\.net\\/48f39e1e-5f22-458f-bbea-2e5fd9f383ca\\/48f39e1e5f22458fbbea2e5fd9f383ca_2_1626207751\\.js",
             "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [
@@ -305,33 +319,128 @@
                 "Document.cookie getter": 2,
                 "Document.cookie setter": 2,
                 "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "7e5ec1b5bfdf85105c31e75a423c92e185b96905b85be94eb7d570e62fc8d94f"
+                "fdc016033c6c28bea7d1e47caaa2540bd0dc889204c9cbe8bbd5a1dcdfae845e"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "sbt_i": {
-                    "ttl": 31536014,
+                    "ttl": 31536027,
                     "length": 103,
-                    "prevalence": 0.00010037137408411121,
+                    "prevalence": 0.00020110608345902463,
                     "uniqueness": 1
                 },
                 "sbt_p": {
-                    "ttl": 31536014,
-                    "length": 832,
-                    "prevalence": 0.00010037137408411121,
+                    "ttl": 31536027,
+                    "length": 1024,
+                    "prevalence": 0.00020110608345902463,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cucchiaio.it",
-                "www.quattroruote.it"
+                "dhnet.be",
+                "www.lalibre.be"
+            ]
+        },
+        {
+            "rule": "windows\\.net\\/fix\\/dmp\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "gjstatic.blob.core"
+            ],
+            "apis": {
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "Navigator.prototype.language": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "ed53ed357014f85bcee2323c5309a7484f76b17ee01525d5b3a72b44103ae8ac"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gazetaexpress.com",
+                "www.gazetaexpress.com"
+            ]
+        },
+        {
+            "rule": "windows\\.net\\/1a73ba68-026b-4147-a299-640bce5018e7\\/1a73ba68026b4147a299640bce5018e7_1\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "targetemsecure.blob.core"
+            ],
+            "apis": {
+                "window.name": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "92cba6715b18a76eba29edd2b78b1c8847f35a58ae024c7cad44ca7314f9ebb8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "holidayguru.ch",
+                "www.urlaubsguru.de"
+            ]
+        },
+        {
+            "rule": "windows\\.net\\/1a73ba68-026b-4147-a299-640bce5018e7\\/1a73ba68026b4147a299640bce5018e7_2_1626207751\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "targetemsecure.blob.core"
+            ],
+            "apis": {
+                "Animation.prototype.currentTime": 2,
+                "Animation.prototype.startTime": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "fdc016033c6c28bea7d1e47caaa2540bd0dc889204c9cbe8bbd5a1dcdfae845e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "sbt_i": {
+                    "ttl": 31536008,
+                    "length": 103,
+                    "prevalence": 0.00010055304172951231,
+                    "uniqueness": 1
+                },
+                "sbt_p": {
+                    "ttl": 31536008,
+                    "length": 683,
+                    "prevalence": 0.00010055304172951231,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "holidayguru.ch",
+                "www.urlaubsguru.de"
             ]
         },
         {
@@ -365,7 +474,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -386,7 +495,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -408,8 +517,8 @@
                 "bnj.blob.core"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "94e3ebf22cef93c7032beec66ee4f1540fe516bf012b72a220e46829d642ce71"
@@ -419,6 +528,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rfj.ch",
+                "www.rjb.ch",
                 "www.rtn.ch"
             ]
         },
@@ -430,8 +540,8 @@
                 "bnj.blob.core"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "f7eeb7061d83be963573ec1d59b1dd5a6869ec21cd0b707ee65f72da32b67fc0"
@@ -441,6 +551,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rfj.ch",
+                "www.rjb.ch",
                 "www.rtn.ch"
             ]
         },
@@ -452,8 +563,8 @@
                 "bnj.blob.core"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "8f54248919ca7a905edc013a5f4dd8b8449c9c6bd3618caaa6f3076e8afc2104"
@@ -463,6 +574,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rfj.ch",
+                "www.rjb.ch",
                 "www.rtn.ch"
             ]
         },
@@ -474,8 +586,8 @@
                 "bnj.blob.core"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "40f697fa81556eb1823e3bbf4aee89112720cbcc9a344f0abe6da34d4bb2593b"
@@ -485,6 +597,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rfj.ch",
+                "www.rjb.ch",
                 "www.rtn.ch"
             ]
         },
@@ -496,8 +609,8 @@
                 "bnj.blob.core"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "9ea0fc9d595850aab532fdf5ecce4530cc9a4fbc3757cd886e5cb394f67ad8bb"
@@ -507,6 +620,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rfj.ch",
+                "www.rjb.ch",
                 "www.rtn.ch"
             ]
         },
@@ -518,8 +632,8 @@
                 "bnj.blob.core"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "7c8929700b61db47b8312014eb515f3fed21e59bd49f9d3053315072683c261e"
@@ -529,6 +643,52 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rfj.ch",
+                "www.rjb.ch",
+                "www.rtn.ch"
+            ]
+        },
+        {
+            "rule": "windows\\.net\\/assets\\/Htdocs\\/Images\\/IF_News\\/20210723162604149\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bnj.blob.core"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "5ec415d7f2a1c53bead4ea9e5136c51e491774a36ed74a786bd162078dbf798b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rfj.ch",
+                "www.rjb.ch"
+            ]
+        },
+        {
+            "rule": "windows\\.net\\/assets\\/Htdocs\\/Images\\/IF_News\\/742017\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bnj.blob.core"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "45be7b41d7e64e4b3e9f9b296268746a55f47d5ae43b263e6601fbf0521bfe6c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rfj.ch",
+                "www.rjb.ch",
                 "www.rtn.ch"
             ]
         },
@@ -540,8 +700,8 @@
                 "bnj.blob.core"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "f1c16c99030bfa3f7d250ed8fb3191902c77c0dce0af414460c30a4984f745a5"
@@ -551,6 +711,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rfj.ch",
+                "www.rjb.ch",
                 "www.rtn.ch"
             ]
         },
@@ -562,8 +723,8 @@
                 "bnj.blob.core"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "1dd17d9cb5e4fa92e7717ff9b60d87c3f142dbbe71a205359fa76e8443d1c7d0"
@@ -573,6 +734,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rfj.ch",
+                "www.rjb.ch",
                 "www.rtn.ch"
             ]
         },
@@ -584,8 +746,8 @@
                 "bnj.blob.core"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "d98ecf5e7fb9a2a03190aaeadd86c600ee7c05a413ccf468c89381eee047afce"
@@ -595,11 +757,35 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rfj.ch",
+                "www.rjb.ch",
                 "www.rtn.ch"
             ]
         },
         {
-            "rule": "windows\\.net\\/assets\\/Htdocs\\/Images\\/IF_News\\/714405\\.jpg",
+            "rule": "windows\\.net\\/assets\\/Htdocs\\/Images\\/IF_News\\/739862\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bnj.blob.core"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "5e9398da623441d03efc7f735f60163809105d8258fd93b078d588023fb9e817"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rfj.ch",
+                "www.rjb.ch",
+                "www.rtn.ch"
+            ]
+        },
+        {
+            "rule": "windows\\.net\\/assets\\/Htdocs\\/Images\\/IF_News\\/733594\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -610,18 +796,18 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "bea8f7781686f953929efa045d7207dd71ff7191ed6fb423f8b09d39c2fd086d"
+                "c7495410039853ad88c92e5843dc31313f3ccca0952303c41d358e92f84114da"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "rtn.ch",
+                "rjb.ch",
                 "www.rtn.ch"
             ]
         },
         {
-            "rule": "windows\\.net\\/assets\\/Htdocs\\/Images\\/IF_News\\/714243\\.jpg",
+            "rule": "windows\\.net\\/assets\\/Htdocs\\/Images\\/IF_Cropped_330\\/News\\/2011\\/RJB\\/Amenagement_du_territoire\\/Transport_et_energie\\/VisualisationVarianteC\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -632,13 +818,13 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "b3d2356257196dbe9da0c99911d79696675e8a8448f1e124bfb5e6bb392b86d9"
+                "a21fc363a44759ae68963e368ec5d28373c29340e34343a6701fe55deb5fc226"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "rtn.ch",
+                "rjb.ch",
                 "www.rtn.ch"
             ]
         }
@@ -652,11 +838,11 @@
         "cpu": 1,
         "cache": 1
     },
-    "cookies": 0.00201,
+    "cookies": 0.00231,
     "types": {
-        "Image": 35,
-        "Script": 14,
-        "Stylesheet": 2,
+        "Stylesheet": 6,
+        "Image": 52,
+        "Script": 19,
         "Preflight": 3,
         "XHR": 3
     },

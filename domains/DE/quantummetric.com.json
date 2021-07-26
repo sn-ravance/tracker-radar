@@ -7,58 +7,113 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000804,
-    "sites": 8,
+    "prevalence": 0.000904,
+    "sites": 9,
     "subdomains": [
         "stockx-app",
         "lenovosupport-app",
         "att-app",
-        "abercrombie-app",
+        "iberia-app",
         "nintendo-app",
         "telegraph-app",
-        "ylo-app"
+        "united-app",
+        "ylo-app",
+        "cdn"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "quantummetric\\.com\\/",
-            "cookies": 0.000704,
+            "cookies": 0.000904,
             "fingerprinting": 0,
             "subdomains": [
                 "stockx-app",
                 "lenovosupport-app",
                 "att-app",
-                "abercrombie-app",
+                "iberia-app",
                 "nintendo-app",
                 "telegraph-app",
+                "united-app",
                 "ylo-app"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.000704,
+            "sites": 9,
+            "prevalence": 0.000904,
             "cnames": [],
             "responseHashes": [
-                "25f86be6e97ec7472bcad293ea52fdc3a723c8cc7254fe45dc346da9d1b0d053",
-                "23604193a51a139d0fd98fc45f4e7664c89b75513fbb07159cdf25eefc61d593",
-                "658d4d706e2d70b23f81002f5dc3e177cf637b9a76c33dc73cab55b0d6ede507",
-                "e91a5791aa2d7471375c194271b6a0decc1aa8697467f60742650e466ddc68dd",
-                "cb509dc6addb8cab5cb12296fab4da9cd43bf9e2dae5f27d27b127a325087cd7",
-                "1291574e258959ededfb12d2d20f6d1360d1cdcb591a9f4d038f7480eb8fc523"
+                "ba54c03abab472d2f0d3ab83409c08dcab61560566236f734f433ba434d8d780",
+                "f820fea0e7cb6d2da773cc1d2194c858a2d5094611d8ca7c77a7e36412293f03",
+                "f99769d9e48822686b97980b47252b234f70935a845a8fb1ef2705db64d80063",
+                "822722a19ec809688e9326d635a77d6dd9dfd701686560deb5c66aa52b42d7a0",
+                "bf359012f6dd19db3ecf456468d5227b2de596638420fc0e333086f7aee6a6a5",
+                "2c5ca10a853429284abab570246ddf29e7e0e0c70236fadb0ba36c9f23de2f4f",
+                "6b586ac2a023412a286741c837b4bc35afdceb1fe50347fa79c8ac2e7b53a3d5",
+                "7960219f26e5bff2224d4a99e23e2213116d9aae025a799cfbd1b1742441c5bb"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "IR_gbd": 0.00020106564793405046
+                "IR_gbd": 0.0001004419445560466
             },
             "exampleSites": [
                 "stockx.com",
                 "support.lenovo.com",
+                "www.att.com",
                 "www.directv.com",
-                "www.hollisterco.com",
+                "www.iberia.com",
                 "www.nintendo.com",
                 "www.telegraph.co.uk",
+                "www.united.com",
                 "www.youngliving.com"
+            ]
+        },
+        {
+            "rule": "quantummetric\\.com\\/qscripts\\/quantum-att\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.vendor": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "URL.createObjectURL": 2,
+                "window.sessionStorage": 2,
+                "Document.cookie setter": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.connection": 2,
+                "Navigator.prototype.doNotTrack": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8202edb67f2ab2bf0992a655bac0e13e6381b1ffb7b54aae6dbf397ccb73c44e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "QuantumMetricSessionID": {
+                    "ttl": 1805,
+                    "length": 32,
+                    "prevalence": 0.0002008838891120932,
+                    "uniqueness": 1
+                },
+                "QuantumMetricUserID": {
+                    "ttl": 31536003,
+                    "length": 32,
+                    "prevalence": 0.0002008838891120932,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "att.com",
+                "www.directv.com"
             ]
         }
     ],
@@ -69,9 +124,10 @@
         "cpu": 0,
         "cache": 3
     },
-    "cookies": 0.000704,
+    "cookies": 0.000904,
     "types": {
-        "XHR": 7
+        "XHR": 9,
+        "Script": 2
     },
     "nameservers": [
         "ian.ns.cloudflare.com",

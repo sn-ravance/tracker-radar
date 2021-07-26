@@ -4,27 +4,29 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
-        "media"
+        "media",
+        "srv",
+        "track"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "aso1\\.net\\/js\\/code\\.min\\.js",
-            "cookies": 0.0001,
+            "cookies": 0.000101,
             "fingerprinting": 1,
             "subdomains": [
                 "media"
             ],
             "apis": {
-                "Document.cookie getter": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.languages": 2,
                 "Navigator.prototype.language": 2,
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 1
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -33,6 +35,74 @@
                 "d8d18943d2eaa35797cb8cbac42f6a0498da40a588f601afc42853ce4d731165"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "game-debate.com",
+                "www.tabootube.xxx"
+            ]
+        },
+        {
+            "rule": "aso1\\.net\\/rotor",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "srv"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "abe2b1699d7bc2ae80024f508b2a6efe59e14d9d4541e9fc819ddf6dcc83d5c6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "game-debate.com",
+                "www.tabootube.xxx"
+            ]
+        },
+        {
+            "rule": "aso1\\.net\\/wtf\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "track"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "game-debate.com",
+                "www.tabootube.xxx"
+            ]
+        },
+        {
+            "rule": "aso1\\.net\\/storage\\/8\\/d\\/b\\/8dbd138712d7f5c2b6ec4c22e0a32db638298c7c\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "963f793d7298eb5f1d98bb07668dd63cf86d4429cf16198906d651959fb9411a"
+            ],
+            "type": "Media",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -48,12 +118,13 @@
         "cpu": 0,
         "cache": 1
     },
-    "cookies": 0.0001,
+    "cookies": 0.000201,
     "types": {
-        "Script": 2
+        "Script": 6,
+        "Media": 2
     },
     "nameservers": [
-        "ian.ns.cloudflare.com",
-        "kate.ns.cloudflare.com"
+        "kate.ns.cloudflare.com",
+        "ian.ns.cloudflare.com"
     ]
 }

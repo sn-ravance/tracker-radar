@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
-        "rtb"
+        "rtb",
+        "hb"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "adpone\\.com\\/bid-request",
@@ -24,9 +25,43 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "c7815da02debdeeb2f0a958c7b4f2988fcccb03ef9a337e125faf0c59e82adc5"
+                "ad39b52d27d549cd1a1470356cfd56c553c2984dfa3b26f493e6f2f902ea6a2e"
             ],
             "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sms24.me",
+                "www.paddock-gp.com"
+            ]
+        },
+        {
+            "rule": "adpone\\.com\\/prebid\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "hb"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Date.prototype.getTimezoneOffset": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "80ba016670fbff044c837f7a834165b168c368ab2de6ca75f5ebb34b9ee3be2f"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -44,10 +79,11 @@
     },
     "cookies": 0,
     "types": {
-        "XHR": 2
+        "XHR": 2,
+        "Script": 2
     },
     "nameservers": [
-        "elma.ns.cloudflare.com",
-        "bill.ns.cloudflare.com"
+        "bill.ns.cloudflare.com",
+        "elma.ns.cloudflare.com"
     ]
 }

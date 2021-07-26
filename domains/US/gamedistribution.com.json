@@ -4,14 +4,41 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000048,
-    "sites": 7,
+    "prevalence": 0.0000625,
+    "sites": 9,
     "subdomains": [
-        "msgrt"
+        "html5.api",
+        "msgrt",
+        "img"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "gamedistribution\\.com\\/main\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "html5.api"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "f7d9cfa62b344f4b98bb9a20c9ebca92291b24eb3ded9e979ab05f9b927ff498"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "googlefeud.games",
+                "www.mahjong.fr"
+            ]
+        },
         {
             "rule": "gamedistribution\\.com\\/collect",
             "cookies": 0,
@@ -21,7 +48,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000343,
+            "prevalence": 0.0000347,
             "cnames": [],
             "responseHashes": [
                 "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
@@ -30,11 +57,33 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "rincondelvago.com",
+                "googlefeud.games",
                 "nieuws.nl",
                 "www.okokorecepten.nl",
                 "www.openingsuren.com",
                 "www.yourlittleblackbook.me"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/9592dff9e99548ab94dad2849a0a36df-512x512\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "7b19b84e182a7727a5c3db3335635af2c08f5142f660ddccea89b4da25991284"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mahjong.fr",
+                "www.mahjong.fr"
             ]
         }
     ],
@@ -42,7 +91,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Fetch": 5
+        "Script": 2,
+        "Fetch": 5,
+        "Image": 2
     },
     "nameservers": [
         "mimi.ns.cloudflare.com",

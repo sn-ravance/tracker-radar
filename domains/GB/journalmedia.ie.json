@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000101,
+    "sites": 1,
     "subdomains": [
         "pool"
     ],
@@ -13,24 +13,27 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "journalmedia\\.ie\\/js\\/pool\\.min\\.js",
+            "rule": "journalmedia\\.ie\\/js\\/lscache\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "pool"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "da3d69d38d160a80c5a6102b723fccf75a6adafe31cb7f36475a0dd854c8c18b"
+                "9b13eeede5060575741f493d2b9650a39732571d241a607fda25fb9d986c7323"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "boards.ie",
+                "thejournal.ie",
                 "www.thejournal.ie"
             ]
         },
@@ -42,10 +45,10 @@
                 "pool"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3
+                "Navigator.prototype.userAgent": 2
             },
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "7649b8f8356990c87ac541dbe4c7994c0fd51fd124738ba07781a4caeb5d002f"
@@ -54,56 +57,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "boards.ie",
-                "www.boards.ie",
-                "www.thejournal.ie"
-            ]
-        },
-        {
-            "rule": "journalmedia\\.ie\\/js\\/lscache\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "pool"
-            ],
-            "apis": {
-                "window.localStorage": 3,
-                "Date.prototype.getTime": 1
-            },
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "9b13eeede5060575741f493d2b9650a39732571d241a607fda25fb9d986c7323"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "boards.ie",
-                "www.boards.ie",
-                "www.thejournal.ie"
-            ]
-        },
-        {
-            "rule": "journalmedia\\.ie\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "pool"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "dff57c6454633a38aa46b4cf7918cfb1c64a19678975034a622590abd36ee80f"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "boards.ie",
+                "thejournal.ie",
                 "www.thejournal.ie"
             ]
         }
@@ -117,11 +71,10 @@
     },
     "cookies": 0,
     "types": {
-        "Script": 8,
-        "Document": 2
+        "Script": 4
     },
     "nameservers": [
-        "anna.ns.cloudflare.com",
-        "ivan.ns.cloudflare.com"
+        "ivan.ns.cloudflare.com",
+        "anna.ns.cloudflare.com"
     ]
 }

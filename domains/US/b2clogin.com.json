@@ -9,32 +9,84 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000343,
-    "sites": 5,
+    "prevalence": 0.0000416,
+    "sites": 6,
     "subdomains": [
-        "analogb2c"
+        "govmbcitizen"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
-            "rule": "b2clogin\\.com\\/tfp\\/analogb2c\\.onmicrosoft\\.com\\/b2c_1a_adi_signuporsigninsocial\\/oauth2\\/v2\\.0\\/authorize",
-            "cookies": 0.0000137,
+            "rule": "b2clogin\\.com\\/govmbcitizen\\.onmicrosoft\\.com\\/b2c_1_signupsignin\\/v2\\.0\\/\\.well-known\\/openid-configuration",
+            "cookies": 0.0000139,
             "fingerprinting": 0,
             "subdomains": [
-                "analogb2c"
+                "govmbcitizen"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "f6f9d9e22cd48fa002a0e1ef7389754d54f702942b7647e5eda98d4247e75bcc"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "manitoba.ca",
+                "immunizationcard.manitoba.ca"
+            ]
+        },
+        {
+            "rule": "b2clogin\\.com\\/govmbcitizen\\.onmicrosoft\\.com\\/b2c_1_signupsignin\\/oauth2\\/v2\\.0\\/authorize",
+            "cookies": 0.0000139,
+            "fingerprinting": 2,
+            "subdomains": [
+                "govmbcitizen"
+            ],
+            "apis": {
+                "Navigator.prototype.cookieEnabled": 1,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.connection": 2,
+                "Event.prototype.timeStamp": 2,
+                "Navigator.prototype.onLine": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "f8b085dbe6a3023a367a79fa0b8c1c5df095aa30540428f202c76605df801126"
+            ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "analog.com",
-                "www.analog.com"
+                "manitoba.ca",
+                "immunizationcard.manitoba.ca"
+            ]
+        },
+        {
+            "rule": "b2clogin\\.com\\/govmbcitizen\\.onmicrosoft\\.com\\/B2C_1_signupsignin\\/client\\/perftrace",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "govmbcitizen"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "manitoba.ca",
+                "immunizationcard.manitoba.ca"
             ]
         }
     ],
@@ -45,18 +97,20 @@
         "cpu": 0,
         "cache": 0
     },
-    "cookies": 0.0000274,
+    "cookies": 0.0000347,
     "types": {
-        "Document": 2
+        "Fetch": 2,
+        "Document": 2,
+        "XHR": 2
     },
     "nameservers": [
-        "ns4-04.azure-dns.info",
-        "ns1-169.akam.net",
-        "eur2.akam.net",
         "usw1.akam.net",
-        "use2.akam.net",
         "ns1-04.azure-dns.com",
+        "use2.akam.net",
+        "eur2.akam.net",
+        "ns4-04.azure-dns.info",
         "ns2-04.azure-dns.net",
+        "ns1-169.akam.net",
         "ns3-04.azure-dns.org"
     ]
 }

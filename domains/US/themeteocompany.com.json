@@ -7,13 +7,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000137,
-    "sites": 2,
+    "prevalence": 0.0000278,
+    "sites": 4,
     "subdomains": [
-        "cashier"
+        "cashier",
+        "consent",
+        "api"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "themeteocompany\\.com\\/scripts\\/payment\\/authentication\\.js",
@@ -23,8 +25,8 @@
                 "cashier"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "432ae4dfdf6b46195973d9904b161b7045e750f127fd4af4a055acb777fbcc1f"
@@ -33,7 +35,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "niederschlagsradar.de",
+                "sat24.com",
+                "pl.sat24.com",
                 "www.niederschlagsradar.de"
             ]
         },
@@ -45,13 +48,149 @@
                 "cashier"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
+                "9aeacec29c36b98ec505a1e36cad19db5377c592341556a7e1b2b5ccce49dd1b",
                 "8194b5c790d054c53a1f5cdd6608dfb71715a8162921c5a35d818f71253a619d"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sat24.com",
+                "pl.sat24.com",
+                "www.niederschlagsradar.de"
+            ]
+        },
+        {
+            "rule": "themeteocompany\\.com\\/scripts\\/cookiewall\\.min\\.js",
+            "cookies": 0.0000139,
+            "fingerprinting": 1,
+            "subdomains": [
+                "consent"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "29a7ce2d689b52015c1433af5bbf5f4f89648cd09ab1f6e03707132363dd0bbe"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "settings-panel-visible_v3": {
+                    "ttl": 863917218,
+                    "length": 5,
+                    "prevalence": 0.0000069415521310565046,
+                    "uniqueness": 1
+                },
+                "__gads": {
+                    "ttl": 33696018,
+                    "length": 2,
+                    "prevalence": 0.000013883104262113009,
+                    "uniqueness": 0.5
+                },
+                "__utma": {
+                    "ttl": 63072019,
+                    "length": 55,
+                    "prevalence": 0.000013883104262113009,
+                    "uniqueness": 1
+                },
+                "__utmb": {
+                    "ttl": 1819,
+                    "length": 24,
+                    "prevalence": 0.000013883104262113009,
+                    "uniqueness": 0.5
+                },
+                "__utmc": {
+                    "ttl": null,
+                    "length": 9,
+                    "prevalence": 0.000013883104262113009,
+                    "uniqueness": 0.5
+                },
+                "__utmz": {
+                    "ttl": 15768019,
+                    "length": 31,
+                    "prevalence": 0.000013883104262113009,
+                    "uniqueness": 0.5
+                },
+                "__utmt": {
+                    "ttl": 619,
+                    "length": 1,
+                    "prevalence": 0.000013883104262113009,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sat24.com",
+                "pl.sat24.com"
+            ]
+        },
+        {
+            "rule": "themeteocompany\\.com\\/api\\/cookie\\/GetConsentCookie",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "consent"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sat24.com",
+                "pl.sat24.com"
+            ]
+        },
+        {
+            "rule": "themeteocompany\\.com\\/forecast\\/GetLocationsByName",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "42d8aa7c1170d57e515f29856706c4b7668c40339065ba2932460a32b9fe22c1"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sat24.com",
+                "pl.sat24.com"
+            ]
+        },
+        {
+            "rule": "themeteocompany\\.com\\/precipitation\\/getforecastbylatlon\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "e131f2931305dac60bac6f2614e9d97e547614274e9c76d4f5dd4b7c16dc10ac"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -62,9 +201,10 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000139,
     "types": {
-        "Script": 4
+        "Script": 8,
+        "XHR": 6
     },
     "nameservers": [
         "ns65.domaincontrol.com",

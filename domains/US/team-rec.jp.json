@@ -7,18 +7,26 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000548,
-    "sites": 8,
+    "prevalence": 0.0000694,
+    "sites": 10,
     "subdomains": [
         "mybaito-inhale",
         "booklista-inhale",
         "dotst-inhale",
         "livable-inhale",
+        "mybaito-beacon",
+        "twrcd-beacon",
         "readerstore-recommend-api",
         "lhe-webapi",
-        "propagation.api.pdq"
+        "propagation.api.pdq",
+        "res.pdq",
+        "delivery.pdq"
     ],
     "cnames": [
+        {
+            "original": "beacon-recommend.tower.jp",
+            "resolved": "twrcd-beacon.team-rec.jp"
+        },
         {
             "original": "recommend-api.ebookstore.sony.jp",
             "resolved": "readerstore-recommend-api.team-rec.jp"
@@ -28,7 +36,7 @@
     "resources": [
         {
             "rule": "team-rec\\.jp\\/js\\/tlab-dmp\\.js",
-            "cookies": 0.0000343,
+            "cookies": 0.0000208,
             "fingerprinting": 1,
             "subdomains": [
                 "mybaito-inhale",
@@ -38,15 +46,15 @@
             ],
             "apis": {
                 "Navigator.prototype.doNotTrack": 5,
-                "Document.cookie getter": 5,
+                "Document.cookie getter": 3,
                 "window.localStorage": 4,
                 "Date.prototype.getTime": 5,
-                "Document.cookie setter": 5,
+                "Document.cookie setter": 3,
                 "Navigator.prototype.userAgent": 5,
                 "Navigator.prototype.appVersion": 5
             },
             "sites": 5,
-            "prevalence": 0.0000343,
+            "prevalence": 0.0000347,
             "cnames": [],
             "responseHashes": [
                 "1bcef95ce488163c305cde9a625cbdc31d19f055a5d1282f09df704fedc3c959",
@@ -55,21 +63,21 @@
             "type": "Script",
             "firstPartyCookies": {
                 "usertrack_asp3": {
-                    "ttl": 31536009,
+                    "ttl": 31536051,
                     "length": 24,
-                    "prevalence": 0.000013705858569245425,
+                    "prevalence": 0.000013883104262113009,
                     "uniqueness": 1
                 },
                 "tlb_sid": {
                     "ttl": 1800,
                     "length": 10,
-                    "prevalence": 0.00003426464642311356,
+                    "prevalence": 0.000020824656393169513,
                     "uniqueness": 1
                 },
                 "tlab.tracking_id": {
-                    "ttl": 31536042,
+                    "ttl": 31536011,
                     "length": 24,
-                    "prevalence": 0.000013705858569245425,
+                    "prevalence": 0.0000069415521310565046,
                     "uniqueness": 1
                 }
             },
@@ -80,6 +88,36 @@
                 "ebookstore.sony.jp",
                 "www.dot-st.com",
                 "www.livable.co.jp"
+            ]
+        },
+        {
+            "rule": "team-rec\\.jp\\/beacon\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mybaito-beacon",
+                "twrcd-beacon"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [
+                {
+                    "original": "beacon-recommend.tower.jp",
+                    "resolved": "twrcd-beacon.team-rec.jp"
+                }
+            ],
+            "responseHashes": [
+                "548f2d6f4d0d820c6c5ffbeffcbd7f0e73193e2932eefe542accc84762deec87"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "usertrack_asp3": 0.0000069415521310565046
+            },
+            "exampleSites": [
+                "mynavi.jp",
+                "tower.jp"
             ]
         },
         {
@@ -94,7 +132,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000343,
+            "prevalence": 0.0000347,
             "cnames": [],
             "responseHashes": [
                 "548f2d6f4d0d820c6c5ffbeffcbd7f0e73193e2932eefe542accc84762deec87"
@@ -102,10 +140,9 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "usertrack_asp3": 0.000013705858569245425,
-                "tlb_sid": 0.00003426464642311356,
-                "_gid": 0.000006852929284622712,
-                "tlab.tracking_id": 0.000013705858569245425
+                "usertrack_asp3": 0.000013883104262113009,
+                "tlb_sid": 0.000020824656393169513,
+                "tlab.tracking_id": 0.0000069415521310565046
             },
             "exampleSites": [
                 "mynavi.jp",
@@ -124,7 +161,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [
                 {
                     "original": "recommend-api.ebookstore.sony.jp",
@@ -151,7 +188,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [
                 {
                     "original": "recommend-api.ebookstore.sony.jp",
@@ -159,157 +196,7 @@
                 }
             ],
             "responseHashes": [
-                "4d8807d974e1032526a2dd705db1972ddf06233dc99cd4e88d42ff62fe72f98b"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sony.jp",
-                "ebookstore.sony.jp"
-            ]
-        },
-        {
-            "rule": "team-rec\\.jp\\/assets\\/javascripts\\/jquery\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "readerstore-recommend-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [
-                {
-                    "original": "recommend-api.ebookstore.sony.jp",
-                    "resolved": "readerstore-recommend-api.team-rec.jp"
-                }
-            ],
-            "responseHashes": [
-                "702b9e051e82b32038ffdb33a4f7eb5f7b38f4cf6f514e4182d8898f4eb0b7fb"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sony.jp",
-                "ebookstore.sony.jp"
-            ]
-        },
-        {
-            "rule": "team-rec\\.jp\\/assets\\/javascripts\\/jquery\\.lazyload\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "readerstore-recommend-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [
-                {
-                    "original": "recommend-api.ebookstore.sony.jp",
-                    "resolved": "readerstore-recommend-api.team-rec.jp"
-                }
-            ],
-            "responseHashes": [
-                "404a5028c8a4aae3f0165e3997e57921de98294731c9d1dc0656808b9ed51963"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sony.jp",
-                "ebookstore.sony.jp"
-            ]
-        },
-        {
-            "rule": "team-rec\\.jp\\/js\\.recommend\\/tlab_v4_iframe\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "readerstore-recommend-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [
-                {
-                    "original": "recommend-api.ebookstore.sony.jp",
-                    "resolved": "readerstore-recommend-api.team-rec.jp"
-                }
-            ],
-            "responseHashes": [
-                "093e8ce93a2dc9403eeb71474d939fd1c95caed283b196e480fe3a5fbde7cd8a"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sony.jp",
-                "ebookstore.sony.jp"
-            ]
-        },
-        {
-            "rule": "team-rec\\.jp\\/puts\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "booklista-inhale"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sony.jp",
-                "ebookstore.sony.jp"
-            ]
-        },
-        {
-            "rule": "team-rec\\.jp\\/puts\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "booklista-inhale"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [],
-            "responseHashes": [
-                "548f2d6f4d0d820c6c5ffbeffcbd7f0e73193e2932eefe542accc84762deec87"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sony.jp",
-                "ebookstore.sony.jp"
-            ]
-        },
-        {
-            "rule": "team-rec\\.jp\\/recommend\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "readerstore-recommend-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [
-                {
-                    "original": "recommend-api.ebookstore.sony.jp",
-                    "resolved": "readerstore-recommend-api.team-rec.jp"
-                }
-            ],
-            "responseHashes": [
-                "872abf8b59927cab288e26d2235aac7aeccfb0bf31c538402063a34147825c9f"
+                "8c553e42e222197923545c1011820c07f81e5d7550728c1ebcab0a18312fc5d0"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -328,10 +215,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [],
             "responseHashes": [
-                "566b4c70742dc8136fb842b7728f66aec39febc4dd285f4fd9a6f87f15dcda4a"
+                "cc1f81cec7e1c77d7b4e2a83e7c28cb52a0468a0a3ffa7e0f89bc845d0905114"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -350,7 +237,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -370,7 +257,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [],
             "responseHashes": [
                 "3d6a6ac7ecbfad008a05974ef7931dd69d6d7d226e335a4525e404aeb73dd769"
@@ -378,6 +265,92 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "livable.co.jp",
+                "www.livable.co.jp"
+            ]
+        },
+        {
+            "rule": "team-rec\\.jp\\/aibot\\/driver\\.js",
+            "cookies": 0.0000139,
+            "fingerprinting": 1,
+            "subdomains": [
+                "res.pdq"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "b4840290a9543c451b33a8382b40176ce21d026c633d0985527549756615ef27"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "team-rec:delivery:sid": {
+                    "ttl": 1800,
+                    "length": 10,
+                    "prevalence": 0.000013883104262113009,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "livable.co.jp",
+                "www.livable.co.jp"
+            ]
+        },
+        {
+            "rule": "team-rec\\.jp\\/webpage\\/action",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "delivery.pdq"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "team-rec:delivery:sid": 0.000013883104262113009,
+                "tlab.tracking_id": 0.0000069415521310565046,
+                "tlb_sid": 0.0000069415521310565046,
+                "uid": 0.0000069415521310565046
+            },
+            "exampleSites": [
+                "livable.co.jp",
+                "www.livable.co.jp"
+            ]
+        },
+        {
+            "rule": "team-rec\\.jp\\/webpage\\/action",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "delivery.pdq"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "74bbd95c8425e1d60efe88ef898054fa298c02f2f5810d395d39d40b4d0bb4df"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "team-rec:delivery:sid": 0.000013883104262113009,
+                "tlab.tracking_id": 0.0000069415521310565046,
+                "tlb_sid": 0.0000069415521310565046,
+                "uid": 0.0000069415521310565046
+            },
             "exampleSites": [
                 "livable.co.jp",
                 "www.livable.co.jp"
@@ -391,13 +364,12 @@
         "cpu": 0,
         "cache": 0
     },
-    "cookies": 0.0000411,
+    "cookies": 0.0000486,
     "types": {
-        "Script": 15,
-        "Image": 5,
-        "Document": 2,
-        "Preflight": 4,
-        "XHR": 6
+        "Script": 11,
+        "Image": 7,
+        "XHR": 6,
+        "Preflight": 4
     },
     "nameservers": [
         "ns-1076.awsdns-06.org",

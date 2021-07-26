@@ -4,21 +4,58 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
         "app",
-        "api2"
+        "api2",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "push-ad\\.com\\/",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Notification.permission": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "6f716fa225de575760a9999e10e78b2d404ec25466dfb58629f6510745a2b0f4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pushAdSoftId": {
+                    "ttl": 31104008,
+                    "length": 68,
+                    "prevalence": 0.0002010454362685967,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "natemat.pl",
+                "www.polscylekarze.org"
+            ]
+        },
+        {
+            "rule": "push-ad\\.com\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "app",
                 "api2"
             ],
             "apis": {},
@@ -26,14 +63,80 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "00796d5eb61fd5b84a51bf6612bdee38d94a792cc188789a0318ddf1b4387408"
+                "76da9d20b7e6e9e7d0b2a2e65c99eadb371584a4a1045c953035d1937be00b39"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "natemat.pl",
+                "www.polscylekarze.org"
+            ]
+        },
+        {
+            "rule": "push-ad\\.com\\/server\\/info\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "bf098aced8424270780c78fc834dfa68f7881ae5c71d276a5769d1cb114d4875"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "astromagia.pl",
-                "www.astromagia.pl"
+                "natemat.pl",
+                "www.polscylekarze.org"
+            ]
+        },
+        {
+            "rule": "push-ad\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "54bbdd073d78a2fa3d4c6407895ef917077d3cc57650289beb0ae664e0d9b01c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "natemat.pl",
+                "www.polscylekarze.org"
+            ]
+        },
+        {
+            "rule": "push-ad\\.com\\/v1\\/pushAdWorker\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "a73075aa3164eadbcb51c2babd7c2a42d9d95de13f5fe44f1975efe982c39fcb"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "natemat.pl",
+                "www.polscylekarze.org"
             ]
         }
     ],
@@ -44,9 +147,12 @@
         "cpu": 0,
         "cache": 1
     },
-    "cookies": 0.0001,
+    "cookies": 0.000201,
     "types": {
-        "XHR": 2
+        "Script": 2,
+        "Stylesheet": 2,
+        "XHR": 4,
+        "Other": 2
     },
     "nameservers": [
         "arch.ns.cloudflare.com",

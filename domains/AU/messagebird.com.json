@@ -4,24 +4,52 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000206,
+    "sites": 2,
     "subdomains": [
-        "pushpromjs"
+        "livechat",
+        "pushpromjs",
+        "messaging"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "messagebird\\.com\\/bootstrap\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "livechat"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.width": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000206,
+            "cnames": [],
+            "responseHashes": [
+                "67e92f98df2f5448e7e46505d71689cee382e583aa16d48ce621f9027cc7e514"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aramex.com.au",
+                "www.scribbr.com"
+            ]
+        },
+        {
             "rule": "messagebird\\.com\\/measure",
-            "cookies": 0.000201,
+            "cookies": 0.000206,
             "fingerprinting": 0,
             "subdomains": [
                 "pushpromjs"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000206,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -31,15 +59,62 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "aramex.com.au",
-                "www.aramex.com.au"
+                "www.scribbr.com"
+            ]
+        },
+        {
+            "rule": "messagebird\\.com\\/index\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "livechat"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000206,
+            "cnames": [],
+            "responseHashes": [
+                "e26824d26a5f0785bcd5a1fc5494452941c5d9c46cc784c4738c2e6326410959"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aramex.com.au",
+                "www.scribbr.com"
+            ]
+        },
+        {
+            "rule": "messagebird\\.com\\/livechat\\/widget\\/f1969c26-6920-470c-b7be-d37a782c2acc",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "messaging"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000206,
+            "cnames": [],
+            "responseHashes": [
+                "b00bd0a37dff53e58480cd7363f15a25a649af7e5d8802094995206e143a5e86"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "scribbr.com",
+                "www.scribbr.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000206,
     "types": {
-        "Other": 2
+        "Script": 2,
+        "Other": 2,
+        "Document": 2,
+        "Fetch": 2
     },
     "nameservers": [
         "ns-24.awsdns-03.com",

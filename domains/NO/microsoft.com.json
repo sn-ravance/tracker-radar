@@ -9,12 +9,14 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.0013,
-    "sites": 13,
+    "prevalence": 0.000905,
+    "sites": 9,
     "subdomains": [
         "wcpstatic",
         "web.vortex.data",
-        "browser.pipe.aria"
+        "browser.pipe.aria",
+        "customervoice",
+        "c1"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -22,15 +24,13 @@
         {
             "rule": "microsoft\\.com\\/mscc\\/lib\\/v2\\/wcp-consent\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "wcpstatic"
             ],
-            "apis": {
-                "Document.cookie getter": 1
-            },
-            "sites": 6,
-            "prevalence": 0.000602,
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "208edbed32b2adac9446df83caa4a093a261492ba6b8b3bcfe6a75efb8b70294"
@@ -39,48 +39,38 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mojang.com",
-                "ardalis.com",
-                "dotnet.github.io",
-                "feedback.minecraft.net",
-                "help.minecraft.net",
+                "minecraft.net",
                 "www.flightsimulator.com"
             ]
         },
         {
             "rule": "microsoft\\.com\\/collect\\/v1\\/t\\.js",
-            "cookies": 0.000502,
+            "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [
                 "web.vortex.data"
             ],
             "apis": {
-                "Document.cookie setter": 3
+                "Document.cookie setter": 1
             },
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "0c397c1cfabc9d2133a3de6f4856aeec9b970f36045025abda0c55fa1a584317",
-                "fca004cae96b8804e51e232b0b1a590620ee2492edf656bf2e7cd9f290ef5b20",
-                "7882a181619844b7a280b52129f9150b5363e9597b043d55a0d73b2670cf9d07",
-                "49620d152eb8816862d379ed1557b4ff8940b758d8c6b4e6a1a2f0975a54ebab"
+                "ebbba2d6b57967763af6d58caa0fd161c41d2f0e45764c6f748c0260478439e0"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "MSFPC": {
-                    "ttl": 31536006,
+                    "ttl": 31536004,
                     "length": 4,
-                    "prevalence": 0.0003011443485243927,
-                    "uniqueness": 0.3333333333333333
+                    "prevalence": 0.00010052271813429835,
+                    "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ardalis.com",
-                "feedback.minecraft.net",
-                "help.minecraft.net",
-                "www.apollo.no",
+                "minecraft.net",
                 "www.minecraft.net"
             ]
         },
@@ -92,8 +82,8 @@
                 "web.vortex.data"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -103,8 +93,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "minecraft.net",
-                "help.minecraft.net",
-                "www.apollo.no",
                 "www.minecraft.net"
             ]
         },
@@ -129,7 +117,95 @@
                 "clevelandclinic.org",
                 "my.clevelandclinic.org",
                 "www.apollo.no",
-                "www.ssn.no"
+                "www.banenor.no"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/formapi\\/api\\/f10d619e-6154-45e4-9879-283640920dca\\/users\\/a055a887-a873-4194-b434-6ee8a4b8c7e4\\/light\\/runtimeForms\\('nmEN8VRh5EWYeSg2QJINyoeoVaBzqJRBtDRu6KS4x-RURTNQNVE4WFFUNjZaR1AzMUpBRkROMEdPVi4u'\\)",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "customervoice"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "388ad01fcae0ea6b03a9019a6c17603f26f2e059e787b0bdc16386b26b154581"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apollo.no",
+                "www.apollo.no"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/Pages\\/ResponsePage\\.aspx\\/GetResourceStrings",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "customervoice"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "f947e4ae0712f6f2f4a72139b5f5c81dffd4e5ba4e68522810cdb3150f5b4c54"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apollo.no",
+                "www.apollo.no"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/c\\.gif",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "c1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "99c2917ee5b2a01459a923bdd1c676f15ee73b62b87f696e6735312d26f51e12"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apollo.no",
+                "www.apollo.no"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/formapi\\/api\\/f10d619e-6154-45e4-9879-283640920dca\\/users\\/a055a887-a873-4194-b434-6ee8a4b8c7e4\\/forms\\('nmEN8VRh5EWYeSg2QJINyoeoVaBzqJRBtDRu6KS4x-RURTNQNVE4WFFUNjZaR1AzMUpBRkROMEdPVi4u'\\)\\/localeResource\\/'nb-no'",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "customervoice"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "40bea224aa997f7469aa016368cfca8693d42651601424c6364246eef0f19d7a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apollo.no",
+                "www.apollo.no"
             ]
         }
     ],
@@ -145,16 +221,17 @@
         "cpu": 1,
         "cache": 1
     },
-    "cookies": 0.000602,
+    "cookies": 0.000402,
     "types": {
-        "Script": 11,
-        "Other": 4,
-        "XHR": 4
+        "Script": 4,
+        "Other": 2,
+        "XHR": 10,
+        "Image": 2
     },
     "nameservers": [
-        "ns3-205.azure-dns.org",
-        "ns4-205.azure-dns.info",
         "ns1-205.azure-dns.com",
-        "ns2-205.azure-dns.net"
+        "ns2-205.azure-dns.net",
+        "ns3-205.azure-dns.org",
+        "ns4-205.azure-dns.info"
     ]
 }

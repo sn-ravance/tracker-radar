@@ -7,13 +7,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000274,
+    "prevalence": 0.0000278,
     "sites": 4,
     "subdomains": [
         "tp"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "srgssr\\.ch\\/assets\\/javascripts\\/player-api\\.min\\.js",
@@ -23,8 +23,8 @@
                 "tp"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "787d9cbd7d0bb2128f6ff6138610aefbaf8fae5de721acb47c901f1055f4e722"
@@ -34,7 +34,151 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rsi.ch",
+                "www.rsi.ch",
                 "www.srf.ch"
+            ]
+        },
+        {
+            "rule": "srgssr\\.ch\\/p\\/rsi\\/inline",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "172cee7ee198d312067c3d41998756ead89ce1d7a1708c15623aa6a2fcb65e49"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rsi.ch",
+                "www.rsi.ch"
+            ]
+        },
+        {
+            "rule": "srgssr\\.ch\\/p\\/rsi\\/css\\/srg-player\\.min\\.dc3bb91e\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "2b4e1c6b63be2b7a72cabd3d4ce248c47641e86256e9dbcb15210359cf074efe"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rsi.ch",
+                "www.rsi.ch"
+            ]
+        },
+        {
+            "rule": "srgssr\\.ch\\/p\\/rsi\\/srg-player\\.min\\.635b93a4\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "tp"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "window.name": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Navigator.prototype.languages": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Document.cookie getter": 2,
+                "Event.prototype.timeStamp": 2,
+                "HTMLMediaElement.prototype.canPlayType": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "c8b56fdd3f8ef651288648f7f92648b1e9e014fd4a118fcf74a465e29058bdc5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rsi.ch",
+                "www.rsi.ch"
+            ]
+        },
+        {
+            "rule": "srgssr\\.ch\\/p\\/rsi\\/conf\\/player\\.875d7fbf\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "7ee81debe937345b7d21d7a3ff5cb2d5447505a019249604684ed4c672a9b664"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rsi.ch",
+                "www.rsi.ch"
+            ]
+        },
+        {
+            "rule": "srgssr\\.ch\\/player\\/configuration",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "639a3ddffab10d0a2cc26959460ff2dd441b2e1686914b7319b971fcb7ef0ca5"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rsi.ch",
+                "www.rsi.ch"
+            ]
+        },
+        {
+            "rule": "srgssr\\.ch\\/p\\/rsi\\/lang\\/it-CH\\.84e76e09\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "c59af77b1d34a460b70352f87e81fd8a0dcb7c8e38b1ac1f922b514fa0182b4b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rsi.ch",
+                "www.rsi.ch"
             ]
         }
     ],
@@ -47,7 +191,10 @@
     },
     "cookies": 0,
     "types": {
-        "Script": 2
+        "Script": 5,
+        "Document": 2,
+        "Stylesheet": 2,
+        "XHR": 6
     },
     "nameservers": [
         "ns4.srgssr.ch",
