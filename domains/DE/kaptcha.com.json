@@ -4,14 +4,48 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
         "ssl"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 3,
     "resources": [
+        {
+            "rule": "kaptcha\\.com\\/collect\\/sdk",
+            "cookies": 0.0001,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ssl"
+            ],
+            "apis": {
+                "window.localStorage": 1,
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "61fc7646a0811a2533b4659d5fbf99b649d016d22708419831c84ed319bac6a3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cdn.nerdwallet.171456.ka.ck": {
+                    "ttl": 31536004,
+                    "length": 310,
+                    "prevalence": 0.0001004419445560466,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "burgerking.de",
+                "www.nerdwallet.com"
+            ]
+        },
         {
             "rule": "kaptcha\\.com\\/md",
             "cookies": 0,
@@ -42,8 +76,9 @@
         "cpu": 0,
         "cache": 3
     },
-    "cookies": 0.000101,
+    "cookies": 0.0001,
     "types": {
+        "Script": 2,
         "XHR": 2
     },
     "nameservers": [

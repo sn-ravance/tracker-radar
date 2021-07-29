@@ -4,11 +4,15 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
         "prod-who-live-chat",
-        "prod2-live-chat"
+        "prod2-live-chat",
+        "prod-video-chat-chat",
+        "prod-lc-mqtt-who",
+        "prod-lc-mqtt-nike",
+        "live-chat-static"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -19,7 +23,80 @@
             "fingerprinting": 0,
             "subdomains": [
                 "prod-who-live-chat",
-                "prod2-live-chat"
+                "prod2-live-chat",
+                "prod-video-chat-chat"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "who.int",
+                "www.bose.ch",
+                "www.bose.com",
+                "www.samsung.com"
+            ]
+        },
+        {
+            "rule": "sprinklr\\.com\\/api\\/livechat\\/handshake\\/appHandshake",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-who-live-chat",
+                "prod2-live-chat",
+                "prod-video-chat-chat"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "29c2cef6d26af7d698c8b382ff374155567670e847257fe6801fb364f70b10e2",
+                "12ba763a118b6c1defb9d5f1123ca2d3559578b8c0de70367c53174d3f1542b4",
+                "5a9429efa176677d24384cf26a38f781b75700421b50fbfce964b75441ca2852"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "who.int",
+                "www.bose.ch",
+                "www.bose.com",
+                "www.samsung.com"
+            ]
+        },
+        {
+            "rule": "sprinklr\\.com\\/mqtt",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-lc-mqtt-who",
+                "prod-lc-mqtt-nike"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "who.int",
+                "www.samsung.com"
+            ]
+        },
+        {
+            "rule": "sprinklr\\.com\\/api\\/livechat\\/conversation\\/fetch",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-who-live-chat",
+                "prod-video-chat-chat"
             ],
             "apis": {},
             "sites": 2,
@@ -31,30 +108,215 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "who.int",
-                "www.bose.ch"
+                "www.samsung.com"
             ]
         },
         {
-            "rule": "sprinklr\\.com\\/api\\/livechat\\/handshake\\/appHandshake",
+            "rule": "sprinklr\\.com\\/api\\/livechat\\/conversation\\/fetch",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "prod-who-live-chat",
-                "prod2-live-chat"
+                "prod-video-chat-chat"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "b622f47b626207a0d5c09b01466e0868270a88e9ab27d8e509253bf35b4cf1bf"
+                "88a1243bf2777cc7c76d83f99c07bd6d67a6cf7f76f6995c9bf08f8f07fef4a6"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "who.int",
-                "www.bose.ch"
+                "www.samsung.com"
+            ]
+        },
+        {
+            "rule": "sprinklr\\.com\\/api\\/livechat\\/prompt\\/browse\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-who-live-chat",
+                "prod-video-chat-chat"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "who.int",
+                "www.samsung.com"
+            ]
+        },
+        {
+            "rule": "sprinklr\\.com\\/api\\/livechat\\/prompt\\/browse\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-who-live-chat",
+                "prod-video-chat-chat"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "who.int",
+                "www.samsung.com"
+            ]
+        },
+        {
+            "rule": "sprinklr\\.com\\/chat\\/ZhNpowG7W\\/static\\/widget\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "live-chat-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "4d4642a97ff2d3e0a05dc16a62c1ea27a5e1b04120624da56d20749c49df5552"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bose.ch",
+                "www.bose.com"
+            ]
+        },
+        {
+            "rule": "sprinklr\\.com\\/chat\\/ZhNpowG7W\\/static\\/js\\/vendor\\.e35eaf54\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "live-chat-static"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.product": 2,
+                "window.localStorage": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "7ee94287be646391c882edfead297fbd77a37e420a6d4f9c1d97905376c86c43"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bose.ch",
+                "www.bose.com"
+            ]
+        },
+        {
+            "rule": "sprinklr\\.com\\/chat\\/ZhNpowG7W\\/static\\/js\\/main\\.f4cadd2a\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "live-chat-static"
+            ],
+            "apis": {
+                "Navigator.prototype.languages": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1c08932f8780240ca0c1bf2d6d1b22f3f41b11692c08513616a1165f35cefce5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bose.ch",
+                "www.bose.com"
+            ]
+        },
+        {
+            "rule": "sprinklr\\.com\\/chat\\/ZhNpowG7W\\/static\\/js\\/default~CallFrame~pages0~pages1\\.83496b0b\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "live-chat-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "f5dc6789d1758a4a340de305fa64cc3cc8107eaf73c19c6c75bbb3d9338dc0f6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bose.ch",
+                "www.bose.com"
+            ]
+        },
+        {
+            "rule": "sprinklr\\.com\\/chat\\/ZhNpowG7W\\/static\\/js\\/default~pages0~pages1\\.2d1808f3\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "live-chat-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b37e3138fdbb16c83a9a88b036c4cb2d1c97662b721f7765f836b70d440c8c92"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bose.ch",
+                "www.bose.com"
+            ]
+        },
+        {
+            "rule": "sprinklr\\.com\\/chat\\/ZhNpowG7W\\/static\\/js\\/pages0\\.7cfad378\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "live-chat-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c493fb145bd5155553182477da0cb202f77716c95b79457a449b7474266912a9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bose.ch",
+                "www.bose.com"
             ]
         }
     ],
@@ -65,15 +327,17 @@
         "cpu": 0,
         "cache": 1
     },
-    "cookies": 0,
+    "cookies": 0.000101,
     "types": {
-        "Preflight": 2,
-        "XHR": 2
+        "Preflight": 8,
+        "XHR": 8,
+        "WebSocket": 2,
+        "Script": 12
     },
     "nameservers": [
+        "ns-886.awsdns-46.net",
         "ns-1489.awsdns-58.org",
         "ns-1627.awsdns-11.co.uk",
-        "ns-233.awsdns-29.com",
-        "ns-886.awsdns-46.net"
+        "ns-233.awsdns-29.com"
     ]
 }

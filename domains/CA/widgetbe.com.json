@@ -12,13 +12,15 @@
     "resources": [
         {
             "rule": "widgetbe\\.com\\/agent",
-            "cookies": 0,
+            "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
                 "window.localStorage": 2,
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -27,7 +29,26 @@
                 "7a1e67132ea803bb507f058343ca5e2628c483367a65f41279bbec66162c92cc"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_token1627061334681": {
+                    "ttl": 1,
+                    "length": 19,
+                    "prevalence": 0.0001005126143330988,
+                    "uniqueness": 1
+                },
+                "WidgetTrackerCookie": {
+                    "ttl": 315360000,
+                    "length": 36,
+                    "prevalence": 0.0002010252286661976,
+                    "uniqueness": 1
+                },
+                "_token1627061585719": {
+                    "ttl": 1,
+                    "length": 19,
+                    "prevalence": 0.0001005126143330988,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "calgaryhomes.ca",
@@ -44,7 +65,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "58e7a0b0020cf8bc6f6aca62a8563baafff5371944837f5f69e00aae4b043f21"
+                "55b6d7f6f32dd4d482d39706e4c0443c3d2f22d751470729b010f33de89ce934"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -60,8 +81,8 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "window.localStorage": 2
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -100,15 +121,15 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000201,
     "types": {
         "Script": 4,
         "XHR": 4
     },
     "nameservers": [
+        "ns-657.awsdns-18.net",
         "ns-1390.awsdns-45.org",
         "ns-1818.awsdns-35.co.uk",
-        "ns-324.awsdns-40.com",
-        "ns-657.awsdns-18.net"
+        "ns-324.awsdns-40.com"
     ]
 }

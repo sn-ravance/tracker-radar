@@ -4,20 +4,17 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000706,
-    "sites": 103,
+    "prevalence": 0.000673,
+    "sites": 97,
     "subdomains": [
         "ghs",
         "api.id.ghs",
-        "api.stage-id.ghs"
+        "api.stage-id.ghs",
+        "api.article-recomm.ghs"
     ],
     "cnames": [
         {
             "original": "a.et.nytimes.com",
-            "resolved": "ghs.googlehosted.com"
-        },
-        {
-            "original": "a.et.stg.nytimes.com",
             "resolved": "ghs.googlehosted.com"
         },
         {
@@ -37,8 +34,16 @@
             "resolved": "ghs.googlehosted.com"
         },
         {
+            "original": "analytics.loxone.com",
+            "resolved": "ghs.googlehosted.com"
+        },
+        {
             "original": "analyticsgtm.cars.co.za",
             "resolved": "ghs.googlehosted.com"
+        },
+        {
+            "original": "api.article-recomm.swmhdata.sueddeutsche.de",
+            "resolved": "api.article-recomm.ghs.googlehosted.com"
         },
         {
             "original": "api.ecomm.beautycounter.com",
@@ -65,7 +70,11 @@
             "resolved": "ghs.googlehosted.com"
         },
         {
-            "original": "api3.clicsante.ca",
+            "original": "assets.thelayoff.com",
+            "resolved": "ghs.googlehosted.com"
+        },
+        {
+            "original": "blip-api.edinburghairport.com",
             "resolved": "ghs.googlehosted.com"
         },
         {
@@ -81,15 +90,15 @@
             "resolved": "ghs.googlehosted.com"
         },
         {
+            "original": "gtm.realestateexpress.com",
+            "resolved": "ghs.googlehosted.com"
+        },
+        {
             "original": "gtm.rew.ca",
             "resolved": "ghs.googlehosted.com"
         },
         {
             "original": "gtmserver.travismathew.com",
-            "resolved": "ghs.googlehosted.com"
-        },
-        {
-            "original": "hub.data.fertighaus.de",
             "resolved": "ghs.googlehosted.com"
         },
         {
@@ -106,10 +115,6 @@
         },
         {
             "original": "purr.nytimes.com",
-            "resolved": "ghs.googlehosted.com"
-        },
-        {
-            "original": "rsp698.gorewear.com",
             "resolved": "ghs.googlehosted.com"
         },
         {
@@ -145,7 +150,11 @@
             "resolved": "ghs.googlehosted.com"
         },
         {
-            "original": "webhook.callcentre-chatbot.ocado.com",
+            "original": "www.gtm-server.accessorize.com",
+            "resolved": "ghs.googlehosted.com"
+        },
+        {
+            "original": "www.gtm-server.monsoon.co.uk",
             "resolved": "ghs.googlehosted.com"
         },
         {
@@ -156,15 +165,44 @@
     "fingerprinting": 3,
     "resources": [
         {
+            "rule": "googlehosted\\.com\\/v1\\/purr-cache",
+            "cookies": 0.0000278,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghs"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000278,
+            "cnames": [
+                {
+                    "original": "purr.nytimes.com",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nytimes.com",
+                "cooking.nytimes.com",
+                "well.blogs.nytimes.com",
+                "www.nytimes.com"
+            ]
+        },
+        {
             "rule": "googlehosted\\.com\\/v1\\/directives",
-            "cookies": 0.0000137,
+            "cookies": 0.0000139,
             "fingerprinting": 0,
             "subdomains": [
                 "ghs"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [
                 {
                     "original": "purr.nytimes.com",
@@ -174,100 +212,24 @@
             "responseHashes": [
                 "3bf5821f2903f8c7c8496dd97577f48cc1cf921dfb5faa74a8fd944e4c79bf2b"
             ],
-            "type": "XHR",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "nytimes.com",
-                "app.nytimes.com"
-            ]
-        },
-        {
-            "rule": "googlehosted\\.com\\/svc\\/nyt\\/data-layer",
-            "cookies": 0.0000548,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ghs"
-            ],
-            "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000548,
-            "cnames": [
-                {
-                    "original": "a.nytimes.com",
-                    "resolved": "ghs.googlehosted.com"
-                }
-            ],
-            "responseHashes": [
-                "0bd17fe0f3705468ffaffa4efbb6c8ab37cd9b1d6ae4971a3d890e33a8c958ec",
-                "ee8822dedd25ed4c815467435f3fe80459747f6b04cb2340c2fda01300a849b1",
-                "781120554336764a37e001239a3c73cf54d6f28ff5d5b69bb38769a6c8ef319f",
-                "aae15b03cd2a40aacaba62ddf95e5af262c006496c850d26f4550454999ebf99",
-                "4c282f8345acac20f4711126ca318601bba536e2f204e4e35e2b489672a744de",
-                "efbf54186f03708b8773486e44c34265f63b573d1ac44665fe8c73961bc24acf",
-                "08e4bf5d41924ee463b92e7717af141e98ad4388c5ef2023887f457ee13837ac"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nytimes.com",
-                "app.nytimes.com",
-                "archive.nytimes.com",
-                "cooking.nytimes.com",
-                "help.nytimes.com",
-                "myaccount.nytimes.com",
-                "well.blogs.nytimes.com",
-                "www.nytimes.com"
-            ]
-        },
-        {
-            "rule": "googlehosted\\.com\\/track",
-            "cookies": 0.0000548,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ghs"
-            ],
-            "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000548,
-            "cnames": [
-                {
-                    "original": "a.et.nytimes.com",
-                    "resolved": "ghs.googlehosted.com"
-                },
-                {
-                    "original": "a.et.stg.nytimes.com",
-                    "resolved": "ghs.googlehosted.com"
-                }
-            ],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nytimes.com",
-                "app.nytimes.com",
-                "archive.nytimes.com",
-                "cooking.nytimes.com",
-                "help.nytimes.com",
-                "myaccount.nytimes.com",
-                "well.blogs.nytimes.com",
-                "www.nytimes.com"
+                "well.blogs.nytimes.com"
             ]
         },
         {
             "rule": "googlehosted\\.com\\/gtm\\.js",
-            "cookies": 0.0000137,
+            "cookies": 0.0000139,
             "fingerprinting": 1,
             "subdomains": [
                 "ghs"
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000274,
+            "prevalence": 0.0000278,
             "cnames": [
                 {
                     "original": "analytics.amsoil.com",
@@ -279,9 +241,9 @@
                 }
             ],
             "responseHashes": [
-                "65e4001821eca9cf77a788d7e801ea7c29af2935225b0d6e91b35a71886802d9",
-                "ecd4bea543b4f047bcef32e342b925a97a503934e3c3ba36ef2e1be10b18fd81",
-                "b384cab90509cf4650089ca307b2bc467ee4619d8c41395d82e066dd568f8059"
+                "c29a050424d55ff1d903a9bf08ffbf76ddfdfeec2b44ff4bdecf152b4f4d48a3",
+                "b00fd973bfbae4f418167ad8a1eaf0425d1c87853afa5815f042228677a51ad9",
+                "03cb58774c4f43ef66e2b6ec631e3bdf47bdac62918baba4efee39bf9e346b45"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -295,14 +257,14 @@
         },
         {
             "rule": "googlehosted\\.com\\/gtag\\/js",
-            "cookies": 0.0000137,
+            "cookies": 0.0000139,
             "fingerprinting": 1,
             "subdomains": [
                 "ghs"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000206,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "analytics.amsoil.com",
@@ -310,8 +272,8 @@
                 }
             ],
             "responseHashes": [
-                "3665d55ff08e532d8a91663a3954a301b3cee0cfaca536e0a25214493d588bc7",
-                "f2e96439c994b71bffd2d489b78c014ed072aa347e44c4855214ce79eef534c7"
+                "0a8f8773776df8509b3e8272432eddbb7523d42f9e6dc8482baeb19d4929f481",
+                "cf66e95d99ee674b6ef7f63186b462e838d8ccb93a53914fa5287a2429131d2b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -324,21 +286,17 @@
         },
         {
             "rule": "googlehosted\\.com\\/g\\/collect",
-            "cookies": 0.0000685,
+            "cookies": 0.0000347,
             "fingerprinting": 0,
             "subdomains": [
                 "ghs"
             ],
             "apis": {},
-            "sites": 11,
-            "prevalence": 0.0000754,
+            "sites": 5,
+            "prevalence": 0.0000347,
             "cnames": [
                 {
                     "original": "analytics.amsoil.com",
-                    "resolved": "ghs.googlehosted.com"
-                },
-                {
-                    "original": "stm01.stockstotrade.com",
                     "resolved": "ghs.googlehosted.com"
                 },
                 {
@@ -346,23 +304,71 @@
                     "resolved": "ghs.googlehosted.com"
                 },
                 {
-                    "original": "analytics.bayut.com",
+                    "original": "analytics.loxone.com",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [
+                "e64954dc34e12c7190cc2338a54b07644ff0f102aa71cc7209bcbb49c3009f7c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.00004859086491739553
+            },
+            "exampleSites": [
+                "amsoil.com",
+                "blog.amsoil.com",
+                "www.amsoil.com",
+                "www.autoanything.com",
+                "www.loxone.com"
+            ]
+        },
+        {
+            "rule": "googlehosted\\.com\\/analytics\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghs"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [
+                {
+                    "original": "analytics.amsoil.com",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amsoil.com",
+                "blog.amsoil.com",
+                "www.amsoil.com"
+            ]
+        },
+        {
+            "rule": "googlehosted\\.com\\/j\\/collect",
+            "cookies": 0.0000347,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghs"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000347,
+            "cnames": [
+                {
+                    "original": "analytics.amsoil.com",
                     "resolved": "ghs.googlehosted.com"
                 },
                 {
                     "original": "bri.brico.be",
-                    "resolved": "ghs.googlehosted.com"
-                },
-                {
-                    "original": "analyticsgtm.cars.co.za",
-                    "resolved": "ghs.googlehosted.com"
-                },
-                {
-                    "original": "pra.praxis.nl",
-                    "resolved": "ghs.googlehosted.com"
-                },
-                {
-                    "original": "gtm.rew.ca",
                     "resolved": "ghs.googlehosted.com"
                 },
                 {
@@ -371,79 +377,101 @@
                 }
             ],
             "responseHashes": [
+                "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629",
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Other",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ga": 0.00006852929284622712,
-                "IR_gbd": 0.000006852929284622712
+                "_ga": 0.00003470776065528252,
+                "__utma": 0.0000069415521310565046,
+                "__utmc": 0.0000069415521310565046,
+                "__utmz": 0.0000069415521310565046,
+                "IR_gbd": 0.0000069415521310565046
             },
             "exampleSites": [
                 "amsoil.com",
                 "blog.amsoil.com",
-                "stockstotrade.com",
                 "www.amsoil.com",
-                "www.autoanything.com",
-                "www.bayut.com",
                 "www.brico.be",
-                "www.cars.co.za",
-                "www.praxis.nl",
-                "www.rew.ca",
                 "www.travismathew.com"
             ]
         },
         {
-            "rule": "googlehosted\\.com\\/v1\\/purr-cache",
-            "cookies": 0.0000206,
+            "rule": "googlehosted\\.com\\/svc\\/nyt\\/data-layer",
+            "cookies": 0.0000347,
             "fingerprinting": 0,
             "subdomains": [
                 "ghs"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000206,
+            "sites": 5,
+            "prevalence": 0.0000347,
             "cnames": [
                 {
-                    "original": "purr.nytimes.com",
+                    "original": "a.nytimes.com",
                     "resolved": "ghs.googlehosted.com"
                 }
             ],
-            "responseHashes": [],
-            "type": "Fetch",
+            "responseHashes": [
+                "fed702d30a3913bf39dfb63f6cf81d732bafdc596b36dcf3cff7a1439b113ca4",
+                "120a8fd0e8f21e90ff65b8727050ffffb0cf277dd7df32d9f49650fd6fc2608d",
+                "a49267e6c69ae03a6ac676c2b22b51e4eb1b346989df2f9cacdf65b7700b533f"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "nytimes.com",
+                "cooking.nytimes.com",
+                "help.nytimes.com",
                 "well.blogs.nytimes.com",
                 "www.nytimes.com"
             ]
         },
         {
-            "rule": "googlehosted\\.com\\/",
+            "rule": "googlehosted\\.com\\/track",
+            "cookies": 0.0000347,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghs"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000347,
+            "cnames": [
+                {
+                    "original": "a.et.nytimes.com",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nytimes.com",
+                "cooking.nytimes.com",
+                "help.nytimes.com",
+                "well.blogs.nytimes.com",
+                "www.nytimes.com"
+            ]
+        },
+        {
+            "rule": "googlehosted\\.com\\/v0\\/current_user",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "ghs"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.000048,
+            "sites": 2,
+            "prevalence": 0.0000139,
             "cnames": [
                 {
-                    "original": "tracker.gymshark.com",
-                    "resolved": "ghs.googlehosted.com"
-                },
-                {
-                    "original": "api.ut.no",
-                    "resolved": "ghs.googlehosted.com"
-                },
-                {
-                    "original": "api.ecomm.beautycounter.com",
-                    "resolved": "ghs.googlehosted.com"
-                },
-                {
-                    "original": "cg.www.vrijbuiter.nl",
+                    "original": "uie.radio-canada.ca",
                     "resolved": "ghs.googlehosted.com"
                 }
             ],
@@ -452,74 +480,35 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "gymshark.com",
-                "de.gymshark.com",
-                "uk.gymshark.com",
-                "ut.no",
-                "www.beautycounter.com",
-                "www.gymshark.com",
-                "www.vrijbuiter.nl"
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
             ]
         },
         {
-            "rule": "googlehosted\\.com\\/",
-            "cookies": 0.0000274,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ghs"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000343,
-            "cnames": [
-                {
-                    "original": "tracker.gymshark.com",
-                    "resolved": "ghs.googlehosted.com"
-                },
-                {
-                    "original": "cg.www.vrijbuiter.nl",
-                    "resolved": "ghs.googlehosted.com"
-                }
-            ],
-            "responseHashes": [
-                "03891445229bcc8f2b42db322ec2937be184a1e84ab216a6d299df53d65ccced"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "gymshark.com",
-                "de.gymshark.com",
-                "uk.gymshark.com",
-                "www.gymshark.com",
-                "www.vrijbuiter.nl"
-            ]
-        },
-        {
-            "rule": "googlehosted\\.com\\/v0\\/UIEUser\\/6797c837-75be-4e68-ae4b-2eac4d5c4d0e\\/UPSPreferences\\/fdfc9e",
-            "cookies": 0,
+            "rule": "googlehosted\\.com\\/v0\\/current_user",
+            "cookies": 0.0000139,
             "fingerprinting": 0,
             "subdomains": [
                 "ghs"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [
                 {
-                    "original": "ups.data.cbc.ca",
+                    "original": "uie.radio-canada.ca",
                     "resolved": "ghs.googlehosted.com"
                 }
             ],
             "responseHashes": [
-                "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+                "012321b31a92f7060ce0a07b61c75f5d723d8a6a485f16547e8aa2629fb472e9"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cbc.ca",
-                "gem.cbc.ca"
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
             ]
         },
         {
@@ -531,7 +520,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [
                 {
                     "original": "uie.radio-canada.ca",
@@ -556,7 +545,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [
                 {
                     "original": "uie.radio-canada.ca",
@@ -583,7 +572,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [
                 {
                     "original": "ktracker.kumparan.com",
@@ -602,7 +591,7 @@
             ]
         },
         {
-            "rule": "googlehosted\\.com\\/v0\\/UIEUser\\/de26efbf-be45-4320-a8a2-f9a121a82dde\\/UPSPreferences\\/fdfc9e",
+            "rule": "googlehosted\\.com\\/v0\\/UIEUser\\/b8481122-c6ef-4f5c-a31b-3052274d8b5f\\/UPSPreferences\\/fdfc9e",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -610,34 +599,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [
-                {
-                    "original": "ups.data.cbc.ca",
-                    "resolved": "ghs.googlehosted.com"
-                }
-            ],
-            "responseHashes": [
-                "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cbc.ca",
-                "newsinteractives.cbc.ca"
-            ]
-        },
-        {
-            "rule": "googlehosted\\.com\\/v0\\/UIEUser\\/ed8e7dca-a56a-448b-b056-98310e9164f3\\/UPSPreferences\\/fdfc9e",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ghs"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [
                 {
                     "original": "ups.data.cbc.ca",
@@ -664,7 +626,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [
                 {
                     "original": "data.typeracer.com",
@@ -672,7 +634,7 @@
                 }
             ],
             "responseHashes": [
-                "eeda33727c95201dbd1fb1c9f05566fba440ed8417216392cdbee46e313b3369"
+                "9857d1b63ce6e3c8af8f51aabfb4c9a706cbdc5802296af1130c8e965a15a413"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -691,7 +653,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [
                 {
                     "original": "data.typeracer.com",
@@ -699,7 +661,7 @@
                 }
             ],
             "responseHashes": [
-                "bff3082d83c78c4906f1477f5b175350c96daf0ba73d9f5106b6a55cdf61b8fa"
+                "4a3bf918f6c4dfeca8a14653e2ab6cf48de51fc881e70873e039c5cfb1178c9d"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -718,7 +680,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [
                 {
                     "original": "data.typeracer.com",
@@ -745,7 +707,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [
                 {
                     "original": "data.typeracer.com",
@@ -772,7 +734,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [
                 {
                     "original": "data.typeracer.com",
@@ -791,7 +753,7 @@
             ]
         },
         {
-            "rule": "googlehosted\\.com\\/misc\\/pic",
+            "rule": "googlehosted\\.com\\/public\\/theme\\/images\\/universes\\/games\\/icon\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -799,7 +761,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [
                 {
                     "original": "data.typeracer.com",
@@ -807,7 +769,7 @@
                 }
             ],
             "responseHashes": [
-                "33118081e87a763180ba9c616588313b8da4edadfbf3b8a8e49525b59798f200"
+                "e61f3e077c764c2c80e932db35b3d8a3aadd66c1ee36b416a10f8215341f940c"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -818,7 +780,7 @@
             ]
         },
         {
-            "rule": "googlehosted\\.com\\/v3\\/globalSettings",
+            "rule": "googlehosted\\.com\\/public\\/theme\\/images\\/universes\\/copypasta\\/icon\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -826,59 +788,195 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [
                 {
-                    "original": "api3.clicsante.ca",
-                    "resolved": "ghs.googlehosted.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "clicsante.ca",
-                "www.clicsante.ca"
-            ]
-        },
-        {
-            "rule": "googlehosted\\.com\\/v3\\/globalSettings",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ghs"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [
-                {
-                    "original": "api3.clicsante.ca",
+                    "original": "data.typeracer.com",
                     "resolved": "ghs.googlehosted.com"
                 }
             ],
             "responseHashes": [
-                "ec5e768d111e3c5dcc83c32392b33fac052237f49b927d3804e2c17d0fc3a08e"
+                "2616b2f0e033eff1372b05d63ac22c5f1bb537ff5148991a31ad035db69ebc34"
             ],
-            "type": "XHR",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "clicsante.ca",
-                "www.clicsante.ca"
+                "typeracer.com",
+                "play.typeracer.com"
             ]
         },
         {
-            "rule": "googlehosted\\.com\\/accounts\\/info",
-            "cookies": 0.0000137,
+            "rule": "googlehosted\\.com\\/public\\/theme\\/images\\/universes\\/lang_es\\/icon\\.svg",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "ghs"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
+            "cnames": [
+                {
+                    "original": "data.typeracer.com",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [
+                "1d5e2e11cf6be103a1f0d8e53c771a0d803d4cc8b13252a3c769f00b90926844"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "typeracer.com",
+                "play.typeracer.com"
+            ]
+        },
+        {
+            "rule": "googlehosted\\.com\\/misc\\/pic",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [
+                {
+                    "original": "data.typeracer.com",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [
+                "e553403c66726d3c815c60439c5f00b3ae756c936d64a81280e302fba8c4570b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "typeracer.com",
+                "play.typeracer.com"
+            ]
+        },
+        {
+            "rule": "googlehosted\\.com\\/public\\/images\\/silhouette\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [
+                {
+                    "original": "data.typeracer.com",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [
+                "f9e56338527eba763255a2b4b2223e17c397189582bb4ede3fbbcc00c0edaeb6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "typeracer.com",
+                "play.typeracer.com"
+            ]
+        },
+        {
+            "rule": "googlehosted\\.com\\/g\\/collect",
+            "cookies": 0.0000764,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghs"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0000764,
+            "cnames": [
+                {
+                    "original": "stm01.stockstotrade.com",
+                    "resolved": "ghs.googlehosted.com"
+                },
+                {
+                    "original": "www.gtm-server.accessorize.com",
+                    "resolved": "ghs.googlehosted.com"
+                },
+                {
+                    "original": "analytics.bayut.com",
+                    "resolved": "ghs.googlehosted.com"
+                },
+                {
+                    "original": "bri.brico.be",
+                    "resolved": "ghs.googlehosted.com"
+                },
+                {
+                    "original": "analyticsgtm.cars.co.za",
+                    "resolved": "ghs.googlehosted.com"
+                },
+                {
+                    "original": "analytics.loxone.com",
+                    "resolved": "ghs.googlehosted.com"
+                },
+                {
+                    "original": "www.gtm-server.monsoon.co.uk",
+                    "resolved": "ghs.googlehosted.com"
+                },
+                {
+                    "original": "pra.praxis.nl",
+                    "resolved": "ghs.googlehosted.com"
+                },
+                {
+                    "original": "gtm.realestateexpress.com",
+                    "resolved": "ghs.googlehosted.com"
+                },
+                {
+                    "original": "gtm.rew.ca",
+                    "resolved": "ghs.googlehosted.com"
+                },
+                {
+                    "original": "gtmserver.travismathew.com",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.00012494793835901707,
+                "exitintel_lp": 0.0000069415521310565046,
+                "IR_gbd": 0.0000069415521310565046
+            },
+            "exampleSites": [
+                "stockstotrade.com",
+                "www.accessorize.com",
+                "www.bayut.com",
+                "www.brico.be",
+                "www.cars.co.za",
+                "www.loxone.com",
+                "www.monsoon.co.uk",
+                "www.praxis.nl",
+                "www.realestateexpress.com",
+                "www.rew.ca",
+                "www.travismathew.com"
+            ]
+        },
+        {
+            "rule": "googlehosted\\.com\\/accounts\\/info",
+            "cookies": 0.0000139,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
             "cnames": [
                 {
                     "original": "accounts.snapchat.com",
@@ -903,8 +1001,8 @@
                 "api.stage-id.ghs"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000411,
+            "sites": 5,
+            "prevalence": 0.0000347,
             "cnames": [
                 {
                     "original": "api.id.swmhdata.sueddeutsche.de",
@@ -936,8 +1034,92 @@
                 "sz-magazin.sueddeutsche.de",
                 "www.jetzt.de",
                 "www.stuttgarter-zeitung.de",
-                "www.stuttgarter-nachrichten.de",
-                "www.sueddeutsche.de"
+                "www.stuttgarter-nachrichten.de"
+            ]
+        },
+        {
+            "rule": "googlehosted\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghs",
+                "api.article-recomm.ghs"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000416,
+            "cnames": [
+                {
+                    "original": "tracker.gymshark.com",
+                    "resolved": "ghs.googlehosted.com"
+                },
+                {
+                    "original": "api.ut.no",
+                    "resolved": "ghs.googlehosted.com"
+                },
+                {
+                    "original": "api.ecomm.beautycounter.com",
+                    "resolved": "ghs.googlehosted.com"
+                },
+                {
+                    "original": "api.article-recomm.swmhdata.sueddeutsche.de",
+                    "resolved": "api.article-recomm.ghs.googlehosted.com"
+                },
+                {
+                    "original": "cg.www.vrijbuiter.nl",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gymshark.com",
+                "ut.no",
+                "www.beautycounter.com",
+                "www.gymshark.com",
+                "www.sueddeutsche.de",
+                "www.vrijbuiter.nl"
+            ]
+        },
+        {
+            "rule": "googlehosted\\.com\\/",
+            "cookies": 0.0000139,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghs",
+                "api.article-recomm.ghs"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000278,
+            "cnames": [
+                {
+                    "original": "tracker.gymshark.com",
+                    "resolved": "ghs.googlehosted.com"
+                },
+                {
+                    "original": "api.article-recomm.swmhdata.sueddeutsche.de",
+                    "resolved": "api.article-recomm.ghs.googlehosted.com"
+                },
+                {
+                    "original": "cg.www.vrijbuiter.nl",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [
+                "03891445229bcc8f2b42db322ec2937be184a1e84ab216a6d299df53d65ccced",
+                "de70130c783639bdd00449c33a7304356a2b61a33c220b63843f797764cc4e75"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gymshark.com",
+                "www.gymshark.com",
+                "www.sueddeutsche.de",
+                "www.vrijbuiter.nl"
             ]
         },
         {
@@ -949,7 +1131,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [
                 {
                     "original": "api.ut.no",
@@ -980,7 +1162,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [
                 {
                     "original": "api.ecomm.beautycounter.com",
@@ -1005,7 +1187,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [
                 {
                     "original": "api.ecomm.beautycounter.com",
@@ -1013,7 +1195,7 @@
                 }
             ],
             "responseHashes": [
-                "84b36aa1029dbbb998476171a082743706307bd9bfe7aa94709d6fad4f51ebb3"
+                "6397e62b813c49c1f63d61b18c320f33c178b88b44da0974002b6e34d335412f"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1024,74 +1206,7 @@
             ]
         },
         {
-            "rule": "googlehosted\\.com\\/api\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ghs"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000343,
-            "cnames": [
-                {
-                    "original": "ipapi.tmbi.com",
-                    "resolved": "ghs.googlehosted.com"
-                }
-            ],
-            "responseHashes": [
-                "cbcbe237bf095067b0c3c83425021003550709fc21eb57e54dd0179ee1ac4b06"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "birdsandblooms.com",
-                "www.familyhandyman.com",
-                "www.rd.com",
-                "www.selection.ca",
-                "www.tasteofhome.com"
-            ]
-        },
-        {
-            "rule": "googlehosted\\.com\\/j\\/collect",
-            "cookies": 0.0000137,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ghs"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [
-                {
-                    "original": "bri.brico.be",
-                    "resolved": "ghs.googlehosted.com"
-                },
-                {
-                    "original": "gtmserver.travismathew.com",
-                    "resolved": "ghs.googlehosted.com"
-                }
-            ],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "__utma": 0.000006852929284622712,
-                "__utmc": 0.000006852929284622712,
-                "__utmz": 0.000006852929284622712,
-                "_ga": 0.000013705858569245425,
-                "IR_gbd": 0.000006852929284622712
-            },
-            "exampleSites": [
-                "brico.be",
-                "www.travismathew.com"
-            ]
-        },
-        {
-            "rule": "googlehosted\\.com\\/v0\\/UIEUser\\/ac043c4a-488f-4ea0-b65d-0fc027d9d4f3\\/UPSPreferences\\/fdfc9e",
+            "rule": "googlehosted\\.com\\/v0\\/UIEUser\\/6e638fe9-4a46-4a89-9259-f69869d0f9aa\\/UPSPreferences\\/fdfc9e",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1099,7 +1214,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [
                 {
                     "original": "ups.data.cbc.ca",
@@ -1118,7 +1233,7 @@
             ]
         },
         {
-            "rule": "googlehosted\\.com\\/webhook\\/fh-wt",
+            "rule": "googlehosted\\.com\\/blip-api\\/blip",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1126,22 +1241,192 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [
                 {
-                    "original": "hub.data.fertighaus.de",
+                    "original": "blip-api.edinburghairport.com",
                     "resolved": "ghs.googlehosted.com"
                 }
             ],
             "responseHashes": [
-                "98c4922bb641c65c7a30b7bcafdf230b9b00b6693631c56146ab25b2786ee4a3"
+                "4584471f62bbd8f390b0d85396a93c98228bac097c9cce561beb42b3d96dd6ee"
             ],
-            "type": "Fetch",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "fertighaus.de",
-                "www.fertighaus.de"
+                "edinburghairport.com",
+                "www.edinburghairport.com"
+            ]
+        },
+        {
+            "rule": "googlehosted\\.com\\/collect",
+            "cookies": 0.0000208,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghs"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [
+                {
+                    "original": "pra.praxis.nl",
+                    "resolved": "ghs.googlehosted.com"
+                },
+                {
+                    "original": "gtm.realestateexpress.com",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.000027766208524226018,
+                "exitintel_lp": 0.0000069415521310565046
+            },
+            "exampleSites": [
+                "praxis.nl",
+                "www.praxis.nl",
+                "www.realestateexpress.com"
+            ]
+        },
+        {
+            "rule": "googlehosted\\.com\\/api\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [
+                {
+                    "original": "ipapi.tmbi.com",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [
+                "cbcbe237bf095067b0c3c83425021003550709fc21eb57e54dd0179ee1ac4b06"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "selection.ca",
+                "www.selection.ca"
+            ]
+        },
+        {
+            "rule": "googlehosted\\.com\\/assets\\/css\\/TLO\\/app\\/app-5cb369cfe6\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [
+                {
+                    "original": "assets.thelayoff.com",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [
+                "bf013594e03e365c68cd6dcd71c1f05ee59b6d9bfde3a808f5038b06e327dfdd"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thelayoff.com",
+                "www.thelayoff.com"
+            ]
+        },
+        {
+            "rule": "googlehosted\\.com\\/assets\\/js\\/prod\\/TLO\\/app\\/app-5d78e2a3e5\\.js",
+            "cookies": 0,
+            "fingerprinting": 3,
+            "subdomains": [
+                "ghs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [
+                {
+                    "original": "assets.thelayoff.com",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [
+                "69d7ece2c02d78155413dba47f199dfa1582dc3cc5e1f57801d7e84bdb5006ee"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thelayoff.com",
+                "www.thelayoff.com"
+            ]
+        },
+        {
+            "rule": "googlehosted\\.com\\/assets\\/images\\/TLO\\/app\\/logo\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [
+                {
+                    "original": "assets.thelayoff.com",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [
+                "1b957f9dae3447f060741a85a4dac51025280e56a67fbe369da265f0a76cca96"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thelayoff.com",
+                "www.thelayoff.com"
+            ]
+        },
+        {
+            "rule": "googlehosted\\.com\\/captcha",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [
+                {
+                    "original": "assets.thelayoff.com",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [
+                "478e97ba4fa9a9af2dafb8500d2803162baf73b56e5634353cd55f1e9a53442f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thelayoff.com",
+                "www.thelayoff.com"
             ]
         },
         {
@@ -1152,13 +1437,9 @@
                 "ghs"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000206,
+            "sites": 2,
+            "prevalence": 0.0000139,
             "cnames": [
-                {
-                    "original": "rsp698.gorewear.com",
-                    "resolved": "ghs.googlehosted.com"
-                },
                 {
                     "original": "rsp817.vanmoof.com",
                     "resolved": "ghs.googlehosted.com"
@@ -1171,135 +1452,47 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "gorewear.com",
-                "www.gorewear.com",
+                "vanmoof.com",
                 "www.vanmoof.com"
             ]
         },
         {
             "rule": "googlehosted\\.com\\/110\\/p",
-            "cookies": 0.0000206,
+            "cookies": 0.0000139,
             "fingerprinting": 1,
             "subdomains": [
                 "ghs"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000206,
+            "sites": 2,
+            "prevalence": 0.0000139,
             "cnames": [
-                {
-                    "original": "rsp698.gorewear.com",
-                    "resolved": "ghs.googlehosted.com"
-                },
                 {
                     "original": "rsp817.vanmoof.com",
                     "resolved": "ghs.googlehosted.com"
                 }
             ],
             "responseHashes": [
-                "20d53955cd9fa2e04f15390cfe8ac3864d7ec3453b0d9cfe7d27ee632b335ffb",
-                "017034477deb37151ba9c92ea045e8c600b7259bc89937938cdfc477f424e3bd"
+                "f0d292d075ff43bb9d04562998498222694b2f1320a1c5f6474e14ba895ad801"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "gorewear.com",
-                "www.gorewear.com",
+                "vanmoof.com",
                 "www.vanmoof.com"
             ]
         },
         {
-            "rule": "googlehosted\\.com\\/index\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ghs"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [
-                {
-                    "original": "webhook.callcentre-chatbot.ocado.com",
-                    "resolved": "ghs.googlehosted.com"
-                }
-            ],
-            "responseHashes": [
-                "2d89d08b5ebbbeb76bbdd4d3ef7afaa8c799b9e13b66a6a5817c8896c6a2e53d"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ocado.com",
-                "www.ocado.com"
-            ]
-        },
-        {
-            "rule": "googlehosted\\.com\\/index\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "ghs"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [
-                {
-                    "original": "webhook.callcentre-chatbot.ocado.com",
-                    "resolved": "ghs.googlehosted.com"
-                }
-            ],
-            "responseHashes": [
-                "98ca786921d928ea70079e0d9a7e01ae6f484ea7456b4f9114048ef3cc25a04f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ocado.com",
-                "www.ocado.com"
-            ]
-        },
-        {
-            "rule": "googlehosted\\.com\\/collect",
-            "cookies": 0.0000137,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ghs"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [
-                {
-                    "original": "pra.praxis.nl",
-                    "resolved": "ghs.googlehosted.com"
-                }
-            ],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "praxis.nl",
-                "www.praxis.nl"
-            ]
-        },
-        {
             "rule": "googlehosted\\.com\\/api\\/data\\/pixel",
-            "cookies": 0.0000137,
+            "cookies": 0.0000139,
             "fingerprinting": 0,
             "subdomains": [
                 "ghs"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [
                 {
                     "original": "webapp.wisestamp.com",
@@ -1319,14 +1512,14 @@
         },
         {
             "rule": "googlehosted\\.com\\/data\\/track\\/",
-            "cookies": 0.0000137,
+            "cookies": 0.0000139,
             "fingerprinting": 0,
             "subdomains": [
                 "ghs"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [
                 {
                     "original": "webapp.wisestamp.com",
@@ -1353,7 +1546,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [
                 {
                     "original": "tracksrv.zdf.de",
@@ -1374,16 +1567,16 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000322,
+    "cookies": 0.00034,
     "types": {
-        "XHR": 36,
-        "Other": 19,
+        "Fetch": 12,
         "Script": 23,
-        "Fetch": 11,
-        "Preflight": 13,
+        "XHR": 35,
+        "Other": 16,
+        "Preflight": 12,
         "Document": 2,
         "Stylesheet": 4,
-        "Image": 14
+        "Image": 25
     },
     "nameservers": []
 }

@@ -9,19 +9,20 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.00121,
-    "sites": 12,
+    "prevalence": 0.00131,
+    "sites": 13,
     "subdomains": [
-        "chip-relay",
+        "script-at",
+        "at",
         "focus-relay",
+        "chip-relay",
         "bild-relay",
         "faz-relay",
         "finaonl-relay",
         "giga-relay",
+        "holidayc-relay",
         "welt-relay",
-        "wetteron-relay",
-        "script-at",
-        "at"
+        "wetteron-relay"
     ],
     "cnames": [
         {
@@ -49,6 +50,10 @@
             "resolved": "welt-relay.iocnt.net"
         },
         {
+            "original": "data-a98482617b.holidaycheck.de",
+            "resolved": "holidayc-relay.iocnt.net"
+        },
+        {
             "original": "data-bb21a2f11b.bild.de",
             "resolved": "bild-relay.iocnt.net"
         },
@@ -60,30 +65,91 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "iocnt\\.net\\/sensor\\.modern\\.ncl\\.min\\.js",
-            "cookies": 0.001,
+            "rule": "iocnt\\.net\\/iam\\.js",
+            "cookies": 0.000201,
             "fingerprinting": 2,
             "subdomains": [
-                "chip-relay",
+                "script-at"
+            ],
+            "apis": {
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.plugins": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.doNotTrack": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "6faa4cb95776dce6209b4c40e5195482fe24a2f0b685736b0b3775889714dc67"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "ioam2018": {
+                    "ttl": 31449619,
+                    "length": 154,
+                    "prevalence": 0.0002010454362685967,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "orf.at",
+                "www.netdoktor.de"
+            ]
+        },
+        {
+            "rule": "iocnt\\.net\\/tx\\.io",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "at"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "orf.at",
+                "www.netdoktor.de"
+            ]
+        },
+        {
+            "rule": "iocnt\\.net\\/sensor\\.modern\\.ncl\\.min\\.js",
+            "cookies": 0.00111,
+            "fingerprinting": 2,
+            "subdomains": [
                 "focus-relay",
+                "chip-relay",
                 "bild-relay",
                 "faz-relay",
                 "finaonl-relay",
                 "giga-relay",
+                "holidayc-relay",
                 "welt-relay",
                 "wetteron-relay"
             ],
             "apis": {},
-            "sites": 10,
-            "prevalence": 0.001,
+            "sites": 11,
+            "prevalence": 0.00111,
             "cnames": [
-                {
-                    "original": "data-2f2ec12966.chip.de",
-                    "resolved": "chip-relay.iocnt.net"
-                },
                 {
                     "original": "data-1818d50639.focus.de",
                     "resolved": "focus-relay.iocnt.net"
+                },
+                {
+                    "original": "data-2f2ec12966.chip.de",
+                    "resolved": "chip-relay.iocnt.net"
                 },
                 {
                     "original": "data-bb21a2f11b.bild.de",
@@ -100,6 +166,10 @@
                 {
                     "original": "data-17c7ec5f16.giga.de",
                     "resolved": "giga-relay.iocnt.net"
+                },
+                {
+                    "original": "data-a98482617b.holidaycheck.de",
+                    "resolved": "holidayc-relay.iocnt.net"
                 },
                 {
                     "original": "data-99329e3cb2.welt.de",
@@ -117,111 +187,15 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "chip.de",
-                "praxistipps.focus.de",
+                "focus.de",
+                "praxistipps.chip.de",
                 "www.bild.de",
                 "www.chip.de",
                 "www.faz.net",
-                "www.finanzen.net",
                 "www.focus.de",
-                "www.giga.de",
-                "www.welt.de",
-                "www.wetteronline.de"
-            ]
-        },
-        {
-            "rule": "iocnt\\.net\\/chip-config\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "chip-relay"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "data-2f2ec12966.chip.de",
-                    "resolved": "chip-relay.iocnt.net"
-                }
-            ],
-            "responseHashes": [
-                "6283c1a695b60dbbb1c75379151768fa845433ce02bba1937315ff8be5e38fd9"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chip.de",
-                "www.chip.de"
-            ]
-        },
-        {
-            "rule": "iocnt\\.net\\/relay\\.io",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "chip-relay",
-                "focus-relay",
-                "bild-relay",
-                "faz-relay",
-                "finaonl-relay",
-                "giga-relay",
-                "welt-relay",
-                "wetteron-relay"
-            ],
-            "apis": {},
-            "sites": 10,
-            "prevalence": 0.001,
-            "cnames": [
-                {
-                    "original": "data-2f2ec12966.chip.de",
-                    "resolved": "chip-relay.iocnt.net"
-                },
-                {
-                    "original": "data-1818d50639.focus.de",
-                    "resolved": "focus-relay.iocnt.net"
-                },
-                {
-                    "original": "data-bb21a2f11b.bild.de",
-                    "resolved": "bild-relay.iocnt.net"
-                },
-                {
-                    "original": "data-4ede7e9c86.faz.net",
-                    "resolved": "faz-relay.iocnt.net"
-                },
-                {
-                    "original": "data-fdbbf15b66.finanzen.net",
-                    "resolved": "finaonl-relay.iocnt.net"
-                },
-                {
-                    "original": "data-17c7ec5f16.giga.de",
-                    "resolved": "giga-relay.iocnt.net"
-                },
-                {
-                    "original": "data-99329e3cb2.welt.de",
-                    "resolved": "welt-relay.iocnt.net"
-                },
-                {
-                    "original": "data-1abffd7711.wetteronline.de",
-                    "resolved": "wetteron-relay.iocnt.net"
-                }
-            ],
-            "responseHashes": [
-                "8ed5ba0c31b99d68021d83b29330bf9a33ee0046d32a344db8e7530276553b1f"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chip.de",
-                "praxistipps.focus.de",
-                "www.bild.de",
-                "www.chip.de",
-                "www.faz.net",
                 "www.finanzen.net",
-                "www.focus.de",
                 "www.giga.de",
+                "www.holidaycheck.de",
                 "www.welt.de",
                 "www.wetteronline.de"
             ]
@@ -254,22 +228,31 @@
             ]
         },
         {
-            "rule": "iocnt\\.net\\/sensor\\.modern\\.ncl\\.min\\.js",
-            "cookies": 0.000703,
-            "fingerprinting": 2,
+            "rule": "iocnt\\.net\\/relay\\.io",
+            "cookies": 0,
+            "fingerprinting": 0,
             "subdomains": [
+                "focus-relay",
+                "chip-relay",
                 "bild-relay",
                 "faz-relay",
                 "finaonl-relay",
-                "focus-relay",
                 "giga-relay",
-                "welt-relay",
+                "holidayc-relay",
                 "wetteron-relay"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.000703,
+            "sites": 10,
+            "prevalence": 0.00101,
             "cnames": [
+                {
+                    "original": "data-1818d50639.focus.de",
+                    "resolved": "focus-relay.iocnt.net"
+                },
+                {
+                    "original": "data-2f2ec12966.chip.de",
+                    "resolved": "chip-relay.iocnt.net"
+                },
                 {
                     "original": "data-bb21a2f11b.bild.de",
                     "resolved": "bild-relay.iocnt.net"
@@ -283,8 +266,96 @@
                     "resolved": "finaonl-relay.iocnt.net"
                 },
                 {
+                    "original": "data-17c7ec5f16.giga.de",
+                    "resolved": "giga-relay.iocnt.net"
+                },
+                {
+                    "original": "data-a98482617b.holidaycheck.de",
+                    "resolved": "holidayc-relay.iocnt.net"
+                },
+                {
+                    "original": "data-1abffd7711.wetteronline.de",
+                    "resolved": "wetteron-relay.iocnt.net"
+                }
+            ],
+            "responseHashes": [
+                "8ed5ba0c31b99d68021d83b29330bf9a33ee0046d32a344db8e7530276553b1f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "focus.de",
+                "praxistipps.chip.de",
+                "www.bild.de",
+                "www.chip.de",
+                "www.faz.net",
+                "www.focus.de",
+                "www.finanzen.net",
+                "www.giga.de",
+                "www.holidaycheck.de",
+                "www.wetteronline.de"
+            ]
+        },
+        {
+            "rule": "iocnt\\.net\\/chip-config\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chip-relay"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "data-2f2ec12966.chip.de",
+                    "resolved": "chip-relay.iocnt.net"
+                }
+            ],
+            "responseHashes": [
+                "6283c1a695b60dbbb1c75379151768fa845433ce02bba1937315ff8be5e38fd9"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chip.de",
+                "www.chip.de"
+            ]
+        },
+        {
+            "rule": "iocnt\\.net\\/sensor\\.modern\\.ncl\\.min\\.js",
+            "cookies": 0.000704,
+            "fingerprinting": 2,
+            "subdomains": [
+                "bild-relay",
+                "faz-relay",
+                "focus-relay",
+                "finaonl-relay",
+                "giga-relay",
+                "welt-relay",
+                "wetteron-relay"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.000704,
+            "cnames": [
+                {
+                    "original": "data-bb21a2f11b.bild.de",
+                    "resolved": "bild-relay.iocnt.net"
+                },
+                {
+                    "original": "data-4ede7e9c86.faz.net",
+                    "resolved": "faz-relay.iocnt.net"
+                },
+                {
                     "original": "data-1818d50639.focus.de",
                     "resolved": "focus-relay.iocnt.net"
+                },
+                {
+                    "original": "data-fdbbf15b66.finanzen.net",
+                    "resolved": "finaonl-relay.iocnt.net"
                 },
                 {
                     "original": "data-17c7ec5f16.giga.de",
@@ -308,71 +379,11 @@
             "exampleSites": [
                 "bild.de",
                 "www.faz.net",
-                "www.finanzen.net",
                 "www.focus.de",
+                "www.finanzen.net",
                 "www.giga.de",
                 "www.welt.de",
                 "www.wetteronline.de"
-            ]
-        },
-        {
-            "rule": "iocnt\\.net\\/iam\\.js",
-            "cookies": 0.0001,
-            "fingerprinting": 2,
-            "subdomains": [
-                "script-at"
-            ],
-            "apis": {
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "Screen.prototype.colorDepth": 1,
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.plugins": 1,
-                "Navigator.prototype.mimeTypes": 1,
-                "Document.cookie getter": 1,
-                "Date.prototype.getTime": 1,
-                "Document.cookie setter": 1,
-                "Navigator.prototype.doNotTrack": 1
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Script",
-            "firstPartyCookies": {
-                "ioam2018": {
-                    "ttl": 27648002,
-                    "length": 149,
-                    "prevalence": 0.00010045203415369161,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "netdoktor.de",
-                "www.rtl2.de"
-            ]
-        },
-        {
-            "rule": "iocnt\\.net\\/tx\\.io",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "at"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "netdoktor.de",
-                "www.netdoktor.de"
             ]
         }
     ],
@@ -383,16 +394,16 @@
         "cpu": 1,
         "cache": 3
     },
-    "cookies": 0.0011,
+    "cookies": 0.00131,
     "types": {
-        "Script": 14,
+        "Script": 15,
         "XHR": 14,
         "Other": 7
     },
     "nameservers": [
-        "ns2.infonline.de",
-        "ns4.infonline.de",
+        "ns.infonline.de",
         "ns3.infonline.de",
-        "ns.infonline.de"
+        "ns2.infonline.de",
+        "ns4.infonline.de"
     ]
 }

@@ -4,12 +4,14 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000502,
-    "sites": 5,
+    "prevalence": 0.000704,
+    "sites": 7,
     "subdomains": [
         "cricketapi-ecb",
         "cricketapi-icc",
-        "footballapi"
+        "footballapi-lcfc",
+        "footballapi",
+        "content-ecb"
     ],
     "cnames": [],
     "fingerprinting": 3,
@@ -46,7 +48,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "ccb0acc48255cbac190303b6c01a1c539a2e6de2966ab7b4ee2a9181b3b10ad2"
+                "759b8cc060c56766d792002313c6f33c65e2db18fb97374026b32c30c3339321"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -88,7 +90,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "20cdd9b4bda8d52536b85c4119d5db100c5c59de40d8ca39efbff78652fb9a58"
+                "841b12c06ec4b29dc5798f6d5d64888c87ed03f355120e15b3189a00715af421"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -103,6 +105,7 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "footballapi-lcfc",
                 "footballapi"
             ],
             "apis": {},
@@ -110,14 +113,79 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "6b401de07e7a88cdf2249f1ac4fe596921dcabd56af0e912968c61eeebcb16d4"
+                "68f28f45aeffe4cb88c70287889ae3b324fbb8e5b5fc37c45c90c4263a57fe1a"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "premierleague.com",
+                "lcfc.com",
                 "www.premierleague.com"
+            ]
+        },
+        {
+            "rule": "pulselive\\.com\\/football\\/fixtures",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "footballapi-lcfc",
+                "footballapi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "7b01e9f660336794ea8290b1dab622f2c9a15d665c700d206d52534a7e0e0e4d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lcfc.com",
+                "www.premierleague.com"
+            ]
+        },
+        {
+            "rule": "pulselive\\.com\\/content\\/ecb\\/bio\\/EN",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content-ecb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thehundred.com",
+                "www.thehundred.com"
+            ]
+        },
+        {
+            "rule": "pulselive\\.com\\/content\\/ecb\\/bio\\/EN",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content-ecb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "3717d079a0613c25728b0d6c0774c0bc35dcc2cf7fddb32705a21d2e3947f5ad"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thehundred.com",
+                "www.thehundred.com"
             ]
         }
     ],
@@ -128,10 +196,10 @@
         "cpu": 0,
         "cache": 0
     },
-    "cookies": 0.0001,
+    "cookies": 0.000101,
     "types": {
-        "Preflight": 4,
-        "XHR": 6
+        "Preflight": 6,
+        "XHR": 10
     },
     "nameservers": [
         "ns-1093.awsdns-08.org",

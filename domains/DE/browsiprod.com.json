@@ -4,16 +4,108 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
-        "events"
+        "cdn",
+        "events",
+        "yield-manager"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "browsiprod\\.com\\/bootstrap\\/bootstrap\\.js",
+            "cookies": 0.0001,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c9ed215833fed7d1620c363e1bc76ea0aaf3199f254aba27f6299ac77e07711a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "__browsiSessionID": {
+                    "ttl": 1803,
+                    "length": 79,
+                    "prevalence": 0.0001004419445560466,
+                    "uniqueness": 1
+                },
+                "__browsiUID": {
+                    "ttl": 31536003,
+                    "length": 36,
+                    "prevalence": 0.0001004419445560466,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sfgate.com",
+                "www.dailydot.com"
+            ]
+        },
+        {
             "rule": "browsiprod\\.com\\/events\\/supply",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sfgate.com",
+                "homeguides.sfgate.com",
+                "www.dailydot.com"
+            ]
+        },
+        {
+            "rule": "browsiprod\\.com\\/supply\\/v4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "yield-manager"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_li_dcdm_c": 0.0001004419445560466
+            },
+            "exampleSites": [
+                "sfgate.com",
+                "www.dailydot.com"
+            ]
+        },
+        {
+            "rule": "browsiprod\\.com\\/events\\/engineError",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -30,8 +122,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mentalfloss.com",
-                "www.mentalfloss.com"
+                "sfgate.com",
+                "homeguides.sfgate.com"
             ]
         }
     ],
@@ -42,9 +134,10 @@
         "cpu": 0,
         "cache": 3
     },
-    "cookies": 0,
+    "cookies": 0.0001,
     "types": {
-        "XHR": 2
+        "Script": 2,
+        "XHR": 7
     },
     "nameservers": [
         "ns-1546.awsdns-01.co.uk",

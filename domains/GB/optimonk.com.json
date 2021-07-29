@@ -7,17 +7,74 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000602,
-    "sites": 6,
+    "prevalence": 0.000804,
+    "sites": 8,
     "subdomains": [
+        "front",
         "gs-cdn",
         "jfapiprod",
-        "cdn-static",
-        "cdn-dynamic"
+        "cdn-static"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "optimonk\\.com\\/preload-base\\.js",
+            "cookies": 0.000804,
+            "fingerprinting": 2,
+            "subdomains": [
+                "front"
+            ],
+            "apis": {
+                "window.localStorage": 8,
+                "Navigator.prototype.vendor": 8,
+                "Navigator.prototype.userAgent": 8,
+                "Navigator.prototype.platform": 8,
+                "Document.cookie getter": 8,
+                "Document.cookie setter": 8,
+                "Navigator.prototype.cookieEnabled": 8,
+                "Date.prototype.getTime": 4,
+                "window.sessionStorage": 4
+            },
+            "sites": 8,
+            "prevalence": 0.000804,
+            "cnames": [],
+            "responseHashes": [
+                "89a879ff4c6231e0bde8c73f49337a0e194e11c95b204a09ad157f4aa737a07b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "optiMonkClientId": {
+                    "ttl": 31536005,
+                    "length": 36,
+                    "prevalence": 0.0008040201005025126,
+                    "uniqueness": 1
+                },
+                "optiMonkClient": {
+                    "ttl": 31536003,
+                    "length": 184,
+                    "prevalence": 0.0004020100502512563,
+                    "uniqueness": 1
+                },
+                "optiMonkSession": {
+                    "ttl": null,
+                    "length": 10,
+                    "prevalence": 0.0004020100502512563,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dantelabs.co.uk",
+                "www.gadgetreview.com",
+                "www.gtech.co.uk",
+                "www.laterooms.com",
+                "www.peacewiththewild.co.uk",
+                "www.spine-health.com",
+                "www.swelluk.com",
+                "www.vidaselect.com"
+            ]
+        },
         {
             "rule": "optimonk\\.com\\/jfclientsdk\\/latest\\/jfclientsdk\\.min\\.js",
             "cookies": 0,
@@ -26,13 +83,13 @@
                 "gs-cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 6,
-                "window.localStorage": 6,
-                "window.sessionStorage": 6,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 6
+                "Navigator.prototype.userAgent": 8,
+                "window.localStorage": 8,
+                "window.sessionStorage": 8,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 8
             },
-            "sites": 6,
-            "prevalence": 0.000602,
+            "sites": 8,
+            "prevalence": 0.000804,
             "cnames": [],
             "responseHashes": [
                 "bf11f7fdca5d0296692cc13a066f942ec54ef4b8943382931af4dc0aa99c7584"
@@ -41,12 +98,14 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "gadgetreview.com",
+                "dantelabs.co.uk",
+                "www.gadgetreview.com",
                 "www.gtech.co.uk",
                 "www.laterooms.com",
                 "www.peacewiththewild.co.uk",
                 "www.spine-health.com",
-                "www.swelluk.com"
+                "www.swelluk.com",
+                "www.vidaselect.com"
             ]
         },
         {
@@ -57,8 +116,8 @@
                 "jfapiprod"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.000602,
+            "sites": 8,
+            "prevalence": 0.000804,
             "cnames": [],
             "responseHashes": [
                 "3e9b76cd18916b141392804403064f5b92bcbf054ca0b20036d44b04405fd854"
@@ -67,9 +126,37 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "gadgetreview.com",
+                "dantelabs.co.uk",
+                "www.gadgetreview.com",
                 "www.gtech.co.uk",
                 "www.laterooms.com",
+                "www.peacewiththewild.co.uk",
+                "www.spine-health.com",
+                "www.swelluk.com",
+                "www.vidaselect.com"
+            ]
+        },
+        {
+            "rule": "optimonk\\.com\\/load\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "front"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 4
+            },
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "f00ecc3ef9f330741eaaafb5bc7da27f6c4cf4299c110a9e7fbe86c62536800e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "laterooms.com",
                 "www.peacewiththewild.co.uk",
                 "www.spine-health.com",
                 "www.swelluk.com"
@@ -96,28 +183,6 @@
                 "laterooms.com",
                 "www.peacewiththewild.co.uk"
             ]
-        },
-        {
-            "rule": "optimonk\\.com\\/vendor\\/swiper\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn-dynamic"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "c56f150a3d1de9ae6f60557154c7da6b10a07f98c65d95035532af5c973f522f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "laterooms.com",
-                "www.peacewiththewild.co.uk"
-            ]
         }
     ],
     "categories": [],
@@ -127,14 +192,14 @@
         "cpu": 0,
         "cache": 1
     },
-    "cookies": 0.000602,
+    "cookies": 0.000804,
     "types": {
-        "Script": 8,
-        "Fetch": 6,
+        "Script": 20,
+        "Fetch": 8,
         "Stylesheet": 2
     },
     "nameservers": [
-        "ns1.mediacenter.hu",
-        "ns2.mediacenter.hu"
+        "ns2.mediacenter.hu",
+        "ns1.mediacenter.hu"
     ]
 }

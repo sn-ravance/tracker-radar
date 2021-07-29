@@ -9,15 +9,67 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.00131,
-    "sites": 13,
+    "prevalence": 0.00161,
+    "sites": 16,
     "subdomains": [
+        "r-login",
         "public-api",
-        "r-login"
+        "haluise.files",
+        "nebadonia.files",
+        "nebadonia"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "wordpress\\.com\\/remote-login\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "r-login"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "b82743b44af1f97717ef858edad1bb061c6ab793875b6a7f1d72cc6faebee62a",
+                "a3993c2be2b16353869e409fe3eb1848dbcee713cc2a54e569f94506becc881e",
+                "e075d9e0e816ec4279fd13f96b69bd503066cdf876a3419eeb2af825cc236865"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bumibahagia.com",
+                "dykemarchberlin.com",
+                "geistblog.org",
+                "kaisertv.de"
+            ]
+        },
+        {
+            "rule": "wordpress\\.com\\/geo\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "public-api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "ed58ac8ebcada9fac1d3a5566995a9bd9a24880f6960ad6c60e9da91d22d97c0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dykemarchberlin.com",
+                "globalnews.ca",
+                "stylecaster.com"
+            ]
+        },
         {
             "rule": "wordpress\\.com\\/wp-admin\\/rest-proxy\\/",
             "cookies": 0.000201,
@@ -36,34 +88,78 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "alpenschau.com",
+                "dykemarchberlin.com",
                 "texblog.org"
             ]
         },
         {
-            "rule": "wordpress\\.com\\/remote-login\\.php",
+            "rule": "wordpress\\.com\\/rest\\/v1\\/batch",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "r-login"
+                "public-api"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "c3faa556878720c93d87f43fcef2a6b0384e8548a1a3ddf7d986654f1b400757",
-                "a3993c2be2b16353869e409fe3eb1848dbcee713cc2a54e569f94506becc881e",
-                "e075d9e0e816ec4279fd13f96b69bd503066cdf876a3419eeb2af825cc236865"
+                "6b388474dee552b53bbda722f63c7037159b7dbed3ee47553f5e4939c357a1ed"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dykemarchberlin.com",
+                "texblog.org"
+            ]
+        },
+        {
+            "rule": "wordpress\\.com\\/2021\\/07\\/bildschirmfoto-2021-07-23-um-17\\.32\\.03\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "haluise.files",
+                "nebadonia.files"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e21efb9164f621117878603ab3997f4906a0a87d5e92c30e4a5442329ac4d52d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "geistblog.org",
+                "nebadonia.wordpress.de"
+            ]
+        },
+        {
+            "rule": "wordpress\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "nebadonia"
+            ],
+            "apis": {
+                "HTMLCanvasElement.prototype.toDataURL": 1,
+                "Date.prototype.getTime": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c4eb899d3d9a071f0ebf2cf16d2ce66acb9b3f3c0162d858181b09347655f7a3"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bumibahagia.com",
-                "fingersblog.com",
-                "geistblog.org",
-                "kaisertv.de"
+                "wordpress.de",
+                "nebadonia.wordpress.de"
             ]
         },
         {
@@ -121,14 +217,16 @@
     },
     "cookies": 0.000201,
     "types": {
-        "Document": 6,
+        "Document": 8,
+        "XHR": 5,
+        "Image": 2,
         "Preflight": 2,
         "Fetch": 2
     },
     "nameservers": [
-        "ns1.wordpress.com",
-        "ns4.wordpress.com",
         "ns3.wordpress.com",
+        "ns4.wordpress.com",
+        "ns1.wordpress.com",
         "ns2.wordpress.com"
     ]
 }

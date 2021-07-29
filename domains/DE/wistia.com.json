@@ -9,12 +9,13 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000503,
-    "sites": 5,
+    "prevalence": 0.000603,
+    "sites": 6,
     "subdomains": [
         "fast",
         "distillery",
-        "pipedream"
+        "pipedream",
+        "embed-fastly"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -27,29 +28,32 @@
                 "fast"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.platform": 2,
-                "Navigator.prototype.vendor": 2,
-                "window.devicePixelRatio": 2,
-                "Navigator.prototype.mimeTypes": 2,
-                "HTMLMediaElement.prototype.canPlayType": 2,
-                "MediaSource.isTypeSupported": 2,
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.languages": 2
+                "Navigator.prototype.userAgent": 4,
+                "Navigator.prototype.platform": 3,
+                "Navigator.prototype.vendor": 3,
+                "window.devicePixelRatio": 3,
+                "Navigator.prototype.mimeTypes": 3,
+                "HTMLMediaElement.prototype.canPlayType": 3,
+                "MediaSource.isTypeSupported": 3,
+                "window.localStorage": 3,
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.languages": 4
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
-                "656af66e7871c5f1294db20f844c20c4e02d3e4bd52d9f39903bf724d5020a17"
+                "b0fa5c1b47828ddd4d59c5065dbd8d5d8823a731ec4a6142d91b622780da5c00",
+                "7d551e02c1b2aa885b9a7a5d1ce56556d8d020ab282fb26e59d70975a60f93e9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "99bitcoins.com",
-                "docs.ansible.com"
+                "docs.ansible.com",
+                "www.denon.com",
+                "www.digitalocean.com"
             ]
         },
         {
@@ -60,8 +64,8 @@
                 "fast"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
                 "1ed222d67d1a8d3fa6923cd9effec6e911a73be2f69ebe4db8ac7bf328258fd5"
@@ -71,7 +75,63 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "99bitcoins.com",
-                "docs.ansible.com"
+                "docs.ansible.com",
+                "www.denon.com",
+                "www.digitalocean.com"
+            ]
+        },
+        {
+            "rule": "wistia\\.com\\/assets\\/external\\/wistia-mux\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "fast"
+            ],
+            "apis": {
+                "window.localStorage": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.doNotTrack": 3,
+                "Document.cookie getter": 2
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "6e1b1e3c604972c779dcc1149be5533d0f9d80c963112e41cdc3d161f7665313"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "99bitcoins.com",
+                "www.denon.com",
+                "www.digitalocean.com"
+            ]
+        },
+        {
+            "rule": "wistia\\.com\\/assets\\/external\\/externalPlayer\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "fast"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "window.devicePixelRatio": 2
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "fcc55667aab1f0aecd4c78c0ad2ba7a2c8a52efea5e7dbf2c96469b09c75b387"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "99bitcoins.com",
+                "www.denon.com",
+                "www.digitalocean.com"
             ]
         },
         {
@@ -82,8 +142,8 @@
                 "distillery"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -93,7 +153,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "99bitcoins.com",
-                "blog.finxter.com"
+                "www.denon.com",
+                "www.digitalocean.com"
             ]
         },
         {
@@ -104,8 +165,8 @@
                 "pipedream"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
@@ -115,7 +176,30 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "99bitcoins.com",
-                "blog.finxter.com"
+                "www.denon.com",
+                "www.digitalocean.com"
+            ]
+        },
+        {
+            "rule": "wistia\\.com\\/assets\\/external\\/allIntegrations\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fast"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "d77802915404115b7ae2d56748b9baf61a53e1b9e9c3832885fb63e9e898bcbf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "99bitcoins.com",
+                "www.denon.com"
             ]
         },
         {
@@ -138,10 +222,10 @@
                 "Navigator.prototype.languages": 3
             },
             "sites": 3,
-            "prevalence": 0.000302,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "f8074ceadae28c50f1621bf56659be67e12ebae15310a08bb92e634e652ed9ef"
+                "aab629d77f7aa17697be511b11a86e8854cbe75c900880de40e84780485c5d24"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -150,6 +234,28 @@
                 "gradle.org",
                 "docs.gradle.org",
                 "www.tandfonline.com"
+            ]
+        },
+        {
+            "rule": "wistia\\.com\\/deliveries\\/8b7a3dd196e7f3f7b69a11d8f4c3db42fe40b47f\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "embed-fastly"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "9c6b06963545d156820229701cfc7c9d219067f1dfe7ce452372381765caba3f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "denon.com",
+                "www.denon.com"
             ]
         }
     ],
@@ -167,17 +273,18 @@
     },
     "cookies": 0,
     "types": {
-        "Script": 7,
-        "XHR": 4
+        "Script": 19,
+        "XHR": 6,
+        "Image": 2
     },
     "nameservers": [
+        "ns-1706.awsdns-21.co.uk",
+        "ns-55.awsdns-06.com",
+        "ns-792.awsdns-35.net",
         "dns1.p01.nsone.net",
         "dns2.p01.nsone.net",
         "dns3.p01.nsone.net",
         "dns4.p01.nsone.net",
-        "ns-1446.awsdns-52.org",
-        "ns-1706.awsdns-21.co.uk",
-        "ns-55.awsdns-06.com",
-        "ns-792.awsdns-35.net"
+        "ns-1446.awsdns-52.org"
     ]
 }

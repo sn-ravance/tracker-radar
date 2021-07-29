@@ -7,35 +7,46 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.001,
-    "sites": 10,
+    "prevalence": 0.00111,
+    "sites": 11,
     "subdomains": [
-        "logs-01",
-        "cloudfront"
+        "cloudfront",
+        "logs-01"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "loggly\\.com\\/inputs\\/c2567968-6d7d-4427-a7bb-eaab4a243135\\/tag\\/ice",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "loggly\\.com\\/js\\/loggly\\.tracker-latest\\.min\\.js",
+            "cookies": 0.000302,
+            "fingerprinting": 1,
             "subdomains": [
-                "logs-01"
+                "cloudfront"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "apis": {
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "cdc7a3d8f9ce204e8853c2f7088b9c3fe488432314d1ea6c17cf8fd4ae179261"
+                "3015c007bbb1a61e4345b214d17980c066c4d8b5334dc41d06db490534634758"
             ],
-            "type": "XHR",
-            "firstPartyCookies": {},
+            "type": "Script",
+            "firstPartyCookies": {
+                "logglytrackingsession": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.00030150753768844223,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "canadafreepress.com",
-                "talkwithstranger.com"
+                "newatlas.com",
+                "www.inthestyle.com",
+                "www.tunefind.com"
             ]
         },
         {
@@ -46,8 +57,8 @@
                 "logs-01"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -57,40 +68,9 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "nextdoor.co.uk",
+                "www.flixbus.co.uk",
                 "www.royallondon.com",
                 "www.tuneskit.com"
-            ]
-        },
-        {
-            "rule": "loggly\\.com\\/js\\/loggly\\.tracker-latest\\.min\\.js",
-            "cookies": 0.000201,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cloudfront"
-            ],
-            "apis": {
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "3015c007bbb1a61e4345b214d17980c066c4d8b5334dc41d06db490534634758"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "logglytrackingsession": {
-                    "ttl": null,
-                    "length": 36,
-                    "prevalence": 0.0002007226013649137,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "newatlas.com",
-                "www.tunefind.com"
             ]
         },
         {
@@ -114,6 +94,28 @@
                 "hp.com",
                 "store.hp.com"
             ]
+        },
+        {
+            "rule": "loggly\\.com\\/inputs\\/c2567968-6d7d-4427-a7bb-eaab4a243135\\/tag\\/ice",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "logs-01"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "cdc7a3d8f9ce204e8853c2f7088b9c3fe488432314d1ea6c17cf8fd4ae179261"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "talkwithstranger.com",
+                "www.vetinfo.com"
+            ]
         }
     ],
     "categories": [],
@@ -123,17 +125,17 @@
         "cpu": 0,
         "cache": 3
     },
-    "cookies": 0.000301,
+    "cookies": 0.000402,
     "types": {
-        "XHR": 2,
-        "Image": 3,
-        "Script": 2,
-        "Other": 2
+        "Script": 3,
+        "Image": 4,
+        "Other": 2,
+        "XHR": 2
     },
     "nameservers": [
-        "ns-998.awsdns-60.net",
         "ns-1367.awsdns-42.org",
         "ns-1709.awsdns-21.co.uk",
-        "ns-9.awsdns-01.com"
+        "ns-9.awsdns-01.com",
+        "ns-998.awsdns-60.net"
     ]
 }

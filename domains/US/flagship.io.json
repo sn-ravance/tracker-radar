@@ -4,16 +4,17 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000548,
-    "sites": 8,
+    "prevalence": 0.0000625,
+    "sites": 9,
     "subdomains": [
-        "decision-api"
+        "decision-api",
+        "tag"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "flagship\\.io\\/v1\\/bnft3ccdg2jg2rif6urg\\/campaigns\\/FLAG:011-homepage-themalinks",
+            "rule": "flagship\\.io\\/v1\\/bnft3ccdg2jg2rif6urg\\/campaigns",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -21,10 +22,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [],
             "responseHashes": [
-                "1d9aa9cabcea76013282c244736f90111e6fab7cc3067ec6848c39fa1dbc1bd6"
+                "56125676c936b75bc28a272258cfb96eb770836d2e72ea7cf950c7ec0e746376"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -43,7 +44,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -63,10 +64,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [],
             "responseHashes": [
-                "6f3ea7f9692617c51d2da9ea4b18f3a67eda8033e2a0005aa8c7e7597c330579"
+                "1ed726a35907fdc5111559c10bba48ab9c940c6f4ec7d29a1771b8925bc6fd48"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -85,7 +86,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -105,10 +106,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [],
             "responseHashes": [
-                "282388c693ddb95efe369b3beca42777a697f2bec0e2f746f2e6adb94fa9d1f6"
+                "5a89a83db1144c88453fca15f037b5e82bbeab5b7a3b6b6d986a76ebc2ca03db"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -116,6 +117,59 @@
             "exampleSites": [
                 "diy.com",
                 "www.diy.com"
+            ]
+        },
+        {
+            "rule": "flagship\\.io\\/0\\.1\\.1\\/index\\.js",
+            "cookies": 0.00000694,
+            "fingerprinting": 2,
+            "subdomains": [
+                "tag"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 1,
+                "Document.cookie setter": 1,
+                "Document.cookie getter": 1,
+                "Navigator.prototype.cookieEnabled": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.colorDepth": 1,
+                "Navigator.prototype.language": 1,
+                "Navigator.prototype.javaEnabled": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "ee1d8d11db12610d07bd10756f056d5222bfbcdde31408ca6ee62c23f36dcae0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "ABdebug": {
+                    "ttl": -1627016208,
+                    "length": 7,
+                    "prevalence": 0.0000069415521310565046,
+                    "uniqueness": 1
+                },
+                "fs": {
+                    "ttl": 33696001,
+                    "length": 102,
+                    "prevalence": 0.0000069415521310565046,
+                    "uniqueness": 1
+                },
+                "fsSession": {
+                    "ttl": 1801,
+                    "length": 59,
+                    "prevalence": 0.0000069415521310565046,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "oui.sncf",
+                "www.oui.sncf"
             ]
         }
     ],
@@ -126,11 +180,12 @@
         "cpu": 0,
         "cache": 0
     },
-    "cookies": 0.00000685,
+    "cookies": 0.00000694,
     "types": {
         "Fetch": 2,
         "Preflight": 4,
-        "XHR": 4
+        "XHR": 4,
+        "Script": 2
     },
     "nameservers": [
         "ns-1860.awsdns-40.co.uk",

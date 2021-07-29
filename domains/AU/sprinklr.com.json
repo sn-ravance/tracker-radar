@@ -4,12 +4,14 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000401,
-    "sites": 4,
+    "prevalence": 0.000206,
+    "sites": 2,
     "subdomains": [
         "prod-who-live-chat",
         "prod2-live-chat",
-        "prod-video-chat-chat"
+        "prod-lc-mqtt-who",
+        "prod2-live-chat-mqtt",
+        "sprcdn-assets"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -24,7 +26,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000206,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -41,23 +43,108 @@
             "fingerprinting": 0,
             "subdomains": [
                 "prod-who-live-chat",
-                "prod2-live-chat",
-                "prod-video-chat-chat"
+                "prod2-live-chat"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000206,
             "cnames": [],
             "responseHashes": [
-                "9ce8c2b0da51fa8bc262adf2afb1a0016cf169b600131f22d93e0d98a0ec54f8"
+                "6169d5fc9f15da8f67f5dcdb0cdf2873345b3f617e3e3688cfdc026fad580af6"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "who.int",
-                "www.bose.com.au",
-                "www.samsung.com"
+                "www.bose.com.au"
+            ]
+        },
+        {
+            "rule": "sprinklr\\.com\\/mqtt",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-lc-mqtt-who",
+                "prod2-live-chat-mqtt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000206,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "who.int",
+                "www.bose.com.au"
+            ]
+        },
+        {
+            "rule": "sprinklr\\.com\\/738\\/notification-4de93778-e7e2-403b-9035-46fddfe6df16-1610394477\\.mp3",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sprcdn-assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000206,
+            "cnames": [],
+            "responseHashes": [
+                "e1fda1782961b646f1b0619e9ef9bb76c573c04d4f96e7857056f7440a22e545"
+            ],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "who.int",
+                "www.bose.com.au"
+            ]
+        },
+        {
+            "rule": "sprinklr\\.com\\/api\\/livechat\\/conversation\\/fetch",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-who-live-chat",
+                "prod2-live-chat"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000206,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "who.int",
+                "www.bose.com.au"
+            ]
+        },
+        {
+            "rule": "sprinklr\\.com\\/api\\/livechat\\/conversation\\/fetch",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-who-live-chat",
+                "prod2-live-chat"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000206,
+            "cnames": [],
+            "responseHashes": [
+                "a19aa8d5f76734f95c8c0fedf8bd6d7d1677e08baabf10635f8cf54f46f3d3aa"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "who.int",
+                "www.bose.com.au"
             ]
         }
     ],
@@ -70,8 +157,10 @@
     },
     "cookies": 0,
     "types": {
-        "Preflight": 2,
-        "XHR": 3
+        "Preflight": 4,
+        "XHR": 4,
+        "WebSocket": 2,
+        "Media": 2
     },
     "nameservers": [
         "ns-1627.awsdns-11.co.uk",

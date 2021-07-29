@@ -11,9 +11,25 @@
     "sites": 20,
     "subdomains": [
         "c1",
-        "i1"
+        "i1",
+        "i2",
+        "i6",
+        "i7"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "assets.iceland.co.uk",
+            "resolved": "i2.adis.ws"
+        },
+        {
+            "original": "media.littlewoods.com",
+            "resolved": "i6.adis.ws"
+        },
+        {
+            "original": "media.very.co.uk",
+            "resolved": "i7.adis.ws"
+        }
+    ],
     "fingerprinting": 0,
     "resources": [
         {
@@ -69,11 +85,11 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000401,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
-                "8555a83781b8a85dd6247b44f6d15f4fde6fa74a228423cb09816f3c5160fcfa",
-                "1ae0a3c3311448634f2530160274756f2ba76aca39d051484277f7da9a5a6794",
+                "fd33ad121fd22fc3b99710ddcbe73ae8c2a77f4cd6bce3734a98ae963557331f",
+                "8a523ed5fd8bd8b03da5fca9989eed6d34ca3c2aea1ea19fc23a400bde16b7ca",
                 "ade317e96470e38b5164fb8e179698a839c96eb50bdb4aaf859bbec15aa4e9d1"
             ],
             "type": "XHR",
@@ -329,23 +345,62 @@
             ]
         },
         {
-            "rule": "adis\\.ws\\/v\\/rapha\\/Nomad_10s_16_9_online\\/webm_720p",
+            "rule": "adis\\.ws\\/i\\/iceland\\/GHI_2021_WINNERS\\.webp",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "i1"
+                "i2"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Media",
+            "cnames": [
+                {
+                    "original": "assets.iceland.co.uk",
+                    "resolved": "i2.adis.ws"
+                }
+            ],
+            "responseHashes": [
+                "a38f69dd9e6936148535ec93d1b424490c0ce979f6e07c6bc3e460a6522693ba"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "rapha.cc",
-                "www.rapha.cc"
+                "iceland.co.uk",
+                "www.iceland.co.uk"
+            ]
+        },
+        {
+            "rule": "adis\\.ws\\/i\\/sd\\/210723-home-d-02\\/michelle-keegan\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i6",
+                "i7"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "media.littlewoods.com",
+                    "resolved": "i6.adis.ws"
+                },
+                {
+                    "original": "media.very.co.uk",
+                    "resolved": "i7.adis.ws"
+                }
+            ],
+            "responseHashes": [
+                "2f2a9abd4c4e49ef30738667b3921dffa820b0c369b60969e1a5a1ee5358bfbe"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "littlewoods.com",
+                "www.very.co.uk"
             ]
         },
         {
@@ -381,19 +436,18 @@
     "cookies": 0,
     "types": {
         "Stylesheet": 2,
-        "Image": 24,
+        "Image": 28,
         "XHR": 4,
-        "Media": 2,
         "Fetch": 2
     },
     "nameservers": [
-        "pdns101.ultradns.com",
-        "pdns101.ultradns.net",
-        "pdns101.ultradns.org",
+        "pdns101.ultradns.biz",
         "dns1.p07.nsone.net",
         "dns2.p07.nsone.net",
-        "dns3.p07.nsone.net",
         "dns4.p07.nsone.net",
-        "pdns101.ultradns.biz"
+        "pdns101.ultradns.org",
+        "pdns101.ultradns.com",
+        "pdns101.ultradns.net",
+        "dns3.p07.nsone.net"
     ]
 }

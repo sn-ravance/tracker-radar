@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00131,
-    "sites": 13,
+    "prevalence": 0.00161,
+    "sites": 16,
     "subdomains": [
         "cdn",
-        "input"
+        "input",
+        "input.b"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -21,39 +22,43 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.doNotTrack": 13,
-                "Navigator.prototype.userAgent": 13,
-                "window.localStorage": 13,
-                "Navigator.prototype.cookieEnabled": 13,
-                "Navigator.prototype.language": 13,
-                "Date.prototype.getTime": 13
+                "Navigator.prototype.doNotTrack": 16,
+                "Navigator.prototype.userAgent": 16,
+                "window.localStorage": 16,
+                "Navigator.prototype.cookieEnabled": 16,
+                "Navigator.prototype.language": 16,
+                "Date.prototype.getTime": 16
             },
-            "sites": 13,
-            "prevalence": 0.00131,
+            "sites": 16,
+            "prevalence": 0.00161,
             "cnames": [],
             "responseHashes": [
-                "a399809355cad1e0e1c3f68eb00c4de5328e968d331b6c5d00fd406a4e1ecd6a",
-                "903f178b71305dd4521bd09930f48229d39392eb269e64e60c0fc5a5c75a79d8",
-                "af960a12c3aa34bc75c2ebeabcbc629b077b1840ff977ad60d9fabbb5d927d94",
-                "68caf3edee5c6f241af684557bb5500c932aa7fef6a57f4656e746fdef389377"
+                "dce71492a124e7127de3ed31ac1cfaabcfb868fc02fbbec250146df35a39390b",
+                "def3a6f3aad5ac8d5f87c03c10b87d9e019dc1b9d45108be865b9b9c1c194983",
+                "8c076622df295c28f8efc3097f7d114b5441437e6b07696cd20731b1310a1330",
+                "6a61f0e2def8e96e61a47a44a618cbfcebaa90e3db9d92f4b0c3bf0b5f8f4320",
+                "4d2ba7796d52417fea53d2aed91a7e53fe0b4a72e4b7e5996d189b351abdb2ab"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "americanmeadows.com",
+                "www.bathdepot.ca",
                 "www.brother-usa.com",
-                "www.eastwood.com",
+                "www.davidstea.com",
                 "www.gianttiger.com",
+                "www.guess.com",
                 "www.homehardware.ca",
-                "www.lasenza.ca",
-                "www.linenchest.com",
+                "www.lasenza.com",
                 "www.lorextechnology.com",
                 "www.monrovia.com",
                 "www.mypillow.com",
-                "www.outdoorresearch.com",
                 "www.princessauto.com",
-                "www.vitamart.ca"
+                "www.sleepassociation.org",
+                "www.saferbrand.com",
+                "www.vitamart.ca",
+                "www.westcoastkids.ca"
             ]
         },
         {
@@ -61,11 +66,12 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "input"
+                "input",
+                "input.b"
             ],
             "apis": {},
-            "sites": 13,
-            "prevalence": 0.00131,
+            "sites": 16,
+            "prevalence": 0.00161,
             "cnames": [],
             "responseHashes": [],
             "type": "WebSocket",
@@ -73,18 +79,65 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "americanmeadows.com",
+                "www.bathdepot.ca",
                 "www.brother-usa.com",
-                "www.eastwood.com",
+                "www.davidstea.com",
                 "www.gianttiger.com",
+                "www.guess.com",
                 "www.homehardware.ca",
-                "www.lasenza.ca",
-                "www.linenchest.com",
+                "www.lasenza.com",
                 "www.lorextechnology.com",
                 "www.monrovia.com",
                 "www.mypillow.com",
-                "www.outdoorresearch.com",
                 "www.princessauto.com",
-                "www.vitamart.ca"
+                "www.sleepassociation.org",
+                "www.saferbrand.com",
+                "www.vitamart.ca",
+                "www.westcoastkids.ca"
+            ]
+        },
+        {
+            "rule": "noibu\\.com\\/collect_error",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "input"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lasenza.com",
+                "www.lorextechnology.com",
+                "www.saferbrand.com"
+            ]
+        },
+        {
+            "rule": "noibu\\.com\\/collect_error",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "input"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lasenza.com",
+                "www.lorextechnology.com",
+                "www.saferbrand.com"
             ]
         }
     ],
@@ -97,13 +150,15 @@
     },
     "cookies": 0,
     "types": {
-        "Script": 13,
-        "WebSocket": 13
+        "Script": 16,
+        "WebSocket": 16,
+        "Preflight": 3,
+        "XHR": 3
     },
     "nameservers": [
+        "ns-1667.awsdns-16.co.uk",
         "ns-67.awsdns-08.com",
         "ns-819.awsdns-38.net",
-        "ns-1336.awsdns-39.org",
-        "ns-1667.awsdns-16.co.uk"
+        "ns-1336.awsdns-39.org"
     ]
 }

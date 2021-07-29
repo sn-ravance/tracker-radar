@@ -4,11 +4,10 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.00151,
-    "sites": 15,
+    "prevalence": 0.00101,
+    "sites": 10,
     "subdomains": [
         "ghs",
-        "api.id.ghs",
         "api.stage-id.ghs"
     ],
     "cnames": [
@@ -17,20 +16,8 @@
             "resolved": "ghs.googlehosted.com"
         },
         {
-            "original": "a.nytimes.com",
+            "original": "analytics.loxone.com",
             "resolved": "ghs.googlehosted.com"
-        },
-        {
-            "original": "analytics.bayut.com",
-            "resolved": "ghs.googlehosted.com"
-        },
-        {
-            "original": "api.id.swmhdata.jetzt.de",
-            "resolved": "api.id.ghs.googlehosted.com"
-        },
-        {
-            "original": "api.id.swmhdata.sueddeutsche.de",
-            "resolved": "api.id.ghs.googlehosted.com"
         },
         {
             "original": "api.stage-id.swmhdata.stuttgarter-nachrichten.de",
@@ -41,18 +28,39 @@
             "resolved": "api.stage-id.ghs.googlehosted.com"
         },
         {
-            "original": "ipapi.tmbi.com",
-            "resolved": "ghs.googlehosted.com"
-        },
-        {
-            "original": "purr.nytimes.com",
+            "original": "uie.radio-canada.ca",
             "resolved": "ghs.googlehosted.com"
         }
     ],
-    "fingerprinting": 3,
+    "fingerprinting": 1,
     "resources": [
         {
-            "rule": "googlehosted\\.com\\/svc\\/nyt\\/data-layer",
+            "rule": "googlehosted\\.com\\/v0\\/current_user",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "uie.radio-canada.ca",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "googlehosted\\.com\\/v0\\/current_user",
             "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
@@ -63,23 +71,75 @@
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "a.nytimes.com",
+                    "original": "uie.radio-canada.ca",
                     "resolved": "ghs.googlehosted.com"
                 }
             ],
             "responseHashes": [
-                "1ca400f2405fe18306a9e7b556d7342e4f25f88afd51c730d6f95bbacc3c6640"
+                "d69cfeafef280d0b5cedafe9cd4618bd7c750ebae2ee8968df7c4fadc753fc39"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nytimes.com",
-                "www.nytimes.com"
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
             ]
         },
         {
-            "rule": "googlehosted\\.com\\/v1\\/purr-cache",
+            "rule": "googlehosted\\.com\\/v0\\/ids",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "uie.radio-canada.ca",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "googlehosted\\.com\\/v0\\/ids",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "uie.radio-canada.ca",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [
+                "8c2b34def668b3fd7f414214b5442e8b18cd44967ab3804005afc6740f646da6"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "googlehosted\\.com\\/g\\/collect",
             "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
@@ -90,29 +150,58 @@
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "purr.nytimes.com",
+                    "original": "analytics.loxone.com",
                     "resolved": "ghs.googlehosted.com"
                 }
             ],
-            "responseHashes": [],
-            "type": "Fetch",
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nytimes.com",
-                "www.nytimes.com"
+                "loxone.com",
+                "www.loxone.com"
             ]
         },
         {
-            "rule": "googlehosted\\.com\\/track",
-            "cookies": 0.000301,
+            "rule": "googlehosted\\.com\\/g\\/collect",
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "ghs"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "analytics.loxone.com",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [
+                "e64954dc34e12c7190cc2338a54b07644ff0f102aa71cc7209bcbb49c3009f7c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "loxone.com",
+                "www.loxone.com"
+            ]
+        },
+        {
+            "rule": "googlehosted\\.com\\/track",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "a.et.nytimes.com",
@@ -127,7 +216,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "nytimes.com",
-                "cooking.nytimes.com",
                 "www.nytimes.com"
             ]
         },
@@ -136,21 +224,12 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api.id.ghs",
                 "api.stage-id.ghs"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [
-                {
-                    "original": "api.id.swmhdata.sueddeutsche.de",
-                    "resolved": "api.id.ghs.googlehosted.com"
-                },
-                {
-                    "original": "api.id.swmhdata.jetzt.de",
-                    "resolved": "api.id.ghs.googlehosted.com"
-                },
                 {
                     "original": "api.stage-id.swmhdata.stuttgarter-zeitung.de",
                     "resolved": "api.stage-id.ghs.googlehosted.com"
@@ -161,87 +240,25 @@
                 }
             ],
             "responseHashes": [
-                "2b8e7d2d599fb0a5d057be632711fc7590380d9734e31bd745edca70c8a9bb33",
-                "7a1ad323a113568a2b74f35757a7be903e3855b8b75a4730d7eb1054a9b1c5ad",
                 "50f8fd38806768b28b42b9e83e639a1dc8f7252a9c6b0fcd1a70d98266ef59a3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "sueddeutsche.de",
-                "www.jetzt.de",
-                "www.sueddeutsche.de",
-                "www.stuttgarter-zeitung.de",
+                "stuttgarter-zeitung.de",
                 "www.stuttgarter-nachrichten.de"
-            ]
-        },
-        {
-            "rule": "googlehosted\\.com\\/g\\/collect",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ghs"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "analytics.bayut.com",
-                    "resolved": "ghs.googlehosted.com"
-                }
-            ],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "_ga": 0.0006022282445046673
-            },
-            "exampleSites": [
-                "bayut.com",
-                "www.bayut.com"
-            ]
-        },
-        {
-            "rule": "googlehosted\\.com\\/api\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ghs"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [
-                {
-                    "original": "ipapi.tmbi.com",
-                    "resolved": "ghs.googlehosted.com"
-                }
-            ],
-            "responseHashes": [
-                "f5e6dfc10d278d194b1d942ba2849e204e292ff75d67c839887863fd8bab2e83"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "rd.com",
-                "www.selection.ca",
-                "www.tasteofhome.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000402,
     "types": {
-        "XHR": 5,
-        "Fetch": 2,
-        "Other": 5,
-        "Script": 5
+        "Preflight": 4,
+        "XHR": 6,
+        "Other": 4,
+        "Script": 2
     },
     "nameservers": []
 }

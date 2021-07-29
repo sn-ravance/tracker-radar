@@ -7,14 +7,38 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.000804,
-    "sites": 8,
+    "prevalence": 0.000905,
+    "sites": 9,
     "subdomains": [
-        "radar"
+        "radar",
+        "rpt"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "cedexis\\.com\\/1\\/10096\\/radar\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "radar"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "PerformanceTiming.prototype.navigationStart": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "accor.com",
+                "all.accor.com"
+            ]
+        },
         {
             "rule": "cedexis\\.com\\/1621860284\\/radar\\.js",
             "cookies": 0,
@@ -23,8 +47,8 @@
                 "radar"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.000804,
+            "sites": 10,
+            "prevalence": 0.00101,
             "cnames": [],
             "responseHashes": [
                 "38b126f92a3104c7d73e1cf2f448db9896d4f29ebf3a7b593b380e6cdd0ae378"
@@ -34,8 +58,10 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "accor.com",
+                "all.accor.com",
                 "boston.cbslocal.com",
                 "mubi.com",
+                "www.cbsnews.com",
                 "www.cbssports.com",
                 "www.hepsiburada.com",
                 "www.ig.com",
@@ -46,13 +72,15 @@
         {
             "rule": "cedexis\\.com\\/releases\\/1621860284\\/impact\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "radar"
             ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 2
+            },
+            "sites": 5,
+            "prevalence": 0.000503,
             "cnames": [],
             "responseHashes": [
                 "f7309b6ccc1a76da1e7a0709abb8a0bf549277dee6c21ae7a466e73426fe9667"
@@ -62,9 +90,55 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "accor.com",
+                "all.accor.com",
                 "mubi.com",
                 "www.hepsiburada.com",
                 "www.ig.com"
+            ]
+        },
+        {
+            "rule": "cedexis\\.com\\/r1\\/1\\/10096\\/_CgJqNRAUGHsiBQgBEPBOKP6_1Ckw0-DuhwY41ODuhwZAlKSJ-QRKEAgDEJ0BGIs_IAAou4yAoARQAFoKCAAQABgAIAAoAGABahNidXR0b24xLmFtcy5odi5wcm9kggEQCAMQnQEYiz8gACi7jICgBIgBlOSg3QU",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rpt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8aed5e340cf6a71108b30bd80e05ea7abfb02b5b9ccf9439cae12382df68d2a4"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "accor.com",
+                "all.accor.com"
+            ]
+        },
+        {
+            "rule": "cedexis\\.com\\/1\\/55171\\/radar\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "radar"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "PerformanceTiming.prototype.navigationStart": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cbslocal.com",
+                "www.cbsnews.com"
             ]
         }
     ],
@@ -77,7 +151,8 @@
     },
     "cookies": 0,
     "types": {
-        "Script": 12
+        "Script": 19,
+        "XHR": 2
     },
     "nameservers": [
         "pdns84.ultradns.net",

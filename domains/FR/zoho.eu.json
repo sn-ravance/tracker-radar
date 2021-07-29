@@ -7,13 +7,15 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
-        "desk"
+        "desk",
+        "mh",
+        "ma"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "zoho\\.eu\\/support\\/GenerateCaptcha",
@@ -27,7 +29,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "0f24dd56b29bda24c3d1f4009b3ab83f2df7b6ea8daebcfbda81fe177b177557"
+                "fd3e3776bf47ea2f38fcb8234b31adb93c55562b83276128c46fbba836795ced"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -35,6 +37,35 @@
             "exampleSites": [
                 "allopneus.com",
                 "www.allopneus.com"
+            ]
+        },
+        {
+            "rule": "zoho\\.eu\\/hub\\/js\\/WebsiteAutomation\\.js",
+            "cookies": 0.0001,
+            "fingerprinting": 1,
+            "subdomains": [
+                "mh",
+                "ma"
+            ],
+            "apis": {
+                "Navigator.prototype.cookieEnabled": 1,
+                "Date.prototype.getTime": 1,
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1,
+                "window.sessionStorage": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "99e1c45af39f8556fe8f6933f5afad2c0b820161aa150882c09d4cb0dac4d1f0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "funbooker.com",
+                "www.funbooker.com"
             ]
         }
     ],
@@ -52,18 +83,19 @@
         "cpu": 0,
         "cache": 0
     },
-    "cookies": 0.000201,
+    "cookies": 0.000301,
     "types": {
-        "XHR": 2
+        "XHR": 2,
+        "Script": 2
     },
     "nameservers": [
-        "dns1.p03.nsone.net",
-        "pdns90.ultradns.net",
-        "pdns90.ultradns.org",
-        "dns3.p03.nsone.net",
-        "ns1.zohocorp.com",
-        "dns2.p03.nsone.net",
         "pdns90.ultradns.biz",
-        "pdns90.ultradns.com"
+        "dns2.p03.nsone.net",
+        "pdns90.ultradns.COM",
+        "pdns90.ultradns.net",
+        "dns3.p03.nsone.net",
+        "NS1.ZOHOCORP.COM",
+        "pdns90.ultradns.org",
+        "dns1.p03.nsone.net"
     ]
 }

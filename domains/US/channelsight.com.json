@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000137,
-    "sites": 2,
+    "prevalence": 0.0000486,
+    "sites": 7,
     "subdomains": [
-        "api"
+        "api",
+        "tracking"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "channelsight\\.com\\/api\\/assets\\/GetAssetConfiguration",
@@ -20,16 +21,18 @@
                 "api"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000206,
+            "sites": 5,
+            "prevalence": 0.0000347,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "corelle.com",
+                "egopowerplus.com",
+                "instantpot.com",
                 "www.corelle.com",
+                "www.lovethegarden.com",
                 "www.skil.com"
             ]
         },
@@ -41,62 +44,114 @@
                 "api"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000206,
+            "sites": 5,
+            "prevalence": 0.0000347,
             "cnames": [],
             "responseHashes": [
-                "e6facc459b71da96b8c65a09f2781c8f2373c10327cb6fc7ce59a5daf1ebbc90",
-                "4566d37646bf95df1037ce4af936574b7c0f5f43e576a66718f55133e5c097ec"
+                "125da1fbcad076aed8461d027899475d83a213d35bbe98a500293e4a5635c1d1",
+                "3ae2a44f00363170bd880b07f28a3711d399fe847b2fcb928afb176d90051427",
+                "145b7070074f02fc14878e8717f7a73941590660b3fc3c37aa00de5ac311c396"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "corelle.com",
+                "egopowerplus.com",
+                "instantpot.com",
                 "www.corelle.com",
+                "www.lovethegarden.com",
                 "www.skil.com"
             ]
         },
         {
-            "rule": "channelsight\\.com\\/api\\/1\\.37\\/feed",
+            "rule": "channelsight\\.com\\/api\\/1\\.38\\/feed",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
+                "601c4604e36b41f90737a2138c26ca08507f2935ca7f39d4ce434127cc80b6eb",
+                "d292fa9fa8dcc2559af82842e610e0f13b01359c8a1a3301b5440ab53cd1fc2c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "egopowerplus.com",
+                "instantpot.com",
+                "www.corelle.com"
+            ]
+        },
+        {
+            "rule": "channelsight\\.com\\/api\\/1\\.38\\/feed",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "corelle.com",
+                "egopowerplus.com",
+                "instantpot.com",
                 "www.corelle.com"
             ]
         },
         {
-            "rule": "channelsight\\.com\\/api\\/1\\.37\\/feed",
+            "rule": "channelsight\\.com\\/api\\/tracking\\/v2\\/Init",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api"
+                "tracking"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [],
             "responseHashes": [
-                "6b3250674f2f4e232faf6f3917f9909903d7b6096701317d9bbcadd91a6da6c5"
+                "0167d676994fa53cd046b32795eb062433e4062cc8a01447c6aa68ba0c120d04"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "corelle.com",
-                "www.corelle.com"
+                "fust.ch",
+                "www.takealot.com"
+            ]
+        },
+        {
+            "rule": "channelsight\\.com\\/api\\/tracking\\/v2\\/UrlTracking",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "17b62b00ec791300d86095a9d36d09f1cf6657a582089a681a7172a0108df6e6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fust.ch",
+                "www.takealot.com"
             ]
         }
     ],
@@ -104,13 +159,14 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Preflight": 5,
-        "XHR": 5
+        "Preflight": 8,
+        "XHR": 8,
+        "Script": 4
     },
     "nameservers": [
-        "ns4-07.azure-dns.info",
         "ns1-07.azure-dns.com",
         "ns2-07.azure-dns.net",
-        "ns3-07.azure-dns.org"
+        "ns3-07.azure-dns.org",
+        "ns4-07.azure-dns.info"
     ]
 }

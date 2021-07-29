@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
         "rum"
     ],
@@ -20,8 +20,53 @@
                 "rum"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cameranu.nl",
+                "www.gazelle.nl",
+                "www.smartphonehoesjes.nl"
+            ]
+        },
+        {
+            "rule": "cwv-insights\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rum"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "974fce118f736180d82e3ada9923a77cf01bee852d849444262ffd5d961e92ef",
+                "8593ec0f97f53e1fd387193bb59b816367a518598f0ed69edec36bd1a23da877"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cameranu.nl",
+                "www.gazelle.nl",
+                "www.smartphonehoesjes.nl"
+            ]
+        },
+        {
+            "rule": "cwv-insights\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rum"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -30,7 +75,39 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "smartphonehoesjes.nl",
+                "cameranu.nl",
+                "www.cameranu.nl",
+                "www.gazelle.nl",
+                "www.smartphonehoesjes.nl"
+            ]
+        },
+        {
+            "rule": "cwv-insights\\.com\\/rum\\.m2\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "rum"
+            ],
+            "apis": {
+                "Navigator.prototype.connection": 2,
+                "window.localStorage": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.devicePixelRatio": 2,
+                "Navigator.prototype.deviceMemory": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "6ba55c884c1f293bea6d3401c0032b0c835152b307044a8b4d8db76596266069"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gazelle.nl",
                 "www.smartphonehoesjes.nl"
             ]
         }
@@ -39,11 +116,14 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Other": 2
+        "Preflight": 3,
+        "Fetch": 3,
+        "Other": 4,
+        "Script": 2
     },
     "nameservers": [
-        "ns5.be",
         "ns11.net",
+        "ns5.be",
         "ns0.nl"
     ]
 }

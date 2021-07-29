@@ -9,9 +9,10 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000302,
-    "sites": 3,
+    "prevalence": 0.000602,
+    "sites": 6,
     "subdomains": [
+        "rt",
         "js",
         "data"
     ],
@@ -19,102 +20,126 @@
     "fingerprinting": 3,
     "resources": [
         {
-            "rule": "ad-score\\.com\\/score\\.min\\.js",
+            "rule": "ad-score\\.com\\/v2\\/score\\/cors",
             "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8a5eb0a23bb6e5a6b664cdcfcab1964cce731413a2ee52d4782e4c6b2f8b79f3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "investing.com",
+                "www.osradar.com"
+            ]
+        },
+        {
+            "rule": "ad-score\\.com\\/score\\.min\\.js",
+            "cookies": 0.000402,
             "fingerprinting": 3,
             "subdomains": [
                 "js"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.name": 2,
-                "Document.cookie getter": 2,
-                "Screen.prototype.availHeight": 2,
-                "Screen.prototype.availWidth": 2,
-                "Date.prototype.getTimezoneOffset": 2,
-                "Navigator.prototype.language": 2,
-                "Screen.prototype.colorDepth": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.width": 2,
-                "window.sessionStorage": 2,
-                "window.localStorage": 2,
-                "window.indexedDB": 2,
-                "Navigator.prototype.platform": 2,
-                "Navigator.prototype.appName": 2,
-                "Navigator.prototype.plugins": 2,
-                "Navigator.prototype.languages": 2,
-                "Navigator.prototype.onLine": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2,
-                "Navigator.prototype.permissions": 2,
-                "CanvasRenderingContext2D.prototype.getImageData": 2,
-                "Performance.prototype.memory": 2,
-                "console.memory": 2,
-                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.userAgent": 4,
+                "window.name": 4,
+                "Document.cookie getter": 4,
+                "Screen.prototype.availHeight": 4,
+                "Screen.prototype.availWidth": 4,
+                "Date.prototype.getTimezoneOffset": 4,
+                "Navigator.prototype.onLine": 4,
+                "Date.prototype.getTime": 4,
+                "Document.cookie setter": 4,
+                "Performance.prototype.memory": 4,
+                "console.memory": 4,
+                "window.localStorage": 4,
+                "window.sessionStorage": 4,
+                "Navigator.prototype.plugins": 4,
+                "Navigator.prototype.appVersion": 4,
+                "Navigator.prototype.vendorSub": 4,
+                "Navigator.prototype.productSub": 4,
+                "Navigator.prototype.vendor": 4,
+                "Navigator.prototype.maxTouchPoints": 4,
+                "Navigator.prototype.doNotTrack": 4,
+                "Navigator.prototype.connection": 4,
+                "Navigator.prototype.mimeTypes": 4,
+                "Navigator.prototype.webkitTemporaryStorage": 4,
+                "Navigator.prototype.webkitPersistentStorage": 4,
+                "Navigator.prototype.hardwareConcurrency": 4,
+                "Navigator.prototype.cookieEnabled": 4,
+                "Navigator.prototype.appCodeName": 4,
+                "Navigator.prototype.appName": 4,
+                "Navigator.prototype.platform": 4,
+                "Navigator.prototype.product": 4,
+                "Navigator.prototype.language": 4,
+                "Navigator.prototype.languages": 4,
+                "Navigator.prototype.mediaCapabilities": 4,
+                "Navigator.prototype.permissions": 4,
+                "Navigator.prototype.keyboard": 4,
+                "Navigator.prototype.mediaDevices": 4,
+                "Navigator.prototype.storage": 4,
+                "Navigator.prototype.deviceMemory": 4,
+                "Navigator.prototype.presentation": 4,
+                "Navigator.prototype.javaEnabled": 4,
+                "Screen.prototype.width": 4,
+                "Screen.prototype.height": 4,
+                "Screen.prototype.colorDepth": 4,
+                "Screen.prototype.availLeft": 4,
+                "Screen.prototype.availTop": 4,
+                "Screen.prototype.pixelDepth": 4,
+                "window.devicePixelRatio": 4,
+                "Screen.prototype.orientation": 4,
+                "window.matchMedia(\"prefers-reduced-motion\")": 3,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 3,
+                "Notification.permission": 3,
+                "BroadcastChannel.prototype.constructor": 3,
+                "RTCPeerConnection.prototype.constructor": 3,
+                "CanvasRenderingContext2D.prototype.getImageData": 3,
+                "RTCPeerConnectionIceEvent.prototype.candidate": 3,
                 "HTMLCanvasElement.prototype.toDataURL": 1,
                 "WebGLRenderingContext.prototype.getExtension": 1,
                 "WebGLRenderingContext.prototype.getParameter": 1,
                 "WebGLRenderingContext.prototype.getSupportedExtensions": 1,
                 "WebGLRenderingContext.prototype.getContextAttributes": 1,
                 "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 1,
-                "Navigator.prototype.vendorSub": 2,
-                "Navigator.prototype.productSub": 2,
-                "Navigator.prototype.vendor": 2,
-                "Navigator.prototype.maxTouchPoints": 2,
-                "Navigator.prototype.doNotTrack": 2,
-                "Navigator.prototype.connection": 2,
-                "Navigator.prototype.mimeTypes": 2,
-                "Navigator.prototype.webkitTemporaryStorage": 2,
-                "Navigator.prototype.webkitPersistentStorage": 2,
-                "Navigator.prototype.hardwareConcurrency": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "Navigator.prototype.appCodeName": 2,
-                "Navigator.prototype.product": 2,
-                "Navigator.prototype.mediaCapabilities": 2,
-                "Navigator.prototype.keyboard": 2,
-                "Navigator.prototype.mediaDevices": 2,
-                "Navigator.prototype.storage": 2,
-                "Navigator.prototype.deviceMemory": 2,
-                "Navigator.prototype.presentation": 2,
-                "Navigator.prototype.javaEnabled": 2,
-                "Screen.prototype.availLeft": 2,
-                "Screen.prototype.availTop": 2,
-                "Screen.prototype.pixelDepth": 2,
-                "window.devicePixelRatio": 2,
-                "Screen.prototype.orientation": 2,
                 "speechSynthesis.__proto__.getVoices": 1,
                 "OfflineAudioContext.prototype.constructor": 1,
-                "window.matchMedia(\"prefers-reduced-motion\")": 2,
                 "URL.createObjectURL": 1,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
-                "Notification.permission": 2,
-                "BroadcastChannel.prototype.constructor": 2,
-                "RTCPeerConnection.prototype.constructor": 2,
                 "AudioBuffer.prototype.getChannelData": 1,
                 "Navigator.prototype.getBattery": 1,
                 "PerformanceTiming.prototype.navigationStart": 1,
-                "HTMLMediaElement.prototype.canPlayType": 1,
-                "RTCPeerConnectionIceEvent.prototype.candidate": 2
+                "HTMLMediaElement.prototype.canPlayType": 1
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
-                "9d22adf1039d7f14178a92e7d51d7186b4b54ae9044ab1352ccb19b7670ee9f6"
+                "2e89e880061504cff2e2756f6a24ffbfbf7880ec2d31bed64b325de2bc9e7256",
+                "dbc99c60d1dcc531c0074f1d7cfdd94a8e0d5bd7d88a91096c1ba8611b152c7c"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "pmtimesig": {
-                    "ttl": 86404,
-                    "length": 29,
-                    "prevalence": 0.0002010454362685967,
+                    "ttl": 86406,
+                    "length": 19,
+                    "prevalence": 0.0004016467516818958,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "metacafe.com",
-                "www.readmng.com"
+                "netflixlife.com",
+                "www.breitbart.com",
+                "www.metacafe.com",
+                "www.sgtreport.com"
             ]
         },
         {
@@ -146,6 +171,12 @@
                 "Navigator.prototype.language": 2,
                 "Navigator.prototype.languages": 2,
                 "Navigator.prototype.onLine": 2,
+                "Navigator.prototype.mediaCapabilities": 1,
+                "Navigator.prototype.permissions": 1,
+                "Navigator.prototype.keyboard": 1,
+                "Navigator.prototype.mediaDevices": 2,
+                "Navigator.prototype.deviceMemory": 1,
+                "Navigator.prototype.presentation": 1,
                 "Screen.prototype.availWidth": 2,
                 "Screen.prototype.availHeight": 2,
                 "Screen.prototype.width": 2,
@@ -157,55 +188,52 @@
                 "Screen.prototype.orientation": 2,
                 "WebGLRenderingContext.prototype.getExtension": 2,
                 "WebGLRenderingContext.prototype.getParameter": 2,
-                "window.localStorage": 2,
-                "window.indexedDB": 2,
+                "window.localStorage": 4,
+                "window.indexedDB": 4,
                 "HTMLCanvasElement.prototype.toDataURL": 2,
                 "speechSynthesis.__proto__.getVoices": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.mediaDevices": 2,
-                "Navigator.prototype.mediaCapabilities": 1,
-                "Navigator.prototype.permissions": 1,
-                "Navigator.prototype.keyboard": 1,
-                "Navigator.prototype.storage": 1,
-                "Navigator.prototype.deviceMemory": 1,
-                "Navigator.prototype.presentation": 1
+                "Date.prototype.getTime": 4
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
-                "fd05b152970faf1a0ce09b516867d74e931ecf07f0cffbd19b545ec8c0efaf11"
+                "d3fa72059a1b7f8f8a40b14759658c0dfa2ec2a9b45318485fb5691918c7d3c9"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "metacafe.com",
-                "www.readmng.com"
+                "netflixlife.com",
+                "www.breitbart.com",
+                "www.metacafe.com",
+                "www.sgtreport.com"
             ]
         },
         {
             "rule": "ad-score\\.com\\/data\\/cors",
-            "cookies": 0.000201,
+            "cookies": 0.000402,
             "fingerprinting": 0,
             "subdomains": [
                 "data"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
-                "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
-                "a5119ed120b2b271e3e6aed9de93139c4fe4a940416c68b61176f45af98feff4"
+                "c2ad46d802c414bf5826eeea7168b3cea5c74f4e48a5b95605b6b4e2587e2bc6",
+                "21268746c9a90b294183692c47a83485ecb26bf6312add6432a407f395e7fed6",
+                "02cd4817c3548e1d336b2d6c40e085da1924caa3907dce9749884e0dd07aee6e"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "metacafe.com",
+                "netflixlife.com",
+                "www.breitbart.com",
                 "www.metacafe.com",
-                "www.readmng.com"
+                "www.sgtreport.com"
             ]
         },
         {
@@ -237,6 +265,12 @@
                 "Navigator.prototype.language": 2,
                 "Navigator.prototype.languages": 2,
                 "Navigator.prototype.onLine": 2,
+                "Navigator.prototype.mediaCapabilities": 1,
+                "Navigator.prototype.permissions": 1,
+                "Navigator.prototype.keyboard": 1,
+                "Navigator.prototype.mediaDevices": 2,
+                "Navigator.prototype.deviceMemory": 1,
+                "Navigator.prototype.presentation": 1,
                 "Screen.prototype.availWidth": 2,
                 "Screen.prototype.availHeight": 2,
                 "Screen.prototype.width": 2,
@@ -248,21 +282,14 @@
                 "Screen.prototype.orientation": 2,
                 "WebGLRenderingContext.prototype.getExtension": 2,
                 "WebGLRenderingContext.prototype.getParameter": 2,
-                "window.localStorage": 2,
-                "window.indexedDB": 2,
+                "window.localStorage": 4,
+                "window.indexedDB": 4,
                 "HTMLCanvasElement.prototype.toDataURL": 2,
                 "speechSynthesis.__proto__.getVoices": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.mediaDevices": 2,
-                "Navigator.prototype.mediaCapabilities": 1,
-                "Navigator.prototype.permissions": 1,
-                "Navigator.prototype.keyboard": 1,
-                "Navigator.prototype.storage": 1,
-                "Navigator.prototype.deviceMemory": 1,
-                "Navigator.prototype.presentation": 1
+                "Date.prototype.getTime": 4
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -271,8 +298,10 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "metacafe.com",
-                "www.readmng.com"
+                "netflixlife.com",
+                "www.breitbart.com",
+                "www.metacafe.com",
+                "www.sgtreport.com"
             ]
         }
     ],
@@ -283,14 +312,14 @@
         "cpu": 0,
         "cache": 3
     },
-    "cookies": 0.000302,
+    "cookies": 0.000602,
     "types": {
-        "Script": 2,
-        "Document": 2,
-        "XHR": 5
+        "XHR": 10,
+        "Script": 4,
+        "Document": 4
     },
     "nameservers": [
-        "ns53.domaincontrol.com",
-        "ns54.domaincontrol.com"
+        "ns54.domaincontrol.com",
+        "ns53.domaincontrol.com"
     ]
 }

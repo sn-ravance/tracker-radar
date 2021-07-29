@@ -9,19 +9,24 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000602,
-    "sites": 6,
+    "prevalence": 0.000905,
+    "sites": 9,
     "subdomains": [
         "ee-prod-prod-02",
+        "ee-prod-prod",
         "cmg-prod"
     ],
     "cnames": [
         {
             "original": "api.ee.co.uk",
             "resolved": "ee-prod-prod-02.apigee.net"
+        },
+        {
+            "original": "api.external.plus.net",
+            "resolved": "ee-prod-prod.apigee.net"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "apigee\\.net\\/v1\\/identity\\/authorize",
@@ -32,16 +37,14 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [
                 {
                     "original": "api.ee.co.uk",
                     "resolved": "ee-prod-prod-02.apigee.net"
                 }
             ],
-            "responseHashes": [
-                "90a04bc859b444188f60c2888c3be3b036a42830b96dfadca47d9da70071b5ac"
-            ],
+            "responseHashes": [],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -49,6 +52,58 @@
                 "ee.co.uk",
                 "id.ee.co.uk",
                 "myaccount.ee.co.uk"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/plusnet\\/orders\\/v1\\/bundles",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ee-prod-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.external.plus.net",
+                    "resolved": "ee-prod-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "plus.net",
+                "www.plus.net"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/plusnet\\/orders\\/v1\\/bundles",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ee-prod-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.external.plus.net",
+                    "resolved": "ee-prod-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [
+                "eba3a9aefce9c578a72a5fcf9a8b955526c0ef0a0695539913bfe1322c51c14c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "plus.net",
+                "www.plus.net"
             ]
         },
         {
@@ -63,7 +118,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "06cec74610a801467943fa21e75ff8df0c98fb858d521164989a7761ead89057"
+                "b2e14090bb04a306ababcc855ba76f45e814486dc357f8ee22ebc6ab874fd175"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -85,7 +140,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "a788974f2c73216d04677eb6ebc4ce87aa161362979dc1d37c06aafd5ffb679a"
+                "a3f14ef713cdcb6fda4e32dd810a99cff8b941769d032515b283fbd11b2f1d5c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -100,15 +155,16 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000301,
+    "cookies": 0.000402,
     "types": {
         "Document": 3,
-        "XHR": 4
+        "Preflight": 2,
+        "XHR": 6
     },
     "nameservers": [
+        "ns-670.awsdns-19.net",
         "ns-116.awsdns-14.com",
         "ns-1441.awsdns-52.org",
-        "ns-1907.awsdns-46.co.uk",
-        "ns-670.awsdns-19.net"
+        "ns-1907.awsdns-46.co.uk"
     ]
 }

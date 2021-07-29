@@ -8,9 +8,14 @@
     "sites": 2,
     "subdomains": [
         "laweekly.engine",
-        "betcity.engine"
+        "tomorrowland.engine",
+        "laweekly.cdn"
     ],
     "cnames": [
+        {
+            "original": "cdn.laweekly.com",
+            "resolved": "laweekly.cdn.adglare.net"
+        },
         {
             "original": "engine.laweekly.com",
             "resolved": "laweekly.engine.adglare.net"
@@ -24,16 +29,15 @@
             "fingerprinting": 1,
             "subdomains": [
                 "laweekly.engine",
-                "betcity.engine"
+                "tomorrowland.engine"
             ],
             "apis": {
                 "window.devicePixelRatio": 1,
                 "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "Navigator.prototype.userAgent": 1
+                "Screen.prototype.height": 1
             },
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [
                 {
                     "original": "engine.laweekly.com",
@@ -41,8 +45,8 @@
                 }
             ],
             "responseHashes": [
-                "a66677cabae227f8cdf230ecbfa516a26864c29bf9fb1d389a8d40e36adb431b",
-                "68e6f14dab5af0945923374e14618f05042fa358b66dcae91feb2f9a2aba7b0f"
+                "94de4781cd22e7fa6935a41f1fed199bd2958c235439fdc7ab640a686e8f1be9",
+                "7cb900c61b22df6ce9cf097381f1f54317a4e1efdd7076f4e49836e4485da936"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -50,7 +54,7 @@
             "exampleSites": [
                 "laweekly.com",
                 "www.laweekly.com",
-                "www.sport-express.ru"
+                "www.tomorrowland.com"
             ]
         },
         {
@@ -108,25 +112,30 @@
             ]
         },
         {
-            "rule": "adglare\\.net\\/data",
+            "rule": "adglare\\.net\\/t91f2959a\\/img\\/vue8z_vfb2wt_53fec7ff\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "betcity.engine"
+                "laweekly.cdn"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            "cnames": [
+                {
+                    "original": "cdn.laweekly.com",
+                    "resolved": "laweekly.cdn.adglare.net"
+                }
             ],
-            "type": "Other",
+            "responseHashes": [
+                "9ca935763a4f53da2061b67aebc5cca92df67fa4a2834dd0b1caf652f1f6a650"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "sport-express.ru",
-                "www.sport-express.ru"
+                "laweekly.com",
+                "www.laweekly.com"
             ]
         }
     ],
@@ -140,13 +149,8 @@
     "cookies": 0,
     "types": {
         "Script": 3,
-        "Other": 6
+        "Other": 4,
+        "Image": 2
     },
-    "nameservers": [
-        "ns5.adglare.eu",
-        "ns7.adglare.nl",
-        "ns8.adglare.org",
-        "ns9.adglare.info",
-        "ns6.adglare.info"
-    ]
+    "nameservers": []
 }

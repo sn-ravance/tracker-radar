@@ -7,18 +7,54 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.0013,
-    "sites": 13,
+    "prevalence": 0.00151,
+    "sites": 15,
     "subdomains": [
-        "identity",
         "jssdkcdns",
-        "static",
+        "identity",
+        "jssdks",
         "cookiesync",
-        "jssdks"
+        "static"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "mparticle\\.com\\/js\\/v2\\/cd4afed6a2719d439af431746c942e3c\\/mparticle\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "jssdkcdns"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "cbcd3bbb05a109128dcfd443eb3b338ab9e90710814d1a07df7543f81ad26f98"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "mprtcl-v4_CF49E3A7": {
+                    "ttl": 31536007,
+                    "length": 285,
+                    "prevalence": 0.0002010454362685967,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nationalpost.com",
+                "torontosun.com"
+            ]
+        },
         {
             "rule": "mparticle\\.com\\/v1\\/identify",
             "cookies": 0,
@@ -27,24 +63,26 @@
                 "identity"
             ],
             "apis": {},
-            "sites": 12,
-            "prevalence": 0.0012,
+            "sites": 14,
+            "prevalence": 0.00141,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bleacherreport.com",
+                "nationalpost.com",
                 "reverb.com",
-                "stocktwits.com",
+                "thepostmillennial.com",
+                "torontosun.com",
+                "www.bravotv.com",
                 "www.corsair.com",
                 "www.discoveryplus.com",
-                "www.discovery.com",
+                "www.dplay.com",
                 "www.elgato.com",
-                "www.marksandspencer.com",
+                "www.headspace.com",
+                "www.msnbc.com",
                 "www.nbcnews.com",
-                "www.tlc.com",
                 "www.today.com",
                 "www.westernunion.com"
             ]
@@ -57,84 +95,64 @@
                 "identity"
             ],
             "apis": {},
-            "sites": 12,
-            "prevalence": 0.0012,
+            "sites": 14,
+            "prevalence": 0.00141,
             "cnames": [],
             "responseHashes": [
-                "e8f72d73b9523c3f9dd91626fd5967f95f8906e65845fd5a0d5aabfcef22c72a",
-                "e9989a3c8dfedd47b4920471f6276597bc53a3f28256a9e4e1bd9732dd92c4bf",
-                "1e2f9b44fa26f7ad179781d5ffbbe657efe797582f2ceb84e5836057f26d6009",
-                "a8556c7395de81d819b5c0d3244ba8b274aa9b2d7f8477c06f2e7df0a929ce5f",
-                "39e20358f1f09a842cb1f9b424bece3cdfc8234ab25f587a5d5c61176838848d",
-                "587428dacc98755dfff523e9436e60788943041da875d32ccb1fbf58b0b8a717",
-                "aff687c22a5c976fea45e567ed112ba3c78745b62c1de4af015559802ea5d412",
-                "a686fa0ee70d9f1bd25abbc81c34465974f0d133a5e6b642b0cef3e613643220",
-                "ebb688f4fbde72aac7dc0972d2aae6db80126d0571a83da16d4794ec7f14e414",
-                "b212cc86f3b4ea04e08afdd9f408e60e3e78b86eefd9d790444f0079a7c7daed",
-                "6c355fc2be19a01aa29a4105a28bbb46e644499e678627e5faa7bfd55c4de551"
+                "8e79dc753d616a41ca059871d406f2c3e4887eb1d462c70f2accecd26421bef3",
+                "7a5a2466c0e710aa8b73d5d0c6a73b18542951c5f4f9b20029e9996670cc6e5a",
+                "4dab030df9afd44bf8fa44d674813ac8f5a890629d01f6cdfbbb6eb601f07e0b",
+                "7d78b228099d7cb76110d711f83b0247181cb0c435bc371daf2a1d92ff079a4a",
+                "8d7e4a384d12c89db33176dbefa107ac62a6fdf62b98bbcaf26c1db8a19a23ee",
+                "d610df08b4f97ec369d4666da2333a995fca557cdf1f531b0f3124fbe58ebaf1",
+                "ef22c7271dc631f12020df22d1ca43b0d8775e5591d960f13dbc6da37995801c",
+                "ba438fd59101114e71849706fe2a66d4c7ba9b65cc0271395479adf1954d16fc",
+                "b0f74f30e71b52140b8c151ab2facd86a8fe27fc7f22a25eae161ab98f913b39",
+                "57024c9c42812468439779ca462135a643fee07bc68bbed3f1accc5d369d1fb9",
+                "98781cff9789118955ba14764eb9682105abfc8243cbc36d62ace10e61c9fa16",
+                "efc8f3d4bf570ca0afa203620fc4333c8cee4372290b3eb8bfeea15c30030c9f",
+                "52741c381bcb0aa7032c75318c2b83c060bda9c48b767c2b9aa299d29e4d59c7"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bleacherreport.com",
+                "nationalpost.com",
                 "reverb.com",
-                "stocktwits.com",
+                "thepostmillennial.com",
+                "torontosun.com",
+                "www.bravotv.com",
                 "www.corsair.com",
                 "www.discoveryplus.com",
-                "www.discovery.com",
+                "www.dplay.com",
                 "www.elgato.com",
-                "www.marksandspencer.com",
+                "www.headspace.com",
+                "www.msnbc.com",
                 "www.nbcnews.com",
-                "www.tlc.com",
                 "www.today.com",
                 "www.westernunion.com"
             ]
         },
         {
-            "rule": "mparticle\\.com\\/JS\\/v2\\/ebd608abd183c043a7ea9dfcf00af45c\\/config",
+            "rule": "mparticle\\.com\\/v1\\/JS\\/cd4afed6a2719d439af431746c942e3c\\/Forwarding",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "jssdkcdns"
+                "jssdks"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "9aef5d55191bf685ca6e01d8a8712fbd4ce411018dd63b6f6dc232ecbbecc3a1"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "discoveryplus.com",
-                "www.discovery.com",
-                "www.tlc.com"
-            ]
-        },
-        {
-            "rule": "mparticle\\.com\\/sdk\\/web\\/adobe\\/MediaSDK\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "12c71ec7bc2266e6e5ec17e49630fc4d640653d5434f9d0ff5f15db1709dbf23"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.discovery.com",
-                "www.tlc.com"
+                "nationalpost.com",
+                "torontosun.com"
             ]
         },
         {
@@ -145,8 +163,8 @@
                 "cookiesync"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 7,
+            "prevalence": 0.000704,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -155,10 +173,35 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "marksandspencer.com",
+                "nationalpost.com",
+                "torontosun.com",
+                "www.bravotv.com",
+                "www.msnbc.com",
                 "www.nbc.com",
                 "www.nbcnews.com",
                 "www.today.com"
+            ]
+        },
+        {
+            "rule": "mparticle\\.com\\/v3\\/JS\\/cd4afed6a2719d439af431746c942e3c\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "jssdks"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "551b854a9c76db18b4e7caa7ba4a3e86d24944651cb0ec9ee29b6cdbfc5bc91b"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nationalpost.com",
+                "torontosun.com"
             ]
         },
         {
@@ -169,8 +212,8 @@
                 "cookiesync"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 6,
+            "prevalence": 0.000603,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -179,9 +222,122 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nbc.com",
+                "thepostmillennial.com",
+                "www.bravotv.com",
+                "www.msnbc.com",
+                "www.nbc.com",
                 "www.nbcnews.com",
                 "www.today.com"
+            ]
+        },
+        {
+            "rule": "mparticle\\.com\\/v1\\/JS\\/us1-5c2a7056375a7e4a9876aec5539d2044\\/Forwarding",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "jssdks"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bravotv.com",
+                "www.bravotv.com"
+            ]
+        },
+        {
+            "rule": "mparticle\\.com\\/JS\\/v2\\/ebd608abd183c043a7ea9dfcf00af45c\\/config",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "jssdkcdns"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b6affaf5ae2fbf56a3727febe6d03787091e1a30c59602d8e1e64a07f3f50766"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "discoveryplus.com",
+                "www.dplay.com"
+            ]
+        },
+        {
+            "rule": "mparticle\\.com\\/sdk\\/web\\/adobe\\/MediaSDK\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "12c71ec7bc2266e6e5ec17e49630fc4d640653d5434f9d0ff5f15db1709dbf23"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "discoveryplus.com",
+                "www.dplay.com"
+            ]
+        },
+        {
+            "rule": "mparticle\\.com\\/v2\\/JS\\/580aa567c0d972439cf41d95730011ed\\/Events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "jssdks"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "048dd37b3c3e0851533642f9204cbab62d48f6b97891424c39170c2042d3f9f3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "headspace.com",
+                "www.headspace.com"
+            ]
+        },
+        {
+            "rule": "mparticle\\.com\\/v1\\/JS\\/580aa567c0d972439cf41d95730011ed\\/Forwarding",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "jssdks"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "headspace.com",
+                "www.headspace.com"
             ]
         },
         {
@@ -218,7 +374,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "e4e5f9f5751f19d10e839fe6471a09debc05ecedccd40d5cb99a172c1b9224ab"
+                "f0ce03146a6744de1a924d939a9ae11d99ce4b711f55c47137bfaea544c882db"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -236,17 +392,18 @@
         "cpu": 0,
         "cache": 3
     },
-    "cookies": 0.000703,
+    "cookies": 0.00111,
     "types": {
-        "Preflight": 12,
-        "XHR": 19,
-        "Script": 3,
-        "Image": 7
+        "Script": 4,
+        "Preflight": 14,
+        "XHR": 28,
+        "Image": 13,
+        "Fetch": 2
     },
     "nameservers": [
-        "ns-553.awsdns-05.net",
         "ns-1447.awsdns-52.org",
         "ns-1796.awsdns-32.co.uk",
-        "ns-206.awsdns-25.com"
+        "ns-206.awsdns-25.com",
+        "ns-553.awsdns-05.net"
     ]
 }

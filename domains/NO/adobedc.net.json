@@ -9,11 +9,14 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000803,
-    "sites": 8,
+    "prevalence": 0.00131,
+    "sites": 13,
     "subdomains": [
+        "elpais.com.data",
         "as.com.data",
-        "sony.com.data"
+        "mercola.com.data",
+        "sony.com.data",
+        "commerce"
     ],
     "cnames": [
         {
@@ -23,25 +26,43 @@
         {
             "original": "smetrics.as.com",
             "resolved": "as.com.data.adobedc.net"
+        },
+        {
+            "original": "smetrics.elpais.com",
+            "resolved": "elpais.com.data.adobedc.net"
+        },
+        {
+            "original": "smetrics.mercola.com",
+            "resolved": "mercola.com.data.adobedc.net"
         }
     ],
     "fingerprinting": 0,
     "resources": [
         {
             "rule": "adobedc\\.net\\/id",
-            "cookies": 0.000301,
+            "cookies": 0.000302,
             "fingerprinting": 0,
             "subdomains": [
+                "elpais.com.data",
                 "as.com.data",
+                "mercola.com.data",
                 "sony.com.data"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [
+                {
+                    "original": "smetrics.elpais.com",
+                    "resolved": "elpais.com.data.adobedc.net"
+                },
                 {
                     "original": "smetrics.as.com",
                     "resolved": "as.com.data.adobedc.net"
+                },
+                {
+                    "original": "smetrics.mercola.com",
+                    "resolved": "mercola.com.data.adobedc.net"
                 },
                 {
                     "original": "shqmetrics.sony.com",
@@ -49,16 +70,86 @@
                 }
             ],
             "responseHashes": [
-                "50ac22161588a1ea1790c2c04d4eaed54ed59ecc4f38a360c930929ad51954e4",
-                "b098d6e89e54d5dc9b7948ec4d36d7c1c314ca0410fb449063b9e68d4ec117a9"
+                "5f40f7b7cd3e657143c38b1228594cf32d127ad448500abad45b54a3d5565657",
+                "d104fe6c5bea637148d6a2c7373579d54d75d33fce59d73ccea9cced71745d66",
+                "8c1728624ed693703c4bac1d6bc8152dff68da319d9aba36f3754ad420d79bfa"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "as.com",
-                "en.as.com",
+                "elpais.com",
+                "mejorconsalud.as.com",
+                "www.mercola.com",
                 "www.sony.com"
+            ]
+        },
+        {
+            "rule": "adobedc\\.net\\/collector\\/tp2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "commerce"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ekstralys.no",
+                "www.outland.no",
+                "www.simmsfishing.com",
+                "www2.ekstralys.no"
+            ]
+        },
+        {
+            "rule": "adobedc\\.net\\/collector\\/tp2",
+            "cookies": 0.000402,
+            "fingerprinting": 0,
+            "subdomains": [
+                "commerce"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ekstralys.no",
+                "www.outland.no",
+                "www.simmsfishing.com",
+                "www2.ekstralys.no"
+            ]
+        },
+        {
+            "rule": "adobedc\\.net\\/collector\\/tp2",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "commerce"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "outland.no",
+                "www.simmsfishing.com"
             ]
         }
     ],
@@ -69,9 +160,18 @@
         "cpu": 0,
         "cache": 0
     },
-    "cookies": 0.000402,
+    "cookies": 0.000804,
     "types": {
-        "XHR": 3
+        "XHR": 6,
+        "Preflight": 4,
+        "Other": 4
     },
-    "nameservers": []
+    "nameservers": [
+        "ns204.adobe.net",
+        "ns206.adobe.net",
+        "ns205.adobe.net",
+        "ns203.adobe.net",
+        "ns202.adobe.net",
+        "ns201.adobe.net"
+    ]
 }

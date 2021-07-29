@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000548,
-    "sites": 8,
+    "prevalence": 0.0000486,
+    "sites": 7,
     "subdomains": [
         "api",
         "widget"
@@ -16,6 +16,28 @@
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "coindesk\\.com\\/v1\\/bpi\\/historical\\/close\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "347c3664edf861d978a7aa6987439643a5dd1dc87258eaad623346c31babba23"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bitcoinmagazine.com",
+                "www.thestreet.com"
+            ]
+        },
         {
             "rule": "coindesk\\.com\\/v1\\/bpi\\/currentprice\\.json",
             "cookies": 0,
@@ -25,10 +47,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [],
             "responseHashes": [
-                "30b7957cdc7c5097b547ace8f2d340f07248d7c48283485fe6ee9f559b7db769"
+                "d568900c0ee01fb220f4706cf1adfda70678ef46a6d3768c4728019c9917c06c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -36,28 +58,6 @@
             "exampleSites": [
                 "memoryholeblog.org",
                 "www.libertariannews.org"
-            ]
-        },
-        {
-            "rule": "coindesk\\.com\\/v1\\/bpi\\/currentprice\\/USD\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [],
-            "responseHashes": [
-                "7a7437a25f9ab355ac8d052db91f0fa3e07c1e39a82ce9c1dfb3b732bb38681f"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "btcsatoshi.com",
-                "www.btcsatoshi.com"
             ]
         },
         {
@@ -69,7 +69,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [],
             "responseHashes": [
                 "177e8d10d2cc80b6057345d47b6d6933c84ea3ef7ad5c37151af995857dad26b"
@@ -93,7 +93,7 @@
                 "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000139,
             "cnames": [],
             "responseHashes": [
                 "4ad595db6845fa3fa91c245d0f863591ed0476f058c484e4cef047b1c0e16c91"
@@ -116,13 +116,14 @@
     },
     "cookies": 0,
     "types": {
-        "XHR": 4,
+        "Fetch": 2,
+        "XHR": 2,
         "Script": 4
     },
     "nameservers": [
-        "ns-1008.awsdns-62.net",
         "ns-1454.awsdns-53.org",
         "ns-1572.awsdns-04.co.uk",
-        "ns-173.awsdns-21.com"
+        "ns-173.awsdns-21.com",
+        "ns-1008.awsdns-62.net"
     ]
 }
