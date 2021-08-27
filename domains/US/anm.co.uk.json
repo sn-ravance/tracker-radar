@@ -4,14 +4,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000625,
-    "sites": 9,
+    "prevalence": 0.0000555,
+    "sites": 8,
     "subdomains": [
         "secure.iad",
-        "hulkprod"
+        "hulkprod",
+        "iad"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "anm\\.co\\.uk\\/00adops\\/IOS%20MPU%202x\\.png",
@@ -33,6 +34,37 @@
             "exampleSites": [
                 "mailonsunday.co.uk",
                 "hitchensblog.mailonsunday.co.uk"
+            ]
+        },
+        {
+            "rule": "anm\\.co\\.uk\\/api\\/web-push-notification\\/v1\\/static\\/latest\\/mol-fe-web-push-browser-register\\/register\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "hulkprod"
+            ],
+            "apis": {
+                "window.sessionStorage": 5,
+                "window.localStorage": 5,
+                "Date.prototype.getTime": 4,
+                "Navigator.prototype.platform": 2,
+                "Notification.permission": 2
+            },
+            "sites": 5,
+            "prevalence": 0.0000347,
+            "cnames": [],
+            "responseHashes": [
+                "6deffc133a967780af121385e4446e705f77544737755e65e11779d17df5da50"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mailonsunday.co.uk",
+                "hitchensblog.mailonsunday.co.uk",
+                "www.dailymail.com",
+                "www.dailymail.co.uk",
+                "www.thisismoney.co.uk"
             ]
         },
         {
@@ -59,35 +91,6 @@
             ]
         },
         {
-            "rule": "anm\\.co\\.uk\\/api\\/web-push-notification\\/v1\\/static\\/latest\\/mol-fe-web-push-browser-register\\/register\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "hulkprod"
-            ],
-            "apis": {
-                "window.sessionStorage": 2,
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 1
-            },
-            "sites": 5,
-            "prevalence": 0.0000347,
-            "cnames": [],
-            "responseHashes": [
-                "6deffc133a967780af121385e4446e705f77544737755e65e11779d17df5da50"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mailonsunday.co.uk",
-                "hitchensblog.mailonsunday.co.uk",
-                "www.dailymail.co.uk",
-                "www.dailymail.com",
-                "www.thisismoney.co.uk"
-            ]
-        },
-        {
             "rule": "anm\\.co\\.uk\\/api\\/web-push-notification\\/v1\\/organisation\\/mol\\/subscription\\/publicKey",
             "cookies": 0,
             "fingerprinting": 0,
@@ -107,8 +110,55 @@
             "exampleSites": [
                 "mailonsunday.co.uk",
                 "hitchensblog.mailonsunday.co.uk",
-                "www.dailymail.co.uk",
-                "www.dailymail.com"
+                "www.dailymail.com",
+                "www.dailymail.co.uk"
+            ]
+        },
+        {
+            "rule": "anm\\.co\\.uk\\/api\\/web-push-notification\\/v1\\/static\\/latest\\/mol-fe-web-push-browser-register\\/crossOrgInlinedMin\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "hulkprod"
+            ],
+            "apis": {
+                "window.localStorage": 3,
+                "window.sessionStorage": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
+                "dc13ba8ff6bf0fe49d2fe140c952e7a344eff156ec9e418e714be4cf4300e7c6"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mailonsunday.co.uk",
+                "hitchensblog.mailonsunday.co.uk",
+                "metro.co.uk"
+            ]
+        },
+        {
+            "rule": "anm\\.co\\.uk\\/promos\\/20191226_dm_house_300x250\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "iad"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailymail.com",
+                "www.dailymail.com",
+                "www.dailymail.co.uk"
             ]
         }
     ],
@@ -123,14 +173,15 @@
     "types": {
         "Image": 5,
         "Script": 5,
-        "Fetch": 4
+        "Fetch": 4,
+        "Document": 6
     },
     "nameservers": [
+        "a6-64.akam.net",
         "a7-66.akam.net",
         "a1-204.akam.net",
-        "a6-64.akam.net",
+        "a4-67.akam.net",
         "a16-67.akam.net",
-        "a24-65.akam.net",
-        "a4-67.akam.net"
+        "a24-65.akam.net"
     ]
 }

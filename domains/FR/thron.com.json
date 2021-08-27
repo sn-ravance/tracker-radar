@@ -7,15 +7,66 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
-        "ferrari-view",
-        "ferrari-cdn"
+        "ferrari-cdn",
+        "whirlpool-cdn",
+        "ferrari-view"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "thron\\.com\\/shared\\/plugins\\/tracking\\/current\\/bootstrapper-min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ferrari-cdn",
+                "whirlpool-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "5189bfd671f115bf280cc1ef40075a3641ccef09b2bb06c289378589e84a5944"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ferrari.com",
+                "www.whirlpool.fr"
+            ]
+        },
+        {
+            "rule": "thron\\.com\\/shared\\/plugins\\/tracking\\/current\\/tracking-library-min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ferrari-cdn",
+                "whirlpool-cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.appName": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "be43fcd6a79e0ef43c4da499978e2674badba7c448f68226ba5e028195a481c4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ferrari.com",
+                "www.whirlpool.fr"
+            ]
+        },
         {
             "rule": "thron\\.com\\/api\\/xcontents\\/resources\\/delivery\\/getContentDetail",
             "cookies": 0,
@@ -28,33 +79,9 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "5e31bd0a902e073342f887d40dec01ac94c468fd3b2c8a8c231a835c4873ef8c"
+                "3a7a60a2ff1ae1650c1038e1e718a894576eab2476baac0ae16fa083e2092491"
             ],
             "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ferrari.com",
-                "www.ferrari.com"
-            ]
-        },
-        {
-            "rule": "thron\\.com\\/shared\\/plugins\\/tracking\\/current\\/framed\\.html",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "ferrari-cdn"
-            ],
-            "apis": {
-                "Document.cookie getter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "cfa4678a1369f7595578b650a46b15eaa630d50b0edabcb9cd2aaf5469d1a684"
-            ],
-            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -127,20 +154,45 @@
                 "ferrari.com",
                 "www.ferrari.com"
             ]
+        },
+        {
+            "rule": "thron\\.com\\/shared\\/plugins\\/tracking\\/current\\/framed\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ferrari-cdn",
+                "whirlpool-cdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "cfa4678a1369f7595578b650a46b15eaa630d50b0edabcb9cd2aaf5469d1a684"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ferrari.com",
+                "www.ferrari.com",
+                "www.whirlpool.fr"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000101,
     "types": {
+        "Script": 4,
         "XHR": 2,
-        "Document": 2,
-        "Media": 6
+        "Media": 6,
+        "Document": 3
     },
     "nameservers": [
-        "ns-1369.awsdns-43.org",
         "ns-1964.awsdns-53.co.uk",
         "ns-244.awsdns-30.com",
-        "ns-567.awsdns-06.net"
+        "ns-567.awsdns-06.net",
+        "ns-1369.awsdns-43.org"
     ]
 }

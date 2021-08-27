@@ -7,24 +7,28 @@
     "prevalence": 0.000201,
     "sites": 2,
     "subdomains": [
-        "static"
+        "static",
+        "sentry"
     ],
     "cnames": [],
     "fingerprinting": 3,
     "resources": [
         {
-            "rule": "fundraiseup\\.com\\/2\\.ddb18904074d\\.vendors~sentry\\.js",
+            "rule": "fundraiseup\\.com\\/2\\.7151202deee3\\.vendors~sentry\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
-            "apis": {},
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "d20f298ae8b90083c341744fce76682d2b98983be74af34b7fcc8454fbceee43"
+                "f4a8a4c6afdad1409b2f72ba5b1bd52e37d3d2923bc4fa28d530af3dac590036"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -35,7 +39,7 @@
             ]
         },
         {
-            "rule": "fundraiseup\\.com\\/1\\.1a8ec3f96130\\.sentry\\.js",
+            "rule": "fundraiseup\\.com\\/1\\.35ce3125cb6a\\.sentry\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -46,7 +50,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "e8fa6a5b7b3db5f19aaf4e8a70a2ae68ead2970056d13d6ceadd48b1c50cbdb7"
+                "000dbea478d47b5545c9a7851634ad39383c0c2462b6fd81a9b5ffbb74d9daa0"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -57,7 +61,7 @@
             ]
         },
         {
-            "rule": "fundraiseup\\.com\\/9283c301b6ed\\.api\\.js",
+            "rule": "fundraiseup\\.com\\/f52156427c31\\.api\\.js",
             "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [
@@ -77,53 +81,75 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "8c5dd81b3270546c41919f1a88afc1c7e3f08edd091cf3676b376d677f84ea87"
+                "ea895d10442c11bc652004062db213e58f0956d37cb174a29eb9d18fe2eb6dfe"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_fun_user": {
-                    "ttl": 315360040,
+                    "ttl": 315360003,
                     "length": 16,
-                    "prevalence": 0.0002010454362685967,
+                    "prevalence": 0.0002008435428800964,
                     "uniqueness": 1
                 },
                 "_fun_user_at": {
-                    "ttl": 315360040,
+                    "ttl": 315360003,
                     "length": 13,
-                    "prevalence": 0.0002010454362685967,
+                    "prevalence": 0.0002008435428800964,
                     "uniqueness": 1
                 },
                 "_fun_session": {
-                    "ttl": 1840,
+                    "ttl": 1803,
                     "length": 16,
-                    "prevalence": 0.0002010454362685967,
+                    "prevalence": 0.0002008435428800964,
                     "uniqueness": 1
                 },
                 "_fun_session_at": {
-                    "ttl": 315360040,
+                    "ttl": 315360003,
                     "length": 13,
-                    "prevalence": 0.0002010454362685967,
+                    "prevalence": 0.0002008435428800964,
                     "uniqueness": 1
                 },
                 "_fun_session_page": {
-                    "ttl": 1840,
+                    "ttl": 1803,
                     "length": 13,
-                    "prevalence": 0.0002010454362685967,
+                    "prevalence": 0.0002008435428800964,
                     "uniqueness": 1
                 },
                 "_fun_pageview": {
-                    "ttl": 1840,
+                    "ttl": 1803,
                     "length": 16,
-                    "prevalence": 0.0002010454362685967,
+                    "prevalence": 0.0002008435428800964,
                     "uniqueness": 1
                 },
                 "_fun_pageview_at": {
-                    "ttl": 1840,
+                    "ttl": 1803,
                     "length": 13,
-                    "prevalence": 0.0002010454362685967,
+                    "prevalence": 0.0002008435428800964,
                     "uniqueness": 1
                 }
             },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cancer.org",
+                "www.heart.org"
+            ]
+        },
+        {
+            "rule": "fundraiseup\\.com\\/api\\/2\\/envelope\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sentry"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cancer.org",
@@ -140,7 +166,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "19d4fcc24c8496902ddcb1b6758bf3e03d6e79130fe4912cc94ca316f9c274fe"
+                "ed1df88f983578ec746bcdcdb108cfcfa7d116a0b17e0a75826dbb69515bf7db"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -151,20 +177,22 @@
             ]
         },
         {
-            "rule": "fundraiseup\\.com\\/1\\.c2e965d70c26\\.vendors~bootvue~checkoutForm~p2p-form~p2p-form-v2~showcaseform~widgetgui\\.js",
+            "rule": "fundraiseup\\.com\\/1\\.130c0c946ef1\\.vendors~bootvue~checkoutForm~p2p-form~showcaseform~widgetgui\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
             "apis": {
-                "Navigator.prototype.product": 1,
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "d6b73ec075c5b6e12a2d7b7b7bb9ecb7e3817154a6542dc4ee5a8058e7ed2208"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -174,17 +202,21 @@
             ]
         },
         {
-            "rule": "fundraiseup\\.com\\/3\\.81a2ec8eaa3c\\.vendors~bootvue~checkoutForm~showcaseform~widgetgui\\.js",
+            "rule": "fundraiseup\\.com\\/3\\.38edda493eee\\.vendors~bootvue~checkoutForm~widgetgui\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
-            "apis": {},
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 2
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e7642528b99048e369fc678220abe3b0b2dfc6e5e867dd26b31e78a17d145536"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -194,7 +226,7 @@
             ]
         },
         {
-            "rule": "fundraiseup\\.com\\/14\\.d1b3baa30315\\.checkoutForm\\.js",
+            "rule": "fundraiseup\\.com\\/14\\.bcc3f0efce90\\.checkoutForm\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -204,7 +236,9 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "502d01ceec22730bfb71a4b8000acc24a550df00382ca17d446731c64dab0ed2"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -214,7 +248,7 @@
             ]
         },
         {
-            "rule": "fundraiseup\\.com\\/4\\.c5bafebea767\\.vendors~bootvue~p2p-form~p2p-form-v2~widgetgui\\.js",
+            "rule": "fundraiseup\\.com\\/4\\.2a17e54298e9\\.vendors~bootvue~p2p-form~widgetgui\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -224,7 +258,9 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "98406aa7edab12190ecb8c2ef3c3c2a01fb86096ad5bdbe556689128320f2ed3"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -234,7 +270,7 @@
             ]
         },
         {
-            "rule": "fundraiseup\\.com\\/5\\.e64184c909e3\\.vendors~p2p-form~p2p-form-v2~top-fundraisers~widgetgui\\.js",
+            "rule": "fundraiseup\\.com\\/5\\.b5fb5486f995\\.vendors~p2p-form~top-fundraisers~widgetgui\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -244,7 +280,9 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "b661140fc2a97a94139f45a2fe5b8410c8afcda8779ab25714dcc9873b227b46"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -254,7 +292,7 @@
             ]
         },
         {
-            "rule": "fundraiseup\\.com\\/300\\.c14481f4caa9\\.widgetgui\\.js",
+            "rule": "fundraiseup\\.com\\/300\\.bbf65e7e991d\\.widgetgui\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -264,7 +302,9 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "2862899ba5b5c2a7fefe313cfc2aa7f21d3661b167b5f0b31afff202fbe1f26c"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -284,6 +324,7 @@
     "cookies": 0.000201,
     "types": {
         "Script": 18,
+        "Fetch": 2,
         "XHR": 2
     },
     "nameservers": [

@@ -4,11 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000208,
-    "sites": 3,
+    "prevalence": 0.0000139,
+    "sites": 2,
     "subdomains": [
         "event-client",
-        "pricetag"
+        "event"
     ],
     "cnames": [],
     "fingerprinting": 3,
@@ -21,22 +21,36 @@
                 "event-client"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
+                "window.devicePixelRatio": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "window.indexedDB": 2,
+                "Navigator.prototype.userAgent": 2,
+                "OfflineAudioContext.prototype.constructor": 2,
+                "AudioBuffer.prototype.getChannelData": 2,
                 "Navigator.prototype.language": 1,
-                "window.devicePixelRatio": 1,
+                "Screen.prototype.colorDepth": 1,
                 "Navigator.prototype.hardwareConcurrency": 1,
-                "Date.prototype.getTimezoneOffset": 1,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 1,
-                "window.sessionStorage": 1,
-                "window.localStorage": 1,
-                "window.indexedDB": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.availWidth": 1,
+                "Screen.prototype.availHeight": 1,
                 "Navigator.prototype.platform": 1,
                 "Navigator.prototype.appName": 1,
                 "Navigator.prototype.plugins": 1,
+                "CanvasRenderingContext2D.prototype.isPointInPath": 1,
+                "HTMLCanvasElement.prototype.toDataURL": 1,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 1,
+                "WebGLRenderingContext.prototype.getParameter": 1,
+                "WebGLRenderingContext.prototype.getContextAttributes": 1,
+                "WebGLRenderingContext.prototype.getExtension": 1,
+                "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 1,
                 "Navigator.prototype.languages": 1,
                 "Navigator.prototype.maxTouchPoints": 1,
                 "Navigator.prototype.productSub": 1,
-                "AudioBuffer.prototype.getChannelData": 1
+                "Navigator.prototype.mediaDevices": 1
             },
             "sites": 2,
             "prevalence": 0.0000139,
@@ -49,29 +63,49 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "smokea.com",
-                "www.xl-byg.dk"
+                "www.vesselbrand.com"
             ]
         },
         {
-            "rule": "viabill\\.com\\/script\\/iIy_96ZZGSc%3D",
+            "rule": "viabill\\.com\\/events",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "pricetag"
+                "event"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000139,
             "cnames": [],
             "responseHashes": [
-                "01acd7ff9115c5f3e0b52380fdf8733b6432216bd172578d6c24e91e5e08422c"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "xl-byg.dk",
-                "www.xl-byg.dk"
+                "smokea.com",
+                "www.vesselbrand.com"
+            ]
+        },
+        {
+            "rule": "viabill\\.com\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "event"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "smokea.com",
+                "www.vesselbrand.com"
             ]
         }
     ],
@@ -85,12 +119,13 @@
     "cookies": 0,
     "types": {
         "Document": 2,
-        "Script": 2
+        "XHR": 2,
+        "Preflight": 2
     },
     "nameservers": [
+        "ns-1390.awsdns-45.org",
         "ns-1902.awsdns-45.co.uk",
         "ns-513.awsdns-00.net",
-        "ns-76.awsdns-09.com",
-        "ns-1390.awsdns-45.org"
+        "ns-76.awsdns-09.com"
     ]
 }

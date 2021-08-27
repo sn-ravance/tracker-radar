@@ -7,7 +7,8 @@
     "prevalence": 0.0000139,
     "sites": 2,
     "subdomains": [
-        "ext-prod.ingress"
+        "ext-prod.ingress",
+        "tracking-service.prod-ext"
     ],
     "cnames": [
         {
@@ -90,7 +91,7 @@
                 }
             ],
             "responseHashes": [
-                "3c5b87e3611ce6f6396d9ec53e3b2fd445a5ac085c2ea65f40e6164cc0b814a3"
+                "fdbd7d6ae4d5f4223ce6552d469fcf97e72fe3e86359ad8487361568e9d4b3e9"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -153,6 +154,46 @@
                 "questico.de",
                 "www.questico.de"
             ]
+        },
+        {
+            "rule": "adviqodev\\.de\\/session-data",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking-service.prod-ext"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "questico.de",
+                "www.questico.de"
+            ]
+        },
+        {
+            "rule": "adviqodev\\.de\\/session-data",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking-service.prod-ext"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "questico.de",
+                "www.questico.de"
+            ]
         }
     ],
     "categories": [],
@@ -161,8 +202,14 @@
     "types": {
         "Preflight": 2,
         "Document": 4,
-        "Fetch": 2,
-        "XHR": 2
+        "Fetch": 4,
+        "XHR": 2,
+        "Other": 2
     },
-    "nameservers": []
+    "nameservers": [
+        "d.ns14.net",
+        "c.ns14.net",
+        "b.ns14.net",
+        "a.ns14.net"
+    ]
 }

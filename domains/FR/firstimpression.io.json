@@ -7,14 +7,15 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000703,
-    "sites": 7,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
         "ecdn",
-        "cdn"
+        "cdn",
+        "tracking1"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "firstimpression\\.io\\/fi_client\\.js",
@@ -24,67 +25,80 @@
                 "ecdn"
             ],
             "apis": {
-                "window.sessionStorage": 7,
-                "window.localStorage": 7,
-                "Navigator.prototype.userAgent": 7,
-                "Navigator.prototype.cookieEnabled": 7,
-                "Navigator.prototype.appName": 7,
-                "Date.prototype.getTime": 7,
-                "Event.prototype.timeStamp": 5
+                "window.localStorage": 4,
+                "window.sessionStorage": 4,
+                "Navigator.prototype.userAgent": 4,
+                "Navigator.prototype.cookieEnabled": 4,
+                "Navigator.prototype.appName": 4,
+                "Date.prototype.getTime": 4,
+                "Event.prototype.timeStamp": 3
             },
-            "sites": 7,
-            "prevalence": 0.000703,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
-                "2c2ce515943aeda1754d194c887387e04fa4d72f649e859a54299b901692752c",
-                "53b7ba50225caa9056a26ff3d9593c791ee5cd8f49a1576084765f4edaa01ae2",
-                "4086490e9f9fe704ad6edd2f05c04f5abc072099cc4688de0d2c1c2ea7072374"
+                "a59f7c4b0bc10b049a49a4d35c752d9cc6a3149eaa000c51aab572fb65c31231",
+                "be577e45c82b244bb5702f02ed85731943d2733242148ef1c2b514445db0223b",
+                "0e5b8b4bc56069eadb1dd78ca1cb3c765fc091ee06bf5cab11dfd05800e7280f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "akinator.com",
-                "www.bleepingcomputer.com",
-                "www.eliteprospects.com",
+                "bleepingcomputer.com",
                 "www.haaretz.com",
                 "www.musicme.com",
-                "www.onthemarket.com",
-                "www.quizz.biz"
+                "www.onthemarket.com"
             ]
         },
         {
             "rule": "firstimpression\\.io\\/delivery\\/spc_fi\\.php",
-            "cookies": 0.000201,
+            "cookies": 0.000101,
             "fingerprinting": 0,
             "subdomains": [
                 "cdn"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.000703,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
-                "4120f978a3f9b66dde5597f52149633f1728ef7467196f15e7e2563552d99b3c",
-                "80bb50b2213d09f95bb44eb778f27657080ab0aff7ff1c9572a3126426a99687",
-                "81e7c4c4b7aee6170813e1a74bc601023633964b1719f3fcaa55710eecb8e4ab",
-                "447ea0db81f36ca26eac9fab38931931dc122ad4d0d9163ae470128d0bae09c1",
-                "77bb7938476d8ecb2c17ebba83ddf3af51f32f5b07b877c1ac821e63eb3593c7",
-                "cfde9682f57a6f19b0273de90717e953474e1516e97eafa30a472b236f29c1d4"
+                "88b0a6a8a6106e2df4ca7e354b36441b7a7c2fb87b8167a9743ba5e3db909584",
+                "d3dc04e921043c4bfa080975fe981396e0351b4abb1842b0a80639ef358f688a",
+                "98b69353da1f6dbab3e4c3d13cd08f61203dbe5636527d7d10abe460fea361c8"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.00010041168792047395
+                "lotame_domain_check": 0.00010058338362502515
             },
             "exampleSites": [
-                "akinator.com",
-                "www.bleepingcomputer.com",
-                "www.eliteprospects.com",
+                "bleepingcomputer.com",
                 "www.haaretz.com",
                 "www.musicme.com",
-                "www.onthemarket.com",
-                "www.quizz.biz"
+                "www.onthemarket.com"
+            ]
+        },
+        {
+            "rule": "firstimpression\\.io\\/delivery\\/lg\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "cdb4ee2aea69cc6a83331bbe96dc2caa9a299d21329efb0336fc02a82e1839a8"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "haaretz.com",
+                "www.haaretz.com"
             ]
         }
     ],
@@ -95,15 +109,16 @@
         "cpu": 0,
         "cache": 3
     },
-    "cookies": 0.000201,
+    "cookies": 0.000101,
     "types": {
-        "Script": 7,
-        "XHR": 7
+        "Script": 4,
+        "XHR": 4,
+        "Other": 2
     },
     "nameservers": [
-        "ns-711.awsdns-24.net",
-        "ns-1137.awsdns-14.org",
         "ns-1564.awsdns-03.co.uk",
-        "ns-303.awsdns-37.com"
+        "ns-303.awsdns-37.com",
+        "ns-711.awsdns-24.net",
+        "ns-1137.awsdns-14.org"
     ]
 }

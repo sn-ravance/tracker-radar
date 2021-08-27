@@ -4,14 +4,14 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000603,
-    "sites": 6,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
         "direct-events-collector",
         "publisher-assets",
-        "events-collector",
         "pix",
-        "api-2-0"
+        "events-collector",
+        "metrics-logger"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -24,8 +24,8 @@
                 "direct-events-collector"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -35,9 +35,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dailywire.com",
-                "www.kicker.de",
                 "www.realclearpolitics.com",
-                "www.revolver.news"
+                "www.realclearscience.com"
             ]
         },
         {
@@ -48,8 +47,8 @@
                 "publisher-assets"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000503,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
@@ -58,39 +57,34 @@
             "exampleSites": [
                 "dailywire.com",
                 "www.dailywire.com",
-                "www.kicker.de",
                 "www.realclearpolitics.com",
-                "www.revolver.news"
+                "www.realclearscience.com"
             ]
         },
         {
-            "rule": "spot\\.im\\/api\\/v1\\/device_load",
-            "cookies": 0.000402,
+            "rule": "spot\\.im\\/api\\/v1\\/pixel",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "events-collector"
+                "pix"
             ],
             "apis": {},
             "sites": 4,
             "prevalence": 0.000402,
             "cnames": [],
-            "responseHashes": [
-                "9e93739282d107e3e246b371e9907c7dda22bc64c418dafba2453ed0ddabb14c",
-                "a382ff03eea215baefd6912b0a4acddd972df5e5c9d4277285b9f7923ed7fb60",
-                "9c0a816fa85f9b756f4934ee2adabff6c5f27e6e4d70925812ad14bd304a1985"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dailywire.com",
-                "www.kicker.de",
+                "www.dailywire.com",
                 "www.realclearpolitics.com",
-                "www.revolver.news"
+                "www.realclearscience.com"
             ]
         },
         {
-            "rule": "spot\\.im\\/api\\/v1\\/pixels",
+            "rule": "spot\\.im\\/api\\/v1\\/pixel",
             "cookies": 0.000402,
             "fingerprinting": 0,
             "subdomains": [
@@ -100,6 +94,74 @@
             "sites": 4,
             "prevalence": 0.000402,
             "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailywire.com",
+                "www.dailywire.com",
+                "www.realclearpolitics.com",
+                "www.realclearscience.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/api\\/v1\\/device_load",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events-collector"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e3fa6e3c404c7d04b6fba78539ce36497521d376801a3a1b03dfca5c1964eeb0",
+                "afa1515fc66921265566f5a923ad1fdcb662d65f7d4ffcde556f388aa4181b31"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailywire.com",
+                "www.realclearpolitics.com",
+                "www.realclearscience.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/metric",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "metrics-logger"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailywire.com",
+                "www.dailywire.com",
+                "www.realclearpolitics.com",
+                "www.realclearscience.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/api\\/v1\\/pixels",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pix"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
@@ -108,29 +170,30 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dailywire.com",
-                "www.kicker.de",
                 "www.realclearpolitics.com",
-                "www.revolver.news"
+                "www.realclearscience.com"
             ]
         },
         {
-            "rule": "spot\\.im\\/v1\\.0\\.0\\/conversation\\/count",
+            "rule": "spot\\.im\\/yad\\/ad-choises\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api-2-0"
+                "publisher-assets"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "f27b4cdbd821100765224a52c7c8d544fa9fdd6d0aba21015eb66c11735e0989"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "elespanol.com",
-                "www.kicker.de"
+                "realclearpolitics.com",
+                "www.realclearscience.com"
             ]
         }
     ],
@@ -141,17 +204,18 @@
         "cpu": 0,
         "cache": 1
     },
-    "cookies": 0.000503,
+    "cookies": 0.000402,
     "types": {
-        "XHR": 4,
-        "Fetch": 9,
-        "Other": 4,
-        "Preflight": 2
+        "XHR": 3,
+        "Fetch": 15,
+        "Preflight": 4,
+        "Other": 3,
+        "Image": 2
     },
     "nameservers": [
+        "ns-2018.awsdns-60.co.uk",
         "ns-34.awsdns-04.com",
         "ns-802.awsdns-36.net",
-        "ns-1202.awsdns-22.org",
-        "ns-2018.awsdns-60.co.uk"
+        "ns-1202.awsdns-22.org"
     ]
 }

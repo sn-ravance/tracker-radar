@@ -4,14 +4,61 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
+        "widgets",
         "backend"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "davfobi\\.de\\/loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widgets"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "375080125ce4e10bf9236fbd851685a27b7c19a8931baa5dc07f27c901efb720"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "deutsche-apotheker-zeitung.de",
+                "www.ptaheute.de"
+            ]
+        },
+        {
+            "rule": "davfobi\\.de\\/davwgt\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "24a91e4b013a371fbacd381de87c9282a9be154abbb66259b3bdc9ff494367df"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "deutsche-apotheker-zeitung.de",
+                "www.ptaheute.de"
+            ]
+        },
         {
             "rule": "davfobi\\.de\\/auth\\/token\\/",
             "cookies": 0,
@@ -64,6 +111,8 @@
     },
     "cookies": 0,
     "types": {
+        "Script": 2,
+        "Stylesheet": 2,
         "Preflight": 2,
         "Fetch": 2
     },

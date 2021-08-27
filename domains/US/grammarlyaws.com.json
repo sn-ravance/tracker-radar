@@ -4,16 +4,21 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000416,
+    "prevalence": 0.0000417,
     "sites": 6,
     "subdomains": [
         "gnar-writr.data",
-        "public-treatment.prod-experimentation"
+        "public-treatment.prod-experimentation",
+        "subscription.subscription"
     ],
     "cnames": [
         {
             "original": "gnar.grammarly.com",
             "resolved": "gnar-writr.data.grammarlyaws.com"
+        },
+        {
+            "original": "subscription.grammarly.com",
+            "resolved": "subscription.subscription.grammarlyaws.com"
         },
         {
             "original": "treatment.grammarly.com",
@@ -125,14 +130,66 @@
                 "grammarly.com",
                 "www.grammarly.com"
             ]
+        },
+        {
+            "rule": "grammarlyaws\\.com\\/api\\/v1\\/subscription",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "subscription.subscription"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [
+                {
+                    "original": "subscription.grammarly.com",
+                    "resolved": "subscription.subscription.grammarlyaws.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "grammarly.com",
+                "support.grammarly.com"
+            ]
+        },
+        {
+            "rule": "grammarlyaws\\.com\\/api\\/v1\\/subscription",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "subscription.subscription"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [
+                {
+                    "original": "subscription.grammarly.com",
+                    "resolved": "subscription.subscription.grammarlyaws.com"
+                }
+            ],
+            "responseHashes": [
+                "7f73172396da2c67624774f9e39fb8c3d21058d168486a556ed173a549015c46"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "grammarly.com",
+                "support.grammarly.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Preflight": 5,
-        "Fetch": 5
+        "Preflight": 7,
+        "Fetch": 7
     },
     "nameservers": []
 }

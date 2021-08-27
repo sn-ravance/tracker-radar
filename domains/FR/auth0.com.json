@@ -11,10 +11,15 @@
     "sites": 4,
     "subdomains": [
         "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
+        "hashicorp-cd-uiujfnz9rprgm4yc.edge.tenants",
         "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu",
         "newyorkmedia-cd-xglicwlvftem6afq.edge.tenants"
     ],
     "cnames": [
+        {
+            "original": "auth.hashicorp.com",
+            "resolved": "hashicorp-cd-uiujfnz9rprgm4yc.edge.tenants.auth0.com"
+        },
         {
             "original": "auth.native-instruments.com",
             "resolved": "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu.auth0.com"
@@ -28,24 +33,29 @@
             "resolved": "newyorkmedia-cd-xglicwlvftem6afq.edge.tenants.auth0.com"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 0,
     "resources": [
         {
             "rule": "auth0\\.com\\/authorize",
-            "cookies": 0.000301,
+            "cookies": 0.000402,
             "fingerprinting": 0,
             "subdomains": [
                 "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
+                "hashicorp-cd-uiujfnz9rprgm4yc.edge.tenants",
                 "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu",
                 "newyorkmedia-cd-xglicwlvftem6afq.edge.tenants"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [
                 {
                     "original": "login.arduino.cc",
                     "resolved": "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants.auth0.com"
+                },
+                {
+                    "original": "auth.hashicorp.com",
+                    "resolved": "hashicorp-cd-uiujfnz9rprgm4yc.edge.tenants.auth0.com"
                 },
                 {
                     "original": "auth.native-instruments.com",
@@ -57,7 +67,8 @@
                 }
             ],
             "responseHashes": [
-                "5d6600c0959ae8534df3e5ff48ab5376ed4b8ff76df141c13efaaf1b86ac4d86",
+                "890a3c0fcf298d6690c0f73dbb7b4a40529e611bb3cf4a82900da37a9e14db32",
+                "82cd19e6db225140fe746cc934e0ae33dd515cb0ce7134133372e0e167a7ab0e",
                 "082ff52536e0c353ef638c852fe56a606b393319d1afe0278887acdb2783bdfc"
             ],
             "type": "Document",
@@ -65,6 +76,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "arduino.cc",
+                "learn.hashicorp.com",
                 "www.native-instruments.com",
                 "www.vulture.com"
             ]
@@ -77,9 +89,9 @@
         "cpu": 0,
         "cache": 1
     },
-    "cookies": 0.000301,
+    "cookies": 0.000402,
     "types": {
-        "Document": 3
+        "Document": 4
     },
     "nameservers": []
 }

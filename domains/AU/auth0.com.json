@@ -7,13 +7,14 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.00113,
+    "prevalence": 0.0011,
     "sites": 11,
     "subdomains": [
-        "newyorkmedia-cd-xglicwlvftem6afq.edge.tenants",
+        "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
         "tradelink-bigcommerce-prod-cd-xikfehzx64xu37pk.edge.tenants.au",
         "lendi-customer-production-cd-rdlslelgydlwue81.edge.tenants.au",
-        "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu"
+        "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu",
+        "cdn"
     ],
     "cnames": [
         {
@@ -29,29 +30,29 @@
             "resolved": "lendi-customer-production-cd-rdlslelgydlwue81.edge.tenants.au.auth0.com"
         },
         {
-            "original": "login.nymag.com",
-            "resolved": "newyorkmedia-cd-xglicwlvftem6afq.edge.tenants.auth0.com"
+            "original": "login.arduino.cc",
+            "resolved": "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants.auth0.com"
         }
     ],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "auth0\\.com\\/authorize",
-            "cookies": 0.000617,
+            "cookies": 0.000401,
             "fingerprinting": 0,
             "subdomains": [
-                "newyorkmedia-cd-xglicwlvftem6afq.edge.tenants",
+                "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
                 "tradelink-bigcommerce-prod-cd-xikfehzx64xu37pk.edge.tenants.au",
                 "lendi-customer-production-cd-rdlslelgydlwue81.edge.tenants.au",
                 "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.000617,
+            "sites": 4,
+            "prevalence": 0.000401,
             "cnames": [
                 {
-                    "original": "login.nymag.com",
-                    "resolved": "newyorkmedia-cd-xglicwlvftem6afq.edge.tenants.auth0.com"
+                    "original": "login.arduino.cc",
+                    "resolved": "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants.auth0.com"
                 },
                 {
                     "original": "bcauth.tradelink.com.au",
@@ -67,24 +68,45 @@
                 }
             ],
             "responseHashes": [
-                "5543bfa62781cebfac4c69aa97d3afad6dc591301a674ae3bf768e2e8080ebff",
-                "859a4e2b944f4b6386011d3714364bbb42beae9b390fbcc21eb07d98ba654c9d",
-                "366e470249aa21dba04d95f9f279638e38a463794f8b19e9c4e248a802a08f04",
-                "8ec708153facc644902845a479011bb4c8e6ee50c800c4bfb008fec49f6ac2fe",
-                "082ff52536e0c353ef638c852fe56a606b393319d1afe0278887acdb2783bdfc"
+                "fbb017017c40c5cfdb81fd4bce2eb56b6fe0f9d62f6c06f0ec834c6edce7e757",
+                "fa922fdd5a5a120da3a9c7efcf86d2e2ea4c980b2a51619360f4c5d1681030c5",
+                "9c27b4d5c01fa557b15a6eabfcfe719324df5a9da9f196957c188bdfcb089dd7"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_hjTLDTest": 0.00010285949393128986
+                "_hjTLDTest": 0.00010026067776218167
             },
             "exampleSites": [
-                "nymag.com",
+                "arduino.cc",
                 "tradelink.com.au",
                 "www.lendi.com.au",
-                "www.native-instruments.com",
-                "www.thecut.com",
-                "www.vulture.com"
+                "www.native-instruments.com"
+            ]
+        },
+        {
+            "rule": "auth0\\.com\\/js\\/auth0-spa-js\\/1\\.12\\/auth0-spa-js\\.production\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.sessionStorage": 1,
+                "window.localStorage": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "ff43488279c9b2869622b74bed3f5e02a8ade6110680368d78a566533fe4b91e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "urbanutilities.com.au",
+                "www.ey.com"
             ]
         }
     ],
@@ -95,9 +117,13 @@
         "cpu": 0,
         "cache": 1
     },
-    "cookies": 0.000617,
+    "cookies": 0.000501,
     "types": {
-        "Document": 6
+        "Document": 4,
+        "Script": 2
     },
-    "nameservers": []
+    "nameservers": [
+        "kolton.ns.cloudflare.com",
+        "monroe.ns.cloudflare.com"
+    ]
 }

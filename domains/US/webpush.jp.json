@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000194,
-    "sites": 28,
+    "prevalence": 0.000208,
+    "sites": 30,
     "subdomains": [
         "cdn",
-        "api"
+        "api",
+        "extensions"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -21,11 +22,11 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Notification.permission": 3
+                "Navigator.prototype.userAgent": 6,
+                "Notification.permission": 5
             },
-            "sites": 3,
-            "prevalence": 0.0000208,
+            "sites": 7,
+            "prevalence": 0.0000486,
             "cnames": [],
             "responseHashes": [
                 "e5d390db579442e33520d632c6e9db597ac24e0d7d4f950afbbe05c63af13764"
@@ -35,8 +36,12 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "grapee.jp",
+                "jp.ext.hp.com",
+                "www.chunichi.co.jp",
+                "www.daily.co.jp",
                 "www.lettuceclub.net",
-                "www.oricon.co.jp"
+                "www.oricon.co.jp",
+                "www.zakzak.co.jp"
             ]
         },
         {
@@ -47,7 +52,7 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 6,
+                "Navigator.prototype.userAgent": 8,
                 "Notification.permission": 7
             },
             "sites": 8,
@@ -71,27 +76,47 @@
             ]
         },
         {
-            "rule": "webpush\\.jp\\/coins_webapi\\/fcm\\/conf\\/654d8d182c0c78ee7f7e17935f5f8325587e4ae79955f6fdbbbe1b25000aaa19",
-            "cookies": 0.0000139,
-            "fingerprinting": 1,
+            "rule": "webpush\\.jp\\/js\\/webpush\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
             "subdomains": [
-                "api"
+                "cdn"
             ],
-            "apis": {
-                "Document.cookie getter": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000139,
             "cnames": [],
             "responseHashes": [
-                "e5cc93dad868c75ac2c76f52f56d05d1e9501ae191fdcb680d60a198e767c5bd"
+                "0a16ad7512db7cf9bd026318442a486d9286def7a995a297139eecbae9d013fe"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mynavi.jp",
-                "news.mynavi.jp"
+                "mantan-web.jp",
+                "www.yukoyuko.net"
+            ]
+        },
+        {
+            "rule": "webpush\\.jp\\/coins_webapi\\/js\\/lib\\/jcward\\.com\\/UUID\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "38b9a865e90a5f6bcf2fdf2952e7dc936a8655b782aa74a97830af8204f301f5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mantan-web.jp",
+                "www.yukoyuko.net"
             ]
         },
         {
@@ -102,11 +127,11 @@
                 "cdn"
             ],
             "apis": {
-                "Notification.permission": 3,
-                "Navigator.prototype.userAgent": 4
+                "Navigator.prototype.userAgent": 2,
+                "Notification.permission": 2
             },
-            "sites": 5,
-            "prevalence": 0.0000347,
+            "sites": 2,
+            "prevalence": 0.0000139,
             "cnames": [],
             "responseHashes": [
                 "e5d390db579442e33520d632c6e9db597ac24e0d7d4f950afbbe05c63af13764"
@@ -116,32 +141,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "withnews.jp",
-                "www.sankei.com",
-                "www.sanspo.com",
-                "www.ymobile.jp",
-                "www.zakzak.co.jp"
-            ]
-        },
-        {
-            "rule": "webpush\\.jp\\/coins_webapi\\/fcm\\/conf\\/653ea50b32633f19420536fdedcf6449a408ae515860f89298dd1316342b4867",
-            "cookies": 0.0000139,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000139,
-            "cnames": [],
-            "responseHashes": [
-                "02fe73fef67b5d8d606bab9c0b7e0b358ef2a5867138a5a1a01208d29e0d7739"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lettuceclub.net",
-                "www.lettuceclub.net"
+                "www.ymobile.jp"
             ]
         },
         {
@@ -156,7 +156,7 @@
             "prevalence": 0.0000139,
             "cnames": [],
             "responseHashes": [
-                "0d68874cb5d3893852608947e719bffc31f55be3d370964ffd3dd56b12a2c999"
+                "f3873aab5f57db3409b4cbcb06adb2c9e7234bdbf80b63e3278293a6bb02db41"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -167,7 +167,31 @@
             ]
         },
         {
-            "rule": "webpush\\.jp\\/coins_webapi\\/fcm\\/conf\\/a3ef1fee33f444717110c82bfd4bb419e6939d61bef68cc0b23e3bc7faf65ff6",
+            "rule": "webpush\\.jp\\/production\\/browsershownotice\\/1\\.0\\.4\\/browsershownotice\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "extensions"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "249b760d583addf387c30d8150b03dfd477c4033b61c7d0127e89da290218f4c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sankeibiz.jp",
+                "www.sankeibiz.jp"
+            ]
+        },
+        {
+            "rule": "webpush\\.jp\\/coins_webapi\\/fcm\\/conf\\/12c5ea7fa83e19b67e5cccfc55508181b5efed1514afd9384e5a8087a904bc75",
             "cookies": 0.0000139,
             "fingerprinting": 0,
             "subdomains": [
@@ -178,14 +202,14 @@
             "prevalence": 0.0000139,
             "cnames": [],
             "responseHashes": [
-                "5d38de73b40ebe9a56e7bfdf801a98a4fe404c7c88efdc44fb29f3198ce43946"
+                "fae743cfb8d61cd4a913fbae4ae3e3b9e40ea4ed81cf348f49de5476ced2d384"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "tokyo-sports.co.jp",
-                "www.tokyo-sports.co.jp"
+                "sponichi.co.jp",
+                "www.sponichi.co.jp"
             ]
         },
         {
@@ -200,7 +224,7 @@
             "prevalence": 0.0000139,
             "cnames": [],
             "responseHashes": [
-                "5ee32ba2080de1942331ab5a32a0c88c316aadfcbc0bca9089d61ace99ccf620"
+                "00efe7b40d5f3af9d4338b2cd8dfc7673ab3886d3d690d98ec525687dedb5008"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -212,7 +236,7 @@
         },
         {
             "rule": "webpush\\.jp\\/coins_webapi\\/fcm\\/conf\\/112963d1b97d54cd09f765b47240863208d680bf8420ecb9bbc29a30c8fdb76c",
-            "cookies": 0.0000139,
+            "cookies": 0.00000694,
             "fingerprinting": 0,
             "subdomains": [
                 "api"
@@ -222,7 +246,7 @@
             "prevalence": 0.0000139,
             "cnames": [],
             "responseHashes": [
-                "5baf509a0fb48a1ca92f24118f3390b0a995c4e489c6ed88c1430b980a7d8669"
+                "b98b8abfa91e750c58e692af93ddd4c846992856f06a0543252ea158f57d3a2a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -240,12 +264,12 @@
         "cpu": 0,
         "cache": 0
     },
-    "cookies": 0.000174,
+    "cookies": 0.000167,
     "types": {
-        "Script": 28
+        "Script": 31
     },
     "nameservers": [
-        "ns2.value-domain.com",
-        "ns1.value-domain.com"
+        "ns1.value-domain.com",
+        "ns2.value-domain.com"
     ]
 }

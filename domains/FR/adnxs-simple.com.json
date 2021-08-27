@@ -4,66 +4,17 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000803,
-    "sites": 8,
+    "prevalence": 0.00101,
+    "sites": 10,
     "subdomains": [
-        "acdn",
-        "fra1-ib",
         "ib",
-        "ams1-ib"
+        "ams1-ib",
+        "prebid",
+        "cdn"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
-        {
-            "rule": "adnxs-simple\\.com\\/strikeforce\\/script\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "acdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTimezoneOffset": 2,
-                "window.devicePixelRatio": 2,
-                "Navigator.prototype.languages": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "3b59326d81e914d15a9bb8fd6db80647d0a0a44e51d305a2436411bb599d7308"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "davidwalsh.name",
-                "howtodoinjava.com"
-            ]
-        },
-        {
-            "rule": "adnxs-simple\\.com\\/vevent",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "fra1-ib"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lemonde.fr",
-                "paroles2chansons.lemonde.fr"
-            ]
-        },
         {
             "rule": "adnxs-simple\\.com\\/ut\\/v3\\/prebid",
             "cookies": 0,
@@ -72,20 +23,23 @@
                 "ib"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 5,
+            "prevalence": 0.000503,
             "cnames": [],
             "responseHashes": [
-                "f73ce8fade6c7c4dc9335ae9fd5fdf8d32f83506c69ac726ce54b5e031eaf8e5",
-                "9efd97c58b1a3dc468ca212ada09e033857e4e5fd87feb018c2b35f9781a11cb"
+                "d3c5eaf09c08cff2d165108f345506058e0dda1200570db4b0a845c6c9e7d1f8",
+                "77064e1d37ba6f18a7c9c13f9333cb964a9285f9539a6cf1b4a7c9412384fcc2",
+                "a3b35ee1aa19e8c08d6696970706bfe4d00e73824ea8ce801ede4b6fd7af9797"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "vocationservicepublic.fr",
+                "www.acronymfinder.com",
                 "www.air-journal.fr",
-                "www.digminecraft.com"
+                "www.digminecraft.com",
+                "www.techonthenet.com"
             ]
         },
         {
@@ -111,28 +65,141 @@
             ]
         },
         {
-            "rule": "adnxs-simple\\.com\\/ast\\/mediation\\/0\\.40\\.0\\/mediation\\.js",
+            "rule": "adnxs-simple\\.com\\/pbs\\/v1\\/cookie_sync",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
-                "acdn"
+                "prebid"
             ],
-            "apis": {
-                "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "digminecraft.com",
+                "www.techonthenet.com"
+            ]
+        },
+        {
+            "rule": "adnxs-simple\\.com\\/pbs\\/v1\\/openrtb2\\/auction",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prebid"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "digminecraft.com",
+                "www.techonthenet.com"
+            ]
+        },
+        {
+            "rule": "adnxs-simple\\.com\\/rd_log",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ams1-ib"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
             "responseHashes": [
-                "57812aba195a00de9f60a416892d55fb1c68a0d4cafc17983616a6fe039f6562"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "autoscout24.ch",
-                "www.autoscout24.ch"
+                "secretsdujeu.com",
+                "www.secretsdujeu.com",
+                "www.toucharger.com"
+            ]
+        },
+        {
+            "rule": "adnxs-simple\\.com\\/v\\/s\\/213\\/trk\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "window.name": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "ce09be97f6c202dfdd0c605727de8901500539c1c46ca7e30133a4d81e09660e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "secretsdujeu.com",
+                "www.secretsdujeu.com",
+                "www.toucharger.com"
+            ]
+        },
+        {
+            "rule": "adnxs-simple\\.com\\/it",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ams1-ib"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "secretsdujeu.com",
+                "www.secretsdujeu.com",
+                "www.toucharger.com"
+            ]
+        },
+        {
+            "rule": "adnxs-simple\\.com\\/vevent",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ams1-ib"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "secretsdujeu.com",
+                "www.secretsdujeu.com",
+                "www.toucharger.com"
             ]
         }
     ],
@@ -140,23 +207,23 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 4,
-        "Other": 2,
-        "XHR": 3,
-        "Image": 2
+        "XHR": 9,
+        "Image": 5,
+        "Script": 6,
+        "Other": 3
     },
     "nameservers": [
-        "ns01.apxns.com",
-        "ns02.apxns.com",
-        "ns03.apxns.com",
-        "ns04.apxns.com",
-        "dns1.p02.nsone.net",
         "dns2.p02.nsone.net",
         "dns3.p02.nsone.net",
         "dns4.p02.nsone.net",
         "ns01.xsdns.net",
         "ns02.xsdns.net",
         "ns03.xsdns.net",
-        "ns04.xsdns.net"
+        "ns04.xsdns.net",
+        "ns01.apxns.com",
+        "ns02.apxns.com",
+        "ns03.apxns.com",
+        "ns04.apxns.com",
+        "dns1.p02.nsone.net"
     ]
 }

@@ -7,10 +7,11 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000402,
-    "sites": 4,
+    "prevalence": 0.000805,
+    "sites": 8,
     "subdomains": [
         "script-api",
+        "carbon-cdn",
         "privacy-location-edge"
     ],
     "cnames": [
@@ -23,14 +24,19 @@
     "resources": [
         {
             "rule": "ccgateway\\.net\\/script",
-            "cookies": 0.000402,
+            "cookies": 0.000503,
             "fingerprinting": 1,
             "subdomains": [
-                "script-api"
+                "script-api",
+                "carbon-cdn"
             ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "apis": {
+                "Date.prototype.getTime": 3,
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 3
+            },
+            "sites": 7,
+            "prevalence": 0.000704,
             "cnames": [
                 {
                     "original": "script-api.kinja.com",
@@ -38,43 +44,49 @@
                 }
             ],
             "responseHashes": [
-                "f5bef0178708162c973a918fd39c14b0d5ebd7b83c1c5029ea91f67970f76c64",
-                "032762abbe1cbf687d34a14e64edf5a9bda50b5705936503d4c5fc65e4e4a15b",
-                "9afe5fc3c189e9bd0c5e218be7010373b7a5533b9568d51bcefb7284f88cbe7a"
+                "d11caf6c4ba439c56ed5c7569db5867f76a787d21e579571239007c350e4b805",
+                "2d0818641539d1a3047239d5e9f1f690476cf4b0a71b02f3331aaf599b22a384",
+                "7702746bbe91fef5af3355af0feb0966f2a920446056fcb05ba2862bbb2d876e",
+                "ba283cd5f2c0bb3760d9a2c2bb84a2c77c221e7f28a8c197b908aa9d8d6e484f",
+                "574b0b256477fa1e9efe1b4ebb571085d289fd9d15548d6265ceaa1b70247acd",
+                "14425fa6c9335c5a7253e045337f203473fc67cb027d76292716d880ee0cbf5e"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "GLAM-JID": {
-                    "ttl": 1202,
+                    "ttl": 1204,
                     "length": 32,
-                    "prevalence": 0.0004016467516818958,
+                    "prevalence": 0.0005029169181251257,
                     "uniqueness": 1
                 },
                 "GLAM-AID": {
-                    "ttl": 2592002,
+                    "ttl": 2592004,
                     "length": 32,
-                    "prevalence": 0.0004016467516818958,
+                    "prevalence": 0.0005029169181251257,
                     "uniqueness": 1
                 },
                 "GLAM-SID": {
                     "ttl": null,
                     "length": 32,
-                    "prevalence": 0.0004016467516818958,
+                    "prevalence": 0.0005029169181251257,
                     "uniqueness": 1
                 },
                 "__j_state": {
-                    "ttl": 1202,
-                    "length": 222,
-                    "prevalence": 0.0004016467516818958,
+                    "ttl": 1204,
+                    "length": 229,
+                    "prevalence": 0.0005029169181251257,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gizmodo.com",
+                "jezebel.com",
                 "kotaku.com",
+                "lactualite.com",
                 "lifehacker.com",
-                "www.avclub.com"
+                "www.immigrer.com",
+                "www.realclearpolitics.com"
             ]
         },
         {
@@ -85,8 +97,8 @@
                 "script-api"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 5,
+            "prevalence": 0.000503,
             "cnames": [],
             "responseHashes": [
                 "d9f23619ed881ec26f0a846e9b5b9e8ac0bf60a26139462a83413d02c1de08d7"
@@ -96,9 +108,10 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gizmodo.com",
+                "jezebel.com",
                 "kotaku.com",
                 "lifehacker.com",
-                "www.avclub.com"
+                "www.completefrance.com"
             ]
         },
         {
@@ -108,9 +121,12 @@
             "subdomains": [
                 "script-api"
             ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "apis": {
+                "window.localStorage": 3,
+                "window.sessionStorage": 3
+            },
+            "sites": 7,
+            "prevalence": 0.000704,
             "cnames": [
                 {
                     "original": "script-api.kinja.com",
@@ -125,9 +141,12 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gizmodo.com",
+                "jezebel.com",
                 "kotaku.com",
+                "lactualite.com",
                 "lifehacker.com",
-                "www.avclub.com"
+                "www.immigrer.com",
+                "www.realclearpolitics.com"
             ]
         },
         {
@@ -138,22 +157,30 @@
                 "script-api"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 8,
+            "prevalence": 0.000805,
             "cnames": [],
             "responseHashes": [
-                "f0161469a6009f446856349628ff2c46d317c72db1f39aa71347f812051b720e",
-                "d4efcdfa59aaa83d1683b1c125e82063f0c26a67d569227e0fd9f8f95373d7bd",
-                "8fa4343b2085c0ddaa0c75375d7164f6920e3657816b53f2b87c0e8e823ab9bc"
+                "8ebb244ecba6340e303a7034b447f2278cddd2a1d1ed4484e43394baa581ca3f",
+                "15fdf824a7686cd89e84e67ec734784fbe8c69cf4c78499c5f6f511b1f12c7d1",
+                "79556469806a7189f31bc92cddc2a0fa1c1e7ccee693d740e1775154e97884f3",
+                "92c5f516f88664236165f19cec6b84f67677cd22f1451f8af6a101f148c46ade",
+                "d3fa48f4efa49ecee027da98395c29aac13a22ee336cea69bc574cc0ca36445a",
+                "ecd1154e80e7e75484b31c1c59414925cf60abea0b562c9c1fecefa35911397b",
+                "50ca6af142a911d990140ee74c9d90f5361b5799bd61306f17bdae15350094a6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gizmodo.com",
+                "jezebel.com",
                 "kotaku.com",
+                "lactualite.com",
                 "lifehacker.com",
-                "www.avclub.com"
+                "www.completefrance.com",
+                "www.immigrer.com",
+                "www.realclearpolitics.com"
             ]
         },
         {
@@ -180,9 +207,9 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gizmodo.com",
+                "jezebel.com",
                 "kotaku.com",
-                "lifehacker.com",
-                "www.avclub.com"
+                "lifehacker.com"
             ]
         },
         {
@@ -193,8 +220,8 @@
                 "script-api"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 5,
+            "prevalence": 0.000503,
             "cnames": [
                 {
                     "original": "script-api.kinja.com",
@@ -209,9 +236,10 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gizmodo.com",
+                "jezebel.com",
                 "kotaku.com",
                 "lifehacker.com",
-                "www.avclub.com"
+                "www.realclearpolitics.com"
             ]
         },
         {
@@ -222,8 +250,8 @@
                 "script-api"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 7,
+            "prevalence": 0.000704,
             "cnames": [
                 {
                     "original": "script-api.kinja.com",
@@ -238,9 +266,12 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gizmodo.com",
+                "jezebel.com",
                 "kotaku.com",
+                "lactualite.com",
                 "lifehacker.com",
-                "www.avclub.com"
+                "www.immigrer.com",
+                "www.realclearpolitics.com"
             ]
         },
         {
@@ -260,18 +291,17 @@
                 }
             ],
             "responseHashes": [
-                "43a84cdb2b1699eb6cfe3bbe07a8d5c8ce77fe2bfa866470f3d99ae8bc982c75",
-                "8dc608e676033591001dda6025cb8a298cc0d0e6daea2a13484754526d48bec4",
-                "9d5200f7807b74f004371f22075d7f685e855f05ccc2f4220bfd487345eb8a92"
+                "3a8d3ac367b243a16f30d4d9b869c1eb01d105299f275dfe22148adb360c1796",
+                "3b244bc8e2b430fa99957463f72366cdd6fb2a56a7981aba8758b9af41b1fcf4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gizmodo.com",
+                "jezebel.com",
                 "kotaku.com",
-                "lifehacker.com",
-                "www.avclub.com"
+                "lifehacker.com"
             ]
         },
         {
@@ -281,9 +311,12 @@
             "subdomains": [
                 "script-api"
             ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 7,
+            "prevalence": 0.000704,
             "cnames": [
                 {
                     "original": "script-api.kinja.com",
@@ -291,16 +324,21 @@
                 }
             ],
             "responseHashes": [
-                "38c691c0343f1c2b9d39232435ba22266e815ffd718eb123c8cace4bba568524"
+                "38c691c0343f1c2b9d39232435ba22266e815ffd718eb123c8cace4bba568524",
+                "b094553fabcb631b70907368ed8a0cf4ab8670c7c1ed893d72aedd0495a6c3bc",
+                "5f7ae064b7e81c85a3a1ef68b2e66f26a163fcda678ac116f202c8c692e3c810"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gizmodo.com",
+                "jezebel.com",
                 "kotaku.com",
+                "lactualite.com",
                 "lifehacker.com",
-                "www.avclub.com"
+                "www.immigrer.com",
+                "www.realclearpolitics.com"
             ]
         },
         {
@@ -311,8 +349,8 @@
                 "privacy-location-edge"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 8,
+            "prevalence": 0.000805,
             "cnames": [],
             "responseHashes": [
                 "9170a8b2fb3234baa721bf8b3de5935d8d160f6f987215b83b07a49a403e5e74"
@@ -322,9 +360,13 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gizmodo.com",
+                "jezebel.com",
                 "kotaku.com",
+                "lactualite.com",
                 "lifehacker.com",
-                "www.avclub.com"
+                "www.completefrance.com",
+                "www.immigrer.com",
+                "www.realclearpolitics.com"
             ]
         }
     ],
@@ -335,15 +377,15 @@
         "cpu": 0,
         "cache": 1
     },
-    "cookies": 0.000402,
+    "cookies": 0.000503,
     "types": {
-        "Script": 36,
-        "XHR": 4
+        "Script": 54,
+        "XHR": 8
     },
     "nameservers": [
+        "ns1-05.azure-dns.com",
         "ns2-05.azure-dns.net",
         "ns3-05.azure-dns.org",
-        "ns4-05.azure-dns.info",
-        "ns1-05.azure-dns.com"
+        "ns4-05.azure-dns.info"
     ]
 }

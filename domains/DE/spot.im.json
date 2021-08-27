@@ -4,20 +4,132 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
-        "publisher-assets"
+        "direct-events-collector",
+        "publisher-assets",
+        "pix",
+        "events-collector",
+        "metrics-logger",
+        "api-2-0"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "spot\\.im\\/api\\/v2\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "direct-events-collector"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailywire.com",
+                "www.kicker.de"
+            ]
+        },
         {
             "rule": "spot\\.im\\/ad\\/event-tracking\\/pixel-ads-google-adsense\\.html",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "publisher-assets"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailywire.com",
+                "www.dailywire.com",
+                "www.kicker.de"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/api\\/v1\\/pixel",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pix"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailywire.com",
+                "www.dailywire.com",
+                "www.kicker.de"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/api\\/v1\\/pixel",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pix"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailywire.com",
+                "www.dailywire.com",
+                "www.kicker.de"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/api\\/v1\\/device_load",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events-collector"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "f68ad34eba56fe5d1e96c8a5ff6a544ffb97d038ebfca27b920de7712e3c9581"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailywire.com",
+                "www.kicker.de"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/metric",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "metrics-logger"
             ],
             "apis": {},
             "sites": 2,
@@ -28,7 +140,49 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "kicker.de",
+                "dailywire.com",
+                "www.kicker.de"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/api\\/v1\\/pixels",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailywire.com",
+                "www.kicker.de"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/conversation\\/count",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "elespanol.com",
                 "www.kicker.de"
             ]
         }
@@ -40,9 +194,12 @@
         "cpu": 0,
         "cache": 1
     },
-    "cookies": 0.0001,
+    "cookies": 0.000301,
     "types": {
-        "Fetch": 2
+        "XHR": 2,
+        "Fetch": 10,
+        "Preflight": 5,
+        "Other": 2
     },
     "nameservers": [
         "ns-802.awsdns-36.net",

@@ -7,11 +7,13 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000402,
+    "prevalence": 0.000401,
     "sites": 4,
     "subdomains": [
         "realtimeeventfeeds",
-        "sub"
+        "sub",
+        "api",
+        "i"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -25,7 +27,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.000503,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [],
             "type": "WebSocket",
@@ -47,8 +49,8 @@
                 "sub"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000503,
+            "sites": 4,
+            "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [],
             "type": "WebSocket",
@@ -56,10 +58,57 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cbc.ca",
-                "www.cbc.ca",
                 "www.dailystar.co.uk",
                 "www.mirror.co.uk",
                 "www.standard.co.uk"
+            ]
+        },
+        {
+            "rule": "viafoura\\.co\\/v2\\/www\\.cbc\\.ca\\/bootstrap\\/v2",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "f0bc488e327f1f0bf87c779a61fc8c52dda966b66ea116363002d90d521becf4"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.0002007226013649137
+            },
+            "exampleSites": [
+                "cbc.ca",
+                "www.cbc.ca"
+            ]
+        },
+        {
+            "rule": "viafoura\\.co\\/v3\\/www\\.cbc\\.ca\\/ingest",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "ebf4f635a17d10d6eb46ba680b70142419aa3220f228001a036d311a22ee9d2a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.0002007226013649137
+            },
+            "exampleSites": [
+                "cbc.ca",
+                "www.cbc.ca"
             ]
         }
     ],
@@ -70,14 +119,16 @@
         "cpu": 0,
         "cache": 3
     },
-    "cookies": 0.000402,
+    "cookies": 0.000401,
     "types": {
-        "WebSocket": 10
+        "WebSocket": 9,
+        "XHR": 2,
+        "Image": 2
     },
     "nameservers": [
+        "ns-2035.awsdns-62.co.uk",
         "ns-272.awsdns-34.com",
         "ns-766.awsdns-31.net",
-        "ns-1124.awsdns-12.org",
-        "ns-2035.awsdns-62.co.uk"
+        "ns-1124.awsdns-12.org"
     ]
 }

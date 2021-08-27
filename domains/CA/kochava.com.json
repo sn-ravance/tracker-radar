@@ -7,31 +7,50 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000304,
+    "sites": 3,
     "subdomains": [
+        "assets",
         "web-sdk.control"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "kochava\\.com\\/track\\/json",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "kochava\\.com\\/kochava\\.js\\/v2\\.1\\/kochava\\.min\\.js",
+            "cookies": 0.000101,
+            "fingerprinting": 2,
             "subdomains": [
-                "web-sdk.control"
+                "assets"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 2,
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 1,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2
+            },
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000203,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
+            "responseHashes": [
+                "46e2c38b8432b13d035a2e7dab094b52a594a47191abdb6dc0d5c98544c9b6e3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "kv_id": {
+                    "ttl": 315360024,
+                    "length": 15,
+                    "prevalence": 0.0001013273887931908,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "weatherbug.com",
+                "nfl.com",
                 "www.weatherbug.com"
             ]
         },
@@ -43,8 +62,29 @@
                 "web-sdk.control"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000304,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nfl.com",
+                "www.cbs.com",
+                "www.weatherbug.com"
+            ]
+        },
+        {
+            "rule": "kochava\\.com\\/track\\/json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web-sdk.control"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000405,
             "cnames": [],
             "responseHashes": [
                 "075a61c48ac3dd56cdf07086a2f7bae59363f88be99011dd8b73dcf7f2b9df75"
@@ -53,7 +93,9 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "weatherbug.com",
+                "nfl.com",
+                "fantasy.nfl.com",
+                "www.cbs.com",
                 "www.weatherbug.com"
             ]
         }
@@ -65,15 +107,16 @@
         "cpu": 0,
         "cache": 3
     },
-    "cookies": 0.000101,
+    "cookies": 0.000203,
     "types": {
-        "Preflight": 2,
-        "XHR": 2
+        "Script": 2,
+        "Preflight": 3,
+        "XHR": 4
     },
     "nameservers": [
-        "ns-cloud-a3.googledomains.com",
         "ns-cloud-a1.googledomains.com",
         "ns-cloud-a2.googledomains.com",
-        "ns-cloud-a4.googledomains.com"
+        "ns-cloud-a4.googledomains.com",
+        "ns-cloud-a3.googledomains.com"
     ]
 }

@@ -10,49 +10,43 @@
     "prevalence": 0.000101,
     "sites": 1,
     "subdomains": [
-        "uid"
+        "uid",
+        "recommend-zoom"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "mediacorp\\.sg\\/api\\/scripts\\/meid\\.js",
-            "cookies": 0.000201,
+            "cookies": 0.000203,
             "fingerprinting": 1,
             "subdomains": [
                 "uid"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2,
-                "window.localStorage": 2
+                "window.localStorage": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000203,
             "cnames": [],
             "responseHashes": [
-                "b66d097c17b3433e11371d920811ea6505ca29b1f84c6a13f1ef114d2ed07fff"
+                "7335d64de5aedf8e78793c48a8b9c3972473da3523dd02d23f3446e9166efe7a"
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "UID": {
-                    "ttl": 31536003,
-                    "length": 36,
-                    "prevalence": 0.0002010252286661976,
-                    "uniqueness": 0.5
-                },
                 "MeID_Seg": {
-                    "ttl": 31536012,
+                    "ttl": 31536005,
                     "length": 4,
-                    "prevalence": 0.0002010252286661976,
+                    "prevalence": 0.0002026547775863816,
                     "uniqueness": 0.5
                 },
                 "adtechTargetingKeys": {
-                    "ttl": 31536012,
+                    "ttl": 31536005,
                     "length": 4,
-                    "prevalence": 0.0002010252286661976,
+                    "prevalence": 0.0002026547775863816,
                     "uniqueness": 0.5
                 }
             },
@@ -64,23 +58,48 @@
         },
         {
             "rule": "mediacorp\\.sg\\/api\\/scripts\\/meid_seg\\.js",
-            "cookies": 0.000201,
+            "cookies": 0.000203,
             "fingerprinting": 0,
             "subdomains": [
                 "uid"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000203,
             "cnames": [],
             "responseHashes": [
-                "13f32ac61ce07720ec9be73d87b98e879ec963a7a5527573447d2a5385c4fd5b"
+                "509e09853da48abd7baf7fb65c414e995cac89934beec6228092471dc0d81e8c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "UID": 0.0002010252286661976
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "channelnewsasia.com",
+                "www.channelnewsasia.com"
+            ]
+        },
+        {
+            "rule": "mediacorp\\.sg\\/tag\\.js",
+            "cookies": 0.000101,
+            "fingerprinting": 1,
+            "subdomains": [
+                "recommend-zoom"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2
             },
+            "sites": 2,
+            "prevalence": 0.000203,
+            "cnames": [],
+            "responseHashes": [
+                "ddc05c0114263f59a767a5fb68b21bd141e647f27d634865146c8e33dec185b5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "channelnewsasia.com",
                 "www.channelnewsasia.com"
@@ -96,7 +115,7 @@
     },
     "cookies": 0.000101,
     "types": {
-        "Script": 4
+        "Script": 6
     },
     "nameservers": [
         "ns-1734.awsdns-24.co.uk",

@@ -7,16 +7,43 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
+        "felix.data",
         "reach-id.orbit"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "tm-awx\\.com\\/collect",
+            "rule": "tm-awx\\.com\\/felix\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "felix.data"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "40749249ef56d2ba958090dc287166f1eb57935c7613fab57ccc5c04e6a2955e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailystar.co.uk",
+                "www.ok.co.uk"
+            ]
+        },
+        {
+            "rule": "tm-awx\\.com\\/analytics\\.js\\.gz",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -27,14 +54,98 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+                "49fb56364624a9701813deb8c6bee4614d0a8b8755bc215e4b70fe24bc7a2ea2"
             ],
-            "type": "Fetch",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dailystar.co.uk",
-                "www.dailystar.co.uk"
+                "www.ok.co.uk"
+            ]
+        },
+        {
+            "rule": "tm-awx\\.com\\/pageConfig",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "felix.data"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailystar.co.uk",
+                "www.ok.co.uk"
+            ]
+        },
+        {
+            "rule": "tm-awx\\.com\\/pageConfig",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "felix.data"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1cbf28242b93f118e70101c6f1d3809050b1904efddbb09eb6ca4e0f2bbf4697"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailystar.co.uk",
+                "www.ok.co.uk"
+            ]
+        },
+        {
+            "rule": "tm-awx\\.com\\/pageview",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "felix.data"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailystar.co.uk",
+                "www.ok.co.uk"
+            ]
+        },
+        {
+            "rule": "tm-awx\\.com\\/pageview",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "felix.data"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailystar.co.uk",
+                "www.ok.co.uk"
             ]
         }
     ],
@@ -47,7 +158,9 @@
     },
     "cookies": 0,
     "types": {
-        "Fetch": 2
+        "Script": 4,
+        "Preflight": 4,
+        "XHR": 4
     },
     "nameservers": [
         "ns-288.awsdns-36.com",

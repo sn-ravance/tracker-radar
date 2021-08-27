@@ -4,11 +4,16 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.00072,
-    "sites": 7,
+    "prevalence": 0.000602,
+    "sites": 6,
     "subdomains": [
         "doppler-config",
-        "doppler-tasks"
+        "doppler-tasks",
+        "livec0a3575.airspace-f",
+        "livec0a3575.airspace-e",
+        "363339a2-3586-42b3-b81b-7c40fdb64059.dns-clientinfo",
+        "ecb00006-5c39-497e-9079-999b3f952105.dns-clientinfo",
+        "doppler-reporting"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -21,19 +26,19 @@
                 "doppler-config"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 4
             },
             "sites": 4,
-            "prevalence": 0.000411,
+            "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cbslocal.com",
                 "comicbook.com",
                 "popculture.com",
+                "www.cbsnews.com",
                 "www.cbssports.com"
             ]
         },
@@ -45,8 +50,8 @@
                 "doppler-config"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
+            "sites": 4,
+            "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [
                 "85a70c331d0f0d8405bd03a41c694ad952cb4409c2d7f9b90bb3c5cd1a037973"
@@ -56,6 +61,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "comicbook.com",
+                "popculture.com",
+                "www.cbsnews.com",
                 "www.cbssports.com"
             ]
         },
@@ -67,19 +74,21 @@
                 "doppler-tasks"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000411,
+            "sites": 6,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
-                "a5407dc99fa4f6117a61f50ed9833ac89dc7c2629b5f85b6a191a594083f8c94"
+                "3f919dfb05b0546cacd0161ab1023e7651ded76572ed500e4e5ac3fb579e56b3"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "comicbook.com",
+                "popculture.com",
                 "southpark.cc.com",
-                "www.mtv.com.au",
+                "www.cbsnews.com",
+                "www.cbssports.com",
                 "www.mtv.com"
             ]
         },
@@ -91,10 +100,11 @@
                 "doppler-config"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2
             },
-            "sites": 3,
-            "prevalence": 0.000309,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "c8de3fc234d2fafe518a605bafbc985873fd701f54751b04c01d5ae9d0109f3f"
@@ -104,8 +114,97 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cc.com",
-                "www.mtv.com.au",
                 "www.mtv.com"
+            ]
+        },
+        {
+            "rule": "cbsivideo\\.com\\/measurements\\/1536197413045-1555KB\\.ts",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "livec0a3575.airspace-f",
+                "livec0a3575.airspace-e"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cc.com",
+                "southpark.cc.com",
+                "www.mtv.com"
+            ]
+        },
+        {
+            "rule": "cbsivideo\\.com\\/clientinfo",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "363339a2-3586-42b3-b81b-7c40fdb64059.dns-clientinfo",
+                "ecb00006-5c39-497e-9079-999b3f952105.dns-clientinfo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "fed74c28f72544881ac70d3f244a7c09c378c2aced9fc55b10ca349c9812ffe6"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cc.com",
+                "www.mtv.com"
+            ]
+        },
+        {
+            "rule": "cbsivideo\\.com\\/log",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "doppler-reporting"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cc.com",
+                "southpark.cc.com",
+                "www.mtv.com"
+            ]
+        },
+        {
+            "rule": "cbsivideo\\.com\\/measurements\\/r20\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "livec0a3575.airspace-f"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cc.com",
+                "southpark.cc.com"
             ]
         }
     ],
@@ -113,8 +212,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 9,
-        "Fetch": 4
+        "Script": 10,
+        "Fetch": 16
     },
     "nameservers": [
         "ns-399.awsdns-49.com",

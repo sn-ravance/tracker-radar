@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000603,
-    "sites": 6,
+    "prevalence": 0.000401,
+    "sites": 4,
     "subdomains": [
         "direct-events-collector",
         "publisher-assets",
+        "pix",
         "events-collector",
-        "api-2-0"
+        "metrics-logger"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -23,8 +24,8 @@
                 "direct-events-collector"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -33,8 +34,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cheezburger.com",
-                "www.dailywire.com",
+                "dailywire.com",
                 "www.kicker.de"
             ]
         },
@@ -46,61 +46,122 @@
                 "publisher-assets"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cheezburger.com",
-                "failblog.cheezburger.com",
+                "dailywire.com",
                 "www.dailywire.com",
                 "www.kicker.de"
             ]
         },
         {
-            "rule": "spot\\.im\\/api\\/v1\\/device_load",
-            "cookies": 0.000302,
-            "fingerprinting": 0,
-            "subdomains": [
-                "events-collector"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
-            "cnames": [],
-            "responseHashes": [
-                "cea1d3aca10c44d659d875fc38ff00ca583366e2a4ba41e41411867f6c318c50",
-                "58e253573aaa04711fcb6eae73d9385489a86c40d18ca86b2a96e6d67ac55cc7"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cheezburger.com",
-                "www.dailywire.com",
-                "www.kicker.de"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/v1\\.0\\.0\\/conversation\\/count",
+            "rule": "spot\\.im\\/api\\/v1\\/pixel",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api-2-0"
+                "pix"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "elespanol.com",
+                "dailywire.com",
+                "www.dailywire.com",
+                "www.kicker.de"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/api\\/v1\\/pixel",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pix"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailywire.com",
+                "www.dailywire.com",
+                "www.kicker.de"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/api\\/v1\\/device_load",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events-collector"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "bb9453b7b0d4976d2ee1741d55668217b3deaf1dce801d9e8414f9db7e73dcec"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailywire.com",
+                "www.kicker.de"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/metric",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "metrics-logger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailywire.com",
+                "www.kicker.de"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/api\\/v1\\/pixels",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailywire.com",
                 "www.kicker.de"
             ]
         }
@@ -112,16 +173,17 @@
         "cpu": 0,
         "cache": 1
     },
-    "cookies": 0.000402,
+    "cookies": 0.000301,
     "types": {
-        "XHR": 3,
-        "Fetch": 7,
-        "Preflight": 2
+        "XHR": 2,
+        "Fetch": 10,
+        "Preflight": 3,
+        "Other": 2
     },
     "nameservers": [
-        "ns-34.awsdns-04.com",
-        "ns-802.awsdns-36.net",
         "ns-1202.awsdns-22.org",
-        "ns-2018.awsdns-60.co.uk"
+        "ns-2018.awsdns-60.co.uk",
+        "ns-34.awsdns-04.com",
+        "ns-802.awsdns-36.net"
     ]
 }

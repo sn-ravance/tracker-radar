@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000416,
-    "sites": 6,
+    "prevalence": 0.0000347,
+    "sites": 5,
     "subdomains": [
         "b"
     ],
@@ -59,13 +59,19 @@
         {
             "rule": "jw-cdn\\.org\\/code\\/media-player\\/v1\\.5\\.4\\/js\\/media-player\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "b"
             ],
             "apis": {
                 "Date.prototype.getTime": 2,
-                "Event.prototype.timeStamp": 2
+                "Event.prototype.timeStamp": 2,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.maxTouchPoints": 1,
+                "Navigator.prototype.languages": 1,
+                "URL.createObjectURL": 1,
+                "HTMLMediaElement.prototype.canPlayType": 1,
+                "MediaSource.isTypeSupported": 1
             },
             "sites": 2,
             "prevalence": 0.0000139,
@@ -90,7 +96,7 @@
             ],
             "apis": {
                 "window.localStorage": 2,
-                "Document.cookie getter": 2,
+                "Document.cookie getter": 1,
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
@@ -231,7 +237,7 @@
             "prevalence": 0.0000139,
             "cnames": [],
             "responseHashes": [
-                "2045891b4a7dda03ee9d2618914de599259f724024868a40079e5526e98cc88a"
+                "3baf2e3e0d9737b7fac87b808b09461fbcd4e261c33e65922f887f9e99ad151a"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -305,28 +311,6 @@
                 "dan124.com",
                 "www.jw.org"
             ]
-        },
-        {
-            "rule": "jw-cdn\\.org\\/fonts\\/wt-clear-text\\/1\\.015\\/Wt-ClearText-Medium\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "b"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000139,
-            "cnames": [],
-            "responseHashes": [
-                "ec82539bf30e664a9b418cde2827bae07f39aacccd63f7e52132ef59e3a468a5"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "jw.org",
-                "wol.jw.org"
-            ]
         }
     ],
     "categories": [],
@@ -335,15 +319,15 @@
     "types": {
         "Stylesheet": 4,
         "Script": 4,
-        "Font": 11,
+        "Font": 9,
         "Preflight": 5,
         "Fetch": 2,
         "XHR": 7
     },
     "nameservers": [
-        "ns-2023.awsdns-60.co.uk",
-        "ns-378.awsdns-47.com",
         "ns-608.awsdns-12.net",
-        "ns-1082.awsdns-07.org"
+        "ns-1082.awsdns-07.org",
+        "ns-2023.awsdns-60.co.uk",
+        "ns-378.awsdns-47.com"
     ]
 }

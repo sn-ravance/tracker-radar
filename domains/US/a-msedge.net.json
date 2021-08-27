@@ -4,14 +4,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000361,
-    "sites": 52,
+    "prevalence": 0.000354,
+    "sites": 51,
     "subdomains": [
         "c-bing-com.a-0001",
+        "platform-bing-com.a-0001",
         "www2-bing-com.dual-a-0001",
-        "bat-bing-com.a-0001",
         "api-msn-com.a-0003",
-        "ssl-bing-com.a-0001"
+        "ssl-bing-com.a-0001",
+        "bat-bing-com.a-0001"
     ],
     "cnames": [
         {
@@ -25,6 +26,10 @@
         {
             "original": "c.bing.com",
             "resolved": "c-bing-com.a-0001.a-msedge.net"
+        },
+        {
+            "original": "platform.bing.com",
+            "resolved": "platform-bing-com.a-0001.a-msedge.net"
         },
         {
             "original": "ssl.bing.com",
@@ -67,19 +72,46 @@
                 "support.microsoft.com",
                 "www.microsoft.com",
                 "www.msn.com",
-                "zone.msn.com",
+                "microsoftedgewelcome.microsoft.com",
+                "developer.microsoft.com",
+                "www.onenote.com",
+                "prod.support.services.microsoft.com",
                 "templates.office.com",
-                "forums.xamarin.com",
-                "dev.azure.com",
-                "xboxdesignlab.xbox.com",
-                "devblogs.microsoft.com",
-                "onedrive.live.com",
+                "news.xbox.com",
                 "www.xbox.com",
-                "www.games.msn.com",
-                "microsoftnews.msn.com",
-                "dotnet.microsoft.com",
-                "products.office.com",
-                "office.live.com"
+                "azure.microsoft.com",
+                "g.live.com",
+                "www.office.com",
+                "xboxdesignlab.xbox.com",
+                "zone.msn.com",
+                "puzzles.msn.com"
+            ]
+        },
+        {
+            "rule": "a-msedge\\.net\\/geo\\/REST\\/v1\\/Imagery\\/Map\\/RoadVibrant\\/41\\.08838,1\\.161654\\/5",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platform-bing-com.a-0001"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [
+                {
+                    "original": "platform.bing.com",
+                    "resolved": "platform-bing-com.a-0001.a-msedge.net"
+                }
+            ],
+            "responseHashes": [
+                "9e9c674f42173df91f95a6f1aa429c5f612ee5431f26ec11194ed3b29dc7b24f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bing.com",
+                "www.bing.com"
             ]
         },
         {
@@ -110,9 +142,63 @@
             ]
         },
         {
+            "rule": "a-msedge\\.net\\/weather\\/overview",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-msn-com.a-0003"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [
+                {
+                    "original": "api.msn.com",
+                    "resolved": "api-msn-com.a-0003.a-msedge.net"
+                }
+            ],
+            "responseHashes": [
+                "9773e104de0b42416fa5261ccc375d7a9265a3b1bb4551de7a37b345a56f0fce"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "msn.com",
+                "microsoftnews.msn.com"
+            ]
+        },
+        {
+            "rule": "a-msedge\\.net\\/widget\\/metrics\\.js",
+            "cookies": 0.0000139,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ssl-bing-com.a-0001"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [
+                {
+                    "original": "ssl.bing.com",
+                    "resolved": "ssl-bing-com.a-0001.a-msedge.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "xbox.com",
+                "news.xbox.com"
+            ]
+        },
+        {
             "rule": "a-msedge\\.net\\/bat\\.js",
             "cookies": 0.0000139,
-            "fingerprinting": 2,
+            "fingerprinting": 0,
             "subdomains": [
                 "bat-bing-com.a-0001"
             ],
@@ -125,7 +211,9 @@
                     "resolved": "bat-bing-com.a-0001.a-msedge.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "5c1282fb121104f5a505ecbfd7194e64c98db6b830684450dcfc478021d05257"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -161,91 +249,35 @@
         },
         {
             "rule": "a-msedge\\.net\\/action\\/0",
-            "cookies": 0.00000694,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "bat-bing-com.a-0001"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
+            "sites": 2,
+            "prevalence": 0.0000139,
             "cnames": [
                 {
                     "original": "bat.bing.com",
                     "resolved": "bat-bing-com.a-0001.a-msedge.net"
                 }
             ],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "_uetsid": 0.0000069415521310565046,
-                "_uetvid": 0.0000069415521310565046
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "office.com",
-                "jp.linkedin.com",
                 "products.office.com"
-            ]
-        },
-        {
-            "rule": "a-msedge\\.net\\/weather\\/overview",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api-msn-com.a-0003"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000139,
-            "cnames": [
-                {
-                    "original": "api.msn.com",
-                    "resolved": "api-msn-com.a-0003.a-msedge.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "msn.com",
-                "microsoftnews.msn.com"
-            ]
-        },
-        {
-            "rule": "a-msedge\\.net\\/widget\\/metrics\\.js",
-            "cookies": 0.0000139,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ssl-bing-com.a-0001"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000139,
-            "cnames": [
-                {
-                    "original": "ssl.bing.com",
-                    "resolved": "ssl-bing-com.a-0001.a-msedge.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "xbox.com",
-                "news.xbox.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000361,
+    "cookies": 0.000347,
     "types": {
-        "Image": 34,
+        "Image": 35,
         "Script": 8,
         "Fetch": 2
     },

@@ -9,15 +9,59 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000703,
+    "prevalence": 0.000704,
     "sites": 7,
     "subdomains": [
+        "api-cdn",
+        "unagi",
         "payments-de",
         "payments-eu"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "amazon\\.com\\/sdk\\/login1\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b17fd5c0f94359f7e977e90a6aeaa00c64c5caf57a1e804c6a52a4c55c14c3e3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jardinvest.fr",
+                "www.autoportee-discount.fr"
+            ]
+        },
+        {
+            "rule": "amazon\\.com\\/1\\/events\\/com\\.amazon\\.csm\\.csa\\.prod",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "unagi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "audible.fr",
+                "www.audible.fr"
+            ]
+        },
         {
             "rule": "amazon\\.com\\/gp\\/widgets\\/sessionstabilizer",
             "cookies": 0.000402,
@@ -31,40 +75,18 @@
             "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
-                "4de8156d32050f6831104b91c4a5ffae94e4d0ad0500590d8a2eec8a0ebf35be",
-                "21f05eb6900c0b4e3f591e4f73c6d8b6471e853d1614b723572edb7b9f61efde",
-                "161675c2964a744a5abe6829d181b46ec3530b28e2bd13fb491b08dd4111560f"
+                "a30b6c8ba4289d09e1342fbec41f6e83a0b869a50a360f1b3884c7c62a9e0030",
+                "871bd7791735680a1859e04c0a0bcb28b238ea81fbd8bb78bef8123073bf3f1d",
+                "5a34188466958bfa59cfaab0832ba2e30201f6b155fffefee058090be13f9e3a"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bike-discount.de",
+                "www.bricoflor.fr",
                 "www.nutrimea.com",
-                "www.onedirect.fr",
-                "www.satisfyer.com"
-            ]
-        },
-        {
-            "rule": "amazon\\.com\\/cs\\/uedata",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "payments-de"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "onedirect.fr",
-                "www.satisfyer.com"
+                "www.terrasse-bois.info"
             ]
         }
     ],
@@ -84,14 +106,16 @@
     },
     "cookies": 0.000402,
     "types": {
-        "XHR": 6
+        "Script": 2,
+        "Other": 2,
+        "XHR": 4
     },
     "nameservers": [
-        "ns1.p31.dynect.net",
-        "ns4.p31.dynect.net",
-        "pdns1.ultradns.net",
         "pdns6.ultradns.co.uk",
+        "ns1.p31.dynect.net",
         "ns3.p31.dynect.net",
+        "pdns1.ultradns.net",
+        "ns4.p31.dynect.net",
         "ns2.p31.dynect.net"
     ]
 }

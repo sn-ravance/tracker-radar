@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000139,
-    "sites": 2,
+    "prevalence": 0.0000417,
+    "sites": 6,
     "subdomains": [
         "sfc",
         "sfgw"
@@ -14,6 +14,33 @@
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "leadspace\\.com\\/sf5\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sfc"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 4,
+                "Navigator.prototype.userAgent": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000278,
+            "cnames": [],
+            "responseHashes": [
+                "cc94e55155661db6998eab90f7aff21dbfdc5ea25a4e0b397f31ce9ad48dceda"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "digitalguardian.com",
+                "support.ptc.com",
+                "www.juniper.net",
+                "www.opendns.com"
+            ]
+        },
+        {
             "rule": "leadspace\\.com\\/SmartForms\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -21,8 +48,8 @@
                 "sfc"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000139,
+            "sites": 4,
+            "prevalence": 0.0000278,
             "cnames": [],
             "responseHashes": [
                 "0645386b306fc6a2e7a59f44e38fb44e53c519a4ba0f0701e0caa07e9ab601d6"
@@ -31,7 +58,54 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "opendns.com",
+                "ptc.com",
+                "www.juniper.net",
+                "www.opendns.com",
+                "www.ricoh-usa.com"
+            ]
+        },
+        {
+            "rule": "leadspace\\.com\\/ip\\/match",
+            "cookies": 0.0000208,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sfgw"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ptc.com",
+                "www.juniper.net",
+                "www.opendns.com"
+            ]
+        },
+        {
+            "rule": "leadspace\\.com\\/ip\\/match",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sfgw"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
+                "4816d50e81d9c9e300c6aca2fcde6cde6fc2842a67347b54ec36f8c1615476e7",
+                "f6a965514a24a70a8fc323c848d6b9b94762dc3333f6013cb0e45ea9a2d0ae3d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ptc.com",
+                "www.juniper.net",
                 "www.opendns.com"
             ]
         },
@@ -56,85 +130,24 @@
                 "opendns.com",
                 "www.opendns.com"
             ]
-        },
-        {
-            "rule": "leadspace\\.com\\/sf5\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "sfc"
-            ],
-            "apis": {
-                "Navigator.prototype.product": 2,
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000139,
-            "cnames": [],
-            "responseHashes": [
-                "cc94e55155661db6998eab90f7aff21dbfdc5ea25a4e0b397f31ce9ad48dceda"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "opendns.com",
-                "www.opendns.com"
-            ]
-        },
-        {
-            "rule": "leadspace\\.com\\/ip\\/match",
-            "cookies": 0.0000139,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sfgw"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000139,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "opendns.com",
-                "www.opendns.com"
-            ]
-        },
-        {
-            "rule": "leadspace\\.com\\/ip\\/match",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sfgw"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000139,
-            "cnames": [],
-            "responseHashes": [
-                "ba3968a42e1bd20c9373c9d72c16438148ce3c2c786914a3d7992a31ab25efdb"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "opendns.com",
-                "www.opendns.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000139,
+    "cookies": 0.0000278,
     "types": {
-        "Script": 6,
-        "Preflight": 2,
-        "XHR": 2
+        "Script": 10,
+        "Preflight": 3,
+        "XHR": 3
     },
     "nameservers": [
+        "ns13.dnsmadeeasy.com",
+        "ns10.dnsmadeeasy.com",
         "ns1.domaindiscover.com",
-        "ns2.domaindiscover.com"
+        "ns2.domaindiscover.com",
+        "ns12.dnsmadeeasy.com",
+        "ns14.dnsmadeeasy.com",
+        "ns15.dnsmadeeasy.com",
+        "ns11.dnsmadeeasy.com"
     ]
 }

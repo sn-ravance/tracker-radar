@@ -4,14 +4,87 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "lwadm\\.com\\/lw\\/pbjs",
+            "cookies": 0.0001,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "6033277d6258aab96acc12c27a30f8b634710c305b3375b36a7a1c94c4cdac4c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "lwuid": {
+                    "ttl": 1296004,
+                    "length": 32,
+                    "prevalence": 0.00010036130068245685,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eliteprospects.com",
+                "www.flashback.org"
+            ]
+        },
+        {
+            "rule": "lwadm\\.com\\/pbjs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "0ef31b88a3dc2d530cf55dc5675be3ddec6ad3389688b9c6bd1a5828211dbe8d",
+                "18e92ef1fbd46727ba674b824e4e6683d6b10a177c1ca4254dde3d3f5571c46c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eliteprospects.com",
+                "www.eliteprospects.com",
+                "www.flashback.org"
+            ]
+        },
+        {
+            "rule": "lwadm\\.com\\/ad",
+            "cookies": 0.0001,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "145eaa1179538274bb48a9fbfb0946b0b6f3971c181d4d115d118f37510ecfe0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eliteprospects.com",
+                "www.flashback.org"
+            ]
+        },
+        {
+            "rule": "lwadm\\.com\\/analytics\\/10",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -20,14 +93,14 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "a8aa32d9213a5b3181fdd93166182b9000b6545222f38928014ed40222027c01"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "eliteprospects.com",
-                "www.eliteprospects.com"
+                "www.flashback.org"
             ]
         },
         {
@@ -52,22 +125,25 @@
         },
         {
             "rule": "lwadm\\.com\\/usermatch\\/pl",
-            "cookies": 0.000201,
+            "cookies": 0.000301,
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "de9d3fd0eb948bd294477d0eda60a73b85caff1794803530d0463193a113da98"
             ],
             "type": "Image",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "lwuid": 0.00010036130068245685
+            },
             "exampleSites": [
                 "eliteprospects.com",
-                "www.eliteprospects.com"
+                "www.eliteprospects.com",
+                "www.flashback.org"
             ]
         }
     ],
@@ -78,16 +154,17 @@
         "cpu": 0,
         "cache": 1
     },
-    "cookies": 0.000101,
+    "cookies": 0.000201,
     "types": {
         "Script": 2,
+        "XHR": 7,
         "Other": 2,
-        "Image": 2
+        "Image": 3
     },
     "nameservers": [
-        "ns-783.awsdns-33.net",
-        "ns-1247.awsdns-27.org",
         "ns-1657.awsdns-15.co.uk",
-        "ns-214.awsdns-26.com"
+        "ns-214.awsdns-26.com",
+        "ns-783.awsdns-33.net",
+        "ns-1247.awsdns-27.org"
     ]
 }

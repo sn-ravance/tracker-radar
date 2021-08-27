@@ -7,17 +7,18 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000411,
+    "prevalence": 0.000401,
     "sites": 4,
     "subdomains": [
-        "top-fwz1"
+        "top-fwz1",
+        "connect"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "mail\\.ru\\/js\\/code\\.js",
-            "cookies": 0.000309,
+            "cookies": 0.000301,
             "fingerprinting": 2,
             "subdomains": [
                 "top-fwz1"
@@ -25,8 +26,6 @@
             "apis": {
                 "window.localStorage": 3,
                 "Date.prototype.getTime": 3,
-                "Document.cookie setter": 2,
-                "Document.cookie getter": 2,
                 "Document.prototype.interestCohort": 3,
                 "Navigator.prototype.maxTouchPoints": 3,
                 "window.devicePixelRatio": 3,
@@ -36,53 +35,60 @@
                 "Screen.prototype.width": 3,
                 "Screen.prototype.height": 3,
                 "Navigator.prototype.plugins": 3,
-                "Navigator.prototype.connection": 3
+                "Navigator.prototype.connection": 3,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 1
             },
-            "sites": 4,
-            "prevalence": 0.000411,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "4d396cf09445102d6fbb4a89372a193497a4c9a60894707a55862ca13fc32c1b"
+                "536cd983c5ac840349770984405fe9eb9e67b9d7e35e0c45673a653b003173b6"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "tmr_reqNum": {
-                    "ttl": 28771235,
+                    "ttl": 28771218,
                     "length": 1,
-                    "prevalence": 0.0002057189878625797,
+                    "prevalence": 0.00010026067776218167,
                     "uniqueness": 1
                 },
                 "tmr_lvid": {
-                    "ttl": 28771235,
+                    "ttl": 28771218,
                     "length": 32,
-                    "prevalence": 0.0002057189878625797,
+                    "prevalence": 0.00010026067776218167,
                     "uniqueness": 1
                 },
                 "tmr_lvidTS": {
-                    "ttl": 28771235,
+                    "ttl": 28771218,
                     "length": 13,
-                    "prevalence": 0.0002057189878625797,
+                    "prevalence": 0.00010026067776218167,
+                    "uniqueness": 1
+                },
+                "tmr_detect": {
+                    "ttl": 86422,
+                    "length": 17,
+                    "prevalence": 0.00020052135552436334,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "salda.ws",
-                "tgstat.com",
                 "wiki.wargaming.net",
                 "www.escapefromtarkov.com"
             ]
         },
         {
             "rule": "mail\\.ru\\/counter",
-            "cookies": 0.000309,
+            "cookies": 0.000301,
             "fingerprinting": 0,
             "subdomains": [
                 "top-fwz1"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000309,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "24e480e4659fbae818853a38f8a3036f529f539024dc3e772c0b594ce02ea9db"
@@ -90,9 +96,8 @@
             "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "tmr_lvid": 0.0002057189878625797,
-                "tmr_lvidTS": 0.0002057189878625797,
-                "_ym_d": 0.00010285949393128986
+                "tmr_lvid": 0.00010026067776218167,
+                "tmr_lvidTS": 0.00010026067776218167
             },
             "exampleSites": [
                 "salda.ws",
@@ -102,26 +107,47 @@
         },
         {
             "rule": "mail\\.ru\\/tracker",
-            "cookies": 0.000206,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "top-fwz1"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "24e480e4659fbae818853a38f8a3036f529f539024dc3e772c0b594ce02ea9db"
+            ],
             "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "tmr_lvid": 0.0002057189878625797,
-                "tmr_lvidTS": 0.0002057189878625797,
-                "_ym_d": 0.0002057189878625797
+                "tmr_lvid": 0.00010026067776218167,
+                "tmr_lvidTS": 0.00010026067776218167
             },
             "exampleSites": [
-                "wargaming.net",
+                "salda.ws",
                 "wiki.wargaming.net"
+            ]
+        },
+        {
+            "rule": "mail\\.ru\\/share_count",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "connect"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "phone-location.info",
+                "www.phone-location.info"
             ]
         }
     ],
@@ -139,14 +165,14 @@
         "cpu": 2,
         "cache": 3
     },
-    "cookies": 0.000309,
+    "cookies": 0.000301,
     "types": {
-        "Script": 4,
+        "Script": 5,
         "Other": 5
     },
     "nameservers": [
-        "ns3.mail.ru",
         "ns2.mail.ru",
-        "ns1.mail.ru"
+        "ns1.mail.ru",
+        "ns3.mail.ru"
     ]
 }

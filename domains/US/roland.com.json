@@ -11,7 +11,7 @@
     "sites": 2,
     "subdomains": [
         "static",
-        "archive"
+        "api-public"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -122,6 +122,30 @@
             "cnames": [],
             "responseHashes": [
                 "74cc4054b84649037f2093f3bc47cde6f699cfb7df4a9366e48964c3d507e223"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "boss.info",
+                "www.boss.info"
+            ]
+        },
+        {
+            "rule": "roland\\.com\\/global\\/js\\/rc_sitesuggestion\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Document.cookie getter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "70a33a6dd19af3305636224e07a29795216cb3d8a4997508168bd3a2fce95b69"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -528,20 +552,20 @@
             ]
         },
         {
-            "rule": "roland\\.com\\/api\\/geo\\.php",
+            "rule": "roland\\.com\\/geoip\\/siteSuggestion",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "archive"
+                "api-public"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000139,
             "cnames": [],
             "responseHashes": [
-                "36e8a81519cde355c919df3f0685afb9070fcd1d0dd280d78da23da330478367"
+                "bb12e9d8347b24ba213b904715b4f1bfcd8049cd3e848e8ac8ef73f0928865f1"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -558,7 +582,7 @@
         "Script": 14,
         "Image": 26,
         "Font": 2,
-        "XHR": 2
+        "XHR": 4
     },
     "nameservers": [
         "ns-818.awsdns-38.net",

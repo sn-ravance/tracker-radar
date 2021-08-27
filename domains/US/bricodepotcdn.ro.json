@@ -10,7 +10,7 @@
         "www"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "bricodepotcdn\\.ro\\/assets\\/app\\/css\\/select2\\.min\\.css",
@@ -125,11 +125,16 @@
         {
             "rule": "bricodepotcdn\\.ro\\/assets\\/app\\/js\\/app\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.product": 2,
+                "Element.prototype.getClientRects": 2,
+                "Event.prototype.timeStamp": 2
+            },
             "sites": 2,
             "prevalence": 0.0000139,
             "cnames": [],
@@ -147,11 +152,13 @@
         {
             "rule": "bricodepotcdn\\.ro\\/assets\\/app\\/js\\/alpine\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
             "prevalence": 0.0000139,
             "cnames": [],
@@ -213,11 +220,13 @@
         {
             "rule": "bricodepotcdn\\.ro\\/assets\\/app\\/js\\/popper\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
             "prevalence": 0.0000139,
             "cnames": [],
@@ -370,11 +379,14 @@
         {
             "rule": "bricodepotcdn\\.ro\\/assets\\/app\\/js\\/jquery\\.scrollbar\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2
+            },
             "sites": 2,
             "prevalence": 0.0000139,
             "cnames": [],
@@ -630,6 +642,28 @@
                 "bricodepot.ro",
                 "www.bricodepot.ro"
             ]
+        },
+        {
+            "rule": "bricodepotcdn\\.ro\\/assets\\/app\\/images\\/home\\/parchet\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "3db7d7493294dd57438805af0aa196daec748da640332d4ddc4cd52814bdfc62"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bricodepot.ro",
+                "www.bricodepot.ro"
+            ]
         }
     ],
     "categories": [],
@@ -638,7 +672,7 @@
     "types": {
         "Stylesheet": 8,
         "Script": 30,
-        "Image": 10,
+        "Image": 12,
         "Font": 8
     },
     "nameservers": [

@@ -7,18 +7,19 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.00131,
-    "sites": 13,
+    "prevalence": 0.00141,
+    "sites": 14,
     "subdomains": [
         "offer",
         "site-azp",
-        "ladepeche"
+        "kinepolis",
+        "naturitas"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "slgnt\\.eu\\/400ba64535f448e488003b2e5cd71616\\/d474898936c346\\.js",
+            "rule": "slgnt\\.eu\\/26fddea3695749ef97d5472f2996dde6\\/fbf7ca30ca7345\\.js",
             "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [
@@ -53,7 +54,7 @@
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.000602,
+            "prevalence": 0.000604,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -70,21 +71,21 @@
         },
         {
             "rule": "slgnt\\.eu\\/frontend\\/api\\/track",
-            "cookies": 0.000602,
+            "cookies": 0.000604,
             "fingerprinting": 0,
             "subdomains": [
                 "site-azp"
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.000602,
+            "prevalence": 0.000604,
             "cnames": [],
             "responseHashes": [
-                "925f2e1067cacc039afdb727a38a7964bac1f94c15018113bc1fef0ddc8c1a69",
-                "eacafaa320163459f439d87c4d510246343b64553f188f9acf3fd544cf1f82bb",
-                "2f171571863362b63e77667c591c962fdecffc35bcae6a675599980ebfe752c2",
-                "5a0b9fa98aec74d13b4bedf13003e4edba1e376250139caab2a99bc5455dfa9e",
-                "103620719886ddbbfddbeb9451b0fa9e47afdf2442f6e69c8245ed7b2ba3a414"
+                "9fc1636f18427cf225c5e66e946a898e278976ccf07637dbbd66e186ccc05f3a",
+                "dabf5b25e7d17997be9382f6943c67559eeae73b06e0631e5270080f6e808c66",
+                "f1d48303af00cc30065cec37c1a2567e230ed28b29f70fcb7dfcdb9ec8994ad9",
+                "cc4521f70370c625a33410b1321b62ba36b059529a5b619348fe3bf1c25f2d21",
+                "73632a133a7d2fce859cf58afa7f658d6c31ee12f105e46dda9af55b680f90f7"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -123,22 +124,61 @@
             ]
         },
         {
+            "rule": "slgnt\\.eu\\/optiext\\/webtracker\\.dll",
+            "cookies": 0.000101,
+            "fingerprinting": 1,
+            "subdomains": [
+                "kinepolis",
+                "naturitas"
+            ],
+            "apis": {
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "47d938a7cec3887f724e4b8b95f4d56ca279b5c5b553e9d84a33dde04c3aa17d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "m_ses": {
+                    "ttl": null,
+                    "length": 14,
+                    "prevalence": 0.00010058338362502515,
+                    "uniqueness": 1
+                },
+                "m_cnt": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.00010058338362502515,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kinepolis.fr",
+                "www.naturitas.fr"
+            ]
+        },
+        {
             "rule": "slgnt\\.eu\\/frontend\\/api\\/track",
-            "cookies": 0.000602,
+            "cookies": 0.000604,
             "fingerprinting": 0,
             "subdomains": [
                 "site-azp"
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.000602,
+            "prevalence": 0.000604,
             "cnames": [],
             "responseHashes": [
-                "f2d7cdcadf8806e2a6235292fb1f482c7c225fbcd5c61206cbb565e5d1f73c35",
-                "d63ef273c7530cab3e146f2c6af152fe30e5bd5992a724a9ed85283ee6d3f6a5",
-                "236f1811c9d92456d064dd2f6116da5604e9c86172bdeddd64280e0cca18eaae",
-                "718871864c2d735d4ee4399c25213acaef006727a8f5e3c17f6e43e4453a9f59",
-                "77e69bbeed78534cd4f7d49493a10401311f6466f7612ceb6824a1e44e5bc99b"
+                "ee50dd953d88aca7833bef3785369c3af8d50027a39c94567afaa3176cd291fb",
+                "cbd5a7a9919ebbe03db5cc485559fb6f7eeacfd33822d70beba04202db4d64d2",
+                "7062b7c8c4e609636f0b409a61f28895261d50ae88e0386a95b78bc768575259",
+                "1385d8463d4012a1166082655e4baffce7b7ad5aea7099bcae9df1faada357af",
+                "ec9a5be6d57d33d8a43f4d56612b4d83ff242bcde12a94e488621dd74918d93f"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -146,15 +186,15 @@
             "exampleSites": [
                 "cosmopolitan.fr",
                 "www.larvf.com",
+                "www.magicmaman.com",
                 "www.magazine-avantages.fr",
                 "www.marieclaire.fr",
-                "www.magicmaman.com",
                 "www.santevet.com"
             ]
         },
         {
-            "rule": "slgnt\\.eu\\/542c3dd6ced1498382c1eec12badfd66\\/bd760986637643\\.js",
-            "cookies": 0.0001,
+            "rule": "slgnt\\.eu\\/85bb43afcfbe4f5fa7b388f9fca78523\\/eb9188da325e43\\.js",
+            "cookies": 0.000101,
             "fingerprinting": 1,
             "subdomains": [
                 "offer"
@@ -180,25 +220,25 @@
             ]
         },
         {
-            "rule": "slgnt\\.eu\\/optiext\\/optiextension\\.dll",
-            "cookies": 0,
+            "rule": "slgnt\\.eu\\/api\\/781223446343484fa1bfc4239f26927f\\/iv\\/aHR0cHM6Ly93d3cubGFsaWJyZS5iZS8%3D",
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
-                "ladepeche"
+                "offer"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "d5e3a6eb9afd8d1eedfcbbbeb3d271e447022ffd32e8c0934f1cbb4351fd3a81"
+                "03cfe943563047d9804114f133087f320377cbe1ecc4c3c026c1146371a5a3a4"
             ],
-            "type": "Document",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "toulouscope.fr",
-                "www.toulouscope.fr"
+                "lalibre.be",
+                "www.lalibre.be"
             ]
         }
     ],
@@ -209,20 +249,20 @@
         "cpu": 0,
         "cache": 0
     },
-    "cookies": 0.0012,
+    "cookies": 0.00121,
     "types": {
-        "Script": 4,
+        "Script": 6,
         "Preflight": 6,
         "Fetch": 6,
-        "Document": 6,
-        "XHR": 6
+        "Document": 4,
+        "XHR": 8
     },
     "nameservers": [
-        "ns15.dnsmadeeasy.com",
-        "ns11.dnsmadeeasy.com",
         "ns10.dnsmadeeasy.com",
+        "ns15.dnsmadeeasy.com",
         "ns12.dnsmadeeasy.com",
         "ns13.dnsmadeeasy.com",
-        "ns14.dnsmadeeasy.com"
+        "ns14.dnsmadeeasy.com",
+        "ns11.dnsmadeeasy.com"
     ]
 }

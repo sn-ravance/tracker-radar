@@ -11,8 +11,8 @@
     "sites": 75,
     "subdomains": [
         "api",
-        "account",
-        "static"
+        "static",
+        "account"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -25,70 +25,96 @@
                 "api"
             ],
             "apis": {},
-            "sites": 38,
-            "prevalence": 0.000264,
+            "sites": 39,
+            "prevalence": 0.000271,
             "cnames": [],
             "responseHashes": [
-                "56f690b349f215d507f361cb73be8210b75978855451ee230a2b6d13f1c10a12",
-                "0fd007c2c1df425e6632d1a29b2af23525130cf4367b590c1270329790f10798",
-                "8c116646eb12d71706030978deab7becdf49f52159c73b0c591a3b43f73648b2",
-                "1109a5fd4a3f034589096a261e5d88a7613a94f9519bf95c38b0c882daf99634",
-                "c1a11ea593490fe6548becfca0be17a89eafcf44f9919366687094ec8e463e9c",
-                "20577e40ab46461a46c1ebebc3728d681d29e730d37220a2bae4410117ac384e",
-                "0a642981f1dd8e598e58e4822962ff31e840622ca3fa70725d160936008449b4",
-                "bc18e2423c1ccac9efa063aedcfd07882ce401d43a8f478982e75b79ce36edd4",
-                "4867e2dd222545a7f2c409f1832b7a4e3fbfeac3b5f9670329e0e4993053ccbd",
-                "be9815fae696ce475de64b64ff9ff524795d741e6a9a1e2a851ec9c62422c6e9",
-                "c4366c9c3131fba3e98b7450adbcf848907ce1752320eac465149f8485c52e88",
-                "92e3f9860f94dd49d9747625ea59701b3fc83ec621417cd5820493fc2ae445fb",
-                "4dfb62b41f5ab88f83c37c949c7cbda21e8b79df4537fae67113a1b3847fca35",
-                "732dfc299991961bee3d09d8e21e2704b2a09371bea5c3217c3d6fffd0391c51",
-                "bb898445b18797f3199b5dce2e0c06936f1492f30747617ed3ce88644755adfc",
-                "7260fee39260d81d850083662278ca74cbdc4b0495b123c109f40792d0eecd93",
-                "71d43e9ca8a7404a055ff1e8e9428366b90d95a5740cf53a49d799fd3a7cd78e",
-                "84aaf69ffcb6259c14b77a81453fca91027734b612a413d904c04723a13b300a",
-                "78939865ac7569170201f43ac10eb4fbdfbfa9473933a54612f6a74bbf32aba6",
-                "3ace45e679b20ad476538b8276a61f255220a5ff17c0b324f62185cc27328913",
-                "2446ae1994f133e623d2cba1421a8a1da1c23d1516c16b826a9100c7eac868b3",
-                "b98ea240efe9574e33125aede702636eae7ebe9de59c48b45c35adde2143461c",
-                "9ee3ebfe959ebaa41b09682c57afb6c9e54370fd00fcfb9fe5fa9163be0bbd14",
-                "7cc534e85a6ec619b8d4432b65a411b3bebbf57d7f9a74c7e5622bcf2ba3e4d9",
-                "061b185dd157cb7b277a37e995bddb48e536b1bd2e424d1563133d5c78127854",
-                "d85ae5069a6e204bd7990ec3a90a5186925ed6f146401ce0da3fdd770c971eb9",
-                "63a9943c31fd85ada677d2e0c4a75bb89a3ca45ca427d26adb03bc5f53551bba",
-                "db13d181dafdb1be48443cd9d1202c1662f785817a8b1d99bf4541841b904360",
-                "eb664e68f6257ca08a3bc3df113949795a8a9abf52f55c6949530f727b6d4bf4",
-                "6fb6ade409ad756aadb713da0d8323b6ed7d72d4706a94a1ada90923eecbb09e",
-                "c18182c7c59f0e50d082067b670d8a54813cd85f9f82985ce0a6286b4ba36335",
-                "a7a05d5e67b4938692964595d2c098e469aadc672be2b9fc31b42b8af99371f5",
-                "b5ecb943f34689916b63c6f84e466cdb2e1a7c210b146a513d3c7a2cfc891b2f",
-                "8faeb76b8ceaf747ffbf582b73b020d8de03573c806318d8d3d6a631af227ed3",
-                "076927e67fd8209f8d482e3480ae211adff6cf8efc06dc63000df8ccc8f94eab"
+                "1037adbf01ff16f4ae290c625d4d2bd079fc7ff56664a9ecf570e7d125190f90",
+                "9681f3bea36a1e1096191983a25be9630bb29f4813f4f3585bc8e75eb3171647",
+                "f8297a694cdfbc0d1e335a49b0a3aa9363a93a0d8b588551defe767bf85f97e9",
+                "f4c28021d94470e4d333cb30237e0064a6bd686004be85b880dd40a8bc3b020a",
+                "cbb26c927f8502db10c792d035ad2aae86fe1a89fbb2761c8c17c887b321f3eb",
+                "20659247711365f32b49388bfb4fadce0d1e0232117f1a0697b815a5d8a23f05",
+                "0d6dd1e12ae56d1233df49711275712bae6f0a6d9a6951502fb74dbef288090e",
+                "17f9f6f9d597581a550d2fa9777ccd48a2e5350ffe9902e60027e9aa66567fc2",
+                "d2f1e2ca81ee989eb7bfce39c4e0fc10b18d085b32e83d25e3be14747e5cf246",
+                "b22d672c577273c41c16843dbd1f43990bb15113665614faa58be127f374a87d",
+                "ef1e1a36aeb9882699711c1f36ca1fd6d3ee803d0207a00ae84d778c7a64e4da",
+                "941b92eac1ab0fe28c5436d4eff612fdd43b336f01f1798cc94f9690c652f7d1",
+                "6184e8787161ab09fa8a90446cf3034e6b8a3c1578ecf5c5722956b3f7eea52b",
+                "ab1becc8708ce6322fb5fcd690fb61b35eaa75caa2bb2d2434f01919f4870dc1",
+                "205109f148556e20b55b74d93efe4dddb16692e7c61103362e1a7732da686186",
+                "dd6b8de2468900be9fe503515675ce279edbfed0303733a5065c1690d51c15b7",
+                "3de340fb6b9bff22ab87e5867e629c9ba3b0866dc9ab6e1637c2f1d433512540",
+                "09506c4504c77a3c2aac1d4b0d50b843901169d81e2e1333f65b989c275f9321",
+                "87197d46e6cdb1ebdd0641cc0e65bcf70b8c9a920a1f45e2214103ed3013abb6",
+                "fa168280c63e68f5fdd201438dded48bc1d3c1ca54b78b551cf99f9cfa47289d",
+                "3676005a3d87bdb344424524aff5366065f5037faccf5b17fddc7734a554ec65",
+                "5483f9700741ed7b396b0318ab07435f623e3c3f3e33e2c49ea2cd8dd8746b04",
+                "219305bd3777c4bac7504d0c1fa57cff33133c4863d28244232b9f327cb72483",
+                "17fc9c99fa0070c817796de25ffce9defd27056736a518f2747acec4cb0ce9d7",
+                "a365d680845aeb9618ad47f274867174c1bdde35c9a126ad4b073b7568848b7c",
+                "17833c63e7e04bfb8597018110028828d366591f3105754b0f68cffe477d30c8",
+                "9bb8bb05b6e0e5a10b5d86d72b0a001741d0bad13d02d11b116ffc69c89db637",
+                "2820d2d744f206689997de113f5ac420a47510eea13d6601c807a0212d910865",
+                "17bd59b12a82f64a36b9e350df8d0c7e6afab32df28bf3ce7997390ab0b12258",
+                "2c7ab35035648552860e9e3038aa199bb0924063b0e67c9c1eea60192476d37d",
+                "4dfa5deb427648fa07bc9f318ac896f3ab3a975ec66c289194633572b678658e",
+                "99b1a6334ef06b6c4de732f925039918b3ea2e6fa366b14e0f5bf60a5f8b9566",
+                "46281369add7a7068ff8c88c766641dffa5847acfb2dba18f954b2fa06c743c2",
+                "a2cc8ea29ad539875d7eec4368971e1436330ebb955735743c03ee5ce98aa905",
+                "693c46c1d9acdd66a2959db9f00ee9b567c02672d542bb6a70212b1554d56418",
+                "a08e5d248bf125bcc70f92683c13c3e3322c0a6de62de6e4a46f9d5228b6298a"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.mitre10.com.au",
-                "www.gamesmen.com.au",
-                "www.petbarn.com.au",
-                "www.biome.com.au",
-                "www.redarc.com.au",
                 "www.bedbathntable.com.au",
-                "www.musoscorner.com.au",
-                "www.qbd.com.au",
-                "www.babybunting.com.au",
                 "www.tentworld.com.au",
-                "www.camerahouse.com.au",
-                "www.aussiedisposals.com.au",
-                "www.jaycar.com.au",
-                "www.wildearth.com.au",
-                "www.storedj.com.au",
-                "www.outbackequipment.com.au",
-                "www.4wdsupacentre.com.au",
                 "www.beaconlighting.com.au",
-                "www.adorebeauty.com.au",
-                "www.paddypallin.com.au"
+                "derringers.com.au",
+                "www.totaltools.com.au",
+                "www.carbatec.com.au",
+                "www.4wdsupacentre.com.au",
+                "www.babybunting.com.au",
+                "www.outbackequipment.com.au",
+                "www.frontlinehobbies.com.au",
+                "www.shavershop.com.au",
+                "www.redarc.com.au",
+                "www.teds.com.au",
+                "www.bonds.com.au",
+                "www.rsea.com.au",
+                "www.mitre10.com.au",
+                "www.camerahouse.com.au",
+                "www.allmowerspares.com.au",
+                "www.jw.com.au",
+                "www.gamesmen.com.au"
+            ]
+        },
+        {
+            "rule": "zipmoney\\.com\\.au\\/assets\\/default\\/product-widget\\/img\\/primary-zip\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000347,
+            "cnames": [],
+            "responseHashes": [
+                "91a2554847a75ee7ade53b90f567a3248b111899c3dc9bd8df25c42be9d659d3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "addictedtoaudio.com.au",
+                "www.carbatec.com.au",
+                "www.jaycar.com.au",
+                "www.machineryhouse.com.au",
+                "www.musoscorner.com.au"
             ]
         },
         {
@@ -130,10 +156,10 @@
             "prevalence": 0.0000347,
             "cnames": [],
             "responseHashes": [
-                "f25b7c0d8f31771b71a66854d1b474d567495ea40cdea3fec4cef81b3e11aec3",
-                "e398f8bd9b76e68225899642734a49dcbd0b8c65088e1109cb15008aab36b781",
-                "e3ab9db11a762b2f866b322d8642733ce4c220a91a0f4725d8ac3191fd15a98e",
-                "58fbb2f752a017c89fc405479f91e4d4793551946c15ffb4048869149c720419"
+                "d0564e5baa1e97d4465e4e088c873c9290cf7dd22b31aec176263d0a6bb49ffa",
+                "4daefd39a504aeddc8dc222b57fb36b0281c3b0f5bde5e271a64344b803151d8",
+                "ab4149b281f75f2be7abef94fa628b38bc19d8a6a67e3187908529252c61c7ef",
+                "4ec6e5b0ff13a510120fff4ca41350f2132045426a8807c579bb6e5096edbb05"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -154,7 +180,7 @@
                 "static"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 19,
+                "Navigator.prototype.userAgent": 18,
                 "window.localStorage": 20,
                 "Date.prototype.getTime": 20
             },
@@ -162,32 +188,32 @@
             "prevalence": 0.000153,
             "cnames": [],
             "responseHashes": [
-                "eb67c469edb6050a19d76f4adb75745ad76a2917be9df407d42bc23c34076865"
+                "3ddd17ce8f8f89ec16f156538119a3e583da169ea9c3b2e0a70e3ce1d92499fb"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.redarc.com.au",
-                "www.jw.com.au",
-                "www.frontrunneroutfitters.com",
-                "www.shavershop.com.au",
-                "www.allmowerspares.com.au",
-                "www.gamesmen.com.au",
-                "www.paddypallin.com.au",
-                "www.99bikes.com.au",
-                "www.beaconlighting.com.au",
-                "www.mitre10.com.au",
-                "www.forevernew.com.au",
-                "www.bedbathntable.com.au",
-                "www.teds.com.au",
-                "derringers.com.au",
-                "www.aussiedisposals.com.au",
-                "www.outbackequipment.com.au",
-                "www.caravanrvcamping.com.au",
                 "djcity.com.au",
+                "www.99bikes.com.au",
+                "www.totaltools.com.au",
+                "www.paddypallin.com.au",
+                "www.caravanrvcamping.com.au",
+                "www.brasnthings.com",
+                "www.gamesmen.com.au",
+                "www.frontlinehobbies.com.au",
+                "www.bedbathntable.com.au",
+                "www.mitre10.com.au",
+                "www.beaconlighting.com.au",
+                "derringers.com.au",
+                "www.redarc.com.au",
+                "www.digidirect.com.au",
+                "www.jw.com.au",
+                "www.outbackequipment.com.au",
+                "www.shavershop.com.au",
+                "www.frontrunneroutfitters.com",
                 "www.bonds.com.au",
-                "www.frontlinehobbies.com.au"
+                "www.teds.com.au"
             ]
         },
         {
@@ -213,30 +239,6 @@
             ]
         },
         {
-            "rule": "zipmoney\\.com\\.au\\/assets\\/default\\/product-widget\\/img\\/primary-zip\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000278,
-            "cnames": [],
-            "responseHashes": [
-                "51bceea750f870925a41df8432638543844842b9d6a21284e95afb0cfc20aec3"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "carbatec.com.au",
-                "www.carbatec.com.au",
-                "www.jaycar.com.au",
-                "www.musoscorner.com.au"
-            ]
-        },
-        {
             "rule": "zipmoney\\.com\\.au\\/lib\\/js\\/zm-widget-js\\/dist\\/zipmoney-widgets-v1\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -244,7 +246,6 @@
                 "static"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
                 "window.localStorage": 2,
                 "Date.prototype.getTime": 2
             },
@@ -252,7 +253,7 @@
             "prevalence": 0.0000139,
             "cnames": [],
             "responseHashes": [
-                "eb67c469edb6050a19d76f4adb75745ad76a2917be9df407d42bc23c34076865"
+                "3ddd17ce8f8f89ec16f156538119a3e583da169ea9c3b2e0a70e3ce1d92499fb"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -263,7 +264,7 @@
             ]
         },
         {
-            "rule": "zipmoney\\.com\\.au\\/assets\\/custom\\/strip-banner\\/zm-stripbanner-trans\\.index\\.html",
+            "rule": "zipmoney\\.com\\.au\\/assets\\/default\\/product-widget\\/au\\/zp\\/zp-pp-widget-standard\\.html",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -274,14 +275,80 @@
             "prevalence": 0.0000139,
             "cnames": [],
             "responseHashes": [
-                "3ba0c5f4e0cc6470ab9bf5f7b2d6344e544309c2e7be27d2b297e4e5b33d1f0f"
+                "6d94255b0ddc2e9988a3224ec3bdcb351b2adc377457f73aa1328195578c7ada"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gamesmen.com.au",
+                "www.gamesmen.com.au"
+            ]
+        },
+        {
+            "rule": "zipmoney\\.com\\.au\\/assets\\/default\\/strip-banner\\/au\\/zp\\/zp-stripbanner-lightpurple\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "501484c18d4374e66d2507691dfa82854a8f0717968b6576dbd003873b49ed02"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "musoscorner.com.au",
-                "www.musoscorner.com.au"
+                "www.redarc.com.au"
+            ]
+        },
+        {
+            "rule": "zipmoney\\.com\\.au\\/fonts\\/CooperLight\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "33b626b134a26174cd26ab07d8fa44a7e671bdd87c14e0ad740ebad61ba30b45"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "musoscorner.com.au",
+                "www.redarc.com.au"
+            ]
+        },
+        {
+            "rule": "zipmoney\\.com\\.au\\/assets\\/default\\/product-widget\\/img\\/rebrand\\/primary-zip\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "91a2554847a75ee7ade53b90f567a3248b111899c3dc9bd8df25c42be9d659d3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "musoscorner.com.au",
+                "www.redarc.com.au"
             ]
         },
         {
@@ -418,15 +485,15 @@
         },
         {
             "rule": "zipmoney\\.com\\.au\\/checkout\\/checkout-v1\\.min\\.js",
-            "cookies": 0.0000139,
+            "cookies": 0.00000694,
             "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2
+                "Navigator.prototype.userAgent": 1,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.0000139,
@@ -439,7 +506,7 @@
                 "zip.checkout.anonymous_id": {
                     "ttl": null,
                     "length": 36,
-                    "prevalence": 0.000013883104262113009,
+                    "prevalence": 0.000006943142605205969,
                     "uniqueness": 1
                 }
             },
@@ -461,7 +528,7 @@
             "prevalence": 0.0000139,
             "cnames": [],
             "responseHashes": [
-                "357fce6a1e12bc2f577ed618e0458a0d1f950de8b0b0ace93aa8617611fba4ec"
+                "3ac7948e7561261006df108d376ee7288fb9978650063c343cf6452edd075429"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -479,14 +546,15 @@
         "cpu": 0,
         "cache": 0
     },
-    "cookies": 0.0000139,
+    "cookies": 0.00000694,
     "types": {
-        "Fetch": 40,
+        "Fetch": 43,
+        "Image": 23,
         "Script": 36,
-        "Image": 20
+        "Font": 2
     },
     "nameservers": [
-        "sofia.ns.cloudflare.com",
-        "justin.ns.cloudflare.com"
+        "justin.ns.cloudflare.com",
+        "sofia.ns.cloudflare.com"
     ]
 }
