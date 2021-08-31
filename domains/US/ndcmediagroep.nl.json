@@ -7,19 +7,14 @@
     "prevalence": 0.0000486,
     "sites": 7,
     "subdomains": [
-        "assets",
-        "splunk",
+        "static",
         "hub",
-        "ms",
-        "static"
+        "splunk",
+        "apivanplan"
     ],
     "cnames": [
         {
             "original": "harvest-pipeline.dvhn.nl",
-            "resolved": "splunk.ndcmediagroep.nl"
-        },
-        {
-            "original": "harvest-pipeline.gezondheidenco.nl",
             "resolved": "splunk.ndcmediagroep.nl"
         },
         {
@@ -31,29 +26,115 @@
             "resolved": "splunk.ndcmediagroep.nl"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
-            "rule": "ndcmediagroep\\.nl\\/t\\/loader\\.js",
+            "rule": "ndcmediagroep\\.nl\\/js\\/cookiewall\\/all\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "assets"
+                "static"
             ],
             "apis": {},
             "sites": 3,
             "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
-                "1b2bdddbf809d387fc542d5d95086c3ae113f30c3d884ae0dfe72167038fc13f"
+                "f9de5d6c81096fdd643b0a5125e6687295583a4afcc88b6e0a9835fef50c945a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mensenlinq.nl",
-                "www.dvhn.nl",
-                "www.lc.nl"
+                "dvhn.nl",
+                "lc.nl",
+                "www.dvhn.nl"
+            ]
+        },
+        {
+            "rule": "ndcmediagroep\\.nl\\/js\\/evolok\\/ev-em\\/3\\.2\\.26\\/ev-em\\.min\\.js",
+            "cookies": 0.00000694,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "window.localStorage": 1,
+                "Document.cookie getter": 1,
+                "Navigator.prototype.appVersion": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
+                "7e464cc257a3a3da05a69768a2223d88a6e77a3d5995d6adb7f4d884671ad016"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "ev_sid": {
+                    "ttl": 126144002,
+                    "length": 24,
+                    "prevalence": 0.000006943142605205969,
+                    "uniqueness": 1
+                },
+                "ev_did": {
+                    "ttl": 126144002,
+                    "length": 24,
+                    "prevalence": 0.000006943142605205969,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dvhn.nl",
+                "lc.nl",
+                "www.dvhn.nl"
+            ]
+        },
+        {
+            "rule": "ndcmediagroep\\.nl\\/api\\/v1\\/personalisations\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hub"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dvhn.nl",
+                "lc.nl",
+                "www.dvhn.nl"
+            ]
+        },
+        {
+            "rule": "ndcmediagroep\\.nl\\/api\\/v1\\/personalisations\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hub"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
+                "c9b5dc7edcee16b8aa9cef70bb460dfc1995bee03c2645c234ab7ee4f7432c07",
+                "0230010b5c5acbfb591c147fb87d7299a757d9a154390e7043d5af8dc0239236"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dvhn.nl",
+                "lc.nl",
+                "www.dvhn.nl"
             ]
         },
         {
@@ -68,19 +149,15 @@
             "prevalence": 0.0000278,
             "cnames": [
                 {
-                    "original": "harvest-pipeline.mensenlinq.nl",
-                    "resolved": "splunk.ndcmediagroep.nl"
-                },
-                {
                     "original": "harvest-pipeline.dvhn.nl",
                     "resolved": "splunk.ndcmediagroep.nl"
                 },
                 {
-                    "original": "harvest-pipeline.gezondheidenco.nl",
+                    "original": "harvest-pipeline.lc.nl",
                     "resolved": "splunk.ndcmediagroep.nl"
                 },
                 {
-                    "original": "harvest-pipeline.lc.nl",
+                    "original": "harvest-pipeline.mensenlinq.nl",
                     "resolved": "splunk.ndcmediagroep.nl"
                 }
             ],
@@ -91,10 +168,55 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "dvhn.nl",
+                "lc.nl",
                 "mensenlinq.nl",
-                "www.dvhn.nl",
-                "www.gezondheidenco.nl",
-                "www.lc.nl"
+                "www.dvhn.nl"
+            ]
+        },
+        {
+            "rule": "ndcmediagroep\\.nl\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apivanplan"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dvhn.nl",
+                "lc.nl",
+                "www.dvhn.nl"
+            ]
+        },
+        {
+            "rule": "ndcmediagroep\\.nl\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apivanplan"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
+                "35df5b4a9a0fdb6735f3fbe8339c57372d3a20f5b04606e5abc611978206372a",
+                "7fe18044094fedc16de572db4aa327970d4422073b2013ff634c585f532928bf"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dvhn.nl",
+                "lc.nl",
+                "www.dvhn.nl"
             ]
         },
         {
@@ -109,19 +231,15 @@
             "prevalence": 0.0000278,
             "cnames": [
                 {
-                    "original": "harvest-pipeline.mensenlinq.nl",
-                    "resolved": "splunk.ndcmediagroep.nl"
-                },
-                {
                     "original": "harvest-pipeline.dvhn.nl",
                     "resolved": "splunk.ndcmediagroep.nl"
                 },
                 {
-                    "original": "harvest-pipeline.gezondheidenco.nl",
+                    "original": "harvest-pipeline.lc.nl",
                     "resolved": "splunk.ndcmediagroep.nl"
                 },
                 {
-                    "original": "harvest-pipeline.lc.nl",
+                    "original": "harvest-pipeline.mensenlinq.nl",
                     "resolved": "splunk.ndcmediagroep.nl"
                 }
             ],
@@ -130,10 +248,10 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "dvhn.nl",
+                "lc.nl",
                 "mensenlinq.nl",
-                "www.dvhn.nl",
-                "www.gezondheidenco.nl",
-                "www.lc.nl"
+                "www.dvhn.nl"
             ]
         },
         {
@@ -148,19 +266,15 @@
             "prevalence": 0.0000278,
             "cnames": [
                 {
-                    "original": "harvest-pipeline.mensenlinq.nl",
-                    "resolved": "splunk.ndcmediagroep.nl"
-                },
-                {
                     "original": "harvest-pipeline.dvhn.nl",
                     "resolved": "splunk.ndcmediagroep.nl"
                 },
                 {
-                    "original": "harvest-pipeline.gezondheidenco.nl",
+                    "original": "harvest-pipeline.lc.nl",
                     "resolved": "splunk.ndcmediagroep.nl"
                 },
                 {
-                    "original": "harvest-pipeline.lc.nl",
+                    "original": "harvest-pipeline.mensenlinq.nl",
                     "resolved": "splunk.ndcmediagroep.nl"
                 }
             ],
@@ -171,119 +285,10 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mensenlinq.nl",
-                "www.dvhn.nl",
-                "www.gezondheidenco.nl",
-                "www.lc.nl"
-            ]
-        },
-        {
-            "rule": "ndcmediagroep\\.nl\\/api\\/v1\\/personalisations\\/v2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hub"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
                 "dvhn.nl",
-                "www.dvhn.nl",
-                "www.lc.nl"
-            ]
-        },
-        {
-            "rule": "ndcmediagroep\\.nl\\/librarian\\/v2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ms"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000139,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dvhn.nl",
-                "www.dvhn.nl"
-            ]
-        },
-        {
-            "rule": "ndcmediagroep\\.nl\\/api\\/v1\\/personalisations\\/v2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hub"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
-            "cnames": [],
-            "responseHashes": [
-                "42ddde0cccaf9a4c093ef9c9e953d8add0253cd44dd8dd285d9a0d0ec106cda8",
-                "3d933c305d43adbc0cc5d3281d939ea3ed8459037f22a0871ae6bb0d0d536218"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dvhn.nl",
-                "www.dvhn.nl",
-                "www.lc.nl"
-            ]
-        },
-        {
-            "rule": "ndcmediagroep\\.nl\\/librarian\\/v2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ms"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000139,
-            "cnames": [],
-            "responseHashes": [
-                "7dee970379ed680acdf4e2cdd7fa713cebd71e43b853c7186e7203a1938be3ec"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dvhn.nl",
-                "www.dvhn.nl"
-            ]
-        },
-        {
-            "rule": "ndcmediagroep\\.nl\\/js\\/cookiewall\\/lc\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000139,
-            "cnames": [],
-            "responseHashes": [
-                "f9de5d6c81096fdd643b0a5125e6687295583a4afcc88b6e0a9835fef50c945a"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
                 "lc.nl",
-                "www.lc.nl"
+                "mensenlinq.nl",
+                "www.dvhn.nl"
             ]
         }
     ],
@@ -291,15 +296,15 @@
     "performance": {},
     "cookies": 0.0000486,
     "types": {
-        "Script": 5,
-        "Other": 4,
-        "Preflight": 9,
+        "Script": 6,
+        "Preflight": 10,
         "XHR": 7,
-        "Fetch": 2
+        "Other": 4,
+        "Fetch": 3
     },
     "nameservers": [
-        "nsauth3.bit.org",
         "nsauth1.bit.nl",
+        "nsauth3.bit.org",
         "nsauth2.bit.nl"
     ]
 }

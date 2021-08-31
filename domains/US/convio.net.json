@@ -7,28 +7,46 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000833,
-    "sites": 12,
+    "prevalence": 0.0000903,
+    "sites": 13,
     "subdomains": [
+        "akf-live",
         "secure2",
-        "secure3"
+        "cmf-live",
+        "savetc-live"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "give.luriechildrens.org",
+            "resolved": "cmf-live.convio.net"
+        },
+        {
+            "original": "secure.kidneyfund.org",
+            "resolved": "akf-live.convio.net"
+        },
+        {
+            "original": "support.savethechildren.org",
+            "resolved": "savetc-live.convio.net"
+        }
+    ],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "convio\\.net\\/akf\\/js\\/utils\\.js",
+            "rule": "convio\\.net\\/js\\/utils\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "secure2"
+                "akf-live"
             ],
-            "apis": {
-                "window.name": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000139,
-            "cnames": [],
+            "cnames": [
+                {
+                    "original": "secure.kidneyfund.org",
+                    "resolved": "akf-live.convio.net"
+                }
+            ],
             "responseHashes": [
                 "56fb1bf075613aa1e61d6cf81fe7ae08d45fe7a16689d118bfa06e17600ac4cc"
             ],
@@ -51,9 +69,7 @@
             "sites": 2,
             "prevalence": 0.0000139,
             "cnames": [],
-            "responseHashes": [
-                "5599e1213fde6ae44c77a69083bd35d895a98c7b81a72cfa2f6fb5f2d3ea6960"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -63,18 +79,23 @@
             ]
         },
         {
-            "rule": "convio\\.net\\/akf\\/site\\/AnonymousLogin",
+            "rule": "convio\\.net\\/site\\/AnonymousLogin",
             "cookies": 0.00000694,
             "fingerprinting": 0,
             "subdomains": [
-                "secure2"
+                "akf-live"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000139,
-            "cnames": [],
+            "cnames": [
+                {
+                    "original": "secure.kidneyfund.org",
+                    "resolved": "akf-live.convio.net"
+                }
+            ],
             "responseHashes": [
-                "e2b6642ccc9af543298cfefd687becd1a5212729f5d3c288c69da2943718c634"
+                "9246d5b142b6c27c215c8f4933bff82c134410403fe14f7537f829370edd26e1"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -85,16 +106,53 @@
             ]
         },
         {
-            "rule": "convio\\.net\\/cmf\\/site\\/CRConsAPI",
-            "cookies": 0.00000694,
+            "rule": "convio\\.net\\/site\\/PixelServer",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "secure3"
+                "cmf-live",
+                "savetc-live"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000139,
-            "cnames": [],
+            "cnames": [
+                {
+                    "original": "give.luriechildrens.org",
+                    "resolved": "cmf-live.convio.net"
+                },
+                {
+                    "original": "support.savethechildren.org",
+                    "resolved": "savetc-live.convio.net"
+                }
+            ],
+            "responseHashes": [
+                "2dfe28cbdb83f01c940de6a88ab86200154fd772d568035ac568664e52068363"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "luriechildrens.org",
+                "www.savethechildren.org"
+            ]
+        },
+        {
+            "rule": "convio\\.net\\/site\\/CRConsAPI",
+            "cookies": 0.00000694,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cmf-live"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [
+                {
+                    "original": "give.luriechildrens.org",
+                    "resolved": "cmf-live.convio.net"
+                }
+            ],
             "responseHashes": [
                 "4e6441f8e6b223eedf48f8d614bf3c394914c68e6770cc30154cc6af6e9fa143"
             ],
@@ -114,22 +172,22 @@
         "cpu": 0,
         "cache": 0
     },
-    "cookies": 0.0000416,
+    "cookies": 0.0000417,
     "types": {
         "Script": 4,
-        "Image": 2,
+        "Image": 4,
         "XHR": 2
     },
     "nameservers": [
+        "usw6.akam.net",
         "ns1-90.akam.net",
+        "usc2.akam.net",
         "usc1.akam.net",
-        "asia1.akam.net",
         "eur3.akam.net",
-        "ns1-173.akam.net",
         "eur5.akam.net",
         "dns1.convio.com",
-        "ns8.convio.net",
-        "usc2.akam.net",
-        "usw6.akam.net"
+        "ns1-173.akam.net",
+        "asia1.akam.net",
+        "ns8.convio.net"
     ]
 }

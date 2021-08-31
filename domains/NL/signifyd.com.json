@@ -7,42 +7,16 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000502,
+    "sites": 5,
     "subdomains": [
-        "cdn-scripts",
         "bt",
-        "imgs"
+        "imgs",
+        "cdn-scripts"
     ],
     "cnames": [],
     "fingerprinting": 3,
     "resources": [
-        {
-            "rule": "signifyd\\.com\\/api\\/script-tag\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn-scripts"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "Date.prototype.getTime": 2,
-                "window.localStorage": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "e17857cb74ff8bb8c18929844a2d0ff42bd36dee42113f85a8831ad42ef6eb79"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "birkenstock.com",
-                "www.parktool.com"
-            ]
-        },
         {
             "rule": "signifyd\\.com\\/onload",
             "cookies": 0,
@@ -51,8 +25,8 @@
                 "bt"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -61,8 +35,146 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "birkenstock.com",
-                "www.parktool.com"
+                "thepihut.com",
+                "www.bax-shop.be",
+                "www.birkenstock.com",
+                "www.holley.com",
+                "www.sram.com"
+            ]
+        },
+        {
+            "rule": "signifyd\\.com\\/fp\\/tags\\.js",
+            "cookies": 0.000402,
+            "fingerprinting": 1,
+            "subdomains": [
+                "imgs"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 4,
+                "Navigator.prototype.vendor": 4,
+                "Navigator.prototype.platform": 4,
+                "Navigator.prototype.appVersion": 4
+            },
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "c26e614e0a22b36e010f70e61ab84aadb65b51702be70138495519c233e31dec",
+                "e6c83550396dc161e401c094140de5e90bc71a0f50bf259d9c72419aa34b6364",
+                "6e18ac6c4dc8de475b990690d9a579cd3da3b26ba11430809e5302f25fb965e9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thepihut.com",
+                "www.birkenstock.com",
+                "www.holley.com",
+                "www.sram.com"
+            ]
+        },
+        {
+            "rule": "signifyd\\.com\\/ingest",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bt"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000502,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thepihut.com",
+                "www.bax-shop.be",
+                "www.birkenstock.com",
+                "www.holley.com",
+                "www.sram.com"
+            ]
+        },
+        {
+            "rule": "signifyd\\.com\\/ingest",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bt"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000502,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thepihut.com",
+                "www.bax-shop.be",
+                "www.birkenstock.com",
+                "www.holley.com",
+                "www.sram.com"
+            ]
+        },
+        {
+            "rule": "signifyd\\.com\\/fp\\/check\\.js",
+            "cookies": 0,
+            "fingerprinting": 3,
+            "subdomains": [
+                "imgs"
+            ],
+            "apis": {
+                "Navigator.prototype.mimeTypes": 4,
+                "Navigator.prototype.userAgent": 4,
+                "Navigator.prototype.vendor": 4,
+                "Navigator.prototype.platform": 4,
+                "Navigator.prototype.appVersion": 4,
+                "Date.prototype.getTimezoneOffset": 4,
+                "window.devicePixelRatio": 4,
+                "Screen.prototype.width": 4,
+                "Screen.prototype.height": 4,
+                "Screen.prototype.availWidth": 4,
+                "Screen.prototype.availHeight": 4,
+                "Screen.prototype.colorDepth": 4,
+                "Navigator.prototype.plugins": 4,
+                "Navigator.prototype.hardwareConcurrency": 4,
+                "Navigator.prototype.deviceMemory": 4,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 4,
+                "HTMLCanvasElement.prototype.toDataURL": 4,
+                "WebGLRenderingContext.prototype.getParameter": 4,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 4,
+                "WebGLRenderingContext.prototype.getExtension": 4,
+                "window.localStorage": 4,
+                "window.indexedDB": 4,
+                "RTCPeerConnection.prototype.constructor": 4,
+                "Navigator.prototype.storage": 4,
+                "Navigator.prototype.getBattery": 4,
+                "OfflineAudioContext.prototype.constructor": 4,
+                "Navigator.prototype.mediaDevices": 4,
+                "AudioBuffer.prototype.getChannelData": 4,
+                "Date.prototype.getTime": 4
+            },
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "c9b125f9e055a0432fb99251b2a221962e8cb31b0121a22062b7037e7b215602",
+                "abf473f65619382ec5553beb02281e5093853c4b3839258969685ac49f9e4dee",
+                "69abeafd2dffdcc879899ff8ee2b65365199bb7ddc20af3ed4b133052459a8da"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thepihut.com",
+                "www.birkenstock.com",
+                "www.holley.com",
+                "www.sram.com"
             ]
         },
         {
@@ -73,8 +185,8 @@
                 "imgs"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
                 "95518cbec0d55a574a9c8ef72a2a7d62ac0d40a4de5dfe67a76a7d214dc8b743"
@@ -83,8 +195,66 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "birkenstock.com",
-                "www.birkenstock.com"
+                "thepihut.com",
+                "www.birkenstock.com",
+                "www.holley.com",
+                "www.sram.com"
+            ]
+        },
+        {
+            "rule": "signifyd\\.com\\/fp\\/ls_fp\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "imgs"
+            ],
+            "apis": {
+                "window.localStorage": 4
+            },
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "28a83062bb377d5ee4550bf87119f97f761e9dfda2ad799db89d3644d1ba3c2a",
+                "df5449c6431be5205e6c05e4774df382b9fde958b3d59a83ce4c8905ffb7b72b",
+                "4225713086583a9bd31c87bf547dc0af3f41157713a92a820998176d4914031c"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thepihut.com",
+                "www.birkenstock.com",
+                "www.holley.com",
+                "www.sram.com"
+            ]
+        },
+        {
+            "rule": "signifyd\\.com\\/fp\\/top_fp\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "imgs"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 4
+            },
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "14bc547409d9e1cb64a03bc55f0e1668f2171ede675ba2aa23bb75831ba5a414",
+                "efff1b1cb97b19e9a63187769dd94f13958b17bba62116cadcfbd73f39e300ae",
+                "4a9f579c03303aa38ccb2e0a2ebce7fc643f2e11e680234ad668ecd2d01a5174"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thepihut.com",
+                "www.birkenstock.com",
+                "www.holley.com",
+                "www.sram.com"
             ]
         },
         {
@@ -95,8 +265,32 @@
                 "imgs"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "95518cbec0d55a574a9c8ef72a2a7d62ac0d40a4de5dfe67a76a7d214dc8b743"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thepihut.com",
+                "www.birkenstock.com",
+                "www.holley.com",
+                "www.sram.com"
+            ]
+        },
+        {
+            "rule": "signifyd\\.com\\/fp\\/clear\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "imgs"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -105,52 +299,63 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "birkenstock.com",
-                "www.birkenstock.com"
+                "thepihut.com",
+                "www.birkenstock.com",
+                "www.holley.com",
+                "www.sram.com"
             ]
         },
         {
-            "rule": "signifyd\\.com\\/ingest",
+            "rule": "signifyd\\.com\\/fp\\/clear1\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "bt"
+                "imgs"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "XHR",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "birkenstock.com",
+                "thepihut.com",
                 "www.birkenstock.com",
-                "www.parktool.com"
+                "www.holley.com",
+                "www.sram.com"
             ]
         },
         {
-            "rule": "signifyd\\.com\\/ingest",
+            "rule": "signifyd\\.com\\/api\\/script-tag\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "bt"
+                "cdn-scripts"
             ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "apis": {
+                "Date.prototype.getTime": 4,
+                "window.localStorage": 4,
+                "Navigator.prototype.userAgent": 3
+            },
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "3d027d7198fc01288176296acf0e3996e31d791314541eeab638ecb4951a2900",
+                "e17857cb74ff8bb8c18929844a2d0ff42bd36dee42113f85a8831ad42ef6eb79"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "birkenstock.com",
+                "bax-shop.be",
                 "www.birkenstock.com",
-                "www.parktool.com"
+                "www.holley.com",
+                "www.sram.com"
             ]
         }
     ],
@@ -161,17 +366,18 @@
         "cpu": 0,
         "cache": 3
     },
-    "cookies": 0.000101,
+    "cookies": 0.000402,
     "types": {
-        "Script": 4,
-        "XHR": 5,
-        "Image": 2,
-        "Preflight": 3
+        "XHR": 14,
+        "Script": 16,
+        "Preflight": 5,
+        "Image": 8,
+        "Document": 8
     },
     "nameservers": [
-        "ns-1445.awsdns-52.org",
-        "ns-1684.awsdns-18.co.uk",
         "ns-304.awsdns-38.com",
-        "ns-637.awsdns-15.net"
+        "ns-637.awsdns-15.net",
+        "ns-1445.awsdns-52.org",
+        "ns-1684.awsdns-18.co.uk"
     ]
 }

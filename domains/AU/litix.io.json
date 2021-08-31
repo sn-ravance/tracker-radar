@@ -7,9 +7,11 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000514,
-    "sites": 5,
+    "prevalence": 0.000802,
+    "sites": 8,
     "subdomains": [
+        "vfhbo3jsnvrutdkuee1akd0lj",
+        "18ivl0rjdhi5lrcmvn369ue0g",
         "99komk7elhn8evdif5v3klm6a",
         "src"
     ],
@@ -21,11 +23,36 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "vfhbo3jsnvrutdkuee1akd0lj",
+                "18ivl0rjdhi5lrcmvn369ue0g",
                 "99komk7elhn8evdif5v3klm6a"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "endnote.com",
+                "www.foodnetwork.com",
+                "www.ign.com"
+            ]
+        },
+        {
+            "rule": "litix\\.io\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vfhbo3jsnvrutdkuee1akd0lj",
+                "18ivl0rjdhi5lrcmvn369ue0g",
+                "99komk7elhn8evdif5v3klm6a"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000501,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -34,24 +61,63 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ign.com",
-                "au.ign.com"
+                "endnote.com",
+                "www.elastic.co",
+                "www.foodnetwork.com",
+                "www.ign.com",
+                "www.spglobal.com"
+            ]
+        },
+        {
+            "rule": "litix\\.io\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vfhbo3jsnvrutdkuee1akd0lj"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "elastic.co",
+                "www.spglobal.com"
             ]
         },
         {
             "rule": "litix\\.io\\/cts\\/1\\/cts-mux\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.000201,
+            "fingerprinting": 1,
             "subdomains": [
                 "src"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Document.cookie setter": 2
+            },
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "62c9e9a56856b43f67edafc63335da55e2c0d4502e517bb6f53460c63e590019"
+            ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "muxData": {
+                    "ttl": 630720021,
+                    "length": 13,
+                    "prevalence": 0.00020052135552436334,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "foodnetwork.com",
@@ -66,9 +132,11 @@
         "cpu": 0,
         "cache": 3
     },
-    "cookies": 0,
+    "cookies": 0.000201,
     "types": {
-        "XHR": 2,
+        "Preflight": 3,
+        "XHR": 5,
+        "Other": 2,
         "Script": 2
     },
     "nameservers": [

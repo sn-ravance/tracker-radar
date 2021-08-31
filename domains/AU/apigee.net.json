@@ -9,13 +9,18 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000514,
-    "sites": 5,
+    "prevalence": 0.000802,
+    "sites": 8,
     "subdomains": [
         "cisco-dsc-prod",
+        "snswprod-prod",
         "cmg-prod"
     ],
     "cnames": [
+        {
+            "original": "api.g.service.nsw.gov.au",
+            "resolved": "snswprod-prod.apigee.net"
+        },
         {
             "original": "dsc.cisco.com",
             "resolved": "cisco-dsc-prod.apigee.net"
@@ -31,22 +36,48 @@
                 "cisco-dsc-prod"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000309,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "dsc.cisco.com",
                     "resolved": "cisco-dsc-prod.apigee.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "f38b647a6ff4481b6792b0141fb4797871696e3e9abc29786739303e1e3f1da6"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cisco.com",
-                "meraki.cisco.com",
                 "www.cisco.com"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/jsonapi\\/suburb\\/suburb",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "snswprod-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.g.service.nsw.gov.au",
+                    "resolved": "snswprod-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nsw.gov.au",
+                "my.service.nsw.gov.au"
             ]
         },
         {
@@ -58,10 +89,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "581e116b7e4e709289b49dc30c487f7f4d327620700b20eb0a949c5d43c200ed"
+                "f318f9034d49164aed2a5d3952af13e3d45e9aff153c8c90d269bac402907a91"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -80,10 +111,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "a3f14ef713cdcb6fda4e32dd810a99cff8b941769d032515b283fbd11b2f1d5c"
+                "56fc0b6c8310fdc4a8b933d8e8e3e9d51a12c5dc7c00800a3bd882584a68b053"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -98,15 +129,16 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000201,
     "types": {
-        "Script": 3,
+        "Script": 2,
+        "Fetch": 2,
         "XHR": 4
     },
     "nameservers": [
-        "ns-1441.awsdns-52.org",
-        "ns-1907.awsdns-46.co.uk",
         "ns-670.awsdns-19.net",
-        "ns-116.awsdns-14.com"
+        "ns-116.awsdns-14.com",
+        "ns-1441.awsdns-52.org",
+        "ns-1907.awsdns-46.co.uk"
     ]
 }

@@ -8,7 +8,8 @@
     "sites": 2,
     "subdomains": [
         "novedades-co",
-        "novedades-pe"
+        "novedades-pe",
+        "www"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -48,8 +49,8 @@
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.languages": 2,
                 "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
-                "Date.prototype.getTime": 1,
-                "window.localStorage": 1
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000139,
@@ -75,13 +76,15 @@
             ],
             "apis": {
                 "window.name": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.languages": 2,
                 "Intl.DateTimeFormat.prototype.resolvedOptions": 2
             },
             "sites": 2,
             "prevalence": 0.0000139,
             "cnames": [],
             "responseHashes": [
-                "fcfeca823c0d0514f02f3328b527f885b457e3efae3530ccfa4d8dbf94c76274"
+                "2764e921e277598d69188694d7b10be89f3ca966452ad753c4be5a7735a78191"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -89,6 +92,28 @@
             "exampleSites": [
                 "falabella.com.co",
                 "www.falabella.com.pe"
+            ]
+        },
+        {
+            "rule": "falabella\\.com\\/s\\/browse\\/v1\\/fetchItemDetails\\/co",
+            "cookies": 0.0000139,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "4678b69d0e655b2ff71876bd4c8556a148b9c0f081dca36e91a04c21dda80fd0"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "falabella.com.co",
+                "www.falabella.com.co"
             ]
         },
         {
@@ -100,13 +125,13 @@
                 "novedades-pe"
             ],
             "apis": {
-                "HTMLCanvasElement.prototype.toDataURL": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "Screen.prototype.availHeight": 1,
-                "Screen.prototype.availWidth": 1,
-                "window.devicePixelRatio": 1,
-                "Screen.prototype.colorDepth": 1
+                "HTMLCanvasElement.prototype.toDataURL": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.availWidth": 2,
+                "window.devicePixelRatio": 2,
+                "Screen.prototype.colorDepth": 2
             },
             "sites": 2,
             "prevalence": 0.0000139,
@@ -144,6 +169,29 @@
                 "falabella.com.co",
                 "www.falabella.com.pe"
             ]
+        },
+        {
+            "rule": "falabella\\.com\\/cdn-cgi\\/bm\\/cv\\/result",
+            "cookies": 0.0000139,
+            "fingerprinting": 0,
+            "subdomains": [
+                "novedades-co",
+                "novedades-pe"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "falabella.com.co",
+                "www.falabella.com.pe"
+            ]
         }
     ],
     "categories": [],
@@ -152,10 +200,12 @@
     "types": {
         "Script": 6,
         "Document": 2,
-        "Other": 2
+        "Fetch": 2,
+        "Other": 2,
+        "XHR": 2
     },
     "nameservers": [
-        "zeus.ns.cloudflare.com",
-        "rafe.ns.cloudflare.com"
+        "rafe.ns.cloudflare.com",
+        "zeus.ns.cloudflare.com"
     ]
 }

@@ -7,16 +7,19 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000704,
+    "prevalence": 0.000703,
     "sites": 7,
     "subdomains": [
         "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
-        "newyorkmedia-cd-xglicwlvftem6afq.edge.tenants",
+        "hashicorp-cd-uiujfnz9rprgm4yc.edge.tenants",
         "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu",
-        "s-ge-cd-af9zxjj5mj1sab0i.edge.tenants.eu",
-        "cdn.eu"
+        "s-ge-cd-af9zxjj5mj1sab0i.edge.tenants.eu"
     ],
     "cnames": [
+        {
+            "original": "auth.hashicorp.com",
+            "resolved": "hashicorp-cd-uiujfnz9rprgm4yc.edge.tenants.auth0.com"
+        },
         {
             "original": "auth.native-instruments.com",
             "resolved": "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu.auth0.com"
@@ -28,35 +31,31 @@
         {
             "original": "login.arduino.cc",
             "resolved": "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants.auth0.com"
-        },
-        {
-            "original": "login.nymag.com",
-            "resolved": "newyorkmedia-cd-xglicwlvftem6afq.edge.tenants.auth0.com"
         }
     ],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "auth0\\.com\\/authorize",
-            "cookies": 0.000603,
+            "cookies": 0.000401,
             "fingerprinting": 0,
             "subdomains": [
                 "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
-                "newyorkmedia-cd-xglicwlvftem6afq.edge.tenants",
+                "hashicorp-cd-uiujfnz9rprgm4yc.edge.tenants",
                 "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu",
                 "s-ge-cd-af9zxjj5mj1sab0i.edge.tenants.eu"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.000603,
+            "sites": 4,
+            "prevalence": 0.000401,
             "cnames": [
                 {
                     "original": "login.arduino.cc",
                     "resolved": "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants.auth0.com"
                 },
                 {
-                    "original": "login.nymag.com",
-                    "resolved": "newyorkmedia-cd-xglicwlvftem6afq.edge.tenants.auth0.com"
+                    "original": "auth.hashicorp.com",
+                    "resolved": "hashicorp-cd-uiujfnz9rprgm4yc.edge.tenants.auth0.com"
                 },
                 {
                     "original": "auth.native-instruments.com",
@@ -68,49 +67,17 @@
                 }
             ],
             "responseHashes": [
-                "26a35f36a69b8fe9df0aa7f2fca60f636598da6fde92efc58e7c60de2cd347d3",
-                "15245e5b103531f597bedf927d7901ea4477934ce3034313d411acd06c942f32",
-                "01eca5634f85d9a0b13c066f13aa81a4476846abe79fe529a5b6680e45669354",
-                "8ec708153facc644902845a479011bb4c8e6ee50c800c4bfb008fec49f6ac2fe",
-                "082ff52536e0c353ef638c852fe56a606b393319d1afe0278887acdb2783bdfc"
+                "1e4ea87c4c450974dcd23d3caf89a6667a126be35aea167a432e36324188c3f2",
+                "14462a1839fd1a79f8ddcc1530329167409d94f6523f1ccf07a7978a00e2ed85",
+                "d17ad0e2f41b17b90fc81f94245f41285eea6722bb149cd0b0bea6d9526b4c92"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "arduino.cc",
-                "nymag.com",
+                "learn.hashicorp.com",
                 "www.native-instruments.com",
-                "www.s-ge.com",
-                "www.thecut.com",
-                "www.vulture.com"
-            ]
-        },
-        {
-            "rule": "auth0\\.com\\/client\\/SmboZP4OnJonWOHffFU9ZgmvA7Nu4o36\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s-ge-cd-af9zxjj5mj1sab0i.edge.tenants.eu",
-                "cdn.eu"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "auth0.s-ge.com",
-                    "resolved": "s-ge-cd-af9zxjj5mj1sab0i.edge.tenants.eu.auth0.com"
-                }
-            ],
-            "responseHashes": [
-                "2c2f7635d1030bf9bf121a8b3fed5dc93744d4f1772ac269249988d0839f6446"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "s-ge.com",
                 "www.s-ge.com"
             ]
         }
@@ -122,10 +89,9 @@
         "cpu": 0,
         "cache": 1
     },
-    "cookies": 0.000603,
+    "cookies": 0.000401,
     "types": {
-        "Document": 6,
-        "Script": 2
+        "Document": 4
     },
     "nameservers": []
 }

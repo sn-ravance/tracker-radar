@@ -7,34 +7,51 @@
     "prevalence": 0.000201,
     "sites": 2,
     "subdomains": [
-        "widgets"
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "opinary\\.com\\/embed\\.js",
+            "rule": "opinary\\.com\\/v1\\/events",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
-                "widgets"
+                "api"
             ],
-            "apis": {
-                "Navigator.prototype.product": 2,
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [
-                "60e3fd7fa1f519b04e6493a9065ee076046600c058e1279514a2b025612e0bb2"
-            ],
-            "type": "Script",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "abendblatt.de",
-                "www.infranken.de"
+                "www.tagesspiegel.de"
+            ]
+        },
+        {
+            "rule": "opinary\\.com\\/v1\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "98c4922bb641c65c7a30b7bcafdf230b9b00b6693631c56146ab25b2786ee4a3"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abendblatt.de",
+                "www.tagesspiegel.de"
             ]
         }
     ],
@@ -47,12 +64,13 @@
     },
     "cookies": 0,
     "types": {
-        "Script": 2
+        "Preflight": 2,
+        "Fetch": 2
     },
     "nameservers": [
         "ns-cloud-a4.googledomains.com",
+        "ns-cloud-a1.googledomains.com",
         "ns-cloud-a3.googledomains.com",
-        "ns-cloud-a2.googledomains.com",
-        "ns-cloud-a1.googledomains.com"
+        "ns-cloud-a2.googledomains.com"
     ]
 }

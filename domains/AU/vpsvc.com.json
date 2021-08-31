@@ -7,14 +7,15 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000103,
+    "prevalence": 0.0001,
     "sites": 1,
     "subdomains": [
         "sitewide-promobar-service.prod.merch",
-        "tracking.cdn"
+        "api.dcp",
+        "prod.puc.starbug"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "vpsvc\\.com\\/v1\\/promobar\\/vistaprint\\/en-AU",
@@ -25,9 +26,31 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vistaprint.com.au",
+                "www.vistaprint.com.au"
+            ]
+        },
+        {
+            "rule": "vpsvc\\.com\\/v1\\/promobar\\/vistaprint\\/en-AU",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sitewide-promobar-service.prod.merch"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "a9c1d5532a683effff8418c67b1c5c193c55768bf9b5a210f3462a29ab3f1125"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -37,18 +60,84 @@
             ]
         },
         {
-            "rule": "vpsvc\\.com\\/consent-manager\\/resources\\/vistaprint\\/en-au\\/resources\\.json",
+            "rule": "vpsvc\\.com\\/v1\\/t",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "tracking.cdn"
+                "api.dcp"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "8ca1e7b4a4c2aebd8fd049f3105eff0f734b4aeba04bb0bd51dfb1ff76aceb2e"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vistaprint.com.au",
+                "www.vistaprint.com.au"
+            ]
+        },
+        {
+            "rule": "vpsvc\\.com\\/v1\\/t",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.dcp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "12f71cb993958eefc4bdb41d7dbbda490779a9c7aba448f7be52bb63912e0254"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vistaprint.com.au",
+                "www.vistaprint.com.au"
+            ]
+        },
+        {
+            "rule": "vpsvc\\.com\\/v1\\/get_treatment_assignments\\/me",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.puc.starbug"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e870ef0a68729d3542978d1153eba4868831803141b397d6038bce58832379bc"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vistaprint.com.au",
+                "www.vistaprint.com.au"
+            ]
+        },
+        {
+            "rule": "vpsvc\\.com\\/v1\\/get_experiment_assignments\\/me",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.puc.starbug"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -61,15 +150,16 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0001,
     "types": {
-        "XHR": 2,
-        "Fetch": 2
+        "Preflight": 2,
+        "XHR": 4,
+        "Fetch": 6
     },
     "nameservers": [
         "ns5-65.akam.net",
-        "ns4-66.akam.net",
         "ns7-66.akam.net",
-        "ns1-134.akam.net"
+        "ns1-134.akam.net",
+        "ns4-66.akam.net"
     ]
 }

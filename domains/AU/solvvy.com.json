@@ -7,13 +7,14 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000206,
-    "sites": 2,
+    "prevalence": 0.000401,
+    "sites": 4,
     "subdomains": [
-        "api"
+        "api",
+        "cdn"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "solvvy\\.com\\/v1\\/pixels\\/track",
@@ -23,8 +24,8 @@
                 "api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
+            "sites": 4,
+            "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -32,10 +33,65 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_slvs": 0.0002057189878625797
+                "_slvs": 0.0004010427110487267
             },
             "exampleSites": [
                 "steelseries.com",
+                "www.everyplate.com.au",
+                "www.hellofresh.com.au",
+                "www.invaluable.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/ui\\/v5-stable\\/solvvy\\.v5\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "f42c89f169289d7d986b2593fb7d6bf74eb07598e9e53bb16da9651923e2f202"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "steelseries.com",
+                "www.invaluable.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/ui\\/v5\\.44\\.0\\/solvvy\\.v5\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "f42c89f169289d7d986b2593fb7d6bf74eb07598e9e53bb16da9651923e2f202"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "everyplate.com.au",
                 "www.hellofresh.com.au"
             ]
         }
@@ -47,14 +103,15 @@
         "cpu": 0,
         "cache": 1
     },
-    "cookies": 0.000206,
+    "cookies": 0.000401,
     "types": {
-        "XHR": 2
+        "XHR": 4,
+        "Script": 4
     },
     "nameservers": [
-        "ns-cloud-b1.googledomains.com",
-        "ns-cloud-b3.googledomains.com",
         "ns-cloud-b4.googledomains.com",
-        "ns-cloud-b2.googledomains.com"
+        "ns-cloud-b1.googledomains.com",
+        "ns-cloud-b2.googledomains.com",
+        "ns-cloud-b3.googledomains.com"
     ]
 }

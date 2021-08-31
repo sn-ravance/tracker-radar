@@ -4,26 +4,28 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.00103,
-    "sites": 10,
+    "prevalence": 0.0012,
+    "sites": 12,
     "subdomains": [
         "prd-collector-anon",
+        "prd-collector-platform",
         "mcd",
-        "img"
+        "static"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "ex\\.co\\/main\\/events",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "prd-collector-anon"
+                "prd-collector-anon",
+                "prd-collector-platform"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.00072,
+            "sites": 12,
+            "prevalence": 0.0012,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -34,15 +36,20 @@
             "exampleSites": [
                 "sfgate.com",
                 "homeguides.sfgate.com",
+                "hothardware.com",
                 "perezhilton.com",
-                "smallbusiness.chron.com",
+                "work.chron.com",
                 "www.allkpop.com",
+                "www.droidviews.com",
+                "www.nationalreview.com",
+                "www.playbuzz.com",
                 "www.sfgate.com",
+                "www.todaysparent.com",
                 "www.usingenglish.com"
             ]
         },
         {
-            "rule": "ex\\.co\\/video\\/upload\\/c_scale,w_295\\/v1490095101\\/landscape4d0cc7d5-4bf5-40f6-8f52-5aaec63fc236_1627077489834\\.mp4",
+            "rule": "ex\\.co\\/video\\/upload\\/c_scale,w_295\\/v1490095101\\/landscape4d0cc7d5-4bf5-40f6-8f52-5aaec63fc236_1629902371115\\.mp4",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -50,7 +57,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
             "type": "Media",
@@ -62,20 +69,18 @@
             ]
         },
         {
-            "rule": "ex\\.co\\/image\\/upload\\/ar_1\\.8867924528301887,c_crop\\/ar_1\\.7777777777777777,c_fill\\/vc_vp9,ac_none,q_80\\/v1626000142\\/sjjwqehqhfwyzlblgi5b\\.webm",
+            "rule": "ex\\.co\\/main\\/events",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "img"
+                "prd-collector-platform"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [
-                "b2647d5edf2ae6aea56c1fa5b1e07d4220e36627bf5f8d17f1ceee711e0c0268"
-            ],
-            "type": "Media",
+            "responseHashes": [],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -84,20 +89,27 @@
             ]
         },
         {
-            "rule": "ex\\.co\\/image\\/upload\\/c_crop,x_-1,y_44,h_191,w_360\\/ar_1\\.7777777777777777,c_fill\\/vc_vp9,ac_none,q_80\\/v1621711755\\/rxwnevssiiaujogirfmx\\.webm",
+            "rule": "ex\\.co\\/pb-story\\/production\\/bf2cdf75ac31d862fcb2e11adf4a2762065437fa-2021-07-29-12-18-56\\/story-viewer\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "img"
+                "static"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.cookieEnabled": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "window.devicePixelRatio": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2
+            },
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "7441e015f83450a3d81d2cf5912ad6ce493dec1d99db4c7e292e9e963ab49d9b"
+                "1163ba4e3ed2bb7346a8244587b26b87ab93b6198f6c47664ffe5344f417e1cf"
             ],
-            "type": "Media",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -108,10 +120,12 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000309,
+    "cookies": 0.000602,
     "types": {
-        "XHR": 7,
-        "Media": 6
+        "XHR": 12,
+        "Media": 2,
+        "Fetch": 2,
+        "Script": 2
     },
     "nameservers": [
         "ns-1048.awsdns-03.org",

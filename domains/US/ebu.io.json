@@ -4,19 +4,20 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000347,
-    "sites": 5,
+    "prevalence": 0.0000417,
+    "sites": 6,
     "subdomains": [
         "peach-static",
         "pipe-collect",
-        "reco"
+        "reco",
+        "pilot"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "ebu\\.io\\/peach-collector-1\\.x\\.min\\.js",
-            "cookies": 0,
+            "cookies": 0.00000694,
             "fingerprinting": 2,
             "subdomains": [
                 "peach-static"
@@ -27,7 +28,9 @@
                 "Navigator.prototype.vendor": 3,
                 "Navigator.prototype.platform": 3,
                 "Navigator.prototype.language": 3,
-                "Date.prototype.getTimezoneOffset": 3
+                "Date.prototype.getTimezoneOffset": 3,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
             },
             "sites": 3,
             "prevalence": 0.0000208,
@@ -36,7 +39,32 @@
                 "5ff4a72caca60a7670fc5df47fa7c4bfcd6896baf4dda5c15303ee87ee0c2e8b"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_pc_c": {
+                    "ttl": 906148727,
+                    "length": 36,
+                    "prevalence": 0.000006943142605205969,
+                    "uniqueness": 1
+                },
+                "_pc_t": {
+                    "ttl": 906148727,
+                    "length": 16,
+                    "prevalence": 0.000006943142605205969,
+                    "uniqueness": 1
+                },
+                "_pc_lr": {
+                    "ttl": null,
+                    "length": 13,
+                    "prevalence": 0.000006943142605205969,
+                    "uniqueness": 1
+                },
+                "_pc_st": {
+                    "ttl": null,
+                    "length": 13,
+                    "prevalence": 0.000006943142605205969,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dw.com",
@@ -100,84 +128,13 @@
             "prevalence": 0.0000139,
             "cnames": [],
             "responseHashes": [
-                "443a76819a9e4b7ea264cdf50741989d9700dde90831e8a8ea65bc76ef7865c8"
+                "66dc0f51c2433d887a0b553ec02eb481bf195654ecad75cf3653400c56d5b3a3"
             ],
             "type": "Document",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "francetvinfo.fr",
-                "www.swissinfo.ch"
-            ]
-        },
-        {
-            "rule": "ebu\\.io\\/static\\/css\\/main\\.985d7ca2\\.chunk\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "reco"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000139,
-            "cnames": [],
-            "responseHashes": [
-                "d57bd0457a096b4b32c74bdaaa3ac5b56f7642886859252539a3550f91bdb7a1"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "francetvinfo.fr",
-                "www.swissinfo.ch"
-            ]
-        },
-        {
-            "rule": "ebu\\.io\\/static\\/js\\/2\\.00d34468\\.chunk\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "reco"
-            ],
-            "apis": {
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 2,
-                "Date.prototype.getTimezoneOffset": 2,
-                "Navigator.prototype.userAgent": 1
+            "firstPartyCookiesSent": {
+                "_pc_host": 0.000013886285210411937
             },
-            "sites": 2,
-            "prevalence": 0.0000139,
-            "cnames": [],
-            "responseHashes": [
-                "bfe649cb820a024b6a08e36b5eb826991ea1d48b9d14ee0a852f3fd80aa23372"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "francetvinfo.fr",
-                "www.swissinfo.ch"
-            ]
-        },
-        {
-            "rule": "ebu\\.io\\/static\\/js\\/main\\.553a4e2c\\.chunk\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "reco"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000139,
-            "cnames": [],
-            "responseHashes": [
-                "d390bdf8d475346588d151ae8aab89e8019a7165ce9da0c9d146a1115e8696d8"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "francetvinfo.fr",
                 "www.swissinfo.ch"
@@ -185,18 +142,14 @@
         },
         {
             "rule": "ebu\\.io\\/peach-collector\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
+            "cookies": 0.0000139,
+            "fingerprinting": 1,
             "subdomains": [
                 "peach-static"
             ],
             "apis": {
                 "Date.prototype.getTimezoneOffset": 2,
-                "Navigator.prototype.doNotTrack": 1,
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.vendor": 1,
-                "Navigator.prototype.platform": 1,
-                "Navigator.prototype.language": 1
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000139,
@@ -205,6 +158,204 @@
                 "9cfd5548dbb0e52b7d7da511acf4d9736f2ed705245f10e7170e3cbc7a807ee3"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "francetvinfo.fr",
+                "www.swissinfo.ch"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/resizer\\/TrNIYkeAMAtWhlAKPOxKVNJSQok=\\/400x225\\/https%3A%2F%2Fpilot-fallback\\.s3\\.eu-west-1\\.amazonaws\\.com%2FEBU\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pilot"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "86e7b120b81486a3f1157180876f7313dfbe3fcc62682299fa1b33058d805217"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "francetvinfo.fr",
+                "www.swissinfo.ch"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/resizer\\/zRY0jiXA-hwB6M5WeG_ja7vhpLc=\\/400x225\\/https%3A%2F%2Fimg\\.rasset\\.ie%2F0017f7d7-614\\.jpg%3Fratio%3D1\\.78",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pilot"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "a2d9b2546b8829e749024786edc3077a0055ddd64a3a880cada05d855b48c452"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "francetvinfo.fr",
+                "www.swissinfo.ch"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/resizer\\/snr1tiTE058JMgneZPfRO_DLFnI=\\/400x225\\/https%3A%2F%2Fimages\\.cdn\\.yle\\.fi%2Fimage%2Fupload%2F39-839331610cd645a29dd\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pilot"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "0355495f19e66094ec39dda5c31c59378703cc2059b62b3a5d0089fdef2d5938"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "francetvinfo.fr",
+                "www.swissinfo.ch"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/resizer\\/1zAzoJdS-HUH2gYWqEONzdIz4js=\\/400x225\\/https%3A%2F%2Fpilot-fallback\\.s3-eu-west-1\\.amazonaws\\.com%2FRTBF\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pilot"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "d15ee1f972ba3f279e54349410d22efa9e04e5409ba919596835cc47f8aceb39"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "francetvinfo.fr",
+                "www.swissinfo.ch"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/resizer\\/o3d9emt3jiCgCeQTcA4s-dQQIL8=\\/400x225\\/https%3A%2F%2Fimg2\\.rtve\\.es%2Fimagenes%2Fmedusa-especie-cotylorhiza-tuberculata-cada-vez-mas-comun-mar-mediterraneo%2F1628155380996\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pilot"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "1fda7ca69a6200de8a959d4d062a35af645779a2a935be3292ecb0d1ec381078"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "francetvinfo.fr",
+                "www.swissinfo.ch"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/resizer\\/OYldXP_L6HUzFML117P-l6p3RQQ=\\/400x225\\/https%3A%2F%2Fapi-cdn\\.arte\\.tv%2Fapi%2Fmami%2Fv1%2Fprogram%2Ffr%2F105128-000-A%2F1920x1080%3Fts%3D1628100945",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pilot"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "376c2a26f151fd6755d2f3243b55980412694a882782664ebbfc0d69bc6e4d7a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "francetvinfo.fr",
+                "www.swissinfo.ch"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/resizer\\/3sq8eRUwLS6CAT8lXRSeGVjknqM=\\/400x225\\/https%3A%2F%2Fpilot-fallback\\.s3-eu-west-1\\.amazonaws\\.com%2FRAI\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pilot"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "49e12adceb80f86c21507ba7ddab7555611879f6f772a08de5dd7a1cc5917fd5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "francetvinfo.fr",
+                "www.swissinfo.ch"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/resizer\\/qpp3Dh9lVW7AgzErQryXrtpPN0M=\\/400x225\\/https%3A%2F%2Fds\\.static\\.rtbf\\.be%2Farticle%2Fimage%2F1920xAuto%2Fe%2Fc%2Ff%2Fc1aeb6517a1c7f33514f7ff69047e74e-1627978663\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pilot"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "0ef96cbc09faef8bc5e18b7619f650f063ba181077b67830badbeb8c1fe5891a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "francetvinfo.fr",
+                "www.swissinfo.ch"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/resizer\\/eqVVuiIBONpVmL9Ffoa4Ovdr22M=\\/400x225\\/https%3A%2F%2Fimages\\.cdn\\.yle\\.fi%2Fimage%2Fupload%2F39-82516960d442a32005b\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pilot"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "de74f6bcd74485ececa4b434d82f7d5f4ff7305f2932d6098917030c039531ee"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -220,13 +371,13 @@
         "cpu": 0,
         "cache": 0
     },
-    "cookies": 0.0000208,
+    "cookies": 0.0000347,
     "types": {
-        "Script": 9,
+        "Script": 5,
         "Preflight": 3,
         "XHR": 3,
         "Document": 2,
-        "Stylesheet": 2
+        "Image": 18
     },
     "nameservers": [
         "ns-1851.awsdns-39.co.uk",

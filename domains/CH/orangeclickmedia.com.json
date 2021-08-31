@@ -7,22 +7,58 @@
     "prevalence": 0.000201,
     "sites": 2,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "pba"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "orangeclickmedia\\.com\\/tech\\/libs\\/ocm_iab_compliance\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "79f92d1df59329e128941a23fd7c747862326631011dca0903c943c68ac6d3b5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bank-codes.com",
+                "www.pronews.gr"
+            ]
+        },
         {
             "rule": "orangeclickmedia\\.com\\/tech\\/libs\\/prebid\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.cookieEnabled": 2,
-                "window.sessionStorage": 2
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Document.cookie getter": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.connection": 1
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -35,7 +71,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bank-codes.com",
-                "www.marinetraffic.com"
+                "www.pronews.gr"
             ]
         },
         {
@@ -50,14 +86,36 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "0fa620a208ef20d348a302f50b1b8cc319911d03e45da60005387e6ae8eb977f"
+                "3072431f0f7c6e44fe9e9382a613efca336394417222fa939da7308295953a7b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bank-codes.com",
-                "www.marinetraffic.com"
+                "www.pronews.gr"
+            ]
+        },
+        {
+            "rule": "orangeclickmedia\\.com\\/pba-stream",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pba"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bank-codes.com",
+                "www.pronews.gr"
             ]
         }
     ],
@@ -70,11 +128,11 @@
     },
     "cookies": 0,
     "types": {
-        "Script": 2,
-        "XHR": 2
+        "Script": 4,
+        "XHR": 4
     },
     "nameservers": [
-        "ashley.ns.cloudflare.com",
-        "marek.ns.cloudflare.com"
+        "marek.ns.cloudflare.com",
+        "ashley.ns.cloudflare.com"
     ]
 }

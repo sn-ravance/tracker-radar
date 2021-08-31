@@ -4,15 +4,18 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000617,
-    "sites": 6,
+    "prevalence": 0.000501,
+    "sites": 5,
     "subdomains": [
         "direct-events-collector",
         "publisher-assets",
-        "events-collector"
+        "pix",
+        "events-collector",
+        "metrics-logger",
+        "static-cdn"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "spot\\.im\\/api\\/v2\\/events",
@@ -22,8 +25,8 @@
                 "direct-events-collector"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000309,
+            "sites": 5,
+            "prevalence": 0.000501,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -33,6 +36,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "aol.com",
+                "www.dailywire.com",
+                "www.ign.com",
                 "www.realclearpolitics.com",
                 "www.silverdoctors.com"
             ]
@@ -45,8 +50,8 @@
                 "publisher-assets"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000411,
+            "sites": 6,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
@@ -55,20 +60,46 @@
             "exampleSites": [
                 "aol.com",
                 "www.aol.com",
+                "www.dailywire.com",
+                "www.ign.com",
                 "www.realclearpolitics.com",
                 "www.silverdoctors.com"
             ]
         },
         {
-            "rule": "spot\\.im\\/api\\/v1\\/device_load",
+            "rule": "spot\\.im\\/api\\/v1\\/pixel",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "events-collector"
+                "pix"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000309,
+            "sites": 6,
+            "prevalence": 0.000602,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aol.com",
+                "www.aol.com",
+                "www.dailywire.com",
+                "www.ign.com",
+                "www.realclearpolitics.com",
+                "www.silverdoctors.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/api\\/v1\\/pixel",
+            "cookies": 0.000602,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pix"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
@@ -76,8 +107,215 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "aol.com",
+                "www.aol.com",
+                "www.dailywire.com",
+                "www.ign.com",
                 "www.realclearpolitics.com",
                 "www.silverdoctors.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/api\\/v1\\/device_load",
+            "cookies": 0.000501,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events-collector"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000501,
+            "cnames": [],
+            "responseHashes": [
+                "365cc693511fb1d1742a2a23ae9e38037a2c9d3d89581762ab2dc8603bd35199",
+                "a093c3e082d1295dbb6b318cd318525511a7fb21eebd443b094e8b8fc6934f4a",
+                "3a989a548ce9cb442ace6a023388143fc2bd4c1aff658d540dc2fe35714df8cd",
+                "506bfe0a9de8474e1692eeae6570399cdfeb099b5f7dd5559edb132f9ad10532"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aol.com",
+                "www.dailywire.com",
+                "www.ign.com",
+                "www.realclearpolitics.com",
+                "www.silverdoctors.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/metric",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "metrics-logger"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000602,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aol.com",
+                "www.aol.com",
+                "www.dailywire.com",
+                "www.ign.com",
+                "www.realclearpolitics.com",
+                "www.silverdoctors.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/launcher\\/tags\\/v2\\.60\\.3\\/vendor\\/vendor-bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aol.com",
+                "www.ign.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/conversation\\/tags\\/v3\\.40\\.11\\/conversation-bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aol.com",
+                "www.ign.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/popular-in-the-community\\/tags\\/v2\\.26\\.9\\/popular-in-the-community\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {
+                "window.localStorage": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.platform": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aol.com",
+                "www.ign.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/popular-in-the-community\\/tags\\/v2\\.26\\.9\\/popular-in-the-community\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aol.com",
+                "www.ign.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/messages-count\\/tags\\/v1\\.0\\.0\\/messages-count-bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aol.com",
+                "www.ign.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/yad\\/ad-choises\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "publisher-assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "f27b4cdbd821100765224a52c7c8d544fa9fdd6d0aba21015eb66c11735e0989"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aol.com",
+                "www.realclearpolitics.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/api\\/v1\\/pixels",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pix"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aol.com",
+                "www.dailywire.com",
+                "www.realclearpolitics.com"
             ]
         }
     ],
@@ -88,15 +326,20 @@
         "cpu": 0,
         "cache": 1
     },
-    "cookies": 0,
+    "cookies": 0.000501,
     "types": {
-        "XHR": 3,
-        "Fetch": 7
+        "XHR": 5,
+        "Fetch": 23,
+        "Preflight": 6,
+        "Script": 8,
+        "Stylesheet": 2,
+        "Image": 2,
+        "Other": 3
     },
     "nameservers": [
+        "ns-2018.awsdns-60.co.uk",
         "ns-34.awsdns-04.com",
         "ns-802.awsdns-36.net",
-        "ns-1202.awsdns-22.org",
-        "ns-2018.awsdns-60.co.uk"
+        "ns-1202.awsdns-22.org"
     ]
 }

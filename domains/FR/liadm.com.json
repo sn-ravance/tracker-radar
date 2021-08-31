@@ -9,28 +9,29 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.00522,
-    "sites": 52,
+    "prevalence": 0.00392,
+    "sites": 39,
     "subdomains": [
         "b-code",
         "rp",
-        "idx",
         "i",
-        "i6"
+        "idx"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "liadm\\.com\\/a-01ao\\.min\\.js",
-            "cookies": 0,
+            "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [
                 "b-code"
             ],
             "apis": {
                 "Date.prototype.getTime": 2,
-                "window.localStorage": 2
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -39,7 +40,20 @@
                 "02a0000f57e9a1454a87cd2d3fad6998f096f7b2a8b9aea0660585b0600489ea"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_li_dcdm_c": {
+                    "ttl": null,
+                    "length": 16,
+                    "prevalence": 0.0002011667672500503,
+                    "uniqueness": 1
+                },
+                "_lc2_fpi": {
+                    "ttl": 63072004,
+                    "length": 40,
+                    "prevalence": 0.0002011667672500503,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bestlifeonline.com",
@@ -48,19 +62,19 @@
         },
         {
             "rule": "liadm\\.com\\/sync-container\\.js",
-            "cookies": 0.0012,
+            "cookies": 0.00101,
             "fingerprinting": 1,
             "subdomains": [
                 "b-code"
             ],
             "apis": {
-                "window.localStorage": 14,
-                "Document.cookie setter": 12,
-                "Document.cookie getter": 12,
-                "Date.prototype.getTime": 14
+                "window.localStorage": 11,
+                "Document.cookie setter": 10,
+                "Document.cookie getter": 10,
+                "Date.prototype.getTime": 10
             },
-            "sites": 16,
-            "prevalence": 0.00161,
+            "sites": 11,
+            "prevalence": 0.00111,
             "cnames": [],
             "responseHashes": [
                 "58a07739b05fec4d319e4d5c6b1fa4ac79e2a625e08ab3f303929b77fde5bdf4"
@@ -69,41 +83,36 @@
             "firstPartyCookies": {
                 "_liChk": {
                     "ttl": 17,
-                    "length": 19,
-                    "prevalence": 0.0012049402550456873,
+                    "length": 18,
+                    "prevalence": 0.0010058338362502514,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bestlifeonline.com",
-                "blackamericaweb.com",
-                "ew.com",
                 "people.com",
                 "www.akc.org",
                 "www.allrecipes.com",
-                "www.astrology.com",
                 "www.eatthis.com",
                 "www.groupon.com",
                 "www.health.com",
                 "www.horoscope.com",
                 "www.livestrong.com",
-                "www.miamiherald.com",
                 "www.selection.ca",
-                "www.shape.com",
                 "www.tasteofhome.com"
             ]
         },
         {
             "rule": "liadm\\.com\\/j",
-            "cookies": 0.00211,
+            "cookies": 0.00161,
             "fingerprinting": 0,
             "subdomains": [
                 "rp"
             ],
             "apis": {},
-            "sites": 22,
-            "prevalence": 0.00221,
+            "sites": 16,
+            "prevalence": 0.00161,
             "cnames": [],
             "responseHashes": [
                 "2a27f1713c6971fac301dec38931a4df20032a8d63a819872abda8eed777b671",
@@ -112,46 +121,149 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "muuid_origin": 0.00010041168792047395,
-                "_lc2_fpi": 0.0012049402550456873,
-                "globalTI_SID": 0.0003012350637614218,
-                "_pnxd": 0.0002008233758409479,
-                "_li_dcdm_c": 0.0009037051912842655,
-                "IR_gbd": 0.00010041168792047395
+                "_lc2_fpi": 0.001408167370750352,
+                "muuid_origin": 0.0002011667672500503,
+                "_li_dcdm_c": 0.0012070006035003018,
+                "globalTI_SID": 0.0004023335345001006,
+                "_pnxd": 0.0002011667672500503,
+                "IR_gbd": 0.00010058338362502515
             },
             "exampleSites": [
-                "homeguides.sfgate.com",
-                "people.com",
-                "www.allrecipes.com",
-                "www.livestrong.com",
-                "www.scribd.com",
-                "www.tasteofhome.com",
-                "www.urbandictionary.com",
-                "www.horoscope.com",
-                "www.shape.com",
                 "bestlifeonline.com",
-                "www.health.com",
-                "www.selection.ca",
-                "www.miamiherald.com",
-                "www.groupon.com",
-                "blackamericaweb.com",
-                "www.rd.com",
                 "fr.scribd.com",
-                "www.astrology.com",
+                "people.com",
                 "www.akc.org",
-                "ew.com"
+                "www.allrecipes.com",
+                "www.eatthis.com",
+                "www.groupon.com",
+                "www.health.com",
+                "www.horoscope.com",
+                "www.livestrong.com",
+                "www.rd.com",
+                "www.scribd.com",
+                "www.selection.ca",
+                "www.sweetwater.com",
+                "www.tasteofhome.com",
+                "www.urbandictionary.com"
+            ]
+        },
+        {
+            "rule": "liadm\\.com\\/s\\/c\\/a-01ao",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "2aab8125f841fb6f3dc0364d818187721b57ae1097b64b3c742d51ccdd430ccd"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_lc2_fpi": 0.0002011667672500503
+            },
+            "exampleSites": [
+                "bestlifeonline.com",
+                "www.eatthis.com"
+            ]
+        },
+        {
+            "rule": "liadm\\.com\\/s\\/52176",
+            "cookies": 0.000905,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i"
+            ],
+            "apis": {},
+            "sites": 9,
+            "prevalence": 0.000905,
+            "cnames": [],
+            "responseHashes": [
+                "caa849b179befa2645a8e2c474d2e82a76777a3305315ece911013e8ee9a916c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bestlifeonline.com",
+                "people.com",
+                "www.akc.org",
+                "www.eatthis.com",
+                "www.groupon.com",
+                "www.health.com",
+                "www.horoscope.com",
+                "www.livestrong.com",
+                "www.tasteofhome.com"
+            ]
+        },
+        {
+            "rule": "liadm\\.com\\/s\\/35759",
+            "cookies": 0.00101,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i"
+            ],
+            "apis": {},
+            "sites": 10,
+            "prevalence": 0.00101,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bestlifeonline.com",
+                "people.com",
+                "www.akc.org",
+                "www.eatthis.com",
+                "www.groupon.com",
+                "www.health.com",
+                "www.horoscope.com",
+                "www.livestrong.com",
+                "www.selection.ca",
+                "www.tasteofhome.com"
+            ]
+        },
+        {
+            "rule": "liadm\\.com\\/s\\/52164",
+            "cookies": 0.000604,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000604,
+            "cnames": [],
+            "responseHashes": [
+                "caa849b179befa2645a8e2c474d2e82a76777a3305315ece911013e8ee9a916c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bestlifeonline.com",
+                "www.eatthis.com",
+                "www.groupon.com",
+                "www.health.com",
+                "www.horoscope.com",
+                "www.livestrong.com"
             ]
         },
         {
             "rule": "liadm\\.com\\/idex\\/ie\\/any",
-            "cookies": 0.00261,
+            "cookies": 0.00211,
             "fingerprinting": 0,
             "subdomains": [
                 "idx"
             ],
             "apis": {},
-            "sites": 26,
-            "prevalence": 0.00261,
+            "sites": 21,
+            "prevalence": 0.00211,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -159,11 +271,11 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_lc2_fpi": 0.0002008233758409479
+                "_lc2_fpi": 0.00010058338362502515
             },
             "exampleSites": [
-                "cnet.com",
-                "globalnews.ca",
+                "gamespot.com",
+                "download.cnet.com",
                 "gizmodo.com",
                 "knowyourmeme.com",
                 "lifehacker.com",
@@ -172,106 +284,16 @@
                 "www.cnet.com",
                 "www.gamespot.com",
                 "www.target.com",
-                "www.avclub.com",
-                "www.astrology.com",
-                "www.sheknows.com",
-                "www.zdnet.com",
-                "stylecaster.com",
-                "www.tvguide.com",
+                "jezebel.com",
                 "www.indiewire.com",
-                "www.justjared.com",
-                "www.rollingstone.com",
-                "www.cracked.com"
-            ]
-        },
-        {
-            "rule": "liadm\\.com\\/s\\/52176",
-            "cookies": 0.00131,
-            "fingerprinting": 0,
-            "subdomains": [
-                "i"
-            ],
-            "apis": {},
-            "sites": 14,
-            "prevalence": 0.00141,
-            "cnames": [],
-            "responseHashes": [
-                "caa849b179befa2645a8e2c474d2e82a76777a3305315ece911013e8ee9a916c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ew.com",
-                "people.com",
-                "www.akc.org",
-                "www.allrecipes.com",
-                "www.astrology.com",
-                "www.eatthis.com",
-                "www.groupon.com",
-                "www.health.com",
+                "www.tvguide.com",
+                "www.techrepublic.com",
+                "www.billboard.com",
+                "www.ebaumsworld.com",
                 "www.horoscope.com",
-                "www.livestrong.com",
-                "www.miamiherald.com",
-                "www.selection.ca",
-                "www.shape.com",
-                "www.tasteofhome.com"
-            ]
-        },
-        {
-            "rule": "liadm\\.com\\/s\\/35759",
-            "cookies": 0.0012,
-            "fingerprinting": 0,
-            "subdomains": [
-                "i"
-            ],
-            "apis": {},
-            "sites": 14,
-            "prevalence": 0.00141,
-            "cnames": [],
-            "responseHashes": [
-                "caa849b179befa2645a8e2c474d2e82a76777a3305315ece911013e8ee9a916c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ew.com",
-                "people.com",
-                "www.akc.org",
-                "www.allrecipes.com",
-                "www.astrology.com",
-                "www.eatthis.com",
-                "www.groupon.com",
-                "www.health.com",
-                "www.horoscope.com",
-                "www.livestrong.com",
-                "www.miamiherald.com",
-                "www.selection.ca",
-                "www.shape.com",
-                "www.tasteofhome.com"
-            ]
-        },
-        {
-            "rule": "liadm\\.com\\/s\\/59742",
-            "cookies": 0.000402,
-            "fingerprinting": 0,
-            "subdomains": [
-                "i"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mangas-fr.com",
-                "forums.mangas-fr.com",
-                "www.bide-et-musique.com",
-                "www.mesvod.com"
+                "www.zdnet.com",
+                "deadline.com",
+                "www.sheknows.com"
             ]
         },
         {
@@ -298,13 +320,13 @@
                 "_li_dcdm_c": {
                     "ttl": null,
                     "length": 11,
-                    "prevalence": 0.0002008233758409479,
+                    "prevalence": 0.0002011667672500503,
                     "uniqueness": 0.5
                 },
                 "_lc2_fpi": {
                     "ttl": 63072004,
                     "length": 40,
-                    "prevalence": 0.0002008233758409479,
+                    "prevalence": 0.0002011667672500503,
                     "uniqueness": 1
                 }
             },
@@ -315,56 +337,7 @@
             ]
         },
         {
-            "rule": "liadm\\.com\\/s\\/65864",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "i"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sagepub.com",
-                "journals.sagepub.com"
-            ]
-        },
-        {
-            "rule": "liadm\\.com\\/s\\/52164",
-            "cookies": 0.000904,
-            "fingerprinting": 0,
-            "subdomains": [
-                "i"
-            ],
-            "apis": {},
-            "sites": 9,
-            "prevalence": 0.000904,
-            "cnames": [],
-            "responseHashes": [
-                "caa849b179befa2645a8e2c474d2e82a76777a3305315ece911013e8ee9a916c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "people.com",
-                "www.akc.org",
-                "www.astrology.com",
-                "www.eatthis.com",
-                "www.horoscope.com",
-                "www.italy24news.com",
-                "www.livestrong.com",
-                "www.miamiherald.com",
-                "www.shape.com"
-            ]
-        },
-        {
-            "rule": "liadm\\.com\\/s\\/e\\/a-00gy\\/0\\/abe0a7d2afa74cc2a2bf4d4cacbaf831",
+            "rule": "liadm\\.com\\/s\\/e\\/a-00gy\\/0\\/1d2c8601d70f4943849aa6f509cd6879",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -383,50 +356,6 @@
             "exampleSites": [
                 "akc.org",
                 "www.akc.org"
-            ]
-        },
-        {
-            "rule": "liadm\\.com\\/s\\/e\\/a-01b5\\/0\\/1021dd667015431ba9463faf24140a86",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "i"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "caa849b179befa2645a8e2c474d2e82a76777a3305315ece911013e8ee9a916c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "allrecipes.com",
-                "www.allrecipes.com"
-            ]
-        },
-        {
-            "rule": "liadm\\.com\\/s\\/e\\/a-00ay\\/0\\/217a526d20494da2be873d806e8d0ebe",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "i"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "caa849b179befa2645a8e2c474d2e82a76777a3305315ece911013e8ee9a916c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "astrology.com",
-                "www.astrology.com"
             ]
         },
         {
@@ -450,7 +379,7 @@
             ]
         },
         {
-            "rule": "liadm\\.com\\/s\\/e\\/a-01ao\\/0\\/6bb05c321dd9401b833e57666e07f7c3",
+            "rule": "liadm\\.com\\/s\\/e\\/a-01ao\\/0\\/0f9feaac101c4bf6b3c73e671855c59a",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -472,7 +401,7 @@
             ]
         },
         {
-            "rule": "liadm\\.com\\/s\\/e\\/a-01wh\\/0\\/029e6cd509b348e4877f0b2336dc4d34",
+            "rule": "liadm\\.com\\/s\\/e\\/a-01wh\\/0\\/9d3e5467a85b484e8913f3981adf27d3",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -494,7 +423,7 @@
             ]
         },
         {
-            "rule": "liadm\\.com\\/s\\/e\\/a-01bk\\/0\\/869fa27af73d4d5ea52b0da7f2bf53b4",
+            "rule": "liadm\\.com\\/s\\/e\\/a-01bk\\/0\\/2a670b87205d40dc8ebcf7acd85ec8af",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -504,7 +433,9 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "caa849b179befa2645a8e2c474d2e82a76777a3305315ece911013e8ee9a916c"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -514,7 +445,7 @@
             ]
         },
         {
-            "rule": "liadm\\.com\\/s\\/e\\/a-00b1\\/0\\/6be43ca2f0724b83a825bc9de44975fa",
+            "rule": "liadm\\.com\\/s\\/e\\/a-00b1\\/0\\/45f220a5b33445429b709cb3f7d78399",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -536,7 +467,7 @@
             ]
         },
         {
-            "rule": "liadm\\.com\\/s\\/32441",
+            "rule": "liadm\\.com\\/s\\/63537",
             "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
@@ -551,33 +482,12 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "israelnationalnews.com",
-                "www.israelnationalnews.com"
+                "latimes.com",
+                "www.latimes.com"
             ]
         },
         {
-            "rule": "liadm\\.com\\/s\\/64716",
-            "cookies": 0.0001,
-            "fingerprinting": 0,
-            "subdomains": [
-                "i",
-                "i6"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "israelnationalnews.com",
-                "www.israelnationalnews.com"
-            ]
-        },
-        {
-            "rule": "liadm\\.com\\/s\\/e\\/a-01ms\\/0\\/c2e6dede68694a6c92ed5a557dd63679",
+            "rule": "liadm\\.com\\/s\\/e\\/a-01ms\\/0\\/6a7c2bd6214a40c7a4f71ff7a19c8764",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -599,29 +509,7 @@
             ]
         },
         {
-            "rule": "liadm\\.com\\/s\\/e\\/a-01e9\\/0\\/d9265663b8a2451cbc8d13cd9d5084a4",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "i"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "caa849b179befa2645a8e2c474d2e82a76777a3305315ece911013e8ee9a916c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "miamiherald.com",
-                "www.miamiherald.com"
-            ]
-        },
-        {
-            "rule": "liadm\\.com\\/s\\/e\\/a-04gv\\/0\\/a6994ed1c6ac49cd93396c7c8b7bf373",
+            "rule": "liadm\\.com\\/s\\/e\\/a-04gp\\/0\\/cf7d7416e3d843229a3f7e425a70453c",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -632,48 +520,6 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "selection.ca",
-                "www.selection.ca"
-            ]
-        },
-        {
-            "rule": "liadm\\.com\\/s\\/e\\/a-00yl\\/0\\/620bd7b4d93547a69263550072ba527e",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "i"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "shape.com",
-                "www.shape.com"
-            ]
-        },
-        {
-            "rule": "liadm\\.com\\/s\\/e\\/a-04gp\\/0\\/e6317f856b9b44d3802aeff77df8c950",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "i"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "caa849b179befa2645a8e2c474d2e82a76777a3305315ece911013e8ee9a916c"
-            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -695,16 +541,17 @@
         "cpu": 0,
         "cache": 3
     },
-    "cookies": 0.00512,
+    "cookies": 0.00382,
     "types": {
-        "Script": 20,
-        "XHR": 48,
-        "Image": 73
+        "Script": 15,
+        "XHR": 37,
+        "Document": 2,
+        "Image": 43
     },
     "nameservers": [
+        "ns5.iponweb.net",
         "ns6.iponweb.net",
         "ns7.iponweb.net",
-        "ns8.iponweb.net",
-        "ns5.iponweb.net"
+        "ns8.iponweb.net"
     ]
 }

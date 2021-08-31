@@ -7,52 +7,60 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000411,
-    "sites": 4,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
-        "churchofjesuschrist.customdomains",
-        "ranzcp.customdomains"
+        "login"
     ],
-    "cnames": [
-        {
-            "original": "id.churchofjesuschrist.org",
-            "resolved": "churchofjesuschrist.customdomains.okta.com"
-        },
-        {
-            "original": "login.ranzcp.org",
-            "resolved": "ranzcp.customdomains.okta.com"
-        }
-    ],
+    "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "okta\\.com\\/oauth2\\/default\\/v1\\/authorize",
-            "cookies": 0.000206,
+            "rule": "okta\\.com\\/discovery\\/iframe\\.html",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "churchofjesuschrist.customdomains",
-                "ranzcp.customdomains"
+                "login"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [
-                {
-                    "original": "id.churchofjesuschrist.org",
-                    "resolved": "churchofjesuschrist.customdomains.okta.com"
-                },
-                {
-                    "original": "login.ranzcp.org",
-                    "resolved": "ranzcp.customdomains.okta.com"
-                }
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "893efca8616a32e2315c319fb7e78636634ff77379f7e6220c21ede088ee9f0a"
             ],
-            "responseHashes": [],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "churchofjesuschrist.org",
-                "www.ranzcp.org"
+                "sydney.edu.au",
+                "canvas.sydney.edu.au",
+                "my.unimelb.edu.au"
+            ]
+        },
+        {
+            "rule": "okta\\.com\\/lib\\/discoveryIframe-d662b785a6524906f1db\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "login"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "32fa94f1d4deaef904f6e3c2d6b74db6e813b2b323c386029ed72315007f24fe"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sydney.edu.au",
+                "my.unimelb.edu.au"
             ]
         }
     ],
@@ -63,9 +71,19 @@
         "cpu": 0,
         "cache": 1
     },
-    "cookies": 0.000309,
+    "cookies": 0.0001,
     "types": {
-        "Document": 2
+        "Document": 3,
+        "Script": 2
     },
-    "nameservers": []
+    "nameservers": [
+        "ns-1563.awsdns-03.co.uk",
+        "ns-285.awsdns-35.com",
+        "ns-684.awsdns-21.net",
+        "edns5.ultradns.biz",
+        "edns5.ultradns.com",
+        "edns5.ultradns.net",
+        "edns5.ultradns.org",
+        "ns-1459.awsdns-54.org"
+    ]
 }

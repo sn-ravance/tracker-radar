@@ -7,14 +7,64 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000203,
+    "sites": 2,
     "subdomains": [
-        "t"
+        "s",
+        "t",
+        "vis"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "vi-serve\\.com\\/tagLoader\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000203,
+            "cnames": [],
+            "responseHashes": [
+                "e2050ed4a8ab3f74cc1a26ef380fdacc9004ec320d33bb088fccdbeef36cb657"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "liputan6.com",
+                "www.anime-planet.com"
+            ]
+        },
+        {
+            "rule": "vi-serve\\.com\\/source\\.m\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.doNotTrack": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000304,
+            "cnames": [],
+            "responseHashes": [
+                "938d6fe2baf0ac428992de05aeee72542c63a6fd728b5e2f6de0b403e49ec7af"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "liputan6.com",
+                "m.liputan6.com",
+                "www.anime-planet.com"
+            ]
+        },
         {
             "rule": "vi-serve\\.com\\/",
             "cookies": 0,
@@ -23,8 +73,8 @@
                 "t"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000304,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -33,7 +83,30 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "anime-planet.com",
+                "liputan6.com",
+                "m.liputan6.com",
+                "www.anime-planet.com"
+            ]
+        },
+        {
+            "rule": "vi-serve\\.com\\/playlist\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vis"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000203,
+            "cnames": [],
+            "responseHashes": [
+                "f4de573609eb564f803f502948b26e89c83cdd2c02a66c4fafc8c5627a04b44c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "liputan6.com",
                 "www.anime-planet.com"
             ]
         }
@@ -47,7 +120,9 @@
     },
     "cookies": 0,
     "types": {
-        "Image": 2
+        "Script": 5,
+        "Image": 3,
+        "XHR": 2
     },
     "nameservers": [
         "ns-976.awsdns-58.net",

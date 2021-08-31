@@ -10,31 +10,59 @@
     "prevalence": 0.0000278,
     "sites": 4,
     "subdomains": [
-        "smetrics"
+        "smetrics",
+        "www"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "enterprise\\.com\\/id",
-            "cookies": 0.0000139,
+            "cookies": 0.0000208,
             "fingerprinting": 0,
             "subdomains": [
                 "smetrics"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000139,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
-                "b3cc203cfdacf394ef153829a2d7f0bbadaa432cdc5e9917e58ca7e32dfc5199"
+                "948ef349749a94fc18dd3952d750dba0370c731fda1ca0e7c060f45c3c13a898",
+                "0abe6df213f66f55660475128a10248c9918199f9fedbffaf8263fba859da5d8"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nationalcarrental.com",
+                "enterprise.de",
+                "www.enterprise.de",
                 "www.enterprisetrucks.com"
+            ]
+        },
+        {
+            "rule": "enterprise\\.com\\/enterprise_mpulse\\.html",
+            "cookies": 0.0000139,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Event.prototype.timeStamp": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "514a3fe85be14b9a6998efbaa244a0814e47dfbf9b1d9dc2a0d7a2fe62f8e653"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "enterprise.de",
+                "www.enterprise.de"
             ]
         }
     ],
@@ -42,12 +70,13 @@
     "performance": {},
     "cookies": 0.0000278,
     "types": {
-        "XHR": 2
+        "XHR": 3,
+        "Document": 2
     },
     "nameservers": [
+        "ns3.enterprise.com",
         "ns4.enterprise.com",
-        "ns2.enterprise.com",
         "ns1.enterprise.com",
-        "ns3.enterprise.com"
+        "ns2.enterprise.com"
     ]
 }

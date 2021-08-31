@@ -7,12 +7,14 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000503,
-    "sites": 5,
+    "prevalence": 0.000602,
+    "sites": 6,
     "subdomains": [
         "sputnik.fr.ruvr",
         "i-ria",
-        "snanews"
+        "snanews",
+        "perfops21cdn",
+        "perfops21cdn2"
     ],
     "cnames": [
         {
@@ -167,38 +169,6 @@
             ]
         },
         {
-            "rule": "cdnvideo\\.ru\\/min\\/js\\/libs\\/the-in\\.carousel\\.v2\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "sputnik.fr.ruvr",
-                "i-ria"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "cdnfr1.img.sputniknews.com",
-                    "resolved": "sputnik.fr.ruvr.cdnvideo.ru"
-                },
-                {
-                    "original": "cdn21.img.ria.ru",
-                    "resolved": "i-ria.cdnvideo.ru"
-                }
-            ],
-            "responseHashes": [
-                "7fc10cdc5e4d3f10e5043f94b63dbb935204b7ffb4729aebb528f6b31e6574c8"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sputniknews.com",
-                "ria.ru"
-            ]
-        },
-        {
             "rule": "cdnvideo\\.ru\\/min\\/js\\/libs\\/sockjs\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -252,7 +222,7 @@
                 }
             ],
             "responseHashes": [
-                "2df214a7d2b05e3d577de705c4511ff1ef96fd46133dd369b9ec308f0d94b715"
+                "0b715bcea27d033268e94d3ed9609872e5692f75d4a0a118e59d501334149bb9"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -357,6 +327,29 @@
                 "ria.ru",
                 "snanews.de"
             ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/500b-bench\\.jpg",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "perfops21cdn",
+                "perfops21cdn2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "d50e125f67e5e2ce4ce8a758e45e14f95ab72769869f6e947fc21a83a605fe6d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opensubtitles.org",
+                "www.opensubtitles.org"
+            ]
         }
     ],
     "categories": [],
@@ -366,12 +359,18 @@
         "cpu": 0,
         "cache": 3
     },
-    "cookies": 0.000101,
+    "cookies": 0.000301,
     "types": {
-        "Script": 12,
+        "Script": 10,
         "Stylesheet": 2,
         "Image": 2,
-        "XHR": 4
+        "XHR": 6
     },
-    "nameservers": []
+    "nameservers": [
+        "ns009.cdnvideo.ru",
+        "ns060.cdnvideo.ru",
+        "ns006.cdnvideo.ru",
+        "ns007.cdnvideo.ru",
+        "ns008.cdnvideo.ru"
+    ]
 }

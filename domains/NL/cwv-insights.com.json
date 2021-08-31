@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.000302,
-    "sites": 3,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
         "rum"
     ],
@@ -13,24 +13,33 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "cwv-insights\\.com\\/",
+            "rule": "cwv-insights\\.com\\/rum\\.v1\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
                 "rum"
             ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "apis": {
+                "Navigator.prototype.connection": 2,
+                "window.localStorage": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.devicePixelRatio": 2,
+                "Navigator.prototype.deviceMemory": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "188c247dc949822dfba25b89a0d09ab0d57d2dd40197c5382b7191056d8eeffe"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cameranu.nl",
-                "www.gazelle.nl",
-                "www.smartphonehoesjes.nl"
+                "www.micazu.nl"
             ]
         },
         {
@@ -41,19 +50,17 @@
                 "rum"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
-            "responseHashes": [
-                "974fce118f736180d82e3ada9923a77cf01bee852d849444262ffd5d961e92ef",
-                "8593ec0f97f53e1fd387193bb59b816367a518598f0ed69edec36bd1a23da877"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cameranu.nl",
                 "www.gazelle.nl",
+                "www.micazu.nl",
                 "www.smartphonehoesjes.nl"
             ]
         },
@@ -69,6 +76,32 @@
             "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
+                "00e850e419a334a19c4097d03b18fa219cc76b26ed4b0f62fa55c07d1d498885",
+                "0a9c2bd4f7bfd55e8cdfa2f0c5358093311ab2b7697137034189b113ac895519",
+                "e67b6124000264b929f803e9d9f304ff729b38669dcc6f1d550015a069ffd4fd"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cameranu.nl",
+                "www.gazelle.nl",
+                "www.micazu.nl",
+                "www.smartphonehoesjes.nl"
+            ]
+        },
+        {
+            "rule": "cwv-insights\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rum"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000502,
+            "cnames": [],
+            "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Other",
@@ -78,6 +111,7 @@
                 "cameranu.nl",
                 "www.cameranu.nl",
                 "www.gazelle.nl",
+                "www.micazu.nl",
                 "www.smartphonehoesjes.nl"
             ]
         },
@@ -116,14 +150,14 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Preflight": 3,
-        "Fetch": 3,
-        "Other": 4,
-        "Script": 2
+        "Script": 4,
+        "Preflight": 4,
+        "Fetch": 4,
+        "Other": 5
     },
     "nameservers": [
-        "ns11.net",
+        "ns0.nl",
         "ns5.be",
-        "ns0.nl"
+        "ns11.net"
     ]
 }

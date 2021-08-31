@@ -4,16 +4,57 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000902,
-    "sites": 13,
+    "prevalence": 0.0000972,
+    "sites": 14,
     "subdomains": [
-        "cis",
         "sdk",
+        "cis",
         "collector"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "mpianalytics\\.com\\/pulse\\.min\\.js",
+            "cookies": 0.0000347,
+            "fingerprinting": 2,
+            "subdomains": [
+                "sdk"
+            ],
+            "apis": {
+                "Document.cookie getter": 6,
+                "Document.cookie setter": 5,
+                "Navigator.prototype.language": 5,
+                "Screen.prototype.width": 5,
+                "Screen.prototype.height": 5,
+                "Navigator.prototype.userAgent": 5,
+                "window.localStorage": 5
+            },
+            "sites": 6,
+            "prevalence": 0.0000417,
+            "cnames": [],
+            "responseHashes": [
+                "7e5194ee177e81e2dcbdf39f967cc2ec5f992506b7efdd00352aacd1bea474fb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pulse2data": {
+                    "ttl": 63072003,
+                    "length": 529,
+                    "prevalence": 0.000034715713026029843,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "willhaben.at",
+                "mobile.willhaben.at",
+                "www.hasznaltauto.hu",
+                "www.jofogas.hu",
+                "www.segundamano.mx",
+                "www.yapo.cl"
+            ]
+        },
         {
             "rule": "mpianalytics\\.com\\/api\\/v1\\/identify",
             "cookies": 0,
@@ -22,16 +63,17 @@
                 "cis"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000555,
+            "sites": 9,
+            "prevalence": 0.0000625,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "avito.ma",
-                "www.fincaraiz.com.co",
+                "willhaben.at",
+                "mobile.willhaben.at",
+                "www.avito.ma",
                 "www.hasznaltauto.hu",
                 "www.jofogas.hu",
                 "www.kufar.by",
@@ -52,22 +94,21 @@
             "prevalence": 0.0000625,
             "cnames": [],
             "responseHashes": [
-                "b35bb9ef909853b2ff46d6409c0355becb5cb2e0efa24a5b96c533d849fbc37c",
-                "a54f6ea70b2a1a85809c5cf0a9e530fbdcca2153cb062684b106f772fa847039",
-                "3c7b29358fa87bf2bc94f0bf20eff93badac1685d001e3cb20c16f23f2b2b88b",
-                "cd686e6a2d6ce5c0bdea8b9d66dfcf02e4e17c0ff8383bc469558e50840ed88e",
-                "c622fcd424c177cbf850ffab4c65865036159028b7c050f3f668c633d2551647",
-                "29471d47f364aa77c24a71002bce5309fceb5bc2f9e43826d9ab94ed94026c2e",
-                "b62937c179248dee8cf72a216657994b1a30465efc633e791e1138f315d4cbb7",
-                "3ae6fdb72795160d121996db2b5a4404d8932de6caea12cbaf1c46100c8fe4fc"
+                "0876d8b49bea1dee784e348d6307d1aa0271e1ff527a0c1abad6a5c552cd3a4d",
+                "34626c246c8052b1ec4968ff3a45c7bf65f2942d6dbe4a12580ff5716b284673",
+                "42bd73e5ea4f0294efe69973be204eed7ac6002086f9ded96f2b202e1efbc782",
+                "619467371e630216e6823ebe5dcc27d5d00b4ad4583f59cb03fc54f7d4349350",
+                "9b033f5c1720c3c0fade186cd2bac6290229c7e1b60ec3e187be3da8fdcfdb2b",
+                "af9b70b47baf1755f9ed47c994d99383da93eeb1dc90ad727c0d56fbbac9f39c",
+                "9bdf9ddb8a35d088323a3460d06064469800750b2c5ef32cdb68124c3063b72a"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "avito.ma",
+                "willhaben.at",
+                "mobile.willhaben.at",
                 "www.avito.ma",
-                "www.fincaraiz.com.co",
                 "www.hasznaltauto.hu",
                 "www.jofogas.hu",
                 "www.kufar.by",
@@ -77,15 +118,37 @@
             ]
         },
         {
+            "rule": "mpianalytics\\.com\\/api\\/v1\\/track\\/sdrn:schibsted:client:willhabenat",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collector"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "90687150c18ec51580a40877532d01b82c479d207966f5b51972f0efee916f18"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "willhaben.at",
+                "mobile.willhaben.at"
+            ]
+        },
+        {
             "rule": "mpianalytics\\.com\\/api\\/v1\\/sync",
-            "cookies": 0.0000347,
+            "cookies": 0.0000278,
             "fingerprinting": 0,
             "subdomains": [
                 "cis"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000347,
+            "sites": 4,
+            "prevalence": 0.0000278,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -96,48 +159,7 @@
             "exampleSites": [
                 "avito.ma",
                 "www.kufar.by",
-                "www.segundamano.mx",
                 "www.subito.it",
-                "www.yapo.cl"
-            ]
-        },
-        {
-            "rule": "mpianalytics\\.com\\/pulse\\.min\\.js",
-            "cookies": 0.0000347,
-            "fingerprinting": 1,
-            "subdomains": [
-                "sdk"
-            ],
-            "apis": {
-                "Document.cookie getter": 5,
-                "Document.cookie setter": 5,
-                "Navigator.prototype.language": 5,
-                "Screen.prototype.width": 5,
-                "Screen.prototype.height": 5,
-                "Navigator.prototype.userAgent": 5,
-                "window.localStorage": 5
-            },
-            "sites": 5,
-            "prevalence": 0.0000347,
-            "cnames": [],
-            "responseHashes": [
-                "7e5194ee177e81e2dcbdf39f967cc2ec5f992506b7efdd00352aacd1bea474fb"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "_pulse2data": {
-                    "ttl": 63072003,
-                    "length": 539,
-                    "prevalence": 0.00003470776065528252,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fincaraiz.com.co",
-                "www.hasznaltauto.hu",
-                "www.jofogas.hu",
-                "www.segundamano.mx",
                 "www.yapo.cl"
             ]
         },
@@ -208,28 +230,6 @@
             ]
         },
         {
-            "rule": "mpianalytics\\.com\\/api\\/v1\\/track\\/sdrn:schibsted:client:segundamanomx",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "collector"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000139,
-            "cnames": [],
-            "responseHashes": [
-                "90687150c18ec51580a40877532d01b82c479d207966f5b51972f0efee916f18"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "segundamano.mx",
-                "www.segundamano.mx"
-            ]
-        },
-        {
             "rule": "mpianalytics\\.com\\/api\\/v1\\/track\\/sdrn:schibsted:client:subito",
             "cookies": 0,
             "fingerprinting": 0,
@@ -281,12 +281,12 @@
         "cpu": 0,
         "cache": 3
     },
-    "cookies": 0.0000902,
+    "cookies": 0.0000903,
     "types": {
-        "Preflight": 8,
+        "Script": 6,
+        "Preflight": 9,
         "Fetch": 21,
-        "Image": 5,
-        "Script": 5
+        "Image": 4
     },
     "nameservers": [
         "ns-1257.awsdns-29.org",

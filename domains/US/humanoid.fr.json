@@ -18,12 +18,13 @@
     "resources": [
         {
             "rule": "humanoid\\.fr\\/matomo\\.js",
-            "cookies": 0,
+            "cookies": 0.0000139,
             "fingerprinting": 2,
             "subdomains": [
                 "stats"
             ],
             "apis": {
+                "Document.cookie getter": 2,
                 "window.name": 2,
                 "Date.prototype.getTime": 2,
                 "Navigator.prototype.cookieEnabled": 2,
@@ -32,7 +33,8 @@
                 "Navigator.prototype.javaEnabled": 2,
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2,
-                "Navigator.prototype.platform": 2
+                "Navigator.prototype.platform": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000139,
@@ -41,29 +43,20 @@
                 "06587cdfccdef20227d296641a33b1d477131b6873024164bcb9a31aa6343018"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "frandroid.com",
-                "www.frandroid.com"
-            ]
-        },
-        {
-            "rule": "humanoid\\.fr\\/matomo\\.php",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "stats"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000139,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_pk_id.1.8df5": {
+                    "ttl": 33955202,
+                    "length": 28,
+                    "prevalence": 0.000013886285210411937,
+                    "uniqueness": 1
+                },
+                "_pk_ses.1.8df5": {
+                    "ttl": 1802,
+                    "length": 1,
+                    "prevalence": 0.000013886285210411937,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "frandroid.com",
@@ -92,18 +85,40 @@
                 "www.frandroid.com",
                 "www.numerama.com"
             ]
+        },
+        {
+            "rule": "humanoid\\.fr\\/matomo\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "stats"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000139,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "frandroid.com",
+                "www.frandroid.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000208,
+    "cookies": 0.0000278,
     "types": {
         "Script": 2,
-        "Other": 2,
-        "Image": 3
+        "Image": 3,
+        "Other": 2
     },
     "nameservers": [
-        "ns19.ovh.net",
-        "dns19.ovh.net"
+        "dns19.ovh.net",
+        "ns19.ovh.net"
     ]
 }

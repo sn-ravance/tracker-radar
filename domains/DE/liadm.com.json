@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.00422,
-    "sites": 42,
+    "prevalence": 0.00462,
+    "sites": 46,
     "subdomains": [
         "b-code",
         "rp",
@@ -22,14 +22,16 @@
     "resources": [
         {
             "rule": "liadm\\.com\\/a-01ao\\.min\\.js",
-            "cookies": 0,
+            "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [
                 "b-code"
             ],
             "apis": {
                 "Date.prototype.getTime": 2,
-                "window.localStorage": 2
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -38,7 +40,20 @@
                 "02a0000f57e9a1454a87cd2d3fad6998f096f7b2a8b9aea0660585b0600489ea"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_li_dcdm_c": {
+                    "ttl": null,
+                    "length": 16,
+                    "prevalence": 0.00020096463022508038,
+                    "uniqueness": 1
+                },
+                "_lc2_fpi": {
+                    "ttl": 63072004,
+                    "length": 40,
+                    "prevalence": 0.00020096463022508038,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bestlifeonline.com",
@@ -47,15 +62,15 @@
         },
         {
             "rule": "liadm\\.com\\/sync-container\\.js",
-            "cookies": 0.00121,
+            "cookies": 0.00131,
             "fingerprinting": 1,
             "subdomains": [
                 "b-code"
             ],
             "apis": {
                 "window.localStorage": 13,
-                "Document.cookie setter": 12,
-                "Document.cookie getter": 12,
+                "Document.cookie setter": 13,
+                "Document.cookie getter": 13,
                 "Date.prototype.getTime": 12
             },
             "sites": 13,
@@ -67,23 +82,23 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_liChk": {
-                    "ttl": 17,
+                    "ttl": 16,
                     "length": 18,
-                    "prevalence": 0.0012053033346725592,
+                    "prevalence": 0.0013062700964630225,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bestlifeonline.com",
-                "blackamericaweb.com",
                 "hbr.org",
                 "people.com",
-                "torch.en.softonic.com",
                 "www.akc.org",
                 "www.allrecipes.com",
+                "www.astrology.com",
+                "www.dailywire.com",
                 "www.eatthis.com",
-                "www.health.com",
+                "www.groupon.com",
                 "www.horoscope.com",
                 "www.livestrong.com",
                 "www.shape.com",
@@ -92,41 +107,46 @@
         },
         {
             "rule": "liadm\\.com\\/j",
-            "cookies": 0.00191,
+            "cookies": 0.00201,
             "fingerprinting": 0,
             "subdomains": [
                 "rp"
             ],
             "apis": {},
-            "sites": 19,
-            "prevalence": 0.00191,
+            "sites": 20,
+            "prevalence": 0.00201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "b3030ae369796681977a187a5b2818e38bf6c6f9db11a39380e207360615b592",
+                "91e4554ab2f85d6e58d4912db4b258d21793581ce05442998a8cebb5835de889",
+                "8e4b336fb98234383d50239e3cc0f0b8279b30ac8c47c0f151f10704eefcbbbe"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "muuid_origin": 0.0001004419445560466,
-                "_lc2_fpi": 0.0012053033346725592,
-                "_li_dcdm_c": 0.0009039775010044194,
-                "s_ppurl": 0.0001004419445560466,
-                "globalTI_SID": 0.0004017677782241864,
-                "_pnxd": 0.0002008838891120932,
-                "IR_gbd": 0.0001004419445560466
+                "_lc2_fpi": 0.001607717041800643,
+                "muuid_origin": 0.00020096463022508038,
+                "_li_dcdm_c": 0.0013062700964630225,
+                "s_ppurl": 0.00010048231511254019,
+                "globalTI_SID": 0.00020096463022508038,
+                "_pnxd": 0.00020096463022508038,
+                "IR_gbd": 0.00010048231511254019
             },
             "exampleSites": [
                 "bestlifeonline.com",
-                "blackamericaweb.com",
                 "de.scribd.com",
                 "hbr.org",
                 "homeguides.sfgate.com",
                 "people.com",
-                "torch.en.softonic.com",
                 "www.akc.org",
                 "www.allrecipes.com",
+                "www.astrology.com",
+                "www.dailywire.com",
                 "www.eatthis.com",
-                "www.health.com",
+                "www.groupon.com",
                 "www.horoscope.com",
                 "www.livestrong.com",
+                "www.newsmax.com",
                 "www.rd.com",
                 "www.scribd.com",
                 "www.shape.com",
@@ -137,7 +157,7 @@
         },
         {
             "rule": "liadm\\.com\\/s\\/c\\/a-01ao",
-            "cookies": 0.0001,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "i"
@@ -147,19 +167,21 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "5454b90d38770881c388cd6501ec02a9de866a00e2f418b08b6acfdfe43266dc"
+                "345ae9b3d29647257007e375d4f43335b30bb9470265a598966abe614fd5a50c"
             ],
             "type": "Document",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "_lc2_fpi": 0.00020096463022508038
+            },
             "exampleSites": [
                 "bestlifeonline.com",
                 "www.eatthis.com"
             ]
         },
         {
-            "rule": "liadm\\.com\\/s\\/35759",
-            "cookies": 0.0011,
+            "rule": "liadm\\.com\\/s\\/52176",
+            "cookies": 0.00111,
             "fingerprinting": 0,
             "subdomains": [
                 "i"
@@ -175,50 +197,47 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "blackamericaweb.com",
+                "bestlifeonline.com",
                 "hbr.org",
                 "people.com",
-                "torch.en.softonic.com",
                 "www.akc.org",
                 "www.allrecipes.com",
+                "www.astrology.com",
+                "www.dailywire.com",
                 "www.eatthis.com",
-                "www.health.com",
+                "www.groupon.com",
                 "www.horoscope.com",
                 "www.livestrong.com",
-                "www.shape.com",
-                "www.tasteofhome.com"
+                "www.shape.com"
             ]
         },
         {
-            "rule": "liadm\\.com\\/s\\/52176",
-            "cookies": 0.0011,
+            "rule": "liadm\\.com\\/s\\/35759",
+            "cookies": 0.000904,
             "fingerprinting": 0,
             "subdomains": [
                 "i"
             ],
             "apis": {},
-            "sites": 12,
-            "prevalence": 0.00121,
+            "sites": 11,
+            "prevalence": 0.00111,
             "cnames": [],
-            "responseHashes": [
-                "caa849b179befa2645a8e2c474d2e82a76777a3305315ece911013e8ee9a916c"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "blackamericaweb.com",
+                "bestlifeonline.com",
                 "hbr.org",
                 "people.com",
-                "torch.en.softonic.com",
                 "www.akc.org",
                 "www.allrecipes.com",
+                "www.astrology.com",
+                "www.dailywire.com",
                 "www.eatthis.com",
-                "www.health.com",
+                "www.groupon.com",
                 "www.horoscope.com",
-                "www.livestrong.com",
-                "www.shape.com",
-                "www.tasteofhome.com"
+                "www.livestrong.com"
             ]
         },
         {
@@ -229,8 +248,8 @@
                 "i"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.000603,
+            "sites": 7,
+            "prevalence": 0.000703,
             "cnames": [],
             "responseHashes": [
                 "caa849b179befa2645a8e2c474d2e82a76777a3305315ece911013e8ee9a916c"
@@ -239,24 +258,25 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "blackamericaweb.com",
+                "bestlifeonline.com",
+                "ddr-rezepte.net",
                 "hbr.org",
-                "www.akc.org",
-                "www.health.com",
-                "www.horoscope.com",
-                "www.livestrong.com"
+                "www.astrology.com",
+                "www.dailywire.com",
+                "www.eatthis.com",
+                "www.groupon.com"
             ]
         },
         {
             "rule": "liadm\\.com\\/idex\\/ie\\/any",
-            "cookies": 0.00221,
+            "cookies": 0.00231,
             "fingerprinting": 0,
             "subdomains": [
                 "idx"
             ],
             "apis": {},
-            "sites": 22,
-            "prevalence": 0.00221,
+            "sites": 23,
+            "prevalence": 0.00231,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -264,29 +284,29 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_lc2_fpi": 0.0001004419445560466
+                "_lc2_fpi": 0.00020096463022508038
             },
             "exampleSites": [
                 "gamespot.com",
-                "download.cnet.com",
-                "gizmodo.com",
                 "globalnews.ca",
+                "gizmodo.com",
                 "knowyourmeme.com",
                 "lifehacker.com",
                 "thechive.com",
                 "variety.com",
                 "www.cnet.com",
                 "www.gamespot.com",
-                "frontpagemetrics.com",
+                "www.target.com",
+                "www.cracked.com",
                 "jezebel.com",
                 "www.ebaumsworld.com",
-                "stylecaster.com",
-                "www.target.com",
-                "www.rollingstone.com",
-                "www.cracked.com",
-                "www.horoscope.com",
+                "www.sheknows.com",
                 "www.techrepublic.com",
-                "www.zdnet.com"
+                "www.astrology.com",
+                "www.tvguide.com",
+                "www.zdnet.com",
+                "frontpagemetrics.com",
+                "kotaku.com"
             ]
         },
         {
@@ -313,13 +333,13 @@
                 "_li_dcdm_c": {
                     "ttl": null,
                     "length": 11,
-                    "prevalence": 0.0002008838891120932,
+                    "prevalence": 0.00020096463022508038,
                     "uniqueness": 0.5
                 },
                 "_lc2_fpi": {
-                    "ttl": 63072003,
+                    "ttl": 63072020,
                     "length": 40,
-                    "prevalence": 0.0002008838891120932,
+                    "prevalence": 0.00020096463022508038,
                     "uniqueness": 1
                 }
             },
@@ -330,29 +350,7 @@
             ]
         },
         {
-            "rule": "liadm\\.com\\/s\\/e\\/a-00k5\\/0\\/81e7be81b9f04ed2ad8993670153dbb3",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "i"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "caa849b179befa2645a8e2c474d2e82a76777a3305315ece911013e8ee9a916c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "softonic.com",
-                "torch.en.softonic.com"
-            ]
-        },
-        {
-            "rule": "liadm\\.com\\/s\\/e\\/a-00gy\\/0\\/ea931f75bcbb405f9f56572846c7f64b",
+            "rule": "liadm\\.com\\/s\\/e\\/a-00gy\\/0\\/8e2e2a3d3fd44a14855186ce80be2370",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -374,7 +372,7 @@
             ]
         },
         {
-            "rule": "liadm\\.com\\/s\\/e\\/a-01b5\\/0\\/35ce250b490c4cd6a32c57b5b03f3b0c",
+            "rule": "liadm\\.com\\/s\\/e\\/a-01b5\\/0\\/e25ab9edafd54897a6e4a98212adfbc4",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -394,6 +392,50 @@
             ]
         },
         {
+            "rule": "liadm\\.com\\/s\\/e\\/a-00ay\\/0\\/28a9e9f07cd0420f9e7e7bc6e2a88f34",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "caa849b179befa2645a8e2c474d2e82a76777a3305315ece911013e8ee9a916c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "astrology.com",
+                "www.astrology.com"
+            ]
+        },
+        {
+            "rule": "liadm\\.com\\/s\\/e\\/a-06la\\/0\\/8290fbe93bf04b91aaf5cc74725198b1",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "caa849b179befa2645a8e2c474d2e82a76777a3305315ece911013e8ee9a916c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailywire.com",
+                "www.dailywire.com"
+            ]
+        },
+        {
             "rule": "liadm\\.com\\/s\\/56408",
             "cookies": 0.000201,
             "fingerprinting": 0,
@@ -404,7 +446,9 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "548f2d6f4d0d820c6c5ffbeffcbd7f0e73193e2932eefe542accc84762deec87"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -414,7 +458,7 @@
             ]
         },
         {
-            "rule": "liadm\\.com\\/s\\/e\\/a-01ao\\/0\\/2bdcf7705ae84a6c98b2211bdba3099b",
+            "rule": "liadm\\.com\\/s\\/e\\/a-01ao\\/0\\/cd9156ce5c73467c8eab4febf80d5550",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -436,7 +480,7 @@
             ]
         },
         {
-            "rule": "liadm\\.com\\/s\\/e\\/a-01bk\\/0\\/7db3a617c9384a8a89d2a7a9e36c78a1",
+            "rule": "liadm\\.com\\/s\\/e\\/a-01wh\\/0\\/b13376dcaf994236b881ddc8258548c9",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -446,19 +490,17 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [
-                "caa849b179befa2645a8e2c474d2e82a76777a3305315ece911013e8ee9a916c"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "health.com",
-                "www.health.com"
+                "groupon.com",
+                "www.groupon.com"
             ]
         },
         {
-            "rule": "liadm\\.com\\/s\\/e\\/a-00b1\\/0\\/16492cc64c1d452c9f09a522c8e3f5c3",
+            "rule": "liadm\\.com\\/s\\/e\\/a-00b1\\/0\\/6845bdbb70494d70905c53b4db6329c7",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -494,7 +536,7 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_cc_id": 0.0002008838891120932
+                "_cc_id": 0.00020096463022508038
             },
             "exampleSites": [
                 "kaskus.co.id",
@@ -502,8 +544,8 @@
             ]
         },
         {
-            "rule": "liadm\\.com\\/s\\/e\\/a-01ms\\/0\\/ea22d87d19564056a48ce0c9dc818b60",
-            "cookies": 0,
+            "rule": "liadm\\.com\\/s\\/63537",
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "i"
@@ -512,19 +554,17 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [
-                "caa849b179befa2645a8e2c474d2e82a76777a3305315ece911013e8ee9a916c"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "livestrong.com",
-                "www.livestrong.com"
+                "latimes.com",
+                "www.latimes.com"
             ]
         },
         {
-            "rule": "liadm\\.com\\/s\\/e\\/a-00yl\\/0\\/ff27f6390d004a36b16d3e18f13704a7",
+            "rule": "liadm\\.com\\/s\\/e\\/a-00yl\\/0\\/ec1f5d501212429b9a20a6b9d7fae8dc",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -542,28 +582,6 @@
                 "shape.com",
                 "www.shape.com"
             ]
-        },
-        {
-            "rule": "liadm\\.com\\/s\\/e\\/a-04gp\\/0\\/b7179930783142468bfe8b589e8d8fd2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "i"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "caa849b179befa2645a8e2c474d2e82a76777a3305315ece911013e8ee9a916c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tasteofhome.com",
-                "www.tasteofhome.com"
-            ]
         }
     ],
     "categories": [
@@ -578,17 +596,17 @@
         "cpu": 0,
         "cache": 3
     },
-    "cookies": 0.00422,
+    "cookies": 0.00452,
     "types": {
         "Script": 17,
-        "XHR": 41,
+        "XHR": 43,
         "Document": 2,
         "Image": 52
     },
     "nameservers": [
-        "ns8.iponweb.net",
-        "ns5.iponweb.net",
         "ns6.iponweb.net",
-        "ns7.iponweb.net"
+        "ns7.iponweb.net",
+        "ns8.iponweb.net",
+        "ns5.iponweb.net"
     ]
 }

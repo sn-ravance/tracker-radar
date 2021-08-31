@@ -7,34 +7,45 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000206,
-    "sites": 2,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
         "hello"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "zonos\\.com\\/hello\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0001,
+            "fingerprinting": 1,
             "subdomains": [
                 "hello"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
+            "apis": {
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 1
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "1e4889f3ed01aef83b485adfb93ceec52b64379bc64005a4b0db320c45d59fe1"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "zHello": {
+                    "ttl": 31536009,
+                    "length": 1,
+                    "prevalence": 0.00010026067776218167,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "kbdfans.com",
-                "www.citybeach.com.au"
+                "www.citybeach.com.au",
+                "www.honeybirdette.com"
             ]
         },
         {
@@ -45,18 +56,20 @@
                 "hello"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "49793d580952959dd55375ae468e7268db9a0db67d6d9eb8e98e2ab361ab2348"
+                "49793d580952959dd55375ae468e7268db9a0db67d6d9eb8e98e2ab361ab2348",
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "kbdfans.com",
-                "www.citybeach.com.au"
+                "www.citybeach.com.au",
+                "www.honeybirdette.com"
             ]
         },
         {
@@ -68,7 +81,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "e588a4d6eddba0fff96b406cca0f10faec6fc254baba062539e4db6168219df8"
@@ -90,7 +103,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "3443f16354a5cddea824305eceffb26c92199eb4c650be45ae74c81ca3a28782"
@@ -102,6 +115,28 @@
                 "kbdfans.com",
                 "www.citybeach.com.au"
             ]
+        },
+        {
+            "rule": "zonos\\.com\\/shop-duty-tax\\/hello\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hello"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c4c698ca60f0be0bede6445b95057761f752aa27ea3275e0a4351c6792b25968"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kbdfans.com",
+                "www.honeybirdette.com"
+            ]
         }
     ],
     "categories": [],
@@ -111,10 +146,10 @@
         "cpu": 0,
         "cache": 0
     },
-    "cookies": 0,
+    "cookies": 0.000201,
     "types": {
-        "Script": 2,
-        "XHR": 4,
+        "Script": 5,
+        "XHR": 5,
         "Image": 2
     },
     "nameservers": [

@@ -4,26 +4,68 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000603,
+    "sites": 6,
     "subdomains": [
+        "norgesgruppen",
         "askoservering",
-        "riksantikvaren"
+        "friskforlag",
+        "riksantikvaren",
+        "transportstyrelsen"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "matomo\\.cloud\\/matomo\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "norgesgruppen",
+                "askoservering"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.vendor": 3,
+                "Navigator.prototype.doNotTrack": 1,
+                "window.name": 3,
+                "Navigator.prototype.cookieEnabled": 3,
+                "Navigator.prototype.mimeTypes": 3,
+                "Navigator.prototype.javaEnabled": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "Navigator.prototype.platform": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "931f0ae45710906acea5b86da5a8e0b3539dc4f43c6e4c4a936dfa73ad95fad8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "asko.no",
+                "askoservering.no",
+                "eureca.no"
+            ]
+        },
+        {
             "rule": "matomo\\.cloud\\/matomo\\.php",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "norgesgruppen",
                 "askoservering",
-                "riksantikvaren"
+                "friskforlag",
+                "riksantikvaren",
+                "transportstyrelsen"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 6,
+            "prevalence": 0.000603,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -32,8 +74,38 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "asko.no",
                 "askoservering.no",
-                "www.riksantikvaren.no"
+                "eureca.no",
+                "www.friskforlag.no",
+                "www.riksantikvaren.no",
+                "www.transportstyrelsen.se"
+            ]
+        },
+        {
+            "rule": "matomo\\.cloud\\/plugins\\/HeatmapSessionRecording\\/configs\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "norgesgruppen",
+                "friskforlag",
+                "transportstyrelsen"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "289e2aeb4cf5b4cc14292b7d824a7f565cd33b3005e4f3e2c3d7b1d5fc483653",
+                "235f0d7996146c376b39c6615bf2cc9409da0c41f8efb11929d3b8b55f897542"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "asko.no",
+                "www.friskforlag.no",
+                "www.transportstyrelsen.se"
             ]
         }
     ],
@@ -44,14 +116,15 @@
         "cpu": 0,
         "cache": 1
     },
-    "cookies": 0,
+    "cookies": 0.000201,
     "types": {
-        "Other": 2
+        "Script": 6,
+        "Other": 6
     },
     "nameservers": [
+        "ns-1060.awsdns-04.org",
         "ns-1933.awsdns-49.co.uk",
         "ns-302.awsdns-37.com",
-        "ns-616.awsdns-13.net",
-        "ns-1060.awsdns-04.org"
+        "ns-616.awsdns-13.net"
     ]
 }

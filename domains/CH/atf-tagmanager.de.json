@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.00101,
+    "prevalence": 0.001,
     "sites": 10,
     "subdomains": [
         "cdn",
-        "pbs"
+        "pbs",
+        "metrics"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -24,10 +25,10 @@
                 "Navigator.prototype.userAgent": 10
             },
             "sites": 10,
-            "prevalence": 0.00101,
+            "prevalence": 0.001,
             "cnames": [],
             "responseHashes": [
-                "abd5e554db2b6b25d281e547b3e7dcc54b614809f09c0a42fd14d0217eba3800"
+                "707f81be7956f0b7130a0b119569031316422dfc889685ab8956318bf1ca0078"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -37,16 +38,56 @@
                 "www.einfachbacken.de",
                 "www.elle.de",
                 "www.freundin.de",
-                "www.harpersbazaar.de",
                 "www.haus.de",
                 "www.instyle.de",
                 "www.mylife.de",
+                "www.netdoktor.ch",
                 "www.netdoktor.de",
                 "www.playboy.de"
             ]
         },
         {
-            "rule": "atf-tagmanager\\.de\\/openrtb2\\/auction",
+            "rule": "atf-tagmanager\\.de\\/dist\\/prebid\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.appName": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Date.prototype.getTime": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c7d2791170f1f042ecedf24ba23ce41b1c8d961cf20beed675f41d6255b1c76f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pbjs_userid_consent_data": {
+                    "ttl": 2592009,
+                    "length": 16,
+                    "prevalence": 0.0002007226013649137,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "netdoktor.ch",
+                "www.netdoktor.de"
+            ]
+        },
+        {
+            "rule": "atf-tagmanager\\.de\\/cookie_sync",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -57,13 +98,36 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "21b94bded0eb10a2043259feaf4081506ad6064d00439725f3df3589492807f9"
+                "060cf95e7fbe84c8fe94788d1b9de75fc390dfd22ddb4f6199cc4ee84986d12f"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "netdoktor.de",
+                "netdoktor.ch",
+                "www.netdoktor.de"
+            ]
+        },
+        {
+            "rule": "atf-tagmanager\\.de\\/openrtb2\\/auction",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pbs"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "3f5d0737ad9f37714411a70f98e237bb75cb05e2a5090eb82513c27d9d5518aa"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "netdoktor.ch",
+                "www.netdoktor.ch",
                 "www.netdoktor.de"
             ]
         },
@@ -75,8 +139,8 @@
                 "pbs"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "248c5c260b8061ece6b0d78fb45760c32e728018cd13b8e44557f9de44d3ebb0"
@@ -85,18 +149,40 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "netdoktor.de",
+                "netdoktor.ch",
+                "www.netdoktor.ch",
+                "www.netdoktor.de"
+            ]
+        },
+        {
+            "rule": "atf-tagmanager\\.de\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "metrics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "netdoktor.ch",
                 "www.netdoktor.de"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.000201,
     "types": {
-        "Script": 10,
-        "XHR": 2,
-        "Image": 2
+        "Script": 12,
+        "XHR": 5,
+        "Image": 3,
+        "Fetch": 2
     },
     "nameservers": [
         "ns-695.awsdns-22.net",

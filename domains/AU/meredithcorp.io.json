@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.00134,
-    "sites": 13,
+    "prevalence": 0.0016,
+    "sites": 16,
     "subdomains": [
-        "imagesvc"
+        "imagesvc",
+        "metadata.video"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -20,20 +21,25 @@
                 "imagesvc"
             ],
             "apis": {},
-            "sites": 13,
-            "prevalence": 0.00134,
+            "sites": 16,
+            "prevalence": 0.0016,
             "cnames": [],
             "responseHashes": [
-                "bbc7d8a92ec3d277f2860d47c39a992be70f31b2f6f75cf6095cc3c88f2ba67d",
+                "790f6ad6d50fd2e46627bcd9ac49d2faf4fca76e331f84cdebee4e8c441e4067",
                 "cd92c4953fdd2d4de1396def64d4ece443925bbfa6cc13b457fe37279df87035",
-                "b76d7865f42f4eb79ab84708396b50f44f409f3c915ba6825e97fd5198a9278d",
+                "381d776dc5a5c0652cde9c547b2b9c8cf88afc5979c123214ff8dcb726fac7b0",
+                "6c3cc797b0e4df153c3196420b9563736376bcd60fce7a4d1b6a657611101a62",
+                "9f24879228f05579426f514a8b966eb2b11aeebea20f73e707f4af2401d4827e",
                 "c52a81f1b058e46f8a1851ce59a2152cac4b5af4767e86643f567686717becf2",
                 "24029ceb75d177f5c8a5fb5859fecc091548b37abd6849f4d1083670482aaad5",
-                "e6a0b1ff6470cb09bb8391c333a10adc6e2714dfad6840d019cb6c21c1fbad27",
-                "fcb76be6502b19bdea2fe60f054eeeff823d19c6c651b8aeef294ec095d696db",
-                "c8925170a01101749b729b833eabd8d4e3f320aff4be308b17cd6c1927846a8d",
-                "2027a29070159593ea67d9692849a9815c087de37b7572117c8153bc28e828d7",
-                "b42475a2cb150cd997b7ff0e9711f0279b9143c7ffdd5e95a121a66b23e6e9af"
+                "d10cdfdeb0303847ff78615622ddefb0a74735a5b32ddb23740c9df266e0b808",
+                "bb366e2e644b3aeaed2f2e71ed744746ef4d4cbaae498c657ece64f297ec9653",
+                "4226a1658258c1838640d2fb142e99373ddbedeaab5c43e4bc9b56fd3d0e73bd",
+                "673860b69ccced7ac83ecc2165a9ed0f6b020c0d74c1cdd65a959b948c3d97f8",
+                "2f38ddb242851a325ba9139d5d8d3621749c4b40f9e5221dcd5a9edc1b5df847",
+                "4a3d5938442a06f64da81a1bb0a63d0a67477292d53d87478f65c678332d45ab",
+                "75ffcbbaa03c4052b39fc11c9df6c489870e1a5610183421eb6311f31de0cf05",
+                "fc0dc0dfea0196f85287f51fecc328c766fd7cd5df553fdff6c051cbe35859ba"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -42,12 +48,15 @@
                 "ew.com",
                 "hellogiggles.com",
                 "people.com",
+                "www.allrecipes.com",
                 "www.bhg.com",
+                "www.cookinglight.com",
                 "www.eatingwell.com",
                 "www.foodandwine.com",
                 "www.health.com",
                 "www.instyle.com",
                 "www.marthastewart.com",
+                "www.myrecipes.com",
                 "www.parents.com",
                 "www.realsimple.com",
                 "www.shape.com",
@@ -55,7 +64,7 @@
             ]
         },
         {
-            "rule": "meredithcorp\\.io\\/v3\\/mm\\/gif",
+            "rule": "meredithcorp\\.io\\/v3\\/jumpstartpure\\/image",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -63,17 +72,37 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "5128eced0170e5c0efa8f78b7e92e2eeac1edc17c1bc7d2fc79aa36ed2ab5483"
+                "f9353e82504fd37f498810046aac257d83e137c28363f274455e67e797ddd131"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "health.com",
-                "www.health.com"
+                "people.com",
+                "www.southernliving.com"
+            ]
+        },
+        {
+            "rule": "meredithcorp\\.io\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "metadata.video"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "southernliving.com",
+                "www.southernliving.com"
             ]
         }
     ],
@@ -86,12 +115,13 @@
     },
     "cookies": 0,
     "types": {
-        "Image": 15
+        "Image": 18,
+        "XHR": 2
     },
     "nameservers": [
-        "ns-1840.awsdns-38.co.uk",
         "ns-61.awsdns-07.com",
         "ns-912.awsdns-50.net",
-        "ns-1420.awsdns-49.org"
+        "ns-1420.awsdns-49.org",
+        "ns-1840.awsdns-38.co.uk"
     ]
 }
