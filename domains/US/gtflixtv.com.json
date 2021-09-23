@@ -4,15 +4,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000625,
-    "sites": 9,
+    "prevalence": 0.0000493,
+    "sites": 7,
     "subdomains": [
         "poll",
         "analytics",
-        "video-preview"
+        "cdn-image"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "gtflixtv\\.com\\/assets\\/poll\\/js\\/widget\\.js",
@@ -23,7 +23,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000139,
+            "prevalence": 0.0000141,
             "cnames": [],
             "responseHashes": [
                 "a9e40053a4f13bb8b6296e7e0f58ddcdf8d02cb4097bc9b8e11a2fcae3d99191"
@@ -38,18 +38,34 @@
         },
         {
             "rule": "gtflixtv\\.com\\/analytics\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.00000704,
+            "fingerprinting": 1,
             "subdomains": [
                 "analytics"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
+            },
             "sites": 2,
-            "prevalence": 0.0000139,
+            "prevalence": 0.0000141,
             "cnames": [],
             "responseHashes": [],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_al": {
+                    "ttl": 315360024,
+                    "length": 10,
+                    "prevalence": 0.000007038783698176955,
+                    "uniqueness": 1
+                },
+                "_als": {
+                    "ttl": 1824,
+                    "length": 10,
+                    "prevalence": 0.000007038783698176955,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "pornbox.com",
@@ -57,18 +73,20 @@
             ]
         },
         {
-            "rule": "gtflixtv\\.com\\/293af100ae2df3c978ea99e2f4c66148054aac28\\/5\\/71\\/1921\\/0\\/1\\.mp4",
+            "rule": "gtflixtv\\.com\\/cd5106020ee2e703c4e3c889b01017cd3cb092de\\/1\\/1932\\/337\\/3\\/812\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "video-preview"
+                "cdn-image"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000139,
+            "prevalence": 0.0000141,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Media",
+            "responseHashes": [
+                "1ce4a0449a9294cdba3cd5059a6acdb769898172d1ee417bdccb32e68a0386a1"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -78,20 +96,15 @@
         }
     ],
     "categories": [],
-    "performance": {
-        "time": 0,
-        "size": 0,
-        "cpu": 0,
-        "cache": 1
-    },
-    "cookies": 0,
+    "performance": {},
+    "cookies": 0.00000704,
     "types": {
         "Script": 4,
-        "Media": 2
+        "Image": 2
     },
     "nameservers": [
-        "ns4.cloudevelops.org",
         "ns1.cloudevelops.cz",
+        "ns4.cloudevelops.org",
         "ns3.cloudevelops.net",
         "ns2.cloudevelops.com"
     ]

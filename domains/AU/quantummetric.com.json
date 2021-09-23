@@ -7,14 +7,16 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.0017,
-    "sites": 17,
+    "prevalence": 0.00241,
+    "sites": 24,
     "subdomains": [
+        "cdn",
         "norton-app",
+        "att-app",
         "stockx-app",
         "lenovosupport-app",
-        "att-app",
         "emirates-app",
+        "faa-app",
         "fiverr-app",
         "homedepot-app",
         "lululemoninternational-app",
@@ -22,8 +24,9 @@
         "nintendo-app",
         "telegraph-app",
         "vistaprint-app",
+        "vitacost-app",
         "ylo-app",
-        "cdn",
+        "ingest",
         "vistaprint-sync"
     ],
     "cnames": [
@@ -35,15 +38,67 @@
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "quantummetric\\.com\\/qscripts\\/quantum-norton\\.js",
+            "cookies": 0.000402,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.vendor": 4,
+                "window.localStorage": 4,
+                "Date.prototype.getTime": 4,
+                "Document.cookie getter": 4,
+                "Navigator.prototype.userAgent": 4,
+                "URL.createObjectURL": 4,
+                "window.sessionStorage": 4,
+                "Document.cookie setter": 4,
+                "Screen.prototype.width": 4,
+                "Screen.prototype.height": 4,
+                "Navigator.prototype.connection": 4,
+                "Navigator.prototype.doNotTrack": 4,
+                "Navigator.prototype.webdriver": 3
+            },
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "8f56b40b72cbbf71efb4f4fc32b0a1622c5b075a81bbb5ccc905293db1679b3b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "QuantumMetricSessionID": {
+                    "ttl": 1812,
+                    "length": 25,
+                    "prevalence": 0.0004018485031143259,
+                    "uniqueness": 1
+                },
+                "QuantumMetricUserID": {
+                    "ttl": 31536009,
+                    "length": 32,
+                    "prevalence": 0.0003013863773357444,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "norton.com",
+                "community.norton.com",
+                "support.norton.com",
+                "us.norton.com"
+            ]
+        },
+        {
             "rule": "quantummetric\\.com\\/",
-            "cookies": 0.0013,
+            "cookies": 0.00171,
             "fingerprinting": 0,
             "subdomains": [
                 "norton-app",
+                "att-app",
                 "stockx-app",
                 "lenovosupport-app",
-                "att-app",
                 "emirates-app",
+                "faa-app",
                 "fiverr-app",
                 "homedepot-app",
                 "lululemoninternational-app",
@@ -51,11 +106,12 @@
                 "nintendo-app",
                 "telegraph-app",
                 "vistaprint-app",
+                "vitacost-app",
                 "ylo-app"
             ],
             "apis": {},
-            "sites": 15,
-            "prevalence": 0.0015,
+            "sites": 21,
+            "prevalence": 0.00211,
             "cnames": [
                 {
                     "original": "qm.emirates.com",
@@ -64,139 +120,125 @@
             ],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-                "95a2be7bad5a296a07af775406a88c8fefdad5ea0a17ba556d3e413fd91de2b4",
-                "61cc6930c41cca312bdcd1f2e253c0539ff7ad1d8b063f56f03a082bef24e703",
-                "3b1ce9de4993c61fc1550c170ed4a88fb7b33018303714b14650c0e35e00ff1f",
-                "87cca9dfd465c531d7572d1cab72c80a01118f52fef5e35047313f3bb5ae1633",
-                "793355ae9476f6fdc13ee84e501bffe8363496327feb5e5b8914a4e1f1b62244",
-                "f0249337fbcfb22908c9b7102eda57c657c1ee4d30165b584862bf6a0ed1737d",
-                "93d108db7159337b00626cce7104a3da77b5e7edd054e9f44cb568007fcb190c",
-                "f73816a30b50965a23c4ec8cec48d2e5457c17ae556a1b655adb4355ada2d04b",
-                "602682e180c410969d8e0cd40e1f13bab24c54125d1be7d9fc2eaca014ff1a41",
-                "f6d944c29f437c6f6c97df2810995b5ee1bb1e489b8fa9d3329670c8b647f4f9",
-                "f5422c41ff61ef3b28488d63a187ee24464036243477fb9efbe3707d2312a2df",
-                "0da2004545f350d88baad2d07f3f4e72e9d1d37b03e97a9fdb9fedfdbdce6455",
-                "a44c03d2f232a37e51a406d78f6b69058441f699025e4ad0a3f502d0acb5e25d"
+                "05d49e74ab2b8c6b933afd94d9aa7083db67712d80e966ff90c134aa6e575761",
+                "03e380bafc4962cbb4cb8858573711bcdaa15f4814fa356044b60edd0c4ab174",
+                "df9c94a8514b1b8358d3c59cdce1ec965d33a240be599b5d06aeecf292bd1b5a",
+                "fd251f925cbcb3ee6687ad1fad347429245519f8a8a99db55e99a0847f58d847",
+                "60f9b15cd9971f9c64b31e8b674fe0a12875f96615a636c0dbe1c874c5cd4e7d",
+                "7d165819687b4e911a4f50f2b0df9e24911089b00acdb2043d4579ddfff1f8b7",
+                "421d2f51a6964131f1090749a2f6208ed89cf7ab259fac6cfb539f233492bab7",
+                "1de1d8f61d53a0a3a1b015b60b5e44fcc746aeb7960b49610e4777eebaae2bc2",
+                "53f708320ec7015cd4ca2aae675415fcb304efe02c69ae2c4af02fb29c5794ec",
+                "1545959f37d60ae4b0d39b3d8551fed0d2aaee4bfc4bc6195eecbe869f732dbf",
+                "07faaa3e6bd82699326faa4bb12a484e908d94fecdbe83c475bdbdf56def4d85",
+                "de9055b01aaef94fd4f442946fed3b8f1e9bad4347e83718f7641dd936dc5b4f",
+                "f998941261f5b9ce1da76cfb33511d0dc4b971fbe27028e42f284fcd0104894f",
+                "a391bfdc6695a533af267d4c9d9f3c5ea5594f1addb637eff78a2bc9bd8dff15",
+                "820ad1bab72147c9aa8a59f08b60264cdabf4ba0380a76af2482e06fddf34344",
+                "372abcbe11865823cd7c5b4ea44839a4add0ae68e1ac2e0ec5f89af7fcab17a0",
+                "f73cca99fa77137c309601d715c4d4c38a31739a2a103a5f3ffbf914bf43965d"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "IR_gbd": 0.000300782033286545
+                "IR_gbd": 0.0004018485031143259
             },
             "exampleSites": [
-                "norton.com",
-                "au.norton.com",
-                "stockx.com",
-                "support.lenovo.com",
-                "www.att.com",
-                "www.directv.com",
-                "www.emirates.com",
-                "www.fiverr.com",
                 "www.homedepot.com",
-                "www.lululemon.com.au",
-                "www.medicare.gov",
-                "www.nintendo.com",
                 "www.telegraph.co.uk",
+                "www.lululemon.com.au",
+                "www.youngliving.com",
+                "stockx.com",
+                "support.norton.com",
+                "norton.com",
+                "www.medicare.gov",
                 "www.vistaprint.com.au",
-                "www.youngliving.com"
+                "us.norton.com",
+                "www.fiverr.com",
+                "au.norton.com",
+                "www.vitacost.com",
+                "www.directv.com",
+                "www.nintendo.com",
+                "www.emirates.com",
+                "support.lenovo.com",
+                "www.faa.gov",
+                "forums.att.com",
+                "www.att.com"
             ]
         },
         {
-            "rule": "quantummetric\\.com\\/qscripts\\/quantum-nintendo\\.js",
-            "cookies": 0.0001,
+            "rule": "quantummetric\\.com\\/qscripts\\/quantum-att\\.js",
+            "cookies": 0.000301,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.vendor": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 2,
-                "URL.createObjectURL": 1,
-                "window.sessionStorage": 1,
-                "window.localStorage": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "Navigator.prototype.connection": 1,
-                "Navigator.prototype.doNotTrack": 1,
-                "Document.cookie setter": 1
+                "Navigator.prototype.vendor": 3,
+                "window.localStorage": 3,
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Document.cookie getter": 3,
+                "URL.createObjectURL": 3,
+                "RTCPeerConnection.prototype.constructor": 3,
+                "window.sessionStorage": 3,
+                "RTCPeerConnectionIceEvent.prototype.candidate": 3,
+                "Document.cookie setter": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "Navigator.prototype.connection": 3,
+                "Navigator.prototype.doNotTrack": 3,
+                "Navigator.prototype.webdriver": 3,
+                "PerformanceTiming.prototype.navigationStart": 1
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "ddfd957278daaeb4a388fe3cf7950f1d33e8587c97dbb79a91e38fe3d32b60cf"
+                "22f39600440f54f2103f4f81a5de8e326c8747e6e87226775548d35593628d90"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "QuantumMetricSessionID": {
-                    "ttl": null,
+                    "ttl": 1813,
                     "length": 32,
-                    "prevalence": 0.00010026067776218167,
+                    "prevalence": 0.0003013863773357444,
                     "uniqueness": 1
                 },
                 "QuantumMetricUserID": {
                     "ttl": 31536011,
                     "length": 32,
-                    "prevalence": 0.00010026067776218167,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nintendo.com",
-                "www.nintendo.com"
-            ]
-        },
-        {
-            "rule": "quantummetric\\.com\\/qscripts\\/quantum-att\\.js",
-            "cookies": 0.000201,
-            "fingerprinting": 3,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.vendor": 2,
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 2,
-                "URL.createObjectURL": 2,
-                "RTCPeerConnection.prototype.constructor": 2,
-                "RTCPeerConnectionIceEvent.prototype.candidate": 2,
-                "window.sessionStorage": 2,
-                "Document.cookie setter": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Navigator.prototype.connection": 2,
-                "Navigator.prototype.doNotTrack": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "a38dee65660fdc1748bb84d8408b3342442af6c64c6d29db962fef388778e3d2"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "QuantumMetricSessionID": {
-                    "ttl": 1810,
-                    "length": 32,
-                    "prevalence": 0.00020052135552436334,
-                    "uniqueness": 1
-                },
-                "QuantumMetricUserID": {
-                    "ttl": 31536008,
-                    "length": 32,
-                    "prevalence": 0.00020052135552436334,
+                    "prevalence": 0.0003013863773357444,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "att.com",
+                "www.att.com",
                 "www.directv.com"
+            ]
+        },
+        {
+            "rule": "quantummetric\\.com\\/daz3d",
+            "cookies": 0.0001,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ingest"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "daz3d.com",
+                "www.daz3d.com"
             ]
         },
         {
@@ -221,19 +263,62 @@
                 "vistaprint.com.au",
                 "www.vistaprint.com.au"
             ]
+        },
+        {
+            "rule": "quantummetric\\.com\\/qscripts\\/quantum-vitacost\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.vendor": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "URL.createObjectURL": 2,
+                "window.sessionStorage": 2,
+                "Document.cookie setter": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.connection": 2,
+                "Navigator.prototype.doNotTrack": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "916d27e13d32e832da5d87456f8e9d7dc25cacd7fe06d8ca1716ba0dbc2e37f2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "QuantumMetricSessionID": {
+                    "ttl": 1825,
+                    "length": 32,
+                    "prevalence": 0.00020092425155716296,
+                    "uniqueness": 0.5
+                },
+                "QuantumMetricUserID": {
+                    "ttl": 31536022,
+                    "length": 32,
+                    "prevalence": 0.00020092425155716296,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vitacost.com",
+                "www.vitacost.com"
+            ]
         }
     ],
     "categories": [],
-    "performance": {
-        "time": 1,
-        "size": 1,
-        "cpu": 0,
-        "cache": 3
-    },
-    "cookies": 0.0014,
+    "performance": {},
+    "cookies": 0.00211,
     "types": {
-        "XHR": 15,
-        "Script": 4,
+        "Script": 9,
+        "XHR": 23,
         "Fetch": 2
     },
     "nameservers": [

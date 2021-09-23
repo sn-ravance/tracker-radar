@@ -7,35 +7,45 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
-        "stream-859",
+        "sdk-cdn",
+        "sdkuaservice",
         "stream-161",
-        "sdkuaservice"
+        "stream-777",
+        "realtime-161",
+        "realtime-777"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "optimove\\.net\\/",
+            "rule": "optimove\\.net\\/websdk\\/sdk-v2\\.0\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "stream-859",
-                "stream-161"
+                "sdk-cdn"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 1,
+                "Document.cookie getter": 1,
+                "window.sessionStorage": 1,
+                "Navigator.prototype.language": 1
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "ebeed78ba24420daa810ade37b69c3300abb7b317afe5767d03e0e82876b3c40"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "displate.com",
-                "no.luckyvitamin.com"
+                "stake.com"
             ]
         },
         {
@@ -50,14 +60,14 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "01b0e618992b1c99d6966bc0473a73dea3d095a725db9071336d35f01d8b2aaf"
+                "ad8cc310f5910c46a1825028d7af0c012c54006fadb412ac80540350dccec902"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "displate.com",
-                "no.luckyvitamin.com"
+                "luckyvitamin.com",
+                "stake.com"
             ]
         },
         {
@@ -65,37 +75,100 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "stream-859",
-                "stream-161"
+                "stream-161",
+                "stream-777"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "luckyvitamin.com",
+                "stake.com"
+            ]
+        },
+        {
+            "rule": "optimove\\.net\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "stream-161",
+                "stream-777"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "fe0c6361b540f043c8ab8b9e0d9f51615c8c55fd70f37d62a9d19cb124df419c",
+                "db55210b22b9235372f46609dbfca89b13c0fc6c5e71959be6bb2c843aecfc19"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "luckyvitamin.com",
+                "no.luckyvitamin.com",
+                "stake.com"
+            ]
+        },
+        {
+            "rule": "optimove\\.net\\/reportEvent",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "realtime-161",
+                "realtime-777"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "48e65b09064f7a3661f2aee2a0416fc33b7da4e4f5285a35d1018284d2af6e95"
+                "da1cbf5112c979fc21b6ee2875c6f5890939df905dfb88eab51ef9be4afdc25c"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "displate.com",
-                "no.luckyvitamin.com"
+                "luckyvitamin.com",
+                "stake.com"
+            ]
+        },
+        {
+            "rule": "optimove\\.net\\/reportEvent",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "realtime-161",
+                "realtime-777"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "luckyvitamin.com",
+                "stake.com"
             ]
         }
     ],
     "categories": [],
-    "performance": {
-        "time": 0,
-        "size": 0,
-        "cpu": 0,
-        "cache": 1
-    },
+    "performance": {},
     "cookies": 0,
     "types": {
-        "Preflight": 2,
+        "Script": 2,
         "XHR": 2,
-        "Fetch": 2
+        "Preflight": 4,
+        "Fetch": 5
     },
     "nameservers": [
         "ns-1517.awsdns-61.org",

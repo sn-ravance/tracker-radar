@@ -10,18 +10,57 @@
     "prevalence": 0.00522,
     "sites": 52,
     "subdomains": [
-        "collector",
         "cogwheel.inventory",
-        "cdn.inventory",
-        "content-studio.inventory",
-        "region-api.inventory",
-        "content-studio-teasers-server.inventory"
+        "collector",
+        "cdn.inventory"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "schibsted\\.io\\/api\\/v1\\/track\\/sdrn:schibsted:client:e24",
+            "rule": "schibsted\\.io\\/prod\\/latest\\/gdpr-bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cogwheel.inventory"
+            ],
+            "apis": {
+                "Document.cookie getter": 29
+            },
+            "sites": 31,
+            "prevalence": 0.00311,
+            "cnames": [],
+            "responseHashes": [
+                "460bd1927d7aa1fcdbeae60e95f6d4db73f1213d8a19324c151c3c253602c415"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.vg.no",
+                "www.aftenbladet.no",
+                "www.bygdanytt.no",
+                "www.byas.no",
+                "www.bt.no",
+                "www.agderposten.no",
+                "pent.no",
+                "www.avisa-st.no",
+                "www.vestnytt.no",
+                "www.bladet.no",
+                "www.fosna-folket.no",
+                "www.dagen.no",
+                "www.raumnes.no",
+                "www.ht.no",
+                "www.blocket.se",
+                "vglive.no",
+                "www.godt.no",
+                "www.sunnhordland.no",
+                "www.fvn.no",
+                "vg.no"
+            ]
+        },
+        {
+            "rule": "schibsted\\.io\\/api\\/v1\\/track\\/sdrn:schibsted:client:finn",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -38,50 +77,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "e24.no",
-                "bors.e24.no"
-            ]
-        },
-        {
-            "rule": "schibsted\\.io\\/prod\\/latest\\/gdpr-bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cogwheel.inventory"
-            ],
-            "apis": {
-                "Document.cookie getter": 21
-            },
-            "sites": 39,
-            "prevalence": 0.00392,
-            "cnames": [],
-            "responseHashes": [
-                "460bd1927d7aa1fcdbeae60e95f6d4db73f1213d8a19324c151c3c253602c415"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "www.vestnytt.no",
-                "www.vikebladet.no",
-                "www.prisjakt.nu",
-                "www.av-avis.no",
-                "e24.no",
-                "www.smp.no",
-                "www.blocket.se",
-                "www.minmote.no",
-                "www.itromso.no",
-                "www.fjordingen.no",
-                "www.varden.no",
-                "www.godt.no",
-                "www.ht.no",
-                "www.hallingdolen.no",
-                "www.strilen.no",
-                "www.rbnett.no",
-                "www.prisjakt.no",
-                "vg.no",
-                "www.vtb.no",
-                "www.avisa-hordaland.no"
+                "finn.no",
+                "www.finn.no"
             ]
         },
         {
@@ -95,15 +92,13 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [
-                "90687150c18ec51580a40877532d01b82c479d207966f5b51972f0efee916f18"
-            ],
+            "responseHashes": [],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "aftenposten.no",
-                "www.aftenposten.no"
+                "restaurantguiden.aftenposten.no"
             ]
         },
         {
@@ -129,6 +124,26 @@
             ]
         },
         {
+            "rule": "schibsted\\.io\\/api\\/v1\\/track\\/sdrn:schibsted:client:adressano",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collector"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "adressa.no",
+                "www.midtnorskdebatt.no"
+            ]
+        },
+        {
             "rule": "schibsted\\.io\\/api\\/v1\\/track\\/sdrn:schibsted:client:agderposten",
             "cookies": 0,
             "fingerprinting": 0,
@@ -136,8 +151,8 @@
                 "collector"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.000703,
+            "sites": 6,
+            "prevalence": 0.000603,
             "cnames": [],
             "responseHashes": [
                 "90687150c18ec51580a40877532d01b82c479d207966f5b51972f0efee916f18"
@@ -148,121 +163,10 @@
             "exampleSites": [
                 "agderposten.no",
                 "www.avisa-hordaland.no",
-                "www.hallingdolen.no",
-                "www.osogfusa.no",
+                "www.dagen.no",
                 "www.sunnhordland.no",
-                "www.varden.no",
-                "www.vtb.no"
-            ]
-        },
-        {
-            "rule": "schibsted\\.io\\/api\\/v1\\/track\\/sdrn:schibsted:client:aftonbladet",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "collector"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "aftonbladet.se",
-                "www.aftonbladet.se"
-            ]
-        },
-        {
-            "rule": "schibsted\\.io\\/css\\/1\\.6\\.3\\/styles\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "content-studio.inventory"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "b66272538c6af0205f9c9c3f0435781e89cf3a955770f432c41d5d6e7d5fc243"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "aftenbladet.no",
-                "www.bt.no"
-            ]
-        },
-        {
-            "rule": "schibsted\\.io\\/img\\/bf33de384de05feffde29080910f0002\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "content-studio.inventory"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "ccd0227ebd666de4e600452bad99fbaa4caf81b1a131d8c803493b63698a9649"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "aftenbladet.no",
-                "www.bt.no"
-            ]
-        },
-        {
-            "rule": "schibsted\\.io\\/img\\/72d25378622537fd228b8ec9e2228389\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "content-studio.inventory"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "2cd58026acee16288827b22951a575b4aa521edf2e5397cf55eff5f301e11b51"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "aftenbladet.no",
-                "www.bt.no"
-            ]
-        },
-        {
-            "rule": "schibsted\\.io\\/search\\/locationKeyWordsByIP",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "region-api.inventory"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "5d284e3035c9b28dc6239c2a070f590bbac6fe2f94bab831efe29dd3995bea48"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blocket.se",
-                "www.svd.se"
+                "www.tysnesbladet.no",
+                "www.varden.no"
             ]
         },
         {
@@ -288,25 +192,49 @@
             ]
         },
         {
-            "rule": "schibsted\\.io\\/bt-bergens_tidende_premium_1",
-            "cookies": 0.000201,
+            "rule": "schibsted\\.io\\/prod\\/0\\.3\\.1\\/gdpr-bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cogwheel.inventory"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "460bd1927d7aa1fcdbeae60e95f6d4db73f1213d8a19324c151c3c253602c415"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aftonbladet.se",
+                "www.minmote.no"
+            ]
+        },
+        {
+            "rule": "schibsted\\.io\\/api\\/v1\\/track\\/sdrn:schibsted:client:tekno",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "content-studio-teasers-server.inventory"
+                "collector"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+                "90687150c18ec51580a40877532d01b82c479d207966f5b51972f0efee916f18"
             ],
-            "type": "XHR",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bt.no",
-                "www.bt.no"
+                "tek.no",
+                "www.tek.no"
             ]
         },
         {
@@ -323,7 +251,7 @@
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Other",
+            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -333,25 +261,17 @@
         }
     ],
     "categories": [],
-    "performance": {
-        "time": 0,
-        "size": 0,
-        "cpu": 0,
-        "cache": 0
-    },
-    "cookies": 0.001,
+    "performance": {},
+    "cookies": 0.000703,
     "types": {
-        "Fetch": 15,
-        "Script": 41,
-        "Other": 4,
-        "Stylesheet": 2,
-        "Image": 4,
-        "XHR": 2
+        "Script": 35,
+        "Fetch": 16,
+        "Ping": 2
     },
     "nameservers": [
-        "ns-1275.awsdns-31.org",
-        "ns-1968.awsdns-54.co.uk",
+        "ns-106.awsdns-13.com",
         "ns-839.awsdns-40.net",
-        "ns-106.awsdns-13.com"
+        "ns-1275.awsdns-31.org",
+        "ns-1968.awsdns-54.co.uk"
     ]
 }

@@ -4,34 +4,97 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000412,
+    "sites": 4,
     "subdomains": [
-        "ncregister.coral"
+        "sbnation.coral",
+        "ncregister.coral",
+        "sltrib.coral"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "comments.habseyesontheprize.com",
+            "resolved": "sbnation.coral.coralproject.net"
+        },
+        {
+            "original": "comments.sbnation.com",
+            "resolved": "sbnation.coral.coralproject.net"
+        }
+    ],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "coralproject\\.net\\/api\\/story\\/count\\.js",
+            "rule": "coralproject\\.net\\/assets\\/js\\/count\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "ncregister.coral"
+                "sbnation.coral",
+                "ncregister.coral",
+                "sltrib.coral"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000203,
-            "cnames": [],
+            "apis": {
+                "window.localStorage": 1
+            },
+            "sites": 4,
+            "prevalence": 0.000412,
+            "cnames": [
+                {
+                    "original": "comments.habseyesontheprize.com",
+                    "resolved": "sbnation.coral.coralproject.net"
+                },
+                {
+                    "original": "comments.sbnation.com",
+                    "resolved": "sbnation.coral.coralproject.net"
+                }
+            ],
             "responseHashes": [
-                "ca6f84eccfe06816fdc93b6c838878033fc33052c7784fa59794bf9ad6414184"
+                "6026092044533754b8a6a1d3e263318997f9ad673d3f8ba0a41cf478ae590d00",
+                "eb92187bc7726534b1d4a2cc0409325cd71ecf285b7c2950b760b2881044189e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ncregister.com",
-                "www.ncregister.com"
+                "habseyesontheprize.com",
+                "www.ncregister.com",
+                "www.sbnation.com",
+                "www.sltrib.com"
+            ]
+        },
+        {
+            "rule": "coralproject\\.net\\/api\\/story\\/count\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sbnation.coral",
+                "ncregister.coral"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000412,
+            "cnames": [
+                {
+                    "original": "comments.habseyesontheprize.com",
+                    "resolved": "sbnation.coral.coralproject.net"
+                },
+                {
+                    "original": "comments.sbnation.com",
+                    "resolved": "sbnation.coral.coralproject.net"
+                }
+            ],
+            "responseHashes": [
+                "f2d1bdbe3e2801e5ebe1682ea8fc7430e3128110b341015c266d51bab0fbee62",
+                "c221e8d65b5dfca45dcf601e2f8604103c36ecf5bb308bcf0f8ba6bd35eb9120",
+                "18686e422c45a97ecdfac4a450bd09bf21e2e5143ee46637ea6dd1dfb3dea3fa"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "habseyesontheprize.com",
+                "www.habseyesontheprize.com",
+                "www.ncregister.com",
+                "www.sbnation.com"
             ]
         }
     ],
@@ -39,10 +102,7 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2
+        "Script": 8
     },
-    "nameservers": [
-        "ian.ns.cloudflare.com",
-        "kiki.ns.cloudflare.com"
-    ]
+    "nameservers": []
 }

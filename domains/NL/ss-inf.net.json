@@ -22,7 +22,34 @@
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "ss-inf\\.net\\/flags\\/api\\/v1\\/frontend\\/featureFlagValues",
+            "rule": "ss-inf\\.net\\/sentry\\/api\\/1163\\/envelope\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "global.stargate.cse"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.atlassian.com",
+                    "resolved": "global.stargate.cse.ss-inf.net"
+                }
+            ],
+            "responseHashes": [
+                "d931fba9a76541d45bc3f7e0c43e233028b1219862884ce11fe9178754a5463f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bitbucket.org",
+                "www.atlassian.com"
+            ]
+        },
+        {
+            "rule": "ss-inf\\.net\\/metal\\/ingest",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -42,12 +69,12 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "atlassian.com",
-                "marketplace.atlassian.com"
+                "bitbucket.org",
+                "www.atlassian.com"
             ]
         },
         {
-            "rule": "ss-inf\\.net\\/flags\\/api\\/v1\\/frontend\\/featureFlagValues",
+            "rule": "ss-inf\\.net\\/metal\\/ingest",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -63,14 +90,14 @@
                 }
             ],
             "responseHashes": [
-                "6cc6c1e97113b336c74a8d246d2483744d8f5f731fa49b652ed223b4248d5030"
+                "4c77f658ef5e2f949576fa5b76fc667097a122888791b209b156f7d12b764959"
             ],
-            "type": "Fetch",
+            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "atlassian.com",
-                "marketplace.atlassian.com"
+                "bitbucket.org",
+                "www.atlassian.com"
             ]
         },
         {
@@ -96,62 +123,10 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "atlassian.com",
+                "bitbucket.org",
+                "community.atlassian.com",
                 "confluence.atlassian.com",
-                "marketplace.atlassian.com",
                 "support.atlassian.com",
-                "www.atlassian.com"
-            ]
-        },
-        {
-            "rule": "ss-inf\\.net\\/metal\\/ingest",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "global.stargate.cse"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "api.atlassian.com",
-                    "resolved": "global.stargate.cse.ss-inf.net"
-                }
-            ],
-            "responseHashes": [
-                "4c77f658ef5e2f949576fa5b76fc667097a122888791b209b156f7d12b764959"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "atlassian.com",
-                "www.atlassian.com"
-            ]
-        },
-        {
-            "rule": "ss-inf\\.net\\/metal\\/ingest",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "global.stargate.cse"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "api.atlassian.com",
-                    "resolved": "global.stargate.cse.ss-inf.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "atlassian.com",
                 "www.atlassian.com"
             ]
         }
@@ -160,10 +135,10 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Preflight": 4,
         "Fetch": 2,
-        "XHR": 5,
-        "Other": 2
+        "Preflight": 2,
+        "Ping": 2,
+        "XHR": 5
     },
     "nameservers": []
 }

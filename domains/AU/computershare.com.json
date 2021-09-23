@@ -18,15 +18,17 @@
         {
             "rule": "computershare\\.com\\/investor\\/",
             "cookies": 0.0001,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "www-us"
             ],
             "apis": {
+                "Document.cookie getter": 1,
                 "Navigator.prototype.userAgent": 1,
                 "Screen.prototype.height": 1,
                 "Screen.prototype.width": 1,
                 "Navigator.prototype.cookieEnabled": 1,
+                "Document.cookie setter": 1,
                 "Date.prototype.getTime": 1,
                 "window.name": 1
             },
@@ -35,7 +37,14 @@
             "cnames": [],
             "responseHashes": [],
             "type": "Document",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "device-caps": {
+                    "ttl": null,
+                    "length": 6,
+                    "prevalence": 0.00010046212577858148,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "investorcentre.com",
@@ -44,7 +53,7 @@
         },
         {
             "rule": "computershare\\.com\\/Investor\\/Content\\/cssRS",
-            "cookies": 0.0001,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "www-us"
@@ -66,7 +75,7 @@
         },
         {
             "rule": "computershare\\.com\\/Investor\\/bundles\\/modernizr",
-            "cookies": 0.0001,
+            "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [
                 "www-us"
@@ -169,7 +178,7 @@
         },
         {
             "rule": "computershare\\.com\\/Investor\\/gaplugin\\.ashx",
-            "cookies": 0.000201,
+            "cookies": 0.0001,
             "fingerprinting": 0,
             "subdomains": [
                 "www-us"
@@ -191,7 +200,7 @@
         },
         {
             "rule": "computershare\\.com\\/Investor\\/bundles\\/polyfill\\/querySelector",
-            "cookies": 0.0001,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "www-us"
@@ -314,7 +323,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "09fcd60d9ad813c5d82dad0a78cdb65543b750640e7a737fcd36d558c0644d83"
+                "2e61cb93e1e07f55aa3d66ac851ecd41cecedeb655e281f177e50c2171e45d6c"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -335,10 +344,9 @@
         "XHR": 6
     },
     "nameservers": [
-        "ns0-uk.computershare.com",
-        "ns4-au.computershare.com",
-        "ns5.computershare.com",
         "ns3-au.computershare.com",
-        "ns4.computershare.com"
+        "ns4.computershare.com",
+        "ns5.computershare.com",
+        "ns4-au.computershare.com"
     ]
 }

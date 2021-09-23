@@ -4,26 +4,32 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000132,
-    "sites": 19,
+    "prevalence": 0.0000985,
+    "sites": 14,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "serve"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "tercept\\.com\\/js\\/trcpt",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
-            "sites": 12,
-            "prevalence": 0.0000833,
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.connection": 2
+            },
+            "sites": 8,
+            "prevalence": 0.0000563,
             "cnames": [],
             "responseHashes": [
+                "0997dcb1831069a41d2618f4996c2cb45a11a686a8837b101e51a2cb34f5c235",
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Script",
@@ -31,33 +37,49 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gaana.com",
-                "hot.liputan6.com",
-                "m.bola.net",
-                "m.dream.co.id",
-                "m.liputan6.com",
                 "m.vidio.com",
                 "www.bola.net",
-                "www.carousell.com.hk",
-                "www.carousell.ph",
                 "www.carousell.sg",
+                "www.carousell.ph",
+                "www.carousell.com.hk",
                 "www.liputan6.com",
                 "www.zee5.com"
+            ]
+        },
+        {
+            "rule": "tercept\\.com\\/u_prop",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "serve"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000282,
+            "cnames": [],
+            "responseHashes": [
+                "656961402ad9e2331624436f0166e536861267717e07fb8525f4addd08abde1f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vidio.com",
+                "m.vidio.com",
+                "www.bola.net",
+                "www.liputan6.com"
             ]
         }
     ],
     "categories": [],
-    "performance": {
-        "time": 0,
-        "size": 0,
-        "cpu": 0,
-        "cache": 3
-    },
+    "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 12
+        "Script": 8,
+        "XHR": 4
     },
     "nameservers": [
-        "ns71.domaincontrol.com",
-        "ns72.domaincontrol.com"
+        "ns72.domaincontrol.com",
+        "ns71.domaincontrol.com"
     ]
 }

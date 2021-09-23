@@ -7,13 +7,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000194,
-    "sites": 28,
+    "prevalence": 0.000155,
+    "sites": 22,
     "subdomains": [
         "tm",
         "udr",
         "tracker.bt",
-        "espn"
+        "logger"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -21,16 +21,22 @@
         {
             "rule": "uol\\.com\\.br\\/mercurio\\.html",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "tm"
             ],
-            "apis": {},
-            "sites": 14,
-            "prevalence": 0.0000972,
+            "apis": {
+                "Date.prototype.getTime": 3,
+                "Event.prototype.timeStamp": 1
+            },
+            "sites": 13,
+            "prevalence": 0.0000915,
             "cnames": [],
             "responseHashes": [
-                "9120bd86f7501823599a79f60f432e7742f2fd00b17984230cd6641085548690"
+                "9120bd86f7501823599a79f60f432e7742f2fd00b17984230cd6641085548690",
+                "c62b9265177ad010877848fd86d5fdc8e1f51e93bd443625b980968dca45ed2e",
+                "80e8c8e627d176d3523f4d1abc040db71c4e9bf13ab2299b3b4bb471fca8a99c",
+                "0215ccffa0df9b60fa923c213d47d95048bd3e7491c89d2232bdea1cfd6c6b28"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -40,41 +46,35 @@
                 "jus.com.br",
                 "mobile.guiamais.com.br",
                 "olhardigital.com.br",
-                "www.concursosnobrasil.com.br",
+                "www.dicasdemulher.com.br",
                 "www.dicionarioinformal.com.br",
                 "www.gazetadopovo.com.br",
                 "www.guiadasemana.com.br",
                 "www.guiamais.com.br",
                 "www.infoescola.com",
                 "www.legiaodosherois.com.br",
-                "www.magazineluiza.com.br",
                 "www.mensagenscomamor.com",
                 "www.netshoes.com.br"
             ]
         },
         {
             "rule": "uol\\.com\\.br\\/",
-            "cookies": 0.0000833,
+            "cookies": 0.0000633,
             "fingerprinting": 0,
             "subdomains": [
                 "udr"
             ],
             "apis": {},
-            "sites": 12,
-            "prevalence": 0.0000833,
+            "sites": 9,
+            "prevalence": 0.0000633,
             "cnames": [],
             "responseHashes": [
-                "9e3f1fcde70a095730e8812d4f59a304bb83d9afd9c15deaa8515995360f4c03",
-                "4e82fdcc147a20a46f14c8b3e511d15f2b2fea1b385ed77feaa2d706d6cda5d1",
-                "062766619a92554609694b855ba1c70cdf896bc1e71f162bf26e77d61c17dd29",
-                "3dfc58e4bc7b791fa3507b71bc706bdb7b8d3004d8d0a2dc9abea941c79cdfbf",
-                "8c70bbdb8410e7438c87d9b7f38649506cb44b13bb6d6e1cde4fdce70aa75bec",
-                "edc70272fd22f002b4540c48e5b1166a6b9638eb513f4965397d5c721620c8b7",
-                "f3287c78230b5c22f928fe8b43bbe17c9b557af9b5f1b638e8eedbfa0cfb3974",
-                "ca3c60a5766397a64715f4bee7c600757533e3d4c9be276aa85ddcc56705379e",
-                "07303122f779152b0b205cdfd9b0d13f7416c36ec1851d0d0563d7c18123efb5",
-                "512b7c5e9eec9c275f90c38a300b77d4f308f3fb2b2c553d1a0587962e3217cf",
-                "31f7370082520a7235f9b1cd3da0c24202116c2981816d0fa0a09bfdbdeeae31"
+                "2bdfe801b9f708604d7bd97c4deb49f487c7f556145ed8d55e86e262dd1aa0db",
+                "19d899e463b561fec1fb52f6f79b2132c12e24078d186a4630326953bdef8f5a",
+                "70cc623f1a509a4140744bb2400a422c6a9eeb41accbb325a76caf26c93ed95e",
+                "393e10b3a5fa49351d1b101cae9a4e21171a3748814cbcb8d531d15ce4d3efa3",
+                "f70a3f2df2c1d4786b3e89afb8a2acb012456af1d3da44b09952de4a4d391563",
+                "f7142093fd7b187ebd5732762a98e4cb9e2355fcd68a4d52907231351edc021f"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -84,9 +84,6 @@
                 "jus.com.br",
                 "mobile.guiamais.com.br",
                 "olhardigital.com.br",
-                "www.concursosnobrasil.com.br",
-                "www.dicionarioinformal.com.br",
-                "www.gazetadopovo.com.br",
                 "www.guiadasemana.com.br",
                 "www.guiamais.com.br",
                 "www.infoescola.com",
@@ -96,14 +93,14 @@
         },
         {
             "rule": "uol\\.com\\.br\\/store",
-            "cookies": 0.0000625,
+            "cookies": 0.0000493,
             "fingerprinting": 0,
             "subdomains": [
                 "udr"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.0000625,
+            "sites": 7,
+            "prevalence": 0.0000493,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
@@ -114,26 +111,54 @@
                 "jus.com.br",
                 "mobile.guiamais.com.br",
                 "olhardigital.com.br",
-                "www.concursosnobrasil.com.br",
-                "www.gazetadopovo.com.br",
                 "www.guiadasemana.com.br",
                 "www.guiamais.com.br",
                 "www.legiaodosherois.com.br"
             ]
         },
         {
+            "rule": "uol\\.com\\.br\\/partner",
+            "cookies": 0.0000422,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracker.bt"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000493,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "guiamais.com.br",
+                "jus.com.br",
+                "mobile.guiamais.com.br",
+                "olhardigital.com.br",
+                "www.guiadasemana.com.br",
+                "www.guiamais.com.br",
+                "www.mensagenscomamor.com"
+            ]
+        },
+        {
             "rule": "uol\\.com\\.br\\/purge-clients\\.html",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "tm"
             ],
-            "apis": {},
-            "sites": 10,
-            "prevalence": 0.0000694,
+            "apis": {
+                "Date.prototype.getTime": 1
+            },
+            "sites": 8,
+            "prevalence": 0.0000563,
             "cnames": [],
             "responseHashes": [
-                "6a93c477127bad12d08a779a445d4c5962578f57d4171aee20df69a2b3e8c349"
+                "6a93c477127bad12d08a779a445d4c5962578f57d4171aee20df69a2b3e8c349",
+                "08550420a4efae6c59c387c55819a8c0d78ca9b94156969e25eaee3ad0ba4ee8"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -144,104 +169,67 @@
                 "jus.com.br",
                 "mobile.guiamais.com.br",
                 "olhardigital.com.br",
-                "www.concursosnobrasil.com.br",
-                "www.dicionarioinformal.com.br",
-                "www.gazetadopovo.com.br",
+                "www.guiadasemana.com.br",
                 "www.guiamais.com.br",
                 "www.mensagenscomamor.com"
             ]
         },
         {
-            "rule": "uol\\.com\\.br\\/partner",
-            "cookies": 0.0000694,
+            "rule": "uol\\.com\\.br\\/v1\\/",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "tracker.bt"
+                "logger"
             ],
             "apis": {},
-            "sites": 10,
-            "prevalence": 0.0000694,
+            "sites": 2,
+            "prevalence": 0.0000141,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "guiamais.com.br",
-                "jus.com.br",
-                "mobile.guiamais.com.br",
                 "olhardigital.com.br",
-                "www.concursosnobrasil.com.br",
-                "www.dicionarioinformal.com.br",
-                "www.gazetadopovo.com.br",
-                "www.guiamais.com.br",
-                "www.mensagenscomamor.com",
-                "www.techtudo.com.br"
+                "www.guiadasemana.com.br"
             ]
         },
         {
-            "rule": "uol\\.com\\.br\\/load_video_player\\/625748\\.js",
+            "rule": "uol\\.com\\.br\\/v1\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "espn"
+                "logger"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000139,
+            "prevalence": 0.0000141,
             "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Script",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "espn.com.br",
-                "www.espn.com.br"
-            ]
-        },
-        {
-            "rule": "uol\\.com\\.br\\/load_video_player\\/626668\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "espn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000139,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "espn.com.br",
-                "www.espn.com.br"
+                "olhardigital.com.br",
+                "www.guiadasemana.com.br"
             ]
         }
     ],
     "categories": [],
-    "performance": {
-        "time": 0,
-        "size": 0,
-        "cpu": 0,
-        "cache": 3
-    },
-    "cookies": 0.00016,
+    "performance": {},
+    "cookies": 0.000106,
     "types": {
-        "Document": 24,
-        "Fetch": 21,
-        "Script": 14
+        "Document": 21,
+        "Fetch": 16,
+        "Script": 7,
+        "XHR": 2,
+        "Preflight": 2
     },
     "nameservers": [
-        "eliot.uol.com.br",
         "charles.uol.com.br",
-        "borges.uol.com.br"
+        "borges.uol.com.br",
+        "eliot.uol.com.br"
     ]
 }

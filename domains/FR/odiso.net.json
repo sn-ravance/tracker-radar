@@ -4,7 +4,7 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000805,
+    "prevalence": 0.000808,
     "sites": 8,
     "subdomains": [
         "czproxy",
@@ -12,9 +12,14 @@
         "febproxy",
         "metproxy",
         "psproxy",
-        "turproxy"
+        "turproxy",
+        "picwictoysproxy"
     ],
     "cnames": [
+        {
+            "original": "api.picwictoys.com",
+            "resolved": "picwictoysproxy.odiso.net"
+        },
         {
             "original": "matomo.cuisineaz.com",
             "resolved": "czproxy.odiso.net"
@@ -44,7 +49,7 @@
     "resources": [
         {
             "rule": "odiso\\.net\\/matomo\\.js",
-            "cookies": 0.000503,
+            "cookies": 0.000606,
             "fingerprinting": 2,
             "subdomains": [
                 "czproxy",
@@ -56,7 +61,7 @@
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.000604,
+            "prevalence": 0.000606,
             "cnames": [
                 {
                     "original": "matomo.cuisineaz.com",
@@ -112,7 +117,7 @@
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.000604,
+            "prevalence": 0.000606,
             "cnames": [
                 {
                     "original": "matomo.cuisineaz.com",
@@ -142,7 +147,7 @@
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Other",
+            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -153,14 +158,42 @@
                 "www.passeportsante.net",
                 "www.turbo.fr"
             ]
+        },
+        {
+            "rule": "odiso\\.net\\/api\\/installments_payment_information",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "picwictoysproxy"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "api.picwictoys.com",
+                    "resolved": "picwictoysproxy.odiso.net"
+                }
+            ],
+            "responseHashes": [
+                "2b1961f5fb09f9a428979cd47372ec808c105ac0c51277fb5b46051a4aecb139"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "picwictoys.com",
+                "www.picwictoys.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000503,
+    "cookies": 0.000606,
     "types": {
         "Script": 6,
-        "Other": 6
+        "Ping": 6,
+        "Fetch": 2
     },
     "nameservers": []
 }

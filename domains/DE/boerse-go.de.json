@@ -4,14 +4,35 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.0001,
+    "prevalence": 0.000101,
     "sites": 1,
     "subdomains": [
+        "quotes-ws",
         "api"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "boerse-go\\.de\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "quotes-ws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "godmode-trader.de",
+                "www.godmode-trader.de"
+            ]
+        },
         {
             "rule": "boerse-go\\.de\\/v1\\/article\\/\\.json",
             "cookies": 0,
@@ -23,9 +44,7 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [
-                "1fedb4c0027a516950013cf91688851e8e4954353fa6506017fbcaed8d57ad12"
-            ],
+            "responseHashes": [],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -37,13 +56,14 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0,
     "types": {
+        "WebSocket": 2,
         "Fetch": 2
     },
     "nameservers": [
-        "robotns3.second-ns.com",
         "ns1.first-ns.de",
-        "robotns2.second-ns.de"
+        "robotns2.second-ns.de",
+        "robotns3.second-ns.com"
     ]
 }

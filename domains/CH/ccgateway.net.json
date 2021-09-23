@@ -7,13 +7,15 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000401,
-    "sites": 4,
+    "prevalence": 0.000502,
+    "sites": 5,
     "subdomains": [
         "script-api",
+        "carbon-cdn",
         "privacy-location-edge",
+        "revenue-mapping-api",
         "tag-api",
-        "revenue-mapping-api"
+        "tag-api-2-1"
     ],
     "cnames": [
         {
@@ -25,18 +27,23 @@
             "resolved": "tag-api.ccgateway.net"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "ccgateway\\.net\\/script",
-            "cookies": 0.000401,
+            "cookies": 0.000502,
             "fingerprinting": 1,
             "subdomains": [
-                "script-api"
+                "script-api",
+                "carbon-cdn"
             ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "apis": {
+                "Date.prototype.getTime": 1,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [
                 {
                     "original": "script-api.kinja.com",
@@ -44,43 +51,45 @@
                 }
             ],
             "responseHashes": [
-                "ec7c10005bc986c600ccef5946ed9d244041bf52bda07f244b4f2d00d7484b36",
-                "e52c3b8716d8d91912ef093e75f4a5001bdf29d4be9d5609ab01a7c72cd163ea",
-                "3ddff2120c4df5495a9208bb1baebe00ffb176abb1ac828b4c9b9e588b6f03e4"
+                "14e73e3c68eda7458fe116aac4f799be3397922b1cae844200d9bdd4c23025eb",
+                "17d16529ab6e2b6083d2bb4db0c4170c9f65965b3a86e70dc0f2f5db5d06cfff",
+                "3463d8fd2d7b9e9f9f6e15f44cd0d653bef6afa648dcc77df9bfb3bed4c12d75",
+                "987713bd7cc43c4b5abb074f8cd6f3194cd972764bdb41e83ff24c27b1b5b202"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "GLAM-JID": {
                     "ttl": 1202,
                     "length": 32,
-                    "prevalence": 0.0004014452027298274,
+                    "prevalence": 0.0005023106288929073,
                     "uniqueness": 1
                 },
                 "GLAM-AID": {
                     "ttl": 2592002,
                     "length": 32,
-                    "prevalence": 0.0004014452027298274,
+                    "prevalence": 0.0005023106288929073,
                     "uniqueness": 1
                 },
                 "GLAM-SID": {
                     "ttl": null,
                     "length": 32,
-                    "prevalence": 0.0004014452027298274,
+                    "prevalence": 0.0005023106288929073,
                     "uniqueness": 1
                 },
                 "__j_state": {
                     "ttl": 1202,
-                    "length": 220,
-                    "prevalence": 0.0004014452027298274,
+                    "length": 226,
+                    "prevalence": 0.0005023106288929073,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gizmodo.com",
-                "jezebel.com",
+                "jalopnik.com",
                 "kotaku.com",
-                "lifehacker.com"
+                "lifehacker.com",
+                "www.realclearpolitics.com"
             ]
         },
         {
@@ -92,7 +101,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000401,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
                 "d9f23619ed881ec26f0a846e9b5b9e8ac0bf60a26139462a83413d02c1de08d7"
@@ -102,7 +111,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gizmodo.com",
-                "jezebel.com",
+                "jalopnik.com",
                 "kotaku.com",
                 "lifehacker.com"
             ]
@@ -114,9 +123,12 @@
             "subdomains": [
                 "script-api"
             ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "apis": {
+                "window.localStorage": 1,
+                "window.sessionStorage": 1
+            },
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [
                 {
                     "original": "script-api.kinja.com",
@@ -131,9 +143,10 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gizmodo.com",
-                "jezebel.com",
+                "jalopnik.com",
                 "kotaku.com",
-                "lifehacker.com"
+                "lifehacker.com",
+                "www.realclearpolitics.com"
             ]
         },
         {
@@ -144,22 +157,24 @@
                 "script-api"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
-                "8bd2d68a7527d3d8b83a810d3e2658ddf62cd04ce9e12df07f063be80db9dae3",
-                "88b5e111f599a92d2d54bf54f59eaeeafa446e7241eaf86daf2fcb1b0a7eb37d",
-                "2a1ef9ce376ea78231bd0a5574358fc3c0ec3d5b0ea29815af821db9ca5589e7"
+                "30c2b89de8cdfe8346f6f18d428ee5af835337eeccd3fdd4190b99ad671ffda8",
+                "938335ebd7b4bf6e193f5944b23573d56cb7484945c85de18477b787eb2f1dda",
+                "17fb3673afa6dd699ae689edcb662cb9bfecaaa14c3ccfaffeb5afb8526d34b2",
+                "125efe4f150528f41fe01fdd05ed400244cb9e7a55047587ea601a6d669616cf"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gizmodo.com",
-                "jezebel.com",
+                "jalopnik.com",
                 "kotaku.com",
-                "lifehacker.com"
+                "lifehacker.com",
+                "www.realclearpolitics.com"
             ]
         },
         {
@@ -171,7 +186,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000401,
+            "prevalence": 0.000402,
             "cnames": [
                 {
                     "original": "script-api.kinja.com",
@@ -186,21 +201,21 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gizmodo.com",
-                "jezebel.com",
+                "jalopnik.com",
                 "kotaku.com",
                 "lifehacker.com"
             ]
         },
         {
-            "rule": "ccgateway\\.net\\/script\\/launcher\\/8\\/tap_rp\\.js",
+            "rule": "ccgateway\\.net\\/script\\/launcher\\/9\\/tap_rp\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "script-api"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [
                 {
                     "original": "script-api.kinja.com",
@@ -208,16 +223,17 @@
                 }
             ],
             "responseHashes": [
-                "a5644924bbb7d526b574e55601e903dc36d38fcf67154874f7a39ea578c31c78"
+                "20809a7928d25e26d8f009ebe5f825839e9d2a5fd325555e7f961b38c89c88e4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gizmodo.com",
-                "jezebel.com",
+                "jalopnik.com",
                 "kotaku.com",
-                "lifehacker.com"
+                "lifehacker.com",
+                "www.realclearpolitics.com"
             ]
         },
         {
@@ -228,8 +244,8 @@
                 "script-api"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [
                 {
                     "original": "script-api.kinja.com",
@@ -244,9 +260,10 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gizmodo.com",
-                "jezebel.com",
+                "jalopnik.com",
                 "kotaku.com",
-                "lifehacker.com"
+                "lifehacker.com",
+                "www.realclearpolitics.com"
             ]
         },
         {
@@ -258,7 +275,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000401,
+            "prevalence": 0.000402,
             "cnames": [
                 {
                     "original": "script-api.kinja.com",
@@ -266,16 +283,16 @@
                 }
             ],
             "responseHashes": [
-                "0bc6946a9537f6b6291c2819fa7fecb2d047768f7675dc6a36c4490de1ef7443",
-                "958117e2dc21338b43bfdba6a1117591e1779c0570f4c1ad79955558388650bb",
-                "ee3761584a01056c7cd2df249b5a61611eb3b5eb709d919326964a04450f7638"
+                "e20f22fc09f3451563174370c2e4cf9286eb801564f6e056d8602668ba884d37",
+                "1e04a3914464cbfe54e2e1608b848416a101028a395c3d2226a8a3a771c1a96b",
+                "9d94d97c9b53b1f447cf81c4d5b7148c9cc60142639a5a71fb0555894cfffcd4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gizmodo.com",
-                "jezebel.com",
+                "jalopnik.com",
                 "kotaku.com",
                 "lifehacker.com"
             ]
@@ -287,9 +304,12 @@
             "subdomains": [
                 "script-api"
             ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.language": 1
+            },
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [
                 {
                     "original": "script-api.kinja.com",
@@ -304,9 +324,10 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gizmodo.com",
-                "jezebel.com",
+                "jalopnik.com",
                 "kotaku.com",
-                "lifehacker.com"
+                "lifehacker.com",
+                "www.realclearpolitics.com"
             ]
         },
         {
@@ -317,8 +338,8 @@
                 "privacy-location-edge"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
                 "1c55d9b826e8dfa994370e306ae8dc2e849f3e003381dc848a0b95f782c0c0e3"
@@ -328,21 +349,47 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gizmodo.com",
-                "jezebel.com",
+                "jalopnik.com",
+                "kotaku.com",
+                "lifehacker.com",
+                "www.realclearpolitics.com"
+            ]
+        },
+        {
+            "rule": "ccgateway\\.net\\/gam\\/v1\\/2d00f552-60db-428f-8e7f-b4f504ebc501",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "revenue-mapping-api"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "d7e019b7258e378ecee6fa5651b2bc042e216ebffa3558e4d92bce0e6697b7fb"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gizmodo.com",
+                "jalopnik.com",
                 "kotaku.com",
                 "lifehacker.com"
             ]
         },
         {
-            "rule": "ccgateway\\.net\\/v1\\/event\\/record\\/script-load",
+            "rule": "ccgateway\\.net\\/v1\\/event\\/record\\/ad-impression-gpt",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "tag-api"
+                "tag-api",
+                "tag-api-2-1"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [
                 {
                     "original": "tag-api.kinja.com",
@@ -350,32 +397,69 @@
                 }
             ],
             "responseHashes": [
-                "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
+                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "GLAM-JID": 0.0004014452027298274,
-                "GLAM-AID": 0.0004014452027298274,
-                "GLAM-SID": 0.0004014452027298274
+                "GLAM-JID": 0.0005023106288929073,
+                "GLAM-AID": 0.0005023106288929073,
+                "GLAM-SID": 0.0005023106288929073,
+                "tt_c_vmt": 0.00010046212577858148
             },
             "exampleSites": [
                 "gizmodo.com",
-                "jezebel.com",
+                "jalopnik.com",
                 "kotaku.com",
-                "lifehacker.com"
+                "lifehacker.com",
+                "www.realclearpolitics.com"
+            ]
+        },
+        {
+            "rule": "ccgateway\\.net\\/v1\\/event\\/record\\/script-load",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tag-api",
+                "tag-api-2-1"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000502,
+            "cnames": [
+                {
+                    "original": "tag-api.kinja.com",
+                    "resolved": "tag-api.ccgateway.net"
+                }
+            ],
+            "responseHashes": [
+                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "GLAM-JID": 0.0005023106288929073,
+                "GLAM-AID": 0.0005023106288929073,
+                "GLAM-SID": 0.0005023106288929073
+            },
+            "exampleSites": [
+                "gizmodo.com",
+                "jalopnik.com",
+                "kotaku.com",
+                "lifehacker.com",
+                "www.realclearpolitics.com"
             ]
         },
         {
             "rule": "ccgateway\\.net\\/setUser",
-            "cookies": 0.000401,
+            "cookies": 0.000502,
             "fingerprinting": 0,
             "subdomains": [
                 "script-api"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [
                 {
                     "original": "script-api.kinja.com",
@@ -390,66 +474,10 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gizmodo.com",
-                "jezebel.com",
+                "jalopnik.com",
                 "kotaku.com",
-                "lifehacker.com"
-            ]
-        },
-        {
-            "rule": "ccgateway\\.net\\/gam\\/v1\\/2d00f552-60db-428f-8e7f-b4f504ebc501",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "revenue-mapping-api"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
-            "cnames": [],
-            "responseHashes": [
-                "27a017a9e648bc0a12e97a6823cbda31651c56ba60200ee0473503141b07ca0c"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "gizmodo.com",
-                "jezebel.com",
-                "kotaku.com",
-                "lifehacker.com"
-            ]
-        },
-        {
-            "rule": "ccgateway\\.net\\/v1\\/event\\/record\\/ad-impression-gpt",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tag-api"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
-            "cnames": [
-                {
-                    "original": "tag-api.kinja.com",
-                    "resolved": "tag-api.ccgateway.net"
-                }
-            ],
-            "responseHashes": [
-                "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "GLAM-JID": 0.0004014452027298274,
-                "GLAM-AID": 0.0004014452027298274,
-                "GLAM-SID": 0.0004014452027298274
-            },
-            "exampleSites": [
-                "gizmodo.com",
-                "jezebel.com",
-                "kotaku.com",
-                "lifehacker.com"
+                "lifehacker.com",
+                "www.realclearpolitics.com"
             ]
         },
         {
@@ -457,11 +485,12 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "tag-api"
+                "tag-api",
+                "tag-api-2-1"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [
                 {
                     "original": "tag-api.kinja.com",
@@ -469,31 +498,49 @@
                 }
             ],
             "responseHashes": [
-                "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
+                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gizmodo.com",
-                "jezebel.com",
+                "jalopnik.com",
                 "kotaku.com",
-                "lifehacker.com"
+                "lifehacker.com",
+                "www.realclearpolitics.com"
+            ]
+        },
+        {
+            "rule": "ccgateway\\.net\\/gam\\/v1\\/25501ba0-d14e-4aa0-b14e-0fcbe734471b",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "revenue-mapping-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "96a4c81c8308af14c092c46bcd5f009b70e2aa253a739e7ca4df0f4ba30b6306"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "realclearpolitics.com",
+                "www.realclearpolitics.com"
             ]
         }
     ],
     "categories": [],
-    "performance": {
-        "time": 1,
-        "size": 1,
-        "cpu": 0,
-        "cache": 1
-    },
-    "cookies": 0.000401,
+    "performance": {},
+    "cookies": 0.000502,
     "types": {
-        "Script": 40,
-        "XHR": 8,
-        "Image": 12
+        "Script": 47,
+        "XHR": 11,
+        "Image": 15
     },
     "nameservers": [
         "ns3-05.azure-dns.org",

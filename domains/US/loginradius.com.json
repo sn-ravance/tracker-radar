@@ -7,34 +7,19 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000111,
-    "sites": 16,
+    "prevalence": 0.0000633,
+    "sites": 9,
     "subdomains": [
         "cdn",
         "hub",
         "share",
-        "cbc-login.hub",
-        "hola-auth.hub",
-        "surrey.hub",
         "reachplc.hub",
         "monarte.hub"
     ],
     "cnames": [
         {
-            "original": "accounts.surrey.ca",
-            "resolved": "surrey.hub.loginradius.com"
-        },
-        {
             "original": "auth.arte.tv",
             "resolved": "monarte.hub.loginradius.com"
-        },
-        {
-            "original": "auth.hola.com",
-            "resolved": "hola-auth.hub.loginradius.com"
-        },
-        {
-            "original": "login.cbc.ca",
-            "resolved": "cbc-login.hub.loginradius.com"
         }
     ],
     "fingerprinting": 1,
@@ -47,10 +32,10 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.0000139,
+            "prevalence": 0.0000141,
             "cnames": [],
             "responseHashes": [
                 "0670fb16f841523dca4aab4633ca0f9ef4f0639e3ceeaad1e3f8cc46c1992923"
@@ -71,11 +56,12 @@
                 "hub"
             ],
             "apis": {
+                "Navigator.prototype.userAgent": 1,
                 "window.localStorage": 1,
                 "Date.prototype.getTime": 1
             },
             "sites": 2,
-            "prevalence": 0.0000139,
+            "prevalence": 0.0000141,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -97,7 +83,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000139,
+            "prevalence": 0.0000141,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -115,89 +101,11 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cbc-login.hub",
-                "hola-auth.hub",
-                "surrey.hub"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000347,
-            "cnames": [
-                {
-                    "original": "login.cbc.ca",
-                    "resolved": "cbc-login.hub.loginradius.com"
-                },
-                {
-                    "original": "auth.hola.com",
-                    "resolved": "hola-auth.hub.loginradius.com"
-                },
-                {
-                    "original": "accounts.surrey.ca",
-                    "resolved": "surrey.hub.loginradius.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cbc.ca",
-                "us.hola.com",
-                "www.cbc.ca",
-                "www.hola.com",
-                "www.surrey.ca"
-            ]
-        },
-        {
-            "rule": "loginradius\\.com\\/ssologin\\/login",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cbc-login.hub",
-                "hola-auth.hub",
-                "surrey.hub"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000347,
-            "cnames": [
-                {
-                    "original": "login.cbc.ca",
-                    "resolved": "cbc-login.hub.loginradius.com"
-                },
-                {
-                    "original": "auth.hola.com",
-                    "resolved": "hola-auth.hub.loginradius.com"
-                },
-                {
-                    "original": "accounts.surrey.ca",
-                    "resolved": "surrey.hub.loginradius.com"
-                }
-            ],
-            "responseHashes": [
-                "f7a4a046540cd7b682afc0d129cbbdea16081d1a54dfd3385115725f960c54c9"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cbc.ca",
-                "us.hola.com",
-                "www.cbc.ca",
-                "www.hola.com",
-                "www.surrey.ca"
-            ]
-        },
-        {
-            "rule": "loginradius\\.com\\/ssologin\\/login",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
                 "reachplc.hub"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000208,
+            "prevalence": 0.0000211,
             "cnames": [],
             "responseHashes": [
                 "f7a4a046540cd7b682afc0d129cbbdea16081d1a54dfd3385115725f960c54c9"
@@ -220,7 +128,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000139,
+            "prevalence": 0.0000141,
             "cnames": [
                 {
                     "original": "auth.arte.tv",
@@ -240,23 +148,16 @@
         }
     ],
     "categories": [],
-    "performance": {
-        "time": 0,
-        "size": 0,
-        "cpu": 0,
-        "cache": 3
-    },
+    "performance": {},
     "cookies": 0,
     "types": {
         "Script": 8,
-        "Preflight": 5,
-        "XHR": 5,
         "Fetch": 3
     },
     "nameservers": [
-        "ns1.p14.dynect.net",
-        "ns2.p14.dynect.net",
         "ns3.p14.dynect.net",
-        "ns4.p14.dynect.net"
+        "ns2.p14.dynect.net",
+        "ns4.p14.dynect.net",
+        "ns1.p14.dynect.net"
     ]
 }

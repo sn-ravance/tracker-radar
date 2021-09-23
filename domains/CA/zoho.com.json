@@ -7,29 +7,31 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00111,
-    "sites": 11,
+    "prevalence": 0.00103,
+    "sites": 10,
     "subdomains": [
         "crm",
+        "ma",
+        "mh",
         "salesiq",
         "pagesense-collect"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "zoho\\.com\\/crm\\/javascript\\/zcga\\.js",
-            "cookies": 0.000203,
+            "cookies": 0.000206,
             "fingerprinting": 1,
             "subdomains": [
                 "crm"
             ],
             "apis": {
-                "Document.cookie getter": 1,
-                "Document.cookie setter": 1
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000206,
             "cnames": [],
             "responseHashes": [
                 "d96f4e2562d6e813901bdbd6fc16e2c4a133db6d851991909f0db8bdb5afb3a4"
@@ -37,21 +39,65 @@
             "type": "Script",
             "firstPartyCookies": {
                 "gclid": {
-                    "ttl": 2592013,
+                    "ttl": 2592025,
                     "length": 9,
-                    "prevalence": 0.0001013273887931908,
-                    "uniqueness": 1
+                    "prevalence": 0.00020599443815016993,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "lunginstitute.com",
+                "bracebridgerealty.ca",
                 "propertyguys.com"
             ]
         },
         {
+            "rule": "zoho\\.com\\/hub\\/js\\/WebsiteAutomation\\.js",
+            "cookies": 0.000206,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ma",
+                "mh"
+            ],
+            "apis": {
+                "Navigator.prototype.cookieEnabled": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie setter": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000206,
+            "cnames": [],
+            "responseHashes": [
+                "a3607453d198e8bc3eec0d29f2566b085fc503c7395187c112e512e7b6e2fc05"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "zc_consent": {
+                    "ttl": 31536024,
+                    "length": 1,
+                    "prevalence": 0.00020599443815016993,
+                    "uniqueness": 0.5
+                },
+                "zc_show": {
+                    "ttl": 31536024,
+                    "length": 1,
+                    "prevalence": 0.00020599443815016993,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bracebridgerealty.ca",
+                "www.blackcircles.ca"
+            ]
+        },
+        {
             "rule": "zoho\\.com\\/widget",
-            "cookies": 0.000608,
+            "cookies": 0.000824,
             "fingerprinting": 2,
             "subdomains": [
                 "salesiq"
@@ -60,61 +106,81 @@
                 "window.sessionStorage": 6,
                 "window.localStorage": 6,
                 "Navigator.prototype.userAgent": 6,
-                "Date.prototype.getTime": 6,
-                "Document.cookie getter": 3,
+                "Date.prototype.getTime": 7,
+                "Document.cookie getter": 6,
                 "Navigator.prototype.language": 6,
-                "Screen.prototype.width": 5,
-                "Screen.prototype.height": 5,
-                "Document.cookie setter": 3
+                "Screen.prototype.width": 4,
+                "Screen.prototype.height": 4,
+                "Document.cookie setter": 4
             },
-            "sites": 6,
-            "prevalence": 0.000608,
+            "sites": 8,
+            "prevalence": 0.000824,
             "cnames": [],
             "responseHashes": [
-                "225fea0eb089d13cdfe7a8d6bea794ac791902235ec0b6fc1db8b174759ec06e"
+                "95584963753112e46af81c49fd4e54dccf2593b45763c39337a12b87bcfcce6c"
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "lunginstitute-_zldp": {
-                    "ttl": 63072022,
-                    "length": 84,
-                    "prevalence": 0.0001013273887931908,
+                "bracebridgerealty-_zldp": {
+                    "ttl": 63072005,
+                    "length": 88,
+                    "prevalence": 0.00010299721907508497,
                     "uniqueness": 1
                 },
-                "lunginstitute-_zldt": {
-                    "ttl": 86422,
+                "bracebridgerealty-_zldt": {
+                    "ttl": 86405,
                     "length": 38,
-                    "prevalence": 0.0001013273887931908,
+                    "prevalence": 0.00010299721907508497,
+                    "uniqueness": 1
+                },
+                "drelist-_zldp": {
+                    "ttl": 63072024,
+                    "length": 80,
+                    "prevalence": 0.00010299721907508497,
+                    "uniqueness": 1
+                },
+                "drelist-_zldt": {
+                    "ttl": 86424,
+                    "length": 38,
+                    "prevalence": 0.00010299721907508497,
+                    "uniqueness": 1
+                },
+                "isiframeenabled": {
+                    "ttl": 86418,
+                    "length": 4,
+                    "prevalence": 0.00010299721907508497,
                     "uniqueness": 1
                 },
                 "eq3support-_zldp": {
-                    "ttl": 63072008,
-                    "length": 82,
-                    "prevalence": 0.0001013273887931908,
+                    "ttl": 63072032,
+                    "length": 84,
+                    "prevalence": 0.00010299721907508497,
                     "uniqueness": 1
                 },
                 "eq3support-_zldt": {
-                    "ttl": 86408,
+                    "ttl": 86432,
                     "length": 38,
-                    "prevalence": 0.0001013273887931908,
+                    "prevalence": 0.00010299721907508497,
                     "uniqueness": 1
                 },
                 "ourkidsmedia-_zldp": {
-                    "ttl": 63072004,
-                    "length": 78,
-                    "prevalence": 0.0001013273887931908,
+                    "ttl": 63072032,
+                    "length": 84,
+                    "prevalence": 0.00010299721907508497,
                     "uniqueness": 1
                 },
                 "ourkidsmedia-_zldt": {
-                    "ttl": 86404,
+                    "ttl": 86432,
                     "length": 38,
-                    "prevalence": 0.0001013273887931908,
+                    "prevalence": 0.00010299721907508497,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "lunginstitute.com",
+                "bracebridgerealty.ca",
+                "covid-medical.ca",
+                "www.blackcircles.ca",
                 "www.drelist.com",
                 "www.eq3.com",
                 "www.nationalnutrition.ca",
@@ -124,27 +190,29 @@
         },
         {
             "rule": "zoho\\.com\\/getembeddetails\\.ls",
-            "cookies": 0.000608,
+            "cookies": 0.000721,
             "fingerprinting": 0,
             "subdomains": [
                 "salesiq"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.000608,
+            "sites": 7,
+            "prevalence": 0.000721,
             "cnames": [],
             "responseHashes": [
-                "ce4f8cfbd0cf94e3699242fe413ae76ddfcb5f86b8098f9b58fe23f30c0e7c59",
-                "cf3f2293dfb85701e197c797923fcb0dd2fe89465abdd04f7c36a670c0226763",
-                "d5175642f8a756a0f4a0fc1a16e4c4a32558a2d814b583ec3f31c259f1367e8a",
-                "0ddd47cb7856d27170fa04ada1ccb8241180a122400eeaee13fa626ea8485f59",
-                "a6cd3efc836f8705c86927fef33efe33d8529a7647b90281718f8016f797fbc6"
+                "8a9cf49d3750c9b0ed5dc7d70b3b05b7a05b6a9ba98b8ab6e47f51f256e6f7c4",
+                "df8c2cf6cf49bc2c270284ada641496c12ecbf3d5423e59330524c43ad1d1708",
+                "e8d1b624dad926da455951723dd5b8535be9f471dd5892f00a4f4fecee2322c0",
+                "f575c8facd4290dd6dd0a0dd0889e04f28d01621c1252eb1f0fed9d4c843b20f",
+                "d8a94e42caa6eb31e47616befed549b4fbd6e5efcd1222afe25e992308fe3881",
+                "e6258bd45287223df40172c715005e2e46936383b4121b50752175972395c9db"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "lunginstitute.com",
+                "bracebridgerealty.ca",
+                "www.blackcircles.ca",
                 "www.drelist.com",
                 "www.eq3.com",
                 "www.nationalnutrition.ca",
@@ -153,36 +221,52 @@
             ]
         },
         {
+            "rule": "zoho\\.com\\/hub\\/js\\/MagicPopup\\.js",
+            "cookies": 0.000206,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ma"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 1,
+                "Document.cookie getter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000206,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bracebridgerealty.ca",
+                "www.blackcircles.ca"
+            ]
+        },
+        {
             "rule": "zoho\\.com\\/psimg\\.gif",
-            "cookies": 0.000507,
+            "cookies": 0.000206,
             "fingerprinting": 0,
             "subdomains": [
                 "pagesense-collect"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000507,
+            "sites": 2,
+            "prevalence": 0.000206,
             "cnames": [],
             "responseHashes": [
                 "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
             ],
-            "type": "Other",
+            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "calltrk_referrer": 0.0001013273887931908,
-                "zabVisitId": 0.0004053095551727632,
-                "zsc5483ca5665ba4bdda47d57617afd7828": 0.0001013273887931908,
-                "zabUserId": 0.0003039821663795724,
-                "zsc54ecaf57aeb9466db26195393f2cc733": 0.0001013273887931908,
-                "zsc0c26657d89b14c1299f5cb9f3dcdbcc3": 0.0001013273887931908,
-                "zsc4de4d4c4c59d43d7b6aa00ca94453fae": 0.0001013273887931908
+                "zabUserId": 0.00020599443815016993,
+                "zabVisitId": 0.00010299721907508497,
+                "zsc0c26657d89b14c1299f5cb9f3dcdbcc3": 0.00010299721907508497
             },
             "exampleSites": [
-                "lunginstitute.com",
-                "www.canadawheels.ca",
-                "www.flyairnorth.com",
-                "www.hellobc.com",
-                "www.tourismpei.com"
+                "blackcircles.ca",
+                "www.hellobc.com"
             ]
         }
     ],
@@ -194,26 +278,21 @@
         "CDN",
         "Embedded Content"
     ],
-    "performance": {
-        "time": 1,
-        "size": 1,
-        "cpu": 0,
-        "cache": 1
-    },
-    "cookies": 0.00111,
+    "performance": {},
+    "cookies": 0.00103,
     "types": {
-        "Script": 8,
-        "XHR": 6,
-        "Other": 5
+        "Script": 14,
+        "XHR": 7,
+        "Ping": 2
     },
     "nameservers": [
-        "dns4.p03.nsone.net",
-        "dns1.p03.nsone.net",
-        "dns2.p03.nsone.net",
-        "dns3.p03.nsone.net",
+        "DNS4.P03.NSONE.NET",
+        "PDNS90.ULTRADNS.NET",
+        "DNS3.P03.NSONE.NET",
+        "DNS1.P03.NSONE.NET",
         "ns1.zohocorp.com",
-        "pdns90.ultradns.biz",
-        "pdns90.ultradns.net",
-        "pdns90.ultradns.org"
+        "DNS2.P03.NSONE.NET",
+        "PDNS90.ULTRADNS.BIZ",
+        "PDNS90.ULTRADNS.ORG"
     ]
 }

@@ -7,11 +7,14 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00213,
-    "sites": 21,
+    "prevalence": 0.00227,
+    "sites": 22,
     "subdomains": [
         "marvel-b2-cdn",
-        "marvel-b1-cdn"
+        "marvel-b1-cdn",
+        "cdn",
+        "cta-cf",
+        "cta-cdn"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -24,26 +27,24 @@
                 "marvel-b2-cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 11,
-                "Navigator.prototype.appVersion": 11
+                "Navigator.prototype.userAgent": 9,
+                "Navigator.prototype.appVersion": 9
             },
-            "sites": 13,
-            "prevalence": 0.00132,
+            "sites": 11,
+            "prevalence": 0.00113,
             "cnames": [],
             "responseHashes": [
-                "04358f8c79513a23b07e61cd7f91e86b9f703499c0d9252d50a57483b79ad050"
+                "965fc05b277596a937ba9d14388799fd5217eb96179f0187b8b937347bdfaf59"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "eastlink.ca",
+                "akc.org",
                 "www.aao.org",
                 "www.akc.org",
-                "www.cyberpowersystems.com",
                 "www.eastlink.ca",
                 "www.fjallraven.com",
-                "www.fortinet.com",
                 "www.gopresto.com",
                 "www.niagaraparks.com",
                 "www.peta.org",
@@ -61,10 +62,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000206,
             "cnames": [],
             "responseHashes": [
-                "3db87b94eacfbfc14cd02b80dd84a6838e40a80741dcac28b4d7cffe52a0607e"
+                "da8526ac370b857c8cb3a8750ca71f9e8e76a74c63137f2a3b8e56b8d1029f28"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -83,10 +84,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000206,
             "cnames": [],
             "responseHashes": [
-                "d8cdb715cb6f421c495188801f40c70a2f617da34b68ce5c16c967b91111d775"
+                "c5c467a215e39158cbdf882cb3b57f7dba28564866e737abcf52e96427388202"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -94,6 +95,35 @@
             "exampleSites": [
                 "aao.org",
                 "www.aao.org"
+            ]
+        },
+        {
+            "rule": "bc0a\\.com\\/be_ixf_js_sdk\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Date.prototype.getTimezoneOffset": 2
+            },
+            "sites": 4,
+            "prevalence": 0.000412,
+            "cnames": [],
+            "responseHashes": [
+                "48f4bffe2da00a97e29d4e6061ece48b43f32b1dea99c530c3d6ad9736542091"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "certifiedangusbeef.com",
+                "www.laura.ca",
+                "www.reviewjournal.com",
+                "www.warn.com"
             ]
         },
         {
@@ -105,10 +135,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000206,
             "cnames": [],
             "responseHashes": [
-                "13629ad31f7f7415033d5c3cd68629768251cab75b458e3157ff7949f2a35af1"
+                "5409c7ff0de509522c43981175c2f2fc4c2e4613abd23e26e7be3b2bf0090e49"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -117,19 +147,71 @@
                 "purolator.com",
                 "www.purolator.com"
             ]
+        },
+        {
+            "rule": "bc0a\\.com\\/compliance\\/becookiebar-v2\\.js",
+            "cookies": 0.000103,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cta-cf"
+            ],
+            "apis": {
+                "Document.cookie getter": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000206,
+            "cnames": [],
+            "responseHashes": [
+                "04c58f994bb6dfa2cf1916f0f60cd81f45bed7d6d7a08665165f54a94571cdf1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "BE_COOKIE_UDID": {
+                    "ttl": 604800010,
+                    "length": 36,
+                    "prevalence": 0.00010299721907508497,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "uoguelph.ca",
+                "www.warn.com"
+            ]
+        },
+        {
+            "rule": "bc0a\\.com\\/addeventtoqueue",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cta-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000206,
+            "cnames": [],
+            "responseHashes": [
+                "dbf37300be55981e98057aeb3e7f48f534a410668b204e37799b60714ab0a17c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "warn.com",
+                "www.warn.com"
+            ]
         }
     ],
     "categories": [],
-    "performance": {
-        "time": 1,
-        "size": 1,
-        "cpu": 0,
-        "cache": 1
-    },
-    "cookies": 0,
+    "performance": {},
+    "cookies": 0.000206,
     "types": {
-        "Script": 13,
-        "Image": 6
+        "Script": 17,
+        "Image": 6,
+        "Fetch": 2
     },
     "nameservers": [
         "pdns09.domaincontrol.com",

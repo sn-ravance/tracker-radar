@@ -9,24 +9,115 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000904,
-    "sites": 9,
+    "prevalence": 0.00121,
+    "sites": 12,
     "subdomains": [
+        "nslc-prod-app",
+        "production.p13n",
         "psapi-gateway-prod",
-        "fps-na-api-3"
+        "jabpc-publicservice-tfm-prod"
     ],
     "cnames": [
         {
-            "original": "na.fps3.ford.com",
-            "resolved": "fps-na-api-3.trafficmanager.net"
+            "original": "login.norton.com",
+            "resolved": "nslc-prod-app.trafficmanager.net"
+        },
+        {
+            "original": "productcatalogueapi.jabra.com",
+            "resolved": "jabpc-publicservice-tfm-prod.trafficmanager.net"
         },
         {
             "original": "psapi.nrk.no",
             "resolved": "psapi-gateway-prod.trafficmanager.net"
+        },
+        {
+            "original": "recommendations.production.p13n.dell.com",
+            "resolved": "production.p13n.trafficmanager.net"
         }
     ],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "trafficmanager\\.net\\/sso\\/idp\\/SAML2",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "nslc-prod-app"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [
+                {
+                    "original": "login.norton.com",
+                    "resolved": "nslc-prod-app.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [
+                "46448bc7fdc286795cb2b2192f1665f0491e48935d34a7244ef95dd4a633c6c7",
+                "fe9f7c914c239d24bd5b8f989734b4b661c041cbcc1a53a751f184dceec2d338",
+                "7c3ee9b0f907fcb39ebbb293366ab6d208434cccdb7c69ecfd6d1b2b98caadc9"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "norton.com",
+                "community.norton.com",
+                "safeweb.norton.com",
+                "support.norton.com"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/target\\/batchmbox\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production.p13n"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "recommendations.production.p13n.dell.com",
+                    "resolved": "production.p13n.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dell.com",
+                "www.dell.com"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/target\\/batchmbox\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production.p13n"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "recommendations.production.p13n.dell.com",
+                    "resolved": "production.p13n.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dell.com",
+                "www.dell.com"
+            ]
+        },
         {
             "rule": "trafficmanager\\.net\\/playback\\/metadata\\/p1_oslo_akershus",
             "cookies": 0,
@@ -43,7 +134,9 @@
                     "resolved": "psapi-gateway-prod.trafficmanager.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "225923576bdffb2fe8bdfee559f7bb8ac2daa6e0147cf39e86c5c3e5a96e0ee8"
+            ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -80,46 +173,41 @@
             ]
         },
         {
-            "rule": "trafficmanager\\.net\\/fps\\/api\\/personalization_1_8\\/get",
-            "cookies": 0,
+            "rule": "trafficmanager\\.net\\/\\/v1\\/family\\/filter",
+            "cookies": 0.0001,
             "fingerprinting": 0,
             "subdomains": [
-                "fps-na-api-3"
+                "jabpc-publicservice-tfm-prod"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "na.fps3.ford.com",
-                    "resolved": "fps-na-api-3.trafficmanager.net"
+                    "original": "productcatalogueapi.jabra.com",
+                    "resolved": "jabpc-publicservice-tfm-prod.trafficmanager.net"
                 }
             ],
-            "responseHashes": [
-                "b7a696b44b818831b764d14765e2307cf5f7badfff3e5cfdbe6c9ba0df50eb57"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ford.com",
-                "www.ford.com"
+                "jabra.com",
+                "www.jabra.com"
             ]
         }
     ],
     "categories": [
         "CDN"
     ],
-    "performance": {
-        "time": 0,
-        "size": 0,
-        "cpu": 0,
-        "cache": 0
-    },
-    "cookies": 0.000201,
+    "performance": {},
+    "cookies": 0.000603,
     "types": {
-        "Fetch": 4,
-        "XHR": 2
+        "Document": 4,
+        "XHR": 2,
+        "Preflight": 2,
+        "Fetch": 6
     },
     "nameservers": []
 }

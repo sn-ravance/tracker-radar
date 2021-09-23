@@ -9,26 +9,31 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.00952,
-    "sites": 95,
+    "prevalence": 0.0105,
+    "sites": 105,
     "subdomains": [
         "j.sni.global",
-        "m2.shared.global",
         "dualstack.d3.shared.global",
+        "o2.shared.global",
         "h3.shared.global",
         "d.sni.global",
         "e2.shared.us-eu",
         "a.heroku.ssl",
+        "fy-h3-frontier-a2z-com.customer",
         "g.sni.global",
         "k.sni.global",
-        "d.sni.us-eu",
         "f2.shared.global",
         "l3.shared.global",
+        "f4.shared.global",
+        "d.shared.global",
         "f3.shared.global",
         "y2.shared.global",
         "dualstack.i.shared.global",
+        "l2.shared.global",
+        "t.shared.global",
         "q2.shared.global",
         "p.shared.global",
+        "d.global-ssl",
         "d2.shared.global"
     ],
     "cnames": [
@@ -53,6 +58,10 @@
             "resolved": "a.heroku.ssl.fastly.net"
         },
         {
+            "original": "cdn.evbstatic.com",
+            "resolved": "f4.shared.global.fastly.net"
+        },
+        {
             "original": "central.paradoxwikis.com",
             "resolved": "dualstack.d3.shared.global.fastly.net"
         },
@@ -73,10 +82,6 @@
             "resolved": "e2.shared.us-eu.fastly.net"
         },
         {
-            "original": "cloud-strife.speedrun.com",
-            "resolved": "d.sni.us-eu.fastly.net"
-        },
-        {
             "original": "css.motogp.com",
             "resolved": "k.sni.global.fastly.net"
         },
@@ -89,8 +94,16 @@
             "resolved": "j.sni.global.fastly.net"
         },
         {
+            "original": "fly.accor.com",
+            "resolved": "j.sni.global.fastly.net"
+        },
+        {
             "original": "fonts.nymag.com",
             "resolved": "h3.shared.global.fastly.net"
+        },
+        {
+            "original": "fy-h3.frontier.a2z.com",
+            "resolved": "fy-h3-frontier-a2z-com.customer.fastly.net"
         },
         {
             "original": "graphql.haaretz.com",
@@ -149,20 +162,24 @@
             "resolved": "g.sni.global.fastly.net"
         },
         {
+            "original": "img.evbuc.com",
+            "resolved": "d.shared.global.fastly.net"
+        },
+        {
             "original": "keywords.mediavine.com",
             "resolved": "p.shared.global.fastly.net"
         },
         {
-            "original": "nyx-nyx-nyx.dotabuff.com",
-            "resolved": "d.sni.us-eu.fastly.net"
+            "original": "map.mp.nbc.com",
+            "resolved": "l2.shared.global.fastly.net"
+        },
+        {
+            "original": "marketdata.thestreet.com",
+            "resolved": "d.global-ssl.fastly.net"
         },
         {
             "original": "pg.ziffstatic.com",
             "resolved": "j.sni.global.fastly.net"
-        },
-        {
-            "original": "photos.motogp.com",
-            "resolved": "k.sni.global.fastly.net"
         },
         {
             "original": "prx.wayfair.com",
@@ -177,6 +194,10 @@
             "resolved": "p.shared.global.fastly.net"
         },
         {
+            "original": "segment-api.goodrx.com",
+            "resolved": "o2.shared.global.fastly.net"
+        },
+        {
             "original": "services.haaretz.com",
             "resolved": "y2.shared.global.fastly.net"
         },
@@ -189,8 +210,8 @@
             "resolved": "f3.shared.global.fastly.net"
         },
         {
-            "original": "static.scientificamerican.com",
-            "resolved": "m2.shared.global.fastly.net"
+            "original": "static.standard.co.uk",
+            "resolved": "t.shared.global.fastly.net"
         },
         {
             "original": "union.barstoolsports.com",
@@ -203,6 +224,33 @@
     ],
     "fingerprinting": 3,
     "resources": [
+        {
+            "rule": "fastly\\.net\\/cdx\\/r20\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "j.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "fly.accor.com",
+                    "resolved": "j.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "fcf31f6f5e7645da7e671537d68c2adf290b396fdc43bbf04228c4e4c32dd918"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "accor.com",
+                "all.accor.com"
+            ]
+        },
         {
             "rule": "fastly\\.net\\/zmg\\/pogoadk\\.js",
             "cookies": 0,
@@ -220,7 +268,7 @@
                 }
             ],
             "responseHashes": [
-                "b413210115451aa4c6cb5ab08044fe7c22262cbc68e456aaf226479da48d9a7c"
+                "7a87f7337f1cff7e8d96883be3a149bdebc6c545e584985234f59384e87c4b26"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -228,33 +276,6 @@
             "exampleSites": [
                 "pcmag.com",
                 "www.pcmag.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/sciam\\/cache\\/file\\/4E3364A7-7235-4246-85DBD1C3E3F60EE7_source\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "m2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "static.scientificamerican.com",
-                    "resolved": "m2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "be2890d44cabc3b7cab6f014ce3bf1b6241f65d7606e24c0094f7f5cdd1eb6a3"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "scientificamerican.com",
-                "www.scientificamerican.com"
             ]
         },
         {
@@ -274,14 +295,14 @@
                 }
             ],
             "responseHashes": [
-                "fc75073d31dc90fa48c9dadf03a38aa70fefd60ba78ece4ea1110decb20a598a"
+                "ff2a8bc8076accd309601c9ecc8b469c210d5e2c265bb50bdf32a0c8af18c3c9"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "paradoxwikis.com",
-                "hoi4.paradoxwikis.com",
+                "eu4.paradoxwikis.com",
                 "stellaris.paradoxwikis.com"
             ]
         },
@@ -302,7 +323,7 @@
                 }
             ],
             "responseHashes": [
-                "6adcd28371764147709fbb2b60865dcdd09771c8366b8772f4c3931d725ee9de"
+                "dadaf2914daca4ab300159ac8da73e33c531b6bd022d9c143115ca464525360c"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -310,6 +331,87 @@
             "exampleSites": [
                 "paradoxwikis.com",
                 "stellaris.paradoxwikis.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/images\\/3\\/35\\/Event_trigger\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dualstack.d3.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "central.paradoxwikis.com",
+                    "resolved": "dualstack.d3.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "0c0a71c1d16a1051cf3a05aea569fd9ce8216a98acfba5270bb350d8e5df66fe"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paradoxwikis.com",
+                "stellaris.paradoxwikis.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/v1\\/t",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "o2.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "segment-api.goodrx.com",
+                    "resolved": "o2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "f1ea07a1e51a389c8de07120ae5c2e432e9dd8f4fbd6f92489f185b0523a3fd4"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goodrx.com",
+                "www.goodrx.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/v1\\/p",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "o2.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "segment-api.goodrx.com",
+                    "resolved": "o2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "f1ea07a1e51a389c8de07120ae5c2e432e9dd8f4fbd6f92489f185b0523a3fd4"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goodrx.com",
+                "www.goodrx.com"
             ]
         },
         {
@@ -341,7 +443,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/v1\\/imgs\\/7c9\\/975\\/356483568f12382a208aeb79185573ae2f-1721Cov-4x5-cuomo\\.w240\\.jpg",
+            "rule": "fastly\\.net\\/v1\\/imgs\\/48f\\/4cc\\/7f182c17a2c0bbd36fa67b1559d63bfbf6-print-1921COV-Saddle-lay\\.w240\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -357,7 +459,7 @@
                 }
             ],
             "responseHashes": [
-                "af295cf5134beb1eed73ba92b75b6c3da8a869b33557e28d795881aab877cf3c"
+                "18d93f00ead05f9f926e387113ac7f72bc4780de04be51be0e58e819a668fdac"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -369,7 +471,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/v1\\/imgs\\/f13\\/8b7\\/7e996a787b662a70fc3c5c0e970e593683-HIGID-LaurieSegall-Final-V2\\.rsquare\\.w200\\.jpg",
+            "rule": "fastly\\.net\\/v1\\/imgs\\/7d2\\/eba\\/125b4a52e9f317b2896854a64e0182a587-best-worst-emmys\\.rsquare\\.w200\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -385,7 +487,7 @@
                 }
             ],
             "responseHashes": [
-                "5e79cb32d86abaff8e32de4ccb285fc3f02be13b7d9bebc83d319e058e1bcf19"
+                "fdddbf32faa0ad43fbca0312de65ce892ed2767d4c161f082d8c1fae96d898fd"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -396,15 +498,15 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/v1\\/imgs\\/cef\\/4da\\/58e20b9ac4e1f6508ade5a1f65fff5b0f7-NYMAG-ToteCampaign-692x444-lowres--1-\\.png",
+            "rule": "fastly\\.net\\/v1\\/imgs\\/b7c\\/4ab\\/1003386818393bfcd9b48b4486a023bdc0-GettyImages-1341328608\\.rsquare\\.w200\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "h3.shared.global"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "pyxis.nymag.com",
@@ -412,15 +514,14 @@
                 }
             ],
             "responseHashes": [
-                "d49a41bfc9c61efb5ec8c93c2119a43b4aeb7d5ae08b2a99353af3510f23d35b"
+                "00ea98e48f102964d30fbc94dae3828f276c5323182f602e526989010c0ea45a"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "nymag.com",
-                "www.thecut.com",
-                "www.vulture.com"
+                "www.thecut.com"
             ]
         },
         {
@@ -468,7 +569,7 @@
                 }
             ],
             "responseHashes": [
-                "494f7f9c6c433647b425275036e195eb0e62e0ac461ceebed5fcc8f8c06fa060"
+                "f2359a0028b39eef6807414ba2e75aa968cc3e4a1eae91419858e4a8bf8232da"
             ],
             "type": "Font",
             "firstPartyCookies": {},
@@ -495,7 +596,7 @@
                 }
             ],
             "responseHashes": [
-                "940ab9e3a65b8036cd248c9f377b9425a0405ba085553b5a1b818de47bfe0608"
+                "4833bf90160862ab0ddf1f0dfc6f7de759593cf8fe35d159ec5cd09b802ebf03"
             ],
             "type": "Font",
             "firstPartyCookies": {},
@@ -523,7 +624,7 @@
                 }
             ],
             "responseHashes": [
-                "bd2f51fc5bafb9406a165eae2404be6fca81fb46bf70e613d8f9c214ebe68be4"
+                "11e9bca3267388892fa5e4f3f8f5679a18014fafa7e5a82f8ba127e592cc4b83"
             ],
             "type": "Font",
             "firstPartyCookies": {},
@@ -550,7 +651,7 @@
                 }
             ],
             "responseHashes": [
-                "50f7ee9dceee4f5717bd0967869d00199246a0b08e4a08e8a356c1e99caf2418"
+                "542c148baea106f8b39a35345ed30f4c188eec7f0415b4ee771c10720db7f886"
             ],
             "type": "Font",
             "firstPartyCookies": {},
@@ -562,7 +663,7 @@
         },
         {
             "rule": "fastly\\.net\\/_nymcid",
-            "cookies": 0.000301,
+            "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [
                 "e2.shared.us-eu",
@@ -587,7 +688,7 @@
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "nymcid": 0.000902346099859635
+                "nymcid": 0.0008036970062286518
             },
             "exampleSites": [
                 "nymag.com",
@@ -633,116 +734,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/site\\/player\\/videojs\\/videojs-skin-colors\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "j.sni.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "fastfs1.podbean.com",
-                    "resolved": "j.sni.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "d15c2ed0ce5836320f971cfaca974e7e284736aaa0a234d08bb9b63c0d12f872"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "podbean.com",
-                "stewpeters.podbean.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/site\\/css\\/iconfont2\\/iconfont\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "j.sni.global"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [
-                {
-                    "original": "fastfs1.podbean.com",
-                    "resolved": "j.sni.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "5688581dfc27e1aff67c0e76f5ff1ae362459c2fede24d0941019e20cb2251da"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "podbean.com",
-                "stewpeters.podbean.com",
-                "www.podbean.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/site\\/player\\/videojs\\/mini_audio\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "j.sni.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "fastfs1.podbean.com",
-                    "resolved": "j.sni.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "8ceddd490addf4d9020cf75566dd649f30933e4e1d5d5769bd3a73d820bb363b"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "podbean.com",
-                "stewpeters.podbean.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/site\\/player\\/videojs\\/pbplayer\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "j.sni.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "fastfs1.podbean.com",
-                    "resolved": "j.sni.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "d797225b08daae1a19d3e3f6fdbfc72c174abe93739f6bbd6e306520fb12d206"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "podbean.com",
-                "stewpeters.podbean.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/assets\\/landing_page\\/redesign\\/main-aff80f7cf62b20515c4de90a9f20d1c72ef554e7212bf9ac329021265358d05f\\.css",
+            "rule": "fastly\\.net\\/assets\\/landing_page\\/redesign\\/main-ae60b65f20a197f5df60a2231c52ca754ce36d278ded620917ad8a28198ca2ed\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -758,9 +750,36 @@
                 }
             ],
             "responseHashes": [
-                "aff80f7cf62b20515c4de90a9f20d1c72ef554e7212bf9ac329021265358d05f"
+                "ae60b65f20a197f5df60a2231c52ca754ce36d278ded620917ad8a28198ca2ed"
             ],
             "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sendle.com",
+                "www.sendle.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/assets\\/logos\\/sendle-swift-logo-4a5a5c3eb22e749f6fc92e0dfc261129b4b53cbbbea69a6efec9560fdde57823\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "a.heroku.ssl"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "assets.sendle.com",
+                    "resolved": "a.heroku.ssl.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "4a5a5c3eb22e749f6fc92e0dfc261129b4b53cbbbea69a6efec9560fdde57823"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -785,7 +804,7 @@
                 }
             ],
             "responseHashes": [
-                "725091d1a6e949fa22cd1ac44d94c651b51c8f8ecc87782b32c7e2805f6f2efd"
+                "48ceb6acf2b07d52a97d5fffb314e17beceb87b576d2d3ce4b5506844bb65387"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -893,7 +912,7 @@
                 }
             ],
             "responseHashes": [
-                "c53106760c2ccdf3322cf6a63d85878c5a187880f9027faa8031a8fc30c73e94"
+                "e84f9a6b85c9198849ce4ad071dc673355c63f188f2c331d9b504c17316cc63a"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -920,7 +939,7 @@
                 }
             ],
             "responseHashes": [
-                "ca3662b28a448932b368c3bdc4ceba35150ef8603da48607ee16763cee9c9746"
+                "4467ac13d721071ae50ab43ec10631949eb4f4eb4d4c29d24ca62298ffe1a4dd"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -947,7 +966,7 @@
                 }
             ],
             "responseHashes": [
-                "e7d4f84bf273f213613e115cfbb0f9471384171d98846b615f55a51e2d11b21c"
+                "3d9c9a3a8ced2ff74f858113da605c991dbb097d326c18dcb85d4870381f009d"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -958,7 +977,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/assets\\/new_landing_page\\/redesign\\/sendle-price-guarantee-badge-us-66bd81e8201faa9a33812c8a606a310d58f1c7be86f7de6aedc1e7fb32ab184e\\.svg",
+            "rule": "fastly\\.net\\/assets\\/new_landing_page\\/redesign\\/sendle-price-guarantee-badge-us-5d31ca065543a1002e0482d924b279f1d075a5c21147388597360c7ec604ff4e\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -974,7 +993,7 @@
                 }
             ],
             "responseHashes": [
-                "66bd81e8201faa9a33812c8a606a310d58f1c7be86f7de6aedc1e7fb32ab184e"
+                "5d31ca065543a1002e0482d924b279f1d075a5c21147388597360c7ec604ff4e"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1109,7 +1128,7 @@
                 }
             ],
             "responseHashes": [
-                "27218af4ddd2d07a6601720a17d3291b9cfabf1601956896903d92f335fa7eb1"
+                "d2e64e2eeaf242de26a829e0568accc3e36a5dad679b44db71b637d49a2c0a32"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1136,7 +1155,7 @@
                 }
             ],
             "responseHashes": [
-                "52793b8c2fa74d8a2a6e3790cb48ba82c92cc59538b6909cda61167b2552c8a4"
+                "857af2296ef4f7917a582454c314464ba7d039e583272feef84cf7f39de91e09"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1163,7 +1182,7 @@
                 }
             ],
             "responseHashes": [
-                "3343da68177614b0434c6e22846b601a006899a95d5850327ecec20fc5a4af59"
+                "ab0a10a06021b87689680b94068c39391b4ba180fea60b203e514d7243fbaf82"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1190,7 +1209,7 @@
                 }
             ],
             "responseHashes": [
-                "da241d232a7cb7bf7ff26f0d8faf5fba1e53cb5eb82ca3e50802ba78aed71306"
+                "bb4c090946b3b7e9043d5559d3ac8c5848d11504a6d809d0179e7a570b05b391"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1298,7 +1317,7 @@
                 }
             ],
             "responseHashes": [
-                "7f3a141676325ee050cef1f4f8c8a5c1ab58988cdb6a33482af42634fe9286bb"
+                "ed44624da23543804853f6e5f88fc91bb6ff100986e34e8de3cd0e53a6deb004"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1352,7 +1371,7 @@
                 }
             ],
             "responseHashes": [
-                "79eacca235bafed8c7c9555d494d12f1cf4e518942ff9cf89baea81b9debe632"
+                "7308aa28c5b27a05c3a4efb428acabf3bf2c13131454996166f50bef2c25ffd3"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1379,7 +1398,7 @@
                 }
             ],
             "responseHashes": [
-                "0740772058a48284d3bffa6cf1bdb11b68562f7acdbd506bea61776a17e161c6"
+                "50145a7d9d66f622fb51f5352ec8b0de1eb07e08fe65eac23d9e69d6ded268eb"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1406,7 +1425,7 @@
                 }
             ],
             "responseHashes": [
-                "1877a615bb994b9e8209a4398b601cf7ee5bb64d91d408e77b5056834b1f67e0"
+                "b7b0ab52bf38393d08dc2c0b1a2ffab76425db31e942a61c84563dea35ae43c9"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1433,7 +1452,7 @@
                 }
             ],
             "responseHashes": [
-                "ad13404092d291a3ddf54012c5fd9561892d0f970d93e695c26a82674c8e59d1"
+                "403d1c3056ac3857f7127ac8198df178169384629296dfca8a79ded12bf5b687"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1444,7 +1463,59 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/union\\/giphy\\/2021\\/08\\/25\\/5a6e0721\\.gif",
+            "rule": "fastly\\.net\\/sping",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fy-h3-frontier-a2z-com.customer"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "fy-h3.frontier.a2z.com",
+                    "resolved": "fy-h3-frontier-a2z-com.customer.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "2af0d130b0d389aa69a556c9ff3c1f8cf044e49655fdc2942d2d3ea072777b8f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amazon.co.uk",
+                "www.amazon.co.uk"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/sping",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fy-h3-frontier-a2z-com.customer"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "fy-h3.frontier.a2z.com",
+                    "resolved": "fy-h3-frontier-a2z-com.customer.fastly.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amazon.co.uk",
+                "www.amazon.co.uk"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/union\\/2021\\/09\\/21\\/BIP_WEEK6\\.fe3d22d9\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1459,8 +1530,10 @@
                     "resolved": "d.sni.global.fastly.net"
                 }
             ],
-            "responseHashes": [],
-            "type": "Media",
+            "responseHashes": [
+                "fcc7a5dcfc183ae39d507ef8a38ca8e7287891c6b82aa04cd145713e592c8172"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1510,7 +1583,7 @@
                 }
             ],
             "responseHashes": [
-                "4418bf4eedbcb9dab25fcb5107b167f2f6590e99883347e469a5dcb948e7b368"
+                "c9a261f36050184bdb68ba8fa4bfbb1f8ed43d3bc3d20c607db87053f453b3aa"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1518,6 +1591,108 @@
             "exampleSites": [
                 "barstoolsports.com",
                 "www.barstoolsports.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/css\\/browser\\/16\\.10\\.5-7b9c752e78feb70010eba422255fb97165130119\\/magazinesubscriptions\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "g.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "hawk.creativebloq.com",
+                    "resolved": "g.sni.global.fastly.net"
+                },
+                {
+                    "original": "hawk.digitalcameraworld.com",
+                    "resolved": "g.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "582fe5edd35d91dee7e03d5229df1dba0c3ccbef0b77dfcb00b5a58b3a7218c6"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "creativebloq.com",
+                "www.digitalcameraworld.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/css\\/browser\\/16\\.10\\.5-7b9c752e78feb70010eba422255fb97165130119\\/promotion\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "g.sni.global"
+            ],
+            "apis": {},
+            "sites": 10,
+            "prevalence": 0.001,
+            "cnames": [
+                {
+                    "original": "hawk.creativebloq.com",
+                    "resolved": "g.sni.global.fastly.net"
+                },
+                {
+                    "original": "hawk.digitalcameraworld.com",
+                    "resolved": "g.sni.global.fastly.net"
+                },
+                {
+                    "original": "hawk.gamesradar.com",
+                    "resolved": "g.sni.global.fastly.net"
+                },
+                {
+                    "original": "hawk.laptopmag.com",
+                    "resolved": "g.sni.global.fastly.net"
+                },
+                {
+                    "original": "hawk.pcgamer.com",
+                    "resolved": "g.sni.global.fastly.net"
+                },
+                {
+                    "original": "hawk.realhomes.com",
+                    "resolved": "g.sni.global.fastly.net"
+                },
+                {
+                    "original": "hawk.t3.com",
+                    "resolved": "g.sni.global.fastly.net"
+                },
+                {
+                    "original": "hawk.techradar.com",
+                    "resolved": "g.sni.global.fastly.net"
+                },
+                {
+                    "original": "hawk.tomsguide.com",
+                    "resolved": "g.sni.global.fastly.net"
+                },
+                {
+                    "original": "hawk.whathifi.com",
+                    "resolved": "g.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "c09c5516a39a917bbf26f20b62a53b8ea5f109c3a8d822888b33b9f6225ecb45"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "creativebloq.com",
+                "www.digitalcameraworld.com",
+                "www.gamesradar.com",
+                "www.laptopmag.com",
+                "www.pcgamer.com",
+                "www.realhomes.com",
+                "www.t3.com",
+                "www.techradar.com",
+                "www.tomsguide.com",
+                "www.whathifi.com"
             ]
         },
         {
@@ -1529,7 +1704,7 @@
             ],
             "apis": {},
             "sites": 11,
-            "prevalence": 0.0011,
+            "prevalence": 0.00111,
             "cnames": [
                 {
                     "original": "hawk.creativebloq.com",
@@ -1560,11 +1735,11 @@
                     "resolved": "g.sni.global.fastly.net"
                 },
                 {
-                    "original": "hawk.tomsguide.com",
+                    "original": "hawk.tomshardware.com",
                     "resolved": "g.sni.global.fastly.net"
                 },
                 {
-                    "original": "hawk.tomshardware.com",
+                    "original": "hawk.tomsguide.com",
                     "resolved": "g.sni.global.fastly.net"
                 },
                 {
@@ -1577,7 +1752,7 @@
                 }
             ],
             "responseHashes": [
-                "e9af378145046cd08f611fab00abb57753307f2e004cc9a2c5072b953b761c2b"
+                "5c38053088570566e57f40f5c81236a27dac2cc872c5faf3977008b01dab5457"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1590,8 +1765,8 @@
                 "www.musicradar.com",
                 "www.pcgamer.com",
                 "www.techradar.com",
-                "www.tomsguide.com",
                 "www.tomshardware.com",
+                "www.tomsguide.com",
                 "www.toptenreviews.com",
                 "www.whathifi.com"
             ]
@@ -1605,7 +1780,7 @@
             ],
             "apis": {},
             "sites": 13,
-            "prevalence": 0.0013,
+            "prevalence": 0.00131,
             "cnames": [
                 {
                     "original": "hawk.creativebloq.com",
@@ -1644,11 +1819,11 @@
                     "resolved": "g.sni.global.fastly.net"
                 },
                 {
-                    "original": "hawk.tomsguide.com",
+                    "original": "hawk.tomshardware.com",
                     "resolved": "g.sni.global.fastly.net"
                 },
                 {
-                    "original": "hawk.tomshardware.com",
+                    "original": "hawk.tomsguide.com",
                     "resolved": "g.sni.global.fastly.net"
                 },
                 {
@@ -1661,7 +1836,7 @@
                 }
             ],
             "responseHashes": [
-                "e7a02f70f45108c874b7532265929537258494bb2a4d3840161aafde87090f12"
+                "bc17947149023761c308eeba0861e4f66235312df77fcfe9ffea94a2ac79512e"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1676,14 +1851,14 @@
                 "www.realhomes.com",
                 "www.t3.com",
                 "www.techradar.com",
-                "www.tomsguide.com",
                 "www.tomshardware.com",
+                "www.tomsguide.com",
                 "www.toptenreviews.com",
                 "www.whathifi.com"
             ]
         },
         {
-            "rule": "fastly\\.net\\/js\\/w\\/es6\\/16\\.9\\.6-1dfbbb766c8429bc6874fe442ac6aa504fbc7652\\/setup-model\\.js",
+            "rule": "fastly\\.net\\/js\\/w\\/es6\\/16\\.10\\.5-7b9c752e78feb70010eba422255fb97165130119\\/setup-model\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1691,7 +1866,7 @@
             ],
             "apis": {},
             "sites": 11,
-            "prevalence": 0.0011,
+            "prevalence": 0.00111,
             "cnames": [
                 {
                     "original": "hawk.creativebloq.com",
@@ -1739,7 +1914,7 @@
                 }
             ],
             "responseHashes": [
-                "f327c1069d3dac519ad95aa83385e2a78320daaf284fda47169a36c59b9b11eb"
+                "81f9d4f63b1d5f8808dfe33249cbe51d4fc5b3f4b3ca5fde0b31f4299e40ca65"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1767,7 +1942,7 @@
             ],
             "apis": {},
             "sites": 12,
-            "prevalence": 0.0012,
+            "prevalence": 0.00121,
             "cnames": [
                 {
                     "original": "hawk.creativebloq.com",
@@ -1815,15 +1990,15 @@
                 }
             ],
             "responseHashes": [
-                "7a4ccbfdb54a0a38b2493bcf715f821d423db65196952932e9c4cfb97f60a819",
-                "d3a2fc39edc2118ec85d2263f78b601b49ee1598edf1a851f7e1bbb2bac0941c",
-                "068bc4922fceab5e03a8afa7867f9977b3ff2b7d4077ba7409c7dc42e4c198ae",
-                "26787e5de5a6041798b53b166eff295730c41221651565283c3f8ab9199002c8",
-                "652ea7f2ec2ec827c1b6d0f74c26a90ff6127b7a3e6c4db47c353f1823795e43",
-                "3f70b6a8041d4088740ef7ec50eff20742953e779b975285dbd43d018e28b37e",
-                "f6c866f0f736e51d804c495bc7b4e6d682fae22c6591bdd6e07fbaa0cdf34b58",
-                "c5eb32dbe652771d22e6a5f752705a266e601efc43af0832da9e3bdbee3bd6cd",
-                "3769095712136721b246dee7e7c6ccfcd34fb70d2da4d3698f92f6ba864e33e6"
+                "33659954cf2cd35e171636be5523528b68d38e8256b1067c8b86fb0149d75a1a",
+                "69f6757f8e4368842a735e461aa420c69eb8567b196acbec2c786313df064bc6",
+                "589171515d05fe16a5916eaa2771b19fe484ff7eadc4789870e782f7dbe2ebb6",
+                "829aa9e98fff4fb1cf91dc5db64429e19669f7e7ae61f0f45f963fe3004c653b",
+                "46e604890caa919a7df74154d1949b6c6738a06dabd4d5f8687598781f9cf4f3",
+                "e6bc54b9dbf98b5f01f7a74f6eeb2aa3b5dc54134271a921c8e47eed0a958997",
+                "9b159b887a466ffed8686c8191e7d21e89d00d7c1c50dc82595438dffa928e31",
+                "62ac06def870de25da7368d66614250748cc259313cf292963f45e06164365c6",
+                "e74f3d09e80249064603bdf3c69aaaa8a8f0a664127265ed39e2c8449f96a9c5"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1844,69 +2019,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/css\\/browser\\/16\\.9\\.6-1dfbbb766c8429bc6874fe442ac6aa504fbc7652\\/magazinesubscriptions\\.min\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "g.sni.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "hawk.creativebloq.com",
-                    "resolved": "g.sni.global.fastly.net"
-                },
-                {
-                    "original": "hawk.digitalcameraworld.com",
-                    "resolved": "g.sni.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "f44789f874397accc53819113a308fcbaca0f3ff788c08ce75ec912e5562e672"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "creativebloq.com",
-                "www.digitalcameraworld.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/js\\/w\\/es6\\/16\\.9\\.6-1dfbbb766c8429bc6874fe442ac6aa504fbc7652\\/magazinesubscriptions\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "g.sni.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "hawk.creativebloq.com",
-                    "resolved": "g.sni.global.fastly.net"
-                },
-                {
-                    "original": "hawk.digitalcameraworld.com",
-                    "resolved": "g.sni.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "154282addee020da95852d9dac355d3e99800ab7db8978585e549bbd3f9737d9"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "creativebloq.com",
-                "www.digitalcameraworld.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/css\\/browser\\/16\\.9\\.6-1dfbbb766c8429bc6874fe442ac6aa504fbc7652\\/promotion\\.min\\.css",
+            "rule": "fastly\\.net\\/js\\/w\\/es6\\/16\\.10\\.5-7b9c752e78feb70010eba422255fb97165130119\\/promotion\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1958,78 +2071,7 @@
                 }
             ],
             "responseHashes": [
-                "174449d27d7bea81289fe5039fcb33ba6f43d69053a60400487b35a30050210a"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "creativebloq.com",
-                "www.digitalcameraworld.com",
-                "www.gamesradar.com",
-                "www.laptopmag.com",
-                "www.pcgamer.com",
-                "www.realhomes.com",
-                "www.t3.com",
-                "www.techradar.com",
-                "www.tomsguide.com",
-                "www.whathifi.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/js\\/w\\/es6\\/16\\.9\\.6-1dfbbb766c8429bc6874fe442ac6aa504fbc7652\\/promotion\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "g.sni.global"
-            ],
-            "apis": {},
-            "sites": 10,
-            "prevalence": 0.001,
-            "cnames": [
-                {
-                    "original": "hawk.creativebloq.com",
-                    "resolved": "g.sni.global.fastly.net"
-                },
-                {
-                    "original": "hawk.digitalcameraworld.com",
-                    "resolved": "g.sni.global.fastly.net"
-                },
-                {
-                    "original": "hawk.gamesradar.com",
-                    "resolved": "g.sni.global.fastly.net"
-                },
-                {
-                    "original": "hawk.laptopmag.com",
-                    "resolved": "g.sni.global.fastly.net"
-                },
-                {
-                    "original": "hawk.pcgamer.com",
-                    "resolved": "g.sni.global.fastly.net"
-                },
-                {
-                    "original": "hawk.realhomes.com",
-                    "resolved": "g.sni.global.fastly.net"
-                },
-                {
-                    "original": "hawk.t3.com",
-                    "resolved": "g.sni.global.fastly.net"
-                },
-                {
-                    "original": "hawk.techradar.com",
-                    "resolved": "g.sni.global.fastly.net"
-                },
-                {
-                    "original": "hawk.tomsguide.com",
-                    "resolved": "g.sni.global.fastly.net"
-                },
-                {
-                    "original": "hawk.whathifi.com",
-                    "resolved": "g.sni.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "6d85f59eb6a027719070c10ba1c141d82aacd19347f4363a18c322ac3f1ad056"
+                "1d0780e7b021f872d90eed7e6d077d0a0677adfb099c3a333a8758404c5c8b9c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -2048,15 +2090,15 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/widget\\.php",
+            "rule": "fastly\\.net\\/js\\/w\\/es6\\/16\\.10\\.5-7b9c752e78feb70010eba422255fb97165130119\\/magazinesubscriptions\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "g.sni.global"
             ],
             "apis": {},
-            "sites": 10,
-            "prevalence": 0.001,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "hawk.creativebloq.com",
@@ -2065,61 +2107,21 @@
                 {
                     "original": "hawk.digitalcameraworld.com",
                     "resolved": "g.sni.global.fastly.net"
-                },
-                {
-                    "original": "hawk.gamesradar.com",
-                    "resolved": "g.sni.global.fastly.net"
-                },
-                {
-                    "original": "hawk.laptopmag.com",
-                    "resolved": "g.sni.global.fastly.net"
-                },
-                {
-                    "original": "hawk.musicradar.com",
-                    "resolved": "g.sni.global.fastly.net"
-                },
-                {
-                    "original": "hawk.realhomes.com",
-                    "resolved": "g.sni.global.fastly.net"
-                },
-                {
-                    "original": "hawk.t3.com",
-                    "resolved": "g.sni.global.fastly.net"
-                },
-                {
-                    "original": "hawk.techradar.com",
-                    "resolved": "g.sni.global.fastly.net"
-                },
-                {
-                    "original": "hawk.tomsguide.com",
-                    "resolved": "g.sni.global.fastly.net"
-                },
-                {
-                    "original": "hawk.whathifi.com",
-                    "resolved": "g.sni.global.fastly.net"
                 }
             ],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "08f3626568437da01bd87f258488d1cdb46a4198f9b3a2c2f5b1f3c9655db39d"
             ],
-            "type": "Other",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "creativebloq.com",
-                "www.digitalcameraworld.com",
-                "www.gamesradar.com",
-                "www.laptopmag.com",
-                "www.musicradar.com",
-                "www.realhomes.com",
-                "www.t3.com",
-                "www.techradar.com",
-                "www.tomsguide.com",
-                "www.whathifi.com"
+                "www.digitalcameraworld.com"
             ]
         },
         {
-            "rule": "fastly\\.net\\/css\\/browser\\/16\\.9\\.6-1dfbbb766c8429bc6874fe442ac6aa504fbc7652\\/promotion-fallback\\.min\\.css",
+            "rule": "fastly\\.net\\/css\\/browser\\/16\\.10\\.5-7b9c752e78feb70010eba422255fb97165130119\\/promotion-fallback\\.min\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2190,7 +2192,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/js\\/w\\/es6\\/16\\.9\\.6-1dfbbb766c8429bc6874fe442ac6aa504fbc7652\\/promotion-fallback\\.js",
+            "rule": "fastly\\.net\\/js\\/w\\/es6\\/16\\.10\\.5-7b9c752e78feb70010eba422255fb97165130119\\/promotion-fallback\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2242,7 +2244,7 @@
                 }
             ],
             "responseHashes": [
-                "c7c78a0801892b6c742afa84762823ecea10944f69f904ab99b4293b978e2543"
+                "35fec26c4e0d1a2a7a8a4bdf8f632d8866b700d117659d13502f4209988f0054"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -2276,8 +2278,10 @@
                     "resolved": "k.sni.global.fastly.net"
                 }
             ],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "c5d856299179fd588f3e0e2d91934cec71af7e8ce8dba9d0851c03227f536a35"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -2301,167 +2305,13 @@
                     "resolved": "k.sni.global.fastly.net"
                 }
             ],
-            "responseHashes": [
-                "c5d856299179fd588f3e0e2d91934cec71af7e8ce8dba9d0851c03227f536a35"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "depop.com",
                 "www.depop.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/v",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "d.sni.us-eu"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "nyx-nyx-nyx.dotabuff.com",
-                    "resolved": "d.sni.us-eu.fastly.net"
-                },
-                {
-                    "original": "cloud-strife.speedrun.com",
-                    "resolved": "d.sni.us-eu.fastly.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dotabuff.com",
-                "www.speedrun.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/v",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "d.sni.us-eu"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "nyx-nyx-nyx.dotabuff.com",
-                    "resolved": "d.sni.us-eu.fastly.net"
-                },
-                {
-                    "original": "cloud-strife.speedrun.com",
-                    "resolved": "d.sni.us-eu.fastly.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dotabuff.com",
-                "www.speedrun.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/d",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "d.sni.us-eu"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [
-                {
-                    "original": "nyx-nyx-nyx.dotabuff.com",
-                    "resolved": "d.sni.us-eu.fastly.net"
-                },
-                {
-                    "original": "cloud-strife.speedrun.com",
-                    "resolved": "d.sni.us-eu.fastly.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dotabuff.com",
-                "www.dotabuff.com",
-                "www.speedrun.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/d",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "d.sni.us-eu"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [
-                {
-                    "original": "nyx-nyx-nyx.dotabuff.com",
-                    "resolved": "d.sni.us-eu.fastly.net"
-                },
-                {
-                    "original": "cloud-strife.speedrun.com",
-                    "resolved": "d.sni.us-eu.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "45a8e0fed4c5fa6f60dcd7b11c5d4ad4f270465855ff1c97c83ca463b83d9ae6",
-                "0bd65eaa73d07b1ef414ff3e0961560bd986c6f1ea024affb74833c52335e1e4"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dotabuff.com",
-                "www.dotabuff.com",
-                "www.speedrun.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/pb\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "d.sni.us-eu"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "nyx-nyx-nyx.dotabuff.com",
-                    "resolved": "d.sni.us-eu.fastly.net"
-                },
-                {
-                    "original": "cloud-strife.speedrun.com",
-                    "resolved": "d.sni.us-eu.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "e74cd93b09ef7442da474bf681946c0bb0c8ec370c5dd64a6114602d311b8bf3"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dotabuff.com",
-                "www.speedrun.com"
             ]
         },
         {
@@ -2508,7 +2358,7 @@
                 }
             ],
             "responseHashes": [
-                "f547b18d43d09bf0462394785310cc8f757a9e204a8695ef9c96ad4fc03541f5"
+                "14ce2c236290151667c69da4c0f3f0e3e229a5ad25f18f1d225fb59b7c3e2abd"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2519,7 +2369,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/content\\/3x2\\/2000\\/1629789341-MarkoVrzic\\.jpeg",
+            "rule": "fastly\\.net\\/content\\/3x2\\/2000\\/1632211615-robin-worrall-FPt10LXK0cg-unsplash\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2535,7 +2385,7 @@
                 }
             ],
             "responseHashes": [
-                "4fa19ee3ea32a318046e10ff7eee6e76f58ffea67d5c477db22c1bc73212d857"
+                "9cf92adad694dbeb3361613cc34d86f370b38f8b9632b341a5425cce70515b5b"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2546,7 +2396,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/content\\/3x2\\/2000\\/1629721204-sarah-brown--Nj939yBZmg-unsplash\\.jpg",
+            "rule": "fastly\\.net\\/content\\/3x2\\/2000\\/1632208633-Differentco-foundersRuwinPereraandMinaRadhakrishnanv1\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2562,7 +2412,7 @@
                 }
             ],
             "responseHashes": [
-                "5950fd1793137432273351a8437421ee6ef90dd6f5c55560cae221f0a1dfe855"
+                "29eb9cb4382425a561334a5858f15c56353555ef04500c9b26b5a6cc2e1482eb"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2573,61 +2423,984 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/static\\.foxbusiness\\.com\\/foxbusiness\\.com\\/content\\/uploads\\/2018\\/02\\/132\\/74\\/nyse-trader-11-2017-4\\.jpg",
+            "rule": "fastly\\.net\\/s3-build\\/188345-rc2021-09-21_16\\.04-a14a9b7\\/django\\/js\\/src\\/eb\\/evidon_consent\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "j.sni.global"
+                "f4.shared.global"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "a57.foxnews.com",
-                    "resolved": "j.sni.global.fastly.net"
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
                 }
             ],
             "responseHashes": [
-                "6d199d5f78edf34369dfc78f3722c740e11d45de270394c1b2a1daf565c5d984"
+                "14c5ded10eed220d11fc721d23a0351d4b74e503b7518ee2f15910a0a0bcdb00"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.com.au",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/dist\\/eds-css\\/1\\.4\\.76\\/styles\\/eds\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "40f392914d1f7f069e172bf03afde2a333d1c7218c304725f5beac401eab1d8d"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.com.au",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/discover\\.735791edd29422247c45\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "aea892275eae2a0204f403fa3761108a6addfd71d263d0978a01503e111090fc"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.com.au",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/35\\.94fc8563838ff31596d3\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "e5c22e34b3051a862529149620c890370f474253433afa5119b47cbedf4a0799"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.com.au",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/25\\.df16d5e5beb17ddfbf74\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "cf69adab90cdecea1eb15276cd934eb39f1acc69e19f785da598666e9eb074a0"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.com.au",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/4\\.3f4b3b69852d92faaeed\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "15f212e0cf6c924d412cf6856b24e011d0541edbabc0ef56b554485cdd870272"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.com.au",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/10\\.ad74b67a46401ded715f\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "77a499b1e1a1febeeb695ca3f73575bc5ff6f77d5ee7d8fa31bc6de77d32a6f1"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.com.au",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/perm_001\\/bf1c05\\/django\\/js\\/src\\/eb\\/fonts\\/neueplak\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "929f6b6ca9a0c32b436454d91eb36d10a2a50b827c8b4e710b6829d1cc6f9e8c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.com.au",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/vendor\\.fc110d04e947b6208faf\\.dll\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "3bda4ad1a4cf2500124ff5a60c11e82a3c1a40ac766561142a9b5aab0a15c1f8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.com.au",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/vendor\\.117c5ce5843ff991186c\\.async\\.web\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "e50493b8808b6cea6bece660c51831891c5dacaeb920099606eb2150b2161ace"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.com.au",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/discover\\.a959e33b147751abbe22\\.web\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "8afb4cc6582d24cee7ff1576941e71409906e8ce0356f6ee4b1ec1235ed18bbc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.com.au",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/vendors~browse~home~search\\.0314c36efbe66c307589\\.async\\.web\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "5fc46976326ebd567d72ef5507f6ce1a4ef81bc1721bca62fe4ad18959199b82"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.com.au",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/7\\.033544a2a6df7c1df912\\.async\\.web\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "b03b67cf242686e6f27d8a6cd6cfc58c49291fa88e4bebcc71a4ee279c60676c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.com.au",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/home\\.f44df02d8374f2f2948d\\.async\\.web\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "1a7418e9db7b9027d99de5174bac3a37f8d81c299d630da3939e2502146277c0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.com.au",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/USBannerContainer\\.567ffba61d937290825a\\.async\\.web\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "4b5265299ab7da327d148ce0e65a293be7153de1a677b311e292f1b303727289"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.com.au",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/components-Banners\\.11c95f4bbab601197406\\.async\\.web\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "1db4c1eb873aa885c5ae454dd8d08481e2ef92232756577caf219bf3365980c0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.com.au",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/1\\.cc40e1422b5a79118cea\\.async\\.web\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "337e7486e37d9a44ad093215522dccf7472b672acdd9d704b55e75fffc8f18eb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.com.au",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/0\\.1745205ecf1a9a830f87\\.async\\.web\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "a24d5aa1a5379e7cd2da7eeaa5692768fa637f2649f0d29c607b6bf1e5892b0b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.com.au",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/LoadingCards\\.7122c34fa38debe9bacd\\.async\\.web\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "b18cac9a28ad1d3b9e276c46df87fc3d89ab549471d80bfa9ecd33393df8a144"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.com.au",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/BrowseContainer\\.3247d2dcc69723a30a04\\.async\\.web\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "7c42b40d5319342090dcb48a8b5d05d36837d33e05e90ccaf2154f0b1876981a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.com.au",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/41\\.4ce92c2d347b254b7d21\\.async\\.web\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "7466c13723d7c33d49d6e53688608fed2b1aa5525c117f16b0b8ce86c4ec1940"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cookies.js": {
+                    "ttl": 4,
+                    "length": 9,
+                    "prevalence": 0.00020092425155716296,
+                    "uniqueness": 0.5
+                },
+                "ebGAClientId": {
+                    "ttl": 31536006,
+                    "length": 21,
+                    "prevalence": 0.00020092425155716296,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.com.au",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/46\\.7bcae703bc90a41ba405\\.async\\.web\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "73f198fba6d1d8a86a8c242a918bf72143d63153945593ab95065bafa8f54ffa"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.com.au",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/5\\.63f1810aabed8c74cd58\\.async\\.web\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "6f7d8b41de736c9a76a775676c1c45c16e8b6c99d54fe702e4fc9f4b6e753285"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.com.au",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/43\\.4989632f3a2207c35bd6\\.async\\.web\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "2aadd176afa58de1e155f73286a201a8b2f9c7cc84c04a4683356ad6854b0dea"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "dd_cookie_test_c20fee42-a3a9-470e-ac76-7e8cf1b8fe83": {
+                    "ttl": 7,
+                    "length": 4,
+                    "prevalence": 0.00010046212577858148,
+                    "uniqueness": 1
+                },
+                "_dd_s": {
+                    "ttl": 906,
+                    "length": 3,
+                    "prevalence": 0.00020092425155716296,
+                    "uniqueness": 0.5
+                },
+                "dd_cookie_test_d38979c2-5876-4a02-9be2-494998912a24": {
+                    "ttl": 7,
+                    "length": 4,
+                    "prevalence": 0.00010046212577858148,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.com.au",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/6\\.6c58e0f46c6b5cffe701\\.async\\.web\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "ff79bbae4889892df1f8644fd52e414e7b4399e475471767b685fc0b1fb635de"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.com.au",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/42\\.a855938424799405788e\\.async\\.web\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "16c820122586eb66685afcbc8f9393c0d64721ca072be7bfd0fa6197ebe2b2b6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.com.au",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/49\\.e5a593fae3f14595ad1f\\.async\\.web\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "3b88132c0188096f3d3c00fdaeab38e0dfa96da1defcdf975eabb2a01b46ab0f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.com.au",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/perm_001\\/ad8d44\\/django\\/images\\/onboarding\\/desktop_entry_2\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "0111abf0db54ba9f64a72c091ab6e9fa0ccbf6c76997bc2e6a4f30929595ac13"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "foxbusiness.com",
-                "www.foxbusiness.com"
+                "eventbrite.com.au",
+                "www.eventbrite.com"
             ]
         },
         {
-            "rule": "fastly\\.net\\/static\\.foxbusiness\\.com\\/foxbusiness\\.com\\/content\\/uploads\\/2021\\/03\\/132\\/74\\/Boy-Scouts-2-\\.jpg",
+            "rule": "fastly\\.net\\/https%3A%2F%2Fcdn\\.evbuc\\.com%2Fimages%2F142358057%2F498284888987%2F1%2Foriginal\\.20210722-051016",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "j.sni.global"
+                "d.shared.global"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "a57.foxnews.com",
-                    "resolved": "j.sni.global.fastly.net"
+                    "original": "img.evbuc.com",
+                    "resolved": "d.shared.global.fastly.net"
                 }
             ],
             "responseHashes": [
-                "99e50db3c30b4d5dd34eefcc8d7c11aa11c6b5ffe1fd7e8a7882130077e274c4"
+                "bcb83d240019376bd89e560c1698093fdfe12865110b575f319d4db22aec38f0"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "foxbusiness.com",
-                "www.foxbusiness.com"
+                "eventbrite.com.au",
+                "www.eventbrite.com"
             ]
         },
         {
-            "rule": "fastly\\.net\\/static\\.foxbusiness\\.com\\/foxbusiness\\.com\\/content\\/uploads\\/2021\\/08\\/132\\/74\\/AP21237505915138\\.jpg",
+            "rule": "fastly\\.net\\/https%3A%2F%2Fcdn\\.evbuc\\.com%2Fimages%2F140317289%2F286048723107%2F1%2Foriginal\\.20210630-155807",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "d.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "img.evbuc.com",
+                    "resolved": "d.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "b9d89d5d1dc121fb9935206f1e9c523219cab5fdaff696963aa31b9ccbb0605e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.com.au",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/https%3A%2F%2Fcdn\\.evbuc\\.com%2Fimages%2F143024307%2F363582059739%2F1%2Foriginal\\.20210729-123651",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "d.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "img.evbuc.com",
+                    "resolved": "d.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "8df40a1f4d04a00023490264d5fe38234c2abdd9f8fbafbd736a7d7bba4faa11"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.com.au",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/https%3A%2F%2Fcdn\\.evbuc\\.com%2Fimages%2F114115511%2F451751170258%2F1%2Foriginal\\.20201009-030452",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "d.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "img.evbuc.com",
+                    "resolved": "d.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "2ceac0d70eb6f334f855d613dbdb4745ef6ad01e79f73cffa02cfd187cd01c43"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.com.au",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/https%3A%2F%2Fcdn\\.evbuc\\.com%2Fimages%2F149512659%2F220370286926%2F1%2Foriginal\\.20210915-022714",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "d.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "img.evbuc.com",
+                    "resolved": "d.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "66fbd8ba9d8ea615752b30c30548cb00123cfa049193d019723ea19b54b5f3f7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.com.au",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/https%3A%2F%2Fcdn\\.evbuc\\.com%2Fimages%2F101590984%2F48896349178%2F1%2Foriginal\\.20200222-220720",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "d.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "img.evbuc.com",
+                    "resolved": "d.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "8dd268d7ae1d70f07817da6b3430a5d853cb07b51509346e0ea18da403708167"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.com.au",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/https%3A%2F%2Fcdn\\.evbuc\\.com%2Fimages%2F121898579%2F146186060097%2F1%2Foriginal\\.20201127-181631",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "d.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "img.evbuc.com",
+                    "resolved": "d.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "23abf213395fbd1433e8fd942c49509a90ac74787fd470562bf16202607b16fe"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.com.au",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/static\\.foxbusiness\\.com\\/foxbusiness\\.com\\/content\\/uploads\\/2021\\/06\\/132\\/74\\/Elon-Musk-SpaceX-SN8\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2643,7 +3416,7 @@
                 }
             ],
             "responseHashes": [
-                "e9bcd9177dda91ad37a337efaab462350e252054d01afec2a7f7c72aca094abf"
+                "d8b992a407b0eb6dc9472166f898f173a97108af3854e3872abf142666369a29"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2655,7 +3428,7 @@
         },
         {
             "rule": "fastly\\.net\\/ingest",
-            "cookies": 0,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "f3.shared.global"
@@ -2670,9 +3443,9 @@
                 }
             ],
             "responseHashes": [
-                "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
+                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
             ],
-            "type": "Other",
+            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -2801,7 +3574,7 @@
                 }
             ],
             "responseHashes": [
-                "57f02996668b2621c95fa7cc7828a7b9b4203bb49081de0c9dc9bdf84c1f7cd7"
+                "e37c909a8cd263a966d731eca8f0f67d59d948cc0adeaa4fac43f20df1858988"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -2809,33 +3582,6 @@
             "exampleSites": [
                 "hackster.io",
                 "www.hackster.io"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/countries\\/flags\\/iso2\\/GB\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "k.sni.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "photos.motogp.com",
-                    "resolved": "k.sni.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "abf60d27d5ec836d76eb13e7518b281e639cf2600b812bfccf025c79f1dff086"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "motogp.com",
-                "www.motogp.com"
             ]
         },
         {
@@ -2893,7 +3639,34 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/css\\/browser\\/16\\.9\\.6-1dfbbb766c8429bc6874fe442ac6aa504fbc7652\\/dotw\\.min\\.css",
+            "rule": "fastly\\.net\\/w2015\\/js\\/jquery\\.countdown\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "css.motogp.com",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "fe66fd2db088bda30fa7d9f4eea56a36948de4f002f3b798eae00cbfd6b11ecd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "motogp.com",
+                "www.motogp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/css\\/browser\\/16\\.10\\.5-7b9c752e78feb70010eba422255fb97165130119\\/dotw\\.min\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2913,7 +3686,7 @@
                 }
             ],
             "responseHashes": [
-                "a9b38f66be4dc5caf99b6d4270743167dc1dd2ed4a461c4116b03fafa19323e2"
+                "8a090a0074508de10ecada5346bac1efc736f0140d821c6c167b4570af2bf15f"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -2924,7 +3697,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/js\\/w\\/es6\\/16\\.9\\.6-1dfbbb766c8429bc6874fe442ac6aa504fbc7652\\/dotw\\.js",
+            "rule": "fastly\\.net\\/js\\/w\\/es6\\/16\\.10\\.5-7b9c752e78feb70010eba422255fb97165130119\\/dotw\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2944,7 +3717,7 @@
                 }
             ],
             "responseHashes": [
-                "25c1ccb30a3ea2978a7e03489200b5777ad503bf52c6cecf489acaac424bf8e1"
+                "0aba5f4ba9336b6cd818c00884f43d63e2b1be3de9f15c745a8f89f2be89de48"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -2952,6 +3725,33 @@
             "exampleSites": [
                 "musicradar.com",
                 "www.tomsguide.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/webevents\\/v1\\/JS\\/69dedba1e9714049b35bde9e2f9bf059\\/Forwarding",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "l2.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "map.mp.nbc.com",
+                    "resolved": "l2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nbc.com",
+                "www.nbc.com"
             ]
         },
         {
@@ -2971,7 +3771,7 @@
                 }
             ],
             "responseHashes": [
-                "77166bb8167190b0e6942d723f0a319d194dd891097e1b6d98583f15f3822cfe"
+                "32380bb9b03c7b85aa14d727c1ef37b93db146d5c792ddffe26844b1b01aa64e"
             ],
             "type": "Media",
             "firstPartyCookies": {},
@@ -2998,7 +3798,7 @@
                 }
             ],
             "responseHashes": [
-                "aeea83b5158976648c71151b6a6883a12a4ac72507872116ad49ec94ce542845"
+                "d6f59c406f06cecde9323509604cdee955f74a411e6954469a7f7e081abd1705"
             ],
             "type": "Media",
             "firstPartyCookies": {},
@@ -3029,7 +3829,7 @@
                 }
             ],
             "responseHashes": [
-                "c13a5036332a93d8a4da6db2293059ba4cecd747815832b9f804d32af63ba034"
+                "07138ff7a98ea54454765657d8ecbf5b5b8b43fb9457961a642614b1387a60db"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -3037,6 +3837,56 @@
             "exampleSites": [
                 "realhomes.com",
                 "www.t3.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/2021\\/05\\/24\\/10\\/POLITICS20Baby202017382951\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "static.standard.co.uk",
+                    "resolved": "t.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "standard.co.uk",
+                "www.standard.co.uk"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/2021\\/09\\/18\\/11\\/SHOWBIZ20Strictly202017445618\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "static.standard.co.uk",
+                    "resolved": "t.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "standard.co.uk",
+                "www.standard.co.uk"
             ]
         },
         {
@@ -3056,13 +3906,13 @@
                 }
             ],
             "responseHashes": [
-                "caa849b179befa2645a8e2c474d2e82a76777a3305315ece911013e8ee9a916c"
+                "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ga": 0.00020052135552436334,
-                "_sp_duid": 0.00020052135552436334
+                "gtm_darwin": 0.00020092425155716296,
+                "_sp_duid": 0.00020092425155716296
             },
             "exampleSites": [
                 "theglobeandmail.com",
@@ -3070,7 +3920,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/tags\\/2\\.71\\.3\\/wrapper\\.min\\.js",
+            "rule": "fastly\\.net\\/tags\\/2\\.71\\.5\\/wrapper\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -3086,7 +3936,7 @@
                 }
             ],
             "responseHashes": [
-                "1a18ca0a75720d934bb64caaf251edf8ca66daeac08696cfb45b3e9cbdad15d6"
+                "43ccc1b618ab23d0f268904af0b5b9329d0ad6e176a8458184db1c72abae4bc7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -3124,6 +3974,33 @@
             ]
         },
         {
+            "rule": "fastly\\.net\\/charts\\/common\\/quote\\.chart",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "d.global-ssl"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "marketdata.thestreet.com",
+                    "resolved": "d.global-ssl.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "d1bbfd7172497d1c504b915dfe874ee1da308b2c79b631574da7fa344b5c794a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thestreet.com",
+                "www.thestreet.com"
+            ]
+        },
+        {
             "rule": "fastly\\.net\\/px\\/xhr\\/b\\/c",
             "cookies": 0,
             "fingerprinting": 0,
@@ -3140,7 +4017,7 @@
                 }
             ],
             "responseHashes": [
-                "dc4adb8f8f0b564ec9b8e7092a5369d2cda8d746091a4ff155295727f840a4c4"
+                "4d67b2f8f9099be21455e232bb7b9741058b8d44638657235c338d80b503bf5f"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -3161,24 +4038,19 @@
         "Embedded Content",
         "Session Replay"
     ],
-    "performance": {
-        "time": 1,
-        "size": 1,
-        "cpu": 1,
-        "cache": 1
-    },
-    "cookies": 0.0011,
+    "performance": {},
+    "cookies": 0.00191,
     "types": {
-        "Script": 62,
-        "Image": 86,
-        "Stylesheet": 36,
+        "Image": 107,
+        "Script": 102,
+        "XHR": 17,
+        "Stylesheet": 41,
         "Font": 9,
         "Document": 3,
-        "XHR": 9,
-        "Media": 6,
-        "Preflight": 13,
-        "Fetch": 36,
-        "Other": 12
+        "Preflight": 10,
+        "Fetch": 31,
+        "Ping": 2,
+        "Media": 4
     },
     "nameservers": []
 }

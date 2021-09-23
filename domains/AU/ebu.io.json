@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
         "peach-static",
         "pipe-collect"
@@ -15,13 +15,15 @@
     "resources": [
         {
             "rule": "ebu\\.io\\/peach-collector-1\\.x\\.min\\.js",
-            "cookies": 0,
+            "cookies": 0.000201,
             "fingerprinting": 2,
             "subdomains": [
                 "peach-static"
             ],
             "apis": {
                 "Navigator.prototype.doNotTrack": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.vendor": 2,
                 "Navigator.prototype.platform": 2,
@@ -32,10 +34,35 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "3c0f2dbbc7e93167e27fe8fa5773cb6fde38829d2dd0638b9298f86d5a031e1d"
+                "90f17be0517a25756d9da6917fc7878ba8c3ff4f2a77b97073993cf0c0bddcd9"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_pc_c": {
+                    "ttl": 903046424,
+                    "length": 36,
+                    "prevalence": 0.00020092425155716296,
+                    "uniqueness": 1
+                },
+                "_pc_t": {
+                    "ttl": 903046424,
+                    "length": 16,
+                    "prevalence": 0.00020092425155716296,
+                    "uniqueness": 0.5
+                },
+                "_pc_lr": {
+                    "ttl": null,
+                    "length": 13,
+                    "prevalence": 0.00020092425155716296,
+                    "uniqueness": 1
+                },
+                "_pc_st": {
+                    "ttl": null,
+                    "length": 13,
+                    "prevalence": 0.00020092425155716296,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dw.com",
@@ -86,12 +113,7 @@
         }
     ],
     "categories": [],
-    "performance": {
-        "time": 0,
-        "size": 0,
-        "cpu": 0,
-        "cache": 0
-    },
+    "performance": {},
     "cookies": 0.000201,
     "types": {
         "Script": 2,
@@ -99,9 +121,8 @@
         "Preflight": 2
     },
     "nameservers": [
+        "ns-969.awsdns-57.net",
         "ns-1116.awsdns-11.org",
-        "ns-1851.awsdns-39.co.uk",
-        "ns-247.awsdns-30.com",
-        "ns-969.awsdns-57.net"
+        "ns-247.awsdns-30.com"
     ]
 }

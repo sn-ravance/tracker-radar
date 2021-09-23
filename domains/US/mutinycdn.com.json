@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000625,
-    "sites": 9,
+    "prevalence": 0.000106,
+    "sites": 15,
     "subdomains": [
         "client",
         "client-registry",
@@ -22,8 +22,8 @@
                 "client"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000347,
+            "sites": 9,
+            "prevalence": 0.0000633,
             "cnames": [],
             "responseHashes": [
                 "3c247bbb2a31bc00f5501432e921a0743c5c642c512b0b4b4b246ea1ee5082d3"
@@ -33,29 +33,35 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "carta.com",
-                "redislabs.com",
+                "clickup.com",
+                "redis.com",
+                "segment.com",
+                "www.algolia.com",
                 "www.brex.com",
                 "www.qualtrics.com",
-                "www.rstudio.com"
+                "www.rstudio.com",
+                "www.servicetitan.com"
             ]
         },
         {
             "rule": "mutinycdn\\.com\\/personalize\\/client\\/9f5448a9c9083246\\.js",
-            "cookies": 0.0000139,
-            "fingerprinting": 1,
+            "cookies": 0.0000141,
+            "fingerprinting": 2,
             "subdomains": [
                 "client-registry"
             ],
             "apis": {
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 2,
-                "window.sessionStorage": 2,
+                "Navigator.prototype.mimeTypes": 2,
                 "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
                 "Document.cookie setter": 2,
-                "Document.cookie getter": 2
+                "window.sessionStorage": 2,
+                "Navigator.prototype.doNotTrack": 2
             },
             "sites": 2,
-            "prevalence": 0.0000139,
+            "prevalence": 0.0000141,
             "cnames": [],
             "responseHashes": [
                 "9be31e1aa96993960245a53d98969316c17476c9608ac46db38b8c123deb15ea"
@@ -63,10 +69,22 @@
             "type": "Script",
             "firstPartyCookies": {
                 "mutiny.user.session_number": {
-                    "ttl": 1801,
+                    "ttl": 1824,
                     "length": 1,
-                    "prevalence": 0.000013886285210411937,
+                    "prevalence": 0.00001407756739635391,
                     "uniqueness": 0.5
+                },
+                "mutiny.user.token": {
+                    "ttl": 94348810,
+                    "length": 36,
+                    "prevalence": 0.00001407756739635391,
+                    "uniqueness": 1
+                },
+                "mutiny.user.session": {
+                    "ttl": 1810,
+                    "length": 36,
+                    "prevalence": 0.00001407756739635391,
+                    "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
@@ -84,17 +102,54 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000139,
+            "prevalence": 0.0000141,
             "cnames": [],
             "responseHashes": [
-                "adce4bb6a4cea82ce4a60133340b7ef1351b46e33337614b5e96e9fc01200083"
+                "a53215447dbfa80cf662be7b5b06c4bb87df8cd3179fd79a1d9c1a5f4a82aaaf"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "mutiny.user.token": 0.00001407756739635391,
+                "mutiny.user.session": 0.00001407756739635391
+            },
             "exampleSites": [
                 "brex.com",
                 "www.brex.com"
+            ]
+        },
+        {
+            "rule": "mutinycdn\\.com\\/personalize\\/client\\/d7e93db96a7cb1fa\\.js",
+            "cookies": 0.0000141,
+            "fingerprinting": 1,
+            "subdomains": [
+                "client-registry"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000141,
+            "cnames": [],
+            "responseHashes": [
+                "0ad9cd6b7bec0640a5c97484a1261d27941e64f577ecb2d570b84ef0510a51f8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "mutiny.user.session_number": {
+                    "ttl": 1813,
+                    "length": 1,
+                    "prevalence": 0.00001407756739635391,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "qualtrics.com",
+                "www.qualtrics.com"
             ]
         },
         {
@@ -106,10 +161,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000139,
+            "prevalence": 0.0000141,
             "cnames": [],
             "responseHashes": [
-                "70093c325ea22a314821e8a7914ef58438383200636e6469242005c02c3b8ea8"
+                "5b20b502a7a7fb3ada671218c525a3680d1a7e0634d5479aafe9eafa52d3ab58"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -118,24 +173,94 @@
                 "qualtrics.com",
                 "www.qualtrics.com"
             ]
+        },
+        {
+            "rule": "mutinycdn\\.com\\/personalize\\/client\\/f649ed61a3088943\\.js",
+            "cookies": 0.0000141,
+            "fingerprinting": 2,
+            "subdomains": [
+                "client-registry"
+            ],
+            "apis": {
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.doNotTrack": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000141,
+            "cnames": [],
+            "responseHashes": [
+                "eeb4b56362f3ff1dfdde3c02ff2c51f9fbcaa0e3306b6ce41b2423aa65f1485f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "mutiny.user.session_number": {
+                    "ttl": 1836,
+                    "length": 1,
+                    "prevalence": 0.00001407756739635391,
+                    "uniqueness": 0.5
+                },
+                "mutiny.user.token": {
+                    "ttl": 94348815,
+                    "length": 36,
+                    "prevalence": 0.00001407756739635391,
+                    "uniqueness": 1
+                },
+                "mutiny.user.session": {
+                    "ttl": 1815,
+                    "length": 36,
+                    "prevalence": 0.00001407756739635391,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "servicetitan.com",
+                "www.servicetitan.com"
+            ]
+        },
+        {
+            "rule": "mutinycdn\\.com\\/personalize\\/user_data\\/f649ed61a3088943\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "user-data"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000141,
+            "cnames": [],
+            "responseHashes": [
+                "25fd3f23b7f5704038a671b21e3f86052360c48d9a02b857b77a3bef2f394f18"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "mutiny.user.token": 0.00001407756739635391,
+                "mutiny.user.session": 0.00001407756739635391
+            },
+            "exampleSites": [
+                "servicetitan.com",
+                "www.servicetitan.com"
+            ]
         }
     ],
     "categories": [],
-    "performance": {
-        "time": 0,
-        "size": 0,
-        "cpu": 0,
-        "cache": 3
-    },
-    "cookies": 0.0000625,
+    "performance": {},
+    "cookies": 0.0000915,
     "types": {
-        "Script": 7,
-        "Fetch": 4
+        "Script": 15,
+        "Fetch": 6
     },
     "nameservers": [
+        "ns-1129.awsdns-13.org",
         "ns-2003.awsdns-58.co.uk",
         "ns-55.awsdns-06.com",
-        "ns-864.awsdns-44.net",
-        "ns-1129.awsdns-13.org"
+        "ns-864.awsdns-44.net"
     ]
 }

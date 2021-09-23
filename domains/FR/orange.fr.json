@@ -7,14 +7,14 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000503,
-    "sites": 5,
+    "prevalence": 0.000707,
+    "sites": 7,
     "subdomains": [
         "s.gstat",
         "r",
-        "iz2",
         "iz4",
         "consent",
+        "e",
         "pdata"
     ],
     "cnames": [],
@@ -22,51 +22,39 @@
     "resources": [
         {
             "rule": "orange\\.fr\\/lib\\/gs\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
+            "cookies": 0.000202,
+            "fingerprinting": 2,
             "subdomains": [
                 "s.gstat"
             ],
             "apis": {
                 "Date.prototype.getTime": 2,
                 "Navigator.prototype.cookieEnabled": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2,
                 "Screen.prototype.colorDepth": 2
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000303,
             "cnames": [],
             "responseHashes": [
                 "2cd96ec3186dd42403a3d94d926ea83af99e322aabfd192f47c8afd61a058d0b"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_gstat": {
+                    "ttl": 63072016,
+                    "length": 24,
+                    "prevalence": 0.00020197939810139365,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "pagesperso-orange.fr",
-                "marches-reguliers.pagesperso-orange.fr"
-            ]
-        },
-        {
-            "rule": "orange\\.fr\\/w1\\/_gstat\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s.gstat"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "2188414d64d2930eb54f4731b6eb9a931358ba625d1cd7535a889409218609d2"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pagesperso-orange.fr",
+                "guy-chaumeton.pagesperso-orange.fr",
                 "marches-reguliers.pagesperso-orange.fr"
             ]
         },
@@ -79,7 +67,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [],
             "type": "Font",
@@ -91,42 +79,67 @@
             ]
         },
         {
-            "rule": "orange\\.fr\\/$v=3",
-            "cookies": 0.000302,
+            "rule": "orange\\.fr\\/w1\\/_gstat\\.gif",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "iz2",
+                "s.gstat"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "1bd2aa0bb9f0a0fd919c42a18c81645bd6d9601f60086928b05db8a5be978689"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_gstat": 0.00020197939810139365
+            },
+            "exampleSites": [
+                "pagesperso-orange.fr",
+                "guy-chaumeton.pagesperso-orange.fr",
+                "marches-reguliers.pagesperso-orange.fr"
+            ]
+        },
+        {
+            "rule": "orange\\.fr\\/$v=3",
+            "cookies": 0.000303,
+            "fingerprinting": 0,
+            "subdomains": [
                 "iz4"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000302,
+            "prevalence": 0.000303,
             "cnames": [],
             "responseHashes": [
-                "4f791c59928467809a7300aaf519d6fafd83fb5cbfd52ad79a4589eb61003bea",
-                "392a9aee724a8f84d9415881672dae0a47942ca1924c79eac77045ef0fe52300"
+                "7688da0d51f0daad7aa126cc2b4588ddb6ea5d28e196c7779b3945815adf345b",
+                "c7f5daa1338e9ba415fcb1e2980f0aaaab9c0de38f5b3a1345281a4dfa32a9e8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "sosh.fr",
-                "communaute.sosh.fr",
+                "shop.sosh.fr",
                 "www.sosh.fr"
             ]
         },
         {
-            "rule": "orange\\.fr\\/global-cookies\\.c1ac16683d5073ddf267800b3bc4d6a27863f495\\.html",
-            "cookies": 0,
+            "rule": "orange\\.fr\\/global-cookies\\.93ba1f46212ab8bd9c6d20aaa44e653d1120940d\\.html",
+            "cookies": 0.000101,
             "fingerprinting": 1,
             "subdomains": [
                 "consent"
             ],
             "apis": {
-                "window.localStorage": 3
+                "Document.cookie setter": 1,
+                "window.localStorage": 1
             },
             "sites": 3,
-            "prevalence": 0.000302,
+            "prevalence": 0.000303,
             "cnames": [],
             "responseHashes": [
                 "5579e7aae242852312dad01b2305681d67f2fd21be2294ad7f841f9dcf75ffa3"
@@ -136,8 +149,50 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "sosh.fr",
-                "communaute.sosh.fr",
+                "shop.sosh.fr",
                 "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "orange\\.fr\\/r\\/Oerreur_404",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "r"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pagesperso-orange.fr",
+                "www.semconstellation.fr"
+            ]
+        },
+        {
+            "rule": "orange\\.fr\\/error404\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "e"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pagesperso-orange.fr",
+                "www.semconstellation.fr"
             ]
         },
         {
@@ -148,40 +203,32 @@
                 "pdata"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 2,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "2188414d64d2930eb54f4731b6eb9a931358ba625d1cd7535a889409218609d2"
+                "1bd2aa0bb9f0a0fd919c42a18c81645bd6d9601f60086928b05db8a5be978689"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "sosh.fr",
-                "communaute.sosh.fr",
                 "www.sosh.fr"
             ]
         }
     ],
     "categories": [],
-    "performance": {
-        "time": 0,
-        "size": 0,
-        "cpu": 0,
-        "cache": 1
-    },
-    "cookies": 0.000302,
+    "performance": {},
+    "cookies": 0.000505,
     "types": {
-        "Script": 5,
-        "Image": 5,
+        "Script": 6,
         "Font": 2,
+        "Image": 9,
         "Document": 3
     },
     "nameservers": [
-        "ns2.orange.fr",
-        "ns3.orange.fr",
         "ns1.orange.fr",
-        "ns4.orange.fr"
+        "ns2.orange.fr"
     ]
 }

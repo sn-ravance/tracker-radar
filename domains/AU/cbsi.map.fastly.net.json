@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000902,
-    "sites": 9,
+    "prevalence": 0.001,
+    "sites": 10,
     "subdomains": [
         "isgprivacy",
         "news-ipv4"
@@ -25,22 +25,22 @@
             "resolved": "isgprivacy.cbsi.map.fastly.net"
         },
         {
-            "original": "tealium.cbsnews.com",
-            "resolved": "news-ipv4.cbsi.map.fastly.net"
+            "original": "rev.cbsi.com",
+            "resolved": ".cbsi.map.fastly.net"
         }
     ],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "cbsi\\.map\\.fastly\\.net\\/dist\\/optanon-v1\\.1\\.0\\.js",
-            "cookies": 0.0001,
+            "cookies": 0.000502,
             "fingerprinting": 1,
             "subdomains": [
                 "isgprivacy"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.000802,
+            "sites": 9,
+            "prevalence": 0.000904,
             "cnames": [
                 {
                     "original": "production-cmp.isgprivacy.cbsi.com",
@@ -55,19 +55,20 @@
                 "OptanonAlertBoxClosed": {
                     "ttl": null,
                     "length": 24,
-                    "prevalence": 0.00010026067776218167,
-                    "uniqueness": 1
+                    "prevalence": 0.0005023106288929073,
+                    "uniqueness": 0.2
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "comicbook.com",
                 "popculture.com",
-                "southpark.cc.com",
                 "www.cbssports.com",
                 "www.etonline.com",
+                "www.insideedition.com",
                 "www.last.fm",
                 "www.mtv.com",
+                "www.sho.com",
                 "www.simonandschuster.com"
             ]
         },
@@ -79,8 +80,8 @@
                 "isgprivacy"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.000902,
+            "sites": 10,
+            "prevalence": 0.001,
             "cnames": [
                 {
                     "original": "production-cmp.isgprivacy.cbsi.com",
@@ -88,7 +89,7 @@
                 }
             ],
             "responseHashes": [
-                "a8a0cf84208d7d722fcbb1cade2a395e4226a962163b7f2c10d105d36d36e61b"
+                "e51204268a8a08488b47764979bfbcc3f147396aff37a23dff4b9a9f9c579185"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -96,40 +97,14 @@
             "exampleSites": [
                 "comicbook.com",
                 "popculture.com",
-                "southpark.cc.com",
                 "www.cbsnews.com",
                 "www.cbssports.com",
                 "www.etonline.com",
+                "www.insideedition.com",
                 "www.last.fm",
                 "www.mtv.com",
+                "www.sho.com",
                 "www.simonandschuster.com"
-            ]
-        },
-        {
-            "rule": "cbsi\\.map\\.fastly\\.net\\/site\\/prod\\/utag\\.js",
-            "cookies": 0.000201,
-            "fingerprinting": 2,
-            "subdomains": [
-                "news-ipv4"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "tealium.cbsnews.com",
-                    "resolved": "news-ipv4.cbsi.map.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "0fd51ed139ae04aa681c293b8c0c9232e0cc04ead4967e64c6445201b97bc97f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cbsnews.com",
-                "www.cbsnews.com"
             ]
         },
         {
@@ -149,7 +124,7 @@
                 }
             ],
             "responseHashes": [
-                "ca4755a61d12c1bd72ce49fd4b393296372aedd6ab45d85c416f4ee5a149a1ec"
+                "9047361c954dbef5564715f94b7b40ba4b9292eba3062627fb9b792c7c3a392c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -176,7 +151,7 @@
                 }
             ],
             "responseHashes": [
-                "e4e886db5a133fdc0582d9f1bc5efb59ec9e953d7aedada95c27b07f1f5767a2"
+                "ab5f4868fe75515491344ff01536b6380575ebbe49d754fc2a0b2458df5d98bf"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -184,6 +159,31 @@
             "exampleSites": [
                 "cbsnews.com",
                 "www.cbsnews.com"
+            ]
+        },
+        {
+            "rule": "cbsi\\.map\\.fastly\\.net\\/common\\/img\\/dotclear\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "rev.cbsi.com",
+                    "resolved": ".cbsi.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "etonline.com",
+                "www.insideedition.com"
             ]
         }
     ],
@@ -198,11 +198,12 @@
         "Session Replay"
     ],
     "performance": {},
-    "cookies": 0.000301,
+    "cookies": 0.000703,
     "types": {
         "Script": 19,
         "XHR": 2,
-        "Fetch": 2
+        "Fetch": 2,
+        "Image": 2
     },
     "nameservers": []
 }
