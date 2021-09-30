@@ -7,12 +7,22 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000803,
-    "sites": 8,
+    "prevalence": 0.000904,
+    "sites": 9,
     "subdomains": [
-        "track"
+        "track",
+        "advertiser"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "at.gnp.energy",
+            "resolved": "advertiser.adtraction.com"
+        },
+        {
+            "original": "to.xplora.no",
+            "resolved": "advertiser.adtraction.com"
+        }
+    ],
     "fingerprinting": 1,
     "resources": [
         {
@@ -23,18 +33,27 @@
                 "track"
             ],
             "apis": {
-                "Date.prototype.getTime": 3
+                "Document.cookie getter": 3,
+                "Date.prototype.getTime": 3,
+                "Document.cookie setter": 3
             },
             "sites": 3,
             "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "at_gd": {
+                    "ttl": 31536017,
+                    "length": 40,
+                    "prevalence": 0.00030135610246107485,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "byggebolig.no",
-                "investorkilden.com",
+                "spirea.no",
                 "www.ebutikker.no"
             ]
         },
@@ -50,15 +69,15 @@
             "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "4c5c8bbb58030624baa5663a9f91290509df7f5abee6f6f02276a4dfcf5995db",
-                "903bb9a4baf9bf82cd26c762e118bf8e0385c0d98430c7c4704912a139fe80f5"
+                "23976baeba8087ddd3bc40a572296048123f2db5714e814b7a357f37d3756982",
+                "58c44fba6a538d3dde86ce5b67a333c943e47c42192c40a82b39c92a4a0f8965"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "byggebolig.no",
-                "investorkilden.com",
+                "spirea.no",
                 "www.ebutikker.no"
             ]
         },
@@ -74,9 +93,9 @@
             "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
-                "ca88ef876cbba3386e997a00262938f54716f1d8239eed940fc2325bfd48c759",
-                "ff5e1157287ae5f27adabb2843044a2356333481fb4a0e73edbabb97a2f8ab2f",
-                "9b53317836203feff6df50a6e19cf391b02c093eb389f2b80e7c2dcf872b1c4d"
+                "ca83cbd36c2cb2b61306a3b9012e992e333e0c42b9e0304a9d5a4682a373976e",
+                "8880c26c08eb53e163927ca7dad84a7d79abbf8e70c034cbf7887f4cda8c5ce1",
+                "e087da2ceed53561667d99ea5631a2c76348092bee194e259672bebb6d6a0cc7"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -85,26 +104,52 @@
                 "godegavetips.com",
                 "jegeravisen.no",
                 "www.fjellforum.no",
-                "www.pengenytt.no"
+                "www.kulinarisk.no"
+            ]
+        },
+        {
+            "rule": "adtraction\\.com\\/jsTag",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertiser"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "at.gnp.energy",
+                    "resolved": "advertiser.adtraction.com"
+                },
+                {
+                    "original": "to.xplora.no",
+                    "resolved": "advertiser.adtraction.com"
+                }
+            ],
+            "responseHashes": [
+                "2aff0c11b5e1ff858cc7248e244774c56a656c0e28c739e44bad5948d34ecb7a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gnp.energy",
+                "xplora.no"
             ]
         }
     ],
     "categories": [],
-    "performance": {
-        "time": 0,
-        "size": 0,
-        "cpu": 0,
-        "cache": 0
-    },
+    "performance": {},
     "cookies": 0.000703,
     "types": {
-        "Script": 6,
+        "Script": 8,
         "Image": 4
     },
     "nameservers": [
         "ns-176.awsdns-22.com",
-        "ns-1957.awsdns-52.co.uk",
         "ns-613.awsdns-12.net",
-        "ns-1213.awsdns-23.org"
+        "ns-1213.awsdns-23.org",
+        "ns-1957.awsdns-52.co.uk"
     ]
 }

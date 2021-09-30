@@ -12,35 +12,13 @@
     "prevalence": 0.00191,
     "sites": 19,
     "subdomains": [
-        "justusaknight.files",
         "r-login",
-        "public-api"
+        "public-api",
+        "restkerk.files"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
-        {
-            "rule": "wordpress\\.com\\/2021\\/08\\/screen-shot-2021-08-25-at-7\\.11\\.08-am\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "justusaknight.files"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "8c2680b3ca70f14a05887820ed2ace9e630f8bef6eeddb5270f2b43d1b73e5f4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "beforeitsnews.com",
-                "m.beforeitsnews.com"
-            ]
-        },
         {
             "rule": "wordpress\\.com\\/remote-login\\.php",
             "cookies": 0,
@@ -49,25 +27,74 @@
                 "r-login"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.000603,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
-                "80b2e066873fa90c2ce2af578b393cc50fd0a02a4137591020cf30f6a3027ac9",
-                "93b299bfea062aed2e8d6796a5e22d3d7536dff452b0ebac11cebb3884796a7c",
+                "23258cea7559c8a41360052b5546fb2e86c2499e9b66d56c7e55e5c04d1a0e49",
+                "65efa68b1e79a432faee3104453ce35314a6ef45aa8cdb52fd2dcea52c5d18fd",
                 "514af19bdb8ecbdf8b2382b330a416eab81854998f53c064f4496c7924cd2070",
-                "65efa68b1e79a432faee3104453ce35314a6ef45aa8cdb52fd2dcea52c5d18fd"
+                "bba20e34ad4ec244c82026415b2f12cc03f382da135bcf5c814a04dd20246f9a"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "allesvoorengels.nl",
+                "de-ware-wereld.nl",
                 "eindtijdklok.org",
-                "hetnoordwijkblog.com",
-                "maaikeschoon.nl",
                 "restkerk.net",
-                "truth11.com",
-                "vidcaps.live"
+                "truth11.com"
+            ]
+        },
+        {
+            "rule": "wordpress\\.com\\/wp-admin\\/rest-proxy\\/",
+            "cookies": 0.000603,
+            "fingerprinting": 1,
+            "subdomains": [
+                "public-api"
+            ],
+            "apis": {
+                "Document.cookie getter": 6
+            },
+            "sites": 6,
+            "prevalence": 0.000603,
+            "cnames": [],
+            "responseHashes": [
+                "c6571876dfcbb11c6d3433e714f76c8acbf206b2be801cb65f63f18b9e3d510e"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allesvoorengels.nl",
+                "de-ware-wereld.nl",
+                "eindtijdklok.org",
+                "restkerk.net",
+                "texblog.org",
+                "truth11.com"
+            ]
+        },
+        {
+            "rule": "wordpress\\.com\\/2017\\/12\\/cropped-rknetlogo-1\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "restkerk.files"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "fd0ea9a4a51ad30a330c49262ab484ab467c9546b12efc117260821b0b3edc56"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eindtijdklok.org",
+                "restkerk.net"
             ]
         },
         {
@@ -78,8 +105,8 @@
                 "public-api"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "7ab2818631662848ed3c167f8ecc1811cc2ad629514a2c09f729e86e226ffb29"
@@ -89,7 +116,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "globalnews.ca",
-                "maaikeschoon.nl",
                 "truth11.com"
             ]
         },
@@ -134,30 +160,47 @@
                 "nih.gov",
                 "pubchem.ncbi.nlm.nih.gov"
             ]
+        },
+        {
+            "rule": "wordpress\\.com\\/rest\\/v1\\/batch",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "public-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "86ddc42e70735c4ae76db41ef0a09abb1a14616bafa913343073785c8b3ade97"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "texblog.org",
+                "truth11.com"
+            ]
         }
     ],
     "categories": [
         "CDN",
         "Embedded Content"
     ],
-    "performance": {
-        "time": 1,
-        "size": 3,
-        "cpu": 1,
-        "cache": 1
-    },
-    "cookies": 0.0001,
+    "performance": {},
+    "cookies": 0.000603,
     "types": {
+        "Document": 11,
         "Image": 2,
-        "Document": 6,
-        "XHR": 3,
+        "XHR": 4,
         "Preflight": 2,
         "Fetch": 2
     },
     "nameservers": [
-        "ns2.wordpress.com",
         "ns4.wordpress.com",
         "ns3.wordpress.com",
+        "ns2.wordpress.com",
         "ns1.wordpress.com"
     ]
 }

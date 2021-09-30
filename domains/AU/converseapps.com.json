@@ -7,10 +7,11 @@
     "prevalence": 0.0001,
     "sites": 1,
     "subdomains": [
-        "api"
+        "api",
+        "cdn"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "converseapps\\.com\\/v1\\/ping",
@@ -51,24 +52,45 @@
                 "logi.com",
                 "support.logi.com"
             ]
+        },
+        {
+            "rule": "converseapps\\.com\\/v1\\/assets\\/js\\/site\\/converseapps-bot\\.1b2dfaa778e8af52\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b2b2400b62c2f191b5677c39faa19f087e1fb25121367ed3ff2c4a283a919653"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "logi.com",
+                "support.logi.com"
+            ]
         }
     ],
     "categories": [],
-    "performance": {
-        "time": 0,
-        "size": 0,
-        "cpu": 0,
-        "cache": 0
-    },
+    "performance": {},
     "cookies": 0,
     "types": {
         "Preflight": 2,
-        "XHR": 2
+        "XHR": 2,
+        "Script": 2
     },
     "nameservers": [
-        "ns-1135.awsdns-13.org",
         "ns-120.awsdns-15.com",
+        "ns-949.awsdns-54.net",
         "ns-1649.awsdns-14.co.uk",
-        "ns-949.awsdns-54.net"
+        "ns-1135.awsdns-13.org"
     ]
 }

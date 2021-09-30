@@ -4,13 +4,18 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000203,
+    "prevalence": 0.000206,
     "sites": 2,
     "subdomains": [
         "vaping360.engine",
-        "laweekly.engine"
+        "laweekly.engine",
+        "laweekly.cdn"
     ],
     "cnames": [
+        {
+            "original": "cdn.laweekly.com",
+            "resolved": "laweekly.cdn.adglare.net"
+        },
         {
             "original": "engine.laweekly.com",
             "resolved": "laweekly.engine.adglare.net"
@@ -25,14 +30,14 @@
         {
             "rule": "adglare\\.net\\/",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "vaping360.engine",
                 "laweekly.engine"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000206,
             "cnames": [
                 {
                     "original": "engine.vaping360.com",
@@ -44,7 +49,7 @@
                 }
             ],
             "responseHashes": [
-                "571638296e3b4fc6680748aa30dfe7950a71b07492f681f59e5943d3aeed5478"
+                "18d143fa37b58abb71a8ae33675b97061df66a3f82e41fd3fb2d3e9310c6a92e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -53,18 +58,70 @@
                 "vaping360.com",
                 "www.laweekly.com"
             ]
+        },
+        {
+            "rule": "adglare\\.net\\/data",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vaping360.engine",
+                "laweekly.engine"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000206,
+            "cnames": [
+                {
+                    "original": "engine.vaping360.com",
+                    "resolved": "vaping360.engine.adglare.net"
+                },
+                {
+                    "original": "engine.laweekly.com",
+                    "resolved": "laweekly.engine.adglare.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vaping360.com",
+                "www.laweekly.com"
+            ]
+        },
+        {
+            "rule": "adglare\\.net\\/t239da868\\/img\\/vue8z_vfb2wt_53fec7ff\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "laweekly.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000206,
+            "cnames": [
+                {
+                    "original": "cdn.laweekly.com",
+                    "resolved": "laweekly.cdn.adglare.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "laweekly.com",
+                "www.laweekly.com"
+            ]
         }
     ],
     "categories": [],
-    "performance": {
-        "time": 1,
-        "size": 1,
-        "cpu": 0,
-        "cache": 1
-    },
+    "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2
+        "Script": 2,
+        "Ping": 2,
+        "Image": 2
     },
     "nameservers": []
 }

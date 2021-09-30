@@ -7,10 +7,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000153,
-    "sites": 22,
+    "prevalence": 0.00019,
+    "sites": 27,
     "subdomains": [
-        "push"
+        "push",
+        "site-script",
+        "tracker",
+        "statics"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -21,40 +24,37 @@
             "fingerprinting": 2,
             "subdomains": [],
             "apis": {
-                "Navigator.prototype.userAgent": 5,
-                "window.indexedDB": 5,
+                "Navigator.prototype.userAgent": 6,
+                "window.indexedDB": 6,
                 "Document.cookie getter": 5,
                 "window.localStorage": 5,
                 "Notification.permission": 5
             },
             "sites": 12,
-            "prevalence": 0.0000833,
+            "prevalence": 0.0000845,
             "cnames": [],
             "responseHashes": [
-                "1f3380eb17d51ba36e360cb8670eb41ff4cda6ea02423d68c2ea6459e2bbae5f",
-                "c146466547a9e120f6da5ec06845b991b02aeef03cef7b3e26cba4592374ae4d",
-                "ec56667bbf77c0d508e4fe33ee40e48ebf9fafea3fcbca6f387189da8d933b34",
-                "292e9287c2ae62142483db3bb45a61ebaf46e05382519ebdbcaa299b61355e2d",
-                "87aa3e9da58703eebf6edc2d758d46c1fb05668597a24c696c5c1a0ac658b6b5",
-                "2b4fd8e8b558ec2626e3545411257ec474b402eb134765fed60853680eb60cd6",
-                "2ab8492d21c1debcb1c890ec62cce03e671a94a2801e96cd1ac4d3e2516949bf",
-                "1fcbbdadd45a8789603e4c6fff37dc91830bf58f0ec149751d907fa7f33e9c6f",
-                "f14eba85b5cd91ff87c7d58889ab6ff3f7562ce819657e26c0d5691c63bc1615",
-                "32375ce189b11405829930aaa32386afbadcf67837809889fc80818eb976d946"
+                "f61a135538b57ba21d7926b1a77f2670343caeb1d7f5d874db350cb8e6b55009",
+                "de47a123d1d63b71a454c69aace466353d821768dd4a802c9630726fb4e45c05",
+                "105ab3bf2ce35c99387ec72c76c7cd6c6a242bcf241e26cecea78dd01ed85077",
+                "aac5b93c2f7b3ecc8aa221336f2e2e959f8143baaed2765d8dd881e6954d655c",
+                "608bc7285eaa9c0920503341ad96037c7e39f967b26d96d3acc5fe22758341ff",
+                "0777184521d7350f528e58b076badac0d8f032e3ef60e7ea4f38821f51764de3",
+                "edaf4efc5524280c83b66954973cc200eee84577b5ccbf071e30fa61bf454a47"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "ask.fm",
+                "bigl.ua",
                 "epicentrk.ua",
-                "f.ua",
-                "football.kulichki.net",
                 "freebooksummary.com",
                 "kiev.prom.ua",
-                "kyivstar.ua",
                 "minsk.deal.by",
                 "phdessay.com",
                 "prom.ua",
+                "studyhippo.com",
                 "www.foxtrot.com.ua",
                 "www.macupdate.com",
                 "www.moyo.ua"
@@ -69,7 +69,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000278,
+            "prevalence": 0.0000282,
             "cnames": [],
             "responseHashes": [
                 "40c42db14ace33462a503a7fa36f15c0214a1ab2264098e7d8fcc496a5a75593"
@@ -78,29 +78,161 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "kulichki.net",
+                "bigl.ua",
                 "freebooksummary.com",
                 "phdessay.com",
-                "www.moyo.ua"
+                "studyhippo.com"
+            ]
+        },
+        {
+            "rule": "esputnik\\.com\\/site-script\\/v1\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "site-script"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000141,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cs.money",
+                "www.21vek.by"
+            ]
+        },
+        {
+            "rule": "esputnik\\.com\\/site-script\\/v1\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "site-script"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000141,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cs.money",
+                "www.21vek.by"
+            ]
+        },
+        {
+            "rule": "esputnik\\.com\\/api\\/v1",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracker"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000141,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cs.money",
+                "www.21vek.by"
+            ]
+        },
+        {
+            "rule": "esputnik\\.com\\/site-script\\/v1\\/monitoring",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "site-script"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000141,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cs.money",
+                "www.21vek.by"
+            ]
+        },
+        {
+            "rule": "esputnik\\.com\\/site-script\\/v1\\/monitoring",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "site-script"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000141,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cs.money",
+                "www.21vek.by"
+            ]
+        },
+        {
+            "rule": "esputnik\\.com\\/scripts\\/4EF05DD2FF544283AAB1B14EBC086B8B\\.js",
+            "cookies": 0.00000704,
+            "fingerprinting": 1,
+            "subdomains": [
+                "statics"
+            ],
+            "apis": {
+                "window.localStorage": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000141,
+            "cnames": [],
+            "responseHashes": [
+                "dc9a3b14668f7666d99deddba6d78959860b233eb69561d659e6586b020437ac"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "sc": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000007038783698176955,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "21vek.by",
+                "www.21vek.by"
             ]
         }
     ],
     "categories": [],
-    "performance": {
-        "time": 0,
-        "size": 0,
-        "cpu": 0,
-        "cache": 0
-    },
-    "cookies": 0.00000694,
+    "performance": {},
+    "cookies": 0.0000211,
     "types": {
-        "Script": 12,
-        "Other": 4
+        "Script": 14,
+        "Other": 4,
+        "XHR": 2,
+        "Preflight": 4,
+        "Fetch": 4
     },
     "nameservers": [
         "ns-185.awsdns-23.com",
         "ns-974.awsdns-57.net",
-        "ns-1170.awsdns-18.org",
-        "ns-1742.awsdns-25.co.uk"
+        "ns-1742.awsdns-25.co.uk",
+        "ns-1170.awsdns-18.org"
     ]
 }

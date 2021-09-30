@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
         "dispawsusva",
         "intercept-client"
@@ -48,11 +48,14 @@
                 "intercept-client"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 1
+                "Navigator.prototype.userAgent": 4,
+                "window.localStorage": 3,
+                "Navigator.prototype.platform": 1,
+                "Screen.prototype.width": 2,
+                "window.sessionStorage": 1
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
                 "7ffd9394641d05e2ad4e1004d0fa2503505a257fb7fba8d64c13179e555be01c"
@@ -62,20 +65,63 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ea.com",
-                "www.footlocker.com.au"
+                "www.footlocker.com.au",
+                "www.golfdigest.com",
+                "www.nzpost.co.nz"
+            ]
+        },
+        {
+            "rule": "inmoment\\.com\\/intercept\\/v1\\/log",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dispawsusva"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "footlocker.com.au",
+                "www.golfdigest.com",
+                "www.nzpost.co.nz"
+            ]
+        },
+        {
+            "rule": "inmoment\\.com\\/intercept\\/v1\\/log",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dispawsusva"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "footlocker.com.au",
+                "www.golfdigest.com",
+                "www.nzpost.co.nz"
             ]
         }
     ],
     "categories": [],
-    "performance": {
-        "time": 1,
-        "size": 1,
-        "cpu": 0,
-        "cache": 1
-    },
-    "cookies": 0,
+    "performance": {},
+    "cookies": 0.0001,
     "types": {
-        "Script": 4
+        "Script": 6,
+        "XHR": 3,
+        "Preflight": 3
     },
     "nameservers": [
         "pdns08.domaincontrol.com",

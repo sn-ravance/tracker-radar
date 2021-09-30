@@ -4,11 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000903,
-    "sites": 13,
+    "prevalence": 0.000127,
+    "sites": 18,
     "subdomains": [
         "embed",
-        "cdn"
+        "counter",
+        "cdn",
+        "cdnlastmodified",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -16,13 +19,15 @@
         {
             "rule": "scribblelive\\.com\\/widgets\\/embed\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "embed"
             ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000347,
+            "apis": {
+                "Navigator.prototype.appVersion": 4
+            },
+            "sites": 9,
+            "prevalence": 0.0000633,
             "cnames": [],
             "responseHashes": [
                 "9857b4b059c3ef76bfd24ee1d9759b6ac2ad33ef459976d429d4d18c4a7b92d2"
@@ -31,47 +36,253 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "capitolfax.com",
                 "spectrumnews1.com",
                 "spectrumlocalnews.com",
                 "www.baynews9.com",
+                "www.expressandstar.com",
                 "www.mynews13.com",
-                "www.ny1.com"
+                "www.ny1.com",
+                "www.patriots.com",
+                "www.philadelphiaeagles.com"
             ]
         },
         {
-            "rule": "scribblelive\\.com\\/modules\\/lib\\/addons\\.js",
-            "cookies": 0.00000694,
+            "rule": "scribblelive\\.com\\/Embed\\/v7\\.aspx",
+            "cookies": 0.0000141,
             "fingerprinting": 1,
             "subdomains": [
-                "embed",
-                "cdn"
+                "embed"
             ],
             "apis": {
-                "Document.cookie getter": 1,
-                "Date.prototype.getTime": 1,
-                "Document.cookie setter": 1
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
             },
-            "sites": 2,
-            "prevalence": 0.0000139,
+            "sites": 4,
+            "prevalence": 0.0000282,
             "cnames": [],
             "responseHashes": [
-                "166649193d90560233250b64997ee3d72819d624770cc32ff752ba1a975cda69"
+                "bec68ce3e35b1d62e2f76d16c633fb1e1b077c34ca6cc865cee7d47bb13fca85",
+                "14e68cf2d1b4f275b2413fdbd71c8d4fd44ea93054ed75109a78bcaa0a8d66b3",
+                "b6a645da1cd1e1f770d779b572b4ae8c3a8b8cfb0a231e5a0242b70aa3b8a39b"
             ],
-            "type": "Script",
+            "type": "Document",
             "firstPartyCookies": {
                 "SLStatUid": {
                     "ttl": null,
-                    "length": 23,
-                    "prevalence": 0.000006943142605205969,
+                    "length": 32,
+                    "prevalence": 0.00001407756739635391,
                     "uniqueness": 1
                 },
                 "SLStatHist": {
                     "ttl": null,
-                    "length": 9,
-                    "prevalence": 0.000006943142605205969,
+                    "length": 10,
+                    "prevalence": 0.00001407756739635391,
                     "uniqueness": 1
                 }
             },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "capitolfax.com",
+                "www.expressandstar.com",
+                "www.patriots.com",
+                "www.philadelphiaeagles.com"
+            ]
+        },
+        {
+            "rule": "scribblelive\\.com\\/widgets\\/embed\\/post\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000352,
+            "cnames": [],
+            "responseHashes": [
+                "8358ef993a9b31c12725c5d985463b94886639d4f78054e518f20b675a3dac61"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "capitolfax.com",
+                "live.cbssports.com",
+                "www.expressandstar.com",
+                "www.patriots.com",
+                "www.philadelphiaeagles.com"
+            ]
+        },
+        {
+            "rule": "scribblelive\\.com\\/",
+            "cookies": 0.0000282,
+            "fingerprinting": 0,
+            "subdomains": [
+                "counter"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000282,
+            "cnames": [],
+            "responseHashes": [
+                "09a0c890af3d005cfbd79eb86ed85457ea6c400f116f7185e5caebc50a537c13"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "SLStatUid": 0.00001407756739635391
+            },
+            "exampleSites": [
+                "capitolfax.com",
+                "live.cbssports.com",
+                "www.philadelphiaeagles.com",
+                "www.startribune.com"
+            ]
+        },
+        {
+            "rule": "scribblelive\\.com\\/Images\\/rl-logo-full-sprite03\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000141,
+            "cnames": [],
+            "responseHashes": [
+                "e714a2c991583286123f99b6fc21b8f52c132b223b5312eefd53b419fadebe82"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cbssports.com",
+                "live.cbssports.com"
+            ]
+        },
+        {
+            "rule": "scribblelive\\.com\\/lastmodified\\/36089",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdnlastmodified"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000141,
+            "cnames": [],
+            "responseHashes": [
+                "65383d63a7146aa26517073f82b1cb0b8e4e436c3beaaa2c14992e427243a9bb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cbssports.com",
+                "live.cbssports.com"
+            ]
+        },
+        {
+            "rule": "scribblelive\\.com\\/client\\/Scoreboards\\/SegmentScores\\.jsx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000141,
+            "cnames": [],
+            "responseHashes": [
+                "f41ab6501a5c36691c15bf7949f24747a1d7250a0094bf0f093f7efd362042f9"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cbssports.com",
+                "live.cbssports.com"
+            ]
+        },
+        {
+            "rule": "scribblelive\\.com\\/c\\/f\\.aspx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000141,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "philadelphiaeagles.com",
+                "www.philadelphiaeagles.com"
+            ]
+        },
+        {
+            "rule": "scribblelive\\.com\\/v1\\/replies\\/context\\/stream\\/2971562\\/recent",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000141,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "philadelphiaeagles.com",
+                "www.philadelphiaeagles.com"
+            ]
+        },
+        {
+            "rule": "scribblelive\\.com\\/v1\\/replies\\/context\\/stream\\/2971561\\/recent",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000141,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "philadelphiaeagles.com",
+                "www.philadelphiaeagles.com"
+            ]
+        },
+        {
+            "rule": "scribblelive\\.com\\/modules\\/lib\\/addons\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "embed",
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000141,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "startribune.com",
@@ -80,19 +291,17 @@
         }
     ],
     "categories": [],
-    "performance": {
-        "time": 1,
-        "size": 1,
-        "cpu": 0,
-        "cache": 3
-    },
-    "cookies": 0.00000694,
+    "performance": {},
+    "cookies": 0.0000282,
     "types": {
-        "Script": 7
+        "Script": 18,
+        "Document": 6,
+        "Image": 6,
+        "XHR": 6
     },
     "nameservers": [
-        "ns-309.awsdns-38.com",
         "ns-717.awsdns-25.net",
+        "ns-309.awsdns-38.com",
         "ns-1046.awsdns-02.org",
         "ns-1922.awsdns-48.co.uk"
     ]

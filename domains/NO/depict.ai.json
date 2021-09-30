@@ -7,12 +7,38 @@
     "prevalence": 0.000402,
     "sites": 4,
     "subdomains": [
+        "api",
         "proxy",
-        "api"
+        "cdn"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "depict\\.ai\\/recommend",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "80291be73106ec0455671206ffb5af4609caf38e2c785b0f7ee16b4b28ad6918",
+                "35b52afcc69470714bfff1d3c20c8f208e5a8fc0d2a1857b73df091fe832c1a6"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "royaldesign.no",
+                "www.plantasjen.no",
+                "www.teknikmagasinet.no",
+                "www.teknikmagasinet.se"
+            ]
+        },
         {
             "rule": "depict\\.ai\\/",
             "cookies": 0,
@@ -29,36 +55,35 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "estore.no",
-                "www.maxgaming.no",
+                "royaldesign.no",
                 "www.plantasjen.no",
-                "www.teknikmagasinet.no"
+                "www.teknikmagasinet.no",
+                "www.teknikmagasinet.se"
             ]
         },
         {
-            "rule": "depict\\.ai\\/recommend",
+            "rule": "depict\\.ai\\/teknikmagasinet\\/depict-ai\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "api"
+                "cdn"
             ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "apis": {
+                "window.localStorage": 2,
+                "BroadcastChannel.prototype.constructor": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "90ef192139fcc669ee2703849505d8c8b06a8c4c4cb98dd265bf5be089543f62",
-                "72bbfb4d19c1b1cf875dd190e4030b25b2140fdd8e8b8847e1551b0e7fa42bbd",
-                "35b52afcc69470714bfff1d3c20c8f208e5a8fc0d2a1857b73df091fe832c1a6"
+                "be8557a690fa606ec5d6f96be3f0db1e5fec2d2a2c09273368e9b2ebfb05879b"
             ],
-            "type": "Fetch",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "estore.no",
-                "www.maxgaming.no",
-                "www.plantasjen.no",
-                "www.teknikmagasinet.no"
+                "teknikmagasinet.no",
+                "www.teknikmagasinet.se"
             ]
         }
     ],
@@ -66,8 +91,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
+        "Fetch": 4,
         "WebSocket": 4,
-        "Fetch": 4
+        "Script": 2
     },
     "nameservers": [
         "clayton.ns.cloudflare.com",

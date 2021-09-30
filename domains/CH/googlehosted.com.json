@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000803,
-    "sites": 8,
+    "prevalence": 0.00151,
+    "sites": 15,
     "subdomains": [
         "ghs",
         "api.id.ghs",
@@ -33,7 +33,19 @@
             "resolved": "api.stage-id.ghs.googlehosted.com"
         },
         {
+            "original": "gtm.shopviu.com",
+            "resolved": "ghs.googlehosted.com"
+        },
+        {
             "original": "purr.nytimes.com",
+            "resolved": "ghs.googlehosted.com"
+        },
+        {
+            "original": "t.swatch.com",
+            "resolved": "ghs.googlehosted.com"
+        },
+        {
+            "original": "uie.radio-canada.ca",
             "resolved": "ghs.googlehosted.com"
         },
         {
@@ -41,8 +53,42 @@
             "resolved": "ghs.googlehosted.com"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "googlehosted\\.com\\/g\\/collect",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghs"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "t.swatch.com",
+                    "resolved": "ghs.googlehosted.com"
+                },
+                {
+                    "original": "gtm.shopviu.com",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [
+                "e64954dc34e12c7190cc2338a54b07644ff0f102aa71cc7209bcbb49c3009f7c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.0007032348804500703
+            },
+            "exampleSites": [
+                "swatch.com",
+                "shopviu.com",
+                "www.swatch.com"
+            ]
+        },
         {
             "rule": "googlehosted\\.com\\/svc\\/nyt\\/data-layer",
             "cookies": 0.000201,
@@ -60,7 +106,7 @@
                 }
             ],
             "responseHashes": [
-                "dbf70895af022bf55ac0a158870839f9296c56a494dc626df8eadf80f34ded3d"
+                "73ad4229309fabe0320e8cbc1a579db8d50d777c4c3257358fc2cf7b8ca29692"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -114,7 +160,7 @@
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Other",
+            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -124,7 +170,59 @@
             ]
         },
         {
-            "rule": "googlehosted\\.com\\/v0\\/UIEUser\\/95da6c70-5483-4951-88c5-48df1af67ae8\\/UPSPreferences\\/fdfc9e",
+            "rule": "googlehosted\\.com\\/v0\\/ids",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "uie.radio-canada.ca",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "googlehosted\\.com\\/v0\\/ids",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "uie.radio-canada.ca",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [
+                "a1f5e29adfc9c5f4808367b1e2b3937a5e746f6f75c756b59a6e7216c8e07233"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "googlehosted\\.com\\/v0\\/UIEUser\\/be5f9562-df35-44d6-a4c0-577760da7fe9\\/UPSPreferences\\/fdfc9e",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -147,7 +245,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cbc.ca",
-                "www.cbc.ca"
+                "newsinteractives.cbc.ca"
             ]
         },
         {
@@ -191,11 +289,12 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000703,
     "types": {
-        "XHR": 4,
+        "XHR": 9,
         "Fetch": 2,
-        "Other": 3,
+        "Ping": 3,
+        "Preflight": 2,
         "Script": 3
     },
     "nameservers": []

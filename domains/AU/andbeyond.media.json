@@ -7,19 +7,72 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000602,
+    "prevalence": 0.000603,
     "sites": 6,
     "subdomains": [
+        "rtbpass-us",
+        "prebid",
+        "cpm",
         "rtb-eu"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "andbeyond\\.media\\/passback-without-url-jan\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "rtbpass-us"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.cookieEnabled": 1,
+                "window.sessionStorage": 1,
+                "Navigator.prototype.appName": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abplive.com",
+                "www.bloombergquint.com"
+            ]
+        },
+        {
+            "rule": "andbeyond\\.media\\/impstats\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prebid"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "358aac59a315fa276d5e2bfe6aa30bac3c4c7d004a353ba0afb93134c1049812"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abplive.com",
+                "news.abplive.com",
+                "www.bloombergquint.com",
+                "www.financialexpress.com"
+            ]
+        },
+        {
             "rule": "andbeyond\\.media\\/hb",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "cpm",
                 "rtb-eu"
             ],
             "apis": {},
@@ -27,8 +80,8 @@
             "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "1b59c494cd20bc873eba5c9d1c8450fb384695c9f50905191c61b9d108353e87",
-                "27d26c85ab2ba3b805f2331f0ccce8f1ee941ed225d15f7562b3589d7824b8f5"
+                "f4dbab283d8d2ad19826e592feb0b121bbf0e39588ba941d16dfaa6102d37a10",
+                "6a289640fc00b01dfc628170efb272b4d2caeadab1d18bb950da5e1726d43ab2"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -41,18 +94,14 @@
         }
     ],
     "categories": [],
-    "performance": {
-        "time": 1,
-        "size": 1,
-        "cpu": 0,
-        "cache": 1
-    },
+    "performance": {},
     "cookies": 0.0001,
     "types": {
-        "XHR": 3
+        "Script": 2,
+        "XHR": 7
     },
     "nameservers": [
-        "ns29.domaincontrol.com",
-        "ns30.domaincontrol.com"
+        "ns30.domaincontrol.com",
+        "ns29.domaincontrol.com"
     ]
 }

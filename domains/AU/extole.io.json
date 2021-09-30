@@ -7,11 +7,12 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000602,
-    "sites": 6,
+    "prevalence": 0.000703,
+    "sites": 7,
     "subdomains": [
         "sonos",
         "bose",
+        "jp-cycles",
         "revzilla",
         "shutterstock",
         "simon-and-schuster"
@@ -20,6 +21,10 @@
         {
             "original": "share.bose.com.au",
             "resolved": "bose.extole.io"
+        },
+        {
+            "original": "share.shutterstock.com",
+            "resolved": "shutterstock.extole.io"
         },
         {
             "original": "share.simonandschuster.com",
@@ -34,23 +39,24 @@
     "resources": [
         {
             "rule": "extole\\.io\\/core\\.js",
-            "cookies": 0.000301,
+            "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [
                 "sonos",
                 "bose",
+                "jp-cycles",
                 "revzilla",
                 "shutterstock",
                 "simon-and-schuster"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
+                "Date.prototype.getTime": 3,
                 "Document.cookie getter": 2,
                 "Navigator.prototype.platform": 1,
                 "Document.cookie setter": 2
             },
-            "sites": 6,
-            "prevalence": 0.000602,
+            "sites": 7,
+            "prevalence": 0.000703,
             "cnames": [
                 {
                     "original": "share.sonos.com",
@@ -66,17 +72,18 @@
                 }
             ],
             "responseHashes": [
-                "cd3a21ccde828c23c71e2df04816a074ff270075accccd328825ac5a8e600674",
-                "86916ee6d921ab61f22bc8bc5ede657fa289d1081801d8f466ea6e57d3ca3b73",
-                "4b39da95da34fb3ea34dca1fe14d393a5d108a17ffa3614495c1ce9064c297f1",
-                "56936c601e87bf887a5d9ffe9630e3b744ae1f6bc89179c5621ac2411c3cc7f7"
+                "638f6acfe2c3481a892118fc832d535d0259dc3142bbaf437e1f26b9f69b9de8",
+                "97e492121d94f87574e263b420657b407211813428bea636c1c2d2c5891a1789",
+                "2cc967c586b6fdcea3e575de932a920c5965b6cd61cb1dc0011b74875bb67295",
+                "76eaa7a5878123a1b0627a10c1dcd38471d225f005f081ee3347ffbce7879470",
+                "3ee22903be2a1a5125c9e26ea9e8dd13fada68932a4f1984392979f30c64a40a"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "extole_access_token": {
                     "ttl": 31536024,
                     "length": 26,
-                    "prevalence": 0.00020052135552436334,
+                    "prevalence": 0.00020092425155716296,
                     "uniqueness": 1
                 }
             },
@@ -84,6 +91,7 @@
             "exampleSites": [
                 "sonos.com",
                 "www.bose.com.au",
+                "www.jpcycles.com",
                 "www.revzilla.com",
                 "www.shutterstock.com",
                 "www.simonandschuster.com",
@@ -91,31 +99,60 @@
             ]
         },
         {
-            "rule": "extole\\.io\\/zones",
-            "cookies": 0.000201,
+            "rule": "extole\\.io\\/zones\\/global_footer",
+            "cookies": 0.000301,
             "fingerprinting": 0,
             "subdomains": [
                 "revzilla",
+                "shutterstock",
                 "simon-and-schuster"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [
+                {
+                    "original": "share.shutterstock.com",
+                    "resolved": "shutterstock.extole.io"
+                },
                 {
                     "original": "share.simonandschuster.com",
                     "resolved": "simon-and-schuster.extole.io"
                 }
             ],
             "responseHashes": [
-                "de81a6ae9dd8c9c9f14b492da7eb491c065b80941a5632b4c82e99c963394f8a"
+                "4676c96396f287b53895279fe5ee509629dec251f86e2ac779552b5951524447",
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "revzilla.com",
+                "www.shutterstock.com",
                 "www.simonandschuster.com"
+            ]
+        },
+        {
+            "rule": "extole\\.io\\/api\\/v4\\/debug\\/logs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "revzilla"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c0c1dc436c5e5345909b94f89c46405795a31d6f5013f6763b045cf0e21e6114"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "revzilla.com",
+                "www.revzilla.com"
             ]
         },
         {
@@ -139,45 +176,45 @@
             ]
         },
         {
-            "rule": "extole\\.io\\/api\\/v4\\/debug\\/logs",
-            "cookies": 0,
+            "rule": "extole\\.io\\/zones\\/category_dropdown",
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
-                "revzilla"
+                "simon-and-schuster"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
-            "cnames": [],
+            "cnames": [
+                {
+                    "original": "share.simonandschuster.com",
+                    "resolved": "simon-and-schuster.extole.io"
+                }
+            ],
             "responseHashes": [
-                "2b0303dd6483a3084dcc00652bb5556684c79552843b0a48628d56ac359a102e"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "revzilla.com",
-                "www.revzilla.com"
+                "simonandschuster.com",
+                "www.simonandschuster.com"
             ]
         }
     ],
     "categories": [],
-    "performance": {
-        "time": 1,
-        "size": 1,
-        "cpu": 0,
-        "cache": 3
-    },
+    "performance": {},
     "cookies": 0.000301,
     "types": {
-        "Script": 6,
-        "XHR": 4,
+        "Script": 7,
+        "XHR": 7,
         "Preflight": 2
     },
     "nameservers": [
-        "ns-1867.awsdns-41.co.uk",
         "ns-231.awsdns-28.com",
         "ns-603.awsdns-11.net",
-        "ns-1510.awsdns-60.org"
+        "ns-1510.awsdns-60.org",
+        "ns-1867.awsdns-41.co.uk"
     ]
 }

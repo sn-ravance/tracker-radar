@@ -10,14 +10,88 @@
     "prevalence": 0.000201,
     "sites": 2,
     "subdomains": [
+        "code3",
         "admp-tc-sati"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "adtlgc\\.com\\/js\\/sati_init\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "code3"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.appVersion": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "a14bba12c349732544588f1d7e6661de6eb5e28bb09d63cf786121ccf6e51d25"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "evid_set_0046": {
+                    "ttl": 63,
+                    "length": 1,
+                    "prevalence": 0.00020092425155716296,
+                    "uniqueness": 1
+                },
+                "evid_0046": {
+                    "ttl": 7776003,
+                    "length": 41,
+                    "prevalence": 0.00010046212577858148,
+                    "uniqueness": 1
+                },
+                "adptset_0046": {
+                    "ttl": 7203,
+                    "length": 1,
+                    "prevalence": 0.00010046212577858148,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gandul.ro",
+                "www.olx.ro"
+            ]
+        },
+        {
             "rule": "adtlgc\\.com\\/user",
             "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "admp-tc-sati"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "8ec5a92bc78b175a177b8c0f08d3abdf3b739cc52f08f3bdd5160ce07a9c95ca",
+                "baee049272b23bef0a1a5f69bec303a844dc431d25607426aba9f49161e69be5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "evid_0046": 0.00010046212577858148
+            },
+            "exampleSites": [
+                "gandul.ro",
+                "www.gandul.ro",
+                "www.olx.ro"
+            ]
+        },
+        {
+            "rule": "adtlgc\\.com\\/event\\/v3\\/pagestat",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "admp-tc-sati"
@@ -27,27 +101,25 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "06e7ce7c3ff23a49ab1ca7ac2c80111e1ac22c80796ca24836e674d127bf905c"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "evid_0046": 0.00010046212577858148
+            },
             "exampleSites": [
-                "olx.ro",
+                "gandul.ro",
                 "www.olx.ro"
             ]
         }
     ],
     "categories": [],
-    "performance": {
-        "time": 1,
-        "size": 1,
-        "cpu": 0,
-        "cache": 3
-    },
-    "cookies": 0.0001,
+    "performance": {},
+    "cookies": 0.000201,
     "types": {
-        "Script": 2
+        "Script": 5,
+        "XHR": 2
     },
     "nameservers": [
         "ns-943.awsdns-53.net",

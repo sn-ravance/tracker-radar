@@ -7,7 +7,7 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000602,
+    "prevalence": 0.000603,
     "sites": 6,
     "subdomains": [
         "with",
@@ -17,10 +17,6 @@
     "cnames": [
         {
             "original": "cp.connect.de",
-            "resolved": "with.contentpass.net"
-        },
-        {
-            "original": "cp.elektronikpraxis.vogel.de",
             "resolved": "with.contentpass.net"
         },
         {
@@ -34,13 +30,17 @@
         {
             "original": "cp.prisma.de",
             "resolved": "with.contentpass.net"
+        },
+        {
+            "original": "cp.teslamag.de",
+            "resolved": "with.contentpass.net"
         }
     ],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "contentpass\\.net\\/now\\.js",
-            "cookies": 0.000401,
+            "cookies": 0.000603,
             "fingerprinting": 2,
             "subdomains": [
                 "with",
@@ -48,18 +48,21 @@
             ],
             "apis": {
                 "window.localStorage": 1,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1,
                 "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.storage": 1
+                "Navigator.prototype.storage": 1,
+                "Navigator.prototype.doNotTrack": 1
             },
             "sites": 6,
-            "prevalence": 0.000602,
+            "prevalence": 0.000603,
             "cnames": [
                 {
-                    "original": "cp.connect.de",
+                    "original": "cp.teslamag.de",
                     "resolved": "with.contentpass.net"
                 },
                 {
-                    "original": "cp.elektronikpraxis.vogel.de",
+                    "original": "cp.connect.de",
                     "resolved": "with.contentpass.net"
                 },
                 {
@@ -76,15 +79,15 @@
                 }
             ],
             "responseHashes": [
-                "b681b7e693dfd1847a5dc8eb9a5b672ac85134a8590bbff793519f3326223c7f",
-                "e983c401c268034a50d1d74b493a4520c12821066c3a9f559ed4a538be845061"
+                "686b17800ffb260abfefe3c4f07fa9f39d903fa69e4b9b9d394e48011716dedc",
+                "48844bc61513d377a9006192cef85e865d2fa427e769ff0e89afb494d2a46c38"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "connect.de",
-                "www.elektronikpraxis.vogel.de",
+                "teslamag.de",
+                "www.connect.de",
                 "www.glueckspost.ch",
                 "www.infranken.de",
                 "www.pc-magazin.de",
@@ -103,11 +106,60 @@
             "prevalence": 0.000502,
             "cnames": [
                 {
+                    "original": "cp.teslamag.de",
+                    "resolved": "with.contentpass.net"
+                },
+                {
                     "original": "cp.connect.de",
                     "resolved": "with.contentpass.net"
                 },
                 {
-                    "original": "cp.elektronikpraxis.vogel.de",
+                    "original": "cp.infranken.de",
+                    "resolved": "with.contentpass.net"
+                },
+                {
+                    "original": "cp.pc-magazin.de",
+                    "resolved": "with.contentpass.net"
+                },
+                {
+                    "original": "cp.prisma.de",
+                    "resolved": "with.contentpass.net"
+                }
+            ],
+            "responseHashes": [
+                "4f14c15e74f02abe4f693b496e3e4c51a533354bcbc1afedbfac34389192d9d7",
+                "f560fd7c73fe32a99f0cd059e139f803c84f6806e74a6e53c5f750a3b48da51c",
+                "cfa2e5b7102d2aad08808944edc7830f8655eac527f9cf0ff16e53944493dde5",
+                "b45dd6617289542cb5cd6257dc894e841f8d3a34069ff00b1a8e1fc01da2f96a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "teslamag.de",
+                "www.connect.de",
+                "www.infranken.de",
+                "www.pc-magazin.de",
+                "www.prisma.de"
+            ]
+        },
+        {
+            "rule": "contentpass\\.net\\/auth\\/login\\/token",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "with"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000502,
+            "cnames": [
+                {
+                    "original": "cp.teslamag.de",
+                    "resolved": "with.contentpass.net"
+                },
+                {
+                    "original": "cp.connect.de",
                     "resolved": "with.contentpass.net"
                 },
                 {
@@ -128,57 +180,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "connect.de",
-                "www.elektronikpraxis.vogel.de",
-                "www.infranken.de",
-                "www.pc-magazin.de",
-                "www.prisma.de"
-            ]
-        },
-        {
-            "rule": "contentpass\\.net\\/auth\\/login\\/token",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "with"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
-            "cnames": [
-                {
-                    "original": "cp.connect.de",
-                    "resolved": "with.contentpass.net"
-                },
-                {
-                    "original": "cp.elektronikpraxis.vogel.de",
-                    "resolved": "with.contentpass.net"
-                },
-                {
-                    "original": "cp.infranken.de",
-                    "resolved": "with.contentpass.net"
-                },
-                {
-                    "original": "cp.pc-magazin.de",
-                    "resolved": "with.contentpass.net"
-                },
-                {
-                    "original": "cp.prisma.de",
-                    "resolved": "with.contentpass.net"
-                }
-            ],
-            "responseHashes": [
-                "427dbd60749c39043e870ef892c2b9dbad0931996b085750f18ec0d29c96d1ef",
-                "fabe2d506f35ad0b3245130abce2cbca739b6138e56808a2766c5cb596b25081",
-                "fa30e5151dd36a4cca23d4e2b582b34993e04948e214b39762ffeba10ed59858",
-                "0806632b590c4bab558c21aaa82690800ccf1c888a9222ecb66064f7b2af41b9"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "connect.de",
-                "www.elektronikpraxis.vogel.de",
+                "teslamag.de",
+                "www.connect.de",
                 "www.infranken.de",
                 "www.pc-magazin.de",
                 "www.prisma.de"
@@ -206,7 +209,7 @@
                 }
             ],
             "responseHashes": [
-                "8337212354871836e6763a41e615916c89bac5b3f1f0adf60ba43c7c806e1015"
+                "7fff1569ea68ef52782ba25b0cf3934627f7a4fc1e8e22f4652de959c5f97978"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -218,7 +221,7 @@
             ]
         },
         {
-            "rule": "contentpass\\.net\\/ui\\/chunk-renderFunnel\\.87401c39cc3797a8ab66\\.js",
+            "rule": "contentpass\\.net\\/ui\\/chunk-renderFunnel\\.049647064ac2ba548960\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -238,69 +241,7 @@
                 }
             ],
             "responseHashes": [
-                "10468f6e5f1709c29ad5f671974b9f6cf031e69c16f37d53dc43901c462815ae"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "infranken.de",
-                "www.prisma.de"
-            ]
-        },
-        {
-            "rule": "contentpass\\.net\\/ui\\/chunk-themes-default-theme-js\\.ec1c7652e01baf44d4c4\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "with"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "cp.infranken.de",
-                    "resolved": "with.contentpass.net"
-                },
-                {
-                    "original": "cp.prisma.de",
-                    "resolved": "with.contentpass.net"
-                }
-            ],
-            "responseHashes": [
-                "d188dc7715e2d1160cd3fbb51d3f9b87b2ab319bd7e4fe66cc6b9776f1aa5184"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "infranken.de",
-                "www.prisma.de"
-            ]
-        },
-        {
-            "rule": "contentpass\\.net\\/ui\\/chunk-themes-default-de-js\\.945d77f8affb32409b02\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "with"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "cp.infranken.de",
-                    "resolved": "with.contentpass.net"
-                },
-                {
-                    "original": "cp.prisma.de",
-                    "resolved": "with.contentpass.net"
-                }
-            ],
-            "responseHashes": [
-                "e73956c2dde447be7d5c28067b5f9ee09966b9765fc7620619f8ae8abcd162ad"
+                "8a91e796486cae04d132400bec82af0eb1446d7cb2bf85182415908394a63850"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -331,7 +272,7 @@
                 }
             ],
             "responseHashes": [
-                "f9bba27460b9836abf81fb74f66ce01b11aeebe183706bbc116ed2fdcb04433d"
+                "737965639bbfbd397ab45a49b173227068718689ac024c6533db39a222232214"
             ],
             "type": "Font",
             "firstPartyCookies": {},
@@ -345,18 +286,18 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000401,
+    "cookies": 0.000603,
     "types": {
-        "Script": 12,
-        "Preflight": 5,
+        "Script": 8,
         "XHR": 5,
+        "Preflight": 5,
         "Image": 3,
         "Font": 3
     },
     "nameservers": [
-        "ns-cloud-d3.googledomains.com",
         "ns-cloud-d1.googledomains.com",
         "ns-cloud-d2.googledomains.com",
+        "ns-cloud-d3.googledomains.com",
         "ns-cloud-d4.googledomains.com"
     ]
 }

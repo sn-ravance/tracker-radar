@@ -8,7 +8,8 @@
     "sites": 2,
     "subdomains": [
         "edge",
-        "cdn"
+        "cdn",
+        "t"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -21,14 +22,14 @@
                 "edge"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "window.sessionStorage": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.appName": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "window.localStorage": 1
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.cookieEnabled": 1,
+                "window.sessionStorage": 1,
+                "console.memory": 1,
+                "Date.prototype.getTime": 1,
+                "Navigator.prototype.appName": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -43,7 +44,7 @@
             ]
         },
         {
-            "rule": "conative\\.network\\/tag\\/d6d9fcd78daa066c2aad56d1a1120af7f44e9fbd\\/main\\.js\\.br",
+            "rule": "conative\\.network\\/tag\\/3607b89081754a465426de0d136f51167c7c76e0\\/main\\.js\\.br",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -54,9 +55,29 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "fff1dffcd2589f12381c01f34ded83382265e9c627f68a4e09176bf0541ea815"
+                "382a5337073c3fa5aebe6a034c781e73068bcfda184b1d67b5b6eb21af259735"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "diybook.de",
+                "www.phytodoc.de"
+            ]
+        },
+        {
+            "rule": "conative\\.network\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -69,12 +90,13 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 4
+        "Script": 4,
+        "XHR": 2
     },
     "nameservers": [
+        "ns-1046.awsdns-02.org",
         "ns-1597.awsdns-07.co.uk",
         "ns-223.awsdns-27.com",
-        "ns-883.awsdns-46.net",
-        "ns-1046.awsdns-02.org"
+        "ns-883.awsdns-46.net"
     ]
 }

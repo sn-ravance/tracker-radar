@@ -7,10 +7,12 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000402,
+    "prevalence": 0.000403,
     "sites": 4,
     "subdomains": [
-        "dl"
+        "dl",
+        "baywa.peerius",
+        "vbs-hobby.peerius"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -25,8 +27,8 @@
             "apis": {
                 "Document.cookie getter": 2
             },
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "c74fbf06fbc387f21c3dde88cfdb524dbfdf7c65892353943680275334c77bc0"
@@ -36,27 +38,119 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "aeg.de",
-                "www.anicura.de",
-                "www.fjallraven.com",
-                "www.norway.no"
+                "www.anicura.de"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/tracker\\/peerius\\.page",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "baywa.peerius",
+                "vbs-hobby.peerius"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "ce7ba235618f13db7419c794541da996161874658fa811b420073450258e6cd1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "peerius_rid": {
+                    "ttl": 21,
+                    "length": 2,
+                    "prevalence": 0.000201450443190975,
+                    "uniqueness": 0.5
+                },
+                "peerius_ct": {
+                    "ttl": 22,
+                    "length": 1,
+                    "prevalence": 0.000201450443190975,
+                    "uniqueness": 0.5
+                },
+                "peerius_sess": {
+                    "ttl": 14420,
+                    "length": 55,
+                    "prevalence": 0.000201450443190975,
+                    "uniqueness": 1
+                },
+                "peerius_user": {
+                    "ttl": 622080033,
+                    "length": 60,
+                    "prevalence": 0.000201450443190975,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baywa-baumarkt.de",
+                "www.vbs-hobby.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/tracker\\/tracker\\.page",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "baywa.peerius",
+                "vbs-hobby.peerius"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b036278a13b3e78c79d9ea57118395411a4825310cd9f2153e50d7e8fa2334c0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baywa-baumarkt.de",
+                "www.vbs-hobby.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/tracker\\/trackerform\\.page",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "baywa.peerius",
+                "vbs-hobby.peerius"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "da35f1c62a13d91cc6e68eca19b6d2302f2c8be8746bdcf935038c4a286d5638"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baywa-baumarkt.de",
+                "www.vbs-hobby.com"
             ]
         }
     ],
     "categories": [],
-    "performance": {
-        "time": 0,
-        "size": 0,
-        "cpu": 0,
-        "cache": 0
-    },
-    "cookies": 0,
+    "performance": {},
+    "cookies": 0.000201,
     "types": {
-        "Script": 4
+        "Script": 8
     },
     "nameservers": [
-        "ns-876.awsdns-45.net",
-        "ns-1436.awsdns-51.org",
         "ns-1660.awsdns-15.co.uk",
-        "ns-194.awsdns-24.com"
+        "ns-194.awsdns-24.com",
+        "ns-876.awsdns-45.net",
+        "ns-1436.awsdns-51.org"
     ]
 }

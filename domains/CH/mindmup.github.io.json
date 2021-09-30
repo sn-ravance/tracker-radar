@@ -13,14 +13,16 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "mindmup\\.github\\.io\\/3rdpartycookiecheck\\/start\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0001,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Document.cookie setter": 1
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
@@ -28,19 +30,29 @@
                 "1b11d28030fe26572904dbf81bfa1d4bbfaea2651d259eeae59a2607afa652a6"
             ],
             "type": "Document",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "thirdparty": {
+                    "ttl": 3600,
+                    "length": 3,
+                    "prevalence": 0.00010046212577858148,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "houzz.com",
-                "www.houzz.de"
+                "houzz.de",
+                "www.houzz.com"
             ]
         },
         {
             "rule": "mindmup\\.github\\.io\\/3rdpartycookiecheck\\/complete\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0001,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
@@ -51,8 +63,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "houzz.com",
-                "www.houzz.de"
+                "houzz.de",
+                "www.houzz.com"
             ]
         }
     ],
@@ -61,7 +73,7 @@
         "Non-Tracking"
     ],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0001,
     "types": {
         "Document": 4
     },

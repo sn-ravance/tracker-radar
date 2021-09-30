@@ -7,17 +7,17 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.00321,
-    "sites": 32,
+    "prevalence": 0.00301,
+    "sites": 30,
     "subdomains": [
         "carbon-cdn",
         "script-api",
+        "eus-api",
         "privacy-location-edge",
         "tag-api-2-1",
         "tag-api",
         "analytics",
-        "revenue-mapping-api",
-        "eus-api"
+        "revenue-mapping-api"
     ],
     "cnames": [
         {
@@ -33,7 +33,7 @@
     "resources": [
         {
             "rule": "ccgateway\\.net\\/script",
-            "cookies": 0.00251,
+            "cookies": 0.00271,
             "fingerprinting": 1,
             "subdomains": [
                 "carbon-cdn",
@@ -41,12 +41,12 @@
             ],
             "apis": {
                 "Date.prototype.getTime": 22,
-                "Document.cookie getter": 19,
-                "Document.cookie setter": 19,
-                "window.sessionStorage": 21
+                "Document.cookie getter": 22,
+                "Document.cookie setter": 22,
+                "window.sessionStorage": 19
             },
-            "sites": 28,
-            "prevalence": 0.00281,
+            "sites": 27,
+            "prevalence": 0.00271,
             "cnames": [
                 {
                     "original": "script-api.kinja.com",
@@ -54,86 +54,125 @@
                 }
             ],
             "responseHashes": [
-                "8bd4188610b3b8eafb27a011245cc3ccf710a578e8fa20c737da69da866e20ad",
-                "1190b95309aecc957b986e91d0e93e83c83485eec726645275c808efd22e23aa",
-                "e4d3ae9e2bfd42766e855c7f7741a0468b987a69b89312c81961948fe2d1460b",
-                "b5557b51650fd843ddc811261fa49444a6cb0b5445bbca7b240711e7b5dc6bba",
-                "e56738fcf67218feca7024b97ce156041101d42c9e5be9bf94e0665943b5131e",
-                "0520fd4b38b16037c301ac5e6550d84af9d640d58867c5eecc6aee3ce3a21d6e",
-                "fed1d4f238631aceee109d5c52818c1181dc3f736277ca6fbc1539e6ab0c11cb",
-                "c1e0e6a6f12ea8c26b6b24ae3d5e1d430764bcdb05245ae6ef9174065d95b19f",
-                "46ca4f225eacd0f959043f74a226d3c01b697742afc1293c5e327cb5c7b2c658",
-                "452fd977467c34958f288bf48b1047c7a879b8013ca1bbf6ca0e2bf17c259115",
-                "94d4c25fd7ad0be1946027f7697234e40da5355fed546707553b6f474f672787",
-                "ac6bac4b72c77c5638f8203c03f7c68202394a7d9256de277036c4a94a2ecd1c",
-                "d5618516c27134fc5d11e273ef436d0af6e948ede89d61ed1861c0e7a68f22fb",
-                "45e4e81d4bcd2bab81846726c82078e33a5b0cf0c1a8173bcf1a2f0539ab1910",
-                "b312708fe15149cb7623541de6b5fb20d583aa7ff823349f02a3f94a03fbcd3b",
-                "33def08a05b425c2015c55647f5e6d4aea81b723ac52ca16de0d1c25c0017db3",
-                "4b6283f9f71799b2da5ad1c6d4ceabf66bdcb024774afdaa94c7a486148b8a28",
-                "82760fa2a8d4d650d49512aae188f25a4a3478af392a2390f6b173f0412e0b20",
-                "8772aa16126c6ca2b1476cb5ea16b9d73888ebf881ceeabba8629e7bda863231",
-                "b0abe1f7bb978cd3437566632875f96aaa8909c7938c48970de18d4f215aa1ea",
-                "3a27b566fbb030768f39cd346ece36e28dd3cb71145213c81c93c4482cfb2214",
-                "48a88874be49bb81d7e4318af22e88078cdd9d5502e1895d3dd63811ea065114",
-                "6b8ec4b245084c71373c0b22ebb2a64afb591e32f6e015efde30279171dd9f86",
-                "40a22b74115929d38c5e5bc651b0b82db0993f510e228d2d070826ec03a2b0bd",
-                "048817c1e5adb81a85da0a05a0ba49c551e4c57fe588ec4dc5551d5245d9c97e",
-                "47ee79f52cdd7153995c8a8aee880ff251ed9be3f487ddd4f9fdcb2fda1e37c4",
-                "2ab9782ba3e1e5965519b957562f2966aa6e1f227d19b65e12a41c66be182673"
+                "58d4b677399993d5ff5c43fce941dd266fbdb23ac007a4714c2af75d5832a4dc",
+                "d31117fbb7a0bb54728867828e8709009b1d10b75b6a2661dc5983bf3899ec11",
+                "5098128cbfb431768380af8a86d3018f2f42e6313d1e1e223bbb41e610beab30",
+                "8ba9adf72a32a54e25d4d720d91c79b7d4595d136d6e93cf2040080e731b8a6f",
+                "61360151183b2056502898f52f319bcb6be69473892683ab516aab23797e9279",
+                "70b70e3a7cbfcdfda4e07a6a2702291994203deff6e3e2c1d94cb827e22cd3f4",
+                "e7a0ddb426f8e806fe3f165d2606c70a08fcd293ffc2317ad48ad1fb6d1dd7ba",
+                "9279042fd6c2a6479b8070951024970215084d3ab8c00d387a2b2b39ae6e891b",
+                "f061ea53b03fdcf949fbb00bd732a586dc9937a5ec051f9328caa4cddf52ccb9",
+                "64e82283626b3fa75d05e39e34a9879c06ee5675fa8db08990e1179412110b96",
+                "109daf7ce5ab827d878c52dbd15a0eccb01ec559abbecda00426a2fb11303338",
+                "d86fcb869d932c5a7603432444f77ad141fcd7e2ef507fa14a25c9f39ab1b688",
+                "f6c4e551892a691e3b3d74d0c196af5d6b4412d286bd38834b319d7484028687",
+                "70d03f4bd747abb5ca537332d3a276c2576ef6aed5140e700a7a7198404226dc",
+                "870c3b2be02827f8ca315a6f0ff11f95149e70cfac3e596320334128ec4e9301",
+                "a84d65fcda9e1726bee5572aded41d6f34617312aecf68d8cd88cca6a4a8dc47",
+                "573c105f059bf106b4617b1f5212581aa47b3464af34eb67a0f4bce903889d6b",
+                "a55b62c194c47ae49113b4a8cf18139eac9046e03a16d07cb7b4fe128704023d",
+                "474029cf1fbc26be2db599b782e592447614a3ea04a59fde7ced535cd9459651",
+                "6ed10c1535b59bb63d23f6f3adfd0421b4b32284d9ba26a9dd533a03a29e83d1",
+                "27a817c8f6f4c0e2756678a776f644d279013c1d9fd4e78cb080629a31b0153f",
+                "2e7be81467ae465d0e33bab72c189e46a80dd8192c5e1e516b62bdebb10083a1",
+                "707561713faa1a52b92073fe0299698ff44ef40e9e08b886192367a060008b33",
+                "ba1c784ba55487adc61f6da5891ce9c26b65972b336e037d137bee8a10862606",
+                "1fd4afdeabfd626d8ad4bf14c3b5eadb4af4781d3b068da3d70452f7c2b6ea8c",
+                "27dfc27af22fb55e31f1cd1d1259d228cf5bbf0d96e4e37c7ae19cba6c2526c4"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "GLAM-JID": {
-                    "ttl": 1211,
+                    "ttl": 1210,
                     "length": 32,
-                    "prevalence": 0.002506516944054542,
+                    "prevalence": 0.0027124773960217,
                     "uniqueness": 1
                 },
                 "GLAM-AID": {
-                    "ttl": 2592011,
+                    "ttl": 2592010,
                     "length": 32,
-                    "prevalence": 0.002506516944054542,
+                    "prevalence": 0.0027124773960217,
                     "uniqueness": 1
                 },
                 "GLAM-SID": {
                     "ttl": null,
                     "length": 32,
-                    "prevalence": 0.002506516944054542,
+                    "prevalence": 0.0027124773960217,
                     "uniqueness": 1
                 },
                 "__j_state": {
-                    "ttl": 1211,
-                    "length": 225,
-                    "prevalence": 0.002506516944054542,
+                    "ttl": 1210,
+                    "length": 228,
+                    "prevalence": 0.0027124773960217,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {
-                "get_top_level_domain_cookie": 0.00010026067776218167,
-                "lotame_domain_check": 0.00010026067776218167
+                "get_top_level_domain_cookie": 0.00020092425155716296,
+                "lotame_domain_check": 0.00010046212577858148,
+                "_li_dcdm_c": 0.00010046212577858148
             },
             "exampleSites": [
                 "gizmodo.com",
                 "lifehacker.com",
-                "mtonews.com",
-                "discover.hubpages.com",
-                "hobbylark.com",
-                "reelrundown.com",
-                "levelskip.com",
-                "jalopnik.com",
-                "jezebel.com",
-                "wehavekids.com",
-                "pairedlife.com",
-                "exemplore.com",
-                "www.maxim.com",
-                "bellatory.com",
-                "www.si.com",
-                "www.scotsman.com",
+                "www.theatlantic.com",
+                "www.realclearscience.com",
                 "kotaku.com",
+                "axleaddict.com",
+                "www.thenational.scot",
+                "jezebel.com",
+                "www.realclearpolitics.com",
+                "www.avclub.com",
+                "www.organicauthority.com",
+                "pethelpful.com",
+                "www.si.com",
+                "wehavekids.com",
+                "dengarden.com",
+                "www.thestreet.com",
+                "swimsuit.si.com",
+                "exemplore.com",
+                "mtonews.com",
+                "discover.hubpages.com"
+            ]
+        },
+        {
+            "rule": "ccgateway\\.net\\/v1\\/s\\/mavenid",
+            "cookies": 0.00171,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eus-api"
+            ],
+            "apis": {},
+            "sites": 17,
+            "prevalence": 0.00171,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ig": 0.001707856138235885
+            },
+            "exampleSites": [
+                "axleaddict.com",
+                "delishably.com",
+                "dengarden.com",
+                "discover.hubpages.com",
+                "exemplore.com",
+                "levelskip.com",
+                "mtonews.com",
                 "owlcation.com",
-                "spinditty.com",
-                "pethelpful.com"
+                "pairedlife.com",
+                "pethelpful.com",
+                "swimsuit.si.com",
+                "wehavekids.com",
+                "www.biography.com",
+                "www.maxim.com",
+                "www.organicauthority.com",
+                "www.si.com",
+                "www.thestreet.com"
             ]
         },
         {
@@ -147,8 +186,8 @@
                 "window.localStorage": 21,
                 "window.sessionStorage": 21
             },
-            "sites": 27,
-            "prevalence": 0.00271,
+            "sites": 26,
+            "prevalence": 0.00261,
             "cnames": [
                 {
                     "original": "script-api.kinja.com",
@@ -164,24 +203,24 @@
             "exampleSites": [
                 "gizmodo.com",
                 "lifehacker.com",
-                "kotaku.com",
-                "dengarden.com",
-                "www.biography.com",
-                "bellatory.com",
-                "pethelpful.com",
-                "levelskip.com",
-                "www.maxim.com",
-                "wehavekids.com",
-                "www.sailmagazine.com",
+                "www.organicauthority.com",
                 "jezebel.com",
-                "pairedlife.com",
-                "delishably.com",
+                "www.realclearscience.com",
                 "www.si.com",
-                "www.scotsman.com",
-                "spinditty.com",
+                "kotaku.com",
+                "www.thenational.scot",
+                "www.theatlantic.com",
+                "wehavekids.com",
+                "www.biography.com",
+                "axleaddict.com",
+                "www.maxim.com",
                 "swimsuit.si.com",
+                "levelskip.com",
+                "exemplore.com",
+                "www.thestreet.com",
                 "discover.hubpages.com",
-                "hobbylark.com"
+                "pethelpful.com",
+                "www.avclub.com"
             ]
         },
         {
@@ -192,37 +231,36 @@
                 "script-api"
             ],
             "apis": {},
-            "sites": 28,
-            "prevalence": 0.00281,
+            "sites": 27,
+            "prevalence": 0.00271,
             "cnames": [],
             "responseHashes": [
-                "be16232486e59b0c3715c2e3e22b1a5c20150bcd61ad196b3972260b73500654",
-                "a2ffcdca80a558d9ff61b748de320550faeccdf4bdd003a88720abf8e89375ff",
-                "8e80c65fea5a5da31cb82a14884d5dc76c3cc5fe65c249f211f667110917f436",
-                "cc21fe770775aabdfd5f521b5449a8f59af8e55d30a9cc75c3c44c07866cb041",
-                "49c1b13491a8618285c944d01194c6318e2222faf6720b0e3594cad8ea6b980f",
-                "b382ad786a96dc36585452626eba2bae85963861cbe53ddc24bebe3b446ec800",
-                "f7c2aa4cf161bc5867a793e87351a3ca96dc241f2752cd929947fe62b7e4ac4e",
-                "d8a500a16a583fc0d79f818f3029ec9e776d8b7b16ae34917921e949546e5e6d",
-                "87ff74f262224a0fd066445f81b2c41e0cd6578f021dc292118c82923f8c8537",
-                "a24c84114e1f149d9e1eeea6acb4efb7f45c70e31de5117ae156a060d1b22092",
-                "2dfdd15abd8bdc13812e5556249459b7739228eff56dcb2f8da53bd406348353",
-                "0298df10caac68e2e217d393c6cf606ed6d25ee7fcef36a5ad18a571860372ed",
-                "761ac496c3392816383f0f623d0e85c4be8c5300ca4b73fdd0e18358c036b1a1",
-                "2149fc70cd1e1e1026c2d7d9ef7071a794c948bf367947c3f4e783e856ade95e",
-                "1e8914d7816a6ce3cba3ebb9c06b151daae461acc20ccc230af1cd058ce2c0c1",
-                "54a6973ef17cf73fde18e85f8047724b5d5095bceb4976139012f9b3df77a4bf",
-                "bd2fdd1649c6d96439e7d9b0c5e23b9d9b18436f69159090f407d2a5429a65b9",
-                "23f5bd3bf9408705f3ffd44fb51258184e90db4178874c23c4ec754c7976740c",
-                "2a377a9b119c1589243977d698b6d8462c746ef24ab42b6112c79405123bb71b",
-                "9db9a9bbde94c61c4a60dbd9a5396e67d7c16962faa59a41a408c88d50c968ce",
-                "b3bb2a49558aee89ff5e2a07198d62b0525e5a02c2504e8f1fa6d5fe07e830c9",
-                "ecf3db14ede342fc1a6082cb98165c79ad8d41b59e03f635894a11b4ca053328",
-                "7cc4b2d4144cd224bbfbf2754a33b08d63619fad57f796d09faf913018abe323",
-                "52ec0af6488b83b26149d9f03d8dcb5c797605a3671cadc4095dd9e7e998c18a",
-                "f77fb6948a1871346d7b4e988487d5f792b0b18f81c524b2eeaf336ac98da720",
-                "82ffff6c0ff2acd3356232213a9cee37ab61ea77e790a1b0a08af01d9cf2310e",
-                "7e1dc09cbb2187842fdc2139406a37b59e654a1e2033476adf30a4d7949dabe7"
+                "3e2de8a3c6da3cfd73efa57e4e24e90a4acc63dee37632acc3826d78b5393101",
+                "57b73d62cadee8f4315bb1f0b8a5d015b9e8daaeca4120c5a31fd36e5edb9f25",
+                "943016f810abdbec9c4535da0bf706fc3531d5b202ad1726e6cfbd318fc11f49",
+                "9b50c85de08f8ae37c20fa2bd0267d7445f0a31e67837a907341d752fee9b2dc",
+                "2d394847b0d568d03a8ef04f413617296b258d44a2b7ae9c648e2be5df557118",
+                "339efc1c23a9130ff4023a374d28e9b1446c37bbfa2dbb071bce0bc841a135b3",
+                "f762b820cc229ebe22c4f1b850be37de478861bbae77117df18bab5098aa0ab3",
+                "d7ac37b91f3200e6ae8f1e666284ddc322d100b373806a7edc8f1f234f7a4cfe",
+                "2cd4fafcd83c322b8f8dab5b3cc7576260dc4b1e5452d48b9117cda42ffa5248",
+                "9a73a644b11cee5699404cba36a6aab82a6dffe9d8f0b2e6099a9163701f89a5",
+                "5abe6e8ed5eb9317808fab18e6755c897b96d936bb50772c80b38046528c19c9",
+                "f200df57df9956f608676c372620e5719d6577423725f9554c9aec824f05659e",
+                "186d77587547af1a64a90b66653a16b94b741c3d8db7dd18396c8fdf7e9f3d7b",
+                "568596fe57251ae9f4dbf5826fb43ac5d454d5ce6048f27fdf16d37f403029c7",
+                "2faa632b1b41bb3e42d0bd75b479bb5c4d303968f0205053e7b14c2bdaadaa1c",
+                "1e4085af988f895a545b2b079ae0efa9dd23219d500dccbe4f85407e1f7d7e0a",
+                "168f3444d58b72ff410f765e1a56c2cad3477851ccca76aee4a41fafcaa0a6d5",
+                "9aa1c135a8a19b7f8e1b26142b2b9eb6663ce6dc767df0be29df65d9899f1aea",
+                "6136d0324f93155a81f8d1f2cadef92c0dcb9feb0a1a565013d43b4144d5844a",
+                "b84ef8cb473753a2a9dcf396510e04d8606e6e18b9af54b7e863f4a730b8d0b8",
+                "fbf5c3446f51a0cfccb8de087b18ee002dfc4abba7c04511cdf5295104939319",
+                "629efbfaa9f00ca296ecec61c1914346ea3d759058267935637fd010f995706d",
+                "83900ec512f5d283cccfb860a19a2e7b81a8eab4128c936821b0fe48bc85fd0b",
+                "cf9a668aa606100d2cb89e1f1afd88f1ffd8b552dc3a5869e2a155218f1d75a5",
+                "f3050ac4e09d89143176a81930a07726519173c666cadbaad69f2c5b208c3d65",
+                "4bb1769cb084b466c774bfcbddddbb81ad8a2d5507cf63667e16f8ac649bdce1"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -230,24 +268,24 @@
             "exampleSites": [
                 "gizmodo.com",
                 "lifehacker.com",
-                "jalopnik.com",
-                "bellatory.com",
-                "spinditty.com",
-                "www.sailmagazine.com",
-                "swimsuit.si.com",
-                "www.avclub.com",
-                "www.maxim.com",
-                "delishably.com",
-                "www.realclearpolitics.com",
+                "www.si.com",
+                "mtonews.com",
                 "jezebel.com",
-                "www.biography.com",
-                "wehavekids.com",
-                "dengarden.com",
+                "www.thestreet.com",
+                "www.organicauthority.com",
+                "www.maxim.com",
+                "www.theatlantic.com",
+                "www.realclearscience.com",
+                "owlcation.com",
+                "www.thenational.scot",
+                "kotaku.com",
                 "www.scotsman.com",
-                "pethelpful.com",
-                "discover.hubpages.com",
-                "levelskip.com",
-                "mtonews.com"
+                "www.biography.com",
+                "axleaddict.com",
+                "www.avclub.com",
+                "pairedlife.com",
+                "exemplore.com",
+                "discover.hubpages.com"
             ]
         },
         {
@@ -258,10 +296,10 @@
                 "script-api"
             ],
             "apis": {
-                "window.localStorage": 21
+                "window.localStorage": 19
             },
-            "sites": 27,
-            "prevalence": 0.00271,
+            "sites": 25,
+            "prevalence": 0.00251,
             "cnames": [
                 {
                     "original": "script-api.kinja.com",
@@ -277,24 +315,24 @@
             "exampleSites": [
                 "gizmodo.com",
                 "lifehacker.com",
-                "discover.hubpages.com",
-                "www.si.com",
-                "jezebel.com",
-                "bellatory.com",
-                "www.scotsman.com",
-                "mtonews.com",
-                "spinditty.com",
-                "hobbylark.com",
                 "www.maxim.com",
-                "swimsuit.si.com",
+                "www.avclub.com",
                 "exemplore.com",
-                "delishably.com",
-                "jalopnik.com",
-                "kotaku.com",
-                "pairedlife.com",
-                "www.theatlantic.com",
+                "www.biography.com",
                 "owlcation.com",
-                "pethelpful.com"
+                "www.theatlantic.com",
+                "www.scotsman.com",
+                "www.si.com",
+                "axleaddict.com",
+                "wehavekids.com",
+                "discover.hubpages.com",
+                "pethelpful.com",
+                "kotaku.com",
+                "www.thestreet.com",
+                "www.thenational.scot",
+                "delishably.com",
+                "swimsuit.si.com",
+                "pairedlife.com"
             ]
         },
         {
@@ -305,8 +343,8 @@
                 "script-api"
             ],
             "apis": {},
-            "sites": 28,
-            "prevalence": 0.00281,
+            "sites": 27,
+            "prevalence": 0.00271,
             "cnames": [
                 {
                     "original": "script-api.kinja.com",
@@ -322,24 +360,24 @@
             "exampleSites": [
                 "gizmodo.com",
                 "lifehacker.com",
-                "www.theatlantic.com",
-                "bellatory.com",
-                "mtonews.com",
-                "www.avclub.com",
-                "pethelpful.com",
-                "jezebel.com",
-                "dengarden.com",
-                "www.biography.com",
-                "www.maxim.com",
-                "spinditty.com",
-                "exemplore.com",
-                "www.realclearpolitics.com",
+                "www.thestreet.com",
                 "kotaku.com",
-                "pairedlife.com",
-                "levelskip.com",
+                "discover.hubpages.com",
+                "wehavekids.com",
+                "delishably.com",
+                "exemplore.com",
+                "www.thenational.scot",
+                "www.organicauthority.com",
+                "axleaddict.com",
+                "jezebel.com",
+                "www.maxim.com",
+                "owlcation.com",
+                "www.realclearpolitics.com",
+                "pethelpful.com",
+                "www.biography.com",
                 "swimsuit.si.com",
-                "www.scotsman.com",
-                "reelrundown.com"
+                "mtonews.com",
+                "dengarden.com"
             ]
         },
         {
@@ -350,8 +388,8 @@
                 "script-api"
             ],
             "apis": {},
-            "sites": 27,
-            "prevalence": 0.00271,
+            "sites": 25,
+            "prevalence": 0.00251,
             "cnames": [
                 {
                     "original": "script-api.kinja.com",
@@ -359,32 +397,30 @@
                 }
             ],
             "responseHashes": [
-                "8d398390755c90a60560130120fd623a09de18fe13df28b221a1d5389c285f75",
-                "159948cd8e6a4925231fa8183e1661a84cec82f39bdde32efe877f4cb0eb8703",
-                "cf7e3575bd3272f55069b07b42edcc475fd390190398f96b59a967b242bc1acc",
-                "93b33fed877400fa25bb219a259e72b6054caf714dd3e978e4e05167c4399e03",
-                "8012f9c1322ceb03de219531093254502ace2041e99e52c52751789b505e6f79",
-                "0eb7125c62b145c8933a4bac97c2dd28f0bcbf7c4f29a58fc2cd9dcec89a977f",
-                "b9140b0d83ab0b5226085274eb572936bf6f2dc81ebc4ed0ee4d25e048dd9cd0",
-                "fb44440b6ae79918a76efc2a0946fd519d504d34919a0de99c23fb193c56ba4b",
-                "b58c1afed5fc3c64f6cdd88ca744a457674e737d8b60de6b11d9c2cfecf29176",
-                "b76a738a03fca6826ef713577d83c825e11354c8e09c576df42ec02d08b117f0",
-                "2ee65bb2235a42726ee79f947d81e8698b9e9dbf2dd7dae660b90f674c586476",
-                "18b45cdbf2314dc143ff163b1589a90c8060003f9c7a4fafc28f6034db583994",
-                "17f1e3753caed183953f98f0fb8143370e02cce38fbd695a3222db46c7b1ec36",
-                "d4c1fcfea5608cd9c7fad3aaf8bc157fa74e5f96d25b83d993c562283e74bc9b",
-                "5814f81b8b699ba88fb84a61e71a371ee150f55596e496077f741b1466e33109",
-                "fb5bb35149c134adb48ae4af634ad95ef81197cf1226bbfa3bd380f1536f1fb7",
-                "f204d3bf0d45e07902817598cd1357206e3201cb8f05ce4be60386494316f34c",
-                "4a67dc894fc35dfeb07a97293eea029276b117bf7005996ebbc4c3da96f45ef9",
-                "a39c950d3bbf785f57192c75ea896ed1a1101a159de26d57c4fda245541f8137",
-                "164f4170c7397dedc501b546204894009cbe5629c0c6f8a6227bf60da00ef1f3",
-                "709b12f782b2b94dd7f2ef10a2c21ddd6f7af91f8da62c2f2acff9bdb07ad452",
-                "fa901ada3fcf102079ba6d346ef43689e49997e0e2aa8eb1aeccdafe21aadb3d",
-                "a0e242f9073604fb5cc91191cf86d8d81f49109e379f93394d327115fc53ee9f",
-                "62d1340eac7d2892dc62ede61fca2aed8fe6c42547f292a4442ece2a19349137",
-                "ccfc743eb339cc5d78ad3be2ac15210847317c31dd18bf4680314d3db9b5cd18",
-                "24656050444b34f35b16f057a39a71c51ed88d5608f7c12825a84a366abda296"
+                "8803ee385681c10718d16e3d317efb152800ba863a63e0f71b11d37749cf08d6",
+                "7ce874d9e498f28958e31d86429ad30672952607c31ac77b0979195af9d54f9a",
+                "e5abc93778627097502ba80127039da58d08eeebfad68cdc8d1374f07cb40a69",
+                "d34eb4abfdeea994b87a20a0b48ede45be669b5de964e39e5be9bd41ba65a7d9",
+                "641e3f3228b3e36093437d67d1773864483eed5587ca6c92a6746952a9a08280",
+                "14b7dbbc1edbab216cba65ff26de62d68b3abac305b7f1fc95c5939692cdee93",
+                "62b80b08ba09d081b1a9dced1b267ec3a70ef57f6335c83c99517b4c07d249e3",
+                "b2817268e5aee1bff76ab7d5f4e201b38053bb77f41ccd3d4ce808540cebce64",
+                "e7ee5a91bcd06673c824829b87f82e564fb8b2694d7ab9d5198d59d40a7b6763",
+                "b23a81318fff090e9ca6462bf3a70bb4bdc209a9795ed70f9a550b61f0418a8a",
+                "1c83c6ce4a55153f0e8486e3175d43a7c63a006fa073d70e995fd324dc1fe556",
+                "5995428aa2ed44d44b3a5f5b4cf6f48d3f311d406d99f46b7bda981be78e67b4",
+                "2bfa116302dadf5b7bd0c1428e9404c02a2662e4fc8b7ea30265a0d3420b15fd",
+                "055dedcb4363319289cc51f03645f64b49faf184c1907a545e50ffdf90973845",
+                "044c63a3dc1aed6e83cc16607b3f8d1624ce425f4a8b09994630bb5aefef6c76",
+                "208bdf036eaf2cd5227ccd1d540f8938aad8a2e9869d6521fe8d8fac9b4daf09",
+                "45d7a1fb945de542b5275db12a7e34f2a7868f385f8b26b1994a3208a1f49baa",
+                "72d15184ae39e00be299ed274d178bd317381b0213136e40176d688db488a168",
+                "1f05e56e3b656dcfad740144de38155f71b615ee48b9a1d2e6fb55476dd72499",
+                "0774e183ed6ebfb1adfd9e12161d6d69b30f8d6a8a75917dc62e1d153572b747",
+                "7280e1df95eb9caec8063bbbc0b6ef8a4a71e9497ba6163b12bbc0f75b45b569",
+                "47888d1b07e25bb81dcad541d80f485b8406e847e53e5bebc5f88809a5a1f1c3",
+                "e6d7d51b6f27c3535d71fdd60faa5a855eda4cf566e2b21f66e7491acefabebc",
+                "f57fb0df52c72ed1f112852488c5398419fadc72fb94bb2371dc765323f0d9ae"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -392,24 +428,24 @@
             "exampleSites": [
                 "gizmodo.com",
                 "lifehacker.com",
-                "levelskip.com",
-                "www.sailmagazine.com",
-                "www.avclub.com",
-                "reelrundown.com",
+                "swimsuit.si.com",
+                "www.thenational.scot",
+                "mtonews.com",
+                "www.biography.com",
+                "delishably.com",
                 "www.scotsman.com",
-                "www.maxim.com",
+                "www.thestreet.com",
+                "axleaddict.com",
+                "www.si.com",
+                "discover.hubpages.com",
+                "kotaku.com",
+                "pairedlife.com",
                 "www.theatlantic.com",
                 "wehavekids.com",
-                "pethelpful.com",
-                "jalopnik.com",
-                "dengarden.com",
-                "bellatory.com",
-                "discover.hubpages.com",
-                "swimsuit.si.com",
-                "jezebel.com",
-                "www.si.com",
                 "owlcation.com",
-                "spinditty.com"
+                "www.maxim.com",
+                "dengarden.com",
+                "exemplore.com"
             ]
         },
         {
@@ -420,11 +456,11 @@
                 "script-api"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 22,
-                "Navigator.prototype.language": 22
+                "Navigator.prototype.userAgent": 20,
+                "Navigator.prototype.language": 20
             },
-            "sites": 28,
-            "prevalence": 0.00281,
+            "sites": 27,
+            "prevalence": 0.00271,
             "cnames": [
                 {
                     "original": "script-api.kinja.com",
@@ -434,35 +470,37 @@
             "responseHashes": [
                 "c94c183bbc85a6317bbe6458021446919d3a3959d5dd0dc59b3958c1b49a8855",
                 "0eb442f1c960f010c6aacaf205d3e2e2c3484781723c09402ae42e41865c663a",
-                "8aee6fb0477e4811b9bee75e81ed48950a2d65bc1695878bb3f636dc66cc88ad"
+                "8aee6fb0477e4811b9bee75e81ed48950a2d65bc1695878bb3f636dc66cc88ad",
+                "8be0d4c1dd2a0aceda2d74257d805b57abd9c137f44752086773351c468a0b90"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "get_top_level_domain_cookie": 0.00010026067776218167,
-                "lotame_domain_check": 0.00010026067776218167
+                "get_top_level_domain_cookie": 0.00020092425155716296,
+                "lotame_domain_check": 0.00010046212577858148,
+                "_li_dcdm_c": 0.00010046212577858148
             },
             "exampleSites": [
                 "gizmodo.com",
                 "lifehacker.com",
-                "www.si.com",
-                "wehavekids.com",
+                "www.thestreet.com",
+                "jezebel.com",
+                "www.thenational.scot",
+                "www.organicauthority.com",
                 "swimsuit.si.com",
-                "www.realclearpolitics.com",
-                "www.scotsman.com",
-                "www.biography.com",
-                "levelskip.com",
-                "kotaku.com",
-                "www.maxim.com",
-                "jalopnik.com",
-                "bellatory.com",
-                "mtonews.com",
-                "reelrundown.com",
-                "www.theatlantic.com",
-                "exemplore.com",
+                "pethelpful.com",
+                "axleaddict.com",
                 "delishably.com",
-                "discover.hubpages.com",
-                "pairedlife.com"
+                "levelskip.com",
+                "www.si.com",
+                "www.realclearpolitics.com",
+                "www.theatlantic.com",
+                "www.scotsman.com",
+                "www.realclearscience.com",
+                "exemplore.com",
+                "www.avclub.com",
+                "kotaku.com",
+                "wehavekids.com"
             ]
         },
         {
@@ -473,8 +511,8 @@
                 "privacy-location-edge"
             ],
             "apis": {},
-            "sites": 28,
-            "prevalence": 0.00281,
+            "sites": 27,
+            "prevalence": 0.00271,
             "cnames": [],
             "responseHashes": [
                 "1c55d9b826e8dfa994370e306ae8dc2e849f3e003381dc848a0b95f782c0c0e3"
@@ -485,77 +523,23 @@
             "exampleSites": [
                 "gizmodo.com",
                 "lifehacker.com",
-                "wehavekids.com",
-                "pairedlife.com",
-                "levelskip.com",
-                "reelrundown.com",
-                "mtonews.com",
-                "www.maxim.com",
-                "dengarden.com",
-                "www.realclearpolitics.com",
-                "www.sailmagazine.com",
-                "www.biography.com",
-                "swimsuit.si.com",
-                "www.avclub.com",
-                "owlcation.com",
-                "www.si.com",
-                "bellatory.com",
-                "delishably.com",
                 "jezebel.com",
-                "discover.hubpages.com"
-            ]
-        },
-        {
-            "rule": "ccgateway\\.net\\/v1\\/event\\/record\\/ad-impression-gpt",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tag-api-2-1",
-                "tag-api"
-            ],
-            "apis": {},
-            "sites": 28,
-            "prevalence": 0.00281,
-            "cnames": [
-                {
-                    "original": "tag-api.kinja.com",
-                    "resolved": "tag-api.ccgateway.net"
-                }
-            ],
-            "responseHashes": [
-                "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "GLAM-JID": 0.002506516944054542,
-                "GLAM-AID": 0.002506516944054542,
-                "GLAM-SID": 0.002506516944054542,
-                "cookies.js_dtest": 0.00020052135552436334,
-                "parsely_uuid": 0.00020052135552436334,
-                "get_top_level_domain_cookie": 0.00010026067776218167,
-                "lotame_domain_check": 0.00010026067776218167
-            },
-            "exampleSites": [
-                "gizmodo.com",
-                "lifehacker.com",
-                "www.si.com",
-                "swimsuit.si.com",
                 "www.biography.com",
-                "www.sailmagazine.com",
-                "www.realclearpolitics.com",
-                "dengarden.com",
-                "pairedlife.com",
-                "www.theatlantic.com",
-                "spinditty.com",
-                "jalopnik.com",
-                "hobbylark.com",
-                "delishably.com",
-                "levelskip.com",
-                "www.maxim.com",
                 "www.avclub.com",
-                "www.scotsman.com",
+                "mtonews.com",
+                "dengarden.com",
+                "owlcation.com",
+                "www.thestreet.com",
+                "www.thenational.scot",
+                "www.si.com",
                 "exemplore.com",
+                "www.theatlantic.com",
+                "levelskip.com",
+                "delishably.com",
+                "swimsuit.si.com",
+                "www.scotsman.com",
+                "www.realclearscience.com",
+                "axleaddict.com",
                 "kotaku.com"
             ]
         },
@@ -568,8 +552,8 @@
                 "tag-api"
             ],
             "apis": {},
-            "sites": 28,
-            "prevalence": 0.00281,
+            "sites": 25,
+            "prevalence": 0.00251,
             "cnames": [
                 {
                     "original": "tag-api.kinja.com",
@@ -577,50 +561,50 @@
                 }
             ],
             "responseHashes": [
-                "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
+                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "GLAM-JID": 0.002506516944054542,
-                "GLAM-AID": 0.002506516944054542,
-                "GLAM-SID": 0.002506516944054542,
-                "get_top_level_domain_cookie": 0.00010026067776218167,
-                "lotame_domain_check": 0.00010026067776218167
+                "GLAM-JID": 0.002511553144464537,
+                "GLAM-AID": 0.002511553144464537,
+                "GLAM-SID": 0.002511553144464537,
+                "get_top_level_domain_cookie": 0.00010046212577858148,
+                "lotame_domain_check": 0.00010046212577858148
             },
             "exampleSites": [
                 "gizmodo.com",
                 "lifehacker.com",
-                "www.maxim.com",
                 "dengarden.com",
-                "www.si.com",
-                "www.theatlantic.com",
-                "www.avclub.com",
-                "mtonews.com",
-                "kotaku.com",
-                "spinditty.com",
-                "swimsuit.si.com",
-                "www.sailmagazine.com",
-                "discover.hubpages.com",
-                "wehavekids.com",
-                "bellatory.com",
-                "exemplore.com",
-                "www.realclearpolitics.com",
-                "pairedlife.com",
                 "delishably.com",
-                "jalopnik.com"
+                "www.biography.com",
+                "kotaku.com",
+                "www.theatlantic.com",
+                "www.maxim.com",
+                "swimsuit.si.com",
+                "mtonews.com",
+                "pethelpful.com",
+                "www.avclub.com",
+                "jezebel.com",
+                "www.si.com",
+                "www.scotsman.com",
+                "www.thestreet.com",
+                "discover.hubpages.com",
+                "levelskip.com",
+                "www.organicauthority.com",
+                "www.realclearpolitics.com"
             ]
         },
         {
             "rule": "ccgateway\\.net\\/setUser",
-            "cookies": 0.00271,
+            "cookies": 0.00241,
             "fingerprinting": 0,
             "subdomains": [
                 "script-api"
             ],
             "apis": {},
-            "sites": 28,
-            "prevalence": 0.00281,
+            "sites": 25,
+            "prevalence": 0.00251,
             "cnames": [
                 {
                     "original": "script-api.kinja.com",
@@ -633,30 +617,30 @@
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "get_top_level_domain_cookie": 0.00010026067776218167,
-                "lotame_domain_check": 0.00010026067776218167
+                "get_top_level_domain_cookie": 0.00010046212577858148,
+                "lotame_domain_check": 0.00010046212577858148
             },
             "exampleSites": [
                 "gizmodo.com",
                 "lifehacker.com",
-                "kotaku.com",
-                "www.biography.com",
-                "owlcation.com",
+                "pairedlife.com",
+                "axleaddict.com",
+                "www.scotsman.com",
+                "dengarden.com",
+                "www.organicauthority.com",
                 "wehavekids.com",
-                "discover.hubpages.com",
-                "www.theatlantic.com",
-                "mtonews.com",
-                "www.maxim.com",
-                "www.avclub.com",
                 "exemplore.com",
                 "swimsuit.si.com",
-                "reelrundown.com",
-                "www.sailmagazine.com",
-                "bellatory.com",
-                "pairedlife.com",
-                "spinditty.com",
+                "www.biography.com",
+                "pethelpful.com",
+                "discover.hubpages.com",
+                "www.maxim.com",
+                "mtonews.com",
                 "levelskip.com",
-                "hobbylark.com"
+                "kotaku.com",
+                "www.realclearpolitics.com",
+                "www.theatlantic.com",
+                "www.thestreet.com"
             ]
         },
         {
@@ -668,8 +652,8 @@
                 "tag-api"
             ],
             "apis": {},
-            "sites": 27,
-            "prevalence": 0.00271,
+            "sites": 23,
+            "prevalence": 0.00231,
             "cnames": [
                 {
                     "original": "tag-api.kinja.com",
@@ -677,35 +661,35 @@
                 }
             ],
             "responseHashes": [
-                "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
+                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "get_top_level_domain_cookie": 0.00010026067776218167,
-                "lotame_domain_check": 0.00010026067776218167
+                "get_top_level_domain_cookie": 0.00010046212577858148,
+                "lotame_domain_check": 0.00010046212577858148
             },
             "exampleSites": [
                 "lifehacker.com",
-                "www.sailmagazine.com",
-                "jalopnik.com",
-                "swimsuit.si.com",
-                "owlcation.com",
-                "levelskip.com",
-                "pethelpful.com",
                 "www.theatlantic.com",
-                "bellatory.com",
-                "hobbylark.com",
-                "kotaku.com",
-                "exemplore.com",
-                "www.si.com",
-                "www.realclearpolitics.com",
+                "www.maxim.com",
                 "mtonews.com",
-                "spinditty.com",
-                "discover.hubpages.com",
-                "www.biography.com",
                 "delishably.com",
-                "pairedlife.com"
+                "wehavekids.com",
+                "axleaddict.com",
+                "jezebel.com",
+                "www.organicauthority.com",
+                "levelskip.com",
+                "www.scotsman.com",
+                "pairedlife.com",
+                "discover.hubpages.com",
+                "exemplore.com",
+                "pethelpful.com",
+                "www.si.com",
+                "www.thestreet.com",
+                "owlcation.com",
+                "kotaku.com",
+                "swimsuit.si.com"
             ]
         },
         {
@@ -716,35 +700,31 @@
                 "analytics"
             ],
             "apis": {},
-            "sites": 19,
-            "prevalence": 0.0019,
+            "sites": 17,
+            "prevalence": 0.00171,
             "cnames": [],
-            "responseHashes": [
-                "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bellatory.com",
+                "axleaddict.com",
                 "delishably.com",
                 "dengarden.com",
                 "discover.hubpages.com",
                 "exemplore.com",
-                "hobbylark.com",
                 "levelskip.com",
                 "mtonews.com",
                 "owlcation.com",
                 "pairedlife.com",
                 "pethelpful.com",
-                "reelrundown.com",
-                "spinditty.com",
                 "swimsuit.si.com",
                 "wehavekids.com",
                 "www.biography.com",
                 "www.maxim.com",
-                "www.sailmagazine.com",
-                "www.si.com"
+                "www.organicauthority.com",
+                "www.si.com",
+                "www.thestreet.com"
             ]
         },
         {
@@ -755,8 +735,8 @@
                 "script-api"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.000602,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
                 "d9f23619ed881ec26f0a846e9b5b9e8ac0bf60a26139462a83413d02c1de08d7"
@@ -766,7 +746,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gizmodo.com",
-                "jalopnik.com",
                 "jezebel.com",
                 "kotaku.com",
                 "lifehacker.com",
@@ -774,7 +753,7 @@
             ]
         },
         {
-            "rule": "ccgateway\\.net\\/script\\/launcher\\/8\\/tap_rp\\.js",
+            "rule": "ccgateway\\.net\\/script\\/launcher\\/9\\/tap_rp\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -783,8 +762,8 @@
             "apis": {
                 "Date.prototype.getTime": 1
             },
-            "sites": 9,
-            "prevalence": 0.000902,
+            "sites": 10,
+            "prevalence": 0.001,
             "cnames": [
                 {
                     "original": "script-api.kinja.com",
@@ -792,14 +771,57 @@
                 }
             ],
             "responseHashes": [
-                "a5644924bbb7d526b574e55601e903dc36d38fcf67154874f7a39ea578c31c78"
+                "20809a7928d25e26d8f009ebe5f825839e9d2a5fd325555e7f961b38c89c88e4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gizmodo.com",
-                "jalopnik.com",
+                "jezebel.com",
+                "kotaku.com",
+                "lifehacker.com",
+                "www.avclub.com",
+                "www.realclearscience.com",
+                "www.realclearpolitics.com",
+                "www.scotsman.com",
+                "www.theatlantic.com",
+                "www.thenational.scot"
+            ]
+        },
+        {
+            "rule": "ccgateway\\.net\\/v1\\/event\\/record\\/ad-impression-gpt",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tag-api",
+                "tag-api-2-1"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.000804,
+            "cnames": [
+                {
+                    "original": "tag-api.kinja.com",
+                    "resolved": "tag-api.ccgateway.net"
+                }
+            ],
+            "responseHashes": [
+                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "GLAM-JID": 0.0008036970062286518,
+                "GLAM-AID": 0.0008036970062286518,
+                "GLAM-SID": 0.0008036970062286518,
+                "cookies.js_dtest": 0.00020092425155716296,
+                "parsely_uuid": 0.00020092425155716296,
+                "get_top_level_domain_cookie": 0.00010046212577858148,
+                "lotame_domain_check": 0.00010046212577858148
+            },
+            "exampleSites": [
+                "gizmodo.com",
                 "jezebel.com",
                 "kotaku.com",
                 "lifehacker.com",
@@ -817,19 +839,17 @@
                 "revenue-mapping-api"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.000602,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-                "27a017a9e648bc0a12e97a6823cbda31651c56ba60200ee0473503141b07ca0c"
+                "d7e019b7258e378ecee6fa5651b2bc042e216ebffa3558e4d92bce0e6697b7fb"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "gizmodo.com",
-                "jalopnik.com",
                 "jezebel.com",
                 "kotaku.com",
                 "lifehacker.com",
@@ -838,14 +858,14 @@
         },
         {
             "rule": "ccgateway\\.net\\/v1\\/s\\/narratiive-syndication",
-            "cookies": 0.000401,
+            "cookies": 0.000301,
             "fingerprinting": 0,
             "subdomains": [
                 "eus-api"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [],
             "type": "Image",
@@ -854,12 +874,11 @@
             "exampleSites": [
                 "askmen.com",
                 "www.iol.co.za",
-                "www.property.com.au",
-                "www.thesouthafrican.com"
+                "www.property.com.au"
             ]
         },
         {
-            "rule": "ccgateway\\.net\\/v1\\/event\\/record\\/revenue\\/rev\\/cpm\\/0\\.53",
+            "rule": "ccgateway\\.net\\/v1\\/event\\/record\\/revenue\\/rev\\/cpm\\/0\\.463",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -874,15 +893,13 @@
                     "resolved": "tag-api.ccgateway.net"
                 }
             ],
-            "responseHashes": [
-                "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "GLAM-JID": 0.00020052135552436334,
-                "GLAM-AID": 0.00020052135552436334,
-                "GLAM-SID": 0.00020052135552436334
+                "GLAM-JID": 0.00020092425155716296,
+                "GLAM-AID": 0.00020092425155716296,
+                "GLAM-SID": 0.00020092425155716296
             },
             "exampleSites": [
                 "avclub.com",
@@ -901,7 +918,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "8c3f259c332316fe04864e0df04fadf85d52b03a2e59c67c32579225afff3d52"
+                "12af2be5c5f92160415082a284a4d38636341190652a0b21d64d15630dbf3e62"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -912,57 +929,29 @@
             ]
         },
         {
-            "rule": "ccgateway\\.net\\/gam\\/v1\\/5185c61f-0cfc-41ed-af76-4d2e1e637c65",
+            "rule": "ccgateway\\.net\\/script\\/cs\\/scripts_clients_Hive_PogoEngine\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "revenue-mapping-api"
+                "carbon-cdn"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "85ec0aa3ca4b6a4b81728071f94db04d42cda97fa10162cd2f5e11b3b1bd3fdc"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "scotsman.com",
-                "www.scotsman.com"
-            ]
-        },
-        {
-            "rule": "ccgateway\\.net\\/v1\\/event\\/record\\/revenue\\/rev\\/cpm\\/0\\.722",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tag-api-2-1"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "GLAM-JID": 0.00020052135552436334,
-                "GLAM-AID": 0.00020052135552436334,
-                "GLAM-SID": 0.00020052135552436334,
-                "get_top_level_domain_cookie": 0.00020052135552436334,
-                "lotame_domain_check": 0.00020052135552436334
+            "apis": {
+                "window.localStorage": 1
             },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "scotsman.com",
-                "www.scotsman.com"
+                "www.thenational.scot"
             ]
         },
         {
-            "rule": "ccgateway\\.net\\/gam\\/v1\\/d6bfa7e9-b2e4-435b-92eb-d8404fe2559d",
+            "rule": "ccgateway\\.net\\/gam\\/v1\\/cadfd573-0eb0-48cf-b2a5-a9911b013771",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -973,34 +962,29 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "b6c3284bab0a7b88566701b665d5072fba73ce1407784dad07332ffa9c9b5593"
+                "ffc8db15dd13471b9662e0d1251e91e896983dc6a33bb074641c740c745d579e"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "theatlantic.com",
-                "www.theatlantic.com"
+                "thenational.scot",
+                "www.thenational.scot"
             ]
         }
     ],
     "categories": [],
-    "performance": {
-        "time": 1,
-        "size": 1,
-        "cpu": 0,
-        "cache": 1
-    },
-    "cookies": 0.00321,
+    "performance": {},
+    "cookies": 0.00301,
     "types": {
-        "Script": 236,
-        "XHR": 40,
-        "Image": 110
+        "Script": 226,
+        "Image": 95,
+        "XHR": 35
     },
     "nameservers": [
-        "ns4-05.azure-dns.info",
-        "ns1-05.azure-dns.com",
         "ns2-05.azure-dns.net",
-        "ns3-05.azure-dns.org"
+        "ns3-05.azure-dns.org",
+        "ns4-05.azure-dns.info",
+        "ns1-05.azure-dns.com"
     ]
 }

@@ -7,14 +7,64 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00132,
-    "sites": 13,
+    "prevalence": 0.00154,
+    "sites": 15,
     "subdomains": [
+        "api",
         "cdn"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "rollbar\\.com\\/api\\/1\\/item\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000515,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wealthsimple.com",
+                "rvshare.com",
+                "www.oakley.com",
+                "www.toronto.com",
+                "www.vistaprint.ca"
+            ]
+        },
+        {
+            "rule": "rollbar\\.com\\/api\\/1\\/item\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000515,
+            "cnames": [],
+            "responseHashes": [
+                "0358f5abfa8d0662df360e13876e432cecd571a780dbd3defe6a1d3649620137",
+                "0d4d688425b49872912f72501b226caa63b3e62c04bf6be8c22313e1d2a76109"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wealthsimple.com",
+                "rvshare.com",
+                "www.oakley.com",
+                "www.toronto.com",
+                "www.vistaprint.ca"
+            ]
+        },
         {
             "rule": "rollbar\\.com\\/rollbarjs\\/refs\\/tags\\/v2\\.24\\.0\\/rollbar\\.min\\.js",
             "cookies": 0,
@@ -24,10 +74,10 @@
             ],
             "apis": {
                 "console.memory": 2,
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 1
             },
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000206,
             "cnames": [],
             "responseHashes": [
                 "5aded642b1abb82543fe9109e8941ecf20187725e620f653e5a4493f98bfd682"
@@ -48,11 +98,17 @@
                 "cdn"
             ],
             "apis": {
-                "console.memory": 2,
-                "Date.prototype.getTime": 2
+                "console.memory": 3,
+                "Date.prototype.getTime": 4,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.language": 1,
+                "Navigator.prototype.cookieEnabled": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Navigator.prototype.plugins": 1
             },
-            "sites": 2,
-            "prevalence": 0.000203,
+            "sites": 4,
+            "prevalence": 0.000412,
             "cnames": [],
             "responseHashes": [
                 "525609b83b7b7a940bcbc35fd786bb68d5eb2c654c9cf32fa81b45be9978afb0"
@@ -62,31 +118,13 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rvshare.com",
-                "www.litcharts.com"
+                "www.litcharts.com",
+                "www.nobelprize.org",
+                "www.ricksteves.com"
             ]
         },
         {
             "rule": "rollbar\\.com\\/rollbarjs\\/refs\\/tags\\/v2\\.21\\.1\\/rollbar\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000203,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "variety.com",
-                "www.rollingstone.com"
-            ]
-        },
-        {
-            "rule": "rollbar\\.com\\/rollbarjs\\/refs\\/tags\\/v2\\.19\\.2\\/rollbar\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -97,37 +135,36 @@
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000206,
             "cnames": [],
             "responseHashes": [
-                "c77308873c903ec4d6a3163d5e90c0dc18d26cbe1a16b2f43674ca82b6c250c1"
+                "eee2bc6e4edf311a6a0337c339dbd85d0d8d4040b25e390ab18237e2fa84f1c9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "softwareadvice.com",
-                "www.yeti.com"
+                "variety.com",
+                "www.rollingstone.com"
             ]
         }
     ],
     "categories": [],
-    "performance": {
-        "time": 0,
-        "size": 0,
-        "cpu": 0,
-        "cache": 0
-    },
+    "performance": {},
     "cookies": 0,
     "types": {
+        "Preflight": 5,
+        "XHR": 5,
         "Script": 8
     },
     "nameservers": [
+        "ns-112.awsdns-14.com",
+        "ns-690.awsdns-22.net",
+        "ns-1178.awsdns-19.org",
+        "ns-1903.awsdns-45.co.uk",
         "ns-cloud-d1.googledomains.com",
         "ns-cloud-d2.googledomains.com",
         "ns-cloud-d3.googledomains.com",
-        "ns-cloud-d4.googledomains.com",
-        "ns-112.awsdns-14.com",
-        "ns-690.awsdns-22.net"
+        "ns-cloud-d4.googledomains.com"
     ]
 }

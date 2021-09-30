@@ -4,11 +4,10 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000139,
+    "prevalence": 0.0000141,
     "sites": 2,
     "subdomains": [
-        "ext-prod.ingress",
-        "tracking-service.prod-ext"
+        "ext-prod.ingress"
     ],
     "cnames": [
         {
@@ -20,7 +19,7 @@
             "resolved": "ext-prod.ingress.adviqodev.de"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "adviqodev\\.de\\/graphql",
@@ -31,7 +30,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000139,
+            "prevalence": 0.0000141,
             "cnames": [
                 {
                     "original": "graphql.questico.de",
@@ -48,7 +47,7 @@
             ]
         },
         {
-            "rule": "adviqodev\\.de\\/auth\\/realms\\/questico\\/protocol\\/openid-connect\\/login-status-iframe\\.html",
+            "rule": "adviqodev\\.de\\/graphql",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -56,7 +55,34 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000139,
+            "prevalence": 0.0000141,
+            "cnames": [
+                {
+                    "original": "graphql.questico.de",
+                    "resolved": "ext-prod.ingress.adviqodev.de"
+                }
+            ],
+            "responseHashes": [
+                "50797f3fb019087ebd6b9d3396828c7787daeac2b2ee9ff8680d34fb7a419454"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "questico.de",
+                "www.questico.de"
+            ]
+        },
+        {
+            "rule": "adviqodev\\.de\\/auth\\/realms\\/questico\\/protocol\\/openid-connect\\/login-status-iframe\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ext-prod.ingress"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000141,
             "cnames": [
                 {
                     "original": "sso.questico.de",
@@ -75,33 +101,6 @@
             ]
         },
         {
-            "rule": "adviqodev\\.de\\/graphql",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ext-prod.ingress"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000139,
-            "cnames": [
-                {
-                    "original": "graphql.questico.de",
-                    "resolved": "ext-prod.ingress.adviqodev.de"
-                }
-            ],
-            "responseHashes": [
-                "fdbd7d6ae4d5f4223ce6552d469fcf97e72fe3e86359ad8487361568e9d4b3e9"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "questico.de",
-                "www.questico.de"
-            ]
-        },
-        {
             "rule": "adviqodev\\.de\\/auth\\/realms\\/questico\\/protocol\\/openid-connect\\/login-status-iframe\\.html\\/init",
             "cookies": 0,
             "fingerprinting": 0,
@@ -110,7 +109,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000139,
+            "prevalence": 0.0000141,
             "cnames": [
                 {
                     "original": "sso.questico.de",
@@ -137,57 +136,15 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000139,
+            "prevalence": 0.0000141,
             "cnames": [
                 {
                     "original": "sso.questico.de",
                     "resolved": "ext-prod.ingress.adviqodev.de"
                 }
             ],
-            "responseHashes": [
-                "caa9268870059082876c441ba551f9b00c41450e63f822839c7d8676cd6f65a5"
-            ],
+            "responseHashes": [],
             "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "questico.de",
-                "www.questico.de"
-            ]
-        },
-        {
-            "rule": "adviqodev\\.de\\/session-data",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tracking-service.prod-ext"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000139,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "questico.de",
-                "www.questico.de"
-            ]
-        },
-        {
-            "rule": "adviqodev\\.de\\/session-data",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tracking-service.prod-ext"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000139,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -201,15 +158,9 @@
     "cookies": 0,
     "types": {
         "Preflight": 2,
+        "Fetch": 2,
         "Document": 4,
-        "Fetch": 4,
-        "XHR": 2,
-        "Other": 2
+        "XHR": 2
     },
-    "nameservers": [
-        "d.ns14.net",
-        "c.ns14.net",
-        "b.ns14.net",
-        "a.ns14.net"
-    ]
+    "nameservers": []
 }
