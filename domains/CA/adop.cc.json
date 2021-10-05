@@ -7,7 +7,7 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000103,
+    "prevalence": 0.0001,
     "sites": 1,
     "subdomains": [
         "compass",
@@ -15,7 +15,7 @@
         "data"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "adop\\.cc\\/assets\\/js\\/adop\\/adopJ\\.js",
@@ -26,7 +26,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "251e9b67408005183aefc63f5b2cdf136bddb8eec9a8080cdc072c6ebc16044f"
@@ -41,16 +41,22 @@
         },
         {
             "rule": "adop\\.cc\\/adop_sdk_p4\\.0\\.1\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.000201,
+            "fingerprinting": 1,
             "subdomains": [
                 "adopdmp"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2
+            },
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "509ad252be6b42da4d1b4c0eeaca785fd1f53b092e0e870f1fedb4ae92bf62c4"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -68,10 +74,56 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
             "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "teamblind.com",
+                "www.teamblind.com"
+            ]
+        },
+        {
+            "rule": "adop\\.cc\\/assets\\/js\\/adop\\/adop\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "compass"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "0178029d7e8522a8d1085c2527186cbf25c39e0afcab2b18dd690a910c2a9d99"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "teamblind.com",
+                "www.teamblind.com"
+            ]
+        },
+        {
+            "rule": "adop\\.cc\\/collect\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "data"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -82,15 +134,15 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000103,
+    "cookies": 0.0001,
     "types": {
-        "Script": 4,
+        "Script": 8,
         "Image": 2
     },
     "nameservers": [
         "ns4.whoisdomain.kr",
-        "ns2.whoisdomain.kr",
+        "ns3.whoisdomain.kr",
         "ns1.whoisdomain.kr",
-        "ns3.whoisdomain.kr"
+        "ns2.whoisdomain.kr"
     ]
 }

@@ -9,16 +9,38 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000808,
-    "sites": 8,
+    "prevalence": 0.000904,
+    "sites": 9,
     "subdomains": [
-        "gateway",
         "brain",
+        "gateway",
         "analytics"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "foresee\\.com\\/state\\/att\\/552ad036-ace3-46c3-993a-0193b443bcad",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "brain"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "3a15266e098408cc78f0b49a558e446273ccb4ecdf852c0e468850a6fa5588a5"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "att.com",
+                "www.att.com"
+            ]
+        },
         {
             "rule": "foresee\\.com\\/sites\\/cdc\\/production\\/config\\.json",
             "cookies": 0,
@@ -28,7 +50,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "fb211cc65d60b74e470e69508dacc190e61c2dfacc4ed120c8bd007461f98a23"
@@ -42,17 +64,75 @@
             ]
         },
         {
-            "rule": "foresee\\.com\\/sites\\/delta\\/production\\/gateway\\.min\\.js",
+            "rule": "foresee\\.com\\/ingest\\/events",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "gateway"
+                "analytics"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 7,
+            "prevalence": 0.000703,
             "cnames": [],
             "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cdc.gov",
+                "www.delta.com",
+                "www.irs.gov",
+                "www.mcdonalds.com",
+                "www.nasa.gov",
+                "www.sigmaaldrich.com",
+                "wwwnc.cdc.gov"
+            ]
+        },
+        {
+            "rule": "foresee\\.com\\/ingest\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.000703,
+            "cnames": [],
+            "responseHashes": [
+                "8eefa322436955a85812c082e3ed2399efd61cef81bf4e07d4bee01146e21e62"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cdc.gov",
+                "www.delta.com",
+                "www.irs.gov",
+                "www.mcdonalds.com",
+                "www.nasa.gov",
+                "www.sigmaaldrich.com",
+                "wwwnc.cdc.gov"
+            ]
+        },
+        {
+            "rule": "foresee\\.com\\/sites\\/delta\\/production\\/gateway\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "gateway"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "393e572f2cba9e01275553cb37380c07cb082ab32d5460fbb7d964844ea5c87f"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -62,7 +142,69 @@
             ]
         },
         {
-            "rule": "foresee\\.com\\/state\\/irs-gov\\/aec67d53-57ab-4303-9259-d62ad1bf7daf",
+            "rule": "foresee\\.com\\/code\\/19\\.14\\.4-fs\\/fs\\.utils\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 2,
+            "subdomains": [
+                "gateway"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "window.name": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Date.prototype.getTimezoneOffset": 1,
+                "Date.prototype.getTime": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "63850473398a3173fc0d66b16e7b82cbcae949b5395cf502d1fa1701a927169c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_4c_": {
+                    "ttl": 62996411,
+                    "length": 637,
+                    "prevalence": 0.0002008435428800964,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hopkinsmedicine.org",
+                "www.sigmaaldrich.com"
+            ]
+        },
+        {
+            "rule": "foresee\\.com\\/code\\/19\\.14\\.4-fs\\/fs\\.compress\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gateway"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "0966d8fbc15e32988c6ecaa987e967227ec12c76e0f007c8eed7b064a142edf4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hopkinsmedicine.org",
+                "www.sigmaaldrich.com"
+            ]
+        },
+        {
+            "rule": "foresee\\.com\\/state\\/irs-gov\\/c26c3c82-653b-498e-8a80-1b79ccd2ab98",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -70,61 +212,17 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "171960f14f1f84e9b04bda45e16dcfa8d2f99526d4187ae867cd1db7f03fb7f4"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "irs.gov",
                 "www.irs.gov"
-            ]
-        },
-        {
-            "rule": "foresee\\.com\\/ingest\\/events",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "analytics"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000404,
-            "cnames": [],
-            "responseHashes": [
-                "8eefa322436955a85812c082e3ed2399efd61cef81bf4e07d4bee01146e21e62"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "irs.gov",
-                "www.mcdonalds.com",
-                "www.nasa.gov",
-                "wwwnc.cdc.gov"
-            ]
-        },
-        {
-            "rule": "foresee\\.com\\/ingest\\/events",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "analytics"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000404,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "irs.gov",
-                "www.mcdonalds.com",
-                "www.nasa.gov",
-                "wwwnc.cdc.gov"
             ]
         }
     ],
@@ -135,11 +233,11 @@
         "Session Replay"
     ],
     "performance": {},
-    "cookies": 0.000303,
+    "cookies": 0.000502,
     "types": {
-        "XHR": 8,
-        "Script": 2,
-        "Preflight": 4
+        "XHR": 13,
+        "Preflight": 7,
+        "Script": 6
     },
     "nameservers": [
         "ns-1388.awsdns-45.org",

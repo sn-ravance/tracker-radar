@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000201,
+    "prevalence": 0.0002,
     "sites": 2,
     "subdomains": [
-        "geoip.cdn"
+        "geoip.cdn",
+        "ams.cdn"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -20,8 +21,8 @@
                 "geoip.cdn"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -29,6 +30,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "washingtonpost.com",
+                "games.washingtonpost.com",
                 "www.arkadium.com"
             ]
         },
@@ -40,8 +42,8 @@
                 "geoip.cdn"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "4fd8074d0dde65da4cf5a0efa541377c67972b40aadbea2676790d5cc6c18145"
@@ -51,19 +53,96 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "washingtonpost.com",
+                "games.washingtonpost.com",
+                "www.arkadium.com"
+            ]
+        },
+        {
+            "rule": "arkadiumhosted\\.com\\/advertisement\\/display\\/stable\\/display-ads\\.js",
+            "cookies": 0.0002,
+            "fingerprinting": 2,
+            "subdomains": [
+                "ams.cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Date.prototype.getTime": 2,
+                "window.sessionStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.connection": 2,
+                "window.devicePixelRatio": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0002,
+            "cnames": [],
+            "responseHashes": [
+                "b99e4d569621e0783103554014b5dc29dd8c3adaf44f7d7f4a80b9b93617f91f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pbjs_userid_consent_data": {
+                    "ttl": 2592016,
+                    "length": 16,
+                    "prevalence": 0.00020044097013429546,
+                    "uniqueness": 0.5
+                },
+                "ark_pubCommonId": {
+                    "ttl": 5184016,
+                    "length": 36,
+                    "prevalence": 0.00020044097013429546,
+                    "uniqueness": 1
+                },
+                "ark_unifiedId": {
+                    "ttl": 5184024,
+                    "length": 150,
+                    "prevalence": 0.00020044097013429546,
+                    "uniqueness": 1
+                },
+                "arkadiumGeo": {
+                    "ttl": 604800,
+                    "length": 2,
+                    "prevalence": 0.00010022048506714773,
+                    "uniqueness": 1
+                },
+                "cto_bidid": {
+                    "ttl": 33696008,
+                    "length": 223,
+                    "prevalence": 0.00010022048506714773,
+                    "uniqueness": 1
+                },
+                "cto_bundle": {
+                    "ttl": 33696008,
+                    "length": 276,
+                    "prevalence": 0.00010022048506714773,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "washingtonpost.com",
                 "www.arkadium.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.0002,
     "types": {
-        "Preflight": 2,
-        "Fetch": 2
+        "Preflight": 3,
+        "Fetch": 3,
+        "Script": 2
     },
     "nameservers": [
-        "ns.rackspace.com",
-        "ns2.rackspace.com"
+        "ns2.rackspace.com",
+        "ns.rackspace.com"
     ]
 }

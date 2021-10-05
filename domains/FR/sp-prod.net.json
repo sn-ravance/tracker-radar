@@ -7,18 +7,19 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.00384,
-    "sites": 38,
+    "prevalence": 0.00372,
+    "sites": 37,
     "subdomains": [
-        "gdpr-tcfv2",
         "ccpa",
         "message",
-        "mms"
+        "mms",
+        "ccpa-service",
+        "gdpr-tcfv2"
     ],
     "cnames": [
         {
-            "original": "cmp.pcworld.com",
-            "resolved": "message.sp-prod.net"
+            "original": "consent.lemagit.fr",
+            "resolved": "mms.sp-prod.net"
         },
         {
             "original": "sourcepoint.vice.com",
@@ -28,127 +29,20 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "sp-prod\\.net\\/wrapperMessagingWithoutDetection\\.js",
-            "cookies": 0.00252,
-            "fingerprinting": 1,
-            "subdomains": [
-                "gdpr-tcfv2"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 26,
-                "Document.cookie getter": 26,
-                "Date.prototype.getTime": 25,
-                "Document.cookie setter": 25
-            },
-            "sites": 27,
-            "prevalence": 0.00273,
-            "cnames": [],
-            "responseHashes": [
-                "79ea6bea9dbe5d24763b0570ce68e4b0463f505d561315b0fb5aa4697c0e7ab9",
-                "1c6c7cb30515dc027bcadfb7b9c4d525b1c724c48bb8e1958af97e1485d035f1"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "_sp_v1_uid": {
-                    "ttl": 2592000,
-                    "length": 42,
-                    "prevalence": 0.002524742476267421,
-                    "uniqueness": 1
-                },
-                "_sp_v1_data": {
-                    "ttl": 2592000,
-                    "length": 36,
-                    "prevalence": 0.002524742476267421,
-                    "uniqueness": 1
-                },
-                "_sp_v1_ss": {
-                    "ttl": 2592000,
-                    "length": 92,
-                    "prevalence": 0.002524742476267421,
-                    "uniqueness": 0.36
-                },
-                "_sp_v1_opt": {
-                    "ttl": 2592000,
-                    "length": 2,
-                    "prevalence": 0.002524742476267421,
-                    "uniqueness": 0.04
-                },
-                "_sp_v1_consent": {
-                    "ttl": 2592000,
-                    "length": 18,
-                    "prevalence": 0.002524742476267421,
-                    "uniqueness": 0.04
-                },
-                "_sp_v1_csv": {
-                    "ttl": 2592000,
-                    "length": 4,
-                    "prevalence": 0.002524742476267421,
-                    "uniqueness": 0.04
-                },
-                "_sp_v1_lt": {
-                    "ttl": 2592000,
-                    "length": 2,
-                    "prevalence": 0.002524742476267421,
-                    "uniqueness": 0.04
-                },
-                "consentUUID": {
-                    "ttl": 15724800,
-                    "length": 36,
-                    "prevalence": 0.00222177337911533,
-                    "uniqueness": 1
-                },
-                "_sp_enable_dfp_personalized_ads": {
-                    "ttl": 7776000,
-                    "length": 5,
-                    "prevalence": 0.0003029690971520905,
-                    "uniqueness": 0.3333333333333333
-                },
-                "_sp_krux": {
-                    "ttl": 7776000,
-                    "length": 5,
-                    "prevalence": 0.00010098969905069682,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "www.businessinsider.com",
-                "www.duden.de",
-                "www.welt.de",
-                "www.cesoirtv.com",
-                "www.caradisiac.com",
-                "www.lacentrale.fr",
-                "www.geo.fr",
-                "www.cuisineactuelle.fr",
-                "www.capital.fr",
-                "www.radio.net",
-                "www.businessinsider.fr",
-                "www.vice.com",
-                "caradisiac.com",
-                "www.wetteronline.de",
-                "www.femmeactuelle.fr",
-                "www.gala.fr",
-                "www.programme.tv",
-                "www.skysports.com",
-                "www.radio.fr",
-                "pros.lacentrale.fr"
-            ]
-        },
-        {
             "rule": "sp-prod\\.net\\/ccpa\\.js",
-            "cookies": 0.000202,
+            "cookies": 0.000502,
             "fingerprinting": 1,
             "subdomains": [
                 "ccpa"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 8,
-                "Document.cookie getter": 8,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2
+                "Navigator.prototype.userAgent": 5,
+                "Document.cookie getter": 5,
+                "Date.prototype.getTime": 5,
+                "Document.cookie setter": 5
             },
-            "sites": 9,
-            "prevalence": 0.000909,
+            "sites": 6,
+            "prevalence": 0.000603,
             "cnames": [],
             "responseHashes": [
                 "fc0fbadd0003a518363a079597843305fcab3a583fc69bb67f352c98e57b68a2"
@@ -158,38 +52,41 @@
                 "ccpaUUID": {
                     "ttl": 31536000,
                     "length": 36,
-                    "prevalence": 0.00020197939810139365,
+                    "prevalence": 0.0004016870857601928,
                     "uniqueness": 1
                 },
                 "dnsDisplayed": {
                     "ttl": 31536000,
                     "length": 4,
-                    "prevalence": 0.00020197939810139365,
-                    "uniqueness": 0.5
+                    "prevalence": 0.0004016870857601928,
+                    "uniqueness": 0.25
                 },
                 "ccpaApplies": {
                     "ttl": 31536000,
                     "length": 5,
-                    "prevalence": 0.00020197939810139365,
-                    "uniqueness": 0.5
+                    "prevalence": 0.0004016870857601928,
+                    "uniqueness": 0.25
                 },
                 "signedLspa": {
                     "ttl": 31536000,
                     "length": 5,
-                    "prevalence": 0.00020197939810139365,
-                    "uniqueness": 0.5
+                    "prevalence": 0.0004016870857601928,
+                    "uniqueness": 0.25
+                },
+                "_vice_cmp_fb_ldu": {
+                    "ttl": 2592005,
+                    "length": 5,
+                    "prevalence": 0.0001004217714400482,
+                    "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "flipboard.com",
                 "thehill.com",
-                "www.denofgeek.com",
-                "www.dualshockers.com",
                 "www.hitc.com",
-                "www.justjared.com",
-                "www.pcworld.com",
+                "www.lemagit.fr",
                 "www.vice.com",
-                "www.whats-on-netflix.com",
                 "www.worldatlas.com"
             ]
         },
@@ -202,12 +99,12 @@
                 "mms"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000505,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [
                 {
-                    "original": "cmp.pcworld.com",
-                    "resolved": "message.sp-prod.net"
+                    "original": "consent.lemagit.fr",
+                    "resolved": "mms.sp-prod.net"
                 },
                 {
                     "original": "sourcepoint.vice.com",
@@ -215,17 +112,16 @@
                 }
             ],
             "responseHashes": [
-                "a73e34e986dddc00d9e0f27047c88d78aabf6b01387183571d499fcbc8c78d69",
-                "b0f8cbfb71934c1059f3ebdc416f4b8091cb060bbf9568a07fd12f2da60170ca",
-                "c536582fad69b410197bac5e9f3c752aec3ab371dcb6029d6a76c919d876f2ab"
+                "8a87c1d67aeb894afa05755015b658c8e337fba78dff672232c5f58c539ab89b",
+                "c536582fad69b410197bac5e9f3c752aec3ab371dcb6029d6a76c919d876f2ab",
+                "801a5bcae8225d31767cdecdf663964a83442934195a188b9966ed67c2e3b1fb"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "denofgeek.com",
-                "www.justjared.com",
-                "www.pcworld.com",
+                "flipboard.com",
+                "www.lemagit.fr",
                 "www.vice.com",
                 "www.worldatlas.com"
             ]
@@ -240,11 +136,11 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000404,
+            "prevalence": 0.000402,
             "cnames": [
                 {
-                    "original": "cmp.pcworld.com",
-                    "resolved": "message.sp-prod.net"
+                    "original": "consent.lemagit.fr",
+                    "resolved": "mms.sp-prod.net"
                 },
                 {
                     "original": "sourcepoint.vice.com",
@@ -258,19 +154,168 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "denofgeek.com",
-                "www.justjared.com",
-                "www.pcworld.com",
-                "www.vice.com"
+                "flipboard.com",
+                "www.lemagit.fr",
+                "www.vice.com",
+                "www.worldatlas.com"
+            ]
+        },
+        {
+            "rule": "sp-prod\\.net\\/ccpa\\/consent\\/9640\\/display-dns",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ccpa-service"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flipboard.com",
+                "www.worldatlas.com"
+            ]
+        },
+        {
+            "rule": "sp-prod\\.net\\/ccpa\\/consent\\/9640\\/display-dns",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ccpa-service"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "dd14fee7bd2ad01fe2cbff21c600863422c4044ac913156812306aa7de43ef3f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flipboard.com",
+                "www.worldatlas.com"
+            ]
+        },
+        {
+            "rule": "sp-prod\\.net\\/wrapperMessagingWithoutDetection\\.js",
+            "cookies": 0.00231,
+            "fingerprinting": 1,
+            "subdomains": [
+                "gdpr-tcfv2"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 29,
+                "Date.prototype.getTime": 29,
+                "Document.cookie setter": 23,
+                "Document.cookie getter": 23
+            },
+            "sites": 29,
+            "prevalence": 0.00291,
+            "cnames": [],
+            "responseHashes": [
+                "79ea6bea9dbe5d24763b0570ce68e4b0463f505d561315b0fb5aa4697c0e7ab9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_sp_enable_dfp_personalized_ads": {
+                    "ttl": 7776000,
+                    "length": 5,
+                    "prevalence": 0.0004016870857601928,
+                    "uniqueness": 0.25
+                },
+                "_sp_v1_uid": {
+                    "ttl": 2592000,
+                    "length": 42,
+                    "prevalence": 0.0023097007431211085,
+                    "uniqueness": 1
+                },
+                "_sp_v1_data": {
+                    "ttl": 2592000,
+                    "length": 36,
+                    "prevalence": 0.0023097007431211085,
+                    "uniqueness": 1
+                },
+                "_sp_v1_ss": {
+                    "ttl": 2592000,
+                    "length": 91,
+                    "prevalence": 0.0023097007431211085,
+                    "uniqueness": 0.43478260869565216
+                },
+                "_sp_v1_opt": {
+                    "ttl": 2592000,
+                    "length": 2,
+                    "prevalence": 0.0023097007431211085,
+                    "uniqueness": 0.043478260869565216
+                },
+                "_sp_v1_consent": {
+                    "ttl": 2592000,
+                    "length": 18,
+                    "prevalence": 0.0023097007431211085,
+                    "uniqueness": 0.043478260869565216
+                },
+                "_sp_v1_csv": {
+                    "ttl": 2592000,
+                    "length": 4,
+                    "prevalence": 0.0023097007431211085,
+                    "uniqueness": 0.043478260869565216
+                },
+                "_sp_v1_lt": {
+                    "ttl": 2592000,
+                    "length": 2,
+                    "prevalence": 0.0023097007431211085,
+                    "uniqueness": 0.043478260869565216
+                },
+                "consentUUID": {
+                    "ttl": 31536000,
+                    "length": 36,
+                    "prevalence": 0.0022092789716810605,
+                    "uniqueness": 1
+                },
+                "_sp_krux": {
+                    "ttl": 7776000,
+                    "length": 5,
+                    "prevalence": 0.0003012653143201446,
+                    "uniqueness": 0.3333333333333333
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.businessinsider.com",
+                "www.welt.de",
+                "www.thetimes.co.uk",
+                "www.radio.net",
+                "www.programme-tv.net",
+                "www.biography.com",
+                "www.caradisiac.com",
+                "photo.cuisineactuelle.fr",
+                "www.lemagit.fr",
+                "www.free-fonts.com",
+                "www.femmeactuelle.fr",
+                "www.lacentrale.fr",
+                "www.geo.fr",
+                "caradisiac.com",
+                "pros.lacentrale.fr",
+                "www.radio.fr",
+                "www.businessinsider.fr",
+                "www.gala.fr",
+                "news.sky.com",
+                "www.capital.fr"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00273,
+    "cookies": 0.00271,
     "types": {
-        "Script": 36,
-        "XHR": 9
+        "Script": 35,
+        "XHR": 10,
+        "Preflight": 2
     },
     "nameservers": [
         "ns-1307.awsdns-35.org",

@@ -4,7 +4,7 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000633,
+    "prevalence": 0.0000621,
     "sites": 9,
     "subdomains": [
         "pointclickcare",
@@ -12,14 +12,15 @@
         "nitro",
         "hotspring",
         "visitor-scoring",
-        "ove1"
+        "ove1",
+        "cdn"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "marketlinc\\.com\\/code\\/deployment\\.js",
-            "cookies": 0,
+            "cookies": 0.0000069,
             "fingerprinting": 1,
             "subdomains": [
                 "pointclickcare",
@@ -28,17 +29,35 @@
                 "hotspring"
             ],
             "apis": {
-                "Document.cookie getter": 2
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 1,
+                "window.localStorage": 1,
+                "Navigator.prototype.language": 1,
+                "Document.cookie setter": 1
             },
             "sites": 4,
-            "prevalence": 0.0000282,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "bbdc736453b676725bfc53b40c1a25da8993568bf17f52a179bb9f3a34119d82",
-                "6a8b7d3e48246aedfb747839b1b20839a77ad4656aa91b609161c4de492a44fc"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "6a8b7d3e48246aedfb747839b1b20839a77ad4656aa91b609161c4de492a44fc",
+                "d2776baad3f6557e75d19edb8c7d2a149b10b4d0931172f91fa5adacf5dc87da"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "ml_language": {
+                    "ttl": null,
+                    "length": 2,
+                    "prevalence": 0.000006902073382844206,
+                    "uniqueness": 1
+                },
+                "ml_random": {
+                    "ttl": 2592012,
+                    "length": 2,
+                    "prevalence": 0.000006902073382844206,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "pointclickcare.com",
@@ -49,8 +68,8 @@
         },
         {
             "rule": "marketlinc\\.com\\/public\\/js\\/snippet\\.js",
-            "cookies": 0.0000282,
-            "fingerprinting": 1,
+            "cookies": 0.0000207,
+            "fingerprinting": 2,
             "subdomains": [
                 "visitor-scoring",
                 "ove1"
@@ -60,52 +79,52 @@
                 "Screen.prototype.width": 3,
                 "Screen.prototype.height": 3,
                 "Date.prototype.getTimezoneOffset": 3,
-                "Document.cookie setter": 2
+                "Document.cookie setter": 3
             },
-            "sites": 6,
-            "prevalence": 0.0000422,
+            "sites": 5,
+            "prevalence": 0.0000345,
             "cnames": [],
             "responseHashes": [
+                "cab21cd92570cbeba315fea113ee5c06b3f6de012e2b32883901f322e7e09de9",
                 "e103f511fd4575a0b9ac5b7a798959dd03c9c2eb158e2111ac26fe56c208d077"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "vs_vid": {
-                    "ttl": 315360032,
+                    "ttl": 315360002,
                     "length": 12,
-                    "prevalence": 0.00001407756739635391,
+                    "prevalence": 0.000020706220148532618,
                     "uniqueness": 1
                 },
                 "vs_vfs": {
                     "ttl": null,
                     "length": 1,
-                    "prevalence": 0.00001407756739635391,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000020706220148532618,
+                    "uniqueness": 0.3333333333333333
                 },
                 "vs_sid": {
                     "ttl": null,
                     "length": 13,
-                    "prevalence": 0.00001407756739635391,
+                    "prevalence": 0.000020706220148532618,
                     "uniqueness": 1
                 },
                 "vs_conv_ai": {
                     "ttl": null,
                     "length": 3,
-                    "prevalence": 0.00001407756739635391,
-                    "uniqueness": 1
+                    "prevalence": 0.000020706220148532618,
+                    "uniqueness": 0.3333333333333333
                 },
                 "vs_lift_ai": {
                     "ttl": null,
                     "length": 5,
-                    "prevalence": 0.00001407756739635391,
-                    "uniqueness": 1
+                    "prevalence": 0.000020706220148532618,
+                    "uniqueness": 0.3333333333333333
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "pointclickcare.com",
                 "usa.kaspersky.com",
-                "www.freemake.com",
                 "www.gonitro.com",
                 "www.hotspring.com",
                 "www.kaspersky.com"
@@ -113,39 +132,14 @@
         },
         {
             "rule": "marketlinc\\.com\\/visitor-scoring",
-            "cookies": 0.0000282,
+            "cookies": 0.0000345,
             "fingerprinting": 0,
             "subdomains": [
                 "visitor-scoring"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000282,
-            "cnames": [],
-            "responseHashes": [
-                "af4c238d3de318a3633e2c4865b2d6c4dc04763e0d486875fe136f01743d534a",
-                "a3afc704df9a6ee75d559206c29bd2cf7d3af5a19488f752a7daeff7725f3233"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pointclickcare.com",
-                "www.freemake.com",
-                "www.gonitro.com",
-                "www.hotspring.com"
-            ]
-        },
-        {
-            "rule": "marketlinc\\.com\\/visitor-scoring",
-            "cookies": 0.0000282,
-            "fingerprinting": 0,
-            "subdomains": [
-                "visitor-scoring"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000282,
+            "sites": 5,
+            "prevalence": 0.0000345,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -153,24 +147,141 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "pointclickcare.com",
-                "www.freemake.com",
+                "usa.kaspersky.com",
                 "www.gonitro.com",
-                "www.hotspring.com"
+                "www.hotspring.com",
+                "www.kaspersky.com"
+            ]
+        },
+        {
+            "rule": "marketlinc\\.com\\/visitor-scoring",
+            "cookies": 0.0000345,
+            "fingerprinting": 0,
+            "subdomains": [
+                "visitor-scoring"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000345,
+            "cnames": [],
+            "responseHashes": [
+                "02f68f3601c122b82f3c49cf6b768ba43e4e6071cd0267829f823f9f1225429c",
+                "8bd35551ff54bbce6b09d0417b9cb1a348a9a977011df1fdabf6de722aee62b0",
+                "a93bfd178eee971b28f3071a73c0364dc5c94a2c44846627c8b68d962e219b9f",
+                "9611efa33d8564a0aa600fbb6d6f555df1a8496791df8eb6011aa311e3953605"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pointclickcare.com",
+                "usa.kaspersky.com",
+                "www.gonitro.com",
+                "www.hotspring.com",
+                "www.kaspersky.com"
+            ]
+        },
+        {
+            "rule": "marketlinc\\.com\\/tracking-event",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "visitor-scoring"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pointclickcare.com",
+                "www.gonitro.com"
+            ]
+        },
+        {
+            "rule": "marketlinc\\.com\\/tracking-event",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "visitor-scoring"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pointclickcare.com",
+                "www.gonitro.com"
             ]
         },
         {
             "rule": "marketlinc\\.com\\/public\\/js\\/deployment\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0000069,
+            "fingerprinting": 1,
             "subdomains": [
                 "ove1"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 3,
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 1
+            },
             "sites": 3,
-            "prevalence": 0.0000211,
+            "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [
                 "9f6f2ea0ed620cf8822ee9cf4b47342d8993b070fe0f867494b899dced2b61cf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "lae_vid": {
+                    "ttl": 311040009,
+                    "length": 22,
+                    "prevalence": 0.000006902073382844206,
+                    "uniqueness": 1
+                },
+                "ml_language": {
+                    "ttl": null,
+                    "length": 2,
+                    "prevalence": 0.000006902073382844206,
+                    "uniqueness": 1
+                },
+                "_ml_random": {
+                    "ttl": 2592009,
+                    "length": 2,
+                    "prevalence": 0.000006902073382844206,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kaspersky.com",
+                "usa.kaspersky.com",
+                "www.kaspersky.com"
+            ]
+        },
+        {
+            "rule": "marketlinc\\.com\\/code\\/genesys-cobrowse-snippet\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "b006338f0c403152e33a13f60f23863dbf3f6a5dbd7df80dda6c80f136674877"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -184,11 +295,11 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000352,
+    "cookies": 0.0000552,
     "types": {
-        "Script": 13,
-        "XHR": 4,
-        "Preflight": 4
+        "Script": 15,
+        "Preflight": 7,
+        "XHR": 7
     },
     "nameservers": [
         "ns-599.awsdns-10.net",

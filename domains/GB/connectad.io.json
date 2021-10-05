@@ -4,13 +4,15 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000303,
-    "sites": 3,
+    "prevalence": 0.000702,
+    "sites": 7,
     "subdomains": [
-        "i"
+        "i",
+        "cdn",
+        "sync-eu"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "connectad\\.io\\/api\\/v2",
@@ -20,25 +22,81 @@
                 "i"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000303,
+            "sites": 6,
+            "prevalence": 0.000602,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "chordify.net",
-                "trends24.in",
-                "www.jpost.com"
+                "golangdocs.com",
+                "m.jpost.com",
+                "www.jpost.com",
+                "www.numbeo.com",
+                "www.tellows.co.uk",
+                "www.thefamouspeople.com"
+            ]
+        },
+        {
+            "rule": "connectad\\.io\\/connectmyusers\\.php",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 4
+            },
+            "sites": 6,
+            "prevalence": 0.000602,
+            "cnames": [],
+            "responseHashes": [
+                "08f0465386d9897c95370a004f5251b304dc4f94a73541cccd1ee87c02de2f60"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "golangdocs.com",
+                "m.jpost.com",
+                "www.jpost.com",
+                "www.numbeo.com",
+                "www.redvoicemedia.com",
+                "www.tellows.co.uk"
+            ]
+        },
+        {
+            "rule": "connectad\\.io\\/syncer\\/1",
+            "cookies": 0.000401,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sync-eu"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "golangdocs.com",
+                "www.numbeo.com",
+                "www.redvoicemedia.com",
+                "www.tellows.co.uk"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000401,
     "types": {
-        "XHR": 3
+        "XHR": 6,
+        "Document": 10
     },
     "nameservers": [
         "amit.ns.cloudflare.com",

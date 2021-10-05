@@ -4,14 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000282,
+    "prevalence": 0.0000276,
     "sites": 4,
     "subdomains": [
         "cdn",
         "api"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "intelligems\\.io\\/3083d7646f2f\\.js",
@@ -21,13 +21,17 @@
                 "cdn"
             ],
             "apis": {
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.vendor": 2,
                 "window.localStorage": 2
             },
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "c0f23047a0974f0e9ccd99f8bb57bab3b90f547117f0f890fc35653b082b65b4"
+                "002609e0baec60599e26cc40cd67c502829a9bc82272e878e32efa737b6ee6b2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -46,10 +50,12 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000211,
+            "prevalence": 0.0000207,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "6f0b5a3620fb1ded0bfdeb5a08b66044c463836ad3884995b3cf97981a20eb48"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -67,12 +73,10 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000211,
+            "prevalence": 0.0000207,
             "cnames": [],
-            "responseHashes": [
-                "6f0b5a3620fb1ded0bfdeb5a08b66044c463836ad3884995b3cf97981a20eb48"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -84,13 +88,19 @@
         {
             "rule": "intelligems\\.io\\/12e1a5c54bb7\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.appVersion": 1,
+                "Navigator.prototype.vendor": 1
+            },
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
                 "c454f1851f3b17ea3575b56ef1c5dfe45de51cd4540556a609107538ce14ea87"
@@ -109,8 +119,8 @@
     "cookies": 0,
     "types": {
         "Script": 4,
-        "Preflight": 3,
-        "Fetch": 3
+        "Fetch": 3,
+        "Preflight": 3
     },
     "nameservers": [
         "ns-36.awsdns-04.com",

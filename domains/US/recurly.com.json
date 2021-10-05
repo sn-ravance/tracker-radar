@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000176,
-    "sites": 25,
+    "prevalence": 0.000207,
+    "sites": 30,
     "subdomains": [
         "js",
         "api"
@@ -17,6 +17,34 @@
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "recurly\\.com\\/v4\\/recurly\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "js"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000552,
+            "cnames": [],
+            "responseHashes": [
+                "4834a96688e86c212847d3660b84ca57e32026da2e7c9bbff0fc891a94eae9bf"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hackthebox.eu",
+                "www.acrevalue.com",
+                "www.amateurgolf.com",
+                "www.coasttocoastam.com",
+                "www.dailywire.com",
+                "www.greentechmedia.com",
+                "www.livebarn.com",
+                "www.realtytrac.com"
+            ]
+        },
+        {
             "rule": "recurly\\.com\\/v4\\/recurly\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -24,11 +52,12 @@
                 "js"
             ],
             "apis": {
-                "window.localStorage": 13,
-                "Navigator.prototype.userAgent": 13
+                "window.localStorage": 17,
+                "Navigator.prototype.userAgent": 13,
+                "window.sessionStorage": 1
             },
-            "sites": 15,
-            "prevalence": 0.000106,
+            "sites": 17,
+            "prevalence": 0.000117,
             "cnames": [],
             "responseHashes": [
                 "abaa7b12d171fb6e0c9a3f6431157f77d9b3d1f875657769e2cd6191e88b7e8e"
@@ -41,9 +70,11 @@
                 "output.com",
                 "www.acrevalue.com",
                 "www.amateurgolf.com",
+                "www.arkadium.com",
                 "www.barkbox.com",
                 "www.basic-mathematics.com",
                 "www.beatport.com",
+                "www.coasttocoastam.com",
                 "www.dailywire.com",
                 "www.greentechmedia.com",
                 "www.importgenius.com",
@@ -55,51 +86,25 @@
             ]
         },
         {
-            "rule": "recurly\\.com\\/js\\/v1\\/events",
+            "rule": "recurly\\.com\\/js\\/v1\\/tax",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "api"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000211,
+            "sites": 2,
+            "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "placeit.net",
-                "www.greentechmedia.com",
-                "www.techsolutions.support.com"
-            ]
-        },
-        {
-            "rule": "recurly\\.com\\/v4\\/recurly\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "js"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000493,
-            "cnames": [],
-            "responseHashes": [
-                "4834a96688e86c212847d3660b84ca57e32026da2e7c9bbff0fc891a94eae9bf"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "acrevalue.com",
-                "www.acrevalue.com",
-                "www.amateurgolf.com",
-                "www.dailywire.com",
-                "www.greentechmedia.com",
-                "www.livebarn.com",
-                "www.realtytrac.com"
+                "fabfitfun.com",
+                "placeit.net"
             ]
         }
     ],
@@ -107,9 +112,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 15,
-        "XHR": 3,
-        "Stylesheet": 7
+        "Stylesheet": 8,
+        "Script": 17,
+        "XHR": 2
     },
     "nameservers": [
         "ns3.recurly.com",

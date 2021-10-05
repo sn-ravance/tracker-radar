@@ -7,18 +7,43 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000515,
-    "sites": 5,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
+        "www",
         "speedtest",
-        "graphql.api",
-        "api",
         "st.sv4",
-        "www"
+        "api",
+        "graphql.api"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "dailymotion\\.com\\/embed\\/video\\/k4HSurCuB7v2sQvwFiw",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Date.prototype.getTimezoneOffset": 2,
+                "Event.prototype.timeStamp": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8a36db41ebfb0c1225f05349ef16877994e5e011cc4718dd906083fda38644d6"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "01net.com",
+                "www.01net.com"
+            ]
+        },
         {
             "rule": "dailymotion\\.com\\/latencies\\.js",
             "cookies": 0,
@@ -27,10 +52,11 @@
                 "speedtest"
             ],
             "apis": {
-                "window.localStorage": 2
+                "window.localStorage": 3,
+                "Date.prototype.getTime": 2
             },
-            "sites": 4,
-            "prevalence": 0.000412,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
                 "72b2181e58d5c45800d66d36702794ca5ae5bf1fbc20f106442b7eac3191a623"
@@ -39,33 +65,11 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "wordpress.com",
-                "www.cycleworld.com",
-                "www.huffingtonpost.fr",
-                "www.marieclaire.fr"
-            ]
-        },
-        {
-            "rule": "dailymotion\\.com\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "graphql.api",
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [
-                "42349a1fef6b6dcb82bab7c3c3e7836c0a75999e2c1d88b6b8ce1646dcca912a"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wordpress.com",
-                "www.paroles.net"
+                "01net.com",
+                "www.01net.com",
+                "www.marketscreener.com",
+                "www.paroles.net",
+                "www.scotsman.com"
             ]
         },
         {
@@ -78,62 +82,132 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000309,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [],
             "type": "WebSocket",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "wordpress.com",
-                "stuartbramhall.wordpress.com",
-                "www.marieclaire.fr"
+                "01net.com",
+                "www.01net.com",
+                "www.scotsman.com"
             ]
         },
         {
-            "rule": "dailymotion\\.com\\/embed\\/video\\/x7tbo1m",
-            "cookies": 0.000206,
+            "rule": "dailymotion\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api",
+                "graphql.api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "ef1fd2f2be153d1b7d24f6dd5b9126decccf2ede0ec7be8af9a8da59b2b93fd0",
+                "845bef1c1539c8aad1cfd2035e73ad8466a0aeba71cb955dd2cf05a4bbdb64da"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paroles.net",
+                "www.paroles.net",
+                "www.scotsman.com"
+            ]
+        },
+        {
+            "rule": "dailymotion\\.com\\/oauth\\/token",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "graphql.api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paroles.net",
+                "www.paroles.net",
+                "www.scotsman.com"
+            ]
+        },
+        {
+            "rule": "dailymotion\\.com\\/oauth\\/token",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "graphql.api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "ff7cbe0914327c0b06061cebdf4f95469440cb0458e9eba31360d185ffbfc2a6"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paroles.net",
+                "www.paroles.net",
+                "www.scotsman.com"
+            ]
+        },
+        {
+            "rule": "dailymotion\\.com\\/embed\\/video\\/x8434x8",
+            "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
             "apis": {
-                "Date.prototype.getTimezoneOffset": 2
+                "Date.prototype.getTimezoneOffset": 2,
+                "Event.prototype.timeStamp": 2
             },
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "480e299cb52c43897a2112c21105a41463fd0a16bad9a98616f39733918e213c"
+                "ae2a0dd2746bc354cb03a736d7f0f6f6a2b0a5f6636ed37f367edf46602822e4"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cycleworld.com",
-                "www.cycleworld.com"
+                "paroles.net",
+                "www.paroles.net"
             ]
         },
         {
-            "rule": "dailymotion\\.com\\/embed\\/video\\/x7vfirq",
-            "cookies": 0.000206,
+            "rule": "dailymotion\\.com\\/player\\/metadata\\/video\\/x8434x8",
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "www"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "ed070d8744ccbe5471ae4193e96489d37ecb6bc22b555cf4002f069fb23c79b2"
+                "7d93a6c25e264496368d8621e0eeec7673cb8f795757b01ac51be2d4e0a5c20a"
             ],
-            "type": "Document",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cycleworld.com",
-                "www.cycleworld.com"
+                "paroles.net",
+                "www.paroles.net"
             ]
         }
     ],
@@ -142,12 +216,13 @@
         "Embedded Content"
     ],
     "performance": {},
-    "cookies": 0.000515,
+    "cookies": 0.000402,
     "types": {
-        "Script": 4,
-        "XHR": 2,
+        "Document": 4,
+        "Script": 5,
         "WebSocket": 3,
-        "Document": 4
+        "XHR": 8,
+        "Preflight": 3
     },
     "nameservers": [
         "b.dailymotion.com",

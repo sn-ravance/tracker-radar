@@ -9,26 +9,32 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.000402,
-    "sites": 4,
+    "prevalence": 0.0012,
+    "sites": 12,
     "subdomains": [
         "yandex-dmp-sync",
-        "begun-sync"
+        "google-sync",
+        "begun-sync",
+        "aidata-sync",
+        "prebid-bidder",
+        "adfox-hb-bidder"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
         {
             "rule": "rutarget\\.ru\\/sync",
-            "cookies": 0.000301,
+            "cookies": 0.000903,
             "fingerprinting": 0,
             "subdomains": [
                 "yandex-dmp-sync",
-                "begun-sync"
+                "google-sync",
+                "begun-sync",
+                "aidata-sync"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 9,
+            "prevalence": 0.000903,
             "cnames": [],
             "responseHashes": [],
             "type": "Image",
@@ -36,8 +42,38 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "4pda.to",
+                "belaruspartisan.by",
+                "creatiefdenken.com",
+                "fishki.net",
                 "lenta.ru",
-                "www.avito.ru"
+                "portall.zp.ua",
+                "ucrazy.ru",
+                "www.bolshoyvopros.ru",
+                "www.woman.ru"
+            ]
+        },
+        {
+            "rule": "rutarget\\.ru\\/bid",
+            "cookies": 0.0001,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prebid-bidder",
+                "adfox-hb-bidder"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "846949c5a40e3ffbb702473e54dfac0646541aa624a844369b6e24e51ddaf96b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "habr.com",
+                "unicode-table.com",
+                "www.9111.ru"
             ]
         }
     ],
@@ -47,9 +83,10 @@
         "Third-Party Analytics Marketing"
     ],
     "performance": {},
-    "cookies": 0.000402,
+    "cookies": 0.001,
     "types": {
-        "Image": 3
+        "Image": 9,
+        "XHR": 3
     },
     "nameservers": [
         "opal.ns.cloudflare.com",

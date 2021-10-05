@@ -4,35 +4,15 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000206,
+    "prevalence": 0.000201,
     "sites": 2,
     "subdomains": [
-        "ge",
-        "socialize"
+        "socialize",
+        "ge"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
-        {
-            "rule": "appliancesaccount\\.io\\/MyAccount\\/getAccountInfo",
-            "cookies": 0.000206,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ge"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "geappliances.com",
-                "www.geappliances.com"
-            ]
-        },
         {
             "rule": "appliancesaccount\\.io\\/sdk\\.config\\.get",
             "cookies": 0,
@@ -42,10 +22,11 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000309,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "4ece3a388cb83a8da8549cbceea82e44ccc5e76081672630d7279a877de5c75b"
+                "0f9036e1123775219b1c9d9a9cefc10520e89d886cc80f4066aaa91176656b57",
+                "c76023ffcac2704ec7d0a99d24b4f1245c62c469800096107a7fb5ce4f36ce10"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -58,16 +39,38 @@
         },
         {
             "rule": "appliancesaccount\\.io\\/MyAccount\\/getAccountInfo",
-            "cookies": 0.000206,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "ge"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "geappliances.com",
+                "www.geappliances.com"
+            ]
+        },
+        {
+            "rule": "appliancesaccount\\.io\\/MyAccount\\/getAccountInfo",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ge"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "5ab678bfa2a47b6c5264cb72d44031f94038a599eb4730f705858068f7151f66"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -79,17 +82,24 @@
         {
             "rule": "appliancesaccount\\.io\\/gs\\/webSdk\\/Api\\.aspx",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "socialize"
             ],
             "apis": {
-                "Date.prototype.getTime": 1
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.appVersion": 1,
+                "Navigator.prototype.mimeTypes": 1,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "63e26f692b4dfe876e146455f88152230c3a00b3cc4b82a3cbd2f499d44240b6"
+            ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -106,31 +116,35 @@
                 "socialize"
             ],
             "apis": {
-                "Date.prototype.getTime": 2
+                "window.localStorage": 3,
+                "window.sessionStorage": 3,
+                "Date.prototype.getTime": 3
             },
-            "sites": 2,
-            "prevalence": 0.000206,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "cc68811d3379f7cb611b108cef770715882b6b052010ccacab8fa89b6002a277"
+                "cc68811d3379f7cb611b108cef770715882b6b052010ccacab8fa89b6002a277",
+                "0ebbbf6bba197f6640e18bab65be07b2b3f5dd95b1a7a95421b09e0935cc8653"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "geappliances.com",
-                "products.geappliances.com"
+                "products.geappliances.com",
+                "www.geappliances.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000206,
+    "cookies": 0.000201,
     "types": {
-        "Preflight": 2,
         "Fetch": 3,
+        "Preflight": 2,
         "XHR": 2,
-        "Document": 4
+        "Document": 5
     },
     "nameservers": [
         "arya.ns.cloudflare.com",

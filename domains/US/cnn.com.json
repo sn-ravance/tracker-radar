@@ -7,10 +7,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000232,
-    "sites": 33,
+    "prevalence": 0.000283,
+    "sites": 41,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "z.cdp-dev",
+        "collector.cdp"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -23,8 +25,8 @@
                 "cdn"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000352,
+            "sites": 7,
+            "prevalence": 0.0000483,
             "cnames": [],
             "responseHashes": [
                 "9ac7adf5416c43f6f615657236275a63f9318c73b0e0abe4ca2530c886be98a0"
@@ -37,11 +39,13 @@
                 "bleacherreport.com",
                 "currently.att.yahoo.com",
                 "start.att.net",
-                "www.bleacherreport.com"
+                "www.att.com",
+                "www.bleacherreport.com",
+                "www.wireless.att.com"
             ]
         },
         {
-            "rule": "cnn\\.com\\/cnnnext\\/dam\\/assets\\/210917180701-chris-miller-mark-milley-split-super-tease\\.jpg",
+            "rule": "cnn\\.com\\/cnnnext\\/dam\\/assets\\/211001204341-biden-cap-hill-1001-super-tease\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -49,21 +53,136 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "3158424d036a6ba5f0f277fbf6ddde95da2fd06a6c6457f7854ac228e9f43416"
+                "91b9e754e2c74b8499f167a77e198bb5844a87ab5db63d9fff616d93718276ed"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ustodaylife.com",
-                "worldnewsera.com"
+                "dailypostla.com",
+                "rightwirereport.com"
             ]
         },
         {
-            "rule": "cnn\\.com\\/cnnnext\\/dam\\/assets\\/210915162004-israel-pfizer-vaccine-live-video\\.jpg",
+            "rule": "cnn\\.com\\/zfm\\/zfh\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "z.cdp-dev"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "7c66b5fd80c2287d6639e3d2186873e393c160b22b77ac7f779a793bdc420202"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ktvz.com",
+                "www.cnn.co.jp"
+            ]
+        },
+        {
+            "rule": "cnn\\.com\\/sp\\/current\\/zion-sp\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 2,
+            "subdomains": [
+                "z.cdp-dev"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTimezoneOffset": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "7169b20ff9116852953e326ad3776ac06c0f14a5a21a3e07f3fb8b5c46418a61"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_sp_ses.5171": {
+                    "ttl": 1816,
+                    "length": 1,
+                    "prevalence": 0.000006902073382844206,
+                    "uniqueness": 1
+                },
+                "_sp_id.5171": {
+                    "ttl": 31536016,
+                    "length": 108,
+                    "prevalence": 0.000006902073382844206,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ktvz.com",
+                "www.cnn.co.jp"
+            ]
+        },
+        {
+            "rule": "cnn\\.com\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collector.cdp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ktvz.com",
+                "www.cnn.co.jp"
+            ]
+        },
+        {
+            "rule": "cnn\\.com\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collector.cdp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ktvz.com",
+                "www.cnn.co.jp"
+            ]
+        },
+        {
+            "rule": "cnn\\.com\\/cnnnext\\/dam\\/assets\\/211001042951-barnaby-joyce-file-2018-super-tease\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -71,21 +190,21 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "9d8588627ce273c1c390ff995f1b46a16cae441f29dddc5b51b2a55dbfcbe2ce"
+                "8a8457562a43ef640eb91f21e3c9b55429924b147527294058fab97b1344fd97"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "kdrv.com",
-                "www.wthitv.com"
+                "newz.ai",
+                "pressnewsagency.org"
             ]
         },
         {
-            "rule": "cnn\\.com\\/cnnnext\\/dam\\/assets\\/210913085911-lewis-county-hospital-live-video\\.jpg",
+            "rule": "cnn\\.com\\/cnnnext\\/dam\\/assets\\/210928055759-01-electricity-pylon-uk-super-tease\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -93,10 +212,54 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "57deb01598c5d49071e56d14edda82361f94846c5de9ea438372380b115e7f3b"
+                "83dcfc93d92ea0fe98c80329ee15def90cb73241c096c18095de59a33e765c95"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "newz.ai",
+                "pressnewsagency.org"
+            ]
+        },
+        {
+            "rule": "cnn\\.com\\/cnnnext\\/dam\\/assets\\/211001091025-01-justice-kavanaugh-file-live-video\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "ba70daa02830bc6c177a2c5b97b4336297dd88ea365dce752592a26eee85ec5e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "actionnewsnow.com",
+                "www.wktv.com"
+            ]
+        },
+        {
+            "rule": "cnn\\.com\\/cnnnext\\/dam\\/assets\\/190205142524-01-alex-jones-file-live-video\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "ed9564de1ec6a35f8831fffc386b98a2c3f499c240ba1d2e0cef6c88a42a68d3"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -107,7 +270,7 @@
             ]
         },
         {
-            "rule": "cnn\\.com\\/cnnnext\\/dam\\/assets\\/210909195951-01-hazard-kentucky-covid-19-surge-billy-couch-live-video\\.jpg",
+            "rule": "cnn\\.com\\/cnnnext\\/dam\\/assets\\/210927211111-miya-marcano-missing-live-video\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -115,21 +278,21 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "8666ff0a575f4920cc3c624ba33bf5f8e32e90f5b2cbe81217144be9588be8de"
+                "5806e8102b0186cf72afff86e82ff548ea651c54ee3a84e93e01924ab37e893a"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "kdrv.com",
-                "www.kezi.com"
+                "www.kimt.com"
             ]
         },
         {
-            "rule": "cnn\\.com\\/cnnnext\\/dam\\/assets\\/210908204043-ozarks-missouri-covid-surge-elle-pkg-thumb-of-wife-vpx-live-video\\.jpg",
+            "rule": "cnn\\.com\\/cnnnext\\/dam\\/assets\\/211001084028-the-zach-family-btc-vpx-live-video\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -137,17 +300,39 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000211,
+            "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [
-                "5eec5ff3a84d2fd96484c5d8b5ec6fe20833e55adfc0e33c10a6e5e7f2f3bfc6"
+                "a4aa3adc0f08c6b4262f5c156e0aa74b8022807b621abc74deeff4ff4d06c189"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "kdrv.com",
-                "www.kezi.com",
+                "kezi.com",
+                "www.kimt.com",
+                "www.wthitv.com"
+            ]
+        },
+        {
+            "rule": "cnn\\.com\\/cnnnext\\/dam\\/assets\\/210930210345-gupta-and-nurse-live-video\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "7e299224d65b24bf488c48991a1d070ba6c68d4412fe16e0c100d8dd8b7881d9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wktv.com",
                 "www.wktv.com"
             ]
         }
@@ -156,10 +341,13 @@
         "Embedded Content"
     ],
     "performance": {},
-    "cookies": 0.00000704,
+    "cookies": 0.0000207,
     "types": {
-        "Document": 5,
-        "Image": 11
+        "Document": 7,
+        "Image": 17,
+        "Script": 4,
+        "Preflight": 2,
+        "XHR": 2
     },
     "nameservers": [
         "ns-1086.awsdns-07.org",

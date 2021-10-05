@@ -9,31 +9,40 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00978,
-    "sites": 95,
+    "prevalence": 0.0117,
+    "sites": 117,
     "subdomains": [
+        "swymv3free-01",
+        "swymprod",
+        "swymv3premium-01",
         "reversoprodcdn",
         "jhucoronavirus",
         "shoppersdrugmart",
-        "adncdnend",
+        "csp",
+        "satcb",
+        "art",
+        "eventcollector",
         "revboostprocdnadsprod",
         "mktdplp102cdn",
         "oc-cdn-ocprod",
         "oc-cdn-public",
+        "ocsdk-prod",
+        "cdn-stamped-io",
         "yoopify-cdn",
         "sc01prod-cdn-endpoint",
         "eppdscrmssa01-cmhcprodcontainer",
-        "devinci-media-prod",
         "efxglobal",
-        "fixcom",
-        "partselectca",
+        "fasken",
+        "saambaa-static",
         "agility",
+        "sob-prd-cdn-products",
         "jabra-prod-cdn",
         "mazda-tagging-prod",
         "mbusa-tagging-prod",
-        "musiquegagne-1",
-        "snwcdnprod",
-        "wwprod",
+        "sdtagging",
+        "dcadprod",
+        "partselectca",
+        "cdn-upmc",
         "ysm-ym2-live-prod"
     ],
     "cnames": [
@@ -52,6 +61,10 @@
         {
             "original": "cdn.reverso.net",
             "resolved": "reversoprodcdn.azureedge.net"
+        },
+        {
+            "original": "cdn.upmc.com",
+            "resolved": "cdn-upmc.azureedge.net"
         },
         {
             "original": "cdn2.yalemedicine.org",
@@ -73,116 +86,121 @@
     "fingerprinting": 3,
     "resources": [
         {
-            "rule": "azureedge\\.net\\/fonts\\/montserrat\\/latin-n400\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "azureedge\\.net\\/code\\/swym-shopify\\.js",
+            "cookies": 0.000301,
+            "fingerprinting": 1,
             "subdomains": [
-                "reversoprodcdn"
+                "swymv3free-01",
+                "swymprod",
+                "swymv3premium-01"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 3,
+                "Document.cookie setter": 3,
+                "Document.cookie getter": 3,
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.userAgent": 3
+            },
             "sites": 3,
-            "prevalence": 0.000309,
-            "cnames": [
-                {
-                    "original": "cdn.reverso.net",
-                    "resolved": "reversoprodcdn.azureedge.net"
-                }
-            ],
+            "prevalence": 0.000301,
+            "cnames": [],
             "responseHashes": [
-                "95d48d03fa1feced30bef50f02845e457957a7eaaeb143d4452303bd8c2f31c5"
+                "aa8eb2bbf729e0296678f257af3922a091207ee437fef94656f4fe161bf949ac",
+                "4f79ebc338e8e93f26e73332e62d6e8c346e280bf930c450886371b1b2fbdd57"
             ],
-            "type": "Font",
-            "firstPartyCookies": {},
+            "type": "Script",
+            "firstPartyCookies": {
+                "__verify": {
+                    "ttl": -1421439385,
+                    "length": 1,
+                    "prevalence": 0.0003012350637614218,
+                    "uniqueness": 0.3333333333333333
+                },
+                "swym-session-id": {
+                    "ttl": 1807,
+                    "length": 66,
+                    "prevalence": 0.0003012350637614218,
+                    "uniqueness": 1
+                },
+                "swym-pid": {
+                    "ttl": 31536005,
+                    "length": 44,
+                    "prevalence": 0.0003012350637614218,
+                    "uniqueness": 1
+                },
+                "swym-o_s": {
+                    "ttl": 1805,
+                    "length": 4,
+                    "prevalence": 0.0003012350637614218,
+                    "uniqueness": 0.3333333333333333
+                },
+                "swym-swymRegid": {
+                    "ttl": 31536005,
+                    "length": 173,
+                    "prevalence": 0.0003012350637614218,
+                    "uniqueness": 1
+                },
+                "swym-email": {
+                    "ttl": 31536006,
+                    "length": 4,
+                    "prevalence": 0.0002008233758409479,
+                    "uniqueness": 0.5
+                },
+                "swym-cu_ct": {
+                    "ttl": 31536006,
+                    "length": 17,
+                    "prevalence": 0.0003012350637614218,
+                    "uniqueness": 0.6666666666666666
+                },
+                "swym-np_r": {
+                    "ttl": 31536005,
+                    "length": 4,
+                    "prevalence": 0.00010041168792047395,
+                    "uniqueness": 1
+                },
+                "swym-currentFilter": {
+                    "ttl": 31536005,
+                    "length": 13,
+                    "prevalence": 0.00010041168792047395,
+                    "uniqueness": 1
+                },
+                "swym-instrumentMap": {
+                    "ttl": 31536005,
+                    "length": 2,
+                    "prevalence": 0.00010041168792047395,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "reverso.net",
-                "conjugator.reverso.net",
-                "mobile-dictionary.reverso.net"
+                "chatters.ca",
+                "www.celestron.com",
+                "www.mastermindtoys.com"
             ]
         },
         {
-            "rule": "azureedge\\.net\\/fonts\\/montserrat\\/latin-n500\\.woff2",
+            "rule": "azureedge\\.net\\/code\\/v3\\/apps\\.bundle\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "reversoprodcdn"
+                "swymv3free-01",
+                "swymv3premium-01"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [
-                {
-                    "original": "cdn.reverso.net",
-                    "resolved": "reversoprodcdn.azureedge.net"
-                }
-            ],
+            "prevalence": 0.000201,
+            "cnames": [],
             "responseHashes": [
-                "cc5e80b7131c9d4a883cff947cbb0d884d693b1c1efe48139bbd0419b256096a"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "reverso.net",
-                "conjugator.reverso.net"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/fonts\\/montserrat\\/latin-n600\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "reversoprodcdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [
-                {
-                    "original": "cdn.reverso.net",
-                    "resolved": "reversoprodcdn.azureedge.net"
-                }
-            ],
-            "responseHashes": [
-                "7605987483bb1eee3e0fc5a78744b999f063de2017fcf0adb2d1f36b78218e26"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "reverso.net",
-                "conjugator.reverso.net"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/rumjs\\/rum4\\.1\\.0\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "reversoprodcdn"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.000618,
-            "cnames": [
-                {
-                    "original": "cdn.reverso.net",
-                    "resolved": "reversoprodcdn.azureedge.net"
-                }
-            ],
-            "responseHashes": [
-                "b8614a0c6bd8ff161b49b23e11340862728b13a8a331679c1dd014ebed44df55"
+                "4b5443a89915bbaee30c9cea2c37f288f879b57f02ae07820435074e2b8a93bd"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "reverso.net",
-                "conjugator.reverso.net",
-                "dictionary.reverso.net",
-                "dictionnaire.reverso.net",
-                "mobile-dictionary.reverso.net",
-                "www.reverso.net"
+                "chatters.ca",
+                "www.mastermindtoys.com"
             ]
         },
         {
@@ -194,7 +212,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000412,
+            "prevalence": 0.000402,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -215,6 +233,119 @@
             ]
         },
         {
+            "rule": "azureedge\\.net\\/fonts\\/montserrat\\/latin-n400\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "reversoprodcdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "cdn.reverso.net",
+                    "resolved": "reversoprodcdn.azureedge.net"
+                }
+            ],
+            "responseHashes": [
+                "0ce5a460ace775560c3344a43245687bdbec5cb8ee20d209ab9fa67f4e09a3e8"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "reverso.net",
+                "context.reverso.net",
+                "mobile-dictionary.reverso.net"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/fonts\\/montserrat\\/latin-n500\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "reversoprodcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.reverso.net",
+                    "resolved": "reversoprodcdn.azureedge.net"
+                }
+            ],
+            "responseHashes": [
+                "cedb226bd7759d04b58baa1a609e1aeecc1aa5c6c3280c4db153019f426f3de0"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "reverso.net",
+                "context.reverso.net"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/fonts\\/montserrat\\/latin-n600\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "reversoprodcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.reverso.net",
+                    "resolved": "reversoprodcdn.azureedge.net"
+                }
+            ],
+            "responseHashes": [
+                "a6de304c233a1b4d07424cb88ba16dc46fb015b3f659cdb2b2357e96af161082"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "reverso.net",
+                "context.reverso.net"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/rumjs\\/rum4\\.1\\.0\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "reversoprodcdn"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000602,
+            "cnames": [
+                {
+                    "original": "cdn.reverso.net",
+                    "resolved": "reversoprodcdn.azureedge.net"
+                }
+            ],
+            "responseHashes": [
+                "b8614a0c6bd8ff161b49b23e11340862728b13a8a331679c1dd014ebed44df55"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "reverso.net",
+                "context.reverso.net",
+                "dictionary.reverso.net",
+                "dictionnaire.reverso.net",
+                "mobile-dictionary.reverso.net",
+                "www.reverso.net"
+            ]
+        },
+        {
             "rule": "azureedge\\.net\\/ramjs\\/ram4\\.2\\.0\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -223,7 +354,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.000515,
+            "prevalence": 0.000502,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -253,7 +384,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.000515,
+            "prevalence": 0.000502,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -283,10 +414,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "5a10b74521ad0540384291f93dd7996863b7a66cc2e00ce36a45c14b320dc7cf"
+                "e0bdfb0e22bc8cd8794225a36ffabad35ff93c3172fccaab0483d151f35f7d8d"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -305,10 +436,10 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000309,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "609fd2c236e1cdc1bd5338bdb7802a7f91de9c4161373da3e2c2a2c5781d8965"
+                "0f3783b55f5ac049e4fd1fc73155124473d8c2a7dcdb74c9803f8a58c098dcdd"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -328,10 +459,10 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000412,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
-                "be10665679a2a8c2f0b6e418113bee39278e573a6fcdb628c08eee65e6efb7af"
+                "370f3c6da3a0d2a15c746c1da8265b02fd3b7e757a52934d3b861f974ce9fb76"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -352,10 +483,10 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000412,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
-                "0aaa069dbe954968087c82528b096853912ef20103656ef4ece6f34a6abe5651"
+                "d67ec862b6504a13472bcb1bcdbbefec7305ab9208fdd758dd291008db136d48"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -376,10 +507,10 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000412,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
-                "ea1a9cbb70fcb40ca5583489d620cf126323bb70d9619daf74c3fafa029b8a2d"
+                "e307b557964632b84fb3d680e620fe36cb01062477ea08df28d57c54874566a0"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -400,7 +531,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -427,7 +558,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -454,7 +585,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -462,7 +593,7 @@
                 }
             ],
             "responseHashes": [
-                "acc8b19e531a81546554526b42bdd2cf8bf7cd36c44bff74d5cb28b69f03e89c"
+                "f5157228905a10bd337c3c41d44d27727ec8164970b9c8f7ad78fa3de3937fcc"
             ],
             "type": "Font",
             "firstPartyCookies": {},
@@ -481,7 +612,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -508,7 +639,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -535,7 +666,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -562,7 +693,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -589,7 +720,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -616,7 +747,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -636,14 +767,14 @@
         },
         {
             "rule": "azureedge\\.net\\/ramjs\\/conf\\/ram\\.config\\.dictionary\\.min\\.js",
-            "cookies": 0.000206,
+            "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [
                 "reversoprodcdn"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -670,7 +801,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -697,7 +828,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -705,7 +836,7 @@
                 }
             ],
             "responseHashes": [
-                "d89759d42de7adcfcb04c788bf8750b20cc1f4b0173a3a829be6f1840286cfef"
+                "532995888349fd72630f73c906fbe540a0563ff8bbbd26b2d732be1da95bf75c"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -724,7 +855,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -732,7 +863,7 @@
                 }
             ],
             "responseHashes": [
-                "5df722fe6fbf6e084c5a4097053f139e2e7a3b977be295b6a4adc9578c74ca73"
+                "e297d43b7e5568bec6cca9a9783751317bcb463626d9fda0108b5e7a152f7269"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -751,7 +882,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -759,7 +890,7 @@
                 }
             ],
             "responseHashes": [
-                "e9542f29848657a449f4bcba175a99517e661d2f0e137707df94d53af6f04750"
+                "c905f05e326842276c3d141d2d9a915f1d96f97d661398c045d560ece02427ed"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -778,7 +909,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -786,7 +917,7 @@
                 }
             ],
             "responseHashes": [
-                "47d6724a190a538e46a25ce781afe8d278ef7e440bfdb73be62ef179c700f152"
+                "670772124f69da576b4ab29f85e1ebdea774a95a0fc86d727d43fbf79590c316"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -805,7 +936,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -813,7 +944,7 @@
                 }
             ],
             "responseHashes": [
-                "4c0ec588b5b6c49788ada06b61c53a73128d43078e57c9353f864968024a66fc"
+                "277c2dc6edb1912feb434dc53749cc34328a59e1e72be6533f7c016be83a2be0"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -832,7 +963,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -840,7 +971,7 @@
                 }
             ],
             "responseHashes": [
-                "48f428d7457930d4b2f33a6ba828a4a908d2abed56b20b3cdae2aed725b63b88"
+                "efd09611200567e5facea950282ca136e27d212e5056a3efa01a37bed858cd72"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -859,7 +990,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -867,7 +998,7 @@
                 }
             ],
             "responseHashes": [
-                "e3ee6002e572b3dbed0c2fd7c345eb5ac5255fa13ce587dca739eab532dbb203"
+                "5be20f3f38b482b33c5eb9968ad3b07b46edc25a528285a8da8f5307c3994f8e"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -886,7 +1017,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -894,7 +1025,7 @@
                 }
             ],
             "responseHashes": [
-                "3e9addd681cf5d5271e21ebcb70cbd5499147ae701580c2d055a9460055dce9c"
+                "199c8a388feeb01a086648930fb6b226cc7b4199fa7f713c7108881a1a3e9487"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -913,7 +1044,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -921,7 +1052,7 @@
                 }
             ],
             "responseHashes": [
-                "c22454a19cbc5908d02a302db91c17cee5554df6dd3a34499ed5325d10502174"
+                "37b76dc17a7b73c5814a446f715c356688996c3a883ee5da48eafed74daaf2de"
             ],
             "type": "Font",
             "firstPartyCookies": {},
@@ -940,7 +1071,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -948,7 +1079,7 @@
                 }
             ],
             "responseHashes": [
-                "dc1b89e7388b14e0feacdce4b349fa94d542ef31826d0e99233db1071e5b2494"
+                "3f04b056951d6284852dee0a66aad4eedbc0cae30f2ebc460d16636a001c73e9"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -967,7 +1098,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -975,7 +1106,7 @@
                 }
             ],
             "responseHashes": [
-                "14f4c61fd88d70b4a40c62fe7bd5123df3d154faa32e0c9abb1b861d07c74f36"
+                "41bb5b9aa84b2d96c9fa6b9522482817214130818b49cc23f1f40a5d1fa759ec"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -994,7 +1125,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -1002,7 +1133,7 @@
                 }
             ],
             "responseHashes": [
-                "6fde023b7ef65b897e04592969dbbcff04a2574ef43cc1804c5e97966b0f0140"
+                "e7e6c9c3fc15230e7db13df0b112a2ea0ffb251913d7d2320721511d692cdd55"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1021,7 +1152,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -1029,7 +1160,7 @@
                 }
             ],
             "responseHashes": [
-                "c85e52e13b134fdf5ad43cdba5b1ee14887a801c13c4fecc19b7c9659306077b"
+                "cee3cc8125892fc39ecb1e9faa8357e20854ec1ec4809906b392141698d152d0"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1048,7 +1179,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -1056,7 +1187,7 @@
                 }
             ],
             "responseHashes": [
-                "32b62c98851b6c09c61b248aaeadc40beff43c85352f83d60be89f2d15a34f2a"
+                "8682324f650a24d91ea103b9db6a0e9add17184fd77f0fa73bd57dc7b0c633b6"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1075,7 +1206,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -1083,7 +1214,7 @@
                 }
             ],
             "responseHashes": [
-                "2359e3bdaa1f666d99510b0fa0f24e5edfeb3afefc1716ed9bb243c2c37b4aba"
+                "bec59ff1c4abd289bdb293d9989efceab5605c3cd952000356a014860f80d383"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1102,7 +1233,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -1110,7 +1241,7 @@
                 }
             ],
             "responseHashes": [
-                "c04b1933a1b8f1955363cd236ce016dff24032de6642f08afbf3369f84f140c7"
+                "a3423bd61d36c187e910bbbe0c8e7d48f94d0fd13d96cbf7e1eb13c35b34704e"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1129,7 +1260,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -1137,7 +1268,7 @@
                 }
             ],
             "responseHashes": [
-                "c1808a2579d9c9580cb5b5c11e7a8486575960e86870c43518202b9c1fb35a05"
+                "32a4551d4bd610d72bf0ec9bc7bcea2397bd9f28022ca50b0b089c3f8389f7a8"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1156,7 +1287,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -1164,7 +1295,7 @@
                 }
             ],
             "responseHashes": [
-                "fc57be98676aa83e507eb27e945d9319463782bc3a2cf8eed1e1b6a38bf87061"
+                "d2436cd7b8b0b9224b0a31b82266e2f2cdae6534a25d5d1083c129e8c0641b30"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1183,7 +1314,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -1191,7 +1322,7 @@
                 }
             ],
             "responseHashes": [
-                "5d51f34b736e0045a0a9b962e32fe3eb84708239938bb0ce61d6787826b113fb"
+                "87ff18194b63c448ab019e2a270c31daf799500300179f8fbf3c3c749328a7f1"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1210,7 +1341,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -1218,7 +1349,7 @@
                 }
             ],
             "responseHashes": [
-                "cd81de69ee33832d0975b22f9008d0bb889040c91378f3cff6b6c89533f9ebdb"
+                "48e55783d7b4be28db2688163f720e59aa18b26685960219ef397b9d70c859d5"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1237,7 +1368,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -1245,7 +1376,7 @@
                 }
             ],
             "responseHashes": [
-                "dc2d3e90ac2b9d7a5583fede122dbe055a4e1f0dc097f05ab08fe31ea6c9c4e0"
+                "30fa3fcd8b27891605dd825016f7a59d6e493c2038495ed0ac30fe4c99f65e20"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1264,7 +1395,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -1272,7 +1403,7 @@
                 }
             ],
             "responseHashes": [
-                "62bb049af2b83ba600e942eb3c587faeac35dd4e0ff06f14bf23983e4164e161"
+                "e6944015ce29cc5e231dfcbdfb799e56950b1f7ab8a269ec40d24e3076b5ddb2"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1291,7 +1422,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -1299,7 +1430,7 @@
                 }
             ],
             "responseHashes": [
-                "b3029cd54b6ae71a5e22d9fbf0d31cc1758b2fbc1e93d926d961618a3c27c19f"
+                "30c940f113252f220f8ed50d3168f5ccfdae5e2c41bb1acfd2d4a991d6d000f3"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1318,7 +1449,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -1326,7 +1457,7 @@
                 }
             ],
             "responseHashes": [
-                "d73eea16badf1b81a2f480c38a3c153daf577bac3b0e0f7ee2f3ea6e9f03d532"
+                "01dc5fbbebfec6d5137dfa5758d86864b5cb1fbe4778bcb17bb59b0792aa02a6"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1345,7 +1476,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -1353,7 +1484,7 @@
                 }
             ],
             "responseHashes": [
-                "a8e21f20a95afaa1928d448f7215dc4d924a6b8a3b4c4aa104a24109fdc4d130"
+                "ff1a1212f04f4fc1b3a96b0bc09bf9db56c4df88d209e2d007a283f92c8b7ffe"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1372,7 +1503,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -1380,7 +1511,7 @@
                 }
             ],
             "responseHashes": [
-                "18f15c856d7c798a2893f201c101e2fa12c2d145bfb18a69e2fc0e64d42b2908"
+                "ac2d1c801645216b204f98cc6d922b9bff50bfa91cf00f9813a5ae3df3271648"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1399,7 +1530,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -1407,7 +1538,7 @@
                 }
             ],
             "responseHashes": [
-                "54c6be744cbc0f92d6f166bc37572fd4ee7ba81f339d0c80792b0bede3523c84"
+                "5407d9029a6fcce116061079be6777851867d7116bba0f1a1d2baa04f06d90ea"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1426,7 +1557,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -1434,7 +1565,7 @@
                 }
             ],
             "responseHashes": [
-                "6f8b5fc8f89dff2b01c6ac6c12f910aa1c0b24aa60a366cebf73acbf4b781469"
+                "d89271b6f4cecd2d4d46496ad3e32812bf1efc4dbd7004bd929ff74f416255b0"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1445,86 +1576,159 @@
             ]
         },
         {
-            "rule": "azureedge\\.net\\/adn-hb\\/adn\\.ano2\\.js",
-            "cookies": 0.000206,
-            "fingerprinting": 2,
+            "rule": "azureedge\\.net\\/cdn\\/widget\\/fonts\\/icomoon\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
             "subdomains": [
-                "adncdnend"
+                "csp"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2,
-                "Navigator.prototype.language": 2,
-                "window.sessionStorage": 2,
-                "Screen.prototype.width": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "Screen.prototype.height": 1,
-                "Navigator.prototype.platform": 1,
-                "Screen.prototype.colorDepth": 1,
-                "Date.prototype.getTimezoneOffset": 1,
-                "Navigator.prototype.doNotTrack": 1,
-                "Navigator.prototype.vendor": 1,
-                "window.name": 1,
-                "PerformanceTiming.prototype.navigationStart": 1
-            },
+            "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "35604f04037d6915b55f5de5cb7af48f7766fcf251933f0a35c0cb1e057f4622"
+                "ab4c432dc5313ff43167b911b6be0742a49eb52ccc520124e9a6104e81f72c27"
             ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "_uc_referrer": {
-                    "ttl": 31536022,
-                    "length": 6,
-                    "prevalence": 0.00020599443815016993,
-                    "uniqueness": 0.5
-                },
-                "_pbjs_userid_consent_data": {
-                    "ttl": 2592022,
-                    "length": 16,
-                    "prevalence": 0.00010299721907508497,
-                    "uniqueness": 1
-                },
-                "_lr_retry_request": {
-                    "ttl": 3629,
-                    "length": 4,
-                    "prevalence": 0.00010299721907508497,
-                    "uniqueness": 1
-                },
-                "_lr_env_src_ats": {
-                    "ttl": 2592029,
-                    "length": 5,
-                    "prevalence": 0.00010299721907508497,
-                    "uniqueness": 1
-                },
-                "cto_bidid": {
-                    "ttl": 33696022,
-                    "length": 138,
-                    "prevalence": 0.00010299721907508497,
-                    "uniqueness": 1
-                },
-                "cto_bundle": {
-                    "ttl": 33696022,
-                    "length": 191,
-                    "prevalence": 0.00010299721907508497,
-                    "uniqueness": 1
-                },
-                "_lr_sampling_rate": {
-                    "ttl": 3634,
-                    "length": 3,
-                    "prevalence": 0.00010299721907508497,
-                    "uniqueness": 1
-                }
-            },
+            "type": "Font",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "freebeacon.com",
-                "www.ancient-origins.net"
+                "fox2now.com",
+                "www.chicagotribune.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/Scripts\\/satcb\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "satcb"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "6179cd37ab95f98aca3ffedd4fb1b30e1efc3acae8118bf898cd53096697735b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goodnessme.ca",
+                "mypatriotsupply.com",
+                "naughtynorth.ca"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/Scripts\\/satcb_core\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "satcb"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Document.cookie getter": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "59d2e05a02a9f4fe11e176b2157f8c5923639a6e2ee5a60df1e0397bb3047e77"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goodnessme.ca",
+                "mypatriotsupply.com",
+                "naughtynorth.ca"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/Content\\/satcb\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "satcb"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "f4f34a39470afd4a7c426b08930024286702377729cd398e9243ec06cb846133"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goodnessme.ca",
+                "mypatriotsupply.com",
+                "naughtynorth.ca"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/harvest\\/harvest_34667\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "art"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "9d526cc59af43fd4ff67f8eee25ff2c0a52c2c008e661af3b62eafad0507c5fd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "uofmhealth.org",
+                "www.uofmhealth.org"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/content\\/sp\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "eventcollector"
+            ],
+            "apis": {
+                "Date.prototype.getTimezoneOffset": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.doNotTrack": 3,
+                "Navigator.prototype.language": 3,
+                "Navigator.prototype.mimeTypes": 3,
+                "Navigator.prototype.javaEnabled": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "Screen.prototype.colorDepth": 3,
+                "Navigator.prototype.cookieEnabled": 3,
+                "window.sessionStorage": 3,
+                "window.localStorage": 3,
+                "Navigator.prototype.plugins": 3,
+                "Date.prototype.getTime": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "bcc170702e4276b44a6b1b31531009e63a759dfcdd5d2422814b0281c1264534"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "spankbang.com",
+                "www.porngo.com",
+                "www.porntry.com"
             ]
         },
         {
@@ -1535,8 +1739,8 @@
                 "revboostprocdnadsprod"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000412,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -1545,15 +1749,14 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "freebeacon.com",
-                "m.jpost.com",
+                "jpost.com",
                 "www.jpost.com",
                 "www.timesofisrael.com"
             ]
         },
         {
             "rule": "azureedge\\.net\\/public\\/latest\\/js\\/ws-tracking\\.js",
-            "cookies": 0.000206,
+            "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [
                 "mktdplp102cdn"
@@ -1564,7 +1767,7 @@
                 "Navigator.prototype.appVersion": 2
             },
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "98f87c7e54ca5fd2342c670545b20a2cae8916be237d41c200395de35042094b"
@@ -1574,13 +1777,13 @@
                 "msd365mkttr": {
                     "ttl": 63072000,
                     "length": 40,
-                    "prevalence": 0.00020599443815016993,
+                    "prevalence": 0.0002008233758409479,
                     "uniqueness": 1
                 },
                 "msd365mkttrs": {
                     "ttl": null,
                     "length": 8,
-                    "prevalence": 0.00020599443815016993,
+                    "prevalence": 0.0002008233758409479,
                     "uniqueness": 1
                 }
             },
@@ -1602,7 +1805,7 @@
                 "Navigator.prototype.userAgent": 3
             },
             "sites": 3,
-            "prevalence": 0.000309,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "3d133e653aa3b803f3811450300e76cda11912432494ca973dd81dfeec5aac47"
@@ -1626,7 +1829,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000309,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "3a184146724eb688aada10fc99926358f17860ac4d45c43b8506193b8e383282"
@@ -1643,14 +1846,16 @@
         {
             "rule": "azureedge\\.net\\/livechatwidget\\/WebChatControl\\/scripts\\/LiveChatBootstrapper\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "oc-cdn-ocprod",
                 "oc-cdn-public"
             ],
-            "apis": {},
+            "apis": {
+                "window.sessionStorage": 2
+            },
             "sites": 3,
-            "prevalence": 0.000309,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "9c497b9271f29757c6ba86e5b7cdccd833a556a3dfd20f80b4b4a6958ccf3950"
@@ -1674,7 +1879,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "a75d69cfc96d32fd87c93b4cfc533626916ad843fb315404fe3a1266a41f4646"
@@ -1697,7 +1902,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "c9a80625e971b234d28263a9f86712c4ccb54feb7d37379f8ec6930c4f534f9c"
@@ -1712,7 +1917,7 @@
         },
         {
             "rule": "azureedge\\.net\\/livechatwidget\\/WebChatControl\\/lib\\/LiveChatWidgetLibs\\.min\\.js",
-            "cookies": 0.000206,
+            "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "oc-cdn-ocprod",
@@ -1722,12 +1927,12 @@
                 "Navigator.prototype.language": 2,
                 "Date.prototype.getTimezoneOffset": 2,
                 "Navigator.prototype.userAgent": 2,
-                "Document.cookie setter": 2,
                 "Navigator.prototype.product": 2,
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "Event.prototype.timeStamp": 2
             },
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "4c6b8238224112dde0a10a3aae95d9e7e23bee7a3c98b76e00137f36370a34b3"
@@ -1755,7 +1960,7 @@
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "ab87c0762639a42c9e1e3dcd04ef697ec21569c9e0d9ecf1950e0002b7c99319"
@@ -1778,7 +1983,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "86c60688389c8cead16a30a506101a1ea14f6a55b2525625c28ff6a892ff9558"
@@ -1801,7 +2006,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "5eacb24dce95197ef1b8db870117adbf2be5642b5b0172e4502cf570d0602466"
@@ -1824,7 +2029,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "3a184146724eb688aada10fc99926358f17860ac4d45c43b8506193b8e383282"
@@ -1840,16 +2045,14 @@
         {
             "rule": "azureedge\\.net\\/livechatwidget\\/WebChatControl\\/lib\\/appinsights\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "oc-cdn-ocprod",
                 "oc-cdn-public"
             ],
-            "apis": {
-                "Document.cookie getter": 2
-            },
+            "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "5038ec8b627d1b4f565ebaf3360f3a8317182b7c3518525a337d86b335f302ae"
@@ -1871,10 +2074,10 @@
                 "oc-cdn-public"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "455ec8a3393811412b4fc92fd4475191d233e87d8723566520705caedbe0c05c"
@@ -1888,6 +2091,103 @@
             ]
         },
         {
+            "rule": "azureedge\\.net\\/livechatwidget\\/WebChatControl\\/lib\\/purify\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "oc-cdn-ocprod",
+                "oc-cdn-public"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "93d8446660114a3c908c7d4ff2ba5677fad8f436ddd493f8936abf807649d0db"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "clevelandclinic.org",
+                "www.braultetmartineau.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/release\\/0\\.2\\.1-main\\.689d795\\/SDK\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ocsdk-prod"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "311de590a990a385520a2f9d35f1f5f77cc08836f3b8f2bbbf0d8d9a2ffb95c5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "clevelandclinic.org",
+                "www.braultetmartineau.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/livechatwidget\\/WebChatControl\\/scripts\\/locale\\/1033\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "oc-cdn-ocprod",
+                "oc-cdn-public"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b9d2c77e6cd4411222a2b98a5b00f67c1794bb1f917cfc3039d9c6bec0cdce2c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "clevelandclinic.org",
+                "www.braultetmartineau.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/files\\/widget\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn-stamped-io"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e87b507dcf1026babc8bd24deabc7118cc941fbe032ba9369307a3f1207b9fbe"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mypatriotsupply.com",
+                "www.omfoods.com"
+            ]
+        },
+        {
             "rule": "azureedge\\.net\\/clients-promotool-images\\/90d464b9-3ff9-4101-9e34-309ffeaba43a_IMU\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1895,18 +2195,19 @@
                 "yoopify-cdn"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "7e55a46d5ee6bff333bfdf7d1fcff4041e1457d4c8a87076cfe5335e615fe7ea"
+                "fd478ebf5a32a0438f745a3bf44f35cee2a4203fae5f2325fe170656479dcd22"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "auto123.com",
-                "www.auto123.com"
+                "www.auto123.com",
+                "www.autoexpert.ca"
             ]
         },
         {
@@ -1918,7 +2219,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "sc01prodcdn.ccq.org",
@@ -1926,7 +2227,7 @@
                 }
             ],
             "responseHashes": [
-                "a4d8fc88be4b06a94fa23f04e9bd576f641cf942a5a085d50fb44549ea48a151"
+                "05dfdb79adaa2484acca733cb83ee03e5eebadc3d5998b0b844d1bb29f5b7ae6"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1945,7 +2246,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "sc01prodcdn.ccq.org",
@@ -1953,7 +2254,7 @@
                 }
             ],
             "responseHashes": [
-                "d6b3a93b6c5a6c6e649b2be286948937f56980964b31e21c5d31864bd25268da"
+                "753c034dd8bdd629a730d64b3a23b11bbfaab32b465ec3227d0858921ab4ac90"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1972,7 +2273,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "sc01prodcdn.ccq.org",
@@ -1980,7 +2281,7 @@
                 }
             ],
             "responseHashes": [
-                "d2ed2166dc3cbadaac64010ded15b5e5ae264fc40a1bc08c113d45f8472f8dd7"
+                "98a4cf270c0431425119d8b31232d29d727440129c66422b6f59826a8c4f49d8"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1999,7 +2300,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "assets.cmhc-schl.gc.ca",
@@ -2007,7 +2308,7 @@
                 }
             ],
             "responseHashes": [
-                "98b43db1cfb6139e30dc3242b14607867040f2b97f44aa4651f34af7e25ed755"
+                "331cbcb41244ff981b20b4779dda35ae584dd3bf150fbd00c611ae0eea8386b2"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2026,7 +2327,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "assets.cmhc-schl.gc.ca",
@@ -2034,7 +2335,7 @@
                 }
             ],
             "responseHashes": [
-                "dd48525ff48e34d1a202ebab54634efcba7a69c494b8d56a594aa428ba8d6b04"
+                "1bd261367f6d125f9b04c360ac1c7b21a1c2bdbd1f9b157741c1b225364a5ead"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2053,7 +2354,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "assets.cmhc-schl.gc.ca",
@@ -2061,7 +2362,7 @@
                 }
             ],
             "responseHashes": [
-                "9a9a7ed3e791e571b9a0e0027ba2eb3717d438b65b753ad60b7ed7e355d5f18c"
+                "6dc546f6d3d20c4d16a8f56cf5c844e44da9ffdbbb5093eed3fa5d2ffb852635"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2069,50 +2370,6 @@
             "exampleSites": [
                 "cmhc-schl.gc.ca",
                 "www.cmhc-schl.gc.ca"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/media\\/vueh35ed\\/devinci21_spartan-16\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "devinci-media-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [
-                "3c098c7e57f144776c4e9121d9f4af89b6ae947c54a01eae4f01f140e4832a0e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "devinci.com",
-                "www.devinci.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/media\\/lb3fpohc\\/ubm-5_ti\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "devinci-media-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [
-                "7674ff588fd4ffca4c3c1513d92ce09fd8f7784c325a3aac9e6e6dc449a698b1"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "devinci.com",
-                "www.devinci.com"
             ]
         },
         {
@@ -2124,7 +2381,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "assets.equifax.com",
@@ -2132,7 +2389,7 @@
                 }
             ],
             "responseHashes": [
-                "21fdb3d8f0fb34b81bd0b11b90125764a2b65936f1e9aa7c031869fd8478bf8e"
+                "22e7a1b10c110072f5a0bfd16e2197a76b279ec879bcce8978fada1dc9ee5d40"
             ],
             "type": "Font",
             "firstPartyCookies": {},
@@ -2151,7 +2408,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "assets.equifax.com",
@@ -2159,7 +2416,7 @@
                 }
             ],
             "responseHashes": [
-                "535d045a48e8cac6df4afa74ceeae58a532d7e5506397ac302d5a770e8a6627e"
+                "26b216fadb2ffcd542ca56c2d84f9918f62e40de89bf88b4211fffacd2a4ad83"
             ],
             "type": "Font",
             "firstPartyCookies": {},
@@ -2178,7 +2435,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "assets.equifax.com",
@@ -2186,7 +2443,7 @@
                 }
             ],
             "responseHashes": [
-                "f7fdea44a83f7c07d2143b6ab55c5db71d5c5b396b7ec1898a17fb2e05cf4855"
+                "a0357cb694b5284870c77c0dbcaf33f238004800419288afde313317b0dbd0b7"
             ],
             "type": "Font",
             "firstPartyCookies": {},
@@ -2197,263 +2454,717 @@
             ]
         },
         {
-            "rule": "azureedge\\.net\\/css\\/styles\\.min\\.20210901\\.css",
+            "rule": "azureedge\\.net\\/-\\/media\\/92963748f83d4cf78de74c43b2e1e902\\.ashx",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "fixcom",
-                "partselectca"
+                "fasken"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000309,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "64d19f909acee627f4e17548bb71a348bbe61a8c93933b31b0d76aa36e91a51e"
+                "a857deeafed27cfdf55d9d8b4b9970d28adf62128721c796578aebfae2e327f3"
             ],
-            "type": "Stylesheet",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "fix.com",
-                "www.partselect.ca",
-                "www.partselect.com"
+                "fasken.com",
+                "www.fasken.com"
             ]
         },
         {
-            "rule": "azureedge\\.net\\/includes\\/script\\.min\\.20210901\\.js",
-            "cookies": 0.000309,
-            "fingerprinting": 1,
+            "rule": "azureedge\\.net\\/-\\/media\\/6693951a1bff44a794a3c78c77e997e9\\.ashx",
+            "cookies": 0,
+            "fingerprinting": 0,
             "subdomains": [
-                "fixcom",
-                "partselectca"
+                "fasken"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Document.cookie setter": 3,
-                "Document.cookie getter": 3,
-                "Date.prototype.getTime": 3,
-                "window.devicePixelRatio": 3,
-                "window.localStorage": 1
-            },
-            "sites": 3,
-            "prevalence": 0.000309,
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "d27df0bffd3a56b05232502c4b779f04fd78aac8b5671c4b79b98f264d84f7e9"
+                "70af9a30694c24d5f578c7aad39ed7457f8170ee0e0d3423412fc56caba7cbb7"
             ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "acqData": {
-                    "ttl": null,
-                    "length": 154,
-                    "prevalence": 0.0003089916572252549,
-                    "uniqueness": 0.3333333333333333
-                },
-                "PageViewCount": {
-                    "ttl": null,
-                    "length": 1,
-                    "prevalence": 0.0003089916572252549,
-                    "uniqueness": 0.3333333333333333
-                },
-                "chref": {
-                    "ttl": null,
-                    "length": 1,
-                    "prevalence": 0.0003089916572252549,
-                    "uniqueness": 0.3333333333333333
-                },
-                "SearchSession_LT": {
-                    "ttl": 8643614,
-                    "length": 36,
-                    "prevalence": 0.0003089916572252549,
-                    "uniqueness": 1
-                },
-                "SearchSession_LT_Count": {
-                    "ttl": 8643614,
-                    "length": 1,
-                    "prevalence": 0.0003089916572252549,
-                    "uniqueness": 0.3333333333333333
-                },
-                "EnableLocalPickup": {
-                    "ttl": 1209621,
-                    "length": 5,
-                    "prevalence": 0.00010299721907508497,
-                    "uniqueness": 1
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fasken.com",
+                "www.fasken.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/-\\/media\\/ab43b2608bb74af99ffc899060d5433b\\.ashx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fasken"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "7b4355d530e506e8fb798d47647d3fde7116737b6e54aad804d4ed90e067530f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fasken.com",
+                "www.fasken.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/-\\/media\\/f43de6a9c4614417a2acd9a0e5ecbcaa\\.ashx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fasken"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e44a059ccd98ba8d73488dfc344b87ed60c3ac1990171e1c2ae556c4d58443d0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fasken.com",
+                "www.fasken.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/-\\/media\\/4b22b8045ccf4902a1ab51360b78ea20\\.ashx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fasken"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "279854f9cf80b89843ce983a2a8e7715f3ec6e9f56fb8d72173495b033452b52"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fasken.com",
+                "www.fasken.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/-\\/media\\/a2e5699e197c4526844e282e07bf12ab\\.ashx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fasken"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "a051a17299497b1f82df1f0f0d05ffdba54b1016d8f7c84f1e6925af9c6f4ff7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fasken.com",
+                "www.fasken.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/-\\/media\\/cb53a0835aa84508bb52725b48efa8fb\\.ashx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fasken"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b59737003ef73a124ea18c86c417b80869a8159b0c507b1cee06d64dff013aa5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fasken.com",
+                "www.fasken.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/-\\/media\\/097a25c48d3543fe970297cc7f98ee87\\.ashx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fasken"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "2db6c793aed5ad68d7ee1f8106239e1a2d4f8be804a71faa5fbd6fede6a22536"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fasken.com",
+                "www.fasken.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/-\\/media\\/aeb00735129644f29e63e1516b834a3c\\.ashx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fasken"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b9317e82ad271fb9418acdc23a4de824fe4c7530d31083a27f6f1a8a3f91527f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fasken.com",
+                "www.fasken.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/-\\/media\\/7d5da4114ae74d84a2386dacbf88cffe\\.ashx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fasken"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "4a73ea6d35166f7a6200c4fcf4c8656fab00ca45c70996fff8d96aa7c233dac9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fasken.com",
+                "www.fasken.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/-\\/media\\/34b6f5c891e34f36a0d2f6b9663896e9\\.ashx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fasken"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "0e3de96b28341b7db2bf78596d2f45cfdb9e55dd770e1ee6b3e80bf2128b01bc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fasken.com",
+                "www.fasken.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/-\\/media\\/d82fea7b6a5d4736a4faa5db043cde35\\.ashx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fasken"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "77e0e8fa797e490a3f845fa47f6bcc38a638b4f42fc00ad723f3b58dce3c9902"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fasken.com",
+                "www.fasken.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/-\\/media\\/7a321cac94f24bdfbbf1f6cc98cb342d\\.ashx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fasken"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "d3a889222be16a5e03903e6513a0490f0ef97c43d6219fc218209d3e02c7bf89"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fasken.com",
+                "www.fasken.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/-\\/media\\/1469dd57523d484c9edd059658c85c82\\.ashx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fasken"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "caa2c72e91a05b7a1560b496626e22d9af5d4d9d4a5dfea79abe87e6899e1383"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fasken.com",
+                "www.fasken.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/-\\/media\\/001ec65393e3459e9a50da3de617c0ba\\.ashx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fasken"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "5ba60feae29f660d2d0249e32a8eb3a87592172acfd2f1c70a60590ea0abf299"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fasken.com",
+                "www.fasken.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/-\\/media\\/94bbfe00484b405085609ff8ba3c6d0e\\.ashx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fasken"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "6682e91c15567823ec6c4e3182caeb01f00fe29bdb0062e32b7b50c3d1065cc3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fasken.com",
+                "www.fasken.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/-\\/media\\/a32d31a624674a57b397950a49aa64ac\\.ashx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fasken"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "caff17ba89153291175b680634222218c6646a92a301a70d6f481de1a910aa47"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fasken.com",
+                "www.fasken.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/-\\/media\\/a9e3f424ac964b0c91b8af31f86fee0c\\.ashx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fasken"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "18a951597fa66b5258313d1a7f94b38a2cc2231ee77e4e78c67a067ca4b1d995"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fasken.com",
+                "www.fasken.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/-\\/media\\/29b8b6a371344d40a392350b395691d6\\.ashx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fasken"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "98968f96caaa75ec6ccf07741785693270e1a682bea728ddfa44266aa90c5bc0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fasken.com",
+                "www.fasken.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/-\\/media\\/a434957cbfb6458f950678e94991206c\\.ashx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fasken"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "0c2b78cdd2c4adc0eb63a8597bc1905eba2fa4bd5b59cdb8110252e71dab1490"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fasken.com",
+                "www.fasken.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/-\\/media\\/a2a3934a60ee41e6a17ce322635f9f11\\.ashx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fasken"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "37c4d39fbf3afbac2490bcea94b8677dee42b05a251763721fdb7682a02850e6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fasken.com",
+                "www.fasken.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/-\\/media\\/805bbcaefeb84072af18d3ce3e0be181\\.ashx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fasken"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "7c1ef9de1c07256b3283ab02117eb1a62904fe93c9ff6421c472b33e115342fb"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fasken.com",
+                "www.fasken.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/-\\/media\\/c0e5b9f0154a4b618d81b4d34372a46b\\.ashx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fasken"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "68de0c1a15bc20d906ed45fd571db1adb17545db644108b53c623479b6596f4d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fasken.com",
+                "www.fasken.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/-\\/media\\/3da219576fca4b5aadc43992dce09c70\\.ashx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fasken"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "3a4e5a39c1d31770f02572c98b8a88b4e5c6c932398356531eb48cff39695c35"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fasken.com",
+                "www.fasken.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/-\\/media\\/b30511140b39413abb2e46df6bae2f7c\\.ashx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fasken"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "39c3dc3d773a6f08e9b14d041c58226f8baf4489ac6b421016828832da1fe814"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fasken.com",
+                "www.fasken.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/-\\/media\\/a629c020105c4ecf89343980db1718ad\\.ashx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fasken"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b364691bc193b4e01e321f1024bcb4ead4ff1d1ca4160a22268a5a7c21286bbd"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fasken.com",
+                "www.fasken.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/sidestage\\/300x250_oahu_v2\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "saambaa-static"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "99dfa2dcfadb4234717ec68bf121298feea3885a94c6559ff09bf04662edf3f9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fox26houston.com",
+                "www.simplemost.com",
+                "www.weatherbug.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/sidestage\\/300x250_cupcake_v2\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "saambaa-static"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "7b44a99588039defbad682dadf82d1cc4e79c3aaf77051c59fcee6d9af200cd9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fox26houston.com",
+                "www.simplemost.com",
+                "www.weatherbug.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/sidestage\\/300x250_iceland_v2\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "saambaa-static"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "6cc1af8a193625d2d1e28b6900209182606bf7e2653e7e3255fadb530b317b8c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fox26houston.com",
+                "www.simplemost.com",
+                "www.weatherbug.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/sidestage\\/300x250_moto_v2\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "saambaa-static"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "c4be143fb7904b6f82a163d2cf6e262e6afd33d7710f12eb8d1178e1239d8586"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fox26houston.com",
+                "www.simplemost.com",
+                "www.weatherbug.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/sidestage\\/300x250_divers_v2\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "saambaa-static"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "85312558ef07ec48880159ffbda74db925efb47e0a413c62627ef80c8575df0a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fox26houston.com",
+                "www.simplemost.com",
+                "www.weatherbug.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/hockey-canada\\/Logos\\/newlogo\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "agility"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.hockeycanada.ca",
+                    "resolved": "agility.azureedge.net"
                 }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fix.com",
-                "www.partselect.ca",
-                "www.partselect.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/assets\\/images\\/mega-mobile-phone\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "fixcom",
-                "partselectca"
             ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000309,
-            "cnames": [],
             "responseHashes": [
-                "520d199432c7cbbcaac6db8b351c71844d78ab5289de187a29a7ad0a8db6a477"
+                "da9f5820834023927fbc6021dc7cf6a248eefb286e5ce18851b49eb2d3490717"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "fix.com",
-                "www.partselect.ca",
-                "www.partselect.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/assets\\/images\\/cart\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "fixcom",
-                "partselectca"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000309,
-            "cnames": [],
-            "responseHashes": [
-                "60306aba822bd5cac02eeb4cb051c5cda62dac656c0c3bfc2f059c910e9d227e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fix.com",
-                "www.partselect.ca",
-                "www.partselect.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/assets\\/images\\/nav-menu-icon\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "fixcom",
-                "partselectca"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000309,
-            "cnames": [],
-            "responseHashes": [
-                "bdde7e055ab2b8ee38ed78f2e7f153b325c59a93f2178aa74b7f274ca45a5504"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fix.com",
-                "www.partselect.ca",
-                "www.partselect.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/assets\\/images\\/biz-bbb-A-plus\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "fixcom",
-                "partselectca"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000309,
-            "cnames": [],
-            "responseHashes": [
-                "6c45b6047916df28cd181ca546dd6daf93d795f87c5745db2d95b0996b453c94"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fix.com",
-                "www.partselect.ca",
-                "www.partselect.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/assets\\/images\\/money-back-guarantee\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "fixcom",
-                "partselectca"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000309,
-            "cnames": [],
-            "responseHashes": [
-                "787372528a349254e4a62b298478ebb47173a322e6005572104bff7e8a54a97b"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fix.com",
-                "www.partselect.ca",
-                "www.partselect.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/assets\\/images\\/quotes\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "fixcom",
-                "partselectca"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000309,
-            "cnames": [],
-            "responseHashes": [
-                "8aa53880d79aec414fe486f07ca42efaa33facccbfa466718fa5e2431ad10756"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fix.com",
-                "www.partselect.ca",
-                "www.partselect.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/assets\\/images\\/brands-sprite\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "fixcom",
-                "partselectca"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000309,
-            "cnames": [],
-            "responseHashes": [
-                "2cc2bdbf085d36e2e40e4057105d8986ed0cb3221a2679314fe9ab31287e0811"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fix.com",
-                "www.partselect.ca",
-                "www.partselect.com"
+                "hockeycanada.ca",
+                "www.hockeycanada.ca"
             ]
         },
         {
@@ -2465,7 +3176,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.hockeycanada.ca",
@@ -2473,7 +3184,7 @@
                 }
             ],
             "responseHashes": [
-                "2ea09ce7336b7bf41c3b41b6069115802250a6e571b25461ecce134941cab8a8"
+                "9840e8e8d25d357970f5bdf8e441dca7afb32cc49d649da66b267bad6ef1f745"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2492,7 +3203,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.hockeycanada.ca",
@@ -2500,7 +3211,7 @@
                 }
             ],
             "responseHashes": [
-                "679e80ea68544df408135bf8c17ef94d207f32948f0efb069d5fe91f9ca6f048"
+                "46a40da03bf82435930e7894ef142ca9eba3f6aa33ecb63cd76b848d4fd4702a"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2519,7 +3230,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.hockeycanada.ca",
@@ -2527,7 +3238,7 @@
                 }
             ],
             "responseHashes": [
-                "f4c609eb824335122c790ed252d3702a68b6b4ed5cdd2ccdaab42acfea170d00"
+                "e4031fd57c3d7160b271bf59029e258e24cfeec7eeeee43970e351e64f07709a"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2538,7 +3249,7 @@
             ]
         },
         {
-            "rule": "azureedge\\.net\\/hockey-canada\\/News\\/2021\\/2021-news-ben-preisner\\.jpg",
+            "rule": "azureedge\\.net\\/hockey-canada\\/Hockey-Programs\\/Community\\/2021\\/2021-hc-community-promo-e\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2546,7 +3257,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.hockeycanada.ca",
@@ -2554,7 +3265,7 @@
                 }
             ],
             "responseHashes": [
-                "f8ede17fb2512d7df227b549e80fa56c3896925eebc4b6a654667155846e17c2"
+                "4b9f4353bafd7bfb3a79020146d5bcc7d41b735563d7c2d02039575ecfe307a7"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2565,15 +3276,37 @@
             ]
         },
         {
-            "rule": "azureedge\\.net\\/api\\/domaincookie\\/1181920345",
-            "cookies": 0.000206,
+            "rule": "azureedge\\.net\\/media\\/image\\/product\\/en\\/small\\/0000000004022\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sob-prd-cdn-products"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "947401a20933ee8652f9285dbcd28cb815568764fc96339919915cb33b76a3af"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "iga.net",
+                "www.thriftyfoods.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/api\\/domaincookie\\/1806900772",
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "jabra-prod-cdn"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "www.fr.jabra.ca",
@@ -2585,7 +3318,7 @@
                 }
             ],
             "responseHashes": [
-                "912ec7f5b3f5c46eda8e14522f68ad424a51999b6e17650fed01980d0c56b601"
+                "9c6d485ae01a594ef22b3c44e1eca5314259061faacdcdfc51569aba58a4fc2b"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2597,47 +3330,25 @@
         },
         {
             "rule": "azureedge\\.net\\/scripts\\/sdt1\\.js",
-            "cookies": 0.000103,
-            "fingerprinting": 2,
+            "cookies": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "mazda-tagging-prod",
                 "mbusa-tagging-prod"
             ],
             "apis": {
                 "window.sessionStorage": 2,
-                "Document.cookie getter": 1,
-                "Document.cookie setter": 1,
-                "Navigator.prototype.userAgent": 1,
-                "Screen.prototype.colorDepth": 1,
-                "Navigator.prototype.plugins": 1,
-                "Navigator.prototype.javaEnabled": 1,
-                "Navigator.prototype.language": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "window.localStorage": 1,
-                "Date.prototype.getTime": 1
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "38fc5c69272643ab3773ac9ebc3a6696532a8780ccf04c2588a4f20c05d6f6b7"
+                "c2e57d1d9cd7bd4e41fff6b25f1bbd76a526679e67beee41cca6446af18e45c2"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "_sd:mazda:T1:user": {
-                    "ttl": 31536040,
-                    "length": 88,
-                    "prevalence": 0.00010299721907508497,
-                    "uniqueness": 1
-                },
-                "_sd:mazda:T1:session": {
-                    "ttl": null,
-                    "length": 136,
-                    "prevalence": 0.00010299721907508497,
-                    "uniqueness": 1
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mazdausa.com",
@@ -2645,35 +3356,201 @@
             ]
         },
         {
-            "rule": "azureedge\\.net\\/scripts\\/jsinclude\\.bdl",
+            "rule": "azureedge\\.net\\/scripts\\/sdanalytics\\/sda_fp\\.js",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 3,
             "subdomains": [
-                "musiquegagne-1"
+                "sdtagging"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "window.indexedDB": 1,
-                "HTMLMediaElement.prototype.canPlayType": 1,
-                "window.localStorage": 1,
-                "window.sessionStorage": 1,
-                "Navigator.prototype.vendor": 1,
-                "Date.prototype.getTime": 1,
-                "Navigator.prototype.appCodeName": 1,
-                "Event.prototype.timeStamp": 1
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Navigator.prototype.deviceMemory": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "window.indexedDB": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.plugins": 2,
+                "CanvasRenderingContext2D.prototype.isPointInPath": 2,
+                "HTMLCanvasElement.prototype.toDataURL": 2,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
+                "WebGLRenderingContext.prototype.getParameter": 2,
+                "WebGLRenderingContext.prototype.getContextAttributes": 2,
+                "WebGLRenderingContext.prototype.getExtension": 2,
+                "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 2,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Navigator.prototype.productSub": 2,
+                "OfflineAudioContext.prototype.constructor": 2,
+                "AudioBuffer.prototype.getChannelData": 2
             },
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "17385f8d27ad8c213221d2cd96dcca7cc97341597eaca903a6f21f635636de60"
+                "330903a9dc97267e9d8b2a542f4eb749773276640fb4ab69b50b1748a871e8db"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "musiquegagne.com",
-                "www.musiquegagne.com"
+                "mazdausa.com",
+                "www.mbusa.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/b2c-experience-production\\/assets\\/cktv6wj0u000101sb867ksgt1\\/apos-minified\\/anon-cktv6wj0u000101sb867ksgt1\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dcadprod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "640b7b9bda1667a49684dcc6dbc465358066da600b07c34d09607edfc100d5b4"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "michelinman.com",
+                "www.michelin.ca"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/b2c-experience-production\\/assets\\/cktv6wj0u000101sb867ksgt1\\/modules\\/my-apostrophe-assets\\/fonts\\/notosans-regular\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dcadprod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "cff0dfe762180ef56727d73ec129f503507394dda0096f66126d0bedae172dc6"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "michelinman.com",
+                "www.michelin.ca"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/b2c-experience-production\\/assets\\/cktv6wj0u000101sb867ksgt1\\/modules\\/my-apostrophe-assets\\/fonts\\/notosans-bold\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dcadprod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "73fc8b1b112f35e5140f9f69f82ceff5d8fbcac83e54f55157c0735d88c68c8d"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "michelinman.com",
+                "www.michelin.ca"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/b2c-experience-production\\/assets\\/cktv6wj0u000101sb867ksgt1\\/apos-minified\\/anon-cktv6wj0u000101sb867ksgt1\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "dcadprod"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.product": 2,
+                "Event.prototype.timeStamp": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "window.devicePixelRatio": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.cookieEnabled": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "6822f6605ab490dee76d0d0af8903c61f24b28cff7d8377d6ec1dfcd37e401d6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "michelinman.com",
+                "www.michelin.ca"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/css\\/styles\\.min\\.20210920\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "partselectca"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "64d19f909acee627f4e17548bb71a348bbe61a8c93933b31b0d76aa36e91a51e"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "partselect.ca",
+                "www.partselect.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/includes\\/script\\.min\\.20210920\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "partselectca"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "window.devicePixelRatio": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "d27df0bffd3a56b05232502c4b779f04fd78aac8b5671c4b79b98f264d84f7e9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "partselect.ca",
+                "www.partselect.com"
             ]
         },
         {
@@ -2685,10 +3562,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "8b1814332d94e77145ebf5b5559f356df46df0545e33af508e76e7bede3a990f"
+                "0270f616ac4ef9180f97c862517a9cd3e87a036501acb57d7ebe4973e873a717"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2707,10 +3584,32 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "abdff1b1cbd9326ab6a2aa2f373b11bb6e0038ab713b90b0048185963a217c53"
+                "4cc0ba89a76263757bc28a6f2e7bec248ed88f7c27e78abc8c4c29704373f651"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "partselect.ca",
+                "www.partselect.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/assets\\/images\\/mega-mobile-phone\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "partselectca"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "efb8ff027df86e44a69a407bfa7fa61bca86967c4804661d46c87450a6d56e6a"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2729,10 +3628,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "5d6e45589ca114dc1624f1fc303b499d4c1f2b3cc3f63f8e3236e1ae45ba6fdc"
+                "38cce4b632134b497fb76d874dafdb2f68ab5b702058f5f64f4c1c6381ad180c"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2751,10 +3650,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "c1f29c48ef07e7b90528d1cf544413a7fe7c3cb7ad6ce89c7b46a9a02e6feddf"
+                "bf3189690168e389d68058f70ad7c46b39343526c32b55094c7e5d901c8f8019"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2773,10 +3672,32 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "dfaa91644ac58daf595ed67ac4c887dcaf0a705b80fcc087b9f976a966bd4d6b"
+                "e0ee6ce31a24984036bfd39b55ea8d696734e1eaa40c30010cf12c63fd04e196"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "partselect.ca",
+                "www.partselect.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/assets\\/images\\/cart\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "partselectca"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "030ea5f225d1eec97339130d98668279d695d49403cf5035331441bb14178da9"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2795,10 +3716,32 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "fbdb35a6c167fa91a86fb6c5cd28c226a2f97fbcb0385d817b46c018f985dfee"
+                "45485e710261adc745b0c3a096b4855f8260ed0b7d6664e009fb765538e09116"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "partselect.ca",
+                "www.partselect.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/assets\\/images\\/nav-menu-icon\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "partselectca"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e12176aef9ed7901cd1dc2b68641c7903cbfa75d563584aa89abfea7d5b508ce"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2817,10 +3760,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "9d8fb5da9ce09f28d9ffab9e284e4b4e0cdc66263c94741253610b032218b224"
+                "f91c958eaf0007e6d53495ed4574a2bd3d4138c45e6552bcb7b8d0d6a46a5a05"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2839,10 +3782,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "4efdf992b8d284bff252be5fc48ded2586ecefbbef52d3076cd20b6deb0dae07"
+                "5e4a0515973dc7556ca8d35f3efd96199939393089fbe5e4da3fa95e28d0a05a"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2861,10 +3804,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "04b15408601b5b8aa9ee3231e889b6656358c894a9879a122a3c7763ec00b24e"
+                "07d30654c2fd0c06876ab60aad7fcbbae53761c6383fd1b5c06cfeec22cf6889"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2883,10 +3826,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "4a0e127afcaa699673b3d267dc809732d686bf82456c41f3432c71839c5e970f"
+                "eecf48825ce9c4f1eb9403c05b336fe5bb13a872839972f2c6f06b7b9700967e"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2905,10 +3848,54 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "01f547f444a967bbca48f4d433e583f603ec136deb422b71ed51c45cb7139eee"
+                "3f432c55599fc8cac2a966bb0f08969edc23527b4f08c1c92af66513f3c63862"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "partselect.ca",
+                "www.partselect.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/assets\\/images\\/biz-bbb-A-plus\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "partselectca"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "2323902a3f84a9ab2ba58143ed878b5274e8481541a1448918b2efa8b0fd6a15"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "partselect.ca",
+                "www.partselect.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/assets\\/images\\/money-back-guarantee\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "partselectca"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "3f2dc6a6a4ee157a8962f5cdbf67f45020e8c27d36648aa0eb69bca9cb8e6748"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2927,10 +3914,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "79e989dfea94e8b9f2ad0f3a6b4a88f4201f28328a7024f8fd99ee4559257f8d"
+                "9e730d017cc2446075ed6e9c21d020c405bbfbd445986ede89a140d3745dddca"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2949,10 +3936,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "7753f52e3412f366e97361538c01fcba12bf0b99747537e70d0a64f66a3eea73"
+                "d043ede7eff067ac080c9fe28505b5e24902a4d781a3c2b221cdd6a59d358131"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2971,10 +3958,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "7fef3d3a85b96e4947d2b197b92b2a266116e351631250f473fbe3622a962092"
+                "3fbda87722b5378bdf6e5856c6dcdef5c730ab5bad0d2f053c9236d907bafb89"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2993,10 +3980,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "553db9462767cbd8b13b43605b588411a0707c35d3d4be7147a8680133c6b075"
+                "712e58418e17bfbf39f7201ffb5b6735e6d3d9af35bff0ff163dd3c96f620baf"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -3015,10 +4002,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "5dede732cfcab4f679f5f9d11da4ac67669ce2cf46f94f34808b6899d34ec1ee"
+                "b5c6375adb2e418f1186e032be0f34c9af0a6228496ea5e3922d61a1cceebd53"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -3037,10 +4024,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "d21d87ff5d0b51dc662ac982bae82384fa1eec3fa02dbe3b40403050a9f9a7db"
+                "5b94a7e51a651d991bf58712b61cb02f138ffd3627be016938c5ebb096bc3f25"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -3059,10 +4046,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "5268990a39e3da99ee1b9697477ee4bb3a423e5214b3186e59b08f94c710b17e"
+                "137d92bc888bda7a967a1a54ab18fee876aa209f6bd222ad39db0b55ad753ab0"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -3081,10 +4068,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "0c915f11cc3d6f2ed4fc58d19472d02351119e20c60d84800c16da23773c853f"
+                "79849cfb05b3a552a12af9a85fe1e9db35612763f6b34718b00bfc51b0674122"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -3103,10 +4090,32 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "86f16e34817aaf7d57ea27994a06094f0c198040d44c5bd28094b0593265ce43"
+                "3f14f80582f5bfd160400ddb6016cf12b0bf30695944f3bfc2e29f98de797157"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "partselect.ca",
+                "www.partselect.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/assets\\/images\\/quotes\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "partselectca"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "38586eedabacf1dfb4568dd877d47974358efb02f43baed94c49106a5963151c"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -3125,10 +4134,32 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "f018eab3bccf5c81369dc9541267df33f23d5989d592b159bf41c1258637e4c9"
+                "e9bc3e890104cbc40e0f68511fc1f3917965c4acc16b5fb5c1c83097ceea9734"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "partselect.ca",
+                "www.partselect.com"
+            ]
+        },
+        {
+            "rule": "azureedge\\.net\\/assets\\/images\\/brands-sprite\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "partselectca"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "5e977aa29a3eb07802a2c0ef055ff3e700fceb1e67d31e642aefdc2c94e5490c"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -3147,10 +4178,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "7e303072f21fbb89fb1d22cc55dd16d4a011ccdae784efa8322e2d3b429f7965"
+                "99e8a20b5cd706709a0a5bd7f2554ac345098c3ae23ef8ce9d8fae5ab36c364f"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -3169,7 +4200,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.reverso.net",
@@ -3188,860 +4219,165 @@
             ]
         },
         {
-            "rule": "azureedge\\.net\\/sites\\/default\\/files\\/advagg_css\\/css__D0lqbBbg1dAxO4EA2rdPeQmHX9mKweGnzpv0rzSeeBk__2PMb12s8F9YtKS0dRZoMABE2Ruo550iQ5SKWAvWg1pY__96DUlD7XAD0epknL6Gt5gBmNeOp5QiwdjZtRKUkLMoM\\.css",
+            "rule": "azureedge\\.net\\/-\\/media\\/upmc\\/logos\\/upmclogosvg\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "snwcdnprod"
+                "cdn-upmc"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [
-                "277c5c41f08133107f91d8f54b9fa97c627a1530ac47e109b8ad5f9a563f04a1"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "smith-wesson.com",
-                "www.smith-wesson.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/sites\\/default\\/files\\/advagg_css\\/css__ctTL9FiZarcL9DEbGQ-4kI1AnWQtyxuiIXa_0s0In28__F6wzBE7ZkFoaueAAs2wbx2dgtRUUdBwkaZvwOnFtalM__96DUlD7XAD0epknL6Gt5gBmNeOp5QiwdjZtRKUkLMoM\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "snwcdnprod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [
-                "b5f683ab1db6f551ae26a258d0436380ea7d52731b0acc1f30b93b96ae194358"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "smith-wesson.com",
-                "www.smith-wesson.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/sites\\/default\\/files\\/advagg_js\\/js__FGQoIC9gLcXmlJJ8nGAVeqiVv3-CNcxzHViAiMMghDM__Cdw6mMlqX2yqoNHckiyJoRf2IZSyp9lBtI8P8gXskG8__96DUlD7XAD0epknL6Gt5gBmNeOp5QiwdjZtRKUkLMoM\\.js",
-            "cookies": 0.000206,
-            "fingerprinting": 1,
-            "subdomains": [
-                "snwcdnprod"
-            ],
-            "apis": {
-                "Document.cookie setter": 2,
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [
-                "f771dd964c84c66b6932cc04974d6a2f0fa515d69125eddda46ea4d2443cf24c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "has_js": {
-                    "ttl": null,
-                    "length": 1,
-                    "prevalence": 0.00020599443815016993,
-                    "uniqueness": 0.5
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.upmc.com",
+                    "resolved": "cdn-upmc.azureedge.net"
                 }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "smith-wesson.com",
-                "www.smith-wesson.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/sites\\/default\\/files\\/advagg_js\\/js__oVl8MJi_PurI9XOTr7AjYixUTN24pchv5RNRiMT6Zwc__5TzvMxmL1Q0BTHS8DiqKGFGMwdtZspJSWk89zn3ftgo__96DUlD7XAD0epknL6Gt5gBmNeOp5QiwdjZtRKUkLMoM\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "snwcdnprod"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
             "responseHashes": [
-                "0ca3bebe7a101d9eaac33a15e146b0f58b67dd3d46c3d3aa1a8bde15b848d3a3"
+                "c3e3a21d835532812b99a21b6ff69b0dc4dba333a9698c3f37fe1f39ae739511"
             ],
-            "type": "Script",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "smith-wesson.com",
-                "www.smith-wesson.com"
+                "upmc.com",
+                "www.upmc.com"
             ]
         },
         {
-            "rule": "azureedge\\.net\\/sites\\/default\\/files\\/advagg_js\\/js__X2m5BFp2yHpxBKB0XCZitYfFijYRhSrAh3gkN8kRiXc__T6kTqy-A9D1fPqFpuFWuPamjA30t71Y7-VW8Tg5lZHU__96DUlD7XAD0epknL6Gt5gBmNeOp5QiwdjZtRKUkLMoM\\.js",
+            "rule": "azureedge\\.net\\/-\\/media\\/upmc\\/homepage\\/featured-banners\\/essentialcarebanner\\.png",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
-                "snwcdnprod"
+                "cdn-upmc"
             ],
-            "apis": {
-                "Document.cookie getter": 2
-            },
+            "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [
-                "f20192f4763817b4b99a60788913366b4cbcc43987db3cd0da90cc566f176637"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "smith-wesson.com",
-                "www.smith-wesson.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/sites\\/default\\/files\\/googleanalytics\\/analytics\\.js",
-            "cookies": 0.000206,
-            "fingerprinting": 2,
-            "subdomains": [
-                "snwcdnprod"
-            ],
-            "apis": {
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.colorDepth": 2,
-                "Navigator.prototype.plugins": 2,
-                "Navigator.prototype.javaEnabled": 2,
-                "Navigator.prototype.language": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie getter": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [
-                "fd222137f245c06ddb4c4d44db41f12138dad6cf8ef5d4d4a5e500f38f0c8c62"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "_ga": {
-                    "ttl": 63072031,
-                    "length": 27,
-                    "prevalence": 0.00020599443815016993,
-                    "uniqueness": 0.5
-                },
-                "_gid": {
-                    "ttl": 86431,
-                    "length": 27,
-                    "prevalence": 0.00020599443815016993,
-                    "uniqueness": 0.5
-                },
-                "_gat": {
-                    "ttl": 75,
-                    "length": 1,
-                    "prevalence": 0.00020599443815016993,
-                    "uniqueness": 0.5
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.upmc.com",
+                    "resolved": "cdn-upmc.azureedge.net"
                 }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "smith-wesson.com",
-                "www.smith-wesson.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/assets\\/styles\\/main\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wwprod"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/assets\\/images\\/flags\\/en-us\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wwprod"
+            "responseHashes": [
+                "72f99a02915b430821a79c926d9511031ae9aefd3c0f24b1260b72f65a73d5e9"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
+                "upmc.com",
+                "www.upmc.com"
             ]
         },
         {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/assets\\/images\\/flags\\/en-au\\.png",
+            "rule": "azureedge\\.net\\/-\\/media\\/upmc\\/siteassets\\/footerimage\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "wwprod"
+                "cdn-upmc"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.upmc.com",
+                    "resolved": "cdn-upmc.azureedge.net"
+                }
+            ],
+            "responseHashes": [
+                "3d97ffad6f13618b0588469190b69a08044ed9adc0f0e4ec491924b13ee78ed4"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
+                "upmc.com",
+                "www.upmc.com"
             ]
         },
         {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/assets\\/images\\/flags\\/en-ie\\.png",
+            "rule": "azureedge\\.net\\/-\\/media\\/upmc\\/patient-portal\\/myupmc\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "wwprod"
+                "cdn-upmc"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.upmc.com",
+                    "resolved": "cdn-upmc.azureedge.net"
+                }
+            ],
+            "responseHashes": [
+                "b91f5147589064f3d1d430c8b375095070adeb3faf7fd846f2d53470c54b2f69"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
+                "upmc.com",
+                "www.upmc.com"
             ]
         },
         {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/assets\\/images\\/flags\\/de-de\\.png",
+            "rule": "azureedge\\.net\\/-\\/media\\/upmc\\/patient-portal\\/upmc-central-pa-portal-logo-176px\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "wwprod"
+                "cdn-upmc"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.upmc.com",
+                    "resolved": "cdn-upmc.azureedge.net"
+                }
+            ],
+            "responseHashes": [
+                "29c91059f8accf8bc83afced34c467e6b1174ee0cc9240457c9a0d3039b6b8b9"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
+                "upmc.com",
+                "www.upmc.com"
             ]
         },
         {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/assets\\/images\\/flags\\/en-ca\\.png",
+            "rule": "azureedge\\.net\\/-\\/media\\/upmc\\/patient-portal\\/cole-connect-logo-white-176px\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "wwprod"
+                "cdn-upmc"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.upmc.com",
+                    "resolved": "cdn-upmc.azureedge.net"
+                }
+            ],
+            "responseHashes": [
+                "e1b9e82adeac336805c0c28713fa47017fbdb11302359d97530361c41471f9cf"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/assets\\/images\\/flags\\/en-gb\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wwprod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/assets\\/images\\/flags\\/fr-fr\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wwprod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/assets\\/images\\/flags\\/es-es\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wwprod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/assets\\/images\\/flags\\/ru-ru\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wwprod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/assets\\/images\\/flags\\/en-sg\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wwprod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/assets\\/images\\/flags\\/ja-jp\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wwprod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/assets\\/images\\/flags\\/it-it\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wwprod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/assets\\/images\\/flags\\/en-nz\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wwprod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/assets\\/images\\/flags\\/pt-pt\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wwprod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/assets\\/images\\/flags\\/en-hk\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wwprod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/assets\\/images\\/flags\\/zh-cn\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wwprod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/assets\\/images\\/flags\\/pt-br\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wwprod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/media\\/wickedweasel\\/logo\\/logo_top\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wwprod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/media\\/wwtagline\\/logo_bottom_original\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wwprod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/assets\\/images\\/placeholder\\/sub-menu-grad\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wwprod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/media\\/wickedweasel\\/promo%20gift%20voucher\\/promoimage\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wwprod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/media\\/wickedweasel\\/home%20page\\/2021\\/08\\/24\\/sf-bikinis-sailor-stripe-navy\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wwprod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/media\\/wickedweasel\\/home%20page\\/2021\\/09\\/16\\/sf-lingerie\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wwprod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/media\\/wickedweasel\\/home%20page\\/2021\\/09\\/16\\/sf-outers\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wwprod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/media\\/wickedweasel\\/home%20page\\/2021\\/09\\/16\\/sf-activewear\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wwprod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/media\\/wickedweasel\\/home%20page\\/2021\\/09\\/08\\/collage-top-left-desktop\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wwprod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/media\\/wickedweasel\\/home%20page\\/2021\\/09\\/08\\/collage-bottom-left-desktop\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wwprod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/media\\/wickedweasel\\/home%20page\\/2021\\/09\\/07\\/collage-top-middle-desktop\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wwprod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/media\\/wickedweasel\\/home%20page\\/2021\\/06\\/18\\/collage-middle-bottom-desktop\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wwprod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/media\\/wickedweasel\\/home%20page\\/2021\\/09\\/08\\/collage-top-right-desktop\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wwprod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/media\\/wickedweasel\\/home%20page\\/2021\\/09\\/08\\/collage-bottom-right-desktop\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wwprod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/assets\\/scripts\\/modernizr\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wwprod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
-            ]
-        },
-        {
-            "rule": "azureedge\\.net\\/cmsstorage\\/wickedweasel\\/assets\\/scripts\\/main\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wwprod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wickedweasel.com",
-                "www.wickedweasel.com"
+                "upmc.com",
+                "www.upmc.com"
             ]
         },
         {
@@ -4053,7 +4389,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn2.yalemedicine.org",
@@ -4080,7 +4416,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn2.yalemedicine.org",
@@ -4107,7 +4443,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn2.yalemedicine.org",
@@ -4134,7 +4470,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn2.yalemedicine.org",
@@ -4161,7 +4497,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn2.yalemedicine.org",
@@ -4188,7 +4524,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn2.yalemedicine.org",
@@ -4211,20 +4547,20 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.00278,
+    "cookies": 0.00231,
     "types": {
-        "Font": 17,
-        "Script": 89,
+        "Script": 99,
+        "Font": 23,
         "Fetch": 5,
-        "Image": 224,
-        "Stylesheet": 21,
+        "Image": 235,
+        "Stylesheet": 19,
         "Document": 2,
         "XHR": 2
     },
     "nameservers": [
-        "ns2-06.azure-dns.net",
-        "ns3-06.azure-dns.org",
         "ns4-06.azure-dns.info",
-        "ns1-06.azure-dns.com"
+        "ns1-06.azure-dns.com",
+        "ns2-06.azure-dns.net",
+        "ns3-06.azure-dns.org"
     ]
 }

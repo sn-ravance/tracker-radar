@@ -9,13 +9,23 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000412,
-    "sites": 4,
+    "prevalence": 0.000703,
+    "sites": 7,
     "subdomains": [
+        "cisco-dsc-prod",
+        "inquirer-portal",
         "ecollege-prod",
         "cmg-prod"
     ],
     "cnames": [
+        {
+            "original": "api.inquirer.com",
+            "resolved": "inquirer-portal.apigee.net"
+        },
+        {
+            "original": "dsc.cisco.com",
+            "resolved": "cisco-dsc-prod.apigee.net"
+        },
         {
             "original": "login.pearson.com",
             "resolved": "ecollege-prod.apigee.net"
@@ -23,6 +33,58 @@
     ],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "apigee\\.net\\/v1\\/netid",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cisco-dsc-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "dsc.cisco.com",
+                    "resolved": "cisco-dsc-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [
+                "49989ff49336b2134ce2a471edaf2f8d0ecfc2e7d6dabddf4c062708cf49f7f4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cisco.com",
+                "www.cisco.com"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/v1\\/statsinc\\/stats-query\\/baseball\\/mlb\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "inquirer-portal"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.inquirer.com",
+                    "resolved": "inquirer-portal.apigee.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "inquirer.com",
+                "www.inquirer.com"
+            ]
+        },
         {
             "rule": "apigee\\.net\\/v1\\/piapi\\/login\\/js\\/v2\\/session\\.js",
             "cookies": 0,
@@ -32,7 +94,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "login.pearson.com",
@@ -59,10 +121,32 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "0e2bbf5006d497792a8b5111f3fda7a72b4151d5d5790cac7638b9f244377264"
+                "74bf189b07f8fc62d93ea3194f141d8af15b94c45b8a5345700bb8780a59d37a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tvguide.com",
+                "www.tvguide.com"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/v1\\/xapi\\/tvschedules\\/tvguide\\/tonight\\/9100001138\\/new\\/web",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cmg-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "fd2c6725e4452d658efeecbe3eca184a9e7e7ceaf3c7409cd3b92bf3b3016f8a"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -77,10 +161,11 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000103,
+    "cookies": 0.0001,
     "types": {
-        "Script": 2,
-        "XHR": 2
+        "Script": 4,
+        "Fetch": 2,
+        "XHR": 4
     },
     "nameservers": [
         "ns-116.awsdns-14.com",

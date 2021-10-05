@@ -9,22 +9,23 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000721,
-    "sites": 7,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
-        "global"
+        "global",
+        "http2.global"
     ],
     "cnames": [
         {
-            "original": "api2.fantasy.nfl.com",
-            "resolved": "global.nfl.map.fastly.net"
+            "original": "api.nfl.com",
+            "resolved": "http2.global.nfl.map.fastly.net"
         },
         {
-            "original": "p.nfltags.com",
+            "original": "api2.fantasy.nfl.com",
             "resolved": "global.nfl.map.fastly.net"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "nfl\\.map\\.fastly\\.net\\/v2\\/game\\/state",
@@ -35,14 +36,16 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "api2.fantasy.nfl.com",
                     "resolved": "global.nfl.map.fastly.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "654f35679f98869ccf070be7892ff7adcac4439ba8d4a0725984f5994760829f"
+            ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -52,28 +55,55 @@
             ]
         },
         {
-            "rule": "nfl\\.map\\.fastly\\.net\\/nfl\\/NflUmdComponents\\.vendor\\.js",
+            "rule": "nfl\\.map\\.fastly\\.net\\/identity\\/v1\\/token\\/client",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "global"
+                "http2.global"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "p.nfltags.com",
-                    "resolved": "global.nfl.map.fastly.net"
+                    "original": "api.nfl.com",
+                    "resolved": "http2.global.nfl.map.fastly.net"
                 }
             ],
-            "responseHashes": [],
-            "type": "Script",
+            "responseHashes": [
+                "9ffc4c2085b4c5ba61064a8c2fcd8f82842d3e5f1af41e68da6bf9642059cdf8"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "buffalobills.com",
-                "www.buccaneers.com"
+                "nfl.com",
+                "www.nfl.com"
+            ]
+        },
+        {
+            "rule": "nfl\\.map\\.fastly\\.net\\/football\\/v2\\/weeks\\/date\\/2021-10-01",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "http2.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.nfl.com",
+                    "resolved": "http2.global.nfl.map.fastly.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nfl.com",
+                "www.nfl.com"
             ]
         }
     ],
@@ -90,8 +120,7 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Fetch": 2,
-        "Script": 2
+        "Fetch": 6
     },
     "nameservers": []
 }

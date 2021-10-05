@@ -7,17 +7,20 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00165,
-    "sites": 16,
+    "prevalence": 0.00181,
+    "sites": 18,
     "subdomains": [
         "sonos",
         "rvshare",
         "bose",
         "cheaper-than-dirt",
+        "the-childrens-place",
+        "everlywell",
         "gnc",
-        "harryrosen",
-        "jp-cycles",
+        "lasenza",
+        "policygenius",
         "revzilla",
+        "shutterstock",
         "simon-and-schuster",
         "wine",
         "2ndswing",
@@ -33,12 +36,16 @@
             "resolved": "bose.extole.io"
         },
         {
+            "original": "refer.childrensplace.com",
+            "resolved": "the-childrens-place.extole.io"
+        },
+        {
             "original": "refer.gnc.com",
             "resolved": "gnc.extole.io"
         },
         {
-            "original": "refer.harryrosen.com",
-            "resolved": "harryrosen.extole.io"
+            "original": "refer.lasenza.ca",
+            "resolved": "lasenza.extole.io"
         },
         {
             "original": "refer.wine.com",
@@ -51,6 +58,10 @@
         {
             "original": "share.cheaperthandirt.com",
             "resolved": "cheaper-than-dirt.extole.io"
+        },
+        {
+            "original": "share.policygenius.com",
+            "resolved": "policygenius.extole.io"
         },
         {
             "original": "share.rvshare.com",
@@ -69,25 +80,31 @@
     "resources": [
         {
             "rule": "extole\\.io\\/core\\.js",
-            "cookies": 0.000412,
+            "cookies": 0.000703,
             "fingerprinting": 1,
             "subdomains": [
                 "sonos",
                 "rvshare",
                 "bose",
                 "cheaper-than-dirt",
+                "the-childrens-place",
+                "everlywell",
                 "gnc",
-                "harryrosen",
-                "jp-cycles",
+                "lasenza",
+                "policygenius",
                 "revzilla",
+                "shutterstock",
                 "simon-and-schuster",
                 "wine"
             ],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 3,
+                "Document.cookie getter": 1,
+                "Navigator.prototype.platform": 1,
+                "Document.cookie setter": 1
             },
-            "sites": 11,
-            "prevalence": 0.00113,
+            "sites": 15,
+            "prevalence": 0.00151,
             "cnames": [
                 {
                     "original": "share.sonos.com",
@@ -110,12 +127,20 @@
                     "resolved": "cheaper-than-dirt.extole.io"
                 },
                 {
+                    "original": "refer.childrensplace.com",
+                    "resolved": "the-childrens-place.extole.io"
+                },
+                {
                     "original": "refer.gnc.com",
                     "resolved": "gnc.extole.io"
                 },
                 {
-                    "original": "refer.harryrosen.com",
-                    "resolved": "harryrosen.extole.io"
+                    "original": "refer.lasenza.ca",
+                    "resolved": "lasenza.extole.io"
+                },
+                {
+                    "original": "share.policygenius.com",
+                    "resolved": "policygenius.extole.io"
                 },
                 {
                     "original": "share.simonandschuster.com",
@@ -127,17 +152,29 @@
                 }
             ],
             "responseHashes": [
-                "05b9db5aa4922a44b45928eceb5d8f4d11d1d6674e3e050a26b932c54f05ea9f",
-                "44000b01dbce1592d4c132997ce4abef872118768f570836b0ab8631ce5b919d",
-                "77a40e19af79c7821de7d8a8aa4a089f7a1f6fe6966078ac9bd10aad0d248ec4",
-                "4b47ebdd8e6bb370249def59eff674b0360f4af57f840272cf53a8b28ae40ccd",
-                "97e492121d94f87574e263b420657b407211813428bea636c1c2d2c5891a1789",
-                "2cc967c586b6fdcea3e575de932a920c5965b6cd61cb1dc0011b74875bb67295",
-                "3ee22903be2a1a5125c9e26ea9e8dd13fada68932a4f1984392979f30c64a40a",
-                "8750530fdb7e388d6475cacfb3e75e597b8368bf82a6457499baca9309cbbbe1"
+                "9b414ded7f1d04c1393bcc706cd4dd510a0edb169f24d9788a45454f682dd4d9",
+                "5ec002fccef3627fa0ca4ad7d641eb8ff426c3e1149dba7b95aa5f6789139b4a",
+                "22bf14ff21faa6d7efce39023273abcc7aca13a1099e7494dfb716f171342680",
+                "9e6a737d1eaa9f3dc1d4dc5135ddb29745f64ced7a6a0149fa4d4cf96dc654b3",
+                "81f7b75aebd65fd7bb74a63d854f9bde93ac0ec9394f6ae7fd061f0629678be2",
+                "83ddde4d4bf566aeb205b6d5a632a33260ce2fa174e47b9b45a55f0c4e2447e3",
+                "9622febd765aa358c8b9577e65250cfdb729a2288abd66468701daf7891a37f1",
+                "11d90508c67a218052392b054a5fcbf59fb4242f7f407f5fcd82508c7858c075",
+                "752e1a0f3040b236c4ea387313f55ebf0aef4895f25dda1a02fec89391fd9848",
+                "01914e4efcdd680c3ad00c4f7bae21227aef4ef21fcdfe017918ede1e30f0fb0",
+                "7aaaacb8d77ae5b96fa71046633000fec79f07a5302e2cc1917bcd40822f5339",
+                "11b3d3fcf2d961b09f6eab34fe8824e2f074352eba432885197e60eb90506b12",
+                "8da5b392e03e7f272ed50c629986b2fcae979cc5c3bb3336e8075954834710ac"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "extole_access_token": {
+                    "ttl": 31536005,
+                    "length": 26,
+                    "prevalence": 0.00010041168792047395,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "sonos.com",
@@ -145,31 +182,36 @@
                 "www.bose.ca",
                 "www.bose.com",
                 "www.cheaperthandirt.com",
+                "www.childrensplace.com",
+                "www.everlywell.com",
                 "www.gnc.com",
-                "www.harryrosen.com",
-                "www.jpcycles.com",
+                "www.lasenza.ca",
+                "www.policygenius.com",
                 "www.revzilla.com",
+                "www.shutterstock.com",
                 "www.simonandschuster.com",
+                "www.sonos.com",
                 "www.wine.com"
             ]
         },
         {
             "rule": "extole\\.io\\/zones\\/global_footer",
-            "cookies": 0.000824,
+            "cookies": 0.000904,
             "fingerprinting": 0,
             "subdomains": [
                 "rvshare",
                 "2ndswing",
                 "cheaper-than-dirt",
+                "the-childrens-place",
                 "gnc",
-                "harryrosen",
+                "lasenza",
                 "revzilla",
                 "simon-and-schuster",
                 "wine"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.000824,
+            "sites": 9,
+            "prevalence": 0.000904,
             "cnames": [
                 {
                     "original": "share.rvshare.com",
@@ -184,12 +226,16 @@
                     "resolved": "cheaper-than-dirt.extole.io"
                 },
                 {
+                    "original": "refer.childrensplace.com",
+                    "resolved": "the-childrens-place.extole.io"
+                },
+                {
                     "original": "refer.gnc.com",
                     "resolved": "gnc.extole.io"
                 },
                 {
-                    "original": "refer.harryrosen.com",
-                    "resolved": "harryrosen.extole.io"
+                    "original": "refer.lasenza.ca",
+                    "resolved": "lasenza.extole.io"
                 },
                 {
                     "original": "share.simonandschuster.com",
@@ -201,12 +247,12 @@
                 }
             ],
             "responseHashes": [
-                "448b07025695d704e011be54bc5af0f530eaec89a8c77b2e55b47cf48049e956",
-                "eefc20da1c2535823180af23620469ae79874c345e687342c3e4e793ae318c00",
-                "ebce898c34cd5951ebe140e14471330f71e64b157fdf9aed18747cab461a99b5",
-                "3c774e1a36846a76cd859066d0011df4d0a614e1cbe3473ebf6f83a4c6b32031",
+                "326b521dc7c9d5c2794bddb6373bcaa39c10590075247dfbf7875cb6a4c61bbc",
+                "72c321670edada4162016fb26e0ee575d58b61b0db73ec2c187644eade8abdb6",
+                "517e2be3c23a73928718c9b1cd8272a49cf64799f7803718ba8439ff7d01e02e",
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-                "d3d6b3a3bece8e796dbd78f721a2ef87e89dbda07d4300ef0b87a08682b21094"
+                "026e86406754d99ff760d19d1e69ec81b67c3c6af88ee19404e68b0a38cac1dc",
+                "caf2da6f5c434de6236535dd691ef3bb7c40952edb0e6aaba3c669cb31bfb51c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -215,8 +261,9 @@
                 "rvshare.com",
                 "www.2ndswing.com",
                 "www.cheaperthandirt.com",
+                "www.childrensplace.com",
                 "www.gnc.com",
-                "www.harryrosen.com",
+                "www.lasenza.ca",
                 "www.revzilla.com",
                 "www.simonandschuster.com",
                 "www.wine.com"
@@ -224,7 +271,7 @@
         },
         {
             "rule": "extole\\.io\\/2ndswing\\/core\\.js",
-            "cookies": 0.000206,
+            "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [
                 "origin"
@@ -235,15 +282,17 @@
                 "Document.cookie setter": 2
             },
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "cadbb10d457065f973e78621ca87cead48ff7c3f3fc94642b239697eb6f0920d"
+            ],
             "type": "Script",
             "firstPartyCookies": {
                 "extole_access_token": {
-                    "ttl": 31536028,
+                    "ttl": 31536006,
                     "length": 26,
-                    "prevalence": 0.00020599443815016993,
+                    "prevalence": 0.0002008233758409479,
                     "uniqueness": 0.5
                 }
             },
@@ -255,24 +304,24 @@
         },
         {
             "rule": "extole\\.io\\/zones\\/global_header",
-            "cookies": 0.000309,
+            "cookies": 0.000402,
             "fingerprinting": 0,
             "subdomains": [
                 "2ndswing",
-                "harryrosen",
+                "lasenza",
                 "wine"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000309,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [
                 {
                     "original": "refer.2ndswing.com",
                     "resolved": "2ndswing.extole.io"
                 },
                 {
-                    "original": "refer.harryrosen.com",
-                    "resolved": "harryrosen.extole.io"
+                    "original": "refer.lasenza.ca",
+                    "resolved": "lasenza.extole.io"
                 },
                 {
                     "original": "refer.wine.com",
@@ -280,15 +329,17 @@
                 }
             ],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-                "855de11c00c476d014798a0318197becfdf99590d64016485a18718151cbd034"
+                "c943720fac191a8ac1fccec0a0fac62c4c1a18538d3a2586e5dafd5e8d1546fe",
+                "88886c0af26870b410dda18ef35625ec7a44b09d354731dd3fd600d9c087c0c9",
+                "55c9f1a23769051dabf29e475334125bb295fbae4676d9f2ac853b12756a278a"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "2ndswing.com",
-                "www.harryrosen.com",
+                "www.2ndswing.com",
+                "www.lasenza.ca",
                 "www.wine.com"
             ]
         },
@@ -297,53 +348,16 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cheaper-than-dirt",
-                "harryrosen"
+                "the-childrens-place",
+                "revzilla"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000309,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "share.cheaperthandirt.com",
-                    "resolved": "cheaper-than-dirt.extole.io"
-                },
-                {
-                    "original": "refer.harryrosen.com",
-                    "resolved": "harryrosen.extole.io"
-                }
-            ],
-            "responseHashes": [
-                "6d11cf01a507d7b840c3110c701843ca58a03ecef1b83af632968274438d6392"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cheaperthandirt.com",
-                "www.cheaperthandirt.com",
-                "www.harryrosen.com"
-            ]
-        },
-        {
-            "rule": "extole\\.io\\/api\\/v4\\/debug\\/logs",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cheaper-than-dirt",
-                "harryrosen"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000309,
-            "cnames": [
-                {
-                    "original": "share.cheaperthandirt.com",
-                    "resolved": "cheaper-than-dirt.extole.io"
-                },
-                {
-                    "original": "refer.harryrosen.com",
-                    "resolved": "harryrosen.extole.io"
+                    "original": "refer.childrensplace.com",
+                    "resolved": "the-childrens-place.extole.io"
                 }
             ],
             "responseHashes": [],
@@ -351,21 +365,80 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cheaperthandirt.com",
-                "www.cheaperthandirt.com",
-                "www.harryrosen.com"
+                "childrensplace.com",
+                "www.revzilla.com"
+            ]
+        },
+        {
+            "rule": "extole\\.io\\/api\\/v4\\/debug\\/logs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "the-childrens-place",
+                "revzilla"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "refer.childrensplace.com",
+                    "resolved": "the-childrens-place.extole.io"
+                }
+            ],
+            "responseHashes": [
+                "b4f89e6b4468737eddf7fb2e3d73e6cf462ffa3d4b675309f72f62dd25b3060b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "childrensplace.com",
+                "www.revzilla.com"
+            ]
+        },
+        {
+            "rule": "extole\\.io\\/zones\\/overlay",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lasenza",
+                "simon-and-schuster"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "refer.lasenza.ca",
+                    "resolved": "lasenza.extole.io"
+                },
+                {
+                    "original": "share.simonandschuster.com",
+                    "resolved": "simon-and-schuster.extole.io"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lasenza.ca",
+                "www.simonandschuster.com"
             ]
         },
         {
             "rule": "extole\\.io\\/zones\\/category_dropdown",
-            "cookies": 0.000206,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "simon-and-schuster"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "share.simonandschuster.com",
@@ -386,16 +459,16 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000824,
+    "cookies": 0.000904,
     "types": {
-        "Script": 13,
-        "XHR": 16,
-        "Preflight": 3
+        "Script": 17,
+        "XHR": 19,
+        "Preflight": 2
     },
     "nameservers": [
-        "ns-1510.awsdns-60.org",
-        "ns-1867.awsdns-41.co.uk",
         "ns-231.awsdns-28.com",
-        "ns-603.awsdns-11.net"
+        "ns-603.awsdns-11.net",
+        "ns-1510.awsdns-60.org",
+        "ns-1867.awsdns-41.co.uk"
     ]
 }

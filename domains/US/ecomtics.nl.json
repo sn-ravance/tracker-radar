@@ -4,33 +4,50 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000141,
+    "prevalence": 0.0000138,
     "sites": 2,
     "subdomains": [
         "listener",
-        "econsole"
+        "econsole",
+        "events",
+        "widgetapi"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "ecomtics\\.nl\\/intertoys\\/intertoys-live\\/listenerv2\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
+            "cookies": 0.0000138,
+            "fingerprinting": 2,
             "subdomains": [
                 "listener"
             ],
             "apis": {
-                "window.sessionStorage": 2
+                "window.sessionStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "window.localStorage": 2
             },
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "b370ed20cdf691c4a8ffe9cea3d6359d16ac0aa2ce1f77ea0d0529439c74fa5e"
+                "75a2f51530644f94379a92b0fcfaf31cb73c52ed477590353c8069456c7c112a"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "spotDy_uid": {
+                    "ttl": 15552003,
+                    "length": 36,
+                    "prevalence": 0.000013804146765688412,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "intertoys.nl",
@@ -39,19 +56,70 @@
         },
         {
             "rule": "ecomtics\\.nl\\/SpotdyService",
-            "cookies": 0.0000141,
+            "cookies": 0.0000138,
             "fingerprinting": 0,
             "subdomains": [
                 "econsole"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "6beee1ec92f02a71a98509c5f8bf36855eab04f2d62477093f4950dff200626f"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intertoys.nl",
+                "www.intertoys.nl"
+            ]
+        },
+        {
+            "rule": "ecomtics\\.nl\\/craftsvilla\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "13e3017d4365c8acb1f6ac6370f303a2462969456be985e27e3194963c8fbffe"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.000027608293531376825,
+                "spotDy_uid": 0.000013804146765688412
+            },
+            "exampleSites": [
+                "intertoys.nl",
+                "www.intertoys.nl"
+            ]
+        },
+        {
+            "rule": "ecomtics\\.nl\\/v1\\/widgetserver\\/custom",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widgetapi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "d3d36064a52cb0bf33a5d78c0390913264473a5ee0058caed763dc292147440e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "spotDy_uid": 0.000013804146765688412
+            },
             "exampleSites": [
                 "intertoys.nl",
                 "www.intertoys.nl"
@@ -60,14 +128,14 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000141,
+    "cookies": 0.0000138,
     "types": {
         "Script": 2,
-        "XHR": 2
+        "XHR": 6
     },
     "nameservers": [
         "ns1.digitalocean.com",
-        "ns3.digitalocean.com",
-        "ns2.digitalocean.com"
+        "ns2.digitalocean.com",
+        "ns3.digitalocean.com"
     ]
 }

@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000633,
-    "sites": 9,
+    "prevalence": 0.000104,
+    "sites": 15,
     "subdomains": [
         "tag",
-        "cdn"
+        "cdn",
+        "apis"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -21,26 +22,90 @@
                 "tag"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Document.prototype.interestCohort": 2
+                "Navigator.prototype.userAgent": 9,
+                "Document.prototype.interestCohort": 8,
+                "window.localStorage": 1,
+                "window.sessionStorage": 1
             },
-            "sites": 7,
-            "prevalence": 0.0000493,
+            "sites": 12,
+            "prevalence": 0.0000828,
             "cnames": [],
             "responseHashes": [
-                "5f5b54ec89032c15cfef1724e0c6e2301cda8639c815f11b1507967f1db994b6"
+                "b900daff058cd9ea00fdd7e9a052892e930e3f76f913b5d8540f7ab77a9f04e3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "brilio.net",
+                "baomoi.com",
+                "hot.detik.com",
+                "m.brilio.net",
+                "m.thanhnien.vn",
                 "says.com",
+                "sport.detik.com",
+                "travel.detik.com",
                 "tuoitre.vn",
                 "www.brilio.net",
-                "www.haibunda.com",
-                "www.popmama.com",
-                "www.thestar.com.my"
+                "www.idntimes.com",
+                "www.nst.com.my",
+                "www.popmama.com"
+            ]
+        },
+        {
+            "rule": "adbro\\.me\\/ptag\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 14,
+            "prevalence": 0.0000966,
+            "cnames": [],
+            "responseHashes": [
+                "b900daff058cd9ea00fdd7e9a052892e930e3f76f913b5d8540f7ab77a9f04e3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baomoi.com",
+                "hot.detik.com",
+                "m.brilio.net",
+                "m.thanhnien.vn",
+                "says.com",
+                "sport.detik.com",
+                "technave.com",
+                "travel.detik.com",
+                "tuoitre.vn",
+                "www.brilio.net",
+                "www.idntimes.com",
+                "www.malaymail.com",
+                "www.nst.com.my",
+                "www.popmama.com"
+            ]
+        },
+        {
+            "rule": "adbro\\.me\\/configs\\/krimw5v6\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tag"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "546f05a7553994d3e7a15bc14b127a6b6e2c06765c17552939c9ffcd305ea413"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "detik.com",
+                "sport.detik.com",
+                "travel.detik.com"
             ]
         },
         {
@@ -52,7 +117,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
                 "d87af2d82d4700977311cefbfb0caf1b8f50375f95b8baa532fc7765aeb8679b"
@@ -66,43 +131,24 @@
             ]
         },
         {
-            "rule": "adbro\\.me\\/ptag\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000422,
-            "cnames": [],
-            "responseHashes": [
-                "5f5b54ec89032c15cfef1724e0c6e2301cda8639c815f11b1507967f1db994b6"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "brilio.net",
-                "tuoitre.vn",
-                "www.brilio.net",
-                "www.haibunda.com",
-                "www.malaymail.com",
-                "www.thestar.com.my"
-            ]
-        },
-        {
             "rule": "adbro\\.me\\/adsbyadbro\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 1,
+                "window.sessionStorage": 1,
+                "Document.prototype.interestCohort": 1
+            },
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "b900daff058cd9ea00fdd7e9a052892e930e3f76f913b5d8540f7ab77a9f04e3"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -110,13 +156,36 @@
                 "technave.com",
                 "www.malaymail.com"
             ]
+        },
+        {
+            "rule": "adbro\\.me\\/api\\/v2\\/advertising\\/cookie_sync",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apis"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "6adc3d4c1056996e4e8b765a62604c78b1f867cceb3b15d0b9bedb7c4857f992"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "popmama.com",
+                "www.popmama.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000138,
     "types": {
-        "Script": 17
+        "Script": 33,
+        "Image": 2
     },
     "nameservers": [
         "lynn.ns.cloudflare.com",

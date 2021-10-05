@@ -9,36 +9,76 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.00101,
-    "sites": 10,
+    "prevalence": 0.0013,
+    "sites": 13,
     "subdomains": [
-        "nslc-prod-app"
+        "cdn.platform",
+        "nslc-prod-app",
+        "bingshoppingtool-t2app-prod",
+        "idp.redbridge"
     ],
     "cnames": [
         {
+            "original": "idp.redbridge.gov.uk",
+            "resolved": "idp.redbridge.trafficmanager.net"
+        },
+        {
             "original": "login.norton.com",
             "resolved": "nslc-prod-app.trafficmanager.net"
+        },
+        {
+            "original": "west.cdn.mathletics.com",
+            "resolved": "cdn.platform.trafficmanager.net"
         }
     ],
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "trafficmanager\\.net\\/html\\/assets\\/images\\/fe51afb80f77d017002b01461a186da7\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.platform"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "west.cdn.mathletics.com",
+                    "resolved": "cdn.platform.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [
+                "1f99b87a533afb729800a968a609899e92cc239a7eae44e731939aa2bcae5698"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mathletics.com",
+                "login.mathletics.com"
+            ]
+        },
+        {
             "rule": "trafficmanager\\.net\\/sso\\/idp\\/SAML2",
-            "cookies": 0.000101,
+            "cookies": 0.0001,
             "fingerprinting": 0,
             "subdomains": [
                 "nslc-prod-app"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "login.norton.com",
                     "resolved": "nslc-prod-app.trafficmanager.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "87261b1f93fa2ae32ef80118ca3ec5ded00f6d0b668688e06c37021ff2a06555"
+            ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -46,15 +86,69 @@
                 "norton.com",
                 "support.norton.com"
             ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/uet\\/tracking_script",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bingshoppingtool-t2app-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "militarymart.co.uk",
+                "www.spigen.com"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/connect\\/authorize",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "idp.redbridge"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "idp.redbridge.gov.uk",
+                    "resolved": "idp.redbridge.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "redbridge.gov.uk",
+                "www.redbridge.gov.uk"
+            ]
         }
     ],
     "categories": [
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000505,
+    "cookies": 0.000401,
     "types": {
-        "Document": 2
+        "XHR": 2,
+        "Document": 4,
+        "Script": 2
     },
-    "nameservers": []
+    "nameservers": [
+        "tm1.edgedns-tm.info",
+        "tm2.edgedns-tm.info",
+        "tm1.dns-tm.com",
+        "tm2.dns-tm.com"
+    ]
 }

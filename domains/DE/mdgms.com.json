@@ -7,11 +7,12 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000302,
-    "sites": 3,
+    "prevalence": 0.000502,
+    "sites": 5,
     "subdomains": [
         "charts.comdirect",
-        "push.onvista"
+        "push.onvista",
+        "php5.s-broker"
     ],
     "cnames": [
         {
@@ -19,11 +20,15 @@
             "resolved": "charts.comdirect.mdgms.com"
         },
         {
+            "original": "idms.sbroker.de",
+            "resolved": "php5.s-broker.mdgms.com"
+        },
+        {
             "original": "push.onvista.de",
             "resolved": "push.onvista.mdgms.com"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "mdgms\\.com\\/charts\\/rebrush\\/homepage_resp\\.chart",
@@ -42,7 +47,7 @@
                 }
             ],
             "responseHashes": [
-                "d196fd00f9e1c44c44b77bbd8cd67ac9d3241a6471f7028d41914f58fd098c66"
+                "f2aa90e4cec355a3d2e136f5ac26a294084b9ed1a1cba1de250f6f8043ca5bbe"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -76,13 +81,40 @@
                 "onvista.de",
                 "www.onvista.de"
             ]
+        },
+        {
+            "rule": "mdgms\\.com\\/charts\\/homepage\\.chart\\.small_neu",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "php5.s-broker"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "idms.sbroker.de",
+                    "resolved": "php5.s-broker.mdgms.com"
+                }
+            ],
+            "responseHashes": [
+                "6c86fdb2a62f49dcf6de9a97c1ef8c2a3d82d9870abbd313e2fb02ecb699113d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sbroker.de",
+                "www.sbroker.de"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.0001,
     "types": {
-        "Image": 2,
+        "Image": 4,
         "Document": 2
     },
     "nameservers": []

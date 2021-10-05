@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000282,
-    "sites": 4,
+    "prevalence": 0.0000552,
+    "sites": 8,
     "subdomains": [
-        "widget"
+        "widget",
+        "px1"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -20,10 +21,10 @@
                 "widget"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 3
             },
-            "sites": 3,
-            "prevalence": 0.0000211,
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
                 "bc36b43eabdc76f34824b65e6c583744b22a599d0d2f1e9613530b22d40f8d28"
@@ -32,7 +33,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "victoryboyd.com",
+                "fiveforfighting.com",
+                "ghost-official.com",
                 "www.ericclapton.com",
                 "www.kissonline.com"
             ]
@@ -40,13 +42,16 @@
         {
             "rule": "bandsintown\\.com\\/1\\.main\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "widget"
             ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000211,
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Date.prototype.getTimezoneOffset": 2
+            },
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
                 "f1f2eea9d97b3497e514f5c9f24546ce58c8dc487ccdfe8388aef6c52207ea20"
@@ -55,7 +60,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "victoryboyd.com",
+                "fiveforfighting.com",
+                "ghost-official.com",
                 "www.ericclapton.com",
                 "www.kissonline.com"
             ]
@@ -63,13 +69,15 @@
         {
             "rule": "bandsintown\\.com\\/2\\.main\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "widget"
             ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000211,
+            "apis": {
+                "Navigator.prototype.languages": 2
+            },
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
                 "08bc188221eb6054f7e72565f61cc72d2db0a55fe92f812d051eb62f551e7666"
@@ -78,9 +86,56 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "victoryboyd.com",
+                "fiveforfighting.com",
+                "ghost-official.com",
                 "www.ericclapton.com",
                 "www.kissonline.com"
+            ]
+        },
+        {
+            "rule": "bandsintown\\.com\\/widget_iframe\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "af995dfd04fc38f46474c21bd2b2235bfb92319260f1bbab18da16e606bd11a5"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fiveforfighting.com",
+                "ghost-official.com"
+            ]
+        },
+        {
+            "rule": "bandsintown\\.com\\/clear\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "px1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "b1442e85b03bdcaf66dc58c7abb98745dd2687d86350be9a298a1d9382ac849b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fiveforfighting.com",
+                "ghost-official.com"
             ]
         }
     ],
@@ -88,7 +143,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 9
+        "Script": 12,
+        "Document": 2,
+        "Image": 2
     },
     "nameservers": [
         "ns-645.awsdns-16.net",

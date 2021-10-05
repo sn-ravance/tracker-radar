@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.001,
-    "sites": 10,
+    "prevalence": 0.0013,
+    "sites": 13,
     "subdomains": [
         "ghs"
     ],
@@ -15,7 +15,7 @@
             "resolved": "ghs.googlehosted.com"
         },
         {
-            "original": "api.urbandictionary.com",
+            "original": "a.nytimes.com",
             "resolved": "ghs.googlehosted.com"
         },
         {
@@ -31,12 +31,96 @@
             "resolved": "ghs.googlehosted.com"
         },
         {
+            "original": "purr.nytimes.com",
+            "resolved": "ghs.googlehosted.com"
+        },
+        {
             "original": "ups.data.cbc.ca",
             "resolved": "ghs.googlehosted.com"
         }
     ],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "googlehosted\\.com\\/svc\\/nyt\\/data-layer",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "a.nytimes.com",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [
+                "d5fa9d78c98a078e2db35d88fcf1e8a7bfb2609f4aa68811b35814382426dc4f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nytimes.com",
+                "www.nytimes.com"
+            ]
+        },
+        {
+            "rule": "googlehosted\\.com\\/v1\\/purr-cache",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "purr.nytimes.com",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nytimes.com",
+                "www.nytimes.com"
+            ]
+        },
+        {
+            "rule": "googlehosted\\.com\\/track",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghs"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "a.et.nytimes.com",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nytimes.com",
+                "cooking.nytimes.com",
+                "www.nytimes.com"
+            ]
+        },
         {
             "rule": "googlehosted\\.com\\/g\\/collect",
             "cookies": 0.000201,
@@ -60,10 +144,10 @@
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Ping",
+            "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ga": 0.000401888877725309
+                "_ga": 0.0004013646397752358
             },
             "exampleSites": [
                 "brico.be",
@@ -71,7 +155,7 @@
             ]
         },
         {
-            "rule": "googlehosted\\.com\\/v0\\/UIEUser\\/b3fb34a7-eaa2-4a01-a02b-74312f137e26\\/UPSPreferences\\/fdfc9e",
+            "rule": "googlehosted\\.com\\/v0\\/UIEUser\\/d5c97e0f-c8fd-4b25-8675-ded806b333e1\\/UPSPreferences\\/fdfc9e",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -118,79 +202,26 @@
                 }
             ],
             "responseHashes": [
-                "c00a759275b8628823a9809f24cbeca08cb48b52713adf221f70284e66d9c82f"
+                "3b7b8a4b411ddf8db9bacc2f3aabf406f8e4c0c087829b336ca331c40adfdff1"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ga": 0.0003014166582939817
+                "_ga": 0.0002006823198876179
             },
             "exampleSites": [
                 "miinto.nl",
                 "www.praxis.nl"
             ]
-        },
-        {
-            "rule": "googlehosted\\.com\\/track",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ghs"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "a.et.nytimes.com",
-                    "resolved": "ghs.googlehosted.com"
-                }
-            ],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nytimes.com",
-                "www.nytimes.com"
-            ]
-        },
-        {
-            "rule": "googlehosted\\.com\\/v0\\/beacon",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ghs"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "api.urbandictionary.com",
-                    "resolved": "ghs.googlehosted.com"
-                }
-            ],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "urbandictionary.com",
-                "www.urbandictionary.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000603,
+    "cookies": 0.000803,
     "types": {
-        "Ping": 6,
-        "XHR": 2,
+        "XHR": 4,
+        "Fetch": 2,
+        "Other": 5,
         "Image": 2
     },
     "nameservers": []

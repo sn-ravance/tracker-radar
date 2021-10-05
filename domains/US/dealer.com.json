@@ -7,21 +7,23 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000774,
-    "sites": 11,
+    "prevalence": 0.0000966,
+    "sites": 14,
     "subdomains": [
         "assets.prod.analytics",
+        "cc2",
         "pictures",
         "phone-swapping-service-prod.us-east-1.web",
         "hertzcarsales.mycars",
-        "riverbendfordfd.mycars"
+        "riverbendfordfd.mycars",
+        "pixall-config.prod.analytics"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "dealer\\.com\\/pixall\\/pix-ahm\\.min\\.js",
-            "cookies": 0.0000141,
+            "cookies": 0.0000138,
             "fingerprinting": 1,
             "subdomains": [
                 "assets.prod.analytics"
@@ -32,23 +34,23 @@
                 "window.localStorage": 2
             },
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "f240c193c50bf3fedb9bf0744a033f5596094fbc198509fa58193364420c846d"
+                "3fd040f199c2891c05125755911931aa8877bd92b1aa8d5b928c1a14ce1116c2"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "pxa_id": {
                     "ttl": 31536002,
                     "length": 24,
-                    "prevalence": 0.00001407756739635391,
+                    "prevalence": 0.000013804146765688412,
                     "uniqueness": 1
                 },
                 "pxa_at": {
-                    "ttl": 2592002,
+                    "ttl": 2592003,
                     "length": 4,
-                    "prevalence": 0.000007038783698176955,
+                    "prevalence": 0.000006902073382844206,
                     "uniqueness": 1
                 }
             },
@@ -60,7 +62,7 @@
         },
         {
             "rule": "dealer\\.com\\/pixall\\/pix-adw\\.min\\.js",
-            "cookies": 0.0000141,
+            "cookies": 0.0000138,
             "fingerprinting": 1,
             "subdomains": [
                 "assets.prod.analytics"
@@ -71,23 +73,23 @@
                 "window.localStorage": 2
             },
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "701a1d6e22639968cb401a9a5f83ca92394534b37f93ff2cb0037d86d75f9324"
+                "6a7a94453aa7b496c47c3a94ab311872426c5d8f3eced4cab83ff77067ca7889"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "pxa_id": {
-                    "ttl": 31536026,
+                    "ttl": 31536000,
                     "length": 24,
-                    "prevalence": 0.00001407756739635391,
+                    "prevalence": 0.000013804146765688412,
                     "uniqueness": 1
                 },
                 "pxa_at": {
-                    "ttl": 2592027,
+                    "ttl": 2592001,
                     "length": 4,
-                    "prevalence": 0.000007038783698176955,
+                    "prevalence": 0.000006902073382844206,
                     "uniqueness": 1
                 }
             },
@@ -95,6 +97,44 @@
             "exampleSites": [
                 "acura.com",
                 "www.acura.com"
+            ]
+        },
+        {
+            "rule": "dealer\\.com\\/off-platform\\/pixall\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cc2"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "cbc7e277c39fab915f61544a22a43fb3377f31b93323e59ca0869a48445560bb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "pxa_id": {
+                    "ttl": 31536005,
+                    "length": 24,
+                    "prevalence": 0.000013804146765688412,
+                    "uniqueness": 1
+                },
+                "pxa_at": {
+                    "ttl": 2592005,
+                    "length": 4,
+                    "prevalence": 0.000013804146765688412,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "audiusa.com",
+                "www.audiusa.com"
             ]
         },
         {
@@ -106,10 +146,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "c78b7eb780c896c924bd98de81d5bea0b3c72149fafbf2ceadefb5f603097884"
+                "c47f1432c62fc471c1e15a6476f23f559d2935daa579a2e4e24a55defee58a49"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -128,7 +168,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000282,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
                 "170fdb6ffb63b04d9e62c6a21b3a79db66a645608187d781b52dbaccad0ccfdb",
@@ -147,18 +187,20 @@
         },
         {
             "rule": "dealer\\.com\\/common\\/iframes\\/cookie-messaging\\.html",
-            "cookies": 0,
+            "cookies": 0.0000138,
             "fingerprinting": 1,
             "subdomains": [
                 "hertzcarsales.mycars",
                 "riverbendfordfd.mycars"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 2
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
                 "2a23809a18299e3eb2be3e609fb04cea8ff3daa760996b6c0ece9cf8e183f4f4"
@@ -170,19 +212,81 @@
                 "hertzcarsales.com",
                 "www.riverbend-ford.com"
             ]
+        },
+        {
+            "rule": "dealer\\.com\\/pixall\\/pix-aop\\.min\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "assets.prod.analytics"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "665deb920ce084f4dcb1e104a0dbf873d0a619f97c01a92b937eda4bd6aeac14"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "pxa_id": {
+                    "ttl": 31536009,
+                    "length": 24,
+                    "prevalence": 0.000013804146765688412,
+                    "uniqueness": 1
+                },
+                "pxa_at": {
+                    "ttl": 2592009,
+                    "length": 4,
+                    "prevalence": 0.000013804146765688412,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "subaru.com",
+                "www.subaru.com"
+            ]
+        },
+        {
+            "rule": "dealer\\.com\\/aop\\/soat1",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pixall-config.prod.analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "c333975ae08050e2e4eab9d5def7d0c063caab6f909d1b81e951567163ff4d68"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "subaru.com",
+                "www.subaru.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000352,
+    "cookies": 0.000069,
     "types": {
-        "Script": 4,
+        "Script": 8,
         "Image": 2,
         "Fetch": 4,
-        "Document": 2
+        "Document": 2,
+        "XHR": 2
     },
     "nameservers": [
-        "ns2.dealer.com",
-        "ns1.dealer.com"
+        "ns1.dealer.com",
+        "ns2.dealer.com"
     ]
 }

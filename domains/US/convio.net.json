@@ -7,13 +7,16 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000704,
-    "sites": 10,
+    "prevalence": 0.0000759,
+    "sites": 11,
     "subdomains": [
         "adap-live",
         "jdrf3-live",
+        "cmf-live",
         "akf-live",
-        "secure2"
+        "nparkf-live",
+        "secure2",
+        "savetc-live"
     ],
     "cnames": [
         {
@@ -21,8 +24,20 @@
             "resolved": "adap-live.convio.net"
         },
         {
+            "original": "give.luriechildrens.org",
+            "resolved": "cmf-live.convio.net"
+        },
+        {
+            "original": "give.nationalparks.org",
+            "resolved": "nparkf-live.convio.net"
+        },
+        {
             "original": "secure.kidneyfund.org",
             "resolved": "akf-live.convio.net"
+        },
+        {
+            "original": "support.savethechildren.org",
+            "resolved": "savetc-live.convio.net"
         },
         {
             "original": "www2.jdrf.org",
@@ -33,14 +48,14 @@
     "resources": [
         {
             "rule": "convio\\.net\\/site\\/CROrgEventAPI",
-            "cookies": 0.0000141,
+            "cookies": 0.0000138,
             "fingerprinting": 0,
             "subdomains": [
                 "adap-live"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [
                 {
                     "original": "donations.diabetes.org",
@@ -48,7 +63,7 @@
                 }
             ],
             "responseHashes": [
-                "9a3644439b2f9405e49d5f6c6eb7a63f53f0f98069302ef16680121cf9a7acdd"
+                "a8ca7ea834a4ffb9798f2f8205860882167642a8cc11cb2348a02400b813b3e6"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -60,29 +75,36 @@
         },
         {
             "rule": "convio\\.net\\/site\\/CRConsAPI",
-            "cookies": 0.00000704,
+            "cookies": 0.0000138,
             "fingerprinting": 0,
             "subdomains": [
-                "jdrf3-live"
+                "jdrf3-live",
+                "cmf-live"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
+            "sites": 3,
+            "prevalence": 0.0000207,
             "cnames": [
                 {
                     "original": "www2.jdrf.org",
                     "resolved": "jdrf3-live.convio.net"
+                },
+                {
+                    "original": "give.luriechildrens.org",
+                    "resolved": "cmf-live.convio.net"
                 }
             ],
             "responseHashes": [
-                "4e6441f8e6b223eedf48f8d614bf3c394914c68e6770cc30154cc6af6e9fa143"
+                "4e6441f8e6b223eedf48f8d614bf3c394914c68e6770cc30154cc6af6e9fa143",
+                "7367f3ff24e7e633a9eccc0db9bb1b324c9c3da53eef801983ad2a30272c3ae1"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "jdrf.org",
-                "www.jdrf.org"
+                "www.jdrf.org",
+                "www.luriechildrens.org"
             ]
         },
         {
@@ -90,15 +112,20 @@
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "akf-live"
+                "akf-live",
+                "nparkf-live"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
+            "sites": 3,
+            "prevalence": 0.0000207,
             "cnames": [
                 {
                     "original": "secure.kidneyfund.org",
                     "resolved": "akf-live.convio.net"
+                },
+                {
+                    "original": "give.nationalparks.org",
+                    "resolved": "nparkf-live.convio.net"
                 }
             ],
             "responseHashes": [
@@ -109,7 +136,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "kidneyfund.org",
-                "www.kidneyfund.org"
+                "www.kidneyfund.org",
+                "www.nationalparks.org"
             ]
         },
         {
@@ -121,9 +149,11 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "5599e1213fde6ae44c77a69083bd35d895a98c7b81a72cfa2f6fb5f2d3ea6960"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -134,14 +164,14 @@
         },
         {
             "rule": "convio\\.net\\/site\\/AnonymousLogin",
-            "cookies": 0.00000704,
+            "cookies": 0.0000069,
             "fingerprinting": 0,
             "subdomains": [
                 "akf-live"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [
                 {
                     "original": "secure.kidneyfund.org",
@@ -149,7 +179,7 @@
                 }
             ],
             "responseHashes": [
-                "86578af6b8e85d79a856ff0b4fd4db2fb4d0fddc7ae64721b578718c189fae82"
+                "4fe0f0db7a66d313d6faa584856cf002d257c987f993c53cfcd281f0a010f77a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -158,26 +188,58 @@
                 "kidneyfund.org",
                 "www.kidneyfund.org"
             ]
+        },
+        {
+            "rule": "convio\\.net\\/site\\/PixelServer",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cmf-live",
+                "savetc-live"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "give.luriechildrens.org",
+                    "resolved": "cmf-live.convio.net"
+                },
+                {
+                    "original": "support.savethechildren.org",
+                    "resolved": "savetc-live.convio.net"
+                }
+            ],
+            "responseHashes": [
+                "2dfe28cbdb83f01c940de6a88ab86200154fd772d568035ac568664e52068363"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "luriechildrens.org",
+                "www.savethechildren.org"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000493,
+    "cookies": 0.0000552,
     "types": {
-        "XHR": 4,
-        "Script": 4,
-        "Image": 2
+        "XHR": 5,
+        "Script": 5,
+        "Image": 4
     },
     "nameservers": [
-        "ns1-90.akam.net",
-        "eur5.akam.net",
-        "usc1.akam.net",
-        "usc2.akam.net",
+        "asia1.akam.net",
         "ns8.convio.net",
-        "dns1.convio.com",
-        "eur3.akam.net",
-        "usw6.akam.net",
         "ns1-173.akam.net",
-        "asia1.akam.net"
+        "eur3.akam.net",
+        "ns1-90.akam.net",
+        "usc2.akam.net",
+        "dns1.convio.com",
+        "usc1.akam.net",
+        "usw6.akam.net",
+        "eur5.akam.net"
     ]
 }

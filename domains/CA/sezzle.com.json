@@ -4,11 +4,13 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000515,
+    "prevalence": 0.000502,
     "sites": 5,
     "subdomains": [
         "widget",
-        "tracking"
+        "tracking",
+        "geoip",
+        "media"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -22,21 +24,21 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000412,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
-                "f2cad3751b086b08fe376a7dd091607ad6084ac6f261c69098cd5a83934b02bb",
+                "9ea708f9e98d52d51e843d87ab52d331d940e7c892ef5751b52470ebe513ec59",
                 "ac2510c252ab589061756f3c447e9e1f41a7391e889cf5972a79becedc0d4f2a",
                 "37a9a30dcbc3f077b54848bf3c9aeca160a0f098578923929acb23bf556111ac"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_szl_instant_merchant_id": 0.00010299721907508497
+                "_szl_instant_merchant_id": 0.00010041168792047395
             },
             "exampleSites": [
+                "byrna.com",
                 "houseofknives.ca",
-                "knix.ca",
                 "store.theshootingcentre.com",
                 "www.purehockey.com"
             ]
@@ -50,7 +52,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000412,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
                 "2459ae05713a8311fcf9d8dcbe6edf9cff1b73bbfde49e5948413f8e06ed0362"
@@ -59,26 +61,27 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "byrna.com",
                 "houseofknives.ca",
-                "knix.ca",
                 "store.theshootingcentre.com",
                 "www.purehockey.com"
             ]
         },
         {
             "rule": "sezzle\\.com\\/main-1610465065938\\.js",
-            "cookies": 0.000103,
+            "cookies": 0.0001,
             "fingerprinting": 1,
             "subdomains": [
                 "tracking"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 1,
-                "window.localStorage": 1
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 4,
+                "Date.prototype.getTime": 4,
+                "Document.cookie setter": 1
             },
-            "sites": 3,
-            "prevalence": 0.000309,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
                 "db667b41e50c0e0da64755781aa04a29008c8b59bcb2f24084967da8be8d7951"
@@ -87,18 +90,87 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "byrna.com",
                 "houseofknives.ca",
-                "knix.ca",
-                "store.theshootingcentre.com"
+                "store.theshootingcentre.com",
+                "www.purehockey.com"
+            ]
+        },
+        {
+            "rule": "sezzle\\.com\\/v1\\/geoip\\/ipdetails",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "geoip"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "c0cb96548cecd4e5858b63a6c8eafe6f7f701714dc5567c97009e4655b0cb357"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "byrna.com",
+                "houseofknives.ca",
+                "www.purehockey.com"
+            ]
+        },
+        {
+            "rule": "sezzle\\.com\\/shopify-app\\/assets\\/sezzle-modal-2\\.0\\.0-en\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8a1be3a01ccc730f46019fb647b740053eef36ace0738f4f42730e6792f44703"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "houseofknives.ca",
+                "www.purehockey.com"
+            ]
+        },
+        {
+            "rule": "sezzle\\.com\\/undefined",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "2459ae05713a8311fcf9d8dcbe6edf9cff1b73bbfde49e5948413f8e06ed0362"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "purehockey.com",
+                "www.purehockey.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000103,
+    "cookies": 0.0001,
     "types": {
-        "Script": 7,
-        "Document": 4
+        "Script": 8,
+        "Document": 4,
+        "XHR": 7
     },
     "nameservers": [
         "ns-1112.awsdns-11.org",

@@ -4,16 +4,70 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00124,
-    "sites": 12,
+    "prevalence": 0.00141,
+    "sites": 14,
     "subdomains": [
-        "usage",
         "cdn",
-        "capture"
+        "capture",
+        "usage"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "trackjs\\.com\\/releases\\/current\\/tracker\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.userAgent": 3,
+                "window.name": 1,
+                "window.devicePixelRatio": 1,
+                "window.indexedDB": 1,
+                "window.sessionStorage": 1,
+                "window.localStorage": 1
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "b083af11bff8f6237c9b83a2910ccb07625602e3c386de94daeedb8dab2b195d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "7news.com.au",
+                "www.babylist.com",
+                "www.flighthub.com"
+            ]
+        },
+        {
+            "rule": "trackjs\\.com\\/capture",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "capture"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "7news.com.au",
+                "community.spiceworks.com",
+                "www.kijijiautos.ca"
+            ]
+        },
         {
             "rule": "trackjs\\.com\\/usage\\.gif",
             "cookies": 0,
@@ -22,32 +76,34 @@
                 "usage"
             ],
             "apis": {},
-            "sites": 12,
-            "prevalence": 0.00124,
+            "sites": 14,
+            "prevalence": 0.00141,
             "cnames": [],
             "responseHashes": [
-                "77b1d2c0857d4e95d4c2ae7aa0abc5aaafa6bd4581b31203d1592759c26f5c44"
+                "cf4724b2f736ed1a0ae6bc28f1ead963d9cd2c1fd87b6ef32e7799fc1c5c8bda"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "spiceworks.com",
-                "redditgrid.com",
+                "7news.com.au",
+                "community.spiceworks.com",
                 "smallpdf.com",
                 "www.babylist.com",
                 "www.betterhelp.com",
                 "www.delta.com",
-                "www.halloweencostumes.ca",
+                "www.flighthub.com",
                 "www.halloweencostumes.com",
+                "www.halloweencostumes.ca",
                 "www.internations.org",
                 "www.kijijiautos.ca",
                 "www.nicehash.com",
-                "www.regain.us"
+                "www.regain.us",
+                "www.trade-schools.net"
             ]
         },
         {
-            "rule": "trackjs\\.com\\/releases\\/current\\/tracker\\.js",
+            "rule": "trackjs\\.com\\/agent\\/v3\\/latest\\/t\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
@@ -63,37 +119,17 @@
                 "window.localStorage": 1
             },
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "b083af11bff8f6237c9b83a2910ccb07625602e3c386de94daeedb8dab2b195d"
+                "7b116ac42dfa848b8cbeff07cae0cc208a898111a7191ab266b4f0241683671a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "redditgrid.com",
-                "www.babylist.com"
-            ]
-        },
-        {
-            "rule": "trackjs\\.com\\/capture",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "capture"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "redditgrid.com",
-                "www.kijijiautos.ca"
+                "kijijiautos.ca",
+                "www.trade-schools.net"
             ]
         }
     ],
@@ -101,9 +137,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Image": 12,
-        "Script": 2,
-        "XHR": 2
+        "Script": 5,
+        "XHR": 3,
+        "Image": 14
     },
     "nameservers": [
         "dns1.registrar-servers.com",

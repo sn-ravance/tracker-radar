@@ -4,13 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000704,
+    "prevalence": 0.000069,
     "sites": 10,
     "subdomains": [
         "video"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "digi-me\\.com\\/widget\\.js",
@@ -21,7 +21,7 @@
             ],
             "apis": {},
             "sites": 10,
-            "prevalence": 0.0000704,
+            "prevalence": 0.000069,
             "cnames": [],
             "responseHashes": [
                 "f9f2d2b213cf8c2e24388bcbdd96a151af1320bb4a29555d85b878ad29ec8dc5"
@@ -32,12 +32,12 @@
             "exampleSites": [
                 "dailyitem.com",
                 "www.eagletribune.com",
-                "www.goshennews.com",
                 "www.joplinglobe.com",
                 "www.mankatofreepress.com",
                 "www.newburyportnews.com",
                 "www.normantranscript.com",
-                "www.times-news.com",
+                "www.pressrepublican.com",
+                "www.salemnews.com",
                 "www.tribdem.com",
                 "www.tribstar.com"
             ]
@@ -45,17 +45,20 @@
         {
             "rule": "digi-me\\.com\\/widget\\.aspx",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "video"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
             "sites": 10,
-            "prevalence": 0.0000704,
+            "prevalence": 0.000069,
             "cnames": [],
             "responseHashes": [
                 "01359389845141dd19204f13ff7c4c70406200bed10a9ee390f7757e324c6042",
-                "91eb88aaa1b8ae2ef16bfcc8cc4a997e1fd8283f2d253e771fa56f49638b9a8c"
+                "eb91f85b312fa15c72d2ab5f991e23228ca787981e07821169d8082f6025cd52",
+                "0615392ebf2860c0067c3e09f8eba11c854a91f3bc9149b6c9019f2fdffdcef9"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -63,14 +66,84 @@
             "exampleSites": [
                 "dailyitem.com",
                 "www.eagletribune.com",
-                "www.goshennews.com",
                 "www.joplinglobe.com",
                 "www.mankatofreepress.com",
                 "www.newburyportnews.com",
                 "www.normantranscript.com",
-                "www.times-news.com",
+                "www.pressrepublican.com",
+                "www.salemnews.com",
                 "www.tribdem.com",
                 "www.tribstar.com"
+            ]
+        },
+        {
+            "rule": "digi-me\\.com\\/widget\\.aspx",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "video"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "0615392ebf2860c0067c3e09f8eba11c854a91f3bc9149b6c9019f2fdffdcef9"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "joplinglobe.com",
+                "www.pressrepublican.com"
+            ]
+        },
+        {
+            "rule": "digi-me\\.com\\/lib\\/js\\/v201112011973\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "video"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "f20b574e2f55019d99aa3907d6404c74f71df44fb66fe41d9dabdf34fa063433"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "joplinglobe.com",
+                "www.pressrepublican.com"
+            ]
+        },
+        {
+            "rule": "digi-me\\.com\\/Script\\/x2other_digime\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "video"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "32fd734472ffb0afe7f3dbffc010733dcc628e98ed8e9b37c91d6cf01dcb4b4d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "joplinglobe.com",
+                "www.pressrepublican.com"
             ]
         }
     ],
@@ -78,8 +151,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 10,
-        "XHR": 10
+        "Script": 14,
+        "XHR": 10,
+        "Document": 2
     },
     "nameservers": [
         "pdns03.domaincontrol.com",

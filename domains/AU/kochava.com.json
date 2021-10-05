@@ -10,12 +10,81 @@
     "prevalence": 0.000301,
     "sites": 3,
     "subdomains": [
-        "assets",
-        "web-sdk.control"
+        "imp.control",
+        "web-sdk.control",
+        "assets"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "kochava\\.com\\/track\\/impression",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "imp.control"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0002,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "13cabs.com.au",
+                "www.13cabs.com.au"
+            ]
+        },
+        {
+            "rule": "kochava\\.com\\/track\\/json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web-sdk.control"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "13cabs.com.au",
+                "www.13cabs.com.au",
+                "www.audible.com.au",
+                "www.audible.com"
+            ]
+        },
+        {
+            "rule": "kochava\\.com\\/track\\/json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web-sdk.control"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [],
+            "responseHashes": [
+                "075a61c48ac3dd56cdf07086a2f7bae59363f88be99011dd8b73dcf7f2b9df75"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "13cabs.com.au",
+                "www.13cabs.com.au",
+                "www.audible.com.au",
+                "www.audible.com"
+            ]
+        },
         {
             "rule": "kochava\\.com\\/kochava\\.js\\/v2\\/kochava\\.min\\.js",
             "cookies": 0,
@@ -32,7 +101,7 @@
                 "Screen.prototype.availHeight": 2
             },
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.0002,
             "cnames": [],
             "responseHashes": [
                 "87aa35b146fed60e895a0d09f7aca9c6a837dd14a13c1200902c7c5c4652f546"
@@ -46,50 +115,6 @@
             ]
         },
         {
-            "rule": "kochava\\.com\\/track\\/json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "web-sdk.control"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "075a61c48ac3dd56cdf07086a2f7bae59363f88be99011dd8b73dcf7f2b9df75"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "audible.com.au",
-                "www.audible.com.au",
-                "www.audible.com"
-            ]
-        },
-        {
-            "rule": "kochava\\.com\\/track\\/json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "web-sdk.control"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "audible.com.au",
-                "www.audible.com.au",
-                "www.audible.com"
-            ]
-        },
-        {
             "rule": "kochava\\.com\\/v1\\/cpi\\/identityLink\\.php",
             "cookies": 0,
             "fingerprinting": 0,
@@ -98,12 +123,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.0002,
             "cnames": [],
-            "responseHashes": [
-                "075a61c48ac3dd56cdf07086a2f7bae59363f88be99011dd8b73dcf7f2b9df75"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -120,10 +143,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.0002,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "075a61c48ac3dd56cdf07086a2f7bae59363f88be99011dd8b73dcf7f2b9df75"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -136,9 +161,10 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2,
-        "XHR": 5,
-        "Preflight": 5
+        "Image": 2,
+        "Preflight": 6,
+        "XHR": 6,
+        "Script": 2
     },
     "nameservers": [
         "ns-cloud-a1.googledomains.com",

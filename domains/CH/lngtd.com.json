@@ -4,14 +4,39 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000502,
-    "sites": 5,
+    "prevalence": 0.000803,
+    "sites": 8,
     "subdomains": [
-        "conf"
+        "conf",
+        "collect"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "lngtd\\.com\\/uesp\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "28c9a2efbe394fdad7cacd90f9362ed30e6910e1f1ae764d73cab2d619f9afbe"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "uesp.net",
+                "en.uesp.net"
+            ]
+        },
         {
             "rule": "lngtd\\.com\\/lngtd-config",
             "cookies": 0,
@@ -20,20 +45,24 @@
                 "conf"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 7,
+            "prevalence": 0.000703,
             "cnames": [],
             "responseHashes": [
-                "75e8e9dbe5b0935a3932bceeedde69f645de34e4e1e5dd4625cb42839120c52a",
-                "0b4cbae1b0472ae285c8631241e8fc6b2ebe2af615b57c4ed1299482eb5088da",
-                "7968408e733bc19ad2dbd49e4a79a79601448c7b8490130f1748a88a91d817aa",
-                "2b65ff758cbe09aa3144852823ae8d003ca71ae8e58305730ffb6806476019c7"
+                "5af83fea77b2fa7ed66da9529b5b4de66ab848c82e7542f68bbbaa0aee044701",
+                "902785bb3fbca28f1aa80ca8506cc44bca80de0de2db1342d716eae15e5ba731",
+                "8157c37b362a536ba9adca4ff7a7695211b8a8cb8b4eca049da31dfa603a2b15",
+                "2694c5ab8c520b2184745da610b66ee345e48d14ff327f99768ddc7fbbc6e66e",
+                "b849d887a709071d6818998b2f6bd561bf3b97f933a7f3c1424940d793909065",
+                "379a9f088479ca598098c77b231a8fedea96ab0d91d6c0f5f005e7c123473482"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "uesp.net",
+                "en.uesp.net",
+                "socialblade.com",
                 "u.gg",
                 "www.discogs.com",
                 "www.goal.com",
@@ -41,37 +70,45 @@
             ]
         },
         {
-            "rule": "lngtd\\.com\\/prebid\\/prebid5\\.8\\.0\\.min\\.js",
+            "rule": "lngtd\\.com\\/auction",
             "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "window.sessionStorage": 2,
-                "Navigator.prototype.appName": 2,
-                "window.localStorage": 2,
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Navigator.prototype.doNotTrack": 2,
-                "Navigator.prototype.language": 2,
-                "Screen.prototype.colorDepth": 2,
-                "Date.prototype.getTimezoneOffset": 2
-            },
+            "fingerprinting": 0,
+            "subdomains": [
+                "collect"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "u.gg",
+                "us.soccerway.com"
+            ]
+        },
+        {
+            "rule": "lngtd\\.com\\/auction",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collect"
+            ],
+            "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "c9e85d4459b9e63f3f7fc8966935d5cbfd252d7f9f39d22f106f6681fee77d13"
+                "cc797312837f7cd58df8bc24b9e6a268ebdd9a78d4764d963f4bb5cb7ee7cafd"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "uesp.net",
-                "u.gg"
+                "u.gg",
+                "us.soccerway.com"
             ]
         }
     ],
@@ -79,8 +116,9 @@
     "performance": {},
     "cookies": 0.000502,
     "types": {
-        "XHR": 5,
-        "Script": 2
+        "Script": 2,
+        "XHR": 9,
+        "Preflight": 2
     },
     "nameservers": [
         "ns-758.awsdns-30.net",

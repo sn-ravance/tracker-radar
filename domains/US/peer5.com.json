@@ -9,31 +9,38 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000282,
-    "sites": 4,
+    "prevalence": 0.0000138,
+    "sites": 2,
     "subdomains": [
         "api",
         "gateway",
         "ws"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "peer5\\.com\\/peer5\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "api"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2,
+                "window.sessionStorage": 1,
+                "RTCPeerConnection.prototype.constructor": 1,
+                "Navigator.prototype.connection": 1,
+                "Navigator.prototype.permissions": 1,
+                "window.localStorage": 1,
+                "Navigator.prototype.mediaDevices": 1,
+                "RTCPeerConnectionIceEvent.prototype.candidate": 1
             },
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "da048a32df9fa9b0013a5b5114bfa96f309df7c07fe52d9bea23a4332b27ba50"
+                "7f4ca6c5e15d9cd5647c558aaf59860de2ab2129574acd7d9c98f14dc0590ea7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -53,7 +60,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [],
             "type": "WebSocket",
@@ -63,41 +70,19 @@
                 "dlive.tv",
                 "www.rtve.es"
             ]
-        },
-        {
-            "rule": "peer5\\.com\\/peer5\\.videojs5\\.plugin\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
-            "cnames": [],
-            "responseHashes": [
-                "e099ca603fa11335cf3a80244887655d996662c35dfef440af2432d7d5c996ce"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "rtve.es",
-                "www.rtve.es"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 4,
+        "Script": 2,
         "WebSocket": 2
     },
     "nameservers": [
+        "ns-cloud-c1.googledomains.com",
         "ns-cloud-c2.googledomains.com",
         "ns-cloud-c3.googledomains.com",
-        "ns-cloud-c4.googledomains.com",
-        "ns-cloud-c1.googledomains.com"
+        "ns-cloud-c4.googledomains.com"
     ]
 }

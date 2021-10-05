@@ -7,11 +7,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000106,
-    "sites": 15,
+    "prevalence": 0.000145,
+    "sites": 21,
     "subdomains": [
         "prebid",
         "img",
+        "bw",
         "rec"
     ],
     "cnames": [],
@@ -25,8 +26,8 @@
                 "prebid"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000211,
+            "sites": 9,
+            "prevalence": 0.0000621,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -36,8 +37,14 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "udn.com",
+                "health.udn.com",
+                "mojim.com",
+                "star.ettoday.net",
                 "tw.appledaily.com",
-                "www.mobile01.com"
+                "www.ettoday.net",
+                "www.mobile01.com",
+                "www.setn.com",
+                "www.taiwannews.com.tw"
             ]
         },
         {
@@ -48,17 +55,43 @@
                 "img"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.userAgent": 3,
+                "window.localStorage": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000141,
+            "sites": 3,
+            "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [
-                "bf6b98d171dc98dc00cef61194ee8dab536579bcd83262dde64e00f4bc225e3c"
+                "9b5301280d95d65e7f83472e40f06ed75128b7908e70b7dcbcbb3d8111823830"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mojim.com",
+                "www.setn.com",
+                "www.taiwannews.com.tw"
+            ]
+        },
+        {
+            "rule": "scupio\\.com\\/html\\/ad\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "img"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "3dd06f5770208f248296cdb0ed209a423046889337177f4c0394b220f42c5504"
+            ],
+            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -67,59 +100,104 @@
             ]
         },
         {
-            "rule": "scupio\\.com\\/html\\/ad\\.html",
-            "cookies": 0.00000704,
-            "fingerprinting": 1,
+            "rule": "scupio\\.com\\/js\\/prebid\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 2,
             "subdomains": [
                 "img"
             ],
             "apis": {
-                "Document.cookie getter": 1,
-                "window.localStorage": 1,
-                "Document.cookie setter": 1
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.cookieEnabled": 3,
+                "window.sessionStorage": 3,
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.appName": 3,
+                "window.localStorage": 3,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.language": 3,
+                "Navigator.prototype.doNotTrack": 3,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2
             },
-            "sites": 2,
-            "prevalence": 0.0000141,
+            "sites": 3,
+            "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [
-                "3dd06f5770208f248296cdb0ed209a423046889337177f4c0394b220f42c5504"
+                "203a55bb38d63e5493667ead3fb49e279fef0f4e04388a2dfb43a59ad5f2a973"
             ],
-            "type": "Document",
+            "type": "Script",
             "firstPartyCookies": {
-                "__sccookie_exp1n": {
-                    "ttl": 31536023,
-                    "length": 33,
-                    "prevalence": 0.000007038783698176955,
+                "_pbjs_userid_consent_data": {
+                    "ttl": 2592006,
+                    "length": 16,
+                    "prevalence": 0.000013804146765688412,
+                    "uniqueness": 0.5
+                },
+                "ucf_uid": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000013804146765688412,
+                    "uniqueness": 1
+                },
+                "cto_bidid": {
+                    "ttl": 33696005,
+                    "length": 173,
+                    "prevalence": 0.000013804146765688412,
+                    "uniqueness": 1
+                },
+                "cto_bundle": {
+                    "ttl": 33696005,
+                    "length": 226,
+                    "prevalence": 0.000013804146765688412,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mojim.com",
+                "www.setn.com",
                 "www.taiwannews.com.tw"
             ]
         },
         {
-            "rule": "scupio\\.com\\/js\\/prebid\\.js",
+            "rule": "scupio\\.com\\/js\\/config\\/currency\\.json",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 0,
             "subdomains": [
                 "img"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.cookieEnabled": 1,
-                "window.sessionStorage": 1,
-                "Date.prototype.getTime": 1,
-                "Navigator.prototype.appName": 1,
-                "window.localStorage": 1,
-                "Document.cookie getter": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000141,
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Script",
+            "responseHashes": [
+                "6f577893009b21829bf3d0692f3656158dd2b9e36e4fc220556e574f4cda64a8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mojim.com",
+                "www.setn.com",
+                "www.taiwannews.com.tw"
+            ]
+        },
+        {
+            "rule": "scupio\\.com\\/adpinline\\/bidinfo\\.aspx",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bw"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "b65969969628555d4a0efd24d43ee2a969c7cea2bc0dfeeae9e859b7a069349b"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -130,21 +208,72 @@
         {
             "rule": "scupio\\.com\\/html\\/ls\\.html",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "img"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
+            "apis": {
+                "window.localStorage": 1
+            },
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "204b096d37249d9125a8b3450e44a31773cb148dba50c88d1fd26a0b914216ce"
+            ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mojim.com",
-                "shopee.tw"
+                "shopee.tw",
+                "www.storm.mg",
+                "www.taiwannews.com.tw"
+            ]
+        },
+        {
+            "rule": "scupio\\.com\\/recweb\\/ggid\\.aspx",
+            "cookies": 0.0000207,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rec"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mojim.com",
+                "shopee.tw",
+                "www.taiwannews.com.tw"
+            ]
+        },
+        {
+            "rule": "scupio\\.com\\/adpinline\\/rubiconid\\.aspx",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bw"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mojim.com",
+                "www.taiwannews.com.tw"
             ]
         },
         {
@@ -155,10 +284,10 @@
                 "rec"
             ],
             "apis": {
-                "Document.cookie getter": 3
+                "Document.cookie getter": 2
             },
-            "sites": 4,
-            "prevalence": 0.0000282,
+            "sites": 3,
+            "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [
                 "389471e57f7de375c4970dedf746a441e858852ae186c1c9c108cbeb0c8fe6c0"
@@ -169,43 +298,62 @@
             "exampleSites": [
                 "shopee.com",
                 "shopee.tw",
-                "www.shopee.com",
-                "www.vivo.com"
+                "www.shopee.com"
             ]
         },
         {
-            "rule": "scupio\\.com\\/js\\/jquery\\.min\\.js",
+            "rule": "scupio\\.com\\/html\\/adex\\.html",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "img"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2
-            },
+            "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "0fb170f24675c84f8228ad6b61d69bf6705030949cc2fec316b3a006eab282f8"
+                "cec41907dbce623ed85a6f9f55d314d4dbe0ee5e0cf7af66d290f390580e8a80"
             ],
-            "type": "Script",
+            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "shopee.tw",
-                "www.shopee.com"
+                "taiwannews.com.tw",
+                "www.taiwannews.com.tw"
+            ]
+        },
+        {
+            "rule": "scupio\\.com\\/img\\/2011_gym\\/300x250\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "7684143ee568b9ce13d69133030aa4077efd37eb289bac09d70ba9364f2ae93e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "taiwannews.com.tw",
+                "www.taiwannews.com.tw"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000141,
+    "cookies": 0.0000345,
     "types": {
-        "XHR": 3,
-        "Script": 10,
-        "Document": 4
+        "XHR": 14,
+        "Script": 12,
+        "Document": 8,
+        "Image": 4
     },
     "nameservers": [
         "ns-639.awsdns-15.net",

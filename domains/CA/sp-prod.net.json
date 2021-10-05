@@ -7,13 +7,14 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.0035,
-    "sites": 34,
+    "prevalence": 0.00372,
+    "sites": 37,
     "subdomains": [
         "mms",
         "message",
         "ccpa",
         "message000",
+        "ccpa-service",
         "gdpr-tcfv2"
     ],
     "cnames": [
@@ -22,12 +23,16 @@
             "resolved": "message.sp-prod.net"
         },
         {
-            "original": "cmp.csoonline.com",
+            "original": "cmp.techhive.com",
             "resolved": "message.sp-prod.net"
         },
         {
             "original": "cmp.thehill.com",
             "resolved": "message000.sp-prod.net"
+        },
+        {
+            "original": "consent.notebookreview.com",
+            "resolved": "mms.sp-prod.net"
         },
         {
             "original": "lapresse-ca.lapresse.ca",
@@ -52,6 +57,10 @@
         {
             "original": "sp.freep.com",
             "resolved": "mms.sp-prod.net"
+        },
+        {
+            "original": "sp.usatoday.com",
+            "resolved": "mms.sp-prod.net"
         }
     ],
     "fingerprinting": 1,
@@ -66,7 +75,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000412,
+            "prevalence": 0.000402,
             "cnames": [
                 {
                     "original": "mms.cnn.com",
@@ -78,6 +87,7 @@
                 }
             ],
             "responseHashes": [
+                "21f845d380be04a7a4f7ee7fc9f9a79888218b1a69a6561e65990bb2b73024f9",
                 "0d004688c894ca15df2457a3527f2298e631915591060943334b31adc5a51d2b"
             ],
             "type": "XHR",
@@ -91,20 +101,54 @@
             ]
         },
         {
+            "rule": "sp-prod\\.net\\/mms\\/get_loaders",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mms",
+                "message"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [
+                {
+                    "original": "mms.cnn.com",
+                    "resolved": "mms.sp-prod.net"
+                },
+                {
+                    "original": "lapresse-ca.lapresse.ca",
+                    "resolved": "message.sp-prod.net"
+                }
+            ],
+            "responseHashes": [
+                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cnn.com",
+                "money.cnn.com",
+                "www.cnn.com",
+                "www.lapresse.ca"
+            ]
+        },
+        {
             "rule": "sp-prod\\.net\\/ccpa\\.js",
-            "cookies": 0.00134,
+            "cookies": 0.00211,
             "fingerprinting": 1,
             "subdomains": [
                 "ccpa"
             ],
             "apis": {
-                "Document.cookie getter": 20,
-                "Date.prototype.getTime": 13,
-                "Document.cookie setter": 13,
-                "Navigator.prototype.userAgent": 19
+                "Navigator.prototype.userAgent": 20,
+                "Document.cookie getter": 21,
+                "Date.prototype.getTime": 21,
+                "Document.cookie setter": 21
             },
             "sites": 21,
-            "prevalence": 0.00216,
+            "prevalence": 0.00211,
             "cnames": [],
             "responseHashes": [
                 "fc0fbadd0003a518363a079597843305fcab3a583fc69bb67f352c98e57b68a2"
@@ -114,50 +158,56 @@
                 "ccpaUUID": {
                     "ttl": 31536000,
                     "length": 36,
-                    "prevalence": 0.0013389638479761046,
+                    "prevalence": 0.0020082337584094788,
                     "uniqueness": 1
                 },
                 "dnsDisplayed": {
                     "ttl": 31536000,
                     "length": 4,
-                    "prevalence": 0.0013389638479761046,
-                    "uniqueness": 0.07692307692307693
+                    "prevalence": 0.0020082337584094788,
+                    "uniqueness": 0.05
                 },
                 "ccpaApplies": {
                     "ttl": 31536000,
                     "length": 5,
-                    "prevalence": 0.0013389638479761046,
-                    "uniqueness": 0.07692307692307693
+                    "prevalence": 0.0020082337584094788,
+                    "uniqueness": 0.05
                 },
                 "signedLspa": {
                     "ttl": 31536000,
                     "length": 5,
-                    "prevalence": 0.0013389638479761046,
-                    "uniqueness": 0.07692307692307693
+                    "prevalence": 0.0020082337584094788,
+                    "uniqueness": 0.05
+                },
+                "_vice_cmp_fb_ldu": {
+                    "ttl": 2592009,
+                    "length": 5,
+                    "prevalence": 0.0002008233758409479,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "thehill.com",
                 "www.businessinsider.com",
-                "www.denofgeek.com",
-                "justthenews.com",
-                "www.worldatlas.com",
+                "www.thefocus.news",
+                "www.whats-on-netflix.com",
+                "www.techhive.com",
+                "www.insider.com",
+                "www.realitytitbit.com",
                 "www.vice.com",
                 "www.dualshockers.com",
-                "www.whats-on-netflix.com",
-                "flipboard.com",
-                "theweek.com",
-                "otakukart.com",
-                "www.thefocus.news",
-                "www.realitytitbit.com",
-                "www.justjared.com",
-                "www.arcamax.com",
-                "www.kiplinger.com",
-                "www.computerworld.com",
                 "www.hitc.com",
-                "www.insider.com",
-                "www.sporcle.com"
+                "theweek.com",
+                "www.sporcle.com",
+                "www.worldatlas.com",
+                "justthenews.com",
+                "www.justjared.com",
+                "www.refinery29.com",
+                "www.computerworld.com",
+                "www.denofgeek.com",
+                "www.arcamax.com",
+                "forum.notebookreview.com"
             ]
         },
         {
@@ -166,13 +216,17 @@
             "fingerprinting": 0,
             "subdomains": [
                 "message",
-                "message000",
-                "mms"
+                "mms",
+                "message000"
             ],
             "apis": {},
-            "sites": 15,
-            "prevalence": 0.00154,
+            "sites": 16,
+            "prevalence": 0.00161,
             "cnames": [
+                {
+                    "original": "consent.notebookreview.com",
+                    "resolved": "mms.sp-prod.net"
+                },
                 {
                     "original": "cmp.thehill.com",
                     "resolved": "message000.sp-prod.net"
@@ -182,7 +236,7 @@
                     "resolved": "message.sp-prod.net"
                 },
                 {
-                    "original": "cmp.csoonline.com",
+                    "original": "cmp.techhive.com",
                     "resolved": "message.sp-prod.net"
                 },
                 {
@@ -191,56 +245,64 @@
                 }
             ],
             "responseHashes": [
+                "bc6af67f5598034e8fa3fd0d45ef60216a12cc471e1a1c945eb03653ecd737c1",
                 "0de9c60981a1f89aed3323c4650be5152f6303e5c354446cc20e40fa2ff12b47",
                 "aade0d9f65fcdded1efd45ff941df3ee9147f02b01a873aa2556e83f46a6784e",
                 "8afbd569b16b2c2eb3b75ff8b49b856681490551878cdc5d04c46976f9ce84c6",
+                "29d93bceb6a43417112b1c8a4933802256de890829c287a4783ccbc17218fc22",
+                "1829fb06e205c41231eedaf6dd40ec784b1f7d5843ad88e2b9fcb39f3f7a3304",
                 "d61e877c15af50bcf7d8be5f3d285c95fc0dc41838d9e2e0f40042a48e6ba7f3",
-                "5e0784f265f20230748207a0c6311051fc3feb34622c64464a47465a6623119b",
                 "d6fd58136da48ddf4ebf65739a19b6292ef07930841faafcced71e44474d97ec",
                 "dfde293629fe57f0646f76e5a706da22a52472cdc16b3e3e1dfd507956ba002e",
                 "a73e34e986dddc00d9e0f27047c88d78aabf6b01387183571d499fcbc8c78d69",
+                "997b7cee6116a0481a21653877e68c868c7a75255055dcf86933577363471094",
                 "481f4bf2007795eaceb6dcb888a01037f59cedb5b1b6a6e08cade1bc6987fa9f",
+                "b89ce53ed51e56868dd27d43ee64d69eb5242e84aeba97329914c2a1251ef215",
                 "c536582fad69b410197bac5e9f3c752aec3ab371dcb6029d6a76c919d876f2ab",
                 "801a5bcae8225d31767cdecdf663964a83442934195a188b9966ed67c2e3b1fb"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "get_top_level_domain_cookie": 0.00020599443815016993,
-                "lotame_domain_check": 0.00010299721907508497,
-                "activation_landing_url": 0.00010299721907508497
+                "get_top_level_domain_cookie": 0.0004016467516818958,
+                "lotame_domain_check": 0.00010041168792047395
             },
             "exampleSites": [
                 "flipboard.com",
+                "forum.notebookreview.com",
                 "justthenews.com",
                 "thehill.com",
                 "theweek.com",
                 "www.arcamax.com",
                 "www.businessinsider.com",
                 "www.computerworld.com",
-                "www.csoonline.com",
                 "www.denofgeek.com",
                 "www.insider.com",
                 "www.justjared.com",
-                "www.kiplinger.com",
+                "www.refinery29.com",
                 "www.sporcle.com",
+                "www.techhive.com",
                 "www.vice.com",
                 "www.worldatlas.com"
             ]
         },
         {
             "rule": "sp-prod\\.net\\/mms\\/v2\\/message_url",
-            "cookies": 0,
+            "cookies": 0.0001,
             "fingerprinting": 0,
             "subdomains": [
                 "message",
-                "message000",
-                "mms"
+                "mms",
+                "message000"
             ],
             "apis": {},
-            "sites": 13,
-            "prevalence": 0.00134,
+            "sites": 16,
+            "prevalence": 0.00161,
             "cnames": [
+                {
+                    "original": "consent.notebookreview.com",
+                    "resolved": "mms.sp-prod.net"
+                },
                 {
                     "original": "cmp.thehill.com",
                     "resolved": "message000.sp-prod.net"
@@ -250,7 +312,7 @@
                     "resolved": "message.sp-prod.net"
                 },
                 {
-                    "original": "cmp.csoonline.com",
+                    "original": "cmp.techhive.com",
                     "resolved": "message.sp-prod.net"
                 },
                 {
@@ -264,44 +326,87 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "get_top_level_domain_cookie": 0.00020599443815016993,
-                "lotame_domain_check": 0.00010299721907508497,
-                "activation_landing_url": 0.00010299721907508497
+                "get_top_level_domain_cookie": 0.0004016467516818958,
+                "lotame_domain_check": 0.00010041168792047395
             },
             "exampleSites": [
                 "flipboard.com",
+                "forum.notebookreview.com",
                 "justthenews.com",
                 "thehill.com",
                 "theweek.com",
+                "www.arcamax.com",
                 "www.businessinsider.com",
                 "www.computerworld.com",
-                "www.csoonline.com",
                 "www.denofgeek.com",
                 "www.insider.com",
                 "www.justjared.com",
+                "www.refinery29.com",
                 "www.sporcle.com",
+                "www.techhive.com",
                 "www.vice.com",
                 "www.worldatlas.com"
             ]
         },
         {
+            "rule": "sp-prod\\.net\\/ccpa\\/consent\\/9640\\/display-dns",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ccpa-service"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flipboard.com",
+                "www.worldatlas.com"
+            ]
+        },
+        {
+            "rule": "sp-prod\\.net\\/ccpa\\/consent\\/9640\\/display-dns",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ccpa-service"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "11f591a3ce87104ae71aa765dc2515e8093f20fe51a4c52d9cb456a87da278cd"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flipboard.com",
+                "www.worldatlas.com"
+            ]
+        },
+        {
             "rule": "sp-prod\\.net\\/wrapperMessagingWithoutDetection\\.js",
-            "cookies": 0.000618,
+            "cookies": 0.000703,
             "fingerprinting": 1,
             "subdomains": [
                 "gdpr-tcfv2"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 6,
-                "Document.cookie getter": 6,
-                "Date.prototype.getTime": 6,
-                "Document.cookie setter": 6
+                "Document.cookie getter": 7,
+                "Date.prototype.getTime": 8,
+                "Document.cookie setter": 7
             },
-            "sites": 6,
-            "prevalence": 0.000618,
+            "sites": 8,
+            "prevalence": 0.000803,
             "cnames": [],
             "responseHashes": [
-                "1c6c7cb30515dc027bcadfb7b9c4d525b1c724c48bb8e1958af97e1485d035f1",
                 "79ea6bea9dbe5d24763b0570ce68e4b0463f505d561315b0fb5aa4697c0e7ab9"
             ],
             "type": "Script",
@@ -309,63 +414,65 @@
                 "_sp_v1_uid": {
                     "ttl": 2592000,
                     "length": 42,
-                    "prevalence": 0.0006179833144505098,
+                    "prevalence": 0.0007028818154433176,
                     "uniqueness": 1
                 },
                 "_sp_v1_data": {
                     "ttl": 2592000,
                     "length": 36,
-                    "prevalence": 0.0006179833144505098,
+                    "prevalence": 0.0007028818154433176,
                     "uniqueness": 1
                 },
                 "_sp_v1_ss": {
                     "ttl": 2592000,
                     "length": 91,
-                    "prevalence": 0.0006179833144505098,
-                    "uniqueness": 0.8333333333333334
+                    "prevalence": 0.0007028818154433176,
+                    "uniqueness": 1
                 },
                 "_sp_v1_opt": {
                     "ttl": 2592000,
                     "length": 2,
-                    "prevalence": 0.0006179833144505098,
-                    "uniqueness": 0.16666666666666666
-                },
-                "_sp_v1_consent": {
-                    "ttl": 2592000,
-                    "length": 18,
-                    "prevalence": 0.0005149860953754248,
-                    "uniqueness": 0.2
+                    "prevalence": 0.0007028818154433176,
+                    "uniqueness": 0.14285714285714285
                 },
                 "_sp_v1_csv": {
                     "ttl": 2592000,
                     "length": 4,
-                    "prevalence": 0.0006179833144505098,
-                    "uniqueness": 0.16666666666666666
+                    "prevalence": 0.0007028818154433176,
+                    "uniqueness": 0.14285714285714285
                 },
                 "_sp_v1_lt": {
                     "ttl": 2592000,
                     "length": 2,
-                    "prevalence": 0.0006179833144505098,
-                    "uniqueness": 0.16666666666666666
+                    "prevalence": 0.0007028818154433176,
+                    "uniqueness": 0.14285714285714285
                 },
                 "consentUUID": {
                     "ttl": 31536000,
                     "length": 36,
-                    "prevalence": 0.0005149860953754248,
+                    "prevalence": 0.0007028818154433176,
                     "uniqueness": 1
+                },
+                "_sp_v1_consent": {
+                    "ttl": 2592000,
+                    "length": 18,
+                    "prevalence": 0.0005020584396023697,
+                    "uniqueness": 0.2
                 },
                 "_sp_krux": {
                     "ttl": 7776000,
                     "length": 5,
-                    "prevalence": 0.00010299721907508497,
+                    "prevalence": 0.00010041168792047395,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "sky.com",
+                "notebookreview.com",
+                "news.sky.com",
                 "www.cuisineactuelle.fr",
                 "www.femmeactuelle.fr",
+                "www.free-fonts.com",
                 "www.skysports.com",
                 "www.thetimes.co.uk",
                 "www.vice.com"
@@ -373,14 +480,14 @@
         },
         {
             "rule": "sp-prod\\.net\\/mms\\/get_site_js",
-            "cookies": 0.000309,
+            "cookies": 0.000402,
             "fingerprinting": 0,
             "subdomains": [
                 "mms"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000309,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [
                 {
                     "original": "sp.azcentral.com",
@@ -393,6 +500,10 @@
                 {
                     "original": "sp.freep.com",
                     "resolved": "mms.sp-prod.net"
+                },
+                {
+                    "original": "sp.usatoday.com",
+                    "resolved": "mms.sp-prod.net"
                 }
             ],
             "responseHashes": [],
@@ -402,17 +513,19 @@
             "exampleSites": [
                 "azcentral.com",
                 "www.detroitnews.com",
-                "www.freep.com"
+                "www.freep.com",
+                "www.usatoday.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00227,
+    "cookies": 0.00341,
     "types": {
-        "XHR": 32,
-        "Script": 27,
-        "Fetch": 3
+        "XHR": 42,
+        "Script": 29,
+        "Preflight": 2,
+        "Fetch": 4
     },
     "nameservers": [
         "ns-1307.awsdns-35.org",

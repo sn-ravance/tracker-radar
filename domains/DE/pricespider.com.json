@@ -7,10 +7,12 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000302,
+    "prevalence": 0.000301,
     "sites": 3,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "locate",
+        "wtbevents"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -24,7 +26,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000302,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "524100eb0ae8184a7507587ea04ec7b3338cc1ab3cc82431487b41bcd7f8b297"
@@ -46,17 +48,45 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "20bc0dec8ddb2ac29922a6744b1c4e6e6c3b37c08d03be91918560223f3b9027"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "netgear.com",
+                "www.nintendo.com"
+            ]
+        },
+        {
+            "rule": "pricespider\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "locate",
+                "wtbevents"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "1d4282010015ea1ecf91dbf6acfb8aa856bc094a6472157cba0825be51e1733a",
+                "f0a47a3ab87a6356d8ad1ad8f41710c73d67fdfae2caedb18129fd0726e0d75a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "netgear.com",
+                "www.netgear.com",
                 "www.nintendo.com"
             ]
         }
@@ -65,7 +95,7 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 5
+        "Script": 8
     },
     "nameservers": [
         "ns10.dnsmadeeasy.com",

@@ -4,11 +4,14 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000502,
-    "sites": 5,
+    "prevalence": 0.000601,
+    "sites": 6,
     "subdomains": [
         "doppler-config",
-        "doppler-tasks"
+        "doppler-tasks",
+        "50fc60fa-e112-4e48-962e-8717f0af6736.dns-clientinfo",
+        "e550eaa8-a470-4b60-a0f5-d6f4843a22b2.dns-clientinfo",
+        "doppler-reporting"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -21,16 +24,18 @@
                 "doppler-config"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3
+                "Navigator.prototype.userAgent": 3,
+                "Date.prototype.getTime": 1
             },
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 5,
+            "prevalence": 0.000501,
             "cnames": [],
             "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "cbslocal.com",
                 "comicbook.com",
                 "popculture.com",
                 "www.cbsnews.com",
@@ -45,8 +50,8 @@
                 "doppler-config"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 5,
+            "prevalence": 0.000501,
             "cnames": [],
             "responseHashes": [
                 "85a70c331d0f0d8405bd03a41c694ad952cb4409c2d7f9b90bb3c5cd1a037973"
@@ -55,6 +60,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "cbslocal.com",
                 "comicbook.com",
                 "popculture.com",
                 "www.cbsnews.com",
@@ -69,8 +75,8 @@
                 "doppler-tasks"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 5,
+            "prevalence": 0.000501,
             "cnames": [],
             "responseHashes": [
                 "595879ab767a79c383f45cb22c3f6dfe14e170e4df58ed52e27ff0588d611387"
@@ -81,7 +87,71 @@
             "exampleSites": [
                 "comicbook.com",
                 "popculture.com",
+                "www.cbsnews.com",
                 "www.cbssports.com",
+                "www.mtv.com"
+            ]
+        },
+        {
+            "rule": "cbsivideo\\.com\\/clientinfo",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "50fc60fa-e112-4e48-962e-8717f0af6736.dns-clientinfo",
+                "e550eaa8-a470-4b60-a0f5-d6f4843a22b2.dns-clientinfo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0002,
+            "cnames": [],
+            "responseHashes": [
+                "fed74c28f72544881ac70d3f244a7c09c378c2aced9fc55b10ca349c9812ffe6"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "comicbook.com",
+                "www.mtv.com"
+            ]
+        },
+        {
+            "rule": "cbsivideo\\.com\\/log",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "doppler-reporting"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0002,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mtv.com",
+                "www.mtv.com"
+            ]
+        },
+        {
+            "rule": "cbsivideo\\.com\\/log",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "doppler-reporting"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0002,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mtv.com",
                 "www.mtv.com"
             ]
         }
@@ -90,13 +160,14 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 8,
-        "Fetch": 4
+        "Script": 10,
+        "Fetch": 9,
+        "Preflight": 2
     },
     "nameservers": [
-        "ns-1327.awsdns-37.org",
-        "ns-1546.awsdns-01.co.uk",
         "ns-399.awsdns-49.com",
-        "ns-883.awsdns-46.net"
+        "ns-883.awsdns-46.net",
+        "ns-1546.awsdns-01.co.uk",
+        "ns-1327.awsdns-37.org"
     ]
 }

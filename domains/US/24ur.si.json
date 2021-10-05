@@ -4,10 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000141,
-    "sites": 2,
+    "prevalence": 0.0000276,
+    "sites": 4,
     "subdomains": [
-        "gql"
+        "gql",
+        "usrs",
+        "ads.api"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -21,14 +23,14 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "24ur.com",
+                "okusno.je",
                 "www.24ur.com"
             ]
         },
@@ -41,14 +43,58 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "df8c6ed17b49c04c7be589f33db0e8fd4603d5573186bcebd42201f4a6ba189b"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "24ur.com",
+                "okusno.je",
+                "www.24ur.com"
+            ]
+        },
+        {
+            "rule": "24ur\\.si\\/avatars\\/\\/avatar_f\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "usrs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "c095f565ce8be91d372cd07e11a904c60db04950d98d9082857c42943013ec5d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "okusno.je",
+                "www.24ur.com"
+            ]
+        },
+        {
+            "rule": "24ur\\.si\\/adserver\\/api_adjs_i\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ads.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "okusno.je",
                 "www.24ur.com"
             ]
         }
@@ -58,11 +104,13 @@
     "cookies": 0,
     "types": {
         "Preflight": 2,
-        "XHR": 2
+        "XHR": 2,
+        "Image": 2,
+        "Document": 2
     },
     "nameservers": [
-        "ns1.pop-tv.si",
         "ns2.pop-tv.si",
+        "ns1.pop-tv.si",
         "ns3.pop-tv.si"
     ]
 }

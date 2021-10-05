@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000704,
-    "sites": 10,
+    "prevalence": 0.0000759,
+    "sites": 11,
     "subdomains": [
         "www"
     ],
@@ -17,18 +17,16 @@
     "resources": [
         {
             "rule": "dhs\\.gov\\/ntas\\/",
-            "cookies": 0.0000282,
+            "cookies": 0.0000345,
             "fingerprinting": 0,
             "subdomains": [
                 "www"
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000352,
+            "prevalence": 0.0000345,
             "cnames": [],
-            "responseHashes": [
-                "a7e6a66f94a9e6ae9f3a68fa9f27c919a5c4a0b661455029693379b3e8b354ad"
-            ],
+            "responseHashes": [],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -42,23 +40,25 @@
         },
         {
             "rule": "dhs\\.gov\\/ntas",
-            "cookies": 0.0000352,
+            "cookies": 0.0000345,
             "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
             "apis": {
                 "Date.prototype.getTime": 5,
-                "Event.prototype.timeStamp": 3
+                "Event.prototype.timeStamp": 5,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 5,
-            "prevalence": 0.0000352,
+            "prevalence": 0.0000345,
             "cnames": [],
             "responseHashes": [
-                "3bd7a26e490fad4bbd9476afac327c4d3d0040f62983e35eb7c1f1729f8ad964",
-                "a7e6a66f94a9e6ae9f3a68fa9f27c919a5c4a0b661455029693379b3e8b354ad",
-                "8f48047014b95aa2c844c4460a279eda24543d41be2ab3440de9b10b3c0f2e05",
-                "c4962a1ef707878f72604e1716529f365b7c6fd523694def58801009211656a6"
+                "5bb36477163bad9b6ee25c609ef00f922b0d1a628bfe77a7ecad809db880e1f0",
+                "5c28b11564e9b85ccac2afb60ea412be7ccca9c769e61e2619bc029c6ab59186",
+                "d88c9ed5538711c06059e85fc09ca07d67c522c904cb137d920c6c09c5fa11c0",
+                "5232ec741ec66c84621644d4e20d5a42fd8f40e19f04b41c6836552bfac69b5d"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -80,7 +80,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000282,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
                 "9fb0153ae43008efa0d5ef9b73320bfc9830b8125e2f4f458150f5678742e3fa"
@@ -104,10 +104,10 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000282,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "dfbacbb5c7caab804004bfe79372134c2fec591509c8bcad1785f46924193ef7"
+                "6b1419e9155ad58ccde870a8a996a7a5bc94cf184d336f88e87056c6e2630ec6"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -121,22 +121,68 @@
         },
         {
             "rule": "dhs\\.gov\\/sites\\/default\\/files\\/googleanalytics\\/analytics\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
+            "cookies": 0.0000138,
+            "fingerprinting": 2,
             "subdomains": [
                 "www"
             ],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Navigator.prototype.plugins": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Navigator.prototype.language": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
                 "fd222137f245c06ddb4c4d44db41f12138dad6cf8ef5d4d4a5e500f38f0c8c62"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_ga": {
+                    "ttl": 63072000,
+                    "length": 26,
+                    "prevalence": 0.000013804146765688412,
+                    "uniqueness": 1
+                },
+                "_gid": {
+                    "ttl": 86400,
+                    "length": 27,
+                    "prevalence": 0.000013804146765688412,
+                    "uniqueness": 1
+                },
+                "_gat": {
+                    "ttl": 60,
+                    "length": 1,
+                    "prevalence": 0.000013804146765688412,
+                    "uniqueness": 0.5
+                },
+                "_gat_newaggr": {
+                    "ttl": 60,
+                    "length": 1,
+                    "prevalence": 0.000013804146765688412,
+                    "uniqueness": 0.5
+                },
+                "_gat_GSA_ENOR0": {
+                    "ttl": 60,
+                    "length": 1,
+                    "prevalence": 0.000013804146765688412,
+                    "uniqueness": 0.5
+                },
+                "_gat_GSA_ENOR1": {
+                    "ttl": 60,
+                    "length": 1,
+                    "prevalence": 0.000013804146765688412,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fema.gov",
@@ -152,10 +198,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "6dafa0d71fc4a7fdd2c6e7d92d4ee3ae599711eb13f2f38c5356568aecf826b4"
+                "120a81cfe7f279a5860435c662d771c5755199499d9c42f88cf02325bd51507b"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -168,7 +214,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000352,
+    "cookies": 0.0000552,
     "types": {
         "Document": 10,
         "Stylesheet": 4,
@@ -177,10 +223,10 @@
     },
     "nameservers": [
         "a7-64.akam.net",
-        "a9-66.akam.net",
+        "a8-65.akam.net",
         "a1-91.akam.net",
         "a22-66.akam.net",
-        "a8-65.akam.net",
+        "a9-66.akam.net",
         "a16-67.akam.net"
     ]
 }
