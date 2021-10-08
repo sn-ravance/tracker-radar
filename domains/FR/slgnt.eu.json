@@ -7,28 +7,32 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.00121,
-    "sites": 12,
+    "prevalence": 0.00141,
+    "sites": 14,
     "subdomains": [
         "offer",
-        "site-azp"
+        "site-azp",
+        "kinepolis",
+        "petitsfreresdespauvres"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "slgnt\\.eu\\/8fbfdf8546e44497a02f5406c33105f6\\/e2b1ef12d88745\\.js",
-            "cookies": 0,
+            "rule": "slgnt\\.eu\\/a32bd1079e1f458f8ffc13126a007411\\/96160ef8b31f4f\\.js",
+            "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [
                 "offer"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "0d6a3643d763abd5626aea988842a56d760d3966c396d6b91442fe7593034c1f"
@@ -49,8 +53,8 @@
                 "site-azp"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000404,
+            "sites": 8,
+            "prevalence": 0.000803,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -59,23 +63,33 @@
             "exampleSites": [
                 "mediapart.fr",
                 "kinepolis.fr",
+                "trendy.letudiant.fr",
+                "www.club-identicar.com",
+                "www.dhnet.be",
+                "www.lalibre.be",
                 "www.mediapart.fr",
                 "www.stokomani.fr"
             ]
         },
         {
             "rule": "slgnt\\.eu\\/frontend\\/api\\/track",
-            "cookies": 0.000404,
+            "cookies": 0.000803,
             "fingerprinting": 0,
             "subdomains": [
                 "site-azp"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000404,
+            "sites": 8,
+            "prevalence": 0.000803,
             "cnames": [],
             "responseHashes": [
-                "c3ad099f9d9449161a224c367189e21a9df8dbfc3511333eb2ec9d9792937389"
+                "81ff742ccf4087fd6739d4d69204add9f7d683e3299a8378be06e9701c71aa79",
+                "cbfb62f056b335287912071e97d29db433af7b440e549d94fd27c87cf84b0adb",
+                "48ece13f165b21025c1788f4383d075aa333f20bfe8710c3b33b3fd4048f2d2c",
+                "64381b536d6d707e1d1e1f68715563668ddec68529ece4d9bcbb1ebfce92aa0c",
+                "17a4331561bf9672212dc29547a5de30eb8780007c3cea9ef4cdf39d53984d0f",
+                "a4c2b2864bc3aab35516dd4f10ab1ea3b27424ed269b0e2ce479966f309500ef",
+                "5e194b8fe649659fa9f20fd787b08cd4e0f7c5503121d99aa6c83c1230eb3007"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -83,6 +97,10 @@
             "exampleSites": [
                 "mediapart.fr",
                 "kinepolis.fr",
+                "trendy.letudiant.fr",
+                "www.club-identicar.com",
+                "www.dhnet.be",
+                "www.lalibre.be",
                 "www.mediapart.fr",
                 "www.stokomani.fr"
             ]
@@ -95,8 +113,8 @@
                 "offer"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000303,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
                 "4b9d634e72b129717cdb60f03d28ee3a5957fd7dac32988fa7db8d0fa655b4e1"
@@ -106,44 +124,67 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mediapart.fr",
+                "www.dhnet.be",
+                "www.lalibre.be",
                 "www.mediapart.fr",
                 "www.stokomani.fr"
             ]
         },
         {
-            "rule": "slgnt\\.eu\\/api\\/c58d4c7f686341ac9d4042055e87856b\\/iv\\/aHR0cHM6Ly9ibG9ncy5tZWRpYXBhcnQuZnIv",
-            "cookies": 0.000202,
-            "fingerprinting": 0,
+            "rule": "slgnt\\.eu\\/optiext\\/webtracker\\.dll",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
             "subdomains": [
-                "offer"
+                "kinepolis",
+                "petitsfreresdespauvres"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
+            "responseHashes": [
+                "a206cf52218dc73cc721d35f333a5656d3c0ae75d25232bd3533dd88e6142efe"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "m_ses": {
+                    "ttl": null,
+                    "length": 14,
+                    "prevalence": 0.0002008435428800964,
+                    "uniqueness": 1
+                },
+                "m_cnt": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.0002008435428800964,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mediapart.fr",
-                "blogs.mediapart.fr"
+                "kinepolis.fr",
+                "www.petitsfreresdespauvres.fr"
             ]
         },
         {
             "rule": "slgnt\\.eu\\/frontend\\/api\\/track",
-            "cookies": 0.000404,
+            "cookies": 0.000502,
             "fingerprinting": 0,
             "subdomains": [
                 "site-azp"
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.000505,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
-                "77cb0c4b6f358a6459dfbe2680cc6c092eaad2950b982c7c74cdfd9a18f57b36",
-                "cd2209b065ade4f5657caf68e7bc853573b899961f9c2fca281e5c89fc4c98e8"
+                "0095f15019de0fee3e53f19aa0da9a23c80d01b9a9260edf1c3152eaf4f88908",
+                "5ac8f5835a4f4906265616c790278e89ca9446eee28bca4767ff4271d279d2e9",
+                "1dc5df8d4c5019ccbc5f8a28f82d51b5927f819de3ca0b117f56ee66536ef6ca",
+                "e062a0d29d83a930800792462fb6ff377d4ab1161dc8711aff1d9039cde9bbc0"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -153,22 +194,24 @@
                 "www.larvf.com",
                 "www.magazine-avantages.fr",
                 "www.magicmaman.com",
-                "www.santevet.com"
+                "www.marieclaire.fr"
             ]
         },
         {
-            "rule": "slgnt\\.eu\\/c23177aa1f824b06b4dd642025df17a6\\/6155cd2d5d124b\\.js",
-            "cookies": 0,
+            "rule": "slgnt\\.eu\\/68754990dfed423eba7fd3a00ee0869b\\/b25b8b91f87642\\.js",
+            "cookies": 0.0001,
             "fingerprinting": 1,
             "subdomains": [
                 "offer"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2
+                "Navigator.prototype.userAgent": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
             },
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "0d6a3643d763abd5626aea988842a56d760d3966c396d6b91442fe7593034c1f"
@@ -177,22 +220,24 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "livescience.com",
-                "www.space.com"
+                "dhnet.be",
+                "www.lalibre.be"
             ]
         },
         {
             "rule": "slgnt\\.eu\\/api\\/19866ef173dd473697295d8a79c383c8\\/iv\\/aHR0cHM6Ly93d3cuc3Rva29tYW5pLmZyLw%3D%3D",
-            "cookies": 0.000101,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "offer"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "03cfe943563047d9804114f133087f320377cbe1ecc4c3c026c1146371a5a3a4"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -204,20 +249,20 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000808,
+    "cookies": 0.00141,
     "types": {
-        "Script": 4,
-        "Preflight": 4,
-        "Fetch": 4,
-        "Document": 3,
-        "XHR": 9
+        "Script": 6,
+        "Preflight": 8,
+        "Fetch": 8,
+        "Document": 5,
+        "XHR": 7
     },
     "nameservers": [
-        "ns14.dnsmadeeasy.com",
         "ns10.dnsmadeeasy.com",
+        "ns14.dnsmadeeasy.com",
         "ns12.dnsmadeeasy.com",
-        "ns11.dnsmadeeasy.com",
         "ns13.dnsmadeeasy.com",
+        "ns11.dnsmadeeasy.com",
         "ns15.dnsmadeeasy.com"
     ]
 }

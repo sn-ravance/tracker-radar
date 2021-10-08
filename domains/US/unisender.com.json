@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000352,
-    "sites": 5,
+    "prevalence": 0.0000414,
+    "sites": 6,
     "subdomains": [
-        "popup-static"
+        "popup-static",
+        "popup"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "unisender\\.com\\/service\\/loader\\.js",
@@ -21,7 +22,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000282,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
                 "a5c0be834d12190f6ac150e8a7530e8def10544b7655b2338f63e288e99c7410"
@@ -38,23 +39,39 @@
         },
         {
             "rule": "unisender\\.com\\/service\\/forms\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0000276,
+            "fingerprinting": 2,
             "subdomains": [
                 "popup-static"
             ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000211,
+            "apis": {
+                "Navigator.prototype.platform": 4,
+                "Date.prototype.getTime": 4,
+                "Navigator.prototype.userAgent": 4,
+                "window.localStorage": 4,
+                "Document.cookie getter": 4,
+                "Document.cookie setter": 4,
+                "Date.prototype.getTimezoneOffset": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
                 "d7232e235230201f400208e36a02675a4a448c846fcd53d85a680539fa897836"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "popmechanic_sbjs_migrations": {
+                    "ttl": 15552009,
+                    "length": 81,
+                    "prevalence": 0.000027608293531376825,
+                    "uniqueness": 0.25
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "hse.ru",
+                "forbes.ru",
+                "www.forbes.ru",
                 "www.hse.ru",
                 "www.ogorod.ru"
             ]
@@ -67,15 +84,19 @@
                 "popup-static"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "808b658d57ca282b161a213fb6981176f9daeba634d04ff83054cf3d601869a9"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "hse.ru",
+                "forbes.ru",
+                "www.forbes.ru",
+                "www.hse.ru",
                 "www.ogorod.ru"
             ]
         },
@@ -87,44 +108,170 @@
                 "popup-static"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "58d14778e49ca5c1791853a3f0334fc24cf0255bed578db0d6ad39e3b9c07128"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "hse.ru",
+                "forbes.ru",
+                "www.forbes.ru",
+                "www.hse.ru",
                 "www.ogorod.ru"
             ]
         },
         {
             "rule": "unisender\\.com\\/service\\/vendors\\/raven\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "popup-static"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
+            "apis": {
+                "console.memory": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "43da838acac5ba9980ae3512464b4f97ee157db140f17be15c63bf8e2a83ded7"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "forbes.ru",
+                "www.forbes.ru",
+                "www.hse.ru",
+                "www.ogorod.ru"
+            ]
+        },
+        {
+            "rule": "unisender\\.com\\/web\\/init\\/6441\\/",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "popup"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "b824bde0b31244973534d4c950104be7a76026472f0dcaba7c1d3636e32e0e98"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "forbes.ru",
+                "www.forbes.ru"
+            ]
+        },
+        {
+            "rule": "unisender\\.com\\/web\\/pixel\\/host\\/",
+            "cookies": 0.0000276,
+            "fingerprinting": 0,
+            "subdomains": [
+                "popup"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000276,
+            "cnames": [],
+            "responseHashes": [
+                "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "forbes.ru",
+                "www.forbes.ru",
+                "www.hse.ru",
+                "www.ogorod.ru"
+            ]
+        },
+        {
+            "rule": "unisender\\.com\\/web\\/pixel\\/stats\\/",
+            "cookies": 0.0000276,
+            "fingerprinting": 0,
+            "subdomains": [
+                "popup"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000276,
+            "cnames": [],
+            "responseHashes": [
+                "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "forbes.ru",
+                "www.forbes.ru",
+                "www.hse.ru",
+                "www.ogorod.ru"
+            ]
+        },
+        {
+            "rule": "unisender\\.com\\/web\\/init\\/3231\\/",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "popup"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "cddd8111ec49d8a916338df871c9f46261c1bca511aef3aa90d6b84b86ff5cac"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
                 "hse.ru",
+                "www.hse.ru"
+            ]
+        },
+        {
+            "rule": "unisender\\.com\\/web\\/init\\/4533\\/",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "popup"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "1ebff0ca695187671dd87502dd27ef338fb277745f5cb18af20a55a54f598b56"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ogorod.ru",
                 "www.ogorod.ru"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000414,
     "types": {
-        "Script": 13
+        "Script": 20,
+        "XHR": 6,
+        "Image": 8
     },
     "nameservers": [
         "ns10.dnsmadeeasy.com",

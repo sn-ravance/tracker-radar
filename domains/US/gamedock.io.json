@@ -4,16 +4,18 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000148,
+    "prevalence": 0.000145,
     "sites": 21,
     "subdomains": [
-        "tracker-v4"
+        "tracker-v4",
+        "cdn",
+        "tracker"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
-            "rule": "gamedock\\.io\\/v1\\/events-tracker\\/track\\/product\\/Portals\\/user_id\\/107\\.21\\.1\\.8",
+            "rule": "gamedock\\.io\\/v1\\/events-tracker\\/track\\/product\\/Portals\\/user_id\\/40\\.117\\.150\\.99",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -21,7 +23,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -35,15 +37,39 @@
             ]
         },
         {
-            "rule": "gamedock\\.io\\/v1\\/events-tracker\\/track\\/product\\/Portals\\/user_id\\/0",
+            "rule": "gamedock\\.io\\/gamedock-web-tracker\\/4\\.3\\.0\\/script\\/gamedock-sdk\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "6633b8a073de0ad0d5faaaa139cf28da6d705612d5edefc9b4d69a56343f60f2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "agame.com",
+                "www.mahjong.fr"
+            ]
+        },
+        {
+            "rule": "gamedock\\.io\\/v1\\/events-tracker\\/track\\/gd\\/event\\/pageview",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "tracker-v4"
+                "tracker"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000352,
+            "sites": 2,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -53,10 +79,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "agame.com",
-                "www.games.co.uk",
-                "www.jeux.fr",
-                "www.jetztspielen.de",
-                "www.juegos.com"
+                "www.mahjong.fr"
             ]
         }
     ],
@@ -64,7 +87,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 7
+        "XHR": 4,
+        "Script": 2
     },
     "nameservers": [
         "max.ns.cloudflare.com",

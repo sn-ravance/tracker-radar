@@ -9,45 +9,57 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000927,
-    "sites": 9,
+    "prevalence": 0.00131,
+    "sites": 13,
     "subdomains": [
+        "nslc-prod-app",
         "naapimtm",
+        "realm",
         "bingshoppingtool-t2app-prod"
     ],
     "cnames": [
         {
             "original": "api.mps.ford.com",
             "resolved": "naapimtm.trafficmanager.net"
+        },
+        {
+            "original": "login.norton.com",
+            "resolved": "nslc-prod-app.trafficmanager.net"
+        },
+        {
+            "original": "realm.hearstnp.com",
+            "resolved": "realm.trafficmanager.net"
         }
     ],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "trafficmanager\\.net\\/api\\/users\\/guest\\/guid",
-            "cookies": 0,
+            "rule": "trafficmanager\\.net\\/sso\\/idp\\/SAML2",
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
-                "naapimtm"
+                "nslc-prod-app"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [
                 {
-                    "original": "api.mps.ford.com",
-                    "resolved": "naapimtm.trafficmanager.net"
+                    "original": "login.norton.com",
+                    "resolved": "nslc-prod-app.trafficmanager.net"
                 }
             ],
             "responseHashes": [
-                "9fdb080f58f3f9cc4326b1dc2bca9d8c56377a514934751b468b10e8213a70aa"
+                "b71dda5833b68bf9dcc6ab772b95ec7e6a973c0ffbf393ecf4ca80a82f08fbf6",
+                "b4c0f4c9b446d9168906931b4d19e4c5bf746c560f11076597241adc0cf8ebfe"
             ],
-            "type": "XHR",
+            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ford.ca",
-                "www.ford.com"
+                "norton.com",
+                "community.norton.com",
+                "support.norton.com"
             ]
         },
         {
@@ -59,7 +71,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "api.mps.ford.com",
@@ -71,8 +83,89 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ford.ca",
-                "www.ford.com"
+                "ford.com",
+                "www.ford.ca"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/api\\/users\\/guest\\/guid",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "naapimtm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.mps.ford.com",
+                    "resolved": "naapimtm.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [
+                "c3987360b56d6ae81a5fbe1696507ad44c8755cb49476344a098e76e33ba695f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ford.com",
+                "www.ford.ca"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/\\.well-known\\/openid-configuration",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "realm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "realm.hearstnp.com",
+                    "resolved": "realm.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [
+                "03bc90950a3cf3d2baae54d90e814b61d4066e0deec3a120d04f03b38c064f6b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sfgate.com",
+                "www.sfchronicle.com"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/connect\\/authorize",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "realm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "realm.hearstnp.com",
+                    "resolved": "realm.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_li_dcdm_c": 0.0002008233758409479
+            },
+            "exampleSites": [
+                "sfgate.com",
+                "www.sfchronicle.com"
             ]
         },
         {
@@ -84,10 +177,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "bf99156e7e0693e75e0b7fccc13d5e61f146d028bf1887ba20cebe20b5fb792c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -102,16 +195,17 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000309,
+    "cookies": 0.000703,
     "types": {
-        "XHR": 2,
+        "Document": 5,
         "Preflight": 2,
+        "XHR": 4,
         "Script": 2
     },
     "nameservers": [
-        "tm1.edgedns-tm.info",
-        "tm2.edgedns-tm.info",
         "tm1.dns-tm.com",
-        "tm2.dns-tm.com"
+        "tm2.dns-tm.com",
+        "tm1.edgedns-tm.info",
+        "tm2.edgedns-tm.info"
     ]
 }

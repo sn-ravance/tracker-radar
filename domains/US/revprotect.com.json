@@ -4,10 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000211,
+    "prevalence": 0.0000207,
     "sites": 3,
     "subdomains": [
-        "app"
+        "app",
+        "pages",
+        "c"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -15,16 +17,90 @@
         {
             "rule": "revprotect\\.com\\/catch_rp\\.js",
             "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "23b2cfc9900d14b39e746ea5f2946802bacf0cd53816ef0065b0f92890d4ccee"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nfldraftdiamonds.com",
+                "www.nfldraftdiamonds.com"
+            ]
+        },
+        {
+            "rule": "revprotect\\.com\\/catch\\.css",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "app"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Script",
+            "responseHashes": [
+                "90ccee6904ff98b13b372eaaa87d8629cf12fedc238801722557c19562540b2a"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nfldraftdiamonds.com",
+                "www.nfldraftdiamonds.com"
+            ]
+        },
+        {
+            "rule": "revprotect\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pages",
+                "c"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "6e27c57585e96ed45723dcd68be6e7835d89ac8d62918dddf2538bf23cd0143f",
+                "e73ba1dcfe8ba55839ef803b0fff31d56b63c71de972b6d57690ae5dba6e887e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nfldraftdiamonds.com",
+                "www.nfldraftdiamonds.com",
+                "www.stgeorgeutah.com"
+            ]
+        },
+        {
+            "rule": "revprotect\\.com\\/api\\/rules",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "2e04d4bce882e02c7d5663fa27b9d488093d874ce567e847a4e78e4eddf4787c"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -37,7 +113,10 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2
+        "Script": 2,
+        "Stylesheet": 2,
+        "XHR": 3,
+        "Fetch": 2
     },
     "nameservers": [
         "venus.ns.cloudflare.com",

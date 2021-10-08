@@ -4,43 +4,73 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000618,
-    "sites": 6,
+    "prevalence": 0.000703,
+    "sites": 7,
     "subdomains": [
         "cdn",
         "sdk-01"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "moengage\\.com\\/webpush\\/moe_webSdk\\.min\\.latest\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
+            "cookies": 0.000402,
+            "fingerprinting": 2,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "window.indexedDB": 5,
-                "Navigator.prototype.userAgent": 5,
-                "window.localStorage": 5,
-                "Date.prototype.getTime": 3
+                "window.indexedDB": 7,
+                "Navigator.prototype.userAgent": 7,
+                "window.localStorage": 7,
+                "Date.prototype.getTime": 7,
+                "Document.cookie getter": 4,
+                "Document.cookie setter": 4,
+                "Navigator.prototype.permissions": 4,
+                "Date.prototype.getTimezoneOffset": 4
             },
-            "sites": 6,
-            "prevalence": 0.000618,
+            "sites": 7,
+            "prevalence": 0.000703,
             "cnames": [],
             "responseHashes": [
                 "c407fbc1eed0f4b6564cc95c66355c7a58809bc74e17bec860d04c20220e77c5"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "moe_uuid": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.0004016467516818958,
+                    "uniqueness": 1
+                },
+                "USER_DATA": {
+                    "ttl": 63072007,
+                    "length": 157,
+                    "prevalence": 0.0002008233758409479,
+                    "uniqueness": 1
+                },
+                "OPT_IN_SHOWN_TIME": {
+                    "ttl": 63072012,
+                    "length": 13,
+                    "prevalence": 0.00010041168792047395,
+                    "uniqueness": 1
+                },
+                "SOFT_ASK_STATUS": {
+                    "ttl": 63072012,
+                    "length": 74,
+                    "prevalence": 0.00010041168792047395,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "draxe.com",
                 "globalgrind.com",
+                "newsone.com",
+                "store.draxe.com",
                 "www.bloombergquint.com",
                 "www.lasenza.ca",
-                "www.thequint.com",
                 "www.vedantu.com"
             ]
         },
@@ -52,13 +82,15 @@
                 "sdk-01"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000515,
+            "sites": 7,
+            "prevalence": 0.000703,
             "cnames": [],
             "responseHashes": [
                 "c7410393417f1919ddc66a4f67940c4690cd41b672b2692fdc10bc844243dbcc",
+                "e82e8d31ff9ff4752ab6cd79fde21ab082bda0300eaa0f9e191c3157c19a9544",
                 "ed09d958eebc4ce6a5e29dd5c5dc61267cf33a4e75b8e606d47b26a095944428",
-                "21b0c4b47f280987185f92c61b53e4476fea3d091eaa963388b4d8c7c7efb850"
+                "fa65825525e76aa7444eecd21e5e6b097f66dd8399ea354144b57a73c58dee04",
+                "e9562af93c38fe9f73f22d74a24ed0ac2cd1bf5965daafda1f61bcc0d18454ce"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -66,8 +98,81 @@
             "exampleSites": [
                 "draxe.com",
                 "globalgrind.com",
+                "newsone.com",
+                "store.draxe.com",
                 "www.bloombergquint.com",
-                "www.thequint.com",
+                "www.lasenza.ca",
+                "www.vedantu.com"
+            ]
+        },
+        {
+            "rule": "moengage\\.com\\/webpush\\/releases\\/serviceworker_cdn\\.min\\.latest\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "b9a5cb6ab02e38547b9cb105d8b7fec32dc0280ba4fef022428b33400db70e85"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloombergquint.com",
+                "www.lasenza.ca",
+                "www.vedantu.com"
+            ]
+        },
+        {
+            "rule": "moengage\\.com\\/v2\\/device\\/add",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk-01"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "bb8b86a15c64fd109e4ebecafb8fe461838d1f73f1cb84d87b84da4fee00aae3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "moe_uuid": 0.0003012350637614218
+            },
+            "exampleSites": [
+                "bloombergquint.com",
+                "www.lasenza.ca",
+                "www.vedantu.com"
+            ]
+        },
+        {
+            "rule": "moengage\\.com\\/webpush\\/beta\\/webpushhelper\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "dd84ef34dd054c2966f73cb464b089001e81c5f1be62a2b4ecd1b8bc28be8242"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloombergquint.com",
+                "www.lasenza.ca",
                 "www.vedantu.com"
             ]
         },
@@ -79,30 +184,111 @@
                 "sdk-01"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "ee47b485c5ef1996e5e8c6a648bc873d5c1387eefa2b0a576df2c77e58705196"
+            ],
             "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "moe_uuid": 0.0004016467516818958
+            },
+            "exampleSites": [
+                "bloombergquint.com",
+                "www.bloombergquint.com",
+                "www.lasenza.ca",
+                "www.vedantu.com"
+            ]
+        },
+        {
+            "rule": "moengage\\.com\\/webpush\\/beta\\/sdk\\.inapp\\.cdnHelper\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "4b005c874067ee17cd53f67bb7d0b03e937faa6197bef9304bda510b919d6d84"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "vedantu.com",
+                "bloombergquint.com",
+                "www.lasenza.ca",
+                "www.vedantu.com"
+            ]
+        },
+        {
+            "rule": "moengage\\.com\\/v3\\/campaigns\\/inapp\\/live",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk-01"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "fb6dfd0a67ee5af92545a723bb223f3dd29929f2baba8733ec5f6096becf0ae6",
+                "dc63c503b8fa42208f2c3b609cf0e27c459a9e97192bec530c7422859a32cfb9"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "moe_uuid": 0.0003012350637614218
+            },
+            "exampleSites": [
+                "bloombergquint.com",
+                "www.lasenza.ca",
+                "www.vedantu.com"
+            ]
+        },
+        {
+            "rule": "moengage\\.com\\/v3\\/campaigns\\/inapp\\/live",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk-01"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "moe_uuid": 0.0003012350637614218
+            },
+            "exampleSites": [
+                "bloombergquint.com",
+                "www.lasenza.ca",
                 "www.vedantu.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000402,
     "types": {
-        "Script": 6,
-        "XHR": 7
+        "Script": 10,
+        "XHR": 17,
+        "Other": 3,
+        "Document": 3,
+        "Preflight": 3
     },
     "nameservers": [
-        "ns-342.awsdns-42.com",
-        "ns-903.awsdns-48.net",
+        "ns-1208.awsdns-23.org",
         "ns-1616.awsdns-10.co.uk",
-        "ns-1208.awsdns-23.org"
+        "ns-342.awsdns-42.com",
+        "ns-903.awsdns-48.net"
     ]
 }

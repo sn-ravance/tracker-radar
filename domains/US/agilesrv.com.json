@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000282,
-    "sites": 4,
+    "prevalence": 0.0000414,
+    "sites": 6,
     "subdomains": [
         "ecdn",
-        "cdn"
+        "cdn",
+        "tracking1"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -21,18 +22,30 @@
                 "ecdn"
             ],
             "apis": {
-                "window.localStorage": 2,
-                "window.sessionStorage": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "Navigator.prototype.appName": 2
+                "window.localStorage": 4,
+                "window.sessionStorage": 4,
+                "Navigator.prototype.userAgent": 4,
+                "Navigator.prototype.cookieEnabled": 4,
+                "Navigator.prototype.appName": 4,
+                "Date.prototype.getTime": 4,
+                "Document.cookie getter": 4,
+                "Event.prototype.timeStamp": 3,
+                "Navigator.prototype.mimeTypes": 1,
+                "Navigator.prototype.javaEnabled": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.doNotTrack": 1,
+                "Screen.prototype.colorDepth": 1,
+                "Date.prototype.getTimezoneOffset": 1
             },
-            "sites": 3,
-            "prevalence": 0.0000211,
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "82122e98c4ac56c9c59e87ab25dd732cb3bb110fa390b66a9fc885899cea901e",
-                "98066e3aca9ed17d4f62ecc69a2cf1cde0fa580d7cbcb84db2596bacf70d2921"
+                "388dfca29e80656b6203f6f39e66b91ddb6f5ac0fb7060202451708395c83a67",
+                "f8b2e1052cb7001e6f9fae9ef51a74710acd39040fd045428bfa6e53e2d4eb14",
+                "1de9586314e85fd6a279a7e5c46c8d162519dd0e91a9c137b90b71cafa7c96c7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -40,36 +53,68 @@
             "exampleSites": [
                 "adn40.mx",
                 "www.adn40.mx",
-                "www.forbes.com.mx"
+                "www.forbes.com.mx",
+                "www.tvazteca.com"
             ]
         },
         {
             "rule": "agilesrv\\.com\\/delivery\\/spc_fi\\.php",
-            "cookies": 0.0000141,
+            "cookies": 0.0000276,
             "fingerprinting": 0,
             "subdomains": [
                 "cdn"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "4ce1534168d2d401a17aea3206bdb42bd4619a3eedb8666224256566a07bf88e",
+                "3fdb44bec608b6c2a36f0c724010ef4234a9b9a2aabe0647b7424cc2cb45177a",
+                "6b83762d6a0c8a22492a98f3c09e8bb205f35738ac8b9913d1220a115a292401"
+            ],
             "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.000006902073382844206
+            },
+            "exampleSites": [
+                "adn40.mx",
+                "www.adn40.mx",
+                "www.forbes.com.mx",
+                "www.tvazteca.com"
+            ]
+        },
+        {
+            "rule": "agilesrv\\.com\\/delivery\\/lg\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "cdb4ee2aea69cc6a83331bbe96dc2caa9a299d21329efb0336fc02a82e1839a8"
+            ],
+            "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "adn40.mx",
+                "forbes.com.mx",
                 "www.forbes.com.mx"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000141,
+    "cookies": 0.0000414,
     "types": {
-        "Script": 3,
-        "XHR": 2
+        "Script": 4,
+        "XHR": 4,
+        "Other": 2
     },
     "nameservers": [
         "ns-376.awsdns-47.com",

@@ -7,9 +7,11 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000505,
-    "sites": 5,
-    "subdomains": [],
+    "prevalence": 0.000603,
+    "sites": 6,
+    "subdomains": [
+        "beacon"
+    ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
@@ -20,9 +22,11 @@
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "c73d0a6ae894345d15487ee10dd0d3e362b7d0d99d3d476b4d3c9d6ba587bfed"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -37,10 +41,10 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 6
             },
-            "sites": 3,
-            "prevalence": 0.000303,
+            "sites": 6,
+            "prevalence": 0.000603,
             "cnames": [],
             "responseHashes": [
                 "8dbc3f1a033b6733e96a5af1bc89d6f8ab68a5d533dcad72d56bd019e3b5b6b5"
@@ -50,8 +54,51 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mashable.com",
+                "www.allrecipes.com",
+                "www.health.com",
+                "www.pcmag.com",
                 "www.reuters.com",
                 "www.rt.com"
+            ]
+        },
+        {
+            "rule": "tru\\.am\\/scripts\\/custom\\/meredith\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8eb9fd5180f31570c65fe43430c06cec8f74daf1a7df3bee104c4c0a6e05e4ef"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allrecipes.com",
+                "www.health.com"
+            ]
+        },
+        {
+            "rule": "tru\\.am\\/beacon",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "beacon"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allrecipes.com",
+                "www.health.com"
             ]
         }
     ],
@@ -61,7 +108,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 5
+        "Script": 10,
+        "Fetch": 2
     },
     "nameservers": [
         "dan.ns.cloudflare.com",

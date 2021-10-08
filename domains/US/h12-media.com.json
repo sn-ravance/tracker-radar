@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000211,
+    "prevalence": 0.0000207,
     "sites": 3,
     "subdomains": [
         "tags",
-        "f"
+        "f",
+        "bidder"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -16,13 +17,15 @@
         {
             "rule": "h12-media\\.com\\/load2\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "tags"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.language": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
                 "eb88b43b6cbbc83daac9dfc061d9c76e8d238444052928e7cd18dbfc2f441b9d"
@@ -44,10 +47,97 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "275fb9bb95033068c5caee8eaf50ad90014350ba4d2317778a47506c8c642bbb"
+                "339d02faf6c2a0cc37d8bac109a81503bbbb1a97f3e1d885148cd76e252ec3bb"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "imginn.org",
+                "www.pixwox.com"
+            ]
+        },
+        {
+            "rule": "h12-media\\.com\\/v3\\/tags\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tags"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "1176494db0f1ba1e42764c72cdcfcd50550615baaa3de0477f39eab311a04a0d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "imginn.org",
+                "www.pixwox.com"
+            ]
+        },
+        {
+            "rule": "h12-media\\.com\\/v3\\/prebid3_2\\.1\\.js",
+            "cookies": 0.0000069,
+            "fingerprinting": 2,
+            "subdomains": [
+                "tags"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "aa891bdea1635a237ec0fd8d65be674c5fcfb1333fa6c7a1df13b6d846d4802c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cto_bidid": {
+                    "ttl": 33696001,
+                    "length": 159,
+                    "prevalence": 0.000006902073382844206,
+                    "uniqueness": 1
+                },
+                "cto_bundle": {
+                    "ttl": 33696001,
+                    "length": 255,
+                    "prevalence": 0.000006902073382844206,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "imginn.org",
+                "www.pixwox.com"
+            ]
+        },
+        {
+            "rule": "h12-media\\.com\\/prebid\\/",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bidder"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "f2a36ba36ba09c8d3fa38244870d1dc70fa297ade45c937660e27b193f2272f5"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -60,13 +150,13 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000704,
+    "cookies": 0.0000138,
     "types": {
-        "Script": 2,
-        "XHR": 2
+        "Script": 6,
+        "XHR": 4
     },
     "nameservers": [
-        "lola.ns.cloudflare.com",
-        "igor.ns.cloudflare.com"
+        "igor.ns.cloudflare.com",
+        "lola.ns.cloudflare.com"
     ]
 }

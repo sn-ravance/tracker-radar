@@ -9,25 +9,29 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00257,
-    "sites": 25,
+    "prevalence": 0.00201,
+    "sites": 20,
     "subdomains": [
         "cdn",
-        "js"
+        "js",
+        "snip"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "bronto\\.com\\/popup\\/delivery\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
-            "sites": 11,
-            "prevalence": 0.00113,
+            "apis": {
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1
+            },
+            "sites": 6,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
                 "b490544f1db32b7bea1a8e65e851746a5867832c77c82f4bee7da551797dda34"
@@ -37,16 +41,11 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gundigest.com",
-                "www.americanmeadows.com",
-                "www.bobsredmill.com",
                 "www.domyown.com",
                 "www.drmartens.com",
-                "www.gunpartscorp.com",
                 "www.jensonusa.com",
                 "www.kitchenstuffplus.com",
-                "www.lorextechnology.com",
-                "www.osprey.com",
-                "www.renspets.com"
+                "www.lorextechnology.com"
             ]
         },
         {
@@ -57,8 +56,8 @@
                 "cdn"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.000824,
+            "sites": 6,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
                 "ddf96f89cbd83438b54feaa5109c0b4fffb2e5de9e8c608f967896c3a102230d"
@@ -68,10 +67,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gundigest.com",
-                "www.americanmeadows.com",
-                "www.bobsredmill.com",
                 "www.domyown.com",
-                "www.gunpartscorp.com",
+                "www.drmartens.com",
                 "www.jensonusa.com",
                 "www.kitchenstuffplus.com",
                 "www.lorextechnology.com"
@@ -79,27 +76,72 @@
         },
         {
             "rule": "bronto\\.com\\/s\\/b\\.min\\.js",
-            "cookies": 0,
+            "cookies": 0.0001,
             "fingerprinting": 1,
             "subdomains": [
                 "js"
             ],
             "apis": {
-                "window.localStorage": 1,
-                "Document.cookie getter": 1
+                "window.localStorage": 2,
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1
             },
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "b13d2351b25a75ba71883bce7ae379d44057109f06e5116e9b979e168133da00"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "__btr_id": {
+                    "ttl": 86407,
+                    "length": 36,
+                    "prevalence": 0.00010041168792047395,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "domyown.com",
                 "www.summitracing.com"
+            ]
+        },
+        {
+            "rule": "bronto\\.com\\/v2\\/sites\\/eyJ0eXBlIjoic2l0ZWhhc2giLCJpZCI6ImEyMWNmYzkxOGY2MmFkMDY0ZDcwZWU5MGM2Mzk4OTI3ZWRjMzFlZWZkZTU5Y2EzOGFhNGIxNjVlZDFhNzFkMDIifQ==\\/assets\\/bundle\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "snip"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "fe28e4fd4b4483f82aab2cfb209c4cc1d6cfb399a7eb98993cb379881f8050a3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "b_s_id": {
+                    "ttl": 630720002,
+                    "length": 36,
+                    "prevalence": 0.0002008233758409479,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "princessauto.com",
+                "www.princessauto.com"
             ]
         }
     ],
@@ -113,16 +155,16 @@
         "Embedded Content"
     ],
     "performance": {},
-    "cookies": 0.00134,
+    "cookies": 0.00171,
     "types": {
-        "Script": 21
+        "Script": 16
     },
     "nameservers": [
+        "a24-65.akam.net",
         "a9-67.akam.net",
         "a2-67.akam.net",
-        "a22-64.akam.net",
         "a1-198.akam.net",
         "a3-66.akam.net",
-        "a24-65.akam.net"
+        "a22-64.akam.net"
     ]
 }

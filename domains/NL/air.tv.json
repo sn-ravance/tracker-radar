@@ -4,9 +4,11 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
+        "embed",
+        "cdn-sp-s3",
         "events",
         "counts"
     ],
@@ -14,23 +16,51 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "air\\.tv\\/script-loads",
+            "rule": "air\\.tv\\/v1\\/twoview_bootstrap\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "events",
-                "counts"
+                "embed"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "84ff88d0a91791da7924f66a83b8dfc8a093c1b77e84c3c3745f69694e632f06"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ranker.com",
+                "americanthinker.com",
+                "www.ranker.com"
+            ]
+        },
+        {
+            "rule": "air\\.tv\\/airtv\\.js\\/v\\/2021-09-30_16-54-31\\/twoview-1\\.0\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn-sp-s3"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "32262dd56a27202163cecba51848bc60faf3b90e9f4f3c9153568785904f2658"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "americanthinker.com",
                 "www.ranker.com"
             ]
         },
@@ -43,8 +73,30 @@
                 "counts"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "americanthinker.com",
+                "www.americanthinker.com",
+                "www.ranker.com"
+            ]
+        },
+        {
+            "rule": "air\\.tv\\/script-loads",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events",
+                "counts"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -53,7 +105,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ranker.com",
+                "americanthinker.com",
+                "www.americanthinker.com",
                 "www.ranker.com"
             ]
         }
@@ -62,13 +115,14 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Preflight": 2,
-        "XHR": 2
+        "Script": 4,
+        "Preflight": 3,
+        "XHR": 3
     },
     "nameservers": [
         "ns-1514.awsdns-61.org",
-        "ns-696.awsdns-23.net",
+        "ns-1857.awsdns-40.co.uk",
         "ns-24.awsdns-03.com",
-        "ns-1857.awsdns-40.co.uk"
+        "ns-696.awsdns-23.net"
     ]
 }

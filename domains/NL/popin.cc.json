@@ -9,13 +9,55 @@
     "subdomains": [
         "api",
         "id",
-        "discoveryplus",
+        "log",
         "r",
-        "log"
+        "inrecsys"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "popin\\.cc\\/searchbox\\/detik\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 2,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "4e837aeda1618b33c884895d3fcc6a7a1f8759809c07c9c66ef13fa773369cfa"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_ss_pp_id": {
+                    "ttl": 31536010,
+                    "length": 32,
+                    "prevalence": 0.0002006823198876179,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "detik.com",
+                "news.detik.com"
+            ]
+        },
         {
             "rule": "popin\\.cc\\/td_js_sdk_171\\.js",
             "cookies": 0.000201,
@@ -44,47 +86,46 @@
             "type": "Script",
             "firstPartyCookies": {
                 "cookies.js": {
-                    "ttl": 6,
+                    "ttl": 5,
                     "length": 9,
-                    "prevalence": 0.0002009444388626545,
+                    "prevalence": 0.0002006823198876179,
                     "uniqueness": 0.5
                 },
                 "_td": {
-                    "ttl": 63072009,
+                    "ttl": 63072011,
                     "length": 36,
-                    "prevalence": 0.0002009444388626545,
+                    "prevalence": 0.0002006823198876179,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "detik.com",
-                "www.popmama.com"
+                "news.detik.com"
             ]
         },
         {
             "rule": "popin\\.cc\\/popin_discovery\\/recommend",
-            "cookies": 0.0001,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
-                "id",
-                "discoveryplus"
+                "id"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "8eb09d159ce1c1f727937f4be26c3b1d13bd85dc0db6f9c9e89fbef829baf1ce"
+                "a5c7cfa2dbcba3d75f0085f5e0151f9503fb2f99dd9afb84d26192b429281633"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ss_pp_id": 0.00010047221943132724
+                "_ss_pp_id": 0.0002006823198876179
             },
             "exampleSites": [
                 "detik.com",
-                "www.popmama.com"
+                "news.detik.com"
             ]
         },
         {
@@ -109,7 +150,29 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "detik.com",
-                "www.popmama.com"
+                "news.detik.com"
+            ]
+        },
+        {
+            "rule": "popin\\.cc\\/log\\/popin_ads\\/adlogs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "log"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "654b8fbb3beb01a6f08eb873015b728be6ac596b9d51f6c65dbf728e22441e0e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "detik.com",
+                "news.detik.com"
             ]
         },
         {
@@ -120,19 +183,20 @@
                 "r"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "7fff1569ea68ef52782ba25b0cf3934627f7a4fc1e8e22f4652de959c5f97978"
+                "8337212354871836e6763a41e615916c89bac5b3f1f0adf60ba43c7c806e1015"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ss_pp_id": 0.00010047221943132724
+                "_ss_pp_id": 0.0002006823198876179
             },
             "exampleSites": [
                 "detik.com",
+                "health.detik.com",
                 "news.detik.com"
             ]
         },
@@ -144,11 +208,80 @@
                 "log"
             ],
             "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "654b8fbb3beb01a6f08eb873015b728be6ac596b9d51f6c65dbf728e22441e0e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "detik.com",
+                "health.detik.com",
+                "news.detik.com"
+            ]
+        },
+        {
+            "rule": "popin\\.cc\\/PopinService\\/Logs\\/other",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "inrecsys"
+            ],
+            "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "0131c8fa57bc6452571059cd57433e9289f0e89f33666c61a8ff3109e83ed36b"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "detik.com",
+                "news.detik.com"
+            ]
+        },
+        {
+            "rule": "popin\\.cc\\/log\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "r"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8337212354871836e6763a41e615916c89bac5b3f1f0adf60ba43c7c806e1015"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ss_pp_id": 0.0002006823198876179
+            },
+            "exampleSites": [
+                "detik.com",
+                "news.detik.com"
+            ]
+        },
+        {
+            "rule": "popin\\.cc\\/images\\/logo\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "6753ab9ab14844d0e9ecbbf13df7accf525291cef950547034e5ab67be9e508e"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -163,13 +296,13 @@
     "performance": {},
     "cookies": 0.000301,
     "types": {
-        "Script": 6,
-        "Image": 4
+        "Script": 8,
+        "Image": 14
     },
     "nameservers": [
-        "ns-1328.awsdns-38.org",
-        "ns-497.awsdns-62.com",
         "ns-1753.awsdns-27.co.uk",
-        "ns-517.awsdns-00.net"
+        "ns-497.awsdns-62.com",
+        "ns-517.awsdns-00.net",
+        "ns-1328.awsdns-38.org"
     ]
 }

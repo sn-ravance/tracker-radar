@@ -4,10 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000211,
-    "sites": 3,
+    "prevalence": 0.0000276,
+    "sites": 4,
     "subdomains": [
         "centrocdn",
+        "pixel",
+        "centroclick",
         "apigateway"
     ],
     "cnames": [],
@@ -21,16 +23,63 @@
                 "centrocdn"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
+            "sites": 3,
+            "prevalence": 0.0000207,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "5bdf1120c4df8c868092d0bcb7f2540a85456fd94cd1e1a5570c9b63906b1a5b"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "affirm.com",
+                "www.affirm.com",
                 "www.paylocity.com"
+            ]
+        },
+        {
+            "rule": "kiosk\\.tm\\/dmp\\/asyncPixelSync",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pixel"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "1cb51476cb8fcb9e00ce1e8521ee41df146ae42ee3d5f5042b77f33e59da797f"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affirm.com",
+                "www.affirm.com"
+            ]
+        },
+        {
+            "rule": "kiosk\\.tm\\/conv\\/e872d8548dfb7897",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "centroclick"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "a065920df8cc4016d67c3a464be90099c9d28ffe7c9e6ee3a18f257efc58cbd7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affirm.com",
+                "www.affirm.com"
             ]
         },
         {
@@ -42,20 +91,23 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "39592b7d3c3db813daca8d519955937179d1026ece51e40af23bc2eb4fc47d14"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_gcl_au": 0.00001407756739635391,
-                "_custom_sessions_id": 0.000007038783698176955,
-                "_ga": 0.000021116351094530865,
-                "_gid": 0.000007038783698176955,
-                "_ga_WR457YGH1M": 0.000007038783698176955,
-                "_ga_C01SM0HKYW": 0.000007038783698176955,
-                "nmstat": 0.000007038783698176955,
-                "smartrfi_external_id": 0.000007038783698176955
+                "_gcl_au": 0.000013804146765688412,
+                "_custom_sessions_id": 0.000006902073382844206,
+                "_ga": 0.00003451036691422103,
+                "_gid": 0.000006902073382844206,
+                "_ga_WR457YGH1M": 0.000006902073382844206,
+                "_ga_C01SM0HKYW": 0.000006902073382844206,
+                "nmstat": 0.000006902073382844206,
+                "smartrfi_external_id": 0.000006902073382844206,
+                "smartrfi_prospect_id": 0.000006902073382844206
             },
             "exampleSites": [
                 "stanford.edu",
@@ -67,7 +119,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 4
+        "Script": 5,
+        "Document": 2,
+        "Image": 2
     },
     "nameservers": [
         "ns-348.awsdns-43.com",

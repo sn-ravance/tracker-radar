@@ -9,13 +9,14 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.00141,
-    "sites": 14,
+    "prevalence": 0.00191,
+    "sites": 19,
     "subdomains": [
         "metrics",
+        "assets.map",
+        "map",
         "sadmin",
-        "edge.api",
-        "assets.map"
+        "edge.api"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -28,27 +29,85 @@
                 "metrics"
             ],
             "apis": {},
-            "sites": 12,
-            "prevalence": 0.00121,
+            "sites": 17,
+            "prevalence": 0.00171,
             "cnames": [],
             "responseHashes": [
-                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
+                "6adc3d4c1056996e4e8b765a62604c78b1f867cceb3b15d0b9bedb7c4857f992"
             ],
             "type": "Image",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "get_top_level_domain_cookie": 0.00010031096398836393,
+                "_cb_svref": 0.00010031096398836393
+            },
             "exampleSites": [
                 "oup.com",
                 "academic.oup.com",
+                "people.com",
+                "pubs.acs.org",
+                "stomp.straitstimes.com",
+                "support.sas.com",
                 "www.advocate.com",
-                "www.harley-davidson.com",
-                "www.iplt20.com",
+                "www.blick.ch",
+                "www.bose.com",
+                "www.marvel.com",
                 "www.nasdaq.com",
-                "www.net-a-porter.com",
-                "www.out.com",
-                "www.phonak.com",
+                "www.nationalgeographic.com",
+                "www.sky.de",
                 "www.thermofisher.com",
+                "www.toggo.de",
                 "www.vmware.com",
+                "www.weightwatchers.com"
+            ]
+        },
+        {
+            "rule": "brightcove\\.com\\/plugin\\/dist\\/videojs-bc-map-core\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "assets.map"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 3,
+                "Document.cookie getter": 2
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "8cec4a2e0135d513b5ab82470e26605974b687f4605cdf1fce6a9bb6c1c02b70"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "acs.org",
+                "www.nasdaq.com",
+                "www.weightwatchers.com"
+            ]
+        },
+        {
+            "rule": "brightcove\\.com\\/config",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "map"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e8aeac32a44da203804f66648127578c1da844786a640a7193c3a832ee07b959",
+                "4a59bf2fc99c995250dec33d56dd7e0e165b54bab3304b7664ee47080397b261"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "acs.org",
+                "www.nasdaq.com",
                 "www.weightwatchers.com"
             ]
         },
@@ -74,12 +133,34 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "advocate.com",
-                "www.out.com"
+                "straitstimes.com",
+                "www.advocate.com"
             ]
         },
         {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/6001673517001\\/playlists\\/6055361165001",
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/4772533039001\\/videos\\/6213069860001",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edge.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1d32fdd9b3d30816afc75b96002c0d70ce2d0a929e13e0d1aa8ab4dcdcddf6de"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blick.ch",
+                "www.blick.ch"
+            ]
+        },
+        {
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/627968409001\\/videos\\/6271344875001",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -94,12 +175,12 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "advocate.com",
-                "www.out.com"
+                "weightwatchers.com",
+                "www.weightwatchers.com"
             ]
         },
         {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/6001673517001\\/playlists\\/6055361165001",
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/627968409001\\/videos\\/6271344875001",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -110,76 +191,14 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "8b13abf5035c6269db51e21f4a647549ef4bba885d95568d5549887cec13aa99"
+                "99b567e613fbf15f108d41a1451c9303d07ca7c910d896f5b33e28eba9ca28aa"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "advocate.com",
-                "www.out.com"
-            ]
-        },
-        {
-            "rule": "brightcove\\.com\\/plugin\\/dist\\/videojs-bc-map-core\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "assets.map"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 1
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nasdaq.com",
+                "weightwatchers.com",
                 "www.weightwatchers.com"
-            ]
-        },
-        {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/88951765001\\/videos\\/6272447539001",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "edge.api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "net-a-porter.com",
-                "www.net-a-porter.com"
-            ]
-        },
-        {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/88951765001\\/videos\\/6272447539001",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "edge.api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "net-a-porter.com",
-                "www.net-a-porter.com"
             ]
         }
     ],
@@ -190,13 +209,12 @@
         "Embedded Content"
     ],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.000301,
     "types": {
-        "Image": 12,
-        "Script": 4,
-        "Preflight": 2,
+        "Image": 17,
+        "Script": 8,
         "XHR": 4,
-        "Other": 2
+        "Preflight": 2
     },
     "nameservers": [
         "ns-1426.awsdns-50.org",

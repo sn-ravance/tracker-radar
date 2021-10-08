@@ -4,40 +4,50 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.00111,
-    "sites": 11,
+    "prevalence": 0.001,
+    "sites": 10,
     "subdomains": [
-        "static"
+        "static",
+        "cdn",
+        "fonts"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "mailerlite\\.com\\/js\\/universal\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0001,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
-            "apis": {},
-            "sites": 8,
-            "prevalence": 0.000804,
+            "apis": {
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 6,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
                 "dac047673d3732b8f58a3c3707dc2cec0fabc1752643865f75b706a9de770c4f"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "mailerlite:webform:shown:3660970": {
+                    "ttl": 251769149157,
+                    "length": 13,
+                    "prevalence": 0.00010037137408411121,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "blockchainwelt.de",
+                "cryptonews.com",
                 "listoffreeware.com",
-                "stockinvest.us",
-                "stillnessinthestorm.com",
-                "toutpourmasante.fr",
+                "thefederalist.com",
                 "veggie-einhorn.de",
                 "www.cannabisanbauen.net",
-                "www.fonepaw.com"
+                "www.thelocal.de"
             ]
         },
         {
@@ -48,8 +58,8 @@
                 "static"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.000703,
+            "sites": 6,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
                 "7c70541cbc66c4b8c80b32b87187eb525940edac0927383c780c4403b2426b8e"
@@ -58,12 +68,40 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "blockchainwelt.de",
+                "cryptonews.com",
                 "listoffreeware.com",
-                "stockinvest.us",
-                "stillnessinthestorm.com",
-                "toutpourmasante.fr",
+                "thefederalist.com",
                 "veggie-einhorn.de",
+                "www.cannabisanbauen.net",
+                "www.thelocal.de"
+            ]
+        },
+        {
+            "rule": "mailerlite\\.com\\/js\\/w\\/webforms\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 7,
+            "prevalence": 0.000703,
+            "cnames": [],
+            "responseHashes": [
+                "02e2a7a2ade753679e8f8c4fd4eae75a99ccb4e87dfc3c91577db453812e9a8d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cryptonews.com",
+                "itsfoss.com",
+                "listoffreeware.com",
+                "thefederalist.com",
+                "veggie-einhorn.de",
+                "www.boredpanda.com",
                 "www.cannabisanbauen.net"
             ]
         },
@@ -75,49 +113,74 @@
                 "static"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 6,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
-                "d8a7e0f1b1bc15a2159996d77b222707e3962557a0a14b18fbf39419fc55f17b"
+                "661df990b4174d442ab319411b1521a5be47d5162eb9cd2428f91ff21f85ffd5"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "blockchainwelt.de",
+                "cryptonews.com",
                 "itsfoss.com",
-                "stockinvest.us",
-                "stillnessinthestorm.com",
-                "veggie-einhorn.de"
+                "teslawissen.ch",
+                "thefederalist.com",
+                "veggie-einhorn.de",
+                "www.oma-kocht.de"
             ]
         },
         {
-            "rule": "mailerlite\\.com\\/js\\/w\\/webforms\\.min\\.js",
+            "rule": "mailerlite\\.com\\/ajax\\/libs\\/jquery\\/1\\.8\\.3\\/jquery\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "static"
+                "cdn"
             ],
-            "apis": {},
-            "sites": 8,
-            "prevalence": 0.000804,
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Event.prototype.timeStamp": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "02e2a7a2ade753679e8f8c4fd4eae75a99ccb4e87dfc3c91577db453812e9a8d"
+                "61c6caebd23921741fb5ffe6603f16634fca9840c2bf56ac8201e9264d6daccf"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "blockchainwelt.de",
+                "cryptonews.com",
+                "thefederalist.com"
+            ]
+        },
+        {
+            "rule": "mailerlite\\.com\\/css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fonts"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000602,
+            "cnames": [],
+            "responseHashes": [
+                "08310f8d90851dd612307829e88bf3a62a9e088d6887dcafff35a8bb3375a210"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cryptonews.com",
                 "itsfoss.com",
-                "listoffreeware.com",
-                "stockinvest.us",
-                "unser-mitteleuropa.com",
+                "teslawissen.ch",
+                "thefederalist.com",
                 "veggie-einhorn.de",
-                "www.boredpanda.com",
-                "www.cannabisanbauen.net"
+                "www.oma-kocht.de"
             ]
         },
         {
@@ -128,10 +191,10 @@
                 "static"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 9
+                "Navigator.prototype.userAgent": 7
             },
-            "sites": 9,
-            "prevalence": 0.000904,
+            "sites": 7,
+            "prevalence": 0.000703,
             "cnames": [],
             "responseHashes": [
                 "c77ae965196f7308b827ce8cef39758740e9652e49958d866454ca1967e03dae"
@@ -140,12 +203,10 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "blockchainwelt.de",
+                "cryptonews.com",
                 "itsfoss.com",
                 "listoffreeware.com",
-                "stockinvest.us",
-                "stillnessinthestorm.com",
-                "unser-mitteleuropa.com",
+                "thefederalist.com",
                 "veggie-einhorn.de",
                 "www.boredpanda.com",
                 "www.cannabisanbauen.net"
@@ -163,7 +224,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "043666ae71938b4e535f3b1b33e560f75d254ef7ecc863b507b6b0d89af1ded2"
+                "c31fdcf275fefe30fcfae8af177ce05150703939876e62846a7399b1bc3783fe"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -176,10 +237,10 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0001,
     "types": {
-        "Script": 25,
-        "Stylesheet": 12,
+        "Script": 22,
+        "Stylesheet": 18,
         "Image": 2
     },
     "nameservers": [

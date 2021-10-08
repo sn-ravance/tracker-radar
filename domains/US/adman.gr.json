@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000218,
-    "sites": 31,
+    "prevalence": 0.000221,
+    "sites": 32,
     "subdomains": [
         "static",
         "meteo",
@@ -13,15 +13,15 @@
         "phaistos-ssp",
         "talos",
         "gazzetta",
+        "altair",
         "greca",
         "sport-fm",
         "star",
-        "dmi",
-        "gsapi",
-        "altair",
-        "bold",
         "meteo-obj",
-        "greca-obj"
+        "gsapi",
+        "bold",
+        "greca-obj",
+        "sport-fm-obj"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -34,18 +34,18 @@
                 "static"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 15,
-                "Document.cookie getter": 15,
-                "Screen.prototype.colorDepth": 13,
-                "window.name": 13,
-                "Date.prototype.getTime": 2
+                "Navigator.prototype.userAgent": 17,
+                "Document.cookie getter": 14,
+                "Screen.prototype.colorDepth": 16,
+                "window.name": 16,
+                "Date.prototype.getTime": 4,
+                "Screen.prototype.width": 1
             },
-            "sites": 17,
-            "prevalence": 0.00012,
+            "sites": 18,
+            "prevalence": 0.000124,
             "cnames": [],
             "responseHashes": [
-                "bc04205052de92214fd660d798ec154a2d500604ee7353ab39728a7dcf4dd62d",
-                "ccaefe3ce43d8f9c8e8ef5466055a336cf69b0658fae7e36b80f74a8e195d908"
+                "53bf91dd17ae25ad005a95d314dd5fb794b7239f521422644b09fb4e7b8d2d40"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -56,23 +56,24 @@
                 "www.alphatv.gr",
                 "www.athinorama.gr",
                 "www.bestprice.gr",
-                "www.capital.gr",
-                "www.documentonews.gr",
+                "www.car.gr",
                 "www.efsyn.gr",
+                "www.enikos.gr",
                 "www.gazzetta.gr",
                 "www.megatv.com",
                 "www.meteo.gr",
                 "www.naftemporiki.gr",
+                "www.news247.gr",
                 "www.public.gr",
+                "www.sdna.gr",
                 "www.sport-fm.gr",
                 "www.star.gr",
-                "www.tvopen.gr",
                 "www.zougla.gr"
             ]
         },
         {
             "rule": "adman\\.gr\\/gbanner\\/",
-            "cookies": 0.00000704,
+            "cookies": 0.0000069,
             "fingerprinting": 0,
             "subdomains": [
                 "meteo",
@@ -80,48 +81,76 @@
                 "phaistos-ssp",
                 "talos",
                 "gazzetta",
+                "altair",
                 "greca",
                 "sport-fm",
-                "star",
-                "dmi"
+                "star"
             ],
             "apis": {},
-            "sites": 15,
-            "prevalence": 0.000106,
+            "sites": 16,
+            "prevalence": 0.00011,
             "cnames": [],
             "responseHashes": [
-                "76e2ef087db7a3d29ae85967ac64ffb9e68878de92576c2b8f330cf8f136fb20",
+                "b525f7a2875f5c2382bac71d28c8bbf1ec5f444d0081816af51515f9b2306b0b",
                 "716c212dc069ee39855e36e5f744ddf8f291b120b4fb0b3344b0187cc29f7cf6",
                 "975381fd677695b4fe94a1352d347098a5acd8af613c89d28459dd8dd661b26e",
-                "72cd27abc4bd70401c6f6dce271c3a415872e989cf7bddb192a16987bba7013b",
-                "3a9f610cf504f49e6d0a2d9783cd30074e3cde65349650140bc5372b64d2291d",
-                "9d515b6d3b52d1c7e5c01cdd9973267abbe88ef0ed71b20037455fd34a07c907",
-                "8c87a87b0d4522fbca789cc584c07f3e7b859262950d45f21841c4f53c189176",
+                "cb14a29598e984935c84543e9942474e7144bcd0e3a2aaaca750f04ce182b17f",
+                "20760f6d8e7a4c3a6738106fcf02700eb204edf04092fbb9219f0602e327f570",
+                "fb76b55afdba715144ac687d39513b7d7329fc7e67c0789336e98ec628b4b407",
+                "de16b03f932b4245297376b00d2fa8d88d5a327121709bab1f15515305d34eae",
                 "677a81b94cc3940a9e0a62d21371796700a76cc78c7af18c6c0a325657b07056",
-                "061505fb9b276ad3f2085bcbae344724b492c46fd9aaf692823203588def45e1",
-                "8c59940bb47c6a527a8e22ea1e1afafeebb2805becdeb08b50c981e2177c3750",
-                "08f9e0afeb74397d1f416cb19770d3487198fadbb891a2053935c869f85edc39",
-                "96b6a3d3cb62f88b8213973252f0bef5012cd7bb647ad4cfaf7ada49305ade91"
+                "069143a7f4c2f552ab33f12c4c6f4c1fc8ba805b518d4545ee39911bec06e715",
+                "9de73152080ade539f758d6b8634ad71319d33b44b1cff25f73a84dac1544626",
+                "120049a760cfa04d493333957febe8d124ecd1feea721827e44bb053e20ee7e2",
+                "d306145eb8048fc0c0ba6d016858519ca03d036cf5b89d042ae6b54d45b2f88d",
+                "d79bfbb904185b9e70d4f16a1c9f66989f901b9454a61d04bfa87c0254a3065d",
+                "fdcbd865ad0702cc58ce5895ba4b5d6a5db34b9a808aa2521174ec6e646293a6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "cookies.js_dtest": 0.000006902073382844206,
+                "parsely_uuid": 0.000006902073382844206
+            },
             "exampleSites": [
                 "meteo.gr",
                 "www.alphatv.gr",
                 "www.athinorama.gr",
                 "www.bestprice.gr",
-                "www.capital.gr",
-                "www.documentonews.gr",
+                "www.car.gr",
                 "www.efsyn.gr",
+                "www.enikos.gr",
                 "www.gazzetta.gr",
                 "www.meteo.gr",
                 "www.naftemporiki.gr",
+                "www.news247.gr",
                 "www.public.gr",
+                "www.sdna.gr",
                 "www.sport-fm.gr",
                 "www.star.gr",
-                "www.tvopen.gr",
                 "www.zougla.gr"
+            ]
+        },
+        {
+            "rule": "adman\\.gr\\/meteo\\/2021\\/internal\\/269\\/FELLINI_BANNER_METEO_728x90px\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "meteo-obj"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "03fa29766c727af6e4f2fe3acb7cd6a334550c766a82e311dbbb4e6911339427"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "meteo.gr",
+                "www.meteo.gr"
             ]
         },
         {
@@ -132,11 +161,11 @@
                 "static"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000422,
+            "sites": 10,
+            "prevalence": 0.000069,
             "cnames": [],
             "responseHashes": [
-                "69d27cdeb0256e9da1374f3c65fc7d57ec6c2fc12f02e37ae9657bdbca97e7df"
+                "e620aa4b2eaef2614683e720c0f8d3dd36eb30f5bd8b60f60b669b669eb2234d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -144,9 +173,13 @@
             "exampleSites": [
                 "meteo.gr",
                 "www.alphatv.gr",
-                "www.capital.gr",
+                "www.gazzetta.gr",
+                "www.meteo.gr",
                 "www.naftemporiki.gr",
+                "www.news247.gr",
+                "www.sdna.gr",
                 "www.sport-fm.gr",
+                "www.star.gr",
                 "www.zougla.gr"
             ]
         },
@@ -158,14 +191,13 @@
                 "static"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3
+                "Navigator.prototype.userAgent": 8
             },
-            "sites": 7,
-            "prevalence": 0.0000493,
+            "sites": 9,
+            "prevalence": 0.0000621,
             "cnames": [],
             "responseHashes": [
-                "cd3c7ec0343034ca8d47549ff8c6e172138d5c96e7f6a33f9ee8fc5399bcd1d2",
-                "fd8225cdb84dec75f43cee65ff2d42d5b78611fb307c16f613b160619179eb2e"
+                "7b684d21d0c247e556120d35bb3e4f017832032848c001db91b03d325b1407b8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -173,10 +205,12 @@
             "exampleSites": [
                 "meteo.gr",
                 "www.athinorama.gr",
-                "www.capital.gr",
-                "www.documentonews.gr",
+                "www.efsyn.gr",
+                "www.enikos.gr",
                 "www.gazzetta.gr",
                 "www.meteo.gr",
+                "www.news247.gr",
+                "www.star.gr",
                 "www.zougla.gr"
             ]
         },
@@ -188,14 +222,20 @@
                 "gsapi"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000563,
+            "sites": 11,
+            "prevalence": 0.0000759,
             "cnames": [],
             "responseHashes": [
                 "6f76ad72fa4910155e55dcc137a5c32c6c80ad4917f81f44bc561bfce71ae9f0",
+                "bff38d89a25025e92eb9b37c49230f8cea81a8fe622f946a70c315415d9f1f0f",
                 "bcc16502abdcdf08b2caf4ffc65d517be403e4581d1dd0e51c3286ba5b3587e5",
+                "f59815b245322840250292f63d87a091ebcef700c3527e2f40564c88c7cf468c",
                 "e5480cec3de919db47b0c8c87e3b0c8d9091b944eb7b4258aeccbfadd9117628",
-                "f42be87dde29f0fa21f935eae26281ba2203f68950c3d65353d43406525546d3"
+                "4db55e0a68286ac28cf7ea0c2f315d58bdb384f0af2699236803e026be791f4d",
+                "709c121b0434e3bc264d471da7c74e1d4f672b85ef458b972fc980136dd13a7a",
+                "517b331923594514e3193dfea0b11a48e0b5e9cccf4e65ca9a1a379f93a78d4b",
+                "363f800fc26e1d2af09ea8621595cec6371398834f378c4f68f93067c42a12ca",
+                "6f9476bbad658e8fb26657981ba57bbc077f3bfb4e024d1273f94ace0bdb05e7"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -203,9 +243,12 @@
             "exampleSites": [
                 "meteo.gr",
                 "www.alphatv.gr",
+                "www.enikos.gr",
                 "www.gazzetta.gr",
                 "www.meteo.gr",
                 "www.naftemporiki.gr",
+                "www.news247.gr",
+                "www.sdna.gr",
                 "www.sport-fm.gr",
                 "www.star.gr",
                 "www.zougla.gr"
@@ -219,17 +262,16 @@
                 "static"
             ],
             "apis": {
-                "Date.prototype.getTime": 3,
-                "Navigator.prototype.userAgent": 3,
-                "Event.prototype.timeStamp": 2,
+                "Date.prototype.getTime": 9,
+                "Navigator.prototype.userAgent": 9,
+                "Event.prototype.timeStamp": 9,
                 "Navigator.prototype.languages": 1
             },
-            "sites": 6,
-            "prevalence": 0.0000422,
+            "sites": 9,
+            "prevalence": 0.0000621,
             "cnames": [],
             "responseHashes": [
-                "ce9cde5f08fbbb98757cad22b9ac17d31359a96a80cab7d55c84ddf4a82622e5",
-                "273b0404cf9af618771cfd292ebd5027a0117397ac674aa7186b5fad2dc1c4a8"
+                "5443214f31623d4622d4184c2ba9b775f33302a8e1ec698459e687d9405d8091"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -237,9 +279,12 @@
             "exampleSites": [
                 "meteo.gr",
                 "www.athinorama.gr",
-                "www.capital.gr",
+                "www.efsyn.gr",
+                "www.enikos.gr",
                 "www.gazzetta.gr",
                 "www.meteo.gr",
+                "www.news247.gr",
+                "www.star.gr",
                 "www.zougla.gr"
             ]
         },
@@ -251,11 +296,11 @@
                 "static"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000422,
+            "sites": 9,
+            "prevalence": 0.0000621,
             "cnames": [],
             "responseHashes": [
-                "14782f1342eb812bbe0b009ce11de9c8c30615e34da51da629f134daa84bd92c"
+                "8e0dbb1995b76cc2a6e3dd7e10d16208097f0c3e8f466aeade8a830f2b7c4edb"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -263,9 +308,12 @@
             "exampleSites": [
                 "meteo.gr",
                 "www.athinorama.gr",
-                "www.capital.gr",
+                "www.efsyn.gr",
+                "www.enikos.gr",
                 "www.gazzetta.gr",
                 "www.meteo.gr",
+                "www.news247.gr",
+                "www.star.gr",
                 "www.zougla.gr"
             ]
         },
@@ -277,16 +325,16 @@
                 "static"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.platform": 2,
-                "Navigator.prototype.appName": 2,
-                "Navigator.prototype.plugins": 2
+                "Navigator.prototype.userAgent": 9,
+                "Navigator.prototype.platform": 9,
+                "Navigator.prototype.appName": 9,
+                "Navigator.prototype.plugins": 9
             },
-            "sites": 6,
-            "prevalence": 0.0000422,
+            "sites": 9,
+            "prevalence": 0.0000621,
             "cnames": [],
             "responseHashes": [
-                "603bac8a5aca0cde464bf6e750b22fa7f8343ee10767fcc2fabe84912c4543a7"
+                "bce22a139d7c1ef51d6b97cde4d9c3b425a50f260901a3da937ef28a357df275"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -294,9 +342,12 @@
             "exampleSites": [
                 "meteo.gr",
                 "www.athinorama.gr",
-                "www.capital.gr",
+                "www.efsyn.gr",
+                "www.enikos.gr",
                 "www.gazzetta.gr",
                 "www.meteo.gr",
+                "www.news247.gr",
+                "www.star.gr",
                 "www.zougla.gr"
             ]
         },
@@ -308,11 +359,11 @@
                 "static"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000422,
+            "sites": 9,
+            "prevalence": 0.0000621,
             "cnames": [],
             "responseHashes": [
-                "08fb6e03e3944035c62b53d16bb0cd89b66b96cdf6a10739833dfaa0d92eb800"
+                "ff62a5270395e6fafcfd2f32499c08c091b4e3d1687a421e3608a6cfa43e3976"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -320,9 +371,12 @@
             "exampleSites": [
                 "meteo.gr",
                 "www.athinorama.gr",
-                "www.capital.gr",
+                "www.efsyn.gr",
+                "www.enikos.gr",
                 "www.gazzetta.gr",
                 "www.meteo.gr",
+                "www.news247.gr",
+                "www.star.gr",
                 "www.zougla.gr"
             ]
         },
@@ -334,11 +388,11 @@
                 "static"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000352,
+            "sites": 7,
+            "prevalence": 0.0000483,
             "cnames": [],
             "responseHashes": [
-                "7f3214d95e63e833372638cca25ba47aaab9e3c1dd7f2af14a96597945540744"
+                "3bf216cf9fe53d9621a81c3dacc3ef7af7711707d25c59d084629383d7c9b3c4"
             ],
             "type": "Media",
             "firstPartyCookies": {},
@@ -346,9 +400,33 @@
             "exampleSites": [
                 "meteo.gr",
                 "www.athinorama.gr",
+                "www.efsyn.gr",
                 "www.gazzetta.gr",
                 "www.meteo.gr",
-                "www.zougla.gr"
+                "www.news247.gr",
+                "www.star.gr"
+            ]
+        },
+        {
+            "rule": "adman\\.gr\\/rm\\/456\\/288\\/1267929577\\/phaistos",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "meteo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "42b976597a2d977d0e300f6d06bc903db389e5c112d33c1c8c249690a522d9f2"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "meteo.gr",
+                "www.meteo.gr"
             ]
         },
         {
@@ -357,14 +435,21 @@
             "fingerprinting": 0,
             "subdomains": [
                 "phaistos-ssp",
-                "altair"
+                "altair",
+                "gazzetta",
+                "star"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000211,
+            "sites": 7,
+            "prevalence": 0.0000483,
             "cnames": [],
             "responseHashes": [
-                "6827f090cfd3d5cfe0016cd593408718d32c8c647dc0277200399305b082d1c8"
+                "29c0e73b38b071de49298ebf32c8336aa551453ea5fd1968402241bc50c73532",
+                "4ebeca570a0933e5dfad40110e2a60483662052e4d70ec2f626f025e2ab520ed",
+                "91e1fd8dd56b8d687d39947dc5247a9bf131a34460e482509afb670b3be9a096",
+                "8ce5a0a8c88f5c455ac0dabbd1746ea45403e045acb0ed38669a3ea861f9c583",
+                "bd141125f0e27be55fd44378ca55ee561726f537380f36c0a3be4a3f72061138",
+                "7fe6de8b77ee7edd54bc36f7f1239e484756597c061f40ca405d9d957a594a48"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -372,7 +457,11 @@
             "exampleSites": [
                 "meteo.gr",
                 "www.athinorama.gr",
-                "www.meteo.gr"
+                "www.efsyn.gr",
+                "www.gazzetta.gr",
+                "www.meteo.gr",
+                "www.news247.gr",
+                "www.star.gr"
             ]
         },
         {
@@ -381,40 +470,72 @@
             "fingerprinting": 0,
             "subdomains": [
                 "phaistos-ssp",
-                "altair"
+                "altair",
+                "star"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
+            "sites": 6,
+            "prevalence": 0.0000414,
             "cnames": [],
             "responseHashes": [
-                "78a100131e7307c7f41d002b24b358c9ee7f690a16b73938ae787e9769e08ecc"
+                "42b976597a2d977d0e300f6d06bc903db389e5c112d33c1c8c249690a522d9f2"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "meteo.gr",
-                "www.athinorama.gr"
+                "www.athinorama.gr",
+                "www.efsyn.gr",
+                "www.meteo.gr",
+                "www.news247.gr",
+                "www.star.gr"
+            ]
+        },
+        {
+            "rule": "adman\\.gr\\/rv\\/456\\/288\\/1267929577\\/phaistos",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "meteo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "42b976597a2d977d0e300f6d06bc903db389e5c112d33c1c8c249690a522d9f2"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "meteo.gr",
+                "www.meteo.gr"
             ]
         },
         {
             "rule": "adman\\.gr\\/c\\/adman\\.v2\\.prebid\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "static"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Navigator.prototype.cookieEnabled": 3,
-                "window.sessionStorage": 3
+                "Navigator.prototype.userAgent": 8,
+                "Navigator.prototype.cookieEnabled": 8,
+                "window.sessionStorage": 8,
+                "Date.prototype.getTime": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "Screen.prototype.colorDepth": 3,
+                "Date.prototype.getTimezoneOffset": 3
             },
-            "sites": 4,
-            "prevalence": 0.0000282,
+            "sites": 8,
+            "prevalence": 0.0000552,
             "cnames": [],
             "responseHashes": [
-                "83fd9f5f7b99edb4f127f156eca24978a0e52f5ee70e846d9177652339f9e2b7"
+                "381738b708907e576930a997e78bd7c5331b5706652fe141571c0056573d2ada"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -423,7 +544,11 @@
                 "alphatv.gr",
                 "www.alphatv.gr",
                 "www.naftemporiki.gr",
-                "www.sport-fm.gr"
+                "www.news247.gr",
+                "www.sdna.gr",
+                "www.sport-fm.gr",
+                "www.star.gr",
+                "www.zougla.gr"
             ]
         },
         {
@@ -435,12 +560,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Ping",
+            "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -457,10 +582,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
+                "b1442e85b03bdcaf66dc58c7abb98745dd2687d86350be9a298a1d9382ac849b"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -472,93 +597,24 @@
         },
         {
             "rule": "adman\\.gr\\/banner",
-            "cookies": 0.0000282,
+            "cookies": 0.0000138,
             "fingerprinting": 0,
             "subdomains": [
-                "talos",
                 "bold"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000282,
+            "sites": 2,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "78a100131e7307c7f41d002b24b358c9ee7f690a16b73938ae787e9769e08ecc"
+                "42b976597a2d977d0e300f6d06bc903db389e5c112d33c1c8c249690a522d9f2"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "capital.gr",
-                "www.capital.gr",
-                "www.gazzetta.gr",
-                "www.news247.gr"
-            ]
-        },
-        {
-            "rule": "adman\\.gr\\/meteo\\/2021\\/internal\\/269\\/French_METEO_728x90px\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "meteo-obj"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
-            "cnames": [],
-            "responseHashes": [
-                "c3975f9de92fd591216f71aeef22013240ce05f60906d3ce1dc6b10e5cadcf8d"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "meteo.gr",
-                "www.meteo.gr"
-            ]
-        },
-        {
-            "rule": "adman\\.gr\\/rm\\/456\\/288\\/1267929577\\/phaistos",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "meteo"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
-            "cnames": [],
-            "responseHashes": [
-                "78a100131e7307c7f41d002b24b358c9ee7f690a16b73938ae787e9769e08ecc"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "meteo.gr",
-                "www.meteo.gr"
-            ]
-        },
-        {
-            "rule": "adman\\.gr\\/rv\\/456\\/288\\/1267929577\\/phaistos",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "meteo"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
-            "cnames": [],
-            "responseHashes": [
-                "78a100131e7307c7f41d002b24b358c9ee7f690a16b73938ae787e9769e08ecc"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "meteo.gr",
-                "www.meteo.gr"
+                "gazzetta.gr",
+                "www.gazzetta.gr"
             ]
         },
         {
@@ -570,10 +626,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "d3302711c2ed9726aa5717852b8c4910ecb0d3e19922b53a2b782a120f13bdab"
+                "7133f8630bae42912fac5beb2d3bfcc7b4ad6d47038fd6ce83d7eae2a20ab746"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -592,30 +648,118 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "78a100131e7307c7f41d002b24b358c9ee7f690a16b73938ae787e9769e08ecc"
+                "42b976597a2d977d0e300f6d06bc903db389e5c112d33c1c8c249690a522d9f2"
             ],
-            "type": "Ping",
+            "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "public.gr",
                 "www.public.gr"
             ]
+        },
+        {
+            "rule": "adman\\.gr\\/sportfm\\/2019\\/textlinks\\/2407\\/90x60-BWIN\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sport-fm-obj"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "18dc796929541548e6750b418c607f0b2f038fa5f9c4b509f2150eaade299bfb"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sport-fm.gr",
+                "www.sport-fm.gr"
+            ]
+        },
+        {
+            "rule": "adman\\.gr\\/sportfm\\/2021\\/textlinks\\/2740\\/ps_red_background_90x60\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sport-fm-obj"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "3e5d364eb3ceca7f94858fd681d33ac422e1db6e2163ba265fcb1fcd9258347c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sport-fm.gr",
+                "www.sport-fm.gr"
+            ]
+        },
+        {
+            "rule": "adman\\.gr\\/sportfm\\/2021\\/textlinks\\/2407\\/stoiximan\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sport-fm-obj"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "ff199bfd8cbb548635a29f4f36537e1eb5f3e35235b14aef24d6304f1ced6650"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sport-fm.gr",
+                "www.sport-fm.gr"
+            ]
+        },
+        {
+            "rule": "adman\\.gr\\/sportfm\\/2019\\/textlinks\\/2407\\/Logo_NOVI_90x60\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sport-fm-obj"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "45ba9a78b97680f624fb618fb3a92220d97b15f50573a1c6e4412c7bb9e2f40f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sport-fm.gr",
+                "www.sport-fm.gr"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000352,
+    "cookies": 0.0000276,
     "types": {
-        "Script": 73,
-        "Fetch": 8,
-        "Media": 5,
-        "XHR": 3,
-        "Image": 12,
-        "Ping": 8
+        "Script": 97,
+        "Image": 22,
+        "Fetch": 11,
+        "Media": 7,
+        "Other": 8,
+        "XHR": 7
     },
     "nameservers": [
         "dnsdt.phaistosnetworks.gr",

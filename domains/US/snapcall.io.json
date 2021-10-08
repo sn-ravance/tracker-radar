@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000141,
-    "sites": 2,
+    "prevalence": 0.0000207,
+    "sites": 3,
     "subdomains": [
-        "snap"
+        "snap",
+        "api2"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -20,22 +21,71 @@
                 "snap"
             ],
             "apis": {
-                "Navigator.prototype.language": 1,
-                "window.localStorage": 1,
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.mediaDevices": 1,
-                "Navigator.prototype.platform": 1
+                "Navigator.prototype.language": 3,
+                "window.localStorage": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.mediaDevices": 3,
+                "Navigator.prototype.platform": 3,
+                "RTCPeerConnection.prototype.constructor": 2,
+                "RTCPeerConnectionIceEvent.prototype.candidate": 1,
+                "Date.prototype.getTime": 1
             },
-            "sites": 2,
-            "prevalence": 0.0000141,
+            "sites": 3,
+            "prevalence": 0.0000207,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "7315067d3abffe05b212c333d151a00ed5007bfd7064b108e9999994eb795bb3",
+                "098ac9d43c90ede2f6a4d5071c87ed275a5dd1e13a2a8f6ecce8baa3b368f3e6"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "brompton.com",
+                "www.brompton.com",
                 "www.ter.sncf.com"
+            ]
+        },
+        {
+            "rule": "snapcall\\.io\\/v2\\/users\\/2163\\/button",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "f006bbd60894452b80c7d19e1c832d1e30f457540dc5e52e567bc1ffe522615d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "brompton.com",
+                "www.brompton.com"
+            ]
+        },
+        {
+            "rule": "snapcall\\.io\\/v2\\/users\\/2163\\/button",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "brompton.com",
+                "www.brompton.com"
             ]
         }
     ],
@@ -43,7 +93,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2
+        "Script": 3,
+        "XHR": 2,
+        "Preflight": 2
     },
     "nameservers": [
         "ns-36-a.gandi.net",

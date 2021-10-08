@@ -13,10 +13,11 @@
         "embed",
         "form",
         "husleie",
-        "renderer-assets"
+        "renderer-assets",
+        "images"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "typeform\\.com\\/next\\/embed\\.js",
@@ -45,12 +46,20 @@
         {
             "rule": "typeform\\.com\\/cdn-cgi\\/bm\\/cv\\/669835187\\/api\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
                 "form",
                 "husleie"
             ],
-            "apis": {},
+            "apis": {
+                "HTMLCanvasElement.prototype.toDataURL": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.availWidth": 2,
+                "window.devicePixelRatio": 2,
+                "Screen.prototype.colorDepth": 2
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
@@ -66,7 +75,63 @@
             ]
         },
         {
-            "rule": "typeform\\.com\\/modern-renderer\\.a98d695d12f021d967fe\\.js",
+            "rule": "typeform\\.com\\/modern-renderer\\.757f51b98267d24fbcf9\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 2,
+            "subdomains": [
+                "renderer-assets"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.connection": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "window.matchMedia(\"prefers-reduced-motion\")": 2,
+                "Event.prototype.timeStamp": 2,
+                "document.fonts.check": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "0458975778bf2457d45d5a932c3f4843a268810ec2b94db153074cde213a5673"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fandom.com",
+                "www.husleie.no"
+            ]
+        },
+        {
+            "rule": "typeform\\.com\\/cdn-cgi\\/bm\\/cv\\/result",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "form",
+                "husleie"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fandom.com",
+                "www.husleie.no"
+            ]
+        },
+        {
+            "rule": "typeform\\.com\\/modern-vendors~form\\.7c538ac847119c2b3f96\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -76,7 +141,38 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "516c29361008c971308b2d6ec991e81cf97d14f623585773d97d2af3ddafa455"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fandom.com",
+                "www.husleie.no"
+            ]
+        },
+        {
+            "rule": "typeform\\.com\\/modern-form\\.5243a1725cd243b27d95\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "renderer-assets"
+            ],
+            "apis": {
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "60d21a149ae07eec06fc7be7f7aab3a47686d88a2307121ac44051523245c5fd"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -106,7 +202,29 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fontawesome.com",
-                "velihavn.no",
+                "simplywall.st",
+                "www.husleie.no"
+            ]
+        },
+        {
+            "rule": "typeform\\.com\\/images\\/RcnRiZXjveWj\\/image\\/default-firstframe\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "a60d9ae4f7d93e3d0c5c81124d06cebd634eef36cf9a3cf8e4b6147384c78c96"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "husleie.no",
                 "www.husleie.no"
             ]
         }
@@ -115,7 +233,9 @@
     "performance": {},
     "cookies": 0.000201,
     "types": {
-        "Script": 9
+        "Script": 13,
+        "XHR": 2,
+        "Image": 2
     },
     "nameservers": [
         "ns-14.awsdns-01.com",

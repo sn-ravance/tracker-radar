@@ -4,9 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000992,
-    "sites": 141,
+    "prevalence": 0.0012,
+    "sites": 174,
     "subdomains": [
+        "launcher",
+        "api-2-0",
         "direct-events-collector",
         "publisher-assets",
         "pix",
@@ -14,15 +16,108 @@
         "metrics-logger",
         "static-cdn",
         "open-api",
-        "launcher",
-        "api-2-0",
         "www",
         "t",
-        "recirculation"
+        "recirculation",
+        "seo",
+        "app-cdn"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "spot\\.im\\/spot\\/sp_DlDBztOp",
+            "cookies": 0.0000276,
+            "fingerprinting": 2,
+            "subdomains": [
+                "launcher"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 19,
+                "window.localStorage": 19,
+                "Navigator.prototype.platform": 15,
+                "Navigator.prototype.connection": 17,
+                "Document.cookie getter": 16,
+                "Date.prototype.getTime": 19,
+                "Document.cookie setter": 4,
+                "Navigator.prototype.language": 19
+            },
+            "sites": 19,
+            "prevalence": 0.000131,
+            "cnames": [],
+            "responseHashes": [
+                "51db982fc2761491131282b05d2207b9db4d3939de206023df9b66e45ae171e3",
+                "193df6f52df5726295f6f9036327fd38194eb42b869522546c39287bb0bd392b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "spotim_visitId": {
+                    "ttl": 1802,
+                    "length": 70,
+                    "prevalence": 0.000027608293531376825,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abcnews4.com",
+                "fox11online.com",
+                "fox17.com",
+                "komonews.com",
+                "krcrtv.com",
+                "ktul.com",
+                "kutv.com",
+                "kval.com",
+                "upnorthlive.com",
+                "wchstv.com",
+                "wcyb.com",
+                "weartv.com",
+                "wjactv.com",
+                "wjla.com",
+                "wpde.com",
+                "wsbt.com",
+                "wset.com",
+                "wtov9.com",
+                "wwmt.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_DlDBztOp\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 19,
+            "prevalence": 0.000131,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abcnews4.com",
+                "fox11online.com",
+                "fox17.com",
+                "komonews.com",
+                "krcrtv.com",
+                "ktul.com",
+                "kutv.com",
+                "kval.com",
+                "upnorthlive.com",
+                "wchstv.com",
+                "wcyb.com",
+                "weartv.com",
+                "wjactv.com",
+                "wjla.com",
+                "wpde.com",
+                "wsbt.com",
+                "wset.com",
+                "wtov9.com",
+                "wwmt.com"
+            ]
+        },
         {
             "rule": "spot\\.im\\/api\\/v2\\/events",
             "cookies": 0,
@@ -31,8 +126,8 @@
                 "direct-events-collector"
             ],
             "apis": {},
-            "sites": 114,
-            "prevalence": 0.000802,
+            "sites": 137,
+            "prevalence": 0.000946,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -41,26 +136,26 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.yahoo.com",
-                "www.tuttotech.net",
-                "www.workingmother.com",
-                "journalstar.com",
-                "www.realclearscience.com",
-                "freedomheadlines.com",
-                "www.livemixtapes.com",
-                "www.motorcyclistonline.com",
-                "www.comicsands.com",
-                "www.realclearhistory.com",
-                "lidblog.com",
-                "www.bikemag.com",
-                "www.thedrive.com",
-                "www.fieldandstream.com",
-                "www.thefashionspot.com",
-                "ktul.com",
-                "vaccines.procon.org",
-                "www.islands.com",
+                "www.ign.com",
+                "www.mmaweekly.com",
                 "m.jpost.com",
-                "homepage.aol.com"
+                "netflixlife.com",
+                "www.bizpacreview.com",
+                "bamsmackpow.com",
+                "www.comicsands.com",
+                "russian.rt.com",
+                "www.wktv.com",
+                "radaronline.com",
+                "www.driving.co.uk",
+                "richmond.com",
+                "www.ibtimes.sg",
+                "ktul.com",
+                "lacrossetribune.com",
+                "www.huffingtonpost.ca",
+                "www.thedrive.com",
+                "prescriptiondrugs.procon.org",
+                "homepage.aol.com",
+                "wonderfuldiy.com"
             ]
         },
         {
@@ -71,34 +166,73 @@
                 "publisher-assets"
             ],
             "apis": {},
-            "sites": 107,
-            "prevalence": 0.000753,
+            "sites": 132,
+            "prevalence": 0.000911,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.yahoo.com",
-                "www.zmescience.com",
-                "us.yahoo.com",
-                "trib.com",
-                "wjactv.com",
+                "www.ign.com",
+                "lacrossetribune.com",
                 "ktul.com",
-                "wset.com",
-                "www.gizchina.com",
-                "kearneyhub.com",
-                "www.motorcyclecruiser.com",
-                "steadfastclash.com",
-                "firstwefeast.com",
-                "tulsaworld.com",
-                "journalstar.com",
-                "www.metro.us",
-                "www.horoscope.com",
+                "wtov9.com",
+                "saturdayblitz.com",
+                "www.workingmother.com",
                 "www.realclearscience.com",
-                "www.complex.com",
-                "www.carbibles.com",
-                "clickhole.com"
+                "tulsaworld.com",
+                "kval.com",
+                "www.motorcyclistonline.com",
+                "www.vvng.com",
+                "clickhole.com",
+                "www.comingsoon.net",
+                "www.soapoperaspy.com",
+                "wset.com",
+                "www.metro.us",
+                "krcrtv.com",
+                "herald-review.com",
+                "www.kenoshanews.com",
+                "okmagazine.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_DlDBztOp\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 19,
+            "prevalence": 0.000131,
+            "cnames": [],
+            "responseHashes": [
+                "d2fb0a9037cb4f5833eef200efa356eedadaaa1009fafdced79f5bc93720795c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abcnews4.com",
+                "fox11online.com",
+                "fox17.com",
+                "komonews.com",
+                "krcrtv.com",
+                "ktul.com",
+                "kutv.com",
+                "kval.com",
+                "upnorthlive.com",
+                "wchstv.com",
+                "wcyb.com",
+                "weartv.com",
+                "wjactv.com",
+                "wjla.com",
+                "wpde.com",
+                "wsbt.com",
+                "wset.com",
+                "wtov9.com",
+                "wwmt.com"
             ]
         },
         {
@@ -109,193 +243,245 @@
                 "pix"
             ],
             "apis": {},
-            "sites": 110,
-            "prevalence": 0.000774,
+            "sites": 135,
+            "prevalence": 0.000932,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.yahoo.com",
-                "komonews.com",
-                "www.hometips.com",
-                "fox11online.com",
-                "guiltyeats.com",
-                "hdontap.com",
-                "freedomheadlines.com",
-                "kutv.com",
-                "www.realclearscience.com",
-                "www.realclearhistory.com",
-                "www.thedrive.com",
-                "perezhilton.com",
+                "www.ign.com",
+                "wtov9.com",
+                "www.refinery29.com",
+                "www.mmaweekly.com",
+                "krcrtv.com",
+                "wonderfuldiy.com",
                 "lacrossetribune.com",
-                "www.foxbusiness.com",
-                "failblog.cheezburger.com",
-                "www.saltwatersportsman.com",
-                "god.dailydot.com",
+                "movieweb.com",
+                "wsbt.com",
+                "netflixlife.com",
+                "vaccines.procon.org",
+                "www.motorcyclistonline.com",
+                "www.soapoperaspy.com",
+                "www.christianpost.com",
                 "www.dailywire.com",
-                "metalinjection.net",
-                "netflixlife.com"
+                "upnorthlive.com",
+                "trib.com",
+                "www.bizpacreview.com",
+                "hickoryrecord.com",
+                "www.realclearmarkets.com"
             ]
         },
         {
             "rule": "spot\\.im\\/api\\/v1\\/pixel",
-            "cookies": 0.000774,
+            "cookies": 0.000932,
             "fingerprinting": 0,
             "subdomains": [
                 "pix"
             ],
             "apis": {},
-            "sites": 111,
-            "prevalence": 0.000781,
+            "sites": 135,
+            "prevalence": 0.000932,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.yahoo.com",
-                "www.thedrive.com",
-                "journalnow.com",
-                "wsbt.com",
-                "stylecaster.com",
-                "homepage.aol.com",
-                "kutv.com",
-                "okmagazine.com",
-                "prescriptiondrugs.procon.org",
-                "fox11online.com",
-                "www.complex.com",
-                "m.sport5.co.il",
-                "www.jpost.com",
-                "www.whats-on-netflix.com",
-                "m.jpost.com",
-                "guiltyeats.com",
-                "clickhole.com",
-                "kearneyhub.com",
+                "www.ign.com",
+                "www.realclearpolitics.com",
+                "cumberlink.com",
+                "www.celebdirtylaundry.com",
                 "upnorthlive.com",
-                "cattime.com"
+                "www.comicsands.com",
+                "hdontap.com",
+                "www.boatingmag.com",
+                "richmond.com",
+                "www.dailywire.com",
+                "www.realclearinvestigations.com",
+                "celebratingthesoaps.com",
+                "saturdayblitz.com",
+                "tulsaworld.com",
+                "www.wktv.com",
+                "www.mmaweekly.com",
+                "www.christianpost.com",
+                "perezhilton.com",
+                "www.carbibles.com",
+                "www.billboard.com"
             ]
         },
         {
             "rule": "spot\\.im\\/api\\/v1\\/device_load",
-            "cookies": 0.000774,
+            "cookies": 0.000939,
             "fingerprinting": 0,
             "subdomains": [
                 "events-collector"
             ],
             "apis": {},
-            "sites": 110,
-            "prevalence": 0.000774,
+            "sites": 136,
+            "prevalence": 0.000939,
             "cnames": [],
             "responseHashes": [
-                "58203852b05ecb034df9634ba0675d249fe4462b12ff7a13fa50d299d18723c2",
-                "d3416d3ba7a4a39cddc4c2e1129991d3e534e1baec5d184df9597f8a52748f27",
-                "890e09224d20fe1bd3e113dd52421d8ef7a5150bc011d6c55d06f663f2fb8e76",
-                "e7fbdad8928afa988b1db99f5b194f60dcfb1f96e7620feab0680019d4b0e6fe",
-                "66acc0cd0ed9c054ac4ac8e1039ea863c336df6837ea8423f5b9ac48855d4b2e",
-                "bad17430a0d83059fdab3809ce9bb6f94238c5e2b22e15fac683fddb5d1c0fc5",
-                "9fd97eadd0396821e954eb1bca2dbb62ca62392a84d5e22680426aaeaa45988e",
-                "b6a3ab853e89aba0b165176c67947a25986329d5e39e6f39ab9a19735a323fe9",
-                "6159c1d18be82f61e332b4d424bb47fe7ce1bfff5fd2744831058a8f316f1a59",
-                "a6799702c2c615d606dacf56fe7a57dbd7d091db2f3882417c8ef34e4575234a",
-                "36150daaf8c6f93231380c69e91e30c7ef14f18ddd0bb0ecd930211d4b4b2abe",
-                "c92a89f1aa20ec4e9218b4d3c1cac8e822528d8cf588280d242d787b4c4b4e55",
-                "51f0d528e85deb243d91ab1eddedef7e706a6a62d3319ddae9b24b70e303030a",
-                "b2234204acee9b556970c223a6a51149d002040a0187b06d71530f4549e84f82",
-                "5833c1649024f4f209e0ca2476bf0dd472672714bd3247662c31f104791d0df0",
-                "2d7618005274933114257c061ef5bd74781121b8feaeaaf41df5cd9eb3fc64c7",
-                "33a0fe56aa99c56b1c26fc7df10bc7f9086cc646e1c15a65d26273edad32673e",
-                "44e125f1727c381b829269521c30a6939ad011b62dcd400658f7f0e059ccebf3",
-                "4f36e6ab2de016675efdf1b3e84980599004914109e4234048059af2ce64a6c7",
-                "cad3cfec6eee112a08b6658a1e71cfa8a0775c03b36d73f9e790f37254b01c90",
-                "9d1d92f86ed5b29f43a4896629bca50cf99f16badced114d407e94236c70ee22",
-                "a1f5758377eea2c1910d4805c9e4614b434db57ced336a83053c8527e1ebadb5",
-                "63cbee71b0d00e6aea52f7c3b4792294d982add5f19fc05e06b0241f6f74b60e",
-                "d9411da2e14d063d8f409a96577315ef54fcd6d0499c35ec81c96fd332bb2c0a",
-                "0405efe0303d538ae39ed6acd70123ff38a27ac5da7dda05f78afcbe8999fedf",
-                "d607aa3a16b1238a5bca71278e814c056038b02e31d7d97688a48379fdc3b631",
-                "148eac8bcf00ba6dd33fb634d14dd1091dd65e53846e545e870eb906c84c4d82",
-                "38f0f65f3f1b1fbd7025c254560e836cb7e85e9f5bbdc6f8810a2168352c5e49",
-                "9df190a193728be7b2d4a911e8f76c011ba3b9c4ba6a3a2d25af489ad5a43eff",
-                "f054a7f7fbcadff61bd21004b2f6b41e41a96523d748e481c146e88e240f9d12",
-                "df8a9dace4866a699f5727b65b949723a0d385266790721ae1f33be5b318f232",
-                "f6d010d3351923991f151db67c5df6b259c476a8fabb78c4129083bd2b987bca",
-                "02f1e18913070847c8f3c425fa6d00c18b8282661879e86f259b58a5cdd88502",
-                "5a2e129eaace7b30e0f2ef1cf07aca6be53ffb25e78e75b54b25ef565923ea14",
-                "f68b42f349728fe0ec2258d9e5529fba7bd44166005d2303a3921e42e7f7895c",
-                "213fde11c70bd2b0349bd547d80e4604fcf4656593688d3fcd90eb92b638b1a8",
-                "9adda37b780092d8c9e1c9fcdec1e3b0a96ce18a67efc710fca4d2083dadf2d4",
-                "0d00c667f9fd37385377133fac61b8f5a43de7f78ffcd428dab9a2798a2752f0",
-                "af105280679324f7a221107ea067ae4466fbeed5213539003d52ee6506d4eaad",
-                "7d0ff097111dfdabb9b6d76235a1677bc7d9f8ca655710de72b03fe613f00b4d",
-                "75bbb3c7068de37675b0270a89efa97592ac077d3a66baeb788b5710f6fe0843",
-                "702d3cf1c82458d27ef40b43c118ffe446bd0886ddb78f4b7b1ecd36c23ffbe5",
-                "3ac1c2d5ae82ecf9a7248b6f92169d0429efb3ee7c235305b1e6df5f76bf8772",
-                "64a11ff3f99082c7736be600562ee5a8c6c308161ccf91f6cb2058d83c1fdbcc",
-                "355981c25c998fdfa77b25360de6d19d9be9cd36f67b3ae3cb362a69dbaba216",
-                "2470f9ea8ecf95a0df64f8a5a031814019cbd385c972aff528f30332964fc7c4",
-                "1ccafcfa59ce5af153f716b45bf3ddd49687f1b9dd1419646ca60ef1edda6e85",
-                "e9dda91f9f3ecfecf22e00a6e26bed78c75e2453b734518922342bb31963762e",
-                "3586fe5886912aaa237647cfd6e761f51ee43d9ba4c1eacedd561838ccd6e1dd",
-                "f4785b1129a225a86699fa126080f7a665f1e758c97ed3e13693e2272ae9c72f",
-                "3becf0d4aeb2f74c566fa0dd63080871daca8de4893ffc74f6a4735ce1b15865",
-                "4032fe0e11fbca54aad02c878dd0bed2da8b2453c587aa29439ab42832bfec29",
-                "c6eda7a2438d2d50b48ac33b152d51d1dae20150bccf917a1b362eb9abbcaf16",
-                "5763b6f8a47e38ba7a9c22d92c09892330253d3b1fdf00bbe5667a4f85fd80f9",
-                "a6b1f5fb39001b572ef722e8448841e1dfdd4a069b81a5e727d1790567f8885c",
-                "0434368799f3a92dc10713be26dd6e67be3236db88b48dd8d472bef8cf78b7a7",
-                "2ad50179f39b8927ad443a5e49c50ba83930d344fe0a24c760601c7b83d35a4a",
-                "2eee76952d48970fc54ee57fc5b20bf12bee71f4041ab7326204ad3e32f72a0d",
-                "2b0addae8a398c063685ae0356c7f3e3da31e18d704bec191d484b427b688065",
-                "4bbca7d69c7c71ca5d4899230d38df2e94acb4cc3f80f3981d7d4e068cd1902b",
-                "eecebf8d9e7596bb569e4629e4abcb0f88355fe4660a4b8d2b5ad5ca8e7680e5",
-                "d280aef9f0d4f2a28e77763a658fdf811501df0aa88b1cc346c8b3a6969ca549",
-                "5301fd2f9956aab5d87cbb81bbc535bcf15f48dcdd81ad6977fc63c27e671692",
-                "abbe427a45bcfd5920df74044ceb88daca346cdd55ca8e1e8e6ce60c446a0f36",
-                "08b56a0094de5ac3efa4240c432f1ba20ac728a3e2f3fbf20429411123a60448",
-                "c7070addae92f8757a4faec2e0f9aa87d8ce3f60d47cdd215f09cf1ab6e19fca",
-                "59361b4cd7282a62d0061ac5c2efe80b94131962ccb4b48c1ba37c9caeb8a9c2",
-                "bee74217a02322c0b309d7d3dba89acb4881c6c8dd2b75446aa92895e9381266",
-                "499965415c780b6fccd4dac9efd63df4b64a354a3dda213b5284d50699c98aae",
-                "6b63ffe56637028d06595281841753bd899434375264b13a82dc94fe176df6fd",
-                "e910ac69060e8022b6859efb1baf95965de160de785ea1fcbe8624c545c84470",
-                "19621c43d10830d50b17f278bac9d6a9d254bac8aa7d10445d303419812a5577",
-                "d76c8a5760770e283ba51bf8685720dc90e4f59ce1f5451c026b6c10c04a7c79",
-                "51692e350431b78e03e629bb02223f35336ea2e8b0a53e6e115a88a601b65b16",
-                "4ee7e87f3af9dad8ee46ee89b09827fce80aea256ed6c4c7419071df31df4ffe",
-                "97fade5fe4002ae05a8788c981a3fce8275bcf510e081ca012516a712511148f",
-                "90fe4f27fab7f6a6050b08872c78c6dab9806bbfeac1a4f8738e7ca374aea205",
-                "71492cc86c7e8f3dfb797ba92c27c461f33f442262a7efe42fab6165c0768275",
-                "a28b9565ec41c54bf2be5f390d71f3cc68e9f144751ed6fc5cefa6fe7a8c4aa1",
-                "ad4cd5338b5407f020419f7e6af28ca9f4014b0372729c7bfd7081abd6e6a1e2",
-                "30d4614d62c07225b7cfcf2a9a0c5fa250c91a42a1e3ae2335af77a9605c3700",
-                "43966a15e24a41124b51fbbe41bb44fac0c23da8adeaf2987bf463ebd28851e7"
+                "3cc9b11dabcb13dc85021757b9487e4cbe2bb46b8eec51287abf54199ba0ad81",
+                "a16c648b07295615aaf595c593267848f53946e61b9c01c53e0daff917578e70",
+                "ed4be7cae8c31e8db277da103e84190b432c65804b8ec3035e3c69224c5bb568",
+                "9b22436a796d11f63aa2f84f28c4f9d512f208740b28682a6598584047ebdf79",
+                "229e40ca05b9926d38640c538e46fe5b2c248b0a477f647a09094cef010099e6",
+                "bfb50f4d37ffe12534679fd00c96125ba64ca3334cd635f26e668e6ea28515aa",
+                "426c0269addc6a91e1ae4e8c1a1dc3901b3940280bb6e52003cdef41e1d5f90a",
+                "3dc9f95a0d7a778530ac42aba4bcb24be20de39f451280b43f8c745b0d14f56c",
+                "d2fe34696c77cd897872bd29ebc9f6eed2d763d6f89025a3165f9ac582b6065f",
+                "258d6b5c3772a57075decf88b9fcc7148aed9066f01953a155902f88170b68dc",
+                "f550e7fd1b8976483bd701201f90f9659e6dbd8816fa7c19c59283bd454ed5f6",
+                "33a79fbda3cac437c59154d8ec16e2ffede727a374654cfcef52c2536855d6a7",
+                "004c3c074ec54ca20eceb5b41d6fb4f07bd91be3a9154f9babd94a09f33faffb",
+                "c4fdeb62c0a0251268301f201e78139149fb3b665202266d0239e2bd5b7f5972",
+                "760f6bb664bb662a15bbeab4f5e5ec85781c82158cd824f7e494e134604f7970",
+                "97ef1d4f7f366be13f58d7ad2582a091cc13b6c2074ff7d3a3dc50872394f32d",
+                "0abe26422cba688b9711ea794df5e86f9113b009ebbaf01809c6214fe3b03cd7",
+                "aaf5c6178d11de9bf34f05ae089619b9e51c9aefb8ebd48c11a68e549b34797b",
+                "dda957577c9bab50bf21b4b577bf814b7286939aacd798ed8d895f449129b63d",
+                "b9b243f0b836183cdeadf2375594155ee3399317c250298e0f15ba7f7d772099",
+                "8ef8f1bec8e720d61d8e009cb29be89dcbe93fd5fa2d04b7ad0c74253418a230",
+                "f6a671054d19fe9f69434d081f72f3f78ffd25f8305b507826ebaae905719a6f",
+                "070f0d9344fc5768742e835508729ea490d249dc2566494e7afc75670763eae3",
+                "33d70a30f7508b0e2bce87b79ae2420841569f8f155d9e9a8da3b1bfd9084447",
+                "2c5760cf52ef2c45acd576c93b4abfb9d80d45cdf509c42b9d70eb324cc16b17",
+                "4ba6234dbf0533dbc282ed18c4a5165df4ef3820d3913bff6f85454627bf679b",
+                "118146d2c32205d483dba0e0b2f32b371a3b33fd0ed1b5c9478db6052e480239",
+                "e8e7d8d4eca509628b377943de4cb5f2e8dc1c5297d1288c9d881030c96b653a",
+                "eba06d7ac6f65e14b98281574d956e1f43f3c7e7a434f3e9e308c9d6697eba85",
+                "70204fb147623983936b9a512a5b50876e39dd4272e41ec93f52eece11c116fa",
+                "38b9041f65cabbe7fe28bf457d7721d2cb729148f9f1aa7c3f9b53e99f45d5a1",
+                "ae6c98eef7985ed2578d49308c22905921ae57d7ef90f9792429bb694e54878e",
+                "e238ce6e98839ce12d7e2577b73ac17928841d6c07c9796e2ec32983b13e08bb",
+                "3ae3131a805269a1a79c5d60361943801db6a6ae4c28879f9e26c22ef1dd0611",
+                "626158340778b2c7755804ce32ef541452e63904bb15ba3ad7b631a509db98a9",
+                "3eb5c22a7a380ee68a6be3d4974ecc84f44bebd2c1734b10f083ec3583f7d7b6",
+                "eecb650b1968b3f22cc45e21347db54f939f75ef912d55a7423f0208a41eeb14",
+                "c1f5d1d537b50f8a71f73d0ee5d6f3b9fb742cc86007d4d953971ae04433f148",
+                "ac0d9ba123a3f7462238d50c335a15af79e1ee95be8f57e5e0156f562689a957",
+                "306380eafb618f9ac1cb97d06f3e69048b1ed0c4227a3e96ab25e80ec3c7067f",
+                "971a7c38151762ebb46877b223c9048e94cf0935dea8edefded0d2d7bb280c6d",
+                "a8848d82622cfcddab7191b6b754a54abf1776159cc2a5566afe2b4a161fbfba",
+                "3983a8abf412adde41f37cb8c924997ac3f632e23ec2c832533e1f5d270ea037",
+                "923d85438a22d37029f47b5c0344d3c6cc79131e5ac4a1c89f6daa56910b0c31",
+                "df9e2185e949e830334e8d893b955ce05769f5fdfe1240bf479eaddae2283239",
+                "9161483685c9f2b6b4dc8df37f3014206af7322e55ce46b70b80fe6e4bd78bee",
+                "5c7e9e98a909bffa2d249eed6d766b39991531b5cb67634e054dda69c5f9582e",
+                "4ab873a99b869b9068728c53615a5c3631f0d5dde94016f2fe872be0e0f74d40",
+                "cea9bdc28d9f46e5edcb432f4554a053f9857175142e8e0c48187b9b006b1953",
+                "732f95f2220abb934107d6a215034cc182e0c5dd2433fd8f87333a0546eae576",
+                "46124b76c31ed6156e78253f47e51c6475ad1532b139da12428a2c020544b9d0",
+                "f108d1a80fc0c7e031495df3bc4e462eb3982a08d3de4d61cfb35a8c9483b39c",
+                "62b3629e406460b8c778b73fb3247e62bd73f59828fb762aaaa5893ec992e0f5",
+                "dbe71c791f69c082febab30aba3bed759bbd9c475336945e60b31f0578dd6a19",
+                "3137884a9a8d44f0b70a9e4ec8027f0952843e66da7861ec15e4ea0c85c65939",
+                "06f4fa9bf671f083fac69095d5e0e3485326f66a33e3ff57927a2a6f00389ce1",
+                "c1a1670553c5779e43b186f57bf8fbca097f629bf5bc41c5d08e2f7f9f571e31",
+                "ce8bd8b1187757c1399016115c845393a433ea2dc04e12b1575f984365485da8",
+                "6bd3c03fc12252cfba2b3e778d218523e48f44561b338557381af69d913f0d8f",
+                "071e813eabfb58c2daa2a0854d1041d1982138a7b3586fe63fefcb629e4bc652",
+                "efdf2fe5c8ee7f5f1bdadd2abc2bbf03583631fa0eba1c81f125b003fde739ed",
+                "66761bb343e521a1bf3d8e4fb2d54c412ac5ee563033181b20ac53ae6d27593c",
+                "00548ca8d15962aa39579003bdcb6c0a032b91fdfa8c85f7f12d0a8bef4edf7a",
+                "afbe4004a9c2c66e874dd2bc925277d28a449e5e90ebbdc7a0d71db868a5dbcd",
+                "45942d0fb1db5c8377103a9f35573801bb9ceaf75808e6d07ebfe786cda01462",
+                "de2677974d60500a444dedba25696918d171314ca17e173c9b2afe0626cdadd2",
+                "9287ba73a2d12eb428435f2669f4392e8e52867668884f7c13b850dc59d0e5e2",
+                "8ac327a2b7b8ede297a1ca3e16ca3c630932cb4ee3be02cfe4302e92c4e7ffb7",
+                "abaf9aa41cf9c75edaff4eeb934ef3eb1c67b86782626b0e5833ba6ed6d3362c",
+                "548ded59ea725d7b74cf6295fcd24ccc312a61fd02f721ad5c368eb68ad3e1c1",
+                "cfad25f2cde2bfe62c22f7233341434f92d4322faa0aabc16b10dee4cd06929c",
+                "474586e82f1ceb310ee993f680e14bf083f6e5a13f4f842fdfc9239a2a41627b",
+                "511e3a7fd002f154f96f4147714ac7f9eacf6f353d5a66bc0101c9ef871848bd",
+                "36a456494ca95b00a1342ef06e429694f3c16b85ad9bc0ea1e490737484ce9e2",
+                "d2e2004cfb749abc25d6fe0ddb35eaed261832935eecf6057846e56399c62b66",
+                "6bdf3cce1c25a6dc28bca0b1ff0f1916cebdd1a74c6ca0cdfdddc09e54a5c40a",
+                "dd1cac948f836ba7d7e9d1a7887d4d73b025bee20bd825d5ee4b1c777977b470",
+                "b2c3d240f71a734253a2cb4b9a2767e6795821a451c254b6d0a010d4d83ef28b",
+                "b018f0ecb3c2f41e1bdfdeef662fc8e8cc86ec9422aa5dbdd28ad91e35c27f2b",
+                "07ee7d679e2888ff4c01146ab5a2c9e74bb920f3cf8c103ae386f34e319e5c7e",
+                "7f08164b7134471d7cf920cca3733d6f4a788c6993472bb5adcf2c4cc99ed98e",
+                "2b6e0947f9ef291a0e24cc14af9aa5b7b717ea7ee3abe9797db5531af79af9e9",
+                "b84e92b471c00c88a11f188acde3c6925704dae9a742da4850480666bdc55634",
+                "00ad452c3ecf58a9b0be91ed2dfdd2124468b5eb993994a4a98209726cbaa248",
+                "92431c660c34efdb45fa3f655c9243fe37859cc4f39ad3baf674d6acabe71e3c",
+                "b6aa4da26f7bad597111ca46106f8ea0fa3707bed8185532e6cf3e9bc43603d0",
+                "cef634a8b3a20dac06f24dd46158382ecba748fd2fcd246e4dd9100065b4bf3c",
+                "e02ec1c7dbed1dbaab143a3e73e636f11686ac51c5029d2e045cb14870af2da1",
+                "f376a022caca668d0d0a2acafdfab5d1bc2b539e5154b01171dfd68eede3d6a9",
+                "fde7eea2820605c0f3fe9721e2fbd7b14336ad3c635f9e019f0990d61134d6e4",
+                "df250350b6323dca2b1af0b1e53ad9e385cbd08cca2f9e5a2c97e5f0a0f5125e",
+                "1f5a420198bada950129f4fa1f4f577adc05ba0196e2a670942bf48cad768c82",
+                "33ec519248c83e2792565c49f35d7e9c21e7c9ccb593b89d8bd25b92e19b21d2",
+                "24f927df7bfb9ec1aa5bb0538ebd459310455264ea7a941f20329050fb1b2159",
+                "d7f1dbac45afdd60c3cef612f7e864243ee013ed2eb1160b331e1a15830bfdff",
+                "ad8b080b8e0d3485813ab1d293b990a56e9a15a4f8b971472658187ca22fb6f9",
+                "ac1ea6a889ac83f77aae139706c177244372ff1c6854d718ac05fda04715edf2",
+                "7124950ecf2afc920c6de0a6515cbef2c569dce4e6cc5338713584c279666737",
+                "25fd85e69223ef0d3591c6b7fdab717e924fdc3445277cda74949c0297faf3f3",
+                "4cb536eb8a6cdd451472e353921ffc6d26b1ac3760ec3fb6515517a0b4f55690",
+                "4c44c6ffb9c28c2149dee35f89b543e6edc6d45e75ebb5ec0a14924d1b80e426",
+                "dd8942e2a50ffb1c5cb8609d91b64bc9019d11b3bcab81f639ceb7d0647fef47",
+                "65e3be7b7d9f2150ad9a7991cb795da432b37c7b25b3bfc79bb119177efb9146",
+                "5c763f041fae7184c2ee695dee650b551710f523e25b439fd1d131259ded9f6e",
+                "1c7dcad19e26a323e2bacbf56389207eacd4d9673946579dabf47b227a9101ef",
+                "ce2aa8e3eee053c4b6f3dc7ec4bf3888a8eb301ceea4e1c79f7abd4250332b82",
+                "803f755b928bda3761b233792a60a1265aed9dd2a8ce0914a9201468182c3787",
+                "dc8810a2e773bb6282f6ef1e4914d790c5e04ffc61618d383b1024c0cecfa982",
+                "32926483ea65f136e933950e3f1ac41dcd9e0fcd49e725dd3b0e8538d170eac0",
+                "c794663c0b79f03a12a1b1edcbc9266c259769ddd7ef8edbc6090b909e2f0ab0",
+                "aaf25f0e812dd3227d69f0943f58904884ad19b3f8093d70e0d6cd50de15f8e5",
+                "b78f7723df2b4eaff15b93f3dc3062d49993bd3c13369c28bbbc4adb4b54117d",
+                "574e37a793b898c5ceb23bde0812ae6fec8de6554bff367feb6ed93597d215ac",
+                "1351b383882abbade834eb5bbe1a3aab8993a037eb9c22f2b37c081dca0ab598",
+                "dadb63399445a9fa7bcd2dd8a93b050cb9102a7bfb5676185d094fce6bddd674",
+                "584291aa508ff1dfa2cc05ca89102b6bc59e34bff8635091b3a1dee0525da661",
+                "56d546de895996d6991b5eb2270c1df4d1154b28fbc1dfea6d0381bdce4e597f",
+                "8512a7f1a8df566778b66fab4f1c27e39d76601c745ee1f808ad58b594467034",
+                "fef7110d36c4f56efc480bae51c10dc779b355a657c13d08ba225944d3760e10",
+                "cdf65ceb749f77ccd41c87c66660d8780033fdba8b74dd63bb33961f73f7b0f0",
+                "0b12b567497d5b8ec0227dfd5dbfd4b23e8b462ffd8466d22e5e63e029034162",
+                "182feec7869304e71bfe207ae688e76f1dccfdf8b1f68fd8cbc98a1ceda0e21c",
+                "17d0060baf5363ecbd7e6ab207771457ba1de31d88e6165428f3d60d8e8a22c6",
+                "65101489462a2f95530481daa35480d7c76cbd8fb080d5fa3d6ef022b3554e28",
+                "355587aaf33d912dd7ee457f16e9605476a5d9587054580aac124332db3d623a",
+                "37fa322a5d7b6c0cbf3f18f93ecf9b8a452482fd38e84b3e66d5da89bcc5a5f3",
+                "03ab2e9ddfa1dcbb7614d33182fe4d2923d9c5772bd280c19403ef5322425510",
+                "f8f7ac4930f7b761e271bd85389c2ca2aece0aed87ba3dcb90be28083e78c33e",
+                "c37f3e536775e6bd5c27f32695016acbf81723a3f30ea35de11142af45597193",
+                "58ceea656daf230f7875c80349b2b7c414cb6c54d04378242dfdbf3a2034b118",
+                "1e1013259cf3d9e9c342037c3d845211588bf93821e4c62294508d058c9138af",
+                "5fb3a14af5c7ab1f172813cd1b5e6c1f2edcb5492d2bc41c5d79dc06c66e936a",
+                "684b78aadf5a02acf468dc776413a9ba33cca358c9a0a1cf28dc4d39e0c932a0",
+                "418c76ba0126910bfe0ecae5e5f72e70c27b62635f2494b8bdf196a07c44653e"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.yahoo.com",
-                "cattime.com",
-                "www.motorcyclistonline.com",
-                "god.dailydot.com",
-                "list25.com",
-                "journalstar.com",
+                "www.ign.com",
+                "www.sportfishingmag.com",
+                "kval.com",
+                "steadfastclash.com",
+                "www.christianpost.com",
+                "m.sport5.co.il",
+                "www.metro.us",
+                "www.motorcyclecruiser.com",
+                "www.gizchina.com",
+                "www.saltwatersportsman.com",
                 "www.comingsoon.net",
-                "www.soapoperaspy.com",
-                "www.realclearscience.com",
-                "ktul.com",
-                "www.carbibles.com",
-                "wonderfuldiy.com",
-                "www.silverdoctors.com",
+                "www.amny.com",
                 "wsbt.com",
-                "news.yahoo.com",
-                "wjactv.com",
-                "wchstv.com",
-                "newsadvance.com",
-                "www.horoscope.com",
-                "fox17.com"
+                "us.yahoo.com",
+                "richmond.com",
+                "movieweb.com",
+                "money.yahoo.com",
+                "www.realclearpolitics.com",
+                "pantagraph.com",
+                "fox11online.com"
             ]
         },
         {
@@ -306,46 +492,178 @@
                 "metrics-logger"
             ],
             "apis": {},
-            "sites": 110,
-            "prevalence": 0.000774,
+            "sites": 136,
+            "prevalence": 0.000939,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.yahoo.com",
-                "www.nationalenquirer.com",
-                "www.outdoorlife.com",
+                "www.ign.com",
+                "wset.com",
+                "abcnews4.com",
+                "wonderfuldiy.com",
+                "www.boatingmag.com",
+                "journalstar.com",
+                "www.refinery29.com",
+                "gamerevolution.com",
+                "freedomheadlines.com",
+                "herald-review.com",
+                "www.chicksonright.com",
                 "journalnow.com",
-                "pantagraph.com",
-                "god.dailydot.com",
-                "www.tuttotech.net",
-                "www.gizchina.com",
-                "news.yahoo.com",
-                "www.saltwatersportsman.com",
+                "www.aol.com",
+                "mandatory.com",
                 "www.metro.us",
+                "www.vvng.com",
+                "perezhilton.com",
+                "www.range365.com",
+                "www.motorcyclistonline.com",
+                "www.saltwatersportsman.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/config\\/ab_test\\/sp_DlDBztOp\\/no_post",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 19,
+            "prevalence": 0.000131,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abcnews4.com",
+                "fox11online.com",
+                "fox17.com",
+                "komonews.com",
+                "krcrtv.com",
+                "ktul.com",
+                "kutv.com",
+                "kval.com",
+                "upnorthlive.com",
+                "wchstv.com",
+                "wcyb.com",
+                "weartv.com",
+                "wjactv.com",
+                "wjla.com",
+                "wpde.com",
                 "wsbt.com",
-                "www.foxbusiness.com",
-                "kearneyhub.com",
-                "tulsaworld.com",
-                "vaccines.procon.org",
-                "www.thedrive.com",
-                "theblacksphere.net",
-                "www.dailywire.com",
+                "wset.com",
+                "wtov9.com",
+                "wwmt.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/config\\/ab_test\\/sp_DlDBztOp\\/no_post",
+            "cookies": 0.000131,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 19,
+            "prevalence": 0.000131,
+            "cnames": [],
+            "responseHashes": [
+                "03e40d3811db4c8c18f7696a47ce933d6394c533385076d51eafe381f399476a",
+                "49ba0b89315d9d5b3b5d656eb1c78af743a6af45a3747f8b08f0618809911184",
+                "022f34d7dced9b72a8aea64e902d21208f7eb5d6c44f058b06d81f6c25e08fa0",
+                "d2be6c237daa01d870f5b8f7e812eeddbfd6fee3b36c2e73ac5b332c4c6b55f6",
+                "b0afaefc9db8a2eb2495c069ed21effe69b305289e25d513ec5d334bc713e6a6",
+                "3d4021d37bc96591f54ec2505ecadffeb4f17d18cab0f1f80aee5dc2d762817a",
+                "8e7b727ff95b50f694997771912ebbd9fd6d79b63bc42739c742e67388f27b16",
+                "cfcf0ed82399ae98b05ed55a6391da3c06c1042c94535eb344a008d42386bb08",
+                "fffac3855c64dd2f7d66eb38e867b3c9e6d80b23beb1807036921ac6800ba6e9",
+                "de2ddb472caa859f94aa0fe50ab26c9a441db9ae19dee0e7e4f6f5be1a140cf2",
+                "b8f0ea5c4d21c0570a19d9ea716692ddc97b3448469a1ba49c5a048db4fb7a1c",
+                "dedbc878ff76f7d70e87a9430ec29c4b017008963aec752a27765a1199cadcd5",
+                "8d2ce390586a0995eba92e8abfd07687ee6943b0b12757a55c8d3a4ff733a8eb",
+                "72b481588e2868660951f121cafa3dce88e5c89335019849f78e459befee749e",
+                "f591ba46e2c90340e2f16b4b90a85a0145dc99e948fddef86fd748d038f81c21",
+                "754632e39481a02875c06c3d42f1605e8b77f0dac84ccb80b313c93ab475f659",
+                "e88c96dab72ad36f5bbe5442cbd442d4f576daaa6bedbaad39c22151f03eaf6f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abcnews4.com",
+                "fox11online.com",
+                "fox17.com",
+                "komonews.com",
+                "krcrtv.com",
+                "ktul.com",
+                "kutv.com",
+                "kval.com",
+                "upnorthlive.com",
+                "wchstv.com",
+                "wcyb.com",
+                "weartv.com",
+                "wjactv.com",
+                "wjla.com",
+                "wpde.com",
+                "wsbt.com",
+                "wset.com",
+                "wtov9.com",
+                "wwmt.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/api\\/v1\\/pixels",
+            "cookies": 0.00089,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pix"
+            ],
+            "apis": {},
+            "sites": 129,
+            "prevalence": 0.00089,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.ign.com",
+                "ninernoise.com",
+                "www.kenoshanews.com",
+                "pantagraph.com",
+                "siouxcityjournal.com",
+                "www.popphoto.com",
+                "gamerevolution.com",
+                "www.vvng.com",
+                "cattime.com",
+                "www.comicsands.com",
+                "www.popsci.com",
+                "www.fieldandstream.com",
+                "mandatory.com",
+                "www.outdoorlife.com",
+                "www.saltwatersportsman.com",
+                "news.yahoo.com",
+                "trendingpolitics.com",
+                "www.zmescience.com",
+                "www.dirtrider.com",
                 "krcrtv.com"
             ]
         },
         {
-            "rule": "spot\\.im\\/production\\/launcher\\/tags\\/v2\\.61\\.0\\/launcher\\/ec24cb303220fcfc94f8\\.svg",
+            "rule": "spot\\.im\\/production\\/launcher\\/tags\\/v2\\.62\\.0\\/launcher\\/ec24cb303220fcfc94f8\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "static-cdn"
             ],
             "apis": {},
-            "sites": 51,
-            "prevalence": 0.000359,
+            "sites": 68,
+            "prevalence": 0.000469,
             "cnames": [],
             "responseHashes": [
                 "2df75dd5414f39139ce6f757636066e98d685654dbb93bf2c0f93f37092f1abd"
@@ -354,26 +672,26 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.islands.com",
-                "www.thefashionspot.com",
-                "www.elpais.com.uy",
-                "www.complex.com",
-                "www.motorcyclecruiser.com",
-                "kearneyhub.com",
-                "www.saltwatersportsman.com",
-                "www.livemixtapes.com",
-                "www.motorcyclistonline.com",
-                "www.foxbusiness.com",
-                "www.dirtrider.com",
-                "www.mandatory.com",
-                "www.whats-on-netflix.com",
-                "us.yahoo.com",
+                "clickhole.com",
+                "www.popsci.com",
+                "netflixlife.com",
+                "steadfastclash.com",
                 "www.iflscience.com",
+                "www.realclearhistory.com",
+                "www.mmaweekly.com",
                 "saturdayblitz.com",
-                "www.nationalenquirer.com",
-                "www.carbibles.com",
-                "cumberlink.com",
-                "cattime.com"
+                "wonderfuldiy.com",
+                "www.tuttotech.net",
+                "m.jpost.com",
+                "bamsmackpow.com",
+                "www.comicsands.com",
+                "www.islands.com",
+                "www.realclearmarkets.com",
+                "www.motorcyclecruiser.com",
+                "www.juegos.com",
+                "firstwefeast.com",
+                "prescriptiondrugs.procon.org",
+                "www.complex.com"
             ]
         },
         {
@@ -384,48 +702,48 @@
                 "publisher-assets"
             ],
             "apis": {},
-            "sites": 49,
-            "prevalence": 0.000345,
+            "sites": 82,
+            "prevalence": 0.000566,
             "cnames": [],
             "responseHashes": [
-                "b7e1c8a9635be0755d4154c5b017c122c43415f628cb151816733d4f78d1fa10"
+                "f27b4cdbd821100765224a52c7c8d544fa9fdd6d0aba21015eb66c11735e0989"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "m.jpost.com",
-                "www.whats-on-netflix.com",
-                "celebratingthesoaps.com",
-                "www.zmescience.com",
-                "www.aol.com",
-                "steadfastclash.com",
-                "www.fieldandstream.com",
-                "journalstar.com",
-                "www.complex.com",
-                "vaccines.procon.org",
-                "www.gamerevolution.com",
-                "www.nationalenquirer.com",
-                "homepage.aol.com",
+                "www.ign.com",
                 "www.workingmother.com",
-                "hdontap.com",
-                "www.tuttotech.net",
-                "www.outdoorlife.com",
-                "www.popsci.com",
-                "www.toledoblade.com",
-                "freedomheadlines.com"
+                "newsadvance.com",
+                "www.cruisingworld.com",
+                "www.maariv.co.il",
+                "www.popphoto.com",
+                "www.islands.com",
+                "hickoryrecord.com",
+                "www.aol.com",
+                "www.amny.com",
+                "richmond.com",
+                "www.ibtimes.sg",
+                "clickhole.com",
+                "cumberlink.com",
+                "www.refinery29.com",
+                "trib.com",
+                "www.gizmochina.com",
+                "missoulian.com",
+                "freedomheadlines.com",
+                "radaronline.com"
             ]
         },
         {
-            "rule": "spot\\.im\\/production\\/ads\\/tags\\/v17\\.9\\.3\\/ads\\/vendors-main-chunk\\.js",
+            "rule": "spot\\.im\\/production\\/ads\\/tags\\/v17\\.10\\.2\\/ads\\/vendors-main-chunk\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "static-cdn"
             ],
             "apis": {},
-            "sites": 40,
-            "prevalence": 0.000282,
+            "sites": 69,
+            "prevalence": 0.000476,
             "cnames": [],
             "responseHashes": [
                 "25bd8fcce4da6220590460422480b76bd62e2e4b66fb2fc42690cc579f6c6eff"
@@ -434,106 +752,66 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.realclearscience.com",
-                "freedomheadlines.com",
-                "journaltimes.com",
-                "www.nationalenquirer.com",
-                "www.hometips.com",
-                "www.livemixtapes.com",
-                "saturdayblitz.com",
-                "www.complex.com",
-                "hdontap.com",
-                "vaccines.procon.org",
-                "firstwefeast.com",
-                "www.realclearpolitics.com",
-                "newsadvance.com",
-                "www.iflscience.com",
-                "list25.com",
-                "www.fieldandstream.com",
+                "www.ign.com",
+                "www.mmaweekly.com",
+                "radaronline.com",
+                "www.saveur.com",
+                "www.saltwatersportsman.com",
+                "www.range365.com",
+                "www.islands.com",
+                "www.muscleandfitness.com",
+                "www.flyingmag.com",
+                "journalstar.com",
+                "www.realclearhistory.com",
+                "www.wktv.com",
+                "www.soapoperaspy.com",
                 "kearneyhub.com",
-                "www.whats-on-netflix.com",
-                "steadfastclash.com",
-                "prescriptiondrugs.procon.org"
+                "www.hometips.com",
+                "buckrail.com",
+                "greensboro.com",
+                "list25.com",
+                "journalnow.com",
+                "www.popphoto.com"
             ]
         },
         {
-            "rule": "spot\\.im\\/production\\/ads\\/tags\\/v17\\.9\\.3\\/ads\\/main-chunk\\.js",
+            "rule": "spot\\.im\\/production\\/ads\\/tags\\/v17\\.10\\.2\\/ads\\/main-chunk\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "static-cdn"
             ],
             "apis": {},
-            "sites": 40,
-            "prevalence": 0.000282,
+            "sites": 69,
+            "prevalence": 0.000476,
             "cnames": [],
             "responseHashes": [
-                "3e26efc2cf3bad96653aaf8eacb548614354c89a83ee9eba7d0ecf040d65da39"
+                "beefd767ca93def84de2323063adae25fb1dfa5d05f962abeb417e06a7d2a907"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "newsadvance.com",
-                "clickhole.com",
-                "www.realclearpolitics.com",
-                "www.gamerevolution.com",
-                "www.nationalenquirer.com",
-                "saturdayblitz.com",
+                "www.ign.com",
+                "bamsmackpow.com",
+                "www.bizpacreview.com",
+                "www.islands.com",
+                "www.wktv.com",
+                "www.popphoto.com",
+                "gamerevolution.com",
+                "www.christianpost.com",
+                "hdontap.com",
                 "prescriptiondrugs.procon.org",
-                "www.jpost.com",
-                "list25.com",
-                "cattime.com",
-                "cumberlink.com",
-                "www.hometips.com",
-                "www.whats-on-netflix.com",
-                "m.jpost.com",
-                "journalstar.com",
-                "www.mandatory.com",
-                "www.livemixtapes.com",
-                "netflixlife.com",
-                "kearneyhub.com",
-                "www.range365.com"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/api\\/v1\\/pixels",
-            "cookies": 0.000422,
-            "fingerprinting": 0,
-            "subdomains": [
-                "pix"
-            ],
-            "apis": {},
-            "sites": 61,
-            "prevalence": 0.000429,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "www.yahoo.com",
-                "www.mandatory.com",
-                "www.jpost.com",
-                "www.motorcyclecruiser.com",
-                "vaccines.procon.org",
-                "kearneyhub.com",
-                "www.range365.com",
-                "www.popsci.com",
-                "wchstv.com",
-                "god.dailydot.com",
-                "www.foxbusiness.com",
-                "taskandpurpose.com",
-                "www.livemixtapes.com",
-                "wonderfuldiy.com",
-                "www.metro.us",
                 "steadfastclash.com",
-                "www.whats-on-netflix.com",
-                "us.yahoo.com",
-                "www.thefashionspot.com",
-                "netflixlife.com"
+                "www.muscleandfitness.com",
+                "www.toledoblade.com",
+                "www.cruisingworld.com",
+                "okmagazine.com",
+                "www.mmaweekly.com",
+                "www.guardian.co.tt",
+                "clickhole.com",
+                "cattime.com",
+                "newsadvance.com"
             ]
         },
         {
@@ -544,46 +822,66 @@
                 "open-api"
             ],
             "apis": {},
-            "sites": 15,
-            "prevalence": 0.000106,
+            "sites": 27,
+            "prevalence": 0.000186,
             "cnames": [],
             "responseHashes": [
+                "26c7d53813e81da891318c57a3221c4f92ba3364ca5c645132841bd2b0136551",
                 "896f4cde6e743101afd850f65ccdd0fc0685300500beaab674f95e45888e7366",
+                "b12d8c5e017bd29d26c6a9b24986d388795188f507d6a58ad25cd8741526d384",
                 "dce7e55dc445d6b555537792b30bb4edd0c6e44bd0c07d3da65ffc9cb5e526fa",
                 "a157af04b09ef9ed1e37a36923d38dbd9d0f0bbde53629ee118279295a0e2ff3",
-                "fd69fd1a27d60891b1e97a177236445926309adb1de3b183c005dffa4af2e491",
                 "a995d562fcae403d1e4152d02e505b27788be41d6baa0f5c367d205dd9e5e691",
                 "6a94746ff0e15be7740a65c357d206489cfcec47dbf5fa5f3a59a1bbae26480b",
+                "8db818cd6f4066cf3a19d107564b7d51bf69280e16828c98983d81e88cfc9af5",
+                "39bf0f6b07bbc763d6b3cd1e427acbde7ded80d226ae871201dcd4824d4c2ab6",
                 "34792e068960e5dca4cf5048c9d3105a5302f4abd9fca9732a9bdb6247fa7987",
                 "1f91cdaebd7252f6828bf050dededd2dad7ffbb1b6be71498f3fdef6111b496b",
-                "f0b98b8db8b3c869c44776d82fd0ec4389e4d0f0156ba50f1652deaca4bdcf24",
+                "230ea35d9a0c53fd2227cf283971b2866484581628a8e6e33b2343a1f09eb6be",
                 "4978d657a9cdef5c40c746e263444b4a444df8c6115e5d8cc962d3fc8184d055",
-                "cefcdbc7d6a72c2982666645d5d1ace20308ceb385a168cec277bfa4ec4b9d78"
+                "a60a394980e686401addf2b622aed123d4cb7cc1df9d9cf627b8b83232f17458",
+                "09d0a4cef35dac1f2f49d9b9206b1d27709d2e21749b349cbbc2ab3e0bddfcd1",
+                "cefcdbc7d6a72c2982666645d5d1ace20308ceb385a168cec277bfa4ec4b9d78",
+                "c826e1cb5b072475f50f72f859b095379e0fcd9e6ae6491c9983dd4a5d6dc3d7",
+                "fed9409c10f74cc0d6b9a243bc305398554649a400d57d962242d2d108486fdd",
+                "ec7669e94e95cfbc8ee31117019c809a8e94d24a356c98b4cc3463b53a2851bf",
+                "3bddca445d332f8531b8738c0453f7834c0fc92289db5040adc03a4e49fa3ec0",
+                "4d151debf180b3b00d60fb76b4ad1e82a7643d210c8162fc9c10560f1b16370f",
+                "665a5e02c747ea63e01fa7bea1690418f7a84de8a41a6c4cf65989464cb7b1c5",
+                "a31ace09b2a613034bfc2df3003f4902d3329ef60d0d1919976d2c92d654990e",
+                "df939aa16a1c5ecdc5e73c980fa2c7816a6cb7c26d788264e029d195a790817f",
+                "5e97ffe4887eb08380276cb8ded2b30d48a273b0e919b7a9c40968bbc462e12f",
+                "57bfba5782291f62aecf58de287dcc34311ec335b307353cfb45546736b3b2df"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cumberlink.com",
-                "greensboro.com",
-                "journalnow.com",
-                "journalstar.com",
-                "journaltimes.com",
-                "kearneyhub.com",
-                "lacrossetribune.com",
-                "madison.com",
-                "newsadvance.com",
-                "pantagraph.com",
-                "scnow.com",
                 "scotch.io",
+                "www.greenwichtime.com",
+                "madison.com",
+                "www.kenoshanews.com",
+                "richmond.com",
+                "www.beaumontenterprise.com",
+                "www.sfchronicle.com",
+                "www.stamfordadvocate.com",
+                "siouxcityjournal.com",
                 "trib.com",
-                "tulsaworld.com",
-                "www.kenoshanews.com"
+                "cumberlink.com",
+                "www.mrt.com",
+                "journalstar.com",
+                "pantagraph.com",
+                "dothaneagle.com",
+                "www.nhregister.com",
+                "missoulian.com",
+                "lacrossetribune.com",
+                "hickoryrecord.com",
+                "tulsaworld.com"
             ]
         },
         {
             "rule": "spot\\.im\\/spot\\/sp_chqJpbFi",
-            "cookies": 0.0000141,
+            "cookies": 0.0000138,
             "fingerprinting": 2,
             "subdomains": [
                 "launcher"
@@ -599,291 +897,108 @@
                 "Navigator.prototype.language": 2
             },
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "a2355369c984d15710ba127f77c71c64b3b9e11fb1158a1b835c6fb955a465b1"
+                "e1558dd02374108ed5c2d9d0e3ebeacffde3f49ef1003bdb7f0d7913b8f94ff8"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "spotim_visitId": {
-                    "ttl": 1834,
-                    "length": 71,
-                    "prevalence": 0.00001407756739635391,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cheezburger.com",
-                "failblog.cheezburger.com"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_chqJpbFi\\/v2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api-2-0"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
-            "cnames": [],
-            "responseHashes": [
-                "7fb0ffddd926ccbf41bb073e561d76fde3a4a8274206e482c775738c6d93f603"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cheezburger.com",
-                "failblog.cheezburger.com"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_chqJpbFi\\/v2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api-2-0"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cheezburger.com",
-                "failblog.cheezburger.com"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/v1\\.0\\.0\\/config\\/ab_test\\/sp_chqJpbFi\\/no_post",
-            "cookies": 0.0000141,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api-2-0"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
-            "cnames": [],
-            "responseHashes": [
-                "8a5fbdf5f35667ad534c10824706e1f597d4bb645b49561e139fe4e15042d15e"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cheezburger.com",
-                "failblog.cheezburger.com"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/v1\\.0\\.0\\/config\\/ab_test\\/sp_chqJpbFi\\/no_post",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api-2-0"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cheezburger.com",
-                "failblog.cheezburger.com"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/spot\\/sp_DlDBztOp",
-            "cookies": 0.0000845,
-            "fingerprinting": 2,
-            "subdomains": [
-                "launcher"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 13,
-                "window.localStorage": 13,
-                "Navigator.prototype.platform": 12,
-                "Navigator.prototype.connection": 12,
-                "Document.cookie getter": 12,
-                "Date.prototype.getTime": 13,
-                "Document.cookie setter": 12,
-                "Navigator.prototype.language": 12
-            },
-            "sites": 14,
-            "prevalence": 0.0000985,
-            "cnames": [],
-            "responseHashes": [
-                "ad24b895825021f81ebf0ae35216642c297dcda9b4a99741ddb8a1b284b9c2f4",
-                "36a001a002624c6b75f31c079bec31982375d8caf5a770f6f5d61e7e0629bc3b",
-                "07ef30a93ab94e5d5ba7946b74bb61d7fb827ae373be83d9e05420477e974803",
-                "c70bdb5c4501c3c70d4d8e399d2736174aac07eca28729c30bbfd0f76ad6f9e6"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "spotim_visitId": {
-                    "ttl": 1828,
+                    "ttl": 1802,
                     "length": 70,
-                    "prevalence": 0.00008446540437812346,
+                    "prevalence": 0.000013804146765688412,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "fox11online.com",
-                "fox17.com",
-                "komonews.com",
-                "krcrtv.com",
-                "ktul.com",
-                "kutv.com",
-                "kval.com",
-                "upnorthlive.com",
-                "wchstv.com",
-                "wjactv.com",
-                "wjla.com",
-                "wpde.com",
-                "wsbt.com",
-                "wset.com"
+                "cheezburger.com",
+                "failblog.cheezburger.com"
             ]
         },
         {
-            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_DlDBztOp\\/v2",
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_chqJpbFi\\/v2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "api-2-0"
             ],
             "apis": {},
-            "sites": 14,
-            "prevalence": 0.0000985,
-            "cnames": [],
-            "responseHashes": [
-                "d2fb0a9037cb4f5833eef200efa356eedadaaa1009fafdced79f5bc93720795c"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fox11online.com",
-                "fox17.com",
-                "komonews.com",
-                "krcrtv.com",
-                "ktul.com",
-                "kutv.com",
-                "kval.com",
-                "upnorthlive.com",
-                "wchstv.com",
-                "wjactv.com",
-                "wjla.com",
-                "wpde.com",
-                "wsbt.com",
-                "wset.com"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_DlDBztOp\\/v2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api-2-0"
-            ],
-            "apis": {},
-            "sites": 14,
-            "prevalence": 0.0000985,
+            "sites": 2,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "fox11online.com",
-                "fox17.com",
-                "komonews.com",
-                "krcrtv.com",
-                "ktul.com",
-                "kutv.com",
-                "kval.com",
-                "upnorthlive.com",
-                "wchstv.com",
-                "wjactv.com",
-                "wjla.com",
-                "wpde.com",
-                "wsbt.com",
-                "wset.com"
+                "cheezburger.com",
+                "failblog.cheezburger.com"
             ]
         },
         {
-            "rule": "spot\\.im\\/v1\\.0\\.0\\/config\\/ab_test\\/sp_DlDBztOp\\/no_post",
-            "cookies": 0.0000845,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api-2-0"
-            ],
-            "apis": {},
-            "sites": 12,
-            "prevalence": 0.0000845,
-            "cnames": [],
-            "responseHashes": [
-                "6f707d7a18723f6bac4e546a6a7fa0f10c0242f132de2406325f7197275c8e0f",
-                "2781c2152b3c8a4e840821ee2bcee39af74b261f145c28e2ccba8604cf2a6a2a",
-                "2c6044fed5991251b225779d01e1789437d274210563cbad86279a0832515c25"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fox11online.com",
-                "fox17.com",
-                "komonews.com",
-                "krcrtv.com",
-                "ktul.com",
-                "kutv.com",
-                "kval.com",
-                "upnorthlive.com",
-                "wchstv.com",
-                "wjactv.com",
-                "wjla.com",
-                "wpde.com"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/v1\\.0\\.0\\/config\\/ab_test\\/sp_DlDBztOp\\/no_post",
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_chqJpbFi\\/v2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "api-2-0"
             ],
             "apis": {},
-            "sites": 12,
-            "prevalence": 0.0000845,
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "63d5c8fdc0557c4a7f7589d3c6bc6ca49d4ca58d58fb78dcdaa7634990412793"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cheezburger.com",
+                "failblog.cheezburger.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/config\\/ab_test\\/sp_chqJpbFi\\/no_post",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "fox11online.com",
-                "fox17.com",
-                "komonews.com",
-                "krcrtv.com",
-                "ktul.com",
-                "kutv.com",
-                "kval.com",
-                "upnorthlive.com",
-                "wchstv.com",
-                "wjactv.com",
-                "wjla.com",
-                "wpde.com"
+                "cheezburger.com",
+                "failblog.cheezburger.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/config\\/ab_test\\/sp_chqJpbFi\\/no_post",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e66f81914a6abb607b8b83796234224f24216e242f6988d9f35511ba5a0c359f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cheezburger.com",
+                "failblog.cheezburger.com"
             ]
         },
         {
@@ -894,14 +1009,16 @@
                 "open-api"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000422,
+            "sites": 7,
+            "prevalence": 0.0000483,
             "cnames": [],
             "responseHashes": [
                 "1d070f6351c7ed151d82b250f69fa72660a82a78e0826f9daddbdbad1219c878",
                 "be6a45030275e9c99018a2c2dc1c7f38a32fc13e688f7ec11d8a64a42b03380b",
-                "7241940579863b09e9e81e6cca5f41ce31f20bc68cfec838653a1a55a03833a0",
-                "1fb0e7826f62329b32d714305a90ddec87f816dc6a202f35c5e03bb10c6ad81b"
+                "5c94f39189cf7d543539579e79a48fee8a838d88cc2b8e32897c3516f9f0fb8c",
+                "9df96142e01d11b0f1f5bc04baf4b420f7ef59ffe13ae275e9d528114b40641f",
+                "1fb0e7826f62329b32d714305a90ddec87f816dc6a202f35c5e03bb10c6ad81b",
+                "740c31d10541406b344c65d857ad6f58ccb5adda60ddbcb207b87fe2119684c2"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -910,7 +1027,8 @@
                 "rt.com",
                 "francais.rt.com",
                 "it.motorsport.com",
-                "www.motorsport.com",
+                "thepostmillennial.com",
+                "www.israelhayom.co.il",
                 "www.primerahora.com",
                 "www.toledoblade.com"
             ]
@@ -924,11 +1042,11 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000211,
+            "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [
                 "1d070f6351c7ed151d82b250f69fa72660a82a78e0826f9daddbdbad1219c878",
-                "2b460c056c2532d5ea0175e8272cee8f40b4db0e77d888bbfa2faef2538efd88"
+                "0f15bc94d1a80cb3719b1700119a998637fbbbfb217b3b7bd861c4b1ae0369b6"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -936,7 +1054,87 @@
             "exampleSites": [
                 "rt.com",
                 "francais.rt.com",
-                "www.nationalenquirer.com"
+                "www.mmaweekly.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/spot\\/sp_K4DYlw9U",
+            "cookies": 0.0000069,
+            "fingerprinting": 2,
+            "subdomains": [
+                "launcher"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.connection": 1,
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1,
+                "Navigator.prototype.language": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "4e789923810141ad8b8da4d6c8308171a054f3eddc67140caa3664cac3eda347"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "spotim_visitId": {
+                    "ttl": 1830,
+                    "length": 70,
+                    "prevalence": 0.000006902073382844206,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gamerevolution.com",
+                "www.gamerevolution.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_K4DYlw9U\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gamerevolution.com",
+                "www.gamerevolution.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_K4DYlw9U\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "4b663cd3d2bbe4343199fd1b5aadec7e895eaf3f11a11b48d6b5f59eb2798466"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gamerevolution.com",
+                "www.gamerevolution.com"
             ]
         },
         {
@@ -948,10 +1146,10 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000211,
+            "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [
-                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
+                "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -964,7 +1162,7 @@
         },
         {
             "rule": "spot\\.im\\/spot\\/sp_IjnMf2Jd",
-            "cookies": 0.0000141,
+            "cookies": 0.0000207,
             "fingerprinting": 2,
             "subdomains": [
                 "launcher"
@@ -972,26 +1170,25 @@
             "apis": {
                 "Navigator.prototype.userAgent": 3,
                 "window.localStorage": 3,
-                "Navigator.prototype.platform": 2,
-                "Navigator.prototype.connection": 2,
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2,
-                "Navigator.prototype.language": 2
+                "Navigator.prototype.platform": 3,
+                "Navigator.prototype.connection": 3,
+                "Document.cookie getter": 3,
+                "Date.prototype.getTime": 3,
+                "Document.cookie setter": 3,
+                "Navigator.prototype.language": 3
             },
             "sites": 3,
-            "prevalence": 0.0000211,
+            "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [
-                "ffcebb9049998f92044490274cd74fbb0521de650a995d4790d6d1885fb82903",
-                "9ababcd397bf3aa5c46d46b21fe2a79a6d4a44be23b6a748dc991a1e5f0b2c61"
+                "2493cab511c7d25aee84450d71d1809996429645134558638d2d953cc37f0a88"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "spotim_visitId": {
-                    "ttl": 1833,
+                    "ttl": 1802,
                     "length": 70,
-                    "prevalence": 0.00001407756739635391,
+                    "prevalence": 0.000020706220148532618,
                     "uniqueness": 1
                 }
             },
@@ -1011,7 +1208,28 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000211,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aol.com",
+                "homepage.aol.com",
+                "www.aol.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_IjnMf2Jd\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [
                 "d02f065d263bd389f6e68cb30468dc9e686564e7c924f2a4180eae61f78d17da"
@@ -1026,7 +1244,7 @@
             ]
         },
         {
-            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_IjnMf2Jd\\/v2",
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/config\\/ab_test\\/sp_IjnMf2Jd\\/homepage",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1034,7 +1252,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000211,
+            "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -1048,34 +1266,38 @@
         },
         {
             "rule": "spot\\.im\\/v1\\.0\\.0\\/config\\/ab_test\\/sp_IjnMf2Jd\\/homepage",
-            "cookies": 0.0000141,
+            "cookies": 0.0000207,
             "fingerprinting": 0,
             "subdomains": [
                 "api-2-0"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
+            "sites": 3,
+            "prevalence": 0.0000207,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "1fdfdd4ed2510c44eaf8ec24f92b47623ba4c18616e8a64a6d78fc241518640a",
+                "5770f41436ac36524e78dd4129b685b3a294867ffdbf704dbb2dd10ac2bf678a"
+            ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "aol.com",
+                "homepage.aol.com",
                 "www.aol.com"
             ]
         },
         {
-            "rule": "spot\\.im\\/v1\\.0\\.0\\/config\\/ab_test\\/sp_IjnMf2Jd\\/homepage",
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/broadcasts\\/broadcasts\\/sp_IjnMf2Jd",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "api-2-0"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
+            "sites": 3,
+            "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -1083,79 +1305,374 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "aol.com",
+                "homepage.aol.com",
                 "www.aol.com"
             ]
         },
         {
-            "rule": "spot\\.im\\/spot\\/sp_jpost",
-            "cookies": 0.0000141,
-            "fingerprinting": 2,
+            "rule": "spot\\.im\\/production\\/launcher\\/tags\\/v2\\.61\\.0\\/vendor\\/vendor-bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "launcher"
+                "static-cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
-                "Navigator.prototype.platform": 2,
-                "Navigator.prototype.connection": 2,
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2,
-                "Navigator.prototype.language": 2
+                "Navigator.prototype.userAgent": 4,
+                "window.localStorage": 4
             },
-            "sites": 2,
-            "prevalence": 0.0000141,
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "69a6ae094de8cc37b19a2cf6c3388371bdbe7c175ffc0d1682b12cfbf0f3513e"
+                "4af14ab606e612f1887eff1224128745b26a9030fccfebd3d17499c88688435a"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "spotim_visitId": {
-                    "ttl": 1835,
-                    "length": 71,
-                    "prevalence": 0.00001407756739635391,
-                    "uniqueness": 1
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "jpost.com",
-                "www.jpost.com"
+                "aol.com",
+                "homepage.aol.com",
+                "www.aol.com",
+                "www.billboard.com"
             ]
         },
         {
-            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_jpost\\/v2",
+            "rule": "spot\\.im\\/production\\/conversation\\/tags\\/v3\\.41\\.9\\/conversation-bundle\\.js",
             "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "1fc1759a056670ff3e85d87756875dad9a01bc99d30d3b2f974f230fe414f600"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aol.com",
+                "homepage.aol.com",
+                "www.aol.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/popular-in-the-community\\/tags\\/v2\\.26\\.9\\/popular-in-the-community\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {},
+            "sites": 9,
+            "prevalence": 0.0000621,
+            "cnames": [],
+            "responseHashes": [
+                "c4288ea598515bb42c621803902b970fa13ef30493867e8754f3732c56835b19"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aol.com",
+                "homepage.aol.com",
+                "m.jpost.com",
+                "www.aol.com",
+                "www.complex.com",
+                "www.hometips.com",
+                "www.ign.com",
+                "www.maariv.co.il",
+                "www.toledoblade.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/spotlight\\/tags\\/v2\\.0\\.10\\/spotlight\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000276,
+            "cnames": [],
+            "responseHashes": [
+                "4dc82571bd8e2f29babe66f7eac465bef3e005d74e1956fc2175faa775d9f131"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aol.com",
+                "homepage.aol.com",
+                "www.aol.com",
+                "www.billboard.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/popular-in-the-community\\/tags\\/v2\\.26\\.9\\/popular-in-the-community\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {
+                "window.localStorage": 8,
+                "Navigator.prototype.userAgent": 8,
+                "Navigator.prototype.platform": 8
+            },
+            "sites": 9,
+            "prevalence": 0.0000621,
+            "cnames": [],
+            "responseHashes": [
+                "41740d49b8d1af86946eba82010374d6d774f6b2332531e6c2b82eb70aba2827"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aol.com",
+                "homepage.aol.com",
+                "m.jpost.com",
+                "www.aol.com",
+                "www.complex.com",
+                "www.hometips.com",
+                "www.ign.com",
+                "www.maariv.co.il",
+                "www.toledoblade.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/feed\\/tags\\/2\\.6\\.6\\/feed_bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {
+                "window.localStorage": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000276,
+            "cnames": [],
+            "responseHashes": [
+                "c51b5be634469d4f5ebf79e7fc0800accf4c566af9b06f7f5b3cd10d1ba51f75"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aol.com",
+                "homepage.aol.com",
+                "m.jpost.com",
+                "www.aol.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/ab-test-changer\\/tags\\/v1\\.1\\.2\\/ab-test-changer\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000276,
+            "cnames": [],
+            "responseHashes": [
+                "f695bd419cc1cc4959996d1441e57fb34dc4da7c4dd369d088fc9ed320069066"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aol.com",
+                "homepage.aol.com",
+                "www.aol.com",
+                "www.billboard.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/messages-count\\/tags\\/v1\\.0\\.0\\/messages-count-bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {},
+            "sites": 12,
+            "prevalence": 0.0000828,
+            "cnames": [],
+            "responseHashes": [
+                "8961431d93a9024ccb6d08a572aef6c75500f5edcfdab57ed669a0c1da9a839c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aol.com",
+                "homepage.aol.com",
+                "m.jpost.com",
+                "www.aol.com",
+                "www.billboard.com",
+                "www.complex.com",
+                "www.driving.co.uk",
+                "www.globes.co.il",
+                "www.hometips.com",
+                "www.ign.com",
+                "www.maariv.co.il",
+                "www.toledoblade.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/broadcasts\\/broadcasts\\/sp_IjnMf2Jd",
+            "cookies": 0.0000207,
             "fingerprinting": 0,
             "subdomains": [
                 "api-2-0"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
+            "sites": 3,
+            "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [
-                "4f1a70f5457f5882663bc308e1383b6f0f4e96273f89786d635a9bd5b238442e"
+                "b15adda52043ab41ba5663be05a91676db5ff3ad95e82dfafe7c5047eedc3f26"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "jpost.com",
-                "www.jpost.com"
+                "aol.com",
+                "homepage.aol.com",
+                "www.aol.com"
             ]
         },
         {
-            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_jpost\\/v2",
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/feed\\/pitc\\/v1\\/sp_IjnMf2Jd\\/homepage",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "api-2-0"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aol.com",
+                "homepage.aol.com",
+                "www.aol.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/feed\\/pitc\\/v1\\/sp_IjnMf2Jd\\/homepage",
+            "cookies": 0.0000207,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "e1788ce54899633ce12491b0df86b041887144cf953e8424ac4612bc6c65353c",
+                "f162834a5baa63a947a09c30779a6b1a35e6ec004106bb3a854acae012ba89de"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aol.com",
+                "homepage.aol.com",
+                "www.aol.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/conversation\\/realtime\\/read",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0000759,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aol.com",
+                "homepage.aol.com",
+                "m.jpost.com",
+                "www.aol.com",
+                "www.billboard.com",
+                "www.complex.com",
+                "www.driving.co.uk",
+                "www.globes.co.il",
+                "www.hometips.com",
+                "www.ign.com",
+                "www.maariv.co.il"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/conversation\\/realtime\\/read",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0000759,
+            "cnames": [],
+            "responseHashes": [
+                "62a1c8335736d45de5d13d872365bd1749990876579f2ef4e5a4e2207a5c27f8",
+                "bfe94aee47d621512cc8cac37421edf42f6dfdd4a12c2599d1e6af84b48699bd",
+                "891679e8a316c1bb17c17de30268f03072b0520ec2c4b3b7ace6e70fad969b40",
+                "04f847d90ad01e2ee406bbb9bf8349bebac7ccfc23ce71e177605ad0c1f5cdb5",
+                "826f614fae5701c7c04c5abb370a96f6683ae5ade4f51ea56f8ca0bb7c39679a",
+                "672a7509d5a3d8cc4a404eabccebe1f318b4fe5d21703b4255baf3f1fcdb5c2d",
+                "5abda924f9686cc4a890fc526bbad3dbee0cb823312baff22e0194348a10cf2e",
+                "a5cf805727544716a1746f2645de7ccebd3d43cc9f4fbc82f4bd0890a400de90",
+                "e93f36c5a16e73aa34e57d6724f4bf315a895fb1074e0a483b34715a32f91c79"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aol.com",
+                "homepage.aol.com",
+                "m.jpost.com",
+                "www.aol.com",
+                "www.billboard.com",
+                "www.complex.com",
+                "www.driving.co.uk",
+                "www.globes.co.il",
+                "www.hometips.com",
+                "www.ign.com",
+                "www.maariv.co.il"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/authenticate",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000483,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -1163,12 +1680,138 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "jpost.com",
-                "www.jpost.com"
+                "www.billboard.com",
+                "www.driving.co.uk",
+                "www.globes.co.il",
+                "www.ign.com",
+                "www.maariv.co.il",
+                "www.toledoblade.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/launcher\\/tags\\/v2\\.62\\.0\\/vendor\\/vendor-bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 7,
+                "window.localStorage": 7
+            },
+            "sites": 8,
+            "prevalence": 0.0000552,
+            "cnames": [],
+            "responseHashes": [
+                "ca41b626b0c40af7a0adedbf4119a770f01d932eb6681f5105a3aa3ff3966e17"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jpost.com",
+                "www.complex.com",
+                "www.driving.co.uk",
+                "www.globes.co.il",
+                "www.hometips.com",
+                "www.ign.com",
+                "www.maariv.co.il",
+                "www.toledoblade.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/authenticate",
+            "cookies": 0.0000483,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000483,
+            "cnames": [],
+            "responseHashes": [
+                "337c384258971cede04ee7f4052d985135e86b415363aff74fdc99e179cd651f",
+                "3cfb8ec20fbb493733b05f0a0cd618cb84b32c1966bccc299f6b16c7e0cc4f68",
+                "da74d22658a4672758be23221c32b9e22198cdc85f3aafa38831250461478d9b",
+                "39a7eb56bcf9621b29813b479467ab87c050e562642db8f16463474bd010f5f3",
+                "9e6373e537c3ac090aa4e630f2a53b000d993ebfba43db6653aa112d74a358b7"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jpost.com",
+                "www.billboard.com",
+                "www.driving.co.uk",
+                "www.globes.co.il",
+                "www.ign.com",
+                "www.maariv.co.il",
+                "www.toledoblade.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/conversation\\/tags\\/v3\\.42\\.8\\/conversation-bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {
+                "window.localStorage": 1,
+                "Date.prototype.getTime": 1
+            },
+            "sites": 8,
+            "prevalence": 0.0000552,
+            "cnames": [],
+            "responseHashes": [
+                "98af66dc049fe30eb919e2e54fb4089b9432e39af4489861ca078a63b3d37f1c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jpost.com",
+                "www.complex.com",
+                "www.driving.co.uk",
+                "www.globes.co.il",
+                "www.hometips.com",
+                "www.ign.com",
+                "www.maariv.co.il",
+                "www.toledoblade.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/messages-count\\/tags\\/v1\\.0\\.0\\/messages-count-bundle\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000552,
+            "cnames": [],
+            "responseHashes": [
+                "e99927b117a431d002d016853f9d56ccf53065686c483f8ce0429fa938490271"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jpost.com",
+                "www.complex.com",
+                "www.driving.co.uk",
+                "www.globes.co.il",
+                "www.hometips.com",
+                "www.ign.com",
+                "www.maariv.co.il",
+                "www.toledoblade.com"
             ]
         },
         {
             "rule": "spot\\.im\\/spot\\/sp_dbj1rz5F",
-            "cookies": 0.00000704,
+            "cookies": 0.0000069,
             "fingerprinting": 2,
             "subdomains": [
                 "launcher"
@@ -1184,10 +1827,10 @@
                 "Navigator.prototype.language": 1
             },
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "7e96c4545f26edb18f71a857e9cd06f198eed8cb89f80d5459be3d34bfe2a377"
+                "703b45414d6db9f30bcc6ea64b1f2a95bde9bcdd57ee9349bfb7c0b9c8e6e291"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1206,7 +1849,27 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sport5.co.il",
+                "m.sport5.co.il"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_dbj1rz5F\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
                 "420229346f137b5795db762ad2284418f9dcdfc2934257d4bb555abd65dddbbf"
@@ -1220,7 +1883,45 @@
             ]
         },
         {
-            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_dbj1rz5F\\/v2",
+            "rule": "spot\\.im\\/spot\\/sp_nXeQTgrK",
+            "cookies": 0.0000138,
+            "fingerprinting": 2,
+            "subdomains": [
+                "launcher"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.connection": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "5a32348146ba860f63ea5aabcb48f4081209cc70c784b6e6d6cac05bfaf50deb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "spotim_visitId": {
+                    "ttl": 1801,
+                    "length": 70,
+                    "prevalence": 0.000013804146765688412,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cheezburger.com",
+                "memebase.cheezburger.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_nXeQTgrK\\/v2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1228,27 +1929,91 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "sport5.co.il",
-                "m.sport5.co.il"
+                "cheezburger.com",
+                "memebase.cheezburger.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_nXeQTgrK\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "9f33974db6f4be23e87473feae17912f35bce6d298470c8fa177adccfc84acca"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cheezburger.com",
+                "memebase.cheezburger.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/config\\/ab_test\\/sp_nXeQTgrK\\/no_post",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cheezburger.com",
+                "memebase.cheezburger.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/config\\/ab_test\\/sp_nXeQTgrK\\/no_post",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "d8431b05c67d9c9511d07b3cad31d6b92f5da7551930f849d358da9ce0508299"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cheezburger.com",
+                "memebase.cheezburger.com"
             ]
         },
         {
             "rule": "spot\\.im\\/spot\\/sp_Rba9aFpG",
-            "cookies": 0.0000211,
+            "cookies": 0.0000207,
             "fingerprinting": 2,
             "subdomains": [
                 "launcher"
             ],
             "apis": {
-                "Date.prototype.getTime": 3,
                 "window.localStorage": 3,
+                "Date.prototype.getTime": 3,
                 "Navigator.prototype.userAgent": 3,
                 "Document.cookie getter": 3,
                 "Document.cookie setter": 3,
@@ -1256,13 +2021,11 @@
                 "Navigator.prototype.platform": 2,
                 "Navigator.prototype.connection": 2
             },
-            "sites": 4,
-            "prevalence": 0.0000282,
+            "sites": 3,
+            "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [
-                "8544577d52e092badf12f8df12bc60d7368f528c0943b3a2958947e3fc1faf14",
-                "1059c63ddd6421aef71bc48438ae00f6ebd6736f92a56d2d1e5c06725dbe7365",
-                "47414e2242b9dad45a7b93998761c9a37faf110a9233a2dce48639794aeb40d9"
+                "d7d9f9ef17b8aab24cb89c5a4e3b3c8a598eefeb3bb6b40ed8a284d8156c6826"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1270,8 +2033,7 @@
             "exampleSites": [
                 "yahoo.com",
                 "news.yahoo.com",
-                "us.yahoo.com",
-                "www.yahoo.com"
+                "us.yahoo.com"
             ]
         },
         {
@@ -1283,7 +2045,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000211,
+            "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -1291,8 +2053,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "yahoo.com",
-                "us.yahoo.com",
-                "www.yahoo.com"
+                "news.yahoo.com",
+                "us.yahoo.com"
             ]
         },
         {
@@ -1304,7 +2066,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000211,
+            "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [
                 "e082a196eadb620899e42af62dd252e241b8580c7123b4fb4aedc07bd05fd20e"
@@ -1314,8 +2076,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "yahoo.com",
-                "us.yahoo.com",
-                "www.yahoo.com"
+                "news.yahoo.com",
+                "us.yahoo.com"
             ]
         },
         {
@@ -1327,7 +2089,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000211,
+            "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [
                 "926f7445492513891fb7ba565435637ddc406b261b82a622f22132333cfb3e1f"
@@ -1337,13 +2099,83 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "yahoo.com",
+                "news.yahoo.com",
+                "us.yahoo.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/launcher\\/tags\\/v2\\.61\\.0\\/launcher\\/ec24cb303220fcfc94f8\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000276,
+            "cnames": [],
+            "responseHashes": [
+                "2df75dd5414f39139ce6f757636066e98d685654dbb93bf2c0f93f37092f1abd"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yahoo.com",
+                "movieweb.com",
                 "us.yahoo.com",
-                "www.yahoo.com"
+                "www.thedrive.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/ads\\/tags\\/v17\\.9\\.3-1-ie\\/ads\\/vendors-main-chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "cfb75870372a0e7d34d9e8176648de63af2d2773e94c2f37e032ca5214944bf5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "movieweb.com",
+                "www.billboard.com",
+                "www.metro.us"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/ads\\/tags\\/v17\\.9\\.3-1-ie\\/ads\\/main-chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "994c6872012a024066aa7dd9216c89fc621e0f0afd5aef5572263456f10afbff"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "movieweb.com",
+                "www.billboard.com",
+                "www.metro.us"
             ]
         },
         {
             "rule": "spot\\.im\\/spot\\/sp_3JiNtfDH",
-            "cookies": 0.00000704,
+            "cookies": 0.0000069,
             "fingerprinting": 2,
             "subdomains": [
                 "recirculation",
@@ -1360,18 +2192,18 @@
                 "Navigator.prototype.language": 1
             },
             "sites": 3,
-            "prevalence": 0.0000211,
+            "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [
-                "5c99e95253f4e202a6b796cb752b621bcce422ad5f36a27b22ee83ce7b36f0c2",
+                "3857045c1668b0073b491d70212568ab73b861a17591a38b50f3ae16dc387742",
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "spotim_visitId": {
-                    "ttl": 1829,
+                    "ttl": 1821,
                     "length": 71,
-                    "prevalence": 0.000007038783698176955,
+                    "prevalence": 0.000006902073382844206,
                     "uniqueness": 1
                 }
             },
@@ -1391,12 +2223,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [
-                "987aa4b7d1710aca19c227f2e6d6788a965f3939c3870445b3956e59ba898680"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1413,10 +2243,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "d9ec5061895392e1cc066ce93dbb2b9d9bb359e178ddd505a2817131f66b077e"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1425,115 +2257,8 @@
             ]
         },
         {
-            "rule": "spot\\.im\\/production\\/launcher\\/tags\\/v2\\.61\\.0\\/vendor\\/vendor-bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static-cdn"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000211,
-            "cnames": [],
-            "responseHashes": [
-                "4af14ab606e612f1887eff1224128745b26a9030fccfebd3d17499c88688435a"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "aol.com",
-                "www.foxbusiness.com",
-                "www.hometips.com"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/production\\/popular-in-the-community\\/tags\\/v2\\.26\\.9\\/popular-in-the-community\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static-cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "aol.com",
-                "www.hometips.com"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/production\\/popular-in-the-community\\/tags\\/v2\\.26\\.9\\/popular-in-the-community\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static-cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "aol.com",
-                "www.hometips.com"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/production\\/messages-count\\/tags\\/v1\\.0\\.0\\/messages-count-bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static-cdn"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000211,
-            "cnames": [],
-            "responseHashes": [
-                "8961431d93a9024ccb6d08a572aef6c75500f5edcfdab57ed669a0c1da9a839c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "aol.com",
-                "www.foxbusiness.com",
-                "www.hometips.com"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/spot\\/sp_rnhQMwip",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "recirculation",
-                "launcher"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "barstoolsports.com",
-                "www.barstoolsports.com"
-            ]
-        },
-        {
             "rule": "spot\\.im\\/spot\\/sp_pm5OEdGu",
-            "cookies": 0.00000704,
+            "cookies": 0.0000069,
             "fingerprinting": 2,
             "subdomains": [
                 "launcher",
@@ -1550,7 +2275,7 @@
                 "Navigator.prototype.language": 1
             },
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -1558,9 +2283,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "spotim_visitId": {
-                    "ttl": 1833,
-                    "length": 70,
-                    "prevalence": 0.000007038783698176955,
+                    "ttl": 1816,
+                    "length": 71,
+                    "prevalence": 0.000006902073382844206,
                     "uniqueness": 1
                 }
             },
@@ -1571,9 +2296,68 @@
             ]
         },
         {
-            "rule": "spot\\.im\\/spot\\/sp_XB3dUJrU",
-            "cookies": 0.00000704,
+            "rule": "spot\\.im\\/production\\/spotlight\\/tags\\/v2\\.0\\.10\\/styles\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "billboard.com",
+                "www.billboard.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/spot\\/sp_kA65CpOD",
+            "cookies": 0.0000069,
             "fingerprinting": 2,
+            "subdomains": [
+                "recirculation",
+                "launcher"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.connection": 1,
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1,
+                "Navigator.prototype.language": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "7053f1182a2c91e63ae76b609ec8ee001aacc8ddf15e316578625addcdad90a9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "spotim_visitId": {
+                    "ttl": 1817,
+                    "length": 71,
+                    "prevalence": 0.000006902073382844206,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bizpacreview.com",
+                "www.bizpacreview.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/spot\\/sp_XB3dUJrU",
+            "cookies": 0.0000069,
+            "fingerprinting": 1,
             "subdomains": [
                 "recirculation",
                 "launcher"
@@ -1588,17 +2372,17 @@
                 "Navigator.prototype.language": 1
             },
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "5abf66cc6ba723a08536daa643f918c7f3e1f84dc0e8e7950b1e40fee12e7351"
+                "fa75a96c9d9518dda190d3c3162f45078eec9b72c13293c8e550fb5019f1939f"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "spotim_visitId": {
-                    "ttl": 1818,
+                    "ttl": 1802,
                     "length": 70,
-                    "prevalence": 0.000007038783698176955,
+                    "prevalence": 0.000006902073382844206,
                     "uniqueness": 1
                 }
             },
@@ -1610,19 +2394,37 @@
         },
         {
             "rule": "spot\\.im\\/spot\\/sp_AYcpkZr5",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0000069,
+            "fingerprinting": 2,
             "subdomains": [
                 "recirculation",
                 "launcher"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.connection": 1,
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1,
+                "Navigator.prototype.language": 1
+            },
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "3ba686b83d3a7f1191de28338149d22b2f21f9911b4654a49f7199d7b65fdea1"
+            ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "spotim_visitId": {
+                    "ttl": 1820,
+                    "length": 71,
+                    "prevalence": 0.000006902073382844206,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "comicsands.com",
@@ -1630,210 +2432,8 @@
             ]
         },
         {
-            "rule": "spot\\.im\\/production\\/conversation\\/tags\\/v3\\.41\\.9\\/conversation-bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static-cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "foxbusiness.com",
-                "www.hometips.com"
-            ]
-        },
-        {
             "rule": "spot\\.im\\/spot\\/sp_RpYbjIoo",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "launcher",
-                "recirculation"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "gizchina.com",
-                "www.gizchina.com"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/spot\\/sp_KdsXecm1",
-            "cookies": 0.00000704,
-            "fingerprinting": 1,
-            "subdomains": [
-                "recirculation",
-                "launcher"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 1,
-                "window.localStorage": 1,
-                "Navigator.prototype.userAgent": 1,
-                "Document.cookie getter": 1,
-                "Document.cookie setter": 1,
-                "Navigator.prototype.language": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000141,
-            "cnames": [],
-            "responseHashes": [
-                "e85a58c9fa5e00b374b90f7252a1aa974f2ba7a92ee3c2fea90e48021edd6a0f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "spotim_visitId": {
-                    "ttl": 1841,
-                    "length": 71,
-                    "prevalence": 0.000007038783698176955,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "iflscience.com",
-                "www.iflscience.com"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/spot\\/sp_xH5I96hV",
-            "cookies": 0.0000141,
-            "fingerprinting": 2,
-            "subdomains": [
-                "launcher"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
-                "Navigator.prototype.platform": 2,
-                "Navigator.prototype.connection": 2,
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2,
-                "Navigator.prototype.language": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000141,
-            "cnames": [],
-            "responseHashes": [
-                "05133da4271b8df2b28be41398b2891238fd3bd6586b1e6aff6a70f7519c15f3"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "spotim_visitId": {
-                    "ttl": 1830,
-                    "length": 71,
-                    "prevalence": 0.00001407756739635391,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mandatory.com",
-                "www.mandatory.com"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_xH5I96hV\\/v2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api-2-0"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
-            "cnames": [],
-            "responseHashes": [
-                "05ad45759ca7ccd9550e1e8bdaf987e3c4a9ed5e3ff270897cd8b75a07f63ccd"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mandatory.com",
-                "www.mandatory.com"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_xH5I96hV\\/v2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api-2-0"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mandatory.com",
-                "www.mandatory.com"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/v1\\.0\\.0\\/config\\/ab_test\\/sp_xH5I96hV\\/no_post",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api-2-0"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mandatory.com",
-                "www.mandatory.com"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/v1\\.0\\.0\\/config\\/ab_test\\/sp_xH5I96hV\\/no_post",
-            "cookies": 0.0000141,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api-2-0"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
-            "cnames": [],
-            "responseHashes": [
-                "3437efff1b5eaf5b7f952384530d3387dbc3148aa9429336d2c2d6ae7e845e03"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mandatory.com",
-                "www.mandatory.com"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/spot\\/sp_26uV0TWa",
-            "cookies": 0.00000704,
+            "cookies": 0.0000069,
             "fingerprinting": 2,
             "subdomains": [
                 "launcher",
@@ -1850,7 +2450,7 @@
                 "Navigator.prototype.language": 1
             },
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -1858,81 +2458,191 @@
             "type": "Script",
             "firstPartyCookies": {
                 "spotim_visitId": {
-                    "ttl": 1840,
-                    "length": 71,
-                    "prevalence": 0.000007038783698176955,
+                    "ttl": 1802,
+                    "length": 70,
+                    "prevalence": 0.000006902073382844206,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nationalenquirer.com",
-                "www.nationalenquirer.com"
+                "gizchina.com",
+                "www.gizchina.com"
             ]
         },
         {
-            "rule": "spot\\.im\\/spot\\/sp_v0xu5oCZ",
+            "rule": "spot\\.im\\/spot\\/sp_6NxfyvMn",
+            "cookies": 0.0000069,
+            "fingerprinting": 2,
+            "subdomains": [
+                "recirculation",
+                "launcher"
+            ],
+            "apis": {
+                "window.localStorage": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.connection": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1,
+                "Navigator.prototype.language": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "7ddb785c4b75c547988affd84aa4380be40a7f1b26856a902fa9487ca38288f7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "spotim_visitId": {
+                    "ttl": 1805,
+                    "length": 129,
+                    "prevalence": 0.000006902073382844206,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gizmochina.com",
+                "www.gizmochina.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/registration\\/tags\\/v1\\.16\\.14-hotfix5\\/registration-bundle\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "launcher"
+                "static-cdn"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "2e25d19000f77ffbfb750ab9af34b7970a070339fb29cf7533bbe3bbb3a62f96"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "realclearpolitics.com",
-                "www.realclearpolitics.com"
+                "globes.co.il",
+                "www.ign.com"
             ]
         },
         {
-            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_v0xu5oCZ\\/v2",
+            "rule": "spot\\.im\\/production\\/registration\\/tags\\/v1\\.16\\.14-hotfix5\\/vendors~main-bootstrap~registration-disqus-login~registration-logout~registration-start-sso~registra~5961887e-bundle\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "api-2-0"
+                "static-cdn"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Fetch",
+            "responseHashes": [
+                "4a87805da5a668d91c3616dbaf35eddc7205d30f70a2d8b3807c6208f24af50e"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "realclearpolitics.com",
-                "www.realclearpolitics.com"
+                "globes.co.il",
+                "www.ign.com"
             ]
         },
         {
-            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_v0xu5oCZ\\/v2",
+            "rule": "spot\\.im\\/production\\/registration\\/tags\\/v1\\.16\\.14-hotfix5\\/registration-logout-bundle\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "api-2-0"
+                "static-cdn"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "e06f9de1017443102079ab132696c6ccd090fb4b8adcf58ec0fb9b4988e96d3d"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "realclearpolitics.com",
-                "www.realclearpolitics.com"
+                "globes.co.il",
+                "www.ign.com"
             ]
         },
         {
-            "rule": "spot\\.im\\/spot\\/sp_8lO2c91e",
-            "cookies": 0.0000141,
+            "rule": "spot\\.im\\/spot\\/sp_XC61vFgU",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "recirculation"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "guardian.co.tt",
+                "www.guardian.co.tt"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/spot\\/sp_KdsXecm1",
+            "cookies": 0.0000069,
+            "fingerprinting": 2,
+            "subdomains": [
+                "recirculation",
+                "launcher"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.connection": 1,
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1,
+                "Navigator.prototype.language": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e640145e3b808251dab8bb35b6ebfaf7c770f986355bab870038a32cb562abef"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "spotim_visitId": {
+                    "ttl": 1803,
+                    "length": 70,
+                    "prevalence": 0.000006902073382844206,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "iflscience.com",
+                "www.iflscience.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/spot\\/sp_xEkoxAFD",
+            "cookies": 0.0000138,
             "fingerprinting": 2,
             "subdomains": [
                 "launcher"
@@ -1948,17 +2658,702 @@
                 "Navigator.prototype.language": 2
             },
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "3bcc6d35cb131e4e9b2e25854e764f1e6e75d8c8254fd1f172feeb3f896b25f6"
+                "c9c0b1f7da579be28fdf5458fc2802a8edf9e436d62c755d1acc8df72a12d2f2"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "spotim_visitId": {
-                    "ttl": 1831,
+                    "ttl": 1827,
                     "length": 71,
-                    "prevalence": 0.00001407756739635391,
+                    "prevalence": 0.000013804146765688412,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ign.com",
+                "www.ign.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_xEkoxAFD\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ign.com",
+                "www.ign.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_xEkoxAFD\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "50bf56259068fd7d6b15e95bf864e2aa2ef62c5e5f3504ca0cc66f87efe68201"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ign.com",
+                "www.ign.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/config\\/ab_test\\/sp_xEkoxAFD\\/no_post",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ign.com",
+                "www.ign.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v2\\/article\\/\\/sp_xEkoxAFD\\/undefined",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "seo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "cbe99260ef13e5ff2f16b6082030290ef883f6795e118a406c621b8735f922b9"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ign.com",
+                "www.ign.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/config\\/ab_test\\/sp_xEkoxAFD\\/no_post",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "183969b07e987f482c5a94a16c3dea5cdd8dd204292da11cc0ce1d782d9bccbe"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ign.com",
+                "www.ign.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/broadcasts\\/broadcasts\\/sp_xEkoxAFD",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ign.com",
+                "www.ign.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/notifications-sdk\\/tags\\/v1\\.1\\.2\\/notifications-sdk-bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "740e9579dc205e2f017a644c40c1536fcd187ef184a5d77db30add2fb34365e3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ign.com",
+                "www.ign.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/analytics-pusher\\/tags\\/v1\\.2\\.1\\/analytics-pusher\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "a86fae43a94ac408aab297fba5dff884ac532d1a7ad7264d5243dbc92ba6a154"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ign.com",
+                "www.ign.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/broadcasts\\/broadcasts\\/sp_xEkoxAFD",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "b15adda52043ab41ba5663be05a91676db5ff3ad95e82dfafe7c5047eedc3f26"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ign.com",
+                "www.ign.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/spot\\/sp_AReEVDKQ",
+            "cookies": 0.0000069,
+            "fingerprinting": 2,
+            "subdomains": [
+                "recirculation",
+                "launcher"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.connection": 1,
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1,
+                "Navigator.prototype.language": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "bc256f1eb6637efb5cdb69d6a801701ed8d2329756112e0bc69f4f593298becb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "spotim_visitId": {
+                    "ttl": 1801,
+                    "length": 70,
+                    "prevalence": 0.000006902073382844206,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "juegos.com",
+                "www.juegos.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/spot\\/sp_KSXfiyDR",
+            "cookies": 0.0000069,
+            "fingerprinting": 2,
+            "subdomains": [
+                "recirculation",
+                "launcher"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.connection": 1,
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1,
+                "Navigator.prototype.language": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "ea191ff17b24d2b8c593275ac89f66f6b5ae9f124a3e01e7b36be3473f98e5d7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "maariv.co.il",
+                "www.maariv.co.il"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/modules\\/messages-count\\/3\\.0\\.126\\/bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "ced8bade4f47884488280ee20afe8fc6840558f5bac2ef11d2c00de25ffcf1d8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mmaweekly.com",
+                "www.mmaweekly.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/spot\\/sp_3qtDoO8S",
+            "cookies": 0.0000069,
+            "fingerprinting": 2,
+            "subdomains": [
+                "recirculation",
+                "launcher"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.connection": 1,
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1,
+                "Navigator.prototype.language": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "8875caf649d80b5c4ed0a4cfb7c1403869a03731588bb1ea2eaacfe2797fba51"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "spotim_visitId": {
+                    "ttl": 1826,
+                    "length": 71,
+                    "prevalence": 0.000006902073382844206,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mmaweekly.com",
+                "www.mmaweekly.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/spot\\/sp_0xpjnq0B",
+            "cookies": 0.0000069,
+            "fingerprinting": 2,
+            "subdomains": [
+                "launcher",
+                "recirculation"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.connection": 1,
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1,
+                "Navigator.prototype.language": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "c5b790597b4636a13592c4e42e72810e8425cc1db90c9dd591b7f60bd62854c6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "spotim_visitId": {
+                    "ttl": 1823,
+                    "length": 71,
+                    "prevalence": 0.000006902073382844206,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "realclearhistory.com",
+                "www.realclearhistory.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_0xpjnq0B\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "realclearhistory.com",
+                "www.realclearhistory.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_0xpjnq0B\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "321b6304cc9fdc2dcb77ee206992e92b6ab67bbafcf88bb0c101094fa0cf25ce"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "realclearhistory.com",
+                "www.realclearhistory.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/spot\\/sp_fGGCea9F",
+            "cookies": 0.0000138,
+            "fingerprinting": 2,
+            "subdomains": [
+                "launcher"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.connection": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "6d471624f308d693e8e6925ab80c0345bda287a568793068931e45d18e193327"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "spotim_visitId": {
+                    "ttl": 1803,
+                    "length": 70,
+                    "prevalence": 0.000013804146765688412,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "realclearinvestigations.com",
+                "www.realclearinvestigations.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_fGGCea9F\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "realclearinvestigations.com",
+                "www.realclearinvestigations.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_fGGCea9F\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "f4a494bd5bb306ba90d884a498e88ea65aefd9aa0852d4ce4bc96bd9e8dad3fd"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "realclearinvestigations.com",
+                "www.realclearinvestigations.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/spot\\/sp_9W7bDUIH",
+            "cookies": 0.0000138,
+            "fingerprinting": 2,
+            "subdomains": [
+                "launcher"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.connection": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "eb9b42a4fd3bc11707120490b32e2e3a7be7b664cdb4c422e78a9d509be2a571"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "spotim_visitId": {
+                    "ttl": 1806,
+                    "length": 70,
+                    "prevalence": 0.000013804146765688412,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "realclearmarkets.com",
+                "www.realclearmarkets.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_9W7bDUIH\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "realclearmarkets.com",
+                "www.realclearmarkets.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_9W7bDUIH\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "8883bb306cfe1084f87d4968306d8110ef04a4cbb605a1d98a33974b8ccb0d34"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "realclearmarkets.com",
+                "www.realclearmarkets.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/spot\\/sp_v0xu5oCZ",
+            "cookies": 0.0000138,
+            "fingerprinting": 2,
+            "subdomains": [
+                "launcher"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.connection": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "962d05709b5e7d5b0527bffae75c17c3d4a842fcbdd94a5b321d903ef12b6f87"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "spotim_visitId": {
+                    "ttl": 1832,
+                    "length": 71,
+                    "prevalence": 0.000013804146765688412,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "realclearpolitics.com",
+                "www.realclearpolitics.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_v0xu5oCZ\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "realclearpolitics.com",
+                "www.realclearpolitics.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_v0xu5oCZ\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "c70a0638566bdeae7432fde4dac2dc8efc4f79f8e83374485151369228084e2d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "realclearpolitics.com",
+                "www.realclearpolitics.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/spot\\/sp_8lO2c91e",
+            "cookies": 0.0000138,
+            "fingerprinting": 2,
+            "subdomains": [
+                "launcher"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.connection": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "a9f6c517a964c4b6fd048b2ef53b7fb959c303f203c0c0bfc4ec8e30fb06c902"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "spotim_visitId": {
+                    "ttl": 1828,
+                    "length": 71,
+                    "prevalence": 0.000013804146765688412,
                     "uniqueness": 1
                 }
             },
@@ -1977,7 +3372,27 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "realclearscience.com",
+                "www.realclearscience.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_8lO2c91e\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
                 "b776455915ed7244f3e9e1d9307081a1d9c202dc076cc9fff51eefafccf43985"
@@ -1991,28 +3406,70 @@
             ]
         },
         {
-            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_8lO2c91e\\/v2",
-            "cookies": 0,
+            "rule": "spot\\.im\\/spot\\/sp_rexLo99v",
+            "cookies": 0.0000138,
+            "fingerprinting": 2,
+            "subdomains": [
+                "launcher",
+                "recirculation"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.connection": 1,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.product": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "ac8a47f2c539cb3e6c0402d9b8ff756d464ba83329204b18a2c75faf9fbb9409"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "spotim_visitId": {
+                    "ttl": 1823,
+                    "length": 71,
+                    "prevalence": 0.000013804146765688412,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "refinery29.com",
+                "www.refinery29.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/api\\/v1\\/pixel",
+            "cookies": 0.0000138,
             "fingerprinting": 0,
             "subdomains": [
-                "api-2-0"
+                "pix"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "realclearscience.com",
-                "www.realclearscience.com"
+                "refinery29.com",
+                "www.refinery29.com"
             ]
         },
         {
             "rule": "spot\\.im\\/spot\\/sp_EMuL2Uex",
-            "cookies": 0.00000704,
+            "cookies": 0.0000138,
             "fingerprinting": 2,
             "subdomains": [
                 "launcher"
@@ -2021,24 +3478,24 @@
                 "Navigator.prototype.userAgent": 2,
                 "window.localStorage": 2,
                 "Navigator.prototype.platform": 2,
-                "Navigator.prototype.connection": 1,
-                "Document.cookie getter": 1,
-                "Date.prototype.getTime": 1,
-                "Document.cookie setter": 1,
-                "Navigator.prototype.language": 1
+                "Navigator.prototype.connection": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.language": 2
             },
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "de57ea3efdcf97cfddd257af832837d2573dfeed4226a629e4a667b4c6a7e001"
+                "752fd0edf65be416a9cbcb3fe71a367b708669b2bccd58ae475512fc3e2a5038"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "spotim_visitId": {
-                    "ttl": 1817,
+                    "ttl": 1825,
                     "length": 70,
-                    "prevalence": 0.000007038783698176955,
+                    "prevalence": 0.000013804146765688412,
                     "uniqueness": 1
                 }
             },
@@ -2057,7 +3514,27 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "silverdoctors.com",
+                "www.silverdoctors.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_EMuL2Uex\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
                 "b2036e13d02120f4ec0684c64591a0610c4a7e68e9ba5532fd7adf75c4beaf01"
@@ -2071,65 +3548,6 @@
             ]
         },
         {
-            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_EMuL2Uex\\/v2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api-2-0"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "silverdoctors.com",
-                "www.silverdoctors.com"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/spot\\/sp_NLytoebJ",
-            "cookies": 0.00000704,
-            "fingerprinting": 2,
-            "subdomains": [
-                "recirculation",
-                "launcher"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "window.localStorage": 1,
-                "Navigator.prototype.platform": 1,
-                "Navigator.prototype.connection": 1,
-                "Document.cookie getter": 1,
-                "Date.prototype.getTime": 1,
-                "Document.cookie setter": 1,
-                "Navigator.prototype.language": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000141,
-            "cnames": [],
-            "responseHashes": [
-                "184142659b271f5385bc0e07d4721ae5ea326850d75759e4752cb7acd97acf38"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "spotim_visitId": {
-                    "ttl": 1828,
-                    "length": 70,
-                    "prevalence": 0.000007038783698176955,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "soapoperaspy.com",
-                "www.soapoperaspy.com"
-            ]
-        },
-        {
             "rule": "spot\\.im\\/spot\\/sp_NLytoebJ\\/siderail",
             "cookies": 0,
             "fingerprinting": 0,
@@ -2138,7 +3556,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -2152,8 +3570,8 @@
             ]
         },
         {
-            "rule": "spot\\.im\\/spot\\/sp_JjtET6Vo",
-            "cookies": 0.00000704,
+            "rule": "spot\\.im\\/spot\\/sp_NLytoebJ",
+            "cookies": 0.0000069,
             "fingerprinting": 2,
             "subdomains": [
                 "recirculation",
@@ -2170,17 +3588,56 @@
                 "Navigator.prototype.language": 1
             },
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "729ef81356ee74fc99279f6b1c37a1567b45148e99e7462ade2221cc704ff3b5"
+                "13febc1513f980e3239976a76045bfeb0d1307b07514ce3a243665002c723907"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "spotim_visitId": {
-                    "ttl": 1830,
+                    "ttl": 1812,
                     "length": 71,
-                    "prevalence": 0.000007038783698176955,
+                    "prevalence": 0.000006902073382844206,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soapoperaspy.com",
+                "www.soapoperaspy.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/spot\\/sp_JjtET6Vo",
+            "cookies": 0.0000069,
+            "fingerprinting": 2,
+            "subdomains": [
+                "recirculation",
+                "launcher"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.connection": 1,
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1,
+                "Navigator.prototype.language": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "48c6e5def750b289c39aabd98aa8c4571b6a9cce732efbfe96e45b7992e30d16"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "spotim_visitId": {
+                    "ttl": 1800,
+                    "length": 70,
+                    "prevalence": 0.000006902073382844206,
                     "uniqueness": 1
                 }
             },
@@ -2193,15 +3650,15 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000831,
+    "cookies": 0.00103,
     "types": {
-        "XHR": 123,
-        "Fetch": 507,
-        "Preflight": 164,
-        "Image": 103,
-        "Script": 151,
-        "Ping": 61,
-        "Stylesheet": 2
+        "Script": 295,
+        "Preflight": 238,
+        "XHR": 147,
+        "Fetch": 671,
+        "Other": 129,
+        "Image": 159,
+        "Stylesheet": 19
     },
     "nameservers": [
         "ns-1202.awsdns-22.org",

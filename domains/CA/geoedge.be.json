@@ -4,12 +4,13 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00237,
-    "sites": 23,
+    "prevalence": 0.00281,
+    "sites": 28,
     "subdomains": [
         "rumcdn",
-        "protect",
-        "gw"
+        "wrappers",
+        "gw",
+        "protect"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -22,11 +23,11 @@
                 "rumcdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 10,
+                "Navigator.prototype.userAgent": 11,
                 "Date.prototype.getTime": 1
             },
-            "sites": 10,
-            "prevalence": 0.00103,
+            "sites": 12,
+            "prevalence": 0.0012,
             "cnames": [],
             "responseHashes": [
                 "4dc4abcd99f7976c1a0938575631974c55fa42bf76681e84ca56aeea3180966e"
@@ -39,10 +40,12 @@
                 "hfboards.mandatory.com",
                 "m.jpost.com",
                 "religionnews.com",
+                "www.apartmenttherapy.com",
                 "www.boats.com",
                 "www.boattrader.com",
                 "www.gamerevolution.com",
                 "www.jpost.com",
+                "www.scotsman.com",
                 "www.thekitchn.com",
                 "www.yachtworld.com"
             ]
@@ -56,9 +59,11 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000412,
+            "prevalence": 0.000402,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -67,6 +72,58 @@
                 "www.boats.com",
                 "www.boattrader.com",
                 "www.yachtworld.com"
+            ]
+        },
+        {
+            "rule": "geoedge\\.be\\/wrapper\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wrappers"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "8265c5aec9ae3882691303cec1b6993e75b12e8071fe6710826f7fc6b5cbccdb"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "weblio.jp",
+                "legalinsurrection.com",
+                "www.realclearpolitics.com"
+            ]
+        },
+        {
+            "rule": "geoedge\\.be\\/api\\/init",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gw"
+            ],
+            "apis": {},
+            "sites": 9,
+            "prevalence": 0.000904,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yahoo.com",
+                "religionnews.com",
+                "www.gamerevolution.com",
+                "www.macworld.co.uk",
+                "www.nytimes.com",
+                "www.realclearscience.com",
+                "www.realclearpolitics.com",
+                "www.scotsman.com",
+                "www.techhive.com"
             ]
         },
         {
@@ -81,7 +138,7 @@
                 "Date.prototype.getTime": 1
             },
             "sites": 3,
-            "prevalence": 0.000309,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "4dc4abcd99f7976c1a0938575631974c55fa42bf76681e84ca56aeea3180966e"
@@ -98,22 +155,26 @@
         {
             "rule": "geoedge\\.be\\/2a236ed9-fb8c-429e-ab47-cacac34a3be6\\/grumi\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "rumcdn"
             ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000412,
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "7814bf11c2e79a85ec6528c0681977294b40256502e7b1119c7fb03eb5526500"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "sherdog.com",
+                "forums.sherdog.com",
                 "hfboards.mandatory.com",
                 "www.gamerevolution.com",
                 "www.sherdog.com"
@@ -127,20 +188,23 @@
                 "protect"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.000618,
+            "sites": 9,
+            "prevalence": 0.000904,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Ping",
+            "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mandatory.com",
+                "sherdog.com",
+                "forums.sherdog.com",
                 "hfboards.mandatory.com",
                 "m.jpost.com",
-                "www.gamerevolution.com",
+                "www.boattrader.com",
+                "www.hockeydb.com",
+                "www.jpost.com",
                 "www.sherdog.com",
                 "www.yachtworld.com"
             ]
@@ -154,7 +218,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000309,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -169,50 +233,73 @@
             ]
         },
         {
-            "rule": "geoedge\\.be\\/7a30e0fc-d3bc-457d-b426-51a666e90539\\/grumi\\.js",
+            "rule": "geoedge\\.be\\/191e27c7-e539-4da7-98e5-2d3c626338be\\/grumi\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "rumcdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 3
             },
-            "sites": 2,
-            "prevalence": 0.000206,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "756e83599da9167ad1b8e5faa369b6ac770c4e855bef60b1c57860b08203d5e4"
+                "d88ecc383ce97a7ce69db13cf4bc14cfb407467fdc5a7705652edbf4b4692de7",
+                "91622c6f5dfb9f398fadcba7f6a6a56da248226df94f5d97ad13959be99868bc"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "yahoo.com",
-                "sports.yahoo.com"
+                "religionnews.com",
+                "www.realclearscience.com",
+                "www.realclearpolitics.com"
             ]
         },
         {
-            "rule": "geoedge\\.be\\/api\\/init",
+            "rule": "geoedge\\.be\\/35362513-af22-4abd-a2c3-bcf6c62814c8\\/grumi\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "gw"
+                "rumcdn"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000309,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "dec890c7afeb828c87ce3499c83bb4e935b26456e9ce739c1770df9bad7d38e0"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "religionnews.com",
-                "sports.yahoo.com",
-                "www.npr.org"
+                "www.realclearscience.com"
+            ]
+        },
+        {
+            "rule": "geoedge\\.be\\/08124b21-e823-442b-b6c5-12c562f86444\\/grumi\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rumcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c469568484a6c17c82ba10275dacbf526351b3ecbc8b72015da4932980dadb84"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apartmenttherapy.com",
+                "www.thekitchn.com"
             ]
         },
         {
@@ -224,7 +311,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "4ba750c2c40902859af1339e2d8bb949cfd927bb167f487f760db876cd78a511"
@@ -233,12 +320,12 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "catholicworldreport.com",
+                "catholicnewsagency.com",
                 "www.catholicnewsagency.com"
             ]
         },
         {
-            "rule": "geoedge\\.be\\/880a45f2-0015-49d2-b38f-2d26be44ae09\\/grumi\\.js",
+            "rule": "geoedge\\.be\\/e7b7e590-0513-4e80-a8f2-700f77b5cc9b\\/grumi\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -246,15 +333,164 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "npr.org",
-                "www.npr.org"
+                "hockeydb.com",
+                "www.hockeydb.com"
+            ]
+        },
+        {
+            "rule": "geoedge\\.be\\/859c0fcb-feae-4616-afed-20011b559baa\\/grumi-ip\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "rumcdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "4dc4abcd99f7976c1a0938575631974c55fa42bf76681e84ca56aeea3180966e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "macworld.co.uk",
+                "www.techhive.com"
+            ]
+        },
+        {
+            "rule": "geoedge\\.be\\/859c0fcb-feae-4616-afed-20011b559baa\\/grumi\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "rumcdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Screen.prototype.width": 2,
+                "Date.prototype.getTime": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "4980a76cbb135622bc6a6e043cce917f9fb95512e4662bd26289358fa37f3133"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "macworld.co.uk",
+                "www.macworld.co.uk",
+                "www.techhive.com"
+            ]
+        },
+        {
+            "rule": "geoedge\\.be\\/b3960cc6-bfd2-4adc-910c-6e917e8a6a0e\\/grumi\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "rumcdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "6f39478aa1e21bba580122347ae860ccc25ab2630f566fade8c7925ba87aa1a4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nytimes.com",
+                "www.nytimes.com"
+            ]
+        },
+        {
+            "rule": "geoedge\\.be\\/api\\/stats",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gw"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nytimes.com",
+                "www.scotsman.com"
+            ]
+        },
+        {
+            "rule": "geoedge\\.be\\/191e27c7-e539-4da7-98e5-2d3c626338be\\/grumi-ip\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "rumcdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "4dc4abcd99f7976c1a0938575631974c55fa42bf76681e84ca56aeea3180966e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "realclearscience.com",
+                "www.realclearpolitics.com"
+            ]
+        },
+        {
+            "rule": "geoedge\\.be\\/5595447e-ba2d-4ecf-a980-c166d7c68d62\\/grumi\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "rumcdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "a7ad737b58242ed0cc36a2618b49eef9ad34868626047bf5957223e8f22ea77a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "scotsman.com",
+                "www.scotsman.com"
             ]
         }
     ],
@@ -262,9 +498,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 30,
-        "Ping": 6,
-        "XHR": 3
+        "Script": 49,
+        "XHR": 14,
+        "Other": 9
     },
     "nameservers": [
         "ns-1097.awsdns-09.org",

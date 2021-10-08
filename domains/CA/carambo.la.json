@@ -4,31 +4,41 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000412,
-    "sites": 4,
+    "prevalence": 0.000602,
+    "sites": 6,
     "subdomains": [
         "route",
-        "cdata"
+        "cdata",
+        "logging",
+        "analytics",
+        "xtr"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "carambo\\.la\\/inimage\\/getlayer",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "route"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "window.localStorage": 1,
-                "Date.prototype.getTime": 1,
-                "window.devicePixelRatio": 1,
-                "Element.prototype.getClientRects": 1
+                "Navigator.prototype.userAgent": 6,
+                "window.localStorage": 6,
+                "Date.prototype.getTime": 6,
+                "window.devicePixelRatio": 6,
+                "Navigator.prototype.cookieEnabled": 4,
+                "window.sessionStorage": 4,
+                "Navigator.prototype.doNotTrack": 4,
+                "Screen.prototype.height": 4,
+                "Screen.prototype.width": 4,
+                "Navigator.prototype.language": 4,
+                "Screen.prototype.colorDepth": 4,
+                "Date.prototype.getTimezoneOffset": 4
             },
-            "sites": 4,
-            "prevalence": 0.000412,
+            "sites": 6,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
                 "eb1787c287512f4298a90423931eaf71ffd089c04eea852dff8b9b961438142e"
@@ -38,9 +48,11 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "simpleflying.com",
-                "www.allfreeknitting.com",
-                "www.allfreecrochet.com",
-                "www.maketecheasier.com"
+                "www.askmefast.com",
+                "www.haaretz.com",
+                "www.linguee.fr",
+                "www.maketecheasier.com",
+                "www.thefreedictionary.com"
             ]
         },
         {
@@ -51,11 +63,237 @@
                 "cdata"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "de10354c084c617860a70895579a8c8f5e1eede641e99b0e68284001bf358d25",
+                "4100c6f21558fe00f8c6cf7a66cff964bc9751d827fa36ee5c3d4f7bb34d0203"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "simpleflying.com",
+                "www.maketecheasier.com",
+                "www.thefreedictionary.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/AddLogs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "logging"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000602,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "simpleflying.com",
+                "www.askmefast.com",
+                "www.haaretz.com",
+                "www.linguee.fr",
+                "www.maketecheasier.com",
+                "www.thefreedictionary.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/SetPageRequestGeo",
+            "cookies": 0.0001,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000602,
+            "cnames": [],
+            "responseHashes": [
+                "a3b59cf3c15a5896f4224c367d24e647fe14e411b8024dcc87aa37783e0cf110",
+                "fe984414a0f4c2fa29a90e40a1ff457ee2902edd54b306cf330e0f28d9051593"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "simpleflying.com",
+                "www.askmefast.com",
+                "www.haaretz.com",
+                "www.linguee.fr",
+                "www.maketecheasier.com",
+                "www.thefreedictionary.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/Layer\\/InImage\\/Prod\\/cbola_platform\\/version_2\\.33\\.5\\/css\\/assets\\/powered-by-light-grey\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdata"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "7e465fe49a12622b29263735f5cdf94cedfbe8dcfdcbf9a489b799d5f4638a8d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "simpleflying.com",
+                "www.maketecheasier.com",
+                "www.thefreedictionary.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/Layer\\/InImage\\/Prod\\/cbola_platform\\/version_2\\.33\\.5\\/css\\/assets\\/image-thumb\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdata"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "14877841209d78f784467f0113ebaf4e0647183a235dc4e4a0051d83a0fc3de7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "simpleflying.com",
+                "www.maketecheasier.com",
+                "www.thefreedictionary.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/Layer\\/InImage\\/Prod\\/cbola_platform\\/version_2\\.33\\.5\\/css\\/assets\\/powered-by-light-grey-hover\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdata"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "4afbc6c79de3dd4cdb8a202c8af0f76fc49b8ca8215c14526bc1f6d1657590b6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "simpleflying.com",
+                "www.maketecheasier.com",
+                "www.thefreedictionary.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/Layer\\/InImage\\/Prod\\/cbola_platform\\/version_2\\.33\\.5\\/css\\/fonts\\/cbolaIcons\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdata"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000602,
+            "cnames": [],
+            "responseHashes": [
+                "c85a8e7c2d1d0583578b2afd3a1ce469797bfa5c9d5598cba25f51f839348ec8"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "simpleflying.com",
+                "www.askmefast.com",
+                "www.haaretz.com",
+                "www.linguee.fr",
+                "www.maketecheasier.com",
+                "www.thefreedictionary.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/SetPageElementsRequestNew",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [],
-            "type": "Script",
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "simpleflying.com",
+                "www.askmefast.com",
+                "www.haaretz.com",
+                "www.linguee.fr",
+                "www.maketecheasier.com",
+                "www.thefreedictionary.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/GetAds",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "xtr"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000602,
+            "cnames": [],
+            "responseHashes": [
+                "4082bcdac600f914bef5e48540828e6c0560de7ea60cf927518761000eabc94e",
+                "f0c6e3341b1d8188be80f4ff46ca435c43c70bcee7eaa821e06fd88d1eb08096",
+                "83ab7af63f44e1fa7e24b3dbbcf220f469e801103320448cb939507405798027",
+                "6134ba2714b05408c66fd9f6ef0282b3f9c7858aad4248176aa2345c12dbf77b",
+                "f21e20027bf55ff87b5e21e2fdc3ea88b09e1ac964647dd4540c0e8b2b55e437"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "simpleflying.com",
+                "www.askmefast.com",
+                "www.haaretz.com",
+                "www.linguee.fr",
+                "www.maketecheasier.com",
+                "www.thefreedictionary.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/SetEvent",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -64,7 +302,100 @@
             ]
         },
         {
-            "rule": "carambo\\.la\\/Layer\\/InImage\\/Prod\\/cbola_platform\\/version_2\\.33\\.5\\/js\\/Carambola_layer_152\\.min\\.js",
+            "rule": "carambo\\.la\\/Layer\\/InImage\\/Prod\\/cbola_platform\\/version_2\\.33\\.5\\/external\\/prebid\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdata"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000602,
+            "cnames": [],
+            "responseHashes": [
+                "41b9ee6a72131d7f17ee2bb0227b2cfe7b52cb6475b8ac6278f16e699fd11ebe"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "simpleflying.com",
+                "www.askmefast.com",
+                "www.haaretz.com",
+                "www.linguee.fr",
+                "www.maketecheasier.com",
+                "www.thefreedictionary.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/SetItemsView",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "simpleflying.com",
+                "www.linguee.fr",
+                "www.maketecheasier.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/Layer\\/InImage\\/Prod\\/cbola_platform\\/version_2\\.33\\.5\\/external\\/protobuf\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdata"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "04b075859121bd8bae2825f760da6f0a2f0a5e9c7755370a55d51c961e41354c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "simpleflying.com",
+                "www.linguee.fr",
+                "www.maketecheasier.com",
+                "www.thefreedictionary.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/SetAdsRequest",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "simpleflying.com",
+                "www.linguee.fr",
+                "www.maketecheasier.com",
+                "www.thefreedictionary.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/Layer\\/InImage\\/Prod\\/cbola_platform\\/version_2\\.33\\.5\\/js\\/Carambola_layer_138\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -72,25 +403,51 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "eb1787c287512f4298a90423931eaf71ffd089c04eea852dff8b9b961438142e"
+                "094baef5a123bb7f36a2e0e42cc1803a1339eae5cd60ee7929f3d836d88be7c5"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "allfreeknitting.com",
-                "www.allfreecrochet.com"
+                "askmefast.com",
+                "www.haaretz.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/Layer\\/InImage\\/Prod\\/cbola_platform\\/version_2\\.33\\.5\\/css\\/assets\\/logo-sprite\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdata"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c36136882432ad43ec0eb118220c3ae1aed1c5d91e5aef5ee942285607546b3d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "askmefast.com",
+                "www.haaretz.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000103,
+    "cookies": 0.0001,
     "types": {
-        "Script": 8
+        "Script": 11,
+        "XHR": 16,
+        "Fetch": 27,
+        "Image": 11,
+        "Font": 6
     },
     "nameservers": [
         "ns-1002.awsdns-61.net",

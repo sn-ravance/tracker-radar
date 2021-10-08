@@ -4,28 +4,32 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000103,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
         "app",
         "api"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "yoopify\\.com\\/js\\/application\\.js",
-            "cookies": 0.000103,
-            "fingerprinting": 1,
+            "cookies": 0.0001,
+            "fingerprinting": 2,
             "subdomains": [
                 "app"
             ],
             "apis": {
-                "Navigator.prototype.product": 2,
-                "Date.prototype.getTime": 2
+                "window.sessionStorage": 3,
+                "Navigator.prototype.product": 3,
+                "Date.prototype.getTime": 3,
+                "Document.cookie getter": 3,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.platform": 1
             },
-            "sites": 2,
-            "prevalence": 0.000206,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "ef0534841a0ef4f3f4b57077bbd63d5c30812f122c1bac4ca0da01e17b6b40a3"
@@ -35,19 +39,105 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "auto123.com",
-                "www.auto123.com"
+                "www.auto123.com",
+                "www.autoexpert.ca"
             ]
         },
         {
-            "rule": "yoopify\\.com\\/api\\/v2\\/postToolStats\\/views",
-            "cookies": 0.000206,
+            "rule": "yoopify\\.com\\/css\\/application\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "f67645b5d45e8a50ef224b79f82ec720f51429093c0f1c3d72c24260e937fba3"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "auto123.com",
+                "www.autoexpert.ca"
+            ]
+        },
+        {
+            "rule": "yoopify\\.com\\/api\\/v3\\/getTools",
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "api"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000206,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "auto123.com",
+                "www.autoexpert.ca"
+            ]
+        },
+        {
+            "rule": "yoopify\\.com\\/api\\/v3\\/getTools",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "17156d51fd1f5c3446fc4b80b751de9658d00405fe23ce4938d98839bce132e6"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "auto123.com",
+                "www.autoexpert.ca"
+            ]
+        },
+        {
+            "rule": "yoopify\\.com\\/api\\/v2\\/postToolStats\\/views",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "auto123.com",
+                "www.auto123.com",
+                "www.autoexpert.ca"
+            ]
+        },
+        {
+            "rule": "yoopify\\.com\\/api\\/v2\\/postToolStats\\/views",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -57,37 +147,19 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "auto123.com",
-                "www.auto123.com"
-            ]
-        },
-        {
-            "rule": "yoopify\\.com\\/api\\/v2\\/postToolStats\\/views",
-            "cookies": 0.000206,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "auto123.com",
-                "www.auto123.com"
+                "www.auto123.com",
+                "www.autoexpert.ca"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000103,
+    "cookies": 0.000201,
     "types": {
-        "Script": 2,
-        "XHR": 2,
-        "Preflight": 2
+        "Script": 3,
+        "Stylesheet": 2,
+        "Preflight": 5,
+        "XHR": 5
     },
     "nameservers": [
         "ns39.domaincontrol.com",

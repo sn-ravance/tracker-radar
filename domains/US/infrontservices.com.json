@@ -4,13 +4,17 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000141,
+    "prevalence": 0.0000138,
     "sites": 2,
     "subdomains": [
-        "wtk"
+        "wtk",
+        "login",
+        "82-99-29-147",
+        "37-122-251-32",
+        "82-99-29-157"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "infrontservices\\.com\\/css\\/InfrontFramework-latest\\.css",
@@ -21,9 +25,11 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "b5574b8ef2cc203d8df43f4a2465f71aab2592836276b1907526b23bc27ba3b3"
+            ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -41,9 +47,11 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "3d209ebe323c1c132cd5025ce7f539d0f4b0966044f3cfc92e5fd0623920cdfa"
+            ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -55,15 +63,21 @@
         {
             "rule": "infrontservices\\.com\\/js\\/CommonFramework-2\\.9\\.17\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "wtk"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "30def312e110155cecc8a9cc72140529f49f3c563c00dc27d1a58e382aa4d0ca"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -73,18 +87,85 @@
             ]
         },
         {
-            "rule": "infrontservices\\.com\\/js\\/InfrontUI-3\\.9\\.18\\.min\\.js",
+            "rule": "infrontservices\\.com\\/js\\/InfrontUI-3\\.9\\.17\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "wtk"
             ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "bf252678175b423b3db51891e1679fefd56a5a9ff1192d5ec660821af94924c3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beleggen.nl",
+                "www.beleggen.nl"
+            ]
+        },
+        {
+            "rule": "infrontservices\\.com\\/wsrt\\/0\\/0",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "login"
+            ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [],
-            "type": "Script",
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beleggen.nl",
+                "www.beleggen.nl"
+            ]
+        },
+        {
+            "rule": "infrontservices\\.com\\/wsrt\\/2\\/52",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "82-99-29-147"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beleggen.nl",
+                "www.beleggen.nl"
+            ]
+        },
+        {
+            "rule": "infrontservices\\.com\\/wsrt\\/2\\/0",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "37-122-251-32",
+                "82-99-29-157"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -98,12 +179,13 @@
     "cookies": 0,
     "types": {
         "Stylesheet": 4,
-        "Script": 4
+        "Script": 4,
+        "WebSocket": 6
     },
     "nameservers": [
+        "ns1-05.azure-dns.com",
         "ns2-05.azure-dns.net",
         "ns3-05.azure-dns.org",
-        "ns4-05.azure-dns.info",
-        "ns1-05.azure-dns.com"
+        "ns4-05.azure-dns.info"
     ]
 }

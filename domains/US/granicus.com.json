@@ -7,14 +7,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000352,
-    "sites": 5,
+    "prevalence": 0.0000483,
+    "sites": 7,
     "subdomains": [
         "jcc",
         "tlchouse",
         "slocounty",
         "dekalbcountyga",
-        "phoenix"
+        "phoenix",
+        "denver"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -29,14 +30,17 @@
                 "slocounty"
             ],
             "apis": {
-                "Date.prototype.getTime": 3
+                "Date.prototype.getTime": 3,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 3
             },
             "sites": 3,
-            "prevalence": 0.0000211,
+            "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [
-                "a058afb96996f04e17acc1cc65fa30b2b34377ea2565e20b517956bfedf5a2ae",
-                "25092df2150b3ad9927049132a550cdb8a4650ca7bb03a77c28e759a34d105c4"
+                "6fcd014d85af628345498f37c22a47b3f5810192e85126229539d9bd76810fc7",
+                "86dfbb655d480798581188794f31cd350a894da35f7448390ddc860b65fa15fd"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -50,16 +54,21 @@
         {
             "rule": "granicus\\.com\\/MediaPlayer\\.php",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "dekalbcountyga",
                 "phoenix"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 1,
+                "window.localStorage": 1
+            },
             "sites": 2,
-            "prevalence": 0.0000141,
+            "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "d4c56f2d570e8dfcf4ac3b51f1458acd46163496e2440fedb0b4af4a6f38c81e"
+            ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -67,13 +76,60 @@
                 "dekalbcountyga.gov",
                 "www.phoenix.gov"
             ]
+        },
+        {
+            "rule": "granicus\\.com\\/js\\/moment\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dekalbcountyga",
+                "denver"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "0a3bb1e382060c6999c26faac38aed7e3d6cc03f7376a9a36b881a7e5ba923ca"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dekalbcountyga.gov",
+                "www.denvergov.org"
+            ]
+        },
+        {
+            "rule": "granicus\\.com\\/js\\/jqueryui-touch-plugin\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dekalbcountyga",
+                "denver"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "12c76823b0c5524e4d12fb3f382a549d2214547860ffdf67fca32ba99f6e1eb0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dekalbcountyga.gov",
+                "www.denvergov.org"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Document": 5
+        "Document": 5,
+        "Script": 4
     },
     "nameservers": [
         "ns-176.awsdns-22.com",

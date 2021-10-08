@@ -4,13 +4,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000275,
-    "sites": 39,
+    "prevalence": 0.000311,
+    "sites": 45,
     "subdomains": [
         "embed",
         "cdn-sp-s3",
         "events",
-        "counts"
+        "event-listener",
+        "counts",
+        "cdn-sp-gcs"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -23,90 +25,107 @@
                 "embed"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 23
+                "Navigator.prototype.userAgent": 29
             },
-            "sites": 28,
-            "prevalence": 0.000197,
+            "sites": 32,
+            "prevalence": 0.000221,
             "cnames": [],
             "responseHashes": [
-                "895b511090671be5cb8fab8c1db5ea43ebf100a018735f024a09a0a6f8f87f0f",
-                "451fc5a6529b60aaed02cdbc40453a08a6ebd67b4b2bc61ec8da48f2bd4931ae",
-                "f976d0e92f13626772b17beffdd4409a2d84af7140d4c22faf22ff76e4bf83c6",
-                "723d6c8b6d71f9d31fca9d707e632fa139b2cbba7db437f4c735c12aa3bedd6f",
-                "7662c1227c7f965ccc2045265b526a4e1bce36dc5f412b8a4083f0e2f6cd1aef",
-                "20276281aaf33675f4a09fa14bebca40135b54e9232528253c543cd4b6351a5f",
-                "eadd646640bae3931493cde6916c26fc236d6f63d412fff9efd2bddf4fad7635",
-                "89bd3e231856e10ab2d351879821415c8726d1b4f9d3d53bd21c88d06b8b75fe",
-                "5438fa10b70fc3c7a762b79fc96abb827015824fbe24ad3e9537475355d79763",
-                "3ec4137dcacf202c13d9e49455d3b565a3d6abfc008681c11a3892b66ddbe063",
-                "05484ae860a808f81be607bef19262de63aac07d0a50b989723bd75933948714",
-                "2602cd09285ea8358db8c68e00b201a0bcb573464b49ae9fbefb26fcea49cd9d",
-                "98fab6c6e3f59ff37610c3cb11a5fba7b652fdcf6a816297a6147144e870d254",
-                "183dbfdb1870d100fe9aa520e04a6014740d0962871b9b671d4ebee05281e547",
-                "e62ed14acc42f6a3e6f09ab8b56297318da9ec37623c8b9aa87a0553772a2482",
-                "f36cdb0c37f07d0b05cae51aa1a46779ed1bb0b37a82d34d6d6a4e7e46b66928",
-                "0c67fecc52910e071334dee791fdc43b1b495749c19377f1922a79f822e0491e",
-                "58f09c60a0e83d58bcb13f16a2f00ee4ede4e6ee07b293e026967cd64b3c6b83",
-                "fe591f503a08eaf7e6e39a19275fff772d86b9b43688e40dcfd6172001c18f77",
-                "8c03aa5074cfcb59a41811a719d83fbaeb06118b529290efbe2f199bfefcb506",
-                "9a6e1302a602c342ebef554bfcab4968dcd1de5a2ece2d086fe717175ee46489",
-                "91430ec916090f505c932e9452a69be0610bd4f87164def952cd09fcc30ea8c3",
-                "74275ddcfb02ab64effd456b74fcc7f4599063a33f0f83c3ed659ca86757dfa3",
-                "42a7755807f7acd293acb1dcddddf46739ef8b5638b1fdd1acd281d32a607ada",
-                "e7865ab6eda9ebf747b2424219f31ff9024c717119879b3eeb7eb34b1fd4157b",
-                "bb1db8d3bf32fb50a7f9d4ae0a0bfd9fe961db89b05f1852597bb84d23e93e72"
+                "46f206545949c4ccb8dd3c707251a51cd4c9da8e20d85b2c831b3b833a8073b1",
+                "ac14f7d36dbc6439b857916fb001524bf4d30a5ced2ee9067f840392b2f278e3",
+                "756c0e3fa5a1056270dc65d460546977e070722400e85276251337bbb80f2641",
+                "06c6cc15f1710dc816cee0d6e13c03003c7841b595e01fd52a282afb64060caf",
+                "8fdea1488ae6d099a1eee9ea3b13b7763f1bd03af4cf92256d43e765d2c2aa0e",
+                "a66e01d232fce348e975de6284881119351a977ffabcbdc539afd983b30de8cd",
+                "b048a17def2fa6291cfacc9089bb90f8e7d587d725f0dc46132b8731d1018280",
+                "e5496e898552cb856afb4c93802b4b90a91497be6c5d98da05ee92a11dc1feab",
+                "197d9200f50ce9847e1938e785f4e5848f63bea267cb3eeb993917575cee295f",
+                "8444bda69858b7a14cf4e9e64e0da8650ee3b832397bcd96581595664ea78a70",
+                "53158c441f7bcb4db15796bfa41e60d303f984dc2b765114618fb8eb9c8dcd78",
+                "72d152734bd02177c71c9424a83296c50e2a1477e6b365a04968cf8903838a85",
+                "1a1894b9a9434ac195b863f9df3ed828ebb564eda1d9c1eef65eb16656f09d50",
+                "9fb2200bb7fe91ede2da05c5094f9497c0b94f889e608d357f8a117a9cc3ef28",
+                "1ea56a19367a0b1fc59d4ecae5410a4472ccd60205e2f4063436ef7ba29962a6",
+                "95a556412309df6577711d561a3da948ae818a9db879258e433f9f6a73e8fd19",
+                "5b3a85fca40bfe6742d36f353aa193b88143dc5d57778a090370c00538e8b71d",
+                "d5a4c645faac1c00edced4761b84d831839452fb1110de79c79f7fe97e455134",
+                "3e35d726068252cfc00aa3e495b8b6f3e6da46e43e419c73b3c01b8397547657",
+                "4e627dc4e9f81464ed8c7545d56a7f7803e6a0f85fab1453087df523d27d636f",
+                "2314ee5dcb7b3196d6dc20cf2a037134c402d65ae8f198b0e5539d469d3a9b3a",
+                "63eb66223c2bf839120c146c30ad36b8fe55ef78aa3ead57498b6bba4a72b881",
+                "fcea5bad12ac57cc09e683ec745086b710da828ec9501a5e83bf85779345cc6d",
+                "412d330bb8ddae2530296a7d19e799fa84bdbfe3c0f5a5acdb3d013f31446592",
+                "0d8a9ad0a55d647990e646f1b3745da782286d10b99d3c418940224079370a62",
+                "6ed6b36f9764a1de8d24d46d56baa719dfb142bce38a38f5a1c36bad656f3a7f",
+                "e572ac18f6125449450b567274eea59ad00eb8ccdd6de8cab123962f5ab1e47a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "theblacksphere.net",
-                "catcountry1029.com",
-                "www.xxlmag.com",
-                "loudwire.com",
-                "unofficialnetworks.com",
+                "bossip.com",
                 "www.ranker.com",
-                "trendingpolitics.com",
-                "www.bizpacreview.com",
-                "newstalk1290.com",
-                "www.weaselzippers.us",
-                "hiphopdx.com",
+                "www.americanthinker.com",
+                "tasteofcountry.com",
                 "www.washingtonexaminer.com",
-                "meaww.com",
-                "www.sohh.com",
+                "wjon.com",
+                "www.bizpacreview.com",
+                "unofficialnetworks.com",
+                "loudwire.com",
+                "www.goodnewsnetwork.org",
+                "didyouknowfacts.com",
+                "www.realclearscience.com",
+                "www.realclearhistory.com",
+                "www.xxlmag.com",
                 "conservativebrief.com",
-                "okmagazine.com",
-                "radaronline.com",
-                "www.wimp.com",
-                "ultimateclassicrock.com",
-                "www.goodnewsnetwork.org"
+                "www.weaselzippers.us",
+                "shareably.net",
+                "www.cracked.com",
+                "hiphopdx.com",
+                "radaronline.com"
             ]
         },
         {
-            "rule": "air\\.tv\\/airtv\\.js\\/v\\/2021-09-15_14-42-03\\/twoview-1\\.0\\.js",
+            "rule": "air\\.tv\\/airtv\\.js\\/v\\/2021-09-30_16-54-31\\/twoview-1\\.0\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn-sp-s3"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 4,
-                "window.localStorage": 4
+                "Navigator.prototype.userAgent": 31,
+                "window.localStorage": 31
             },
-            "sites": 4,
-            "prevalence": 0.0000282,
+            "sites": 32,
+            "prevalence": 0.000221,
             "cnames": [],
             "responseHashes": [
-                "0277e8e3ffac37a53a27d351cce52440f5119ce8164d220f5b306a7598903d97"
+                "32262dd56a27202163cecba51848bc60faf3b90e9f4f3c9153568785904f2658"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bossip.com",
-                "catcountry1029.com",
+                "www.bizpacreview.com",
+                "shareably.net",
+                "www.weaselzippers.us",
+                "ultimateclassicrock.com",
+                "unofficialnetworks.com",
+                "boingboing.net",
                 "conservativebrief.com",
-                "didyouknowfacts.com"
+                "theclemsoninsider.com",
+                "www.realclearmarkets.com",
+                "trendingpolitics.com",
+                "hiphopdx.com",
+                "didyouknowfacts.com",
+                "www.realclearhistory.com",
+                "www.cracked.com",
+                "okmagazine.com",
+                "tasteofcountry.com",
+                "meaww.com",
+                "www.larslarson.com",
+                "www.americanthinker.com",
+                "bossip.com"
             ]
         },
         {
@@ -117,34 +136,34 @@
                 "events"
             ],
             "apis": {},
-            "sites": 27,
-            "prevalence": 0.00019,
+            "sites": 32,
+            "prevalence": 0.000221,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "theclemsoninsider.com",
-                "www.sohh.com",
-                "theblacksphere.net",
-                "www.bizpacreview.com",
-                "www.americanthinker.com",
-                "www.xxlmag.com",
-                "wjon.com",
-                "www.goodnewsnetwork.org",
-                "unofficialnetworks.com",
-                "radaronline.com",
-                "hiphopdx.com",
                 "okmagazine.com",
                 "bossip.com",
-                "www.weaselzippers.us",
-                "newstalk1290.com",
-                "ultimateclassicrock.com",
-                "www.cracked.com",
                 "trendingpolitics.com",
+                "radaronline.com",
+                "newstalk1290.com",
+                "www.washingtonexaminer.com",
+                "shareably.net",
+                "www.goodnewsnetwork.org",
+                "www.larslarson.com",
+                "www.xxlmag.com",
+                "hiphopdx.com",
+                "conservativebrief.com",
+                "theblacksphere.net",
                 "didyouknowfacts.com",
-                "catcountry1029.com"
+                "theclemsoninsider.com",
+                "www.cracked.com",
+                "www.bizpacreview.com",
+                "wjon.com",
+                "meaww.com",
+                "loudwire.com"
             ]
         },
         {
@@ -155,8 +174,8 @@
                 "events"
             ],
             "apis": {},
-            "sites": 27,
-            "prevalence": 0.00019,
+            "sites": 32,
+            "prevalence": 0.000221,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -165,69 +184,26 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.goodnewsnetwork.org",
-                "www.weaselzippers.us",
-                "ultimateclassicrock.com",
-                "www.wimp.com",
+                "trendingpolitics.com",
                 "meaww.com",
-                "www.realclearscience.com",
-                "newstalk1290.com",
-                "unofficialnetworks.com",
-                "okmagazine.com",
-                "www.americanthinker.com",
-                "www.xxlmag.com",
-                "didyouknowfacts.com",
-                "theclemsoninsider.com",
-                "theblacksphere.net",
-                "hiphopdx.com",
-                "catcountry1029.com",
-                "wjon.com",
-                "conservativebrief.com",
-                "bossip.com",
-                "loudwire.com"
-            ]
-        },
-        {
-            "rule": "air\\.tv\\/airtv\\.js\\/v\\/2021-09-16_18-11-31\\/twoview-1\\.0\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn-sp-s3"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 20,
-                "window.localStorage": 20
-            },
-            "sites": 23,
-            "prevalence": 0.000162,
-            "cnames": [],
-            "responseHashes": [
-                "b09ce18fe0a3839def8c8a602aad20d1854c56613f77790bb6a4762336857fcd"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "www.wimp.com",
-                "www.cracked.com",
-                "theblacksphere.net",
-                "meaww.com",
+                "www.larslarson.com",
                 "radaronline.com",
-                "www.ranker.com",
-                "www.realclearscience.com",
-                "www.goodnewsnetwork.org",
-                "ultimateclassicrock.com",
-                "www.bizpacreview.com",
-                "unofficialnetworks.com",
-                "www.weaselzippers.us",
                 "wjon.com",
-                "loudwire.com",
-                "www.xxlmag.com",
-                "hiphopdx.com",
                 "www.sohh.com",
-                "newstalk1290.com",
+                "boingboing.net",
+                "www.xxlmag.com",
+                "tasteofcountry.com",
                 "www.americanthinker.com",
-                "tasteofcountry.com"
+                "www.realclearmarkets.com",
+                "shareably.net",
+                "ultimateclassicrock.com",
+                "hiphopdx.com",
+                "okmagazine.com",
+                "www.cracked.com",
+                "loudwire.com",
+                "unofficialnetworks.com",
+                "theblacksphere.net",
+                "www.bizpacreview.com"
             ]
         },
         {
@@ -238,8 +214,8 @@
                 "events"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000352,
+            "sites": 11,
+            "prevalence": 0.0000759,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -247,8 +223,14 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "hiphopdx.com",
+                "meaww.com",
+                "radaronline.com",
+                "trendingpolitics.com",
+                "www.bizpacreview.com",
                 "www.cracked.com",
                 "www.goodnewsnetwork.org",
+                "www.realclearhistory.com",
+                "www.realclearmarkets.com",
                 "www.realclearscience.com",
                 "www.weaselzippers.us"
             ]
@@ -261,8 +243,8 @@
                 "events"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000352,
+            "sites": 11,
+            "prevalence": 0.0000759,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -272,8 +254,14 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "hiphopdx.com",
+                "meaww.com",
+                "radaronline.com",
+                "trendingpolitics.com",
+                "www.bizpacreview.com",
                 "www.cracked.com",
                 "www.goodnewsnetwork.org",
+                "www.realclearhistory.com",
+                "www.realclearmarkets.com",
                 "www.realclearscience.com",
                 "www.weaselzippers.us"
             ]
@@ -286,11 +274,11 @@
                 "embed"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000352,
+            "sites": 7,
+            "prevalence": 0.0000483,
             "cnames": [],
             "responseHashes": [
-                "678f96a770b93f72fec8337d24c17282a0400faed946423f0c3dc8d039589b63",
+                "bd70fb0767f028481e2d731b1dbda286a39cf43ce7ddf65e4409e0f74cf41c47",
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "XHR",
@@ -300,28 +288,140 @@
                 "hiphopdx.com",
                 "www.cracked.com",
                 "www.goodnewsnetwork.org",
+                "www.realclearhistory.com",
+                "www.realclearmarkets.com",
                 "www.realclearscience.com",
                 "www.weaselzippers.us"
             ]
         },
         {
-            "rule": "air\\.tv\\/",
+            "rule": "air\\.tv\\/player-loads",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "events",
-                "counts"
+                "events"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
+            "sites": 6,
+            "prevalence": 0.0000414,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cracked.com",
+                "hiphopdx.com",
+                "www.goodnewsnetwork.org",
+                "www.realclearhistory.com",
+                "www.realclearmarkets.com",
+                "www.realclearscience.com",
+                "www.weaselzippers.us"
+            ]
+        },
+        {
+            "rule": "air\\.tv\\/twoview\\/player-loads",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "event-listener"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000414,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hiphopdx.com",
+                "www.goodnewsnetwork.org",
+                "www.realclearhistory.com",
+                "www.realclearmarkets.com",
+                "www.realclearscience.com",
+                "www.weaselzippers.us"
+            ]
+        },
+        {
+            "rule": "air\\.tv\\/player-loads",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000414,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hiphopdx.com",
+                "www.goodnewsnetwork.org",
+                "www.realclearhistory.com",
+                "www.realclearmarkets.com",
+                "www.realclearscience.com",
+                "www.weaselzippers.us"
+            ]
+        },
+        {
+            "rule": "air\\.tv\\/twoview\\/player-loads",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "event-listener"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000414,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hiphopdx.com",
+                "www.goodnewsnetwork.org",
+                "www.realclearhistory.com",
+                "www.realclearmarkets.com",
+                "www.realclearscience.com",
+                "www.weaselzippers.us"
+            ]
+        },
+        {
+            "rule": "air\\.tv\\/airtv\\.js\\/v\\/2021-09-30_16-54-31\\/airtv-2\\.0\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn-sp-s3"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Navigator.prototype.languages": 2,
+                "HTMLMediaElement.prototype.canPlayType": 3,
+                "MediaSource.isTypeSupported": 2,
+                "window.localStorage": 3,
+                "Event.prototype.timeStamp": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "23630159223d31d7c7e5ece3da3603437167a05c373dce5e7c6fbcfe0cae7267"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bizpacreview.com",
+                "www.bizpacreview.com",
                 "www.cracked.com"
             ]
         },
@@ -334,16 +434,198 @@
                 "counts"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
+            "sites": 3,
+            "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bizpacreview.com",
+                "www.bizpacreview.com",
+                "www.cracked.com"
+            ]
+        },
+        {
+            "rule": "air\\.tv\\/player",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "event-listener"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bizpacreview.com",
+                "www.cracked.com"
+            ]
+        },
+        {
+            "rule": "air\\.tv\\/airtv\\.js\\/v\\/2021-09-30_16-54-31\\/atv4\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn-sp-s3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "d467772cd7e3a8d38895cd5fd438fdda7d4602bd6ec269fec56d918ca75ebca9"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bizpacreview.com",
+                "www.cracked.com"
+            ]
+        },
+        {
+            "rule": "air\\.tv\\/airtv\\.js\\/v\\/2021-09-30_16-54-31\\/prebid\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn-sp-s3"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "c0445c3e0ea8450a85c0322f378ba737c9ad9b6f859c535da6a3aef36c15f46e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bizpacreview.com",
+                "www.cracked.com"
+            ]
+        },
+        {
+            "rule": "air\\.tv\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events",
+                "counts"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cracked.com",
+                "bizpacreview.com",
+                "www.bizpacreview.com",
                 "www.cracked.com"
+            ]
+        },
+        {
+            "rule": "air\\.tv\\/player",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "event-listener"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bizpacreview.com",
+                "www.cracked.com"
+            ]
+        },
+        {
+            "rule": "air\\.tv\\/videos\\/c\\/j\\/cjWEnwSRQaWs-1xz7_MEuQ\\/17789cc3-3307-4ea3-be25-1c61e546bc33",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn-sp-gcs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bizpacreview.com",
+                "www.bizpacreview.com"
+            ]
+        },
+        {
+            "rule": "air\\.tv\\/video-views",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events",
+                "counts"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "realclearhistory.com",
+                "www.realclearhistory.com"
+            ]
+        },
+        {
+            "rule": "air\\.tv\\/video-views",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events",
+                "counts"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "realclearhistory.com",
+                "www.realclearhistory.com"
             ]
         }
     ],
@@ -351,14 +633,16 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 55,
-        "Preflight": 34,
-        "XHR": 39
+        "Script": 69,
+        "Preflight": 62,
+        "XHR": 69,
+        "Stylesheet": 2,
+        "Media": 2
     },
     "nameservers": [
         "ns-24.awsdns-03.com",
+        "ns-696.awsdns-23.net",
         "ns-1514.awsdns-61.org",
-        "ns-1857.awsdns-40.co.uk",
-        "ns-696.awsdns-23.net"
+        "ns-1857.awsdns-40.co.uk"
     ]
 }

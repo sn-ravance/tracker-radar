@@ -7,11 +7,12 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000505,
-    "sites": 5,
+    "prevalence": 0.000401,
+    "sites": 4,
     "subdomains": [
         "player",
-        "link"
+        "link",
+        "perr"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -19,22 +20,30 @@
         {
             "rule": "h-cdn\\.com\\/loader\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "player"
             ],
             "apis": {
                 "window.localStorage": 4,
-                "Navigator.prototype.userAgent": 4
+                "Navigator.prototype.userAgent": 4,
+                "Navigator.prototype.product": 1,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.maxTouchPoints": 1,
+                "window.sessionStorage": 1,
+                "PerformanceTiming.prototype.navigationStart": 1,
+                "Element.prototype.getClientRects": 1,
+                "window.devicePixelRatio": 1,
+                "Navigator.prototype.connection": 1
             },
-            "sites": 6,
-            "prevalence": 0.000606,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
-                "92dfa0ad16916382045be797a270f39a81b9dee69a023378f3392a5498f6960f",
+                "92389a2c97f4a0ce320db0a5b9a0e05351801743e0f9d0d7f7e24254f5a8ff4d",
+                "6634dd420c196d32bc41c7add078085a4c4941b8beb88fb7d8f2e5fb39a52c58",
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-                "6eb7ee470f8e038e43a2530dde8ba6ab23db53e012d23d2f4acd286a377c33db",
-                "97d21bf0ad2596ddd76e13e92ebd2d9491d290355364adc84f417c15ce6be752"
+                "f8457f64b045a21dac76a0728a7742c4e387405afe6a7fb6e9fb1bc97f0da128"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -44,7 +53,6 @@
                 "m.dw.com",
                 "www.dw.com",
                 "www.news18.com",
-                "www.rydercup.com",
                 "www.tagesschau.de"
             ]
         },
@@ -56,13 +64,14 @@
                 "player"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 3
             },
-            "sites": 4,
-            "prevalence": 0.000404,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "c653de5005d632ca9c07f61050b024254709119b9a755a2579067d0238002543"
+                "3c9fbcbdde5ec53ff3aeb31d436052e1866eaa7d3abd4ccae05e330ee58aa52a",
+                "1b25dec139b02cf9d23cc7ea7c090d9a41b150eb467017ebc1c56018ee10e737"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -70,7 +79,6 @@
             "exampleSites": [
                 "dw.com",
                 "www.dw.com",
-                "www.rydercup.com",
                 "www.tagesschau.de"
             ]
         },
@@ -83,10 +91,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
-            "type": "Other",
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -103,9 +111,77 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "139ccc203843fdd234a9cc1a5419903b5c6eac7c0324f4de0e4a48a70def4f51"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dw.com",
+                "www.dw.com"
+            ]
+        },
+        {
+            "rule": "h-cdn\\.com\\/svc\\/cdn\\/pub\\/css\\/widget\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b141a7524bb772ea57aaf05440bcae1e74fe44208644cad5bcd70f8a3c6e2ba4"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dw.com",
+                "www.dw.com"
+            ]
+        },
+        {
+            "rule": "h-cdn\\.com\\/svc\\/cdn\\/pub\\/css\\/playlist\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "42224d4aca0ff3faca9c8ff6dddfc649dfdda53c48cede3db38150b71190bf07"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dw.com",
+                "www.dw.com"
+            ]
+        },
+        {
+            "rule": "h-cdn\\.com\\/be_client_cgi\\/perr",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "perr"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "0373df4435dd56e813083406055ac208593c8bd3c1faeff1f9974f532d485abc"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -119,14 +195,15 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 10,
-        "Other": 2,
-        "XHR": 2
+        "Script": 8,
+        "Preflight": 2,
+        "XHR": 4,
+        "Stylesheet": 4
     },
     "nameservers": [
-        "ns-1405.awsdns-47.org",
-        "ns-1554.awsdns-02.co.uk",
         "ns-43.awsdns-05.com",
-        "ns-661.awsdns-18.net"
+        "ns-661.awsdns-18.net",
+        "ns-1554.awsdns-02.co.uk",
+        "ns-1405.awsdns-47.org"
     ]
 }

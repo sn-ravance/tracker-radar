@@ -4,39 +4,15 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000302,
+    "prevalence": 0.000301,
     "sites": 3,
     "subdomains": [
-        "api"
+        "api",
+        "cdn"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
-        {
-            "rule": "clerk\\.io\\/static\\/clerk\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 2,
-                "window.localStorage": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "7de1de53470fdabe8d1102d41e4dfef1fcaf11efe457a2d2d8751b83fd9bb8ab"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "aquasabi.de",
-                "www.vapstore.de"
-            ]
-        },
         {
             "rule": "clerk\\.io\\/v2\\/log\\/pageview",
             "cookies": 0,
@@ -46,11 +22,10 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000302,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "2183fd34ae84cf12efa0a6fcfd815eb99ccb84e9cc9df93dad09574ab1485694",
-                "071dd9e2478226b4de82cc8b88d1b5016d653704f7160d41976e4f0ffc14cf6a"
+                "2183fd34ae84cf12efa0a6fcfd815eb99ccb84e9cc9df93dad09574ab1485694"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -58,7 +33,35 @@
             "exampleSites": [
                 "aquasabi.de",
                 "www.bogensportwelt.de",
-                "www.vapstore.de"
+                "www.ofenseite.com"
+            ]
+        },
+        {
+            "rule": "clerk\\.io\\/clerk\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.language": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "21e9f644d6990c9d3327ad4aa49dfa2681a00a6ec5e90d5c600208ebf81e7217"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bogensportwelt.de",
+                "www.ofenseite.com"
             ]
         }
     ],
@@ -69,9 +72,9 @@
         "Script": 5
     },
     "nameservers": [
+        "ns-158.awsdns-19.com",
         "ns-857.awsdns-43.net",
         "ns-1077.awsdns-06.org",
-        "ns-2015.awsdns-59.co.uk",
-        "ns-158.awsdns-19.com"
+        "ns-2015.awsdns-59.co.uk"
     ]
 }

@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000211,
-    "sites": 3,
+    "prevalence": 0.0000483,
+    "sites": 7,
     "subdomains": [
-        "widgets"
+        "widgets",
+        "content.api.uk1"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "sportal365\\.com\\/loader\\.bundle\\.min\\.js",
@@ -20,8 +21,8 @@
                 "widgets"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000141,
+            "sites": 3,
+            "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [
                 "d12c72f140641aad056110c0d17ca51712640e58069f61ff7616868a5097ceb6"
@@ -31,7 +32,83 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ftv.bg",
+                "sportal.bg",
                 "www.pulse.ng"
+            ]
+        },
+        {
+            "rule": "sportal365\\.com\\/\\/match-list\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "widgets"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.product": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.language": 2,
+                "Date.prototype.getTime": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Event.prototype.timeStamp": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "2cfd8403eff6c1a455898822326dce23e72d89d234e897641c7157f6ad537277"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ftv.bg",
+                "sportal.bg"
+            ]
+        },
+        {
+            "rule": "sportal365\\.com\\/lists",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content.api.uk1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "livescore.com",
+                "www.livescore.com"
+            ]
+        },
+        {
+            "rule": "sportal365\\.com\\/lists",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content.api.uk1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "8f88e1555c7e6111618548d5c98f91acce22798155c829ccb08700713033d3b2"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "livescore.com",
+                "www.livescore.com"
             ]
         }
     ],
@@ -39,7 +116,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2
+        "Script": 5,
+        "Preflight": 2,
+        "Fetch": 2
     },
     "nameservers": [
         "liz.ns.cloudflare.com",

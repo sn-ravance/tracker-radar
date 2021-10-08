@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000515,
-    "sites": 5,
+    "prevalence": 0.000703,
+    "sites": 7,
     "subdomains": [
         "docker1",
+        "elasticsearch",
         "nasdaq",
         "sketchup"
     ],
@@ -15,6 +16,10 @@
         {
             "original": "get.sketchup.com",
             "resolved": "sketchup.mktoweb.com"
+        },
+        {
+            "original": "info.elastic.co",
+            "resolved": "elasticsearch.mktoweb.com"
         },
         {
             "original": "nd.nasdaq.com",
@@ -29,20 +34,25 @@
     "resources": [
         {
             "rule": "mktoweb\\.com\\/js\\/forms2\\/js\\/forms2\\.min\\.js",
-            "cookies": 0.000206,
+            "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [
                 "docker1",
+                "elasticsearch",
                 "nasdaq",
                 "sketchup"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000412,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [
                 {
                     "original": "web.docker.com",
                     "resolved": "docker1.mktoweb.com"
+                },
+                {
+                    "original": "info.elastic.co",
+                    "resolved": "elasticsearch.mktoweb.com"
                 },
                 {
                     "original": "nd.nasdaq.com",
@@ -62,25 +72,70 @@
             "exampleSites": [
                 "docker.com",
                 "www.docker.com",
+                "www.elastic.co",
                 "www.nasdaq.com",
                 "www.sketchup.com"
             ]
         },
         {
-            "rule": "mktoweb\\.com\\/js\\/forms2\\/css\\/forms2\\.css",
-            "cookies": 0.000103,
+            "rule": "mktoweb\\.com\\/index\\.php\\/form\\/getForm",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "docker1",
+                "elasticsearch",
                 "nasdaq"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000206,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [
                 {
                     "original": "web.docker.com",
                     "resolved": "docker1.mktoweb.com"
+                },
+                {
+                    "original": "info.elastic.co",
+                    "resolved": "elasticsearch.mktoweb.com"
+                },
+                {
+                    "original": "nd.nasdaq.com",
+                    "resolved": "nasdaq.mktoweb.com"
+                }
+            ],
+            "responseHashes": [
+                "590dc295624f077ad51d1e975b810586c0faceb3734f6bb3e94a0036d8831577",
+                "76268baafe31c617b79cba4bcaa61a98c887f2fa1d558db16e9aed8db9621b54"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "docker.com",
+                "www.elastic.co",
+                "www.nasdaq.com"
+            ]
+        },
+        {
+            "rule": "mktoweb\\.com\\/js\\/forms2\\/css\\/forms2\\.css",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "docker1",
+                "elasticsearch",
+                "nasdaq"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "web.docker.com",
+                    "resolved": "docker1.mktoweb.com"
+                },
+                {
+                    "original": "info.elastic.co",
+                    "resolved": "elasticsearch.mktoweb.com"
                 },
                 {
                     "original": "nd.nasdaq.com",
@@ -95,16 +150,89 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "docker.com",
+                "www.elastic.co",
+                "www.nasdaq.com"
+            ]
+        },
+        {
+            "rule": "mktoweb\\.com\\/index\\.php\\/form\\/XDFrame",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "docker1",
+                "elasticsearch",
+                "nasdaq"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "web.docker.com",
+                    "resolved": "docker1.mktoweb.com"
+                },
+                {
+                    "original": "info.elastic.co",
+                    "resolved": "elasticsearch.mktoweb.com"
+                },
+                {
+                    "original": "nd.nasdaq.com",
+                    "resolved": "nasdaq.mktoweb.com"
+                }
+            ],
+            "responseHashes": [
+                "e1f62b05267fccb3a0aa8e09ab8dcedf1cf0357cb186027bbbd1e9ffb1e15e04",
+                "f70bd7c424c7fea7c5a67e18f15001e5c7b99c430efb29f3c968e83ad1c7ce8f"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "docker.com",
+                "www.elastic.co",
+                "www.nasdaq.com"
+            ]
+        },
+        {
+            "rule": "mktoweb\\.com\\/js\\/forms2\\/css\\/forms2-theme-plain\\.css",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "elasticsearch",
+                "nasdaq"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "info.elastic.co",
+                    "resolved": "elasticsearch.mktoweb.com"
+                },
+                {
+                    "original": "nd.nasdaq.com",
+                    "resolved": "nasdaq.mktoweb.com"
+                }
+            ],
+            "responseHashes": [
+                "57cd46adbabd6c40823602b4513aecbe89320a769572255272abe9f008de69fa"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "elastic.co",
                 "www.nasdaq.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000515,
+    "cookies": 0.000703,
     "types": {
-        "Script": 4,
-        "Stylesheet": 2
+        "Script": 8,
+        "Stylesheet": 5,
+        "Document": 3
     },
     "nameservers": []
 }

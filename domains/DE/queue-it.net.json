@@ -4,10 +4,12 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000604,
-    "sites": 6,
+    "prevalence": 0.000702,
+    "sites": 7,
     "subdomains": [
         "static",
+        "dilling",
+        "gamesworkshop",
         "assets"
     ],
     "cnames": [],
@@ -15,35 +17,36 @@
     "resources": [
         {
             "rule": "queue-it\\.net\\/script\\/queueclient\\.min\\.js",
-            "cookies": 0.000101,
+            "cookies": 0.0001,
             "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
             "apis": {
+                "Navigator.prototype.cookieEnabled": 2,
+                "Date.prototype.getTime": 2,
                 "Document.cookie getter": 1,
-                "Navigator.prototype.cookieEnabled": 1,
-                "Date.prototype.getTime": 1,
                 "Document.cookie setter": 1
             },
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 4,
+            "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [
-                "eb6a7eddec6b79f3da3bf480accd37e4118b893b3842af13e60577ae78d15b0f"
+                "dd8752b6b1a8782f1892be6f711965a08e202d5a4188702dea43187cd41d9cf6"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "QueueITAccepted-SDFrts345E-V3_liveintsale": {
-                    "ttl": 1233,
+                    "ttl": 1202,
                     "length": 196,
-                    "prevalence": 0.0001007252215954875,
+                    "prevalence": 0.00010031096398836393,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "amd.com",
+                "www.dilling.de",
                 "www.next.de",
                 "www.youngliving.com"
             ]
@@ -51,18 +54,16 @@
         {
             "rule": "queue-it\\.net\\/script\\/queueconfigloader\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "static"
             ],
-            "apis": {
-                "Document.cookie getter": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "f5ea15a1c351d0785a665bebbd1859d97789e8968ed13c9ff9a7a167f2ca7c38"
+                "4225df2bcbc1ff668aedf803481007ccf04f2571e110efc87c251d27bb5a3275"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -70,6 +71,51 @@
             "exampleSites": [
                 "amd.com",
                 "www.youngliving.com"
+            ]
+        },
+        {
+            "rule": "queue-it\\.net\\/script\\/queueconfigloader\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8a796eb872ca684db7223f2a08316101ad7db24b3c5961008c1f545b1f9f9bc2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dilling.de",
+                "www.next.de"
+            ]
+        },
+        {
+            "rule": "queue-it\\.net\\/",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dilling",
+                "gamesworkshop"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dilling.de",
+                "www.games-workshop.com"
             ]
         },
         {
@@ -84,7 +130,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "56327ea15f3fc5610cd4a3c2fbd496f77cfa30c9826e6af5627dc27e83d7a5cb"
+                "151be200eae5e41308e3064f1c6ab5f123a30c11072e04cad687e9dd16d3dbf4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -97,14 +143,15 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000403,
+    "cookies": 0.000502,
     "types": {
-        "Script": 7
+        "Script": 10,
+        "Document": 2
     },
     "nameservers": [
-        "ns-1175.awsdns-18.org",
-        "ns-1935.awsdns-49.co.uk",
+        "ns-85.awsdns-10.com",
         "ns-793.awsdns-35.net",
-        "ns-85.awsdns-10.com"
+        "ns-1175.awsdns-18.org",
+        "ns-1935.awsdns-49.co.uk"
     ]
 }

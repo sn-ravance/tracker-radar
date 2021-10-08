@@ -12,79 +12,17 @@
     "prevalence": 0.00181,
     "sites": 18,
     "subdomains": [
-        "analytics-static.ugc",
         "apps",
+        "analytics-static.ugc",
         "network-eu",
         "network",
-        "api"
+        "api",
+        "network-a",
+        "network-eu-a"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
-        {
-            "rule": "bazaarvoice\\.com\\/prod\\/static\\/3\\/bv-analytics\\.js",
-            "cookies": 0.00101,
-            "fingerprinting": 2,
-            "subdomains": [
-                "analytics-static.ugc"
-            ],
-            "apis": {
-                "Screen.prototype.width": 10,
-                "Screen.prototype.height": 10,
-                "Navigator.prototype.language": 10,
-                "Navigator.prototype.cookieEnabled": 10,
-                "Document.cookie getter": 10,
-                "Date.prototype.getTimezoneOffset": 10,
-                "Date.prototype.getTime": 10,
-                "Document.cookie setter": 10,
-                "PerformanceTiming.prototype.navigationStart": 3
-            },
-            "sites": 15,
-            "prevalence": 0.00151,
-            "cnames": [],
-            "responseHashes": [
-                "9cd6b3d20d6e963f30ba287515f4ad3ef82591eb02d42c0b7bb69910e0c2dc1c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "NoCookie": {
-                    "ttl": -86372,
-                    "length": 4,
-                    "prevalence": 0.001007252215954875,
-                    "uniqueness": 0.2
-                },
-                "BVBRANDID": {
-                    "ttl": 31536030,
-                    "length": 33,
-                    "prevalence": 0.001007252215954875,
-                    "uniqueness": 1
-                },
-                "BVBRANDSID": {
-                    "ttl": 1830,
-                    "length": 33,
-                    "prevalence": 0.001007252215954875,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pandora.net",
-                "de.jbl.com",
-                "m.barnesandnoble.com",
-                "shop.westerndigital.com",
-                "store.canon.de",
-                "www.asics.com",
-                "www.belkin.com",
-                "www.brother.de",
-                "www.chainreactioncycles.com",
-                "www.galeria.de",
-                "www.gorewear.com",
-                "www.jbl.com",
-                "www.leifheit.de",
-                "www.mediamarkt.ch",
-                "www.netgear.com"
-            ]
-        },
         {
             "rule": "bazaarvoice\\.com\\/deployments\\/JBL\\/main_site\\/production\\/de_DE\\/bv\\.js",
             "cookies": 0,
@@ -95,13 +33,14 @@
             "apis": {
                 "Document.cookie getter": 2,
                 "PerformanceTiming.prototype.navigationStart": 2,
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "00db1b0e511b8f046b44174c0f08bf24df58aba39c9671f06943b46e0eb4d946"
+                "5a5e9dfc4ed3f88901c30f08bf24328e8ae8862924423e1d4a634e043df527fc"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -120,10 +59,10 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000302,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "770553ca66ff3a60046c3efa89d57e8843ace8b2616f77b400adbc936bed2abe"
+                "264ee67f94b0b310d6d261546fa79bcf17467a3e0ea8861d9a9e62e249e5a59e"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -142,8 +81,8 @@
                 "apps"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.000705,
+            "sites": 11,
+            "prevalence": 0.0011,
             "cnames": [],
             "responseHashes": [
                 "3c3669397a0d6ab57176fa267184cf71c62cac31cd57d6d26aa0f5cdd1797d19"
@@ -153,12 +92,16 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "jbl.com",
+                "de.pandora.net",
                 "store.canon.de",
+                "www.asus.com",
                 "www.belkin.com",
                 "www.brother.de",
+                "www.elgato.com",
+                "www.euromaster.de",
                 "www.jbl.com",
                 "www.leifheit.de",
-                "www.mediamarkt.ch"
+                "www.schwarzkopf.de"
             ]
         },
         {
@@ -172,7 +115,9 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "705a9445bb06341a53b0a37b577d63bf3d7131bca4edb75be2aa13658efd8c5d"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -182,35 +127,102 @@
             ]
         },
         {
+            "rule": "bazaarvoice\\.com\\/prod\\/static\\/3\\/bv-analytics\\.js",
+            "cookies": 0.0016,
+            "fingerprinting": 2,
+            "subdomains": [
+                "analytics-static.ugc"
+            ],
+            "apis": {
+                "Screen.prototype.width": 16,
+                "Screen.prototype.height": 16,
+                "Navigator.prototype.language": 16,
+                "Navigator.prototype.cookieEnabled": 16,
+                "Document.cookie getter": 16,
+                "Date.prototype.getTimezoneOffset": 16,
+                "Date.prototype.getTime": 16,
+                "Document.cookie setter": 16,
+                "PerformanceTiming.prototype.navigationStart": 6
+            },
+            "sites": 16,
+            "prevalence": 0.0016,
+            "cnames": [],
+            "responseHashes": [
+                "9cd6b3d20d6e963f30ba287515f4ad3ef82591eb02d42c0b7bb69910e0c2dc1c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "NoCookie": {
+                    "ttl": -86396,
+                    "length": 4,
+                    "prevalence": 0.0016049754238138228,
+                    "uniqueness": 0.125
+                },
+                "BVBRANDID": {
+                    "ttl": 31536004,
+                    "length": 30,
+                    "prevalence": 0.0016049754238138228,
+                    "uniqueness": 0.875
+                },
+                "BVBRANDSID": {
+                    "ttl": 1804,
+                    "length": 30,
+                    "prevalence": 0.0016049754238138228,
+                    "uniqueness": 0.875
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jbl.com",
+                "de.pandora.net",
+                "store.canon.de",
+                "www.asics.com",
+                "www.asus.com",
+                "www.barnesandnoble.com",
+                "www.belkin.com",
+                "www.brother.de",
+                "www.chainreactioncycles.com",
+                "www.elgato.com",
+                "www.euromaster.de",
+                "www.galeria.de",
+                "www.jbl.com",
+                "www.leifheit.de",
+                "www.netgear.com",
+                "www.schwarzkopf.de"
+            ]
+        },
+        {
             "rule": "bazaarvoice\\.com\\/sid\\.gif",
-            "cookies": 0.00111,
+            "cookies": 0.0013,
             "fingerprinting": 0,
             "subdomains": [
                 "network-eu",
                 "network"
             ],
             "apis": {},
-            "sites": 11,
-            "prevalence": 0.00111,
+            "sites": 13,
+            "prevalence": 0.0013,
             "cnames": [],
             "responseHashes": [
-                "07383c96980710a04144e5a39ae59e7f9f74bcfd6462a6932ded48efe6d73bce"
+                "dcecab1355b5c2b9ecef281322bf265ac5840b4688748586e9632b473a5fe56b"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "jbl.com",
-                "shop.westerndigital.com",
+                "de.pandora.net",
                 "store.canon.de",
                 "www.asics.com",
+                "www.asus.com",
                 "www.belkin.com",
                 "www.brother.de",
                 "www.chainreactioncycles.com",
-                "www.gorewear.com",
+                "www.elgato.com",
+                "www.euromaster.de",
                 "www.jbl.com",
-                "www.mediamarkt.ch",
-                "www.netgear.com"
+                "www.netgear.com",
+                "www.schwarzkopf.de"
             ]
         },
         {
@@ -222,106 +234,77 @@
                 "network"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.000907,
+            "sites": 13,
+            "prevalence": 0.0013,
             "cnames": [],
             "responseHashes": [
-                "8c1242b21a397d89fa769d240c9c07f32d836a930a067807987754bf889ccd8a",
-                "2ede53840a0e228e1e2e4b03d75735f20be5ddcbcd5e0a050b57119c92ff42b2",
-                "42c1a9df60248b35b99f8f563f13abb7672df4b52e841cb3c8ffc5403017aa2d",
-                "d8dcb1fee51934c7db2b7e5100ea4516c3dbd6149f8692efab4c5841ebc8198e"
+                "e1da54b43f1352d4cfa643f275a8bd799988be0b699f6134765355b13b015f52",
+                "82a3af3b0feb7ab155677d00471acdd4c277b29832c6df119e3013acc8f7397d",
+                "51fe46014dd0b5d9fa5dcc2d27edc169f775b5790b46d4910276f89478da7e2f",
+                "b953fd6b492d3cd6a3aa95c5f25967a7372f7c467d70d037da80d1f18f3314ad",
+                "e6ede6d8c54fb46d75bf54040b0d17d8c691a41dc1b097751145cc2db4f2656a",
+                "0652d11a9aa01cd40b373ef9c7585bc9929abf42663831121b1672930c16afe3",
+                "ec9f60a813ccddad41d6afbb8410d6479f722204ec54501c7d1928e87edaab5a",
+                "c0bbb3dca4bc62b5f8613a7bae787eac1ec7a65c87b0610c2dadc55d14c4b8b1",
+                "30a63432b0bcb1b4a17d54bb19ea1130f5cda720086fb4626e3903f3c47c0951",
+                "67dba235588cab81ec1c553b65aa2d33a6916809f980dbf681724de88bbeb6d6",
+                "c1ee03b69c213eff09a535545d7a038e1476f6ccb8dcab326e8398a87781534f",
+                "b3f4f7715d9c9e113c162dd0dc971f504e2c848b9b2add91ce5dfedf73b33c50"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "jbl.com",
-                "shop.westerndigital.com",
+                "de.pandora.net",
+                "store.canon.de",
                 "www.asics.com",
+                "www.asus.com",
                 "www.belkin.com",
                 "www.brother.de",
                 "www.chainreactioncycles.com",
-                "www.gorewear.com",
+                "www.elgato.com",
+                "www.euromaster.de",
                 "www.jbl.com",
-                "www.netgear.com"
+                "www.netgear.com",
+                "www.schwarzkopf.de"
             ]
         },
         {
             "rule": "bazaarvoice\\.com\\/st\\.gif",
-            "cookies": 0.000604,
+            "cookies": 0.0013,
             "fingerprinting": 0,
             "subdomains": [
                 "network-eu",
                 "network"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.000705,
+            "sites": 13,
+            "prevalence": 0.0013,
             "cnames": [],
             "responseHashes": [
-                "07383c96980710a04144e5a39ae59e7f9f74bcfd6462a6932ded48efe6d73bce"
+                "dcecab1355b5c2b9ecef281322bf265ac5840b4688748586e9632b473a5fe56b"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "BVBRANDID": 0.0006043513295729251,
-                "BVBRANDSID": 0.0006043513295729251
+                "BVBRANDID": 0.0013040425318487311,
+                "BVBRANDSID": 0.0013040425318487311
             },
             "exampleSites": [
                 "jbl.com",
-                "shop.westerndigital.com",
+                "de.pandora.net",
+                "store.canon.de",
+                "www.asics.com",
+                "www.asus.com",
                 "www.belkin.com",
                 "www.brother.de",
                 "www.chainreactioncycles.com",
-                "www.gorewear.com",
-                "www.netgear.com"
-            ]
-        },
-        {
-            "rule": "bazaarvoice\\.com\\/deployments\\/barnesandnoble\\/local_implementation\\/production\\/en_US\\/bv\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "apps"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "barnesandnoble.com",
-                "www.barnesandnoble.com"
-            ]
-        },
-        {
-            "rule": "bazaarvoice\\.com\\/apps\\/api\\/api-0\\.7\\.3\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "apps"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.000705,
-            "cnames": [],
-            "responseHashes": [
-                "392a2a1574a825c8765b9300666e847dd9054551c629e5d49f54206937e2a5f3"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "barnesandnoble.com",
-                "shop.westerndigital.com",
-                "www.asics.com",
-                "www.chainreactioncycles.com",
-                "www.galeria.de",
-                "www.gorewear.com",
-                "www.netgear.com"
+                "www.elgato.com",
+                "www.euromaster.de",
+                "www.jbl.com",
+                "www.netgear.com",
+                "www.schwarzkopf.de"
             ]
         },
         {
@@ -332,12 +315,12 @@
                 "apps"
             ],
             "apis": {
-                "PerformanceTiming.prototype.navigationStart": 2,
-                "Document.cookie getter": 2,
-                "Navigator.prototype.userAgent": 1
+                "PerformanceTiming.prototype.navigationStart": 6,
+                "Document.cookie getter": 6,
+                "Navigator.prototype.userAgent": 6
             },
-            "sites": 4,
-            "prevalence": 0.000403,
+            "sites": 6,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
                 "0bdfea90bef2e475de1da3212e64de920753755ffa71e83e1b4839d1c1a5bdb2"
@@ -346,10 +329,12 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "barnesandnoble.com",
-                "store.canon.de",
+                "canon.de",
+                "www.asics.com",
+                "www.barnesandnoble.com",
                 "www.chainreactioncycles.com",
-                "www.leifheit.de"
+                "www.leifheit.de",
+                "www.schwarzkopf.de"
             ]
         },
         {
@@ -363,7 +348,9 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "109ed02f3e06d321a33d0cba6f1d7c620b0041c4e4609952447b0544fceffa2a"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -373,6 +360,31 @@
             ]
         },
         {
+            "rule": "bazaarvoice\\.com\\/apps\\/api\\/api-0\\.7\\.3\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apps"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000502,
+            "cnames": [],
+            "responseHashes": [
+                "392a2a1574a825c8765b9300666e847dd9054551c629e5d49f54206937e2a5f3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "asics.com",
+                "www.barnesandnoble.com",
+                "www.chainreactioncycles.com",
+                "www.galeria.de",
+                "www.netgear.com"
+            ]
+        },
+        {
             "rule": "bazaarvoice\\.com\\/data\\/statistics\\.json",
             "cookies": 0,
             "fingerprinting": 0,
@@ -380,18 +392,49 @@
                 "api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
-                "a8ea44609b585f3bd1115786575a946bbcaed3613b2ef2795af2f6eb69e46e6c"
+                "0b055f2b5c27053a809bd8f7f13c00c18c1ea258862601612ed5e0cd35955b48",
+                "c69efcaf596db783defde663c2af94f89872c26d765f3b3711e20498b3fea84c",
+                "b34c1094cb3cc756167ef342d69c0f4ad3f4fa71dca664d7cb7d7655dfdf82ec",
+                "83ebbe6872482b104f1437ed1c5ef301cfdce41cdceb9f4d6f801a27343f06c9"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "chainreactioncycles.com",
-                "www.gorewear.com"
+                "asics.com",
+                "www.barnesandnoble.com",
+                "www.chainreactioncycles.com",
+                "www.leifheit.de",
+                "www.schwarzkopf.de"
+            ]
+        },
+        {
+            "rule": "bazaarvoice\\.com\\/a\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "network-a",
+                "network-eu-a"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [],
+            "responseHashes": [
+                "dcecab1355b5c2b9ecef281322bf265ac5840b4688748586e9632b473a5fe56b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "barnesandnoble.com",
+                "www.barnesandnoble.com",
+                "www.galeria.de",
+                "www.leifheit.de"
             ]
         }
     ],
@@ -405,19 +448,19 @@
         "Embedded Content"
     ],
     "performance": {},
-    "cookies": 0.00121,
+    "cookies": 0.0016,
     "types": {
-        "Script": 48,
+        "Script": 55,
         "XHR": 5,
-        "Image": 18,
-        "Fetch": 2
+        "Image": 30,
+        "Fetch": 5
     },
     "nameservers": [
+        "a11-65.akam.net",
+        "a6-64.akam.net",
         "a13-66.akam.net",
         "a10-64.akam.net",
-        "a11-65.akam.net",
         "a2-67.akam.net",
-        "a1-191.akam.net",
-        "a6-64.akam.net"
+        "a1-191.akam.net"
     ]
 }

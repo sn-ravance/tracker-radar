@@ -7,13 +7,17 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000303,
-    "sites": 3,
+    "prevalence": 0.000502,
+    "sites": 5,
     "subdomains": [
         "buildbase",
         "hargrovescycles",
+        "scottscs",
         "infocentre",
-        "1-vbus-uk"
+        "slido",
+        "1-vbus-uk",
+        "2-vbus-uk",
+        "2-vbus-eu"
     ],
     "cnames": [
         {
@@ -29,23 +33,25 @@
     "resources": [
         {
             "rule": "ladesk\\.com\\/scripts\\/track\\.js",
-            "cookies": 0.000202,
+            "cookies": 0.000401,
             "fingerprinting": 1,
             "subdomains": [
                 "buildbase",
                 "hargrovescycles",
-                "infocentre"
+                "scottscs",
+                "infocentre",
+                "slido"
             ],
             "apis": {
-                "Document.cookie getter": 1,
-                "Date.prototype.getTime": 1,
-                "Document.cookie setter": 1,
-                "Navigator.prototype.userAgent": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1
+                "Document.cookie getter": 3,
+                "Date.prototype.getTime": 3,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3
             },
-            "sites": 3,
-            "prevalence": 0.000303,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [
                 {
                     "original": "support.buildbase.co.uk",
@@ -57,26 +63,33 @@
                 }
             ],
             "responseHashes": [
-                "ff3a9b244cc2eb335494bcb48faa93213c17b0ca261ed2b1ae8124b18fa47860"
+                "ff3a9b244cc2eb335494bcb48faa93213c17b0ca261ed2b1ae8124b18fa47860",
+                "21cad08fd322b41489fb6ebfed2d1f3c464090edc5c9dc0509f4e17ac39006f0"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "LaVisitorNew": {
-                    "ttl": 86412,
+                    "ttl": 86405,
                     "length": 1,
-                    "prevalence": 0.00010092854259184497,
-                    "uniqueness": 1
+                    "prevalence": 0.00020066218521119696,
+                    "uniqueness": 0.5
                 },
                 "LaVisitorId_aGFyZ3JvdmVzY3ljbGVzLmxhZGVzay5jb20v": {
                     "ttl": null,
                     "length": 29,
-                    "prevalence": 0.00010092854259184497,
+                    "prevalence": 0.00010033109260559848,
                     "uniqueness": 1
                 },
                 "LaSID": {
                     "ttl": null,
                     "length": 29,
-                    "prevalence": 0.00010092854259184497,
+                    "prevalence": 0.00020066218521119696,
+                    "uniqueness": 1
+                },
+                "LaVisitorId_c2NvdHRzY3MubGFkZXNrLmNvbS8": {
+                    "ttl": null,
+                    "length": 29,
+                    "prevalence": 0.00010033109260559848,
                     "uniqueness": 1
                 }
             },
@@ -84,7 +97,9 @@
             "exampleSites": [
                 "buildbase.co.uk",
                 "www.hargrovescycles.co.uk",
-                "www.scouts.org.uk"
+                "www.scottsofstow.co.uk",
+                "www.scouts.org.uk",
+                "www.sli.do"
             ]
         },
         {
@@ -93,11 +108,54 @@
             "fingerprinting": 0,
             "subdomains": [
                 "buildbase",
-                "hargrovescycles"
+                "hargrovescycles",
+                "scottscs",
+                "infocentre",
+                "slido"
             ],
             "apis": {},
+            "sites": 5,
+            "prevalence": 0.000502,
+            "cnames": [
+                {
+                    "original": "support.buildbase.co.uk",
+                    "resolved": "buildbase.ladesk.com"
+                },
+                {
+                    "original": "support.scouts.org.uk",
+                    "resolved": "infocentre.ladesk.com"
+                }
+            ],
+            "responseHashes": [
+                "c6dbe18bb8c4f98f11db74edde47160c1019198e1e1e1513d7c1228c8da1963b",
+                "312dfd42f336d235cfb16005fcce0f8f1f967089af43ebcafeee2503ba6eafd0",
+                "a5a7b2986e947ac1187d214e22d3ec8e55cebb251f99a02dec5461787d2593f2",
+                "31ed66250d6dca2928126ecca6a681b399f185099d582e0d39f6d96e0c58feac"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buildbase.co.uk",
+                "www.hargrovescycles.co.uk",
+                "www.scottsofstow.co.uk",
+                "www.scouts.org.uk",
+                "www.sli.do"
+            ]
+        },
+        {
+            "rule": "ladesk\\.com\\/scripts\\/generateWidget\\.php",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "buildbase",
+                "slido"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "support.buildbase.co.uk",
@@ -105,14 +163,14 @@
                 }
             ],
             "responseHashes": [
-                "c6dbe18bb8c4f98f11db74edde47160c1019198e1e1e1513d7c1228c8da1963b"
+                "22b294fdc33cdc5c3581f29075e6e3c5fa2819054440331d91b923f67976d922"
             ],
-            "type": "Script",
+            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "buildbase.co.uk",
-                "www.hargrovescycles.co.uk"
+                "www.sli.do"
             ]
         },
         {
@@ -121,11 +179,56 @@
             "fingerprinting": 0,
             "subdomains": [
                 "buildbase",
-                "hargrovescycles"
+                "hargrovescycles",
+                "scottscs",
+                "infocentre",
+                "slido"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000502,
+            "cnames": [
+                {
+                    "original": "support.buildbase.co.uk",
+                    "resolved": "buildbase.ladesk.com"
+                },
+                {
+                    "original": "support.scouts.org.uk",
+                    "resolved": "infocentre.ladesk.com"
+                }
+            ],
+            "responseHashes": [
+                "bc30a8fb1d73b6f9e00531809b2d65e830294e8a12653cc07c6ea0eed4feb4b8",
+                "d623d3f6d6b0415a5fad2e22eb695bf34d50591e56469562e53fff320443b704",
+                "cac01f4f49f2f67fc79e5cf250598f01808f2e80f33a7a08e283336ed9eb0c28",
+                "3b93103aa9cad00207357696a78c12458a0546ca81c578fbed53f1243a04cda6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "LaVisitorId_aGFyZ3JvdmVzY3ljbGVzLmxhZGVzay5jb20v": 0.00010033109260559848,
+                "LaSID": 0.00020066218521119696,
+                "LaVisitorId_c2NvdHRzY3MubGFkZXNrLmNvbS8": 0.00010033109260559848
+            },
+            "exampleSites": [
+                "buildbase.co.uk",
+                "www.hargrovescycles.co.uk",
+                "www.scottsofstow.co.uk",
+                "www.scouts.org.uk",
+                "www.sli.do"
+            ]
+        },
+        {
+            "rule": "ladesk\\.com\\/scripts\\/file\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "buildbase",
+                "slido"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "support.buildbase.co.uk",
@@ -133,42 +236,14 @@
                 }
             ],
             "responseHashes": [
-                "bc30a8fb1d73b6f9e00531809b2d65e830294e8a12653cc07c6ea0eed4feb4b8"
+                "159df7dca2821a1f8227ed017da1e789357f42a562bfe18917ce5a1f02024b07"
             ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "LaVisitorId_aGFyZ3JvdmVzY3ljbGVzLmxhZGVzay5jb20v": 0.00010092854259184497,
-                "LaSID": 0.00010092854259184497
-            },
-            "exampleSites": [
-                "buildbase.co.uk",
-                "www.hargrovescycles.co.uk"
-            ]
-        },
-        {
-            "rule": "ladesk\\.com\\/scripts\\/generateWidget\\.php",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "buildbase"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
-            "cnames": [
-                {
-                    "original": "support.buildbase.co.uk",
-                    "resolved": "buildbase.ladesk.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Document",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "buildbase.co.uk",
-                "www.buildbase.co.uk"
+                "www.sli.do"
             ]
         },
         {
@@ -176,13 +251,15 @@
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "1-vbus-uk"
+                "1-vbus-uk",
+                "2-vbus-uk",
+                "2-vbus-eu"
             ],
             "apis": {
-                "Date.prototype.getTime": 1
+                "Date.prototype.getTime": 4
             },
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 4,
+            "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [
                 "a0d64bfec1d5405f09487a58924f8afd40919c90e32d4d862ea69ffc5d4581d4"
@@ -192,40 +269,19 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "buildbase.co.uk",
-                "www.hargrovescycles.co.uk"
-            ]
-        },
-        {
-            "rule": "ladesk\\.com\\/5_23_20_6\\/u129135_97ca\\/aje87ryx0b90cz900ckdbwevt35im\\/event\\/lp\\/v2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "1-vbus-uk"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "LaVisitorId_aGFyZ3JvdmVzY3ljbGVzLmxhZGVzay5jb20v": 0.00020185708518368994,
-                "LaSID": 0.00020185708518368994
-            },
-            "exampleSites": [
-                "hargrovescycles.co.uk",
-                "www.hargrovescycles.co.uk"
+                "www.hargrovescycles.co.uk",
+                "www.scottsofstow.co.uk",
+                "www.scouts.org.uk"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000202,
+    "cookies": 0.000401,
     "types": {
-        "Script": 7,
-        "Document": 4,
-        "XHR": 2
+        "Script": 15,
+        "Document": 6,
+        "Image": 2
     },
     "nameservers": [
         "pdns3.qualityunit.com",

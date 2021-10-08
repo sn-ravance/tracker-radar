@@ -9,15 +9,39 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000804,
-    "sites": 8,
+    "prevalence": 0.0011,
+    "sites": 11,
     "subdomains": [
         "sync",
-        "cdn"
+        "tag",
+        "usr",
+        "opi",
+        "cdn",
+        "sync2"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "navdmp\\.com\\/req",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cameradecision.com",
+                "www.bose.com.au",
+                "www.bose.com",
+                "www.subway.com"
+            ]
+        },
         {
             "rule": "navdmp\\.com\\/sync",
             "cookies": 0,
@@ -26,22 +50,122 @@
                 "sync"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 6,
+            "prevalence": 0.000601,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-                "77b1d2c0857d4e95d4c2ae7aa0abc5aaafa6bd4581b31203d1592759c26f5c44"
+                "cf4724b2f736ed1a0ae6bc28f1ead963d9cd2c1fd87b6ef32e7799fc1c5c8bda"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_kuid_": 0.0003013863773357444
+                "_kuid_": 0.0003006614552014432
             },
             "exampleSites": [
                 "cnn.com",
                 "www.cnn.com",
+                "www.e-chords.com",
+                "www.marketwatch.com",
                 "www.theatlantic.com",
+                "www.worldhistory.org"
+            ]
+        },
+        {
+            "rule": "navdmp\\.com\\/universal\\.min\\.js",
+            "cookies": 0.0002,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "0a1baf43f91b359f9c1ece6b3f6351f0401980edf6fd19711e23f09ac716578d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "nvgTLD70303": {
+                    "ttl": 11,
+                    "length": 13,
+                    "prevalence": 0.00010022048506714773,
+                    "uniqueness": 1
+                },
+                "nvg70303": {
+                    "ttl": 31536012,
+                    "length": 33,
+                    "prevalence": 0.00010022048506714773,
+                    "uniqueness": 1
+                },
+                "nvgTLD70517": {
+                    "ttl": 6,
+                    "length": 13,
+                    "prevalence": 0.00010022048506714773,
+                    "uniqueness": 1
+                },
+                "nvg70517": {
+                    "ttl": 31536007,
+                    "length": 33,
+                    "prevalence": 0.00010022048506714773,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soperth.com.au",
+                "www.e-chords.com",
+                "www.worldhistory.org"
+            ]
+        },
+        {
+            "rule": "navdmp\\.com\\/usr",
+            "cookies": 0.0002,
+            "fingerprinting": 0,
+            "subdomains": [
+                "usr"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0002,
+            "cnames": [],
+            "responseHashes": [
+                "15f7ad587f4eea7ce12c925cdf53b639fad536a2354219a5489a0a76821626fc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "e-chords.com",
+                "www.worldhistory.org"
+            ]
+        },
+        {
+            "rule": "navdmp\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "opi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0002,
+            "cnames": [],
+            "responseHashes": [
+                "c395a965dd0ebe39f3363689757bc6d0e07243303f6019693686c2fd223b344a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "e-chords.com",
                 "www.worldhistory.org"
             ]
         },
@@ -53,21 +177,63 @@
                 "cdn"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e6340844af1c0a02b8150c4bc93d54d679f716452d6a97cd99ed45786e97ed8f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "e-chords.com",
+                "www.e-chords.com",
+                "www.worldhistory.org"
+            ]
+        },
+        {
+            "rule": "navdmp\\.com\\/watson",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "opi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0002,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Image",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bose.com.au",
-                "www.bose.com.au",
-                "www.subway.com",
-                "www.theage.com.au",
-                "www.wikifeet.com"
+                "e-chords.com",
+                "www.worldhistory.org"
+            ]
+        },
+        {
+            "rule": "navdmp\\.com\\/sync",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sync2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0002,
+            "cnames": [],
+            "responseHashes": [
+                "e6340844af1c0a02b8150c4bc93d54d679f716452d6a97cd99ed45786e97ed8f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "e-chords.com",
+                "www.worldhistory.org"
             ]
         }
     ],
@@ -78,12 +244,14 @@
         "Audience Measurement"
     ],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.0002,
     "types": {
-        "Image": 9
+        "Image": 10,
+        "Script": 10,
+        "Fetch": 4
     },
     "nameservers": [
-        "frank.ns.cloudflare.com",
-        "uma.ns.cloudflare.com"
+        "uma.ns.cloudflare.com",
+        "frank.ns.cloudflare.com"
     ]
 }

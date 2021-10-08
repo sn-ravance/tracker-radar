@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000401,
+    "sites": 4,
     "subdomains": [
         "lib"
     ],
@@ -13,25 +13,28 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "wtg-ads\\.com\\/prebid\\/prebid_1\\.33\\.3\\.js",
+            "rule": "wtg-ads\\.com\\/lib\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "lib"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 1
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "91f525093d4fd4c4893ecc3931efc5f027d3ee017ecd3ea7415c33ff62575839"
+                "9d54dd720daf1fb5ed9480cb962d9c5249a78e421ca0f6305eb87a82554e98bc"
             ],
-            "type": "Fetch",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dziennik.pl",
-                "wiadomosci.dziennik.pl"
+                "benchmark.pl",
+                "www.sennik.biz"
             ]
         }
     ],
@@ -39,7 +42,7 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Fetch": 2
+        "Script": 2
     },
     "nameservers": [
         "ajay.ns.cloudflare.com",
