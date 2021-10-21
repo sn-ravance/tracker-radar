@@ -7,82 +7,37 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000409,
+    "sites": 4,
     "subdomains": [
-        "imp-adedge",
-        "ssp-bidapi"
+        "spnativeapi-tls",
+        "ssp-bidapi",
+        "xid",
+        "ssp-sync"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "i-mobile\\.co\\.jp\\/script\\/v1\\/spot\\.js",
+            "rule": "i-mobile\\.co\\.jp\\/api\\/ad_spot\\.ashx",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
-                "imp-adedge"
+                "spnativeapi-tls"
             ],
-            "apis": {
-                "window.name": 2,
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000205,
             "cnames": [],
             "responseHashes": [
-                "61af48569c06fcedd550a6b76f86704d530486cbc94fb2c163da037a351a06ca"
+                "b137240c5927b12b20d67aae5b8099f09c1b3db7664a23a51c46f5937f93f369"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "weblio.jp",
-                "picrew.me"
-            ]
-        },
-        {
-            "rule": "i-mobile\\.co\\.jp\\/api\\/v1\\/spot\\.ashx",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ssp-bidapi"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "cb400e2084e1630933cb22c6aba5970834c034efa826b10d4293e8dd0e531d5d"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "weblio.jp",
-                "picrew.me"
-            ]
-        },
-        {
-            "rule": "i-mobile\\.co\\.jp\\/api\\/v1\\/log\\.ashx",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ssp-bidapi"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "592940666137da705db11558b5601579abf2e044ff4a62c81f1f386bbce6e101"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "weblio.jp",
-                "picrew.me"
+                "ejje.weblio.jp"
             ]
         },
         {
@@ -94,7 +49,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000205,
             "cnames": [],
             "responseHashes": [
                 "fe85cceb474303eb80a5ca9a60b16d92208a8e0b38647647654b0c42447b51f7"
@@ -104,22 +59,67 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "weblio.jp",
-                "picrew.me"
+                "ejje.weblio.jp"
+            ]
+        },
+        {
+            "rule": "i-mobile\\.co\\.jp\\/RestoreXidToMediaStorage\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "xid"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000205,
+            "cnames": [],
+            "responseHashes": [
+                "b1cf9494979497e2751b2b9933adb75ca049dbd1c9ee21a9981c630a83061cf1"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "weblio.jp",
+                "lolita-models.net"
+            ]
+        },
+        {
+            "rule": "i-mobile\\.co\\.jp\\/sync\\.ashx",
+            "cookies": 0.000205,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ssp-sync"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000205,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hinative.com",
+                "www.dazn.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000205,
     "types": {
         "Script": 2,
-        "XHR": 4,
+        "XHR": 2,
+        "Document": 2,
         "Image": 2
     },
     "nameservers": [
-        "ns-636.awsdns-15.net",
-        "ns-108.awsdns-13.com",
+        "ns-2000.awsdns-58.co.uk",
         "ns-1333.awsdns-38.org",
-        "ns-2000.awsdns-58.co.uk"
+        "ns-108.awsdns-13.com",
+        "ns-636.awsdns-15.net"
     ]
 }

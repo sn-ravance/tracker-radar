@@ -7,70 +7,97 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000138,
-    "sites": 2,
+    "prevalence": 0.0000304,
+    "sites": 4,
     "subdomains": [
+        "vitrines",
+        "tags",
         "cocoon",
         "horizon",
+        "cdn.wsedg",
         "horizon-schemas",
         "usergate",
         "horizon-track"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
-            "rule": "globo\\.com\\/v2\\/user\\/logged",
+            "rule": "globo\\.com\\/vitrine\\/show_shop\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "cocoon"
+                "vitrines"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.name": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000152,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "38ac46abc71267ffaece1dd5a6dfdd99f0ff83d52dcd33c4271ad9bf7e95f0d2"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "techtudo.com.br",
-                "www.techtudo.com.br"
+                "forum.techtudo.com.br"
             ]
         },
         {
-            "rule": "globo\\.com\\/v2\\/user\\/logged",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
+            "rule": "globo\\.com\\/utag\\/globo\\/editoraglobo\\/prod\\/utag\\.js",
+            "cookies": 0.0000152,
+            "fingerprinting": 2,
             "subdomains": [
-                "cocoon"
+                "tags"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.plugins": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Document.cookie setter": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000152,
             "cnames": [],
             "responseHashes": [
-                "96fa5398a3ca094e195683c419526166da9416bb3707ef023351a5a8009e95a3"
+                "f79baa7f40698cd29c94e625558b5b167c8426e3d4b9b653bc85a5b7661bcde4"
             ],
-            "type": "XHR",
-            "firstPartyCookies": {},
+            "type": "Script",
+            "firstPartyCookies": {
+                "utag_main": {
+                    "ttl": 31536002,
+                    "length": 135,
+                    "prevalence": 0.000015182685665267329,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "techtudo.com.br",
-                "www.techtudo.com.br"
+                "forum.techtudo.com.br"
             ]
         },
         {
             "rule": "globo\\.com\\/v2\\/",
-            "cookies": 0.0000138,
+            "cookies": 0.0000228,
             "fingerprinting": 0,
             "subdomains": [
                 "cocoon"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000228,
             "cnames": [],
             "responseHashes": [
                 "e8e49d12d085acc1fd8d7c49c729225d667eb15f10f6b89eebc8798ab3964c25"
@@ -80,19 +107,178 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "techtudo.com.br",
+                "forum.techtudo.com.br",
                 "www.techtudo.com.br"
             ]
         },
         {
-            "rule": "globo\\.com\\/auth-session\\/activity\\/techtudo\\/horizon-pageview",
-            "cookies": 0.0000138,
+            "rule": "globo\\.com\\/auth-session\\/activity\\/forum\\/horizon-pageview",
+            "cookies": 0.0000152,
             "fingerprinting": 0,
             "subdomains": [
                 "horizon"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000152,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "techtudo.com.br",
+                "forum.techtudo.com.br"
+            ]
+        },
+        {
+            "rule": "globo\\.com\\/vitrine\\/shop\\/5\\/techtudo\\/home\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vitrines"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000152,
+            "cnames": [],
+            "responseHashes": [
+                "eae3640ab1aea291aafce87caa5621bdf857d7f9be0a59ca4a9f73d0876bcfaa"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "techtudo.com.br",
+                "forum.techtudo.com.br"
+            ]
+        },
+        {
+            "rule": "globo\\.com\\/techtudo\\/publicidade\\/publicidade\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.wsedg"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000228,
+            "cnames": [],
+            "responseHashes": [
+                "7801f139e8152f4cd29f87c908296563ffd78321a35333dd3b7c5643f99de484"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "techtudo.com.br",
+                "forum.techtudo.com.br",
+                "www.techtudo.com.br"
+            ]
+        },
+        {
+            "rule": "globo\\.com\\/v2\\/user\\/logged",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cocoon"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000228,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "techtudo.com.br",
+                "forum.techtudo.com.br",
+                "www.techtudo.com.br"
+            ]
+        },
+        {
+            "rule": "globo\\.com\\/v2\\/user\\/logged",
+            "cookies": 0.0000228,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cocoon"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000228,
+            "cnames": [],
+            "responseHashes": [
+                "f8b4803ae83691be96287d5ccefce913b196437b93d31cb1e22d4cd3bc746350",
+                "e1445c96ace07f26150456d67fe4f65529734718eea9bc4e2b87ef71b1fe3f64"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "techtudo.com.br",
+                "forum.techtudo.com.br",
+                "www.techtudo.com.br"
+            ]
+        },
+        {
+            "rule": "globo\\.com\\/schemas",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "horizon-schemas"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000228,
+            "cnames": [],
+            "responseHashes": [
+                "062a9394c5597ae917cd70c0ec0a2639490362eda538801539bd3f8d667e1d29"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "techtudo.com.br",
+                "forum.techtudo.com.br",
+                "www.techtudo.com.br"
+            ]
+        },
+        {
+            "rule": "globo\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "usergate"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000228,
+            "cnames": [],
+            "responseHashes": [
+                "2af921f96b618475ba87948891bf844483be715971a4d4b69c4b596afd6c1691"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "techtudo.com.br",
+                "forum.techtudo.com.br",
+                "www.techtudo.com.br"
+            ]
+        },
+        {
+            "rule": "globo\\.com\\/auth-session\\/activity\\/techtudo\\/horizon-pageview",
+            "cookies": 0.0000152,
+            "fingerprinting": 0,
+            "subdomains": [
+                "horizon"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000152,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -106,59 +292,15 @@
             ]
         },
         {
-            "rule": "globo\\.com\\/schemas",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "horizon-schemas"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "cab57e58a02aa69e601da82d31afeb92fe584ffc204d1b8ee544621c22ab5eba"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "techtudo.com.br",
-                "www.techtudo.com.br"
-            ]
-        },
-        {
-            "rule": "globo\\.com\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "usergate"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "2af921f96b618475ba87948891bf844483be715971a4d4b69c4b596afd6c1691"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "techtudo.com.br",
-                "www.techtudo.com.br"
-            ]
-        },
-        {
             "rule": "globo\\.com\\/event\\/editoraglobo",
-            "cookies": 0.0000138,
+            "cookies": 0.0000152,
             "fingerprinting": 0,
             "subdomains": [
                 "horizon-track"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000152,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -174,17 +316,19 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000138,
+    "cookies": 0.0000304,
     "types": {
-        "Preflight": 2,
-        "XHR": 8,
-        "Image": 2,
-        "Other": 2
+        "Script": 4,
+        "XHR": 12,
+        "Image": 4,
+        "Document": 2,
+        "Stylesheet": 3,
+        "Other": 5
     },
     "nameservers": [
-        "ns03.globo.com",
+        "ns01.globo.com",
         "ns02.globo.com",
         "ns04.globo.com",
-        "ns01.globo.com"
+        "ns03.globo.com"
     ]
 }

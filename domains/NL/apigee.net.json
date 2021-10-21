@@ -9,21 +9,51 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.000903,
-    "sites": 9,
+    "prevalence": 0.000613,
+    "sites": 6,
     "subdomains": [
-        "conrad-prod-gcp-prod",
-        "schubergphilis-prod",
-        "cmg-prod"
+        "natgeo-prod",
+        "conrad-prod-gcp-prod"
     ],
     "cnames": [
         {
             "original": "api.conrad.com",
             "resolved": "conrad-prod-gcp-prod.apigee.net"
+        },
+        {
+            "original": "api.nationalgeographic.com",
+            "resolved": "natgeo-prod.apigee.net"
         }
     ],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "apigee\\.net\\/consent-tracking",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "natgeo-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000204,
+            "cnames": [
+                {
+                    "original": "api.nationalgeographic.com",
+                    "resolved": "natgeo-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [
+                "0e113169a982b55fa28a900006437f934431bb1acd904eecb2ed31e9680bb627"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nationalgeographic.com",
+                "www.nationalgeographic.com"
+            ]
+        },
         {
             "rule": "apigee\\.net\\/reco\\/3",
             "cookies": 0,
@@ -33,7 +63,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000306,
             "cnames": [
                 {
                     "original": "api.conrad.com",
@@ -41,7 +71,7 @@
                 }
             ],
             "responseHashes": [],
-            "type": "Preflight",
+            "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -59,7 +89,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000306,
             "cnames": [
                 {
                     "original": "api.conrad.com",
@@ -67,8 +97,8 @@
                 }
             ],
             "responseHashes": [
-                "9b0128fe4c09ae63295f01d515eba1066dda596b0da074218477e76af63e7441",
-                "0b5594cac5bf299f92ee599fe99d69904a9ef0e88a21c4b775dcf4fcc8749a54"
+                "fc382d786ab225771b5624c7c32c68343c04fbb08328b2abab8b7f88f7a9a062",
+                "b394167bc855d6e7cbdadd4ec26d393712ae15fefa4840b258e034195a304a98"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -78,88 +108,17 @@
                 "www.conrad.com",
                 "www.conrad.nl"
             ]
-        },
-        {
-            "rule": "apigee\\.net\\/prd\\/v2\\/location\\/locations",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "schubergphilis-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "2b63c6c51947a4183d057b3656c43845df2bc5c2da415b4a5fb213f8616dbea2"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "geldmaat.nl",
-                "www.locatiewijzer.geldmaat.nl"
-            ]
-        },
-        {
-            "rule": "apigee\\.net\\/v1\\/xapi\\/users\\/tvguide\\/session\\/load",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cmg-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "2bc05ac1b18841583b2b80d44721d755d14525cc916ca939d9c72890a5f8aa70"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tvguide.com",
-                "www.tvguide.com"
-            ]
-        },
-        {
-            "rule": "apigee\\.net\\/v1\\/xapi\\/tvschedules\\/tvguide\\/tonight\\/9100001138\\/new\\/web",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cmg-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "ea9f436d206b20c2b56bc2a711a8661771da7c399956010d02bb9fea0c9ae5d6"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tvguide.com",
-                "www.tvguide.com"
-            ]
         }
     ],
     "categories": [
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000102,
     "types": {
-        "Preflight": 3,
-        "Fetch": 3,
-        "XHR": 6
+        "XHR": 2,
+        "Other": 3,
+        "Fetch": 3
     },
-    "nameservers": [
-        "ns-116.awsdns-14.com",
-        "ns-1441.awsdns-52.org",
-        "ns-1907.awsdns-46.co.uk",
-        "ns-670.awsdns-19.net"
-    ]
+    "nameservers": []
 }

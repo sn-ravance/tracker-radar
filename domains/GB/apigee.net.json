@@ -9,144 +9,76 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000903,
-    "sites": 9,
+    "prevalence": 0.00071,
+    "sites": 7,
     "subdomains": [
-        "ee-prod-prod-02",
-        "ee-prod-prod",
-        "cmg-prod"
+        "cisco-dsc-prod",
+        "natgeo-prod"
     ],
     "cnames": [
         {
-            "original": "api.ee.co.uk",
-            "resolved": "ee-prod-prod-02.apigee.net"
+            "original": "api.nationalgeographic.com",
+            "resolved": "natgeo-prod.apigee.net"
         },
         {
-            "original": "api.external.plus.net",
-            "resolved": "ee-prod-prod.apigee.net"
+            "original": "dsc.cisco.com",
+            "resolved": "cisco-dsc-prod.apigee.net"
         }
     ],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "apigee\\.net\\/v1\\/identity\\/authorize",
-            "cookies": 0.0001,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ee-prod-prod-02"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "api.ee.co.uk",
-                    "resolved": "ee-prod-prod-02.apigee.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ee.co.uk",
-                "id.ee.co.uk"
-            ]
-        },
-        {
-            "rule": "apigee\\.net\\/plusnet\\/orders\\/v1\\/bundles",
+            "rule": "apigee\\.net\\/v1\\/netid",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "ee-prod-prod"
+                "cisco-dsc-prod"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000203,
             "cnames": [
                 {
-                    "original": "api.external.plus.net",
-                    "resolved": "ee-prod-prod.apigee.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "plus.net",
-                "www.plus.net"
-            ]
-        },
-        {
-            "rule": "apigee\\.net\\/plusnet\\/orders\\/v1\\/bundles",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ee-prod-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "api.external.plus.net",
-                    "resolved": "ee-prod-prod.apigee.net"
+                    "original": "dsc.cisco.com",
+                    "resolved": "cisco-dsc-prod.apigee.net"
                 }
             ],
             "responseHashes": [
-                "db9eb5054efcba2baa7a9994f9dfbec6526e1510a4ae597738b7a136adc0db30"
+                "ca03c57085470f8eebb7146c9ee4e8939cd8460c98f524777018150d7a124c6c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cisco.com",
+                "www.cisco.com"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/consent-tracking",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "natgeo-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000203,
+            "cnames": [
+                {
+                    "original": "api.nationalgeographic.com",
+                    "resolved": "natgeo-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [
+                "0e113169a982b55fa28a900006437f934431bb1acd904eecb2ed31e9680bb627"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "plus.net",
-                "www.plus.net"
-            ]
-        },
-        {
-            "rule": "apigee\\.net\\/v1\\/xapi\\/users\\/tvguide\\/session\\/load",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cmg-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "8897b32b197838b7f90f33c7045aa7144b385ef9bcbfba8fc43b071919f2618f"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tvguide.com",
-                "www.tvguide.com"
-            ]
-        },
-        {
-            "rule": "apigee\\.net\\/v1\\/xapi\\/tvschedules\\/tvguide\\/tonight\\/9100001138\\/new\\/web",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cmg-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "fd2c6725e4452d658efeecbe3eca184a9e7e7ceaf3c7409cd3b92bf3b3016f8a"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tvguide.com",
-                "www.tvguide.com"
+                "nationalgeographic.com",
+                "www.nationalgeographic.com"
             ]
         }
     ],
@@ -154,16 +86,10 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000301,
+    "cookies": 0.000101,
     "types": {
-        "Document": 2,
-        "Preflight": 2,
-        "XHR": 6
+        "Script": 2,
+        "XHR": 2
     },
-    "nameservers": [
-        "ns-116.awsdns-14.com",
-        "ns-1441.awsdns-52.org",
-        "ns-1907.awsdns-46.co.uk",
-        "ns-670.awsdns-19.net"
-    ]
+    "nameservers": []
 }

@@ -4,34 +4,53 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000811,
+    "sites": 8,
     "subdomains": [
-        "pixel"
+        "player",
+        "pixel",
+        "call"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "inforsea\\.com\\/server\\/log",
+            "rule": "inforsea\\.com\\/player\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
-                "pixel"
+                "player"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "apis": {
+                "Navigator.prototype.userAgent": 8,
+                "Navigator.prototype.cookieEnabled": 8,
+                "CSSStyleDeclaration.setProperty(\"fontFamily\",…)": 8,
+                "Date.prototype.getTime": 8,
+                "window.localStorage": 7,
+                "Navigator.prototype.languages": 7,
+                "Navigator.prototype.doNotTrack": 4,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 8,
+            "prevalence": 0.000811,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "4b5ab811d6c1c4e9040ce54d18c895e3dd01230729f14ee818e143484b1f503e"
             ],
-            "type": "Image",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "anime-planet.com",
-                "www.anime-planet.com"
+                "9gag.com",
+                "itavisen.no",
+                "www.anime-planet.com",
+                "www.autoyas.com",
+                "www.globuya.com",
+                "www.localgymsandfitness.com",
+                "www.musikknyheter.no",
+                "www.songtexte.com"
             ]
         },
         {
@@ -42,16 +61,81 @@
                 "pixel"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 8,
+            "prevalence": 0.000811,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "9gag.com",
+                "itavisen.no",
+                "www.anime-planet.com",
+                "www.autoyas.com",
+                "www.globuya.com",
+                "www.localgymsandfitness.com",
+                "www.musikknyheter.no",
+                "www.songtexte.com"
+            ]
+        },
+        {
+            "rule": "inforsea\\.com\\/adserver\\/sources",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "call"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.000811,
+            "cnames": [],
+            "responseHashes": [
+                "da6bf2fcc90890f7a9f9b1228f8bfe288792bf7a97976de6c55f44f2c5791681",
+                "28363c4f8fd79e321cc93723aa825d9261798bc08eeed4fc638cf84643d1e0cb",
+                "9985f87feeea5b464b467a95aee6f8047b95595f55c20a98b31d04510a15f44c",
+                "a44174d5563b043ac8c456c64334fe0f1e821c351dad08b622c9527ab56febd8",
+                "1cd3b031c6be28611dd3827101e7fced4eb2def2ca42b1f76206198e218de1c2",
+                "30ccd70166bcd82fc5ae01af725489a8294480823b0e70b1ffc37aa4d805f526",
+                "f5b7a1c7dcb8b2c97a12a3ced2662687a4ea960dc7fe4234096a8a3293beccdf"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "9gag.com",
+                "itavisen.no",
+                "www.anime-planet.com",
+                "www.autoyas.com",
+                "www.globuya.com",
+                "www.localgymsandfitness.com",
+                "www.musikknyheter.no",
+                "www.songtexte.com"
+            ]
+        },
+        {
+            "rule": "inforsea\\.com\\/server\\/log",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pixel"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000507,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "anime-planet.com",
-                "www.anime-planet.com"
+                "9gag.com",
+                "www.anime-planet.com",
+                "www.autoyas.com",
+                "www.globuya.com",
+                "www.localgymsandfitness.com"
             ]
         }
     ],
@@ -59,8 +143,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Image": 2,
-        "Fetch": 2
+        "Script": 8,
+        "Image": 8,
+        "Fetch": 13
     },
     "nameservers": [
         "ns-702.awsdns-23.net",

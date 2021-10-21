@@ -9,29 +9,23 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000703,
-    "sites": 7,
+    "prevalence": 0.000614,
+    "sites": 6,
     "subdomains": [
         "cisco-dsc-prod",
-        "inquirer-portal",
-        "ecollege-prod",
-        "cmg-prod"
+        "natgeo-prod"
     ],
     "cnames": [
         {
-            "original": "api.inquirer.com",
-            "resolved": "inquirer-portal.apigee.net"
+            "original": "api.nationalgeographic.com",
+            "resolved": "natgeo-prod.apigee.net"
         },
         {
             "original": "dsc.cisco.com",
             "resolved": "cisco-dsc-prod.apigee.net"
-        },
-        {
-            "original": "login.pearson.com",
-            "resolved": "ecollege-prod.apigee.net"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 0,
     "resources": [
         {
             "rule": "apigee\\.net\\/v1\\/netid",
@@ -42,7 +36,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000205,
             "cnames": [
                 {
                     "original": "dsc.cisco.com",
@@ -50,7 +44,7 @@
                 }
             ],
             "responseHashes": [
-                "49989ff49336b2134ce2a471edaf2f8d0ecfc2e7d6dabddf4c062708cf49f7f4"
+                "7d9f7c41b644ccc685fb4d49ad4daaeccb6c29ad3bbf5806e9f4a72726e9b908"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -61,99 +55,30 @@
             ]
         },
         {
-            "rule": "apigee\\.net\\/v1\\/statsinc\\/stats-query\\/baseball\\/mlb\\/",
+            "rule": "apigee\\.net\\/consent-tracking",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "inquirer-portal"
+                "natgeo-prod"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000205,
             "cnames": [
                 {
-                    "original": "api.inquirer.com",
-                    "resolved": "inquirer-portal.apigee.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "inquirer.com",
-                "www.inquirer.com"
-            ]
-        },
-        {
-            "rule": "apigee\\.net\\/v1\\/piapi\\/login\\/js\\/v2\\/session\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "ecollege-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "login.pearson.com",
-                    "resolved": "ecollege-prod.apigee.net"
+                    "original": "api.nationalgeographic.com",
+                    "resolved": "natgeo-prod.apigee.net"
                 }
             ],
             "responseHashes": [
-                "7e1b18611f7e704d5ab36d32ec10ff9775ffd39fbb14876a931d86968f4b666b"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pearson.com",
-                "www.pearson.com"
-            ]
-        },
-        {
-            "rule": "apigee\\.net\\/v1\\/xapi\\/users\\/tvguide\\/session\\/load",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cmg-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "74bf189b07f8fc62d93ea3194f141d8af15b94c45b8a5345700bb8780a59d37a"
+                "4f84ee0868dc7705d4c58c8c8aecefbd93c2d75116f05daace2749ac5b55f63c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "tvguide.com",
-                "www.tvguide.com"
-            ]
-        },
-        {
-            "rule": "apigee\\.net\\/v1\\/xapi\\/tvschedules\\/tvguide\\/tonight\\/9100001138\\/new\\/web",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cmg-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "fd2c6725e4452d658efeecbe3eca184a9e7e7ceaf3c7409cd3b92bf3b3016f8a"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tvguide.com",
-                "www.tvguide.com"
+                "nationalgeographic.com",
+                "www.nationalgeographic.com"
             ]
         }
     ],
@@ -161,16 +86,10 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0,
     "types": {
-        "Script": 4,
-        "Fetch": 2,
-        "XHR": 4
+        "Script": 2,
+        "XHR": 2
     },
-    "nameservers": [
-        "ns-116.awsdns-14.com",
-        "ns-1441.awsdns-52.org",
-        "ns-1907.awsdns-46.co.uk",
-        "ns-670.awsdns-19.net"
-    ]
+    "nameservers": []
 }

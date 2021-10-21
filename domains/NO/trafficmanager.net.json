@@ -9,12 +9,13 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.0014,
-    "sites": 14,
+    "prevalence": 0.00101,
+    "sites": 10,
     "subdomains": [
-        "production.p13n",
-        "psapi-gateway-prod",
-        "nslc-prod-app"
+        "nslc-prod-app",
+        "podiumsite-prod",
+        "bingshoppingtool-t2app-prod",
+        "psapi-gateway-prod"
     ],
     "cnames": [
         {
@@ -22,66 +23,94 @@
             "resolved": "nslc-prod-app.trafficmanager.net"
         },
         {
+            "original": "podium.gyldendal.no",
+            "resolved": "podiumsite-prod.trafficmanager.net"
+        },
+        {
             "original": "psapi.nrk.no",
             "resolved": "psapi-gateway-prod.trafficmanager.net"
-        },
-        {
-            "original": "recommendations.production.p13n.dell.com",
-            "resolved": "production.p13n.trafficmanager.net"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 0,
     "resources": [
         {
-            "rule": "trafficmanager\\.net\\/target\\/batchmbox\\/",
-            "cookies": 0,
+            "rule": "trafficmanager\\.net\\/sso\\/idp\\/SAML2",
+            "cookies": 0.000101,
             "fingerprinting": 0,
             "subdomains": [
-                "production.p13n"
+                "nslc-prod-app"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000203,
             "cnames": [
                 {
-                    "original": "recommendations.production.p13n.dell.com",
-                    "resolved": "production.p13n.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dell.com",
-                "www.dell.com"
-            ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/target\\/batchmbox\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "production.p13n"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "recommendations.production.p13n.dell.com",
-                    "resolved": "production.p13n.trafficmanager.net"
+                    "original": "login.norton.com",
+                    "resolved": "nslc-prod-app.trafficmanager.net"
                 }
             ],
             "responseHashes": [
-                "9f5246b434a7931a15c214c325deb149272b7debc49d7a697e302bcb4212b54d"
+                "74e61e8352652fd2797c3928a1d6aaf48958b578e22ab529b8f80cfb5d619710"
             ],
-            "type": "XHR",
+            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dell.com",
-                "www.dell.com"
+                "norton.com",
+                "community.norton.com"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/mno1-4\\/",
+            "cookies": 0.000101,
+            "fingerprinting": 0,
+            "subdomains": [
+                "podiumsite-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000203,
+            "cnames": [
+                {
+                    "original": "podium.gyldendal.no",
+                    "resolved": "podiumsite-prod.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gyldendal.no",
+                "multinettoppgaver.gyldendal.no"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/uet\\/tracking_script",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bingshoppingtool-t2app-prod"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000507,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "ca1555d2f6b8b72db3683d36fbcb6ef9d7827c55d0f7d0ffffb6b777bfd2cb14",
+                "ac2a33fe473b448b32cb5fb48fde34d2afee0a4a5a707e548d5a7c4b00ea220c",
+                "2ca8a8925fdea07db2a38965e71a4101e0f5e3db01861b41ea27c80aef22fea3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "neunaber.net",
+                "www.12vmonster.com",
+                "www.barbershop.no",
+                "www.spider-farmer.com",
+                "www.trustfire.com"
             ]
         },
         {
@@ -93,7 +122,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000203,
             "cnames": [
                 {
                     "original": "psapi.nrk.no",
@@ -118,7 +147,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000203,
             "cnames": [
                 {
                     "original": "psapi.nrk.no",
@@ -126,7 +155,7 @@
                 }
             ],
             "responseHashes": [
-                "225923576bdffb2fe8bdfee559f7bb8ac2daa6e0147cf39e86c5c3e5a96e0ee8"
+                "a44f504bf282775079f5ebb2be9a7880b77d1714737bdec0e86e05c8dca5b981"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -135,45 +164,22 @@
                 "nrk.no",
                 "radio.nrk.no"
             ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/sso\\/idp\\/SAML2",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "nslc-prod-app"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "login.norton.com",
-                    "resolved": "nslc-prod-app.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [
-                "f81e644c2c72d225b90851a5db6832782f857005c0c688afd9874f474c56596c"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "norton.com",
-                "support.norton.com"
-            ]
         }
     ],
     "categories": [
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000602,
+    "cookies": 0.000304,
     "types": {
-        "Preflight": 2,
-        "XHR": 2,
-        "Fetch": 4,
-        "Document": 2
+        "Document": 4,
+        "Script": 5,
+        "Fetch": 4
     },
-    "nameservers": []
+    "nameservers": [
+        "tm1.edgedns-tm.info",
+        "tm2.edgedns-tm.info",
+        "tm1.dns-tm.com",
+        "tm2.dns-tm.com"
+    ]
 }

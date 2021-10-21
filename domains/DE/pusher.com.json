@@ -7,15 +7,40 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000401,
-    "sites": 4,
+    "prevalence": 0.000506,
+    "sites": 5,
     "subdomains": [
-        "stats",
-        "ws-mt1"
+        "js",
+        "stats"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "pusher\\.com\\/2\\.2\\/pusher\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "js"
+            ],
+            "apis": {
+                "Navigator.prototype.mimeTypes": 1,
+                "window.localStorage": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000203,
+            "cnames": [],
+            "responseHashes": [
+                "4580e68d9f35a3ad5e8e64799138cbdfe9053c4262f7ee68e20765fd9e829099"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "go.com",
+                "fm4.orf.at"
+            ]
+        },
         {
             "rule": "pusher\\.com\\/timeline\\/v2\\/jsonp\\/1",
             "cookies": 0,
@@ -24,38 +49,42 @@
                 "stats"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000304,
             "cnames": [],
             "responseHashes": [
-                "c2887a2a758a79386d8ca17de8743a6215098f649db0598a1b5f38ca462a3c17"
+                "c31660b255f8bfda3cc0b37755a631bd27a963e38d843898954e52b269db6b6f",
+                "5dc76179488041ed4eac877d759d46c5466c5b589c9c62d26005f078efedc38d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "orf.at",
-                "ineosgrenadier.com"
+                "www.catawiki.com",
+                "www.catawiki.de"
             ]
         },
         {
-            "rule": "pusher\\.com\\/app\\/94a07132d8536bc5d075",
+            "rule": "pusher\\.com\\/timeline\\/v2\\/jsonp\\/2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "ws-mt1"
+                "stats"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000203,
             "cnames": [],
-            "responseHashes": [],
-            "type": "WebSocket",
+            "responseHashes": [
+                "7d8e3778787760415417116e641db0b9f99b224b7ebd47a117161fc1feee7024"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "catawiki.com",
-                "www.catawiki.com"
+                "www.catawiki.de"
             ]
         }
     ],
@@ -63,8 +92,7 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2,
-        "WebSocket": 2
+        "Script": 7
     },
     "nameservers": [
         "ns-1482.awsdns-57.org",

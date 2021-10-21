@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000502,
-    "sites": 5,
+    "prevalence": 0.000912,
+    "sites": 9,
     "subdomains": [
-        "ghs"
+        "ghs",
+        "api.id.ghs"
     ],
     "cnames": [
         {
@@ -15,22 +16,34 @@
             "resolved": "ghs.googlehosted.com"
         },
         {
+            "original": "api.id.swmhdata.sueddeutsche.de",
+            "resolved": "api.id.ghs.googlehosted.com"
+        },
+        {
+            "original": "api.urbandictionary.com",
+            "resolved": "ghs.googlehosted.com"
+        },
+        {
+            "original": "ipapi.tmbi.com",
+            "resolved": "ghs.googlehosted.com"
+        },
+        {
             "original": "uie.radio-canada.ca",
             "resolved": "ghs.googlehosted.com"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
-            "rule": "googlehosted\\.com\\/v0\\/current_user",
-            "cookies": 0.000201,
+            "rule": "googlehosted\\.com\\/v0\\/ids",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "ghs"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000203,
             "cnames": [
                 {
                     "original": "uie.radio-canada.ca",
@@ -38,7 +51,7 @@
                 }
             ],
             "responseHashes": [
-                "01351c148b24e4c475e191c35134dadf5a0084bfea0b82b3cc983cfc77d61623"
+                "acc6e3d4ecd9d1bc91ac28bbc70b90fb961d4e873374bdb1c09bb2708b7edc8d"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -49,67 +62,43 @@
             ]
         },
         {
-            "rule": "googlehosted\\.com\\/v0\\/ids",
+            "rule": "googlehosted\\.com\\/api\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "ghs"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000304,
             "cnames": [
                 {
-                    "original": "uie.radio-canada.ca",
-                    "resolved": "ghs.googlehosted.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "radio-canada.ca",
-                "ici.radio-canada.ca"
-            ]
-        },
-        {
-            "rule": "googlehosted\\.com\\/v0\\/ids",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ghs"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "uie.radio-canada.ca",
+                    "original": "ipapi.tmbi.com",
                     "resolved": "ghs.googlehosted.com"
                 }
             ],
             "responseHashes": [
-                "73ae2f284df47f5223845061345eeee0f8e4c33f3758bc04d10d0eeb95138d12"
+                "fe39ca465cb217e8aadd17e39094ea8dd4ca20003b33b2b8e25f96afea1d32d7"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "radio-canada.ca",
-                "ici.radio-canada.ca"
+                "familyhandyman.com",
+                "www.selection.ca",
+                "www.tasteofhome.com"
             ]
         },
         {
             "rule": "googlehosted\\.com\\/track",
-            "cookies": 0.000201,
+            "cookies": 0.000203,
             "fingerprinting": 0,
             "subdomains": [
                 "ghs"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000203,
             "cnames": [
                 {
                     "original": "a.et.nytimes.com",
@@ -126,14 +115,67 @@
                 "nytimes.com",
                 "www.nytimes.com"
             ]
+        },
+        {
+            "rule": "googlehosted\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.id.ghs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000203,
+            "cnames": [
+                {
+                    "original": "api.id.swmhdata.sueddeutsche.de",
+                    "resolved": "api.id.ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [
+                "19f3cfd32d7ab757c4c1a11252442b8c36dd19ca0756fe2be305c1368471e6e8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sueddeutsche.de",
+                "www.sueddeutsche.de"
+            ]
+        },
+        {
+            "rule": "googlehosted\\.com\\/v0\\/uncacheable",
+            "cookies": 0.000101,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000203,
+            "cnames": [
+                {
+                    "original": "api.urbandictionary.com",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [
+                "da077ff1383dbdd78bbce326b311bfe6921602bd9e5a29ab1dab4a541ba56964"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "urbandictionary.com",
+                "www.urbandictionary.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000304,
     "types": {
-        "XHR": 4,
-        "Preflight": 2,
+        "XHR": 9,
         "Other": 2
     },
     "nameservers": []

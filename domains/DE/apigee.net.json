@@ -9,9 +9,10 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000502,
-    "sites": 5,
+    "prevalence": 0.000608,
+    "sites": 6,
     "subdomains": [
+        "natgeo-prod",
         "conrad-prod-gcp-prod"
     ],
     "cnames": [
@@ -22,10 +23,41 @@
         {
             "original": "api.conrad.de",
             "resolved": "conrad-prod-gcp-prod.apigee.net"
+        },
+        {
+            "original": "api.nationalgeographic.com",
+            "resolved": "natgeo-prod.apigee.net"
         }
     ],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "apigee\\.net\\/consent-tracking",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "natgeo-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000203,
+            "cnames": [
+                {
+                    "original": "api.nationalgeographic.com",
+                    "resolved": "natgeo-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [
+                "dfe9e93283545354736aac68fc97e985ed7002168bcf881e1cb7e9ce0ec22e71"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nationalgeographic.com",
+                "www.nationalgeographic.com"
+            ]
+        },
         {
             "rule": "apigee\\.net\\/reco\\/3",
             "cookies": 0,
@@ -35,7 +67,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000203,
             "cnames": [
                 {
                     "original": "api.conrad.com",
@@ -43,7 +75,7 @@
                 }
             ],
             "responseHashes": [],
-            "type": "Preflight",
+            "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -60,7 +92,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000203,
             "cnames": [
                 {
                     "original": "api.conrad.com",
@@ -68,7 +100,7 @@
                 }
             ],
             "responseHashes": [
-                "5adfe8496740293d969684632d06305d30f70759e119ee0706178f65e004581b"
+                "e35fc02984c3182fb3758f3a18550b3aff6b7ec91be8077911ec891f64f3c34b"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -87,32 +119,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "api.conrad.de",
-                    "resolved": "conrad-prod-gcp-prod.apigee.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "conrad.de",
-                "www.conrad.de"
-            ]
-        },
-        {
-            "rule": "apigee\\.net\\/product\\/1\\/service\\/CQ_DE_B2C\\/productdetails",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "conrad-prod-gcp-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000203,
             "cnames": [
                 {
                     "original": "api.conrad.de",
@@ -120,7 +127,7 @@
                 }
             ],
             "responseHashes": [
-                "eaa5beeadd81c811187de7e985d3416d956585275318f3c9c08c6a122cb31f64"
+                "4c0edec60477420670b79ebd09d8c1c28af069f13bc7859f25c817bc284ea903"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -139,7 +146,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000203,
             "cnames": [
                 {
                     "original": "api.conrad.de",
@@ -147,7 +154,7 @@
                 }
             ],
             "responseHashes": [],
-            "type": "Preflight",
+            "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -164,7 +171,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000203,
             "cnames": [
                 {
                     "original": "api.conrad.de",
@@ -172,7 +179,7 @@
                 }
             ],
             "responseHashes": [
-                "66a1388599e19bd6d863822b0743ebac78f4fba42e7bf23ac8b8101962b05584"
+                "59c34cdcab07f5939d38ff32ac8058ad09d790318860311eb988fecb372ca960"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -191,7 +198,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000203,
             "cnames": [
                 {
                     "original": "api.conrad.de",
@@ -199,7 +206,7 @@
                 }
             ],
             "responseHashes": [
-                "75a32086c24d437a5e484910a2f75b9063b2c0d743df0b15728fd9669995e6cf"
+                "80630c1960b2231d0f62261dc55b7e1532288f323bd1f79d542601706f91ec69"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -214,11 +221,11 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000101,
     "types": {
-        "Preflight": 6,
-        "Fetch": 2,
-        "XHR": 6
+        "XHR": 8,
+        "Other": 4,
+        "Fetch": 2
     },
     "nameservers": []
 }

@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000406,
+    "sites": 4,
     "subdomains": [
         "cdn.esales",
         "api.esales"
@@ -18,28 +18,43 @@
     "resources": [
         {
             "rule": "apptus\\.com\\/inject\\/apptus-esales-injection-w9E05D815\\.js",
-            "cookies": 0,
+            "cookies": 0.000203,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn.esales"
             ],
             "apis": {
+                "Document.cookie getter": 2,
                 "window.localStorage": 2,
+                "Document.cookie setter": 2,
                 "Date.prototype.getTime": 2,
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000203,
             "cnames": [],
             "responseHashes": [
-                "76ef30ed24260441ffc8874d54c2634a1ed53255e0b3210299acfc0bbcb8fc8d"
+                "4929a07e8f0d8dd6ff6b04f13e17780d9e48ac9f1939a2fc1d5ad014095820e1"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "apptus.sessionKey": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.00020281918669506134,
+                    "uniqueness": 1
+                },
+                "apptus.customerKey": {
+                    "ttl": 31536003,
+                    "length": 36,
+                    "prevalence": 0.00020281918669506134,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "jula.se",
-                "www.jula.no"
+                "jula.no",
+                "www.jula.pl"
             ]
         },
         {
@@ -50,16 +65,20 @@
                 "api.esales"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000304,
             "cnames": [],
             "responseHashes": [],
-            "type": "Preflight",
+            "type": "Other",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "apptus.sessionKey": 0.000304228780042592,
+                "apptus.customerKey": 0.000304228780042592
+            },
             "exampleSites": [
-                "jula.se",
-                "www.jula.no"
+                "jula.no",
+                "www.jula.pl",
+                "www.jula.se"
             ]
         },
         {
@@ -70,28 +89,33 @@
                 "api.esales"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000304,
             "cnames": [],
             "responseHashes": [
-                "6ced6d331918639e9ced6f40ee4b42cd8415e121b3ca9488a5b55e39f2d7c2ae"
+                "dcc03a543efbeda058fbe2b5bd35984a1f9887ab8b38fc934730bf261a7008bf",
+                "ab7a72638c3d97057a8be91e7a6301dfa9bba562c3289821e04857933e0e08c5"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "apptus.sessionKey": 0.000304228780042592,
+                "apptus.customerKey": 0.000304228780042592
+            },
             "exampleSites": [
-                "jula.se",
-                "www.jula.no"
+                "jula.no",
+                "www.jula.pl",
+                "www.jula.se"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000203,
     "types": {
         "Script": 2,
-        "Preflight": 2,
-        "XHR": 2
+        "Other": 3,
+        "XHR": 3
     },
     "nameservers": [
         "ns1.inbranddns.com",

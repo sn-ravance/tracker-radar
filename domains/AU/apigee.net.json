@@ -9,17 +9,21 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.001,
+    "prevalence": 0.00102,
     "sites": 10,
     "subdomains": [
         "cisco-dsc-prod",
-        "bgl-web-prod",
-        "cmg-prod"
+        "onegov-production",
+        "natgeo-prod"
     ],
     "cnames": [
         {
-            "original": "api.prod.bunnings.com.au",
-            "resolved": "bgl-web-prod.apigee.net"
+            "original": "api.nationalgeographic.com",
+            "resolved": "natgeo-prod.apigee.net"
+        },
+        {
+            "original": "api.onegov.nsw.gov.au",
+            "resolved": "onegov-production.apigee.net"
         },
         {
             "original": "dsc.cisco.com",
@@ -37,7 +41,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000205,
             "cnames": [
                 {
                     "original": "dsc.cisco.com",
@@ -45,7 +49,7 @@
                 }
             ],
             "responseHashes": [
-                "7abe0007987ae233aad907e112dab0505129fc69c041555ee5ccc05a6ad241e7"
+                "c3b4325db92a51fb8b1c27758d1d949c235e026e169588fee2bf5c796001ae63"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -56,99 +60,58 @@
             ]
         },
         {
-            "rule": "apigee\\.net\\/v1\\/search\\/recommendation",
-            "cookies": 0,
+            "rule": "apigee\\.net\\/FuelCheckApp\\/v1\\/fuel\\/prices\\/currenttrend",
+            "cookies": 0.000307,
             "fingerprinting": 0,
             "subdomains": [
-                "bgl-web-prod"
+                "onegov-production"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0002,
+            "sites": 3,
+            "prevalence": 0.000307,
             "cnames": [
                 {
-                    "original": "api.prod.bunnings.com.au",
-                    "resolved": "bgl-web-prod.apigee.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bunnings.com.au",
-                "www.bunnings.com.au"
-            ]
-        },
-        {
-            "rule": "apigee\\.net\\/v1\\/search\\/recommendation",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bgl-web-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0002,
-            "cnames": [
-                {
-                    "original": "api.prod.bunnings.com.au",
-                    "resolved": "bgl-web-prod.apigee.net"
+                    "original": "api.onegov.nsw.gov.au",
+                    "resolved": "onegov-production.apigee.net"
                 }
             ],
             "responseHashes": [
-                "3bac5231db94b1edc35dfebd74893296c5a998ce0c7184a6fee5b6116b4c70a0"
+                "42daa7ed313f53a27236eee34d3aadaebe9fb6aa3dee3bccdaeb880eab648cd0"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bunnings.com.au",
-                "www.bunnings.com.au"
+                "nsw.gov.au",
+                "fuelcheck.nsw.gov.au",
+                "www.fuelcheck.nsw.gov.au"
             ]
         },
         {
-            "rule": "apigee\\.net\\/v1\\/xapi\\/users\\/tvguide\\/session\\/load",
+            "rule": "apigee\\.net\\/consent-tracking",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cmg-prod"
+                "natgeo-prod"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
-            "cnames": [],
+            "prevalence": 0.000205,
+            "cnames": [
+                {
+                    "original": "api.nationalgeographic.com",
+                    "resolved": "natgeo-prod.apigee.net"
+                }
+            ],
             "responseHashes": [
-                "9076d101108f0adeb51ab7bb9f2e0d0abd99dedaf974da6ec6d5811b20133357"
+                "a13cdf7b39e73b7e598ca96b74151623b0abf8cad3b6257ad5a506c6f2efeb8c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "tvguide.com",
-                "www.tvguide.com"
-            ]
-        },
-        {
-            "rule": "apigee\\.net\\/v1\\/xapi\\/tvschedules\\/tvguide\\/tonight\\/9100001138\\/new\\/web",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cmg-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0002,
-            "cnames": [],
-            "responseHashes": [
-                "ea9f436d206b20c2b56bc2a711a8661771da7c399956010d02bb9fea0c9ae5d6"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tvguide.com",
-                "www.tvguide.com"
+                "nationalgeographic.com",
+                "www.nationalgeographic.com"
             ]
         }
     ],
@@ -156,16 +119,10 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0002,
+    "cookies": 0.000205,
     "types": {
         "Script": 2,
-        "Preflight": 2,
-        "XHR": 6
+        "XHR": 5
     },
-    "nameservers": [
-        "ns-116.awsdns-14.com",
-        "ns-1441.awsdns-52.org",
-        "ns-1907.awsdns-46.co.uk",
-        "ns-670.awsdns-19.net"
-    ]
+    "nameservers": []
 }

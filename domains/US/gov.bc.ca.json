@@ -7,10 +7,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000414,
+    "prevalence": 0.0000455,
     "sites": 6,
     "subdomains": [
-        "www2"
+        "www2",
+        "spt.apps"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -18,16 +19,75 @@
         {
             "rule": "gov\\.bc\\.ca\\/StaticWebResources\\/static\\/sp\\/sp-2-14-0\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
                 "www2"
             ],
+            "apis": {
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Screen.prototype.colorDepth": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000152,
+            "cnames": [],
+            "responseHashes": [
+                "50cf303cfaa020fcbedd6ad1bf045a008cbb88dfc792f731f07235dd1ca13599"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bcparks.ca",
+                "www.bcliquorstores.com"
+            ]
+        },
+        {
+            "rule": "gov\\.bc\\.ca\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "spt.apps"
+            ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000228,
             "cnames": [],
             "responseHashes": [],
-            "type": "Script",
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bcparks.ca",
+                "www.bccdc.ca",
+                "www.bcliquorstores.com"
+            ]
+        },
+        {
+            "rule": "gov\\.bc\\.ca\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
+            "cookies": 0.0000228,
+            "fingerprinting": 0,
+            "subdomains": [
+                "spt.apps"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000228,
+            "cnames": [],
+            "responseHashes": [
+                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -39,12 +99,14 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000069,
+    "cookies": 0.000038,
     "types": {
-        "Script": 3
+        "Script": 2,
+        "Other": 3,
+        "XHR": 3
     },
     "nameservers": [
-        "pubdns-k.spanbc.ca",
-        "pubdns-c.spanbc.ca"
+        "pubdns-c.spanbc.ca",
+        "pubdns-k.spanbc.ca"
     ]
 }

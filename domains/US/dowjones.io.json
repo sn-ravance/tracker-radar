@@ -4,14 +4,186 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000276,
-    "sites": 4,
+    "prevalence": 0.0000455,
+    "sites": 6,
     "subdomains": [
+        "collector.archimedes",
+        "wsj-prod.bluegrass.mktdata",
+        "mw-prod.bluegrass.mktdata",
         "video-api.shdsvc"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "mwstream.wsj.net",
+            "resolved": "mw-prod.bluegrass.mktdata.dowjones.io"
+        },
+        {
+            "original": "stream.barrons.com",
+            "resolved": "wsj-prod.bluegrass.mktdata.dowjones.io"
+        },
+        {
+            "original": "wsjstream.wsj.net",
+            "resolved": "wsj-prod.bluegrass.mktdata.dowjones.io"
+        }
+    ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "dowjones\\.io\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collector.archimedes"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000152,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wsj.com",
+                "blogs.wsj.com"
+            ]
+        },
+        {
+            "rule": "dowjones\\.io\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
+            "cookies": 0.0000152,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collector.archimedes"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000152,
+            "cnames": [],
+            "responseHashes": [
+                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wsj.com",
+                "blogs.wsj.com"
+            ]
+        },
+        {
+            "rule": "dowjones\\.io\\/bg2\\/signalr\\/negotiate",
+            "cookies": 0.0000304,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wsj-prod.bluegrass.mktdata",
+                "mw-prod.bluegrass.mktdata"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000304,
+            "cnames": [
+                {
+                    "original": "wsjstream.wsj.net",
+                    "resolved": "wsj-prod.bluegrass.mktdata.dowjones.io"
+                },
+                {
+                    "original": "stream.barrons.com",
+                    "resolved": "wsj-prod.bluegrass.mktdata.dowjones.io"
+                },
+                {
+                    "original": "mwstream.wsj.net",
+                    "resolved": "mw-prod.bluegrass.mktdata.dowjones.io"
+                }
+            ],
+            "responseHashes": [
+                "ca37fb2c815ab58f93f77c8b7bc3f180f9b558db81bc075525d4ea192f52121a",
+                "29ba854aa29cc689157e33b74654080c00ed639f16ea7f65abe7f098a6ab4581",
+                "64af41209b253533e99a94c5937c65b1b399a3b4bb9feee2eb89f147e032befb"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wsj.com",
+                "blogs.wsj.com",
+                "www.barrons.com",
+                "www.marketwatch.com"
+            ]
+        },
+        {
+            "rule": "dowjones\\.io\\/BG2\\/signalr\\/connect",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wsj-prod.bluegrass.mktdata",
+                "mw-prod.bluegrass.mktdata"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000304,
+            "cnames": [
+                {
+                    "original": "wsjstream.wsj.net",
+                    "resolved": "wsj-prod.bluegrass.mktdata.dowjones.io"
+                },
+                {
+                    "original": "stream.barrons.com",
+                    "resolved": "wsj-prod.bluegrass.mktdata.dowjones.io"
+                },
+                {
+                    "original": "mwstream.wsj.net",
+                    "resolved": "mw-prod.bluegrass.mktdata.dowjones.io"
+                }
+            ],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wsj.com",
+                "blogs.wsj.com",
+                "www.barrons.com",
+                "www.marketwatch.com"
+            ]
+        },
+        {
+            "rule": "dowjones\\.io\\/bg2\\/signalr\\/start",
+            "cookies": 0.0000304,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wsj-prod.bluegrass.mktdata",
+                "mw-prod.bluegrass.mktdata"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000304,
+            "cnames": [
+                {
+                    "original": "wsjstream.wsj.net",
+                    "resolved": "wsj-prod.bluegrass.mktdata.dowjones.io"
+                },
+                {
+                    "original": "stream.barrons.com",
+                    "resolved": "wsj-prod.bluegrass.mktdata.dowjones.io"
+                },
+                {
+                    "original": "mwstream.wsj.net",
+                    "resolved": "mw-prod.bluegrass.mktdata.dowjones.io"
+                }
+            ],
+            "responseHashes": [
+                "c50a0366bab0d95bd0dfbbf67ed889b5fd383ee7464a77660088c32e4ef91c20"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wsj.com",
+                "blogs.wsj.com",
+                "www.barrons.com",
+                "www.marketwatch.com"
+            ]
+        },
         {
             "rule": "dowjones\\.io\\/api\\/time",
             "cookies": 0,
@@ -20,76 +192,36 @@
                 "video-api.shdsvc"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000228,
             "cnames": [],
             "responseHashes": [
-                "24550a2ae37f6292d000b0a9c2d7f3a611c5db833dc890c8563ad891ccab3834"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "barrons.com",
-                "www.wsj.com"
-            ]
-        },
-        {
-            "rule": "dowjones\\.io\\/api\\/legacy\\/find-all-videos",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "video-api.shdsvc"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "2809957be0e576abc780bc2eb01613ef8839936431b7e5f6090af749ae2abbda"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "barrons.com",
-                "www.wsj.com"
-            ]
-        },
-        {
-            "rule": "dowjones\\.io\\/api\\/media",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "video-api.shdsvc"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e23a05913857afafc1edd7b8f0f27d87e953c4a72b0f0fc2a2db00b42a874ba0"
+                "1926a0f88246d7a209399bfa54056fe8ab183b505d3a6cf25e26023a713556f5",
+                "f0c81a16996ab86f406e50aaa35adfefe07187d4b1f5b435d392183e941af219"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "wsj.com",
+                "www.barrons.com",
                 "www.wsj.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000069,
+    "cookies": 0.000038,
     "types": {
-        "Fetch": 4,
-        "XHR": 2
+        "Other": 2,
+        "XHR": 10,
+        "WebSocket": 4,
+        "Fetch": 3
     },
     "nameservers": [
-        "ns-1288.awsdns-33.org",
-        "ns-1824.awsdns-36.co.uk",
         "ns-320.awsdns-40.com",
-        "ns-801.awsdns-36.net"
+        "ns-801.awsdns-36.net",
+        "ns-1288.awsdns-33.org",
+        "ns-1824.awsdns-36.co.uk"
     ]
 }

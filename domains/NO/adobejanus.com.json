@@ -4,22 +4,17 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000702,
+    "prevalence": 0.00071,
     "sites": 7,
     "subdomains": [
-        "adobelogin-static.prod.ims",
-        "auth-cloudfront.prod.ims",
         "services.prod.ims",
-        "adobelogin.prod.ims"
+        "adobelogin.prod.ims",
+        "adobelogin-static.prod.ims"
     ],
     "cnames": [
         {
             "original": "adobeid-na1.services.adobe.com",
             "resolved": "services.prod.ims.adobejanus.com"
-        },
-        {
-            "original": "auth.services.adobe.com",
-            "resolved": "auth-cloudfront.prod.ims.adobejanus.com"
         },
         {
             "original": "ims-na1.adobelogin.com",
@@ -33,98 +28,34 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "adobejanus\\.com\\/imslib\\/imslib\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
+            "rule": "adobejanus\\.com\\/ims\\/check\\/v4\\/token",
+            "cookies": 0.00071,
+            "fingerprinting": 0,
             "subdomains": [
-                "adobelogin-static.prod.ims",
-                "auth-cloudfront.prod.ims"
+                "services.prod.ims"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.000803,
+            "sites": 7,
+            "prevalence": 0.00071,
             "cnames": [
                 {
-                    "original": "static.adobelogin.com",
-                    "resolved": "adobelogin-static.prod.ims.adobejanus.com"
-                },
-                {
-                    "original": "auth.services.adobe.com",
-                    "resolved": "auth-cloudfront.prod.ims.adobejanus.com"
+                    "original": "adobeid-na1.services.adobe.com",
+                    "resolved": "services.prod.ims.adobejanus.com"
                 }
             ],
             "responseHashes": [
-                "ff87ed7e8266beab00ffbc400ed8d3c2302e1a6e02e6c4291cbfdcbdd97e7b51",
-                "4492e3e27970cdef4e460da2fa944b12c09af19575447f91dfecd9d587818a0b"
+                "2ceaf252ea98fd53684fd2a0cfe1e798630309312d43b3de16deb7db40db98d0"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "adobe.com",
-                "acrobat.adobe.com",
                 "community.adobe.com",
-                "experienceleaguecommunities.adobe.com",
+                "fonts.adobe.com",
                 "get.adobe.com",
                 "helpx.adobe.com",
                 "www.adobe.com",
-                "www.behance.net"
-            ]
-        },
-        {
-            "rule": "adobejanus\\.com\\/ims\\/check\\/v6\\/token",
-            "cookies": 0.000401,
-            "fingerprinting": 0,
-            "subdomains": [
-                "services.prod.ims"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
-            "cnames": [
-                {
-                    "original": "adobeid-na1.services.adobe.com",
-                    "resolved": "services.prod.ims.adobejanus.com"
-                }
-            ],
-            "responseHashes": [
-                "2ceaf252ea98fd53684fd2a0cfe1e798630309312d43b3de16deb7db40db98d0"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "adobe.com",
-                "get.adobe.com",
-                "helpx.adobe.com",
-                "www.adobe.com"
-            ]
-        },
-        {
-            "rule": "adobejanus\\.com\\/ims\\/check\\/v4\\/token",
-            "cookies": 0.000301,
-            "fingerprinting": 0,
-            "subdomains": [
-                "services.prod.ims"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [
-                {
-                    "original": "adobeid-na1.services.adobe.com",
-                    "resolved": "services.prod.ims.adobejanus.com"
-                }
-            ],
-            "responseHashes": [
-                "2ceaf252ea98fd53684fd2a0cfe1e798630309312d43b3de16deb7db40db98d0"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "adobe.com",
-                "experienceleaguecommunities.adobe.com",
                 "www.behance.net"
             ]
         },
@@ -136,8 +67,8 @@
                 "adobelogin.prod.ims"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 7,
+            "prevalence": 0.00071,
             "cnames": [
                 {
                     "original": "ims-na1.adobelogin.com",
@@ -152,18 +83,51 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "adobe.com",
-                "experienceleaguecommunities.adobe.com",
+                "community.adobe.com",
+                "fonts.adobe.com",
+                "get.adobe.com",
+                "helpx.adobe.com",
+                "www.adobe.com",
+                "www.behance.net"
+            ]
+        },
+        {
+            "rule": "adobejanus\\.com\\/imslib\\/imslib\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "adobelogin-static.prod.ims"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000406,
+            "cnames": [
+                {
+                    "original": "static.adobelogin.com",
+                    "resolved": "adobelogin-static.prod.ims.adobejanus.com"
+                }
+            ],
+            "responseHashes": [
+                "4492e3e27970cdef4e460da2fa944b12c09af19575447f91dfecd9d587818a0b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "adobe.com",
+                "fonts.adobe.com",
+                "helpx.adobe.com",
                 "www.behance.net"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000702,
+    "cookies": 0.00071,
     "types": {
-        "Script": 8,
         "XHR": 7,
-        "Other": 3
+        "Other": 7,
+        "Script": 4
     },
     "nameservers": []
 }

@@ -4,31 +4,40 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000179,
-    "sites": 26,
+    "prevalence": 0.000311,
+    "sites": 41,
     "subdomains": [
         "cdn",
+        "rs",
+        "addnature-se.arc",
+        "asmc-de-shw.arc",
         "babymarkt-de.arc",
-        "bw-online-shop.arc",
+        "bikester-at.arc",
+        "bikester-ch.arc",
+        "bikester-uk.arc",
+        "bikester-nl.arc",
+        "bikester-se.arc",
         "carharttwip-de.arc",
         "exlibris.arc",
         "gartenhaus-de.arc",
-        "haertle.arc",
         "hagebau-de.arc",
         "landi-ch.arc",
         "manor-ch.arc",
-        "narayana-verlag-de.arc",
-        "nkd-de.arc",
         "peek-und-cloppenburg-de.arc",
-        "carharttwip-pt.arc",
-        "rs1",
-        "rs"
+        "rosebikes-de.arc",
+        "rosebikes-nl.arc",
+        "spektrum.arc",
+        "vub-evb-us-en.arc",
+        "vub-evb-de-de.arc",
+        "japanwelt.arc",
+        "carharttwip-it.arc",
+        "rs1"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "epoq\\.de\\/flow\\/babymarkt-de\\.js",
+            "rule": "epoq\\.de\\/flow\\/addnature-se\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
@@ -36,53 +45,98 @@
             ],
             "apis": {
                 "Date.prototype.getTime": 2,
-                "window.name": 2,
-                "window.devicePixelRatio": 2,
-                "window.indexedDB": 2,
-                "window.sessionStorage": 2,
                 "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.hardwareConcurrency": 1,
-                "Navigator.prototype.connection": 1,
-                "Screen.prototype.availWidth": 1,
-                "Screen.prototype.availHeight": 1,
-                "Screen.prototype.orientation": 1
+                "window.devicePixelRatio": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Navigator.prototype.connection": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.orientation": 2,
+                "window.sessionStorage": 2
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000152,
             "cnames": [],
             "responseHashes": [
-                "fea3b6ff13b4738216430579ac4a20bb8a887147041eac3e8cd2ebde627024d3"
+                "c518e5a79a2c87d22bc36e4969b858d2e564516029096a855d655ecf372ee5df"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "babymarkt.de",
-                "www.babymarkt.de"
+                "addnature.com",
+                "www.addnature.com"
+            ]
+        },
+        {
+            "rule": "epoq\\.de\\/web-api\\/epoq\\.js",
+            "cookies": 0.000038,
+            "fingerprinting": 1,
+            "subdomains": [
+                "rs"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 8,
+                "window.localStorage": 7,
+                "Document.cookie setter": 5,
+                "Document.cookie getter": 5
+            },
+            "sites": 8,
+            "prevalence": 0.0000607,
+            "cnames": [],
+            "responseHashes": [
+                "b64ebd1bb0e882fa6a5f4514f0efcd27439958c883bc2413e12e0acd9b86bb88"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "eqsid_": {
+                    "ttl": null,
+                    "length": 31,
+                    "prevalence": 0.00003795671416316832,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "addnature.com",
+                "www.addnature.com",
+                "www.asmc.de",
+                "www.bikester.at",
+                "www.bikester.ch",
+                "www.bikester.co.uk",
+                "www.bikester.nl",
+                "www.bikester.se"
             ]
         },
         {
             "rule": "epoq\\.de\\/inbound-servletapi\\/event",
-            "cookies": 0.0000828,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "addnature-se.arc",
+                "asmc-de-shw.arc",
                 "babymarkt-de.arc",
-                "bw-online-shop.arc",
+                "bikester-at.arc",
+                "bikester-ch.arc",
+                "bikester-uk.arc",
+                "bikester-nl.arc",
+                "bikester-se.arc",
                 "carharttwip-de.arc",
                 "exlibris.arc",
                 "gartenhaus-de.arc",
-                "haertle.arc",
                 "hagebau-de.arc",
                 "landi-ch.arc",
                 "manor-ch.arc",
-                "narayana-verlag-de.arc",
-                "nkd-de.arc",
-                "peek-und-cloppenburg-de.arc"
+                "peek-und-cloppenburg-de.arc",
+                "rosebikes-de.arc",
+                "rosebikes-nl.arc",
+                "spektrum.arc",
+                "vub-evb-us-en.arc",
+                "vub-evb-de-de.arc"
             ],
             "apis": {},
-            "sites": 13,
-            "prevalence": 0.0000897,
+            "sites": 21,
+            "prevalence": 0.000159,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -90,120 +144,153 @@
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_eqsid": 0.000006902073382844206
+                "_eqsid": 0.0000075913428326336645
             },
             "exampleSites": [
-                "babymarkt.de",
-                "www.babymarkt.de",
-                "www.bw-online-shop.com",
-                "www.carhartt-wip.com",
-                "www.exlibris.ch",
-                "www.gartenhaus-gmbh.de",
-                "www.haertle.de",
-                "www.hagebau.de",
+                "addnature.com",
+                "www.bikester.ch",
                 "www.landi.ch",
+                "www.peek-und-cloppenburg.de",
+                "www.villeroy-boch.com",
+                "www.bikester.se",
+                "www.rosebikes.nl",
                 "www.manor.ch",
-                "www.narayana-verlag.de",
-                "www.nkd.com",
-                "www.peek-und-cloppenburg.de"
-            ]
-        },
-        {
-            "rule": "epoq\\.de\\/flow\\/bw-online-shop\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2,
-                "window.name": 2,
-                "window.devicePixelRatio": 2,
-                "window.indexedDB": 2,
-                "window.sessionStorage": 2,
-                "window.localStorage": 2,
-                "Navigator.prototype.hardwareConcurrency": 2,
-                "Navigator.prototype.connection": 2,
-                "Screen.prototype.availWidth": 2,
-                "Screen.prototype.availHeight": 2,
-                "Screen.prototype.orientation": 2,
-                "Document.cookie getter": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "ace82d05c4174dca238356bef4ac4338b1bb90e901b6f28caa8d171c9dd434e7"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bw-online-shop.com",
-                "www.bw-online-shop.com"
-            ]
-        },
-        {
-            "rule": "epoq\\.de\\/inbound-servletapi\\/getRecommendations",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bw-online-shop.arc",
-                "carharttwip-pt.arc",
-                "rs1"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000276,
-            "cnames": [],
-            "responseHashes": [
-                "36510a19715ca719842ffe49f0a955e9945c2998c8892d7f6af2e864a474527f",
-                "178c32e02c39c1741bfc894c9f41943943259b4d32396e75e7b6a176bd1d9194",
-                "8a2014bc673cf3a40ceb77973494463b1fca5173588e6a69bd772ab08adc2df7"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bw-online-shop.com",
-                "www.bw-online-shop.com",
+                "www.bikester.at",
+                "www.spektrum.de",
+                "www.villeroy-boch.de",
                 "www.carhartt-wip.com",
-                "www.megabad.com"
+                "www.asmc.de",
+                "www.addnature.com",
+                "www.bikester.co.uk",
+                "www.bikester.nl",
+                "www.rosebikes.de",
+                "www.hagebau.de",
+                "www.exlibris.ch",
+                "www.gartenhaus-gmbh.de"
             ]
         },
         {
             "rule": "epoq\\.de\\/inbound-servletapi\\/viewItem",
-            "cookies": 0.0000138,
+            "cookies": 0.0000911,
             "fingerprinting": 0,
             "subdomains": [
-                "bw-online-shop.arc",
-                "carharttwip-pt.arc"
+                "addnature-se.arc",
+                "bikester-at.arc",
+                "bikester-ch.arc",
+                "bikester-uk.arc",
+                "bikester-nl.arc",
+                "bikester-se.arc",
+                "exlibris.arc",
+                "gartenhaus-de.arc",
+                "japanwelt.arc",
+                "peek-und-cloppenburg-de.arc",
+                "rosebikes-de.arc"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 12,
+            "prevalence": 0.0000911,
             "cnames": [],
             "responseHashes": [
-                "8ec41839fcefab8e2eddfefd99a42e7356974a4695a8cd07791378f21ecd3716"
+                "7785788847ecb87eb0169f64422228e982fd62507163a9b5654030b971bfb796",
+                "8cdec479323c8eb40c88df720ed93f0022758257571e9c40c14670a3de993981",
+                "64043e837abda3ce4ca460fbfe6a0b03630a3cf26434cf9ee7a97acdd032296b",
+                "9a3bd8cf4ef73f32dec243e10db972ed7b8a2cceb504b416ca612c4a55873e81",
+                "7720b5c50b996074ad011f8cfca224d00a966c08f7f9e1beb4d35090f3455d86",
+                "3b0b345242ca85f41b02599b6a8a8e0569bda76bf4d4d335b2d7cd72d8608727",
+                "7ad2e66b175907b3233d27fe0975c19d1f95355d58a155ba0d566200a5ff1df0",
+                "8f0ce84fe7a0130c2cdc64e014f13bf32fdc427d213cdf26aba3df6c268206b0",
+                "b17ecdc5d9c88bff512fb80ac70ae24c518c7b1b58fb476359166ac6ad4591ed",
+                "665a6d432d93daf0e81a376eba71df1731bf516f90219b8a04742f511fbdd3a4",
+                "f639a21a94abcad6f3875c3984de8bc42667146421943925537fd08a61c913b7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "eqsid_": 0.00004554805699580199
+            },
+            "exampleSites": [
+                "addnature.com",
+                "www.addnature.com",
+                "www.bikester.at",
+                "www.bikester.ch",
+                "www.bikester.co.uk",
+                "www.bikester.nl",
+                "www.bikester.se",
+                "www.exlibris.ch",
+                "www.gartenhaus-gmbh.de",
+                "www.japanwelt.de",
+                "www.peek-und-cloppenburg.de",
+                "www.rosebikes.de"
+            ]
+        },
+        {
+            "rule": "epoq\\.de\\/inbound-servletapi\\/resources\\/iii\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "addnature-se.arc",
+                "asmc-de-shw.arc",
+                "bikester-at.arc",
+                "bikester-ch.arc",
+                "bikester-uk.arc",
+                "bikester-nl.arc",
+                "bikester-se.arc",
+                "japanwelt.arc"
+            ],
+            "apis": {},
+            "sites": 9,
+            "prevalence": 0.0000683,
+            "cnames": [],
+            "responseHashes": [
+                "6156a302a6ca0d687c25637895949c9b286d813b6ad0f152ca6ca7ec500349f9",
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "d158ef7da07bf227ea8214a6235e9b6ead07cb7a4f2528adfbf3b99dc966b516"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bw-online-shop.com",
-                "www.carhartt-wip.com"
+                "addnature.com",
+                "www.addnature.com",
+                "www.asmc.de",
+                "www.bikester.at",
+                "www.bikester.ch",
+                "www.bikester.co.uk",
+                "www.bikester.nl",
+                "www.bikester.se",
+                "www.japanwelt.de"
             ]
         },
         {
-            "rule": "epoq\\.de\\/flow\\/exlibris\\.js",
+            "rule": "epoq\\.de\\/inbound-servletapi\\/updateCart",
+            "cookies": 0.0000152,
+            "fingerprinting": 0,
+            "subdomains": [
+                "asmc-de-shw.arc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000152,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "asmc.de",
+                "www.asmc.de"
+            ]
+        },
+        {
+            "rule": "epoq\\.de\\/flow\\/bikester-at\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
                 "Date.prototype.getTime": 2,
                 "Document.cookie getter": 2,
                 "window.localStorage": 2,
@@ -216,88 +303,185 @@
                 "window.sessionStorage": 2
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000152,
             "cnames": [],
             "responseHashes": [
-                "e0983190285f933b09f0f2b15f50acbda3dfda05a435406bfdf271a7d28986e3"
+                "e96d1df1c25c6885c1a8c280bc9442e315263942fb62e11cad8cd22b77f3bf59"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "exlibris.ch",
-                "www.exlibris.ch"
+                "bikester.at",
+                "www.bikester.at"
             ]
         },
         {
-            "rule": "epoq\\.de\\/flow\\/goertz-de\\.js",
+            "rule": "epoq\\.de\\/flow\\/bikester-ch\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
                 "Date.prototype.getTime": 2,
-                "window.name": 2,
-                "window.devicePixelRatio": 2,
-                "window.indexedDB": 2,
-                "window.sessionStorage": 2,
+                "Document.cookie getter": 2,
                 "window.localStorage": 2,
+                "window.devicePixelRatio": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Navigator.prototype.connection": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.orientation": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000152,
+            "cnames": [],
+            "responseHashes": [
+                "c75d618a16613ae04eca32f3515d60f3a005acc9bde914f0b6b55d6de75e453d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bikester.ch",
+                "www.bikester.ch"
+            ]
+        },
+        {
+            "rule": "epoq\\.de\\/flow\\/bikester-uk\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
                 "Document.cookie getter": 1,
+                "window.localStorage": 2,
+                "window.devicePixelRatio": 2,
                 "Navigator.prototype.hardwareConcurrency": 2,
                 "Navigator.prototype.connection": 2,
                 "Screen.prototype.availWidth": 2,
                 "Screen.prototype.availHeight": 2,
-                "Screen.prototype.orientation": 2
+                "Screen.prototype.orientation": 2,
+                "window.sessionStorage": 2
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000152,
             "cnames": [],
             "responseHashes": [
-                "f549849905c600db6b15450cbea476eb6ecf54aabc8c56300d22b12f1d797679"
+                "276989f5aefa5793f993fa3f6bda655c97aee23a2f399adee0fcd3c6eb8396ce"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "goertz.de",
-                "www.goertz.de"
+                "bikester.co.uk",
+                "www.bikester.co.uk"
             ]
         },
         {
-            "rule": "epoq\\.de\\/flow\\/haertle\\.js",
+            "rule": "epoq\\.de\\/flow\\/bikester-nl\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
                 "Date.prototype.getTime": 2,
-                "window.name": 2,
-                "window.devicePixelRatio": 2,
-                "window.indexedDB": 2,
-                "window.sessionStorage": 2,
+                "Document.cookie getter": 2,
                 "window.localStorage": 2,
+                "window.devicePixelRatio": 2,
                 "Navigator.prototype.hardwareConcurrency": 2,
                 "Navigator.prototype.connection": 2,
                 "Screen.prototype.availWidth": 2,
                 "Screen.prototype.availHeight": 2,
-                "Screen.prototype.orientation": 2
+                "Screen.prototype.orientation": 2,
+                "window.sessionStorage": 2
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000152,
             "cnames": [],
             "responseHashes": [
-                "3e73c59fbb41efdbf2396f49fcc5c1d3e2d31160f17b3e19f855eb84a36b3308"
+                "79167b6d5c7749ec7290d42307e967a8377306f1e2d689783eeb2428b1e72c8c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "haertle.de",
-                "www.haertle.de"
+                "bikester.nl",
+                "www.bikester.nl"
+            ]
+        },
+        {
+            "rule": "epoq\\.de\\/flow\\/bikester-se\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "window.devicePixelRatio": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Navigator.prototype.connection": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.orientation": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000152,
+            "cnames": [],
+            "responseHashes": [
+                "96383c6b78421a8aa60784f4de1e1a125f8c66ec60a5120358ef4de25e4ac1dc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bikester.se",
+                "www.bikester.se"
+            ]
+        },
+        {
+            "rule": "epoq\\.de\\/inbound-servletapi\\/getRecommendations",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "carharttwip-it.arc",
+                "gartenhaus-de.arc",
+                "rs1",
+                "rosebikes-de.arc",
+                "rosebikes-nl.arc"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000455,
+            "cnames": [],
+            "responseHashes": [
+                "2bc4ccac7c14fba37b59226f63614dffcc8f080ab468d9a71a39c7c5d8cd5430",
+                "14aa369ebe607d7c6a36bfa634a3a2949611787b5293d416cceee8c5acd2354b",
+                "9ede9bacbad600da5a9fdf0bfc8dc428589671bc867542d98a8d021e5081bb79",
+                "e3db540b9aabf4d843fc6eadb606ac25926845911f7906808720bbf56ac86966",
+                "b3aa9186ce85cc05473e4997ab91a4934bea1772e2428e42b4b0fd1a1ad804fc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "eqsid_": 0.0000075913428326336645
+            },
+            "exampleSites": [
+                "carhartt-wip.com",
+                "www.gartenhaus-gmbh.de",
+                "www.goertz.de",
+                "www.japanwelt.de",
+                "www.rosebikes.de",
+                "www.rosebikes.nl"
             ]
         },
         {
@@ -322,10 +506,10 @@
                 "Screen.prototype.orientation": 2
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000152,
             "cnames": [],
             "responseHashes": [
-                "cfd743326ad21226be37a3fbf99496fee6f3bf321ded4c2c1b6b732a26f2c4e1"
+                "5083eccb38867499558bb6d79a13f7b8c2eae337c898b5650657ae32be9608e7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -336,84 +520,7 @@
             ]
         },
         {
-            "rule": "epoq\\.de\\/web-api\\/epoq\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "rs"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "b64ebd1bb0e882fa6a5f4514f0efcd27439958c883bc2413e12e0acd9b86bb88"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "japanwelt.de",
-                "www.japanwelt.de"
-            ]
-        },
-        {
-            "rule": "epoq\\.de\\/inbound-servletapi\\/resources\\/iii\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "rs1"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "d158ef7da07bf227ea8214a6235e9b6ead07cb7a4f2528adfbf3b99dc966b516"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "japanwelt.de",
-                "www.japanwelt.de"
-            ]
-        },
-        {
-            "rule": "epoq\\.de\\/flow\\/landi-ch\\.js",
-            "cookies": 0.0000138,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Document.cookie getter": 2,
-                "window.localStorage": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "64e6f56d2ee39ab194907106754be80ecefd6a4add6d2ede94a13e88816fdda1"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "_eqsid": {
-                    "ttl": null,
-                    "length": 31,
-                    "prevalence": 0.000013804146765688412,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "landi.ch",
-                "www.landi.ch"
-            ]
-        },
-        {
-            "rule": "epoq\\.de\\/flow\\/manor-ch\\.js",
+            "rule": "epoq\\.de\\/flow\\/peek-und-cloppenburg-de\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
@@ -433,21 +540,21 @@
                 "window.sessionStorage": 2
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000152,
             "cnames": [],
             "responseHashes": [
-                "b8c687a8aa8df6094baf70703924e66f145cb9d0cef1bf282803d4f3dd88943e"
+                "02a0719defeaa0b0ee69750d10c90a2d29f4f3ef0ca52478fd8b52dd276fbb02"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "manor.ch",
-                "www.manor.ch"
+                "peek-und-cloppenburg.de",
+                "www.peek-und-cloppenburg.de"
             ]
         },
         {
-            "rule": "epoq\\.de\\/flow\\/megabad\\.js",
+            "rule": "epoq\\.de\\/flow\\/rosebikes-de\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
@@ -461,7 +568,6 @@
                 "window.indexedDB": 2,
                 "window.sessionStorage": 2,
                 "window.localStorage": 2,
-                "Document.cookie getter": 2,
                 "Navigator.prototype.hardwareConcurrency": 2,
                 "Navigator.prototype.connection": 2,
                 "Screen.prototype.availWidth": 2,
@@ -469,30 +575,65 @@
                 "Screen.prototype.orientation": 2
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000152,
             "cnames": [],
             "responseHashes": [
-                "0ade18357bc25f60747825a031323d4adc7cb219fe77980184a9d565c8d951f5"
+                "bbf77b6ad122cdddd138638149b1d3b35bb9ac2adf7cb4eff23c0381ceee5e97"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "megabad.com",
-                "www.megabad.com"
+                "rosebikes.de",
+                "www.rosebikes.de"
+            ]
+        },
+        {
+            "rule": "epoq\\.de\\/flow\\/rosebikes-nl\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "window.name": 2,
+                "window.devicePixelRatio": 2,
+                "window.indexedDB": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Navigator.prototype.connection": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.orientation": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000152,
+            "cnames": [],
+            "responseHashes": [
+                "5e61a7d031d253c9209e25e966a1b7b9e1207c425c6d00e3a9273f7f48b821f1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rosebikes.nl",
+                "www.rosebikes.nl"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000124,
+    "cookies": 0.000144,
     "types": {
-        "Script": 41
+        "Script": 78
     },
     "nameservers": [
-        "ns10.dnsmadeeasy.com",
-        "ns11.dnsmadeeasy.com",
         "ns-383.awsdns-47.com",
-        "ns-750.awsdns-29.net"
+        "ns-750.awsdns-29.net",
+        "ns10.dnsmadeeasy.com",
+        "ns11.dnsmadeeasy.com"
     ]
 }

@@ -7,16 +7,26 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000828,
-    "sites": 12,
+    "prevalence": 0.000759,
+    "sites": 100,
     "subdomains": [
-        "cdn",
-        "hub",
+        "share",
+        "reachplc.hub",
         "cbc-login.hub",
         "hola-auth.hub",
-        "reachplc.hub"
+        "hktdc.hub",
+        "hibupro.hub",
+        "surrey.hub"
     ],
     "cnames": [
+        {
+            "original": "accounts.hktdc.com",
+            "resolved": "hktdc.hub.loginradius.com"
+        },
+        {
+            "original": "accounts.surrey.ca",
+            "resolved": "surrey.hub.loginradius.com"
+        },
         {
             "original": "auth.hola.com",
             "resolved": "hola-auth.hub.loginradius.com"
@@ -26,48 +36,22 @@
             "resolved": "cbc-login.hub.loginradius.com"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 0,
     "resources": [
         {
-            "rule": "loginradius\\.com\\/share\\/v1\\/LoginRadius\\.js",
+            "rule": "loginradius\\.com\\/ApiData\\/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
-                "cdn"
+                "share"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000152,
             "cnames": [],
             "responseHashes": [
-                "0670fb16f841523dca4aab4633ca0f9ef4f0639e3ceeaad1e3f8cc46c1992923"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "adw.org",
-                "blog.adw.org"
-            ]
-        },
-        {
-            "rule": "loginradius\\.com\\/include\\/js\\/LoginRadius\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "hub"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "window.localStorage": 1,
-                "Date.prototype.getTime": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -81,12 +65,55 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cbc-login.hub",
-                "hola-auth.hub"
+                "reachplc.hub"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000276,
+            "sites": 47,
+            "prevalence": 0.000357,
+            "cnames": [],
+            "responseHashes": [
+                "f7a4a046540cd7b682afc0d129cbbdea16081d1a54dfd3385115725f960c54c9"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "www.express.co.uk",
+                "www.mirror.co.uk",
+                "www.business-live.co.uk",
+                "www.leeds-live.co.uk",
+                "www.edinburghlive.co.uk",
+                "www.essexlive.news",
+                "www.hulldailymail.co.uk",
+                "www.birminghammail.co.uk",
+                "www.hertfordshiremercury.co.uk",
+                "www.coventrytelegraph.net",
+                "www.dailyrecord.co.uk",
+                "www.dailystar.co.uk",
+                "www.getsurrey.co.uk",
+                "www.stokesentinel.co.uk",
+                "www.gazettelive.co.uk",
+                "www.plymouthherald.co.uk",
+                "www.football.london",
+                "www.nottinghampost.com",
+                "comps.express.co.uk"
+            ]
+        },
+        {
+            "rule": "loginradius\\.com\\/ssologin\\/login",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cbc-login.hub",
+                "hola-auth.hub",
+                "hktdc.hub",
+                "hibupro.hub",
+                "surrey.hub"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000531,
             "cnames": [
                 {
                     "original": "login.cbc.ca",
@@ -95,17 +122,28 @@
                 {
                     "original": "auth.hola.com",
                     "resolved": "hola-auth.hub.loginradius.com"
+                },
+                {
+                    "original": "accounts.hktdc.com",
+                    "resolved": "hktdc.hub.loginradius.com"
+                },
+                {
+                    "original": "accounts.surrey.ca",
+                    "resolved": "surrey.hub.loginradius.com"
                 }
             ],
             "responseHashes": [],
-            "type": "Preflight",
+            "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cbc.ca",
                 "us.hola.com",
                 "www.cbc.ca",
-                "www.hola.com"
+                "www.hktdc.com",
+                "www.hola.com",
+                "www.paginasamarillas.es",
+                "www.surrey.ca"
             ]
         },
         {
@@ -114,11 +152,14 @@
             "fingerprinting": 0,
             "subdomains": [
                 "cbc-login.hub",
-                "hola-auth.hub"
+                "hola-auth.hub",
+                "hktdc.hub",
+                "hibupro.hub",
+                "surrey.hub"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000276,
+            "sites": 7,
+            "prevalence": 0.0000531,
             "cnames": [
                 {
                     "original": "login.cbc.ca",
@@ -127,6 +168,14 @@
                 {
                     "original": "auth.hola.com",
                     "resolved": "hola-auth.hub.loginradius.com"
+                },
+                {
+                    "original": "accounts.hktdc.com",
+                    "resolved": "hktdc.hub.loginradius.com"
+                },
+                {
+                    "original": "accounts.surrey.ca",
+                    "resolved": "surrey.hub.loginradius.com"
                 }
             ],
             "responseHashes": [
@@ -139,30 +188,10 @@
                 "cbc.ca",
                 "us.hola.com",
                 "www.cbc.ca",
-                "www.hola.com"
-            ]
-        },
-        {
-            "rule": "loginradius\\.com\\/ssologin\\/login",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "reachplc.hub"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [],
-            "responseHashes": [
-                "f7a4a046540cd7b682afc0d129cbbdea16081d1a54dfd3385115725f960c54c9"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "express.co.uk",
-                "pulse.express.co.uk",
-                "www.express.co.uk"
+                "www.hktdc.com",
+                "www.hola.com",
+                "www.paginasamarillas.es",
+                "www.surrey.ca"
             ]
         }
     ],
@@ -170,15 +199,15 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 4,
-        "Preflight": 4,
-        "XHR": 4,
-        "Fetch": 3
+        "Script": 2,
+        "Fetch": 47,
+        "Other": 7,
+        "XHR": 7
     },
     "nameservers": [
-        "ns2.p14.dynect.net",
+        "ns1.p14.dynect.net",
         "ns3.p14.dynect.net",
-        "ns4.p14.dynect.net",
-        "ns1.p14.dynect.net"
+        "ns2.p14.dynect.net",
+        "ns4.p14.dynect.net"
     ]
 }

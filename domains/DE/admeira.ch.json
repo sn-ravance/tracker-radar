@@ -7,28 +7,33 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000405,
+    "sites": 4,
     "subdomains": [
         "tr1",
-        "profiles.tr1"
+        "cdn"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
-            "rule": "admeira\\.ch\\/tr1\\.admeira\\.ch\\/v1\\/tcf-tagger\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "admeira\\.ch\\/tr1\\.admeira\\.ch\\/v1\\/tagger\\.js",
+            "cookies": 0.000405,
+            "fingerprinting": 2,
             "subdomains": [
                 "tr1"
             ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "apis": {
+                "Date.prototype.getTimezoneOffset": 4,
+                "Screen.prototype.width": 4,
+                "Screen.prototype.height": 4,
+                "Screen.prototype.colorDepth": 4
+            },
+            "sites": 4,
+            "prevalence": 0.000405,
             "cnames": [],
             "responseHashes": [
-                "a91556df4c0626d6815c8f504a487fcd44f58db41e720353456aaf13b717080f"
+                "057f27f6c872b0f4e032af60e5bb20eeead88e5528fcf8b2ef2949fefe899b59"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -36,42 +41,67 @@
             "exampleSites": [
                 "beobachter.ch",
                 "www.blick.ch",
-                "www.bluewin.ch"
+                "www.bluewin.ch",
+                "www.schweizer-illustrierte.ch"
             ]
         },
         {
-            "rule": "admeira\\.ch\\/api\\/v1\\/admeira\\/profile",
-            "cookies": 0,
+            "rule": "admeira\\.ch\\/tr1\\.admeira\\.ch\\/v1\\/pixel\\.gif",
+            "cookies": 0.000405,
             "fingerprinting": 0,
             "subdomains": [
-                "profiles.tr1"
+                "tr1"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000405,
             "cnames": [],
-            "responseHashes": [
-                "92a8696267cb5d6e7c8ebf892bd7322c57fe4fdf274d7d35c7508f2d59c0a893",
-                "4b2fd4e48d92ab3804acc60741532b4057c4715356342cfdd30a9e1cbb51611b"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "get_top_level_domain_cookie": 0.00020062192797672785
+                "get_top_level_domain_cookie": 0.00030385900941962927,
+                "cookies.js_dtest": 0.00020257267294641952,
+                "parsely_uuid": 0.00020257267294641952
             },
             "exampleSites": [
                 "beobachter.ch",
                 "www.blick.ch",
-                "www.bluewin.ch"
+                "www.bluewin.ch",
+                "www.schweizer-illustrierte.ch"
+            ]
+        },
+        {
+            "rule": "admeira\\.ch\\/adtrace\\/piggyback\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000405,
+            "cnames": [],
+            "responseHashes": [
+                "69ebeb13fc19bc2f7ece08b62322bdcd316dd09ec0f8375b3d8b6ee055b8a281"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beobachter.ch",
+                "www.blick.ch",
+                "www.bluewin.ch",
+                "www.schweizer-illustrierte.ch"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000301,
+    "cookies": 0.000405,
     "types": {
-        "Script": 3,
-        "XHR": 3
+        "Script": 8,
+        "Image": 4
     },
     "nameservers": [
         "ns1.cumari.ch",

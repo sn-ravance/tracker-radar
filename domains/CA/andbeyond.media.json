@@ -7,34 +7,60 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000409,
+    "sites": 4,
     "subdomains": [
-        "prebid"
+        "rtbpass-us",
+        "rtbcdn"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "andbeyond\\.media\\/impstats\\.php",
+            "rule": "andbeyond\\.media\\/prebid-et-3\\.18\\.0\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "prebid"
+                "rtbpass-us"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.appName": 2
+            },
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000205,
             "cnames": [],
             "responseHashes": [
-                "7f8bd8aabb06508984f9761155d72f210272d9bad2e17a8f9383e0148269a885"
+                "29593705a7d48f9b8a90dddfcd0eb06026d6e8b22054c4abc2a4f49c4ff00a20"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "indiatimes.com",
-                "www.bloombergquint.com"
+                "m.economictimes.com"
+            ]
+        },
+        {
+            "rule": "andbeyond\\.media\\/request_js_34387\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rtbcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000205,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "m.economictimes.com"
             ]
         }
     ],
@@ -42,10 +68,10 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 2
+        "Script": 4
     },
     "nameservers": [
-        "ns29.domaincontrol.com",
-        "ns30.domaincontrol.com"
+        "ns30.domaincontrol.com",
+        "ns29.domaincontrol.com"
     ]
 }

@@ -4,29 +4,33 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000138,
+    "prevalence": 0.0000152,
     "sites": 2,
     "subdomains": [
-        "services"
+        "static",
+        "services",
+        "push"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
-            "rule": "delo\\.si\\/cookie\\/cookie_monger\\.js",
+            "rule": "delo\\.si\\/firebase\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "services"
+                "static"
             ],
             "apis": {
-                "Document.cookie getter": 1
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Notification.permission": 2
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000152,
             "cnames": [],
             "responseHashes": [
-                "db72f9f8bcbcd02a044d9fbe7c7ca19bf533e377b15437786b8094f3316da31d"
+                "2686be8827218cf49bd0cdfa89e17587ed456081b8b20ad30d3879e2a98ee56e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -47,7 +51,7 @@
                 "Navigator.prototype.platform": 2
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000152,
             "cnames": [],
             "responseHashes": [
                 "4e91846150e0b9867d96a521f884e960db5efe5bcbe138d902cf47d89d7956d6"
@@ -61,18 +65,18 @@
             ]
         },
         {
-            "rule": "delo\\.si\\/delostat\\/api\\/bar24\\/3600\\/3",
+            "rule": "delo\\.si\\/services\\/notification\\/sn\\/apikey\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "services"
+                "push"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000152,
             "cnames": [],
             "responseHashes": [],
-            "type": "Preflight",
+            "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -81,20 +85,42 @@
             ]
         },
         {
-            "rule": "delo\\.si\\/delostat\\/api\\/bar24\\/3600\\/3",
+            "rule": "delo\\.si\\/services\\/notification\\/sn\\/apikey\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "services"
+                "push"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000152,
             "cnames": [],
             "responseHashes": [
-                "c474f6c2edfa4f6f585e01d41aa5c5df1428f88c5c65280bc73eb711386e312d"
+                "34788ea8db8e5f89df7323015a424c95d7698806daaa1727287775b3f4150fcc"
             ],
-            "type": "Fetch",
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "slovenskenovice.si",
+                "www.slovenskenovice.si"
+            ]
+        },
+        {
+            "rule": "delo\\.si\\/static\\/notification\\/icon\\/push-icon\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "push"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000152,
+            "cnames": [],
+            "responseHashes": [
+                "3ca7618f39169948be4bb09f518740b3aed01b8291ef7bfc1a0414381c9b40d0"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -111,12 +137,54 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000152,
             "cnames": [],
             "responseHashes": [
-                "b6065d2da5936e82926680d2e5aa7f9b88236658ae863c246fff41719c69974c"
+                "f49fd766396a24981edf64d68aadd9b4805f5f5845fccf739233121d269deb5b"
             ],
             "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "slovenskenovice.si",
+                "www.slovenskenovice.si"
+            ]
+        },
+        {
+            "rule": "delo\\.si\\/delostat\\/api\\/bar24\\/3600\\/3",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "services"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000152,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "slovenskenovice.si",
+                "www.slovenskenovice.si"
+            ]
+        },
+        {
+            "rule": "delo\\.si\\/delostat\\/api\\/bar24\\/3600\\/3",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "services"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000152,
+            "cnames": [],
+            "responseHashes": [
+                "d13447d5203411271c231fa633f88fdf35fabb719e28aacb65bec52ee4d6eef2"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -130,12 +198,13 @@
     "cookies": 0,
     "types": {
         "Script": 4,
-        "Preflight": 2,
-        "Fetch": 2,
-        "Image": 2
+        "Other": 4,
+        "XHR": 2,
+        "Image": 4,
+        "Fetch": 2
     },
     "nameservers": [
-        "ns1.delo.si",
-        "ns2.delo.si"
+        "ns2.delo.si",
+        "ns1.delo.si"
     ]
 }

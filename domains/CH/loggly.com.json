@@ -7,24 +7,57 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000401,
-    "sites": 4,
+    "prevalence": 0.00102,
+    "sites": 10,
     "subdomains": [
+        "cloudfront",
         "logs-01"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "loggly\\.com\\/inputs\\/9b965af4-52fb-46fa-be1b-8dc5fb0aad05\\/tag\\/jsinsight\\/1*1\\.gif",
+            "rule": "loggly\\.com\\/js\\/loggly\\.tracker-latest\\.min\\.js",
+            "cookies": 0.000102,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cloudfront"
+            ],
+            "apis": {
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000203,
+            "cnames": [],
+            "responseHashes": [
+                "1002227cd334b24988575ff8435e9ddade75e2ca588d8db606734c32078faae9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "logglytrackingsession": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000101615689462453,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "newatlas.com",
+                "www.tunefind.com"
+            ]
+        },
+        {
+            "rule": "loggly\\.com\\/inputs\\/46a0daff-23d8-4d70-ae45-e4016a4bc78e\\/tag\\/v3\\.ablida\\.de,cpp\\/\\/1*1\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "logs-01"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 7,
+            "prevalence": 0.000711,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -33,16 +66,22 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "flixbus.ch",
-                "www.flixbus.com"
+                "express.de",
+                "www.express.de",
+                "www.frustfrei-lernen.de",
+                "www.ksta.de",
+                "www.sprueche-und-wuensche.de",
+                "www.swp.de",
+                "www.tag24.de"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000203,
     "types": {
-        "Image": 2
+        "Script": 2,
+        "Image": 7
     },
     "nameservers": [
         "ns-1367.awsdns-42.org",

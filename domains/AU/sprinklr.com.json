@@ -4,69 +4,246 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000401,
+    "prevalence": 0.00041,
     "sites": 4,
     "subdomains": [
+        "prod-who-live-chat",
+        "prod2-live-chat",
+        "prod-lc-mqtt-who",
         "prod2-live-chat-mqtt",
-        "prod2-live-chat"
+        "live-chat-static"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "sprinklr\\.com\\/api\\/livechat\\/handshake\\/appHandshake",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-who-live-chat",
+                "prod2-live-chat"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000307,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "who.int",
+                "www.bose.com.au",
+                "www.bose.com"
+            ]
+        },
+        {
+            "rule": "sprinklr\\.com\\/api\\/livechat\\/handshake\\/appHandshake",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-who-live-chat",
+                "prod2-live-chat"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000307,
+            "cnames": [],
+            "responseHashes": [
+                "75bd30d095d0ad3bb9308514954f901150f816f0fbb805bf0c0bab234a57dd38",
+                "a63270392d590e4e70173ac07865a7985eb2cc34c5d73e2bc367dad3fca75142"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "who.int",
+                "www.bose.com.au",
+                "www.bose.com"
+            ]
+        },
+        {
             "rule": "sprinklr\\.com\\/mqtt",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "prod-lc-mqtt-who",
                 "prod2-live-chat-mqtt"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0002,
+            "sites": 3,
+            "prevalence": 0.000307,
             "cnames": [],
             "responseHashes": [],
             "type": "WebSocket",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bose.com",
+                "who.int",
+                "www.bose.com.au",
                 "www.bose.com"
             ]
         },
         {
-            "rule": "sprinklr\\.com\\/api\\/livechat\\/prompt\\/browse\\/event",
+            "rule": "sprinklr\\.com\\/api\\/livechat\\/conversation\\/fetch",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "prod-who-live-chat",
                 "prod2-live-chat"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0002,
+            "sites": 3,
+            "prevalence": 0.000307,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "who.int",
+                "www.bose.com.au",
+                "www.bose.com"
+            ]
+        },
+        {
+            "rule": "sprinklr\\.com\\/api\\/livechat\\/conversation\\/fetch",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-who-live-chat",
+                "prod2-live-chat"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000307,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "53963d1a3840f03ad58f1c9152f2538a9b98203ff79dd966cea1b0361dd5955d",
+                "42b8b4daedb6d3d4e2fd30472d891ba551e704a53844e0bc985d76920e02cd24"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bose.com",
+                "who.int",
+                "www.bose.com.au",
+                "www.bose.com"
+            ]
+        },
+        {
+            "rule": "sprinklr\\.com\\/chat\\/CVs9KkmWf\\/static\\/widget\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "live-chat-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000205,
+            "cnames": [],
+            "responseHashes": [
+                "0b5308261693611a8c5a286454c6a518a82d7ca1869057f4e66cc2b14f478f4f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bose.com.au",
+                "www.bose.com"
+            ]
+        },
+        {
+            "rule": "sprinklr\\.com\\/chat\\/CVs9KkmWf\\/static\\/js\\/vendor\\.5c63b769\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "live-chat-static"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.product": 2,
+                "window.localStorage": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000205,
+            "cnames": [],
+            "responseHashes": [
+                "55efabe7113de83854a5d09d5a67743aab23c1d584a5dbc3ad0c92809172e518"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bose.com.au",
+                "www.bose.com"
+            ]
+        },
+        {
+            "rule": "sprinklr\\.com\\/chat\\/CVs9KkmWf\\/static\\/js\\/main\\.af2b06d9\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "live-chat-static"
+            ],
+            "apis": {
+                "Navigator.prototype.languages": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000205,
+            "cnames": [],
+            "responseHashes": [
+                "ab377a2bc8b5797b7944e6fab60545e8e52d1442f2feb26a9e281eaa74737d57"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bose.com.au",
+                "www.bose.com"
+            ]
+        },
+        {
+            "rule": "sprinklr\\.com\\/chat\\/CVs9KkmWf\\/static\\/js\\/en\\.02e4cc60\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "live-chat-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000205,
+            "cnames": [],
+            "responseHashes": [
+                "8a24ffa63031de5dff097d87b0f66abc3495fdfea60e00527edb9034c3fb20f0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bose.com.au",
                 "www.bose.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000102,
     "types": {
-        "WebSocket": 2,
-        "XHR": 2
+        "Other": 6,
+        "XHR": 6,
+        "WebSocket": 3,
+        "Script": 8
     },
     "nameservers": [
-        "ns-1489.awsdns-58.org",
-        "ns-1627.awsdns-11.co.uk",
         "ns-233.awsdns-29.com",
-        "ns-886.awsdns-46.net"
+        "ns-886.awsdns-46.net",
+        "ns-1627.awsdns-11.co.uk",
+        "ns-1489.awsdns-58.org"
     ]
 }

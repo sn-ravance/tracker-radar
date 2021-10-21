@@ -7,12 +7,14 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000903,
-    "sites": 9,
+    "prevalence": 0.00101,
+    "sites": 10,
     "subdomains": [
         "dn6mqn7xvzz3",
         "5b4dcn321xtp",
-        "t34htyd6jblf",
+        "zx74cbdtks3x",
+        "x2m8rwtfjg4j",
+        "bghgsx0hcy0k",
         "4tdc8ll7wtnf",
         "2p66nmmycsj3"
     ],
@@ -25,21 +27,77 @@
             "fingerprinting": 0,
             "subdomains": [
                 "dn6mqn7xvzz3",
-                "5b4dcn321xtp"
+                "5b4dcn321xtp",
+                "zx74cbdtks3x"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000304,
             "cnames": [],
             "responseHashes": [
-                "2c3ea9b9cd269066768089ae8c74fa113846c4cfa62d87eb6100e5a147f2e0d1"
+                "89f49b66eda07f2aa5faf4abfd4632cb54655d1561ecea7efaec80ce6005b839",
+                "15ed448a9fdbf962eedad1f27402b376aa15dcc22f185fa578ad3d4ec318a09b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "redhat.com",
-                "www.balena.io"
+                "www.balena.io",
+                "www.realvnc.com"
+            ]
+        },
+        {
+            "rule": "statuspage\\.io\\/embed\\/script\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "x2m8rwtfjg4j",
+                "bghgsx0hcy0k"
+            ],
+            "apis": {
+                "Screen.prototype.width": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000203,
+            "cnames": [],
+            "responseHashes": [
+                "192822db1043b31b2f13550b1872ad70af6a97c46768b2e45132618d1c831afb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "plex.tv",
+                "support.sonos.com"
+            ]
+        },
+        {
+            "rule": "statuspage\\.io\\/embed\\/frame",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "x2m8rwtfjg4j",
+                "bghgsx0hcy0k"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "PerformanceTiming.prototype.navigationStart": 1,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000203,
+            "cnames": [],
+            "responseHashes": [
+                "acf3617aec2d8027561fdfe657354d0b7e5cb212938183900b8039ff642f20b2"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "plex.tv",
+                "support.sonos.com"
             ]
         },
         {
@@ -47,24 +105,22 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "t34htyd6jblf",
                 "4tdc8ll7wtnf",
                 "2p66nmmycsj3"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 3,
+            "prevalence": 0.000304,
             "cnames": [],
             "responseHashes": [
-                "00012e916b99d528e0c610cc88d9aba52609b5f8777f427deb27bfb14b556f0b",
-                "b44954a617dcd98209f8d42154cc9496e80e9d472698308038ce6a5e3274c252"
+                "4c95f620d98d77766b2ee799ba7fe925aabfaf092514c3208905a109ae15c9a5",
+                "cafd5b52e7072bbaa1040454164218bede4205eab0acba347ab6e9d46b2ca3c7"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dropbox.com",
-                "login.ionos.de",
+                "ionos.de",
                 "mail.ionos.de",
                 "www.python.org"
             ]
@@ -78,10 +134,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000203,
             "cnames": [],
             "responseHashes": [
-                "e6967eafe58355a28a781ae70a79d59d78a4be09c985f8ea45e8870a612fa9e5"
+                "d7dd05deaa53afc6cfc88e7432ba95bcbed42e3ff97e4360490c2a71047bf6f1"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -100,10 +156,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000203,
             "cnames": [],
             "responseHashes": [
-                "dc704ae0e01c1ecbe28fdc9b74255374c0474898ec683236528ded3f26cc2ee8"
+                "fba2fa2ae310589a1ed3b2eeda784b09ae6ae52ea404ba9be26d49df95915214"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -118,7 +174,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 10
+        "XHR": 10,
+        "Script": 2,
+        "Document": 2
     },
     "nameservers": [
         "ns-1407.awsdns-47.org",

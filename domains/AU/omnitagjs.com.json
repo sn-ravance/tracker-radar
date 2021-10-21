@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.00872,
-    "sites": 87,
+    "prevalence": 0.00461,
+    "sites": 45,
     "subdomains": [
         "hb-api",
         "visitor",
@@ -18,6 +18,7 @@
         "fo-static-usa02",
         "fo-ssp-usa02",
         "tracking-usa02",
+        "visitor-usa02",
         "fo-static",
         "blobs",
         "fo-ssp"
@@ -27,177 +28,226 @@
     "resources": [
         {
             "rule": "omnitagjs\\.com\\/hb-api\\/prebid\\/v1",
-            "cookies": 0.00291,
+            "cookies": 0.00195,
             "fingerprinting": 0,
             "subdomains": [
                 "hb-api"
             ],
             "apis": {},
-            "sites": 44,
-            "prevalence": 0.00441,
+            "sites": 28,
+            "prevalence": 0.00287,
             "cnames": [],
             "responseHashes": [
-                "d0fa2b9e79a64b5ea3d28f6d0baef31662f5e8a560d546842edf15e66814440d",
-                "45176862581bc0d2f13840a18aa47cbe15815784eae0c1acdd91935ee70cc45e",
-                "5b11f6397d01270ea7b30235201bcbaad918f643d04ef4f96d81cda68c876b23",
-                "b23c24bbb468f8cc741765785fc222afbf781c42a7a58c5e608e705dffcd1660",
-                "a5f6ab933c02bf5ecd23c7ecb3eec353f1860fbb3c7edbeb0de43fa3bb130455",
-                "e23c83099084461cafe0ab126db5cbbe107f03e433e25a60a98aac0fa23a2923",
-                "11ab434305bac20d5111c1f120d3501ed21cb8c5fbc73365aad85084328f2c09",
-                "93bb09f2074d60e9c52b861c88f80a198b17fd618754c975b92abfc919afd623",
-                "ea777b964a46fda61349f2be7359deeba11efd53a99b2d5a03be21c4dff1e0b6",
-                "985267ef9cc4a31b816e02b673346fcb280db9568a64897d343be9eaf51d1af0",
-                "1c53b1b5b7cf3bbac178d0617f4ab0b2dcab7c8090b99dcc807329b499113d72",
-                "23f2faa96aa11e88a813e540aec2f3749fde846ce4f3c42046c8b7a877f9f3bb",
-                "924503328e751f09e667a47b0889930ac0fd27397d4557bd1367c5b5eca87d61",
-                "5eadbfdb159d2bc1c63b30ce749845591c01879faa368cedd6d07f0cbe569dce",
-                "1e0bdb8a03c52ee982d360594ec021246b85de970c160c7362c202528388f2f7",
-                "71cf06c7f6061d7b4d72375907af886859129d8e964da07f1fd4e477aea2c728",
-                "7cb3f58a2ffaf4a767176c135a329aac6db1d6ad3d5c8a523d817a678edc0190",
-                "b853edc1bc407e124626aede758781f1028fb3e0d9d6cb3158e1ff8621199dd2",
-                "1324f90b050d0eedfc13adb91343b0501e0db4dea9dd67cf30d91475f371c6a0",
-                "49d41b7a61d62a3c9c9ec14a9dae839e8ec1b0b23751a3a5c04dc69c89bfc72f",
-                "560af14b9fa220a8ede95c9ed604afba9634346633ced4df6eeeb9d6a8447b22",
-                "bb4a58bdc443d1d6f7d047eb0b5720990b624e682c739d81d2d5ade6c52e997c",
-                "8216ce1a2123bfff67a4414d04ac94f2b9f1769a02c2890d8ad2a01ff75a54ee",
-                "896efa0a63336fe8fe7730dd4451e27f8c1e5e1e365c1fb6c60cfb64fbc95026",
-                "e327fab0420b0f2ee4361bb88e45e88a343f39763834212c3a110214ec7f8418",
-                "06fb865721b29f2f6d978a3956073feb4523a43ef669aebfdea20597c638b7a2",
-                "afc80b25dfa6e1452537d5f3c6ea1702e17979fd4831280935307f5b09ff40fe",
-                "59eb4ac0f08b2db21c9ccdf0976f3750b58c09af3ecb5465a87faa6510cbf8d3"
+                "a4dd2d30791b05f464be950df8b4ad040a3b912e7f0555e4523e5de9383a5218",
+                "f2470d49f4793faaa08aaf2c3dfc57d5899cffc7f1b69a87e01be4b409e42856",
+                "09630280bc7143dacd72bd12bc43fd0edc80d91ec6dd95b389db52a62a70fbee",
+                "5ac7c7e734a4240672af87505f0d72be7972da33c5749c7b87ba16e3304aa70f",
+                "e43cecf14fea4f82beeabcaaa0180abb30732404a62fa255cbedc4d09af5aae1",
+                "56740d786c253db3f0dbc56158a1ebceb5a240abff1c518741d085a52f3d72a8",
+                "2a81c1e42d84ffafe6543005c4abefdc4d9234ffb1a048a7826838956423df0e",
+                "6bafb0f7f1c2ea8aad6f11783552f5f72e2680bb7a1d628406fdd70c30565d03",
+                "97e4fc00c7373b810904234f863b3eebddb160dfd0c950ebcdf35c23516beb5a",
+                "64727a024e2486a96f4aa56242c9c531308b67d455b97da4cb7faa10d1176e67",
+                "27cc1074118c93193da35792672203bfabc26b388e0adc2551579e6df1ea048f",
+                "726a34df51c6e27b4e117482fbd4523ae1a724ab490eac3badf32c8d72f6201f",
+                "0c8b9ffe5419d1c8e01f080864bdbaefb0f4ca1a4edc9240fabbac99cba0056b",
+                "8cac8cc32af680f29c1744e1bf58f6378308172f462dd2f1b53b68b3c37c6334",
+                "4fa33b81f59e0472c7126585c1f92ad20029e6aed7f51e6e3a6d47430afd55ea",
+                "508f268ae7f6207e44e26865b18da8b2e9ef9e79dcf7d51fe018e7d61f909da6",
+                "d3daf7449e72ed12ecc6b94cf40933b2db6e36d262fa874934bb5df6726e3d2a",
+                "d3b2e1d8d414a22ed71924bae74ddbbd8512d5aa7da340e2d7972f27870d12c1"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "get_top_level_domain_cookie": 0.00010241704219582139,
+                "_li_dcdm_c": 0.00010241704219582139
+            },
             "exampleSites": [
-                "9gag.com",
-                "dictionary.reverso.net",
-                "mobile-dictionary.reverso.net",
+                "www.bloomberg.com",
                 "www.dailymail.co.uk",
+                "www.thegatewaypundit.com",
                 "www.thesun.co.uk",
-                "www.thefocus.news",
-                "www.iplocation.net",
-                "www.islamicfinder.org",
+                "talksport.com",
+                "www.the-sun.com",
+                "www.allkpop.com",
+                "wh40k.lexicanum.com",
+                "www.planetf1.com",
+                "www.sporcle.com",
+                "www.abbreviations.com",
+                "www.planetrugby.com",
+                "whatculture.com",
                 "www.whats-on-netflix.com",
-                "www.resetera.com",
-                "www.realitytitbit.com",
-                "www.coingecko.com",
-                "dreamastromeanings.com",
-                "www.howtopronounce.com",
-                "pythonexamples.org",
-                "pokemon.gameinfo.io",
-                "gamertweak.com",
-                "www.thescottishsun.co.uk",
-                "www.elyrics.net",
-                "www.dualshockers.com"
-            ]
-        },
-        {
-            "rule": "omnitagjs\\.com\\/visitor\\/sync",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "visitor"
-            ],
-            "apis": {},
-            "sites": 21,
-            "prevalence": 0.0021,
-            "cnames": [],
-            "responseHashes": [
-                "d1371feb0512d700cf724b05a588ce79f8d8dfbb0991ae5f45ecd3ab08983a38"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "www.msn.com",
-                "celebrity.nine.com.au",
-                "www.thetrendspotter.net",
-                "www.thewindowsclub.com",
-                "www.australian-population.com",
-                "commands.gg",
-                "www.ultraboardgames.com",
-                "fccid.io",
-                "www.delftstack.com",
-                "ausdroid.net",
-                "itigic.com",
-                "www.toptenreviews.com",
-                "www.timeshighereducation.com",
-                "www.popbuzz.com",
-                "ccm.net",
-                "www.visordown.com",
-                "www.crash.net",
-                "www.heart.co.uk",
-                "www.aussiestockforums.com",
-                "www.factinate.com"
+                "www.rugbypass.com",
+                "bddatabase.net",
+                "www.thesun.ie",
+                "www.psu.com",
+                "www.hitc.com",
+                "www.justjared.com"
             ]
         },
         {
             "rule": "omnitagjs\\.com\\/visitor\\/bsync",
-            "cookies": 0.000301,
+            "cookies": 0.000615,
             "fingerprinting": 0,
             "subdomains": [
                 "visitor"
             ],
             "apis": {},
-            "sites": 22,
-            "prevalence": 0.0022,
+            "sites": 6,
+            "prevalence": 0.000615,
             "cnames": [],
-            "responseHashes": [
-                "d1371feb0512d700cf724b05a588ce79f8d8dfbb0991ae5f45ecd3ab08983a38"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.urbandictionary.com",
-                "storiesinthecloset.wordpress.com",
-                "stopwrongfulconvictions.wordpress.com",
-                "niapurenaturecom.wordpress.com",
-                "dreddymd.com",
-                "ccm.net",
-                "verumetinventa.wordpress.com",
-                "www.crash.net",
-                "realnewsaustralia.com",
+                "diaryofdennis.com",
                 "nworeport.me",
-                "michaelsavage.com",
-                "vaccinefreedom.wordpress.com",
-                "roserambles.org",
-                "fos-sa.org",
-                "newestalerts.wordpress.com",
+                "theconservativetreehouse.com",
                 "tottnews.com",
-                "deepgreenpermaculture.com",
-                "www.visordown.com",
-                "www.powerofpositivity.com",
-                "chiefio.wordpress.com"
+                "www.almasdarnews.com",
+                "www.urbandictionary.com"
             ]
         },
         {
             "rule": "omnitagjs\\.com\\/fo-api\\/ot\\.js",
-            "cookies": 0,
+            "cookies": 0.000717,
             "fingerprinting": 0,
             "subdomains": [
                 "fo-api"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000501,
+            "sites": 8,
+            "prevalence": 0.000819,
             "cnames": [],
             "responseHashes": [
-                "7154c83a85da0991f1b324d3c7e4a4b7bbb4e3705b83e70ebc50cf35bc513507",
+                "bedf8d8dfa9ee2eb64076b8ec7f7a9e5b28c7efc415f897f6b7557eab30c6b9f",
+                "dc5731b970f1d59fe12544d6281a2dad8431b5ad4cd6433b5e31805a95ed68be",
+                "20d0b57f5b802d609edd852f5186b57de61f0e7097bd1d39ed509c929e4a932f",
                 "0cacb3f16fe1f3502f253df944de9f251ceb81d7cf7e64ead8ef4848eb173c3d",
-                "3ee1abfd56569ac34bbab63adf747c6a78934b45a03433bea927485da1e98ebf",
-                "df6df7c23f59fead3294db9f9e32d1c6a21455d53a4b59cd0c55060a4c84ae52"
+                "9355c0147d88e22fc8e5076aac1cfe9e19bb3bef4eb2b0af73928bcb1b9d2117",
+                "e90fadfe71e3ed3fea7d1c0bb3e42a4752031c624686580a5110cec2bfc83110"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "classicfm.com",
-                "www.heart.co.uk",
+                "musicfeeds.com.au",
+                "www.anandtech.com",
+                "www.classicfm.com",
+                "www.independent.co.uk",
+                "www.planetf1.com",
                 "www.popbuzz.com",
                 "www.sherdog.com",
-                "www.standard.co.uk"
+                "www2.bfi.org.uk"
+            ]
+        },
+        {
+            "rule": "omnitagjs\\.com\\/ot_multi_widget\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "fo-static-usa02"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 3,
+            "prevalence": 0.000307,
+            "cnames": [],
+            "responseHashes": [
+                "c54fa2da72a7375792614dbf976a530161961ba29d8d5c4c21ee9ea3dceb2242"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "musicfeeds.com.au",
+                "www.sherdog.com",
+                "www2.bfi.org.uk"
+            ]
+        },
+        {
+            "rule": "omnitagjs\\.com\\/fo-ssp\\/marketplace",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fo-ssp-usa02"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000615,
+            "cnames": [],
+            "responseHashes": [
+                "218b70bea6b6d6425c1efdbe94dfe848031bb5fd7878dfb84bf82f7cc09f904a",
+                "f8e6f49a9690f8cc58e32e24f505ea3fa89a36ee7ca179ddfc337ff7b12e80ae"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "get_top_level_domain_cookie": 0.00010241704219582139
+            },
+            "exampleSites": [
+                "musicfeeds.com.au",
+                "www.classicfm.com",
+                "www.independent.co.uk",
+                "www.planetf1.com",
+                "www.popbuzz.com",
+                "www.sherdog.com"
+            ]
+        },
+        {
+            "rule": "omnitagjs\\.com\\/tracking\\/pixel",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking-usa02"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.000717,
+            "cnames": [],
+            "responseHashes": [
+                "d1371feb0512d700cf724b05a588ce79f8d8dfbb0991ae5f45ecd3ab08983a38"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "musicfeeds.com.au",
+                "www.classicfm.com",
+                "www.independent.co.uk",
+                "www.planetf1.com",
+                "www.popbuzz.com",
+                "www.sherdog.com",
+                "www2.bfi.org.uk"
+            ]
+        },
+        {
+            "rule": "omnitagjs\\.com\\/visitor\\/sync",
+            "cookies": 0.000205,
+            "fingerprinting": 0,
+            "subdomains": [
+                "visitor",
+                "visitor-usa02"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000615,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stockx.com",
+                "www.classicfm.com",
+                "www.independent.co.uk",
+                "www.planetf1.com",
+                "www.probikekit.com.au",
+                "www.sherdog.com"
             ]
         },
         {
@@ -209,72 +259,22 @@
             ],
             "apis": {
                 "Date.prototype.getTime": 3,
-                "Navigator.prototype.userAgent": 3
+                "Navigator.prototype.userAgent": 3,
+                "window.devicePixelRatio": 1
             },
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000307,
             "cnames": [],
             "responseHashes": [
-                "a2274e20106cd6b2570240bfcc28808720dea88273e2888e92fcb96a20df09d2"
+                "1604ab2b6da1e0b9b3a79a90413d9b537bfdb97087c3236a61552e9f6147967f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "classicfm.com",
-                "www.heart.co.uk",
-                "www.standard.co.uk"
-            ]
-        },
-        {
-            "rule": "omnitagjs\\.com\\/fo-ssp\\/marketplace",
-            "cookies": 0.000501,
-            "fingerprinting": 0,
-            "subdomains": [
-                "fo-ssp-usa02"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.000501,
-            "cnames": [],
-            "responseHashes": [
-                "218b70bea6b6d6425c1efdbe94dfe848031bb5fd7878dfb84bf82f7cc09f904a"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "classicfm.com",
-                "www.heart.co.uk",
-                "www.popbuzz.com",
-                "www.sherdog.com",
-                "www.standard.co.uk"
-            ]
-        },
-        {
-            "rule": "omnitagjs\\.com\\/tracking\\/pixel",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tracking-usa02"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.000601,
-            "cnames": [],
-            "responseHashes": [
-                "d1371feb0512d700cf724b05a588ce79f8d8dfbb0991ae5f45ecd3ab08983a38"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "classicfm.com",
-                "www.classicfm.com",
-                "www.heart.co.uk",
-                "www.popbuzz.com",
-                "www.sherdog.com",
-                "www.standard.co.uk"
+                "www.independent.co.uk",
+                "www.planetf1.com"
             ]
         },
         {
@@ -282,11 +282,12 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "fo-static"
+                "fo-static",
+                "fo-static-usa02"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000307,
             "cnames": [],
             "responseHashes": [
                 "16b016539d86be45cbc37a3728ede642e6522d061f65c373b973aedea4d954c4"
@@ -296,86 +297,81 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "classicfm.com",
-                "www.heart.co.uk",
+                "www.independent.co.uk",
                 "www.popbuzz.com"
             ]
         },
         {
-            "rule": "omnitagjs\\.com\\/static_images\\/03272019dog\\.png",
+            "rule": "omnitagjs\\.com\\/static_images\\/coffee\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "blobs"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000205,
             "cnames": [],
             "responseHashes": [
-                "fa4366fb69454c34992ed731d576f69f0c4253e4d93913f02498411f259522c5"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "classicfm.com",
-                "www.heart.co.uk",
                 "www.popbuzz.com"
             ]
         },
         {
             "rule": "omnitagjs\\.com\\/fo-ssp\\/sync",
-            "cookies": 0.000401,
+            "cookies": 0.000512,
             "fingerprinting": 0,
             "subdomains": [
                 "fo-ssp-usa02",
                 "fo-ssp"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 5,
+            "prevalence": 0.000512,
             "cnames": [],
             "responseHashes": [
-                "a5b1e0a764e9fef7d23cd834b6ff999a782793ed5cfa4432f576b9f219e8837d",
-                "8245d8888df35cdf0f7d413bde71e377bf8617bd6ebe46e13ab460966e8320fa",
-                "45c48d9e5212663f11221737348bd295610299898b63bd7815f74cba29ae83a4"
+                "130f82a63d04ace49419305aa12c5a36aeab450542d314f49ef872cd17d09307",
+                "c8efe1861735f4559dd206e8cde620a6b1081e98de8b13a83a29f56e3ace4b3b",
+                "516bad27784bbc11c3e7741cdc916ae6da7256f0853f013244001f35faacf102",
+                "5b31e4d4b54420c925e9acf75b663d0016a0ccb4728d5a184874e3f164310cc5"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "classicfm.com",
-                "www.heart.co.uk",
+                "www.independent.co.uk",
+                "www.planetf1.com",
                 "www.popbuzz.com",
-                "www.standard.co.uk"
+                "www.sherdog.com"
             ]
         },
         {
-            "rule": "omnitagjs\\.com\\/hb-api\\/ix\\/v1",
-            "cookies": 0.000501,
+            "rule": "omnitagjs\\.com\\/fo-api\\/lead",
+            "cookies": 0.000205,
             "fingerprinting": 0,
             "subdomains": [
-                "hb-api"
+                "fo-api"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000501,
+            "sites": 2,
+            "prevalence": 0.000205,
             "cnames": [],
             "responseHashes": [
-                "d0ac92ba4b26845704d5a9e88f550e03257d221e4bfe0686c77d517334f1dfe7",
-                "92dab06c7fdc022e4766136964d82aae6bdc9081100e0abe5994d24b2b080665",
-                "976a3fdd63f7c30cec83f5fae0bfa4664c901a27ae59c98863b66b0955204723",
-                "481858620dc864d3605bb43e4136a438cf1e70614544d80a8441d1142202bd58"
+                "d1371feb0512d700cf724b05a588ce79f8d8dfbb0991ae5f45ecd3ab08983a38"
             ],
-            "type": "XHR",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "macworld.co.uk",
-                "www.macworld.co.uk",
-                "www.macworld.com",
-                "www.techadvisor.com",
-                "www.techhive.com"
+                "nhm.ac.uk",
+                "www.perpetual.com.au"
             ]
         }
     ],
@@ -384,11 +380,11 @@
         "Advertising"
     ],
     "performance": {},
-    "cookies": 0.00411,
+    "cookies": 0.00348,
     "types": {
-        "XHR": 54,
-        "Image": 55,
-        "Script": 12
+        "XHR": 34,
+        "Image": 26,
+        "Script": 19
     },
     "nameservers": [
         "ns-1215.awsdns-23.org",

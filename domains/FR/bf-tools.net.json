@@ -7,10 +7,11 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000506,
+    "sites": 5,
     "subdomains": [
-        "a"
+        "a",
+        "rtt"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -23,21 +24,50 @@
                 "a"
             ],
             "apis": {
-                "Document.cookie getter": 2
+                "Document.cookie getter": 4,
+                "Navigator.prototype.userAgent": 5,
+                "Navigator.prototype.language": 5
             },
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 5,
+            "prevalence": 0.000506,
             "cnames": [],
             "responseHashes": [
-                "f905e6b3e466691011c74da8163979e22f927ab17b6bfc2bee6cf89db6b481e4"
+                "91835f0385b981d9f020fa22175965f560b186b2e5823e920fa16d2bad8ee12d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "chip.de",
+                "focus.de",
                 "praxistipps.focus.de",
-                "www.chip.de"
+                "praxistipps.chip.de",
+                "www.chip.de",
+                "www.focus.de"
+            ]
+        },
+        {
+            "rule": "bf-tools\\.net\\/ctx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rtt"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000506,
+            "cnames": [],
+            "responseHashes": [
+                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "focus.de",
+                "praxistipps.focus.de",
+                "praxistipps.chip.de",
+                "www.chip.de",
+                "www.focus.de"
             ]
         }
     ],
@@ -45,7 +75,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 3
+        "Script": 5,
+        "XHR": 5
     },
     "nameservers": [
         "a7-64.akam.net",

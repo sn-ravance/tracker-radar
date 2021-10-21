@@ -7,30 +7,32 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000138,
+    "prevalence": 0.0000152,
     "sites": 2,
     "subdomains": [
-        "player-assets",
-        "notusa-auth"
+        "videoassets",
+        "api-vmh"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
-            "rule": "televisa\\.com\\/profile\\/global\\.json",
+            "rule": "televisa\\.com\\/third-party\\/zepto\\/zepto\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "player-assets"
+                "videoassets"
             ],
-            "apis": {},
+            "apis": {
+                "Event.prototype.timeStamp": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000152,
             "cnames": [],
             "responseHashes": [
-                "baa46e0c200397b98a0c65adc32f5135cac4e5709990e89b79294b3cf6875c42"
+                "33b8d860f24f6017a0e8c6fff1443b7c05e3358ea0b3341fdb6b20da42611e9c"
             ],
-            "type": "Fetch",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -39,20 +41,20 @@
             ]
         },
         {
-            "rule": "televisa\\.com\\/v2\\/token-auth\\/vod\\/619168",
+            "rule": "televisa\\.com\\/profiles\\/v1\\/profile\\/3f454df9-ab44-41c6-8858-0ca174be2ac3",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "notusa-auth"
+                "api-vmh"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000152,
             "cnames": [],
             "responseHashes": [
-                "ce9d8196f0b0be0da85bbe53a4f5a0e751b1af0f14c3160fecdd780e7829c368"
+                "e718da46ef667bf6b3e3016d7dcfb0113393179cc00461343ed17ae761e497e1"
             ],
-            "type": "Fetch",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -61,18 +63,18 @@
             ]
         },
         {
-            "rule": "televisa\\.com\\/static\\/images\\/warning-geoblock\\.webp",
+            "rule": "televisa\\.com\\/streaming\\/images\\/warning-geoblock\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "player-assets"
+                "videoassets"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000152,
             "cnames": [],
             "responseHashes": [
-                "34b73cb11865f0e1b999259ec54e382d86e479b465703b2a1a354043b8d85962"
+                "44c67ac469c010da086bce7b19d5ca792a47606cb9f35d2ec96a3610fedbb62c"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -87,7 +89,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Fetch": 4,
+        "Script": 2,
+        "XHR": 2,
         "Image": 2
     },
     "nameservers": [

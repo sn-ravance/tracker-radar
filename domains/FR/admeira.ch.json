@@ -7,39 +7,15 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000201,
+    "prevalence": 0.000203,
     "sites": 2,
     "subdomains": [
-        "profiles.tr1",
-        "cdn"
+        "cdn",
+        "tr1"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
-        {
-            "rule": "admeira\\.ch\\/api\\/v1\\/admeira\\/profile",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "profiles.tr1"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "43f3c25c5e93a9ab0c856a44fa01833f07561e406de708d0ec67e47f73714d8e"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "get_top_level_domain_cookie": 0.0002008435428800964
-            },
-            "exampleSites": [
-                "blick.ch",
-                "www.letemps.ch"
-            ]
-        },
         {
             "rule": "admeira\\.ch\\/adtrace\\/piggyback\\.js",
             "cookies": 0,
@@ -48,27 +24,79 @@
                 "cdn"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000304,
             "cnames": [],
             "responseHashes": [
-                "3e6a47e526989326ca5e86380a05c3fee177001124f70980b82575d2a7b80c3e"
+                "69ebeb13fc19bc2f7ece08b62322bdcd316dd09ec0f8375b3d8b6ee055b8a281"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "letemps.ch",
+                "blick.ch",
+                "www.blick.ch",
+                "www.letemps.ch"
+            ]
+        },
+        {
+            "rule": "admeira\\.ch\\/tr1\\.admeira\\.ch\\/v1\\/tagger\\.js",
+            "cookies": 0.000203,
+            "fingerprinting": 2,
+            "subdomains": [
+                "tr1"
+            ],
+            "apis": {
+                "Date.prototype.getTimezoneOffset": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000203,
+            "cnames": [],
+            "responseHashes": [
+                "057f27f6c872b0f4e032af60e5bb20eeead88e5528fcf8b2ef2949fefe899b59"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blick.ch",
+                "www.letemps.ch"
+            ]
+        },
+        {
+            "rule": "admeira\\.ch\\/tr1\\.admeira\\.ch\\/v1\\/pixel\\.gif",
+            "cookies": 0.000203,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tr1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000203,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "get_top_level_domain_cookie": 0.0002025931928687196,
+                "cookies.js_dtest": 0.0001012965964343598,
+                "parsely_uuid": 0.0001012965964343598
+            },
+            "exampleSites": [
+                "blick.ch",
                 "www.letemps.ch"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000203,
     "types": {
-        "XHR": 2,
-        "Script": 2
+        "Script": 5,
+        "Image": 2
     },
     "nameservers": [
         "ns1.cumari.ch",

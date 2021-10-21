@@ -7,11 +7,12 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.0013,
-    "sites": 13,
+    "prevalence": 0.00154,
+    "sites": 15,
     "subdomains": [
         "adc-js",
-        "login",
+        "loc.api",
+        "somni",
         "adc"
     ],
     "cnames": [],
@@ -19,43 +20,45 @@
     "resources": [
         {
             "rule": "nine\\.com\\.au\\/adc\\.js",
-            "cookies": 0.0013,
+            "cookies": 0.00143,
             "fingerprinting": 1,
             "subdomains": [
                 "adc-js"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 13,
-                "window.localStorage": 13,
-                "Document.cookie getter": 13,
-                "Date.prototype.getTime": 13,
-                "Document.cookie setter": 13
+                "Navigator.prototype.userAgent": 15,
+                "window.localStorage": 15,
+                "Document.cookie getter": 15,
+                "Date.prototype.getTime": 14,
+                "Document.cookie setter": 14
             },
-            "sites": 13,
-            "prevalence": 0.0013,
+            "sites": 15,
+            "prevalence": 0.00154,
             "cnames": [],
             "responseHashes": [
-                "934d4d6010b2bfc6795c8212555ff307c8e883a8fa5f974f601773d4f17e156f"
+                "48fcb83f88c6b3b27c820d40a7cf2fce909c7483e61fbd8b1924996f0f6e4d0d"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "NUID": {
-                    "ttl": 31536009,
+                    "ttl": 31536011,
                     "length": 32,
-                    "prevalence": 0.0013028663058729205,
+                    "prevalence": 0.001331421548545678,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "2gb.com",
+                "drive.com.au",
+                "www.2gb.com",
                 "www.3aw.com.au",
-                "www.4bc.com.au",
-                "www.6pr.com.au",
                 "www.afr.com",
                 "www.brisbanetimes.com.au",
+                "www.businessinsider.com",
+                "www.caradvice.com.au",
                 "www.domain.com.au",
                 "www.drive.com.au",
+                "www.essentialbaby.com.au",
                 "www.goodfood.com.au",
                 "www.smh.com.au",
                 "www.theage.com.au",
@@ -64,68 +67,89 @@
             ]
         },
         {
-            "rule": "nine\\.com\\.au\\/api\\/login",
+            "rule": "nine\\.com\\.au\\/api\\/location\\/iseuro",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "login"
+                "loc.api"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 3,
+            "prevalence": 0.000307,
             "cnames": [],
-            "responseHashes": [
-                "6e034707722874b7ffc3d9fabf388250d4bbb93396f789178662d428d0cf57ba",
-                "c64905583868db53887d7dec0e7839492d985b9bf1d2156fa6e9eae682cae55d",
-                "fd9cc299f33e0fd5322af2d8926c12266bf0966044a6251752ff4f0084b96fcd"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "2gb.com",
-                "www.3aw.com.au",
-                "www.4bc.com.au",
-                "www.6pr.com.au"
+                "drive.com.au",
+                "www.caradvice.com.au",
+                "www.drive.com.au"
+            ]
+        },
+        {
+            "rule": "nine\\.com\\.au\\/id",
+            "cookies": 0.000205,
+            "fingerprinting": 0,
+            "subdomains": [
+                "somni"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000307,
+            "cnames": [],
+            "responseHashes": [
+                "8942f3df5fa11dd4763fc596d6d90a29c6e67eab9f076b78742c7980dbffa96f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "drive.com.au",
+                "www.caradvice.com.au",
+                "www.drive.com.au"
             ]
         },
         {
             "rule": "nine\\.com\\.au\\/",
-            "cookies": 0.0013,
+            "cookies": 0.00143,
             "fingerprinting": 0,
             "subdomains": [
                 "adc"
             ],
             "apis": {},
-            "sites": 13,
-            "prevalence": 0.0013,
+            "sites": 15,
+            "prevalence": 0.00154,
             "cnames": [],
             "responseHashes": [
-                "b4ef9928e9b9a732264833dd9e7f898af08b750e2817db8f9537493770bb2598",
-                "695643f5ebd428b964f943dd4e578719b4881b81cbaddbea716ff61e98666b06",
-                "ebb6a69f811b55ed73dbc813c3d5e34e1f42e8d314996c74deb0a2069a879d47",
-                "c84bb588a31da3f37ca684ee8d2cdf7ee92db62eba56d904eda74e0ac0801ae4",
-                "be54f30a405f7246e960db004205f5f5949bcf51232c5088c6d5c8fc1294399e",
-                "e18d3dddb28500c7993b6627a4d3fd23258dc92db7e450c9292014cfa841d0f8",
-                "7bfd74152da010a7783c655346353ab9023af459d44c6c9990fc4fea45dda8e5",
-                "cef618a6cf341911eef7850c1b62e4c6abcb73abef57ec940fce1b29d187530c",
-                "0ca8683868d3cf6b2279b58d6147a4a5dcb7d98305ab426ef458dda9f9bb29fc",
-                "33d68b38f9a6962c968cb843a1d44312b53f30b5efea3e32c9dc14fff72ff438",
-                "5ea7d795284706e94c2a925aafa65b8a1295e1aa7575d6cf13b5b9665ff22303",
-                "b3d0267ba903a0810d2460b4dfce0d8153d1b722430c9ddaaa9dddc8397371bf"
+                "f3d728b8fac2463fc2fb0379cc9acffd0788e5b08f398735c26a0e60dda7901f",
+                "5db6153b66b555dd7b2af893c58e213bccfbfb62ec718e0d3055ab9c4c9bd7e6",
+                "c3234e64644659a82e6b5baf5f885ad71b5a8505d9775482c3b9417c68d2e0ef",
+                "3cabb3048ea5e0dbdacf579ed1c778faa871d1a38e842777284141946069c552",
+                "0488f916046dd92ec490ea381c7242bfa3c4d57afbd9fcf4f24b4de29d14cf2c",
+                "f6651144fbf8b2c68ad65d663f3867aa80fdba7855a56d76b5954c0672e79e90",
+                "ef6e8800b187aa97a9ee6c9af293f28a9fe0ae4739399e980ea96bd356f8a5af",
+                "0d3301c60c92d8e418b0025507e7f19ffc6446ca93ffe9ed38c69fb2ae604c27",
+                "3fdbcee9165142dd1a9916c3ee0e2714cd554ad319f4cc22f90844612f4856b6",
+                "f987a93d57920b5b360f021f96de85914182e0ae076adce20e71b68ca8c737a0",
+                "f935058bd9c69a85f17a038bf4f65edabb10e75fe2f1361a63379e1375f172ea",
+                "a3aec7f34ee99b09e1b196c1c0b6c964df6fb26072f9a1e48075c42c46fd2985",
+                "2e667eaf2d90b103c7455533f89d818792a96f46ff2c01ed204d00d49f32f8f7"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "2gb.com",
+                "drive.com.au",
+                "www.2gb.com",
                 "www.3aw.com.au",
-                "www.4bc.com.au",
-                "www.6pr.com.au",
                 "www.afr.com",
                 "www.brisbanetimes.com.au",
+                "www.businessinsider.com",
+                "www.caradvice.com.au",
                 "www.domain.com.au",
                 "www.drive.com.au",
+                "www.essentialbaby.com.au",
                 "www.goodfood.com.au",
                 "www.smh.com.au",
                 "www.theage.com.au",
@@ -135,41 +159,43 @@
         },
         {
             "rule": "nine\\.com\\.au\\/",
-            "cookies": 0.0013,
+            "cookies": 0.00143,
             "fingerprinting": 0,
             "subdomains": [
                 "adc"
             ],
             "apis": {},
-            "sites": 13,
-            "prevalence": 0.0013,
+            "sites": 14,
+            "prevalence": 0.00143,
             "cnames": [],
             "responseHashes": [
-                "b4ef9928e9b9a732264833dd9e7f898af08b750e2817db8f9537493770bb2598",
-                "695643f5ebd428b964f943dd4e578719b4881b81cbaddbea716ff61e98666b06",
-                "ebb6a69f811b55ed73dbc813c3d5e34e1f42e8d314996c74deb0a2069a879d47",
-                "c84bb588a31da3f37ca684ee8d2cdf7ee92db62eba56d904eda74e0ac0801ae4",
-                "be54f30a405f7246e960db004205f5f5949bcf51232c5088c6d5c8fc1294399e",
-                "e18d3dddb28500c7993b6627a4d3fd23258dc92db7e450c9292014cfa841d0f8",
-                "7bfd74152da010a7783c655346353ab9023af459d44c6c9990fc4fea45dda8e5",
-                "cef618a6cf341911eef7850c1b62e4c6abcb73abef57ec940fce1b29d187530c",
-                "0ca8683868d3cf6b2279b58d6147a4a5dcb7d98305ab426ef458dda9f9bb29fc",
-                "33d68b38f9a6962c968cb843a1d44312b53f30b5efea3e32c9dc14fff72ff438",
-                "5ea7d795284706e94c2a925aafa65b8a1295e1aa7575d6cf13b5b9665ff22303",
-                "b3d0267ba903a0810d2460b4dfce0d8153d1b722430c9ddaaa9dddc8397371bf"
+                "f3d728b8fac2463fc2fb0379cc9acffd0788e5b08f398735c26a0e60dda7901f",
+                "5db6153b66b555dd7b2af893c58e213bccfbfb62ec718e0d3055ab9c4c9bd7e6",
+                "c3234e64644659a82e6b5baf5f885ad71b5a8505d9775482c3b9417c68d2e0ef",
+                "3cabb3048ea5e0dbdacf579ed1c778faa871d1a38e842777284141946069c552",
+                "0488f916046dd92ec490ea381c7242bfa3c4d57afbd9fcf4f24b4de29d14cf2c",
+                "f6651144fbf8b2c68ad65d663f3867aa80fdba7855a56d76b5954c0672e79e90",
+                "ef6e8800b187aa97a9ee6c9af293f28a9fe0ae4739399e980ea96bd356f8a5af",
+                "0d3301c60c92d8e418b0025507e7f19ffc6446ca93ffe9ed38c69fb2ae604c27",
+                "3fdbcee9165142dd1a9916c3ee0e2714cd554ad319f4cc22f90844612f4856b6",
+                "f987a93d57920b5b360f021f96de85914182e0ae076adce20e71b68ca8c737a0",
+                "f935058bd9c69a85f17a038bf4f65edabb10e75fe2f1361a63379e1375f172ea",
+                "a3aec7f34ee99b09e1b196c1c0b6c964df6fb26072f9a1e48075c42c46fd2985",
+                "2e667eaf2d90b103c7455533f89d818792a96f46ff2c01ed204d00d49f32f8f7"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "2gb.com",
+                "drive.com.au",
+                "www.2gb.com",
                 "www.3aw.com.au",
-                "www.4bc.com.au",
-                "www.6pr.com.au",
                 "www.afr.com",
                 "www.brisbanetimes.com.au",
+                "www.businessinsider.com",
                 "www.domain.com.au",
                 "www.drive.com.au",
+                "www.essentialbaby.com.au",
                 "www.goodfood.com.au",
                 "www.smh.com.au",
                 "www.theage.com.au",
@@ -180,11 +206,12 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0013,
+    "cookies": 0.00143,
     "types": {
-        "Script": 13,
-        "Fetch": 17,
-        "Document": 13
+        "Script": 15,
+        "XHR": 6,
+        "Fetch": 15,
+        "Document": 14
     },
     "nameservers": [
         "ns-1268.awsdns-30.org",

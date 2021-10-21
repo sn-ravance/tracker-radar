@@ -9,13 +9,17 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000602,
-    "sites": 6,
+    "prevalence": 0.00132,
+    "sites": 13,
     "subdomains": [
-        "isgprivacy",
-        "news-ipv4"
+        "news-ipv4",
+        "isgprivacy"
     ],
     "cnames": [
+        {
+            "original": "bidbarrel.cbsnews.com",
+            "resolved": "news-ipv4.cbsi.map.fastly.net"
+        },
         {
             "original": "feeds-cbsn.cbsnews.com",
             "resolved": "news-ipv4.cbsi.map.fastly.net"
@@ -23,50 +27,58 @@
         {
             "original": "production-cmp.isgprivacy.cbsi.com",
             "resolved": "isgprivacy.cbsi.map.fastly.net"
+        },
+        {
+            "original": "tealium.cbsnews.com",
+            "resolved": "news-ipv4.cbsi.map.fastly.net"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
-            "rule": "cbsi\\.map\\.fastly\\.net\\/dist\\/optanon-v1\\.1\\.0\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
+            "rule": "cbsi\\.map\\.fastly\\.net\\/prod\\/utag\\.js",
+            "cookies": 0.000203,
+            "fingerprinting": 2,
             "subdomains": [
-                "isgprivacy"
+                "news-ipv4"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 2,
+            "prevalence": 0.000203,
             "cnames": [
                 {
-                    "original": "production-cmp.isgprivacy.cbsi.com",
-                    "resolved": "isgprivacy.cbsi.map.fastly.net"
+                    "original": "tealium.cbsnews.com",
+                    "resolved": "news-ipv4.cbsi.map.fastly.net"
                 }
             ],
             "responseHashes": [
-                "1291d14a49e29d75ec6a0185fb35ac27a1eedd7e29765f5aa98999258b610e88"
+                "713356d4155245901d272c369d14923e41dc00840daa5952d1a42a9e5cab1085"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "TEST_AMCV_COOKIE": {
+                    "ttl": 63072008,
+                    "length": 1,
+                    "prevalence": 0.000101615689462453,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "comicbook.com",
-                "www.cbssports.com",
-                "www.etonline.com",
-                "www.last.fm",
-                "www.mtv.com"
+                "cbslocal.com",
+                "www.cbsnews.com"
             ]
         },
         {
-            "rule": "cbsi\\.map\\.fastly\\.net\\/cps\\/shamanNotifier\\.js",
-            "cookies": 0,
+            "rule": "cbsi\\.map\\.fastly\\.net\\/dist\\/optanon-v1\\.1\\.0\\.js",
+            "cookies": 0.000305,
             "fingerprinting": 1,
             "subdomains": [
                 "isgprivacy"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.000602,
+            "sites": 9,
+            "prevalence": 0.000915,
             "cnames": [
                 {
                     "original": "production-cmp.isgprivacy.cbsi.com",
@@ -74,18 +86,111 @@
                 }
             ],
             "responseHashes": [
-                "e51204268a8a08488b47764979bfbcc3f147396aff37a23dff4b9a9f9c579185"
+                "8adb7dc30d901fe70951cbae92188c7d4adcc6ec8882cefe92811dbd41a45fda"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "OptanonAlertBoxClosed": {
+                    "ttl": null,
+                    "length": 24,
+                    "prevalence": 0.000304847068387359,
+                    "uniqueness": 0.3333333333333333
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cbslocal.com",
+                "download.cnet.com",
+                "www.cbs.com",
+                "www.cnet.com",
+                "www.findarticles.com",
+                "www.gamespot.com",
+                "www.last.fm",
+                "www.metacritic.com",
+                "www.tv.com"
+            ]
+        },
+        {
+            "rule": "cbsi\\.map\\.fastly\\.net\\/bidbarrel-cbsnews\\.modern\\.js",
+            "cookies": 0.000102,
+            "fingerprinting": 2,
+            "subdomains": [
+                "news-ipv4"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000203,
+            "cnames": [
+                {
+                    "original": "bidbarrel.cbsnews.com",
+                    "resolved": "news-ipv4.cbsi.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "4b0b20e25deb3e6a38abe16426a8f875ffcd752467b5027203e1b49deaee6f76"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "comicbook.com",
-                "www.cbsnews.com",
-                "www.cbssports.com",
-                "www.etonline.com",
-                "www.last.fm",
-                "www.mtv.com"
+                "cbslocal.com",
+                "www.cbsnews.com"
+            ]
+        },
+        {
+            "rule": "cbsi\\.map\\.fastly\\.net\\/2\\.0\\/rundown\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "news-ipv4"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000203,
+            "cnames": [
+                {
+                    "original": "feeds-cbsn.cbsnews.com",
+                    "resolved": "news-ipv4.cbsi.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "4a1f93f1f6739872df88414c45d7398298da15f306716bbd26d7df4f86a1feab"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cbslocal.com",
+                "boston.cbslocal.com"
+            ]
+        },
+        {
+            "rule": "cbsi\\.map\\.fastly\\.net\\/2\\.1\\/rundown\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "news-ipv4"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000305,
+            "cnames": [
+                {
+                    "original": "feeds-cbsn.cbsnews.com",
+                    "resolved": "news-ipv4.cbsi.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "b0800aa7a07b25099bfa853c70b69f3af7a458b9bd839acdd9185abaade6b514",
+                "fb5c77c2120c8cb50aa443bb0b95004869f7b7d345e51488bc74b3d178afdd02"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cbslocal.com",
+                "boston.cbslocal.com",
+                "www.cbsnews.com"
             ]
         },
         {
@@ -97,7 +202,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000203,
             "cnames": [
                 {
                     "original": "feeds-cbsn.cbsnews.com",
@@ -105,7 +210,7 @@
                 }
             ],
             "responseHashes": [
-                "dadc24cd5925e8f74302257ee3f02860d06c98bb791cb60028f4ec05b3aa36f2"
+                "1b5df28de1e0347289f16dc9f26399fd832fbe5ebd078b2a64f2172e627d48ce"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -127,10 +232,11 @@
         "Session Replay"
     ],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000508,
     "types": {
-        "Script": 11,
-        "XHR": 2
+        "Script": 13,
+        "XHR": 4,
+        "Fetch": 3
     },
     "nameservers": []
 }

@@ -4,32 +4,67 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000069,
-    "sites": 1,
+    "prevalence": 0.0000152,
+    "sites": 2,
     "subdomains": [
-        "dmp"
+        "partners"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "sbermarketing\\.ru\\/",
-            "cookies": 0.0000138,
+            "rule": "sbermarketing\\.ru\\/api\\/tracker\\/sdk\\.js",
+            "cookies": 0.0000152,
+            "fingerprinting": 1,
+            "subdomains": [
+                "partners"
+            ],
+            "apis": {
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000152,
+            "cnames": [],
+            "responseHashes": [
+                "7a135076ce720637d03a65c12debfe2d8a21c43139c0f9c7657458d25613878f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "iap.uid": {
+                    "ttl": 315360002,
+                    "length": 32,
+                    "prevalence": 0.000015182685665267329,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sberbank.ru",
+                "www.sberbank.ru"
+            ]
+        },
+        {
+            "rule": "sbermarketing\\.ru\\/\\/api\\/tracker\\/hit",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "dmp"
+                "partners"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000152,
             "cnames": [],
             "responseHashes": [
-                "8337212354871836e6763a41e615916c89bac5b3f1f0adf60ba43c7c806e1015"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "XHR",
+            "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "___dmpkit___": 0.000013804146765688412
+                "iap.uid": 0.000015182685665267329
             },
             "exampleSites": [
                 "sberbank.ru",
@@ -39,15 +74,16 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000069,
+    "cookies": 0.0000152,
     "types": {
-        "XHR": 2
+        "Script": 2,
+        "Other": 2
     },
     "nameservers": [
-        "ns4-cloud.nic.ru",
         "ns8-cloud.nic.ru",
-        "ns4-l2.nic.ru",
+        "ns3-l2.nic.ru",
         "ns8-l2.nic.ru",
-        "ns3-l2.nic.ru"
+        "ns4-l2.nic.ru",
+        "ns4-cloud.nic.ru"
     ]
 }
