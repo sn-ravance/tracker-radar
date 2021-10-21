@@ -4,43 +4,46 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000228,
+    "prevalence": 0.0000207,
     "sites": 3,
     "subdomains": [
         "snap",
         "api2"
     ],
     "cnames": [],
-    "fingerprinting": 3,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "snapcall\\.io\\/snapapp\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 3,
+            "fingerprinting": 2,
             "subdomains": [
                 "snap"
             ],
             "apis": {
-                "Navigator.prototype.language": 2,
-                "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.mediaDevices": 2,
-                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.language": 3,
+                "window.localStorage": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.mediaDevices": 3,
+                "Navigator.prototype.platform": 3,
                 "RTCPeerConnection.prototype.constructor": 2,
-                "RTCPeerConnectionIceEvent.prototype.candidate": 2
+                "RTCPeerConnectionIceEvent.prototype.candidate": 1,
+                "Date.prototype.getTime": 1
             },
-            "sites": 2,
-            "prevalence": 0.0000152,
+            "sites": 3,
+            "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [
-                "cf811e67b8b6aead1b770a11916c445c334fc7fe5595522f244fc0a65b746830"
+                "d1da20ce7edfc70a5080780ea68fd886f0284cab856af3f78f0ea966e2de2388",
+                "a6cd00516edbfda2693dc820795a04defd2764ab8550a88b51abe81baabf3a83"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "brompton.com",
-                "www.brompton.com"
+                "www.brompton.com",
+                "www.ter.sncf.com"
             ]
         },
         {
@@ -52,12 +55,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [
-                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -74,10 +75,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Other",
+            "responseHashes": [
+                "f006bbd60894452b80c7d19e1c832d1e30f457540dc5e52e567bc1ffe522615d"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -90,13 +93,13 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2,
-        "XHR": 2,
-        "Other": 2
+        "Script": 3,
+        "Preflight": 2,
+        "XHR": 2
     },
     "nameservers": [
+        "ns-151-b.gandi.net",
         "ns-36-a.gandi.net",
-        "ns-45-c.gandi.net",
-        "ns-151-b.gandi.net"
+        "ns-45-c.gandi.net"
     ]
 }

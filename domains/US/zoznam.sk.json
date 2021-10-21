@@ -4,16 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000304,
-    "sites": 4,
+    "prevalence": 0.0000207,
+    "sites": 3,
     "subdomains": [
-        "cdn.calendar",
+        "gemius",
+        "cdn.magazines",
         "recycle",
-        "cdn",
-        "recycle-static",
-        "bleskovky",
-        "kariera",
-        "gemius"
+        "cdn"
     ],
     "cnames": [
         {
@@ -32,37 +29,77 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "zoznam\\.sk\\/api\\/data\\/nameday_cp1250\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "zoznam\\.sk\\/xgemius\\.js",
+            "cookies": 0.0000069,
+            "fingerprinting": 2,
             "subdomains": [
-                "cdn.calendar"
+                "gemius"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 1,
+                "Navigator.prototype.plugins": 1,
+                "window.localStorage": 1,
+                "Date.prototype.getTime": 1,
+                "Date.prototype.getTimezoneOffset": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "window.devicePixelRatio": 1,
+                "Screen.prototype.colorDepth": 1,
+                "Document.cookie setter": 1
+            },
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "70f5c7fd55f85422e6e28449bde7e0f44bb4da00ee132af598b6958769db4714"
+                "b74d6e436e2f266c4b466f02e60b41275e233deb49e30d5326eaf5839b29e99e"
             ],
-            "type": "XHR",
-            "firstPartyCookies": {},
+            "type": "Script",
+            "firstPartyCookies": {
+                "__gfp_64b": {
+                    "ttl": 34128004,
+                    "length": 57,
+                    "prevalence": 0.000006903979453757146,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cas.sk",
-                "www.cas.sk"
+                "www.topky.sk"
+            ]
+        },
+        {
+            "rule": "zoznam\\.sk\\/topky\\/iteracie\\/iteracie\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.magazines"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "36a2dd4817485814d4a94773a4a2259724d813e9dca4be5485ff679f161bc78f"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "topky.sk",
+                "www.topky.sk"
             ]
         },
         {
             "rule": "zoznam\\.sk\\/get\\.fcgi",
-            "cookies": 0.0000152,
+            "cookies": 0.0000138,
             "fingerprinting": 0,
             "subdomains": [
                 "recycle"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
             "cnames": [
                 {
                     "original": "recycle.topky.sk",
@@ -70,7 +107,7 @@
                 }
             ],
             "responseHashes": [
-                "8479d4f02ebb7463d10d4b91951152a925b4022f4949fc1af3f52775806b315d"
+                "ef759543816795401f6500efc495c353134006d038812fd337cb6c22455de458"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -81,180 +118,18 @@
             ]
         },
         {
-            "rule": "zoznam\\.sk\\/count\\.fcgi",
+            "rule": "zoznam\\.sk\\/topky\\/iteracie\\/logo\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "recycle"
+                "cdn.magazines"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000152,
-            "cnames": [
-                {
-                    "original": "recycle.topky.sk",
-                    "resolved": "recycle.zoznam.sk"
-                }
-            ],
-            "responseHashes": [
-                "b1442e85b03bdcaf66dc58c7abb98745dd2687d86350be9a298a1d9382ac849b"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "topky.sk",
-                "www.topky.sk"
-            ]
-        },
-        {
-            "rule": "zoznam\\.sk\\/80px\\/2760723\\.jpg\\/foto--instagram-Camila-Morrone\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000152,
-            "cnames": [
-                {
-                    "original": "img.topky.sk",
-                    "resolved": "cdn.zoznam.sk"
-                }
-            ],
-            "responseHashes": [
-                "ef754f478dcead08f81dda2569cfe1e5abc07af7b91b25e457c022be0c7bbd7e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "topky.sk",
-                "www.topky.sk"
-            ]
-        },
-        {
-            "rule": "zoznam\\.sk\\/80px\\/2758641\\.jpg\\/kolaz-kotleba-vtipy\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000152,
-            "cnames": [
-                {
-                    "original": "img.topky.sk",
-                    "resolved": "cdn.zoznam.sk"
-                }
-            ],
-            "responseHashes": [
-                "31dfca836468c1629a4cfcc2414f3d2c20d16e233b37f96430e55fafe7d973d7"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "topky.sk",
-                "www.topky.sk"
-            ]
-        },
-        {
-            "rule": "zoznam\\.sk\\/80px\\/2759983\\.jpg\\/izba-hotel-jedlo-kolaz\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000152,
-            "cnames": [
-                {
-                    "original": "img.topky.sk",
-                    "resolved": "cdn.zoznam.sk"
-                }
-            ],
-            "responseHashes": [
-                "ea96febc3d203276e47612ae3c2222a7457a199051676c9a42338ea6ee27b9a3"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "topky.sk",
-                "www.topky.sk"
-            ]
-        },
-        {
-            "rule": "zoznam\\.sk\\/80px\\/2759603\\.jpg\\/jozef-vajda-Andrej-Mojzis\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000152,
-            "cnames": [
-                {
-                    "original": "img.topky.sk",
-                    "resolved": "cdn.zoznam.sk"
-                }
-            ],
-            "responseHashes": [
-                "29dfda2643b4b0b3d648b39d04a10c1f036ecad6259619ce025d2ef87dece186"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "topky.sk",
-                "www.topky.sk"
-            ]
-        },
-        {
-            "rule": "zoznam\\.sk\\/80px\\/2760701\\.jpg\\/maceta\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000152,
-            "cnames": [
-                {
-                    "original": "img.topky.sk",
-                    "resolved": "cdn.zoznam.sk"
-                }
-            ],
-            "responseHashes": [
-                "37bec695f5e11d673386a8cb0299751518db516157e5c00a529bc14c21321a17"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "topky.sk",
-                "www.topky.sk"
-            ]
-        },
-        {
-            "rule": "zoznam\\.sk\\/2020\\/10\\/krasa-zena-dara-rolins-265576\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "recycle-static"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "6da97d2786eb09bc6d6b450a7eb297613e803187810d94c1f95aecd72d42b9fe"
+                "386348039f6b2c6591bc835ec7512a471d869e2c7564ece13fb61f8a4b3ed22d"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -265,15 +140,15 @@
             ]
         },
         {
-            "rule": "zoznam\\.sk\\/feed\\/weather_short\\.json",
+            "rule": "zoznam\\.sk\\/widget\\/js\\/z-predpovede-widget\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
             "cnames": [
                 {
                     "original": "cdn.predpovede.topky.sk",
@@ -281,9 +156,9 @@
                 }
             ],
             "responseHashes": [
-                "2cc148e7f6fb48332403bfa372a6cc3a8317db4ae99908b172a237d077ab308e"
+                "dd950bdd2b6f7ec01a63cc40f4676eebc9509b68d6a98a932daf82539f24ec3c"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -292,41 +167,23 @@
             ]
         },
         {
-            "rule": "zoznam\\.sk\\/",
-            "cookies": 0.00000759,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bleskovky",
-                "kariera"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000152,
-            "cnames": [],
-            "responseHashes": [
-                "11f90ed86d0d36ada35b37093980d6d85b324d99605ddc12fa227f0f32ec4043"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "topky.sk",
-                "www.topky.sk"
-            ]
-        },
-        {
-            "rule": "zoznam\\.sk\\/old\\/adimages\\/2014\\/feminity\\/feminity-logo-1p2p\\.png",
+            "rule": "zoznam\\.sk\\/320px\\/2991093\\.jpg\\/Jana-Bitto-Ciganikova\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "recycle-static"
+                "cdn"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000152,
-            "cnames": [],
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img.topky.sk",
+                    "resolved": "cdn.zoznam.sk"
+                }
+            ],
             "responseHashes": [
-                "a50caaa5c9f0d897f50a300287580fcd3907565cd4f2db796bb91ee6eb8014ba"
+                "e4fa112c9fcbfdea4ab32fe12c8cc52d3d1b7cadb2e5c2178d523fcf35ff4d0e"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -337,39 +194,352 @@
             ]
         },
         {
-            "rule": "zoznam\\.sk\\/xgemius\\.js",
-            "cookies": 0.0000152,
-            "fingerprinting": 2,
+            "rule": "zoznam\\.sk\\/80px\\/3001421\\.jpg\\/poziar-nemocnica-Ruzomberok\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
             "subdomains": [
-                "gemius"
+                "cdn"
             ],
-            "apis": {
-                "Navigator.prototype.plugins": 2,
-                "Document.cookie getter": 2,
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 2,
-                "Date.prototype.getTimezoneOffset": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "window.devicePixelRatio": 2,
-                "Screen.prototype.colorDepth": 2,
-                "Document.cookie setter": 2
-            },
+            "apis": {},
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img.topky.sk",
+                    "resolved": "cdn.zoznam.sk"
+                }
+            ],
+            "responseHashes": [
+                "0369caf1c29bfb2df3a2322d14895895bc3486ccafa5ce9214d93e5b9a2fca9e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "topky.sk",
+                "www.topky.sk"
+            ]
+        },
+        {
+            "rule": "zoznam\\.sk\\/120px\\/3001417\\.jpg\\/obete-burky-Filipiny\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img.topky.sk",
+                    "resolved": "cdn.zoznam.sk"
+                }
+            ],
+            "responseHashes": [
+                "791ca3fa7c8e98de3141fab03837a2150eba3fb414aacbe35663a0b52219b557"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "topky.sk",
+                "www.topky.sk"
+            ]
+        },
+        {
+            "rule": "zoznam\\.sk\\/80px\\/3001357\\.jpg\\/foto--SITA-Renee-Zellweger\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img.topky.sk",
+                    "resolved": "cdn.zoznam.sk"
+                }
+            ],
+            "responseHashes": [
+                "813918427b1c8a2824468af10cceae1109b0a744ef7186002f49f178ccd90f1e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "topky.sk",
+                "www.topky.sk"
+            ]
+        },
+        {
+            "rule": "zoznam\\.sk\\/80px\\/2979677\\.jpg\\/testovanie-koronavirus-COVID-19\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img.topky.sk",
+                    "resolved": "cdn.zoznam.sk"
+                }
+            ],
+            "responseHashes": [
+                "c5154e965f4b6728fddbf2ae211e68d8ca19324d506b2bceea067a9af0e49473"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "topky.sk",
+                "www.topky.sk"
+            ]
+        },
+        {
+            "rule": "zoznam\\.sk\\/80px\\/3001021\\.jpg\\/Kristina-Kormuthova-FOTO--Topky-sk\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img.topky.sk",
+                    "resolved": "cdn.zoznam.sk"
+                }
+            ],
+            "responseHashes": [
+                "c1acd779fec3f8d8d79702da40b8c7138010c79b34adba3427f9d926b0a7548c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "topky.sk",
+                "www.topky.sk"
+            ]
+        },
+        {
+            "rule": "zoznam\\.sk\\/80px\\/3001205\\.jpg\\/potapac-hovorca-nezvestny-policia--Igor-Mahut\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img.topky.sk",
+                    "resolved": "cdn.zoznam.sk"
+                }
+            ],
+            "responseHashes": [
+                "554e81e9688b155af90f194a9b84c466f3f245214578f0d6958c68bb2efad128"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "topky.sk",
+                "www.topky.sk"
+            ]
+        },
+        {
+            "rule": "zoznam\\.sk\\/feed\\/weather_map_short\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "cdn.predpovede.topky.sk",
+                    "resolved": "cdn.zoznam.sk"
+                }
+            ],
+            "responseHashes": [
+                "d4bd8bec69d6a2320b04172e39023c3075aabf37a6b4235ddba0ddb76ec0eebc"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "topky.sk",
+                "www.topky.sk"
+            ]
+        },
+        {
+            "rule": "zoznam\\.sk\\/topky\\/iteracie\\/magnifier\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.magazines"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "cf41eeda47b93a34ff0b834bd01f0b671912544ad1709bfcf29f9fb49b7ddecb"
+                "1a55bea44973308f67b75c103bbdf8e8f74f6e555aec82055db1a4dce3045e1b"
             ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "__gfp_64b": {
-                    "ttl": 86400004,
-                    "length": 46,
-                    "prevalence": 0.000015182685665267329,
-                    "uniqueness": 1
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "topky.sk",
+                "www.topky.sk"
+            ]
+        },
+        {
+            "rule": "zoznam\\.sk\\/topky\\/iteracie\\/home\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.magazines"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "359ea9d9b54589d033228441cc8fa2692e2f5e8242a5d40930de539007268b3a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "topky.sk",
+                "www.topky.sk"
+            ]
+        },
+        {
+            "rule": "zoznam\\.sk\\/topky\\/iteracie\\/logo_zoznam\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.magazines"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "828613e6211532f7d4f9cd61f78ccc1496b8739d33aa25bc7f318ed436da7285"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "topky.sk",
+                "www.topky.sk"
+            ]
+        },
+        {
+            "rule": "zoznam\\.sk\\/topky\\/iteracie\\/icon-bullet\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.magazines"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "cf5c3b702f198c3026642db09d8cd148fb0f4ebd36b906c973cc04654032902c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "topky.sk",
+                "www.topky.sk"
+            ]
+        },
+        {
+            "rule": "zoznam\\.sk\\/feed\\/weather_code\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "cdn.predpovede.topky.sk",
+                    "resolved": "cdn.zoznam.sk"
                 }
-            },
+            ],
+            "responseHashes": [
+                "5a04f3711bfccde4964d00d48ffcfaf521ba6ad13ef20bb1f1fbcc5621e5952a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "topky.sk",
+                "www.topky.sk"
+            ]
+        },
+        {
+            "rule": "zoznam\\.sk\\/img\\/meteo\\/pocasie-polooblacno\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "cdn.predpovede.topky.sk",
+                    "resolved": "cdn.zoznam.sk"
+                }
+            ],
+            "responseHashes": [
+                "9af4e786166b04d366317b4f18177d82709a18672472c009265c1bc0da3620ce"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "topky.sk",
+                "www.topky.sk"
+            ]
+        },
+        {
+            "rule": "zoznam\\.sk\\/topky\\/iteracie\\/meteo-arrow\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.magazines"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "215a914de082afd0966fbadfe798e5560054c1d7e55d6c25279c7b631a7a5d5c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "topky.sk",
@@ -379,17 +549,17 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000152,
+    "cookies": 0.0000207,
     "types": {
-        "XHR": 4,
-        "Script": 4,
-        "Image": 16,
-        "Document": 2
+        "Script": 6,
+        "Stylesheet": 2,
+        "Image": 28,
+        "XHR": 4
     },
     "nameservers": [
-        "ns4.zoznam.sk",
-        "ns3.zoznam.sk",
+        "ns1.zoznam.sk",
         "ns2.zoznam.sk",
-        "ns1.zoznam.sk"
+        "ns3.zoznam.sk",
+        "ns4.zoznam.sk"
     ]
 }

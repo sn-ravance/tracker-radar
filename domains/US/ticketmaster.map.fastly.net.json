@@ -9,44 +9,119 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000152,
-    "sites": 2,
+    "prevalence": 0.0000621,
+    "sites": 9,
     "subdomains": [
-        "prod"
+        "dualstack"
     ],
     "cnames": [
         {
-            "original": "identity.livenation.com",
-            "resolved": "prod.ticketmaster.map.fastly.net"
+            "original": "analytics.ticketmaster.co.uk",
+            "resolved": "dualstack.ticketmaster.map.fastly.net"
+        },
+        {
+            "original": "analytics.ticketmaster.com.au",
+            "resolved": "dualstack.ticketmaster.map.fastly.net"
+        },
+        {
+            "original": "analytics.ticketmaster.com.mx",
+            "resolved": "dualstack.ticketmaster.map.fastly.net"
+        },
+        {
+            "original": "analytics.ticketmaster.de",
+            "resolved": "dualstack.ticketmaster.map.fastly.net"
+        },
+        {
+            "original": "analytics.ticketmaster.ie",
+            "resolved": "dualstack.ticketmaster.map.fastly.net"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
-            "rule": "ticketmaster\\.map\\.fastly\\.net\\/json\\/signed-in",
-            "cookies": 0.0000152,
+            "rule": "ticketmaster\\.map\\.fastly\\.net\\/api\\/page\\/view",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "prod"
+                "dualstack"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000152,
+            "sites": 5,
+            "prevalence": 0.0000345,
             "cnames": [
                 {
-                    "original": "identity.livenation.com",
-                    "resolved": "prod.ticketmaster.map.fastly.net"
+                    "original": "analytics.ticketmaster.com.mx",
+                    "resolved": "dualstack.ticketmaster.map.fastly.net"
+                },
+                {
+                    "original": "analytics.ticketmaster.com.au",
+                    "resolved": "dualstack.ticketmaster.map.fastly.net"
+                },
+                {
+                    "original": "analytics.ticketmaster.co.uk",
+                    "resolved": "dualstack.ticketmaster.map.fastly.net"
+                },
+                {
+                    "original": "analytics.ticketmaster.de",
+                    "resolved": "dualstack.ticketmaster.map.fastly.net"
+                },
+                {
+                    "original": "analytics.ticketmaster.ie",
+                    "resolved": "dualstack.ticketmaster.map.fastly.net"
                 }
             ],
-            "responseHashes": [
-                "60483fbb3c01c4080583563e215e3ca4ab5ce4ff74f47cf36eadedd152572d2f"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "livenation.com",
-                "www.livenation.com"
+                "ticketmaster.com.mx",
+                "www.ticketmaster.com.au",
+                "www.ticketmaster.co.uk",
+                "www.ticketmaster.de",
+                "www.ticketmaster.ie"
+            ]
+        },
+        {
+            "rule": "ticketmaster\\.map\\.fastly\\.net\\/api\\/reports",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dualstack"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000345,
+            "cnames": [
+                {
+                    "original": "analytics.ticketmaster.com.mx",
+                    "resolved": "dualstack.ticketmaster.map.fastly.net"
+                },
+                {
+                    "original": "analytics.ticketmaster.com.au",
+                    "resolved": "dualstack.ticketmaster.map.fastly.net"
+                },
+                {
+                    "original": "analytics.ticketmaster.co.uk",
+                    "resolved": "dualstack.ticketmaster.map.fastly.net"
+                },
+                {
+                    "original": "analytics.ticketmaster.ie",
+                    "resolved": "dualstack.ticketmaster.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "98c4922bb641c65c7a30b7bcafdf230b9b00b6693631c56146ab25b2786ee4a3"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ticketmaster.com.mx",
+                "www.ticketmaster.com.mx",
+                "www.ticketmaster.com.au",
+                "www.ticketmaster.co.uk",
+                "www.ticketmaster.ie"
             ]
         }
     ],
@@ -61,9 +136,10 @@
         "Session Replay"
     ],
     "performance": {},
-    "cookies": 0.0000152,
+    "cookies": 0.0000069,
     "types": {
-        "XHR": 2
+        "Fetch": 5,
+        "Other": 5
     },
     "nameservers": []
 }

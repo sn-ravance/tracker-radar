@@ -7,25 +7,21 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000759,
-    "sites": 100,
+    "prevalence": 0.0000898,
+    "sites": 13,
     "subdomains": [
+        "cdn",
+        "hub",
         "share",
         "reachplc.hub",
-        "cbc-login.hub",
         "hola-auth.hub",
-        "hktdc.hub",
-        "hibupro.hub",
-        "surrey.hub"
+        "cbc-login.hub",
+        "monarte.hub"
     ],
     "cnames": [
         {
-            "original": "accounts.hktdc.com",
-            "resolved": "hktdc.hub.loginradius.com"
-        },
-        {
-            "original": "accounts.surrey.ca",
-            "resolved": "surrey.hub.loginradius.com"
+            "original": "auth.arte.tv",
+            "resolved": "monarte.hub.loginradius.com"
         },
         {
             "original": "auth.hola.com",
@@ -36,8 +32,57 @@
             "resolved": "cbc-login.hub.loginradius.com"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "loginradius\\.com\\/share\\/v1\\/LoginRadius\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "0670fb16f841523dca4aab4633ca0f9ef4f0639e3ceeaad1e3f8cc46c1992923"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "adw.org",
+                "blog.adw.org"
+            ]
+        },
+        {
+            "rule": "loginradius\\.com\\/include\\/js\\/LoginRadius\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "hub"
+            ],
+            "apis": {
+                "window.localStorage": 1,
+                "Date.prototype.getTime": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "adw.org",
+                "blog.adw.org"
+            ]
+        },
         {
             "rule": "loginradius\\.com\\/ApiData\\/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
             "cookies": 0,
@@ -47,7 +92,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -68,8 +113,8 @@
                 "reachplc.hub"
             ],
             "apis": {},
-            "sites": 47,
-            "prevalence": 0.000357,
+            "sites": 3,
+            "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [
                 "f7a4a046540cd7b682afc0d129cbbdea16081d1a54dfd3385115725f960c54c9"
@@ -79,25 +124,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "express.co.uk",
-                "www.express.co.uk",
-                "www.mirror.co.uk",
-                "www.business-live.co.uk",
-                "www.leeds-live.co.uk",
-                "www.edinburghlive.co.uk",
-                "www.essexlive.news",
-                "www.hulldailymail.co.uk",
-                "www.birminghammail.co.uk",
-                "www.hertfordshiremercury.co.uk",
-                "www.coventrytelegraph.net",
-                "www.dailyrecord.co.uk",
-                "www.dailystar.co.uk",
-                "www.getsurrey.co.uk",
-                "www.stokesentinel.co.uk",
-                "www.gazettelive.co.uk",
-                "www.plymouthherald.co.uk",
-                "www.football.london",
-                "www.nottinghampost.com",
-                "comps.express.co.uk"
+                "pulse.express.co.uk",
+                "www.express.co.uk"
             ]
         },
         {
@@ -105,45 +133,30 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cbc-login.hub",
                 "hola-auth.hub",
-                "hktdc.hub",
-                "hibupro.hub",
-                "surrey.hub"
+                "cbc-login.hub"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000531,
+            "sites": 3,
+            "prevalence": 0.0000207,
             "cnames": [
-                {
-                    "original": "login.cbc.ca",
-                    "resolved": "cbc-login.hub.loginradius.com"
-                },
                 {
                     "original": "auth.hola.com",
                     "resolved": "hola-auth.hub.loginradius.com"
                 },
                 {
-                    "original": "accounts.hktdc.com",
-                    "resolved": "hktdc.hub.loginradius.com"
-                },
-                {
-                    "original": "accounts.surrey.ca",
-                    "resolved": "surrey.hub.loginradius.com"
+                    "original": "login.cbc.ca",
+                    "resolved": "cbc-login.hub.loginradius.com"
                 }
             ],
             "responseHashes": [],
-            "type": "Other",
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cbc.ca",
-                "us.hola.com",
+                "hola.com",
                 "www.cbc.ca",
-                "www.hktdc.com",
-                "www.hola.com",
-                "www.paginasamarillas.es",
-                "www.surrey.ca"
+                "www.hola.com"
             ]
         },
         {
@@ -151,31 +164,20 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cbc-login.hub",
                 "hola-auth.hub",
-                "hktdc.hub",
-                "hibupro.hub",
-                "surrey.hub"
+                "cbc-login.hub"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000531,
+            "sites": 3,
+            "prevalence": 0.0000207,
             "cnames": [
-                {
-                    "original": "login.cbc.ca",
-                    "resolved": "cbc-login.hub.loginradius.com"
-                },
                 {
                     "original": "auth.hola.com",
                     "resolved": "hola-auth.hub.loginradius.com"
                 },
                 {
-                    "original": "accounts.hktdc.com",
-                    "resolved": "hktdc.hub.loginradius.com"
-                },
-                {
-                    "original": "accounts.surrey.ca",
-                    "resolved": "surrey.hub.loginradius.com"
+                    "original": "login.cbc.ca",
+                    "resolved": "cbc-login.hub.loginradius.com"
                 }
             ],
             "responseHashes": [
@@ -185,13 +187,36 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cbc.ca",
-                "us.hola.com",
+                "hola.com",
                 "www.cbc.ca",
-                "www.hktdc.com",
-                "www.hola.com",
-                "www.paginasamarillas.es",
-                "www.surrey.ca"
+                "www.hola.com"
+            ]
+        },
+        {
+            "rule": "loginradius\\.com\\/ssologin\\/login",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "monarte.hub"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "auth.arte.tv",
+                    "resolved": "monarte.hub.loginradius.com"
+                }
+            ],
+            "responseHashes": [
+                "a1d169ea3a1e17ff6a959d45977bde8a366c38c98dba19e803f4e8c00baa3dce"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "arte.tv",
+                "www.arte.tv"
             ]
         }
     ],
@@ -199,10 +224,10 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2,
-        "Fetch": 47,
-        "Other": 7,
-        "XHR": 7
+        "Script": 8,
+        "Fetch": 3,
+        "Preflight": 3,
+        "XHR": 3
     },
     "nameservers": [
         "ns1.p14.dynect.net",

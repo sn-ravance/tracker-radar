@@ -7,59 +7,71 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000455,
-    "sites": 6,
+    "prevalence": 0.0000621,
+    "sites": 9,
     "subdomains": [
         "mybaito-inhale",
+        "eplus-inhale",
+        "dotst-inhale",
         "livable-inhale",
-        "lhe-webapi",
+        "mybaito-beacon",
+        "twrcd-beacon",
+        "propagation.api.pdq",
         "res.pdq",
         "delivery.pdq"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "beacon-recommend.tower.jp",
+            "resolved": "twrcd-beacon.team-rec.jp"
+        }
+    ],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "team-rec\\.jp\\/js\\/tlab-dmp\\.js",
-            "cookies": 0.0000228,
+            "cookies": 0.0000276,
             "fingerprinting": 1,
             "subdomains": [
                 "mybaito-inhale",
+                "eplus-inhale",
+                "dotst-inhale",
                 "livable-inhale"
             ],
             "apis": {
-                "Navigator.prototype.doNotTrack": 3,
-                "Document.cookie getter": 3,
-                "window.localStorage": 3,
-                "Date.prototype.getTime": 3,
-                "Document.cookie setter": 3,
-                "Navigator.prototype.userAgent": 3,
-                "Navigator.prototype.appVersion": 3
+                "Navigator.prototype.doNotTrack": 5,
+                "Document.cookie getter": 4,
+                "window.localStorage": 5,
+                "Date.prototype.getTime": 5,
+                "Document.cookie setter": 4,
+                "Navigator.prototype.userAgent": 5,
+                "Navigator.prototype.appVersion": 5
             },
-            "sites": 3,
-            "prevalence": 0.0000228,
+            "sites": 5,
+            "prevalence": 0.0000345,
             "cnames": [],
             "responseHashes": [
-                "1bcef95ce488163c305cde9a625cbdc31d19f055a5d1282f09df704fedc3c959"
+                "1bcef95ce488163c305cde9a625cbdc31d19f055a5d1282f09df704fedc3c959",
+                "cb04da2fdd1f90a825c3a2a8a8e993f426d49cef567a971d17ffb4d6e610b854"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "usertrack_asp3": {
-                    "ttl": 31536007,
+                    "ttl": 31536004,
                     "length": 24,
-                    "prevalence": 0.000015182685665267329,
+                    "prevalence": 0.000020711938361271436,
                     "uniqueness": 1
                 },
                 "tlb_sid": {
                     "ttl": 1800,
                     "length": 10,
-                    "prevalence": 0.000022774028497900995,
+                    "prevalence": 0.000027615917815028584,
                     "uniqueness": 1
                 },
                 "tlab.tracking_id": {
-                    "ttl": 31536001,
+                    "ttl": 31536006,
                     "length": 24,
-                    "prevalence": 0.0000075913428326336645,
+                    "prevalence": 0.000006903979453757146,
                     "uniqueness": 1
                 }
             },
@@ -67,6 +79,8 @@
             "exampleSites": [
                 "mynavi.jp",
                 "baito.mynavi.jp",
+                "eplus.jp",
+                "www.dot-st.com",
                 "www.livable.co.jp"
             ]
         },
@@ -76,11 +90,12 @@
             "fingerprinting": 0,
             "subdomains": [
                 "mybaito-inhale",
+                "dotst-inhale",
                 "livable-inhale"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000228,
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
                 "548f2d6f4d0d820c6c5ffbeffcbd7f0e73193e2932eefe542accc84762deec87"
@@ -88,42 +103,93 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "usertrack_asp3": 0.000015182685665267329,
-                "tlb_sid": 0.000022774028497900995,
-                "_gid": 0.0000075913428326336645,
-                "tlab.tracking_id": 0.0000075913428326336645
+                "usertrack_asp3": 0.000013807958907514292,
+                "tlb_sid": 0.000020711938361271436,
+                "_gid": 0.000006903979453757146,
+                "tlab.tracking_id": 0.000006903979453757146
             },
             "exampleSites": [
                 "mynavi.jp",
                 "baito.mynavi.jp",
+                "www.dot-st.com",
                 "www.livable.co.jp"
             ]
         },
         {
-            "rule": "team-rec\\.jp\\/recommend\\.json",
+            "rule": "team-rec\\.jp\\/beacon\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "lhe-webapi"
+                "mybaito-beacon",
+                "twrcd-beacon"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000152,
-            "cnames": [],
-            "responseHashes": [
-                "db65dab6c7b07d85e4a98b7c8899039789cb982c9c4e9af4a4826ac3d0288bc5"
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "beacon-recommend.tower.jp",
+                    "resolved": "twrcd-beacon.team-rec.jp"
+                }
             ],
-            "type": "Script",
+            "responseHashes": [
+                "548f2d6f4d0d820c6c5ffbeffcbd7f0e73193e2932eefe542accc84762deec87"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "usertrack_asp3": 0.000006903979453757146
+            },
+            "exampleSites": [
+                "mynavi.jp",
+                "tower.jp"
+            ]
+        },
+        {
+            "rule": "team-rec\\.jp\\/histogram-calculation",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "propagation.api.pdq"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "hmv.co.jp",
-                "www.hmv.co.jp"
+                "livable.co.jp",
+                "www.livable.co.jp"
+            ]
+        },
+        {
+            "rule": "team-rec\\.jp\\/histogram-calculation",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "propagation.api.pdq"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "3d6a6ac7ecbfad008a05974ef7931dd69d6d7d226e335a4525e404aeb73dd769"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "livable.co.jp",
+                "www.livable.co.jp"
             ]
         },
         {
             "rule": "team-rec\\.jp\\/aibot\\/driver\\.js",
-            "cookies": 0.0000152,
+            "cookies": 0.0000138,
             "fingerprinting": 1,
             "subdomains": [
                 "res.pdq"
@@ -135,7 +201,7 @@
                 "Document.cookie setter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
                 "b4840290a9543c451b33a8382b40176ce21d026c633d0985527549756615ef27"
@@ -145,8 +211,8 @@
                 "team-rec:delivery:sid": {
                     "ttl": 1800,
                     "length": 10,
-                    "prevalence": 0.000015182685665267329,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000013807958907514292,
+                    "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
@@ -164,16 +230,16 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [],
-            "type": "Other",
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "tlab.tracking_id": 0.0000075913428326336645,
-                "tlb_sid": 0.0000075913428326336645,
-                "uid": 0.0000075913428326336645,
-                "team-rec:delivery:sid": 0.000022774028497900995
+                "team-rec:delivery:sid": 0.000013807958907514292,
+                "tlab.tracking_id": 0.000006903979453757146,
+                "tlb_sid": 0.000006903979453757146,
+                "uid": 0.000006903979453757146
             },
             "exampleSites": [
                 "livable.co.jp",
@@ -189,18 +255,18 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "f179c5f779c75b73a2daf1159bd9ed4f8f10ec7e05ef99da81f24447174333f5"
+                "8bca2668d18d9850f0640b3950323bbe62190c03cac3bdd2f052070c93ef30fb"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "tlab.tracking_id": 0.0000075913428326336645,
-                "tlb_sid": 0.0000075913428326336645,
-                "uid": 0.0000075913428326336645,
-                "team-rec:delivery:sid": 0.000022774028497900995
+                "team-rec:delivery:sid": 0.000013807958907514292,
+                "tlab.tracking_id": 0.000006903979453757146,
+                "tlb_sid": 0.000006903979453757146,
+                "uid": 0.000006903979453757146
             },
             "exampleSites": [
                 "livable.co.jp",
@@ -210,17 +276,17 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000038,
+    "cookies": 0.0000483,
     "types": {
         "Script": 7,
-        "Image": 3,
-        "Other": 2,
-        "XHR": 2
+        "Image": 6,
+        "Preflight": 4,
+        "XHR": 4
     },
     "nameservers": [
         "ns-1076.awsdns-06.org",
-        "ns-1923.awsdns-48.co.uk",
         "ns-717.awsdns-25.net",
-        "ns-345.awsdns-43.com"
+        "ns-345.awsdns-43.com",
+        "ns-1923.awsdns-48.co.uk"
     ]
 }

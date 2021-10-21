@@ -4,16 +4,21 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000266,
-    "sites": 35,
+    "prevalence": 0.000407,
+    "sites": 59,
     "subdomains": [
-        "www2-bing-com.dual-a-0001",
         "c-bing-com.a-0001",
-        "g-bing-com.a-0001",
+        "www2-bing-com.dual-a-0001",
         "bat-bing-com.a-0001",
-        "ssl-bing-com.a-0001"
+        "api-msn-com.a-0003",
+        "ssl-bing-com.a-0001",
+        "star-bing-com.a-0001"
     ],
     "cnames": [
+        {
+            "original": "api.msn.com",
+            "resolved": "api-msn-com.a-0003.a-msedge.net"
+        },
         {
             "original": "bat.bing.com",
             "resolved": "bat-bing-com.a-0001.a-msedge.net"
@@ -23,12 +28,12 @@
             "resolved": "c-bing-com.a-0001.a-msedge.net"
         },
         {
-            "original": "g.bing.com",
-            "resolved": "g-bing-com.a-0001.a-msedge.net"
-        },
-        {
             "original": "ssl.bing.com",
             "resolved": "ssl-bing-com.a-0001.a-msedge.net"
+        },
+        {
+            "original": "wp.bing.com",
+            "resolved": "star-bing-com.a-0001.a-msedge.net"
         },
         {
             "original": "www2.bing.com",
@@ -38,42 +43,15 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "a-msedge\\.net\\/ipv6test\\/test",
-            "cookies": 0.0000152,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www2-bing-com.dual-a-0001"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000152,
-            "cnames": [
-                {
-                    "original": "www2.bing.com",
-                    "resolved": "www2-bing-com.dual-a-0001.a-msedge.net"
-                }
-            ],
-            "responseHashes": [
-                "c2ba8fccfc980bcc8fc24e7a41bfcfee88cca9331c8d4d62890d7dfab4a12226"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bing.com",
-                "www.bing.com"
-            ]
-        },
-        {
             "rule": "a-msedge\\.net\\/c\\.gif",
-            "cookies": 0.000152,
+            "cookies": 0.000207,
             "fingerprinting": 0,
             "subdomains": [
                 "c-bing-com.a-0001"
             ],
             "apis": {},
-            "sites": 20,
-            "prevalence": 0.000152,
+            "sites": 30,
+            "prevalence": 0.000207,
             "cnames": [
                 {
                     "original": "c.bing.com",
@@ -88,41 +66,96 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "microsoft.com",
-                "cloudblogs.microsoft.com",
-                "developer.microsoft.com",
+                "bing.com",
                 "docs.microsoft.com",
-                "home.microsoft.com",
-                "microsoftnews.msn.com",
-                "news.xbox.com",
                 "office.com",
-                "office.live.com",
-                "onedrive.live.com",
-                "products.office.com",
+                "social.msdn.microsoft.com",
                 "support.microsoft.com",
-                "templates.office.com",
-                "windows.microsoft.com",
-                "www.games.msn.com",
                 "www.microsoft.com",
                 "www.msn.com",
+                "zone.msn.com",
                 "www.office.com",
-                "www.xbox.com",
-                "zone.msn.com"
+                "azure.microsoft.com",
+                "g.live.com",
+                "dotnet.microsoft.com",
+                "windows.microsoft.com",
+                "puzzles.msn.com",
+                "techcommunity.microsoft.com",
+                "www.onenote.com",
+                "onedrive.live.com",
+                "forms.office.com",
+                "office.live.com"
             ]
         },
         {
-            "rule": "a-msedge\\.net\\/uac\\/request",
-            "cookies": 0.0000228,
+            "rule": "a-msedge\\.net\\/ipv6test\\/test",
+            "cookies": 0.0000207,
             "fingerprinting": 0,
             "subdomains": [
-                "g-bing-com.a-0001"
+                "www2-bing-com.dual-a-0001"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000228,
+            "prevalence": 0.0000207,
             "cnames": [
                 {
-                    "original": "g.bing.com",
-                    "resolved": "g-bing-com.a-0001.a-msedge.net"
+                    "original": "www2.bing.com",
+                    "resolved": "www2-bing-com.dual-a-0001.a-msedge.net"
+                }
+            ],
+            "responseHashes": [
+                "c2ba8fccfc980bcc8fc24e7a41bfcfee88cca9331c8d4d62890d7dfab4a12226"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bing.com",
+                "wp.m.bing.com",
+                "www.bing.com"
+            ]
+        },
+        {
+            "rule": "a-msedge\\.net\\/bat\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 2,
+            "subdomains": [
+                "bat-bing-com.a-0001"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "bat.bing.com",
+                    "resolved": "bat-bing-com.a-0001.a-msedge.net"
+                }
+            ],
+            "responseHashes": [
+                "d891455e32c9a425e36e190047b1f58abeb7e3709eff687134ddea7ac9cfdd3b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "office.com",
+                "products.office.com"
+            ]
+        },
+        {
+            "rule": "a-msedge\\.net\\/p\\/action\\/4000034\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bat-bing-com.a-0001"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "bat.bing.com",
+                    "resolved": "bat-bing-com.a-0001.a-msedge.net"
                 }
             ],
             "responseHashes": [
@@ -132,49 +165,20 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "microsoft.com",
-                "home.microsoft.com",
-                "www.msn.com"
-            ]
-        },
-        {
-            "rule": "a-msedge\\.net\\/uac\\/response",
-            "cookies": 0.0000152,
-            "fingerprinting": 0,
-            "subdomains": [
-                "g-bing-com.a-0001"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000228,
-            "cnames": [
-                {
-                    "original": "g.bing.com",
-                    "resolved": "g-bing-com.a-0001.a-msedge.net"
-                }
-            ],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "microsoft.com",
-                "home.microsoft.com",
-                "www.msn.com"
+                "office.com",
+                "products.office.com"
             ]
         },
         {
             "rule": "a-msedge\\.net\\/action\\/0",
-            "cookies": 0.00000759,
+            "cookies": 0.0000069,
             "fingerprinting": 0,
             "subdomains": [
                 "bat-bing-com.a-0001"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000228,
+            "prevalence": 0.0000207,
             "cnames": [
                 {
                     "original": "bat.bing.com",
@@ -187,25 +191,79 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_uetsid": 0.000015182685665267329,
-                "_uetvid": 0.000015182685665267329
+                "_uetsid": 0.000006903979453757146,
+                "_uetvid": 0.000006903979453757146
             },
             "exampleSites": [
-                "linkedin.com",
-                "onedrive.live.com",
-                "products.office.com"
+                "office.com",
+                "products.office.com",
+                "www.linkedin.com"
+            ]
+        },
+        {
+            "rule": "a-msedge\\.net\\/c\\.gif",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "c-bing-com.a-0001"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "c.bing.com",
+                    "resolved": "c-bing-com.a-0001.a-msedge.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "msn.com",
+                "www.games.msn.com"
+            ]
+        },
+        {
+            "rule": "a-msedge\\.net\\/weather\\/overview",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-msn-com.a-0003"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "api.msn.com",
+                    "resolved": "api-msn-com.a-0003.a-msedge.net"
+                }
+            ],
+            "responseHashes": [
+                "8f197139c0e8b8c421f820593fab40045e9c42db4eaef3d663d3c626dfefc2ed"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "msn.com",
+                "microsoftnews.msn.com"
             ]
         },
         {
             "rule": "a-msedge\\.net\\/widget\\/metrics\\.js",
-            "cookies": 0,
+            "cookies": 0.0000138,
             "fingerprinting": 0,
             "subdomains": [
                 "ssl-bing-com.a-0001"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
             "cnames": [
                 {
                     "original": "ssl.bing.com",
@@ -213,7 +271,7 @@
                 }
             ],
             "responseHashes": [
-                "3d11ff2bbe4be37c4fe35f59cf521693b5225dbdc95bbe56fddddf1b0558a1eb"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -224,39 +282,40 @@
             ]
         },
         {
-            "rule": "a-msedge\\.net\\/bat\\.js",
-            "cookies": 0.0000152,
-            "fingerprinting": 2,
+            "rule": "a-msedge\\.net\\/fd\\/ls\\/l",
+            "cookies": 0,
+            "fingerprinting": 0,
             "subdomains": [
-                "bat-bing-com.a-0001"
+                "star-bing-com.a-0001"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
             "cnames": [
                 {
-                    "original": "bat.bing.com",
-                    "resolved": "bat-bing-com.a-0001.a-msedge.net"
+                    "original": "wp.bing.com",
+                    "resolved": "star-bing-com.a-0001.a-msedge.net"
                 }
             ],
             "responseHashes": [
-                "3cb5162e19d9c6ecb634881fc079ab3aa8e9855a7bc164a830730a752a73e440"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Script",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "live.com",
-                "products.office.com"
+                "bing.com",
+                "wp.m.bing.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000258,
+    "cookies": 0.000407,
     "types": {
-        "Script": 12,
-        "Image": 23
+        "Image": 35,
+        "Script": 9,
+        "Fetch": 4
     },
     "nameservers": []
 }

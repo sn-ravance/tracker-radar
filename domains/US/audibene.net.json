@@ -4,14 +4,105 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000152,
+    "prevalence": 0.0000138,
     "sites": 2,
     "subdomains": [
+        "session.cdn",
+        "marketing",
+        "cma.cdn",
         "et.cdn"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "audibene\\.net\\/sessionLayer\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "session.cdn"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.connection": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "d81755265511c05fb37947f52b7a3245780611a6909194a49d0616d106faae49"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "CMP_NO-ACT": {
+                    "ttl": 3604,
+                    "length": 308,
+                    "prevalence": 0.000006903979453757146,
+                    "uniqueness": 1
+                },
+                "act_history": {
+                    "ttl": 31536004,
+                    "length": 36,
+                    "prevalence": 0.000013807958907514292,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hear.com",
+                "www.hear.com"
+            ]
+        },
+        {
+            "rule": "audibene\\.net\\/session",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "marketing"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "dbc77b7ffefe8538db70e5dec2a74978ed11f767b8de292a4be2f639c653f524"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hear.com",
+                "www.hear.com"
+            ]
+        },
+        {
+            "rule": "audibene\\.net\\/campaign",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cma.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "2e5c2ba4f918daf8bb960ef5450d2dfe3e515d88a0d4543757ea5ec9de74ae7d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_li_dcdm_c": 0.000006903979453757146
+            },
+            "exampleSites": [
+                "hear.com",
+                "www.hear.com"
+            ]
+        },
         {
             "rule": "audibene\\.net\\/services\\/collector\\/event",
             "cookies": 0,
@@ -21,7 +112,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
@@ -35,9 +126,10 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000138,
     "types": {
-        "Fetch": 2
+        "Script": 2,
+        "Fetch": 6
     },
     "nameservers": [
         "ns-657.awsdns-18.net",

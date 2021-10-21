@@ -7,19 +7,27 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000334,
-    "sites": 44,
+    "prevalence": 0.000539,
+    "sites": 78,
     "subdomains": [
         "static",
         "sync-tag",
         "t",
         "cname",
         "img-cf",
-        "templates-cf"
+        "cdn-blocks",
+        "gae",
+        "templates-cf",
+        "mirror2",
+        "chat"
     ],
     "cnames": [
         {
             "original": "karte-park.ajinomoto.co.jp",
+            "resolved": "cname.karte.io"
+        },
+        {
+            "original": "krt.flypeach.com",
             "resolved": "cname.karte.io"
         }
     ],
@@ -27,161 +35,162 @@
     "resources": [
         {
             "rule": "karte\\.io\\/libs\\/tracker\\.js",
-            "cookies": 0.000175,
+            "cookies": 0.000269,
             "fingerprinting": 2,
             "subdomains": [
                 "static"
             ],
             "apis": {
-                "window.localStorage": 28,
-                "Navigator.prototype.userAgent": 28,
-                "Navigator.prototype.language": 28,
-                "Screen.prototype.availTop": 28,
-                "Screen.prototype.availLeft": 28,
-                "Screen.prototype.availHeight": 28,
-                "Screen.prototype.availWidth": 28,
-                "Screen.prototype.colorDepth": 28,
-                "Screen.prototype.height": 28,
-                "Screen.prototype.pixelDepth": 28,
-                "Screen.prototype.width": 28,
-                "Document.cookie getter": 25,
-                "Document.cookie setter": 23,
-                "Navigator.prototype.cookieEnabled": 28,
-                "Date.prototype.getTime": 28
+                "window.localStorage": 46,
+                "Navigator.prototype.userAgent": 46,
+                "Navigator.prototype.language": 46,
+                "Screen.prototype.availTop": 46,
+                "Screen.prototype.availLeft": 46,
+                "Screen.prototype.availHeight": 46,
+                "Screen.prototype.availWidth": 46,
+                "Screen.prototype.colorDepth": 46,
+                "Screen.prototype.height": 46,
+                "Screen.prototype.pixelDepth": 46,
+                "Screen.prototype.width": 46,
+                "Document.cookie getter": 40,
+                "Document.cookie setter": 39,
+                "Navigator.prototype.cookieEnabled": 46,
+                "Date.prototype.getTime": 46,
+                "window.sessionStorage": 2
             },
-            "sites": 28,
-            "prevalence": 0.000213,
+            "sites": 46,
+            "prevalence": 0.000318,
             "cnames": [],
             "responseHashes": [
-                "3b9eb82a065858f9afb10801d4bdbb0c23500848dc625f342b65e2613fe8f109"
+                "448bd243277add5faa5221742c1da8f1f0fd7f9ea10dc16396fcf84298907c97"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "krt_oo": {
                     "ttl": 3,
                     "length": 9,
-                    "prevalence": 0.00015941819948530695,
-                    "uniqueness": 0.047619047619047616
+                    "prevalence": 0.0002416392808815001,
+                    "uniqueness": 0.02857142857142857
                 },
                 "test": {
                     "ttl": 3,
                     "length": 4,
-                    "prevalence": 0.00015941819948530695,
-                    "uniqueness": 0.047619047619047616
+                    "prevalence": 0.0002416392808815001,
+                    "uniqueness": 0.02857142857142857
                 },
                 "__pck__.jsck.lmsg": {
                     "ttl": 3,
                     "length": 4,
-                    "prevalence": 0.00015941819948530695,
-                    "uniqueness": 0.047619047619047616
+                    "prevalence": 0.0002416392808815001,
+                    "uniqueness": 0.02857142857142857
                 },
                 "__pck__.jsck.msg": {
                     "ttl": 3,
                     "length": 4,
-                    "prevalence": 0.00015941819948530695,
-                    "uniqueness": 0.047619047619047616
+                    "prevalence": 0.0002416392808815001,
+                    "uniqueness": 0.02857142857142857
                 },
                 "__pck__.jsck.frm": {
                     "ttl": 3,
                     "length": 4,
-                    "prevalence": 0.00015941819948530695,
-                    "uniqueness": 0.047619047619047616
+                    "prevalence": 0.0002416392808815001,
+                    "uniqueness": 0.02857142857142857
                 },
                 "__pck__.jsck.frq": {
                     "ttl": 3,
                     "length": 4,
-                    "prevalence": 0.00015941819948530695,
-                    "uniqueness": 0.047619047619047616
+                    "prevalence": 0.0002416392808815001,
+                    "uniqueness": 0.02857142857142857
                 },
                 "__pck__.jsck.tmc": {
                     "ttl": 3,
                     "length": 4,
-                    "prevalence": 0.00015941819948530695,
-                    "uniqueness": 0.047619047619047616
+                    "prevalence": 0.0002416392808815001,
+                    "uniqueness": 0.02857142857142857
                 },
                 "krt.s": {
-                    "ttl": 5,
-                    "length": 5,
-                    "prevalence": 0.00017460088515057427,
-                    "uniqueness": 0.08695652173913043
+                    "ttl": 3,
+                    "length": 8,
+                    "prevalence": 0.00026925519869652867,
+                    "uniqueness": 0.15384615384615385
                 },
-                "krt.c": {
-                    "ttl": 1804,
-                    "length": 68,
-                    "prevalence": 0.0001670095423179406,
+                "krt.context": {
+                    "ttl": 1805,
+                    "length": 69,
+                    "prevalence": 0.00026925519869652867,
                     "uniqueness": 1
                 },
                 "krt.vis": {
                     "ttl": 63072004,
-                    "length": 32,
-                    "prevalence": 0.00015941819948530695,
+                    "length": 29,
+                    "prevalence": 0.00026235121924277153,
                     "uniqueness": 1
                 },
                 "__pck__.vis.": {
                     "ttl": 4,
                     "length": 4,
-                    "prevalence": 0.00015941819948530695,
-                    "uniqueness": 0.047619047619047616
+                    "prevalence": 0.00026235121924277153,
+                    "uniqueness": 0.02631578947368421
                 },
                 "__pck__.usr.": {
                     "ttl": 4,
                     "length": 4,
-                    "prevalence": 0.00015941819948530695,
-                    "uniqueness": 0.047619047619047616
+                    "prevalence": 0.00026235121924277153,
+                    "uniqueness": 0.02631578947368421
                 },
                 "__pck__.ses.": {
                     "ttl": 4,
                     "length": 4,
-                    "prevalence": 0.00015941819948530695,
-                    "uniqueness": 0.047619047619047616
+                    "prevalence": 0.00026235121924277153,
+                    "uniqueness": 0.02631578947368421
                 },
                 "krt.t": {
-                    "ttl": 5,
+                    "ttl": 33,
                     "length": 4,
-                    "prevalence": 0.00017460088515057427,
-                    "uniqueness": 0.043478260869565216
+                    "prevalence": 0.00026235121924277153,
+                    "uniqueness": 0.02631578947368421
                 },
                 "krt.v": {
-                    "ttl": 310,
-                    "length": 39,
-                    "prevalence": 0.00009868745682423764,
-                    "uniqueness": 0.5384615384615384
+                    "ttl": 307,
+                    "length": 45,
+                    "prevalence": 0.00014498356852890007,
+                    "uniqueness": 0.5714285714285714
                 },
                 "krt._ktid": {
-                    "ttl": 63072004,
+                    "ttl": 63072006,
                     "length": 8,
-                    "prevalence": 0.000022774028497900995,
+                    "prevalence": 0.00006903979453757145,
                     "uniqueness": 1
                 },
                 "krt.ktid": {
-                    "ttl": 63072004,
+                    "ttl": 63072006,
                     "length": 8,
-                    "prevalence": 0.000022774028497900995,
+                    "prevalence": 0.00006903979453757145,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.sbisec.co.jp",
-                "www.freee.co.jp",
-                "www.smbc.co.jp",
-                "jp.misumi-ec.com",
-                "employment.en-japan.com",
-                "www.furusato-tax.jp",
-                "tenshoku.mynavi.jp",
-                "www.sony.jp",
-                "bookwalker.jp",
-                "jbpress.ismedia.jp",
-                "www.jtb.co.jp",
-                "www.homes.co.jp",
-                "www.sanwa.co.jp",
-                "www.nissen.co.jp",
-                "jp.ext.hp.com",
-                "www.dot-st.com",
+                "yourmystar.jp",
+                "www.flypeach.com",
                 "mynavi.jp",
                 "www.kuronekoyamato.co.jp",
-                "www.hotpepper.jp",
-                "techacademy.jp"
+                "www.ntt.com",
+                "www.dot-st.com",
+                "mineo.jp",
+                "dmc7-org-pc.demae-can.com",
+                "www.clinicfor.life",
+                "login.550909.com",
+                "www.furusato-tax.jp",
+                "tech-camp.in",
+                "jp.ext.hp.com",
+                "jp.misumi-ec.com",
+                "techacademy.jp",
+                "www.nissen.co.jp",
+                "www.smbc.co.jp",
+                "www.resonabank.co.jp",
+                "www.beams.co.jp",
+                "store.world.co.jp"
             ]
         },
         {
@@ -193,10 +202,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "451a9fa8b2480521dd886a272963ce927f5918274b48078ad2b1ca9f14fb70a4"
+                "9d27814d72e94f88281c9508b33e1a5a8e0660961175ec3a69c1c32bb6a14b1e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -208,79 +217,94 @@
         },
         {
             "rule": "karte\\.io\\/track",
-            "cookies": 0.00022,
+            "cookies": 0.000311,
             "fingerprinting": 0,
             "subdomains": [
                 "t",
                 "cname"
             ],
             "apis": {},
-            "sites": 29,
-            "prevalence": 0.00022,
+            "sites": 45,
+            "prevalence": 0.000311,
             "cnames": [
                 {
                     "original": "karte-park.ajinomoto.co.jp",
                     "resolved": "cname.karte.io"
+                },
+                {
+                    "original": "krt.flypeach.com",
+                    "resolved": "cname.karte.io"
                 }
             ],
             "responseHashes": [
-                "7dbda8836fef7cdbaa1120cdd1556c5cb7e251d9111c217d628e6a2cf5856ebb",
-                "8f252a3dc6a9ac46344638321e3256bc6e949c326771be09710bc5b246ce1e9a",
-                "7fa68f43fdc45a43e459629c866842d31b3bd1f8ea3b49fa06f2a81f1da33c0d",
-                "d26bfe92f09a57bae148ba9aebf7f2d994a1a1d691852c4dffd0734354c94b87",
-                "2aa4727d5b7b96f07a3f7abe40e715f5663d6d8d44fd9045702b7f27128286b4",
-                "eb38356dee41b32c472508b6f4f585b6c6c6bc899fe83274345c32291d8a87ea",
-                "bce2c353d5dbd298ef500a90108c2c5fe842cfaa775950c36be1b7ed87b3e695",
-                "9a98ea39d580721330425e6d1a6ce96fa52f46aea23f10208127906fd26046e9",
-                "73537f9174cea2a1ae4ad487271330f14c08ca56414b00496f946b92e4546923",
-                "559c83f2c79dce5463ec5f1b88d56d0dfa0b303df902866bb85d3b34fb47281e",
-                "1b439a48d71850840554b682fa06400ff8c634bbac7ba257223a812912412824",
-                "3534cabd1a48cbdb2e6058e09d98e43f06da8c076c48f2f710e13ed1622d33f9",
-                "26ea78872d65b0b2698182095998325e72391f3babdc3c9a9e16a6a97996187c",
-                "6693c7c64b8012e9d318fb5f2de08eb8c62601e7e206863216636a0238f8ea13",
-                "1408e2eb269b629a2f56a8b8083e15d9f9d5e10860cc8536b57ee266900baf12",
-                "bad3d2d20f54da8668e7b2c4dac671658fae3ebe95eb06558b712bf37bb22af4",
-                "e830ceb0dd10a9fa6108683cd0f0160bb08184dedfc002bf661bd84a1299a527",
-                "824f0818a8b9f060922536890702f8f9d7b8d9b9d998959f7755a8a762caf23c",
-                "40109a9231d286bb350ecd66fc298db8a03043f16fb36088529c363992deba1f",
-                "d057f13f0122acce450fa6d20b7e52463b33e8ab59e393b69900de5325343f44",
-                "db119b130eb96f4aee2631ba0dee7e891e17beac9bbc7a74e4a037699ee8b28c",
-                "17d9e0aa7de0f57d3c578bd30d1c015bde73761743289d9e8208ae23b615c09b",
-                "8030f5a07f6990e66b05835a240702ef30d4c04be565c7d8d954f98c40f4c996",
-                "aeedcd2433ed3fe5ab216a52b0a88be7c9c40d24c526ad691eb86d7a23f951c6",
-                "33ac9aee4d51f224b72e2b25983f90303dc99ef780e31cb129736e759e4b3b60",
-                "7fee4011c8da894faf09a3e01f3177c4c39297c2c4a6786968b545dcbdd8b253",
-                "5b4a290c5200e34fbea354bdd9e739a0826eddbc41aa8d7936e4a4acf9d94f4f",
-                "53e54606628f75287a776e3b1c02469a8e7a14d3259976484b8cf8592ecde5b9"
+                "4bec7ba2b945db040f360716ad5e2d7761a86cb1231a19097b87a8033d728abb",
+                "b8135ff399a3186cfac54cad4d2f09bb9a842bd6d2c060fedd691c0bcbb5b307",
+                "07d9811e463f15262a13cc3b3469be22461ba26e155e4015dccd3bf178499e41",
+                "02e7fedaaeb7200b8ff6c4e425ab078763850873da8ef4685ade9d919877271b",
+                "445bda605d03a034f403fdd1133ed34c573c7066e4023186b6fd50302643cfb1",
+                "9989b0a2164bb74461f2fa2863b014a87ab97d8f287731dc91ce3f6ea25f80cb",
+                "2eb72c2da2d5c3f28a4e7884e875d8d2f8032e0d81895be3f558abd551fb58f5",
+                "0908aac6549c4397ac7a02ba171b111627bd6c3efa817dfdf79b08c6ca45ff55",
+                "faf2c26bbee9ab3415703e7a5d1113550d59d64a2a1c619fc5d24cb5f0edce24",
+                "93f3c6d3c7191e748c94c95832061555e46777c6c13de088c232c4fd2119b035",
+                "0db0095e595446de62aa56ac0f9ae3ecac62b3b39f82574e2b32273da3e19514",
+                "74a9196e85185e7226da7253018d2ee403edda08fd560e779a47a6b42748013c",
+                "d927a60e6c29458f61ead6134ab35e875f5fb03d36ce85fcefda7e2d17cb1d4d",
+                "17780420a35849b10d27d186bde8ab1d37c3ee349028ae5212ddd29170d09a0c",
+                "70063cae1ef4a9bea2aff5cd834219a2d0955995a40ee6916ad59c36decca669",
+                "326595f05cfb3255d5edcf315d8d86c61a1dc2e269b290f7f2a46ca69c1418a6",
+                "dbff971958296cdce26d8599cdfb35bf67d8080494fd6a6550d09132a361abf6",
+                "a1f3d87008a6141293e19a61e98cec00ce8fd7a1edffa97f8b57528a88df2f78",
+                "f0e130f7773f3ce3be153f80af51fcc8147a1d436d258e94f2025f6e85e2fd50",
+                "b2b21ce608460bf23ce86913e369668a42e13675ebb9c195eac2f3aee684dc59",
+                "56b76ecc8583fe06238e91d4c29a14f70e943f20155348175ef51420943e886b",
+                "00e596d034a3f624813deae1b79c37d71413eb830608d2b0bd6615ef9cc09c76",
+                "6fa3061f5363f8a73ff475e4fd23f0c100bb3b97d655eea904fb492c6db86c01",
+                "134b7d6f9ea018b0ea005da79100d324b953863727b7935372cc83e90e5f5319",
+                "238faf798628cedf8c0d5df080e6058c7a226ad318f776f4d1a0c4e3c013913a",
+                "a6c143f24cea4a6ed57129b9684ced03491d8569d7c24fb00bf0d47e5adfbabd",
+                "33d93cd71e95d3b9feb782e6df4c6b64f6c42a851804bf68e31f4bbfe4726768",
+                "b10c802032600da48e9dd3cc2789537efc19bdc7f5ced39b6b19292bb340327a",
+                "63e6566c8f6461f0f7ae0632d255b7b711aeb257c9985b4672dbe77aef03f8f4",
+                "7e339bf5e86a186538a242dd8e4b4454e8640b30925f922bd527b819d08d8573",
+                "cba957e7a927fdf9f5c4112413ac9d8f3584a272e7b5ced2194c62e9dd6cc01c",
+                "28c26c84b820554915b9ef2fead7f680edb55fee69e1dc245f42722cfdfcf380",
+                "289c4f9971e22debe15ab1bf8e7baa824cbdbf3d818454147a8a8f90f101dace",
+                "b4ba0cc38827a93bf037b1bb5bbb33ba6308dd862f28d6e4217ec003f701f117",
+                "ecfd56699bda5ac26c808ce6183792adfdc9e10ab1cad9eb83f136e1f564760e",
+                "d5f820ae6bc799ac48cb2d4e4d567372311a807ac46d0e1c92c0e0989081e45a",
+                "ee1af6d49b256aa2d2347d5e1ac5e836ed020bd061c578cadc8af6456b1a8966",
+                "aa8752fc15296032c03687405eea5b2b85e001c423225e29dbc3770af78c70b7",
+                "88037d753b489d03cfee9479c74c75d1e6b28242624d7dc2f5f65c9b22bd7515",
+                "4b7d2470edd864c91f00e98ee763fb480341fa63cf09d8fbd6259d365ca3de3b",
+                "f17ef8db10067e9f22922e5eafa2ffea13afeb2d335352e84c210242c1578e77",
+                "1e4366855e095333df212925ce4c083d3d1469fe8bc37bacad3632a87787ba7a",
+                "b99376e0f9ea9c616a7a6a41a75a13c38eab998bb2712e19477096d688a3ffc5"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "tlb_sid": 0.0000075913428326336645,
-                "synced_group_g1": 0.000015182685665267329,
-                "synced_group_g1_secure": 0.000015182685665267329
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
-                "jp.misumi-ec.com",
-                "www.jtb.co.jp",
-                "park.ajinomoto.co.jp",
-                "mynavi.jp",
-                "suumo.jp",
-                "bookwalker.jp",
-                "www.goldwin.co.jp",
-                "ferret-plus.com",
-                "www.aeon.com",
                 "www.nissen.co.jp",
-                "baito.mynavi.jp",
-                "wowma.jp",
-                "www.his-j.com",
-                "www.pc-koubou.jp",
+                "www.sejuku.net",
+                "baycrews.jp",
+                "www.freee.co.jp",
+                "tv.rakuten.co.jp",
+                "www.resonabank.co.jp",
+                "store.world.co.jp",
+                "login.550909.com",
+                "yourmystar.jp",
+                "king.mineo.jp",
+                "www.homes.co.jp",
+                "www.rentio.jp",
+                "toi.kuronekoyamato.co.jp",
+                "p-bandai.com",
                 "www.dot-st.com",
-                "www.furusato-tax.jp",
-                "www.kuronekoyamato.co.jp",
+                "www.clinicfor.life",
+                "tenshoku.mynavi.jp",
+                "www.beams.co.jp",
                 "techacademy.jp",
-                "www.smbc.co.jp",
-                "www.freee.co.jp"
+                "jbpress.ismedia.jp"
             ]
         },
         {
@@ -291,28 +315,36 @@
                 "static"
             ],
             "apis": {},
-            "sites": 12,
-            "prevalence": 0.0000911,
+            "sites": 21,
+            "prevalence": 0.000145,
             "cnames": [],
             "responseHashes": [
-                "78ab369562a556a6354bf125c5346054fd10d81b3b46ec496f1e807384e3f67f"
+                "4d68b8b04db610acded352960033ec4ffff27e412a778713f4a09e1226de8b75"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "store.world.co.jp",
+                "mineo.jp",
                 "mynavi.jp",
-                "baito.mynavi.jp",
+                "toi.kuronekoyamato.co.jp",
                 "employment.en-japan.com",
-                "jp.misumi-ec.com",
-                "park.ajinomoto.co.jp",
-                "techacademy.jp",
-                "tenshoku.mynavi.jp",
+                "baito.mynavi.jp",
+                "www.resonabank.co.jp",
+                "tech-camp.in",
+                "www.sejuku.net",
+                "www.smbc.co.jp",
                 "www.jtb.co.jp",
-                "www.nissen.co.jp",
-                "www.pc-koubou.jp",
+                "park.ajinomoto.co.jp",
+                "www.sbisec.co.jp",
+                "zozo.jp",
+                "www.beams.co.jp",
                 "www.sanwa.co.jp",
-                "www.smbc.co.jp"
+                "yourmystar.jp",
+                "www.nissen.co.jp",
+                "baycrews.jp",
+                "www.ymobile.jp"
             ]
         },
         {
@@ -323,11 +355,11 @@
                 "static"
             ],
             "apis": {},
-            "sites": 12,
-            "prevalence": 0.0000911,
+            "sites": 20,
+            "prevalence": 0.000138,
             "cnames": [],
             "responseHashes": [
-                "4b12a1e603fa2b6fe5d260ea370c3cdb434a81aa0d727cf69578afdff1802496"
+                "b2c2baf8254e20cac46fed9d9ab90727344915277a3c357ca77c1ac329c1b12e"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -335,20 +367,28 @@
             "exampleSites": [
                 "mynavi.jp",
                 "baito.mynavi.jp",
-                "park.ajinomoto.co.jp",
-                "suumo.jp",
+                "baycrews.jp",
+                "dmc7-org-pc.demae-can.com",
+                "king.mineo.jp",
+                "mineo.jp",
+                "p-bandai.com",
                 "techacademy.jp",
                 "tenshoku.mynavi.jp",
                 "www.aeon.com",
+                "www.beams.co.jp",
+                "www.dot-st.com",
                 "www.freee.co.jp",
-                "www.his-j.com",
                 "www.jtb.co.jp",
                 "www.nissen.co.jp",
-                "www.sbisec.co.jp"
+                "www.rentio.jp",
+                "www.resonabank.co.jp",
+                "www.sbisec.co.jp",
+                "www.smbc.co.jp",
+                "www.ymobile.jp"
             ]
         },
         {
-            "rule": "karte\\.io\\/image\\/5e708b24a95eb30012f55d88::bnr_sekkyoku\\.png",
+            "rule": "karte\\.io\\/image\\/5fa230331518e3001125efdf::a4cfff8\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -356,10 +396,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "714db3020c6fc373e0c12aa724d6d2670d06f9f0daf6ac84249258c2b9ecdb29"
+                "761bab23e8f15dd8f0bb8f67f783db2801ae48747ee29a4233c0058b4f954d23"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -370,25 +410,113 @@
             ]
         },
         {
-            "rule": "karte\\.io\\/image\\/5ed715fe29e7f70011eb99fa::sekkyoku\\.png",
+            "rule": "karte\\.io\\/libs\\/tracker\\.jquery\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "img-cf"
+                "static"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000152,
+            "sites": 6,
+            "prevalence": 0.0000414,
             "cnames": [],
             "responseHashes": [
-                "eefa347ba02a622fddc0edfd6d890384c722050be2b2f753d18b3440e515104d"
+                "8cadf3c3a9253b0d06232619dc20082d865a3824667154df1429cd9bca7388ab"
             ],
-            "type": "Image",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mynavi.jp",
-                "baito.mynavi.jp"
+                "baycrews.jp",
+                "employment.en-japan.com",
+                "tenshoku.mynavi.jp",
+                "toi.kuronekoyamato.co.jp",
+                "www.nissen.co.jp",
+                "www.smbc.co.jp"
+            ]
+        },
+        {
+            "rule": "karte\\.io\\/empt",
+            "cookies": 0.000069,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t"
+            ],
+            "apis": {},
+            "sites": 10,
+            "prevalence": 0.000069,
+            "cnames": [],
+            "responseHashes": [
+                "27d2dbc92684b4d352cb412ccc94d54c69d741874b9d618fd4e3e245124e85d4"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "benesse.jp",
+                "jbpress.ismedia.jp",
+                "jp.misumi-ec.com",
+                "store.world.co.jp",
+                "sumai.panasonic.jp",
+                "www.flypeach.com",
+                "www.freee.co.jp",
+                "www.resonabank.co.jp",
+                "www.sejuku.net",
+                "www.smbc.co.jp"
+            ]
+        },
+        {
+            "rule": "karte\\.io\\/empt\\/build\\/build\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "t"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 10
+            },
+            "sites": 10,
+            "prevalence": 0.000069,
+            "cnames": [],
+            "responseHashes": [
+                "7b5538ffa3c5d4e18bdafe5af55bb39242b2d72c3b9d8ef687974c418b42c56b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "benesse.jp",
+                "jbpress.ismedia.jp",
+                "jp.misumi-ec.com",
+                "store.world.co.jp",
+                "sumai.panasonic.jp",
+                "www.flypeach.com",
+                "www.freee.co.jp",
+                "www.resonabank.co.jp",
+                "www.sejuku.net",
+                "www.smbc.co.jp"
+            ]
+        },
+        {
+            "rule": "karte\\.io\\/custom_b68f22d68364918f26606874be5d6f8d\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sync-tag"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "1465a2405bdf45b48ff311ed3b28937f54caa48deb5de8378db3e11ccc76ce9e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "demae-can.com",
+                "dmc7-org-pc.demae-can.com"
             ]
         },
         {
@@ -400,10 +528,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "ea54f7838175b15b68dfcf0d4fd8fb3aaf1e2ec488030966c294ec180102323b"
+                "1465a2405bdf45b48ff311ed3b28937f54caa48deb5de8378db3e11ccc76ce9e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -411,55 +539,6 @@
             "exampleSites": [
                 "en-japan.com",
                 "employment.en-japan.com"
-            ]
-        },
-        {
-            "rule": "karte\\.io\\/libs\\/tracker\\.jquery\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.000038,
-            "cnames": [],
-            "responseHashes": [
-                "8cadf3c3a9253b0d06232619dc20082d865a3824667154df1429cd9bca7388ab"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "en-japan.com",
-                "jp.misumi-ec.com",
-                "techacademy.jp",
-                "tenshoku.mynavi.jp",
-                "www.nissen.co.jp"
-            ]
-        },
-        {
-            "rule": "karte\\.io\\/empt",
-            "cookies": 0.0000304,
-            "fingerprinting": 0,
-            "subdomains": [
-                "t"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000304,
-            "cnames": [],
-            "responseHashes": [
-                "27d2dbc92684b4d352cb412ccc94d54c69d741874b9d618fd4e3e245124e85d4"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ismedia.jp",
-                "jbpress.ismedia.jp",
-                "jp.misumi-ec.com",
-                "www.smbc.co.jp"
             ]
         },
         {
@@ -471,10 +550,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "ea54f7838175b15b68dfcf0d4fd8fb3aaf1e2ec488030966c294ec180102323b"
+                "1465a2405bdf45b48ff311ed3b28937f54caa48deb5de8378db3e11ccc76ce9e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -482,32 +561,6 @@
             "exampleSites": [
                 "ismedia.jp",
                 "jbpress.ismedia.jp"
-            ]
-        },
-        {
-            "rule": "karte\\.io\\/empt\\/build\\/build\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "t"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 4
-            },
-            "sites": 4,
-            "prevalence": 0.0000304,
-            "cnames": [],
-            "responseHashes": [
-                "7b5538ffa3c5d4e18bdafe5af55bb39242b2d72c3b9d8ef687974c418b42c56b"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ismedia.jp",
-                "jbpress.ismedia.jp",
-                "jp.misumi-ec.com",
-                "www.smbc.co.jp"
             ]
         },
         {
@@ -519,10 +572,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "472d94f3b288c905699e36179a14cb20a4fbc69973fbe950e811fe7101c89198"
+                "70478bc153ae262dc99d44026aa1eeed875c27b867707aa6aac26f056e758001"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -533,79 +586,220 @@
             ]
         },
         {
-            "rule": "karte\\.io\\/collection",
+            "rule": "karte\\.io\\/179750f7a0042200bc7a657ef17aa547\\/builder\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "t",
-                "cname"
+                "cdn-blocks"
             ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000304,
-            "cnames": [
-                {
-                    "original": "karte-park.ajinomoto.co.jp",
-                    "resolved": "cname.karte.io"
-                }
-            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Date.prototype.getTime": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
             "responseHashes": [
-                "54d21b42387552de0e094c0fd1ec0f95904687278a8ee6615ccf5b46fc6291c2",
-                "7a2ef2874c734d9af95b9f80cd5a656f3870ace42ed3069ae3b7b5695ddd8dd0",
-                "fb4c59cf6a3e4fc1c211c4bf8b8a6ff873fb446a5c264764b02f015706117cb0"
+                "b6b969ad58b970f9fd8f7237b3a6431f28c01082edf9d0ca33883a8c783a1376"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "misumi-ec.com",
-                "jp.misumi-ec.com",
-                "park.ajinomoto.co.jp",
+                "mineo.jp",
+                "king.mineo.jp"
+            ]
+        },
+        {
+            "rule": "karte\\.io\\/rewrite-log\\/timestamp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gae"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000345,
+            "cnames": [],
+            "responseHashes": [
+                "cfd0f9fb66fc49cfdca27eeac640d21a8b6e67988ece6dbb9b4d3e975e6807f0",
+                "0eacd6ecdbeb92bba4c8189083dc53f448fde8776cfd72099f68830d0b34ac5c",
+                "4730d95a2a80a03baf434a2ec27783173664ede42fb57008630f3a80293bfda2",
+                "50c015b08264d29cd50b002b5afbb32392a1e212113e10998174f2e2022fd9e2"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mineo.jp",
+                "king.mineo.jp",
+                "www.kaonavi.jp",
+                "www.smbc.co.jp",
+                "zozo.jp"
+            ]
+        },
+        {
+            "rule": "karte\\.io\\/rewrite-log\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gae"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000345,
+            "cnames": [],
+            "responseHashes": [
+                "aee408847d35e44e99430f0979c3357b85fe8dbb4535a494301198adbee85f27"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mineo.jp",
+                "king.mineo.jp",
+                "www.kaonavi.jp",
+                "www.smbc.co.jp",
+                "zozo.jp"
+            ]
+        },
+        {
+            "rule": "karte\\.io\\/179750f7a0042200bc7a657ef17aa547\\/analysis-target\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn-blocks"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "7cc5156e219246d33386a1435437261b33835518237864bee4138c959dc74a3c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mineo.jp",
+                "king.mineo.jp"
+            ]
+        },
+        {
+            "rule": "karte\\.io\\/custom_179750f7a0042200bc7a657ef17aa547\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sync-tag"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "16fbbe4f12247ddbddd7e474dc351f5e48406804b304074937987089b620803b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mineo.jp",
+                "king.mineo.jp"
+            ]
+        },
+        {
+            "rule": "karte\\.io\\/custom_bce20889648b515075691687bc765181\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sync-tag"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "ccc4b29775cf556b94405eba3c08a788e6f03e797132f3ae5aa9e99ed6b67a5a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "550909.com",
+                "login.550909.com"
+            ]
+        },
+        {
+            "rule": "karte\\.io\\/fonts\\/close04\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "templates-cf"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "64717aefa932a6ca55d8057e05e7d0b3598f0ead53685ca343a34fa85c5b2939"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mineo.jp",
                 "www.nissen.co.jp"
             ]
         },
         {
-            "rule": "karte\\.io\\/image\\/5bc3c9fd9dec3508f375c4d3::mk_guide_title\\.png",
+            "rule": "karte\\.io\\/systems\\/live_beta\\/builds\\/latest\\/index\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "img-cf"
+                "static"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.sessionStorage": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "74c74006a093c191769934d6ec8a1650de2cb5911b02a574ee91b473c130ff60"
+                "d63723d09d5eb361f4373e88f0778e4a5a5051dc0d65b561ab031af3c9a17373"
             ],
-            "type": "Image",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "misumi-ec.com",
-                "jp.misumi-ec.com"
+                "p-bandai.com",
+                "www.rentio.jp"
             ]
         },
         {
-            "rule": "karte\\.io\\/image\\/5f644c539fcec600110c992b::39323-4_karte\\.png",
+            "rule": "karte\\.io\\/mirror-cfg\\/fetch",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "img-cf"
+                "mirror2"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "047a0242c4cade8dbd6dca5a9946a27db8237d166b513721a5adc984dff5e70d"
+                "5ca8616aed6652b543f0f9fd755e72798559da910ba83fb0ee23c12a62955542"
             ],
-            "type": "Image",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "misumi-ec.com",
-                "jp.misumi-ec.com"
+                "p-bandai.com",
+                "www.rentio.jp"
             ]
         },
         {
@@ -617,10 +811,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "ea54f7838175b15b68dfcf0d4fd8fb3aaf1e2ec488030966c294ec180102323b"
+                "1465a2405bdf45b48ff311ed3b28937f54caa48deb5de8378db3e11ccc76ce9e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -631,6 +825,58 @@
             ]
         },
         {
+            "rule": "karte\\.io\\/collection",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cname",
+                "t"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [
+                {
+                    "original": "karte-park.ajinomoto.co.jp",
+                    "resolved": "cname.karte.io"
+                }
+            ],
+            "responseHashes": [
+                "9d1ae2383abbd9e8c5e7b2e89111a9869c3a4b581b6a287ebeee898ba34a92a1",
+                "a9428e16d37b269df869ca9477b586d150eebd9e994218e7b5efc3f15d59fba9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ajinomoto.co.jp",
+                "park.ajinomoto.co.jp",
+                "yourmystar.jp"
+            ]
+        },
+        {
+            "rule": "karte\\.io\\/custom_42eb9e05afbb54b7f29f028d3e3acfe2\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sync-tag"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "1465a2405bdf45b48ff311ed3b28937f54caa48deb5de8378db3e11ccc76ce9e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "world.co.jp",
+                "store.world.co.jp"
+            ]
+        },
+        {
             "rule": "karte\\.io\\/libs\\/tracker\\.lodash\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -638,8 +884,8 @@
                 "static"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000152,
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
                 "88b0fc3f9d2f307411b1a42d7d8e97f1b68325d0f5f4d1185910fb55f2af9f3a"
@@ -648,8 +894,173 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "techacademy.jp",
-                "www.nissen.co.jp"
+                "world.co.jp",
+                "store.world.co.jp",
+                "www.beams.co.jp",
+                "yourmystar.jp"
+            ]
+        },
+        {
+            "rule": "karte\\.io\\/libs\\/tracker\\.chat\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000414,
+            "cnames": [],
+            "responseHashes": [
+                "8ead3f0d1c40e77038c3a5057d1e4bb8185fd5334811b606d02cdac72b62d84c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "world.co.jp",
+                "store.world.co.jp",
+                "www.beams.co.jp",
+                "www.clinicfor.life",
+                "yourmystar.jp",
+                "zozo.jp"
+            ]
+        },
+        {
+            "rule": "karte\\.io\\/image\\/5eb51165d4f2de0011c9ff54::icon_close\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img-cf"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "52698fd287c306bbe4b2158c49c06b9794ff276c498d5af10d30a4bfea6bd30f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "world.co.jp",
+                "store.world.co.jp",
+                "www.beams.co.jp"
+            ]
+        },
+        {
+            "rule": "karte\\.io\\/image\\/5eb3b63ec929650011ef8ba4::icon_dissatisfaction\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img-cf"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "b5d91040d9adb3bafd093eaeb6c2feb6ca821feff2ad5680aaf1f676eeac8c5a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "world.co.jp",
+                "store.world.co.jp",
+                "www.beams.co.jp"
+            ]
+        },
+        {
+            "rule": "karte\\.io\\/image\\/5eb3b67b207b9c001182bb98::icon_satisfaction\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img-cf"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "d4b2909545de5767594ad3ac64498fd2513a13b86eeb9a149c35b4417348b543"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "world.co.jp",
+                "store.world.co.jp",
+                "www.beams.co.jp"
+            ]
+        },
+        {
+            "rule": "karte\\.io\\/image\\/5eb4b60df4f7a800122eff0d::icon_post\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img-cf"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "c1cb2090c6070e58afceee3506db56260976e10b27eec6fd1514c4ff231b7ef1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "world.co.jp",
+                "store.world.co.jp",
+                "www.beams.co.jp"
+            ]
+        },
+        {
+            "rule": "karte\\.io\\/custom_7a991394183a35755126fc8ef50aab68\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sync-tag"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "1465a2405bdf45b48ff311ed3b28937f54caa48deb5de8378db3e11ccc76ce9e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "panasonic.jp",
+                "sumai.panasonic.jp"
+            ]
+        },
+        {
+            "rule": "karte\\.io\\/fonts\\/close05\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "templates-cf"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "83f25bd80231b59af5f864c9d0031d63acd34f1976510f1ddd7a45c5b7a0caf5"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tech-camp.in",
+                "www.sanwa.co.jp",
+                "yourmystar.jp"
             ]
         },
         {
@@ -661,10 +1072,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "01823b59dcf980679aeb387a9e2c22d70994ecf608297e6785e580c33c689f5c"
+                "321abcbcda3c86ce967db3d3abd13b62887907c79f0a21a4b9fd149d2b19ed7c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -672,6 +1083,161 @@
             "exampleSites": [
                 "mynavi.jp",
                 "tenshoku.mynavi.jp"
+            ]
+        },
+        {
+            "rule": "karte\\.io\\/image\\/60a356abd33fb90011b5afc3::609dfda075bfa200112a483a__%E6%A1%88%E5%86%853\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img-cf"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "aca1c9eac4c4470bba2f59d720a0c887a331035a45df2868143ef3f613f003d2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mynavi.jp",
+                "tenshoku.mynavi.jp"
+            ]
+        },
+        {
+            "rule": "karte\\.io\\/image\\/5e1d1078da9dd100134c627b::sent\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img-cf"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "1d1aa4e3b2d287d629fd90e96a67f087432d090d8459ff940276d38f9a455417"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mynavi.jp",
+                "tenshoku.mynavi.jp"
+            ]
+        },
+        {
+            "rule": "karte\\.io\\/custom_c6b383c1333d32760269ceccc14aa949\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sync-tag"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "1465a2405bdf45b48ff311ed3b28937f54caa48deb5de8378db3e11ccc76ce9e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kuronekoyamato.co.jp",
+                "www.kuronekoyamato.co.jp"
+            ]
+        },
+        {
+            "rule": "karte\\.io\\/custom_dbad777b7fb6a13592fd26611b2e84b1\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sync-tag"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "ea8bb9194bfcabe6db2bbf9967169cfbce810ad2da5ddfccf1d65dfb3f9c6ee3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "tv.rakuten.co.jp"
+            ]
+        },
+        {
+            "rule": "karte\\.io\\/custom_82098ccb161b9d6dc4718b2e3755af1b\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sync-tag"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "d9a199bbe0dbd0eb8435e8ed2392fca8d793e73f3436ce9b5f5aa96910d569e4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beams.co.jp",
+                "www.beams.co.jp"
+            ]
+        },
+        {
+            "rule": "karte\\.io\\/chat",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chat"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "clinicfor.life",
+                "www.clinicfor.life",
+                "yourmystar.jp"
+            ]
+        },
+        {
+            "rule": "karte\\.io\\/chat",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chat"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "99d5fef0a3d34a1816d0ffea68aece45eea9966e30c1433ada2c019bbd1dbe50",
+                "7e505b1b03f1343ece3eff36706a7d60048070a0ff9fcd8a6f7a450c6bff9777"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "clinicfor.life",
+                "www.clinicfor.life",
+                "yourmystar.jp"
             ]
         },
         {
@@ -683,10 +1249,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "ea54f7838175b15b68dfcf0d4fd8fb3aaf1e2ec488030966c294ec180102323b"
+                "1465a2405bdf45b48ff311ed3b28937f54caa48deb5de8378db3e11ccc76ce9e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -697,7 +1263,7 @@
             ]
         },
         {
-            "rule": "karte\\.io\\/custom_1e2c653eb6ab9894afd56cae8fe1da25\\.js",
+            "rule": "karte\\.io\\/custom_96c85dd4d07fc11fb36408ea9c49f449\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -705,21 +1271,21 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "ea54f7838175b15b68dfcf0d4fd8fb3aaf1e2ec488030966c294ec180102323b"
+                "91d2264f3b3eee1c9d6d43cafc0642e9d5bec5a1ae803cc5abb6131e85edcfac"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "goldwin.co.jp",
-                "www.goldwin.co.jp"
+                "flypeach.com",
+                "www.flypeach.com"
             ]
         },
         {
-            "rule": "karte\\.io\\/custom_6a369ad0519a1d9a3feef5f6bf30f7bd\\.js",
+            "rule": "karte\\.io\\/custom_6e391f00ff6dddb1d66ab155493254cd\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -727,17 +1293,61 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "ea54f7838175b15b68dfcf0d4fd8fb3aaf1e2ec488030966c294ec180102323b"
+                "0ae7285ebea4930ffb9e3c5e6676110242d978c44449f9ac1d30c126626d4c50"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "hotpepper.jp",
-                "www.hotpepper.jp"
+                "freee.co.jp",
+                "www.freee.co.jp"
+            ]
+        },
+        {
+            "rule": "karte\\.io\\/custom_02a4e948bce3e16636ad3dc7e041b6fa\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sync-tag"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "68cd1b5fe9bee2fd792a960dc5a1970d4e84551b1c3add01fe1dd041064b43b2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "furusato-tax.jp",
+                "www.furusato-tax.jp"
+            ]
+        },
+        {
+            "rule": "karte\\.io\\/custom_420049c49648b9b2fb12790f5ae68334\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sync-tag"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "1465a2405bdf45b48ff311ed3b28937f54caa48deb5de8378db3e11ccc76ce9e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "homes.co.jp",
+                "www.homes.co.jp"
             ]
         },
         {
@@ -749,10 +1359,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "de22d878948201fa79fe93dc2a3f61cd8b2f57ed6ed3c3c457ddae95fdf99470"
+                "098cc8fa687d3090d3f0bd80b4b2bac5041951c01884d7d5563f8e2800d67654"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -760,6 +1370,55 @@
             "exampleSites": [
                 "jtb.co.jp",
                 "www.jtb.co.jp"
+            ]
+        },
+        {
+            "rule": "karte\\.io\\/93360d3cd4caa60e3aa9359b9746d4c5\\/builder\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn-blocks"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "6592f4f838f531b021250cc62082ff11713a84889d4598497f5b213bf159d779"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kaonavi.jp",
+                "www.kaonavi.jp"
+            ]
+        },
+        {
+            "rule": "karte\\.io\\/93360d3cd4caa60e3aa9359b9746d4c5\\/analysis-target\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn-blocks"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kaonavi.jp",
+                "www.kaonavi.jp"
             ]
         },
         {
@@ -771,10 +1430,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "73ecae506116aa385d791df17c91031fc70b84855b5494c5a846578d15c70bde"
+                "7a66d376dbb6afa39858e5d96f0f5d700c52922c17b562d61937c3f05d8d2206"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -785,117 +1444,7 @@
             ]
         },
         {
-            "rule": "karte\\.io\\/image\\/5d26c137b070380898caaabd::%E3%82%A8%E3%83%8C%E3%82%AB%E3%83%B3%E3%83%9E-%E3%83%AD%E3%82%B4-%E7%B7%91-RGB\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img-cf"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000152,
-            "cnames": [],
-            "responseHashes": [
-                "9e767117aea037bf12b1d505b3e3387d02923c8d12422071cfa3401e0ba2355a"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nissen.co.jp",
-                "www.nissen.co.jp"
-            ]
-        },
-        {
-            "rule": "karte\\.io\\/image\\/5bbc423011a21b0932274d63::icon_9jyousyou\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img-cf"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000152,
-            "cnames": [],
-            "responseHashes": [
-                "f547cf91a57f23a5b2466c10133c927464a39ffa337b30081e5f2960001b88ad"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nissen.co.jp",
-                "www.nissen.co.jp"
-            ]
-        },
-        {
-            "rule": "karte\\.io\\/image\\/5b3601b5ba565a089d54e5da::qjs_txtleft_img\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img-cf"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000152,
-            "cnames": [],
-            "responseHashes": [
-                "62fbe45761e6264f1ae78bc282f4520c7824dfba600734ee58c3be3319d8b550"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nissen.co.jp",
-                "www.nissen.co.jp"
-            ]
-        },
-        {
-            "rule": "karte\\.io\\/image\\/5b3601b8ba565a089d54e5db::qjs_txtright_img\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img-cf"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000152,
-            "cnames": [],
-            "responseHashes": [
-                "729fdf9ad9cb1f562bd3a3302bedad85c734a1271bb65a3d98f46c372ac9badc"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nissen.co.jp",
-                "www.nissen.co.jp"
-            ]
-        },
-        {
-            "rule": "karte\\.io\\/fonts\\/close07\\.woff",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "templates-cf"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000152,
-            "cnames": [],
-            "responseHashes": [
-                "14cfa9c566727d58d70416dc4a1c37c7ff8f6cec69a80766d2a370e2a39d97e8"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nissen.co.jp",
-                "www.nissen.co.jp"
-            ]
-        },
-        {
-            "rule": "karte\\.io\\/custom_d990d83f2dd199362af084b9a03778ab\\.js",
+            "rule": "karte\\.io\\/custom_4e588d08afda9814698a46572afbf27c\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -903,39 +1452,17 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "13b2bc3fd596e4239d6135129302eff60506f97e39a664f6657618c06cd06677"
+                "feb00473ddb3c76195346c7f34e49782121b8bbeb399147d6c4f9184cd664ba8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "pc-koubou.jp",
-                "www.pc-koubou.jp"
-            ]
-        },
-        {
-            "rule": "karte\\.io\\/image\\/5d40f214f00ff208e41dadb4::pc_faq_topic\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img-cf"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000152,
-            "cnames": [],
-            "responseHashes": [
-                "9772f67abd57fd23add3f093b47c46c004e5bb84cfbeffed56d359f54b3295f8"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pc-koubou.jp",
-                "www.pc-koubou.jp"
+                "resonabank.co.jp",
+                "www.resonabank.co.jp"
             ]
         },
         {
@@ -947,10 +1474,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "cd7ca6aa21b36fc665fc30ead739d1f1ee5dca63bc7fa16ef8abf667fd8520e1"
+                "7cc9372384c387a0a2e5d3e86a68d61eeac3e8ba67758cd05fbf135a7b3f6090"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -959,22 +1486,68 @@
                 "sbisec.co.jp",
                 "www.sbisec.co.jp"
             ]
+        },
+        {
+            "rule": "karte\\.io\\/custom_35a3029ea60b35969a365403fd4c9a6c\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sync-tag"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "1465a2405bdf45b48ff311ed3b28937f54caa48deb5de8378db3e11ccc76ce9e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sejuku.net",
+                "www.sejuku.net"
+            ]
+        },
+        {
+            "rule": "karte\\.io\\/custom_f1027ac0c3088862bc9d9997c5d166c9\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sync-tag"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "3f1d0a928fd0bbb1d3f710f05ac2559e9b79d3f9c6b4bb4f7bb4c1ae8e1759eb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ymobile.jp",
+                "www.ymobile.jp"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000334,
+    "cookies": 0.000525,
     "types": {
-        "Script": 91,
-        "XHR": 31,
+        "Script": 115,
+        "XHR": 116,
         "Image": 18,
-        "Document": 4,
-        "Font": 2
+        "Document": 10,
+        "Other": 5,
+        "Font": 5,
+        "Preflight": 3
     },
     "nameservers": [
+        "ns-1365.awsdns-42.org",
         "ns-93.awsdns-11.com",
         "ns-925.awsdns-51.net",
-        "ns-1365.awsdns-42.org",
         "ns-1725.awsdns-23.co.uk"
     ]
 }

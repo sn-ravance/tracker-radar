@@ -4,27 +4,35 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000152,
+    "prevalence": 0.0000138,
     "sites": 2,
     "subdomains": [
+        "client",
         "api"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
-            "rule": "heirial\\.com\\/v2\\/intake\\/load",
+            "rule": "heirial\\.com\\/hc\\.min\\.js\\.gz",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "api"
+                "client"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Navigator.prototype.language": 1
+            },
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Other",
+            "responseHashes": [
+                "b9c5af36e5caf17682c183249e389c3b388adfe5825ba17e4459823b95a9a406"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -41,10 +49,30 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "drugrehab.com",
+                "www.drugrehab.com"
+            ]
+        },
+        {
+            "rule": "heirial\\.com\\/v2\\/intake\\/load",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "4d604ab0a6f0f0265c5a6478cbf30fb39800c6cd1232eb371b7a146ca9b3e16f"
+                "4754b1c7845a248d30ac0eacd7ea8012589faef64e3c9b1b7c79bd037b209b45"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -59,7 +87,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Other": 2,
+        "Script": 2,
+        "Preflight": 2,
         "XHR": 2
     },
     "nameservers": [

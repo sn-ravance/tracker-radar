@@ -4,11 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000304,
-    "sites": 4,
+    "prevalence": 0.000117,
+    "sites": 17,
     "subdomains": [
         "cdn",
-        "stores.api"
+        "stores.api",
+        "tracking.api",
+        "products.api"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -21,22 +23,28 @@
                 "cdn"
             ],
             "apis": {
-                "window.localStorage": 2,
-                "Document.cookie getter": 2,
-                "window.sessionStorage": 2
+                "window.localStorage": 7,
+                "window.sessionStorage": 7,
+                "window.name": 7,
+                "Document.cookie getter": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000152,
+            "sites": 7,
+            "prevalence": 0.0000483,
             "cnames": [],
             "responseHashes": [
-                "93682b12d4c7cbcad7eff4b5eee12e8bf7ed68d91e3415b166a8322f9929d584"
+                "3372196fc360d40e0b9f4ff52f50ca71fd73dcd41527e2e48028a73069db8fdc"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "aftershokz.com",
-                "succulentsbox.com"
+                "almondcow.co",
+                "www.iheartraves.com",
+                "www.jeepworld.com",
+                "www.puffco.com",
+                "www.shopjustice.com",
+                "www.stevemadden.com",
+                "www.volcom.com"
             ]
         },
         {
@@ -47,48 +55,174 @@
                 "stores.api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000152,
+            "sites": 10,
+            "prevalence": 0.000069,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "almondcow.co",
+                "ensorings.com",
+                "www.coach.com",
+                "www.coachoutlet.com",
+                "www.iheartraves.com",
+                "www.jeepworld.com",
+                "www.puffco.com",
+                "www.shopjustice.com",
+                "www.stevemadden.com",
+                "www.volcom.com"
+            ]
+        },
+        {
+            "rule": "shoppinggives\\.com\\/cc-small\\/none",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "stores.api"
+            ],
+            "apis": {},
+            "sites": 10,
+            "prevalence": 0.000069,
             "cnames": [],
             "responseHashes": [
-                "ac3ba3ba6688b03f8ce0d6b247203b76152d563cfa427ff426c878f458a51c5e"
+                "2ffeb2012ff0db8c8e3c131d98f84c2ee17cfc9ff1f9cc221116586ff87ecc60",
+                "67238b6be24aac1ae18e6418eb04badf2b4a28bb52d565dec1b73b2ee82c87b3",
+                "d76cf299caf32a84b68bdf19ade322b73a0881eb89e3e9f9dccf8f6ff966419a",
+                "b623709d67f2bbb262972466bf11ff52c4230ba36c4603aa15e7c263bceb4a94",
+                "6a115e0f40c7e4fc8b7332f101a38c0edcfcdb6d18f4fde72aaab03731714e9f",
+                "e01caedd25cd579b51e67467d3adb0b4dda82abccb75fc21bde231ea7d59a579",
+                "4cdfffec9c945fd1f8ebfafcd6838105ca74b5c47774186f59fdb45468a27772",
+                "1ddca6094df98c38248be27bad055a6aef136abba7da27c28c898cd93b143a84",
+                "9dc7145b0167bce47c1bf9a07826b00dbe892f4ecba0720f5dd7dc86f5f071eb"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "aftershokz.com",
-                "succulentsbox.com"
+                "almondcow.co",
+                "ensorings.com",
+                "www.coach.com",
+                "www.coachoutlet.com",
+                "www.iheartraves.com",
+                "www.jeepworld.com",
+                "www.puffco.com",
+                "www.shopjustice.com",
+                "www.stevemadden.com",
+                "www.volcom.com"
             ]
         },
         {
-            "rule": "shoppinggives\\.com\\/cc-small\\/none",
+            "rule": "shoppinggives\\.com\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "stores.api"
+                "tracking.api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000152,
+            "sites": 7,
+            "prevalence": 0.0000483,
             "cnames": [],
             "responseHashes": [],
-            "type": "Other",
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "aftershokz.com",
-                "succulentsbox.com"
+                "almondcow.co",
+                "ensorings.com",
+                "www.coach.com",
+                "www.coachoutlet.com",
+                "www.iheartraves.com",
+                "www.puffco.com",
+                "www.stevemadden.com"
+            ]
+        },
+        {
+            "rule": "shoppinggives\\.com\\/",
+            "cookies": 0.0000483,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking.api"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000483,
+            "cnames": [],
+            "responseHashes": [
+                "f04f3edd809d39d10ac78789b2c0370b95fbd653a20311aa223cca068d45df88",
+                "ff704033467059a2e2a13490f19edce54b94e66781b81c3b069882936f67c66f",
+                "7fcefe9f5a069a085f86fa49875a1ca7ec0af97b6b2ea2609c776c1bc600f8c7",
+                "9a2c998734685c5a77dd5e3d7881080ec0c815bfabea8e30d62a4458c94c96f5",
+                "b17eb6ccc6ba5dd5b77349572f4e9f8274db725a2cb3c7a06a46632cb64470ac",
+                "634a4e35ee5249041f2455e84b8df076b7226393785be44ca0fbaa90556a98f6"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "almondcow.co",
+                "ensorings.com",
+                "www.coach.com",
+                "www.coachoutlet.com",
+                "www.iheartraves.com",
+                "www.puffco.com",
+                "www.stevemadden.com"
+            ]
+        },
+        {
+            "rule": "shoppinggives\\.com\\/donation-by-cms-id",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "products.api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "almondcow.co",
+                "ensorings.com",
+                "www.puffco.com"
+            ]
+        },
+        {
+            "rule": "shoppinggives\\.com\\/donation-by-cms-id",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "products.api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "94ddcd32371f3263c9bed5a3f2c246800265d22125ca88b32887ecb84de9d3c8",
+                "083961846a6f5448c263a1f9763e2b7e87b0437455d52cd0389342b3268225b8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "almondcow.co",
+                "ensorings.com",
+                "www.puffco.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000828,
     "types": {
-        "Script": 2,
-        "XHR": 2,
-        "Other": 2
+        "Script": 7,
+        "Preflight": 20,
+        "XHR": 20
     },
     "nameservers": [
         "ns-462.awsdns-57.com",

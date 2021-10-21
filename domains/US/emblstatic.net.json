@@ -4,16 +4,91 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000304,
+    "prevalence": 0.0000276,
     "sites": 4,
     "subdomains": [
-        "ebi"
+        "dev.ebi",
+        "ebi",
+        "dev.assets"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "emblstatic\\.net\\/web_guidelines\\/EBI-Framework\\/v1\\.3\\/images\\/logos\\/ELIXIR\\/elixir-cdr\\.gif",
+            "rule": "emblstatic\\.net\\/web_guidelines\\/EBI-Icon-fonts\\/v1\\.3\\/fonts\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dev.ebi",
+                "ebi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "a65c9ec058d09fc0b4c1885220d96b17f9d7ce2c79f6e36746533dcddf5fba60"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ebi.ac.uk",
+                "www.ebi.ac.uk"
+            ]
+        },
+        {
+            "rule": "emblstatic\\.net\\/vf\\/develop\\/scripts\\/scripts\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "dev.assets"
+            ],
+            "apis": {
+                "Document.cookie getter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "b1be3887e40e9c7a6edf71d8d254a1c55ebffb4b521c814f3be923d5c62e5a78"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ebi.ac.uk",
+                "www.ebi.ac.uk"
+            ]
+        },
+        {
+            "rule": "emblstatic\\.net\\/web_guidelines\\/EBI-Framework\\/v1\\.4\\/js\\/script\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "dev.ebi",
+                "ebi"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "4ee3b62dac5a3b90a25595369c7d1bb91edb518b6827b1deb22f4a7269d8b1d8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ebi.ac.uk",
+                "www.ebi.ac.uk"
+            ]
+        },
+        {
+            "rule": "emblstatic\\.net\\/announcements\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -21,12 +96,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "62e7294155c8060dc84ef0ea31f36ce972949ae14b4cfec14ec33a9b5eaac011"
+                "7dbef5f8e60a5f68ff2986540298786f88affb19e855a85da956b3fe09bba555"
             ],
-            "type": "Image",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -39,7 +114,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Image": 2
+        "Stylesheet": 2,
+        "Script": 4,
+        "XHR": 2
     },
     "nameservers": [
         "ns-186.awsdns-23.com",

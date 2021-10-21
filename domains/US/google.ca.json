@@ -9,28 +9,53 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000683,
-    "sites": 9,
+    "prevalence": 0.000104,
+    "sites": 15,
     "subdomains": [
-        "cse",
-        "www"
+        "adservice",
+        "www",
+        "cse"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "google\\.ca\\/adsid\\/integrator\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "adservice"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "a4a1824defec1084ca81d496ee77891684c26196924bdc4fc21dd3482ce15e14"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apkmb.com",
+                "www.freewebtools.com",
+                "www.nationalobserver.com"
+            ]
+        },
+        {
             "rule": "google\\.ca\\/cse\\/brand",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cse",
                 "www"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "6395e6f9f6fbcd953f0ffa40615094c565d86c265fb5028e64dd2dc872b5ce69"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -44,42 +69,43 @@
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "www",
-                "cse"
+                "cse",
+                "www"
             ],
             "apis": {
-                "Navigator.prototype.appName": 2,
-                "Navigator.prototype.platform": 2
+                "Navigator.prototype.appName": 4,
+                "Navigator.prototype.platform": 4
             },
-            "sites": 3,
-            "prevalence": 0.0000228,
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "30422a22a9f9ced7e348c0c2b10af8655bd2f1214d02bce40b9923ce4f94656e"
+                "6395e6f9f6fbcd953f0ffa40615094c565d86c265fb5028e64dd2dc872b5ce69"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "francoischarron.com",
-                "www.francoischarron.com",
-                "www.todocanada.ca"
+                "mallsinamerica.com",
+                "www.mallsinamerica.com",
+                "www.psychomedia.qc.ca",
+                "www.shopping-canada.com"
             ]
         },
         {
             "rule": "google\\.ca\\/jsapi",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000152,
+            "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [
-                "d48c95e39e7dcd31ebeee1191f77770fa1cb0a4213bb84ac925406066218c841"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -87,18 +113,39 @@
                 "thecpapshop.com",
                 "www.thecpapshop.com"
             ]
+        },
+        {
+            "rule": "google\\.ca\\/adsid\\/integrator\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "adservice"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "walmart.ca",
+                "www.walmart.ca"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 7
+        "Script": 11,
+        "Fetch": 2
     },
     "nameservers": [
-        "ns1.google.com",
         "ns2.google.com",
-        "ns3.google.com",
-        "ns4.google.com"
+        "ns1.google.com",
+        "ns4.google.com",
+        "ns3.google.com"
     ]
 }

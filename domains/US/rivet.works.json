@@ -7,33 +7,37 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000038,
-    "sites": 5,
+    "prevalence": 0.0000138,
+    "sites": 2,
     "subdomains": [
+        "webapp",
         "api"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "rivet\\.works\\/graphql",
+            "rule": "rivet\\.works\\/rivet\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "api"
+                "webapp"
             ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000304,
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Other",
+            "responseHashes": [
+                "90f06cb7a6ba39b877bdbdf247f4814e5e56cdd0a2880fbb935dd5275511b2a8"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "clarkarmory.com",
-                "www.austinkayak.com",
-                "www.diodedynamics.com",
+                "diodedynamics.com",
                 "www.steyr-arms.com"
             ]
         },
@@ -45,34 +49,51 @@
                 "api"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000304,
+            "sites": 2,
+            "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [
-                "76b03044657fb69f88f39f718fc448b614e3722d29ff088ab5b8e0c3c6c8e70c"
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "diodedynamics.com",
+                "www.steyr-arms.com"
+            ]
+        },
+        {
+            "rule": "rivet\\.works\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
             ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "clarkarmory.com",
-                "www.austinkayak.com",
-                "www.diodedynamics.com",
+                "diodedynamics.com",
                 "www.steyr-arms.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000759,
+    "cookies": 0,
     "types": {
-        "Other": 4,
-        "XHR": 4
+        "Script": 2,
+        "Preflight": 2,
+        "XHR": 2
     },
     "nameservers": [
-        "ns-264.awsdns-33.com",
         "ns-585.awsdns-09.net",
-        "ns-1211.awsdns-23.org",
-        "ns-2020.awsdns-60.co.uk"
+        "ns-2020.awsdns-60.co.uk",
+        "ns-264.awsdns-33.com",
+        "ns-1211.awsdns-23.org"
     ]
 }
