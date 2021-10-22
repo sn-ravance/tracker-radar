@@ -7,38 +7,38 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000304,
-    "sites": 3,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
-        "secure-apijs",
+        "vmrest",
+        "map2",
         "map1",
-        "map2"
+        "apijsv2",
+        "secure-apijs"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "viamichelin\\.com\\/apijsv2\\/api\\/js",
+            "rule": "viamichelin\\.com\\/apir\\/1\\/MapBoxCatalog\\.json2",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
-                "secure-apijs"
+                "vmrest"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "8b36cb068ea0e462e76942cff4daee14689255a8df3492abc29eb9399b131795"
+                "6dd5637ef9cc91b07c59c993a8ce330ec255520b4667807851d6833b1bc093f2"
             ],
-            "type": "Script",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "michelin.fr",
-                "www.autoroutes.fr"
+                "viamichelin.be",
+                "www.viamichelin.fr"
             ]
         },
         {
@@ -46,22 +46,49 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "map1",
-                "map2"
+                "map2",
+                "map1"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000203,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "1f64c2a3737173badd0561b0ee625480dfd4fc8a5e180b291c1ed1dd6f16974f"
+                "d1b933fb168457cf6e5a46c81849be0bf8523d2f0dee2921fb64d10ffb9b4deb",
+                "69e711b2c3dcb5c68ee062b5e94604a6e5b06d9078b61127654971f4f24edafd"
             ],
-            "type": "Image",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "viamichelin.fr",
+                "viamichelin.be",
+                "fr.viamichelin.be",
                 "www.viamichelin.fr"
+            ]
+        },
+        {
+            "rule": "viamichelin\\.com\\/apijsv2\\/api\\/js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "apijsv2",
+                "secure-apijs"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "2c06aa14b959e473d233429c845128f1dfe645600b20b23d0e862155f8d4f975"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "asm-rugby.com",
+                "www.autoroutes.fr"
             ]
         }
     ],
@@ -69,8 +96,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2,
-        "Image": 2
+        "Fetch": 5,
+        "Script": 2
     },
     "nameservers": [
         "pdns1.cscdns.net",

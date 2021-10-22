@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000716,
-    "sites": 7,
+    "prevalence": 0.000904,
+    "sites": 9,
     "subdomains": [
-        "api",
-        "webservices"
+        "webservices",
+        "files",
+        "api"
     ],
     "cnames": [
         {
@@ -16,37 +17,44 @@
             "resolved": "api.ontariogovernment.ca"
         },
         {
+            "original": "files.ontario.ca",
+            "resolved": "files.ontariogovernment.ca"
+        },
+        {
             "original": "www.webservices.gov.on.ca",
             "resolved": "webservices.ontariogovernment.ca"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
-            "rule": "ontariogovernment\\.ca\\/api\\/drupal\\/page%2Fosap-ontario-student-assistance-program",
+            "rule": "ontariogovernment\\.ca\\/metrics\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api"
+                "webservices"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000205,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [
                 {
-                    "original": "api.ontario.ca",
-                    "resolved": "api.ontariogovernment.ca"
+                    "original": "www.webservices.gov.on.ca",
+                    "resolved": "webservices.ontariogovernment.ca"
                 }
             ],
             "responseHashes": [
-                "18ef42b216538a392454c2d14e452f7ec41b67abe42ebec6a08845d9e96dd7bb"
+                "b374a83cbce0249b351266ef8c0b4f887d7211de7f63195f319569effa201de9"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gov.on.ca",
-                "osap.gov.on.ca"
+                "www.fin.gov.on.ca",
+                "www.labour.gov.on.ca",
+                "www.mto.gov.on.ca",
+                "www.omafra.gov.on.ca"
             ]
         },
         {
@@ -57,8 +65,8 @@
                 "webservices"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000512,
+            "sites": 6,
+            "prevalence": 0.000603,
             "cnames": [
                 {
                     "original": "www.webservices.gov.on.ca",
@@ -66,20 +74,49 @@
                 }
             ],
             "responseHashes": [
-                "f5f8f5611dfbbc391a34215afa10e81aca17764aa9fb9d53e90081efc5a28edc",
-                "819f044cccb72922c847edc5ce6c798d3b865cbcf03e90a1926854e9390518e7",
-                "9721f83a01c90e91304bd8fa405c4f67c2e55398f66e6d4a8ef41f5e1702e94e",
-                "74719cea239683a407ef1353fcc74a6d5eb334720f7ca061b3985ea5b334fcba"
+                "2be93f40cba0d369dc314015020be4d39c2f5273b07bca5fe4028ebb0fef5f42",
+                "437ba4bd2d3652ef3305caef8969849baa530d4df48b0fffd6e9d19f12e3d8f3",
+                "8f7aef2c47d506381390cc04fd2ed7ced775d8599de7ebcf7f8f403eeea51074",
+                "bbac13e91eba89ff4f895aabeb2f3d0ee704efa20fb94c0b7a5d8e9aace39c3d",
+                "0010d59773fb1034453be9190e96b638f4c455da5e84f01b72968507b98d1a00"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gov.on.ca",
+                "www.fin.gov.on.ca",
                 "www.labour.gov.on.ca",
                 "www.mcscs.jus.gov.on.ca",
                 "www.mto.gov.on.ca",
                 "www.omafra.gov.on.ca"
+            ]
+        },
+        {
+            "rule": "ontariogovernment\\.ca\\/banner-icon-alert-xsmall\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "files"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "files.ontario.ca",
+                    "resolved": "files.ontariogovernment.ca"
+                }
+            ],
+            "responseHashes": [
+                "b0ed8b23cf003933ca5e0d8c1a7254faef9c16458be3bcebe1e094cc1e240603"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gov.on.ca",
+                "www.ontario.ca"
             ]
         },
         {
@@ -91,7 +128,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000205,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "api.ontario.ca",
@@ -99,7 +136,7 @@
                 }
             ],
             "responseHashes": [
-                "a53edb6c9a30058ef31addb07e7e6ef4ec501b7f17cfe0295aeca40c9b72b116"
+                "06bb4d73a48d152ebbdd5c635c21fe9685458b8bc8361bd82fb75b3e6b114e28"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -114,8 +151,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 4,
-        "Script": 5
+        "Script": 11,
+        "Image": 2,
+        "XHR": 2
     },
     "nameservers": []
 }

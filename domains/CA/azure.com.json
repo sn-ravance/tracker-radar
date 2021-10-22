@@ -9,83 +9,131 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000512,
-    "sites": 5,
+    "prevalence": 0.00151,
+    "sites": 15,
     "subdomains": [
-        "sdtagging-east.eastus.cloudapp",
-        "wbgazappgwprd.eastus.cloudapp"
+        "westus-0.in.applicationinsights",
+        "canadacentral-0.in.applicationinsights",
+        "eastus-3.in.applicationinsights",
+        "js.monitor"
     ],
-    "cnames": [
-        {
-            "original": "dataviz.worldbank.org",
-            "resolved": "wbgazappgwprd.eastus.cloudapp.azure.com"
-        }
-    ],
+    "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "azure\\.com\\/id\\/3pc",
+            "rule": "azure\\.com\\/\\/v2\\/track",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "sdtagging-east.eastus.cloudapp"
+                "westus-0.in.applicationinsights",
+                "canadacentral-0.in.applicationinsights",
+                "eastus-3.in.applicationinsights"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000307,
+            "prevalence": 0.000301,
             "cnames": [],
-            "responseHashes": [
-                "b341b6e19e4f449637bc4904d554780d8436e06c5fc923d9457b0c9cb6da1113",
-                "5c3a5f29731ceb87493f66e35be65376b78b418404cddf82aab2fb9fc2293cce"
-            ],
-            "type": "Script",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mazdausa.com",
-                "www.mbusa.com",
-                "www.toyota.com"
+                "taproot.vote",
+                "www.carfax.ca",
+                "www.reservations.com"
             ]
         },
         {
-            "rule": "azure\\.com\\/vizql\\/csp-report",
-            "cookies": 0.000102,
+            "rule": "azure\\.com\\/\\/v2\\/track",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "wbgazappgwprd.eastus.cloudapp"
+                "westus-0.in.applicationinsights",
+                "canadacentral-0.in.applicationinsights",
+                "eastus-3.in.applicationinsights"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000205,
-            "cnames": [
-                {
-                    "original": "dataviz.worldbank.org",
-                    "resolved": "wbgazappgwprd.eastus.cloudapp.azure.com"
-                }
-            ],
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "76dc829025cdfa2c12dfaf8863662fc69c15a5a16535f2835bc9c5e0d14942b6",
+                "2d4e6fc4cc086cf99949cb1d9c45ece2336d1a1b457fe7eb3136377bdf285aa2"
             ],
-            "type": "Other",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "worldbank.org",
-                "www.worldbank.org"
+                "taproot.vote",
+                "www.carfax.ca",
+                "www.reservations.com"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/scripts\\/b\\/ai\\.2\\.min\\.js",
+            "cookies": 0.000502,
+            "fingerprinting": 2,
+            "subdomains": [
+                "js.monitor"
+            ],
+            "apis": {
+                "Navigator.prototype.onLine": 11,
+                "window.sessionStorage": 8,
+                "Navigator.prototype.userAgent": 8,
+                "window.localStorage": 8,
+                "PerformanceTiming.prototype.navigationStart": 8,
+                "Document.cookie getter": 5,
+                "Document.cookie setter": 5
+            },
+            "sites": 11,
+            "prevalence": 0.0011,
+            "cnames": [],
+            "responseHashes": [
+                "ee55acfc4c602c2e22f72a670393e618b001634cbdbd755c398bc0b64b4bd121"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "ai_session": {
+                    "ttl": 1800,
+                    "length": 50,
+                    "prevalence": 0.0005022601707684581,
+                    "uniqueness": 1
+                },
+                "ai_user": {
+                    "ttl": 31536000,
+                    "length": 47,
+                    "prevalence": 0.00040180813661476645,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "clevelandclinic.org",
+                "www.bestlawyers.com",
+                "www.braultetmartineau.com",
+                "www.christies.com",
+                "www.iga.net",
+                "www.milwaukeetool.com",
+                "www.milwaukeetool.ca",
+                "www.oaken.com",
+                "www.saskenergy.com",
+                "www.thriftbooks.com",
+                "www.thriftyfoods.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000205,
+    "cookies": 0.000502,
     "types": {
-        "Script": 3,
-        "Other": 2
+        "Preflight": 3,
+        "XHR": 3,
+        "Script": 11
     },
     "nameservers": [
-        "ns2-205.azure-dns.net",
         "ns4-205.azure-dns.info",
-        "ns1-205.azure-dns.com",
-        "ns3-205.azure-dns.org"
+        "ns3-205.azure-dns.org",
+        "ns2-205.azure-dns.net",
+        "ns1-205.azure-dns.com"
     ]
 }

@@ -9,18 +9,33 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000406,
-    "sites": 4,
+    "prevalence": 0.00191,
+    "sites": 19,
     "subdomains": [
-        "hubprodappgwfw0lqzkr.westeurope.cloudapp"
+        "hubprodappgwfw0lqzkr.westeurope.cloudapp",
+        "js.monitor",
+        "northeurope-0.in.applicationinsights",
+        "westeurope-5.in.applicationinsights",
+        "norwayeast-0.in.applicationinsights",
+        "westeurope-0.in.applicationinsights",
+        "eqtimingphp.westeurope.cloudapp",
+        "eqtimingiis.westeurope.cloudapp"
     ],
     "cnames": [
         {
             "original": "components.avinor.no",
             "resolved": "hubprodappgwfw0lqzkr.westeurope.cloudapp.azure.com"
+        },
+        {
+            "original": "events.eqtiming.com",
+            "resolved": "eqtimingiis.westeurope.cloudapp.azure.com"
+        },
+        {
+            "original": "stats.eqtiming.com",
+            "resolved": "eqtimingphp.westeurope.cloudapp.azure.com"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "azure\\.com\\/avinor-menu-component\\/oidc-library\\.js",
@@ -31,20 +46,22 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "components.avinor.no",
                     "resolved": "hubprodappgwfw0lqzkr.westeurope.cloudapp.azure.com"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "c0f6b9b2adf7cb07f7a57487c83e6f7a6564e130540a556f33b7f96fcef9259c"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "avinor.no",
-                "beta.avinor.no"
+                "www.avinor.no"
             ]
         },
         {
@@ -56,28 +73,189 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "components.avinor.no",
                     "resolved": "hubprodappgwfw0lqzkr.westeurope.cloudapp.azure.com"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "6bec925ea0e29e6e99a7718c9d472753519eee3e72fd5294ac12584aad783429"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "avinor.no",
-                "beta.avinor.no"
+                "www.avinor.no"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/scripts\\/b\\/ai\\.2\\.min\\.js",
+            "cookies": 0.000301,
+            "fingerprinting": 2,
+            "subdomains": [
+                "js.monitor"
+            ],
+            "apis": {
+                "Navigator.prototype.onLine": 9,
+                "window.sessionStorage": 7,
+                "window.localStorage": 7,
+                "Navigator.prototype.userAgent": 7,
+                "PerformanceTiming.prototype.navigationStart": 7,
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 3
+            },
+            "sites": 9,
+            "prevalence": 0.000904,
+            "cnames": [],
+            "responseHashes": [
+                "ee55acfc4c602c2e22f72a670393e618b001634cbdbd755c398bc0b64b4bd121"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "ai_session": {
+                    "ttl": 1800,
+                    "length": 50,
+                    "prevalence": 0.0003013863773357444,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "forsvaret.dk",
+                "my.clevelandclinic.org",
+                "www.ahlsell.no",
+                "www.banenor.no",
+                "www.komplettbank.no",
+                "www.lme.com",
+                "www.monter.no",
+                "www.optimera.no",
+                "www.skiforeningen.no"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/\\/v2\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "northeurope-0.in.applicationinsights",
+                "westeurope-5.in.applicationinsights",
+                "norwayeast-0.in.applicationinsights",
+                "westeurope-0.in.applicationinsights"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "forsvaret.dk",
+                "www.bluestep.no",
+                "www.filmweb.no",
+                "www.monter.no"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/\\/v2\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "northeurope-0.in.applicationinsights",
+                "westeurope-5.in.applicationinsights",
+                "norwayeast-0.in.applicationinsights",
+                "westeurope-0.in.applicationinsights"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "2f06451e2da9bcec5593f0e5f8be5aaf93a584def5560838666f6ddcc0f90a19",
+                "513fa9efcd57db663d3a04059d0e6758f2c0b42d54082c3353a8340cdb41effa",
+                "202f50229347a82b54f1ea61db1da9cf154cc6c319ac11b6715dadf8b426dcee"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "forsvaret.dk",
+                "www.bluestep.no",
+                "www.filmweb.no",
+                "www.monter.no"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/tracker",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "eqtimingphp.westeurope.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "stats.eqtiming.com",
+                    "resolved": "eqtimingphp.westeurope.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "ed1c11ae5ec52f01b21ccfd2d0dfe8fa32806d6e19f7bb9f987a8006a47c3b56"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eqtiming.com",
+                "signup.eqtiming.com"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/api\\/time",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eqtimingiis.westeurope.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "events.eqtiming.com",
+                    "resolved": "eqtimingiis.westeurope.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "7c43665d6a9537ab4cc0b91adc93ee18ccf2b6a68e622912872b8b44b1b68a00"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eqtiming.com",
+                "signup.eqtiming.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000301,
     "types": {
-        "Script": 4
+        "Script": 15,
+        "Preflight": 4,
+        "XHR": 6
     },
-    "nameservers": []
+    "nameservers": [
+        "ns4-205.azure-dns.info",
+        "ns3-205.azure-dns.org",
+        "ns1-205.azure-dns.com",
+        "ns2-205.azure-dns.net"
+    ]
 }

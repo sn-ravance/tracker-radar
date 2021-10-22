@@ -4,42 +4,152 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000102,
-    "sites": 1,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
+        "deploy",
+        "collect",
+        "cacheorcheck",
         "fonts"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "mopinion\\.com\\/js\\/pastease\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "deploy"
+            ],
+            "apis": {
+                "Document.cookie getter": 3,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "404e553148c76b0949a09f99394fde3eb9a7aa402e96ed13806e226766acca69"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "Pastease.passive.chance.5YhMrk04JDZQkJe": {
+                    "ttl": 31536005,
+                    "length": 10,
+                    "prevalence": 0.00010045203415369161,
+                    "uniqueness": 1
+                },
+                "Pastease.passive.activated.5YhMrk04JDZQkJe": {
+                    "ttl": 31536005,
+                    "length": 1,
+                    "prevalence": 0.00010045203415369161,
+                    "uniqueness": 1
+                },
+                "Pastease.passive.chance.93ocikmqq47p7k8i2gr33cnkcxqj2n1l": {
+                    "ttl": 2592003,
+                    "length": 9,
+                    "prevalence": 0.00010045203415369161,
+                    "uniqueness": 1
+                },
+                "Pastease.passive.activated.93ocikmqq47p7k8i2gr33cnkcxqj2n1l": {
+                    "ttl": 2592003,
+                    "length": 1,
+                    "prevalence": 0.00010045203415369161,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "acm.org",
+                "www.avogel.ca",
+                "www.eastlink.ca",
+                "www.thestudentroom.co.uk"
+            ]
+        },
+        {
+            "rule": "mopinion\\.com\\/assets\\/surveys\\/2\\.0\\/js\\/survey\\.min\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "collect"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.maxTouchPoints": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "59c4ae5c81fb2dec4f84539077eba7a437026e3e3268cc09f448fe881b4b292f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "acm.org",
+                "www.thestudentroom.co.uk"
+            ]
+        },
+        {
+            "rule": "mopinion\\.com\\/survey\\/public\\/json-config",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cacheorcheck"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "bdc0f2f5eaecc86380160e62da5802ff947bd9a4ae41cd9496041f8ef92d82d3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "acm.org",
+                "www.thestudentroom.co.uk"
+            ]
+        },
+        {
             "rule": "mopinion\\.com\\/css",
-            "cookies": 0.000102,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "fonts"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000205,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "e0ac41ea24490e0a3d2c2875ec5cffe7cbab9aa279befd4a88bda3c00674edff"
+                "e2b3a49da45004392cc3a9844c52febd0fee5a48c27c36e6c97ee72d10d7909e"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "vizio.com",
-                "www.vizio.com"
+                "acm.org",
+                "dl.acm.org",
+                "www.thestudentroom.co.uk"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000102,
+    "cookies": 0.000201,
     "types": {
-        "Stylesheet": 2
+        "Script": 6,
+        "XHR": 2,
+        "Stylesheet": 3
     },
     "nameservers": [
         "ns-134.awsdns-16.com",

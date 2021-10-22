@@ -4,66 +4,91 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000405,
-    "sites": 4,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
-        "a",
         "targeting",
-        "track"
+        "a",
+        "analytics",
+        "c1",
+        "vhs"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "vdo\\.ai\\/core\\/dependencies_hbv4\\/vdo\\.min\\.js",
-            "cookies": 0.000203,
+            "rule": "vdo\\.ai\\/allowed_url\\.php",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "targeting"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "b70f01c668e0fd25383da60eccfd3ed9628191c9f461b6adae3a4de342b3bf71",
+                "618de53c0a2228c226493964573039e98fa35ce9a22f9ecd476c8c7a93530fac"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gogoanime.vc",
+                "reaperscans.com",
+                "www.dramacool9.co"
+            ]
+        },
+        {
+            "rule": "vdo\\.ai\\/core\\/dependencies_stories_v1\\/vdo\\.min\\.js",
+            "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "a"
             ],
             "apis": {
                 "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2
             },
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "93c60447edf7a480da0da5ab7bed1c126be79a8ad858119bc462170df9d3f08f"
+                "8d548d063fb2f4ca473c0d480e3ad6c968f18add06441ce1c89f8791497e9561"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bestofcomicbooks.com",
-                "scantrad.net"
+                "gogoanime.vc",
+                "www.dramacool9.co"
             ]
         },
         {
-            "rule": "vdo\\.ai\\/allowed_url\\.php",
-            "cookies": 0.000203,
+            "rule": "vdo\\.ai\\/logger",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "targeting"
+                "analytics"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [
-                "65775616661fb762a0e1ee355ea9c446b30a4de2eb88fdbaa0c8f1f24ddad375"
-            ],
+            "responseHashes": [],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bestofcomicbooks.com",
-                "scantrad.net"
+                "gogoanime.vc",
+                "www.dramacool9.co"
             ]
         },
         {
             "rule": "vdo\\.ai\\/core\\/assets\\/vdo\\.player\\.js",
-            "cookies": 0.000203,
+            "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
                 "a"
@@ -72,77 +97,28 @@
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.maxTouchPoints": 2,
                 "Navigator.prototype.languages": 2,
-                "URL.createObjectURL": 2,
                 "HTMLMediaElement.prototype.canPlayType": 2,
-                "MediaSource.isTypeSupported": 2
+                "MediaSource.isTypeSupported": 2,
+                "Event.prototype.timeStamp": 2
             },
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "0d3d3d99ec2d1da823e792b3024b24ae723c89a29d46d9cffe4b1d4ba935c0da"
+                "8e32695eb554644820130b6b6c39187282bfaef34cf5b88b9a8c9b10d2da1e03"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bestofcomicbooks.com",
-                "scantrad.net"
+                "gogoanime.vc",
+                "www.dramacool9.co"
             ]
         },
         {
-            "rule": "vdo\\.ai\\/core\\/assets\\/prebid\\.js",
-            "cookies": 0.000203,
-            "fingerprinting": 1,
-            "subdomains": [
-                "a"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "window.sessionStorage": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000203,
-            "cnames": [],
-            "responseHashes": [
-                "f3c45db7e84b266b2aa334ba46f92a7824aeba36ddff2b790c9e834790e93d9f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bestofcomicbooks.com",
-                "scantrad.net"
-            ]
-        },
-        {
-            "rule": "vdo\\.ai\\/pixel\\.gif",
+            "rule": "vdo\\.ai\\/core\\/assets\\/rtb_stories\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "track"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000304,
-            "cnames": [],
-            "responseHashes": [
-                "cf4724b2f736ed1a0ae6bc28f1ead963d9cd2c1fd87b6ef32e7799fc1c5c8bda"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bestofcomicbooks.com",
-                "scantrad.net",
-                "www3.dramacool.movie"
-            ]
-        },
-        {
-            "rule": "vdo\\.ai\\/core\\/dependencies_stories_v1\\/vdo\\.min\\.js",
-            "cookies": 0.000203,
-            "fingerprinting": 2,
+            "fingerprinting": 1,
             "subdomains": [
                 "a"
             ],
@@ -150,68 +126,77 @@
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.cookieEnabled": 2,
                 "window.sessionStorage": 2,
-                "Navigator.prototype.maxTouchPoints": 2,
-                "Navigator.prototype.languages": 2,
-                "URL.createObjectURL": 2,
-                "HTMLMediaElement.prototype.canPlayType": 2,
-                "MediaSource.isTypeSupported": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.doNotTrack": 1,
-                "Screen.prototype.height": 1,
-                "Screen.prototype.width": 1,
-                "Navigator.prototype.language": 1,
-                "Screen.prototype.availWidth": 1,
-                "Screen.prototype.availHeight": 1,
-                "PerformanceTiming.prototype.navigationStart": 1,
-                "window.localStorage": 1
+                "window.localStorage": 2
             },
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "1a7bb7d61d12ecb5e8a4f98a1dd5c2aedfc68efc37ec479bfc8f2dcb6e494ba8"
+                "e704fa837d4b95b1c47bc43f2439ee54fd9df8db43302e00f59f60bab35f15d4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "animesvostfr.net",
-                "www3.dramacool.movie"
+                "gogoanime.vc",
+                "www.dramacool9.co"
             ]
         },
         {
-            "rule": "vdo\\.ai\\/core\\/allowed_url\\.php",
-            "cookies": 0.000101,
+            "rule": "vdo\\.ai\\/core\\/assets\\/img\\/logo\\.svg",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "a"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "5d66cdbc8c0f369f70e9902c0b3ab001772ddf4974cc2a77408d52153dfc0c64"
+                "9adf28f17b88f7835611736a9461d0452433a4e12f3ebaafae1689394aeb8d7b"
             ],
-            "type": "XHR",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "animesvostfr.net",
-                "www3.dramacool.movie"
+                "gogoanime.vc",
+                "www.dramacool9.co"
+            ]
+        },
+        {
+            "rule": "vdo\\.ai\\/sample\\/51\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "c1",
+                "vhs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gogoanime.vc",
+                "www.dramacool9.co"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000405,
+    "cookies": 0.000301,
     "types": {
-        "Script": 8,
-        "XHR": 4,
-        "Image": 3
+        "XHR": 5,
+        "Script": 6,
+        "Image": 2,
+        "Media": 2
     },
     "nameservers": [
-        "art.ns.cloudflare.com",
-        "elle.ns.cloudflare.com"
+        "elle.ns.cloudflare.com",
+        "art.ns.cloudflare.com"
     ]
 }

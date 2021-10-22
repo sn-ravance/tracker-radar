@@ -4,37 +4,42 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000307,
-    "sites": 3,
+    "prevalence": 0.000502,
+    "sites": 5,
     "subdomains": [
         "widget",
-        "app"
+        "app",
+        "checkin"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "purechat\\.com\\/VisitorWidget\\/WidgetScript",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "widget",
                 "app"
             ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000307,
+            "apis": {
+                "Date.prototype.getTime": 5
+            },
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
-                "fe9bb9f9ca14e1a060e87af4f0278e33d6d517917b7ada4fee86b30446d6b7de"
+                "ffc8b8c320e485c9564a000444625eee6fe6396acd6336527f7f5276b549e52a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "401games.ca",
-                "www.merx.com",
-                "www.myjewishlearning.com"
+                "www.clement.ca",
+                "www.reliableparts.ca",
+                "www.reliableparts.com",
+                "www.vitalitymedical.com"
             ]
         },
         {
@@ -45,26 +50,74 @@
                 "app"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000205,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "507c1d7b13ab47eab5a9fba7e3848b076f2e291452a5cd9701502a74f6e40c64"
+                "a571c372617185be96251886ed675d2db2adeca5d23d2bfb3f5469eb40bed139"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "401games.ca",
-                "www.merx.com"
+                "reliableparts.ca",
+                "www.reliableparts.com",
+                "www.vitalitymedical.com"
+            ]
+        },
+        {
+            "rule": "purechat\\.com\\/api\\/checkin\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "checkin"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "reliableparts.ca",
+                "www.reliableparts.com",
+                "www.vitalitymedical.com"
+            ]
+        },
+        {
+            "rule": "purechat\\.com\\/api\\/checkin\\/",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "checkin"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "502ea52270d08f4769736f4a5626c29cec6e7a980c95d1b7f8a2694e8f8c71b6",
+                "e32c0173067334a98ba9b037cab4755f9f484af5dcfcaa6cae555c484e55c23a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "reliableparts.ca",
+                "www.reliableparts.com",
+                "www.vitalitymedical.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000205,
+    "cookies": 0.000502,
     "types": {
-        "Script": 5
+        "Script": 8,
+        "Preflight": 3,
+        "XHR": 3
     },
     "nameservers": [
         "ns-1478.awsdns-56.org",

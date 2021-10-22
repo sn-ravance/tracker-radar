@@ -9,37 +9,78 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000913,
-    "sites": 9,
+    "prevalence": 0.000602,
+    "sites": 6,
     "subdomains": [
         "nordvpn",
-        "rbs",
         "vodafoneuk",
-        "cooksongold",
-        "startech-cv19",
+        "rbs",
         "victorianplumbing"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "nanorep\\.co\\/~nordvpn\\/api\\/widget\\/v1\\/cnf",
-            "cookies": 0.000203,
+            "rule": "nanorep\\.co\\/web\\/include\\.js",
+            "cookies": 0.0001,
+            "fingerprinting": 1,
+            "subdomains": [
+                "nordvpn",
+                "vodafoneuk"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "93d74ce05af5441063356d7cf495e53fba99da7ba6c7a1d4a7b21bdb0c35a308"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "bc.visitor_token": {
+                    "ttl": 31536005,
+                    "length": 19,
+                    "prevalence": 0.00010034115994380895,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nordvpn.com",
+                "support.vodafone.co.uk"
+            ]
+        },
+        {
+            "rule": "nanorep\\.co\\/api\\/visitorTokenConfig",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "nordvpn"
+                "nordvpn",
+                "rbs",
+                "vodafoneuk",
+                "victorianplumbing"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000203,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "086891f96cf54a0938281ebdc52edbfa58291be32b592dd792d7dbd2e4cf8e00"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "nordvpn.com",
-                "support.nordvpn.com"
+                "supportcentre.natwest.com",
+                "support.vodafone.co.uk",
+                "www.supportcentre-rbs.co.uk",
+                "www.victorianplumbing.co.uk"
             ]
         },
         {
@@ -52,8 +93,8 @@
                 "vodafoneuk"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000304,
+            "sites": 4,
+            "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [
                 "8f69e10876805b747a3ad08a818d46ac7e731b1af417ea6e259d9b6b7deb65c5"
@@ -61,78 +102,75 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "bc.visitor_token": 0.00010144045445323595
+                "bc.visitor_token": 0.00010034115994380895
             },
             "exampleSites": [
                 "nordvpn.com",
                 "supportcentre.natwest.com",
-                "support.vodafone.co.uk"
+                "support.vodafone.co.uk",
+                "www.supportcentre-rbs.co.uk"
             ]
         },
         {
-            "rule": "nanorep\\.co\\/api\\/v1\\/visitorToken",
-            "cookies": 0.000406,
+            "rule": "nanorep\\.co\\/~nordvpn\\/api\\/widget\\/v1\\/cnf",
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
-                "nordvpn",
-                "cooksongold",
-                "startech-cv19",
-                "victorianplumbing"
+                "nordvpn"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000406,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "018e11109024a1ba5285c660e47f3cbca332c3b9cb53f2d09029700004990255",
-                "b6c355dd2c7841d79752de5d8510b055c55f9f261b419eff498c2631c7ed8fac",
-                "66daea0628e7f7e15b9fdc4728eed028ce36d29cb2ceb9ebb28cb058a37beed5"
+                "397649765ff928a9fb26c1996669bc81cde2f41451f579de571f30ae73e0402d"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "nordvpn.com",
-                "www.cooksongold.com",
-                "www.startech.com",
-                "www.victorianplumbing.co.uk"
+                "support.nordvpn.com"
             ]
         },
         {
             "rule": "nanorep\\.co\\/~rbs\\/api\\/widget\\/v1\\/cnf",
-            "cookies": 0.000203,
+            "cookies": 0.000301,
             "fingerprinting": 0,
             "subdomains": [
                 "rbs"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000203,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "0b473707db9729b65bb577bde8d3a834533edf7f8a40ce5eb21193e7ac67612b"
+                "5e66d0a387e8bc18779ed2970d8ecb32c2fbfd226ed7e8db3079f604a7085662"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "gpv_url": 0.00010034115994380895
+            },
             "exampleSites": [
                 "natwest.com",
-                "supportcentre.natwest.com"
+                "supportcentre.natwest.com",
+                "www.supportcentre-rbs.co.uk"
             ]
         },
         {
             "rule": "nanorep\\.co\\/~vodafoneuk\\/api\\/widget\\/v1\\/cnf",
-            "cookies": 0.000203,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "vodafoneuk"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "be0a79c776ab245042295c143035080f4f27c046ca5d7ed7bb642669880e4385"
+                "505125776666bd0d168ff019887337ae2177f084c94be64b5800d852db6b05e8"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -143,86 +181,42 @@
             ]
         },
         {
-            "rule": "nanorep\\.co\\/web\\/floating-widget\\.js",
-            "cookies": 0.000203,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cooksongold",
-                "startech-cv19",
-                "victorianplumbing"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "window.localStorage": 3,
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2,
-                "Date.prototype.getTime": 1,
-                "Navigator.prototype.languages": 1
-            },
-            "sites": 3,
-            "prevalence": 0.000304,
-            "cnames": [],
-            "responseHashes": [
-                "21f0311e5c92826b614b3d8dd74839df5668fe5e4ce90122448637aadd99aa6b"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "bc.visitor_token": {
-                    "ttl": 31536005,
-                    "length": 19,
-                    "prevalence": 0.0002028809089064719,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cooksongold.com",
-                "www.startech.com",
-                "www.victorianplumbing.co.uk"
-            ]
-        },
-        {
             "rule": "nanorep\\.co\\/api\\/widget\\/v1\\/cnf",
-            "cookies": 0.000406,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
-                "cooksongold",
-                "startech-cv19",
                 "victorianplumbing"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000406,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "f39f0ecf88ce3268e792ccf399056301a588ce3c8d2a21876a99978f78530597",
-                "6e2c869990f7d1eb9e6674f5f9e11c6805fb4a2a88dc462a1a0f36ede7ac4699"
+                "69bed29e92b35d4b03174ac727b6ed94a19741a6b5d3b273c488444c3d19337f"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cooksongold.com",
-                "www.cooksongold.com",
-                "www.startech.com",
+                "victorianplumbing.co.uk",
                 "www.victorianplumbing.co.uk"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000812,
+    "cookies": 0.000502,
     "types": {
+        "Script": 2,
         "XHR": 14,
-        "Image": 3,
-        "Script": 3
+        "Image": 4
     },
     "nameservers": [
-        "ns15.dnsmadeeasy.com",
-        "ns14.dnsmadeeasy.com",
         "ns13.dnsmadeeasy.com",
-        "ns10.dnsmadeeasy.com",
         "ns12.dnsmadeeasy.com",
-        "ns11.dnsmadeeasy.com"
+        "ns11.dnsmadeeasy.com",
+        "ns14.dnsmadeeasy.com",
+        "ns15.dnsmadeeasy.com",
+        "ns10.dnsmadeeasy.com"
     ]
 }

@@ -4,16 +4,125 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000406,
-    "sites": 4,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
-        "metrics-logger",
+        "direct-events-collector",
+        "publisher-assets",
         "pix",
-        "open-api"
+        "events-collector",
+        "metrics-logger"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "spot\\.im\\/api\\/v2\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "direct-events-collector"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailywire.com",
+                "www.realclearpolitics.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/ad\\/event-tracking\\/pixel-ads-google-adsense\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "publisher-assets"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailywire.com",
+                "www.dailywire.com",
+                "www.realclearpolitics.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/api\\/v1\\/pixel",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pix"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailywire.com",
+                "www.dailywire.com",
+                "www.realclearpolitics.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/api\\/v1\\/pixel",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pix"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailywire.com",
+                "www.dailywire.com",
+                "www.realclearpolitics.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/api\\/v1\\/device_load",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events-collector"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "24f798ab1dcac45b0ac3514f3c1d30ab3b2a400989cc2ba25d8bbd19f5e44352"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailywire.com",
+                "www.realclearpolitics.com"
+            ]
+        },
         {
             "rule": "spot\\.im\\/metric",
             "cookies": 0,
@@ -23,7 +132,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
@@ -31,60 +140,40 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dailywire.com",
-                "www.dailywire.com"
+                "www.realclearpolitics.com"
             ]
         },
         {
-            "rule": "spot\\.im\\/api\\/v1\\/pixel",
-            "cookies": 0.000203,
+            "rule": "spot\\.im\\/api\\/v1\\/pixels",
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "pix"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Image",
+            "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "realclearpolitics.com",
+                "dailywire.com",
                 "www.realclearpolitics.com"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/v1\\/messages-count",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "open-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000203,
-            "cnames": [],
-            "responseHashes": [
-                "ab525447e402d88fa9882caceab62a7154a3756bbd6c899db4628f8750a670f1"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "the-sun.com",
-                "www.thesun.co.uk"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000203,
+    "cookies": 0.000201,
     "types": {
-        "Fetch": 4,
-        "Image": 2
+        "XHR": 2,
+        "Fetch": 10,
+        "Preflight": 3,
+        "Other": 2
     },
     "nameservers": [
         "ns-1202.awsdns-22.org",

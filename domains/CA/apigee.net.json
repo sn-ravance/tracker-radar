@@ -9,23 +9,24 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000614,
-    "sites": 6,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
         "cisco-dsc-prod",
-        "natgeo-prod"
+        "ecollege-prod",
+        "cmg-prod"
     ],
     "cnames": [
         {
-            "original": "api.nationalgeographic.com",
-            "resolved": "natgeo-prod.apigee.net"
-        },
-        {
             "original": "dsc.cisco.com",
             "resolved": "cisco-dsc-prod.apigee.net"
+        },
+        {
+            "original": "login.pearson.com",
+            "resolved": "ecollege-prod.apigee.net"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "apigee\\.net\\/v1\\/netid",
@@ -36,7 +37,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000205,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "dsc.cisco.com",
@@ -44,7 +45,7 @@
                 }
             ],
             "responseHashes": [
-                "7d9f7c41b644ccc685fb4d49ad4daaeccb6c29ad3bbf5806e9f4a72726e9b908"
+                "f06f1632995968e99815080c1d2660ed495577e1b87192bdc98c0cd411c0fa5a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -55,30 +56,74 @@
             ]
         },
         {
-            "rule": "apigee\\.net\\/consent-tracking",
+            "rule": "apigee\\.net\\/v1\\/piapi\\/login\\/js\\/v2\\/session\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "natgeo-prod"
+                "ecollege-prod"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000205,
+            "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "api.nationalgeographic.com",
-                    "resolved": "natgeo-prod.apigee.net"
+                    "original": "login.pearson.com",
+                    "resolved": "ecollege-prod.apigee.net"
                 }
             ],
             "responseHashes": [
-                "4f84ee0868dc7705d4c58c8c8aecefbd93c2d75116f05daace2749ac5b55f63c"
+                "7e1b18611f7e704d5ab36d32ec10ff9775ffd39fbb14876a931d86968f4b666b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pearson.com",
+                "www.pearson.com"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/v1\\/xapi\\/users\\/tvguide\\/session\\/load",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cmg-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "0e5c522d1f6b3b8c7efd727a24a342d3f41b9b64088983a79d0f3acc9ed85a44"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nationalgeographic.com",
-                "www.nationalgeographic.com"
+                "tvguide.com",
+                "www.tvguide.com"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/v1\\/xapi\\/tvschedules\\/tvguide\\/tonight\\/9100001138\\/new\\/web",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cmg-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "65403849a82555bfcea3fbcf2d9d4357be56c282d402783140ec8a572bb1e62e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tvguide.com",
+                "www.tvguide.com"
             ]
         }
     ],
@@ -86,10 +131,15 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0001,
     "types": {
-        "Script": 2,
-        "XHR": 2
+        "Script": 4,
+        "XHR": 4
     },
-    "nameservers": []
+    "nameservers": [
+        "ns-116.awsdns-14.com",
+        "ns-1441.awsdns-52.org",
+        "ns-1907.awsdns-46.co.uk",
+        "ns-670.awsdns-19.net"
+    ]
 }

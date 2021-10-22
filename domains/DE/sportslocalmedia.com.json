@@ -7,41 +7,88 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000304,
+    "prevalence": 0.000301,
     "sites": 3,
     "subdomains": [
-        "ads"
+        "ads",
+        "floor"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "sportslocalmedia\\.com\\/slm\\.prebid\\.4\\.11\\.0\\.js",
+            "rule": "sportslocalmedia\\.com\\/slm\\.prebid\\.marketscreenerde\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "ads"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Navigator.prototype.cookieEnabled": 3,
-                "window.sessionStorage": 3,
-                "Navigator.prototype.appName": 3
-            },
-            "sites": 3,
-            "prevalence": 0.000304,
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "ede5cffe2bfccb4306211aa9bf1defe5be3192084e04e4a2fb0164b8b558aec6",
-                "ad503e6352db6bf8711f308c1bdbb2d099f9a88ebfede17ee8f508d5a77b38bf"
+                "f07551cc65bbfb148b6ce21b0df123790e8e9c1d7275e6a744cfcef3df0f493e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "marketscreener.com",
-                "us.soccerway.com",
+                "m-de.marketscreener.com"
+            ]
+        },
+        {
+            "rule": "sportslocalmedia\\.com\\/slmadshb\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "ads"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.cookieEnabled": 3,
+                "Navigator.prototype.appName": 3,
+                "window.localStorage": 3,
+                "Document.cookie getter": 3,
+                "Date.prototype.getTime": 3,
+                "window.sessionStorage": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "83f4ffc74165c419da3266f6d3cf687f7305d2770c9d43d9dc69223b02f98456"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "marketscreener.com",
+                "m-de.marketscreener.com",
                 "www.marketscreener.com"
+            ]
+        },
+        {
+            "rule": "sportslocalmedia\\.com\\/marketscreenerde-desktop\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "floor"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "f308c6b8786d30c497cb1153b72bb0e4084c8b15fcf838a0fa1796d6126cab0d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "marketscreener.com",
+                "m-de.marketscreener.com"
             ]
         }
     ],
@@ -49,7 +96,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 3
+        "Script": 5,
+        "XHR": 2
     },
     "nameservers": [
         "dns200.anycast.me",

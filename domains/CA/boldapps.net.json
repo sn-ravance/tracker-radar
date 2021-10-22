@@ -4,21 +4,71 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000819,
-    "sites": 8,
+    "prevalence": 0.001,
+    "sites": 10,
     "subdomains": [
-        "upsells",
-        "bundles.staging",
         "bundles",
+        "option",
+        "upsells",
         "apps",
-        "stores"
+        "staples"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "boldapps\\.net\\/js\\/bundles\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "bundles"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "d11a574bdc4eb4b280001fb5c921ce4951d7cca43b4599bdd10c8e2b098c6115"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "canadianpreparedness.com",
+                "www.canadianshieldppe.ca"
+            ]
+        },
+        {
+            "rule": "boldapps\\.net\\/js\\/options\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "option"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "250d709b6cc4b8e8f5b57fb7042960f4ac8b6ac6d242997dccc32a664b9aa2bb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "healthcaresolutions.ca",
+                "www.mastermindtoys.com"
+            ]
+        },
+        {
             "rule": "boldapps\\.net\\/v2_ui\\/js\\/upsell\\.js",
-            "cookies": 0.000205,
+            "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [
                 "upsells"
@@ -27,52 +77,29 @@
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.000205,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "7b26c47c11c273e7536f432af2bd4d613dc4fa272ba6afa682c86f1d4af816a8"
+                "3e61b8d9fae3bf7e8dc6a117f45ea71454b348ce7ea966289ab63dd8072fff03"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "donaldjtrump.com",
-                "workauthority.ca"
-            ]
-        },
-        {
-            "rule": "boldapps\\.net\\/bundles_install_check\\.js",
-            "cookies": 0.000205,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bundles.staging",
-                "bundles"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000205,
-            "cnames": [],
-            "responseHashes": [
-                "48922662ded60ae654cf1bd95f3f85d65afa8121d93f155bc7c69cd3b9cb43c7"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "donaldjtrump.com",
-                "shop.donaldjtrump.com"
+                "workauthority.ca",
+                "www.setforset.com"
             ]
         },
         {
             "rule": "boldapps\\.net\\/pricerules\\/staples-canada\\.myshopify\\.com\\/enabled",
-            "cookies": 0.000307,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "apps"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000307,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
@@ -81,24 +108,89 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "staples.ca",
+                "bureauengros.com",
+                "www.staples.ca"
+            ]
+        },
+        {
+            "rule": "boldapps\\.net\\/api\\/frontend\\/inventory_services",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "staples"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bureauengros.com",
+                "www.staples.ca"
+            ]
+        },
+        {
+            "rule": "boldapps\\.net\\/api\\/frontend\\/inventory_services",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "staples"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "14d0f6f6dfe6cf5f3a8bfb0fc17e0a28d618b8e94357f556df57cd11176186e4"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bureauengros.com",
                 "www.bureauengros.com",
                 "www.staples.ca"
             ]
         },
         {
-            "rule": "boldapps\\.net\\/front-end\\/get_stores\\.php",
-            "cookies": 0.000205,
+            "rule": "boldapps\\.net\\/pricerules\\/staples-canada\\.myshopify\\.com\\/rulesets",
+            "cookies": 0.000301,
             "fingerprinting": 0,
             "subdomains": [
-                "stores"
+                "apps"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "d495f5400d6da6dec4107315fe4130c5053a4a15eea7eef9b6f1c2370bde7c3b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bureauengros.com",
+                "www.bureauengros.com",
+                "www.staples.ca"
+            ]
+        },
+        {
+            "rule": "boldapps\\.net\\/pricerules\\/staples-canada\\.myshopify\\.com\\/rulesets",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apps"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000205,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "94da9031bce4b40411100fbbeb3f9da317c9aa9f6a9efda4e281027b2e9d725c"
+                "d495f5400d6da6dec4107315fe4130c5053a4a15eea7eef9b6f1c2370bde7c3b"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -109,33 +201,36 @@
             ]
         },
         {
-            "rule": "boldapps\\.net\\/front-end\\/get_stores\\.php",
-            "cookies": 0.000205,
+            "rule": "boldapps\\.net\\/v2\\/the-canadian-shield\\.myshopify\\.com\\/display_settings",
+            "cookies": 0.0001,
             "fingerprinting": 0,
             "subdomains": [
-                "stores"
+                "bundles"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000205,
+            "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Other",
+            "responseHashes": [
+                "ebe23effa70fd232e3a5a8d7d1cf984b344da63c69573728cd5ad1da91ec1b28"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bureauengros.com",
-                "www.staples.ca"
+                "canadianshieldppe.ca",
+                "www.canadianshieldppe.ca"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000819,
+    "cookies": 0.001,
     "types": {
-        "Script": 4,
-        "Fetch": 5,
-        "Other": 2
+        "Script": 6,
+        "Fetch": 9,
+        "Preflight": 2,
+        "XHR": 3
     },
     "nameservers": [
         "uma.ns.cloudflare.com",

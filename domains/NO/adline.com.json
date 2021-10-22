@@ -4,42 +4,98 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
-        "prod.tracking"
+        "prod.api",
+        "t"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "adline\\.com\\/v3",
-            "cookies": 0.000101,
-            "fingerprinting": 0,
+            "rule": "adline\\.com\\/api\\/cpa",
+            "cookies": 0,
+            "fingerprinting": 2,
             "subdomains": [
-                "prod.tracking"
+                "prod.api"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000203,
+            "apis": {
+                "window.localStorage": 3,
+                "Date.prototype.getTimezoneOffset": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Screen.prototype.width": 3,
+                "window.devicePixelRatio": 3,
+                "Screen.prototype.height": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "220ae0f324f743cb992a8bb7a03c07d66b27a5376aab59f378cf2ce4d9a327d4"
+                "8242d5c39e0006cd101b89dae66d42be99cfad60ddf0e64760bc4594a69e10c1",
+                "1564670ecf85161a1b5864a011052149d561017da24cda739ce5d5d352a30ed5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rebel.no",
+                "www.ebutikker.no",
+                "www.nyefilter.no"
+            ]
+        },
+        {
+            "rule": "adline\\.com\\/track\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rebel.no",
+                "www.ebutikker.no",
+                "www.nyefilter.no"
+            ]
+        },
+        {
+            "rule": "adline\\.com\\/track\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "lanullva.no",
-                "www.lanullva.no"
+                "rebel.no",
+                "www.ebutikker.no",
+                "www.nyefilter.no"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0,
     "types": {
-        "XHR": 2
+        "Script": 3,
+        "Preflight": 3,
+        "XHR": 3
     },
     "nameservers": [
         "ns-51.awsdns-06.com",

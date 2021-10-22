@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.00213,
-    "sites": 21,
+    "prevalence": 0.00191,
+    "sites": 19,
     "subdomains": [
         "backoffice",
-        "cname"
+        "cname",
+        "analytics"
     ],
     "cnames": [
         {
@@ -16,8 +17,32 @@
             "resolved": "cname.transmatico.com"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "transmatico\\.com\\/get",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "backoffice"
+            ],
+            "apis": {
+                "Navigator.prototype.appVersion": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "211e22892d3780f31fb829e6bb19bedba43d23475dde3dff033aee59ae07ff50"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abendblatt.de",
+                "www.donaukurier.de"
+            ]
+        },
         {
             "rule": "transmatico\\.com\\/get\\/",
             "cookies": 0,
@@ -27,13 +52,13 @@
                 "cname"
             ],
             "apis": {
-                "Navigator.prototype.appVersion": 17,
-                "Date.prototype.getTime": 3,
+                "Navigator.prototype.appVersion": 13,
+                "Date.prototype.getTime": 5,
                 "Event.prototype.timeStamp": 3,
                 "Navigator.prototype.userAgent": 1
             },
-            "sites": 18,
-            "prevalence": 0.00182,
+            "sites": 16,
+            "prevalence": 0.0016,
             "cnames": [
                 {
                     "original": "sonderthemen.badische-zeitung.de",
@@ -41,80 +66,120 @@
                 }
             ],
             "responseHashes": [
-                "d7261c6a35a3569d4042d86cf2a2747fa57bf0a3cad3ea6b3b447c7c6404a2df",
-                "30ea3d9b29e01bec77dcba26ec627c88fbda41de767e96f608b84ddfed8df405",
-                "cca82ef13668bf6a9182f3d16b626e96a83f136eb0769779105a819312484f4d",
-                "fbaa02ff2c82e70ceaaab83e38d0ad9cba253ed623ea2ffb1b4ac17f16733516",
-                "c2ef1c295637e91c29c4c6fd55847e67eb2d5078830b15c9958ca491ac0d75e5",
-                "b5aeec2e19380e748e0bc092d99d09b5f89e47c01495d0121144654e1871ad7e",
-                "d7792421c944eb4f0a09bfeba3bfe826bf2c05161b2807fe4b3220e0f317987d",
-                "c9abae27c483bcd3b95d3101e82c5405b4735b824e6632d959b42dfcdaf4f50a",
-                "bc19acf10a8a8008aedd0176de790c8472d97c21efc2c74a721c39c7194a050d",
-                "c8d184bfd15030917da18b85ac629c5b5b745698bf31931aef2940564eb0636f",
-                "80de4dfa3a83852b11d02392c12009be0b4cd7808049f0f2491c6a61cfececfe",
-                "acc4d8b927ef4afa26df12d4613a2135449da23b724f93281885d7976347ae55",
-                "84b065065f5b574e472497c0acf5196c8a60632dcffe0f5189836009ecd6b554",
-                "b488b87132bbfed7d71cc2b395604153051c4517fdafb401d5f9868444a8084e",
-                "9bf31e688417e7eae735b3c80075bf17b1c5fbee29f99827722c717d85b48ba9",
-                "388740eda9b1e282788884bf4181487edc7e1698754327b7bc460f130f4d525e",
-                "4601246b947988dbab8668da730ecd1080e34a2bb316fdc0194f46d031ac3b15"
+                "8d5ea11529e68ed971bbb1ca69c1c8278e5ecea37d949e120bb9114ddcfe69a1",
+                "f5b9f346fe3b578d1018d3169d0cb4b7425f921d9113a9504e1d38a2288cccdf",
+                "d8feb4319aa3a35f45227c4154e654f3753ae38790f4624e12bedd5225d7204d",
+                "fd63f63dd55321d07ba9a0057c4a7c4518c7b96df7b64c1fb0a9933aa9a178f7",
+                "d8bd3d1b11bb5e9c7b9d15e93c817ebf5d18f70ec2b107607124454c44e19c38",
+                "5f95eca99632f0ef8c315395690689a76ec00a1e9818e3f74a0a6e3dabad06ac",
+                "f916766750cbd09c464f4a7502a422dc812cd3e81682f247f968755f9ca0380f",
+                "00d851586fc00b6a1437c3cc1bb7f747e07ed1e248bb44e30293251ff94a06a7",
+                "466b0ee72a9c61e932ee5339130ac3ca21d3a6830f592eacfaeb727d989d71db",
+                "4bd3c20c28f365b5696f52630845cb869e8299eb469d637bd94c07b4efcd5283",
+                "91b5feb3a1493e038190d896a17e26a9abdeb5476322e0af54d212b5ddd65f49",
+                "a1a6ba07f67352aae9c097460979d76438676b383297ca2b9776a28db229a864",
+                "11ed1c5b14063863ae65afc006f109be295d54766658b30a724660f70819d26a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "get_top_level_domain_cookie": 0.00010029084344599338
+            },
             "exampleSites": [
-                "volksstimme.de",
-                "www.aargauerzeitung.ch",
+                "allgemeine-zeitung.de",
+                "www.allgaeuer-zeitung.de",
                 "www.all-in.de",
-                "www.allgemeine-zeitung.de",
                 "www.badische-zeitung.de",
-                "www.dewezet.de",
                 "www.echo-online.de",
-                "www.express.de",
                 "www.giessener-anzeiger.de",
                 "www.ksta.de",
-                "www.mainpost.de",
                 "www.mittelhessen.de",
                 "www.pnp.de",
+                "www.pz-news.de",
                 "www.rundschau-online.de",
                 "www.siegener-zeitung.de",
+                "www.stimme.de",
                 "www.svz.de",
-                "www.volksstimme.de",
-                "www.wiesbadener-kurier.de"
+                "www.wiesbadener-kurier.de",
+                "www.wn.de"
             ]
         },
         {
-            "rule": "transmatico\\.com\\/get",
-            "cookies": 0,
-            "fingerprinting": 1,
+            "rule": "transmatico\\.com\\/matomo\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 2,
             "subdomains": [
-                "backoffice"
+                "analytics"
             ],
             "apis": {
-                "Navigator.prototype.appVersion": 3
+                "Document.cookie getter": 2,
+                "window.name": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie setter": 2
             },
-            "sites": 3,
-            "prevalence": 0.000304,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "f669e60799d2f222b1ce5069bd327c0e03f7c2252a59e0593a5466fc2e8cf406",
-                "139787082fee2f6acd42df37a06860f3919efadbadc0f44e1cf197698c217da2"
+                "0995371a359a4a701d66f8b183de6144de9a042e5bac84b6f920968f51567742"
             ],
             "type": "Script",
+            "firstPartyCookies": {
+                "_pk_id.130.05ea": {
+                    "ttl": 33955206,
+                    "length": 52,
+                    "prevalence": 0.00020058168689198675,
+                    "uniqueness": 0.5
+                },
+                "_pk_ses.130.05ea": {
+                    "ttl": 1806,
+                    "length": 1,
+                    "prevalence": 0.00020058168689198675,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "berliner-woche.de",
+                "www.berliner-woche.de"
+            ]
+        },
+        {
+            "rule": "transmatico\\.com\\/matomo\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "548f2d6f4d0d820c6c5ffbeffcbd7f0e73193e2932eefe542accc84762deec87"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "abendblatt.de",
-                "www.bergedorfer-zeitung.de",
-                "www.wn.de"
+                "berliner-woche.de",
+                "www.berliner-woche.de"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0001,
     "types": {
-        "Script": 21
+        "Script": 20,
+        "Image": 2
     },
     "nameservers": [
         "daisy.ns.cloudflare.com",

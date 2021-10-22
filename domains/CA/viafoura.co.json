@@ -7,9 +7,10 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00338,
-    "sites": 33,
+    "prevalence": 0.001,
+    "sites": 10,
     "subdomains": [
+        "realtimeeventfeeds",
         "sub",
         "api",
         "i",
@@ -21,6 +22,34 @@
     "fingerprinting": 0,
     "resources": [
         {
+            "rule": "viafoura\\.co\\/eventfeed",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "realtimeeventfeeds"
+            ],
+            "apis": {},
+            "sites": 10,
+            "prevalence": 0.001,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailyhive.com",
+                "newsinteractives.cbc.ca",
+                "www.cbc.ca",
+                "www.clickondetroit.com",
+                "www.dailystar.co.uk",
+                "www.mercurynews.com",
+                "www.mirror.co.uk",
+                "www.rds.ca",
+                "www.sportsnet.ca",
+                "www.standard.co.uk"
+            ]
+        },
+        {
             "rule": "viafoura\\.co\\/",
             "cookies": 0,
             "fingerprinting": 0,
@@ -28,34 +57,24 @@
                 "sub"
             ],
             "apis": {},
-            "sites": 32,
-            "prevalence": 0.00328,
+            "sites": 10,
+            "prevalence": 0.001,
             "cnames": [],
             "responseHashes": [],
             "type": "WebSocket",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.cbc.ca",
-                "www.mirror.co.uk",
-                "lfpress.com",
-                "www.dallasnews.com",
-                "montrealgazette.com",
                 "dailyhive.com",
-                "nationalpost.com",
-                "edmontonjournal.com",
-                "leaderpost.com",
-                "www.dailystar.co.uk",
-                "ipolitics.ca",
-                "www.dailyrecord.co.uk",
-                "www.liverpoolecho.co.uk",
-                "vancouversun.com",
+                "newsinteractives.cbc.ca",
+                "www.cbc.ca",
                 "www.clickondetroit.com",
-                "calgaryherald.com",
-                "windsorstar.com",
-                "theprovince.com",
-                "torontosun.com",
-                "edmontonsun.com"
+                "www.dailystar.co.uk",
+                "www.mercurynews.com",
+                "www.mirror.co.uk",
+                "www.rds.ca",
+                "www.sportsnet.ca",
+                "www.standard.co.uk"
             ]
         },
         {
@@ -66,78 +85,80 @@
                 "api"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000307,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
-            "type": "Other",
+            "type": "Preflight",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.00020090406830738323
+            },
             "exampleSites": [
                 "cbc.ca",
-                "www.cbc.ca",
-                "www.cbcmusic.ca"
+                "www.cbc.ca"
             ]
         },
         {
             "rule": "viafoura\\.co\\/v2\\/www\\.cbc\\.ca\\/bootstrap\\/v2",
-            "cookies": 0.000409,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000409,
-            "cnames": [],
-            "responseHashes": [
-                "c3dcad9c42ef1829ed34defc098f98e0032c809b4d2401a40ef9a0c599d4d80f",
-                "2c3506c59f0c49e4c902fefb1a2c22303db2674656737954ac1bd69136de8344",
-                "00bce4f4eea23eb88dbb1f34483e65deee865de06fe3d68ecdd9c7ef6dae7bd1"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cbc.ca",
-                "newsinteractives.cbc.ca",
-                "www.cbc.ca",
-                "www.cbcmusic.ca"
-            ]
-        },
-        {
-            "rule": "viafoura\\.co\\/v2\\/www\\.cbc\\.ca\\/thirdpartycookie",
-            "cookies": 0.000307,
+            "cookies": 0.000301,
             "fingerprinting": 0,
             "subdomains": [
                 "api"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000307,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "f45d45a0b4d6daa0bf60f68c50a3f973df6816a1a3a6c3a2fb8ecdde7b05fce2",
+                "cd376229dc7d11e6e6c05ab4d9280284d384dfd20d0999c033094b63ad312d87"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.00030135610246107485
+            },
+            "exampleSites": [
+                "cbc.ca",
+                "newsinteractives.cbc.ca",
+                "www.cbc.ca"
+            ]
+        },
+        {
+            "rule": "viafoura\\.co\\/v2\\/www\\.cbc\\.ca\\/thirdpartycookie",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "61a2b2588acde0ccae626edbff25bbe32c1ff43cc0d89859c4ef48af507cd356"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.00020090406830738323
+            },
             "exampleSites": [
                 "cbc.ca",
-                "www.cbc.ca",
-                "www.cbcmusic.ca"
+                "www.cbc.ca"
             ]
         },
         {
             "rule": "viafoura\\.co\\/v3\\/www\\.cbc\\.ca\\/ingest",
-            "cookies": 0.000409,
+            "cookies": 0.000301,
             "fingerprinting": 0,
             "subdomains": [
                 "i"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000409,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "ebf4f635a17d10d6eb46ba680b70142419aa3220f228001a036d311a22ee9d2a"
@@ -145,36 +166,13 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_cb_svref": 0.00020470829068577277
+                "_cb_svref": 0.00020090406830738323,
+                "lotame_domain_check": 0.00030135610246107485
             },
             "exampleSites": [
                 "cbc.ca",
                 "newsinteractives.cbc.ca",
-                "www.cbc.ca",
-                "www.cbcmusic.ca"
-            ]
-        },
-        {
-            "rule": "viafoura\\.co\\/v3\\/www\\.cbc\\.ca\\/ingest",
-            "cookies": 0.000307,
-            "fingerprinting": 0,
-            "subdomains": [
-                "i"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000307,
-            "cnames": [],
-            "responseHashes": [
-                "ebf4f635a17d10d6eb46ba680b70142419aa3220f228001a036d311a22ee9d2a"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cbc.ca",
-                "www.cbc.ca",
-                "www.cbcmusic.ca"
+                "www.cbc.ca"
             ]
         },
         {
@@ -185,17 +183,16 @@
                 "interaction"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000307,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
-            "type": "Other",
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cbc.ca",
-                "www.cbc.ca",
-                "www.cbcmusic.ca"
+                "www.cbc.ca"
             ]
         },
         {
@@ -206,8 +203,8 @@
                 "interaction"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000307,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -217,100 +214,57 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cbc.ca",
-                "www.cbc.ca",
-                "www.cbcmusic.ca"
+                "www.cbc.ca"
             ]
         },
         {
-            "rule": "viafoura\\.co\\/v4\\/notifications\\/aggregate\\/00000000-0000-4000-8000-082f79d5b829",
+            "rule": "viafoura\\.co\\/v3\\/www\\.cbc\\.ca\\/ingest",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "ebf4f635a17d10d6eb46ba680b70142419aa3220f228001a036d311a22ee9d2a"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.00020090406830738323
+            },
+            "exampleSites": [
+                "cbc.ca",
+                "www.cbc.ca"
+            ]
+        },
+        {
+            "rule": "viafoura\\.co\\/v5\\/notifications\\/00000000-0000-4000-8000-082f79d5b829\\/all",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "notifications"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000307,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cbc.ca",
-                "www.cbc.ca",
-                "www.cbcmusic.ca"
-            ]
-        },
-        {
-            "rule": "viafoura\\.co\\/v4\\/notifications\\/00000000-0000-4000-8000-082f79d5b829\\/user",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "notifications"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000307,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cbc.ca",
-                "www.cbc.ca",
-                "www.cbcmusic.ca"
-            ]
-        },
-        {
-            "rule": "viafoura\\.co\\/v4\\/notifications\\/aggregate\\/00000000-0000-4000-8000-082f79d5b829",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "notifications"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000307,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+                "b6dc85459fbb9d03f478d91eae99e6627e04c8f805b08e4b97423ffbc3870d9d"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cbc.ca",
-                "www.cbc.ca",
-                "www.cbcmusic.ca"
+                "www.cbc.ca"
             ]
         },
         {
-            "rule": "viafoura\\.co\\/v4\\/notifications\\/00000000-0000-4000-8000-082f79d5b829\\/user",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "notifications"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000307,
-            "cnames": [],
-            "responseHashes": [
-                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cbc.ca",
-                "www.cbc.ca",
-                "www.cbcmusic.ca"
-            ]
-        },
-        {
-            "rule": "viafoura\\.co\\/v4\\/livecomments\\/00000000-0000-4000-8000-f5c84e28340e\\/contentcontainer\\/id",
+            "rule": "viafoura\\.co\\/v4\\/livecomments\\/00000000-0000-4000-8000-9ada5bb969a7\\/contentcontainer\\/id",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -318,19 +272,19 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000205,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
-            "type": "Other",
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dailyrecord.co.uk",
-                "www.dailyrecord.co.uk"
+                "rds.ca",
+                "www.rds.ca"
             ]
         },
         {
-            "rule": "viafoura\\.co\\/v4\\/livecomments\\/00000000-0000-4000-8000-f5c84e28340e\\/contentcontainer\\/id",
+            "rule": "viafoura\\.co\\/v4\\/livecomments\\/00000000-0000-4000-8000-9ada5bb969a7\\/contentcontainer\\/id",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -338,201 +292,34 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000205,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "e28bf7d9fcc22cdfde0c7c8f31e3648a4847e7bda9cb69f309f24257eee3dd41"
+                "ad412b40b62ac8ea84a694c1aa5ac4bee82adc80c1672f5a6f4213455dbbcf27"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dailyrecord.co.uk",
-                "www.dailyrecord.co.uk"
-            ]
-        },
-        {
-            "rule": "viafoura\\.co\\/v4\\/livecomments\\/00000000-0000-4000-8000-74e153e394bb\\/contentcontainer\\/id",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "livecomments"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000205,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dailystar.co.uk",
-                "www.dailystar.co.uk"
-            ]
-        },
-        {
-            "rule": "viafoura\\.co\\/v4\\/livecomments\\/00000000-0000-4000-8000-74e153e394bb\\/contentcontainer\\/id",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "livecomments"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000205,
-            "cnames": [],
-            "responseHashes": [
-                "c1035e7416e9139982a456c696d823ff19177ed56df63f457ef6dcbe9fe126f8"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dailystar.co.uk",
-                "www.dailystar.co.uk"
-            ]
-        },
-        {
-            "rule": "viafoura\\.co\\/v4\\/livecomments\\/00000000-0000-4000-8000-a7f5f586d1e4\\/contentcontainer\\/id",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "livecomments"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000205,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dallasnews.com",
-                "www.dallasnews.com"
-            ]
-        },
-        {
-            "rule": "viafoura\\.co\\/v4\\/livecomments\\/00000000-0000-4000-8000-a7f5f586d1e4\\/contentcontainer\\/id",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "livecomments"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000205,
-            "cnames": [],
-            "responseHashes": [
-                "51e9261f7c7866790dabb74a306f738f86a4d35d4ac4e0181368edb1d1c1a3d3"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dallasnews.com",
-                "www.dallasnews.com"
-            ]
-        },
-        {
-            "rule": "viafoura\\.co\\/v4\\/livecomments\\/00000000-0000-4000-8000-b72c1a6f9789\\/contentcontainer\\/id",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "livecomments"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000205,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "liverpoolecho.co.uk",
-                "www.liverpoolecho.co.uk"
-            ]
-        },
-        {
-            "rule": "viafoura\\.co\\/v4\\/livecomments\\/00000000-0000-4000-8000-b72c1a6f9789\\/contentcontainer\\/id",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "livecomments"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000205,
-            "cnames": [],
-            "responseHashes": [
-                "ed10454c2cc93bf7891b643abf2bc46a0eaa3a03b3673d4ac99b62364022c929"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "liverpoolecho.co.uk",
-                "www.liverpoolecho.co.uk"
-            ]
-        },
-        {
-            "rule": "viafoura\\.co\\/v4\\/livecomments\\/00000000-0000-4000-8000-67e599051dc3\\/contentcontainer\\/id",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "livecomments"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000205,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mirror.co.uk",
-                "www.mirror.co.uk"
-            ]
-        },
-        {
-            "rule": "viafoura\\.co\\/v4\\/livecomments\\/00000000-0000-4000-8000-67e599051dc3\\/contentcontainer\\/id",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "livecomments"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000205,
-            "cnames": [],
-            "responseHashes": [
-                "f4415a23a346e3dbd75382ffd6db22b1712f6840f85d2418119f44d53da0c5f7"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mirror.co.uk",
-                "www.mirror.co.uk"
+                "rds.ca",
+                "www.rds.ca"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00338,
+    "cookies": 0.001,
     "types": {
-        "WebSocket": 32,
-        "Other": 25,
-        "XHR": 26,
-        "Image": 4
+        "WebSocket": 20,
+        "Preflight": 6,
+        "XHR": 11,
+        "Image": 3,
+        "Other": 2
     },
     "nameservers": [
-        "ns-1124.awsdns-12.org",
-        "ns-2035.awsdns-62.co.uk",
+        "ns-766.awsdns-31.net",
         "ns-272.awsdns-34.com",
-        "ns-766.awsdns-31.net"
+        "ns-2035.awsdns-62.co.uk",
+        "ns-1124.awsdns-12.org"
     ]
 }

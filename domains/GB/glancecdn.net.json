@@ -7,13 +7,14 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000304,
+    "prevalence": 0.000301,
     "sites": 3,
     "subdomains": [
-        "www"
+        "www",
+        "storage"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "glancecdn\\.net\\/cobrowse\\/CobrowseJS\\.ashx",
@@ -24,11 +25,13 @@
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.appVersion": 2,
                 "window.localStorage": 2,
                 "Document.cookie getter": 2
             },
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
             "type": "Script",
@@ -36,7 +39,50 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "aarp.org",
-                "www.fidelity.com"
+                "www.handbook.fca.org.uk"
+            ]
+        },
+        {
+            "rule": "glancecdn\\.net\\/cobrowse\\/js\\/GlanceCobrowseLoader_4\\.17\\.0M\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "storage"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "f76c2aed837deb6ab5069475e5adedd607f88824f83edf9f775d11dca369b6eb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aarp.org",
+                "www.handbook.fca.org.uk"
+            ]
+        },
+        {
+            "rule": "glancecdn\\.net\\/cobrowse\\/js\\/GlancePresenceVisitor_4\\.17\\.0M\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www",
+                "storage"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aarp.org",
+                "www.aarp.org"
             ]
         }
     ],
@@ -44,7 +90,7 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2
+        "Script": 6
     },
     "nameservers": [
         "ns-1270.awsdns-30.org",

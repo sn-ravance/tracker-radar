@@ -4,51 +4,75 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000406,
-    "sites": 4,
+    "prevalence": 0.000602,
+    "sites": 6,
     "subdomains": [
-        "config",
-        "auth"
+        "auth",
+        "config"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "lrcontent\\.com\\/v2\\/js\\/LoginRadiusV2\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "auth"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Document.cookie getter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1357d050358d80ecda9a8a3f02d8d91a2ae71d683bc31d3659cd2a9db0b27030"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nationalpost.com",
+                "www.hellomagazine.com"
+            ]
+        },
+        {
             "rule": "lrcontent\\.com\\/ciam\\/appInfo",
-            "cookies": 0.000406,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "config"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000406,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [],
-            "type": "Other",
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "arte.tv",
                 "www.cbc.ca",
-                "www.hellomagazine.com",
-                "www.hola.com"
+                "www.hellomagazine.com"
             ]
         },
         {
             "rule": "lrcontent\\.com\\/ciam\\/appInfo",
-            "cookies": 0.000406,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "config"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000406,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "cefd7426f55e2cc0f41e1f40c9fb635252d3d0c5d7ce0a406ed099093a8c504a",
-                "dfc5cfca7ad135c91abd9084f6fa94700f23ab4bfe69efd7d78158a687ee2763"
+                "84cc08f36106507f619e7f6de4eb0cec7c2bb2c75a7262d1058524da9fb6a7b9",
+                "ae1c0ecc8dd49b23ef7e8d88559a709445eab836261707e716e5779e916965c4"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -56,43 +80,60 @@
             "exampleSites": [
                 "arte.tv",
                 "www.cbc.ca",
-                "www.hellomagazine.com",
-                "www.hola.com"
+                "www.hellomagazine.com"
             ]
         },
         {
-            "rule": "lrcontent\\.com\\/v2\\/js\\/LoginRadiusV2\\.js",
-            "cookies": 0.000203,
-            "fingerprinting": 1,
+            "rule": "lrcontent\\.com\\/ciam\\/consent",
+            "cookies": 0,
+            "fingerprinting": 0,
             "subdomains": [
-                "auth"
+                "config"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 2
-            },
+            "apis": {},
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [
-                "e68894d0c51c990a2086b49b1a3844287ee78d89b8456cd551eb799e8ba3f3de"
-            ],
-            "type": "Script",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "hellomagazine.com",
-                "www.hola.com"
+                "dailystar.co.uk",
+                "www.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "lrcontent\\.com\\/ciam\\/consent",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "config"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "879faf9ce07be8f80ace620c4cc7642505a28ed35137cbd0e35cc22065f221e5"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailystar.co.uk",
+                "www.mirror.co.uk"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000406,
+    "cookies": 0,
     "types": {
-        "Other": 4,
-        "XHR": 4,
-        "Script": 2
+        "Script": 2,
+        "Preflight": 5,
+        "XHR": 3,
+        "Fetch": 2
     },
     "nameservers": [
         "noah.ns.cloudflare.com",

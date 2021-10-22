@@ -9,12 +9,20 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000102,
+    "prevalence": 0.0001,
     "sites": 1,
     "subdomains": [],
     "cnames": [
         {
+            "original": "assets.targetimg1.com",
+            "resolved": ".target-opus.map.fastly.net"
+        },
+        {
             "original": "carts.target.com",
+            "resolved": ".target-opus.map.fastly.net"
+        },
+        {
+            "original": "redoak.target.com",
             "resolved": ".target-opus.map.fastly.net"
         },
         {
@@ -22,8 +30,40 @@
             "resolved": ".target-opus.map.fastly.net"
         }
     ],
-    "fingerprinting": 2,
+    "fingerprinting": 3,
     "resources": [
+        {
+            "rule": "target-opus\\.map\\.fastly\\.net\\/ssx\\/ssx\\.mod\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 3,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "assets.targetimg1.com",
+                    "resolved": ".target-opus.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "b30aebceb71a4d2b09aeff9a99bf7075c1c0376bdc48f8abc549f7657b6b52a0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "weiygrety": {
+                    "ttl": null,
+                    "length": 8,
+                    "prevalence": 0.00010045203415369161,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "target.com",
+                "www.target.com"
+            ]
+        },
         {
             "rule": "target-opus\\.map\\.fastly\\.net\\/v3\\/stores\\/nearby\\/52404",
             "cookies": 0,
@@ -31,7 +71,7 @@
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000205,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "redsky.target.com",
@@ -39,7 +79,32 @@
                 }
             ],
             "responseHashes": [
-                "976376ded3c6de0a6f729b23e431ccfd6d300bafcf6b41af8681c66523a1eaf2"
+                "31df2aa1e8c29ac66ce137bf10aeae1b711382db09946044769430548dea6c3e"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "target.com",
+                "www.target.com"
+            ]
+        },
+        {
+            "rule": "target-opus\\.map\\.fastly\\.net\\/content-publish\\/pages\\/v1",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "redoak.target.com",
+                    "resolved": ".target-opus.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "1b41689250091f5c2f3849d3386b8b45ff5933e6d511df42aa53fe63fb533aea"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -51,12 +116,12 @@
         },
         {
             "rule": "target-opus\\.map\\.fastly\\.net\\/web_checkouts\\/v1\\/cart",
-            "cookies": 0,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000205,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "carts.target.com",
@@ -64,7 +129,7 @@
                 }
             ],
             "responseHashes": [],
-            "type": "Other",
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -74,12 +139,12 @@
         },
         {
             "rule": "target-opus\\.map\\.fastly\\.net\\/web_checkouts\\/v1\\/cart",
-            "cookies": 0,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000205,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "carts.target.com",
@@ -107,10 +172,11 @@
         "Session Replay"
     ],
     "performance": {},
-    "cookies": 0.000102,
+    "cookies": 0.0001,
     "types": {
-        "Fetch": 4,
-        "Other": 2
+        "Script": 2,
+        "Fetch": 6,
+        "Preflight": 2
     },
     "nameservers": []
 }

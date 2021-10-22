@@ -4,18 +4,18 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000203,
+    "prevalence": 0.000201,
     "sites": 2,
     "subdomains": [
         "partners"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "mcontigo\\.com\\/prebid\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "partners"
             ],
@@ -23,13 +23,16 @@
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.cookieEnabled": 2,
                 "window.sessionStorage": 2,
-                "Navigator.prototype.appName": 2
+                "Navigator.prototype.appName": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "09b4ff60c8f61615a4022e0325be9bf3f93f1a322f46a24d7d967e04b0e7a98e"
+                "34cf9a6144e4a6636093f8eb74b08a1b5e5355b5912a2eed694a568a76bf42e3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -40,20 +43,22 @@
             ]
         },
         {
-            "rule": "mcontigo\\.com\\/tasks\\/currency",
+            "rule": "mcontigo\\.com\\/loader\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "partners"
             ],
-            "apis": {},
+            "apis": {
+                "window.sessionStorage": 2
+            },
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "482d419b38c746bc49b75cb60cdd4a3f51368a8d29d6d96aba10c7b5bf1422f9"
+                "b657aceaefae9dcac5eec0efe53500659a904bf3325664e785d08254bb0594e6"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -66,11 +71,10 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2,
-        "XHR": 2
+        "Script": 4
     },
     "nameservers": [
-        "josh.ns.cloudflare.com",
-        "lady.ns.cloudflare.com"
+        "lady.ns.cloudflare.com",
+        "josh.ns.cloudflare.com"
     ]
 }

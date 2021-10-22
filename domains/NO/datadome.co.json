@@ -7,14 +7,20 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.00071,
-    "sites": 7,
+    "prevalence": 0.00161,
+    "sites": 16,
     "subdomains": [
-        "sslgen-nyt",
         "js",
-        "api-js"
+        "sslgen-nyt",
+        "sslgen-vy",
+        "api-js",
+        "api-eu-france-1"
     ],
     "cnames": [
+        {
+            "original": "dd.cloud.vy.no",
+            "resolved": "sslgen-vy.datadome.co"
+        },
         {
             "original": "dd.nytimes.com",
             "resolved": "sslgen-nyt.datadome.co"
@@ -24,66 +30,88 @@
     "resources": [
         {
             "rule": "datadome\\.co\\/tags\\.js",
-            "cookies": 0,
+            "cookies": 0.000603,
             "fingerprinting": 3,
             "subdomains": [
+                "js",
                 "sslgen-nyt",
-                "js"
+                "sslgen-vy"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 4,
-                "Document.cookie getter": 3,
-                "Screen.prototype.height": 4,
-                "Screen.prototype.width": 4,
-                "Screen.prototype.colorDepth": 4,
-                "Navigator.prototype.language": 4,
-                "window.devicePixelRatio": 4,
-                "Navigator.prototype.hardwareConcurrency": 4,
-                "Screen.prototype.availWidth": 4,
-                "Screen.prototype.availHeight": 4,
-                "Date.prototype.getTimezoneOffset": 4,
-                "window.sessionStorage": 4,
-                "window.localStorage": 4,
-                "window.indexedDB": 4,
-                "Navigator.prototype.plugins": 4,
-                "Navigator.prototype.productSub": 4,
-                "Navigator.prototype.platform": 4,
-                "Navigator.prototype.maxTouchPoints": 4,
-                "Navigator.prototype.vendor": 4,
-                "Navigator.prototype.mimeTypes": 4,
-                "Navigator.prototype.mediaDevices": 4,
-                "HTMLMediaElement.prototype.canPlayType": 4,
-                "MediaSource.isTypeSupported": 4,
-                "Navigator.prototype.deviceMemory": 4,
-                "Screen.prototype.orientation": 4,
-                "Navigator.prototype.languages": 4,
-                "WebGLRenderingContext.prototype.getExtension": 4,
-                "WebGLRenderingContext.prototype.getParameter": 4,
-                "Navigator.prototype.permissions": 4,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 4,
-                "Notification.permission": 3
+                "Navigator.prototype.userAgent": 13,
+                "Document.cookie getter": 6,
+                "Screen.prototype.height": 13,
+                "Screen.prototype.width": 13,
+                "Screen.prototype.colorDepth": 13,
+                "Navigator.prototype.language": 13,
+                "window.devicePixelRatio": 13,
+                "Navigator.prototype.hardwareConcurrency": 13,
+                "Screen.prototype.availWidth": 13,
+                "Screen.prototype.availHeight": 13,
+                "Date.prototype.getTimezoneOffset": 13,
+                "window.sessionStorage": 13,
+                "window.localStorage": 13,
+                "window.indexedDB": 13,
+                "Navigator.prototype.plugins": 13,
+                "Navigator.prototype.productSub": 13,
+                "Navigator.prototype.platform": 13,
+                "Navigator.prototype.maxTouchPoints": 13,
+                "Navigator.prototype.vendor": 13,
+                "Navigator.prototype.mimeTypes": 13,
+                "Navigator.prototype.mediaDevices": 13,
+                "HTMLMediaElement.prototype.canPlayType": 13,
+                "MediaSource.isTypeSupported": 13,
+                "Navigator.prototype.deviceMemory": 13,
+                "Screen.prototype.orientation": 13,
+                "Navigator.prototype.languages": 13,
+                "WebGLRenderingContext.prototype.getExtension": 13,
+                "WebGLRenderingContext.prototype.getParameter": 13,
+                "Navigator.prototype.permissions": 13,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 13,
+                "Notification.permission": 13,
+                "Document.cookie setter": 5
             },
-            "sites": 6,
-            "prevalence": 0.000608,
+            "sites": 15,
+            "prevalence": 0.00151,
             "cnames": [
                 {
                     "original": "dd.nytimes.com",
                     "resolved": "sslgen-nyt.datadome.co"
+                },
+                {
+                    "original": "dd.cloud.vy.no",
+                    "resolved": "sslgen-vy.datadome.co"
                 }
             ],
             "responseHashes": [
-                "527fb6a17560887bcaa28ac07abd4d53c65b727d34f60d8cc059f44d31cb252e"
+                "4a9b4fd25ccbcd4bc45f323f88aaf13291a13ab7b2ed638196c40f58fa5f737c"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "datadome": {
+                    "ttl": 31536000,
+                    "length": 106,
+                    "prevalence": 0.0005023106288929073,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "newyorktimes.com",
-                "www.filmibeat.com",
+                "jooble.org",
+                "tidal.com",
+                "www.alltrails.com",
+                "www.datanyze.com",
                 "www.fnac.com",
+                "www.hermes.com",
+                "www.idealista.com",
+                "www.leroymerlin.fr",
                 "www.nytimes.com",
+                "www.ouest-france.fr",
                 "www.pokemoncenter.com",
-                "www.residentadvisor.net"
+                "www.skruvat.no",
+                "www.thetrainline.com",
+                "www.vy.no",
+                "www.zoominfo.com"
             ]
         },
         {
@@ -91,45 +119,74 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "api-js",
+                "api-eu-france-1",
                 "sslgen-nyt",
-                "api-js"
+                "sslgen-vy"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.00071,
+            "sites": 16,
+            "prevalence": 0.00161,
             "cnames": [
                 {
                     "original": "dd.nytimes.com",
                     "resolved": "sslgen-nyt.datadome.co"
+                },
+                {
+                    "original": "dd.cloud.vy.no",
+                    "resolved": "sslgen-vy.datadome.co"
                 }
             ],
             "responseHashes": [
-                "bd155b649a0854253919c468c06ed657540d0494feb0f12dbac398c5b14358be",
-                "72d7a47907755f465697a89d59ff92cc501a781f90533dd5a9f2d5a4795d116c",
-                "5c26cab2f8d81e57f807964278dabb459c915141024a55f6ed96b19b879af385",
-                "083d01d7d92d669272aeb57b779c181f997531f75b6579e8ad52ff4c575fa00e",
-                "2b096b28fe14268de33ded320e64522fae7c0cb4a64c1eb9bf21e0b9affc84a6"
+                "b475c74d93d3bafb6a9cc250559b78a1bdcbc6544db3dbebfd304e00fb37bfd9",
+                "f90c5539d46f0b20af27cbff0f1c5ca21016528ad60124b7e67d7eadcc7c8245",
+                "944e0eb2fa95284054c8735b1e6a937ef77c9906f45b7b0fba94cfa6c9b9446e",
+                "91d907572ae53fe2da06a4be310509434cf242b07bee97b1aa80d479f78bf224",
+                "e8be1779874a9f3a369d33e6cb3f9dd351a2c1f13950f6cafc65fc5e76995937",
+                "c85139b908a52469bd194f50734385beb62685bbc8d43191c3dba026513ec8e3",
+                "40410f13a99b42b820178e5e75429aaae75b48237deba3234563254ea4384cc5",
+                "861d41a0bce19b485dccf350298bb44e9e0558a717cf9bd281c73c2a8634c5e1",
+                "869033c73a7f1543062e95a8e817221cb6ee2011e7a4adb1e6fdd889388b5fc3",
+                "760837207756483b66c5ff1446191d2d720e8e3cda5d8c5e22f09417374706e6",
+                "cbc363ea26caf742e7aaf0825b49d0a297e51a5d009cfd4ed68e58ee58a4bb9b",
+                "b39fae4528b4300468fd6d77b7cbcfcdd096494d6eee05baecf534d6a4014133",
+                "5e4530398c90f8cfd5efca1698bdd99a31e89c5b75d51983b2978dc1a4a62232",
+                "5834604e7867cd1b3c4c1e41a54096eed496b3a60d6545b950f7d187fac13fcb"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "newyorktimes.com",
-                "www.carsales.com.au",
-                "www.filmibeat.com",
+                "jooble.org",
+                "tidal.com",
+                "www.alltrails.com",
+                "www.datanyze.com",
+                "www.darty.com",
                 "www.fnac.com",
+                "www.hermes.com",
+                "www.idealista.com",
+                "www.leroymerlin.fr",
                 "www.nytimes.com",
+                "www.ouest-france.fr",
                 "www.pokemoncenter.com",
-                "www.residentadvisor.net"
+                "www.skruvat.no",
+                "www.thetrainline.com",
+                "www.vy.no",
+                "www.zoominfo.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000603,
     "types": {
-        "Script": 6,
-        "XHR": 7
+        "Script": 15,
+        "XHR": 16
     },
-    "nameservers": []
+    "nameservers": [
+        "ns-1139.awsdns-14.org",
+        "ns-1801.awsdns-33.co.uk",
+        "ns-359.awsdns-44.com",
+        "ns-888.awsdns-47.net"
+    ]
 }

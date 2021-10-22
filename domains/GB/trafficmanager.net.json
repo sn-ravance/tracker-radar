@@ -9,39 +9,34 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000913,
-    "sites": 9,
+    "prevalence": 0.0011,
+    "sites": 11,
     "subdomains": [
         "nslc-prod-app",
-        "cdn.platform",
-        "fps-namer"
+        "idp.redbridge"
     ],
     "cnames": [
         {
+            "original": "idp.redbridge.gov.uk",
+            "resolved": "idp.redbridge.trafficmanager.net"
+        },
+        {
             "original": "login.norton.com",
             "resolved": "nslc-prod-app.trafficmanager.net"
-        },
-        {
-            "original": "na.fps.ford.com",
-            "resolved": "fps-namer.trafficmanager.net"
-        },
-        {
-            "original": "west.cdn.mathletics.com",
-            "resolved": "cdn.platform.trafficmanager.net"
         }
     ],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "trafficmanager\\.net\\/sso\\/idp\\/SAML2",
-            "cookies": 0.000203,
+            "cookies": 0.0001,
             "fingerprinting": 0,
             "subdomains": [
                 "nslc-prod-app"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000304,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "login.norton.com",
@@ -49,70 +44,39 @@
                 }
             ],
             "responseHashes": [
-                "0da75b03ea81215e49ddb7196e72f38a80493996ec1e0a7f8ff5a31de5294113",
-                "226b9081490b354ef6c4bdbfc0e1843834de75cc792691f6e1b9f7b38dc46659"
+                "f795a1a01972a2582aadddc07115edad2bc7a90e047cbfd6fd8ce0948ab977e1"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "norton.com",
-                "community.norton.com",
-                "support.norton.com"
+                "community.norton.com"
             ]
         },
         {
-            "rule": "trafficmanager\\.net\\/html\\/assets\\/images\\/fe51afb80f77d017002b01461a186da7\\.svg",
-            "cookies": 0,
+            "rule": "trafficmanager\\.net\\/connect\\/authorize",
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
-                "cdn.platform"
+                "idp.redbridge"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "west.cdn.mathletics.com",
-                    "resolved": "cdn.platform.trafficmanager.net"
+                    "original": "idp.redbridge.gov.uk",
+                    "resolved": "idp.redbridge.trafficmanager.net"
                 }
             ],
-            "responseHashes": [
-                "1f99b87a533afb729800a968a609899e92cc239a7eae44e731939aa2bcae5698"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mathletics.com",
-                "login.mathletics.com"
-            ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/fps\\/api\\/personalization_1_8\\/get",
-            "cookies": 0.000203,
-            "fingerprinting": 0,
-            "subdomains": [
-                "fps-namer"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000203,
-            "cnames": [
-                {
-                    "original": "na.fps.ford.com",
-                    "resolved": "fps-namer.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [
-                "936386cfd5527492ba131d2777c1ebb9215dad35eb0b61a001ee66697efdc368"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ford.com",
-                "www.ford.com"
+                "redbridge.gov.uk",
+                "www.redbridge.gov.uk"
             ]
         }
     ],
@@ -120,10 +84,9 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000507,
+    "cookies": 0.000502,
     "types": {
-        "Document": 3,
-        "XHR": 4
+        "Document": 4
     },
     "nameservers": []
 }

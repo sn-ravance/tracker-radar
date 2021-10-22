@@ -4,25 +4,25 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.000511,
-    "sites": 5,
+    "prevalence": 0.0001,
+    "sites": 1,
     "subdomains": [
-        "metrics-logger",
-        "open-api"
+        "publisher-assets",
+        "pix"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
-            "rule": "spot\\.im\\/metric",
+            "rule": "spot\\.im\\/ad\\/event-tracking\\/pixel-ads-google-adsense\\.html",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "metrics-logger"
+                "publisher-assets"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000204,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
@@ -34,33 +34,52 @@
             ]
         },
         {
-            "rule": "spot\\.im\\/v1\\/messages-count",
+            "rule": "spot\\.im\\/api\\/v1\\/pixel",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "open-api"
+                "pix"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000204,
+            "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [
-                "ab525447e402d88fa9882caceab62a7154a3756bbd6c899db4628f8750a670f1"
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailywire.com",
+                "www.dailywire.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/api\\/v1\\/pixel",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pix"
             ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "the-sun.com",
-                "www.thesun.co.uk"
+                "dailywire.com",
+                "www.dailywire.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000306,
+    "cookies": 0.0001,
     "types": {
-        "Fetch": 4
+        "Fetch": 4,
+        "Preflight": 2
     },
     "nameservers": [
         "ns-1202.awsdns-22.org",

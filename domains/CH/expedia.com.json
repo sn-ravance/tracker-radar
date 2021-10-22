@@ -7,15 +7,18 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000305,
+    "prevalence": 0.000301,
     "sites": 3,
     "subdomains": [
         "media",
         "oms",
+        "vacadapter.vap",
+        "vac.vap",
+        "vap",
         "www"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "expedia\\.com\\/media\\/content\\/shared\\/images\\/ipp\\/ipp-logo\\.jpg",
@@ -26,7 +29,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "47921a0cbfb52edc4e23938192d17c62e0b4c70584e05e135172380f295bf6d2"
@@ -41,17 +44,17 @@
         },
         {
             "rule": "expedia\\.com\\/id",
-            "cookies": 0.000203,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "oms"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "51bff5d46cdf6cb387de6936297f6e9a6e3d214d6874e615613dde6e18093a56"
+                "e004d024edb560f2d0824ac983366cb5ac8ff99091680df6fbb512b137552670"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -62,15 +65,131 @@
             ]
         },
         {
+            "rule": "expedia\\.com\\/current\\/vacClientAdapter\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "vacadapter.vap"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "edd88080aa4b8220d02e0746f915d48bfc387dcd54beabc8ead484aa82105375"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ebookers.ch",
+                "www.expedia.ch"
+            ]
+        },
+        {
+            "rule": "expedia\\.com\\/2\\.11\\.0\\/vacLogger\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "vac.vap"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.product": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "96b0410ee48963fcfd55d9dc8d01fbb216673e04fb1d24205209d7fe6e1cecba"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ebookers.ch",
+                "www.expedia.ch"
+            ]
+        },
+        {
+            "rule": "expedia\\.com\\/2\\.21\\.0\\/virtualAgentControl\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vac.vap"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b061d3465b9f9fe88ac59b0adcb94c5af313cf4038439cb57815dcb921c405ef"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ebookers.ch",
+                "www.expedia.ch"
+            ]
+        },
+        {
+            "rule": "expedia\\.com\\/vaclog\\/log",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vap"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ebookers.ch",
+                "www.ebookers.ch",
+                "www.expedia.ch"
+            ]
+        },
+        {
+            "rule": "expedia\\.com\\/vaclog\\/log",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vap"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ebookers.ch",
+                "www.ebookers.ch",
+                "www.expedia.ch"
+            ]
+        },
+        {
             "rule": "expedia\\.com\\/trvl-px\\/v2\\/get",
-            "cookies": 0.000203,
+            "cookies": 0.000301,
             "fingerprinting": 0,
             "subdomains": [
                 "www"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000203,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "0ebc2d6f050bfd5e00087a840a975d900589c4aa2c1e7cab4d64be8d4639856b"
@@ -79,25 +198,407 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "expedia.ch",
+                "ebookers.ch",
+                "www.expedia.ch",
                 "www.hotels.com"
+            ]
+        },
+        {
+            "rule": "expedia\\.com\\/2\\.21\\.0\\/assets\\/content\\/de\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vac.vap"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ebookers.ch",
+                "www.expedia.ch"
+            ]
+        },
+        {
+            "rule": "expedia\\.com\\/2\\.21\\.0\\/assets\\/content\\/de\\.json",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vac.vap"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "a6be1a29048d18ef1a660b1cc50ab3305738b8c43c6b74e9ae2cc8c9beaa8934"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ebookers.ch",
+                "www.expedia.ch"
+            ]
+        },
+        {
+            "rule": "expedia\\.com\\/2\\.21\\.0\\/index\\.html",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "vac.vap"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 2,
+                "Navigator.prototype.product": 1,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "930d6a4274216664b80e4638a56dea43857d355bb66b3d29a30a31b430270b19"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ebookers.ch",
+                "www.expedia.ch"
+            ]
+        },
+        {
+            "rule": "expedia\\.com\\/2\\.21\\.0\\/107\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vac.vap"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "922918ce395a6940b895c8b09e40f599992029cffe033cec584708919f959a63"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ebookers.ch",
+                "www.expedia.ch"
+            ]
+        },
+        {
+            "rule": "expedia\\.com\\/2\\.21\\.0\\/1\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vac.vap"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ebookers.ch",
+                "www.expedia.ch"
+            ]
+        },
+        {
+            "rule": "expedia\\.com\\/2\\.21\\.0\\/0\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vac.vap"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ebookers.ch",
+                "www.expedia.ch"
+            ]
+        },
+        {
+            "rule": "expedia\\.com\\/2\\.21\\.0\\/3\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vac.vap"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ebookers.ch",
+                "www.expedia.ch"
+            ]
+        },
+        {
+            "rule": "expedia\\.com\\/2\\.21\\.0\\/88\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vac.vap"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ebookers.ch",
+                "www.expedia.ch"
+            ]
+        },
+        {
+            "rule": "expedia\\.com\\/2\\.21\\.0\\/89\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vac.vap"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ebookers.ch",
+                "www.expedia.ch"
+            ]
+        },
+        {
+            "rule": "expedia\\.com\\/2\\.21\\.0\\/84\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vac.vap"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ebookers.ch",
+                "www.expedia.ch"
+            ]
+        },
+        {
+            "rule": "expedia\\.com\\/2\\.21\\.0\\/99\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vac.vap"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ebookers.ch",
+                "www.expedia.ch"
+            ]
+        },
+        {
+            "rule": "expedia\\.com\\/2\\.21\\.0\\/112\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vac.vap"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ebookers.ch",
+                "www.expedia.ch"
+            ]
+        },
+        {
+            "rule": "expedia\\.com\\/2\\.21\\.0\\/df-12\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vac.vap"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "d2be34105eafa74a70a5eeac1fd02c0e69c37f74949be4ef097b2952472249f7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ebookers.ch",
+                "www.expedia.ch"
+            ]
+        },
+        {
+            "rule": "expedia\\.com\\/2\\.21\\.0\\/5\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vac.vap"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "533c1aff1ecdfcadeff1ac99068ff3a7ef9fc801586add83a1600efdc40e7b9e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ebookers.ch",
+                "www.expedia.ch"
+            ]
+        },
+        {
+            "rule": "expedia\\.com\\/2\\.21\\.0\\/91\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vac.vap"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8962ed8dc42b9896f43ed4c11016bd144a4bbb860598b0444dc1d08bc3cb0f4c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ebookers.ch",
+                "www.expedia.ch"
+            ]
+        },
+        {
+            "rule": "expedia\\.com\\/2\\.21\\.0\\/95\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vac.vap"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "bf7b66bdfb3bbeacc7bf8583ec6623971efbca6d42afcd5fca71f2146a5af22b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ebookers.ch",
+                "www.expedia.ch"
+            ]
+        },
+        {
+            "rule": "expedia\\.com\\/2\\.21\\.0\\/85\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vac.vap"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "66df7b93e72f57efcea693352223ad682c61478e8d7d7f2ad7b03f06a23deb89"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ebookers.ch",
+                "www.expedia.ch"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000305,
+    "cookies": 0.000301,
     "types": {
         "Image": 2,
-        "XHR": 2,
-        "Fetch": 2
+        "XHR": 7,
+        "Script": 18,
+        "Preflight": 5,
+        "Fetch": 3,
+        "Document": 2,
+        "Other": 16
     },
     "nameservers": [
+        "pdns1.ultradns.net",
         "pdns3.ultradns.org",
-        "pdns4.ultradns.org",
-        "pdns5.ultradns.info",
+        "pdns2.ultradns.net",
         "pdns6.ultradns.co.uk",
-        "pdns89.ultradns.net",
-        "pdns89.ultradns.com"
+        "pdns4.ultradns.org",
+        "pdns5.ultradns.info"
     ]
 }

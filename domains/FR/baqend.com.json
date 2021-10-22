@@ -4,16 +4,93 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
+        "bmw.app",
         "carhartt-wip.app"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
-            "rule": "baqend\\.com\\/v1\\/db\\/speedKit\\.CustomEvent",
+            "rule": "baqend\\.com\\/v1\\/speedkit\\/install\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "bmw.app",
+                "carhartt-wip.app"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "window.indexedDB": 2,
+                "window.devicePixelRatio": 2,
+                "Screen.prototype.width": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "34916457b8f15619784397f6da982bbf111c7ce9671260422e9c8fca7b46f6d2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bmw.fr",
+                "www.carhartt-wip.com"
+            ]
+        },
+        {
+            "rule": "baqend\\.com\\/v1\\/speedkit\\/sw\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bmw.app",
+                "carhartt-wip.app"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "346ab987fda28069c20c00b22450af2d90ecc3e2998658dc546dfddc66832fd5"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bmw.fr",
+                "www.carhartt-wip.com"
+            ]
+        },
+        {
+            "rule": "baqend\\.com\\/v1\\/bloomfilter",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bmw.app",
+                "carhartt-wip.app"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "50e90c7113e0501483c753b58d300f77f6b453ece62f5c66c7de364e0b16c87c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bmw.fr",
+                "www.carhartt-wip.com"
+            ]
+        },
+        {
+            "rule": "baqend\\.com\\/v1\\/rum\\/pi",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -21,7 +98,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -39,7 +116,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Other": 2
+        "Script": 2,
+        "Other": 4,
+        "Fetch": 2
     },
     "nameservers": [
         "ns-224.awsdns-28.com",

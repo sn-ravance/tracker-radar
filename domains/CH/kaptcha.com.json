@@ -1,17 +1,56 @@
 {
     "domain": "kaptcha.com",
-    "owner": {},
+    "owner": {
+        "name": "Equifax Inc.",
+        "displayName": "Equifax",
+        "privacyPolicy": "https://www.equifax.com/privacy/",
+        "url": "http://equifax.com"
+    },
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000102,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
         "ssl"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "kaptcha\\.com\\/collect\\/sdk",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ssl"
+            ],
+            "apis": {
+                "Document.cookie getter": 1,
+                "window.localStorage": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "92b9306f554be1dcf5669c644756b7bdd668c7076eaf6d18209ea6616ca4d850"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cdn.nerdwallet.171456.ka.ck": {
+                    "ttl": 31536004,
+                    "length": 310,
+                    "prevalence": 0.00010028078620136381,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "burger-king.ch",
+                "www.nerdwallet.com"
+            ]
+        },
         {
             "rule": "kaptcha\\.com\\/md",
             "cookies": 0,
@@ -21,7 +60,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -37,8 +76,9 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000102,
+    "cookies": 0.000201,
     "types": {
+        "Script": 2,
         "XHR": 2
     },
     "nameservers": [

@@ -4,14 +4,61 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
+        "widgets",
         "backend"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "davfobi\\.de\\/loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widgets"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c65710461b7471403574bda8f2e8b657a7a324469db8f1ed7dc30fa80062eda0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "deutsche-apotheker-zeitung.de",
+                "www.ptaheute.de"
+            ]
+        },
+        {
+            "rule": "davfobi\\.de\\/davwgt\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "5c9cb5e5a018ada01f2f1f85ca0633315fe8bfede40ec63b0eb8319875549721"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "deutsche-apotheker-zeitung.de",
+                "www.ptaheute.de"
+            ]
+        },
         {
             "rule": "davfobi\\.de\\/auth\\/token\\/",
             "cookies": 0,
@@ -21,10 +68,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
-            "type": "Other",
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -41,7 +88,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "078043f29a2a4b229f809f9bf01fceae4945a999316e27557a473d7358a330a1"
@@ -59,7 +106,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Other": 2,
+        "Script": 2,
+        "Stylesheet": 2,
+        "Preflight": 2,
         "Fetch": 2
     },
     "nameservers": [

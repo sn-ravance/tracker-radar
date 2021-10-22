@@ -4,9 +4,10 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
+        "ws-cdn.tv",
         "events.tv",
         "ws-backendtv.tv"
     ],
@@ -19,18 +20,20 @@
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "sfr\\.net\\/qoe",
+            "rule": "sfr\\.net\\/gaia-core\\/rest\\/api\\/web\\/v1\\/application\\/RefApplicationStructure::gen8\\/structure",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "events.tv"
+                "ws-cdn.tv"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Other",
+            "responseHashes": [
+                "65623940d490103e2c8542fac2cc8b2a7b5120c67cd29de296bee76c629e0341"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -47,7 +50,27 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sfr.fr",
+                "tv.sfr.fr"
+            ]
+        },
+        {
+            "rule": "sfr\\.net\\/qoe",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events.tv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -69,7 +92,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "ws-backendtv.sfr.fr",
@@ -77,7 +100,7 @@
                 }
             ],
             "responseHashes": [
-                "8452edb04bcfdad997eeb7d44f286cf33ab8272032dea814ba94cd074c0e83e1"
+                "06ed7fd575527c93119f789b383cc2307c2ef55dd445f6e9a1f02cbb269b08bb"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -86,14 +109,36 @@
                 "sfr.fr",
                 "tv.sfr.fr"
             ]
+        },
+        {
+            "rule": "sfr\\.net\\/gaia-core\\/rest\\/api\\/web\\/v1\\/application\\/RefApplicationStructure::bfmrmc\\/structure",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ws-cdn.tv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "04abcd7dfb7aaa574b0b4a5bd4f4af42e0521e591a9db4f551d71fc9443c2bd4"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rmcbfmplay.com",
+                "www.rmcbfmplay.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Other": 2,
-        "XHR": 4
+        "XHR": 8,
+        "Preflight": 2
     },
     "nameservers": [
         "nspri00.dns.sfr.net",

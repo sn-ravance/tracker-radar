@@ -7,17 +7,47 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000512,
-    "sites": 5,
+    "prevalence": 0.00121,
+    "sites": 12,
     "subdomains": [
+        "cdn",
         "tracking",
         "app-script",
-        "pagecorrect",
-        "heatmaps"
+        "heatmaps",
+        "pagecorrect"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "monsido\\.com\\/tool\\/javascripts\\/monsido\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 4,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "PerformanceTiming.prototype.navigationStart": 3
+            },
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "17dd560fed5a0713a3f47f70269fe1d3f9e1cdc3bc47fbcd114c6ebcb56d295f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alzheimer.ca",
+                "healthcare.utah.edu",
+                "www.niagaraparks.com",
+                "www.victoria.ca"
+            ]
+        },
         {
             "rule": "monsido\\.com\\/",
             "cookies": 0,
@@ -26,8 +56,8 @@
                 "tracking"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000307,
+            "sites": 12,
+            "prevalence": 0.00121,
             "cnames": [],
             "responseHashes": [
                 "cf4724b2f736ed1a0ae6bc28f1ead963d9cd2c1fd87b6ef32e7799fc1c5c8bda"
@@ -35,69 +65,62 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "monsido": 0.00010235414534288638
+                "monsido": 0.00040180813661476645
             },
             "exampleSites": [
-                "lso.ca",
+                "alzheimer.ca",
+                "healthcare.utah.edu",
+                "pharmasave.com",
+                "www.drugabuse.gov",
+                "www.hornady.com",
+                "www.hp.com",
+                "www.niagaraparks.com",
                 "www.ouac.on.ca",
+                "www.regionofwaterloo.ca",
+                "www.surrey.ca",
+                "www.uab.edu",
                 "www.victoria.ca"
             ]
         },
         {
             "rule": "monsido\\.com\\/v2\\/monsido-script\\.js",
-            "cookies": 0.000102,
+            "cookies": 0.000402,
             "fingerprinting": 1,
             "subdomains": [
                 "app-script"
             ],
             "apis": {
-                "Document.cookie getter": 1,
-                "Date.prototype.getTime": 1,
-                "Document.cookie setter": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1
+                "Document.cookie getter": 7,
+                "Date.prototype.getTime": 8,
+                "Document.cookie setter": 4,
+                "Screen.prototype.width": 4,
+                "Screen.prototype.height": 4
             },
-            "sites": 2,
-            "prevalence": 0.000205,
+            "sites": 8,
+            "prevalence": 0.000804,
             "cnames": [],
             "responseHashes": [
-                "92c933ec1ae45f0e3f3f1ef919dfd30f8529001c3d9740a14da142528ae37381"
+                "7b3054c4b03b85dc958f6b5ba09fa8e1c05790b265b1762044c55d63725f4d74"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "monsido": {
-                    "ttl": 2592001,
+                    "ttl": 2592002,
                     "length": 16,
-                    "prevalence": 0.00010235414534288638,
+                    "prevalence": 0.00040180813661476645,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "peelschools.org",
-                "www.ouac.on.ca"
-            ]
-        },
-        {
-            "rule": "monsido\\.com\\/v1\\/page-correct\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "pagecorrect"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000205,
-            "cnames": [],
-            "responseHashes": [
-                "10d8ebe0ddf6d259e39332e2df8d4b9895553e49e18c929d8e4d90f16f4adf44"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "peelschools.org",
-                "pharmasave.com"
+                "pharmasave.com",
+                "www.drugabuse.gov",
+                "www.hornady.com",
+                "www.hp.com",
+                "www.ouac.on.ca",
+                "www.regionofwaterloo.ca",
+                "www.surrey.ca",
+                "www.uab.edu"
             ]
         },
         {
@@ -111,10 +134,10 @@
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
-            "prevalence": 0.000205,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "08da18ce9f5ef12e25007341e6dd05ea54416a3cd17e27035a84a202f6b4ec1d"
+                "cac098fbe6c2e1e4cfeb077ba82fbe5dcd7b7a29420af51596b4759c2cb70bfb"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -123,14 +146,37 @@
                 "pharmasave.com",
                 "www.ouac.on.ca"
             ]
+        },
+        {
+            "rule": "monsido\\.com\\/v1\\/page-correct\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pagecorrect"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "45094d46af832e526b4e902417dfc839c18c93fbfa3e4787d2b86e93689dbb6b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pharmasave.com",
+                "www.regionofwaterloo.ca",
+                "www.uab.edu"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000102,
+    "cookies": 0.000402,
     "types": {
-        "Image": 3,
-        "Script": 6
+        "Script": 17,
+        "Image": 12
     },
     "nameservers": [
         "ns-cloud-e1.googledomains.com",

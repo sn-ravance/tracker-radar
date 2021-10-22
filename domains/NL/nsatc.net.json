@@ -4,14 +4,18 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.00112,
-    "sites": 11,
+    "prevalence": 0.000803,
+    "sites": 8,
     "subdomains": [
         "cdn.registerdisney.cre.go.com",
-        "c.xbox.com",
-        "compass-ssl.xbox.com"
+        "api.currys.co.uk",
+        "c.xbox.com"
     ],
     "cnames": [
+        {
+            "original": "api.currys.co.uk",
+            "resolved": "api.currys.co.uk.nsatc.net"
+        },
         {
             "original": "c.xbox.com",
             "resolved": "c.xbox.com.nsatc.net"
@@ -19,24 +23,20 @@
         {
             "original": "cdn.registerdisney.go.com",
             "resolved": "cdn.registerdisney.cre.go.com.nsatc.net"
-        },
-        {
-            "original": "compass-ssl.xbox.com",
-            "resolved": "compass-ssl.xbox.com.nsatc.net"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "nsatc\\.net\\/v2\\/outer\\/DisneyID\\.js",
-            "cookies": 0.000204,
+            "cookies": 0.000301,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn.registerdisney.cre.go.com"
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.000613,
+            "prevalence": 0.000602,
             "cnames": [
                 {
                     "original": "cdn.registerdisney.go.com",
@@ -44,25 +44,25 @@
                 }
             ],
             "responseHashes": [
-                "bb82fd18ddb9861aaa2227d04da78b98e0aa68555f08851f9544c01be8b05e9d"
+                "d3b0ee8c79289041014b6105b01cd86e6ea23e61fbfad5267cb5d5d1bf4bc01a"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "SWID": {
-                    "ttl": 31536012,
+                    "ttl": 31536002,
                     "length": 36,
-                    "prevalence": 0.00020420665713702266,
+                    "prevalence": 0.00010033109260559848,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "6abc.com",
-                "abc7.com",
+                "go.com",
                 "abcnews.go.com",
-                "disney.nl",
-                "fivethirtyeight.com",
-                "www.espn.com"
+                "www.disneylandparis.com",
+                "www.espn.com",
+                "www.marvel.com",
+                "www.nationalgeographic.com"
             ]
         },
         {
@@ -73,8 +73,8 @@
                 "cdn.registerdisney.cre.go.com"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.000613,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [
                 {
                     "original": "cdn.registerdisney.go.com",
@@ -82,30 +82,56 @@
                 }
             ],
             "responseHashes": [
-                "2c9119a9e278b06bdd2a04bf0eb11f619918882edf7f5a2782b3cbf54a35269e"
+                "8708e18901993b43a30e7aebeddcb9f65dd3bf1f5464a9d7b0fa69fcc4308c20"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "6abc.com",
-                "abc7.com",
-                "abcnews.go.com",
-                "fivethirtyeight.com",
+                "go.com",
+                "www.disneylandparis.com",
                 "www.espn.com",
-                "www.marvel.com"
+                "www.marvel.com",
+                "www.nationalgeographic.com"
+            ]
+        },
+        {
+            "rule": "nsatc\\.net\\/ff\\/navigation\\/navigation",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.currys.co.uk"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.currys.co.uk",
+                    "resolved": "api.currys.co.uk.nsatc.net"
+                }
+            ],
+            "responseHashes": [
+                "b537b85b4f17f8ec3f49dbeb82e61ac198913d5fc5f5c1ba6924bd962fc8e93a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "currys.co.uk",
+                "www.currys.co.uk"
             ]
         },
         {
             "rule": "nsatc\\.net\\/c\\.gif",
-            "cookies": 0.000204,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "c.xbox.com"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000204,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "c.xbox.com",
@@ -122,40 +148,15 @@
                 "xbox.com",
                 "www.xbox.com"
             ]
-        },
-        {
-            "rule": "nsatc\\.net\\/assets\\/7d\\/ef\\/7defc38d-c6dc-47d1-a163-849e582cce12\\.mp4",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "compass-ssl.xbox.com"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000204,
-            "cnames": [
-                {
-                    "original": "compass-ssl.xbox.com",
-                    "resolved": "compass-ssl.xbox.com.nsatc.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Media",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "xbox.com",
-                "www.xbox.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000408,
+    "cookies": 0.000401,
     "types": {
-        "Script": 12,
-        "Image": 2,
-        "Media": 2
+        "Script": 11,
+        "Fetch": 2,
+        "Image": 2
     },
     "nameservers": []
 }

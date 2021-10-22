@@ -9,14 +9,46 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000304,
-    "sites": 3,
+    "prevalence": 0.000803,
+    "sites": 8,
     "subdomains": [
+        "cdn",
         "directline"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "botframework\\.com\\/botframework-webchat\\/latest\\/webchat\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.mediaDevices": 2,
+                "URL.createObjectURL": 1,
+                "Navigator.prototype.platform": 1,
+                "Date.prototype.getTime": 1,
+                "Event.prototype.timeStamp": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "19251e221ced2fb5cbad60a5f514df5b976ff0da77bbe62319896a8d03c5a889"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abrsm.org",
+                "www.royalparks.org.uk"
+            ]
+        },
         {
             "rule": "botframework\\.com\\/v3\\/directline\\/conversations",
             "cookies": 0,
@@ -25,16 +57,17 @@
                 "directline"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000304,
+            "sites": 4,
+            "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [],
-            "type": "Other",
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "aberdeencity.gov.uk",
-                "www.nextgreencar.com",
+                "www.carkeys.co.uk",
+                "www.royalparks.org.uk",
                 "www.swindon.gov.uk"
             ]
         },
@@ -46,19 +79,21 @@
                 "directline"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000304,
+            "sites": 4,
+            "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [
-                "3260a4fcea79e1d7fd1652f79c6be6799990ea6da17cac3cdc290d16a056c6b2",
-                "28d9632253ef660e028fc48928c056d0f77cb763499d3059f2c2b0fd3232d624"
+                "3e9df7dfcfaca6bd95092a8961d3eadd237df8aef5e1eb20d8441e0eed2bd5a1",
+                "2528de78d104f77993e7a20013a8d7d40c9706025c9f643e815b3fbc320a4226",
+                "cb794f9ba855607d5753c311c69dbc8384ede4e09bb00f9f05ea76ce8bec3219"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "aberdeencity.gov.uk",
-                "www.nextgreencar.com",
+                "www.carkeys.co.uk",
+                "www.royalparks.org.uk",
                 "www.swindon.gov.uk"
             ]
         }
@@ -67,13 +102,14 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Other": 3,
-        "XHR": 3
+        "Script": 2,
+        "Preflight": 4,
+        "XHR": 4
     },
     "nameservers": [
+        "ns1-205.azure-dns.com",
         "ns2-205.azure-dns.net",
         "ns4-205.azure-dns.info",
-        "ns3-205.azure-dns.org",
-        "ns1-205.azure-dns.com"
+        "ns3-205.azure-dns.org"
     ]
 }

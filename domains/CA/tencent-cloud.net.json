@@ -4,29 +4,91 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000102,
+    "prevalence": 0.0001,
     "sites": 1,
     "subdomains": [
+        "ins-u4xprfqu.ias",
+        "ins-diu1q33u.ias",
         "ins-hkv04hbl.ias",
-        "ins-5tsp1vmk.ias",
+        "public-v6.sparta.mig",
         "ins-59d1h3tv.ias"
     ],
     "cnames": [
-        {
-            "original": "apis.map.qq.com",
-            "resolved": "ins-5tsp1vmk.ias.tencent-cloud.net"
-        },
         {
             "original": "btrace.qq.com",
             "resolved": "ins-59d1h3tv.ias.tencent-cloud.net"
         },
         {
+            "original": "h.trace.qq.com",
+            "resolved": "ins-diu1q33u.ias.tencent-cloud.net"
+        },
+        {
             "original": "i.news.qq.com",
             "resolved": "ins-hkv04hbl.ias.tencent-cloud.net"
+        },
+        {
+            "original": "otheve.beacon.qq.com",
+            "resolved": "ins-u4xprfqu.ias.tencent-cloud.net"
+        },
+        {
+            "original": "pacaio.match.qq.com",
+            "resolved": "public-v6.sparta.mig.tencent-cloud.net"
         }
     ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "tencent-cloud\\.net\\/analytics\\/v2_upload",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ins-u4xprfqu.ias"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "otheve.beacon.qq.com",
+                    "resolved": "ins-u4xprfqu.ias.tencent-cloud.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "qq.com",
+                "new.qq.com"
+            ]
+        },
+        {
+            "rule": "tencent-cloud\\.net\\/kv",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ins-diu1q33u.ias"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "h.trace.qq.com",
+                    "resolved": "ins-diu1q33u.ias.tencent-cloud.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "qq.com",
+                "new.qq.com"
+            ]
+        },
         {
             "rule": "tencent-cloud\\.net\\/trpc\\.qqnews_web\\.pc_base_srv\\.base_http_proxy\\/NinjaPageContentSync",
             "cookies": 0,
@@ -36,7 +98,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000205,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "i.news.qq.com",
@@ -44,7 +106,7 @@
                 }
             ],
             "responseHashes": [
-                "a05bfff0e2fba4ef68d0855572481dd5d82f2fb139464d58a0672f35e0498cef"
+                "4cfc6dbd6b86c5eac7d455f18150d27f58ba2f0d71b7ca7120429cbd31cfee21"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -55,23 +117,23 @@
             ]
         },
         {
-            "rule": "tencent-cloud\\.net\\/ws\\/location\\/v1\\/ip",
-            "cookies": 0,
+            "rule": "tencent-cloud\\.net\\/irs\\/rcd",
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
-                "ins-5tsp1vmk.ias"
+                "public-v6.sparta.mig"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000205,
+            "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "apis.map.qq.com",
-                    "resolved": "ins-5tsp1vmk.ias.tencent-cloud.net"
+                    "original": "pacaio.match.qq.com",
+                    "resolved": "public-v6.sparta.mig.tencent-cloud.net"
                 }
             ],
             "responseHashes": [
-                "0d3db81bd819680bafe9ce433c4990dc08382fdd17abe856ecd19b3f45f10324"
+                "e53fdedef6af36f62ba04dd4ae5e29b25a4e3bd31625020634bb4deb4face159"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -90,7 +152,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000205,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "btrace.qq.com",
@@ -107,15 +169,44 @@
                 "qq.com",
                 "new.qq.com"
             ]
+        },
+        {
+            "rule": "tencent-cloud\\.net\\/analytics\\/v2_upload",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ins-u4xprfqu.ias"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "otheve.beacon.qq.com",
+                    "resolved": "ins-u4xprfqu.ias.tencent-cloud.net"
+                }
+            ],
+            "responseHashes": [
+                "e038a4bc7e987f24b019cc6ca3e4dbe5f7bbe57bba74bfec7aaca4565107f51f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "qq.com",
+                "new.qq.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000102,
+    "cookies": 0.0001,
     "types": {
+        "Preflight": 2,
+        "Image": 4,
         "XHR": 2,
         "Script": 2,
-        "Image": 2
+        "Fetch": 2
     },
     "nameservers": []
 }

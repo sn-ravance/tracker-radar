@@ -4,64 +4,80 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.000204,
-    "sites": 2,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
-        "peach-static"
+        "peach-static",
+        "pipe-collect"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "ebu\\.io\\/peach-collector-1\\.x\\.min\\.js",
-            "cookies": 0.000102,
+            "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
                 "peach-static"
             ],
             "apis": {
-                "Navigator.prototype.doNotTrack": 1,
-                "Document.cookie getter": 1,
-                "Document.cookie setter": 1,
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.vendor": 1,
-                "Navigator.prototype.platform": 1,
-                "Navigator.prototype.language": 1,
-                "Date.prototype.getTimezoneOffset": 1
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.vendor": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.language": 2,
+                "Date.prototype.getTimezoneOffset": 2
             },
             "sites": 2,
-            "prevalence": 0.000204,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "a90f362b3cf2fa9c06433b7946d936d5a6dc50f9f3c436ba333f85d8657d56dd"
+                "5fc44ca6f42bab7f2ba9e2b902c5dde018249448d25cd2e2185b9f441bb2e975"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "_pc_c": {
-                    "ttl": 932160781,
-                    "length": 36,
-                    "prevalence": 0.00010210332856851133,
-                    "uniqueness": 1
-                },
-                "_pc_t": {
-                    "ttl": 932160781,
-                    "length": 16,
-                    "prevalence": 0.00010210332856851133,
-                    "uniqueness": 1
-                },
-                "_pc_lr": {
-                    "ttl": null,
-                    "length": 13,
-                    "prevalence": 0.00010210332856851133,
-                    "uniqueness": 1
-                },
-                "_pc_st": {
-                    "ttl": null,
-                    "length": 13,
-                    "prevalence": 0.00010210332856851133,
-                    "uniqueness": 1
-                }
-            },
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dw.com",
+                "www.dw.com"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/v3\\/collect",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pipe-collect"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dw.com",
+                "www.dw.com"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/v3\\/collect",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pipe-collect"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dw.com",
@@ -71,9 +87,11 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000102,
+    "cookies": 0.000301,
     "types": {
-        "Script": 2
+        "Script": 2,
+        "Preflight": 2,
+        "XHR": 2
     },
     "nameservers": [
         "ns-969.awsdns-57.net",

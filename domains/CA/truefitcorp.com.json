@@ -7,34 +7,133 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000205,
-    "sites": 2,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
-        "consumer"
+        "edb-cdn",
+        "consumer",
+        "cdn"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "truefitcorp\\.com\\/fitrec\\/edb\\/js\\/fitrec\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "edb-cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8a4498758805076dd9b5a01eece973e34ee73c8e39a74ead2363d145abf77819"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eddiebauer.ca",
+                "www.eddiebauer.com"
+            ]
+        },
+        {
+            "rule": "truefitcorp\\.com\\/fitrec\\/edb\\/js\\/tracker\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "edb-cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "3a62bd1c88b025c1eb31e8e28a83718ccc3a4663ba2a320456ced2bb38ca7e3f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eddiebauer.ca",
+                "www.eddiebauer.com"
+            ]
+        },
+        {
             "rule": "truefitcorp\\.com\\/fitconfig",
-            "cookies": 0.000205,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "consumer"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000205,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "68d81059658dd887d1ef17f17f46d6784fd8eb668985f06929ee78990fe11e32"
+                "246f1a192364888a5f356bf1eace78fa452598905b10299990c9891d21110efd"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "landsend.com",
-                "www.marmot.com"
+                "eddiebauer.ca",
+                "www.eddiebauer.com"
+            ]
+        },
+        {
+            "rule": "truefitcorp\\.com\\/store-edb\\/6\\.54\\.0\\.19\\/resources\\/store\\/edb\\/css\\/fitrec-responsive\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "80d026cd7530ce4395ead373344ca5f77712bf5195a9db3b0bad0c1c1d400aa8"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eddiebauer.ca",
+                "www.eddiebauer.com"
+            ]
+        },
+        {
+            "rule": "truefitcorp\\.com\\/consumer-ux\\/6\\.54\\.25\\/resources\\/fitrec\\/js\\/application\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "2adee6ca5e7aba2259c6b58e779e5ad786893c8f0bd3f672aa09ce971a0a6d6a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eddiebauer.ca",
+                "www.eddiebauer.com"
             ]
         }
     ],
@@ -44,9 +143,10 @@
         "Third-Party Analytics Marketing"
     ],
     "performance": {},
-    "cookies": 0.000205,
+    "cookies": 0.000301,
     "types": {
-        "Script": 2
+        "Script": 8,
+        "Stylesheet": 2
     },
     "nameservers": [
         "ns-1125.awsdns-12.org",

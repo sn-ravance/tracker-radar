@@ -7,15 +7,12 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00113,
-    "sites": 11,
+    "prevalence": 0.000804,
+    "sites": 8,
     "subdomains": [
         "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
-        "makermedia",
-        "newyorkmedia-cd-xglicwlvftem6afq.edge.tenants",
-        "mng-prod",
-        "natgeo-cd-2md8k4cqoq8hgxsu.edge.tenants",
-        "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu"
+        "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu",
+        "cdn"
     ],
     "cnames": [
         {
@@ -23,47 +20,27 @@
             "resolved": "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu.auth0.com"
         },
         {
-            "original": "identity.nationalgeographic.com",
-            "resolved": "natgeo-cd-2md8k4cqoq8hgxsu.edge.tenants.auth0.com"
-        },
-        {
             "original": "login.arduino.cc",
             "resolved": "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants.auth0.com"
-        },
-        {
-            "original": "login.nymag.com",
-            "resolved": "newyorkmedia-cd-xglicwlvftem6afq.edge.tenants.auth0.com"
         }
     ],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "auth0\\.com\\/authorize",
-            "cookies": 0.000819,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
-                "makermedia",
-                "newyorkmedia-cd-xglicwlvftem6afq.edge.tenants",
-                "mng-prod",
-                "natgeo-cd-2md8k4cqoq8hgxsu.edge.tenants",
                 "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.000921,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "login.arduino.cc",
                     "resolved": "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants.auth0.com"
-                },
-                {
-                    "original": "login.nymag.com",
-                    "resolved": "newyorkmedia-cd-xglicwlvftem6afq.edge.tenants.auth0.com"
-                },
-                {
-                    "original": "identity.nationalgeographic.com",
-                    "resolved": "natgeo-cd-2md8k4cqoq8hgxsu.edge.tenants.auth0.com"
                 },
                 {
                     "original": "auth.native-instruments.com",
@@ -71,35 +48,52 @@
                 }
             ],
             "responseHashes": [
-                "1066962e51629dc4443ee2088c73bdf476617c38ece36d11adb2d9a1580b9bcd",
-                "26a35f36a69b8fe9df0aa7f2fca60f636598da6fde92efc58e7c60de2cd347d3",
-                "0ec177b13140059a3c82d13bb93692bb59c170982f70991df08a6a130b083d00",
-                "5899d0fc5b074f44e8d97d4f4a7c5b9e82537af8aaf3435432fd0b62b49f8489",
-                "57c0030c92e1b7fd6acfba3646fd0a4d15e4d9757984853b3cd656132d34ed8d",
-                "8ec708153facc644902845a479011bb4c8e6ee50c800c4bfb008fec49f6ac2fe",
-                "082ff52536e0c353ef638c852fe56a606b393319d1afe0278887acdb2783bdfc"
+                "99f67802ea59cf66d6071c1988486497a169d90857c9c3dee73795c5f5771135"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "arduino.cc",
-                "makezine.com",
-                "nymag.com",
-                "www.denverpost.com",
-                "www.mercurynews.com",
-                "www.nationalgeographic.com",
-                "www.native-instruments.com",
-                "www.thecut.com",
-                "www.vulture.com"
+                "www.native-instruments.com"
+            ]
+        },
+        {
+            "rule": "auth0\\.com\\/js\\/auth0-spa-js\\/1\\.13\\/auth0-spa-js\\.production\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "01d6389de5581a2a3eb0cd4d6a05cb136bf07d221306f89173a080c73a38e392"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "denverpost.com",
+                "www.mercurynews.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000921,
+    "cookies": 0.000201,
     "types": {
-        "Document": 9
+        "Document": 2,
+        "Script": 2
     },
-    "nameservers": []
+    "nameservers": [
+        "monroe.ns.cloudflare.com",
+        "kolton.ns.cloudflare.com"
+    ]
 }

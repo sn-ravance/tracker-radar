@@ -9,11 +9,11 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000813,
+    "prevalence": 0.000802,
     "sites": 8,
     "subdomains": [
         "nslc-prod-app",
-        "fps-namer"
+        "jabpc-publicservice-tfm-prod"
     ],
     "cnames": [
         {
@@ -21,22 +21,22 @@
             "resolved": "nslc-prod-app.trafficmanager.net"
         },
         {
-            "original": "na.fps.ford.com",
-            "resolved": "fps-namer.trafficmanager.net"
+            "original": "productcatalogueapi.jabra.com",
+            "resolved": "jabpc-publicservice-tfm-prod.trafficmanager.net"
         }
     ],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "trafficmanager\\.net\\/sso\\/idp\\/SAML2",
-            "cookies": 0.000203,
+            "cookies": 0.0001,
             "fingerprinting": 0,
             "subdomains": [
                 "nslc-prod-app"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "login.norton.com",
@@ -44,7 +44,7 @@
                 }
             ],
             "responseHashes": [
-                "2a162125f5f326059ece9ccdfeb0489cf55a31a0277186321d212db2ff8cdeb7"
+                "204807bb569069fab3b1fe2541c5a308acb8f4621e61a7600d1dfdd777974858"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -55,30 +55,55 @@
             ]
         },
         {
-            "rule": "trafficmanager\\.net\\/fps\\/api\\/personalization_1_8\\/get",
-            "cookies": 0.000203,
+            "rule": "trafficmanager\\.net\\/\\/v1\\/family\\/filter",
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
-                "fps-namer"
+                "jabpc-publicservice-tfm-prod"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "na.fps.ford.com",
-                    "resolved": "fps-namer.trafficmanager.net"
+                    "original": "productcatalogueapi.jabra.com",
+                    "resolved": "jabpc-publicservice-tfm-prod.trafficmanager.net"
                 }
             ],
-            "responseHashes": [
-                "936386cfd5527492ba131d2777c1ebb9215dad35eb0b61a001ee66697efdc368"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ford.com",
-                "www.ford.com"
+                "jabra.com",
+                "www.jabra.com"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/\\/v1\\/family\\/filter",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "jabpc-publicservice-tfm-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "productcatalogueapi.jabra.com",
+                    "resolved": "jabpc-publicservice-tfm-prod.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [
+                "005cc7431b297b3706026cf858264f2a6207cadcef8958cccf073b46945ecfe9"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jabra.com",
+                "www.jabra.com"
             ]
         }
     ],
@@ -86,10 +111,11 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000406,
+    "cookies": 0.000301,
     "types": {
         "Document": 2,
-        "XHR": 2
+        "Preflight": 2,
+        "Fetch": 2
     },
     "nameservers": []
 }

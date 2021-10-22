@@ -4,35 +4,67 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000506,
-    "sites": 5,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
-        "syndication"
+        "syndication",
+        "edge.syndication",
+        "player"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "target-video\\.com\\/syndication-player\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "syndication"
+                "syndication",
+                "edge.syndication"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000304,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "4ece59ddd8d54bacc99e154d759a8c438cc259c38a939a765ad8d11522cab784"
+                "8f696d4b9da7bb441a6f00fa2d2c5a4d220fd8b564b7029ea0b833aabfcbd6b6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "astroportal.com",
-                "www.babyclub.de",
-                "www.beliebte-vornamen.de"
+                "babyclub.de",
+                "www.hallo-eltern.de"
+            ]
+        },
+        {
+            "rule": "target-video\\.com\\/player\\/build\\/targetvideo\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 1,
+                "Navigator.prototype.connection": 1,
+                "Navigator.prototype.appName": 1,
+                "Navigator.prototype.platform": 1,
+                "HTMLMediaElement.prototype.canPlayType": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "def1294ca41066d8325828f4235b407ec7dd105f8f5115e95912e5095081f793"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "der-betze-brennt.de",
+                "www.hallo-eltern.de"
             ]
         }
     ],
@@ -40,7 +72,7 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 3
+        "Script": 4
     },
     "nameservers": [
         "ns-138.awsdns-17.com",

@@ -7,64 +7,118 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000205,
+    "prevalence": 0.000201,
     "sites": 2,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "papi",
+        "ec"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "walkme\\.com\\/users\\/a2d0963015084214b72adcc431956c65\\/settings\\.txt",
+            "rule": "walkme\\.com\\/player\\/resources\\/wmjQuery1715\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2
+            },
             "sites": 2,
-            "prevalence": 0.000205,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "b478b453c0dde98b0d04ec4489f7fe31af66c7c8f9da706d40dc367a03f78150"
+                "56c3f4f36d43b9b4331e7e60daf59f0bf314e4e02907983f491bfb7fd205425a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "qtrade.ca",
-                "www.qtrade.ca"
+                "esri.com",
+                "rapidapi.com"
             ]
         },
         {
-            "rule": "walkme\\.com\\/users\\/a2d0963015084214b72adcc431956c65\\/walkme_config_fcd5aa7e79794fa082a0e46525268853\\.js",
+            "rule": "walkme\\.com\\/conditions\\/evaluatedConditions",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cdn"
+                "papi"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000205,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "ba6afab104281e57232a1598038ce30e6397ace6bc24a9574884481b48f55f5f"
+                "69142f12cdd01398de0c67078a2fae16f901fe7b868f1c640937697b86aed568"
             ],
-            "type": "Script",
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "ajs_anonymous_id": 0.00010045203415369161
+            },
+            "exampleSites": [
+                "esri.com",
+                "rapidapi.com"
+            ]
+        },
+        {
+            "rule": "walkme\\.com\\/event\\/postEvent",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ec"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "qtrade.ca",
-                "www.qtrade.ca"
+                "esri.com",
+                "community.esri.com",
+                "rapidapi.com"
+            ]
+        },
+        {
+            "rule": "walkme\\.com\\/event\\/backEvent",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ec"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "esri.com",
+                "rapidapi.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000102,
+    "cookies": 0.000201,
     "types": {
-        "Script": 4
+        "Script": 2,
+        "XHR": 5,
+        "Other": 2
     },
     "nameservers": [
         "ns-1439.awsdns-51.org",

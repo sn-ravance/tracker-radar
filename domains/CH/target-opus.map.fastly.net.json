@@ -9,17 +9,57 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000102,
+    "prevalence": 0.0001,
     "sites": 1,
     "subdomains": [],
     "cnames": [
+        {
+            "original": "assets.targetimg1.com",
+            "resolved": ".target-opus.map.fastly.net"
+        },
+        {
+            "original": "redoak.target.com",
+            "resolved": ".target-opus.map.fastly.net"
+        },
         {
             "original": "redsky.target.com",
             "resolved": ".target-opus.map.fastly.net"
         }
     ],
-    "fingerprinting": 2,
+    "fingerprinting": 3,
     "resources": [
+        {
+            "rule": "target-opus\\.map\\.fastly\\.net\\/ssx\\/ssx\\.mod\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 3,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "assets.targetimg1.com",
+                    "resolved": ".target-opus.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "0d820a2cd48e10459bb3ed347f21ec1e1113ff45b1e1193f564cc10fc6d3f7d8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "weiygrety": {
+                    "ttl": null,
+                    "length": 8,
+                    "prevalence": 0.00010028078620136381,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "target.com",
+                "www.target.com"
+            ]
+        },
         {
             "rule": "target-opus\\.map\\.fastly\\.net\\/v3\\/stores\\/nearby\\/08000",
             "cookies": 0,
@@ -27,7 +67,7 @@
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "redsky.target.com",
@@ -36,6 +76,31 @@
             ],
             "responseHashes": [
                 "48b86dac51205d07b99f9765db67cce4c34f2c3485a0ef6f6e1ce330ccdd1c33"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "target.com",
+                "www.target.com"
+            ]
+        },
+        {
+            "rule": "target-opus\\.map\\.fastly\\.net\\/content-publish\\/pages\\/v1",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "redoak.target.com",
+                    "resolved": ".target-opus.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "1b41689250091f5c2f3849d3386b8b45ff5933e6d511df42aa53fe63fb533aea"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -57,9 +122,10 @@
         "Session Replay"
     ],
     "performance": {},
-    "cookies": 0.000102,
+    "cookies": 0.0001,
     "types": {
-        "Fetch": 2
+        "Script": 2,
+        "Fetch": 4
     },
     "nameservers": []
 }
