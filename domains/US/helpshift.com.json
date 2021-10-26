@@ -7,13 +7,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000276,
-    "sites": 4,
+    "prevalence": 0.0000345,
+    "sites": 5,
     "subdomains": [
         "webchat",
         "fishbrai-df6b5caf3d6247d.webchat",
         "doctorsw-061ccff47c40613.webchat",
-        "stitcher-1156c6e32e386fb.webchat"
+        "stitcher-1156c6e32e386fb.webchat",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -71,15 +72,15 @@
         {
             "rule": "helpshift\\.com\\/libs\\/libs-min\\.js",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 1,
             "subdomains": [
                 "webchat"
             ],
             "apis": {
                 "Date.prototype.getTime": 3,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.product": 2,
-                "Navigator.prototype.platform": 2
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.product": 1,
+                "Navigator.prototype.platform": 1
             },
             "sites": 3,
             "prevalence": 0.0000207,
@@ -99,15 +100,15 @@
         {
             "rule": "helpshift\\.com\\/scripts\\/app-min\\.js",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 1,
             "subdomains": [
                 "webchat"
             ],
             "apis": {
                 "window.localStorage": 3,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.languages": 2,
-                "Navigator.prototype.product": 2
+                "Navigator.prototype.languages": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.product": 1
             },
             "sites": 3,
             "prevalence": 0.0000207,
@@ -192,6 +193,48 @@
                 "fishbrain.com",
                 "www.doctorswithoutborders.org"
             ]
+        },
+        {
+            "rule": "helpshift\\.com\\/websdk\\/stitcher\\/config",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "6b3a028f91427e4b014bb528b7600acf92eeb0a3419063d7db68735bd30c7414"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stitcher.com",
+                "www.stitcher.com"
+            ]
+        },
+        {
+            "rule": "helpshift\\.com\\/websdk\\/stitcher\\/config",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stitcher.com",
+                "www.stitcher.com"
+            ]
         }
     ],
     "categories": [],
@@ -200,8 +243,9 @@
     "types": {
         "Script": 9,
         "Document": 3,
-        "XHR": 2,
-        "Media": 4
+        "XHR": 4,
+        "Media": 4,
+        "Preflight": 2
     },
     "nameservers": [
         "ns-1219.awsdns-24.org",

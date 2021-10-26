@@ -10,7 +10,8 @@
     "prevalence": 0.000402,
     "sites": 4,
     "subdomains": [
-        "player"
+        "player",
+        "link"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -18,7 +19,7 @@
         {
             "rule": "h-cdn\\.com\\/loader\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "player"
             ],
@@ -29,14 +30,15 @@
                 "Navigator.prototype.platform": 1,
                 "Navigator.prototype.maxTouchPoints": 1,
                 "window.sessionStorage": 1,
-                "PerformanceTiming.prototype.navigationStart": 1
+                "PerformanceTiming.prototype.navigationStart": 1,
+                "window.devicePixelRatio": 1
             },
             "sites": 5,
             "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
-                "8d729bc0717a4af649af438fe48772217291ae58564a9ab60db17742f03f8d72",
-                "f8457f64b045a21dac76a0728a7742c4e387405afe6a7fb6e9fb1bc97f0da128"
+                "5cdfc2b66f171a85288d24e467292381d8ad80ff3b53299979ab942e35c9eee3",
+                "1d6db0bf11474ca579e1c9529995effa32da489efcddfe7d80dac35a782155b4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -63,8 +65,8 @@
             "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "3c9fbcbdde5ec53ff3aeb31d436052e1866eaa7d3abd4ccae05e330ee58aa52a",
-                "1b25dec139b02cf9d23cc7ea7c090d9a41b150eb467017ebc1c56018ee10e737"
+                "eea71972639e42640c7b853ad9196329ae4135964ad8ef5e74c984bdb3b1acea",
+                "b618d2c7aefad5c5a34f6d2e61bbcbc38fbedcb3a7c15edf2ed837400b2d78ad"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -74,13 +76,102 @@
                 "www.dw.com",
                 "www.tagesschau.de"
             ]
+        },
+        {
+            "rule": "h-cdn\\.com\\/get",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "link"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blick.ch",
+                "www.dw.com"
+            ]
+        },
+        {
+            "rule": "h-cdn\\.com\\/get",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "link"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "5d579f3f6b5fec4e7924b09efd78ca683d43267c9d82908caad0a87a70e085c8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blick.ch",
+                "www.dw.com"
+            ]
+        },
+        {
+            "rule": "h-cdn\\.com\\/svc\\/cdn\\/pub\\/css\\/widget\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b141a7524bb772ea57aaf05440bcae1e74fe44208644cad5bcd70f8a3c6e2ba4"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blick.ch",
+                "www.dw.com"
+            ]
+        },
+        {
+            "rule": "h-cdn\\.com\\/svc\\/cdn\\/pub\\/css\\/playlist\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "42224d4aca0ff3faca9c8ff6dddfc649dfdda53c48cede3db38150b71190bf07"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blick.ch",
+                "www.dw.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 8
+        "Script": 8,
+        "Preflight": 2,
+        "XHR": 2,
+        "Stylesheet": 4
     },
     "nameservers": [
         "ns-1405.awsdns-47.org",

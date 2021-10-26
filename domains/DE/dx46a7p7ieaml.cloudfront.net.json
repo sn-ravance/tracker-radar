@@ -13,14 +13,16 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "dx46a7p7ieaml\\.cloudfront\\.net\\/lobster-loader\\/1\\/lobster-loader\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 2
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
@@ -82,10 +84,12 @@
         },
         {
             "rule": "dx46a7p7ieaml\\.cloudfront\\.net\\/squirrel\\/3\\.4\\.0\\/squirrel\\.js",
-            "cookies": 0,
+            "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
                 "Date.prototype.getTime": 3
             },
             "sites": 3,
@@ -95,7 +99,14 @@
                 "3772ae1a3abdd4df77c948bc7eb9d418f64f1cf59bf379210e0ea3f1b157046c"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "cookies.js": {
+                    "ttl": 1,
+                    "length": 6,
+                    "prevalence": 0.00020058168689198675,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "merkur.de",
@@ -192,7 +203,7 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0001,
     "types": {
         "Script": 19,
         "Image": 2

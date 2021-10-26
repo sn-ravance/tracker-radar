@@ -4,14 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000276,
-    "sites": 4,
+    "prevalence": 0.0000414,
+    "sites": 6,
     "subdomains": [
         "static",
         "flowers.api"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "abacus\\.ai\\/sdk\\/js\\/streaming\\.v4\\.min\\.js",
@@ -22,11 +22,11 @@
             ],
             "apis": {
                 "Date.prototype.getTimezoneOffset": 3,
-                "Navigator.prototype.userAgent": 3,
-                "Screen.prototype.width": 3,
-                "Screen.prototype.height": 3,
                 "Document.cookie getter": 1,
-                "Document.cookie setter": 1
+                "Document.cookie setter": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1
             },
             "sites": 3,
             "prevalence": 0.0000207,
@@ -39,7 +39,7 @@
                 "abacusAiUserId": {
                     "ttl": 86400,
                     "length": 39,
-                    "prevalence": 0.000006902073382844206,
+                    "prevalence": 0.000006904170118751726,
                     "uniqueness": 1
                 }
             },
@@ -93,15 +93,57 @@
                 "www.1800flowers.com",
                 "www.harryanddavid.com"
             ]
+        },
+        {
+            "rule": "abacus\\.ai\\/api\\/addUserItemInteraction",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "flowers.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "1800flowers.com",
+                "www.1800flowers.com"
+            ]
+        },
+        {
+            "rule": "abacus\\.ai\\/api\\/addUserItemInteraction",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "flowers.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "1800flowers.com",
+                "www.1800flowers.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000069,
+    "cookies": 0.0000138,
     "types": {
         "Script": 3,
-        "XHR": 3,
-        "Preflight": 3
+        "XHR": 5,
+        "Preflight": 5
     },
     "nameservers": [
         "ns-100.awsdns-12.com",

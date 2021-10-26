@@ -7,7 +7,8 @@
     "prevalence": 0.0001,
     "sites": 1,
     "subdomains": [
-        "video"
+        "video",
+        "origin"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -33,13 +34,64 @@
                 "ola.org",
                 "www.ola.org"
             ]
+        },
+        {
+            "rule": "isilive\\.ca\\/cdn\\/jquery\\/jquery-1\\.11\\.1\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "video"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "540bc6dec1dd4b92ea4d3fb903f69eabf6d919afd48f4e312b163c28cff0f441"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ola.org",
+                "www.ola.org"
+            ]
+        },
+        {
+            "rule": "isilive\\.ca\\/cdn\\/isi_player\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "bde5587d14467076ac20b34418aee463c6bfcd4ad57ef96df7a76f85b89c06a8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ola.org",
+                "www.ola.org"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0.0001,
     "types": {
-        "Document": 2
+        "Document": 2,
+        "Script": 4
     },
     "nameservers": [
         "ns2.isilive.ca",

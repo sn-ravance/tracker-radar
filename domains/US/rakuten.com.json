@@ -14,12 +14,11 @@
     "subdomains": [
         "tag.rmp",
         "www",
-        "rat",
-        "s-cs.rmp",
-        "s-cdn.rmp"
+        "s-cdn.rmp",
+        "s-cs.rmp"
     ],
     "cnames": [],
-    "fingerprinting": 3,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "rakuten\\.com\\/112115\\.ct\\.js",
@@ -29,10 +28,12 @@
                 "tag.rmp"
             ],
             "apis": {
+                "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
                 "Navigator.prototype.languages": 2,
                 "Navigator.prototype.language": 2,
-                "window.localStorage": 2
+                "window.localStorage": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -41,7 +42,20 @@
                 "567822c669d5f2491e8a50045af8bf39845f0a0410c69b08db127d2feb729edc"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "rmStore": {
+                    "ttl": 2592000,
+                    "length": 10,
+                    "prevalence": 0.000013808340237503452,
+                    "uniqueness": 0.5
+                },
+                "stc112115": {
+                    "ttl": 31536360,
+                    "length": 260,
+                    "prevalence": 0.000013808340237503452,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ashleyfurniture.com",
@@ -67,14 +81,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "4c4e91c76e7be3a2d197e7889f4afa272e71e63eb129031a30c135f8b3013039"
+                "c58f8f29888ca7db8263b69c164fc84d95738464d80a7379038bcc0a2f239f57"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc120213": {
-                    "ttl": 31536364,
+                    "ttl": 31536361,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -85,31 +99,39 @@
             ]
         },
         {
-            "rule": "rakuten\\.com\\/123821\\.ct\\.js",
-            "cookies": 0.0000207,
+            "rule": "rakuten\\.com\\/113704\\.ct\\.js",
+            "cookies": 0.0000138,
             "fingerprinting": 1,
             "subdomains": [
                 "tag.rmp"
             ],
             "apis": {
-                "Date.prototype.getTime": 3,
-                "Navigator.prototype.languages": 3,
-                "Navigator.prototype.language": 3,
-                "window.localStorage": 3
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.language": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2
             },
-            "sites": 3,
-            "prevalence": 0.0000207,
+            "sites": 2,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "11712acbaa1c95b400c322e4f0b410cd7293279e00c8eb38b8c50085f01590e1"
+                "aef4c7454194655ce72dd4a40fdf531fa5309b5891e4e382d460a2550c906ebd"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "stc113704": {
+                    "ttl": 31536368,
+                    "length": 260,
+                    "prevalence": 0.000013808340237503452,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "businessinsider.com",
-                "coupons.businessinsider.com",
-                "coupons.cnn.com"
+                "containerstore.com",
+                "www.containerstore.com"
             ]
         },
         {
@@ -129,7 +151,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "ad044a91780f426fbb234305492f012d7d4cffa4d7bcc080bec8fefb44ee0006"
+                "2abbf8c285763f0f426df26c0e4e0c6568ad0a171ca0f0d8b0de5943844752f8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -137,6 +159,54 @@
             "exampleSites": [
                 "nine.com.au",
                 "coupons.nine.com.au"
+            ]
+        },
+        {
+            "rule": "rakuten\\.com\\/123821\\.ct\\.js",
+            "cookies": 0.0000207,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag.rmp"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.languages": 3,
+                "Navigator.prototype.language": 3,
+                "window.localStorage": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "8cdd853e37603b6e693480f74e775b1e3295d5c37e9a9baf042c5976ac09d826"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "businessinsider.com",
+                "coupons.businessinsider.com",
+                "coupons.cnn.com"
+            ]
+        },
+        {
+            "rule": "rakuten\\.com\\/122870\\.ct\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tag.rmp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kaspersky.com",
+                "cybermap.kaspersky.com"
             ]
         },
         {
@@ -156,7 +226,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "fe3e835b997a511bc837eb7586d85662d3827ffd898bd2891a64e30c7cfeb22a"
+                "44ed9c4aa672f89e03b32c3431dbd8ed895e45515c082f7a77fa7051f94a3829"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -183,7 +253,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "7a1f5f79635b452f87a4d93be4f7cea1fe5670582f55fdfdf12f18495c56554c"
+                "56dc39fc100077c6eb497fb68cff87725603c71a24c0ca341a3472a5f80ba196"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -212,14 +282,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "a579caf1a31a4c384506a24815c1639050acef886e40793f43f5ba3e3c04f529"
+                "eff611e59efc973558c11b0ebb7b052ad81f3d3ed05dd0755e08f5f73752196c"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc122977": {
-                    "ttl": 31536363,
+                    "ttl": 31536362,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -255,7 +325,7 @@
                 "stc120204": {
                     "ttl": 31536370,
                     "length": 260,
-                    "prevalence": 0.00006211866044559786,
+                    "prevalence": 0.00006213753106876553,
                     "uniqueness": 1
                 }
             },
@@ -291,14 +361,14 @@
             "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "9824b55809ad85a2f232ef3d33b4dafdc92302362057283d95ebc34f2c6a5d08"
+                "9839243e7c099b7f7d19c0915b9c6d6965a3243ad1f13c6ca4b61f713993d6df"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc120272": {
-                    "ttl": 31536363,
+                    "ttl": 31536362,
                     "length": 260,
-                    "prevalence": 0.000027608293531376825,
+                    "prevalence": 0.000027616680475006903,
                     "uniqueness": 1
                 }
             },
@@ -329,14 +399,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "afc06350a871f1741a4728e9dbfdd28c7020b16558d6d6b4d0afc4b7aadae4de"
+                "6596c1e6d0c09336662b7ee434e9d6112aa9e2e5350997bd5b79897b57be0c01"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "rmStore": {
                     "ttl": 7862406,
                     "length": 9,
-                    "prevalence": 0.000006902073382844206,
+                    "prevalence": 0.000006904170118751726,
                     "uniqueness": 1
                 }
             },
@@ -365,14 +435,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "ae33011c44cc4b3e8135dd35c85385a1340d8029ce76de5d6b2a3d9643af352d"
+                "0e84d012084ff8cb628fa1a71f13ba09c8fe63b5af76583daee03238c2b6394a"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc119705": {
-                    "ttl": 31536365,
+                    "ttl": 31536366,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -399,7 +469,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "ffafda2c8ef272a0fe2e1d4b7cec62fc5e1c4acb2ad5f03236a7ceb28d4f7c4c"
+                "c7af8489cc7f2a4b518557ba840e80295a6084e453f57f915432d5f5fcd2fc9a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -426,7 +496,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "f1cd358a1f4c5bc5952936c625f956e191b057e028265c5890b6155c370e073f"
+                "eefdacf6f6e07ea8feef6a39b5debb3d653a77e0bb46ffa5f601318829552595"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -455,14 +525,14 @@
             "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [
-                "c9b0c81ea24e8472a2ab0b45b6b367d78b38cfcf567ae4c57ffa416cb9a8026f"
+                "eeeb4c79fa90bb628fb2d4e98f95634f5e2dab6ee1e810991a4ec22ef1dbd363"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc115255": {
-                    "ttl": 31536365,
+                    "ttl": 31536363,
                     "length": 260,
-                    "prevalence": 0.000020706220148532618,
+                    "prevalence": 0.00002071251035625518,
                     "uniqueness": 1
                 }
             },
@@ -471,42 +541,6 @@
                 "joann.com",
                 "stores.joann.com",
                 "www.joann.com"
-            ]
-        },
-        {
-            "rule": "rakuten\\.com\\/123283\\.ct\\.js",
-            "cookies": 0.0000138,
-            "fingerprinting": 1,
-            "subdomains": [
-                "tag.rmp"
-            ],
-            "apis": {
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.languages": 2,
-                "Navigator.prototype.language": 2,
-                "window.localStorage": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "3394a9446e03e0436f7cc0a825ed3d8ab2807b7dc99116808e15324e24c35ca3"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "stc123283": {
-                    "ttl": 31536364,
-                    "length": 260,
-                    "prevalence": 0.000013804146765688412,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "electrolux.com.br",
-                "loja.electrolux.com.br"
             ]
         },
         {
@@ -528,20 +562,20 @@
             "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [
-                "89508d519bb67be4008a567b516806091b1381606a8cec3a5ae46d0eb9bd48c9"
+                "7023c4e012f758a890c0edd20f35106ba4664781eee89e6ac901a3315c1a4417"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "rmStore": {
                     "ttl": 2592010,
                     "length": 7,
-                    "prevalence": 0.000020706220148532618,
+                    "prevalence": 0.00002071251035625518,
                     "uniqueness": 0.3333333333333333
                 },
                 "stc123098": {
-                    "ttl": 31536372,
+                    "ttl": 31536370,
                     "length": 260,
-                    "prevalence": 0.000020706220148532618,
+                    "prevalence": 0.00002071251035625518,
                     "uniqueness": 1
                 }
             },
@@ -571,14 +605,14 @@
             "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [
-                "3df88d5ec5c101962cde60b1c6d9ef275d5926adfa422c04fa643fc05ff058d8"
+                "1deeede20f3e12afaa7583f3da6c4271111acb2935095eaaca8873b68272b30c"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc122872": {
-                    "ttl": 31536362,
+                    "ttl": 31536361,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -608,14 +642,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "101d3efdbc5d8fa40ebfab583830965a9396e2a166206544e4a7f2da63e1cba2"
+                "512dedb91d1017ef14db20b04cda31db544365342a7a77953352c7d5805127f3"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc121125": {
                     "ttl": 31536361,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -644,14 +678,14 @@
             "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [
-                "a401f44795f0ff6124a13891de121a9ff6f5af957b05ef83886c3eec2600aa96"
+                "1043ba5c74bcd86e8b16b2d8484a053c29f73f4f3e3b178fd1029b95dbce7610"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc116883": {
-                    "ttl": 31536363,
+                    "ttl": 31536364,
                     "length": 260,
-                    "prevalence": 0.000020706220148532618,
+                    "prevalence": 0.00002071251035625518,
                     "uniqueness": 1
                 }
             },
@@ -660,6 +694,42 @@
                 "orvis.com",
                 "news.orvis.com",
                 "www.orvis.com"
+            ]
+        },
+        {
+            "rule": "rakuten\\.com\\/122740\\.ct\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag.rmp"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.language": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "75d1e904539823922735c5db8f04a2b4483990c9c9bbf53baf44f6f0c6ebf1e6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "stc122740": {
+                    "ttl": 31536363,
+                    "length": 260,
+                    "prevalence": 0.000013808340237503452,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nordstromrack.com",
+                "www.nordstromrack.com"
             ]
         },
         {
@@ -681,14 +751,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "57749d7d4efd58de9340b10c6483b2a70d47e6b04f73f5de2c95e069dff41a84"
+                "78907d973f5698092703128e073014227f8021b02cc142c6aa50b84f90151651"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc111859": {
-                    "ttl": 31536368,
+                    "ttl": 31536363,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -696,6 +766,43 @@
             "exampleSites": [
                 "spartan.com",
                 "www.spartan.com"
+            ]
+        },
+        {
+            "rule": "rakuten\\.com\\/124114\\.ct\\.js",
+            "cookies": 0.0000207,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag.rmp"
+            ],
+            "apis": {
+                "Document.cookie getter": 3,
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.languages": 3,
+                "Navigator.prototype.language": 3,
+                "window.localStorage": 3,
+                "Document.cookie setter": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "96d5c1437cba7d6878c7fc23f1675694aa351c6efe0fe87f67ec2027a69f41e9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "stc124114": {
+                    "ttl": 31536363,
+                    "length": 260,
+                    "prevalence": 0.000013808340237503452,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ramseysolutions.com",
+                "www.everydollar.com",
+                "www.ramseysolutions.com"
             ]
         },
         {
@@ -717,14 +824,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "b6ca2f91ace35c5e6e4ab9da688fdcba53f22f5d85de6ef1b480876a78276d1a"
+                "273b3dffe542c64b8ef44c0501a2c71da9728aa355d83cb052f26ee39068ebce"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc122690": {
-                    "ttl": 31536368,
+                    "ttl": 31536365,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -757,42 +864,6 @@
             ]
         },
         {
-            "rule": "rakuten\\.com\\/122740\\.ct\\.js",
-            "cookies": 0.0000138,
-            "fingerprinting": 1,
-            "subdomains": [
-                "tag.rmp"
-            ],
-            "apis": {
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.languages": 2,
-                "Navigator.prototype.language": 2,
-                "window.localStorage": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "75d1e904539823922735c5db8f04a2b4483990c9c9bbf53baf44f6f0c6ebf1e6"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "stc122740": {
-                    "ttl": 31536362,
-                    "length": 260,
-                    "prevalence": 0.000013804146765688412,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nordstromrack.com",
-                "stores.nordstromrack.com"
-            ]
-        },
-        {
             "rule": "rakuten\\.com\\/111425\\.ct\\.js",
             "cookies": 0.0000276,
             "fingerprinting": 1,
@@ -811,14 +882,14 @@
             "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "b4592a4e706235196781c679ee102807b28445788906385bd93a9f9fc7ef2185"
+                "08b400ea2531fe5ff01580948bf0e5d2369c4dc93eb3e5909ae6b23fdea29a9c"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc111425": {
-                    "ttl": 31536366,
+                    "ttl": 31536363,
                     "length": 260,
-                    "prevalence": 0.000027608293531376825,
+                    "prevalence": 0.000027616680475006903,
                     "uniqueness": 1
                 }
             },
@@ -854,9 +925,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "stc114920": {
-                    "ttl": 31536365,
+                    "ttl": 31536364,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -864,6 +935,85 @@
             "exampleSites": [
                 "shutterstock.com",
                 "www.shutterstock.com"
+            ]
+        },
+        {
+            "rule": "rakuten\\.com\\/122083\\.ct\\.js",
+            "cookies": 0.0000207,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag.rmp"
+            ],
+            "apis": {
+                "Document.cookie getter": 3,
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.languages": 3,
+                "Navigator.prototype.language": 3,
+                "window.localStorage": 3,
+                "Document.cookie setter": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "0e13663771c28469fb1acc6f784472ae63651dae366bdd3a4fa380a4e0e1270d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "stc122083": {
+                    "ttl": 31536363,
+                    "length": 260,
+                    "prevalence": 0.00002071251035625518,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gymshark.com",
+                "uk.gymshark.com",
+                "www.gymshark.com"
+            ]
+        },
+        {
+            "rule": "rakuten\\.com\\/115404\\.ct\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag.rmp"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.language": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "8c1eb58c43c697f843ed69b36083fbad721b4b9c129881c9f847cd27e05ae293"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "rmStore": {
+                    "ttl": 2592002,
+                    "length": 62,
+                    "prevalence": 0.000013808340237503452,
+                    "uniqueness": 0.5
+                },
+                "stc115404": {
+                    "ttl": 31536362,
+                    "length": 260,
+                    "prevalence": 0.000013808340237503452,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ecco.com",
+                "us.ecco.com"
             ]
         },
         {
@@ -885,20 +1035,20 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "f228d03b71a0e39a488dc69d0289de120258c2068a8ba94cbbba12b6ac4e7ca1"
+                "25cbf304ced8e4dca5c8e103df1c421facdc82259f81a74d3ad9ec4eec200f35"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "rmStore": {
-                    "ttl": 63072003,
+                    "ttl": 63072006,
                     "length": 10,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 0.5
                 },
                 "stc114588": {
-                    "ttl": 31536364,
+                    "ttl": 31536366,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -906,48 +1056,6 @@
             "exampleSites": [
                 "burberry.com",
                 "us.burberry.com"
-            ]
-        },
-        {
-            "rule": "rakuten\\.com\\/115404\\.ct\\.js",
-            "cookies": 0.0000138,
-            "fingerprinting": 2,
-            "subdomains": [
-                "tag.rmp"
-            ],
-            "apis": {
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.languages": 1,
-                "Navigator.prototype.language": 1,
-                "window.localStorage": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "a75cc7f45a39aa173a2ae47e97f57ca3dce0a8faad668b210c425592bf088c08"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "rmStore": {
-                    "ttl": 2592005,
-                    "length": 62,
-                    "prevalence": 0.000006902073382844206,
-                    "uniqueness": 1
-                },
-                "stc115404": {
-                    "ttl": 31536365,
-                    "length": 260,
-                    "prevalence": 0.000013804146765688412,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ecco.com",
-                "us.ecco.com"
             ]
         },
         {
@@ -969,20 +1077,20 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "93a0d487438d5bb8896e654f4e52e1bb3d795cd7699ff05a9734a86e53173675"
+                "de2bc4c361d45ccec13a5b276a7b5a79e69d32a2c5cc024ccb92ad42478246fe"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "rmStore": {
                     "ttl": 2592004,
                     "length": 9,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 0.5
                 },
                 "stc115345": {
-                    "ttl": 31536365,
+                    "ttl": 31536364,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -1011,14 +1119,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "9de0767755c0b297fc885136733c7e7e0f3f20be5e0d2fd4dd539585e8507f48"
+                "c6de8a10d8a52f8fbb29989fdec1b16fc37efc104ef4fb1ca60276e2a89a559b"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc113850": {
-                    "ttl": 31536367,
+                    "ttl": 31536365,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -1047,14 +1155,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "fcc6226431b39935323d28b268a4fa996163bb20ccd75ac86ce98f7ffd77a262"
+                "3e6667edd7351e5e7495a129e1c8f2fd2e98cb147a37fc9b5e133fd8a0d1808b"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc111857": {
-                    "ttl": 31536370,
+                    "ttl": 31536368,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -1083,14 +1191,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "d70c33d5fb90cc4368a4e4bcf82494e9b971f91d1c68511b9e0f27f9fd086d9c"
+                "6a7ff89b421fe4e88ace3f27518b9bda4780a8733d99867473d09aae7c5b629a"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc121822": {
                     "ttl": 31536363,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -1119,14 +1227,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "0c7fd509875044c39b225258270654a71acdad79c08477fb5688ca2a1d1af4f3"
+                "353221cb29071274561829918d33bee74b04b62a0ea24ab3b88f0e3cc5a7e27c"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc113669": {
-                    "ttl": 31536369,
+                    "ttl": 31536364,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -1155,14 +1263,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "436cd7517726857d6cbfc7dd1439a427373d9d2e196ce47a64796b01f563187c"
+                "290500c6321a4e8aa3893e39da1032b8922f9cb058aa51eccdfa0227d419e35b"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc120483": {
-                    "ttl": 31536364,
+                    "ttl": 31536363,
                     "length": 260,
-                    "prevalence": 0.000006902073382844206,
+                    "prevalence": 0.000006904170118751726,
                     "uniqueness": 1
                 }
             },
@@ -1191,14 +1299,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "d1eb8dc684bfe4d0ef7d79403b3fbc7945afa4aee96312d15686f6af0cceb1c1"
+                "08841b985482d3eda3b42aceb6017b7c8493ee6db2ba9e0fe58445cb7111237a"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc120285": {
-                    "ttl": 31536363,
+                    "ttl": 31536361,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -1227,14 +1335,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "cb3af7ef73b8775838dc050fefcc811045f472e4791d81a38a600affa18f85b3"
+                "4a90a82c5d134dad494071fbc17866971a3557fa083e0291bd83a185149e2b62"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc121333": {
-                    "ttl": 31536363,
+                    "ttl": 31536361,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -1247,30 +1355,29 @@
         {
             "rule": "rakuten\\.com\\/115243\\.ct\\.js",
             "cookies": 0.0000138,
-            "fingerprinting": 2,
+            "fingerprinting": 1,
             "subdomains": [
                 "tag.rmp"
             ],
             "apis": {
                 "Date.prototype.getTime": 2,
                 "window.localStorage": 2,
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2,
                 "Navigator.prototype.languages": 1,
-                "Navigator.prototype.language": 1
+                "Navigator.prototype.language": 1,
+                "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "3259ad29a518475833288df969d1dccf45e588e62e002395e65656fc7c04a195"
+                "b0fd03ccbf73e8567b113697b1f2210879051c2aa3abb64c3010dd0255dfed2e"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc115243": {
-                    "ttl": 31536362,
+                    "ttl": 31536360,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000006904170118751726,
                     "uniqueness": 1
                 }
             },
@@ -1299,14 +1406,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "64af84483d68bd4dd3df705ff8f0ee592f75435242f887dd5dde98cb93f07d41"
+                "431d01bab035b2236f795c031bb81b4e0ea3098a1ebbec2e5a90169b09c0d356"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc116551": {
-                    "ttl": 31536364,
+                    "ttl": 31536362,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -1338,15 +1445,15 @@
             "type": "Script",
             "firstPartyCookies": {
                 "rmStore": {
-                    "ttl": 2592002,
+                    "ttl": 2592004,
                     "length": 10,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 0.5
                 },
                 "stc116321": {
-                    "ttl": 31536362,
+                    "ttl": 31536364,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -1375,14 +1482,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "38ff81211bf17de364d353ede656ba469d16984fd82d572c2fbfd6e8ac0d2d76"
+                "a87217fecdc2bd252f852b6129120debdb8ed5fc5335a4fd1273b6ecca8e9afa"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc113774": {
-                    "ttl": 31536361,
+                    "ttl": 31536365,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -1411,14 +1518,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "6cc714d749718648ffe6d312e47762b6f6768aff4f0b7918396b4d4a4bc24149"
+                "158aff86b94bb38904bf2d1b98b1228dc8a4ae3e889aa89e458a5c88bdcd1c0f"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc118548": {
-                    "ttl": 31536366,
+                    "ttl": 31536364,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -1447,14 +1554,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "54c5327eee3b178faaec77dbd0f163024955a79a6679776b58b0ec230887e8e7"
+                "a546816560cc96ada9977bc81e366954d7c1f12acf91e8da2b6a593873c9a84e"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc117820": {
-                    "ttl": 31536365,
+                    "ttl": 31536362,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -1481,7 +1588,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "c8c481f5a177fd3f4c7bb237f856ceebd652c8b590ce5f08d4422a416c4d29ab"
+                "af7ecf0e0dde8c4f707bc72e4c98700f241f5cea8a97418b6fafcf51165be434"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1489,42 +1596,6 @@
             "exampleSites": [
                 "beams.co.jp",
                 "www.beams.co.jp"
-            ]
-        },
-        {
-            "rule": "rakuten\\.com\\/123318\\.ct\\.js",
-            "cookies": 0.0000138,
-            "fingerprinting": 1,
-            "subdomains": [
-                "tag.rmp"
-            ],
-            "apis": {
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.languages": 2,
-                "Navigator.prototype.language": 2,
-                "window.localStorage": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "ec9513aac7cae7c27860d5423f5e844bc4024f40a1465c16dbf5ef24b660315c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "stc123318": {
-                    "ttl": 31536363,
-                    "length": 260,
-                    "prevalence": 0.000006902073382844206,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "beyondretro.com",
-                "www.beyondretro.com"
             ]
         },
         {
@@ -1546,14 +1617,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "3701c705ff20112464cd2d03795824166d12537f6274b88375b4d030537d61cf"
+                "9b90b301e661ea201a7886b5f271af6e9c54694992a317c8b2933863cd695259"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc121506": {
-                    "ttl": 31536365,
+                    "ttl": 31536362,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -1561,6 +1632,48 @@
             "exampleSites": [
                 "blurb.com",
                 "www.blurb.com"
+            ]
+        },
+        {
+            "rule": "rakuten\\.com\\/123114\\.ct\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag.rmp"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.language": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "62fa6f911299b8f7918ef42a653f3bc7acd2317e46d993c9dd1c4340ab8cca97"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "rmStore": {
+                    "ttl": 2592016,
+                    "length": 7,
+                    "prevalence": 0.000013808340237503452,
+                    "uniqueness": 0.5
+                },
+                "stc123114": {
+                    "ttl": 31536376,
+                    "length": 260,
+                    "prevalence": 0.000013808340237503452,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bobbibrowncosmetics.com",
+                "www.bobbibrowncosmetics.com"
             ]
         },
         {
@@ -1582,14 +1695,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "a291a3b7bc2a3a3503d9cb77b61964a60cf9453334a33ef1c7ecaf6248dd37a9"
+                "c35b5c0ca072e3efbdc7b7599dc6bbbfbccc276b51a26d0840fe2589bde00f83"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc122168": {
-                    "ttl": 31536370,
+                    "ttl": 31536364,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -1618,14 +1731,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "3c6f8dd04f2756b6e8b77f8ec3cdf77e3f004794ce064db610e1943c0b1f0a89"
+                "11f21d5bddb61e9c92cc6ca64c70d626fdcde6f3d0177850ec70e132dbbd85ca"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc121810": {
                     "ttl": 31536362,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -1654,14 +1767,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "4300a31762e2bb441dd823ea58bbb22a81d2f33d2435932158d07c0d043094ed"
+                "19ab855903142333b8392215ad263b7dcdc5d5b8fedda6ebca1426a3db55f8ae"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc122967": {
-                    "ttl": 31536364,
+                    "ttl": 31536361,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -1690,14 +1803,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "4da8113a88aed59bd8172ad4baebe74e338eb8bcb8d54e8b249ef02be01c01cf"
+                "13bd95554ac9d4ac02be8b322827776df27797a77dfa90a0b3daed5be8b4a8b4"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc120570": {
                     "ttl": 31536362,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -1705,6 +1818,42 @@
             "exampleSites": [
                 "bushnell.com",
                 "www.bushnell.com"
+            ]
+        },
+        {
+            "rule": "rakuten\\.com\\/122377\\.ct\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag.rmp"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.language": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "225352aa06e4247d48e8a50ff90bd701cf3a7210deb4dbdfcdb9f48806e502e3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "stc122377": {
+                    "ttl": 31536362,
+                    "length": 260,
+                    "prevalence": 0.000013808340237503452,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bushnellgolf.com",
+                "www.bushnellgolf.com"
             ]
         },
         {
@@ -1726,20 +1875,20 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "e2ef7a2e950f06443b4061e2a1e36a6ffd861e410eba1839d175ddb16dfc3704"
+                "e832d34ec8e538371066ab9216a37309b7edba5f67121493264ae2748ebeb3a7"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "rmStore": {
-                    "ttl": 2592003,
+                    "ttl": 2592002,
                     "length": 10,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 0.5
                 },
                 "stc114460": {
-                    "ttl": 31536364,
+                    "ttl": 31536362,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -1769,20 +1918,20 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "2f14d88b82ff264ac1081d9544e18c117252090d7307eeb397df18e8d7ed06e4"
+                "ed4f4a93c289f0ad22e15da3c5171c68b5c864fcb488c69e96cd6fc60a111c35"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "rmStore": {
-                    "ttl": 2592002,
+                    "ttl": 2592009,
                     "length": 8,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 0.5
                 },
                 "stc122155": {
-                    "ttl": 31536362,
+                    "ttl": 31536369,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -1811,14 +1960,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "33228a9ec1949b4f860dd70d38df9e1999d0bcdb1e140d1dec7b8223af6817c0"
+                "8d1528c0487c32e77775bd9451da1264dc1547c79444bd04474d7f37a3a41743"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc117009": {
-                    "ttl": 31536370,
+                    "ttl": 31536369,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -1847,14 +1996,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "59177adbd60f070dbcab0f8020e0e13548cba9b7c71763c1ac62d47ab6ce3226"
+                "2cbd1b88cab9c55260882dbd5f9aec51a49d119bb2ca88d82f81e5c9f7f81d16"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc115903": {
-                    "ttl": 31536368,
+                    "ttl": 31536364,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -1867,29 +2016,30 @@
         {
             "rule": "rakuten\\.com\\/121441\\.ct\\.js",
             "cookies": 0.0000138,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "tag.rmp"
             ],
             "apis": {
                 "Date.prototype.getTime": 2,
-                "Navigator.prototype.languages": 2,
-                "Navigator.prototype.language": 2,
                 "window.localStorage": 2,
+                "Document.cookie getter": 1,
+                "Navigator.prototype.languages": 1,
+                "Navigator.prototype.language": 1,
                 "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "6f617775c80545964e18525c8a9351cc1756e687db356fcbec1bc95e6d3a2ac4"
+                "3a170de8e552637c2f54f007b37082499767b2ba714a4001812549b5e8331918"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc121441": {
-                    "ttl": 31536364,
+                    "ttl": 31536365,
                     "length": 260,
-                    "prevalence": 0.000006902073382844206,
+                    "prevalence": 0.000006904170118751726,
                     "uniqueness": 1
                 }
             },
@@ -1918,14 +2068,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "f59cadd3f8b266d6a6323d38a738c1c78d7126d986d1aebf84ac3d02361ffa85"
+                "11a6d6f73bcc70cd984667b31fcc3f398971cf7270fbf2b9e62bef0fca789314"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc122849": {
-                    "ttl": 31536364,
+                    "ttl": 31536362,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -1954,14 +2104,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "80e8dfefc9a4be5eda04d760bfa4f360417f32863f9e14cf12782b4bdde58a2d"
+                "75cf41a7c4549031b895b81165f04593e51d0775c6969b7e7857cfbc6406516d"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc122968": {
-                    "ttl": 31536361,
+                    "ttl": 31536362,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -1990,14 +2140,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "25b9dac6b507b5e90290a8aa394d5c5e6b9756a263976edf15acadd412b7beea"
+                "0948502611877be9f7712d696dd33e4eb0eeedfa610a44511be14dfeb56642d9"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc121847": {
-                    "ttl": 31536366,
+                    "ttl": 31536367,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -2005,42 +2155,6 @@
             "exampleSites": [
                 "colehaan.com",
                 "www.colehaan.com"
-            ]
-        },
-        {
-            "rule": "rakuten\\.com\\/113704\\.ct\\.js",
-            "cookies": 0.0000138,
-            "fingerprinting": 1,
-            "subdomains": [
-                "tag.rmp"
-            ],
-            "apis": {
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.languages": 2,
-                "Navigator.prototype.language": 2,
-                "window.localStorage": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "849ddec16f883e7409243a4a0a1d5c45af737086d7f642064dfead82a28500b0"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "stc113704": {
-                    "ttl": 31536367,
-                    "length": 260,
-                    "prevalence": 0.000013804146765688412,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "containerstore.com",
-                "www.containerstore.com"
             ]
         },
         {
@@ -2062,14 +2176,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "76dd4a3d0e726f06f1051c3d8a75e33c56580aa0a638ab017316c1cff851d039"
+                "dca2a1961bfc47ddb9aa0a54e0c54fbafed7c0b306f94a3a7fdad64a3cc98782"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc117604": {
                     "ttl": 31536368,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -2082,30 +2196,30 @@
         {
             "rule": "rakuten\\.com\\/113558\\.ct\\.js",
             "cookies": 0.0000138,
-            "fingerprinting": 2,
+            "fingerprinting": 1,
             "subdomains": [
                 "tag.rmp"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
-                "window.localStorage": 2,
                 "Document.cookie getter": 2,
-                "Document.cookie setter": 2,
-                "Navigator.prototype.languages": 1,
-                "Navigator.prototype.language": 1
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.language": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "dbfb0eef719659e327c2125c62b64310d377095ef0e73a7e5be7f28e7ee8b853"
+                "c483048a5eee8bf4c2646f8a97fcf02d6c92a51e7c88c4be064495a01a892680"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc113558": {
-                    "ttl": 31536363,
+                    "ttl": 31536362,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -2113,33 +2227,6 @@
             "exampleSites": [
                 "currentcatalog.com",
                 "www.currentcatalog.com"
-            ]
-        },
-        {
-            "rule": "rakuten\\.com\\/120320\\.ct\\.js",
-            "cookies": 0.0000138,
-            "fingerprinting": 1,
-            "subdomains": [
-                "tag.rmp"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.languages": 2,
-                "Navigator.prototype.language": 2,
-                "window.localStorage": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "3436eb0a23ff7b0cae51fcb99f52d1101b0b2342b65b7d9a55e29e4c8e9099bc"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dallasnews.com",
-                "www.dallasnews.com"
             ]
         },
         {
@@ -2161,21 +2248,19 @@
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [
-                "9ae76a48ce64c3d75abe485c0a53a89b936dd8327d21508dfaa6946ca4567e1e"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {
                 "rmStore": {
                     "ttl": 2592002,
                     "length": 10,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 0.5
                 },
                 "stc114401": {
                     "ttl": 31536362,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -2188,30 +2273,30 @@
         {
             "rule": "rakuten\\.com\\/123095\\.ct\\.js",
             "cookies": 0.0000138,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "tag.rmp"
             ],
             "apis": {
-                "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
-                "Navigator.prototype.languages": 2,
-                "Navigator.prototype.language": 2,
                 "window.localStorage": 2,
-                "Document.cookie setter": 2
+                "Document.cookie getter": 1,
+                "Navigator.prototype.languages": 1,
+                "Navigator.prototype.language": 1,
+                "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "144bbd3c0979f7597668cb325ae1cdcc2fd2ebc9bb5aa66c9c0d51c9cdc6011c"
+                "2abd41c9896203729fae08ee5024b2d1bf07e68f3a52eb801408b079d0e82893"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc123095": {
-                    "ttl": 31536363,
+                    "ttl": 31536366,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000006904170118751726,
                     "uniqueness": 1
                 }
             },
@@ -2240,14 +2325,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "f1a213fd19cef90dd9ff281c626b32363f02c3fa8852d6e04546c1b0bc69a66e"
+                "12963d3a4cef93546f7a9c36a77f9a78d4a1dcada708bca87c555a643ee90588"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc116388": {
-                    "ttl": 31536364,
+                    "ttl": 31536363,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -2276,14 +2361,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "f57c857892d8b23baaa3badebe916316f91ed2c862982830de299348a8748c0e"
+                "79354e9ef73d154b080b14bc2f1b0a7ca8629bf6074b751d6396d6858ed121e9"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc117589": {
                     "ttl": 31536365,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -2296,30 +2381,30 @@
         {
             "rule": "rakuten\\.com\\/113649\\.ct\\.js",
             "cookies": 0.0000138,
-            "fingerprinting": 2,
+            "fingerprinting": 1,
             "subdomains": [
                 "tag.rmp"
             ],
             "apis": {
-                "Document.cookie getter": 1,
-                "Date.prototype.getTime": 1,
-                "Navigator.prototype.languages": 1,
-                "Navigator.prototype.language": 1,
-                "window.localStorage": 1,
-                "Document.cookie setter": 1
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.language": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "7ad14029dd7d83a485fb67a0e01e7585167dc19ddfcb9f72eb9a9129e2ea3365"
+                "f32ed47f7f6085360724fd4e5efc61ed1e1ebf6e4b56c655caafa678d75b670d"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc113649": {
-                    "ttl": 31536368,
+                    "ttl": 31536374,
                     "length": 260,
-                    "prevalence": 0.000006902073382844206,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -2348,14 +2433,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "230477d89c00caf73b22f508e82869c3b35b99722f087cbf8ec375859250b48e"
+                "92b134742d899a65da967cef2e23048f0df4d0f8e65f02f0ff7768e176a1e38d"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc114779": {
-                    "ttl": 31536366,
+                    "ttl": 31536368,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -2385,14 +2470,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "904cd5bee7fabe912fc04aa9fe6b2b0c188cc98b70f78a6455457024f7fd9cbc"
+                "da8286644a4007be524858d5ccd915ac4118d48a6c85daaabbf378c064c613a7"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc120573": {
-                    "ttl": 31536361,
+                    "ttl": 31536362,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -2400,183 +2485,6 @@
             "exampleSites": [
                 "eaglecreek.com",
                 "www.eaglecreek.com"
-            ]
-        },
-        {
-            "rule": "rakuten\\.com\\/",
-            "cookies": 0.0000138,
-            "fingerprinting": 1,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 2,
-                "Event.prototype.timeStamp": 2,
-                "window.localStorage": 1,
-                "window.sessionStorage": 1,
-                "Navigator.prototype.userAgent": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "b4df6ab0de2d84c19fdc2f222e64109d42255e4fc45cea235c121362bb08bdd6"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ebates.com",
-                "www.ebates.com"
-            ]
-        },
-        {
-            "rule": "rakuten\\.com\\/rmsgjs\\/soj2\\.js",
-            "cookies": 0.0000138,
-            "fingerprinting": 3,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {
-                "window.localStorage": 1,
-                "Navigator.prototype.plugins": 1,
-                "Navigator.prototype.mimeTypes": 1,
-                "window.devicePixelRatio": 1,
-                "Screen.prototype.height": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.availHeight": 1,
-                "Screen.prototype.availWidth": 1,
-                "Screen.prototype.pixelDepth": 1,
-                "Screen.prototype.colorDepth": 1,
-                "Navigator.prototype.appCodeName": 1,
-                "Navigator.prototype.appName": 1,
-                "Navigator.prototype.appVersion": 1,
-                "Navigator.prototype.hardwareConcurrency": 1,
-                "Navigator.prototype.maxTouchPoints": 1,
-                "Navigator.prototype.platform": 1,
-                "Navigator.prototype.product": 1,
-                "Navigator.prototype.productSub": 1,
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.vendor": 1,
-                "Navigator.prototype.vendorSub": 1,
-                "Navigator.prototype.doNotTrack": 1,
-                "RTCPeerConnection.prototype.constructor": 1,
-                "HTMLMediaElement.prototype.canPlayType": 1,
-                "CanvasRenderingContext2D.prototype.getImageData": 1,
-                "HTMLCanvasElement.prototype.toDataURL": 1,
-                "RTCPeerConnectionIceEvent.prototype.candidate": 1,
-                "window.matchMedia(\"prefers-reduced-motion\")": 1,
-                "Navigator.prototype.mediaDevices": 1,
-                "CanvasRenderingContext2D.prototype.measureText": 1,
-                "WebGLRenderingContext.prototype.getParameter": 1,
-                "WebGLRenderingContext.prototype.getExtension": 1,
-                "WebGLRenderingContext.prototype.getContextAttributes": 1,
-                "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 1,
-                "WebGLRenderingContext.prototype.getSupportedExtensions": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "65e8d94359ebb3374263ed736d4830c5f06349d443b30d9bf592cc6f72273699"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ebates.com",
-                "www.ebates.com"
-            ]
-        },
-        {
-            "rule": "rakuten\\.com\\/ajax\\/rat_cookie\\.htm",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "4e0027a861f3ad8174970339f17b9a584ba5c7a8fc0442701608a2d9337b7a5e"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ebates.com",
-                "www.ebates.com"
-            ]
-        },
-        {
-            "rule": "rakuten\\.com\\/member\\/datasharingstatus\\.do",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "9bb8d79a48e58cc158c81461e50a7f1dd26375e1281c1248cc641d5cd861d0b5"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ebates.com",
-                "www.ebates.com"
-            ]
-        },
-        {
-            "rule": "rakuten\\.com\\/akam-sw\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "dedaecb01b4958ed202f677627f73eeea55e5181c06ad46f1fc64af2b17cbc19"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ebates.com",
-                "www.ebates.com"
-            ]
-        },
-        {
-            "rule": "rakuten\\.com\\/",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "rat",
-                "s-cs.rmp"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [],
-            "responseHashes": [
-                "281c5ae8bf152f644e12a943ec5d59681e1950c54fb6c0b3cc77539bf5e69340",
-                "dcecab1355b5c2b9ecef281322bf265ac5840b4688748586e9632b473a5fe56b"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ebates.com",
-                "www.ebates.com",
-                "www.viki.com"
             ]
         },
         {
@@ -2598,14 +2506,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "bbf7dacafbc0c6abf399a54d7f11a474618d9def4cf02bab38666dd309a5c519"
+                "ff9d5b0cd6775927b637c404dcc9856dbdcf0dc62875355ad4b77c2969a1e8c8"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc121821": {
-                    "ttl": 31536361,
+                    "ttl": 31536365,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -2633,19 +2541,21 @@
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "5cf7c65f66c93e90a9a28b12df41fa492849271673b8dd709777921a8e57566a"
+            ],
             "type": "Script",
             "firstPartyCookies": {
                 "rmStore": {
-                    "ttl": 2592013,
+                    "ttl": 2592010,
                     "length": 21,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 0.5
                 },
                 "stc113702": {
-                    "ttl": 31536373,
+                    "ttl": 31536370,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -2674,14 +2584,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "b07d4b873bc4de5b29a4a53360092649d0f7f5cef1f3c359137fe7c3bf822b4e"
+                "1f262362fef13ebbf457ee6a72b5abe29881cf968d879f5057542f00e24bd11f"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc122703": {
-                    "ttl": 31536368,
+                    "ttl": 31536371,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -2699,25 +2609,25 @@
                 "tag.rmp"
             ],
             "apis": {
+                "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
                 "Navigator.prototype.languages": 2,
                 "Navigator.prototype.language": 2,
                 "window.localStorage": 2,
-                "Document.cookie getter": 2,
                 "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "65b9ff870483d0c898a074fab7cc737766767f1b923395ce0fb4dd5cbd2260e9"
+                "9dc8e70dfeb4efcc0326abf017813ba3dd48f4fdea7c75c6225a383707c2e69e"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc116621": {
-                    "ttl": 31536365,
+                    "ttl": 31536361,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -2746,20 +2656,20 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "37e8031fe37fc65284f5c3d4bc799b78a4a82f551447c9b5811b7c17071ecd23"
+                "720b394e48695d59be4e3e15b0e9e6b90493edabca0b54b97fac14203c404a2b"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "rmStore": {
-                    "ttl": 2592008,
+                    "ttl": 2592007,
                     "length": 7,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 0.5
                 },
                 "stc123116": {
-                    "ttl": 31536371,
+                    "ttl": 31536367,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -2788,14 +2698,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "dd2a562046aff6f6f5b60d3046fdb26ae922d2b118ecd00bed7523e274dc20c9"
+                "d63287ccc270267aa7a73dff2a863462216a04462bd0b41ccf679b65e13cd78c"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc121773": {
                     "ttl": 31536363,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -2806,7 +2716,7 @@
             ]
         },
         {
-            "rule": "rakuten\\.com\\/124114\\.ct\\.js",
+            "rule": "rakuten\\.com\\/111799\\.ct\\.js",
             "cookies": 0.0000138,
             "fingerprinting": 1,
             "subdomains": [
@@ -2824,21 +2734,21 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "c7439e25be06a097e366343db29e57d59e656ea87a5fcae20ce6eca6589cb925"
+                "398aa024770dce0c3783e13b4f1e86d555c1a91eafd7c2f5b8d4d9b38fe65b43"
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "stc124114": {
-                    "ttl": 31536362,
+                "stc111799": {
+                    "ttl": 31536368,
                     "length": 260,
-                    "prevalence": 0.000006902073382844206,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "everydollar.com",
-                "www.ramseysolutions.com"
+                "ewm.co.uk",
+                "www.ewm.co.uk"
             ]
         },
         {
@@ -2860,14 +2770,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "263b472fc5c2e81828bebed175586dee7cf1dac175bf4c95cfb32d5b5035dfa3"
+                "42cf48270c3b6a09d09d933ed2af322852a12ceff650fd5eee468451b5f46c13"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc121115": {
                     "ttl": 31536362,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -2885,25 +2795,25 @@
                 "tag.rmp"
             ],
             "apis": {
+                "Document.cookie getter": 1,
                 "Date.prototype.getTime": 2,
                 "Navigator.prototype.languages": 2,
                 "Navigator.prototype.language": 2,
                 "window.localStorage": 2,
-                "Document.cookie getter": 1,
                 "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "f508bbe073367bce9b375e32fa05d22f9416547d13b92d908a4a2e287c818653"
+                "a1eeaa3723714d5270bfc0ccae8910f77b132222ba594bdcdd9eeb9c064bad1e"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc120415": {
                     "ttl": 31536361,
                     "length": 260,
-                    "prevalence": 0.000006902073382844206,
+                    "prevalence": 0.000006904170118751726,
                     "uniqueness": 1
                 }
             },
@@ -2916,30 +2826,30 @@
         {
             "rule": "rakuten\\.com\\/124183\\.ct\\.js",
             "cookies": 0.0000138,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "tag.rmp"
             ],
             "apis": {
+                "Document.cookie getter": 1,
                 "Date.prototype.getTime": 2,
-                "Navigator.prototype.languages": 2,
-                "Navigator.prototype.language": 2,
+                "Navigator.prototype.languages": 1,
+                "Navigator.prototype.language": 1,
                 "window.localStorage": 2,
-                "Document.cookie getter": 2,
                 "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "cfb3dedf65ef016f01ca784e0e13204807acc6afb9f287e934ce39fd36d9faa5"
+                "09f8cbe21ad3662c2a80ff1e73d7a7bb4de6ba04aebc62514cd4923ea5caf10b"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc124183": {
                     "ttl": 31536362,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -2968,14 +2878,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "928031dd2b5892424ed30655b8ec342c3a03159f4549b54fe054ae5d79a0450c"
+                "fcbfb73e097cb5c810c00084ef1b8c8bece28fd1fd69a354776f356208fce1eb"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc123926": {
-                    "ttl": 31536362,
+                    "ttl": 31536366,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -3004,14 +2914,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "666293105032878154a50d5b74fdd0aaaac5dd5b77ddf10540f8cf954c405065"
+                "7fc52f1f417bda57fae97514112589f9510723594fcfc577be326f1c630b3a1b"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc118061": {
-                    "ttl": 31536361,
+                    "ttl": 31536362,
                     "length": 260,
-                    "prevalence": 0.000006902073382844206,
+                    "prevalence": 0.000006904170118751726,
                     "uniqueness": 1
                 }
             },
@@ -3024,15 +2934,15 @@
         {
             "rule": "rakuten\\.com\\/118611\\.ct\\.js",
             "cookies": 0.0000138,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "tag.rmp"
             ],
             "apis": {
-                "Document.cookie getter": 2,
+                "Document.cookie getter": 1,
                 "Date.prototype.getTime": 2,
-                "Navigator.prototype.languages": 2,
-                "Navigator.prototype.language": 2,
+                "Navigator.prototype.languages": 1,
+                "Navigator.prototype.language": 1,
                 "window.localStorage": 2,
                 "Document.cookie setter": 2
             },
@@ -3040,14 +2950,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "020062e41fa7c731b675bb2ad89d9a7b4fe93411766fb1b042891b5f317c0124"
+                "dfe17d13ce3fd1064e51e92777cd1f043164d1a9ec480de3dcad6f9f6d9c5171"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc118611": {
-                    "ttl": 31536367,
+                    "ttl": 31536366,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -3055,49 +2965,6 @@
             "exampleSites": [
                 "gardeners.com",
                 "www.gardeners.com"
-            ]
-        },
-        {
-            "rule": "rakuten\\.com\\/120716\\.ct\\.js",
-            "cookies": 0.0000207,
-            "fingerprinting": 1,
-            "subdomains": [
-                "tag.rmp"
-            ],
-            "apis": {
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 3,
-                "Navigator.prototype.languages": 3,
-                "Navigator.prototype.language": 3,
-                "window.localStorage": 3,
-                "Document.cookie setter": 2
-            },
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [],
-            "responseHashes": [
-                "327565313c6c2790a28c33c7c0f2b62aa62c22ca8a31eaf1f82838a96ace4b1b"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "rmStore": {
-                    "ttl": 2592001,
-                    "length": 10,
-                    "prevalence": 0.000006902073382844206,
-                    "uniqueness": 1
-                },
-                "stc120716": {
-                    "ttl": 31536361,
-                    "length": 260,
-                    "prevalence": 0.000006902073382844206,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "getninjas.com.br",
-                "www.getninjas.com.br",
-                "www.vivadecora.com.br"
             ]
         },
         {
@@ -3119,14 +2986,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "3dea8f3e2ff318bac79d6e240c52c268334ba0348f2d99ca9f98f38362615619"
+                "689483a50cdd0ff0a0acf83a79f3800e9c7094c194bfbbc494b9c2f343d22ca0"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc115252": {
-                    "ttl": 31536364,
+                    "ttl": 31536363,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -3134,42 +3001,6 @@
             "exampleSites": [
                 "goodsam.com",
                 "www.goodsam.com"
-            ]
-        },
-        {
-            "rule": "rakuten\\.com\\/122083\\.ct\\.js",
-            "cookies": 0.0000138,
-            "fingerprinting": 1,
-            "subdomains": [
-                "tag.rmp"
-            ],
-            "apis": {
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.languages": 2,
-                "Navigator.prototype.language": 2,
-                "window.localStorage": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "de89e665825c83ed88854b97d597e4a55583c349c6b1112ef5cc731150658465"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "stc122083": {
-                    "ttl": 31536363,
-                    "length": 260,
-                    "prevalence": 0.000013804146765688412,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "gymshark.com",
-                "www.gymshark.com"
             ]
         },
         {
@@ -3191,14 +3022,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "47f930c6c3d3aa1e9c41f4a433292424be1ced3fb3038b9628b24f157593cd64"
+                "5032c704e67a215232ac984440b4974dc91069fdc0699c49d3eadedf808edcb1"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc120470": {
-                    "ttl": 31536363,
+                    "ttl": 31536362,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -3227,14 +3058,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "4b001a6ef85cb8af0539fc38fa8bd3f4e4f0c39c15726b4d0dd2f5f8a76c15ab"
+                "25c11a692c93fbd3b8f75741d7dfa39ec7bb51449ad6828f327c719783e229fd"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc122549": {
                     "ttl": 31536366,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -3263,14 +3094,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "c6cb7e13eb312faf466d7eabcc8513ff0191182ec566a88b77d61a057a37c9ca"
+                "306180b36ea4686f657b2543d6c58ded016a62eb0454c1a47f5450b83ff8d158"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc114888": {
-                    "ttl": 31536363,
+                    "ttl": 31536362,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -3299,14 +3130,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "756909de05b79b27660720090e9a70cee002f3c8e542c7e79a1af6a74b64db57"
+                "8cfd0f7623cbd04047c38a6042f969609b0910cb2ffccbbd01a40a10f8e895ff"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc113516": {
-                    "ttl": 31536362,
+                    "ttl": 31536363,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -3335,14 +3166,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "15a6591eec8795e19edd20108675ea5fa8cb1b2280e48375d8a13b1d54721d76"
+                "206fcf8ce9b52a26402cc15b5d9cf17a801da6e2a250116ce4a36f356c73bcf7"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc122701": {
-                    "ttl": 31536365,
+                    "ttl": 31536364,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -3371,14 +3202,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "3679137459d9670045ed6abd0424297a86fd6cecba72839420850eeed501cb6c"
+                "ca3d570a9ece2923ea43dbb6a68a5b1499cdb6419db9773c29dc30d7b000942f"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc122904": {
-                    "ttl": 31536366,
+                    "ttl": 31536365,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -3389,6 +3220,42 @@
             ]
         },
         {
+            "rule": "rakuten\\.com\\/113855\\.ct\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag.rmp"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.language": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e3978913a57f1f58440ef0414a319c23626a5f5708beed15e7ff8b51442ef341"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "stc113855": {
+                    "ttl": 31536362,
+                    "length": 260,
+                    "prevalence": 0.000013808340237503452,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "itcosmetics.com",
+                "www.itcosmetics.com"
+            ]
+        },
+        {
             "rule": "rakuten\\.com\\/122087\\.ct\\.js",
             "cookies": 0.0000207,
             "fingerprinting": 1,
@@ -3396,25 +3263,25 @@
                 "tag.rmp"
             ],
             "apis": {
-                "Document.cookie getter": 3,
                 "Date.prototype.getTime": 3,
                 "Navigator.prototype.languages": 3,
                 "Navigator.prototype.language": 3,
                 "window.localStorage": 3,
-                "Document.cookie setter": 3
+                "Document.cookie setter": 3,
+                "Document.cookie getter": 2
             },
             "sites": 3,
             "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [
-                "f8bdd6aebe3b133fac305e9203fe51ce3e08d7490334fee6029b205b876c08dd"
+                "7638ef3d3ff79bc5958d45f47d5ccb712795c2697c569b8e64e5993771a4a528"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc122087": {
                     "ttl": 31536361,
                     "length": 260,
-                    "prevalence": 0.000020706220148532618,
+                    "prevalence": 0.00002071251035625518,
                     "uniqueness": 1
                 }
             },
@@ -3444,14 +3311,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "12f88c7267b5ea36c7579f76da7f04e27a5217df20ae762936e7933ad1917bfe"
+                "1024f9d10f89d035d8cfea0314b23e3e3999116e6c66c6aeac7006456c15079e"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc123420": {
-                    "ttl": 31536364,
+                    "ttl": 31536366,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -3469,25 +3336,25 @@
                 "tag.rmp"
             ],
             "apis": {
-                "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
                 "Navigator.prototype.languages": 2,
                 "Navigator.prototype.language": 2,
                 "window.localStorage": 2,
+                "Document.cookie getter": 2,
                 "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "336bb2e3a07db7329675d49c4631ded554d7277e5b232dca563d9ae6b49f7d92"
+                "45f73678c95731573bc927758b8e1ef2591e29f71015cfad5c85f86b4f9c17c2"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc120572": {
-                    "ttl": 31536364,
+                    "ttl": 31536365,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -3516,14 +3383,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "212ab757852b52da28e96168cec827c89546e49342f43a751374643d4aa89160"
+                "7ff5941cf7fb8fad3cceb2ab4c153c781839e6882b805cfa099cb769dec00ce8"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc122783": {
                     "ttl": 31536363,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -3552,14 +3419,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "070b674fc974379a2e8873760eba1c8350fbc8319c0c76a13e895277f3900215"
+                "1914e7f812a0bbc545ab036cb88cc244dc1404fc26b9ee6b67b595a39989b97c"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc113814": {
-                    "ttl": 31536366,
+                    "ttl": 31536373,
                     "length": 281,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -3588,14 +3455,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "05caafd7c59dc5f8727e22f82c25ecd67ad4a0f83823c88884213fe0ff1958a4"
+                "d22d71f56beffcfa7d19e2a42e68703bfb43e14d42401da6fa24e6054abdd55a"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc114563": {
-                    "ttl": 31536363,
+                    "ttl": 31536362,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -3624,14 +3491,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "46ee3f3d7efcd51dae1a2122d99dec9b5987613f118a3705e514913248a89c84"
+                "006a5430eabf385d4f4d43eafc1d4cc9f42e1f42ec061d5f785947f1d56aac5b"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc122742": {
                     "ttl": 31536363,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -3658,7 +3525,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "c97c06c992db4a46abc059abcf50d6208855996ddea4455a5f0e39c2b2091528"
+                "98ca0927102750c8f169bc16aa9600e7eccab0b9c0199f07798378d3e76f388a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -3687,20 +3554,20 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "496854889f100a1c9a69cb0607cbe792b01374adb177664349a961e72657876a"
+                "2eb9cc440a66573212184c11e12a239e74f7a5a233d2563c26bfc857ff10ad18"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "rmStore": {
-                    "ttl": 2592005,
+                    "ttl": 2592003,
                     "length": 10,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 0.5
                 },
                 "stc111394": {
-                    "ttl": 31536366,
+                    "ttl": 31536363,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -3729,14 +3596,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "7e43af0635a8d1491cc85913165a07a5a57571001d87290cfad655c130ddfc4e"
+                "f45cbd93a73ec7d8f89943eed5f6e5c3ccdf071d2c8028247d2078b0625dfd16"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc117418": {
-                    "ttl": 31536362,
+                    "ttl": 31536365,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -3765,14 +3632,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "907037131a334d7157388fae75f3ebdb402064fc1a6eb2af77336704f98e734e"
+                "1e900afeb2d072c380e7d3f083783c6e6ae11acb36ca3a5d1b020420bb41b4cf"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc120345": {
                     "ttl": 31536363,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -3801,14 +3668,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "3df5000ee8315b9b882cec0755a9745478b734ca86511680794ae453bd20a824"
+                "b190cfa07afd35c8930aa34c097e15e00b490a0a325c4272f81143c10bc1a296"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc111843": {
-                    "ttl": 31536363,
+                    "ttl": 31536362,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -3826,10 +3693,10 @@
                 "tag.rmp"
             ],
             "apis": {
+                "Document.cookie getter": 2,
                 "window.localStorage": 2,
                 "Date.prototype.getTime": 2,
-                "Document.cookie getter": 1,
-                "Document.cookie setter": 1
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -3864,14 +3731,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "8218ababe49baa03d0eb29ab9b46f750dec195a3145d1a9265d85a7a17201ba1"
+                "d8295bdd9be2e998e8fa2f09862fc564a56308d5a0125c17383280b6a6c5b5a3"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc124133": {
                     "ttl": 31536363,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -3900,14 +3767,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "c861a3f531cbbc20291ca21f023a3da6625951448f4347ad935f24ec81aee2a3"
+                "e5732202db63a3a5c17c7e3c3e919e4af2081880b84aa24f7c2bc28a31626719"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc117588": {
-                    "ttl": 31536367,
+                    "ttl": 31536369,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -3918,7 +3785,7 @@
             ]
         },
         {
-            "rule": "rakuten\\.com\\/120430\\.ct\\.js",
+            "rule": "rakuten\\.com\\/121023\\.ct\\.js",
             "cookies": 0.0000138,
             "fingerprinting": 1,
             "subdomains": [
@@ -3936,21 +3803,27 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "4b4ca32828b1f8383c00828bc4ee60de13e5b6b9422a80fa3482515b3d0120e5"
+                "a769d77c8b57d04a8c29ba771d0db6b13d70241e04ef92c4f6256bd0c0bd09dc"
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "stc120430": {
-                    "ttl": 31536363,
+                "rmStore": {
+                    "ttl": 2592001,
+                    "length": 9,
+                    "prevalence": 0.000013808340237503452,
+                    "uniqueness": 0.5
+                },
+                "stc121023": {
+                    "ttl": 31536361,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "newbalance.com.au",
-                "www.newbalance.com.au"
+                "neweracap.com",
+                "www.neweracap.com"
             ]
         },
         {
@@ -3972,14 +3845,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "352d21ec6e79e595b1fc2f1e273631b61db5a6b76730b4da6326a0412f348ff6"
+                "4c873586a97e9a838d27c10bf40798bb09fc4aaf47d3957ba181c2599befe7d2"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc118799": {
-                    "ttl": 31536367,
+                    "ttl": 31536369,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -4008,20 +3881,20 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "0344dc1e383c36d8f6cae7013609cfe6be56af701e0204d9e0c2bd066b2d9186"
+                "47d55cc5c7b5acc4ba52789c441e886addee2b990b0f1c0ffdd89b026491556f"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "rmStore": {
                     "ttl": 2592003,
                     "length": 10,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 0.5
                 },
                 "stc120137": {
-                    "ttl": 31536364,
+                    "ttl": 31536363,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -4050,14 +3923,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "e95a8254bf2707ecb587d071d8245d21b496babbcc1db3e713e7e82a367de947"
+                "265badcb3b63e874d59762c9bd173b5e05bc37f7b8c5a722f291c134e6a82d48"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc123951": {
-                    "ttl": 31536362,
+                    "ttl": 31536375,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -4065,42 +3938,6 @@
             "exampleSites": [
                 "newscientist.com",
                 "www.newscientist.com"
-            ]
-        },
-        {
-            "rule": "rakuten\\.com\\/122349\\.ct\\.js",
-            "cookies": 0.0000138,
-            "fingerprinting": 1,
-            "subdomains": [
-                "tag.rmp"
-            ],
-            "apis": {
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.languages": 2,
-                "Navigator.prototype.language": 2,
-                "window.localStorage": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "7b5f370ed754b7644fc0aa6e627e2b27486524bdc4e2bc7748eea5e9e57d1bb3"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "stc122349": {
-                    "ttl": 31536368,
-                    "length": 260,
-                    "prevalence": 0.000013804146765688412,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "organifishop.com",
-                "www.organifishop.com"
             ]
         },
         {
@@ -4122,20 +3959,20 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "d575b0df4757c6db2c31f8d490d82e6932c8ab98819a6fd5c42e7cef980eb9f4"
+                "864e5917cda588bb21b7031cc3894685ad16aa5e01de211c55de3a8688d02769"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "rmStore": {
                     "ttl": 2592002,
                     "length": 39,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 0.5
                 },
                 "stc120495": {
-                    "ttl": 31536363,
+                    "ttl": 31536362,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -4153,25 +3990,25 @@
                 "tag.rmp"
             ],
             "apis": {
+                "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
                 "Navigator.prototype.languages": 2,
                 "Navigator.prototype.language": 2,
                 "window.localStorage": 2,
-                "Document.cookie getter": 1,
-                "Document.cookie setter": 1
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "1b005d2fc2cefc84b9c9e6148dff1165f3b49be555434aef0870661fbac56a34"
+                "6f527573f508b3e44e714ffc0f49f07fbd81ffdb94747eced7cf96d6ab01541e"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc121802": {
                     "ttl": 31536363,
                     "length": 260,
-                    "prevalence": 0.000006902073382844206,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -4200,14 +4037,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "37d0b3dfaea0bebc687977a7123d5ccdff2d019a1139b014faf6d856f7abf9af"
+                "066b18dea0109bda0115878cc6e974b68b823a6fde9b43a75502f04e2d00f9d6"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc111800": {
                     "ttl": 31536363,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -4219,37 +4056,37 @@
         },
         {
             "rule": "rakuten\\.com\\/115242\\.ct\\.js",
-            "cookies": 0.0000138,
+            "cookies": 0.0000207,
             "fingerprinting": 1,
             "subdomains": [
                 "tag.rmp"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.languages": 2,
-                "Navigator.prototype.language": 2,
-                "window.localStorage": 2,
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.languages": 3,
+                "Navigator.prototype.language": 3,
+                "window.localStorage": 3,
+                "Document.cookie setter": 1
             },
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [
-                "15e021279cb556e2c962d99dff23be3caa7670cac0d16105541004356eceb99e"
+                "b7b88685ef15e870e1844256bfa88882d842b5d0a5bb49a0ee3f3bbd44e47597"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc115242": {
-                    "ttl": 31536362,
+                    "ttl": 31536363,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000006904170118751726,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "pelicanparts.com",
+                "www.pelicanparts.com",
                 "www.turnermotorsport.com"
             ]
         },
@@ -4261,25 +4098,25 @@
                 "tag.rmp"
             ],
             "apis": {
+                "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
                 "Navigator.prototype.languages": 2,
                 "Navigator.prototype.language": 2,
                 "window.localStorage": 2,
-                "Document.cookie getter": 2,
                 "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "2e56778a4ace867747de964cd2422930c49cd20db9a0f05fefa68cf1fdac676b"
+                "6cde66c970324b456a6e54bd020822c7aa4b4518105f573a82e45c454c4bb932"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc121348": {
-                    "ttl": 31536364,
+                    "ttl": 31536368,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -4313,9 +4150,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "stc111507": {
-                    "ttl": 31536361,
+                    "ttl": 31536364,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -4344,20 +4181,20 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "b6ea34a644b0412e529ebb4074a2dc1db52982a766c7b2b958ddca44c793ef8c"
+                "1ee97a66bcd38b89a34a75410f2fd252a0bbb7ff630d0be419bfa7ad01407d2e"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "rmStore": {
                     "ttl": 2592001,
                     "length": 9,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 0.5
                 },
                 "stc116150": {
-                    "ttl": 31536362,
+                    "ttl": 31536361,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -4375,25 +4212,25 @@
                 "tag.rmp"
             ],
             "apis": {
+                "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
                 "Navigator.prototype.languages": 2,
                 "Navigator.prototype.language": 2,
                 "window.localStorage": 2,
-                "Document.cookie getter": 2,
                 "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "2bbf8813432f050cb6ccad520f4dbbb0b2d08992c7adc32fa052d9c185e59889"
+                "77465cdaaa6e338bdc280222f1446e265fd5748aa93524395557c68bb360a62a"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc120875": {
                     "ttl": 31536361,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -4406,30 +4243,30 @@
         {
             "rule": "rakuten\\.com\\/123361\\.ct\\.js",
             "cookies": 0.0000138,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "tag.rmp"
             ],
             "apis": {
                 "Date.prototype.getTime": 2,
-                "Navigator.prototype.languages": 2,
-                "Navigator.prototype.language": 2,
                 "window.localStorage": 2,
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2
+                "Document.cookie getter": 1,
+                "Navigator.prototype.languages": 1,
+                "Navigator.prototype.language": 1,
+                "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "24c5d6a0e8a919bb5f1ababf990110d08a757312b57cf1927bf676e15bd2c04d"
+                "9276c90c3260a84772d82fe024f4523406d5d477e0c87d2829e818b155c1d8ef"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc123361": {
-                    "ttl": 31536361,
+                    "ttl": 31536362,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000006904170118751726,
                     "uniqueness": 1
                 }
             },
@@ -4458,14 +4295,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "0d94ab913b9b9e731ec70422ff69f83ed801e86816d56a3456a2e0c493931a36"
+                "894f7ecfe5d2930f2f6c26f0730dd6c36a844d82a40d21c43ef48e3b827001e5"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc113723": {
-                    "ttl": 31536369,
+                    "ttl": 31536367,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -4494,14 +4331,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "5f2402035381836322a018fadbd7a2a6050979c1da89cfbeb4fd7b12bf10fd13"
+                "a1bc58bde967eb022938308e16ea2703b2f688b62d02a404b763ee01f21daf72"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc114590": {
-                    "ttl": 31536363,
+                    "ttl": 31536362,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -4519,22 +4356,27 @@
                 "tag.rmp"
             ],
             "apis": {
-                "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
-                "Navigator.prototype.languages": 2,
-                "Navigator.prototype.language": 2,
                 "window.localStorage": 2,
-                "Document.cookie setter": 2,
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "65e060824c1eef64846a1381289ce06beec6160979cb0b82b1700b88520ad71a"
+                "a8a30e8bfc3b27d0ece7f283ae6b9a0e2e9876356d5a085b64853c9928e55fbd"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "stc113600": {
+                    "ttl": 31536368,
+                    "length": 260,
+                    "prevalence": 0.000006904170118751726,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rockbottomgolf.com",
@@ -4549,25 +4391,25 @@
                 "tag.rmp"
             ],
             "apis": {
-                "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
                 "Navigator.prototype.languages": 2,
                 "Navigator.prototype.language": 2,
                 "window.localStorage": 2,
-                "Document.cookie setter": 2
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "82b726cbbae9c31a90961fb090e24b2b3b0b058a22bfc09faaec2f60861731fd"
+                "8d0ff7a6677527c4eed9dbde072a081ed34c6fcca5af9ad338622abdcbb018a5"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc122629": {
-                    "ttl": 31536362,
+                    "ttl": 31536360,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000006904170118751726,
                     "uniqueness": 1
                 }
             },
@@ -4596,14 +4438,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "363c58945f9452dc2f734e784d81aab9e9b2ee9328f1a407ff80bd4c1b5d4e89"
+                "ee75af05c30c9c7e0d7035a72f5cabdc0a5f40372d01cdcf7c9a00f45ccedd8b"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc123085": {
-                    "ttl": 31536364,
+                    "ttl": 31536363,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -4632,14 +4474,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "0e67603174eaf346c49a5442030fd27c2c53198a92e1664bbcd30ac59dd59041"
+                "ec6bf720f0ceabaadd2035a680d98d0fe4adbb5d3703a0f5e8f1870b2887a7f7"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc112248": {
-                    "ttl": 31536364,
+                    "ttl": 31536366,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -4657,25 +4499,25 @@
                 "tag.rmp"
             ],
             "apis": {
+                "Document.cookie getter": 1,
                 "Date.prototype.getTime": 2,
                 "Navigator.prototype.languages": 2,
                 "Navigator.prototype.language": 2,
                 "window.localStorage": 2,
-                "Document.cookie setter": 2,
-                "Document.cookie getter": 1
+                "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "5302e8fc0014a06eec804c795b8394346f796ebcbaa425098d25b45e40d051ea"
+                "ad5426139b4336abcb5ab874714007d22a0e452f7f5c01ca6b609a69decdd1c6"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc120422": {
-                    "ttl": 31536369,
+                    "ttl": 31536361,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000006904170118751726,
                     "uniqueness": 1
                 }
             },
@@ -4704,14 +4546,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "daf40d37950c5715d78be1c288332f96d5efd5f2e17276069f0306ec953c0688"
+                "45ce9a7847a4495970892388080fbc128871b578e2c5bb1c2e6162ddf921f334"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc117504": {
                     "ttl": 31536363,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -4738,14 +4580,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "e47b8d49330a5de02f758700e6108d0e78bc1205c027841ff34f3a68ddb5f26f"
+                "2be0ee12dc0f20448387100c4463874b19a6b4c0c8fe66591196a14b05da63d4"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "rmStore": {
-                    "ttl": 2592005,
+                    "ttl": 2592007,
                     "length": 10,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 0.5
                 }
             },
@@ -4753,42 +4595,6 @@
             "exampleSites": [
                 "shoes.com",
                 "www.shoes.com"
-            ]
-        },
-        {
-            "rule": "rakuten\\.com\\/120251\\.ct\\.js",
-            "cookies": 0.0000138,
-            "fingerprinting": 2,
-            "subdomains": [
-                "tag.rmp"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.languages": 1,
-                "Navigator.prototype.language": 1,
-                "window.localStorage": 2,
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "c2d9904c0e73811dc1a6ec206471394d617b89ac0d993da985c896d8c26d4778"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "stc120251": {
-                    "ttl": 31536365,
-                    "length": 260,
-                    "prevalence": 0.000013804146765688412,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "shoesensation.com",
-                "www.shoesensation.com"
             ]
         },
         {
@@ -4810,14 +4616,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "e3d4bfb5453f9c87e2bfea568fecaf2efba56b40058700b863d7b4a7896668f6"
+                "d0c61440fc9d5f4a214973dd74d12f29b777e6a0d6dc7a2cab331b171d1f15e6"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc121560": {
                     "ttl": 31536368,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -4846,14 +4652,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "26075547264141370d79f9da0b9491f7b223a9a5303eac449ce47d939c90cb0e"
+                "e751097d06750937d3b7c4002943dfe3bf4d72c66cbf66738b88cb7b6c80de62"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc119647": {
                     "ttl": 31536362,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -4882,20 +4688,20 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "03eacf615a9c5bc2179fad7935f5dd298e9b8c946931dd191bb59df739224d56"
+                "2699c648dce1b78f89b38bf1a35a9ac70a4f7e509674c393978a6e652c3f6c6d"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "rmStore": {
-                    "ttl": 2592003,
+                    "ttl": 2592007,
                     "length": 10,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 0.5
                 },
                 "stc115551": {
-                    "ttl": 31536365,
+                    "ttl": 31536367,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -4913,31 +4719,31 @@
                 "tag.rmp"
             ],
             "apis": {
+                "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
                 "Navigator.prototype.languages": 2,
                 "Navigator.prototype.language": 2,
                 "window.localStorage": 2,
-                "Document.cookie getter": 2,
                 "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "3944521729614b1c295ba0135b5caf9a1e09881c9c364181f12cb73f5d7824f0"
+                "826522c01ffb311d9bef14a0238a2d6f64373e4a4e2a40b6e5c58bdfe4ac5ee7"
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "stc119783": {
-                    "ttl": 31536363,
-                    "length": 260,
-                    "prevalence": 0.000013804146765688412,
-                    "uniqueness": 1
-                },
                 "rmStore": {
-                    "ttl": 2592002,
+                    "ttl": 2592005,
                     "length": 51,
-                    "prevalence": 0.000006902073382844206,
+                    "prevalence": 0.000013808340237503452,
+                    "uniqueness": 0.5
+                },
+                "stc119783": {
+                    "ttl": 31536365,
+                    "length": 260,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -4966,14 +4772,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "1a30af9f3b43ca8e2d2ab3b5ec8141d6646ffb4c74097ad51cf5270bff602ff7"
+                "c599c8145ce5165a194bba51f4683d05ac53a00fa28c9cd661caca256f030b9d"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc117388": {
-                    "ttl": 31536369,
+                    "ttl": 31536373,
                     "length": 260,
-                    "prevalence": 0.000006902073382844206,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -4981,42 +4787,6 @@
             "exampleSites": [
                 "stadiumgoods.com",
                 "www.stadiumgoods.com"
-            ]
-        },
-        {
-            "rule": "rakuten\\.com\\/115217\\.ct\\.js",
-            "cookies": 0.0000138,
-            "fingerprinting": 1,
-            "subdomains": [
-                "tag.rmp"
-            ],
-            "apis": {
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.languages": 2,
-                "Navigator.prototype.language": 2,
-                "window.localStorage": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e6d84aa3a0d5d33b490b0a216ca7ad374ffc88d8021ca6a7f5d2917c191a5836"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "stc115217": {
-                    "ttl": 31536364,
-                    "length": 260,
-                    "prevalence": 0.000013804146765688412,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sundancecatalog.com",
-                "www.sundancecatalog.com"
             ]
         },
         {
@@ -5038,14 +4808,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "bd9f1472d69a0de032c2fad8ac8a22068adee87a767972af3c7b734a561c6e18"
+                "94d6c53f14c654008bde0d1e702ea3bd56a18b1b92f4cfa0c292c294ec3af914"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc119968": {
-                    "ttl": 31536365,
+                    "ttl": 31536363,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -5058,37 +4828,62 @@
         {
             "rule": "rakuten\\.com\\/122477\\.ct\\.js",
             "cookies": 0.0000138,
-            "fingerprinting": 2,
+            "fingerprinting": 1,
             "subdomains": [
                 "tag.rmp"
             ],
             "apis": {
                 "Date.prototype.getTime": 2,
-                "window.localStorage": 2,
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2,
-                "Navigator.prototype.languages": 1,
-                "Navigator.prototype.language": 1
+                "window.localStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "9ed69728bb40ab513c003716f14c4355f40e0fb3ccf1efd34d53e5963370a6a6"
+                "97f14784cabf2e22043255e2af192bf68ca2b725278930b597617ea743b19196"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "support.com",
+                "www.techsolutions.support.com"
+            ]
+        },
+        {
+            "rule": "rakuten\\.com\\/122939\\.ct\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag.rmp"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.language": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "d9b00ddc45367dfea7c5c5482d34c32c31003737a2d95bf69d5c10191189be43"
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "stc122477": {
-                    "ttl": 31536361,
+                "stc122939": {
+                    "ttl": 31536389,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "support.com",
-                "www.techsolutions.support.com"
+                "theglobeandmail.com",
+                "www.theglobeandmail.com"
             ]
         },
         {
@@ -5110,14 +4905,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "ab32b2c08e4203fea49f17837749cee3e49159d473a07913320429077ef5a8ce"
+                "6e59660cff02b01c1453b27373057d5b71e17f670298af28eb73d851dff9e00a"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc113668": {
-                    "ttl": 31536364,
+                    "ttl": 31536363,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -5135,25 +4930,25 @@
                 "tag.rmp"
             ],
             "apis": {
-                "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
                 "Navigator.prototype.languages": 2,
                 "Navigator.prototype.language": 2,
                 "window.localStorage": 2,
-                "Document.cookie setter": 2
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "c4cc3d7166355cd8cc26bf9ec84756497555bb09deeac8a0d01d963fc9826b31"
+                "aa07db5319e138b218802035b3c0f7b14b9f18c1ed63fa3534a1b8de2039d9c8"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc115087": {
-                    "ttl": 31536362,
+                    "ttl": 31536361,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000006904170118751726,
                     "uniqueness": 1
                 }
             },
@@ -5179,7 +4974,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "bd6946e21634a14eda8790bf9116a848e92d633a20d9ce553097da3d965c2386"
+                "287c6830597e8cc3de4a7142137cbca7bc1e3407eef251f67a63ec0b67e0b1ec"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -5197,28 +4992,19 @@
                 "tag.rmp"
             ],
             "apis": {
-                "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
                 "Navigator.prototype.languages": 2,
                 "Navigator.prototype.language": 2,
-                "window.localStorage": 2,
-                "Document.cookie setter": 2
+                "window.localStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "e50878dd1e9e802b02dcc073b534f6645f77126b1121c0875581dd404d284c8f"
+                "ed53873c5105ef626bcf0bd36fa31faf35df28f29b91b3417ca671a4dd37e694"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "stc121599": {
-                    "ttl": 31536361,
-                    "length": 260,
-                    "prevalence": 0.000013804146765688412,
-                    "uniqueness": 1
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "triphobo.com",
@@ -5244,20 +5030,20 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "afaedcc9dc4200bcedb8576eae479613396d2f3a3fcd46c7a5a32b65c6aa2c73"
+                "a5dbfac9ab2409da71075fc6a9dca29a7be376ddf237ed325e80588190311161"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "rmStore": {
-                    "ttl": 63072001,
+                    "ttl": 63072002,
                     "length": 10,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 0.5
                 },
                 "stc113613": {
                     "ttl": 31536362,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -5286,14 +5072,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "61ce82d7a3ac99db80e04caf07f3d4ea6cb17eeb62198ba49a212fc59ac11dd7"
+                "3cae7c2127184e9fd14050bb8c749010c9e16b87f581ee36584057c24d27e4fd"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc111373": {
-                    "ttl": 31536370,
+                    "ttl": 31536365,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -5311,25 +5097,25 @@
                 "tag.rmp"
             ],
             "apis": {
-                "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
                 "Navigator.prototype.languages": 2,
                 "Navigator.prototype.language": 2,
                 "window.localStorage": 2,
-                "Document.cookie setter": 2
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "7cb7486ef21c9276247731d7e597f9c27bbe301321f4077470028180396b8f44"
+                "25535bfc1d9b0ebe2dcae2e6641fdce47ab9553af11209130fe2c9aa9dc71ac1"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc120703": {
-                    "ttl": 31536364,
+                    "ttl": 31536363,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -5384,6 +5170,28 @@
             ]
         },
         {
+            "rule": "rakuten\\.com\\/",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s-cs.rmp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "dcecab1355b5c2b9ecef281322bf265ac5840b4688748586e9632b473a5fe56b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "viki.com",
+                "www.viki.com"
+            ]
+        },
+        {
             "rule": "rakuten\\.com\\/115314\\.ct\\.js",
             "cookies": 0.0000138,
             "fingerprinting": 1,
@@ -5402,14 +5210,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "2ee63f2ec7e61dfa2cf087ac1476fb82e004ca9692faa07aa52bdc88f9496c06"
+                "9415f49702d1451134561d334e9855f4e718b9f0f66af4430ca35c30666249ba"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc115314": {
-                    "ttl": 31536367,
+                    "ttl": 31536364,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -5417,6 +5225,42 @@
             "exampleSites": [
                 "vionicshoes.com",
                 "www.vionicshoes.com"
+            ]
+        },
+        {
+            "rule": "rakuten\\.com\\/123193\\.ct\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag.rmp"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.language": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e5eb3dfb0594473f43963a4049ba7cd044fe7e3c3073bd1a5556566aa64e7995"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "stc123193": {
+                    "ttl": 31536366,
+                    "length": 260,
+                    "prevalence": 0.000013808340237503452,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "we-vibe.com",
+                "www.we-vibe.com"
             ]
         },
         {
@@ -5438,14 +5282,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "dfed8d8fe17d922331e25312a4947047eef68f3c934b3c357ed33bcfcbb1e217"
+                "3c7a020b294f3731d2e1e7940f1263ab0d00476ae33cbc0e2aba326f59892f55"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc112173": {
                     "ttl": 31536364,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -5474,14 +5318,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "f7cb588d19b58fc94c03054c058217996aedd536fdde483d36d312e12d99901e"
+                "a048f4a3d5f8a890d4e984996ae7c496601f46c79d7a312f9cadf2a02d1c86f0"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc118682": {
-                    "ttl": 31536362,
+                    "ttl": 31536365,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -5510,14 +5354,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "f1b5a46a578fb056988ea74f6a360b693d85c710d7d72eb284bb39ffeb5a6918"
+                "99916d92ba49ab308b08ff749189b289463afe3e343fcab5c885e4548f21f10c"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc123194": {
-                    "ttl": 31536368,
+                    "ttl": 31536366,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -5546,14 +5390,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "9508d5740734580d4887341d94c1d467f444725913d92091e59ec452824cb86b"
+                "06f3a628da35b14325afb3255fd9015844a4ef7e5a370ce1d4e29dda00d1c3d0"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc122922": {
-                    "ttl": 31536364,
+                    "ttl": 31536362,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -5582,14 +5426,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "f1990ea69104a18ffc4e21b23f36d85b7c668c81f4bdec2c3bf7031ae4bc3126"
+                "df2aca025381e77b18c9a0e9c55835bae0b908a3d04ad1714a22be4012a2a5ab"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc120166": {
-                    "ttl": 31536364,
+                    "ttl": 31536361,
                     "length": 260,
-                    "prevalence": 0.000006902073382844206,
+                    "prevalence": 0.000006904170118751726,
                     "uniqueness": 1
                 }
             },
@@ -5618,14 +5462,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "4f6e7f890660e0532909bfcd2f904e5d177f767af0d2f6c7d683c5e5455953fc"
+                "9b55edc61ea57c23ed0f933c58fcd83b0d868173f00cff9b6ab232666fedfbdd"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc117884": {
-                    "ttl": 31536367,
+                    "ttl": 31536369,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -5654,14 +5498,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "2a6a51e45abfc41eb1cd677a7d509c4ff2b72cb5cd2033a9101677a3838540db"
+                "ca5297197132ddd1e9dbce49c3041f7f7d9e6efc57c6f2be6a9d58459d0b1686"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "stc120328": {
-                    "ttl": 31536376,
+                    "ttl": 31536366,
                     "length": 260,
-                    "prevalence": 0.000013804146765688412,
+                    "prevalence": 0.000013808340237503452,
                     "uniqueness": 1
                 }
             },
@@ -5674,21 +5518,18 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00299,
+    "cookies": 0.00298,
     "types": {
         "Script": 322,
-        "XHR": 6,
-        "Document": 2,
-        "Fetch": 2,
-        "Other": 2,
-        "Image": 3
+        "XHR": 4,
+        "Image": 2
     },
     "nameservers": [
-        "a5-67.akam.net",
         "a12-67.akam.net",
         "a2-65.akam.net",
         "a3-66.akam.net",
         "a1-60.akam.net",
-        "a18-64.akam.net"
+        "a18-64.akam.net",
+        "a5-67.akam.net"
     ]
 }

@@ -4,19 +4,94 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000802,
+    "sites": 8,
     "subdomains": [
+        "cdn.registerdisney.cre.go.com",
         "c.xbox.com"
     ],
     "cnames": [
         {
             "original": "c.xbox.com",
             "resolved": "c.xbox.com.nsatc.net"
+        },
+        {
+            "original": "cdn.registerdisney.go.com",
+            "resolved": "cdn.registerdisney.cre.go.com.nsatc.net"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "nsatc\\.net\\/v2\\/outer\\/DisneyID\\.js",
+            "cookies": 0.000301,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.registerdisney.cre.go.com"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.000702,
+            "cnames": [
+                {
+                    "original": "cdn.registerdisney.go.com",
+                    "resolved": "cdn.registerdisney.cre.go.com.nsatc.net"
+                }
+            ],
+            "responseHashes": [
+                "d3b0ee8c79289041014b6105b01cd86e6ea23e61fbfad5267cb5d5d1bf4bc01a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "SWID": {
+                    "ttl": 31536005,
+                    "length": 36,
+                    "prevalence": 0.00010028078620136381,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "go.com",
+                "abcnews.go.com",
+                "fivethirtyeight.com",
+                "www.espn.com",
+                "www.marvel.com",
+                "www.nationalgeographic.com",
+                "www.starwars.com"
+            ]
+        },
+        {
+            "rule": "nsatc\\.net\\/v2\\/responder\\/responder\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.registerdisney.cre.go.com"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000602,
+            "cnames": [
+                {
+                    "original": "cdn.registerdisney.go.com",
+                    "resolved": "cdn.registerdisney.cre.go.com.nsatc.net"
+                }
+            ],
+            "responseHashes": [
+                "8708e18901993b43a30e7aebeddcb9f65dd3bf1f5464a9d7b0fa69fcc4308c20"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "go.com",
+                "fivethirtyeight.com",
+                "www.espn.com",
+                "www.marvel.com",
+                "www.nationalgeographic.com",
+                "www.starwars.com"
+            ]
+        },
         {
             "rule": "nsatc\\.net\\/c\\.gif",
             "cookies": 0.000201,
@@ -47,8 +122,9 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000401,
     "types": {
+        "Script": 13,
         "Image": 2
     },
     "nameservers": []

@@ -17,16 +17,16 @@
         "app-sj06",
         "app-sj15",
         "app-sj05",
-        "app-lon04",
         "app-sj22",
         "app-ab06",
         "app-sj28",
         "lonrtp1-cdn",
-        "sjrtp7-cdn",
         "sjrtp8-cdn",
+        "nld1rtp1-cdn",
         "rtp-static",
         "lonrtp1",
-        "sjrtp8"
+        "sjrtp8",
+        "nld1rtp1"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -41,14 +41,13 @@
                 "app-sj06",
                 "app-sj15",
                 "app-sj05",
-                "app-lon04",
                 "app-sj22",
                 "app-ab06",
                 "app-sj28"
             ],
             "apis": {
-                "window.localStorage": 9,
-                "Navigator.prototype.userAgent": 9,
+                "window.localStorage": 10,
+                "Navigator.prototype.userAgent": 10,
                 "Element.prototype.getClientRects": 6,
                 "Document.cookie getter": 2,
                 "Event.prototype.timeStamp": 6
@@ -69,49 +68,123 @@
                 "health.clevelandclinic.org",
                 "mariadb.com",
                 "spring.io",
-                "www.cegid.com",
                 "www.crunchbase.com",
                 "www.digikey.fr",
+                "www.digikey.com",
                 "www.dnb.com"
             ]
         },
         {
             "rule": "marketo\\.com\\/rtp-api\\/v1\\/rtp\\.js",
-            "cookies": 0,
+            "cookies": 0.0001,
             "fingerprinting": 2,
             "subdomains": [
                 "lonrtp1-cdn",
-                "sjrtp7-cdn",
-                "sjrtp8-cdn"
+                "sjrtp8-cdn",
+                "nld1rtp1-cdn"
             ],
             "apis": {
-                "Date.prototype.getTime": 5,
-                "Navigator.prototype.userAgent": 5,
-                "Navigator.prototype.appName": 5,
-                "window.localStorage": 5,
-                "Date.prototype.getTimezoneOffset": 5,
-                "Document.cookie getter": 4,
-                "Navigator.prototype.doNotTrack": 2
+                "Date.prototype.getTime": 6,
+                "Navigator.prototype.userAgent": 6,
+                "Navigator.prototype.appName": 6,
+                "window.localStorage": 6,
+                "Date.prototype.getTimezoneOffset": 6,
+                "Document.cookie getter": 5,
+                "Navigator.prototype.doNotTrack": 3,
+                "Document.cookie setter": 1
             },
             "sites": 6,
-            "prevalence": 0.000603,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
                 "df3fb77419cbf7b069bfc7654e01e9d33bffd2fb64939a4eb0a2b554fd8e6b5b",
-                "7ba9cdcf6fbca8799df7723b447c051d95d865fa80385d47a528daa24edc4df7",
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-                "7f887531126cd4cac83ca209314e72deaa91190f980a593945ab3e610d65510f"
+                "9d7b05af0b9efe52e393fd9542e0aa6b556a069fc4fb9787083f7727ec869d55",
+                "77b1f34bbdbb0636119c7680e43e328f4319dd98bce93a6387244e2928982fde",
+                "790fb207e9605286c4abd842b647a42411637987da7c5ceec43490f2ad62253a"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "trwv.uid": {
+                    "ttl": 63072004,
+                    "length": 40,
+                    "prevalence": 0.00010039152695512498,
+                    "uniqueness": 1
+                },
+                "trwsa.sid": {
+                    "ttl": 1804,
+                    "length": 40,
+                    "prevalence": 0.00010039152695512498,
+                    "uniqueness": 1
+                },
+                "trwv.eml": {
+                    "ttl": 4,
+                    "length": 4,
+                    "prevalence": 0.00010039152695512498,
+                    "uniqueness": 1
+                },
+                "trwsb.stu": {
+                    "ttl": 4,
+                    "length": 4,
+                    "prevalence": 0.00010039152695512498,
+                    "uniqueness": 1
+                },
+                "trwsb.cpv": {
+                    "ttl": 4,
+                    "length": 4,
+                    "prevalence": 0.00010039152695512498,
+                    "uniqueness": 1
+                },
+                "trwv.crd": {
+                    "ttl": 4,
+                    "length": 4,
+                    "prevalence": 0.00010039152695512498,
+                    "uniqueness": 1
+                },
+                "trwv.vc": {
+                    "ttl": 4,
+                    "length": 4,
+                    "prevalence": 0.00010039152695512498,
+                    "uniqueness": 1
+                },
+                "trwv.lvd": {
+                    "ttl": 4,
+                    "length": 4,
+                    "prevalence": 0.00010039152695512498,
+                    "uniqueness": 1
+                },
+                "_ie_eml": {
+                    "ttl": 4,
+                    "length": 4,
+                    "prevalence": 0.00010039152695512498,
+                    "uniqueness": 1
+                },
+                "_ie_cpn": {
+                    "ttl": 4,
+                    "length": 4,
+                    "prevalence": 0.00010039152695512498,
+                    "uniqueness": 1
+                },
+                "trwv.cvd": {
+                    "ttl": 4,
+                    "length": 4,
+                    "prevalence": 0.00010039152695512498,
+                    "uniqueness": 1
+                },
+                "trwsb.sid": {
+                    "ttl": 4,
+                    "length": 4,
+                    "prevalence": 0.00010039152695512498,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "afp.com",
                 "particuliers.placo.fr",
                 "www.afp.com",
-                "www.microchip.com",
                 "www.nokia.com",
-                "www.placo.fr"
+                "www.placo.fr",
+                "www.sonepar.fr"
             ]
         },
         {
@@ -122,11 +195,11 @@
                 "rtp-static"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 5,
-                "Date.prototype.getTime": 5
+                "Navigator.prototype.userAgent": 6,
+                "Date.prototype.getTime": 6
             },
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 6,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
                 "61c6caebd23921741fb5ffe6603f16634fca9840c2bf56ac8201e9264d6daccf"
@@ -139,7 +212,8 @@
                 "particuliers.placo.fr",
                 "www.afp.com",
                 "www.nokia.com",
-                "www.placo.fr"
+                "www.placo.fr",
+                "www.sonepar.fr"
             ]
         },
         {
@@ -150,8 +224,8 @@
                 "rtp-static"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 6,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
                 "339b2b60e94b6dc169fd9e5b68ac16b1ca08ef6a4968e98a0f43c2add405e79a"
@@ -164,7 +238,8 @@
                 "particuliers.placo.fr",
                 "www.afp.com",
                 "www.nokia.com",
-                "www.placo.fr"
+                "www.placo.fr",
+                "www.sonepar.fr"
             ]
         },
         {
@@ -173,7 +248,8 @@
             "fingerprinting": 0,
             "subdomains": [
                 "lonrtp1",
-                "sjrtp8"
+                "sjrtp8",
+                "nld1rtp1"
             ],
             "apis": {},
             "sites": 5,
@@ -187,10 +263,10 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "afp.com",
-                "factuel.afp.com",
                 "particuliers.placo.fr",
                 "www.nokia.com",
-                "www.placo.fr"
+                "www.placo.fr",
+                "www.sonepar.fr"
             ]
         },
         {
@@ -201,11 +277,11 @@
                 "rtp-static"
             ],
             "apis": {
-                "Date.prototype.getTime": 5,
-                "Document.cookie getter": 4
+                "Date.prototype.getTime": 6,
+                "Document.cookie getter": 5
             },
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 6,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
                 "278cd45917f5fee0e5710b34f2c03a3652544fe5a6ccea56cbbd0bd7324bf5e7"
@@ -218,20 +294,22 @@
                 "particuliers.placo.fr",
                 "www.afp.com",
                 "www.nokia.com",
-                "www.placo.fr"
+                "www.placo.fr",
+                "www.sonepar.fr"
             ]
         },
         {
             "rule": "marketo\\.com\\/gw1\\/msg",
-            "cookies": 0.000502,
+            "cookies": 0.000602,
             "fingerprinting": 0,
             "subdomains": [
                 "lonrtp1",
-                "sjrtp8"
+                "sjrtp8",
+                "nld1rtp1"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 6,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -244,7 +322,8 @@
                 "factuel.afp.com",
                 "particuliers.placo.fr",
                 "www.nokia.com",
-                "www.placo.fr"
+                "www.placo.fr",
+                "www.sonepar.fr"
             ]
         },
         {
@@ -255,11 +334,11 @@
                 "rtp-static"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 5,
-                "Navigator.prototype.appName": 3
+                "Navigator.prototype.userAgent": 6,
+                "Navigator.prototype.appName": 2
             },
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 6,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
                 "35f273e01e70db780ae423347dffecfc27cc348ba4abbd6099331559a7c5cd31"
@@ -272,50 +351,52 @@
                 "particuliers.placo.fr",
                 "www.afp.com",
                 "www.nokia.com",
-                "www.placo.fr"
+                "www.placo.fr",
+                "www.sonepar.fr"
             ]
         },
         {
             "rule": "marketo\\.com\\/gw1\\/rtp\\/api\\/v1_1\\/visitor",
-            "cookies": 0.000603,
+            "cookies": 0.000602,
             "fingerprinting": 0,
             "subdomains": [
                 "lonrtp1",
-                "sjrtp8"
+                "sjrtp8",
+                "nld1rtp1"
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.000603,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
-                "1cf7efab91226d214bbe5e3144baeddf4048067171e7c0fed480b927c31d2a17",
-                "a5679468ffa3876ff20b0114a5d324d81805813c22486dccf4391c3b0b2650f8",
+                "bcad3f130abe539dc46acf601eb14bb2eb9588547cbea057f7e38218ad528456",
                 "150ec1c0dc736a017daeb1747f3f014af1c28935f1609065f57dea57363a8f62",
-                "b0fc00eab897952554af77163df00c23aba5316255a7227e1e52406e198b4d41"
+                "ee3241d0c633dd071f6e61caa4fdc34114d93a54765cb40649c65c1ebccdb1c2"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "afp.com",
-                "factuel.afp.com",
                 "particuliers.placo.fr",
                 "www.afp.com",
                 "www.nokia.com",
-                "www.placo.fr"
+                "www.placo.fr",
+                "www.sonepar.fr"
             ]
         },
         {
             "rule": "marketo\\.com\\/gw1\\/ga\\/sgm",
-            "cookies": 0.000603,
+            "cookies": 0.000602,
             "fingerprinting": 0,
             "subdomains": [
                 "lonrtp1",
-                "sjrtp8"
+                "sjrtp8",
+                "nld1rtp1"
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.000603,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
                 "25b4e974dc91d718d1b66bf120388c20da6dfd3a886ec8401af1c269dd169a44"
@@ -325,11 +406,11 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "afp.com",
-                "factuel.afp.com",
                 "particuliers.placo.fr",
                 "www.afp.com",
                 "www.nokia.com",
-                "www.placo.fr"
+                "www.placo.fr",
+                "www.sonepar.fr"
             ]
         },
         {
@@ -345,19 +426,19 @@
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.000603,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
-                "06f3cabed186dc3adc3f08d8502e51ddc0817677124cf661feafe65027a56a2a",
-                "059f3ca920579cec9f3680100f77d00f05f87fce5f4bbe2f7fc7300fedf2318f",
-                "2f3dd25ecaff384341944cf36e8c3c4ccbb608436e5270c235fd3516f94cb48c",
-                "093be4880a844456105f9bbd0268ccb8691b19245adfc7db601064c1f1da9233",
-                "e64996842fd5b30908ef3c9cf567f68c52735145109cec19a9b2aa674ede8ced"
+                "b78c4487bc8dc4e6aaf62f6785f57dca53d5a6925a09e85523834de07a53c7e6",
+                "35c006aaaabd02aa32682e181737bf2bf23f7ff633ebc33b6daf651b14e167e9",
+                "ef29fd5eed12d2b5298c855b14506d14f384c4ba5dfa6e9d7da96ca93e38bf05",
+                "c1ecb73a39d86d4324ae828532f262a5d8817f3992821bbab20fd5658034fad6",
+                "b2908db642d992b3a1b3a703ac1626dbf22dd1963bd4e8a2345aecf2b8dbf8a4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "os_lastpage_health.clevelandclinic.org": 0.0001004217714400482
+                "os_lastpage_health.clevelandclinic.org": 0.00010039152695512498
             },
             "exampleSites": [
                 "foursquare.com",
@@ -381,7 +462,7 @@
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.000603,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
                 "256e42104f48a5fa80b031da12dc56acde224fba3f9810f8f8192b39136d365a"
@@ -424,7 +505,7 @@
         },
         {
             "rule": "marketo\\.com\\/index\\.php\\/form\\/XDFrame",
-            "cookies": 0.000703,
+            "cookies": 0.000803,
             "fingerprinting": 0,
             "subdomains": [
                 "app-ab42",
@@ -435,8 +516,8 @@
                 "app-sj28"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.000703,
+            "sites": 8,
+            "prevalence": 0.000803,
             "cnames": [],
             "responseHashes": [
                 "cecbf1890575d49aab6e0f3b7b5d8c58b8b80dcf4632360a29e84cba90c7bc81",
@@ -456,6 +537,7 @@
                 "mariadb.com",
                 "spring.io",
                 "www.digikey.fr",
+                "www.digikey.com",
                 "www.dnb.com"
             ]
         },
@@ -481,6 +563,72 @@
                 "spring.io",
                 "www.dnb.com"
             ]
+        },
+        {
+            "rule": "marketo\\.com\\/\\/index\\.php\\/form\\/getForm",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app-ab06"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "6d19887d5baa978d617ed16663713ccbfde498dc1572a58cf5cbc7b75a38e291"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "digikey.fr",
+                "www.digikey.com"
+            ]
+        },
+        {
+            "rule": "marketo\\.com\\/\\/js\\/forms2\\/css\\/forms2\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app-ab06"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "256e42104f48a5fa80b031da12dc56acde224fba3f9810f8f8192b39136d365a"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "digikey.fr",
+                "www.digikey.com"
+            ]
+        },
+        {
+            "rule": "marketo\\.com\\/\\/js\\/forms2\\/css\\/forms2-theme-simple\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app-ab06"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "14c8c62dc692fd8faa04434e3fed25e7c23d596b732f9db88f6e9f9ff5dfa61c"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "digikey.fr",
+                "www.digikey.com"
+            ]
         }
     ],
     "categories": [
@@ -490,12 +638,12 @@
         "Embedded Content"
     ],
     "performance": {},
-    "cookies": 0.00141,
+    "cookies": 0.00161,
     "types": {
-        "Script": 47,
-        "Stylesheet": 16,
+        "Script": 53,
+        "Stylesheet": 21,
         "XHR": 12,
-        "Document": 7
+        "Document": 8
     },
     "nameservers": [
         "ns1.marketo.com",

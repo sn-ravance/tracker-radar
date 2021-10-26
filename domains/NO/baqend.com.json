@@ -7,33 +7,40 @@
     "prevalence": 0.000201,
     "sites": 2,
     "subdomains": [
-        "lively-morning-17.app",
-        "bmw.app"
+        "bmw.app",
+        "getyourguide.app"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "baqend\\.com\\/v1\\/bloomfilter",
+            "rule": "baqend\\.com\\/v1\\/speedkit\\/install\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
-                "lively-morning-17.app",
-                "bmw.app"
+                "bmw.app",
+                "getyourguide.app"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "window.indexedDB": 2,
+                "window.devicePixelRatio": 1,
+                "Screen.prototype.width": 1
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "4cdf286d91318aa01fe4485ce3d7d392bca2b169ff95a7ead24b939ade120004"
+                "e38e9182a818e2934fc646f87c7b058af1df30e80d3c48d6c9ee801416833fed"
             ],
-            "type": "Fetch",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "favne.no",
-                "www.bmw.no"
+                "bmw.no",
+                "www.getyourguide.com"
             ]
         },
         {
@@ -41,11 +48,12 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "bmw.app"
+                "bmw.app",
+                "getyourguide.app"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -55,7 +63,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bmw.no",
-                "www.bmw.no"
+                "www.bmw.no",
+                "www.getyourguide.com"
             ]
         }
     ],
@@ -63,8 +72,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Fetch": 2,
-        "Other": 2
+        "Script": 2,
+        "Other": 3
     },
     "nameservers": [
         "ns-224.awsdns-28.com",

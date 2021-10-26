@@ -11,7 +11,7 @@
         "img"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "smartspends\\.com\\/static\\/fonts\\/proximanova\\/proximanova-regular-webfont\\.woff2",
@@ -212,6 +212,30 @@
             ]
         },
         {
+            "rule": "smartspends\\.com\\/static\\/js\\/etm-utility-min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "ff491b01c5ea6cc31cacfac174e548fc8e2f14797d5e2b7571df64f40bd59b07"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "etmoney.com",
+                "www.etmoney.com"
+            ]
+        },
+        {
             "rule": "smartspends\\.com\\/static\\/images\\/etmoneyweb\\/header\\/caret\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
@@ -276,28 +300,6 @@
                 "etmoney.com",
                 "www.etmoney.com"
             ]
-        },
-        {
-            "rule": "smartspends\\.com\\/static\\/images\\/etmoneyweb\\/header\\/user-dummy-icon\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e10b421bc5f2c529303b35d41dec9e846f1e0a15c4ba199716170e481814f0e6"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "etmoney.com",
-                "www.etmoney.com"
-            ]
         }
     ],
     "categories": [],
@@ -306,7 +308,7 @@
     "types": {
         "Font": 6,
         "Image": 18,
-        "Fetch": 2
+        "Script": 2
     },
     "nameservers": [
         "pdns3.ultradns.org",

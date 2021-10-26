@@ -9,18 +9,23 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00131,
-    "sites": 13,
+    "prevalence": 0.00151,
+    "sites": 15,
     "subdomains": [
+        "bingshoppingtool-t2app-prod",
         "nslc-prod-app",
-        "naapimtm",
+        "transat-nginx",
         "realm",
-        "bingshoppingtool-t2app-prod"
+        "naapimtm"
     ],
     "cnames": [
         {
             "original": "api.mps.ford.com",
             "resolved": "naapimtm.trafficmanager.net"
+        },
+        {
+            "original": "apis.airtransat.com",
+            "resolved": "transat-nginx.trafficmanager.net"
         },
         {
             "original": "login.norton.com",
@@ -33,6 +38,30 @@
     ],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "trafficmanager\\.net\\/uet\\/tracking_script",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bingshoppingtool-t2app-prod"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "bf99156e7e0693e75e0b7fccc13d5e61f146d028bf1887ba20cebe20b5fb792c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bicyclewarehouse.com",
+                "www.spigen.com",
+                "www.vitasave.ca"
+            ]
+        },
         {
             "rule": "trafficmanager\\.net\\/sso\\/idp\\/SAML2",
             "cookies": 0.000201,
@@ -50,8 +79,8 @@
                 }
             ],
             "responseHashes": [
-                "b71dda5833b68bf9dcc6ab772b95ec7e6a973c0ffbf393ecf4ca80a82f08fbf6",
-                "b4c0f4c9b446d9168906931b4d19e4c5bf746c560f11076597241adc0cf8ebfe"
+                "ff574141d2bba059beee65af8cdae34afb9a5eb4ded70350a01044cbe383e3e2",
+                "b7e4f58f59a1b169e224c3d35be975ecfebcc5c5ef04784c3af43c5d8ee8ad27"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -60,6 +89,90 @@
                 "norton.com",
                 "community.norton.com",
                 "support.norton.com"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/client\\/Persistence\\/UpdateCookies\\/",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "transat-nginx"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "apis.airtransat.com",
+                    "resolved": "transat-nginx.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [
+                "efb21899ce502aa491b07f852f9f84cd804000c23541ea4b37348f869ed77de2"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "__utmzz": 0.00020090406830738323,
+                "_ga": 0.00020090406830738323
+            },
+            "exampleSites": [
+                "airtransat.com",
+                "www.transat.com"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/\\.well-known\\/openid-configuration",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "realm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "realm.hearstnp.com",
+                    "resolved": "realm.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [
+                "03bc90950a3cf3d2baae54d90e814b61d4066e0deec3a120d04f03b38c064f6b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chron.com",
+                "www.sfgate.com"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/connect\\/authorize",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "realm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "realm.hearstnp.com",
+                    "resolved": "realm.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_li_dcdm_c": 0.00020090406830738323
+            },
+            "exampleSites": [
+                "chron.com",
+                "www.sfgate.com"
             ]
         },
         {
@@ -104,7 +217,7 @@
                 }
             ],
             "responseHashes": [
-                "c3987360b56d6ae81a5fbe1696507ad44c8755cb49476344a098e76e33ba695f"
+                "a9b1abcce50b772e3a230f0b41f4f517e111a59fe16beec6aeb236b9f7965930"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -113,99 +226,23 @@
                 "ford.com",
                 "www.ford.ca"
             ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/\\.well-known\\/openid-configuration",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "realm"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "realm.hearstnp.com",
-                    "resolved": "realm.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [
-                "03bc90950a3cf3d2baae54d90e814b61d4066e0deec3a120d04f03b38c064f6b"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sfgate.com",
-                "www.sfchronicle.com"
-            ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/connect\\/authorize",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "realm"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "realm.hearstnp.com",
-                    "resolved": "realm.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "_li_dcdm_c": 0.0002008233758409479
-            },
-            "exampleSites": [
-                "sfgate.com",
-                "www.sfchronicle.com"
-            ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/uet\\/tracking_script",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bingshoppingtool-t2app-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "bf99156e7e0693e75e0b7fccc13d5e61f146d028bf1887ba20cebe20b5fb792c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "spigen.com",
-                "www.vitasave.ca"
-            ]
         }
     ],
     "categories": [
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000703,
+    "cookies": 0.000804,
     "types": {
-        "Document": 5,
-        "Preflight": 2,
+        "Script": 3,
+        "Document": 7,
         "XHR": 4,
-        "Script": 2
+        "Preflight": 2
     },
     "nameservers": [
-        "tm1.dns-tm.com",
-        "tm2.dns-tm.com",
         "tm1.edgedns-tm.info",
-        "tm2.edgedns-tm.info"
+        "tm2.edgedns-tm.info",
+        "tm1.dns-tm.com",
+        "tm2.dns-tm.com"
     ]
 }

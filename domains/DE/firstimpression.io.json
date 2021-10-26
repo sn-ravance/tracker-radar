@@ -7,38 +7,41 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000401,
-    "sites": 4,
+    "prevalence": 0.000702,
+    "sites": 7,
     "subdomains": [
         "ecdn",
         "cdn",
         "tracking1"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "firstimpression\\.io\\/fi_client\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "ecdn"
             ],
             "apis": {
-                "window.localStorage": 4,
-                "window.sessionStorage": 4,
-                "Navigator.prototype.userAgent": 4,
-                "Navigator.prototype.cookieEnabled": 4,
-                "Navigator.prototype.appName": 4,
-                "Date.prototype.getTime": 4,
-                "Event.prototype.timeStamp": 1
+                "window.localStorage": 7,
+                "window.sessionStorage": 7,
+                "Date.prototype.getTime": 7,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.mimeTypes": 1,
+                "Navigator.prototype.javaEnabled": 1,
+                "Navigator.prototype.cookieEnabled": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Navigator.prototype.platform": 1,
+                "Event.prototype.timeStamp": 5
             },
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 7,
+            "prevalence": 0.000702,
             "cnames": [],
             "responseHashes": [
-                "9fb330fe75a81fc72e4eec4fc5aff57f9def9f8ba728dec51a44acc7fc5153e1",
-                "cf23ca1610181f13e224fc024885ddad937ede476e0f8ac151d0fd22505776d4"
+                "54f2b4dc90d6a8f9c73c180236cf4b09b62fdfeabdbd048a30f3a8075a92a445"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -47,24 +50,30 @@
                 "journalistenwatch.com",
                 "www.adsbexchange.com",
                 "www.bleepingcomputer.com",
+                "www.eliteprospects.com",
+                "www.haaretz.com",
+                "www.heimgourmet.com",
                 "www.tomaten.de"
             ]
         },
         {
             "rule": "firstimpression\\.io\\/delivery\\/spc_fi\\.php",
-            "cookies": 0.0001,
+            "cookies": 0.000301,
             "fingerprinting": 0,
             "subdomains": [
                 "cdn"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 7,
+            "prevalence": 0.000702,
             "cnames": [],
             "responseHashes": [
-                "9b82f681b13a89f47bc913217fbc656f7573490ba36915346a63bf321022fc72",
-                "9c340a51b1d7c36337b9b5d1a09e950cac7e4873a77d0c130fe44f07fc4eb96d",
-                "c1feade21eb134aa9aae70050a44c98ae31ea2bf30f465ea61d95be19c860466"
+                "48ffc7583eb1a4c9e11bb807d604dadfd72e61b17671a3eb638cfd387bdf2102",
+                "7899a21a3bf3f35a38135a32928c1e226a6ada14ed714ef51927aa892ad0d02a",
+                "cb565569db354b669e60c2db5686e5fd40e1d3c21f6a7f5a5a18b7a830fdbbaf",
+                "3cb09a90f2e4a32460d68179a0385ad555dc1109c0d950956b5ba6b82236267e",
+                "025fca8227eb414394598110b3bb54605fd7dc8a2da0c37ce6d879c7acd404e2",
+                "4186102ad7acec53167e2b6f392ebbb10446d32d1223c89dcbc542e26dcefa77"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -73,11 +82,14 @@
                 "journalistenwatch.com",
                 "www.adsbexchange.com",
                 "www.bleepingcomputer.com",
+                "www.eliteprospects.com",
+                "www.haaretz.com",
+                "www.heimgourmet.com",
                 "www.tomaten.de"
             ]
         },
         {
-            "rule": "firstimpression\\.io\\/delivery\\/lg\\.php",
+            "rule": "firstimpression\\.io\\/collect",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -88,7 +100,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "cdb4ee2aea69cc6a83331bbe96dc2caa9a299d21329efb0336fc02a82e1839a8"
+                "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
             ],
             "type": "Other",
             "firstPartyCookies": {},
@@ -97,20 +109,69 @@
                 "adsbexchange.com",
                 "www.adsbexchange.com"
             ]
+        },
+        {
+            "rule": "firstimpression\\.io\\/delivery\\/lg\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking1"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "cdb4ee2aea69cc6a83331bbe96dc2caa9a299d21329efb0336fc02a82e1839a8"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "adsbexchange.com",
+                "www.adsbexchange.com",
+                "www.haaretz.com"
+            ]
+        },
+        {
+            "rule": "firstimpression\\.io\\/static\\/js\\/fiamp\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ecdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "678ba871ab64169cd72d0d89f5048135729e9de07a917150ef98e430dafd1c31"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "adsbexchange.com",
+                "www.haaretz.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000301,
     "types": {
-        "Script": 4,
-        "XHR": 4,
-        "Other": 2
+        "Script": 9,
+        "XHR": 7,
+        "Other": 5
     },
     "nameservers": [
-        "ns-1137.awsdns-14.org",
         "ns-1564.awsdns-03.co.uk",
+        "ns-711.awsdns-24.net",
         "ns-303.awsdns-37.com",
-        "ns-711.awsdns-24.net"
+        "ns-1137.awsdns-14.org"
     ]
 }

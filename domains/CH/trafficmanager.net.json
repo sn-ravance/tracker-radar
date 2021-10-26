@@ -9,15 +9,20 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000903,
-    "sites": 9,
+    "prevalence": 0.000802,
+    "sites": 8,
     "subdomains": [
-        "nslc-prod-app"
+        "nslc-prod-app",
+        "jabpc-publicservice-tfm-prod"
     ],
     "cnames": [
         {
             "original": "login.norton.com",
             "resolved": "nslc-prod-app.trafficmanager.net"
+        },
+        {
+            "original": "productcatalogueapi.jabra.com",
+            "resolved": "jabpc-publicservice-tfm-prod.trafficmanager.net"
         }
     ],
     "fingerprinting": 1,
@@ -39,14 +44,66 @@
                 }
             ],
             "responseHashes": [
-                "f4418806f73ee6995679d764967820e24d01613571e3530026fa64b176a84ad2"
+                "204807bb569069fab3b1fe2541c5a308acb8f4621e61a7600d1dfdd777974858"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "norton.com",
-                "community.norton.com"
+                "support.norton.com"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/\\/v1\\/family\\/filter",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "jabpc-publicservice-tfm-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "productcatalogueapi.jabra.com",
+                    "resolved": "jabpc-publicservice-tfm-prod.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jabra.com",
+                "www.jabra.com"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/\\/v1\\/family\\/filter",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "jabpc-publicservice-tfm-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "productcatalogueapi.jabra.com",
+                    "resolved": "jabpc-publicservice-tfm-prod.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [
+                "005cc7431b297b3706026cf858264f2a6207cadcef8958cccf073b46945ecfe9"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jabra.com",
+                "www.jabra.com"
             ]
         }
     ],
@@ -56,7 +113,9 @@
     "performance": {},
     "cookies": 0.000301,
     "types": {
-        "Document": 2
+        "Document": 2,
+        "Preflight": 2,
+        "Fetch": 2
     },
     "nameservers": []
 }

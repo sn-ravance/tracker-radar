@@ -9,11 +9,12 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.0106,
-    "sites": 106,
+    "prevalence": 0.0107,
+    "sites": 107,
     "subdomains": [
-        "i2.shared.global",
         "dualstack.d3.shared.global",
+        "f2.shared.global",
+        "k.sni.global",
         "h3.shared.global",
         "d.sni.global",
         "e2.shared.us-eu",
@@ -24,18 +25,20 @@
         "f4.shared.global",
         "o2.shared.global",
         "e.sni.global",
+        "dualstack.i.shared.global",
         "y2.shared.global",
         "l2.shared.global",
-        "j.sni.global",
         "d.sni.us-eu",
-        "k.sni.global",
         "q2.shared.global",
         "p.shared.global",
-        "d.global-ssl",
-        "d2.shared.global",
-        "f2.shared.global"
+        "d.shared.global",
+        "d2.shared.global"
     ],
     "cnames": [
+        {
+            "original": "api.hackster.io",
+            "resolved": "dualstack.i.shared.global.fastly.net"
+        },
         {
             "original": "assets.entrepreneur.com",
             "resolved": "l3.shared.global.fastly.net"
@@ -43,6 +46,10 @@
         {
             "original": "assets.nymag.com",
             "resolved": "d.sni.global.fastly.net"
+        },
+        {
+            "original": "cdn.dal.ca",
+            "resolved": "k.sni.global.fastly.net"
         },
         {
             "original": "cdn.evbstatic.com",
@@ -137,16 +144,8 @@
             "resolved": "f.ssl.global.fastly.net"
         },
         {
-            "original": "images.arcteryx.com",
-            "resolved": "i2.shared.global.fastly.net"
-        },
-        {
             "original": "keywords.mediavine.com",
             "resolved": "p.shared.global.fastly.net"
-        },
-        {
-            "original": "landing-pages.arcteryx.com",
-            "resolved": "i2.shared.global.fastly.net"
         },
         {
             "original": "map.mp.nbc.com",
@@ -154,7 +153,11 @@
         },
         {
             "original": "marketdata.thestreet.com",
-            "resolved": "d.global-ssl.fastly.net"
+            "resolved": "d.shared.global.fastly.net"
+        },
+        {
+            "original": "media.complex.com",
+            "resolved": "d.sni.global.fastly.net"
         },
         {
             "original": "prx.wayfair.com",
@@ -169,14 +172,6 @@
             "resolved": "f2.shared.global.fastly.net"
         },
         {
-            "original": "scripts.arcteryx.com",
-            "resolved": "i2.shared.global.fastly.net"
-        },
-        {
-            "original": "scripts.mediavine.com",
-            "resolved": "p.shared.global.fastly.net"
-        },
-        {
             "original": "sega.policygenius.com",
             "resolved": "e.sni.global.fastly.net"
         },
@@ -189,20 +184,12 @@
             "resolved": "y2.shared.global.fastly.net"
         },
         {
-            "original": "sid.nordstrom.com",
-            "resolved": "j.sni.global.fastly.net"
-        },
-        {
             "original": "sp-prd.theglobeandmail.ca",
             "resolved": "q2.shared.global.fastly.net"
         },
         {
             "original": "static.standard.co.uk",
             "resolved": "k.sni.global.fastly.net"
-        },
-        {
-            "original": "ui-components.arcteryx.com",
-            "resolved": "i2.shared.global.fastly.net"
         },
         {
             "original": "union.barstoolsports.com",
@@ -212,423 +199,6 @@
     "fingerprinting": 3,
     "resources": [
         {
-            "rule": "fastly\\.net\\/js-src\\/vendor\\/zepto\\/zepto\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "i2.shared.global"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [
-                {
-                    "original": "scripts.arcteryx.com",
-                    "resolved": "i2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "beb9f5e32ed61fbce010497242a9b6b8219242b5ffc636038e7891510c773725"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "arcteryx.com",
-                "outlet.arcteryx.com",
-                "www.arcteryx.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/js\\/vendors\\.v2\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "i2.shared.global"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [
-                {
-                    "original": "scripts.arcteryx.com",
-                    "resolved": "i2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "f63a5c9957ac27796a3951e14ef3c6b5969e2673411231a6ffbad62062b2086e"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "arcteryx.com",
-                "outlet.arcteryx.com",
-                "www.arcteryx.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/js\\/analytics\\.min\\.js",
-            "cookies": 0.000301,
-            "fingerprinting": 2,
-            "subdomains": [
-                "i2.shared.global"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [
-                {
-                    "original": "scripts.arcteryx.com",
-                    "resolved": "i2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "d4ba5e89ccbf1bd657c4476aa9f1f47bb75b3b42b401797972040fff046e65a3"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "arcteryx.com",
-                "outlet.arcteryx.com",
-                "www.arcteryx.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/_next\\/static\\/css\\/commons\\.9cd27642\\.chunk\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "i2.shared.global"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [
-                {
-                    "original": "landing-pages.arcteryx.com",
-                    "resolved": "i2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "a598f279d8a804cb7ff04552b984c8c98a4202ef7aaa641d69d07b4653bbb46a"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "arcteryx.com",
-                "outlet.arcteryx.com",
-                "www.arcteryx.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/_next\\/static\\/css\\/styles\\.e14e4e06\\.chunk\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "i2.shared.global"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [
-                {
-                    "original": "landing-pages.arcteryx.com",
-                    "resolved": "i2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "66088ac739d1d5779b6e4f337a57057edb219d78ca7f4c9998e3985136fe567a"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "arcteryx.com",
-                "outlet.arcteryx.com",
-                "www.arcteryx.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/_next\\/static\\/LF7lDRQKfqrzuci7NjxfE\\/pages\\/simple-pages\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "i2.shared.global"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [
-                {
-                    "original": "landing-pages.arcteryx.com",
-                    "resolved": "i2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "9bf73f515532f9b4756e2a776b0bbe70140667dedecb4274bff6b64d37fa59a8"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "arcteryx.com",
-                "outlet.arcteryx.com",
-                "www.arcteryx.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/_next\\/static\\/LF7lDRQKfqrzuci7NjxfE\\/pages\\/_app\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "i2.shared.global"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [
-                {
-                    "original": "landing-pages.arcteryx.com",
-                    "resolved": "i2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "1adf0d119d55cf0509574db68e85c5d8b7f98499f049050451f0354ae03d0aef"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "arcteryx.com",
-                "outlet.arcteryx.com",
-                "www.arcteryx.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/_next\\/static\\/runtime\\/webpack-ff828dedb41abd759c5b\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "i2.shared.global"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [
-                {
-                    "original": "landing-pages.arcteryx.com",
-                    "resolved": "i2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "b976bc3b9b6f59d4b2bbfc94da915a9713cea333d87d628159fddc476d1a1261"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "arcteryx.com",
-                "outlet.arcteryx.com",
-                "www.arcteryx.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/_next\\/static\\/chunks\\/commons\\.6d5e7eeba7ca507f3b8b\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "i2.shared.global"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [
-                {
-                    "original": "landing-pages.arcteryx.com",
-                    "resolved": "i2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "cc147b1e5f7d5376bea67902bb952040790ef21c714fe08f10f94ec1fc2e24ee"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "arcteryx.com",
-                "outlet.arcteryx.com",
-                "www.arcteryx.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/_next\\/static\\/chunks\\/styles\\.f2ba8bf69849c738eb87\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "i2.shared.global"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [
-                {
-                    "original": "landing-pages.arcteryx.com",
-                    "resolved": "i2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "f650d253d9bf387e3f98b576413055b20d803169a89e480f0283fb4b7ee34ea9"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "arcteryx.com",
-                "outlet.arcteryx.com",
-                "www.arcteryx.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/_next\\/static\\/runtime\\/main-f4bfa6a707a84611eb4e\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "i2.shared.global"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [
-                {
-                    "original": "landing-pages.arcteryx.com",
-                    "resolved": "i2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "8a1c626349dcf8486c497006f487f42e3b8ecef0037bf8bd26aa8ecd1dc1811e"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "arcteryx.com",
-                "outlet.arcteryx.com",
-                "www.arcteryx.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/ca\\/en\\/outdoorHeaderFooter\\.js",
-            "cookies": 0.0001,
-            "fingerprinting": 1,
-            "subdomains": [
-                "i2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "ui-components.arcteryx.com",
-                    "resolved": "i2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "bbfed8ad316151e0ee69ebbd045365cb36e5be2052a4452af07f2ee6b7ee0c10"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "arcteryx.com",
-                "www.arcteryx.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/ca\\/en\\/localeSwitcherOutdoor\\.js",
-            "cookies": 0.000201,
-            "fingerprinting": 1,
-            "subdomains": [
-                "i2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "ui-components.arcteryx.com",
-                    "resolved": "i2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "6727a2114cc3a4d01ec4403ce5a1e166ca2cab82858d2b4173dc73c4532592e7"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "arcteryx.com",
-                "www.arcteryx.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/campaign\\/S21\\/home\\/built-for-whats-to-come-white\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "i2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "images.arcteryx.com",
-                    "resolved": "i2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "3779be2a5f47f1248857bf815e067000e54e9a48c8cd7a3182279aed911a3fe1"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "arcteryx.com",
-                "www.arcteryx.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/_next\\/static\\/chunks\\/3\\.401b8313432d4ccc45a2\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "i2.shared.global"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [
-                {
-                    "original": "landing-pages.arcteryx.com",
-                    "resolved": "i2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "507dd065ed13ac8536e0ce9ae58b0c907e735ecf38b3fa2042b459923a85b79f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "arcteryx.com",
-                "outlet.arcteryx.com",
-                "www.arcteryx.com"
-            ]
-        },
-        {
             "rule": "fastly\\.net\\/images\\/thumb\\/6\\/61\\/Paradox_Interactive_white\\.png\\/130px-Paradox_Interactive_white\\.png",
             "cookies": 0,
             "fingerprinting": 0,
@@ -636,8 +206,8 @@
                 "dualstack.d3.shared.global"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [
                 {
                     "original": "central.paradoxwikis.com",
@@ -652,41 +222,1294 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "paradoxwikis.com",
-                "eu4.paradoxwikis.com",
                 "hoi4.paradoxwikis.com",
                 "stellaris.paradoxwikis.com"
             ]
         },
         {
-            "rule": "fastly\\.net\\/images\\/thumb\\/a\\/a8\\/Paradox_Interactive_logo\\.png\\/60px-Paradox_Interactive_logo\\.png",
+            "rule": "fastly\\.net\\/assets\\/public\\/homepage-main-pkg\\.yji-1b44a9bfdb60604e6450\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "dualstack.d3.shared.global"
+                "f2.shared.global"
             ],
             "apis": {},
             "sites": 3,
             "prevalence": 0.000301,
             "cnames": [
                 {
-                    "original": "central.paradoxwikis.com",
-                    "resolved": "dualstack.d3.shared.global.fastly.net"
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
                 }
             ],
             "responseHashes": [
-                "6adcd28371764147709fbb2b60865dcdd09771c8366b8772f4c3931d725ee9de"
+                "5a5323fc80f04c12a3c10af49850a00ba9df688c3e513ddc29e499168eccc1bd"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/assets\\/public\\/stars\\.yji-9bec2045845c24d3bff3ddb582884eda\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "b7a09dd92648bfd3a12e9d42a88407345587668933084a674c91296429c77cec"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "paradoxwikis.com",
-                "hoi4.paradoxwikis.com",
-                "stellaris.paradoxwikis.com"
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
             ]
         },
         {
-            "rule": "fastly\\.net\\/images\\/3\\/35\\/Event_trigger\\.png",
+            "rule": "fastly\\.net\\/assets\\/public\\/construction_darwin\\.yji-10ea4aedcdab3ee2beeea9dc6f7185d7\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "1d3de5d1b597ec34b7f7b4aa32de1b563aa429b1e3ddd18b8fca1b729574ec27"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/assets\\/public\\/72x72_restaurants@2x\\.yji-7cef764a214416ca9991e53ceb108b5c\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "2b178331e9a00854264d151b7dc08ca7da7b3c97496cc4877b1176cbf87ea42b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/assets\\/public\\/72x72_shopping@2x\\.yji-559f23226d9f9f651812ddc5d6e3d1b2\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "82c8ab42ac3cc1f7342f96004e8ace1d467633f1723ed14394c7a5308370e839"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/assets\\/public\\/72x72_nightlife@2x\\.yji-925cd32ac4c934d465c664f140c5b629\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "5a4764cf0050e66d6a76bf198b1fa756f17269c179c3bab6acfe01c80d1c76fe"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/assets\\/public\\/72x72_active_life@2x\\.yji-2df9fcd6a68eb739e68a026778dd7a3f\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "4088bb9af95071fc37b479c3b013d1e0fbf3a6882b836a3e1872231a58520aee"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/assets\\/public\\/72x72_beauty@2x\\.yji-3cfb4e602ac139443228f090ec71b84f\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "75a5966fc0ee99ae2beb559868912b581f1e64c5ece70820f62f13fc65fec2fd"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/assets\\/public\\/72x72_automotive@2x\\.yji-c73bd70791375ec60256243055745f63\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "a24cbe3c8c23f6c2c126368d7e34a63f5c40671e8e6fc11dd9639d00ae828108"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/assets\\/public\\/72x72_home_services@2x\\.yji-20723ad0e5ee302de563935be68c6638\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "5ae4b9e1e64549a36894f0583b1cc6cdb2326067d505cec2ec3b45ad86f0650b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/assets\\/public\\/72x72_more_categories@2x\\.yji-e7be9a50bf8cf4a2eea9f7d7e2b5f194\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "81e00bcdbedc65ebfbed17fa32567c292ca48c138f769997a5df679907fef0c9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/assets\\/public\\/pitch_ios\\.yji-960cce5c1917bdabc568aa735f2d866f\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "df1e1a271d7b0fcce42353042899b912a94e07d8b7885758834fe994433565ad"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/assets\\/public\\/pitch_android\\.yji-a91a4a087787b1aa9aa729e3de5743d7\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "44ec8438b4bde13d1cb3c4db93e680c015006ce21f90d318ef551b2a3b2517d8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/assets\\/srv0\\/svg_icons\\/e40f03d90446\\/assets\\/svg_sprite\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "426df0e5283f889b8852e9053182fa4d96a3666e9d254c79ed0ba01a3f31446e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/assets\\/public\\/yelp_logo_www_home\\.yji-7d24f1680fdb98ca54a82c26cdbdc7bd\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "f73acca932bc97b38fef5b09b41082827ea61284e645b34ce544563243655efe"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/bphoto\\/lRyBkk8Wa_S4WDaIhXENdQ\\/120s\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "2399c6beeac941b50d27e9741e5b447f178111de5e9f4a7eeaadad7ab1bd819c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/bphoto\\/ND36EUGBEdypHWquu_2Ezw\\/120s\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "c6271cc2e0f0171d375e6412a30fdc921016fe9044afcdebf51552489b82040d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/bphoto\\/g_AWDOdMhuj_jNsHnhlJuA\\/120s\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "1c32c8fa3da80571d2393a9a5a5a5921e02f75ea9f2d3f1f48eec5f21860380b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/bphoto\\/ZX1U5aOiP6L69DKwYz5vVA\\/120s\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "358d7203067720dd3fc4b108ec311db5b7ae7ddeb1ad9eaada77b44c5861964a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/bphoto\\/4HSLCZVBCTcdGgRT426XGw\\/120s\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "ccb32dfba7a5df0f07bd473cc577db30e41f5bdcffcc6e3c7bef64719594fcab"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/bphoto\\/GepMIRcmnjqp6Bb6k3dzvg\\/120s\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "57bf20f2ed6807cddaeee371d0a38631e4bc36e7481aa121e42e343f69596d58"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/assets\\/public\\/OpenSans-Bold\\.yji-49e6b3bb7a2df2996d09b9cdd89cf166\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "ca46e0a587fd241dd88d6b9f5469b72f910c49abee88db088218161e7efa0133"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/assets\\/public\\/OpenSans-Regular\\.yji-1d0e82fb8ca5092d63b501cb78a3fcc5\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "e817d4d2ef9896e40cc201ca1abef460f2500411ac1a042f0ed69f9e5506447b"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/assets\\/srv0\\/cdn_assets\\/3576a6e73c9d\\/assets\\/vendor\\/jquery\\/1\\.8\\.3\\/jquery\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "61c6caebd23921741fb5ffe6603f16634fca9840c2bf56ac8201e9264d6daccf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/assets\\/srv0\\/cdn_assets\\/45b9836beb16\\/assets\\/vendor\\/babel-polyfill\\/6\\.26\\.0\\/polyfill\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "59173f786dd1f3802f7ab26fd339aac4099dc10c6cb54a6a92213e6af277592a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/assets\\/srv0\\/cdn_assets\\/c3c8400137ef\\/assets\\/vendor\\/react\\/16\\.3\\.0\\/umd\\/react\\.production\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "41453f0f5c2c744e2aa4aa8417a043c48ed236bf900910e9ba9c155d831c142e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/assets\\/srv0\\/cdn_assets\\/286a7c5cc69d\\/assets\\/vendor\\/react-dom\\/16\\.3\\.0\\/umd\\/react-dom\\.production\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "a15dd3609e69da9d2a5c0dae4f731ea6eec529ad191f4a4b5b6840e5d9beed5e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/assets\\/public\\/module_homepage_main\\.yji-2379e76acb314a74db45\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "39e995ddce3dc8cdba35cea3dac997f176989ef8f365ad14058dfb972d240135"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/assets\\/public\\/burst-loader-small\\.yji-434a0c97b379a59074a465055fbbc527\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "8e7588d7f984715e8a15bdca9bb171f47632a1c02e6d06d639cb1941a7257d04"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/bphoto\\/0A3nSKf3L8FIPx0GYezIeQ\\/300s\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "e0e8319219cacf47ec128204547aa5474038a23a2ceb485732ee4bf0e012ded4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/bphoto\\/-nTJ7y7El0-JIblz1vogfg\\/300s\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "e571c7b1dd6755b95e4955e1a635b7504379d9b99991fec1c4fb99ca88c79671"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/bphoto\\/LyJCVUfEp_HRyBX1VNWBow\\/168s\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "9c75be1c8192532ee28a9e1298a35b13a0973b11e9ba89355c0bc69108338a5a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/bphoto\\/pxc__nxMpTfTdpJNXomrGQ\\/168s\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "06082a67ef78f140c5cf9c53babeb5b60150d64137bb5b9f0ec22dad032b9740"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/bphoto\\/yquF_mpXvvebepsJpCvzeA\\/300s\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "adc7e19dac57fd70c3473593a5f1e56de2da2b353ad6288ffdbadafa3ecaab8d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/bphoto\\/FrDXW8CCZutxyUUpKlYjmw\\/300s\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "b39302dc0d88440c31086058d5d7edc5b601bc163900fc7c1ce95e3545702ed1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/bphoto\\/YeJbeLBPltmCXjdXsqxMAA\\/300s\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "47da22497a272f550e5dc7dcee345be02bd0aaaae6f262d5d9991befa1ff5c8a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/bphoto\\/_ooYWxjTmUcBelNar0N7PQ\\/300s\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "483270efdaa362b326b8180d4a8f4fb0fc41fc4b7e60849f4123e29bae59aee9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/bphoto\\/bSSRA3ox7p67n8TjCijO7g\\/168s\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "6abb95c8260d9bd89acd930b170a7854c7fbc3fa9f8c6877d33343c3567c5ce9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/bphoto\\/B75dCu02Rg_cNzf0M39MJQ\\/168s\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "f4872dd927450c1c7acaf94708239d05951955ee9dfa1e8af46df208466804c7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/bphoto\\/VP5aLeb1k3fTaImmg7tZvg\\/300s\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "b91f81a131b259f18e3663aa725fef249406db71b7c7df1b11b26c2b538138f5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/assets\\/public\\/200x120_ufc_globe\\.yji-f871a0ff7872e619c872b58091e967a2\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "ab71f9de3e16b944c40764702dca32fd1fbfd06f52aad7bf8c0440e58ffdf712"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/photo\\/s8q0-UuMiixjUt_6nUKu6Q\\/30s\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "5ce9079f30512f6787b65733b622b4b31983f249cd28d687f82faba896c6472c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/photo\\/sgtE3agIKOMfo6XcOvshCQ\\/30s\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "c186a7f46e3bb765a9fdc58255a6021fc6e9f7f69527595d72a9f064ac847670"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/photo\\/Vzp4AYSNKFyo4yPWqOA7SQ\\/30s\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "ab42b5fca6bc403c20255639bf3aff74b8ba54ee1440384bc188af0d6d930801"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/photo\\/heH-pLQP0cXvxQz06Tqang\\/30s\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "fbb6164d515f73bdacb8be93ea9fe98534fa65b0499255de58e0376d6b901a2e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/photo\\/NLqJ3RZfuhBFIa4a3_xG2Q\\/30s\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f2.shared.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "s3-media0.fl.yelpcdn.com",
+                    "resolved": "f2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "7f9e1c7887363777e897f5aadbfc63bc56cda2748a7e49e7bc0108d82c3c5372"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yelp.ca",
+                "www.yelp.ca",
+                "www.yelp.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/images\\/thumb\\/a\\/a8\\/Paradox_Interactive_logo\\.png\\/60px-Paradox_Interactive_logo\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -702,7 +1525,7 @@
                 }
             ],
             "responseHashes": [
-                "30ac7293db2b0f0438a192265145ccd141d92167f70cd2871e971b92d80c1a29"
+                "6adcd28371764147709fbb2b60865dcdd09771c8366b8772f4c3931d725ee9de"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -710,6 +1533,924 @@
             "exampleSites": [
                 "paradoxwikis.com",
                 "stellaris.paradoxwikis.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\.clientlibs\\/clientlibs\\/granite\\/jquery-ui\\.lt_8645ce8b36d08e4a4e228202bb9df0a6\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "abee7ba680a7b04b53006338d55fb85107085bcda5991fad82ec71ba12ad3840"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\/designs\\/dalhousie\\/clientlibs\\/global\\/jquery-ui\\.lt_09717fe0dd5d45899d7a7579e6b1871c\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "b6740be5b35d109b175f2e4bd014802ad99220d281307e56eafe1d73de407d5a"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\/designs\\/dalhousie\\/clientlibs\\/global\\/selectNav\\.lt_5135b360db8e63ccf56b2a5b98325d90\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "471242cf57c8c8d203f2c3898349ef9c398b8b601f8d34ef5b5099978a55611c"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\/designs\\/dalhousie\\/clientlibs\\/global\\/default\\.lt_bf81a16422b9093309324de04d3fb0c9\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "f1af49dce23353ad9bc448302afb464529303c2d92749ecab549501bd4557561"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\/designs\\/dalhousie\\/clientlibs\\/global\\/themes\\/default-theme\\.lt_b749a038dd985d0b6650aeb591056bbc\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "1380a986417e6afc5f8869f1de1a9de7d402af82fe690d701349e2b49a2ab97f"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\.clientlibs\\/clientlibs\\/granite\\/jquery\\.lt_1fc733054ddb2e2fcd4a0f763671047b\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "d8a75d918ddd574026d721058790dd07fc7424ad500e3d9f5be856e921be08f1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\.clientlibs\\/clientlibs\\/granite\\/jquery-ui\\.lt_0c4fb27792df518e15f02c6deeafaffa\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "0253c139df9a74607e0e818b16bc813f6a719a1e7104226cb63e27f4edf4ded9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\/designs\\/dalhousie\\/clientlibs\\/global\\/jquery\\.uniform\\.lt_7dc7bb06854120382202ad7d19325443\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "30f460e27016c0addee8697d4e911b9fb94c1f263b008484c4bbf4114a29c68c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\/designs\\/dalhousie\\/clientlibs\\/global\\/selectNav\\.lt_84c84a606a4e81f8b597406bf7043c5d\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "56a9ed0fa48ade10a113d59bdab6214aadcfad81562973eedf828fd5373a33f5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\/designs\\/dalhousie\\/clientlibs\\/global\\/purl\\.lt_53badcd063ce67004f6c8ed95110a740\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "5d42a5aa9b904af8c77a777228b5eaf537c9102bf17c1e11608dc9c343f63007"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\/designs\\/dalhousie\\/clientlibs\\/global\\/default\\.lt_5240e71538768f9248addd0c32c04e1b\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "08e7b4598c07b30ee25a2511ee5970cc41a33f6a567f250347f982684a90b4e7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\.clientlibs\\/dalhousie\\/dal\\/components\\/content\\/toolsNavigationHeader\\/toolsNavigationHeader\\.lt_355225fdd0769661b331b68ec07a2baf\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "4efe807b0e98b2a01c31edd2e75d866d17b82fe6251595e00dc5a9fcbe3d4028"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\.clientlibs\\/dalhousie\\/dal\\/components\\/content\\/toolsNavigationHeader\\/toolsNavigationHeader\\.lt_72e229cbef1dcf3c1b601aedd20d5e48\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "a4d9e6e45cccba7016eed53e10d52114e65933bd717911043d51c8d809e2493b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\.clientlibs\\/dalhousie\\/dal\\/components\\/content\\/search\\/search\\.lt_fe3808e20727db940fc7931d1695939f\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "3c11c3afcede8b50a05d4bbe65512ccf929e684b432517ccc7dc5dd6180686ac"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\.clientlibs\\/dalhousie\\/dal\\/components\\/content\\/search\\/search\\.lt_804a077c152e1ccde1708ee9f7586e79\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "20856f8f4a46974c25fd5a4b7e5f91afe592285993a796164059d1154bd773ba"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\.clientlibs\\/dalhousie\\/dal\\/components\\/content\\/backgroundAdaptiveImage\\/clientlibs\\.lt_f4509b4b983f269129d5bdd25c5a492a\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "9bdaa881e59467cb75ad051b6e955acb4d57d4a73538d118bbd0b20906692380"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\/designs\\/dalhousie\\/clientlibs\\/global\\/adaptiveImages\\.lt_255c26b17911c49aa9cebe541dfa21b7\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "6e253722012ede4fac7d1201f0308b553c611317d179eaf69ce887cccfe307da"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\.clientlibs\\/wcm\\/foundation\\/clientlibs\\/accessibility\\.lt_7f64d7918e126c44b6d7cafa10b85ef1\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "00ac289322e540e9e3590f66ee3dd65a33a48fcffb7e4be6232548e1c84fd422"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\/designs\\/dalhousie\\/clientlibs\\/global\\/flexslider2\\.lt_8f455d675b36440c275c11813414d975\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "cbc9dc28996e60048e70e5aa1e7e76414d8fcce695c7732354d4b70f9b503c32"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\.clientlibs\\/dalhousie\\/nlc\\/components\\/content\\/featureSlider\\/featureSlider\\.lt_9ecb55d6db0db8212b1e0b7997aa1363\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "deeb2880c4f4a15c55a7740e50b7ecd54466ab6c864b8008b86d6e5d93516c04"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\/designs\\/dalhousie\\/clientlibs\\/global\\/flexslider2\\.lt_d2c415bf29f09ec97f97bcd9c3e994fc\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "ce18dcace9c9451622bb7f3bec08a768fc3ae0d71e375aab875845c98197a058"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\.clientlibs\\/dalhousie\\/nlc\\/components\\/content\\/featureSlider\\/featureSlider\\.lt_4ce9a9edf2973c3b167f9e47c500d19a\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "66b3d24b7e240896ebe98a176f35b6e1733de7d6fc04f3300505507ec416e0f6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\.clientlibs\\/dalhousie\\/nlc\\/components\\/content\\/containerTwoColumn\\/containerTwoColumn\\.lt_9fd0a600fa39094b6454080eef4e9114\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "d6ce1f909682d5aadbb63628a322878487a8d26c54ad25e120d06d70268010a8"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\.clientlibs\\/dalhousie\\/foundation\\/components\\/content\\/footer\\/footerClientLib\\.lt_91d264734edc98ce8d8115d3688b3fb8\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "208976a8bf9675f533da52d9ed305f331194f73e6550029e10ff4e37a13f33b6"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\/designs\\/dalhousie\\/clientlibs\\/global\\/feedback\\.lt_0da98b229a26e86d440689f37bf4b53d\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "54b8024634a5d4d993b01481d4be47b7f6d4f73f93ad9fbc08c19021101f88ab"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\/designs\\/dalhousie\\/clientlibs\\/global\\/default\\/css\\/fonts\\/c62352b5-0f4e-41b3-b33e-5b0f8c8a31b5\\.woff2\\.lt_e6757db177e7ba411672ef0cd8018d00\\.res\\/c62352b5-0f4e-41b3-b33e-5b0f8c8a31b5\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "b99c10dcb3756e119fcd9d38e058ee1a2f587093a095309e136c46b54872028f"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\/designs\\/dalhousie\\/clientlibs\\/global\\/default\\/css\\/fonts\\/32e51bed-d726-44f8-ad5a-91b848435a51\\.woff2\\.lt_abb465ca282ef8a2e32d1499e2def4c0\\.res\\/32e51bed-d726-44f8-ad5a-91b848435a51\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "a2651ec915f74d0560d8bf1f8875e9833c73d15aa5be85544f1c5cf52d556d50"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\/designs\\/dalhousie\\/clientlibs\\/global\\/default\\/css\\/fonts\\/f3d24aab-e54a-40b1-b3cc-5842d107509b\\.woff2\\.lt_cfae5df2b1bf11f625df2393d13fc9a4\\.res\\/f3d24aab-e54a-40b1-b3cc-5842d107509b\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "b3f8e4226a773817455abea00ae0999fd61cf88da9142ddea146b087968be5c8"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\/designs\\/dalhousie\\/clientlibs\\/global\\/default\\/css\\/fonts\\/5f9bbccf-59b9-41cc-a851-21ecc2852640\\.woff2\\.lt_f51133a6849d553f12c7d9198b3c17bc\\.res\\/5f9bbccf-59b9-41cc-a851-21ecc2852640\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "870d4a333fc898297e65cb4678f526ba15538eb947ef6591d43f9a4bff3c7082"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\/designs\\/dalhousie\\/clientlibs\\/global\\/feedback\\/images\\/questions-slate\\.png\\.lt_88a4755c0eccd92cc37b4be5f9900360\\.res\\/questions-slate\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "369581a2989b71e2e72aa43605d5fea723d124acb7bb5dda0476b20a9d84ba56"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\/designs\\/dalhousie\\/clientlibs\\/global\\/default\\/images\\/tran-black-70\\.png\\.lt_7b4c890a4a7670c390658cf3966edfcf\\.res\\/tran-black-70\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "f7d43c1beaf23dbe4d8f62a5e4d473bd1ef196b158c91081cbdfa7cd169651db"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\/designs\\/dalhousie\\/clientlibs\\/global\\/default\\/images\\/bullet-circle\\.gif\\.lt_0d3494197f5d1dbcd7717eb5349c6c7a\\.res\\/bullet-circle\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "6b328c2c5fb1641400638133d804a4997201fabe1135f96efec3612a9c9fdc4f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\/designs\\/dalhousie\\/clientlibs\\/global\\/default\\/images\\/tran-black-50\\.png\\.lt_e68789c450dc21bfab800c2d84805dd9\\.res\\/tran-black-50\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "ceb468a3992043883dc1cf41f3363bd2561029f571a42846f8666c29b322b5c5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/etc\\/designs\\/dalhousie\\/clientlibs\\/global\\/flexslider2\\/css\\/fonts\\/flexslider-icon\\.woff\\.lt_f8b92f66539473eea649c8514eb836a0\\.res\\/flexslider-icon\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.dal.ca",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "333fe8266952f16c8b686f3edd78293da28e6eaef314dca86bc4eeaa23f290e8"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dal.ca",
+                "www.dal.ca"
             ]
         },
         {
@@ -741,15 +2482,15 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/v1\\/imgs\\/129\\/7a2\\/8f70f6b969d8a7a846be23e6c8f17e800e-2021COV-LLS\\.w240\\.jpg",
+            "rule": "fastly\\.net\\/v1\\/imgs\\/7e1\\/142\\/a02f6e97988cca2778e3f860cabbef5cae-2121Cov-4x5-SERIAL-KILLER\\.w240\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "h3.shared.global"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [
                 {
                     "original": "pyxis.nymag.com",
@@ -757,18 +2498,19 @@
                 }
             ],
             "responseHashes": [
-                "91c4060f8f5d8bd1173da603f1bf957120d70160fc519f32d10e36afed77e215"
+                "b9dde7009a6c191cca384fe854dc39e5604bd012ce5bbd9979f3ef090b07ee02"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "nymag.com",
+                "www.thecut.com",
                 "www.vulture.com"
             ]
         },
         {
-            "rule": "fastly\\.net\\/v1\\/imgs\\/1d6\\/120\\/4f9a07c42add55a7c70b299e13487e2e0f-cathy-lede-dries-ysl-dries\\.rsquare\\.w200\\.jpg",
+            "rule": "fastly\\.net\\/v1\\/imgs\\/840\\/834\\/8efe7d4169f92435cf757ee8ddd2f791c5-goc-matias-alvial\\.rsquare\\.w200\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -784,7 +2526,7 @@
                 }
             ],
             "responseHashes": [
-                "2e9dc39261f04533dc656407495997d5171184abed4790bd8d0aa1b02b1c674a"
+                "49559fa28656bbdb5ef2fcc7fa91af65f496bd73248d6db8d3fb1bf6cd4db584"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -958,7 +2700,7 @@
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "nymcid": 0.0012049402550456873
+                "nymcid": 0.0012054244098442994
             },
             "exampleSites": [
                 "nymag.com",
@@ -1072,7 +2814,7 @@
                 }
             ],
             "responseHashes": [
-                "be6bdd920268b88c7c1d53063c57f90d5c437658156b78894c99527e2a6fd169"
+                "a28b18f7748172a3e9509c71db0ac64d777021de37978267807952e33e40d399"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1110,7 +2852,34 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/css\\/browser\\/16\\.10\\.15-bc0629ce5042740cc1333ba0493a99874736fd43\\/magazinesubscriptions\\.min\\.css",
+            "rule": "fastly\\.net\\/common\\/units\\/bclogo\\/styles-2x2-v5\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "d.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "media.complex.com",
+                    "resolved": "d.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "67bba5d1d70aeddf046570de9a81a59d1fac02edf2733ed1ff71b437ca7e6b8e"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "complex.com",
+                "www.complex.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/css\\/browser\\/16\\.10\\.29-7cb636ffc4a8e465a05d73678fb6b8a2a9a044e4\\/magazinesubscriptions\\.min\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1130,7 +2899,7 @@
                 }
             ],
             "responseHashes": [
-                "582fe5edd35d91dee7e03d5229df1dba0c3ccbef0b77dfcb00b5a58b3a7218c6"
+                "4bde774bb574ba174a60bddb489d4a236097f4cb4b6972dd81ef423ef27afc09"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -1141,7 +2910,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/css\\/browser\\/16\\.10\\.15-bc0629ce5042740cc1333ba0493a99874736fd43\\/promotion\\.min\\.css",
+            "rule": "fastly\\.net\\/css\\/browser\\/16\\.10\\.29-7cb636ffc4a8e465a05d73678fb6b8a2a9a044e4\\/promotion\\.min\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1193,7 +2962,7 @@
                 }
             ],
             "responseHashes": [
-                "c09c5516a39a917bbf26f20b62a53b8ea5f109c3a8d822888b33b9f6225ecb45"
+                "698c90648ee830a9ecabf89c64980aa8c984436ec5675613388bd61b67ec7348"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -1209,6 +2978,33 @@
                 "www.techradar.com",
                 "www.tomsguide.com",
                 "www.whathifi.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/css\\/browser\\/cbq\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "g.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "hawk.creativebloq.com",
+                    "resolved": "g.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "8ffda558e94269d2681ef87970b75b030686fbbbbb6a6dbf440f2687dd857b41"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "creativebloq.com",
+                "www.creativebloq.com"
             ]
         },
         {
@@ -1268,7 +3064,7 @@
                 }
             ],
             "responseHashes": [
-                "ea9db197788d8dc4ef9103c4f3fd9576b8b3166fc4168d7533ce9286cb15bcbc"
+                "2ff413ddf8318520eaf3ef46b721dabdbdbd2e25d014ab30937c24bebe0c0ce0"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1285,6 +3081,33 @@
                 "www.tomshardware.com",
                 "www.toptenreviews.com",
                 "www.whathifi.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/css\\/browser\\/cbq\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "g.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "hawk.creativebloq.com",
+                    "resolved": "g.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "8ffda558e94269d2681ef87970b75b030686fbbbbb6a6dbf440f2687dd857b41"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "creativebloq.com",
+                "www.creativebloq.com"
             ]
         },
         {
@@ -1352,7 +3175,7 @@
                 }
             ],
             "responseHashes": [
-                "c818d18f74ce46d152b1d85ab85618a9ebc182472ec9006957005faa91b06c71"
+                "123b3baa351c9cfc74546e4417f728511567c6e182146acc3db895f9e5f9349c"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1374,7 +3197,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/js\\/w\\/es6\\/16\\.10\\.15-bc0629ce5042740cc1333ba0493a99874736fd43\\/setup-model\\.js",
+            "rule": "fastly\\.net\\/js\\/w\\/es6\\/16\\.10\\.29-7cb636ffc4a8e465a05d73678fb6b8a2a9a044e4\\/setup-model\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1430,7 +3253,7 @@
                 }
             ],
             "responseHashes": [
-                "64b6b43742c29f742538f484152a58e03ce29393a39ca09dbdd2353cffcdb302"
+                "8b17be58052e48da3cfa42059b5075706ec3b9a67e515cc86b6d562eb23bf681"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1458,7 +3281,7 @@
             ],
             "apis": {},
             "sites": 12,
-            "prevalence": 0.0012,
+            "prevalence": 0.00121,
             "cnames": [
                 {
                     "original": "hawk.creativebloq.com",
@@ -1506,15 +3329,15 @@
                 }
             ],
             "responseHashes": [
-                "aafe2f904fd26c35501774fac442c1f86a0937b356c20e2630ceb5b37e85b605",
-                "058c754cc26f4e21adc6384ab59c6d0f6bb56882438ebf156b0883aabae94367",
-                "3d1b2e8129bbd867c21e05d286ae0131b0daf887f46ae0b6bf742ec79e205cb0",
-                "ce6118ca53a8341db8abd011d4c57452305583a4a1f27ca2ec432c080c970526",
-                "1da00e5610943cba1dd192dc6a99e66ab0a8ce907e44407a059f41ea68db234d",
-                "e10c35f747fa9ad72ce81324f120515c1b83a7a606eb634ab2c8fb0f5d57d7cb",
-                "9d429c38bfa9a5525a2ab46618d12364a673136905e41d247edef7da66908847",
-                "48dabf92715761a699d51e7ec52b1a6e8b1231e46830203855ded0565656cb72",
-                "5cf31b8b3a7d88613947f6fb5f3b61ad6f20413361ec12a4530d4dcb70242287"
+                "571151c39073cb0b9b54b7febd66944f6647bbcdcde1abc1f1b73d37e19927bd",
+                "9e2a3dc780d44356be90ce2be9e37af1f7945a93f1efa1771541767ed291365e",
+                "61d98238ba54cf768ee42e9cccced0a40325904ab42d9ecd59e8ef42d623c947",
+                "8f065c74a10049e9b3aca1e16af8822e9ac28f68457eb2985d0d73c1f971d799",
+                "8d0b07b086ebea9c67c7b535afdfcbc90147740389edbbaef5d30cb1cc9fd148",
+                "bd54215bc03022b68ab28b204269a6c1a157f60cee8e3f6f0d959eaa116ca6f8",
+                "d02535d4e9add6d06e18cf1591f5c42ed3a7374066593c7e88066a8f7276ef82",
+                "ab9c5b93173aa9f1ad3f52e362d3d1db9c4955dcfe3ab69df6d29e4b078ffb16",
+                "7f0afc1c537ca613dc070b06e782c4204ac850d7caebef6ffc93865be9c11518"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1535,7 +3358,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/js\\/w\\/es6\\/16\\.10\\.15-bc0629ce5042740cc1333ba0493a99874736fd43\\/magazinesubscriptions\\.js",
+            "rule": "fastly\\.net\\/js\\/w\\/es6\\/16\\.10\\.29-7cb636ffc4a8e465a05d73678fb6b8a2a9a044e4\\/magazinesubscriptions\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1555,7 +3378,7 @@
                 }
             ],
             "responseHashes": [
-                "2841b70bb6fb5a7aa6a6f65b7274b33ab5fa1df1f9ff86ccf8f20d6230524469"
+                "e6c0da039b2b9c81b5bbd2d6460b3ed7e960167da468f06091c9271971fa6fc6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1566,7 +3389,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/js\\/w\\/es6\\/16\\.10\\.15-bc0629ce5042740cc1333ba0493a99874736fd43\\/promotion\\.js",
+            "rule": "fastly\\.net\\/js\\/w\\/es6\\/16\\.10\\.29-7cb636ffc4a8e465a05d73678fb6b8a2a9a044e4\\/promotion\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1618,7 +3441,7 @@
                 }
             ],
             "responseHashes": [
-                "fc8badd4c3f7d41dba3e6483f33f3cc91ba0a65e6a1b9c4a4871312a8cf4f312"
+                "76c0fbd7050b05a8eaf66cc0be642e53626fea187ac3a81367a5529119ebc912"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1637,7 +3460,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/css\\/browser\\/16\\.10\\.15-bc0629ce5042740cc1333ba0493a99874736fd43\\/promotion-fallback\\.min\\.css",
+            "rule": "fastly\\.net\\/css\\/browser\\/16\\.10\\.29-7cb636ffc4a8e465a05d73678fb6b8a2a9a044e4\\/promotion-fallback\\.min\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1689,7 +3512,7 @@
                 }
             ],
             "responseHashes": [
-                "15e1fa5d9fb281e12deb74e697e3fe8054cbcb2c3f6c176667f634d41739c2a4"
+                "183b8a458fc292ad568d959da24d1b38be1ea88e26817a59a125ccf6603f3268"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -1708,7 +3531,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/js\\/w\\/es6\\/16\\.10\\.15-bc0629ce5042740cc1333ba0493a99874736fd43\\/promotion-fallback\\.js",
+            "rule": "fastly\\.net\\/js\\/w\\/es6\\/16\\.10\\.29-7cb636ffc4a8e465a05d73678fb6b8a2a9a044e4\\/promotion-fallback\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1760,7 +3583,7 @@
                 }
             ],
             "responseHashes": [
-                "3e97a033f4d3aa237bb6e9901e5411d0e98a34ac3d2f697f813ecf39d1837b3f"
+                "1e2c737cd11db7d78d2d71ea5d1a3ecfe57d29c9fe7bc3f7a983ebda0dc0c3e8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1779,7 +3602,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/providers\\/zacks\\/hero-image-zacks-388955\\.jpeg",
+            "rule": "fastly\\.net\\/content\\/3x2\\/2000\\/1634357830-Franquicia\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1795,7 +3618,7 @@
                 }
             ],
             "responseHashes": [
-                "98b045e7d6beec9303780f065ab9ee524806c35fa526ed7f287ff4114a191b10"
+                "60268d2822f3c5583d037a5a2367c818ec3a5cc3fbf031adf48aa9803dbbc8da"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1806,7 +3629,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/providers\\/zacks\\/hero-image-zacks-388956\\.jpeg",
+            "rule": "fastly\\.net\\/content\\/3x2\\/2000\\/1634353069-Depositphotos-199444784-L\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1822,7 +3645,7 @@
                 }
             ],
             "responseHashes": [
-                "99160090a70261d47361a1bf7a81faeb2959ce338874ea09e546ab6447510135"
+                "72df2ebf0f21e44d1d4c4a830ec4656e716600e3e126cd7206eb59bf4d68dc8a"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1833,7 +3656,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/providers\\/zacks\\/hero-image-zacks-388957\\.jpeg",
+            "rule": "fastly\\.net\\/providers\\/zacks\\/hero-image-zacks-391627\\.jpeg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1849,7 +3672,7 @@
                 }
             ],
             "responseHashes": [
-                "2ea0de2a56cca2c72e9f87a85503615f6f4193ea310de04b09ea6d2007805372"
+                "10a459bbccce7c150b98eac02cacbfe7276f2bc4b5d5910689df5daa93cffe8f"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1860,7 +3683,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/content\\/3x4\\/600\\/1628542393-ent21-sept-cover\\.jpg",
+            "rule": "fastly\\.net\\/content\\/3x4\\/600\\/1632423642-ent21-octnov-cover\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1876,7 +3699,7 @@
                 }
             ],
             "responseHashes": [
-                "a5499c02dddf3c9a6b81eb6dfca65db6ef253047eb0e465353243cecd698737a"
+                "6b7cde1647fd861c72bfdddd1f5a64621827f8b23a9e9bd3d2df2abe52b31775"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1887,7 +3710,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/s3-build\\/205563-rc2021-09-29_16\\.04-f747f99\\/django\\/js\\/src\\/eb\\/evidon_consent\\.js",
+            "rule": "fastly\\.net\\/s3-build\\/225779-rc2021-10-14_16\\.04-7ff3845\\/django\\/js\\/src\\/eb\\/evidon_consent\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1914,7 +3737,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/s3-build\\/fe\\/dist\\/eds-css\\/1\\.5\\.0\\/styles\\/eds\\.css",
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/dist\\/eds-css\\/1\\.8\\.1\\/styles\\/eds\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1930,7 +3753,7 @@
                 }
             ],
             "responseHashes": [
-                "e0c24e50911f2ebcbaf8c87bc392571c9ed4777e26ea03b0908f72c37b3b8900"
+                "29591b9259ba212fc2f817c2977be0260cea4c617dde43b2ae9ea888900fd9d1"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -1968,7 +3791,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/35\\.94fc8563838ff31596d3\\.css",
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/36\\.94fc8563838ff31596d3\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1984,7 +3807,7 @@
                 }
             ],
             "responseHashes": [
-                "e5c22e34b3051a862529149620c890370f474253433afa5119b47cbedf4a0799"
+                "f8c8ec2a27705c0e1cb7c31ebf6d70b3ce21eecfa6c47455cf79943ac8fe6a54"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -1995,7 +3818,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/25\\.df16d5e5beb17ddfbf74\\.css",
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/26\\.df16d5e5beb17ddfbf74\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2011,7 +3834,7 @@
                 }
             ],
             "responseHashes": [
-                "cf69adab90cdecea1eb15276cd934eb39f1acc69e19f785da598666e9eb074a0"
+                "2dff2a28d0550f350e4da0562ada543811e380142e854fe2f139c29082eae514"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -2022,7 +3845,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/4\\.3f4b3b69852d92faaeed\\.css",
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/6\\.3f4b3b69852d92faaeed\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2038,7 +3861,7 @@
                 }
             ],
             "responseHashes": [
-                "15f212e0cf6c924d412cf6856b24e011d0541edbabc0ef56b554485cdd870272"
+                "8dc799debebcabc46ca2cad656f36a693b1c0a26efd25a4f7b074e87fce42b6c"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -2049,7 +3872,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/10\\.ad74b67a46401ded715f\\.css",
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/11\\.ad74b67a46401ded715f\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2065,7 +3888,7 @@
                 }
             ],
             "responseHashes": [
-                "77a499b1e1a1febeeb695ca3f73575bc5ff6f77d5ee7d8fa31bc6de77d32a6f1"
+                "d6689ad4dc1fff4cd93443fb221011d0a45347fee919c462cda54b13f4b48d64"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -2130,7 +3953,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/vendor\\.117c5ce5843ff991186c\\.async\\.web\\.js",
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/vendor\\.7cb64fe54e2beb9b8639\\.async\\.web\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -2146,7 +3969,7 @@
                 }
             ],
             "responseHashes": [
-                "e50493b8808b6cea6bece660c51831891c5dacaeb920099606eb2150b2161ace"
+                "bae3ce68ee13c8aacf995b3d1b43c24c5cfb920696834f4557f03d400bdcbcbb"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -2157,7 +3980,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/discover\\.c655e84c48a0acdf7c29\\.web\\.js",
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/discover\\.b1e629a17b2c3ef90b7d\\.web\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2173,7 +3996,7 @@
                 }
             ],
             "responseHashes": [
-                "8891b569c012311e6483c91547977527902327698eec6325c87f5432c7d18e2a"
+                "d4ee090fcdf097956c6e13e356751e0f6eb335b04d4f2b89b6aaa7c40b82e4f1"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -2184,7 +4007,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/vendors~browse~home~search\\.fa7a0641ad14c5f2181c\\.async\\.web\\.js",
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/vendors~browse~home~personalized~search\\.ce25fb9594f9608e1171\\.async\\.web\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2200,7 +4023,7 @@
                 }
             ],
             "responseHashes": [
-                "4a5edaf6dc02e8fe0030ea4506fb5d9b1d981cebbf2a3b675d2e496b3f2126d0"
+                "997e8d9407605b6537c8b7ef766e6b6523fa21cb9963d6031532ce13ad6b31b9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -2211,7 +4034,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/7\\.033544a2a6df7c1df912\\.async\\.web\\.js",
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/vendors~browse~home~search\\.e7583fe60367bf9d6052\\.async\\.web\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2227,7 +4050,7 @@
                 }
             ],
             "responseHashes": [
-                "b03b67cf242686e6f27d8a6cd6cfc58c49291fa88e4bebcc71a4ee279c60676c"
+                "ab83b5eb30eb6a6ca6e0928fc7de34329f0ec3a667629556423017a96fd56d79"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -2238,7 +4061,34 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/home\\.025d5a50fe3bdb6bb719\\.async\\.web\\.js",
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/4\\.8b6349c20b8fb096ea53\\.async\\.web\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "5c0a0baa45a75274f9d2d0174541755ed1af46da4bb129fbc7956ca66e133d44"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.ca",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/home\\.01fd590e54a692983455\\.async\\.web\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -2254,7 +4104,7 @@
                 }
             ],
             "responseHashes": [
-                "1becbb8f5bb3ad42564f1a5c3d8de9639d2e5dab6c4957262b0db922f9201712"
+                "a24406fe0643b9cbdbe7816ebce6203985274659b1876234318de9f0a1ce004e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -2265,7 +4115,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/USBannerContainer\\.567ffba61d937290825a\\.async\\.web\\.js",
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/USBannerContainer\\.60b4d12b9b4ca80dffa9\\.async\\.web\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2281,7 +4131,7 @@
                 }
             ],
             "responseHashes": [
-                "4b5265299ab7da327d148ce0e65a293be7153de1a677b311e292f1b303727289"
+                "3bc4151c347220b20aea56fc8366a1629a557d4365d134a8add8b9751abef053"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -2292,7 +4142,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/components-Banners\\.b15a6984bd8a8350a246\\.async\\.web\\.js",
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/components-Banners\\.7e544b43615f751bad43\\.async\\.web\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2308,7 +4158,7 @@
                 }
             ],
             "responseHashes": [
-                "6b4b72c9421c8b4c833a2910a039731e3128cebef65423b5348194e72f3dc31f"
+                "3e8927b87806120173115f89d831af042d47b2833d64b9c6fa0d41e075cbb4df"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -2319,7 +4169,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/1\\.bda4ad365b6f4ab263e2\\.async\\.web\\.js",
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/0\\.b9b889657c9cf16641c6\\.async\\.web\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2335,7 +4185,7 @@
                 }
             ],
             "responseHashes": [
-                "743461d8650bb0a963b2701811fbe1cbf81d065624db43367568d7c930c8e37e"
+                "b172f16964589d7fb9fbd0bdc30c71d4b371d60810791f4085b7c9a103f9dd63"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -2346,7 +4196,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/0\\.eec7da610f49baaad426\\.async\\.web\\.js",
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/3\\.43440fea86096f01d209\\.async\\.web\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2362,7 +4212,7 @@
                 }
             ],
             "responseHashes": [
-                "663b81ae594e048c8a54b37d362a9e41d42f8eb870bd79261499a3534590a9ea"
+                "c4e78d5b3bafb3ccde1101d6ff9d8c4742b80c24104cd2fb87714dd77979e1c2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -2373,7 +4223,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/LoadingCards\\.02c999be69ec554a08c9\\.async\\.web\\.js",
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/LoadingCards\\.7065ae89be1ec3d961ab\\.async\\.web\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2389,7 +4239,7 @@
                 }
             ],
             "responseHashes": [
-                "5bf269a618b2162972898e081691ffdb6dd0719d3ef0fecbc1c5991c6f9751fa"
+                "26b253817b3fc676a5fa3b3fd86caf4bd28343c34d19b2925d2f3aaa8fdde7c1"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -2400,7 +4250,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/BrowseContainer\\.8227af209cf90a3e8a23\\.async\\.web\\.js",
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/BrowseContainer\\.37302245986bc4780324\\.async\\.web\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2416,7 +4266,7 @@
                 }
             ],
             "responseHashes": [
-                "3bdb4617b0df546c396c8d4bfaf8f05e969bd6de4ebb723b5e266223e9ceeca7"
+                "2be5629f725098c8e3a9ed70130edb04a2e6cddd81c389e89c3d2828c91c9650"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -2427,195 +4277,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/41\\.1accaf591ea03df43579\\.async\\.web\\.js",
-            "cookies": 0.0001,
-            "fingerprinting": 1,
-            "subdomains": [
-                "f4.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "cdn.evbstatic.com",
-                    "resolved": "f4.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "5c32047e64e8fede9f8089e35f9262646fa4eef1d588c494b2e43894228c2405"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "cookies.js": {
-                    "ttl": -1,
-                    "length": 9,
-                    "prevalence": 0.00010041168792047395,
-                    "uniqueness": 1
-                },
-                "ebGAClientId": {
-                    "ttl": 31536000,
-                    "length": 21,
-                    "prevalence": 0.00010041168792047395,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "eventbrite.ca",
-                "www.eventbrite.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/46\\.0cf033b7ffa3749090a0\\.async\\.web\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f4.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "cdn.evbstatic.com",
-                    "resolved": "f4.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "4be291e4583f28851c3eb2b3f124706182d69fd9f1610b057a28121964371539"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "eventbrite.ca",
-                "www.eventbrite.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/5\\.270ecb41732d82baef66\\.async\\.web\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f4.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "cdn.evbstatic.com",
-                    "resolved": "f4.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "87f3f93ac65b291afbb11eebca96e5992fccfa49f47b49bdf23be9e2bc8f34c2"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "eventbrite.ca",
-                "www.eventbrite.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/43\\.62875031dec8fe5a7897\\.async\\.web\\.js",
-            "cookies": 0.0001,
-            "fingerprinting": 1,
-            "subdomains": [
-                "f4.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "cdn.evbstatic.com",
-                    "resolved": "f4.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "5f7d1c5557fabf82a685b026b7620f5046a523c7387293032a4cd6521d47948a"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "dd_cookie_test_32e0253e-e128-4b1d-aeb4-ac830198bfe9": {
-                    "ttl": 2,
-                    "length": 4,
-                    "prevalence": 0.00010041168792047395,
-                    "uniqueness": 1
-                },
-                "_dd_s": {
-                    "ttl": 901,
-                    "length": 3,
-                    "prevalence": 0.00010041168792047395,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "eventbrite.ca",
-                "www.eventbrite.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/6\\.4b2e82f86a9e5176fe64\\.async\\.web\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f4.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "cdn.evbstatic.com",
-                    "resolved": "f4.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "4238a31af566938f6875317797df45f7113f6d7913add8d359215604a96fe50a"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "eventbrite.ca",
-                "www.eventbrite.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/42\\.d0c64b8eff0940320bbe\\.async\\.web\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f4.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "cdn.evbstatic.com",
-                    "resolved": "f4.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "4a6ce63a56d20f24b988a541e3d21f327ab2397f3f2217be59c64c132130ee5f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "eventbrite.ca",
-                "www.eventbrite.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/49\\.c336f549b62fac95fca9\\.async\\.web\\.js",
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/43\\.dec7a54c2f74a67bb8c7\\.async\\.web\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -2631,7 +4293,169 @@
                 }
             ],
             "responseHashes": [
-                "920c9c35dd4c1c33045ed60ac5b7e612f1ef4569fd64cb19a396bab7e85bd434"
+                "4d22cf09a2f84e17077ae4590cfcebf303e1b9bd39f8d85727155d9119f54a99"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.ca",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/48\\.9725bbef024207060ecf\\.async\\.web\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "1028f32f47e2a75f1b12c61bcad069a93a58880fdf312e81afa23f21a7ed55ac"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.ca",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/7\\.ed6e560ff28bd8b7b888\\.async\\.web\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "3231d9f51d7a3d78d3406cebf3d4d148862d667b7386942f75322bb8967fc52c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.ca",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/45\\.925b5bddbff3db70470c\\.async\\.web\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "6b5a357aca4ef63c3b890d8b92dbe8af5be47b912c5ede17f635d2de7136644c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.ca",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/8\\.51e789beae7d555ccd2d\\.async\\.web\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "2ef8a4d6028c01c3a25d83076794ca2a9d3f3ed03d5b32f4e11b1432e3f0135c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.ca",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/44\\.678633ca22711d0bdc75\\.async\\.web\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "4ebdbff5c3852c46a9edc766fa2bd6ddc542af2f43c8763a1b54022bb2cae0f0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventbrite.ca",
+                "www.eventbrite.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/s3-build\\/fe\\/build\\/51\\.2ac6d87635eb0e0999bd\\.async\\.web\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "f4.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.evbstatic.com",
+                    "resolved": "f4.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "de2f1386608f6e9a8b4a066ef4cc7589326a475db847b7f421b419b31220ab3f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -2677,8 +4501,8 @@
                 "e.sni.global"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "segment-api.goodrx.com",
@@ -2690,7 +4514,6 @@
                 }
             ],
             "responseHashes": [
-                "f1ea07a1e51a389c8de07120ae5c2e432e9dd8f4fbd6f92489f185b0523a3fd4",
                 "12f71cb993958eefc4bdb41d7dbbda490779a9c7aba448f7be52bb63912e0254"
             ],
             "type": "XHR",
@@ -2698,7 +4521,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "goodrx.com",
-                "www.goodrx.com",
                 "www.policygenius.com"
             ]
         },
@@ -2732,6 +4554,33 @@
             "exampleSites": [
                 "goodrx.com",
                 "www.policygenius.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/graphql\\/query",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dualstack.i.shared.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.hackster.io",
+                    "resolved": "dualstack.i.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "932c4c14dcde1fe24ac7b96ff6cfb8da469d55a2ff043c5edf590972e948c8ba"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hackster.io",
+                "www.hackster.io"
             ]
         },
         {
@@ -2839,7 +4688,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/css\\/browser\\/16\\.10\\.15-bc0629ce5042740cc1333ba0493a99874736fd43\\/dotw\\.min\\.css",
+            "rule": "fastly\\.net\\/css\\/browser\\/16\\.10\\.29-7cb636ffc4a8e465a05d73678fb6b8a2a9a044e4\\/dotw\\.min\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2859,7 +4708,7 @@
                 }
             ],
             "responseHashes": [
-                "8a090a0074508de10ecada5346bac1efc736f0140d821c6c167b4570af2bf15f"
+                "a2e3cf6efa70e44dd4b10d7d3d2f9897ada3865e6dc3385511c4c73ca3ae1c90"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -2870,7 +4719,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/js\\/w\\/es6\\/16\\.10\\.15-bc0629ce5042740cc1333ba0493a99874736fd43\\/dotw\\.js",
+            "rule": "fastly\\.net\\/js\\/w\\/es6\\/16\\.10\\.29-7cb636ffc4a8e465a05d73678fb6b8a2a9a044e4\\/dotw\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2890,7 +4739,7 @@
                 }
             ],
             "responseHashes": [
-                "2e52a0c6d0e11648a189e578b5c2998dacd79d5c4b111bbb6a07a02b45afb16e"
+                "26e55a26670a818e2ca2c01a151c314527af0dcb50a6a84883af48ec89a6976b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -2928,33 +4777,6 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/v1\\/log",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "j.sni.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "sid.nordstrom.com",
-                    "resolved": "j.sni.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "3c88e3c57f69e3a02a1c89ddad501cd370fae7012bf522ee4632d4852e7f5c4b"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nordstromrack.com",
-                "www.nordstromrack.com"
-            ]
-        },
-        {
             "rule": "fastly\\.net\\/js\\/w\\/es6\\/progressive\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -2975,7 +4797,7 @@
                 }
             ],
             "responseHashes": [
-                "dc35e27233ae8a0efae30b26b460540ba6c08ced5c13f395dfee037ef2e4267e"
+                "a2a12752eb60511a850b2d9857010c9d1654b6ef6637ea39f69454d0dbea99e2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -3011,7 +4833,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/2021\\/10\\/01\\/11\\/newFile\\.jpg",
+            "rule": "fastly\\.net\\/2021\\/10\\/15\\/19\\/POLICE20MP202014395908\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3027,7 +4849,7 @@
                 }
             ],
             "responseHashes": [
-                "62f27084d811a5c7c5cebfbb299670182382804fbbf3b37b135c98801f0ebb32"
+                "72d3636efed1c200552f49ca3099fabb2552f6d9290cc734d8b90106d82460da"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -3035,6 +4857,114 @@
             "exampleSites": [
                 "standard.co.uk",
                 "www.standard.co.uk"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/2021\\/10\\/14\\/12\\/urnpublicidap-1\\.org2fa8b522af57492e86cc0d3bc257fe48",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "static.standard.co.uk",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "b162a5e0356c9688da553b1231c52d233db8e9507534c42fb81427d05a1512d7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "standard.co.uk",
+                "www.standard.co.uk"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/2021\\/10\\/15\\/15\\/POLICE20MP20Incidents2015042661\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "static.standard.co.uk",
+                    "resolved": "k.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "7f2e9f63f25a425b23a49bd5627e545a1404eb77631d75724f537494c083576c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "standard.co.uk",
+                "www.standard.co.uk"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/css\\/browser\\/trd\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "g.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "hawk.techradar.com",
+                    "resolved": "g.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "09fca11c2153176c1139dd8c9d5f05b6a507026b21d5299597a786c7c71c620b"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "techradar.com",
+                "www.techradar.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/css\\/browser\\/trd\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "g.sni.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "hawk.techradar.com",
+                    "resolved": "g.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "09fca11c2153176c1139dd8c9d5f05b6a507026b21d5299597a786c7c71c620b"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "techradar.com",
+                "www.techradar.com"
             ]
         },
         {
@@ -3059,39 +4989,11 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_sp_duid": 0.0002008233758409479,
-                "gtm_darwin": 0.00010041168792047395
+                "_sp_duid": 0.00020090406830738323
             },
             "exampleSites": [
                 "theglobeandmail.com",
                 "www.theglobeandmail.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/tags\\/2\\.71\\.6\\/wrapper\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "p.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "scripts.mediavine.com",
-                    "resolved": "p.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "14943080436a12246956a563cdb59d637f7d7a191cb6f42e6d1858f189a7182c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thehollywoodgossip.com",
-                "www.tvfanatic.com"
             ]
         },
         {
@@ -3111,7 +5013,7 @@
                 }
             ],
             "responseHashes": [
-                "6e70e65c5805dfc6aac393b89516f60d9755a41af3e9b3d559c3c799afbec504"
+                "c445a947bdf3a191f6dd8ac5bbab7d6aff626e96e61b31754adc2ebb4cc2e822"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -3126,7 +5028,7 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "d.global-ssl"
+                "d.shared.global"
             ],
             "apis": {},
             "sites": 2,
@@ -3134,11 +5036,11 @@
             "cnames": [
                 {
                     "original": "marketdata.thestreet.com",
-                    "resolved": "d.global-ssl.fastly.net"
+                    "resolved": "d.shared.global.fastly.net"
                 }
             ],
             "responseHashes": [
-                "23a057b05de7bc19b821663a5bdeb3c48115926484ed18c65c0db2c45d94b1f7"
+                "3cd0574b9870413ced73cd530820427aa607e86d2ae40a53c073d96de06cf867"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -3165,47 +5067,38 @@
                 }
             ],
             "responseHashes": [
-                "a6ae30351164f437a580b8a3554fe66e5949aae007dce4be351fce5fc35e9c77"
+                "86f7b0388e6a56a4f6d97e079439d1bd352c2bf19584c5064024fd6bd267d8b9"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_px3": {
-                    "ttl": 1209603,
+                    "ttl": 1209601,
                     "length": 151,
-                    "prevalence": 0.00010041168792047395,
+                    "prevalence": 0.00010045203415369161,
+                    "uniqueness": 1
+                },
+                "_pxvid": {
+                    "ttl": 31536001,
+                    "length": 36,
+                    "prevalence": 0.00010045203415369161,
+                    "uniqueness": 1
+                },
+                "_pxff_rf": {
+                    "ttl": 61,
+                    "length": 1,
+                    "prevalence": 0.00010045203415369161,
+                    "uniqueness": 1
+                },
+                "_pxff_fp": {
+                    "ttl": 61,
+                    "length": 1,
+                    "prevalence": 0.00010045203415369161,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "wayfair.ca",
-                "www.wayfair.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/px\\/xhr\\/b\\/c",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "d2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "prx.wayfair.com",
-                    "resolved": "d2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "68bd8ff5cbfe7b06973a51f54c9cb0fb1034be57b3a8e02437efeef1257381f7"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wayfair.ca",
+                "wayfair.com",
                 "www.wayfair.ca"
             ]
         },
@@ -3226,7 +5119,7 @@
                 }
             ],
             "responseHashes": [
-                "2b72638462b87d52a877e82c3927fdf45eeda1a1c1876cc1ec9d0ff8c61bb7bd"
+                "5a1cfb9991526bea44e38e43fd240f3ef0753b24d6bb8a76eae11e6e0129d9e2"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -3237,34 +5130,34 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/assets\\/public\\/homepage-main-pkg\\.yji-1b44a9bfdb60604e6450\\.css",
+            "rule": "fastly\\.net\\/px\\/xhr\\/b\\/c",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "f2.shared.global"
+                "d2.shared.global"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
+                    "original": "prx.wayfair.com",
+                    "resolved": "d2.shared.global.fastly.net"
                 }
             ],
             "responseHashes": [
-                "5a5323fc80f04c12a3c10af49850a00ba9df688c3e513ddc29e499168eccc1bd"
+                "7e4739f81a820398df21b728efa30c4bf7f54ab6ed3e5838215cea1e5a959108"
             ],
-            "type": "Stylesheet",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
+                "wayfair.ca",
+                "www.wayfair.ca"
             ]
         },
         {
-            "rule": "fastly\\.net\\/assets\\/public\\/stars\\.yji-9bec2045845c24d3bff3ddb582884eda\\.png",
+            "rule": "fastly\\.net\\/assets\\/public\\/business_large\\.yji-ef1e928917fadd4ea12d618b04460959\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3280,7 +5173,7 @@
                 }
             ],
             "responseHashes": [
-                "b7a09dd92648bfd3a12e9d42a88407345587668933084a674c91296429c77cec"
+                "3f29f0d3ee74e95c7f3c65027e0e8448835e6f771dc7c90fc49ff76d792b7e6b"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -3291,7 +5184,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/assets\\/public\\/construction_darwin\\.yji-10ea4aedcdab3ee2beeea9dc6f7185d7\\.png",
+            "rule": "fastly\\.net\\/bphoto\\/DArGJawzkxPYdf2UpZBAUw\\/l\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3307,7 +5200,7 @@
                 }
             ],
             "responseHashes": [
-                "1d3de5d1b597ec34b7f7b4aa32de1b563aa429b1e3ddd18b8fca1b729574ec27"
+                "431b97b4e4cf95e379d55be71afb945c56b0796d312a413d2215a72b396fc248"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -3318,7 +5211,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/assets\\/public\\/72x72_restaurants@2x\\.yji-7cef764a214416ca9991e53ceb108b5c\\.png",
+            "rule": "fastly\\.net\\/bphoto\\/Fs8mTZpNsyHh8U4uVZinfA\\/l\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3334,7 +5227,7 @@
                 }
             ],
             "responseHashes": [
-                "2b178331e9a00854264d151b7dc08ca7da7b3c97496cc4877b1176cbf87ea42b"
+                "19a4c01175eccdf604866c7ac168848e4a351304fa24187b25e83c3836c990db"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -3345,7 +5238,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/assets\\/public\\/72x72_shopping@2x\\.yji-559f23226d9f9f651812ddc5d6e3d1b2\\.png",
+            "rule": "fastly\\.net\\/bphoto\\/BRmuZPD8g67tP6eet6Pp1Q\\/l\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3361,7 +5254,7 @@
                 }
             ],
             "responseHashes": [
-                "82c8ab42ac3cc1f7342f96004e8ace1d467633f1723ed14394c7a5308370e839"
+                "dede30638e485f5cfca2c107ab9dbda04ad7e588b2e5744e87d09d2c1ab7e05a"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -3372,7 +5265,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/assets\\/public\\/72x72_nightlife@2x\\.yji-925cd32ac4c934d465c664f140c5b629\\.png",
+            "rule": "fastly\\.net\\/bphoto\\/ANKL5GsRj7edATGzMx7e5A\\/l\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3388,7 +5281,7 @@
                 }
             ],
             "responseHashes": [
-                "5a4764cf0050e66d6a76bf198b1fa756f17269c179c3bab6acfe01c80d1c76fe"
+                "71e49605c10211136fe14a6e1b66f2bcb1bf5aa3e067d460d7e43e6bb96e0aa5"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -3399,7 +5292,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/assets\\/public\\/72x72_active_life@2x\\.yji-2df9fcd6a68eb739e68a026778dd7a3f\\.png",
+            "rule": "fastly\\.net\\/photo\\/PFOqhYHZVXyQe2qoFXN2DA\\/30s\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3415,7 +5308,7 @@
                 }
             ],
             "responseHashes": [
-                "4088bb9af95071fc37b479c3b013d1e0fbf3a6882b836a3e1872231a58520aee"
+                "857e8e7e49981fdb1bd8609ef3ca2023b789b12b8094e81d7ec400467a9116cd"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -3426,7 +5319,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/assets\\/public\\/72x72_beauty@2x\\.yji-3cfb4e602ac139443228f090ec71b84f\\.png",
+            "rule": "fastly\\.net\\/photo\\/ycegKvzDbX3XDrFmDtQ-Ew\\/30s\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3442,7 +5335,7 @@
                 }
             ],
             "responseHashes": [
-                "75a5966fc0ee99ae2beb559868912b581f1e64c5ece70820f62f13fc65fec2fd"
+                "bf63d9db1085c8d33e44d16a588c7927c0bd9c4fb4792f26ca64187f3156f9c6"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -3453,7 +5346,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/assets\\/public\\/72x72_automotive@2x\\.yji-c73bd70791375ec60256243055745f63\\.png",
+            "rule": "fastly\\.net\\/photo\\/S2zda9T6LPSPGwK_OF9hIQ\\/30s\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3469,7 +5362,7 @@
                 }
             ],
             "responseHashes": [
-                "a24cbe3c8c23f6c2c126368d7e34a63f5c40671e8e6fc11dd9639d00ae828108"
+                "e7001becba2b86b27ce34f85f52264082454f8a3f423fbc85050812df6ebf730"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -3480,7 +5373,7 @@
             ]
         },
         {
-            "rule": "fastly\\.net\\/assets\\/public\\/72x72_home_services@2x\\.yji-20723ad0e5ee302de563935be68c6638\\.png",
+            "rule": "fastly\\.net\\/photo\\/Q05vUxV6jKaAZUTFPGa2kQ\\/30s\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3496,1060 +5389,7 @@
                 }
             ],
             "responseHashes": [
-                "5ae4b9e1e64549a36894f0583b1cc6cdb2326067d505cec2ec3b45ad86f0650b"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/assets\\/public\\/72x72_more_categories@2x\\.yji-e7be9a50bf8cf4a2eea9f7d7e2b5f194\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "81e00bcdbedc65ebfbed17fa32567c292ca48c138f769997a5df679907fef0c9"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/assets\\/public\\/pitch_ios\\.yji-960cce5c1917bdabc568aa735f2d866f\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "df1e1a271d7b0fcce42353042899b912a94e07d8b7885758834fe994433565ad"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/assets\\/public\\/pitch_android\\.yji-a91a4a087787b1aa9aa729e3de5743d7\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "44ec8438b4bde13d1cb3c4db93e680c015006ce21f90d318ef551b2a3b2517d8"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/assets\\/srv0\\/svg_icons\\/e40f03d90446\\/assets\\/svg_sprite\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "426df0e5283f889b8852e9053182fa4d96a3666e9d254c79ed0ba01a3f31446e"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/assets\\/public\\/yelp_logo_www_home\\.yji-7d24f1680fdb98ca54a82c26cdbdc7bd\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "f73acca932bc97b38fef5b09b41082827ea61284e645b34ce544563243655efe"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/bphoto\\/ND36EUGBEdypHWquu_2Ezw\\/120s\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "c6271cc2e0f0171d375e6412a30fdc921016fe9044afcdebf51552489b82040d"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/bphoto\\/g_AWDOdMhuj_jNsHnhlJuA\\/120s\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "1c32c8fa3da80571d2393a9a5a5a5921e02f75ea9f2d3f1f48eec5f21860380b"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/bphoto\\/ZX1U5aOiP6L69DKwYz5vVA\\/120s\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "358d7203067720dd3fc4b108ec311db5b7ae7ddeb1ad9eaada77b44c5861964a"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/bphoto\\/4HSLCZVBCTcdGgRT426XGw\\/120s\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "ccb32dfba7a5df0f07bd473cc577db30e41f5bdcffcc6e3c7bef64719594fcab"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/bphoto\\/GepMIRcmnjqp6Bb6k3dzvg\\/120s\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "57bf20f2ed6807cddaeee371d0a38631e4bc36e7481aa121e42e343f69596d58"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/bphoto\\/PimL26GcK9s81xp-J4FEhw\\/120s\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "7825a34c7e91da6fc2a795c0c2a64c9d06f14f25a9d60eb16ba42fc92b7ae5af"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/assets\\/public\\/OpenSans-Bold\\.yji-49e6b3bb7a2df2996d09b9cdd89cf166\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "ca46e0a587fd241dd88d6b9f5469b72f910c49abee88db088218161e7efa0133"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/assets\\/public\\/OpenSans-Regular\\.yji-1d0e82fb8ca5092d63b501cb78a3fcc5\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "e817d4d2ef9896e40cc201ca1abef460f2500411ac1a042f0ed69f9e5506447b"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/assets\\/srv0\\/cdn_assets\\/3576a6e73c9d\\/assets\\/vendor\\/jquery\\/1\\.8\\.3\\/jquery\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "61c6caebd23921741fb5ffe6603f16634fca9840c2bf56ac8201e9264d6daccf"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/assets\\/srv0\\/cdn_assets\\/45b9836beb16\\/assets\\/vendor\\/babel-polyfill\\/6\\.26\\.0\\/polyfill\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "59173f786dd1f3802f7ab26fd339aac4099dc10c6cb54a6a92213e6af277592a"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/assets\\/srv0\\/cdn_assets\\/c3c8400137ef\\/assets\\/vendor\\/react\\/16\\.3\\.0\\/umd\\/react\\.production\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "41453f0f5c2c744e2aa4aa8417a043c48ed236bf900910e9ba9c155d831c142e"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/assets\\/srv0\\/cdn_assets\\/286a7c5cc69d\\/assets\\/vendor\\/react-dom\\/16\\.3\\.0\\/umd\\/react-dom\\.production\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "a15dd3609e69da9d2a5c0dae4f731ea6eec529ad191f4a4b5b6840e5d9beed5e"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/assets\\/public\\/module_homepage_main\\.yji-8b1086087f8ff5fa9b28\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "1437bb84fefd0bbca94c9118fe4b328649bf87e8c5319cf218bc9aa34eb3a8a4"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/assets\\/public\\/burst-loader-small\\.yji-434a0c97b379a59074a465055fbbc527\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "8e7588d7f984715e8a15bdca9bb171f47632a1c02e6d06d639cb1941a7257d04"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/bphoto\\/dpjYNMxS8YMyeY_pnAEJQA\\/l\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "359220cc2f128572d17e5ba30703cb3dbab5aa1c87e9820d0142f8e7a5fbc604"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/bphoto\\/5hyiKYv5TQrUhcuIHqSLYQ\\/300s\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "af954cd9359aef035cf1b9f31eb92ae01734a951428fed7f488af61e3e4f5ca7"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/bphoto\\/NW7XTG2Ai-UeNYqYNAUQTQ\\/300s\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "e76db4d855602862ecc194526c396a210f6a46984618a1497c6370996f44d592"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/bphoto\\/tD4TS1gZJt-F9eKML5vnRA\\/168s\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "f3677a006adbf44e294c55cbabe32218de9f4bb3fcf7128ad3dc498ff341de06"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/bphoto\\/ft-uevX2_41I4oJtxyZptw\\/168s\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "7ffc82c67fe715d3ca9263be60f7788c44d857aa9ddfb9ba6b58a5ebd911422e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/bphoto\\/OY9v_rrhIRRPt6dkeadvDg\\/l\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "91ebb8f387b90586577c7bd9fbae374e4833b22843b81cb870856a27e41b69cf"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/bphoto\\/GlWKL2kvTPHQkJs4ogThCA\\/300s\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "e2a178bbbfa27d8ef82eecb9c322c2c052b3ce220245fb4c66b33b077d3f6e93"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/bphoto\\/4GbDDec9e_V6Qy2hetBkag\\/300s\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "883a14d2b8d3436e2fbafcd5356bd227490052f3a65694fef710cf659b3e890a"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/bphoto\\/BPRJursSF-1zCB0124gb-A\\/168s\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "f3464b2b54c7da23f8351c1726bbfb6cb9af1e49a2af8417e32b8fd9a3182a0e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/bphoto\\/K98t4Wi_lyK1YXj-QhAq5A\\/168s\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "48a7c80c91906aa1c4e25df6fe9b170e9a56826be4e739092e54f85f6f24b6bb"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/bphoto\\/zu76UIhai42qRHfDw-KUxg\\/300s\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "6ea461aa74df5d92998c72e2704a4e89ba1b8241d157b28f2fa46d83dce324fa"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/bphoto\\/X2lRAoSoWX3-hViELDpNBA\\/168s\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "5dda5013664bf398a004a1f294f2f00607f53ad29ee6f3a474149d25a8b68c52"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/bphoto\\/7wgwFWcp0XFLduaEPzx7sA\\/168s\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "5609307825488c4b7ae266fe509d5362c92356be7463f6bbe070cbe42821c75b"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/assets\\/public\\/200x120_ufc_globe\\.yji-f871a0ff7872e619c872b58091e967a2\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "ab71f9de3e16b944c40764702dca32fd1fbfd06f52aad7bf8c0440e58ffdf712"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/bphoto\\/FVp9BjUpksrFkWrNc_UXIw\\/300s\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "7dfb934f7081279f3007e39e8304107efad1531932548d088c8bb3d57bf71198"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/photo\\/7JZWYvVdpCVJNFrC61xNJg\\/30s\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "f75958ed49311206a96be3b3e676b3b8932c44a6298735d00504b009e4ebf1c5"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/photo\\/r2ceaIXl-jPjujb8eOeg6A\\/30s\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "cc0f4b3501b594a88f82d6ac79e9cf63c0efdfa1ed8dd827f543e60895e1eece"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/photo\\/SzElSTc90u2RYkP4ZvIwag\\/30s\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "69099c7b51a0a44c964da4bc57ae34fa364a2d0e56fae77c3e9dda1cc3fdf8e2"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/photo\\/cNcpVn1llaFjD5Jy5XjcKw\\/30s\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "131f3ed3aafae4f3159e205320eb7bfee17a8fd67792f8307944d696bd66d8c1"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yelp.ca",
-                "www.yelp.com"
-            ]
-        },
-        {
-            "rule": "fastly\\.net\\/photo\\/AQTDbivxJaKDNmq2d-Pzew\\/30s\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f2.shared.global"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "s3-media0.fl.yelpcdn.com",
-                    "resolved": "f2.shared.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "bbf881d9e4e58abe161660d35356182befce22c678f7d59b5b44bc544a7f97a9"
+                "a107a445b620f9f829bcb5a557cf991135dbea6e8153575e7578136cf1fcb7ca"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -4571,16 +5411,17 @@
         "Session Replay"
     ],
     "performance": {},
-    "cookies": 0.00181,
+    "cookies": 0.00151,
     "types": {
-        "Script": 142,
-        "Stylesheet": 47,
-        "Image": 118,
-        "Font": 13,
+        "Image": 168,
+        "Stylesheet": 76,
+        "Script": 136,
+        "Font": 25,
         "Document": 3,
-        "XHR": 14,
+        "XHR": 15,
         "Preflight": 6,
-        "Fetch": 35
+        "Fetch": 33,
+        "Other": 4
     },
     "nameservers": []
 }

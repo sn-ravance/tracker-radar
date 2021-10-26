@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000621,
-    "sites": 9,
+    "prevalence": 0.0000829,
+    "sites": 12,
     "subdomains": [
-        "stag-core"
+        "stag-core",
+        "redis-end"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -20,27 +21,29 @@
                 "stag-core"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2
             },
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 7,
+            "prevalence": 0.0000483,
             "cnames": [],
             "responseHashes": [
-                "4ed9821a25648c70c7ff8bd924255ed74b005650a89f72391b8e2634a2ad2ead",
-                "02d94e890e6dd05a5f7fa76d5f086db74a9fc5c65136d274be57df75ba1abf0c",
-                "6fe3731c71340d22041a09eb022fae4ded0e508df77ccba51a806aa95cbf89c0",
+                "b60848376e9e30ecaf8a3e3e3a7f5c9bb6a07c40c2701e57326c811d5bc06097",
+                "b9e5359fd878bd7acd1cc53969db9de61f22ac2ce038f3f059692eddf27f87a8",
                 "008fc8631d85f8dbd826cd5a0eb87ca83b86aa1f6453b24b21d4237b70a05060",
-                "8e7af5c81b27d5b137a71739ef5f2ac638bbdc0592574e44bd10c00794661b5f"
+                "089c98c50b522b41a3ae1ddccf5c61ae1fa045a5fb055b24932c18ab41305547",
+                "02d94e890e6dd05a5f7fa76d5f086db74a9fc5c65136d274be57df75ba1abf0c",
+                "604385948ba4b1203c8bca76eda36587e0f6769d62d59213762698cb1dd74c53"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "get_top_level_domain_cookie": 0.000006902073382844206,
-                "_li_dcdm_c": 0.000006902073382844206
+                "get_top_level_domain_cookie": 0.000006904170118751726,
+                "_li_dcdm_c": 0.000006904170118751726
             },
             "exampleSites": [
                 "jpost.com",
                 "m.jpost.com",
+                "otkritkiok.ru",
                 "www.end-times-bible-prophecy.com",
                 "www.globes.co.il",
                 "www.jpost.com",
@@ -49,19 +52,50 @@
         },
         {
             "rule": "tfla\\.xyz\\/pre_onetag",
-            "cookies": 0,
+            "cookies": 0.0000138,
             "fingerprinting": 1,
             "subdomains": [
                 "stag-core"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "4cebe847fe343f0038027974480c359f735feb6416e8cbc16df31938565634be"
+                "422088f54af2ec06f3c628ea556651073122486219dc0b04257aee2b06af2dcd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "ttm_pixalate_user": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000013808340237503452,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sport5.co.il",
+                "m.sport5.co.il"
+            ]
+        },
+        {
+            "rule": "tfla\\.xyz\\/check_cap",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "redis-end"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "ef954570902fc8c655b2a771b6bd3c0aeca01a85bc827c3b27950aaed3617fdd"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -74,9 +108,9 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000138,
     "types": {
-        "Script": 8
+        "Script": 11
     },
     "nameservers": [
         "dns1.registrar-servers.com",

@@ -7,19 +7,22 @@
     "prevalence": 0.0001,
     "sites": 1,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "www"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "suitableshop\\.com\\/assets\\/js\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0001,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie setter": 1
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
@@ -27,7 +30,14 @@
                 "4e576e6144a50ec0b6be600151ea596a2bf6ee3947445a730135918d4f7bec44"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "searchFieldAnimateCookie": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.00010033109260559848,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "suitableshop.nl",
@@ -46,9 +56,31 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "e50c1629ee000f70a1260df314b21e60d4f7a1e8a5124e1c7a2efbbb314baba2"
+                "d83a1a4e75f11f2a0a2d9b5348e2e3f09045216c19f09b8feeef96ab8b311660"
             ],
             "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "suitableshop.nl",
+                "www.suitableshop.nl"
+            ]
+        },
+        {
+            "rule": "suitableshop\\.com\\/images\\/resize\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "5b111e01d16f4a292bdc2d6a25caf0a8e7d97aeb14879d561beab8c5286ecfd3"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -59,10 +91,11 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0001,
     "types": {
         "Script": 2,
-        "Stylesheet": 2
+        "Stylesheet": 2,
+        "Image": 2
     },
     "nameservers": [
         "elle.ns.cloudflare.com",

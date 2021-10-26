@@ -7,17 +7,91 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
+        "code3",
         "admp-tc-sati"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "adtlgc\\.com\\/js\\/sati_init\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "code3"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.appVersion": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "33d9e41593440dc2a4d14d2b6bb46f408514d73412c7a3835e789a6c44b44ab3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "evid_set_0046": {
+                    "ttl": 68,
+                    "length": 1,
+                    "prevalence": 0.00020090406830738323,
+                    "uniqueness": 0.5
+                },
+                "evid_0046": {
+                    "ttl": 7776008,
+                    "length": 40,
+                    "prevalence": 0.00020090406830738323,
+                    "uniqueness": 1
+                },
+                "adptset_0046": {
+                    "ttl": 7208,
+                    "length": 1,
+                    "prevalence": 0.00020090406830738323,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "libertatea.ro",
+                "www.olx.ro"
+            ]
+        },
+        {
             "rule": "adtlgc\\.com\\/user",
-            "cookies": 0.0001,
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "admp-tc-sati"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "edb996eaa600761a73ee9ce6ecc79f0ac3cead30fd3c155f6192fbd10cbd9c12",
+                "baee049272b23bef0a1a5f69bec303a844dc431d25607426aba9f49161e69be5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "evid_0046": 0.00010045203415369161
+            },
+            "exampleSites": [
+                "libertatea.ro",
+                "www.libertatea.ro",
+                "www.olx.ro"
+            ]
+        },
+        {
+            "rule": "adtlgc\\.com\\/event\\/v3\\/pagestat",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "admp-tc-sati"
@@ -27,24 +101,25 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "cc5ee65cc154d7f603edcb7cad653fbca9954fe58be85e5673b2133cad5a4aa9"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "evid_0046": 0.00010041168792047395
+                "evid_0046": 0.00020090406830738323
             },
             "exampleSites": [
-                "gsp.ro",
-                "www.gsp.ro"
+                "libertatea.ro",
+                "www.olx.ro"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000201,
     "types": {
-        "Script": 2
+        "Script": 5,
+        "XHR": 2
     },
     "nameservers": [
         "ns-310.awsdns-38.com",

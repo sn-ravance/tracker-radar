@@ -4,14 +4,82 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
-        "static"
+        "static",
+        "orcieres",
+        "anniviers"
     ],
-    "cnames": [],
-    "fingerprinting": 0,
+    "cnames": [
+        {
+            "original": "reservation.orcieres.com",
+            "resolved": "orcieres.ingenie.fr"
+        },
+        {
+            "original": "reservation.valdanniviers.ch",
+            "resolved": "anniviers.ingenie.fr"
+        }
+    ],
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "ingenie\\.fr\\/js\\/widgets\\/min\\/widget-resa\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "632da3749e57afd207688bf1af1dc40f22652ced1df6a1774dc1c6d239fc3cc8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "orcieres.com",
+                "www.valdanniviers.ch",
+                "www.vercorin.ch"
+            ]
+        },
+        {
+            "rule": "ingenie\\.fr\\/booking",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "orcieres",
+                "anniviers"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "reservation.orcieres.com",
+                    "resolved": "orcieres.ingenie.fr"
+                },
+                {
+                    "original": "reservation.valdanniviers.ch",
+                    "resolved": "anniviers.ingenie.fr"
+                }
+            ],
+            "responseHashes": [
+                "265ba390a17c75d2817c485adbaeeec61ff8a334f20d8aa6b14dc5649bfe468f",
+                "aa2c09fbe03a772773a3fbc17ca096eec2ee9f0b951be5dabacfc538421d75a1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "orcieres.com",
+                "www.orcieres.com",
+                "www.valdanniviers.ch"
+            ]
+        },
         {
             "rule": "ingenie\\.fr\\/js\\/widgets\\/resa\\/IngenieWidgetResaClient\\.js",
             "cookies": 0,
@@ -33,38 +101,16 @@
                 "valdanniviers.ch",
                 "www.vercorin.ch"
             ]
-        },
-        {
-            "rule": "ingenie\\.fr\\/js\\/widgets\\/min\\/widget-resa\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "632da3749e57afd207688bf1af1dc40f22652ced1df6a1774dc1c6d239fc3cc8"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "valdanniviers.ch",
-                "www.vercorin.ch"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000201,
     "types": {
-        "Script": 4
+        "Script": 8
     },
     "nameservers": [
-        "ns1.ingenie.fr",
-        "ns2.ingenie.fr"
+        "ns2.ingenie.fr",
+        "ns1.ingenie.fr"
     ]
 }

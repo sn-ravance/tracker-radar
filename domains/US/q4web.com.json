@@ -7,33 +7,91 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000276,
-    "sites": 4,
+    "prevalence": 0.0000552,
+    "sites": 8,
     "subdomains": [
+        "q4widgets",
+        "assurant2017rd",
+        "timkenco2020index-farm",
         "boeing2015",
-        "csx2019ir",
-        "firstamerican2017ir"
+        "firstamerican2017ir",
+        "rockwell2015"
     ],
-    "cnames": [],
-    "fingerprinting": 0,
+    "cnames": [
+        {
+            "original": "investors.timken.com",
+            "resolved": "timkenco2020index-farm.q4web.com"
+        }
+    ],
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "q4web\\.com\\/preview\\/js\\/toolbar\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "q4widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "7d7e683222e09a7dc3d4215e22952037580fd6271c65e4b4d9ce82480a96764d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fb.com",
+                "investor.fb.com"
+            ]
+        },
+        {
+            "rule": "q4web\\.com\\/feed\\/StockQuote\\.svc\\/GetFullStockQuoteList",
+            "cookies": 0.0000069,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assurant2017rd",
+                "timkenco2020index-farm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "investors.timken.com",
+                    "resolved": "timkenco2020index-farm.q4web.com"
+                }
+            ],
+            "responseHashes": [
+                "b04a32f4358bbc1d91286aec221c36975ee2c6694da64ad6465beb83932e11f8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "assurant.com",
+                "www.timken.com"
+            ]
+        },
         {
             "rule": "q4web\\.com\\/feed\\/StockQuote\\.svc\\/GetStockQuoteList",
             "cookies": 0.0000276,
             "fingerprinting": 0,
             "subdomains": [
                 "boeing2015",
-                "csx2019ir",
-                "firstamerican2017ir"
+                "firstamerican2017ir",
+                "rockwell2015"
             ],
             "apis": {},
             "sites": 4,
             "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "87f854bd21efedf6b719ea301718cb6063fb4c52b20c09632cec9575dfdd2627",
-                "1d6055c6b67bb17bde9e22e628fec96b08bf089bc07343ea2de8ef3653ff6e68",
-                "40f88e909c83fedd4ab1ebd9dd399a3a29df5b518dfc22b7b0fa770bc261f532"
+                "ac8ec3b43ca0349d29919e46e3570e6ea8e4e3330c447277b4f50487b3f7d0f3",
+                "500e98c59632c82f553025e6737558caf37d97c14e5723063d29ab3875b9784e",
+                "5d4fe52c995d6e22cb93c7f742df64bc6c7d151d6c05d6414378e33d53b334a4"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -41,16 +99,17 @@
             "exampleSites": [
                 "boeing.com",
                 "www.boeing.com",
-                "www.csx.com",
-                "www.firstam.com"
+                "www.firstam.com",
+                "www.rockwellautomation.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000276,
+    "cookies": 0.0000414,
     "types": {
-        "XHR": 4
+        "Script": 2,
+        "XHR": 6
     },
     "nameservers": [
         "ns-1098.awsdns-09.org",

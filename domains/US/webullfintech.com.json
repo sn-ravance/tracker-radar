@@ -11,7 +11,8 @@
         "rep",
         "pub",
         "data",
-        "securitiesapi"
+        "securitiesapi",
+        "rep0"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -129,7 +130,7 @@
             ]
         },
         {
-            "rule": "webullfintech\\.com\\/v1\\/webull-us-g\\/message\\.702d2b5b194e35307570\\.js",
+            "rule": "webullfintech\\.com\\/v1\\/webull-us-g\\/message\\.2eebbdde752f1386073b\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -140,7 +141,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "a8af48e7a75a8b63db5b16500c04671c677b0f0435b1243b3bed2259dd322e3c"
+                "43a975fe53ff6fc5fa38ee5f971e64ab9fc9110b232dafc48625f6d11de15945"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -180,7 +181,7 @@
                 "wbstatic"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -199,13 +200,16 @@
         {
             "rule": "webullfintech\\.com\\/v1\\/webull-us-g\\/sentry\\.f51032bd2cd2fe614386\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "wbstatic"
             ],
             "apis": {
-                "PerformanceTiming.prototype.navigationStart": 1,
-                "Navigator.prototype.userAgent": 1
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.connection": 1,
+                "Navigator.prototype.deviceMemory": 1,
+                "Navigator.prototype.hardwareConcurrency": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -460,6 +464,28 @@
             ]
         },
         {
+            "rule": "webullfintech\\.com\\/api\\/2\\/envelope\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rep0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "webull.com",
+                "www.webull.com"
+            ]
+        },
+        {
             "rule": "webullfintech\\.com\\/api\\/securities\\/regions\\/getRegionId\\/v3",
             "cookies": 0.0000138,
             "fingerprinting": 0,
@@ -472,6 +498,28 @@
             "cnames": [],
             "responseHashes": [
                 "e7f6c011776e8db7cd330b54174fd76f7d0216b612387a5ffcfb81e6f0919683"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "webull.com",
+                "www.webull.com"
+            ]
+        },
+        {
+            "rule": "webullfintech\\.com\\/event\\/json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "data"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "df95d494b154bc7ea6d978af82b1f1f252652e0093b195ce79c3467de942602c"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -502,28 +550,6 @@
                 "webull.com",
                 "www.webull.com"
             ]
-        },
-        {
-            "rule": "webullfintech\\.com\\/event\\/json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "data"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "df95d494b154bc7ea6d978af82b1f1f252652e0093b195ce79c3467de942602c"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "webull.com",
-                "www.webull.com"
-            ]
         }
     ],
     "categories": [],
@@ -535,13 +561,13 @@
         "Font": 4,
         "Preflight": 4,
         "XHR": 2,
-        "Fetch": 4,
+        "Fetch": 6,
         "Other": 2
     },
     "nameservers": [
         "ns-12.awsdns-01.com",
-        "ns-1212.awsdns-23.org",
+        "ns-554.awsdns-05.net",
         "ns-1731.awsdns-24.co.uk",
-        "ns-554.awsdns-05.net"
+        "ns-1212.awsdns-23.org"
     ]
 }

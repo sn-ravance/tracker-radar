@@ -7,139 +7,13 @@
     "prevalence": 0.0000345,
     "sites": 5,
     "subdomains": [
+        "www",
         "cdn",
-        "t3-prod-api",
-        "www"
+        "t3-prod-api"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
-        {
-            "rule": "tipser\\.com\\/tipser-script\\/v3\\.0\\.24\\/tipser-script\\.min\\.js",
-            "cookies": 0.0000138,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.devicePixelRatio": 2,
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "f924e8a60f9267439a638752f328d2a531fbfdd09a61e2300dc2fc9e7be23ec3"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "tipserToken": {
-                    "ttl": 31536006,
-                    "length": 518,
-                    "prevalence": 0.000013804146765688412,
-                    "uniqueness": 1
-                },
-                "tipserTokenAnonymous": {
-                    "ttl": 31536006,
-                    "length": 1,
-                    "prevalence": 0.000013804146765688412,
-                    "uniqueness": 0.5
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "shopstyle.com",
-                "www.shopstyle.com"
-            ]
-        },
-        {
-            "rule": "tipser\\.com\\/tipser-script\\/v3\\.0\\.24\\/tipser-script\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "8d9c97a969df4e26c893fee0c672b1cfa3486d39a4e30ec9434cbc05991d2c4f"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "shopstyle.com",
-                "www.shopstyle.com"
-            ]
-        },
-        {
-            "rule": "tipser\\.com\\/v4\\/auth\\/anonymousToken",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "t3-prod-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "f27794279ab69d7e4d673443ded2a545903b0ecfc27323b3749e0e99f20fc03c"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "shopstyle.com",
-                "www.shopstyle.com"
-            ]
-        },
-        {
-            "rule": "tipser\\.com\\/v4\\/shoppingcart",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "t3-prod-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "shopstyle.com",
-                "www.shopstyle.com"
-            ]
-        },
-        {
-            "rule": "tipser\\.com\\/v4\\/shoppingcart",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "t3-prod-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "fc7d2d0aefc8b6b86520babfb5312744aaf1155444f001a3a875dbb8bc4dcbca"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "shopstyle.com",
-                "www.shopstyle.com"
-            ]
-        },
         {
             "rule": "tipser\\.com\\/widget\\/sdk-iframe\\.html",
             "cookies": 0,
@@ -192,13 +66,14 @@
                 "www"
             ],
             "apis": {
+                "console.memory": 1,
                 "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
                 "window.indexedDB": 2,
+                "Navigator.prototype.product": 2,
                 "Document.cookie getter": 2,
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.product": 1,
-                "Navigator.prototype.languages": 1,
-                "Navigator.prototype.language": 1
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.language": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -213,17 +88,143 @@
                 "meillakotona.fi",
                 "www.meillakotona.fi"
             ]
+        },
+        {
+            "rule": "tipser\\.com\\/tipser-script\\/v3\\.0\\.24\\/tipser-script\\.min\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.devicePixelRatio": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "f924e8a60f9267439a638752f328d2a531fbfdd09a61e2300dc2fc9e7be23ec3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "tipserToken": {
+                    "ttl": 31536004,
+                    "length": 518,
+                    "prevalence": 0.000013808340237503452,
+                    "uniqueness": 1
+                },
+                "tipserTokenAnonymous": {
+                    "ttl": 31536004,
+                    "length": 1,
+                    "prevalence": 0.000013808340237503452,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "shopstyle.com",
+                "www.shopstyle.com"
+            ]
+        },
+        {
+            "rule": "tipser\\.com\\/tipser-script\\/v3\\.0\\.24\\/tipser-script\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "8d9c97a969df4e26c893fee0c672b1cfa3486d39a4e30ec9434cbc05991d2c4f"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "shopstyle.com",
+                "www.shopstyle.com"
+            ]
+        },
+        {
+            "rule": "tipser\\.com\\/v4\\/auth\\/anonymousToken",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t3-prod-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "908ca1807de2e45c40d03b7cd3351af6aeaca13b484326f24c5cb2d9d26cdb3e"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "shopstyle.com",
+                "www.shopstyle.com"
+            ]
+        },
+        {
+            "rule": "tipser\\.com\\/v4\\/shoppingcart",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t3-prod-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "shopstyle.com",
+                "www.shopstyle.com"
+            ]
+        },
+        {
+            "rule": "tipser\\.com\\/v4\\/shoppingcart",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t3-prod-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "fc7d2d0aefc8b6b86520babfb5312744aaf1155444f001a3a875dbb8bc4dcbca"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "shopstyle.com",
+                "www.shopstyle.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0.0000138,
     "types": {
+        "Document": 2,
         "Script": 6,
         "Stylesheet": 2,
         "Fetch": 4,
-        "Preflight": 2,
-        "Document": 2
+        "Preflight": 2
     },
     "nameservers": [
         "anna.ns.cloudflare.com",

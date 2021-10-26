@@ -4,10 +4,12 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
-        "pixel"
+        "pixel",
+        "player",
+        "call"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -20,8 +22,8 @@
                 "pixel"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -31,7 +33,62 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "anime-planet.com",
-                "www.anime-planet.com"
+                "www.anime-planet.com",
+                "www.cyclingstage.com"
+            ]
+        },
+        {
+            "rule": "inforsea\\.com\\/player\\.m\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.languages": 2,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.width": 1,
+                "Navigator.prototype.language": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8fa34de3e82399fccaf0520cec0018d71afb9b52fb36b78e1f04415317b77812"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anime-planet.com",
+                "www.cyclingstage.com"
+            ]
+        },
+        {
+            "rule": "inforsea\\.com\\/adserver\\/sources",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "call"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "71a04d8aecee77c21a9c3c939fab2f9e1f7fb00320da396147827e469c6dc3ce"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anime-planet.com",
+                "www.cyclingstage.com"
             ]
         },
         {
@@ -42,8 +99,8 @@
                 "pixel"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
@@ -51,7 +108,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "anime-planet.com",
-                "www.anime-planet.com"
+                "www.anime-planet.com",
+                "www.cyclingstage.com"
             ]
         }
     ],
@@ -59,8 +117,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Image": 2,
-        "Fetch": 2
+        "Image": 3,
+        "Script": 2,
+        "Fetch": 5
     },
     "nameservers": [
         "ns-702.awsdns-23.net",

@@ -9,16 +9,21 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000603,
-    "sites": 6,
+    "prevalence": 0.000703,
+    "sites": 7,
     "subdomains": [
         "conrad-prod-gcp-prod",
+        "se-prod-prod",
         "cmg-prod"
     ],
     "cnames": [
         {
             "original": "api.conrad.com",
             "resolved": "conrad-prod-gcp-prod.apigee.net"
+        },
+        {
+            "original": "api.se.com",
+            "resolved": "se-prod-prod.apigee.net"
         }
     ],
     "fingerprinting": 0,
@@ -65,7 +70,7 @@
                 }
             ],
             "responseHashes": [
-                "85cf31c2c74e6a72392a19c09916dfc4caf36195b103bb00ee9b040c0c767ca4"
+                "e9f9afb6ce6cfe73b880390b281c0e8b731d4087046f920275952d4ba758ca8d"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -73,6 +78,58 @@
             "exampleSites": [
                 "conrad.fr",
                 "www.conrad.fr"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/v1\\/customer-support\\/chat-configuration\\/configurations",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "se-prod-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.se.com",
+                    "resolved": "se-prod-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "se.com",
+                "www.se.com"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/v1\\/customer-support\\/chat-configuration\\/configurations",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "se-prod-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.se.com",
+                    "resolved": "se-prod-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [
+                "eff6055f48a954a76b37381d0fae46fc37381ebf2c6a3be826b7f284091de8fc"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "se.com",
+                "www.se.com"
             ]
         },
         {
@@ -87,7 +144,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "a691afb4682e23edf1b0ee741e673c86d45484454795e94d0c2775aa13e744bd"
+                "37b559782edc455d0f94618f65d4ef63c40918c8a7f8baeb631ef403012a7377"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -109,7 +166,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "fd2c6725e4452d658efeecbe3eca184a9e7e7ceaf3c7409cd3b92bf3b3016f8a"
+                "65403849a82555bfcea3fbcf2d9d4357be56c282d402783140ec8a572bb1e62e"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -126,8 +183,8 @@
     "performance": {},
     "cookies": 0.0001,
     "types": {
-        "Preflight": 2,
-        "Fetch": 2,
+        "Preflight": 4,
+        "Fetch": 4,
         "XHR": 4
     },
     "nameservers": [

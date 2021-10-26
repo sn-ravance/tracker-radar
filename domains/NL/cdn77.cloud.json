@@ -11,7 +11,7 @@
         "tags"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "cdn77\\.cloud\\/pixel\\/in\\.gif",
@@ -59,17 +59,24 @@
         },
         {
             "rule": "cdn77\\.cloud\\/scripts\\/in\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0001,
+            "fingerprinting": 2,
             "subdomains": [
                 "tags"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1,
+                "Navigator.prototype.storage": 1,
+                "Date.prototype.getTimezoneOffset": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "3b69dbf32872647ab14e3d00c71a610cd16ab16db42a9fb1dc7add247b2bde55"
+                "ec33fa14ba78cc4fe1bbbbe64a24c0e816a99ec5b4bb15b4eb64da652206e377"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -82,15 +89,15 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0001,
     "types": {
         "Image": 2,
         "Script": 4
     },
     "nameservers": [
-        "ns-886.awsdns-46.net",
         "ns-1321.awsdns-37.org",
         "ns-1699.awsdns-20.co.uk",
-        "ns-47.awsdns-05.com"
+        "ns-47.awsdns-05.com",
+        "ns-886.awsdns-46.net"
     ]
 }

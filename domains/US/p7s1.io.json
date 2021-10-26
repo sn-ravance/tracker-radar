@@ -7,17 +7,71 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000345,
-    "sites": 5,
+    "prevalence": 0.0000829,
+    "sites": 12,
     "subdomains": [
-        "s",
         "middleware",
         "datalayer",
-        "magellan-api"
+        "s",
+        "magellan-api",
+        "cmp",
+        "config.player",
+        "oasis-player",
+        "component.player"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 3,
     "resources": [
+        {
+            "rule": "p7s1\\.io\\/cmp\\/v1\\/vendorlist",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "middleware"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000414,
+            "cnames": [],
+            "responseHashes": [
+                "3b9a0b28318b7310aac7211b8e38d1b6bd58460a68c20e80ab3d91321e642e75"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sportdeutschland.tv",
+                "www.atv.at",
+                "www.esports.com",
+                "www.fem.com",
+                "www.joyn.de",
+                "www.puls24.at"
+            ]
+        },
+        {
+            "rule": "p7s1\\.io\\/d40b37fb578cdefcc85b7b08c223c997\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "datalayer"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000276,
+            "cnames": [],
+            "responseHashes": [
+                "b385feaa0cd5fa1182597f4c6f1fccf7a53e547347375d80850f9d51e7aededb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sportdeutschland.tv",
+                "www.atv.at",
+                "www.esports.com",
+                "www.puls24.at"
+            ]
+        },
         {
             "rule": "p7s1\\.io\\/magellan\\/static\\/js\\/df6fcc096bf27ff7984023bbf5748163\\.css",
             "cookies": 0,
@@ -41,7 +95,7 @@
             ]
         },
         {
-            "rule": "p7s1\\.io\\/magellan\\/static\\/css\\/atv\\.7786ca03a2eb03f1a8365bd25b8c1d617ab08c5e\\.css",
+            "rule": "p7s1\\.io\\/magellan\\/static\\/css\\/atv\\.b00b79a2c8955eeac91a10399bb66c26ce2351c1\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -52,7 +106,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "08254bb724d215301e455eac8fc9c2ae2002d1d4d625992f00b05e3e9feb62d1"
+                "9b6ff7e9fc37026b14546e75d55bd7b7a64cb536b465b0266c82f12949dabbb2"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -63,7 +117,7 @@
             ]
         },
         {
-            "rule": "p7s1\\.io\\/magellan\\/static\\/formats\\/atv\\.1f67383d4a2c03d1eb4a415572ab70cca50f126f\\.css",
+            "rule": "p7s1\\.io\\/magellan\\/static\\/formats\\/atv\\.8551a25372348d5ff1d79c2c65b5091343e77e3e\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -74,7 +128,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "b84310f61fdb46f7b83919682fc883120bda1f0618b40c91c0d3b798dfc31f6f"
+                "604bece9e51716ba56026117003f66967fe098d6814cf86396cc12568c1f3880"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -139,7 +193,7 @@
             ]
         },
         {
-            "rule": "p7s1\\.io\\/magellan\\/static\\/js\\/client\\.b2bc04326a14791659f7\\.min\\.js",
+            "rule": "p7s1\\.io\\/magellan\\/static\\/js\\/client\\.90e5e65924d6dbd2adf3\\.min\\.js",
             "cookies": 0.0000069,
             "fingerprinting": 2,
             "subdomains": [
@@ -158,7 +212,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "175eb22ce4d4b9c62a8920b491c631a06113dca366929252d114a3e52a078d88"
+                "ab032a970575884523362ae563d58568f71bb2a93ff98de4b4003cbdc657f9de"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -170,22 +224,22 @@
         },
         {
             "rule": "p7s1\\.io\\/cmp\\/cmp-atv-web\\.js",
-            "cookies": 0.0000138,
+            "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "s"
             ],
             "apis": {
+                "Navigator.prototype.userAgent": 1,
                 "window.localStorage": 2,
-                "window.sessionStorage": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2
+                "Navigator.prototype.language": 1,
+                "window.sessionStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "26baf71ac0cc5e7abfb883621d95be19773c2f6ce290a2ab56d951a89c868cd4"
+                "fdadf9af9d834bd42ab90fc9833fe2228dcf0596dfab6144a9891e7ff11bc905"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -218,53 +272,6 @@
             ]
         },
         {
-            "rule": "p7s1\\.io\\/cmp\\/v1\\/vendorlist",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "middleware"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000276,
-            "cnames": [],
-            "responseHashes": [
-                "6c23c9b5e39a680aef6c6c1e8566cc90284358ed45176faa83462f04cd26039a"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "atv.at",
-                "www.atv.at",
-                "www.esports.com",
-                "www.fem.com"
-            ]
-        },
-        {
-            "rule": "p7s1\\.io\\/d40b37fb578cdefcc85b7b08c223c997\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "datalayer"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [],
-            "responseHashes": [
-                "b385feaa0cd5fa1182597f4c6f1fccf7a53e547347375d80850f9d51e7aededb"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "atv.at",
-                "www.atv.at",
-                "www.esports.com"
-            ]
-        },
-        {
             "rule": "p7s1\\.io\\/shows\\/atv\\.at\\/graphql",
             "cookies": 0,
             "fingerprinting": 0,
@@ -276,7 +283,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "9fa847c6b938b265516b5c144d4db2a7a22b5067c43f2b08215cb67d26d690ef"
+                "098df13f862e71a5b2b317e1709598623d0cc49e6e2628a517993615962e4871"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -288,18 +295,16 @@
         },
         {
             "rule": "p7s1\\.io\\/cmp\\/cmp-esports-web\\.js",
-            "cookies": 0.0000138,
+            "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "s"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.userAgent": 2,
                 "window.localStorage": 2,
-                "Navigator.prototype.language": 1,
-                "window.sessionStorage": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2
+                "Navigator.prototype.language": 2,
+                "window.sessionStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -312,22 +317,388 @@
                 "esports.com",
                 "www.esports.com"
             ]
+        },
+        {
+            "rule": "p7s1\\.io\\/ffcd83e8026d63d5fc0df7dc13b6846afdcd0f7089e03f49182af3c7d3c57a67\\/analytics",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cmp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "esports.com",
+                "www.esports.com"
+            ]
+        },
+        {
+            "rule": "p7s1\\.io\\/d40b37fb578cdefcc85b7b08c223c997\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "datalayer"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "esports.com",
+                "www.esports.com"
+            ]
+        },
+        {
+            "rule": "p7s1\\.io\\/04957a5f00bb9be3234f64c5f0a53c71e902958b217adbcd728e6c93c60c1a33\\/analytics",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cmp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "esports.com",
+                "www.esports.com"
+            ]
+        },
+        {
+            "rule": "p7s1\\.io\\/cmp\\/cmp-fem-web\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.language": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "0fee8b132147226cff357631be12ff1240b559a85d14cef19aed96d514a55bae"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fem.com",
+                "www.fem.com"
+            ]
+        },
+        {
+            "rule": "p7s1\\.io\\/cmp\\/cmp-joyn-web-slim\\.mjs",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {
+                "window.localStorage": 1,
+                "Navigator.prototype.language": 1,
+                "window.sessionStorage": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "b199a2217d9d0cebfdd98b60c3825b06b4f42f4a31769d0135b22b766a8dad92"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "joyn.de",
+                "www.joyn.de"
+            ]
+        },
+        {
+            "rule": "p7s1\\.io\\/cmp\\/cmp-puls24-web\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "0fc8ce9f800044165f5b662bccd331d499346ce91a180f89f90e18bbe0ff52af"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "puls24.at",
+                "www.puls24.at"
+            ]
+        },
+        {
+            "rule": "p7s1\\.io\\/cd227f79168e914ab7d4f94604078c68\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "datalayer"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "94169a891a8376ee021a4923bd089304838a3e9a93f9fe45d37b92aa20e5805f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "puls24.at",
+                "www.puls24.at"
+            ]
+        },
+        {
+            "rule": "p7s1\\.io\\/puls24\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "config.player"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "a17fedf9eec290fbe6948184a6dfdbd394ae2b8d3d731961a7689284d01c85a8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "puls24.at",
+                "www.puls24.at"
+            ]
+        },
+        {
+            "rule": "p7s1\\.io\\/web\\/bootstrap\\/14\\.21\\.1\\/bootstrap\\.js",
+            "cookies": 0,
+            "fingerprinting": 3,
+            "subdomains": [
+                "oasis-player"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.product": 2,
+                "MediaSource.isTypeSupported": 2,
+                "HTMLMediaElement.prototype.canPlayType": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "window.devicePixelRatio": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Navigator.prototype.deviceMemory": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Navigator.prototype.plugins": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.productSub": 2,
+                "Navigator.prototype.vendor": 2,
+                "Navigator.prototype.vendorSub": 2,
+                "HTMLCanvasElement.prototype.toDataURL": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.colorDepth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "ed01f63da1bd4f0d5e8e10b0fd4641de96318fd77ba1a868d692db59eaffa91f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "puls24.at",
+                "www.puls24.at"
+            ]
+        },
+        {
+            "rule": "p7s1\\.io\\/web\\/ui\\/14\\.21\\.1\\/ui\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "oasis-player"
+            ],
+            "apis": {
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 1,
+                "Event.prototype.timeStamp": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "b5bf41bdc0b298295399fa73a860d36aee7f11ab4aea41a7f6548031b121b7f6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "puls24.at",
+                "www.puls24.at"
+            ]
+        },
+        {
+            "rule": "p7s1\\.io\\/web\\/player-feedback\\/14\\.21\\.1\\/player-feedback\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "oasis-player"
+            ],
+            "apis": {
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "bf3379cd3bcc6446370433905cd4c1e27068556a47166442c659b0b3ca285643"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cookies.js": {
+                    "ttl": 1,
+                    "length": 6,
+                    "prevalence": 0.000013808340237503452,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "puls24.at",
+                "www.puls24.at"
+            ]
+        },
+        {
+            "rule": "p7s1\\.io\\/web\\/monetization\\/14\\.21\\.1\\/monetization\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "oasis-player"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.product": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e4096862440842efb3975546447bc02209b47bcc73b71b53c063ff21743294a5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "puls24.at",
+                "www.puls24.at"
+            ]
+        },
+        {
+            "rule": "p7s1\\.io\\/oasis-coral\\/2\\.3\\.2\\/oasis-coral\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "component.player"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "5cf0af46364dfa78684ab11f5c57de1479cd1e6c562e9252cdaf7f296fac337d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "puls24.at",
+                "www.puls24.at"
+            ]
+        },
+        {
+            "rule": "p7s1\\.io\\/cobra\\/5\\.5\\.2\\/cobra\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "component.player"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "daaf209f39ebf7abcee8ddb24645e8aa45c6156966ed3aa5bc8e938325dc6ccd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "puls24.at",
+                "www.puls24.at"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000345,
+    "cookies": 0.0000207,
     "types": {
+        "Fetch": 12,
+        "Script": 36,
         "Stylesheet": 6,
-        "Script": 13,
         "Image": 2,
-        "Fetch": 4,
         "XHR": 2
     },
     "nameservers": [
-        "ns-131.awsdns-16.com",
         "ns-897.awsdns-48.net",
-        "ns-1477.awsdns-56.org",
-        "ns-1952.awsdns-52.co.uk"
+        "ns-1952.awsdns-52.co.uk",
+        "ns-131.awsdns-16.com",
+        "ns-1477.awsdns-56.org"
     ]
 }

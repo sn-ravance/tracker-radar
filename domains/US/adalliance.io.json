@@ -7,15 +7,60 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000207,
-    "sites": 3,
+    "prevalence": 0.0000345,
+    "sites": 5,
     "subdomains": [
+        "engagement",
+        "mafo",
         "zipservice",
         "aqt"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "adalliance\\.io\\/socket\\.io\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "engagement"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vodafone.de",
+                "live.vodafone.de",
+                "www.arcor.de"
+            ]
+        },
+        {
+            "rule": "adalliance\\.io\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mafo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "f4a9f3e39ba53121a9d438d5ac53c1ce5046dfd03c540ffd8fbe510d5f491030"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "grazia-magazin.de",
+                "www.grazia-magazin.de"
+            ]
+        },
         {
             "rule": "adalliance\\.io\\/get",
             "cookies": 0,
@@ -27,10 +72,33 @@
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [
-                "c6e566ea979dfed9479f994c755f356621ed38aa1db5479b4807389d6530dc12"
-            ],
+            "responseHashes": [],
             "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "grazia-magazin.de",
+                "www.grazia-magazin.de"
+            ]
+        },
+        {
+            "rule": "adalliance\\.io\\/mafo\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "mafo"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "23d70a8e75c84f46add06693ec2cdb027d71529f771cf5222a929a0b855da949"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -55,7 +123,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "grazia-magazin.de",
-                "www.toggo.de"
+                "www.grazia-magazin.de"
             ]
         }
     ],
@@ -63,7 +131,10 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Fetch": 4
+        "WebSocket": 3,
+        "Document": 2,
+        "Fetch": 4,
+        "Script": 2
     },
     "nameservers": [
         "ns.second-ns.com",

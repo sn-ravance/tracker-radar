@@ -13,7 +13,7 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "dovemed-prod-k8s\\.s3\\.amazonaws\\.com\\/static\\/CACHE\\/css\\/55acb90b15eb\\.css",
@@ -84,7 +84,8 @@
             "subdomains": [],
             "apis": {
                 "Navigator.prototype.product": 2,
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -102,14 +103,16 @@
         },
         {
             "rule": "dovemed-prod-k8s\\.s3\\.amazonaws\\.com\\/static\\/CACHE\\/js\\/d7e6646dab4a\\.js",
-            "cookies": 0,
+            "cookies": 0.0000069,
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
                 "Navigator.prototype.appVersion": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Date.prototype.getTime": 2,
-                "Event.prototype.timeStamp": 2
+                "Event.prototype.timeStamp": 2,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -118,7 +121,14 @@
                 "d7e6646dab4a4ecae6b45cb0e38a0daa0a5ff8bb1a6a77d9c310640ea77d4a6c"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "textsize": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000006904170118751726,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dovemed.com",
@@ -575,7 +585,7 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000069,
     "types": {
         "Stylesheet": 4,
         "Script": 10,

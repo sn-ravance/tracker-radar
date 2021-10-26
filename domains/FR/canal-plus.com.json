@@ -7,11 +7,13 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000402,
-    "sites": 4,
+    "prevalence": 0.000502,
+    "sites": 5,
     "subdomains": [
         "media-pass",
-        "pass-api-v2"
+        "pass-api-v2",
+        "secure-webtv",
+        "secure-webtv-static"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -41,31 +43,31 @@
                 "s_pass_token": {
                     "ttl": null,
                     "length": 988,
-                    "prevalence": 0.0002008435428800964,
+                    "prevalence": 0.00020078305391024997,
                     "uniqueness": 0.5
                 },
                 "s_token": {
                     "ttl": 2592002,
                     "length": 561,
-                    "prevalence": 0.0002008435428800964,
+                    "prevalence": 0.00020078305391024997,
                     "uniqueness": 0.5
                 },
                 "p_pass_token": {
                     "ttl": 63115202,
                     "length": 222,
-                    "prevalence": 0.0002008435428800964,
+                    "prevalence": 0.00020078305391024997,
                     "uniqueness": 0.5
                 },
                 "s_pass_userdata": {
                     "ttl": null,
                     "length": 804,
-                    "prevalence": 0.0002008435428800964,
+                    "prevalence": 0.00020078305391024997,
                     "uniqueness": 0.5
                 },
                 "s_pass_social": {
                     "ttl": null,
                     "length": 4,
-                    "prevalence": 0.0002008435428800964,
+                    "prevalence": 0.00020078305391024997,
                     "uniqueness": 0.5
                 }
             },
@@ -87,7 +89,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "64b95a01e6ed95b2f7288dbd71a5025f918c340699c18da58ab74c55b3e5ae15"
+                "7c504b66dc5443edae38b0d7f0438fbd292fbefe5ede14733a7e1302249da6d4"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -96,18 +98,128 @@
                 "canalplus.com",
                 "client.canalplus.com"
             ]
+        },
+        {
+            "rule": "canal-plus\\.com\\/provider\\/services\\/fr\\/public\\/createToken",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pass-api-v2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "6693d1bed89c5ce1f1ff9a2f00863ddd0a92739b973c0ca6c18fe40680ca7f98"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "canalplus.com",
+                "www.canalplus.com"
+            ]
+        },
+        {
+            "rule": "canal-plus\\.com\\/WebPortal\\/ottlivetv\\/api\\/V4\\/zones\\/cpfra\\/devices\\/3\\/apps\\/1\\/jobs\\/InitLiveTV",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "secure-webtv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "canalplus.com",
+                "www.canalplus.com"
+            ]
+        },
+        {
+            "rule": "canal-plus\\.com\\/WebPortal\\/ottlivetv\\/api\\/V4\\/zones\\/cpfra\\/devices\\/3\\/apps\\/1\\/jobs\\/InitLiveTV",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "secure-webtv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "4afa76640df51398ce5e12477a2631c59036359d65a63011b9e48e90232784c6"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "canalplus.com",
+                "www.canalplus.com"
+            ]
+        },
+        {
+            "rule": "canal-plus\\.com\\/metadata\\/cpfra\\/all\\/v2\\.2\\/globalchannels\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "secure-webtv-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "6dce01451e3cb7c8cd8b8439b6f7741f1ac4ab61d4bab00baa9c1cb384d8b509"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "canalplus.com",
+                "www.canalplus.com"
+            ]
+        },
+        {
+            "rule": "canal-plus\\.com\\/metadata\\/all-v2\\.2\\/genres\\/genres\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "secure-webtv-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "38328888c04ce0815c84d73a5087624f7db9b9e7a09394a845d716422305b151"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "canalplus.com",
+                "www.canalplus.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000402,
+    "cookies": 0.000502,
     "types": {
         "Script": 2,
-        "XHR": 2
+        "XHR": 8,
+        "Fetch": 2,
+        "Preflight": 2
     },
     "nameservers": [
-        "obs.ns1.fr",
         "ns2.observatoiredesmarques.fr",
-        "ns3.nameshield.net"
+        "ns3.nameshield.net",
+        "obs.ns1.fr"
     ]
 }

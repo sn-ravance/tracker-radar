@@ -4,23 +4,26 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000138,
-    "sites": 2,
+    "prevalence": 0.0000207,
+    "sites": 3,
     "subdomains": [
         "gateway",
         "sentry"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "smallcase\\.com\\/scdk\\/2\\.0\\.0\\/scdk\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "gateway"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
@@ -31,7 +34,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "tickertape.in",
+                "moneycontrol.com",
                 "www.tickertape.in"
             ]
         },
@@ -56,6 +59,28 @@
                 "tickertape.in",
                 "www.tickertape.in"
             ]
+        },
+        {
+            "rule": "smallcase\\.com\\/api\\/19\\/security\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sentry"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tickertape.in",
+                "www.tickertape.in"
+            ]
         }
     ],
     "categories": [],
@@ -63,7 +88,8 @@
     "cookies": 0,
     "types": {
         "Script": 2,
-        "Fetch": 2
+        "Fetch": 2,
+        "Other": 2
     },
     "nameservers": [
         "ns-695.awsdns-22.net",

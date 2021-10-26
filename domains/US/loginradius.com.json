@@ -7,16 +7,22 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000828,
-    "sites": 12,
+    "prevalence": 0.0000898,
+    "sites": 13,
     "subdomains": [
         "cdn",
         "hub",
-        "cbc-login.hub",
+        "share",
+        "reachplc.hub",
         "hola-auth.hub",
-        "reachplc.hub"
+        "cbc-login.hub",
+        "monarte.hub"
     ],
     "cnames": [
+        {
+            "original": "auth.arte.tv",
+            "resolved": "monarte.hub.loginradius.com"
+        },
         {
             "original": "auth.hola.com",
             "resolved": "hola-auth.hub.loginradius.com"
@@ -36,7 +42,7 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -60,14 +66,15 @@
                 "hub"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
                 "window.localStorage": 1,
                 "Date.prototype.getTime": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -77,69 +84,25 @@
             ]
         },
         {
-            "rule": "loginradius\\.com\\/ssologin\\/login",
+            "rule": "loginradius\\.com\\/ApiData\\/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cbc-login.hub",
-                "hola-auth.hub"
+                "share"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000276,
-            "cnames": [
-                {
-                    "original": "login.cbc.ca",
-                    "resolved": "cbc-login.hub.loginradius.com"
-                },
-                {
-                    "original": "auth.hola.com",
-                    "resolved": "hola-auth.hub.loginradius.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cbc.ca",
-                "us.hola.com",
-                "www.cbc.ca",
-                "www.hola.com"
-            ]
-        },
-        {
-            "rule": "loginradius\\.com\\/ssologin\\/login",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cbc-login.hub",
-                "hola-auth.hub"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000276,
-            "cnames": [
-                {
-                    "original": "login.cbc.ca",
-                    "resolved": "cbc-login.hub.loginradius.com"
-                },
-                {
-                    "original": "auth.hola.com",
-                    "resolved": "hola-auth.hub.loginradius.com"
-                }
-            ],
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
             "responseHashes": [
-                "f7a4a046540cd7b682afc0d129cbbdea16081d1a54dfd3385115725f960c54c9"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cbc.ca",
-                "us.hola.com",
-                "www.cbc.ca",
-                "www.hola.com"
+                "adw.org",
+                "blog.adw.org"
             ]
         },
         {
@@ -164,20 +127,111 @@
                 "pulse.express.co.uk",
                 "www.express.co.uk"
             ]
+        },
+        {
+            "rule": "loginradius\\.com\\/ssologin\\/login",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hola-auth.hub",
+                "cbc-login.hub"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [
+                {
+                    "original": "auth.hola.com",
+                    "resolved": "hola-auth.hub.loginradius.com"
+                },
+                {
+                    "original": "login.cbc.ca",
+                    "resolved": "cbc-login.hub.loginradius.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hola.com",
+                "www.cbc.ca",
+                "www.hola.com"
+            ]
+        },
+        {
+            "rule": "loginradius\\.com\\/ssologin\\/login",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hola-auth.hub",
+                "cbc-login.hub"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [
+                {
+                    "original": "auth.hola.com",
+                    "resolved": "hola-auth.hub.loginradius.com"
+                },
+                {
+                    "original": "login.cbc.ca",
+                    "resolved": "cbc-login.hub.loginradius.com"
+                }
+            ],
+            "responseHashes": [
+                "f7a4a046540cd7b682afc0d129cbbdea16081d1a54dfd3385115725f960c54c9"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hola.com",
+                "www.cbc.ca",
+                "www.hola.com"
+            ]
+        },
+        {
+            "rule": "loginradius\\.com\\/ssologin\\/login",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "monarte.hub"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "auth.arte.tv",
+                    "resolved": "monarte.hub.loginradius.com"
+                }
+            ],
+            "responseHashes": [
+                "a1d169ea3a1e17ff6a959d45977bde8a366c38c98dba19e803f4e8c00baa3dce"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "arte.tv",
+                "www.arte.tv"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 4,
-        "Preflight": 4,
-        "XHR": 4,
-        "Fetch": 3
+        "Script": 8,
+        "Fetch": 3,
+        "Preflight": 3,
+        "XHR": 3
     },
     "nameservers": [
-        "ns2.p14.dynect.net",
         "ns3.p14.dynect.net",
+        "ns2.p14.dynect.net",
         "ns4.p14.dynect.net",
         "ns1.p14.dynect.net"
     ]

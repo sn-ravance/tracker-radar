@@ -7,12 +7,17 @@
     "prevalence": 0.0001,
     "sites": 1,
     "subdomains": [
-        "poole-https.prod.cachehttp.gslb"
+        "poole-https.prod.cachehttp.gslb",
+        "zgif.prod.cachehttp.gslb"
     ],
     "cnames": [
         {
             "original": "c.woopic.com",
             "resolved": "poole-https.prod.cachehttp.gslb.fti.net"
+        },
+        {
+            "original": "z.woopic.com",
+            "resolved": "zgif.prod.cachehttp.gslb.fti.net"
         }
     ],
     "fingerprinting": 2,
@@ -43,13 +48,41 @@
                 "orange.fr",
                 "www.orange.fr"
             ]
+        },
+        {
+            "rule": "fti\\.net\\/z\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "zgif.prod.cachehttp.gslb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "z.woopic.com",
+                    "resolved": "zgif.prod.cachehttp.gslb.fti.net"
+                }
+            ],
+            "responseHashes": [
+                "f3ce6819f546bd9ea6b62f1d596f2c521b1046affe87a9f6729eace3640e0efd"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "orange.fr",
+                "www.orange.fr"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Image": 2
+        "Image": 2,
+        "Fetch": 2
     },
     "nameservers": []
 }

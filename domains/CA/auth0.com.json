@@ -7,11 +7,12 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000703,
-    "sites": 7,
+    "prevalence": 0.000804,
+    "sites": 8,
     "subdomains": [
         "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
-        "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu"
+        "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu",
+        "cdn"
     ],
     "cnames": [
         {
@@ -47,7 +48,7 @@
                 }
             ],
             "responseHashes": [
-                "a4f1ef8e73e8ffc1e1cf562cf88a0b9331910bc0c19539c62171659b63f70069"
+                "99f67802ea59cf66d6071c1988486497a169d90857c9c3dee73795c5f5771135"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -56,13 +57,43 @@
                 "arduino.cc",
                 "www.native-instruments.com"
             ]
+        },
+        {
+            "rule": "auth0\\.com\\/js\\/auth0-spa-js\\/1\\.13\\/auth0-spa-js\\.production\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "01d6389de5581a2a3eb0cd4d6a05cb136bf07d221306f89173a080c73a38e392"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "denverpost.com",
+                "www.mercurynews.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0.000201,
     "types": {
-        "Document": 2
+        "Document": 2,
+        "Script": 2
     },
-    "nameservers": []
+    "nameservers": [
+        "monroe.ns.cloudflare.com",
+        "kolton.ns.cloudflare.com"
+    ]
 }

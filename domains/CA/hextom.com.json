@@ -4,16 +4,85 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000904,
-    "sites": 9,
+    "prevalence": 0.001,
+    "sites": 10,
     "subdomains": [
         "cdn",
+        "fsb",
         "usb",
         "qab"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "hextom\\.com\\/js\\/freeshippingbar\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "771db1ce14953f4c80bb2668c45ac15a70a46586cf4dd450112cc5dd096b56e4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "fsb_previous_pathname": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.00020090406830738323,
+                    "uniqueness": 0.5
+                },
+                "fsb_total_price_372544": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.00010045203415369161,
+                    "uniqueness": 1
+                },
+                "fsb_message_one_372544": {
+                    "ttl": 4,
+                    "length": 3,
+                    "prevalence": 0.00010045203415369161,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eatpropergood.com",
+                "www.canadianshieldppe.ca"
+            ]
+        },
+        {
+            "rule": "hextom\\.com\\/fsb_get_bars",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fsb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "f5676930c49dd98262370da53bf01ffa8b4bee45e826beb2a4e77d6800057f46"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eatpropergood.com",
+                "www.canadianshieldppe.ca"
+            ]
+        },
         {
             "rule": "hextom\\.com\\/js\\/ultimatesalesboost\\.js",
             "cookies": 0.000201,
@@ -32,21 +101,21 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "8e653a03377c70554f5d96b76226d3886e44f02b43e4eca4d8460f13b1e0e0bb"
+                "b9b7f3f1e8e697407e6dd9dccb7f83b722900a85c6da9cf265850ae94975d5b3"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "usb_previous_pathname": {
                     "ttl": null,
                     "length": 1,
-                    "prevalence": 0.0002008233758409479,
+                    "prevalence": 0.00020090406830738323,
                     "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "goodnessme.ca",
-                "mypatriotsupply.com"
+                "mypatriotsupply.com",
+                "workauthority.ca"
             ]
         },
         {
@@ -67,8 +136,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "goodnessme.ca",
-                "mypatriotsupply.com"
+                "mypatriotsupply.com",
+                "workauthority.ca"
             ]
         },
         {
@@ -88,20 +157,20 @@
             "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
-                "25db4404350966e041f44fbf4db4982b796f8ca85f25a155cb08fd13a787f7dc"
+                "e5d98b56269005591bf1334e33b5c295752a094e3eb4dfd2a788b37bf99135d9"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "qab_previous_pathname": {
                     "ttl": null,
                     "length": 1,
-                    "prevalence": 0.0005020584396023697,
+                    "prevalence": 0.0005022601707684581,
                     "uniqueness": 0.2
                 },
                 "qab_cool_down_seconds": {
-                    "ttl": 8,
+                    "ttl": 11,
                     "length": 1,
-                    "prevalence": 0.00010041168792047395,
+                    "prevalence": 0.00010045203415369161,
                     "uniqueness": 1
                 }
             },
@@ -127,7 +196,7 @@
             "cnames": [],
             "responseHashes": [
                 "f1b5d4752a3ce32aa33c9eaf58b4c768fd51711353eb8e2893b1b481a26ca391",
-                "5556458bd4ff8f5ad679f6f60b1e6f49a6dbd24203bd5151fd871cf8e92e55b2",
+                "e28723750bda26fb97668fb899ff6028acc3a33e0090b9e46ff9e3eb465f530d",
                 "13de291769d9d69ddc145d3e8076931d5d3ef6f194a56b5f7bad9ff1382f4052",
                 "88cb38e496a29fe7dba1d0b5c442877e5ec1ae4e7a2d9749290a784a9fe0b80a"
             ],
@@ -147,13 +216,13 @@
     "performance": {},
     "cookies": 0.000904,
     "types": {
-        "Script": 7,
-        "XHR": 7
+        "Script": 9,
+        "XHR": 9
     },
     "nameservers": [
-        "ns-60.awsdns-07.com",
-        "ns-704.awsdns-24.net",
+        "ns-1484.awsdns-57.org",
         "ns-1851.awsdns-39.co.uk",
-        "ns-1484.awsdns-57.org"
+        "ns-60.awsdns-07.com",
+        "ns-704.awsdns-24.net"
     ]
 }

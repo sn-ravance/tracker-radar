@@ -10,8 +10,10 @@
     "prevalence": 0.000201,
     "sites": 2,
     "subdomains": [
+        "wsv3cdn",
         "wsmcdn",
-        "analytics"
+        "analytics",
+        "ws"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -21,20 +23,70 @@
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
+                "wsv3cdn",
                 "wsmcdn"
             ],
             "apis": {
-                "Document.cookie getter": 1,
                 "Navigator.prototype.userAgent": 1,
-                "Date.prototype.getTime": 1
+                "Date.prototype.getTime": 1,
+                "window.localStorage": 1
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "ab4a1185e6d8ce3b1c79e470c6e33e186d911d450718367873477410755779df"
+                "9afd9901aaa8d73ae88eb8865729b413eea0724f2f8986b6c75da9f7625ba434"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yamaha.com",
+                "www.guitarcenter.com"
+            ]
+        },
+        {
+            "rule": "audioeye\\.com\\/scripts\\/loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "wsv3cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 1,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "553be9e8ef3d95b8b6a3503226ffa9c96ee5d2d440a9fbaed30f3508a11f62f8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "IR_gbd": 0.00010039152695512498
+            },
+            "exampleSites": [
+                "yamaha.com",
+                "www.guitarcenter.com"
+            ]
+        },
+        {
+            "rule": "audioeye\\.com\\/frame\\/cookieStorage\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wsv3cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e8fc432edf7cd8a6df1278ad9efa2b4be36077b90a0bfaea968ab7f105ed0e22"
+            ],
+            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -50,8 +102,8 @@
                 "analytics"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "c1b3e4ea1f7f3bc6e1224157228947ff7d08afa05ccc967dab3147f6c1a485ac"
@@ -61,6 +113,31 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "yamaha.com",
+                "usa.yamaha.com",
+                "www.guitarcenter.com"
+            ]
+        },
+        {
+            "rule": "audioeye\\.com\\/ae\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wsv3cdn",
+                "ws"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "dce26f1ce8cab506b470359d956920c5c703ed08f83060a836be5e2c4ca1e80a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yamaha.com",
+                "usa.yamaha.com",
                 "www.guitarcenter.com"
             ]
         }
@@ -69,8 +146,9 @@
     "performance": {},
     "cookies": 0.0001,
     "types": {
-        "Script": 2,
-        "Other": 2
+        "Script": 7,
+        "Document": 2,
+        "Other": 3
     },
     "nameservers": [
         "ns-1086.awsdns-07.org",

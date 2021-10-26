@@ -7,14 +7,63 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
-        "t"
+        "s",
+        "t",
+        "vis"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "vi-serve\\.com\\/tagLoader\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e2050ed4a8ab3f74cc1a26ef380fdacc9004ec320d33bb088fccdbeef36cb657"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anime-planet.com",
+                "www.cyclingstage.com"
+            ]
+        },
+        {
+            "rule": "vi-serve\\.com\\/source\\.m\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.doNotTrack": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "0e4918880b15bc1781d9846594184e11bbeb5e3fd36fa16fc59cfb7bfc87603c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anime-planet.com",
+                "www.cyclingstage.com"
+            ]
+        },
         {
             "rule": "vi-serve\\.com\\/",
             "cookies": 0,
@@ -23,8 +72,8 @@
                 "t"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -34,7 +83,30 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "anime-planet.com",
-                "www.anime-planet.com"
+                "www.anime-planet.com",
+                "www.cyclingstage.com"
+            ]
+        },
+        {
+            "rule": "vi-serve\\.com\\/playlist\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vis"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "d9e0c95d4c83cf6c3b1034712d74ef62a0f34aabe4de2c0ba9ce43d69c7fdbba"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anime-planet.com",
+                "www.cyclingstage.com"
             ]
         }
     ],
@@ -42,12 +114,14 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Image": 2
+        "Script": 4,
+        "Image": 3,
+        "XHR": 2
     },
     "nameservers": [
-        "ns-322.awsdns-40.com",
-        "ns-976.awsdns-58.net",
         "ns-1163.awsdns-17.org",
-        "ns-1876.awsdns-42.co.uk"
+        "ns-1876.awsdns-42.co.uk",
+        "ns-322.awsdns-40.com",
+        "ns-976.awsdns-58.net"
     ]
 }

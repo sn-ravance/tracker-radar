@@ -16,6 +16,57 @@
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "easydmp\\.net\\/js\\/client\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "asset"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "ff75f33d97a96e01f3ceab8e08d271a594b28167c8c45ec881462ddda5331967"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lelo.com",
+                "www.lelo.com"
+            ]
+        },
+        {
+            "rule": "easydmp\\.net\\/client_iframe\\.html",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "asset"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "window.indexedDB": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "71a7a3a79c81a365d835a988a0a79e70d05bee9d74d4b2a22e97ae89257877ef"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lelo.com",
+                "www.lelo.com"
+            ]
+        },
+        {
             "rule": "easydmp\\.net\\/etag\\.php",
             "cookies": 0,
             "fingerprinting": 0,
@@ -27,7 +78,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "d3bf9c0e1df40689dad6c5d8323bc8041aad1b39fe8844a01aaed3c180fbbbd0"
+                "73129ceab854b63078961e7cdd3bfecdaa764745f3ba64fd1a9f391e21448bbc"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -39,7 +90,7 @@
         },
         {
             "rule": "easydmp\\.net\\/collect_v3\\.php",
-            "cookies": 0.0001,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "asset"
@@ -49,31 +100,9 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "87227917f585123d3d79f9aea5e28220d35bbf1c436018e9c8f020bd3bae591b"
+                "602672dfe75d85262a983c2eca217c79818ba13ebe3f856732bb3488e762646c"
             ],
             "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lelo.com",
-                "www.lelo.com"
-            ]
-        },
-        {
-            "rule": "easydmp\\.net\\/collect_v2\\.img\\.php",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "asset"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "cf4724b2f736ed1a0ae6bc28f1ead963d9cd2c1fd87b6ef32e7799fc1c5c8bda"
-            ],
-            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -86,8 +115,9 @@
     "performance": {},
     "cookies": 0.0001,
     "types": {
-        "XHR": 4,
-        "Image": 2
+        "Script": 2,
+        "Document": 2,
+        "XHR": 4
     },
     "nameservers": [
         "ns109.ovh.net",

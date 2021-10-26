@@ -7,12 +7,18 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.00502,
-    "sites": 50,
+    "prevalence": 0.00452,
+    "sites": 45,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "lbg-eum-proxy"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "cem.bankofscotland.co.uk",
+            "resolved": "lbg-eum-proxy.appdynamics.com"
+        }
+    ],
     "fingerprinting": 1,
     "resources": [
         {
@@ -23,13 +29,13 @@
                 "cdn"
             ],
             "apis": {
-                "PerformanceTiming.prototype.navigationStart": 10,
-                "Date.prototype.getTime": 10,
-                "Event.prototype.timeStamp": 9,
+                "PerformanceTiming.prototype.navigationStart": 9,
+                "Date.prototype.getTime": 9,
+                "Event.prototype.timeStamp": 8,
                 "Document.cookie getter": 5
             },
-            "sites": 10,
-            "prevalence": 0.001,
+            "sites": 9,
+            "prevalence": 0.000903,
             "cnames": [],
             "responseHashes": [
                 "f7b4c01edef29deff0c9c54e6dd504b25bec2ed87bf88074d6a739f98d335acd"
@@ -45,7 +51,6 @@
                 "www.britishgas.co.uk",
                 "www.nintendo.com",
                 "www.rentalcars.com",
-                "www.royalcaribbean.com",
                 "www.vodafone.co.uk",
                 "www.voxi.co.uk"
             ]
@@ -58,10 +63,10 @@
                 "cdn"
             ],
             "apis": {
-                "window.localStorage": 10
+                "window.localStorage": 9
             },
-            "sites": 10,
-            "prevalence": 0.001,
+            "sites": 9,
+            "prevalence": 0.000903,
             "cnames": [],
             "responseHashes": [
                 "5346dfc0f18be96e38080c303c312d99867487d6078f5ce0f1c0ddaaf165c473"
@@ -77,7 +82,6 @@
                 "www.britishgas.co.uk",
                 "www.nintendo.com",
                 "www.rentalcars.com",
-                "www.royalcaribbean.com",
                 "www.vodafone.co.uk",
                 "www.voxi.co.uk"
             ]
@@ -163,11 +167,11 @@
                 "cdn"
             ],
             "apis": {
-                "window.localStorage": 4,
+                "window.localStorage": 3,
                 "Date.prototype.getTime": 1
             },
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "fc9c2a5689107bc64f45aab5fb2f3215b277a1bf1b935921e8d5f379420336f5"
@@ -177,9 +181,35 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "plus.net",
-                "www.cmcmarkets.com",
                 "www.ernestjones.co.uk",
                 "www.hsamuel.co.uk"
+            ]
+        },
+        {
+            "rule": "appdynamics\\.com\\/eumcollector\\/beacons\\/browser\\/v1\\/EU-AAB-HCH-DMC\\/adrum",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lbg-eum-proxy"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cem.bankofscotland.co.uk",
+                    "resolved": "lbg-eum-proxy.appdynamics.com"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bankofscotland.co.uk",
+                "www.bankofscotland.co.uk"
             ]
         },
         {
@@ -208,7 +238,7 @@
                 "OneTrustPrevious": {
                     "ttl": 31536005,
                     "length": 11,
-                    "prevalence": 0.00010033109260559848,
+                    "prevalence": 0.00010034115994380895,
                     "uniqueness": 1
                 }
             },
@@ -251,12 +281,12 @@
                 "cdn"
             ],
             "apis": {
-                "PerformanceTiming.prototype.navigationStart": 4,
-                "Date.prototype.getTime": 4,
-                "Event.prototype.timeStamp": 4
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Date.prototype.getTime": 2,
+                "Event.prototype.timeStamp": 2
             },
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "fe3667dacaa74fed39aa53e8c8261c855a99ceaafd6fc1c3e60e0db2610c2b26"
@@ -266,35 +296,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "carhartt.com",
-                "www.carhartt.com",
-                "www.esso.co.uk",
-                "www.match.com"
-            ]
-        },
-        {
-            "rule": "appdynamics\\.com\\/adrum-ext\\.a5c406ae5697070ded3eee8312968928\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "window.localStorage": 3,
-                "Date.prototype.getTime": 2
-            },
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "e1b19c2ac70595557d3f792927531f74faf51f6b1249a7dde90e79dfb2686ac1"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "carhartt.com",
-                "www.esso.co.uk",
-                "www.match.com"
+                "www.carhartt.com"
             ]
         },
         {
@@ -427,30 +429,6 @@
             ]
         },
         {
-            "rule": "appdynamics\\.com\\/adrum-xd\\.a5c406ae5697070ded3eee8312968928\\.html",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "window.localStorage": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "21928b84aedf5af2fe24b0463b27aa915428fdef208a42d3211f2e62381ace4a"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "esso.co.uk",
-                "www.match.com"
-            ]
-        },
-        {
             "rule": "appdynamics\\.com\\/adrum-ext\\.0086dbec5e8a6e717bf36d3a06b62042\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -525,6 +503,31 @@
                 "premierinn.com",
                 "www.ratedpeople.com"
             ]
+        },
+        {
+            "rule": "appdynamics\\.com\\/adrum-ext\\.57faf0924644548b2bc48baae88f0b25\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "309d53d549c1a62ec2bb6c9334f6dda20119e7799f4cf720f43508c5e18002cd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "waitrosecellar.com",
+                "www.waitroseflorist.com"
+            ]
         }
     ],
     "categories": [
@@ -533,8 +536,9 @@
     "performance": {},
     "cookies": 0.000602,
     "types": {
-        "Script": 53,
-        "Document": 8
+        "Script": 47,
+        "Document": 6,
+        "XHR": 2
     },
     "nameservers": [
         "ns-1486.awsdns-57.org",
