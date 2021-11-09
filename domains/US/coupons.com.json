@@ -8,6 +8,7 @@
     "sites": 2,
     "subdomains": [
         "bc",
+        "genie",
         "www"
     ],
     "cnames": [],
@@ -75,9 +76,31 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "c5de8903be7df5232fdcfffa224a335a7aee1bf62380c8ea0474762e16e7b544"
+                "d461c18556df19a6a85b4ad905dd81f0626c9f996302e8b974b4e56c01af45cb"
             ],
             "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "supersafeway.com",
+                "www.southernsavers.com"
+            ]
+        },
+        {
+            "rule": "coupons\\.com\\/riq-genie\\/fs\\/genie-recaptcha\\/genie-recaptcha\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "genie"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "55e73ee36c0ec08f6b2b7e895fac5c84b1dceb1d1c50b54dd425112346ae57f4"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -122,43 +145,31 @@
                 "Navigator.prototype.appName": 2,
                 "Navigator.prototype.plugins": 2,
                 "Navigator.prototype.platform": 2,
+                "Navigator.prototype.webdriver": 2,
                 "Navigator.prototype.connection": 2,
                 "Navigator.prototype.language": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2,
-                "Navigator.prototype.mimeTypes": 2
+                "Navigator.prototype.mimeTypes": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "858efa7bff82e4de65cd3004773626fc99023de92654abc56b56656a77393dc3"
+                "929186c0b65c26b3167549106eb172842ac8bdef0ca919829ca744843b0a3c96"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "supersafeway.com",
-                "www.southernsavers.com"
-            ]
-        },
-        {
-            "rule": "coupons\\.com\\/couponclick",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bc"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "3fdf79b68993b73c4fa7a4f8de795fb6c040a3f468ca91dbdc151ab9ce6e6191"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "___utmvc": {
+                    "ttl": 26,
+                    "length": 2878,
+                    "prevalence": 0.000013811105509940544,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "supersafeway.com",
@@ -188,20 +199,40 @@
             ]
         },
         {
-            "rule": "coupons\\.com\\/clearcookies\\.php",
+            "rule": "coupons\\.com\\/couponclick",
             "cookies": 0.0000138,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
-                "www"
+                "bc"
             ],
-            "apis": {
-                "window.localStorage": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "5b6f1bdea01889f3ff77270e8d2a345f92c15f1e8f21d95e619c2021edf5c0f1"
+                "c95f3db685973ef606f1445e4407981ab9d500ff53b7edaaa4c0ff8724f94adf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "supersafeway.com",
+                "www.southernsavers.com"
+            ]
+        },
+        {
+            "rule": "coupons\\.com\\/clearcookies\\.php",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "484522fc8ce86c281e24d43924aef3c35245cc08d4b0e837f3b66c692fcaaff3"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -244,7 +275,7 @@
                 "Navigator.prototype.userAgent": 2,
                 "Document.cookie getter": 1,
                 "window.localStorage": 2,
-                "Navigator.prototype.language": 2,
+                "Navigator.prototype.languages": 2,
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2,
                 "Screen.prototype.availHeight": 2,
@@ -252,36 +283,35 @@
                 "Screen.prototype.availTop": 2,
                 "Screen.prototype.availWidth": 2,
                 "Screen.prototype.pixelDepth": 2,
-                "window.devicePixelRatio": 2,
                 "Date.prototype.getTimezoneOffset": 2,
-                "window.indexedDB": 2,
-                "Navigator.prototype.platform": 2,
-                "Navigator.prototype.doNotTrack": 2,
-                "Navigator.prototype.appName": 2,
-                "Navigator.prototype.plugins": 2,
-                "CanvasRenderingContext2D.prototype.isPointInPath": 2,
+                "Navigator.prototype.plugins": 1,
+                "CanvasRenderingContext2D.prototype.isPointInPath": 1,
                 "HTMLCanvasElement.prototype.toDataURL": 2,
                 "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
                 "WebGLRenderingContext.prototype.getParameter": 2,
                 "WebGLRenderingContext.prototype.getContextAttributes": 2,
                 "WebGLRenderingContext.prototype.getExtension": 2,
                 "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "CanvasRenderingContext2D.prototype.measureText": 2,
+                "Document.cookie setter": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.language": 1,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.doNotTrack": 1,
+                "Navigator.prototype.appName": 1,
                 "Navigator.prototype.maxTouchPoints": 1,
                 "HTMLMediaElement.prototype.canPlayType": 1,
                 "Navigator.prototype.vendor": 1,
                 "Navigator.prototype.product": 1,
                 "Navigator.prototype.productSub": 1,
-                "Navigator.prototype.connection": 1,
-                "Navigator.prototype.hardwareConcurrency": 1,
-                "CanvasRenderingContext2D.prototype.measureText": 1,
-                "Document.cookie setter": 1,
-                "Date.prototype.getTime": 1
+                "Navigator.prototype.connection": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "553eca3b42edd8bd1027ab78c319078931d293d8f24023bd8e32f05bd22b12b5"
+                "7ec70bdd994f558b30f05a6daaf7c2d843d7789b33168bf90ee33be9922b8b62"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -302,7 +332,9 @@
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "8c07bcd30a2eb2f6ea74b64470ccd3e2469537ed5f610f29b4a5a88a80cad156"
+            ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -316,7 +348,7 @@
     "performance": {},
     "cookies": 0.0000138,
     "types": {
-        "Script": 12,
+        "Script": 14,
         "Document": 4,
         "Image": 2,
         "XHR": 2,

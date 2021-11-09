@@ -12,7 +12,7 @@
         "s1"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "mediaad\\.org\\/static\\/fingerprint\\.html",
@@ -22,7 +22,7 @@
                 "mediacdn"
             ],
             "apis": {
-                "window.localStorage": 2
+                "window.localStorage": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -39,7 +39,7 @@
             ]
         },
         {
-            "rule": "mediaad\\.org\\/v1\\/events\\/beytoote\\.com\\/page\\/loaded",
+            "rule": "mediaad\\.org\\/v2\\/events\\/beytoote\\.com\\/page\\/loaded",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -54,12 +54,52 @@
             ],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "MEDIAAD_USER_ID": 0.000006904170118751726
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "beytoote.com",
                 "www.beytoote.com"
+            ]
+        },
+        {
+            "rule": "mediaad\\.org\\/v2\\/events\\/beytoote\\.com\\/page\\/loaded",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beytoote.com",
+                "www.beytoote.com"
+            ]
+        },
+        {
+            "rule": "mediaad\\.org\\/v1\\/events\\/verify",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beytoote.com",
+                "www.varzesh3.com"
             ]
         },
         {
@@ -83,28 +123,6 @@
             ]
         },
         {
-            "rule": "mediaad\\.org\\/v1\\/events\\/verify",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "beytoote.com",
-                "www.varzesh3.com"
-            ]
-        },
-        {
             "rule": "mediaad\\.org\\/serve\\/varzesh3\\.com\\/loader\\.js",
             "cookies": 0.0000138,
             "fingerprinting": 1,
@@ -114,9 +132,11 @@
             "apis": {
                 "window.localStorage": 2,
                 "Navigator.prototype.product": 2,
-                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appVersion": 2,
                 "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -127,9 +147,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "MEDIAAD_USER_ID": {
-                    "ttl": 3153600000004,
+                    "ttl": 3153600000005,
                     "length": 36,
-                    "prevalence": 0.000013808340237503452,
+                    "prevalence": 0.000013811105509940544,
                     "uniqueness": 1
                 }
             },
@@ -150,10 +170,14 @@
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "56e68eed9e67136a933cd9e3c1388bb671496e82dc7ac823029538fe216616a1"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "MEDIAAD_USER_ID": 0.000013811105509940544
+            },
             "exampleSites": [
                 "varzesh3.com",
                 "www.varzesh3.com"
@@ -170,32 +194,12 @@
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [
-                "8ce056d3e9004706b364e59ab06713adea492268e910a352a6ec887f629520e8"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "varzesh3.com",
-                "www.varzesh3.com"
-            ]
-        },
-        {
-            "rule": "mediaad\\.org\\/v2\\/events\\/varzesh3\\.com\\/page\\/loaded",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "MEDIAAD_USER_ID": 0.000013811105509940544
+            },
             "exampleSites": [
                 "varzesh3.com",
                 "www.varzesh3.com"
@@ -224,6 +228,26 @@
             ]
         },
         {
+            "rule": "mediaad\\.org\\/v2\\/events\\/varzesh3\\.com\\/page\\/loaded",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "varzesh3.com",
+                "www.varzesh3.com"
+            ]
+        },
+        {
             "rule": "mediaad\\.org\\/static\\/mediaad_banner_logo_collapsed\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
@@ -235,7 +259,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "1ef4acfe3384902966ae68dab97073b3d0c6a0f1442d65a245b776d78cce93db"
+                "56ad5a00deffddc16d418cafadd6f972d3d78276acd49aec39da3ae6ed8d0dca"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -257,7 +281,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "d125eaf1978d6083b41a0c38692d59efebfa5b5b979c729e349f7f6a1639404f"
+                "767237165c216d31f800e5059549bd1d1dbe6807ba70122a1e4fcec5338fc5a6"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -279,7 +303,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "c635e507a929debb12b9d20061c53ce91df45e8c3e44ca26c27c264d53b82f01"
+                "4d1dab1fce57c529f5fa0b4311b38e50defdff5ef8c31ea46f2bdbd7b38b1cc1"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -292,16 +316,16 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000207,
+    "cookies": 0.0000138,
     "types": {
         "Document": 2,
         "XHR": 8,
-        "Preflight": 6,
+        "Preflight": 8,
         "Script": 2,
         "Image": 6
     },
     "nameservers": [
-        "sima.ns.cloudflare.com",
-        "yichun.ns.cloudflare.com"
+        "yichun.ns.cloudflare.com",
+        "sima.ns.cloudflare.com"
     ]
 }

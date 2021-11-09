@@ -33,54 +33,6 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "ft2\\.map\\.fastly\\.net\\/v2\\/bundles\\/css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "origami-build.ft.com",
-                    "resolved": ".ft2.map.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "7387086d8abc233dd12f5e6fb339cd1da8693b4ecc365af1498f7e6c66a6a733"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ft.com",
-                "ig.ft.com"
-            ]
-        },
-        {
-            "rule": "ft2\\.map\\.fastly\\.net\\/v2\\/bundles\\/js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "origami-build.ft.com",
-                    "resolved": ".ft2.map.fastly.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ft.com",
-                "ig.ft.com"
-            ]
-        },
-        {
             "rule": "ft2\\.map\\.fastly\\.net\\/ingest",
             "cookies": 0.0000207,
             "fingerprinting": 0,
@@ -95,9 +47,9 @@
                 }
             ],
             "responseHashes": [
-                "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
+                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
             ],
-            "type": "Other",
+            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -157,6 +109,52 @@
             ]
         },
         {
+            "rule": "ft2\\.map\\.fastly\\.net\\/v2\\/bundles\\/css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "origami-build.ft.com",
+                    "resolved": ".ft2.map.fastly.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ft.com",
+                "ig.ft.com"
+            ]
+        },
+        {
+            "rule": "ft2\\.map\\.fastly\\.net\\/v2\\/bundles\\/js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "origami-build.ft.com",
+                    "resolved": ".ft2.map.fastly.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ft.com",
+                "ig.ft.com"
+            ]
+        },
+        {
             "rule": "ft2\\.map\\.fastly\\.net\\/px\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
@@ -170,8 +168,10 @@
                     "resolved": ".ft2.map.fastly.net"
                 }
             ],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -193,10 +193,8 @@
                     "resolved": ".ft2.map.fastly.net"
                 }
             ],
-            "responseHashes": [
-                "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -218,12 +216,12 @@
     "performance": {},
     "cookies": 0.0000207,
     "types": {
+        "Ping": 3,
+        "Fetch": 4,
         "Stylesheet": 2,
         "Script": 2,
-        "Other": 3,
-        "Fetch": 4,
-        "Preflight": 2,
-        "XHR": 2
+        "XHR": 2,
+        "Preflight": 2
     },
     "nameservers": []
 }

@@ -9,7 +9,8 @@
     "subdomains": [
         "prod-assets.sealy.cloudfront",
         "cdn.matomo",
-        "prod.retaillocator.cloudfront"
+        "prod.retaillocator.cloudfront",
+        "prod.reviewsapi.cloudfront"
     ],
     "cnames": [
         {
@@ -36,7 +37,7 @@
                 }
             ],
             "responseHashes": [
-                "b71f49c0c13c732506ae9004e142edd816e8f73724b655ce778aeea77c4d9f8f"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -75,27 +76,27 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_pk_id.53.851d": {
-                    "ttl": 33955205,
+                    "ttl": 33955204,
                     "length": 52,
-                    "prevalence": 0.000013808340237503452,
+                    "prevalence": 0.000013811105509940544,
                     "uniqueness": 1
                 },
                 "_pk_ses.53.851d": {
-                    "ttl": 1809,
+                    "ttl": 1807,
                     "length": 1,
-                    "prevalence": 0.000013808340237503452,
+                    "prevalence": 0.000013811105509940544,
                     "uniqueness": 0.5
                 },
                 "_pk_id.54.0518": {
-                    "ttl": 33955211,
+                    "ttl": 33955202,
                     "length": 52,
-                    "prevalence": 0.000006904170118751726,
+                    "prevalence": 0.000006905552754970272,
                     "uniqueness": 1
                 },
                 "_pk_ses.54.0518": {
-                    "ttl": 1819,
+                    "ttl": 1811,
                     "length": 1,
-                    "prevalence": 0.000006904170118751726,
+                    "prevalence": 0.000006905552754970272,
                     "uniqueness": 1
                 }
             },
@@ -118,12 +119,12 @@
             "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [
-                "548f2d6f4d0d820c6c5ffbeffcbd7f0e73193e2932eefe542accc84762deec87"
+                "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "IR_gbd": 0.00002071251035625518
+                "IR_gbd": 0.000020716658264910814
             },
             "exampleSites": [
                 "sealy.com",
@@ -143,8 +144,8 @@
             "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [
-                "506a1dcff398676bfc5a38fb9992a10f2cbc0b2e4987915a9ea4cebf5f25f453",
-                "43fbfb95f9f7e8fafd59ec5e36f4afce95cd455c8fb4ad64313654d375c36a2e"
+                "2479db6b1863ee7c6ab5540f190f85db8574a83fc2aa8704eb62a8d7884f3636",
+                "75efa2b28f131f54a77752ac10a99359854e6610597aa3c394bc1ba18e8d11ce"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -152,6 +153,72 @@
             "exampleSites": [
                 "sealy.com",
                 "www.sealy.com",
+                "www.tempurpedic.com"
+            ]
+        },
+        {
+            "rule": "tsiaws\\.com\\/api\\/v2\\/reviews",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.reviewsapi.cloudfront"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "dedf0364263b5a36c79aab2a14077563477e81e1c1f5b1991a48cee6f5d9f999"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempurpedic.com",
+                "www.tempurpedic.com"
+            ]
+        },
+        {
+            "rule": "tsiaws\\.com\\/api\\/v2\\/brands\\/1\\/facets",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.reviewsapi.cloudfront"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "5fbdbc9ef9bf503422e14de60be43b3a323511c0de5043ad73f3b74c192f2c67"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempurpedic.com",
+                "www.tempurpedic.com"
+            ]
+        },
+        {
+            "rule": "tsiaws\\.com\\/api\\/v2\\/reviews\\/template",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.reviewsapi.cloudfront"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "bbfef03ec7ee0c322d5326651940f975f4e81f2b2bb8cfcc04cc24cd6098f52d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempurpedic.com",
                 "www.tempurpedic.com"
             ]
         }
@@ -162,12 +229,12 @@
     "types": {
         "Image": 5,
         "Script": 3,
-        "XHR": 3
+        "XHR": 9
     },
     "nameservers": [
-        "ns-622.awsdns-13.net",
-        "ns-494.awsdns-61.com",
+        "ns-1351.awsdns-40.org",
         "ns-1914.awsdns-47.co.uk",
-        "ns-1351.awsdns-40.org"
+        "ns-494.awsdns-61.com",
+        "ns-622.awsdns-13.net"
     ]
 }

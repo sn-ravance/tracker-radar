@@ -10,7 +10,7 @@
         "s"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "flocdn\\.com\\/@s1\\/ads-coordinator\\/8\\.3\\.5\\/index\\.js",
@@ -54,9 +54,9 @@
                 "s"
             ],
             "apis": {
-                "window.localStorage": 14,
                 "Date.prototype.getTime": 14,
-                "Document.cookie getter": 4
+                "window.localStorage": 7,
+                "Document.cookie getter": 7
             },
             "sites": 14,
             "prevalence": 0.0000967,
@@ -122,12 +122,15 @@
         },
         {
             "rule": "flocdn\\.com\\/%40s1\\/dpl\\/3\\.2\\.2\\/iframe\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0000691,
+            "fingerprinting": 1,
             "subdomains": [
                 "s"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 12,
+                "Document.cookie setter": 10
+            },
             "sites": 16,
             "prevalence": 0.00011,
             "cnames": [],
@@ -135,7 +138,14 @@
                 "3575cb7d2368c9f1d5e06df87869673ed7215a5251a789b0ef395c9948b552c7"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "testCookieName": {
+                    "ttl": null,
+                    "length": 15,
+                    "prevalence": 0.00006905552754970272,
+                    "uniqueness": 0.1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "howstuffworks.com",
@@ -154,36 +164,6 @@
                 "recipes.howstuffworks.com",
                 "science.howstuffworks.com",
                 "www.zoo.com"
-            ]
-        },
-        {
-            "rule": "flocdn\\.com\\/@s1\\/dpl\\/4\\.6\\.5\\/dpl-publishing\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "s"
-            ],
-            "apis": {
-                "window.localStorage": 5,
-                "Date.prototype.getTime": 5,
-                "PerformanceTiming.prototype.navigationStart": 3,
-                "Document.cookie getter": 1
-            },
-            "sites": 5,
-            "prevalence": 0.0000345,
-            "cnames": [],
-            "responseHashes": [
-                "e3f95dd21b5d12c519363cc97e7a9dd6f9650052ef583cc72c123371729ceb2f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "activebeat.com",
-                "m.activebeat.com",
-                "m.fame10.com",
-                "www.activebeat.com",
-                "www.forkly.com"
             ]
         },
         {
@@ -211,43 +191,23 @@
             ]
         },
         {
-            "rule": "flocdn\\.com\\/%40s1\\/dpl\\/4\\.6\\.5\\/iframe\\.html",
+            "rule": "flocdn\\.com\\/@s1\\/dpl\\/4\\.6\\.8\\/dpl-publishing\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "s"
             ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000345,
+            "apis": {
+                "Date.prototype.getTime": 4,
+                "window.localStorage": 4,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "9be79d10293299662f3701cf131d2d3922fd5519a0e9ccf29280486f75c0dd32"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "activebeat.com",
-                "m.activebeat.com",
-                "m.fame10.com",
-                "www.activebeat.com",
-                "www.forkly.com"
-            ]
-        },
-        {
-            "rule": "flocdn\\.com\\/%40s1\\/dpl\\/4\\.6\\.5\\/iframe\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000345,
-            "cnames": [],
-            "responseHashes": [
-                "b637987c977f853be935be7fb476aefef31aa1a6641776fe8cfdf9b011f744d9"
+                "7ba11668c2d5d032ecb76369273d124219eca551d77efefa0fc30c80d9a550a6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -256,8 +216,111 @@
                 "activebeat.com",
                 "m.activebeat.com",
                 "m.fame10.com",
-                "www.activebeat.com",
-                "www.forkly.com"
+                "www.activebeat.com"
+            ]
+        },
+        {
+            "rule": "flocdn\\.com\\/%40s1\\/dpl\\/4\\.6\\.8\\/iframe\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000276,
+            "cnames": [],
+            "responseHashes": [
+                "aab939578bbe4c737b30e26a5c64e2a348207ed64c89c5900958501274a82027"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "activebeat.com",
+                "m.activebeat.com",
+                "m.fame10.com",
+                "www.activebeat.com"
+            ]
+        },
+        {
+            "rule": "flocdn\\.com\\/@s1\\/taps\\/page_statistics_script\\/taps\\.js",
+            "cookies": 0.00000691,
+            "fingerprinting": 2,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {
+                "Screen.prototype.width": 4,
+                "Screen.prototype.height": 4,
+                "Navigator.prototype.appVersion": 4,
+                "Navigator.prototype.userAgent": 4,
+                "Navigator.prototype.appName": 4,
+                "Navigator.prototype.cookieEnabled": 4,
+                "Navigator.prototype.platform": 4,
+                "Navigator.prototype.getBattery": 4,
+                "window.devicePixelRatio": 3,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1,
+                "Document.cookie getter": 1,
+                "Navigator.prototype.language": 1,
+                "Navigator.prototype.languages": 1
+            },
+            "sites": 4,
+            "prevalence": 0.0000276,
+            "cnames": [],
+            "responseHashes": [
+                "cda5fd044824cf298817833af8170a554f02ae23be5c0d42692bb896fcb52ecd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "session-17cceb5470e": {
+                    "ttl": -1635555544,
+                    "length": 22,
+                    "prevalence": 0.000006905552754970272,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "activebeat.com",
+                "m.activebeat.com",
+                "m.fame10.com",
+                "www.activebeat.com"
+            ]
+        },
+        {
+            "rule": "flocdn\\.com\\/%40s1\\/dpl\\/4\\.6\\.8\\/iframe\\.js",
+            "cookies": 0.00000691,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {
+                "Document.cookie getter": 4,
+                "Document.cookie setter": 1
+            },
+            "sites": 4,
+            "prevalence": 0.0000276,
+            "cnames": [],
+            "responseHashes": [
+                "434158f600295f937a97eed991f6abc1ab282cb1457c797cf1bc73d230f9cf75"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "c_cn": {
+                    "ttl": null,
+                    "length": 8,
+                    "prevalence": 0.000006905552754970272,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "activebeat.com",
+                "m.activebeat.com",
+                "m.fame10.com",
+                "www.activebeat.com"
             ]
         },
         {
@@ -290,7 +353,7 @@
                 "s"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -304,6 +367,77 @@
             "exampleSites": [
                 "fame10.com",
                 "m.fame10.com"
+            ]
+        },
+        {
+            "rule": "flocdn\\.com\\/@s1\\/dpl\\/4\\.6\\.5\\/dpl-publishing\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e3f95dd21b5d12c519363cc97e7a9dd6f9650052ef583cc72c123371729ceb2f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "forkly.com",
+                "www.forkly.com"
+            ]
+        },
+        {
+            "rule": "flocdn\\.com\\/%40s1\\/dpl\\/4\\.6\\.5\\/iframe\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "9be79d10293299662f3701cf131d2d3922fd5519a0e9ccf29280486f75c0dd32"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "forkly.com",
+                "www.forkly.com"
+            ]
+        },
+        {
+            "rule": "flocdn\\.com\\/%40s1\\/dpl\\/4\\.6\\.5\\/iframe\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "b637987c977f853be935be7fb476aefef31aa1a6641776fe8cfdf9b011f744d9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "forkly.com",
+                "www.forkly.com"
             ]
         },
         {
@@ -402,28 +536,6 @@
             ]
         },
         {
-            "rule": "flocdn\\.com\\/%40s1\\/dpl\\/4\\.4\\.28\\/iframe\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "53435205b6cb2fd736c72ca0904168c51607d0d7149bf1474d69d01f362dc197"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mapquest.com",
-                "www.mapquest.com"
-            ]
-        },
-        {
             "rule": "flocdn\\.com\\/@s1\\/ads-coordinator\\/8\\.3\\.6\\/vendors~LoggerManager\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -470,7 +582,7 @@
             ]
         },
         {
-            "rule": "flocdn\\.com\\/%40s1\\/dpl\\/4\\.4\\.28\\/iframe\\.js",
+            "rule": "flocdn\\.com\\/%40s1\\/dpl\\/4\\.4\\.28\\/iframe\\.html",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -481,10 +593,42 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
+                "53435205b6cb2fd736c72ca0904168c51607d0d7149bf1474d69d01f362dc197"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mapquest.com",
+                "www.mapquest.com"
+            ]
+        },
+        {
+            "rule": "flocdn\\.com\\/%40s1\\/dpl\\/4\\.4\\.28\\/iframe\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
                 "714a56feac3a48bd878fc0be99b20e737b8abe9d55de647a9f5271ad5db5c384"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "c_cn": {
+                    "ttl": null,
+                    "length": 8,
+                    "prevalence": 0.000013811105509940544,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mapquest.com",
@@ -494,15 +638,15 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000145,
     "types": {
-        "Script": 76,
-        "Document": 23
+        "Script": 82,
+        "Document": 24
     },
     "nameservers": [
         "ns-111.awsdns-13.com",
-        "ns-618.awsdns-13.net",
         "ns-1232.awsdns-26.org",
-        "ns-1884.awsdns-43.co.uk"
+        "ns-1884.awsdns-43.co.uk",
+        "ns-618.awsdns-13.net"
     ]
 }

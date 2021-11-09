@@ -10,7 +10,7 @@
         "a"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "rltd\\.net\\/tags\\/geb\\.js",
@@ -20,13 +20,14 @@
                 "a"
             ],
             "apis": {
-                "Screen.prototype.width": 2
+                "Screen.prototype.width": 2,
+                "window.sessionStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "9c9e8302634d3bfdd1a2e28914e1f3b0ec5e6d2ecf53d62465dcc3f36be2a916"
+                "25169f5b1869d3159ab88ef34b7a5ac2e515430cc398a72d86932cdfd8968841"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -34,6 +35,40 @@
             "exampleSites": [
                 "gebraucht-kaufen.de",
                 "www.gebraucht-kaufen.de"
+            ]
+        },
+        {
+            "rule": "rltd\\.net\\/prebid\\/latest\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "a"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.cookieEnabled": 3,
+                "window.sessionStorage": 3,
+                "Navigator.prototype.appName": 3,
+                "window.localStorage": 3,
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "PerformanceTiming.prototype.navigationStart": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "98a3347bcbded8f514978f4dc6322cd90ec5f9f947d2317a5cb6721b1f8b0875"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gebraucht-kaufen.de",
+                "www.gebraucht-kaufen.de",
+                "www.the-sports.org"
             ]
         },
         {
@@ -82,42 +117,13 @@
                 "the-sports.org",
                 "www.the-sports.org"
             ]
-        },
-        {
-            "rule": "rltd\\.net\\/prebid\\/latest\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "a"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "window.sessionStorage": 2,
-                "Navigator.prototype.appName": 2,
-                "Date.prototype.getTime": 2,
-                "window.localStorage": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "b2c4a8bdc7205936c1ffbf4456479b5864a7ed3a5aa2fdcaacc730c356107b1a"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "the-sports.org",
-                "www.the-sports.org"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 8
+        "Script": 9
     },
     "nameservers": [
         "chan.ns.cloudflare.com",

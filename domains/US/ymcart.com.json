@@ -15,9 +15,9 @@
         "48281-dynamicpopup.us01-apps",
         "48281-popupnewsletter.us01-apps",
         "48281-popupcookie.us01-apps",
-        "48281-popupwheel.us01-apps",
         "48281-popupcoupon.us01-apps",
-        "48281-sidebar.us01-apps"
+        "48281-sidebar.us01-apps",
+        "48281-popupwheel.us01-apps"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -255,6 +255,7 @@
             ],
             "apis": {
                 "Date.prototype.getTimezoneOffset": 2,
+                "Document.cookie setter": 2,
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2,
                 "Navigator.prototype.language": 2
@@ -266,7 +267,38 @@
                 "f38baf66866332de530e3f7e6db1479afb468a036ea5fdcd13a67eb6ad68ea69"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "ymcart_client_timezone": {
+                    "ttl": 86400,
+                    "length": 17,
+                    "prevalence": 0.000013811105509940544,
+                    "uniqueness": 0.5
+                },
+                "ymcart_client_broswer_date_time": {
+                    "ttl": 86400,
+                    "length": 25,
+                    "prevalence": 0.000013811105509940544,
+                    "uniqueness": 0.5
+                },
+                "ymcart_client_screen_width": {
+                    "ttl": 86400,
+                    "length": 3,
+                    "prevalence": 0.000013811105509940544,
+                    "uniqueness": 0.5
+                },
+                "ymcart_client_screen_height": {
+                    "ttl": 86400,
+                    "length": 3,
+                    "prevalence": 0.000013811105509940544,
+                    "uniqueness": 0.5
+                },
+                "ymcart_client_broswer_language": {
+                    "ttl": 86400,
+                    "length": 5,
+                    "prevalence": 0.000013811105509940544,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "pomoly.com",
@@ -275,12 +307,15 @@
         },
         {
             "rule": "ymcart\\.com\\/collect\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
             "subdomains": [
                 "us01-analysis"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
@@ -288,7 +323,14 @@
                 "6733cd5d8a640b3e8f7bc4140d621d4ba0e48ae1867bd70f60c8d47225debbc7"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "ymcart_vid": {
+                    "ttl": 31536001,
+                    "length": 28,
+                    "prevalence": 0.000013811105509940544,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "pomoly.com",
@@ -307,7 +349,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "c874bb192cdfb37c4b273b0cb86ded67afebdf90cc74f180cbc5a046e10b0d4c"
+                "4f7f2bdde402662775d10aafaa0d4ff1abd3ab9e2b8933e87fbcf995ac7ba8a0"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -329,7 +371,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "f12728960f2a26784c53c3caf0a0ea84ab4b449969f9894b60332e99d4b9cfb7"
+                "61ddfe935b5bf40afc9ccdc07e4cdd87f48f6c171076129d2861cafcb770f919"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -351,7 +393,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "595c1f29f1edfce50d1589b7129f1dc958ac5e563d45f80678b5c7926350acfb"
+                "5d9937aa260028cbb70941e55c136bca3c7f10bc3778eae7fa1f1c917169bb61"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -373,7 +415,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "0d702689fd4f2a72d873897121a16d31b0ae101765433631b515f1775c21a81a"
+                "d829d46892fe14a8d8b5ac05bc725e140c85b35e0ad8774d94cc5febb99ded78"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -395,7 +437,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "26b23540b867d07674134901473602f9a8cb74be0290ca6eb2ffda527e5f32ec"
+                "9c69ebe716adb1d11b22894d55c307028be8508aada2cde5a745a6eaf72ea2bd"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -417,7 +459,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "81bdbbb9b216039e036a2a8770df90cbaf2866ab91420f265abf3838075544ba"
+                "8bbd5119aa112cbcaf2d98bd2bb6d9ff5195ba73358179af97e51e82128d1b1f"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -439,7 +481,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "f74449603b3d9ff4768d631f757622b3afc1da0aff3ded57e4bd01c8d38ee0f8"
+                "f16b1c980689b80a96a3aceeb5df0030ab46a58b7a96f152f8164b5a96ac29cd"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -461,7 +503,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "e3837ad9f9a3b872570c1ddca370fd2ecc0ef2e5f5f1fa35ca8304959fe1d625"
+                "bcc20019ba9296d4fb0da59751d3eb1e339f319ea29024378d45088ed9551f70"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -483,7 +525,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "ca022e24ecf9aa489a0563dcfa1886f8f01d5b5c27fc7da585205f917362b3b9"
+                "fa028711af5f004c4fe4424929b97d42b8cf57307e77adaa7d89f9959725fd02"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -505,7 +547,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "6f4889a6ca7daf3e8854b91d51ef73ea5e7184cc8e991faec21b5a344ab4d8ff"
+                "6b7297ce90fff767b8a2decda2d5f890e57ba9ad3049a3841bf88ea34afa2d3d"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -539,30 +581,30 @@
         },
         {
             "rule": "ymcart\\.com\\/res\\/manage\\/default\\/tpl\\/dynamicpopup\\/statics\\/js\\/front\\.js",
-            "cookies": 0.0000069,
+            "cookies": 0.0000138,
             "fingerprinting": 1,
             "subdomains": [
                 "48281-dynamicpopup.us01-apps"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 1,
+                "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
-                "Document.cookie setter": 1
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "34e8ce89c79f0703f18102f313823795ef71fbaf6f6b674fd7c705d111640b7c"
+                "62c2949b7c7bd16b3bd44d548c0a63eb784d0c7720ae6baaca4f33fc4eb7122a"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_ymcart_dynamicpopup_counts": {
-                    "ttl": 2592002,
+                    "ttl": 2592001,
                     "length": 1,
-                    "prevalence": 0.000006904170118751726,
-                    "uniqueness": 1
+                    "prevalence": 0.000013811105509940544,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
@@ -573,29 +615,29 @@
         },
         {
             "rule": "ymcart\\.com\\/res\\/manage\\/default\\/tpl\\/popupnewsletter\\/static\\/js\\/popup_sdk\\.js",
-            "cookies": 0.0000069,
+            "cookies": 0.0000138,
             "fingerprinting": 1,
             "subdomains": [
                 "48281-popupnewsletter.us01-apps"
             ],
             "apis": {
-                "Document.cookie getter": 1,
+                "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
-                "Document.cookie setter": 1
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "08a73c68bcbb180604727fd45199202e63c0dd6ba2e93db9daadf52381b01521"
+                "ae8d709592b37ff066939addc51d0325d64f31fddb70f6989e51406af486c4f7"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_ymcart_popup_newsletter_counts": {
-                    "ttl": 259202,
+                    "ttl": 259201,
                     "length": 1,
-                    "prevalence": 0.000006904170118751726,
-                    "uniqueness": 1
+                    "prevalence": 0.000013811105509940544,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
@@ -612,6 +654,7 @@
                 "48281-popupcookie.us01-apps"
             ],
             "apis": {
+                "Document.cookie getter": 2,
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
@@ -619,52 +662,6 @@
             "cnames": [],
             "responseHashes": [
                 "b3c8a502d715f51f9f48a9c6d2c2b10c125cbabbeaa16e2984ce242011bf016a"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pomoly.com",
-                "www.pomoly.com"
-            ]
-        },
-        {
-            "rule": "ymcart\\.com\\/0\\/popupwheel\\/css\\/plugin_style\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us01.imgcdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "4e1fdddb1044ae88b6ca2948d63c6572c730361d8713fc285b8b6e6eca7f47a9"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pomoly.com",
-                "www.pomoly.com"
-            ]
-        },
-        {
-            "rule": "ymcart\\.com\\/res\\/manage\\/default\\/tpl\\/popupwheel\\/static\\/js\\/popupwheel_sdk\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "48281-popupwheel.us01-apps"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "5bf99870b56b24e525e33fb80f1e5c41030e27d203c694834a97e52bb37112db"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -695,9 +692,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_ymcart_popup_coupon_counts": {
-                    "ttl": 2592003,
+                    "ttl": 2592001,
                     "length": 1,
-                    "prevalence": 0.000013808340237503452,
+                    "prevalence": 0.000013811105509940544,
                     "uniqueness": 0.5
                 }
             },
@@ -728,9 +725,64 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_ymcart_sidebar_counts": {
-                    "ttl": 2592003,
+                    "ttl": 2592001,
                     "length": 1,
-                    "prevalence": 0.000013808340237503452,
+                    "prevalence": 0.000013811105509940544,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pomoly.com",
+                "www.pomoly.com"
+            ]
+        },
+        {
+            "rule": "ymcart\\.com\\/0\\/popupwheel\\/css\\/plugin_style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "us01.imgcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "4e1fdddb1044ae88b6ca2948d63c6572c730361d8713fc285b8b6e6eca7f47a9"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pomoly.com",
+                "www.pomoly.com"
+            ]
+        },
+        {
+            "rule": "ymcart\\.com\\/res\\/manage\\/default\\/tpl\\/popupwheel\\/static\\/js\\/popupwheel_sdk\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "48281-popupwheel.us01-apps"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "5bf99870b56b24e525e33fb80f1e5c41030e27d203c694834a97e52bb37112db"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_ymcart_wheel_page_depth": {
+                    "ttl": 86401,
+                    "length": 1,
+                    "prevalence": 0.000013811105509940544,
                     "uniqueness": 0.5
                 }
             },
@@ -745,15 +797,15 @@
             "cookies": 0.0000138,
             "fingerprinting": 0,
             "subdomains": [
-                "48281-popupwheel.us01-apps",
-                "48281-dynamicpopup.us01-apps"
+                "48281-dynamicpopup.us01-apps",
+                "48281-popupcookie.us01-apps"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "5a69e5ac60fdca13f377a1141449cf1f494a210a00d606b3cd7562205c53268e"
+                "3e256467ddb9b4063213351299ad7e166ebb9cce8e8bde7a2fe33389515fe028"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -779,7 +831,9 @@
             ],
             "type": "Script",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "ymcart_vid": 0.000013811105509940544
+            },
             "exampleSites": [
                 "pomoly.com",
                 "www.pomoly.com"
@@ -797,7 +851,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "4d115b71aa7d5090ddbca81d65ddf4c998bc8863eddfd1bd97722191eb615d84"
+                "9ad43313b9adebf863625bc92dc3bf5c25b2affb9330894d91eb3296a037c47f"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -819,7 +873,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "8c4e145d1be11f03ed1f63cf5fa82aa7d1dbfaaa975e2ecb766b67755ffe46ef"
+                "9c93a88730d3c1c69d8a7a96673afa6dc059d41e52bad53d90675780905de9d1"
             ],
             "type": "Image",
             "firstPartyCookies": {},

@@ -21,10 +21,10 @@
                 "io"
             ],
             "apis": {
+                "Navigator.prototype.userAgent": 3,
                 "Date.prototype.getTime": 4,
                 "Event.prototype.timeStamp": 4,
-                "window.localStorage": 4,
-                "Navigator.prototype.userAgent": 2
+                "window.localStorage": 4
             },
             "sites": 4,
             "prevalence": 0.0000276,
@@ -44,15 +44,15 @@
         },
         {
             "rule": "vtex\\.com\\.br\\/rc\\/rc\\.js",
-            "cookies": 0.0000759,
+            "cookies": 0.0000829,
             "fingerprinting": 1,
             "subdomains": [
                 "io"
             ],
             "apis": {
+                "Document.cookie getter": 12,
                 "Date.prototype.getTime": 12,
-                "Document.cookie getter": 11,
-                "Document.cookie setter": 11
+                "Document.cookie setter": 12
             },
             "sites": 12,
             "prevalence": 0.0000829,
@@ -62,16 +62,16 @@
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "VtexRCMacIdv7": {
-                    "ttl": 31536005,
-                    "length": 36,
-                    "prevalence": 0.00007594587130626899,
-                    "uniqueness": 1
-                },
                 "VtexRCSessionIdv7": {
                     "ttl": 1805,
                     "length": 36,
-                    "prevalence": 0.00007594587130626899,
+                    "prevalence": 0.00008286663305964326,
+                    "uniqueness": 1
+                },
+                "VtexRCMacIdv7": {
+                    "ttl": 31536005,
+                    "length": 36,
+                    "prevalence": 0.00008286663305964326,
                     "uniqueness": 1
                 }
             },
@@ -118,11 +118,13 @@
         {
             "rule": "vtex\\.com\\.br\\/portal-ui\\/v1\\.14\\.10\\/scripts\\/vtex-analytics\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "io"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 3
+            },
             "sites": 4,
             "prevalence": 0.0000276,
             "cnames": [],
@@ -239,14 +241,18 @@
         },
         {
             "rule": "vtex\\.com\\.br\\/vtex-id-ui\\/3\\.23\\.1\\/vtexid-jquery\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
+            "cookies": 0.0000138,
+            "fingerprinting": 2,
             "subdomains": [
                 "io"
             ],
             "apis": {
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
-                "window.devicePixelRatio": 2
+                "Screen.prototype.availWidth": 2,
+                "window.devicePixelRatio": 2,
+                "Screen.prototype.availHeight": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -255,7 +261,14 @@
                 "8f1d68f2e8e25e8a9c111782180f2158fcc939486e00f993ef4f2ad19fcbf144"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "cookies.js": {
+                    "ttl": 1,
+                    "length": 9,
+                    "prevalence": 0.000013811105509940544,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "decathlon.com.br",
@@ -310,7 +323,7 @@
         },
         {
             "rule": "vtex\\.com\\.br\\/api\\/events",
-            "cookies": 0.0000829,
+            "cookies": 0.0000414,
             "fingerprinting": 0,
             "subdomains": [
                 "rc"
@@ -319,8 +332,10 @@
             "sites": 12,
             "prevalence": 0.0000829,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -340,7 +355,7 @@
         },
         {
             "rule": "vtex\\.com\\.br\\/api\\/events",
-            "cookies": 0.0000829,
+            "cookies": 0.0000414,
             "fingerprinting": 0,
             "subdomains": [
                 "rc"
@@ -349,10 +364,8 @@
             "sites": 12,
             "prevalence": 0.0000829,
             "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -467,9 +480,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "cookies.js": {
-                    "ttl": 2,
+                    "ttl": 0,
                     "length": 9,
-                    "prevalence": 0.000013808340237503452,
+                    "prevalence": 0.000013811105509940544,
                     "uniqueness": 0.5
                 }
             },
@@ -548,11 +561,11 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000131,
+    "cookies": 0.000138,
     "types": {
         "Script": 67,
-        "Preflight": 12,
         "XHR": 12,
+        "Preflight": 12,
         "Stylesheet": 2
     },
     "nameservers": [

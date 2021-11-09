@@ -14,6 +14,7 @@
     "subdomains": [
         "appleid",
         "static",
+        "store.storeimages",
         "applepay"
     ],
     "cnames": [],
@@ -22,13 +23,16 @@
         {
             "rule": "cdn-apple\\.com\\/appleauth\\/static\\/jsapi\\/appleid\\/1\\/en_US\\/appleid\\.auth\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "appleid"
             ],
-            "apis": {},
-            "sites": 136,
-            "prevalence": 0.000939,
+            "apis": {
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1
+            },
+            "sites": 138,
+            "prevalence": 0.000953,
             "cnames": [],
             "responseHashes": [
                 "60e60bf2583cf7444b00a4b0b8d46de5fd5816f768fc72fd71c643357132df69"
@@ -44,19 +48,19 @@
                 "twitter.com",
                 "www.goodreads.com",
                 "www.realtor.com",
-                "www.eventbrite.ca",
-                "www.tickpick.com",
-                "www.bible.com",
-                "www.strava.com",
-                "twitter-com.aurebeshtranslator.net",
-                "www.gaydar.net",
-                "www.therealreal.com",
-                "www.algebra-class.com",
-                "www.mtbproject.com",
-                "priceline.com",
-                "response.jp",
-                "www.guidefitter.com",
-                "www.secretescapes.com"
+                "exame.com",
+                "b.thechive.com",
+                "www.rbbtoday.com",
+                "www.waterwayguide.com",
+                "www.flyhomes.com",
+                "varlamov.ru",
+                "www.nettiauto.com",
+                "www.renttherunway.com",
+                "manetatsu.com",
+                "www.slader.com",
+                "player.fm",
+                "www.calm.com",
+                "ifttt.com"
             ]
         },
         {
@@ -123,6 +127,26 @@
             ]
         },
         {
+            "rule": "cdn-apple\\.com\\/4982\\/as-images\\.apple\\.com\\/is\\/MME73",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "store.storeimages"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "footwearnews.com",
+                "tvline.com"
+            ]
+        },
+        {
             "rule": "cdn-apple\\.com\\/businesschat\\/start-chat-button\\/2\\/index\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -130,10 +154,10 @@
                 "static"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 14
+                "Navigator.prototype.userAgent": 15
             },
-            "sites": 16,
-            "prevalence": 0.00011,
+            "sites": 15,
+            "prevalence": 0.000104,
             "cnames": [],
             "responseHashes": [
                 "1a4318f8b6d5376f1656e2b00b7ed8705d5799dd2be22378cbc43ca6e4b8f8ce",
@@ -151,7 +175,6 @@
                 "www.atttvnow.com",
                 "www.au.com",
                 "www.byui.edu",
-                "www.dishanywhere.com",
                 "www.gmfinancial.com",
                 "www.lethalperformance.com",
                 "www.mattressfirm.com",
@@ -298,14 +321,11 @@
         {
             "rule": "cdn-apple\\.com\\/jsapi\\/v1\\/apple-pay-sdk\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "applepay"
             ],
-            "apis": {
-                "Navigator.prototype.languages": 2,
-                "document.fonts.check": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
@@ -347,7 +367,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 188
+        "Script": 189,
+        "Image": 2
     },
     "nameservers": [
         "a.ns.apple.com",

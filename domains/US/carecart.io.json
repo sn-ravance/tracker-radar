@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000069,
-    "sites": 10,
+    "prevalence": 0.0000829,
+    "sites": 12,
     "subdomains": [
         "app",
         "tracking-app-sas",
+        "app-spinner",
         "sales-pop",
         "tracking-sales-pop"
     ],
@@ -23,8 +24,8 @@
                 "app"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 4,
-                "window.localStorage": 4
+                "window.localStorage": 4,
+                "Navigator.prototype.userAgent": 3
             },
             "sites": 4,
             "prevalence": 0.0000276,
@@ -44,14 +45,15 @@
         },
         {
             "rule": "carecart\\.io\\/store-front-api\\/get-store-information",
-            "cookies": 0.0000276,
+            "cookies": 0.0000345,
             "fingerprinting": 0,
             "subdomains": [
-                "tracking-app-sas"
+                "tracking-app-sas",
+                "app-spinner"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000276,
+            "sites": 5,
+            "prevalence": 0.0000345,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -61,22 +63,25 @@
                 "nightcafe.studio",
                 "www.anycubic.com",
                 "www.megavitamins.com.au",
-                "www.orgoneenergy.org"
+                "www.orgoneenergy.org",
+                "www.trumpflagsusa.com"
             ]
         },
         {
             "rule": "carecart\\.io\\/store-front-api\\/get-store-information",
-            "cookies": 0.0000276,
+            "cookies": 0.0000345,
             "fingerprinting": 0,
             "subdomains": [
-                "tracking-app-sas"
+                "tracking-app-sas",
+                "app-spinner"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000276,
+            "sites": 5,
+            "prevalence": 0.0000345,
             "cnames": [],
             "responseHashes": [
-                "525249d2d0ea507fcb764036a7bd6bead5c3e16fc7a51d2aa4f61edfc710320e"
+                "525249d2d0ea507fcb764036a7bd6bead5c3e16fc7a51d2aa4f61edfc710320e",
+                "a30a3e24751b834d8daff511f541147877cdfaee63c57ed20771773f4910bc80"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -85,7 +90,8 @@
                 "nightcafe.studio",
                 "www.anycubic.com",
                 "www.megavitamins.com.au",
-                "www.orgoneenergy.org"
+                "www.orgoneenergy.org",
+                "www.trumpflagsusa.com"
             ]
         },
         {
@@ -97,14 +103,13 @@
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 2
+                "window.localStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "c1243b11be8a5bdf93a965dab683143edac7a7fcd1a735fa9a4f4c49a036d9c1"
+                "68cb8bc8876213146756d4f5f38225e7577023cbc80ba873cb5d3138da76443b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -125,9 +130,7 @@
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [
-                "9c72bc5c996202d990241220e68c52bba69771c5282a8255e4da7c48f636eaa1"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -137,36 +140,39 @@
             ]
         },
         {
-            "rule": "carecart\\.io\\/public\\/front_assets\\/new-ui\\/css\\/notif-box\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "carecart\\.io\\/library\\/carecartSpinnerApp\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
             "subdomains": [
-                "sales-pop"
+                "app-spinner"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "67b889f5a3ebd1ce6bdef6e7c419bb6d05ab1e2d48169534aacc120237d3cc00"
+                "73011abb876bcfa32677bd9796cb7ce9d73f8843cf60d633fce41e0d64872b00"
             ],
-            "type": "Stylesheet",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nationalguntrusts.com",
-                "www.nationalguntrusts.com"
+                "trumpflagsusa.com",
+                "www.trumpflagsusa.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000069,
+    "cookies": 0.0000829,
     "types": {
-        "Script": 8,
-        "Preflight": 4,
-        "XHR": 4,
-        "Stylesheet": 2
+        "Script": 10,
+        "Preflight": 5,
+        "XHR": 5
     },
     "nameservers": [
         "noah.ns.cloudflare.com",

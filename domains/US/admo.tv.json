@@ -7,42 +7,89 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000069,
-    "sites": 1,
+    "prevalence": 0.0000207,
+    "sites": 3,
     "subdomains": [
+        "apec.script",
+        "apec",
         "worldremit"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "admo\\.tv\\/server\\/receptor\\.php",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "admo\\.tv\\/apec\\/script\\.min\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
             "subdomains": [
-                "worldremit"
+                "apec.script"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+                "d44eae34e7ae7067bd98c0f2e67480f2264aa905f2a8b9bb8b714b5edb12cc35"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cikneeto_uuid": {
+                    "ttl": 33696004,
+                    "length": 39,
+                    "prevalence": 0.000013811105509940544,
+                    "uniqueness": 1
+                },
+                "cikneeto": {
+                    "ttl": null,
+                    "length": 18,
+                    "prevalence": 0.000013811105509940544,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apec.fr",
+                "www.apec.fr"
+            ]
+        },
+        {
+            "rule": "admo\\.tv\\/server\\/receptor\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apec",
+                "worldremit"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "worldremit.com",
+                "apec.fr",
+                "www.apec.fr",
                 "www.worldremit.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000069,
+    "cookies": 0.0000207,
     "types": {
-        "XHR": 2
+        "Script": 2,
+        "XHR": 3
     },
     "nameservers": [
         "dns109.ovh.net",

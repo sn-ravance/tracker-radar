@@ -4,13 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000159,
-    "sites": 23,
+    "prevalence": 0.000186,
+    "sites": 27,
     "subdomains": [
         "app-worker",
         "visits",
         "loadbalancer",
-        "lb-api",
         "app"
     ],
     "cnames": [],
@@ -55,6 +54,7 @@
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.webdriver": 3,
                 "Navigator.prototype.language": 3,
                 "Screen.prototype.colorDepth": 3,
                 "Navigator.prototype.deviceMemory": 3,
@@ -133,8 +133,11 @@
             "sites": 3,
             "prevalence": 0.0000207,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "6625d5a400434454246bd79e24ff0beffe94b31a4ac540edccfce44e73d62cb4",
+                "d7c3a67320bb2c96202f983244032c0bec3c8bcd44f8ffe60394e01d26641687"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -154,11 +157,8 @@
             "sites": 3,
             "prevalence": 0.0000207,
             "cnames": [],
-            "responseHashes": [
-                "71fa8e65ec159bbb58f8f6929449897ddb1d90844441ed71805a8fc224df2006",
-                "6955b07e34f50d23b86312fc9326e0ad1857c2e4d9a2f43eca193418e5e7b11c"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -169,19 +169,19 @@
         },
         {
             "rule": "visitor-analytics\\.io\\/worker",
-            "cookies": 0.0000069,
+            "cookies": 0.0000621,
             "fingerprinting": 1,
             "subdomains": [
                 "loadbalancer"
             ],
             "apis": {
-                "Screen.prototype.width": 6,
-                "Screen.prototype.height": 6,
-                "Document.cookie getter": 1,
-                "Document.cookie setter": 1
+                "Document.cookie getter": 9,
+                "Screen.prototype.width": 9,
+                "Screen.prototype.height": 9,
+                "Document.cookie setter": 9
             },
-            "sites": 10,
-            "prevalence": 0.000069,
+            "sites": 12,
+            "prevalence": 0.0000829,
             "cnames": [],
             "responseHashes": [
                 "5a4132ab0231f6ea045d0838a9ec1cebbb666bcbdbe4546328b71296c84cbf55"
@@ -191,6 +191,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "beachbroadcastnews.com",
+                "www.beachbroadcastnews.com",
                 "www.countrythunder.com",
                 "www.drtenpenny.com",
                 "www.geertvandenbossche.org",
@@ -198,6 +199,66 @@
                 "www.humorousmathematics.com",
                 "www.libertycoalitioncanada.com",
                 "www.officialgamerules.org",
+                "www.rcolemd.com",
+                "www.worldviewreport.com",
+                "www.ziverdokit.store"
+            ]
+        },
+        {
+            "rule": "visitor-analytics\\.io\\/wix\\/websites\\/82b737f2-a7fb-4bfc-be12-89dc87b7a57a\\/settings",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "visits"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "f6c954a2c71968ac08706dacfa2923bb3bec546a107390d5c8f362aee703e514"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beachbroadcastnews.com",
+                "www.beachbroadcastnews.com"
+            ]
+        },
+        {
+            "rule": "visitor-analytics\\.io\\/worker-log",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "visits"
+            ],
+            "apis": {},
+            "sites": 12,
+            "prevalence": 0.0000829,
+            "cnames": [],
+            "responseHashes": [
+                "0e23e1a38b880786df77bc51348ffc0ba33befe07ba89254c8b2428f5f09f504",
+                "d7c3a67320bb2c96202f983244032c0bec3c8bcd44f8ffe60394e01d26641687",
+                "296ceedfc2bb1edee80a5a8d42417263b04ce54e125d92576a352e101653c666",
+                "4ac5d47e8ad3652aec1e6b74ee9a91894e345346a781ec613f86343aad365099",
+                "74290ef1a1b964b8831d51509d7a131c3ba9e680d527132ffcda9893e43f230d",
+                "5cf04ac512ed6f87fdfb05a15ab8512bef714fdc47f4299fa036a6eced4dfe7d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beachbroadcastnews.com",
+                "www.beachbroadcastnews.com",
+                "www.countrythunder.com",
+                "www.drtenpenny.com",
+                "www.geertvandenbossche.org",
+                "www.gold2020forecast.com",
+                "www.humorousmathematics.com",
+                "www.libertycoalitioncanada.com",
+                "www.officialgamerules.org",
+                "www.rcolemd.com",
                 "www.worldviewreport.com",
                 "www.ziverdokit.store"
             ]
@@ -225,40 +286,6 @@
             ]
         },
         {
-            "rule": "visitor-analytics\\.io\\/worker-log",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "visits"
-            ],
-            "apis": {},
-            "sites": 10,
-            "prevalence": 0.000069,
-            "cnames": [],
-            "responseHashes": [
-                "d7c3a67320bb2c96202f983244032c0bec3c8bcd44f8ffe60394e01d26641687",
-                "bd04829c836c795442d5346f6fdf22cbad1afc28b80f8d2e403a6ed828f11e5b",
-                "2760cb6e9ad2ba0674d58353824a024e555b1e6fd0ac59fc6e49aa73c04a1776",
-                "18f25a8125dc07aac07f244d470721d3464feea786c6897e25398e0bde8f8a45",
-                "3e8a8fbdd8ff38e04c9733cdd8d5612c5078f8f6be93182ca3f7aede2c5c34de"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "countrythunder.com",
-                "www.countrythunder.com",
-                "www.drtenpenny.com",
-                "www.geertvandenbossche.org",
-                "www.gold2020forecast.com",
-                "www.humorousmathematics.com",
-                "www.libertycoalitioncanada.com",
-                "www.officialgamerules.org",
-                "www.worldviewreport.com",
-                "www.ziverdokit.store"
-            ]
-        },
-        {
             "rule": "visitor-analytics\\.io\\/standalone\\/websites\\/09aaa742-f13f-11eb-b589-901b0edac50a\\/settings",
             "cookies": 0,
             "fingerprinting": 0,
@@ -298,70 +325,6 @@
             "exampleSites": [
                 "dickeys.com",
                 "www.dickeys.com"
-            ]
-        },
-        {
-            "rule": "visitor-analytics\\.io\\/api\\/websites\\/09aaa742-f13f-11eb-b589-901b0edac50a\\/polls\\/targeting",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "lb-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dickeys.com",
-                "www.dickeys.com"
-            ]
-        },
-        {
-            "rule": "visitor-analytics\\.io\\/api\\/websites\\/09aaa742-f13f-11eb-b589-901b0edac50a\\/polls\\/targeting",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "lb-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "bc44e054fc747370b390686d629bdc565592b2b309b999b15475229be74a248b"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dickeys.com",
-                "www.dickeys.com"
-            ]
-        },
-        {
-            "rule": "visitor-analytics\\.io\\/wix\\/websites\\/19d9f78d-1baf-43b7-9db6-404210d80b6a\\/settings",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "visits"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "f6c954a2c71968ac08706dacfa2923bb3bec546a107390d5c8f362aee703e514"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "drtenpenny.com",
-                "www.drtenpenny.com"
             ]
         },
         {
@@ -372,8 +335,8 @@
                 "app"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000276,
+            "sites": 5,
+            "prevalence": 0.0000345,
             "cnames": [],
             "responseHashes": [
                 "78e8bd63934e5f1df334ecd9471b2faefa98e0470296a12bf6640f38295a97b0"
@@ -385,6 +348,7 @@
                 "geertvandenbossche.org",
                 "www.geertvandenbossche.org",
                 "www.gold2020forecast.com",
+                "www.rcolemd.com",
                 "www.ziverdokit.store"
             ]
         },
@@ -475,17 +439,59 @@
                 "officialgamerules.org",
                 "www.officialgamerules.org"
             ]
+        },
+        {
+            "rule": "visitor-analytics\\.io\\/wix\\/websites\\/b43a9eef-a752-4f7b-b1ec-d53e91866e81\\/settings",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "visits"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rcolemd.com",
+                "www.rcolemd.com"
+            ]
+        },
+        {
+            "rule": "visitor-analytics\\.io\\/wix\\/websites\\/a93efee3-8fd5-4078-85b8-7dcb049dcad5\\/settings",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "visits"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "f6c954a2c71968ac08706dacfa2923bb3bec546a107390d5c8f362aee703e514"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "worldviewreport.com",
+                "www.worldviewreport.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000138,
+    "cookies": 0.00011,
     "types": {
         "Script": 10,
-        "Preflight": 7,
-        "Fetch": 7,
-        "Document": 14,
-        "XHR": 22
+        "Fetch": 5,
+        "Preflight": 5,
+        "Document": 17,
+        "XHR": 28
     },
     "nameservers": [
         "ns1.first-ns.de",

@@ -88,11 +88,13 @@
         {
             "rule": "iask\\.cn\\/v20210909\\/js\\/common\\/user\\.login\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 2
+            },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
@@ -131,18 +133,19 @@
         },
         {
             "rule": "iask\\.cn\\/resource\\/js\\/plugins\\/pc\\.iask\\.login\\.min\\.js",
-            "cookies": 0,
+            "cookies": 0.0000138,
             "fingerprinting": 1,
             "subdomains": [
                 "static3"
             ],
             "apis": {
                 "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.appVersion": 2,
                 "Navigator.prototype.language": 2,
-                "window.sessionStorage": 2,
-                "Document.cookie getter": 1
+                "window.sessionStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -151,7 +154,14 @@
                 "091778c74ed122c71e6bf8a149de0c9f911935dfd56e1055ac2bab6da5ff6e50"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "cid": {
+                    "ttl": 2592003,
+                    "length": 31,
+                    "prevalence": 0.000013811105509940544,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "sina.com.cn",
@@ -236,7 +246,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "dd841442729a281705796d9f9a489200b89c3a06520484128b82f25d8caa66f8"
+                "9b4bb7f0b2d0fe10277c8e35b694856b4f22b7e42e5f4d38fe56819aa1ff863e"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -289,35 +299,13 @@
                 "sina.com.cn",
                 "iask.sina.com.cn"
             ]
-        },
-        {
-            "rule": "iask\\.cn\\/libjs\\/fix\\/hs\\/iAsk\\.youlai\\.guoneilvyou\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sina.com.cn",
-                "iask.sina.com.cn"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0.0000138,
     "types": {
-        "Script": 24,
+        "Script": 22,
         "Image": 2
     },
     "nameservers": [

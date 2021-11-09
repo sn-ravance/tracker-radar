@@ -15,7 +15,7 @@
         "search-api"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "blueport\\.com\\/sites\\/asiv2\\/includes\\/hawksearch\\.css",
@@ -41,17 +41,19 @@
         },
         {
             "rule": "blueport\\.com\\/sites\\/asiv2\\/includes\\/hawksearch\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
+            "cookies": 0.0000138,
+            "fingerprinting": 2,
             "subdomains": [
                 "search"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.vendor": 2,
-                "Navigator.prototype.platform": 2,
                 "window.sessionStorage": 2,
-                "Date.prototype.getTime": 2
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.vendor": 1,
+                "Navigator.prototype.platform": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -60,7 +62,20 @@
                 "9096032b46721a254d06a094b5b9d14e0fce50d16239e330ed485c55aa25a832"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "visitor_id": {
+                    "ttl": 31104003,
+                    "length": 36,
+                    "prevalence": 0.000013811105509940544,
+                    "uniqueness": 1
+                },
+                "visit_id": {
+                    "ttl": 14403,
+                    "length": 36,
+                    "prevalence": 0.000013811105509940544,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "americansignaturefurniture.com",
@@ -305,7 +320,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "7bce49b1677e6831212f506bcc4695ee5c3621c4c3d699dec7efe69b87ef6634"
+                "10100976ceb574cab4fe7fb5c9ccbab59fc30743bb10123833c18f2063ca0940"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -371,7 +386,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "10a31829f1f6a805405ba63b03b6b290e21ca71bc2ddc248779ad4219834ad74"
+                "84c4b883196c863a61444e4d0649e17d642e80e1ec7194492b0cb71519cc2f18"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -415,7 +430,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "0a527ca10c3c3f6f2619c7dad59d952ddc9731138162a9ae8135709bdae48fc7"
+                "f7188da6777bfa81d8a304eba7bd1f278cfc4f258573fab968ae23344554c38b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -512,26 +527,6 @@
             ]
         },
         {
-            "rule": "blueport\\.com\\/v1\\/content\\/pageelement",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "americansignaturefurniture.com",
-                "www.americansignaturefurniture.com"
-            ]
-        },
-        {
             "rule": "blueport\\.com\\/v1\\/cart\\/line",
             "cookies": 0,
             "fingerprinting": 0,
@@ -604,28 +599,6 @@
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "americansignaturefurniture.com",
-                "www.americansignaturefurniture.com"
-            ]
-        },
-        {
-            "rule": "blueport\\.com\\/v1\\/content\\/pageelement",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "caf58af1900a446264300e70257f17e3a0063dbe0307d17d2db3e3ad3291e249"
-            ],
-            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -711,7 +684,49 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "0470fa2d3f846badb587c662aa92a75f5753c0a290b33181f14544025b502acb"
+                "aa4b1ecd80a044fe15e439b7da0ca3249b709046de202a0901469230e974aba1"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "americansignaturefurniture.com",
+                "www.americansignaturefurniture.com"
+            ]
+        },
+        {
+            "rule": "blueport\\.com\\/v1\\/content\\/pageelement",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "americansignaturefurniture.com",
+                "www.americansignaturefurniture.com"
+            ]
+        },
+        {
+            "rule": "blueport\\.com\\/v1\\/content\\/pageelement",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "c258e8e9db39eacc425fed3c0ae22efb3a0427a87068a3cbb26d0cda3ba1e034"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -775,7 +790,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "bf0b5014c8a3ffb4051e83f6cc26691ec7c37962d5105b2913ecd5a1a1a70030"
+                "4ddc27a8ceb3392c29f61de60276cfa26b991f5c078580094f312f1902939454"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -788,7 +803,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000138,
     "types": {
         "Stylesheet": 8,
         "Script": 2,

@@ -4,12 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000207,
-    "sites": 30,
+    "prevalence": 0.000214,
+    "sites": 31,
     "subdomains": [
-        "cdn",
         "live-tag",
-        "stats"
+        "cdn",
+        "stats",
+        "stats-api"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -19,8 +20,8 @@
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "cdn",
-                "live-tag"
+                "live-tag",
+                "cdn"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 5
@@ -36,19 +37,19 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "13wham.com",
                 "21stcenturywire.com",
                 "abc-7.com",
-                "abc17news.com",
+                "abc6onyourside.com",
                 "canyoublockit.com",
                 "cnycentral.com",
-                "kmph.com",
-                "krdo.com",
-                "kvia.com",
                 "nbc-2.com",
                 "nyadagbladet.se",
                 "pestisracok.hu",
                 "turtleboysports.com",
                 "www.audiogon.com",
+                "www.boldmethod.com",
+                "www.petitfute.com",
                 "www.qiez.de",
                 "www.us-appliance.com",
                 "www.vandale.nl"
@@ -66,52 +67,54 @@
             "prevalence": 0.000166,
             "cnames": [],
             "responseHashes": [
-                "3b6410fe997d42c917f778257a60a0f1dc8e97438b72f9a84d38a3b6d3a80a4b",
-                "862f9d9eef6760587ded598731fcad8ba1c05d8f5be7cc3747db5909545a7769",
-                "a88998082c49c510f6e536395ce979ab1ba893855d943663d50d5e5d95e39a88",
-                "5c52a62d0feabcca8ad2728c67f3297369743e2b0d0624dd774b3819dab3133e",
-                "3deabf57034ab0e93cf08ae0df4383bb30f377a6be835b3bf2e5c4c9c40dbbe4",
-                "8b0d1524ec480fc5f7f7298209110631e2be0fdb1704bf1c33806760f2ed5759",
-                "ef2a118efee873eaf14501582bc8fc616aec8d8469fde48a9a1c26adb9e5f458",
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-                "8e282a831feecb645198ce79b1bbf77adddd7d05d95a901c97214643c5808138",
-                "da8c6bc484282002cde08bc8115961120703038987c1d80f52ca069ab4f6533c",
-                "aa92d3e6d04c6a163af0a093e3164ade3478fccf39f49db70cd293763e38b199",
-                "61f05663bb992c546191cbec1ef8857a1cbf397293105b9b58cb96ea0975ab34",
-                "cf2d3e572ea84d8eb114d3878d00f8e6c01f52f8dff943f155e64b31c09db44d",
-                "dff74ffb311ef9fe08bd3928b0d3a499959d7867544094a4cca1a59ffd8967e8",
-                "2c8dd8a7ca699456abf5d4bbd9951ee096bc99d98e0307f9f8d5c096ccafbc71",
-                "c0f3172bb430aa6b99f8ea59f88859affdeec3aea688a44cc3edd1611aef89af",
-                "56531254b5a25b32ae9fcda0dc9f98f8cb8e2de7c07febd8cafd49f3c0ec2482",
-                "052569ebc65fb5fbc84da9a649d69a1a9e7212a0226f606b1c481de1618ec775",
-                "dfb63ebe89e75ee71d7216643ad72a39508652dd652d205fdb9b42c2cd6df426",
-                "c454279ce585b7664b347bd22cf153ad488ef192f42337a26d0b270b57578101",
-                "7b1039c9e2c1bd25e5d44f104f75cc0ffbfda33e74b195ae6d87adbb909991bc"
+                "72317871a3faf4bec0e8ef718e023063843fb4c0071090638df39c6fcdfaf1fb",
+                "8f2ac234f9ed42bb36e3884fd3ad501b29744d175ab411853280884a4eacc593",
+                "1de7992cb9625504d82c9f2f634b5fbf084e83f668b4a62d244680f4dd7d7a08",
+                "abc3290c0ca326e84052630e845bbc447efbc4efd3ff1131ab620b4272edcf9b",
+                "001e59ac7f7d2e15b71aac679ea8766fa1ca7fdc2e1e2f3c1fe4e33e66a95f09",
+                "f018d905eb3d81aba31b9e564eaf1e3b9be29f5ffa6102208d6f971112cb2975",
+                "20277164adaeec59f3fb957ce27b9b28d17241eb983743bd89fadedd6c910459",
+                "0d146de5dbfb90ea1d7ca02c4b8c34b059e55660ebd85487ce7ed2ece08fce14",
+                "9229ab54648333b336ecf11bf7a42a5aa1521b11c259ce6cbb98a71b4e904e6c",
+                "ffa2e1b76deb639cbf8afd2ce59bddcefc4b504daefcc1530cc3332805f7ecf9",
+                "53c14dfaf29c2c2678e4803fd2ec7e0a3bc1d503334cacb1592a1416e8227098",
+                "e23f1435ed1e0403b314f22e735a398c59069f3c64977eb5043dbce5fd91c449",
+                "f03a3934d4402c7429c9c86adbea39b7cbf96ac5e4e952d6c3620173b97a6a31",
+                "e66342a7abf45e0cda0fe678890772052567beb57ad1b372ce12dafc774543a3",
+                "d1eb3ef218ca417b1e98004b8334d1aea2ee4f4092a4b159a3cd2b086e590d3f",
+                "20eb86c946b6b2ee0a20ee950354abd514fe283c7f8064bdcf85b64c6e9b4f82",
+                "ee4c3dd9ae1427e885a4a81162bd7452ac2ca193a7a2eaa6fc3f16aef9e0aa4d",
+                "5358b9c8bbde0390eaa2a2aa9b00438c66fa0abfbc028e0739a5cc31db09b12a",
+                "df74c652d4f983486c822ed54ef9e82649ac426030f0c29049acd3f20a08e96b",
+                "ea07a9776919c25bae9f8be62f367e2891108cd9292fcc50091197ac08510c28",
+                "b0837f9c0ec4218549523cdcb6848511548d4fa5585b27b99ed45f688952c737",
+                "a187c8e722c93fd908f59fc0f7fc57041733d8ff66de64bd0ecefca13c97abba",
+                "c3342ac8a61333b40ed56345d45627037a20c56185291eca928c2eb960899e50"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ucatholic.com",
-                "techable.com",
-                "nyadagbladet.se",
-                "nbc-2.com",
-                "www.us-appliance.com",
-                "pestisracok.hu",
+                "www.echo-online.de",
                 "blog.sivanaspirit.com",
                 "turtleboysports.com",
-                "21stcenturywire.com",
-                "clickhole.com",
-                "krdo.com",
-                "www.vandale.nl",
-                "abc17news.com",
-                "www.echo-online.de",
-                "www.theedadvocate.org",
-                "www.allgemeine-zeitung.de",
-                "tylerpaper.com",
-                "cnycentral.com",
+                "canyoublockit.com",
+                "nyadagbladet.se",
                 "www.audiogon.com",
-                "kvia.com"
+                "www.boldmethod.com",
+                "abc-7.com",
+                "www.paulickreport.com",
+                "21stcenturywire.com",
+                "tylerpaper.com",
+                "www.petitfute.com",
+                "nbc-2.com",
+                "www.allgemeine-zeitung.de",
+                "clickhole.com",
+                "techable.com",
+                "ucatholic.com",
+                "www.theedadvocate.org",
+                "www.news-journal.com",
+                "www.us-appliance.com"
             ]
         },
         {
@@ -122,12 +125,12 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Navigator.prototype.appName": 5,
-                "Navigator.prototype.appVersion": 3,
-                "window.devicePixelRatio": 8,
-                "Screen.prototype.width": 3,
-                "Screen.prototype.height": 3,
+                "Navigator.prototype.userAgent": 7,
+                "Navigator.prototype.appName": 7,
+                "Navigator.prototype.appVersion": 7,
+                "window.devicePixelRatio": 4,
+                "Screen.prototype.width": 4,
+                "Screen.prototype.height": 4,
                 "Date.prototype.getTime": 8
             },
             "sites": 8,
@@ -201,6 +204,28 @@
             ]
         },
         {
+            "rule": "bannersnack\\.com\\/v1\\/enqueue",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "stats-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "5b39e6bc8c914a4c1a02fb556f0c84e2b4baa4d45c04a00039e4548da480574d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cnycentral.com",
+                "www.boldmethod.com"
+            ]
+        },
+        {
             "rule": "bannersnack\\.com\\/banners\\/bvznemnuo\\/embed\\/index\\.html",
             "cookies": 0,
             "fingerprinting": 0,
@@ -230,11 +255,11 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.userAgent": 2,
                 "window.devicePixelRatio": 2,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "Navigator.prototype.appName": 1,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.appName": 2,
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
@@ -263,7 +288,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "b76e9b185c4c24cfd048937a68293ab19bf64112e26ce83cc3b21f63db52c341"
+                "8a90d10cd8a0b4f55a74cf310fc3504f0f7910af5866dd9808be2f6763081bfa"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -285,7 +310,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "35f7aadd4ad8d8658ba31f73ba61a6bf086089501388a30ab69ddc3f79e15d41"
+                "29e9569d117f452f5be5d2e2749470d9a4df8e331e058bb83f7f5b840dae8851"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -307,7 +332,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "2be4bd68e453744c5e2da102fa2e9a7e460fc02d9bf9b5b915f673a22a6e7fb9"
+                "3175d3c79a80a3b110e7fae890836df233b095d49c355401f0a5f1fcdd19e022"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -329,7 +354,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "9518b3b9dd49c3293984f605ee56cb31f62f201047391e05390df506ce46d0c0"
+                "27d4c8599d4417fbab6ed4273c16037a4f38fb8a95dd22f64a16bf4a02cfdf1c"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -351,7 +376,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "4d3bd878a4d862df05f2d05e8cd5b1dbfd9a777313266855ed8524bb52360f10"
+                "72cf0e25043a33c2c8188e07751d0cc3fb8189be96f48e355408ef5fc70cf356"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -373,7 +398,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "65a37cae20a244801161feca911d55dbceb8ef0e62e95c574d6757a75b658ab1"
+                "8b1d0f977aabedf1d6191f0a19b1d9369c38ec880781aeae82f216f0d1ccf02a"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -395,7 +420,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "3dae55c1e4596d4a3681c3771b0e2df2f63d22b4999f399de3c9338766daeec8"
+                "5be64c943a5167a98d0a2e4da35e141f1e585c1036c6782c84da99e1a50535ff"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -417,7 +442,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "db0f5b2c8a10056142fe1cb1d3ec986875d694919c2caad5246b33bd2b0f13b7"
+                "c1eebd49f4a40039b9f8ad01a7c0570350f54bc002ada3962d09170b7bf82dd4"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -439,7 +464,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "15999a53300cf550b7ad519325b97ab5250693df535ac3c0bd9539d812eb67f4"
+                "34ab17cf9a75e4077efcad8a703483f1ee0b560ce7b72c7e6e3dbb552efffaaf"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -461,7 +486,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "226135b87b015b4be3fb09def600be387d95f5096bacb43c788628138f0158bf"
+                "4171b8fab025c8c77426b400494b49f3fc59ec6f07992879c9fb0a45a7edf8ad"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -469,98 +494,6 @@
             "exampleSites": [
                 "tylerpaper.com",
                 "www.news-journal.com"
-            ]
-        },
-        {
-            "rule": "bannersnack\\.com\\/banners\\/bvt52c114\\/embed\\/index\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "73cb0c36ca14e924c97eb5816d97531f7ed3001c415d7b16371ee39d74e78dd6"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "allgemeine-zeitung.de",
-                "www.allgemeine-zeitung.de"
-            ]
-        },
-        {
-            "rule": "bannersnack\\.com\\/banners\\/bvt52c114\\/embed\\/a76f424a83d218843f4eadc631b8c306\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "window.devicePixelRatio": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.appName": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "87df31f7b7235ffe91e58d91eaf76f19fe7108853e0b7cba9e253c41e0981a47"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "allgemeine-zeitung.de",
-                "www.allgemeine-zeitung.de"
-            ]
-        },
-        {
-            "rule": "bannersnack\\.com\\/banners\\/bvt52c114\\/embed\\/media\\/1817136d399099e9795af8523b99b8e1\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "9638e3cdb37f0352bb444ef683f2917d06a454de292ab7393c52143f180a1f26"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "allgemeine-zeitung.de",
-                "www.allgemeine-zeitung.de"
-            ]
-        },
-        {
-            "rule": "bannersnack\\.com\\/banners\\/bvt52c114\\/embed\\/media\\/a15a6f1df9242ae7d01007d445722fd2\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "b96eb51fafdbd7b1c50139ac1d53a75da3760108cbfd264ecd233d3997d3c140"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "allgemeine-zeitung.de",
-                "www.allgemeine-zeitung.de"
             ]
         },
         {
@@ -581,8 +514,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "echo-online.de",
-                "www.echo-online.de"
+                "allgemeine-zeitung.de",
+                "www.allgemeine-zeitung.de"
             ]
         },
         {
@@ -597,8 +530,8 @@
                 "window.devicePixelRatio": 2,
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.appName": 2
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -610,8 +543,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "echo-online.de",
-                "www.echo-online.de"
+                "allgemeine-zeitung.de",
+                "www.allgemeine-zeitung.de"
             ]
         },
         {
@@ -626,14 +559,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "b3a317977620f4b04939688bf1559748f6e43bb647c71da78260581c727c0b15"
+                "6952ba9d5025a2fab1138606a4ee3c1821cad0f68ed9ff2b8152d724821cd0c6"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "echo-online.de",
-                "www.echo-online.de"
+                "allgemeine-zeitung.de",
+                "www.allgemeine-zeitung.de"
             ]
         },
         {
@@ -648,14 +581,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "016c680439f3fa623763a42908f978398e4266ebbe9e7d3042929df531427349"
+                "d1917b8852109849acd05bcfe238fd12ed99d6ce4071ccd0499d6754f38719bb"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "echo-online.de",
-                "www.echo-online.de"
+                "allgemeine-zeitung.de",
+                "www.allgemeine-zeitung.de"
             ]
         },
         {
@@ -671,6 +604,233 @@
             "cnames": [],
             "responseHashes": [
                 "9638e3cdb37f0352bb444ef683f2917d06a454de292ab7393c52143f180a1f26"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allgemeine-zeitung.de",
+                "www.allgemeine-zeitung.de"
+            ]
+        },
+        {
+            "rule": "bannersnack\\.com\\/banners\\/bvxm6njco\\/embed\\/index\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "bce3ded601fb0c97c96a6e6f5fe94f3f90b1a4fa6099c6c7125b0cda65bbf4df"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "echo-online.de",
+                "www.echo-online.de"
+            ]
+        },
+        {
+            "rule": "bannersnack\\.com\\/banners\\/bvxm6njco\\/embed\\/1c4d44df7eb0309c58181cccaac975c5\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.devicePixelRatio": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "1674577d5c22d59186ba1395073bf17c49de2f477bb724b8f2517a032d7b1a3f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "echo-online.de",
+                "www.echo-online.de"
+            ]
+        },
+        {
+            "rule": "bannersnack\\.com\\/banners\\/bvxm6njco\\/embed\\/media\\/c7cb4ea05064e11615cf4048b36b63af\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "95ca8976e29a831567bd9af835760f16521fc1e8ce9e230e079f5992ec637c87"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "echo-online.de",
+                "www.echo-online.de"
+            ]
+        },
+        {
+            "rule": "bannersnack\\.com\\/banners\\/bvxm6njco\\/embed\\/media\\/75ee82ab4e39132bbc4c03e67e7e1eca\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "8b4e2be3fe8657337a16c3e5d6455440daded0bd800e4add3b1eea00fb5a6ceb"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "echo-online.de",
+                "www.echo-online.de"
+            ]
+        },
+        {
+            "rule": "bannersnack\\.com\\/banners\\/bvxm6njco\\/embed\\/media\\/4c2d0df54740035baeb683e1145d4ef9\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "5add2314529b71cd5c5f8ac36e178205c2121e2eae2429564ca1ac0f5db22aa6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "echo-online.de",
+                "www.echo-online.de"
+            ]
+        },
+        {
+            "rule": "bannersnack\\.com\\/banners\\/bvxm6njco\\/embed\\/media\\/002bfe4f0576393eedc44cdcd580004f\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "11df93da128a25438db67200b472cda9656f74caede4043f875a310c2a1c53f7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "echo-online.de",
+                "www.echo-online.de"
+            ]
+        },
+        {
+            "rule": "bannersnack\\.com\\/banners\\/bvxm6njco\\/embed\\/media\\/63e1dbe0a20450a3262a7d8dd7f916bb\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "7ea256f172277926020dd9b7dbbf307eafd956f741b0cad44d1bb3477fd7a98a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "echo-online.de",
+                "www.echo-online.de"
+            ]
+        },
+        {
+            "rule": "bannersnack\\.com\\/banners\\/bvxm6njco\\/embed\\/media\\/2dab457520c8ad68d8e3cc9c0e637eaf\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "25d61626e6ab70532ce70a7f91e54b24078a2fa911615d0995d363f46d016c08"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "echo-online.de",
+                "www.echo-online.de"
+            ]
+        },
+        {
+            "rule": "bannersnack\\.com\\/banners\\/bvxm6njco\\/embed\\/media\\/c064d37dd5c822921dd025b560c486f1\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "ad57f5d4e3c332d7ead3bb60fbf37e7b779d0fe39d8e42238d1080b2ddd7838f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "echo-online.de",
+                "www.echo-online.de"
+            ]
+        },
+        {
+            "rule": "bannersnack\\.com\\/banners\\/bvxm6njco\\/embed\\/media\\/cd6f3933431e2eeaba0d7e43243f0b1c\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e1be1e6e840282ebf9d406bb4fe274c2b8dc3750db2226a4c055299f569f1a5b"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -771,17 +931,14 @@
         {
             "rule": "bannersnack\\.com\\/banners\\/bdcfo8831\\/embed\\/76e0bfc5c982534ff650e78af072a23b\\.js",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "window.devicePixelRatio": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "Navigator.prototype.appName": 1
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -800,17 +957,14 @@
         {
             "rule": "bannersnack\\.com\\/banners\\/bxtm0uu14\\/embed\\/76e0bfc5c982534ff650e78af072a23b\\.js",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "window.devicePixelRatio": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "Navigator.prototype.appName": 1
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -838,7 +992,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "23532675816688007d7afb5a49959732f5326b7585ba7184d6ae25f60930ab6c"
+                "83f0996f72f5a4ed9db4dbffbb3b2c848c32854ddffbd11a0251a1bae4c1dea3"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -860,29 +1014,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "55585df38fd3abd41d97bc4c7326849fdef7d9c9ce7dd30ac3e852c3015926f1"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "theedadvocate.org",
-                "www.theedadvocate.org"
-            ]
-        },
-        {
-            "rule": "bannersnack\\.com\\/banners\\/bc3sg3njv\\/embed\\/images\\/ff1e0bbba2c7370c0bf6b84ab3961e8e\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "cab1f2b36d11775025dfa662a07ab6c6049c8cac2078290638a1caa3db76261f"
+                "ba39261d9006894d845761e27167344bcd866f6ee711ef7d8b66ccd203b633d8"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -904,7 +1036,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "2036c7f715c3799649c69e9ecabd561834c8d51ff7989da88020c8b17e5dc28b"
+                "6f02b71f9a6acb0260a5aa17e3a75f40d2c5ef98d8c3305ae1d6e27f5305a2c3"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -912,6 +1044,50 @@
             "exampleSites": [
                 "theedadvocate.org",
                 "www.theedadvocate.org"
+            ]
+        },
+        {
+            "rule": "bannersnack\\.com\\/banners\\/bc3sg3njv\\/embed\\/images\\/ff1e0bbba2c7370c0bf6b84ab3961e8e\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "bf47e80610e6ca290d092d1655ee1f4bb02cfd02d60c36766c16731b36e24dfe"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "theedadvocate.org",
+                "www.theedadvocate.org"
+            ]
+        },
+        {
+            "rule": "bannersnack\\.com\\/files\\/633f88870fc93eda8cf42c9f97323073",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "4669251ff81859ee36adbe081f0919a66a54a063d63513a3e2d9516bc16908b6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "zoopla.co.uk",
+                "www.zoopla.co.uk"
             ]
         }
     ],
@@ -921,13 +1097,14 @@
     "types": {
         "Script": 58,
         "Stylesheet": 7,
-        "Image": 41,
+        "Image": 55,
+        "XHR": 2,
         "Document": 14
     },
     "nameservers": [
+        "ns-1743.awsdns-25.co.uk",
         "ns-327.awsdns-40.com",
         "ns-774.awsdns-32.net",
-        "ns-1743.awsdns-25.co.uk",
         "ns-1197.awsdns-21.org"
     ]
 }

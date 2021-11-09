@@ -4,30 +4,69 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000414,
-    "sites": 6,
+    "prevalence": 0.0000552,
+    "sites": 8,
     "subdomains": [
-        "ga"
+        "ga",
+        "cdn",
+        "ping",
+        "user",
+        "auto"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "analytics-helper\\.com\\/1\\/s\\/UA-19838998-1",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
             "subdomains": [
                 "ga"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.doNotTrack": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "67aec06429712fe80a8b89db6b234fa2f93c1b2670df292c39182be665e83620"
+                "87c71f6502e8eb6cf0d4edcc209979753bba26ed6115e0e7dcbccbe19e44ac46"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_ga": {
+                    "ttl": 63072007,
+                    "length": 26,
+                    "prevalence": 0.000013811105509940544,
+                    "uniqueness": 0.5
+                },
+                "_gid": {
+                    "ttl": 86407,
+                    "length": 26,
+                    "prevalence": 0.000013811105509940544,
+                    "uniqueness": 0.5
+                },
+                "__gads": {
+                    "ttl": 33696008,
+                    "length": 2,
+                    "prevalence": 0.000013811105509940544,
+                    "uniqueness": 0.5
+                },
+                "_gat_UA-19838998-1": {
+                    "ttl": 67,
+                    "length": 1,
+                    "prevalence": 0.000006905552754970272,
+                    "uniqueness": 1
+                },
+                "intercom-id-j6lqeog6": {
+                    "ttl": 23330009,
+                    "length": 36,
+                    "prevalence": 0.000006905552754970272,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cidj.com",
@@ -35,22 +74,203 @@
             ]
         },
         {
-            "rule": "analytics-helper\\.com\\/1\\/s\\/UA-16651611-1",
+            "rule": "analytics-helper\\.com\\/privacy_safebox\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.doNotTrack": 4
+            },
+            "sites": 5,
+            "prevalence": 0.0000345,
+            "cnames": [],
+            "responseHashes": [
+                "22a7da026f951acbf8ade968f91d999e4d029cf943b36833497ae42d5c079a26",
+                "ddb3f01c717904a1decbc4a4b8420169a976043ea16654135874732f8ffcaa5d",
+                "a1dd76159e31eb6f4aa45a1421707fc869449938927971e4d957f2502b2e7559",
+                "cfa94a2168763b480717b3ba32613b4c3c705751c767f9183593347d0b325145"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cidj.com",
+                "www.cidj.com",
+                "www.comment-economiser.fr",
+                "www.forums.supertoinette.com",
+                "www.supertoinette.com"
+            ]
+        },
+        {
+            "rule": "analytics-helper\\.com\\/pageview\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "ga"
+                "ping"
             ],
             "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000345,
+            "cnames": [],
+            "responseHashes": [
+                "6b3da89922d333d106b84fefeebd7b16bfebf4cfbd7bef37fa10a47c471ae64c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cidj.com",
+                "www.cidj.com",
+                "www.comment-economiser.fr",
+                "www.forums.supertoinette.com",
+                "www.supertoinette.com"
+            ]
+        },
+        {
+            "rule": "analytics-helper\\.com\\/info\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "user"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000345,
+            "cnames": [],
+            "responseHashes": [
+                "64348f3c9e924714796aa24be74bec9cf5d876c4b16e772355bf8f9c260ffb08",
+                "5e8497d2e95c3c857a775cccbf305f3931b6b376f057f680424cda0b11bb3ff9",
+                "82b55a0f52690f1d9746569f8859db712dd3005ce0e4446203f25df6259f3e49",
+                "8016819632c8f8cfc5212f2f87fbaa98baf848b792375436b61968e0306b18a5"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cidj.com",
+                "www.cidj.com",
+                "www.comment-economiser.fr",
+                "www.forums.supertoinette.com",
+                "www.supertoinette.com"
+            ]
+        },
+        {
+            "rule": "analytics-helper\\.com\\/",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "auto"
+            ],
+            "apis": {
+                "Document.cookie setter": 2,
+                "Navigator.prototype.doNotTrack": 1,
+                "Document.cookie getter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "bbab0bfb497e38c0f60a60ea98c00f6c9401341edfb993c72713bbad6febae23"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "modalBoxTimestampStart": {
+                    "ttl": null,
+                    "length": 13,
+                    "prevalence": 0.000013811105509940544,
+                    "uniqueness": 1
+                },
+                "_ga": {
+                    "ttl": 63072003,
+                    "length": 26,
+                    "prevalence": 0.000013811105509940544,
+                    "uniqueness": 0.5
+                },
+                "_gid": {
+                    "ttl": 86403,
+                    "length": 26,
+                    "prevalence": 0.000013811105509940544,
+                    "uniqueness": 0.5
+                },
+                "_cq_check": {
+                    "ttl": -1635581053,
+                    "length": 1,
+                    "prevalence": 0.000013811105509940544,
+                    "uniqueness": 0.5
+                },
+                "__gads": {
+                    "ttl": 33696003,
+                    "length": 2,
+                    "prevalence": 0.000006905552754970272,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "comment-economiser.fr",
+                "www.comment-economiser.fr"
+            ]
+        },
+        {
+            "rule": "analytics-helper\\.com\\/1\\/s\\/UA-16651611-1",
+            "cookies": 0.0000207,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ga"
+            ],
+            "apis": {
+                "Navigator.prototype.doNotTrack": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 3
+            },
             "sites": 3,
             "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [
-                "b3c8d2e6ede701b141b27fb77b761221fed19d8721c8fb8e897abaeb9706ffed",
-                "0eb792a64e1278a569587396490c540d87c69e6aaed5da7cf40d1fcf7761f0f9"
+                "61a419ac8fcef9a5c57689dd22eccf1067289b4538e437755b1e335d594a8ff3",
+                "9452976cde5bd00bdc72921f165f14a826b0c4d3714c953b98bd658bc99df901"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_wingify_pc_uuid": {
+                    "ttl": 864000001,
+                    "length": 32,
+                    "prevalence": 0.000020716658264910814,
+                    "uniqueness": 1
+                },
+                "wingify_donot_track_actions": {
+                    "ttl": 864000001,
+                    "length": 1,
+                    "prevalence": 0.000020716658264910814,
+                    "uniqueness": 0.3333333333333333
+                },
+                "_pbjs_userid_consent_data": {
+                    "ttl": 2592004,
+                    "length": 16,
+                    "prevalence": 0.000020716658264910814,
+                    "uniqueness": 0.3333333333333333
+                },
+                "__gads": {
+                    "ttl": 33696003,
+                    "length": 2,
+                    "prevalence": 0.000020716658264910814,
+                    "uniqueness": 0.3333333333333333
+                },
+                "_ga": {
+                    "ttl": 63072003,
+                    "length": 26,
+                    "prevalence": 0.000006905552754970272,
+                    "uniqueness": 1
+                },
+                "_gid": {
+                    "ttl": 86403,
+                    "length": 26,
+                    "prevalence": 0.000006905552754970272,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "supertoinette.com",
@@ -61,12 +281,15 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000552,
     "types": {
-        "Script": 5
+        "Script": 7,
+        "Document": 5,
+        "Image": 5,
+        "XHR": 5
     },
     "nameservers": [
-        "dns106.ovh.net",
-        "ns106.ovh.net"
+        "raphaela.ns.cloudflare.com",
+        "jihoon.ns.cloudflare.com"
     ]
 }

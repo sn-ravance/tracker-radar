@@ -7,12 +7,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000069,
+    "prevalence": 0.0000691,
     "sites": 10,
     "subdomains": [
         "www",
-        "rpc",
-        "images"
+        "images",
+        "rpc"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -41,17 +41,21 @@
         },
         {
             "rule": "tenorshare\\.com\\/rn-ui\\/js\\/rn-ui-passfab-0\\.0\\.2\\.min\\.js",
-            "cookies": 0.0000069,
-            "fingerprinting": 0,
+            "cookies": 0.00000691,
+            "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Navigator.prototype.platform": 2
+            },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "6fdb8d3aafc2cc15e0d4f5eedb8502275e588fbda7094b3e9c493f96434c47fb"
+                "dd3b0c78004a5f96b593a66667b1cb4dfa2ac53901283e4035f2e6556a0e7a46"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -63,18 +67,18 @@
         },
         {
             "rule": "tenorshare\\.com\\/rn-ui\\/js\\/async\\/rn-ui-cookieseubanner\\.9d0b2716acc9c0891349\\.min\\.js",
-            "cookies": 0.0000069,
+            "cookies": 0.0000138,
             "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.doNotTrack": 1,
-                "Document.cookie getter": 1,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Document.cookie getter": 2,
                 "window.localStorage": 2,
                 "Date.prototype.getTime": 2,
-                "Document.cookie setter": 1
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -85,10 +89,10 @@
             "type": "Script",
             "firstPartyCookies": {
                 "hasConsent": {
-                    "ttl": 33696006,
+                    "ttl": 33696005,
                     "length": 4,
-                    "prevalence": 0.000006904170118751726,
-                    "uniqueness": 1
+                    "prevalence": 0.000013811105509940544,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
@@ -98,20 +102,20 @@
             ]
         },
         {
-            "rule": "tenorshare\\.com\\/rn-ui\\/js\\/async\\/rn-ui-seasonalbanner\\.8dd25765f64b39f73dc7\\.min\\.js",
+            "rule": "tenorshare\\.com\\/rn-ui\\/js\\/async\\/rn-ui-seasonalbanner\\.d76e0edef189f309b92d\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
             "apis": {
-                "Document.cookie getter": 1
+                "Document.cookie getter": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "538cddab3466f9f2aa95bc331291cb2bc54466e6afdadd55093a67d0cf8b794f"
+                "d61687932cbe81c8ef5557bf7933a7414b578ab8b5933fe9a35a38e3038ac1a2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -166,30 +170,6 @@
             ]
         },
         {
-            "rule": "tenorshare\\.com\\/check\\/ip",
-            "cookies": 0.0000276,
-            "fingerprinting": 0,
-            "subdomains": [
-                "rpc"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000276,
-            "cnames": [],
-            "responseHashes": [
-                "82e400635ac95acc513edb4a2c45c72f93c2a141fb1314285c2f36ae604376f7"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tenorshare.jp",
-                "www.tenorshare.jp",
-                "www.tenorshare.fr",
-                "www.ultfone.com"
-            ]
-        },
-        {
             "rule": "tenorshare\\.com\\/icon\\/close-gray\\.svg",
             "cookies": 0.0000138,
             "fingerprinting": 0,
@@ -210,17 +190,41 @@
                 "tenorshare.fr",
                 "www.tenorshare.fr"
             ]
+        },
+        {
+            "rule": "tenorshare\\.com\\/check\\/ip",
+            "cookies": 0.0000276,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rpc"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000276,
+            "cnames": [],
+            "responseHashes": [
+                "82e400635ac95acc513edb4a2c45c72f93c2a141fb1314285c2f36ae604376f7"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tenorshare.fr",
+                "www.tenorshare.fr",
+                "www.tenorshare.jp",
+                "www.ultfone.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000069,
+    "cookies": 0.0000691,
     "types": {
         "Stylesheet": 2,
         "Script": 6,
         "Font": 4,
-        "Fetch": 4,
-        "Image": 2
+        "Image": 2,
+        "Fetch": 4
     },
     "nameservers": [
         "sid.ns.cloudflare.com",

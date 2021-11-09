@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000276,
-    "sites": 4,
+    "prevalence": 0.0000345,
+    "sites": 5,
     "subdomains": [
         "foxford",
         "cybersport"
@@ -18,14 +18,18 @@
     "resources": [
         {
             "rule": "push4site\\.com\\/Static\\/Script\\/foxford\\.js",
-            "cookies": 0,
+            "cookies": 0.0000138,
             "fingerprinting": 1,
             "subdomains": [
                 "foxford"
             ],
             "apis": {
                 "Navigator.prototype.language": 2,
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -34,6 +38,83 @@
                 "1e86206c6585ffcb39d8704748d6ffb2a34a3953a5005201f7ae67bee99fbf39"
             ],
             "type": "Script",
+            "firstPartyCookies": {
+                "p4s_first_visit": {
+                    "ttl": null,
+                    "length": 14,
+                    "prevalence": 0.000013811105509940544,
+                    "uniqueness": 1
+                },
+                "page_view_count": {
+                    "ttl": 172800003,
+                    "length": 1,
+                    "prevalence": 0.000013811105509940544,
+                    "uniqueness": 0.5
+                },
+                "IsDislogViewed": {
+                    "ttl": 172800003,
+                    "length": 5,
+                    "prevalence": 0.000013811105509940544,
+                    "uniqueness": 0.5
+                },
+                "last_diplay_dateDialog": {
+                    "ttl": 172800003,
+                    "length": 10,
+                    "prevalence": 0.000013811105509940544,
+                    "uniqueness": 1
+                },
+                "p4s_push_do_not_show_notification_Dialog": {
+                    "ttl": 172800003,
+                    "length": 5,
+                    "prevalence": 0.000013811105509940544,
+                    "uniqueness": 0.5
+                },
+                "p4s_display_method": {
+                    "ttl": null,
+                    "length": 6,
+                    "prevalence": 0.000013811105509940544,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxford.ru",
+                "externat.foxford.ru"
+            ]
+        },
+        {
+            "rule": "push4site\\.com\\/Content\\/WidgetsStyles\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "958be38f983c752fa3ecb5be775b722f9f51657f1da109f79f73bc6a786adbf4"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxford.ru",
+                "externat.foxford.ru"
+            ]
+        },
+        {
+            "rule": "push4site\\.com\\/SiteImages\\/62d77faa-e851-4830-a3d3-dc13f1a1cbcf\\.%D1%80%D0%B0%D1%81%D1%82%D1%80%20%D1%8D%D0%BA%D1%81%D1%82%D0%B5%D1%80%D0%BD%D0%B0%D1%82\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "5963c976a29d4bae43c9a208a33706f55b2e756424bc2ece1018499d33a9f0d2"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -50,14 +131,16 @@
             ],
             "apis": {
                 "Navigator.prototype.language": 2,
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Notification.permission": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [
-                "5490ed1846a9ffeaa31c84c0b4e4e5cef6bad8f84576f569b88bc38c14e75364"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -87,13 +170,37 @@
                 "cybersport.ru",
                 "www.cybersport.ru"
             ]
+        },
+        {
+            "rule": "push4site\\.com\\/Sdk\\/WidgetDisplayed",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cybersport.ru",
+                "www.cybersport.ru",
+                "www.raiffeisen.ru"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000138,
     "types": {
-        "Script": 6
+        "Script": 6,
+        "Stylesheet": 2,
+        "Image": 2,
+        "Fetch": 3
     },
     "nameservers": [
         "gene.ns.cloudflare.com",

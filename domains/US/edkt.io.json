@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000173,
-    "sites": 25,
+    "prevalence": 0.00018,
+    "sites": 26,
     "subdomains": [
         "cdn",
         "api"
@@ -24,7 +24,7 @@
                 "window.localStorage": 11
             },
             "sites": 11,
-            "prevalence": 0.0000759,
+            "prevalence": 0.000076,
             "cnames": [],
             "responseHashes": [
                 "a9943d5a9248c734baf507c7832e83f090b4dd2c64a3680cacd692fabc21f63d"
@@ -48,12 +48,14 @@
         },
         {
             "rule": "edkt\\.io\\/check\\/index\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0000276,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie setter": 4
+            },
             "sites": 14,
             "prevalence": 0.0000967,
             "cnames": [],
@@ -61,7 +63,14 @@
                 "3de06d17189e15796e7e8f2640a21b655c2d1562e0fdb88df501f9f3138ad42b"
             ],
             "type": "Document",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "3pc": {
+                    "ttl": 3600,
+                    "length": 1,
+                    "prevalence": 0.000027622211019881088,
+                    "uniqueness": 0.25
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "blackpoolgazette.co.uk",
@@ -83,13 +92,15 @@
         {
             "rule": "edkt\\.io\\/check\\/prober\\.html",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
-            "sites": 13,
-            "prevalence": 0.0000898,
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 14,
+            "prevalence": 0.0000967,
             "cnames": [],
             "responseHashes": [
                 "38a94dca5d95c210a670a327db5f38030f7b42da54d7ee832a3dd77265b249a0"
@@ -102,6 +113,7 @@
                 "www.blackpoolgazette.co.uk",
                 "www.edinburghnews.scotsman.com",
                 "www.followfollow.com",
+                "www.guitarworld.com",
                 "www.lep.co.uk",
                 "www.newsletter.co.uk",
                 "www.portsmouth.co.uk",
@@ -231,17 +243,17 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000483,
     "types": {
         "Script": 16,
-        "Document": 27,
+        "Document": 28,
         "XHR": 14,
         "Preflight": 14
     },
     "nameservers": [
-        "ns-cloud-b3.googledomains.com",
         "ns-cloud-b2.googledomains.com",
-        "ns-cloud-b1.googledomains.com",
-        "ns-cloud-b4.googledomains.com"
+        "ns-cloud-b3.googledomains.com",
+        "ns-cloud-b4.googledomains.com",
+        "ns-cloud-b1.googledomains.com"
     ]
 }
