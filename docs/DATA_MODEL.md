@@ -1,7 +1,7 @@
 # Overview
 These domains were identified by crawling the top sites on the internet, and looking for 3rd party resource requests that are on several different sites which set cookies or access browser APIs known to be used in fingerprinting.
 
-- Domain and entitiy data is automatically generated using the [Tracker Radar Detector](https://github.com/duckduckgo/tracker-radar-detector)
+- Domain and entity data is automatically generated using the [Tracker Radar Detector](https://github.com/duckduckgo/tracker-radar-detector)
 
 - [**Domains**](#Domains): Automatically generated domain data files.
 - [**Entities**](#entities): Automatically generated data on entities or companies that control the domain. 
@@ -11,7 +11,7 @@ These domains were identified by crawling the top sites on the internet, and loo
 ## Development
 
 - The domain and entity data is automatically generated using [Tracker Radar Detector](https://github.com/duckduckgo/tracker-radar-detector). 
-- New development and bug fixes, other then broken sites, are handled internally.
+- New development and bug fixes, other than broken sites, are handled internally.
 
 ## Domains
 The domain data is stored as individual region-specific JSON files. We crawl the most popular domains for each given region. The resulting domain data is stored in region-specific subdirectories within the [domains](/domains) directory:
@@ -70,7 +70,7 @@ An array of regexes to match against the full URL of significant third-party req
 |**ttl**|The median number of seconds in the future this cookie is set to expire. `null` if the cookie is a session cookie.|
 |**length**|Average string length of the cookie value.|
 |**prevalence**|Proportion of pages that this cookie is set on.|
-|**uniqueness**|Number of distinct values see divided by number of times seen. 1 means that values are always unique, 0 means it is a constant.|
+|**uniqueness**|Number of distinct values seen divided by number of times seen. 1 means that values are always unique, 0 means it is a constant.|
 
 #### Breaking
 An optional array of resources that can cause breakage if blocked.
@@ -146,7 +146,7 @@ Each entity is defined using the following fields:
 
 |||
 |--|--|
-|**Owner**|The name of another entity that ownes this entity if any|
+|**Owner**|The name of another entity that owns this entity if any|
 |**Properties**|A list of domains owned by this entity|
 |**Name**|Name of the entity|
 |**Prevalence**|The percent of sites this entity is found on|
@@ -157,7 +157,7 @@ Each entity is defined using the following fields:
 
 ### /static
 
-Data files used to renerate the Tracker Radar
+Data files used to regenerate the Tracker Radar
 
 |File|Use|
 |---|---|
@@ -170,7 +170,7 @@ Generated files created while building Tracker Radar
 
 |File|Use|
 |---|---|
-|[api_fingerprint_scores](/build-data/generated/api_fingerprint_scores.json)|An object mapping browser APIs to their likelyhood to be used for fingerprinting. Higher score means that an API is more likely to be used for fingerprinting|
+|[api_fingerprint_scores](/build-data/generated/api_fingerprint_scores.json)|An object mapping browser APIs to their likelihood to be used for fingerprinting. Higher score means that an API is more likely to be used for fingerprinting|
 
 ---
 
@@ -215,7 +215,7 @@ The site breaking entries are key/value mapping a site domain to a breakage cate
 |Value|[breakage category](#breakage-categories)|
 
 ### Breakage categories
-Cateories defining the site or request breakage type.
+Categories defining the site or request breakage type.
 
 |Category|Description|
 |---|---|
