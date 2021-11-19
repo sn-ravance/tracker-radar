@@ -7,12 +7,12 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000502,
-    "sites": 5,
+    "prevalence": 0.000703,
+    "sites": 7,
     "subdomains": [
         "apps",
         "static",
-        "service-reviews-ultimate"
+        "storage"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -25,36 +25,37 @@
                 "apps"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 4
+                "Navigator.prototype.userAgent": 6,
+                "Date.prototype.getTime": 1,
+                "window.localStorage": 1
             },
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 7,
+            "prevalence": 0.000703,
             "cnames": [],
             "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "proxyscrape.com",
+                "pvtistes.net",
                 "seekingalpha.com",
                 "www.goodmecano.com",
                 "www.helloasso.com",
-                "www.sortiraparis.com"
+                "www.sortiraparis.com",
+                "www.villeurbanne.fr"
             ]
         },
         {
             "rule": "elfsight\\.com\\/platform\\/platform\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "static"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "Date.prototype.getTime": 1,
-                "window.localStorage": 1
-            },
-            "sites": 5,
-            "prevalence": 0.000502,
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.000703,
             "cnames": [],
             "responseHashes": [
                 "ae8d437de31b178387a7b0726b9a281592e13d7507054bdc74d9b0c09280be0e"
@@ -63,43 +64,71 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "proxyscrape.com",
+                "pvtistes.net",
                 "seekingalpha.com",
                 "www.goodmecano.com",
                 "www.helloasso.com",
-                "www.paraboot.com",
-                "www.sortiraparis.com"
+                "www.sortiraparis.com",
+                "www.villeurbanne.fr"
             ]
         },
         {
             "rule": "elfsight\\.com\\/p\\/boot\\/",
-            "cookies": 0.000502,
+            "cookies": 0.000602,
             "fingerprinting": 0,
             "subdomains": [
                 "apps"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 6,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
-                "24f2968571177c2fbda8bf919a547b2024709f863046d7554ff712897b76e1fe",
-                "5b69a4bdfaefda921578e521685eddd696638af2d0d482157ec4ca1d227ddbc7",
-                "bad07843e98633fd5e147d40edccace31d85b2a52ecb2274f43818de7d0832f0",
-                "409b2d9a96437e59fdafc50c0f016c96b76fe7ce2bb7825cef6ad501f21d9f47"
+                "20221af357c4375d5dc74ef6d1e9b898ab1742c387f8553434b99f6bddaafe97",
+                "1dda88b20572d5b6fcb192dbdd018d8758a025f4ff7c2addcc9b36caaecfee25",
+                "7e265a7345770bc3772102a4b2295fbc95daedbb6fd03c33456982d41731f450",
+                "cbb8cd7985ea8d9d7de39712b2cad1e19a882470fd34a820a2b3bb276155a128",
+                "a3f91d3daba6e580780324d368b5949e5eaaa303f0c380d94d22f7394f93319d"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "pvtistes.net",
                 "seekingalpha.com",
                 "www.goodmecano.com",
                 "www.helloasso.com",
-                "www.paraboot.com",
-                "www.sortiraparis.com"
+                "www.sortiraparis.com",
+                "www.villeurbanne.fr"
             ]
         },
         {
-            "rule": "elfsight\\.com\\/apps\\/google-reviews\\/release\\/64d07323-1dbc-42ff-b791-ab15a22bb7c7\\/app\\/googleReviews\\.js",
+            "rule": "elfsight\\.com\\/api\\/facebook",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "storage"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "4d9c44c177921c99c87bfc8a34fa3ec547cf73a5d4154aa46d17adb99cac71b0",
+                "4ba733e9a4992d0eed8935d9ab3db0c112429b17fff8e93f910857c3fafad835"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pvtistes.net",
+                "www.sortiraparis.com",
+                "www.villeurbanne.fr"
+            ]
+        },
+        {
+            "rule": "elfsight\\.com\\/apps\\/social-feed\\/release\\/8b34439a-b34e-4592-9ffa-2c4091c9ffe4\\/app\\/socialFeed\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
@@ -107,101 +136,63 @@
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
-                "window.matchMedia(\"prefers-reduced-motion\")": 2,
-                "Navigator.prototype.platform": 2,
-                "Navigator.prototype.language": 2,
                 "Date.prototype.getTime": 2,
+                "Navigator.prototype.platform": 2,
+                "window.matchMedia(\"prefers-reduced-motion\")": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.maxTouchPoints": 1,
                 "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2
+                "Screen.prototype.height": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Event.prototype.timeStamp": 2,
+                "window.devicePixelRatio": 1
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "08d65a220396de8f3dfeb7a9c502363cc640e7fe57e221d45de225db546b8d3b"
+                "269bae55cb9c27bdd3dd8a68e25357df9f40d525ce942a488d525cc835f94727"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "goodmecano.com",
-                "www.helloasso.com"
+                "sortiraparis.com",
+                "www.villeurbanne.fr"
             ]
         },
         {
-            "rule": "elfsight\\.com\\/data\\/sources",
+            "rule": "elfsight\\.com\\/api\\/youtube",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "service-reviews-ultimate"
+                "storage"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "d91eae7638cde8d29c2e677e70b77fc1cb43af42f27e7968f0392bf2306296e1"
+                "fb55bbb9b5f2e41cd9eeeba4b8bb417319fa7884fc9ad030372b64ede90e3c58"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "goodmecano.com",
-                "www.helloasso.com"
-            ]
-        },
-        {
-            "rule": "elfsight\\.com\\/apps\\/all-in-one-reviews\\/assets\\/icon-google\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "a6a5ffbfcb943d6c099b5d26df6bc52e3d072137e872f800f9fdc7af1cfc9d52"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "goodmecano.com",
-                "www.helloasso.com"
-            ]
-        },
-        {
-            "rule": "elfsight\\.com\\/data\\/reviews",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "service-reviews-ultimate"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "2ad31bec7fb4b4d49991e4e0585459251fe608ca17baeeb98e1274edb1eb4136"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "goodmecano.com",
-                "www.helloasso.com"
+                "villeurbanne.fr",
+                "www.villeurbanne.fr"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000502,
+    "cookies": 0.000602,
     "types": {
-        "Script": 11,
-        "XHR": 5,
-        "Fetch": 6
+        "Script": 16,
+        "XHR": 6,
+        "Fetch": 5
     },
     "nameservers": [
         "dilbert.ns.cloudflare.com",

@@ -4,14 +4,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000138,
-    "sites": 2,
+    "prevalence": 0.0000207,
+    "sites": 3,
     "subdomains": [
         "images",
-        "gcm"
+        "gcm",
+        "gcm-contents"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "omerlocdn\\.com\\/resize",
@@ -25,7 +26,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "765b7b7f702cd8ddcc06b287d7fb49be94c4e5c7ceabf3848de6d51ad7e9d66f"
+                "d77af9c5e6478f37c69b34d816367fbbec7c91f68f932b3dcec5296aba39bd72"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -47,7 +48,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "e908c6d51724edd3feba12572de6a3b483dbfcf425dd7e5a0920d4af1ba586a7"
+                "403f0af37549063a785edc6d077f612e993f745766d183aa3339c814953780b9"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -78,6 +79,52 @@
                 "lesoleil.com",
                 "www.lesoleil.com"
             ]
+        },
+        {
+            "rule": "omerlocdn\\.com\\/GCMassets\\/jquery-3\\.2\\.1\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gcm-contents"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "87083882cc6015984eb0411a99d3981817f5dc5c90ba24f0940420c5548d82de"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lesoleil.com",
+                "www.lesoleil.com"
+            ]
+        },
+        {
+            "rule": "omerlocdn\\.com\\/GCMassets\\/Enabler\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "gcm-contents"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "18208850966d4760728397966605aa5c7894f8dcc9c773db70fdd18130c3d513"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lesoleil.com",
+                "www.lesoleil.com"
+            ]
         }
     ],
     "categories": [],
@@ -85,7 +132,8 @@
     "cookies": 0,
     "types": {
         "Image": 2,
-        "Fetch": 4
+        "Fetch": 4,
+        "Script": 4
     },
     "nameservers": [
         "ns-41.awsdns-05.com",

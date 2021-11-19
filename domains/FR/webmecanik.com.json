@@ -8,8 +8,8 @@
     "sites": 3,
     "subdomains": [
         "prixtel.automation",
-        "dns-dedi-fr2.automation",
-        "francine.automation",
+        "dns-prixtel.automation",
+        "dns-cerfrance.automation",
         "dns-fr2.automation"
     ],
     "cnames": [
@@ -18,38 +18,47 @@
             "resolved": "dns-fr2.automation.webmecanik.com"
         },
         {
+            "original": "com.cerfrance.fr",
+            "resolved": "dns-cerfrance.automation.webmecanik.com"
+        },
+        {
             "original": "webmecanik.prixtel.com",
-            "resolved": "dns-dedi-fr2.automation.webmecanik.com"
+            "resolved": "dns-prixtel.automation.webmecanik.com"
         }
     ],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "webmecanik\\.com\\/mtc\\.js",
-            "cookies": 0,
+            "cookies": 0.000301,
             "fingerprinting": 2,
             "subdomains": [
                 "prixtel.automation",
-                "dns-dedi-fr2.automation",
-                "francine.automation",
+                "dns-prixtel.automation",
+                "dns-cerfrance.automation",
                 "dns-fr2.automation"
             ],
             "apis": {
-                "Navigator.prototype.language": 2,
-                "Date.prototype.getTimezoneOffset": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Navigator.prototype.appVersion": 2,
-                "Navigator.prototype.doNotTrack": 2,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
-                "window.localStorage": 2
+                "Navigator.prototype.language": 1,
+                "Date.prototype.getTimezoneOffset": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Navigator.prototype.appVersion": 1,
+                "Navigator.prototype.doNotTrack": 1,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 1,
+                "window.localStorage": 1,
+                "Document.cookie setter": 1
             },
             "sites": 4,
-            "prevalence": 0.000402,
+            "prevalence": 0.000401,
             "cnames": [
                 {
                     "original": "webmecanik.prixtel.com",
-                    "resolved": "dns-dedi-fr2.automation.webmecanik.com"
+                    "resolved": "dns-prixtel.automation.webmecanik.com"
+                },
+                {
+                    "original": "com.cerfrance.fr",
+                    "resolved": "dns-cerfrance.automation.webmecanik.com"
                 },
                 {
                     "original": "automation.normandie-tourisme.fr",
@@ -58,26 +67,45 @@
             ],
             "responseHashes": [
                 "df8fc367fb990d8876dc9ebca91961f9cb276e2cfb82d4878010673ce1a2a975",
-                "f55f421f11032b3c24bf336f3174d4490bbc3f604b7092ac25ff61375f173391",
+                "11e6be4ebbe0d4ff143763fd0caf5aecc28f3086e18c4fbc2c2cbee403a11083",
                 "df71a0e517fb71271f292d65c9ac9b7dea14de37ab51b005c188a91705acd0b5"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "mtc_id": {
+                    "ttl": null,
+                    "length": 8,
+                    "prevalence": 0.00010037137408411121,
+                    "uniqueness": 1
+                },
+                "mtc_sid": {
+                    "ttl": null,
+                    "length": 23,
+                    "prevalence": 0.00010037137408411121,
+                    "uniqueness": 1
+                },
+                "mautic_device_id": {
+                    "ttl": null,
+                    "length": 23,
+                    "prevalence": 0.00010037137408411121,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "prixtel.com",
                 "assistance.prixtel.com",
-                "www.francine.com",
+                "www.cerfrance.fr",
                 "www.normandie-tourisme.fr"
             ]
         },
         {
             "rule": "webmecanik\\.com\\/mtc\\/event",
-            "cookies": 0,
+            "cookies": 0.000301,
             "fingerprinting": 0,
             "subdomains": [
-                "dns-dedi-fr2.automation",
-                "francine.automation",
+                "dns-prixtel.automation",
+                "dns-cerfrance.automation",
                 "dns-fr2.automation"
             ],
             "apis": {},
@@ -86,7 +114,50 @@
             "cnames": [
                 {
                     "original": "webmecanik.prixtel.com",
-                    "resolved": "dns-dedi-fr2.automation.webmecanik.com"
+                    "resolved": "dns-prixtel.automation.webmecanik.com"
+                },
+                {
+                    "original": "com.cerfrance.fr",
+                    "resolved": "dns-cerfrance.automation.webmecanik.com"
+                },
+                {
+                    "original": "automation.normandie-tourisme.fr",
+                    "resolved": "dns-fr2.automation.webmecanik.com"
+                }
+            ],
+            "responseHashes": [
+                "a426392e665bb5a5db661d921b3736b0b74da1597b736de7a7f50bf5a5d88259",
+                "fdec56ee311053ba957f7547f7dfd248a9b46cac2e0143924953e728a828eb8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "prixtel.com",
+                "www.cerfrance.fr",
+                "www.normandie-tourisme.fr"
+            ]
+        },
+        {
+            "rule": "webmecanik\\.com\\/mtc\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dns-prixtel.automation",
+                "dns-cerfrance.automation",
+                "dns-fr2.automation"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "webmecanik.prixtel.com",
+                    "resolved": "dns-prixtel.automation.webmecanik.com"
+                },
+                {
+                    "original": "com.cerfrance.fr",
+                    "resolved": "dns-cerfrance.automation.webmecanik.com"
                 },
                 {
                     "original": "automation.normandie-tourisme.fr",
@@ -99,42 +170,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "prixtel.com",
-                "www.francine.com",
-                "www.normandie-tourisme.fr"
-            ]
-        },
-        {
-            "rule": "webmecanik\\.com\\/mtc\\/event",
-            "cookies": 0.000301,
-            "fingerprinting": 0,
-            "subdomains": [
-                "dns-dedi-fr2.automation",
-                "francine.automation",
-                "dns-fr2.automation"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [
-                {
-                    "original": "webmecanik.prixtel.com",
-                    "resolved": "dns-dedi-fr2.automation.webmecanik.com"
-                },
-                {
-                    "original": "automation.normandie-tourisme.fr",
-                    "resolved": "dns-fr2.automation.webmecanik.com"
-                }
-            ],
-            "responseHashes": [
-                "8f39fc5309cff8cc1cafbc3546e3c0205da1076b38f952168ada1c7417ebd956",
-                "f18fd28b3e8a5284fa4d4f772621d60a62867969dcc10812e85c58e25ab57c9e"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "prixtel.com",
-                "www.francine.com",
+                "www.cerfrance.fr",
                 "www.normandie-tourisme.fr"
             ]
         }
@@ -144,8 +180,8 @@
     "cookies": 0.000301,
     "types": {
         "Script": 4,
-        "Preflight": 3,
-        "XHR": 3
+        "XHR": 3,
+        "Preflight": 3
     },
     "nameservers": [
         "ns-235-a.gandi.net",

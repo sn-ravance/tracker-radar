@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000501,
-    "sites": 5,
+    "prevalence": 0.000401,
+    "sites": 4,
     "subdomains": [
         "site-azp",
         "offer"
@@ -24,16 +24,15 @@
                 "site-azp"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "freestylelibre.de",
-                "www.planet-sports.de",
+                "planet-sports.de",
                 "www.urlaubsguru.de"
             ]
         },
@@ -49,14 +48,14 @@
             "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "f13e002bffb98f8ece989a44ce83a6e8ad8749947c353ebb11b1803a491821d6",
-                "c60aa053c663289ed446b7c0136095a5a6eb087093eed3f4988fe3f1d9daf90d"
+                "63f3979fde6f3b90a8dd5dbc6e42ddac983e446320517ea975ad44246b905d63",
+                "3f3576cc2bc75fb94e34e4e20cda4527bab5ae410eb905e464c6c2a644580306"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "freestylelibre.de",
+                "planet-sports.de",
                 "www.planet-sports.de",
                 "www.urlaubsguru.de"
             ]
@@ -64,11 +63,13 @@
         {
             "rule": "slgnt\\.eu\\/static\\/cookie\\.html",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "offer"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 1
+            },
             "sites": 3,
             "prevalence": 0.000301,
             "cnames": [],
@@ -107,6 +108,33 @@
             ]
         },
         {
+            "rule": "slgnt\\.eu\\/ca2896f15e294b9fb2a7f11bf1def34e\\/a44f3105b3d842\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "offer"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "0d6a3643d763abd5626aea988842a56d760d3966c396d6b91442fe7593034c1f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "urlaubsguru.de",
+                "www.urlaubsguru.de"
+            ]
+        },
+        {
             "rule": "slgnt\\.eu\\/api\\/7e080a47898b4c718d7aeef3537448d8\\/iv\\/aHR0cHM6Ly93d3cudXJsYXVic2d1cnUuZGUv",
             "cookies": 0.000201,
             "fingerprinting": 0,
@@ -133,17 +161,18 @@
     "performance": {},
     "cookies": 0.000401,
     "types": {
-        "Preflight": 3,
+        "Preflight": 2,
         "Fetch": 3,
         "Document": 3,
-        "XHR": 4
+        "XHR": 4,
+        "Script": 2
     },
     "nameservers": [
-        "ns10.dnsmadeeasy.com",
-        "ns11.dnsmadeeasy.com",
-        "ns12.dnsmadeeasy.com",
+        "ns15.dnsmadeeasy.com",
         "ns13.dnsmadeeasy.com",
         "ns14.dnsmadeeasy.com",
-        "ns15.dnsmadeeasy.com"
+        "ns11.dnsmadeeasy.com",
+        "ns10.dnsmadeeasy.com",
+        "ns12.dnsmadeeasy.com"
     ]
 }

@@ -7,12 +7,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000249,
-    "sites": 36,
+    "prevalence": 0.000242,
+    "sites": 35,
     "subdomains": [
         "a",
         "rtt",
-        "cont",
         "mds"
     ],
     "cnames": [],
@@ -34,7 +33,7 @@
             "prevalence": 0.000131,
             "cnames": [],
             "responseHashes": [
-                "190cd6204b9af13aa7d7f460152b269e8a0d25fd90732e7ba39d59516a4e0eb4"
+                "6013f1a80ced748f1f1af9ff25e2173c51a726d0d29299bfc630f58cf7945f15"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -47,8 +46,8 @@
                 "gutscheine.focus.de",
                 "kuendigen.focus.de",
                 "m.focus.de",
-                "praxistipps.chip.de",
                 "praxistipps.focus.de",
+                "praxistipps.chip.de",
                 "ratgeber.bunte.de",
                 "vergleich.focus.de",
                 "www.bunte.de",
@@ -74,7 +73,7 @@
             "cnames": [],
             "responseHashes": [
                 "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-                "6d50191cbe0b38cf6f74e6a4e33232df5bfc667f41837f48992d9d9e6b5b51c4"
+                "307cb4e0480136cd686c10078571974ef1519e5bcb8182ac3029fa511abb31b6"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -84,8 +83,8 @@
                 "efahrer.chip.de",
                 "forum.chip.de",
                 "m.focus.de",
-                "praxistipps.chip.de",
                 "praxistipps.focus.de",
+                "praxistipps.chip.de",
                 "ratgeber.bunte.de",
                 "vergleich.focus.de",
                 "www.bunte.de",
@@ -99,12 +98,14 @@
         },
         {
             "rule": "bf-tools\\.net\\/3PChecker\\/start\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0000828,
+            "fingerprinting": 1,
             "subdomains": [
                 "a"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie setter": 12
+            },
             "sites": 17,
             "prevalence": 0.000117,
             "cnames": [],
@@ -112,7 +113,14 @@
                 "44feafd22b3975a39c3c31231669733619ee89b03bcb1cc36c82cd812e3fdab6"
             ],
             "type": "Document",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "thirdparty": {
+                    "ttl": 3600,
+                    "length": 3,
+                    "prevalence": 0.00008284489364786778,
+                    "uniqueness": 0.08333333333333333
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "chip.de",
@@ -120,8 +128,8 @@
                 "forum.chip.de",
                 "kuendigen.focus.de",
                 "m.focus.de",
-                "praxistipps.chip.de",
                 "praxistipps.focus.de",
+                "praxistipps.chip.de",
                 "ratgeber.bunte.de",
                 "speedtest.chip.de",
                 "vergleich.focus.de",
@@ -136,12 +144,15 @@
         },
         {
             "rule": "bf-tools\\.net\\/3PChecker\\/complete\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0000759,
+            "fingerprinting": 1,
             "subdomains": [
                 "a"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 11,
+                "Document.cookie setter": 11
+            },
             "sites": 17,
             "prevalence": 0.000117,
             "cnames": [],
@@ -157,8 +168,8 @@
                 "forum.chip.de",
                 "kuendigen.focus.de",
                 "m.focus.de",
-                "praxistipps.chip.de",
                 "praxistipps.focus.de",
+                "praxistipps.chip.de",
                 "ratgeber.bunte.de",
                 "speedtest.chip.de",
                 "vergleich.focus.de",
@@ -172,34 +183,6 @@
             ]
         },
         {
-            "rule": "bf-tools\\.net\\/data",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cont"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000276,
-            "cnames": [],
-            "responseHashes": [
-                "f542fa8d11cd1ad1a99926062c470734cf655dd5f39b6faa965b4795dce0e282",
-                "744178ce1c61758148ef4487db5204baae9cf21c5e59d47a0cf5f6289276385c",
-                "9d48779feccff2c8508f142fc6df509da55024e6652e9bf8c1d15f52df7a4b29"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "gpv_ef": 0.000006904170118751726
-            },
-            "exampleSites": [
-                "chip.de",
-                "forum.chip.de",
-                "www.cinema.de",
-                "www.fitforfun.de"
-            ]
-        },
-        {
             "rule": "bf-tools\\.net\\/api\\/v1\\/getMetadata",
             "cookies": 0,
             "fingerprinting": 0,
@@ -207,19 +190,18 @@
                 "mds"
             ],
             "apis": {},
-            "sites": 10,
-            "prevalence": 0.000069,
+            "sites": 9,
+            "prevalence": 0.0000621,
             "cnames": [],
             "responseHashes": [
                 "81e3c27b048bd7d8f048b183ea1e7c3f8fded66f4a2b4a7494283b98a83dc41a",
-                "9bef7681769aee8aabcd9faa5051a2be94fc15116d6fafca32192cd6a86534e1",
-                "e1bfc08775c506b3b5fbffe399e2c780514bdd6867d30cd750d00a0e3ee8c6f8",
-                "1da449c5bac6b341ff956c252935d17419a7fe75948d206b8eec20963e4c1ba8",
-                "d61e17bff4735b2c1989697f80d1923ab208dfeb63b67f7d3281c79e8a9ea864",
-                "4146be94414bfac87297da7e657289c49f82e7a6c4cbd6e5650cce9e88f9d3eb",
-                "9218e27181d2d79d908b1720e2146867dc6ed96f41c8cc891e8c43cdef536eab",
+                "5354454f1d979f3f0bceffd9f16dd8ba275d69d8254a8da9de62c5f6c93ab1db",
+                "0ebd0a67b0de987cd8c87cdd1e634205cddcf3d4e24b94c0ffaa842ba5e271ce",
+                "15340ef4fa54687dd8dd04a449154eda2c9e3a6897ac0f2977fae464f12f80a5",
+                "588eeb57640818d8e10f33f810e5e01c54d193c710fbbae98af95640cd49b2b2",
+                "3fca92e24e78af28db0c477c6f39a05a898bc2f0ea1f839ca5871ae3ff67cd73",
                 "c928b5548f18ef55dc15ec7ec24b7c5e95e1d9477435f721bde5c5aed7941915",
-                "42d206c530a056ba733310b946a147c62ad0645b790f84c653a7d2ad611a1a16"
+                "bca94b498f357d339955cbdeef98f28113cf5b975bfc7ef013ed5562cb5aa342"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -227,12 +209,11 @@
             "exampleSites": [
                 "chip.de",
                 "forum.chip.de",
-                "praxistipps.chip.de",
                 "praxistipps.focus.de",
+                "praxistipps.chip.de",
                 "ratgeber.bunte.de",
                 "www.bunte.de",
                 "www.chip.de",
-                "www.fitforfun.de",
                 "www.netmoms.de",
                 "www.tvspielfilm.de"
             ]
@@ -240,10 +221,10 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000159,
     "types": {
         "Script": 19,
-        "XHR": 29,
+        "XHR": 24,
         "Document": 34
     },
     "nameservers": [

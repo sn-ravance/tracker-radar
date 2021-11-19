@@ -10,29 +10,31 @@
     "prevalence": 0.0000138,
     "sites": 2,
     "subdomains": [
+        "b",
         "de",
         "at",
-        "b",
         "px"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "staticfiles\\.at\\/css\\/editorial-consent-4529b110cc\\.css",
+            "rule": "staticfiles\\.at\\/lib\\/k13m\\/assets\\/index\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "de"
+                "b"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 2
+            },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "bc961fc6af626967bc80390184ef37d38acb3ddaabc1fd8ef5f301a0c131b1d6"
+                "5d4b36bd4012972e2e4957dc4fd8ee8ed02e9ec2c2dda06fff3f34635755b53a"
             ],
-            "type": "Stylesheet",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -64,24 +66,46 @@
             ]
         },
         {
+            "rule": "staticfiles\\.at\\/css\\/editorial-consent-20e4840fd7\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "de"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "ec92b44c2f3391bcb093afba73aaf2518ebfa70f65747eefc86ad6a5810aa869"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "derstandard.de",
+                "www.derstandard.de"
+            ]
+        },
+        {
             "rule": "staticfiles\\.at\\/auth-js\\/auth\\.js",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 1,
             "subdomains": [
                 "b"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.product": 1,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.product": 2,
                 "window.localStorage": 2,
-                "Navigator.prototype.appName": 1,
+                "Navigator.prototype.appName": 2,
                 "Document.cookie getter": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "86132d56600181f6b98aba88d33eba113cfe3dc2e8a1321fc6d2c00109702f4d"
+                "be0e6e4c1e553efc5d9e8d9a24aec9a3ac52f4a05ee2d2a041b22611bee0979d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -93,13 +117,15 @@
         },
         {
             "rule": "staticfiles\\.at\\/js\\/derstandard-945b420d2c\\.js",
-            "cookies": 0,
+            "cookies": 0.0000138,
             "fingerprinting": 1,
             "subdomains": [
                 "de"
             ],
             "apis": {
                 "window.localStorage": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
@@ -109,7 +135,14 @@
                 "c0347cda22d720b48ee0411a83530fc2c70018503094e93ec4ab90c648b1840f"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "cookies.js": {
+                    "ttl": 0,
+                    "length": 9,
+                    "prevalence": 0.00001380748227464463,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "derstandard.de",
@@ -117,7 +150,41 @@
             ]
         },
         {
-            "rule": "staticfiles\\.at\\/js\\/framework-bfa8722f36\\.js",
+            "rule": "staticfiles\\.at\\/js\\/migration-4fc0e6f435\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "de"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "727f7cd86aed7fcfeb6941cdff027fa9ef8e09bf26463a5d9b3bc3eb07d12425"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cookies.js": {
+                    "ttl": 0,
+                    "length": 9,
+                    "prevalence": 0.00001380748227464463,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "derstandard.de",
+                "www.derstandard.de"
+            ]
+        },
+        {
+            "rule": "staticfiles\\.at\\/js\\/framework-no-migration-65bd07ff27\\.js",
             "cookies": 0.0000138,
             "fingerprinting": 2,
             "subdomains": [
@@ -129,50 +196,27 @@
                 "window.indexedDB": 2,
                 "window.sessionStorage": 2,
                 "window.localStorage": 2,
-                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.platform": 2,
                 "Document.cookie setter": 2,
                 "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "c65285e980b83a7e29ff3592c3aea4413a0f08344f1c1283026f5485cfa94da0"
+                "53985c61873aba03e5575f067d4dc65c0317ff2ca2b684b26c47c1398bbb959b"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "cookies.js": {
-                    "ttl": 1,
+                    "ttl": 0,
                     "length": 9,
-                    "prevalence": 0.000013808340237503452,
+                    "prevalence": 0.00001380748227464463,
                     "uniqueness": 0.5
                 }
             },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "derstandard.de",
-                "www.derstandard.de"
-            ]
-        },
-        {
-            "rule": "staticfiles\\.at\\/fontcache\\/v1\\.2\\/roboto-700-extended\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "de",
-                "at"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "fb06becf29eda35172c08ffd9724cbf95aaecd47417b3a2c0915327b0e3457ff"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "derstandard.de",
@@ -192,7 +236,30 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "14bbf7f415b979e3f4d6b17d796627a75eac6d0de37f25c85402971d04d8557f"
+                "11b4a33a78e9c299928c9680df4cd137a3904d140086e43178179a77474c96bb"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "derstandard.de",
+                "www.derstandard.de"
+            ]
+        },
+        {
+            "rule": "staticfiles\\.at\\/fontcache\\/v1\\.2\\/roboto-700-extended\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "de",
+                "at"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "3560d9d1852eb8a42bab9a2ea7a3948842b1cb3db184ea1a81f741cbc3bba27f"
             ],
             "type": "Font",
             "firstPartyCookies": {},
@@ -216,7 +283,29 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "490b5d9f79f61ae8f254a0e79187db549787cbef9c558ae6f1eb5f0456bdaf8a"
+                "a5e32f1d271a2a2926d2dfb4110c0c3654d672961c259fb11b1aaa58d2b8e35c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "derstandard.de",
+                "www.derstandard.de"
+            ]
+        },
+        {
+            "rule": "staticfiles\\.at\\/lib\\/k13m\\/assets\\/vendor\\.06b44025\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "b"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "d1d142a027aa17eebec81f4820add953ee2720aea646e5f2ce3e66fef83f8a6b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -238,7 +327,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "15c45726f3efa9f71a91a94f40942d9542b43428e25120984cdfeb108062462d"
+                "c047a571d26d269fff6bf28dfcf6c11b43ea262ed9ab082dedd2dae481964213"
             ],
             "type": "Font",
             "firstPartyCookies": {},
@@ -253,14 +342,14 @@
     "performance": {},
     "cookies": 0.0000138,
     "types": {
+        "Script": 14,
         "Stylesheet": 4,
-        "Script": 8,
         "Font": 6
     },
     "nameservers": [
-        "balancer1.derstandard.at",
-        "adns3.drei.host",
         "adns1.drei.host",
-        "adns2.drei.host"
+        "adns2.drei.host",
+        "adns3.drei.host",
+        "balancer1.derstandard.at"
     ]
 }

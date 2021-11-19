@@ -4,7 +4,7 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000603,
+    "prevalence": 0.000602,
     "sites": 6,
     "subdomains": [
         "custom"
@@ -13,13 +13,9 @@
         {
             "original": "pm.redbull.com",
             "resolved": "custom.plausible.io"
-        },
-        {
-            "original": "stats.pri.org",
-            "resolved": "custom.plausible.io"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "plausible\\.io\\/js\\/plausible\\.js",
@@ -27,54 +23,55 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "window.localStorage": 5
+                "window.localStorage": 5,
+                "Navigator.prototype.webdriver": 5
             },
             "sites": 5,
             "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
-                "3aa6ed108e3184238c4b51fa4603392bc12f4ff8ff57039ee111b707f26a549f"
+                "7eec3429c76cb48e5fd457c5afb71b7cf34bc4298d53023bae8aea715443b4a9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "alphr.com",
+                "system76.com",
                 "www.alphr.com",
-                "www.buymeacoffee.com",
+                "www.klimadao.finance",
                 "www.ravelry.com",
                 "www.ukcolumn.org"
             ]
         },
         {
-            "rule": "plausible\\.io\\/js\\/index\\.js",
+            "rule": "plausible\\.io\\/api\\/event",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "custom"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 6,
+            "prevalence": 0.000602,
             "cnames": [
-                {
-                    "original": "stats.pri.org",
-                    "resolved": "custom.plausible.io"
-                },
                 {
                     "original": "pm.redbull.com",
                     "resolved": "custom.plausible.io"
                 }
             ],
             "responseHashes": [
-                "3aa6ed108e3184238c4b51fa4603392bc12f4ff8ff57039ee111b707f26a549f"
+                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "pri.org",
-                "www.redbull.com"
+                "system76.com",
+                "www.alphr.com",
+                "www.klimadao.finance",
+                "www.ravelry.com",
+                "www.redbull.com",
+                "www.ukcolumn.org"
             ]
         }
     ],
@@ -82,10 +79,11 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 7
+        "Script": 5,
+        "XHR": 6
     },
     "nameservers": [
-        "iris.ns.cloudflare.com",
-        "eric.ns.cloudflare.com"
+        "eric.ns.cloudflare.com",
+        "iris.ns.cloudflare.com"
     ]
 }

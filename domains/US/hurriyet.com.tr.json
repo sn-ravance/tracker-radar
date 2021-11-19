@@ -7,12 +7,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000207,
-    "sites": 3,
+    "prevalence": 0.0000276,
+    "sites": 4,
     "subdomains": [
         "s",
         "apibigpara",
-        "clicks"
+        "clicks",
+        "geoloc"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -73,7 +74,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "f5af0e853e06cc4fe235a16251bb020814554235d89ad4b9e85ec83348296c85"
+                "6556480ec72d1ee18f651070ad748fb128333f1651a974ae78cff75c15768132"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -95,7 +96,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "7eeeef558afa9a970c0ae7fbe9d26568ce416c0f3d69264eb263f44d4d941e6b"
+                "cce55e7613d7d1c688c5a4f3be79e8d68e1a7a84cb850ae6961f53a1c7dec642"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -192,7 +193,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "7162e026575421f54fedaa0ac3a3cd60e710ecbd1d8ddd1f493a3a8adf7d06b1"
+                "26f9a41b7e74da7ea518fa63c24ccd9248c2bc9522fc3ed3fd7bfccdee83e205"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -214,7 +215,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe"
+                "d792afdac7f7ae5de7c6964950c6c61dc6e3f3813180a59e141c7cb4ac4364dc"
             ],
             "type": "Font",
             "firstPartyCookies": {},
@@ -256,7 +257,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "9a0a050d77d0a535c4a641ccfa91c1569f36a9688b21f2a2a19b93adeb000158"
+                "5d2ad710a124077fdf2ef814787cc8c1476021cbec34194a3d97b8b9bf459e37"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -291,38 +292,18 @@
             "type": "Script",
             "firstPartyCookies": {
                 "clicks_queue": {
-                    "ttl": 31104002,
+                    "ttl": 31104003,
                     "length": 2,
-                    "prevalence": 0.000013808340237503452,
+                    "prevalence": 0.00001380748227464463,
                     "uniqueness": 0.5
                 },
                 "_clicks_session_id": {
                     "ttl": null,
                     "length": 15,
-                    "prevalence": 0.000013808340237503452,
+                    "prevalence": 0.00001380748227464463,
                     "uniqueness": 1
                 }
             },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hurriyetdailynews.com",
-                "www.hurriyetdailynews.com"
-            ]
-        },
-        {
-            "rule": "hurriyet\\.com\\.tr\\/request",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "clicks"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "hurriyetdailynews.com",
@@ -350,6 +331,48 @@
                 "hurriyetdailynews.com",
                 "www.hurriyetdailynews.com"
             ]
+        },
+        {
+            "rule": "hurriyet\\.com\\.tr\\/request",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "clicks"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hurriyetdailynews.com",
+                "www.hurriyetdailynews.com"
+            ]
+        },
+        {
+            "rule": "hurriyet\\.com\\.tr\\/api\\/asn\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "geoloc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "8091a469e08004641ee40490fb42c1ee1192ef6746b622279fcc5bbc4b7df554"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "milliyet.com.tr",
+                "www.milliyet.com.tr"
+            ]
         }
     ],
     "categories": [],
@@ -361,12 +384,13 @@
         "Script": 8,
         "Font": 2,
         "Preflight": 4,
-        "XHR": 4
+        "XHR": 4,
+        "Fetch": 2
     },
     "nameservers": [
         "ns-1172.awsdns-18.org",
-        "ns-1789.awsdns-31.co.uk",
         "ns-601.awsdns-11.net",
-        "ns-63.awsdns-07.com"
+        "ns-63.awsdns-07.com",
+        "ns-1789.awsdns-31.co.uk"
     ]
 }

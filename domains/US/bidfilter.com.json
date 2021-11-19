@@ -4,27 +4,33 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000138,
-    "sites": 20,
+    "prevalence": 0.00011,
+    "sites": 16,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "x"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "bidfilter\\.com\\/bidfilter\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
-            "sites": 12,
-            "prevalence": 0.0000829,
+            "apis": {
+                "window.localStorage": 8,
+                "window.sessionStorage": 8,
+                "Navigator.prototype.userAgent": 9,
+                "Date.prototype.getTime": 10
+            },
+            "sites": 10,
+            "prevalence": 0.000069,
             "cnames": [],
             "responseHashes": [
-                "972e746e71a876094629ddf137d75cefff77c2f144d260a144db950802bed449"
+                "9e61e03a6ee8599fd31c01a8bca6f146b329d49031de47f9edf6eddd9e1b885e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -33,13 +39,46 @@
                 "cheftalk.com",
                 "familycow.proboards.com",
                 "forum.gigabyte.us",
+                "libertarians.freeforums.net",
                 "listenonrepeat.com",
-                "pandce.proboards.com",
-                "singleactions.proboards.com",
                 "vetsbenefits.net",
                 "www.fordfe.com",
                 "www.golfwrx.com",
-                "www.smoking-meat.com",
+                "www.smokingmeatforums.com",
+                "www.thevintagenews.com"
+            ]
+        },
+        {
+            "rule": "bidfilter\\.com\\/b",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "x"
+            ],
+            "apis": {},
+            "sites": 10,
+            "prevalence": 0.000069,
+            "cnames": [],
+            "responseHashes": [
+                "e61a544972e743481e6ba94ae4549e142d7eb99b2e1337951234c2eddd2e80f6",
+                "5394a9c5d798fd195aa5fa8b824f5354a0124f9f805be0f39eec2306dddf7249",
+                "c9f309a1f443ce3535c7bcc1bbd4836d63c245171e68761d75b6c483c552ad24",
+                "1d1d1e64aa290219a99e7ea9332505ba19ee1a16ed70423b0451335016099c6e",
+                "7ccd6fcfe2f89e6dab5e839c5ab998ffaa3ded5bcff26a93364d95237d73a0ce",
+                "f6df04bcf16fa8ca696ad79f9cbb109e6d22d30dfd1399cca854c10c20668b7c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cheftalk.com",
+                "familycow.proboards.com",
+                "forum.gigabyte.us",
+                "libertarians.freeforums.net",
+                "listenonrepeat.com",
+                "vetsbenefits.net",
+                "www.fordfe.com",
+                "www.golfwrx.com",
                 "www.smokingmeatforums.com",
                 "www.thevintagenews.com"
             ]
@@ -49,7 +88,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 12
+        "Script": 10,
+        "XHR": 10
     },
     "nameservers": [
         "dawn.ns.cloudflare.com",

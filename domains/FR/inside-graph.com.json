@@ -7,65 +7,94 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
-        "eu2-live"
+        "eu2-track",
+        "sephora-track",
+        "eu2-live",
+        "sephora-live"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "inside-graph\\.com\\/gettracker",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
+            "rule": "inside-graph\\.com\\/ig\\.js",
+            "cookies": 0.0001,
+            "fingerprinting": 2,
             "subdomains": [
-                "eu2-live"
+                "eu2-track",
+                "sephora-track"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.appName": 2,
+                "Document.cookie getter": 1,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 1,
+                "Navigator.prototype.language": 1,
+                "Date.prototype.getTimezoneOffset": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Navigator.prototype.appVersion": 1,
+                "Navigator.prototype.mediaDevices": 1,
+                "Element.prototype.getClientRects": 1,
+                "window.sessionStorage": 1,
+                "window.devicePixelRatio": 1
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "158df95333689d7e713409a8e85b55f0bf4a0f6aa190832af13d61bccf97c3cc"
+                "61a5fdadac1ecf0ed5ff40cbeaf9ff1c9c450cfb177bfc9e455eb2b24fd50da9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "inside-eu2": {
+                    "ttl": 31536007,
+                    "length": 78,
+                    "prevalence": 0.00010037137408411121,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lenovo.com",
+                "www.sephora.com"
+            ]
+        },
+        {
+            "rule": "inside-graph\\.com\\/gettracker",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eu2-live",
+                "sephora-live"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "f192c230fa2b50ef5014f00a012afc97d4b780d683adf3a0739008d0ac751de7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "lenovo.com",
-                "www.lenovo.com"
-            ]
-        },
-        {
-            "rule": "inside-graph\\.com\\/\\/api\\/websites\\/GetSvgContent",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu2-live"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "80323e3d5bc70dcdca6e55ef2550801ec130390af77b8053131335e48d63c726"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lenovo.com",
-                "www.lenovo.com"
+                "www.lenovo.com",
+                "www.sephora.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000201,
     "types": {
-        "Script": 2,
-        "XHR": 2
+        "Script": 5
     },
     "nameservers": [
         "ns-1314.awsdns-36.org",

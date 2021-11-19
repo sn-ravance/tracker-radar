@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000502,
-    "sites": 5,
+    "prevalence": 0.000602,
+    "sites": 6,
     "subdomains": [
         "script",
         "api"
@@ -16,6 +16,65 @@
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "ownpage\\.fr\\/v1\\/ownpage\\.js",
+            "cookies": 0.000301,
+            "fingerprinting": 1,
+            "subdomains": [
+                "script"
+            ],
+            "apis": {
+                "Document.cookie getter": 3,
+                "Date.prototype.getTime": 3,
+                "Document.cookie setter": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "47dcc5ccddda02ae4a968f0d40073bcd4c1fff886815b0ea5064c6f2d96b535a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "ownpage_fp2": {
+                    "ttl": 31536002,
+                    "length": 16,
+                    "prevalence": 0.00030111412225233364,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coinacademy.fr",
+                "www.famillechretienne.fr",
+                "www.slate.fr"
+            ]
+        },
+        {
+            "rule": "ownpage\\.fr\\/v1\\/collect\\/hits",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "ownpage_fp2": 0.00030111412225233364
+            },
+            "exampleSites": [
+                "coinacademy.fr",
+                "www.famillechretienne.fr",
+                "www.slate.fr"
+            ]
+        },
         {
             "rule": "ownpage\\.fr\\/v1\\/mailmunch-pairing\\.js",
             "cookies": 0,
@@ -39,75 +98,18 @@
                 "euronews.com",
                 "www.lebonbon.fr"
             ]
-        },
-        {
-            "rule": "ownpage\\.fr\\/v1\\/ownpage\\.js",
-            "cookies": 0.0001,
-            "fingerprinting": 1,
-            "subdomains": [
-                "script"
-            ],
-            "apis": {
-                "Document.cookie getter": 1,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 1
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "47dcc5ccddda02ae4a968f0d40073bcd4c1fff886815b0ea5064c6f2d96b535a"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "ownpage_fp2": {
-                    "ttl": 31536002,
-                    "length": 16,
-                    "prevalence": 0.00010039152695512498,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "famillechretienne.fr",
-                "www.slate.fr"
-            ]
-        },
-        {
-            "rule": "ownpage\\.fr\\/v1\\/collect\\/hits",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "ownpage_fp2": 0.00010039152695512498
-            },
-            "exampleSites": [
-                "famillechretienne.fr",
-                "www.slate.fr"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000301,
     "types": {
-        "Script": 4,
-        "Image": 2
+        "Script": 5,
+        "Image": 3
     },
     "nameservers": [
-        "ns-19-c.gandi.net",
         "ns-112-a.gandi.net",
+        "ns-19-c.gandi.net",
         "ns-129-b.gandi.net"
     ]
 }

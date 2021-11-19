@@ -9,17 +9,23 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000501,
-    "sites": 5,
+    "prevalence": 0.000602,
+    "sites": 6,
     "subdomains": [
         "srf-udp-production-api-mgmt",
-        "twrapi"
+        "twrapi",
+        "apim-gw-azu-nyc-prod"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "api.nyc.gov",
+            "resolved": "apim-gw-azu-nyc-prod.azure-api.net"
+        }
+    ],
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "azure-api\\.net\\/prd-event\\/page_view",
+            "rule": "azure-api\\.net\\/web\\/web-page_view",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -40,7 +46,7 @@
             ]
         },
         {
-            "rule": "azure-api\\.net\\/prd-event\\/page_view",
+            "rule": "azure-api\\.net\\/web\\/web-page_view",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -64,6 +70,28 @@
         },
         {
             "rule": "azure-api\\.net\\/dbtravel\\/v1\\/trips",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "twrapi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "63d03125cf5a31607590d6e69cdaff913588f8b39fb9ea7efd3bda487db8f6d4"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "twerenbold.ch",
+                "www.twerenbold.ch"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/dbtravel\\/v1\\/trips",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -83,25 +111,55 @@
             ]
         },
         {
-            "rule": "azure-api\\.net\\/dbtravel\\/v1\\/trips",
-            "cookies": 0.000201,
+            "rule": "azure-api\\.net\\/public\\/api\\/GetCalendar",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "twrapi"
+                "apim-gw-azu-nyc-prod"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
-            "cnames": [],
+            "cnames": [
+                {
+                    "original": "api.nyc.gov",
+                    "resolved": "apim-gw-azu-nyc-prod.azure-api.net"
+                }
+            ],
             "responseHashes": [
-                "bd455cfad651ed9e8d17413c5d150ddceaca45af491c82669a2d80558c02994c"
+                "293839b6de2199784faf14738aa7c50db040f3975553c09b11ecc9f39d627403"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "twerenbold.ch",
-                "www.twerenbold.ch"
+                "nyc.gov",
+                "www1.nyc.gov"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/public\\/api\\/GetCalendar",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apim-gw-azu-nyc-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.nyc.gov",
+                    "resolved": "apim-gw-azu-nyc-prod.azure-api.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyc.gov",
+                "www1.nyc.gov"
             ]
         }
     ],
@@ -109,9 +167,9 @@
     "performance": {},
     "cookies": 0.0001,
     "types": {
-        "Preflight": 5,
+        "Preflight": 7,
         "Fetch": 3,
-        "XHR": 2
+        "XHR": 4
     },
     "nameservers": [
         "ns1-05.azure-dns.com",

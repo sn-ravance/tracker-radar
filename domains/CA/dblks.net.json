@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.001,
-    "sites": 10,
+    "prevalence": 0.000904,
+    "sites": 9,
     "subdomains": [
         "s",
         "us"
@@ -16,16 +16,18 @@
         {
             "rule": "dblks\\.net\\/ff\\/report_metrics\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "s"
             ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.000603,
+            "apis": {
+                "Navigator.prototype.userAgent": 8
+            },
+            "sites": 8,
+            "prevalence": 0.000803,
             "cnames": [],
             "responseHashes": [
-                "0b488d09c8b431d37ed10b6f1baf877abd117b17ad8f2e032a91723d80175b16"
+                "227811c0b2e1a1d61cec88c319f3d258918a7d1c6c76af6c9c54d30baa54638f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -33,29 +35,93 @@
             "exampleSites": [
                 "3downnation.com",
                 "canucksarmy.com",
+                "oilersnation.com",
                 "www.dailyfaceoff.com",
+                "www.hockeyfights.com",
                 "www.redvoicemedia.com",
                 "www.revolver.news",
-                "www.waynedupree.com"
+                "www.saltwire.com"
+            ]
+        },
+        {
+            "rule": "dblks\\.net\\/openrtb2\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.000803,
+            "cnames": [],
+            "responseHashes": [
+                "033ef53bb5ca7e41fa860505f559b8cbe8313b9594f763671cb529543d91c293",
+                "8b857054706a3e5f400ee3d00280888c9f0781a39d6fb2ada3c4247c93a3e040",
+                "ecdf503cb3a58642d38a15de9bfbda60719735d4b8156fab932d550af9e37a84",
+                "5ec6cab0418ab8817de2743a8d87ed06613f41425eb46f8892882e2b8a1f9ad8",
+                "d88bda84039212a49ed4796283563d38fca849fa36c3c8c23e0478b1922aecc2",
+                "09494db4eca35ffa5c2e4dc30f3be95f3be9b51561dbc80d2e9c9c5ccc6708e5",
+                "aeff813839461a3392ad86817e8407509da702330145274d1f94069581cee734"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "3downnation.com",
+                "canucksarmy.com",
+                "oilersnation.com",
+                "www.dailyfaceoff.com",
+                "www.hockeybuzz.com",
+                "www.redvoicemedia.com",
+                "www.revolver.news",
+                "www.saltwire.com"
+            ]
+        },
+        {
+            "rule": "dblks\\.net\\/a\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.000803,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "3downnation.com",
+                "canucksarmy.com",
+                "oilersnation.com",
+                "www.dailyfaceoff.com",
+                "www.hockeybuzz.com",
+                "www.redvoicemedia.com",
+                "www.revolver.news",
+                "www.saltwire.com"
             ]
         },
         {
             "rule": "dblks\\.net\\/set_uid\\/",
-            "cookies": 0.001,
+            "cookies": 0.000904,
             "fingerprinting": 0,
             "subdomains": [
                 "us"
             ],
             "apis": {},
-            "sites": 10,
-            "prevalence": 0.001,
+            "sites": 9,
+            "prevalence": 0.000904,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Image",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "_dbid": 0.00040156610782049993
+            },
             "exampleSites": [
                 "3downnation.com",
                 "canucksarmy.com",
@@ -65,18 +131,18 @@
                 "www.hockeyfights.com",
                 "www.redvoicemedia.com",
                 "www.revolver.news",
-                "www.saltwire.com",
-                "www.waynedupree.com"
+                "www.saltwire.com"
             ]
         },
         {
             "rule": "dblks\\.net\\/ff\\/db\\.2633921\\.js",
-            "cookies": 0,
+            "cookies": 0.000201,
             "fingerprinting": 2,
             "subdomains": [
                 "s"
             ],
             "apis": {
+                "Navigator.prototype.userAgent": 2,
                 "Document.cookie getter": 2,
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2,
@@ -84,16 +150,26 @@
                 "Screen.prototype.availHeight": 2,
                 "Screen.prototype.colorDepth": 2,
                 "window.devicePixelRatio": 2,
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.webdriver": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2,
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "afee108c8b5df6fe0c9579c8fecc973b6d9707fe36451d4a4d140b0315a07cb7"
+                "2c95c524d9f577335bdbec769e00367f9dc548a56b32a05de886bf696c148006"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_dbuids": {
+                    "ttl": 31536028,
+                    "length": 3,
+                    "prevalence": 0.00020078305391024997,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dailyfaceoff.com",
@@ -103,10 +179,11 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.001,
+    "cookies": 0.000904,
     "types": {
-        "Script": 8,
-        "Image": 10
+        "Script": 10,
+        "Fetch": 16,
+        "Image": 9
     },
     "nameservers": [
         "ns1.he.net",

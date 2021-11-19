@@ -9,7 +9,8 @@
     "subdomains": [
         "js",
         "www",
-        "api-location-prd"
+        "api-location-prd",
+        "api-analytics-prd"
     ],
     "cnames": [],
     "fingerprinting": 3,
@@ -29,6 +30,8 @@
                 "Screen.prototype.orientation": 2,
                 "window.localStorage": 2,
                 "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.webdriver": 2,
                 "Screen.prototype.colorDepth": 2,
                 "Navigator.prototype.deviceMemory": 2,
                 "window.devicePixelRatio": 2,
@@ -46,27 +49,45 @@
                 "Screen.prototype.availHeight": 2,
                 "Navigator.prototype.maxTouchPoints": 2,
                 "Navigator.prototype.productSub": 2,
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2
+                "Document.cookie setter": 2,
+                "Navigator.prototype.appName": 1
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "557cbf5d2d2979926354eca107f2156e627889e3e98ada83e9308726e61a7bc4"
+                "0f1819026c806a90d255de37b5dcbaa697ebe215f13dfbe3c11466846de16c60"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "pelcro.unique.id": {
                     "ttl": 31104006,
-                    "length": 26,
-                    "prevalence": 0.00020078305391024997,
+                    "length": 27,
+                    "prevalence": 0.00020074274816822243,
+                    "uniqueness": 1
+                },
+                "pelcro_count_of_articles_read": {
+                    "ttl": 432004,
+                    "length": 1,
+                    "prevalence": 0.00010037137408411121,
+                    "uniqueness": 1
+                },
+                "pelcro_count_of_articles_left": {
+                    "ttl": 432004,
+                    "length": 1,
+                    "prevalence": 0.00010037137408411121,
+                    "uniqueness": 1
+                },
+                "pelcro_count_of_articles_limit": {
+                    "ttl": 432004,
+                    "length": 1,
+                    "prevalence": 0.00010037137408411121,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "lactualite.com",
+                "protegez-vous.ca",
                 "www.ricardocuisine.com"
             ]
         },
@@ -88,7 +109,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "lactualite.com",
+                "protegez-vous.ca",
                 "www.ricardocuisine.com"
             ]
         },
@@ -97,18 +118,20 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api-location-prd"
+                "api-location-prd",
+                "api-analytics-prd"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "lactualite.com",
+                "protegez-vous.ca",
+                "www.protegez-vous.ca",
                 "www.ricardocuisine.com"
             ]
         },
@@ -117,20 +140,23 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api-location-prd"
+                "api-location-prd",
+                "api-analytics-prd"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "c511e0e3dca4f932e5092a248d23f260c3ae271696ddf62e9a5a51407ff2c6f1"
+                "b89e657662475e0a77474b818ea9c3ceeea881a801ba37a0897672094ace38f3",
+                "4be9bc1e156a80c186b04011a0e5028391f89d763ad1fa4bb9d83e1f44c22aa9"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "lactualite.com",
+                "protegez-vous.ca",
+                "www.protegez-vous.ca",
                 "www.ricardocuisine.com"
             ]
         }
@@ -140,8 +166,8 @@
     "cookies": 0.000201,
     "types": {
         "Script": 2,
-        "XHR": 4,
-        "Preflight": 2
+        "XHR": 5,
+        "Preflight": 3
     },
     "nameservers": [
         "karsyn.ns.cloudflare.com",

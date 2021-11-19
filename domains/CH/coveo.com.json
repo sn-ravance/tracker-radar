@@ -7,11 +7,12 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.001,
-    "sites": 10,
+    "prevalence": 0.00191,
+    "sites": 19,
     "subdomains": [
         "static.cloud",
-        "analytics.cloud"
+        "platform.cloud",
+        "usageanalytics"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -39,51 +40,78 @@
             ]
         },
         {
-            "rule": "coveo\\.com\\/coveo\\.analytics\\.js\\/2\\/coveoua\\.js",
-            "cookies": 0.000201,
-            "fingerprinting": 2,
+            "rule": "coveo\\.com\\/rest\\/search\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
             "subdomains": [
-                "static.cloud"
+                "platform.cloud"
             ],
-            "apis": {
-                "Navigator.prototype.doNotTrack": 2,
-                "window.localStorage": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.colorDepth": 2,
-                "Navigator.prototype.language": 2,
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sophos.com",
+                "kb.vmware.com",
+                "support.sophos.com"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/rest\\/search\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platform.cloud"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "7a321aea14422336c7486d703cac57fd9b21f6ee021da6997c11020726107f94",
+                "87caf2b596d3d8822a0c77711cb38d5c36bbe259f55e211ea274d1e84d574878"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sophos.com",
+                "kb.vmware.com",
+                "support.sophos.com"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/rest\\/ua\\/v15\\/analytics\\/searches",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platform.cloud"
+            ],
+            "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "67a937b409c6fe3a2f6fcc9ea94fb77a87aa22cc0ad99a12a2a766bcd4f665d4"
+                "9d1f916d1fdb7c8f15fac478af9884b4cbb0e4f31550362a976cb133132c6a91"
             ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "coveo_visitorId": {
-                    "ttl": null,
-                    "length": 36,
-                    "prevalence": 0.00020056157240272763,
-                    "uniqueness": 1
-                }
-            },
+            "type": "XHR",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "basspro.com",
-                "www.cabelas.com"
+                "sophos.com",
+                "docs.sophos.com"
             ]
         },
         {
-            "rule": "coveo\\.com\\/rest\\/ua\\/v15\\/analytics\\/collect",
+            "rule": "coveo\\.com\\/rest\\/v15\\/analytics\\/searches",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "analytics.cloud"
+                "usageanalytics"
             ],
             "apis": {},
             "sites": 2,
@@ -94,40 +122,227 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "basspro.com",
-                "www.cabelas.com"
+                "vmware.com",
+                "support.sophos.com"
             ]
         },
         {
-            "rule": "coveo\\.com\\/rest\\/ua\\/v15\\/analytics\\/collect",
-            "cookies": 0,
+            "rule": "coveo\\.com\\/rest\\/v15\\/analytics\\/searches",
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
-                "analytics.cloud"
+                "usageanalytics"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "b41375d5d6c35a415ddc85150c2bb62a45270cb0a9425ca73fd63ee8d61be5f7"
+                "1bca86b8d5c8ca22db772fa54357fb7edeb379bef2a6df218a10ae8ea3937380"
             ],
-            "type": "Fetch",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "basspro.com",
-                "www.cabelas.com"
+                "vmware.com",
+                "support.sophos.com"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/searchui\\/v2\\.10083\\/css\\/CoveoFullSearch\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "c6e2e510fb8ca2cf90e44ed06b7cb2655c4459cefa6278803254f6449642f542"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cannondale.com",
+                "www.isaca.org",
+                "www.neb.com"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/searchui\\/v2\\.10083\\/js\\/CoveoJsSearch\\.Lazy\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.doNotTrack": 3,
+                "window.localStorage": 3,
+                "Navigator.prototype.language": 3,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "848cce5fc32283a97d0c4d6dc42ce3b9de7681708604e21a02bb4a2a49c2eb34"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cannondale.com",
+                "www.isaca.org",
+                "www.neb.com"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/searchui\\/v2\\.10083\\/js\\/cultures\\/en\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "83b08dc1b928da20b0dbf1be80f7971b55bf7841cda0b4474a2852848a5f2b78"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cannondale.com",
+                "www.isaca.org",
+                "www.neb.com"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/searchui\\/v2\\.10083\\/js\\/Searchbox\\.min__2db7569f75fb992c4e5d\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "96e128fc624c27a44d7f45e3cd42111858597a3761cfab8399443280fdc46365"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cannondale.com",
+                "www.isaca.org",
+                "www.neb.com"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/coveoforsitecore\\/ui\\/v0\\.54\\.6\\/js\\/CoveoForSitecore\\.Lazy\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1dbc0a74aee85110a35308de34398483be99a2495f4f866e22c717754680e569"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "isaca.org",
+                "www.neb.com"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/coveoforsitecore\\/ui\\/v0\\.54\\.6\\/js\\/CoveoForSitecoreConfigureSearchHub\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "3adfaa9910b7ffe1cdade00c342d2593833e7cefd9093ce3b5eb5dca8cb59345"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "isaca.org",
+                "www.neb.com"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/coveoforsitecore\\/ui\\/v0\\.54\\.6\\/js\\/CoveoForSitecoreBindWithUserContext\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "f8f8a0186f3ef43fe514579317e1f9627d49c83bddc93c78a948a62c78eccf6c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "isaca.org",
+                "www.neb.com"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/coveoforsitecore\\/ui\\/v0\\.54\\.6\\/js\\/CoveoForSitecoreExpressions\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "23bfcecbdebbd0141036e613fd3677defae7d220f3da99692023d8915b738540"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "isaca.org",
+                "www.neb.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000401,
+    "cookies": 0.0012,
     "types": {
-        "Script": 4,
-        "Preflight": 2,
-        "Fetch": 2
+        "Script": 19,
+        "Preflight": 5,
+        "XHR": 7,
+        "Stylesheet": 3
     },
     "nameservers": [
         "ns-1245.awsdns-27.org",

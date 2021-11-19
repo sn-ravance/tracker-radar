@@ -4,34 +4,35 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000402,
-    "sites": 4,
+    "prevalence": 0.000602,
+    "sites": 6,
     "subdomains": [
+        "ws",
+        "api",
         "proxy",
-        "api"
+        "cdn",
+        "img"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "depict\\.ai\\/",
+            "rule": "depict\\.ai\\/ws\\/create-events",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "proxy"
+                "ws"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
             "type": "WebSocket",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "boozt.com",
-                "www.maxgaming.no",
-                "www.plantasjen.no",
+                "estore.no",
                 "www.teknikmagasinet.no"
             ]
         },
@@ -43,21 +44,91 @@
                 "api"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
-                "52d0344d7ba6fe8bb8ded9c76e95e2a630363d14f4312c9ad984439f72d21ec6",
-                "12c4518c68277f88fd9947e2b0d8df706e5e88481ce3522390333985390753d4",
+                "b4ba44810868115979b884a0d087517c59ccb7bba11d111df4cba069868f8e7a",
+                "250bb37b05d8e11218b64d0dcfce77f429141bd68ec51bae449647e7572d4db6",
+                "9118eef62320a77395acad8ca3ebb1d248f275c0d4d35bbb3546198edbbe217f",
                 "35b52afcc69470714bfff1d3c20c8f208e5a8fc0d2a1857b73df091fe832c1a6"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "maxgaming.no",
+                "estore.no",
+                "www.maxgaming.com",
                 "www.maxgaming.no",
                 "www.plantasjen.no",
+                "www.teknikmagasinet.no"
+            ]
+        },
+        {
+            "rule": "depict\\.ai\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "proxy"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "idealofsweden.no",
+                "www.maxgaming.com",
+                "www.maxgaming.no",
+                "www.plantasjen.no"
+            ]
+        },
+        {
+            "rule": "depict\\.ai\\/maxgaming\\/depict-ai\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "4905bfa40052e0706d8d6ca15691a9c334ff3f4ec2ffff97da77ec95f9c94b7b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "maxgaming.com",
+                "www.maxgaming.no"
+            ]
+        },
+        {
+            "rule": "depict\\.ai\\/ResizeImage",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "teknikmagasinet.no",
                 "www.teknikmagasinet.no"
             ]
         }
@@ -66,8 +137,10 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "WebSocket": 4,
-        "Fetch": 4
+        "WebSocket": 6,
+        "Fetch": 5,
+        "Script": 2,
+        "Image": 2
     },
     "nameservers": [
         "rosa.ns.cloudflare.com",

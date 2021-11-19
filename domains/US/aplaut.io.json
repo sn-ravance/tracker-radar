@@ -4,11 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000207,
-    "sites": 3,
+    "prevalence": 0.0000345,
+    "sites": 5,
     "subdomains": [
+        "get",
         "omnibox",
-        "sso"
+        "sso",
+        "track"
     ],
     "cnames": [
         {
@@ -19,16 +21,56 @@
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "aplaut\\.io\\/v1\\/app\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 2,
+            "subdomains": [
+                "get"
+            ],
+            "apis": {
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.platform": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "050f9718d76acae6914da5711b5103f93bb7326816c4696e6d7d2c467d50158b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "aplaut_distinct_id": {
+                    "ttl": 31536005,
+                    "length": 12,
+                    "prevalence": 0.00001380748227464463,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "leroymerlin.ru",
+                "petrovich.ru"
+            ]
+        },
+        {
             "rule": "aplaut\\.io\\/omnibox\\/commands",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "omnibox",
                 "sso"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "apis": {
+                "Document.cookie getter": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000207,
             "cnames": [
                 {
                     "original": "aplaut-platform.sportmaster.ru",
@@ -36,27 +78,54 @@
                 }
             ],
             "responseHashes": [
-                "6bf91f324d02e607e7f3f3a762575cb8b1dea29cfcf87478fe18d91d04f5d0a7"
+                "c39941f5682e685126389f970faa23fbb6b628602b78ed10cf15a21710056ea9"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "leroymerlin.ru",
+                "petrovich.ru",
                 "www.sportmaster.ru"
+            ]
+        },
+        {
+            "rule": "aplaut\\.io\\/v1\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "track"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ym_d": 0.00001380748227464463
+            },
+            "exampleSites": [
+                "leroymerlin.ru",
+                "petrovich.ru"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000069,
+    "cookies": 0.0000276,
     "types": {
-        "Document": 2
+        "Script": 2,
+        "Document": 3,
+        "XHR": 2
     },
     "nameservers": [
-        "ns1.dnsimple.com",
-        "ns2.dnsimple.com",
         "ns3.dnsimple.com",
-        "ns4.dnsimple.com"
+        "ns4.dnsimple.com",
+        "ns1.dnsimple.com",
+        "ns2.dnsimple.com"
     ]
 }

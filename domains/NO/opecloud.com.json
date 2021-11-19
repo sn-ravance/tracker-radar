@@ -4,15 +4,15 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.00171,
-    "sites": 17,
+    "prevalence": 0.00161,
+    "sites": 16,
     "subdomains": [
         "tagger",
         "profiles.tagger",
-        "asmi.profiles.tagger"
+        "cdn"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "opecloud\\.com\\/lefigaro\\/v2\\/tcf-tagger\\.js",
@@ -27,8 +27,8 @@
                 "Screen.prototype.height": 2,
                 "Screen.prototype.colorDepth": 2
             },
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "24c6612de1da047a4a8b295ac292fc290e0b603d217a34f8527ac932a94530cb"
@@ -37,10 +37,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "linternaute.com",
-                "cuisine.journaldesfemmes.fr",
-                "www.lefigaro.fr",
-                "www.linternaute.fr"
+                "journaldesfemmes.fr",
+                "forums.commentcamarche.net"
             ]
         },
         {
@@ -62,28 +60,49 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "journaldesfemmes.fr",
-                "www.linternaute.fr"
+                "forums.commentcamarche.net"
             ]
         },
         {
-            "rule": "opecloud\\.com\\/api\\/v1\\/lefigaro\\/profile",
-            "cookies": 0,
+            "rule": "opecloud\\.com\\/lefigaro\\/v2\\/pixel\\.gif",
+            "cookies": 0.000301,
             "fingerprinting": 0,
             "subdomains": [
-                "profiles.tagger"
+                "tagger"
             ],
             "apis": {},
             "sites": 3,
             "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [],
-            "type": "Preflight",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "journaldesfemmes.fr",
-                "www.lefigaro.fr",
-                "www.linternaute.fr"
+                "cuisine.journaldesfemmes.fr",
+                "forums.commentcamarche.net"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/appnexus\\/pbfs\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tagger"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "journaldesfemmes.fr",
+                "forums.commentcamarche.net",
+                "www.20min.ch"
             ]
         },
         {
@@ -98,14 +117,34 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "6f4515f4472d12fb7ed833c0ddf898298397a6a2e1b20c658eafdf8266c23d16"
+                "6c279a5524af87652233d66458bb97878608d257075406b23d8a6a80e3aa4f84"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "journaldesfemmes.fr",
-                "www.linternaute.fr"
+                "forums.commentcamarche.net"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/api\\/v1\\/lefigaro\\/profile",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "profiles.tagger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "journaldesfemmes.fr",
+                "forums.commentcamarche.net"
             ]
         },
         {
@@ -117,49 +156,24 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000402,
+            "prevalence": 0.000401,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mawdoo3.com",
-                "www.lefigaro.fr",
-                "www.linternaute.fr",
+                "journaldesfemmes.fr",
+                "forums.commentcamarche.net",
+                "www.20min.ch",
                 "www.scmp.com"
             ]
         },
         {
-            "rule": "opecloud\\.com\\/fox\\/v2\\/tagger\\.js",
-            "cookies": 0.000201,
-            "fingerprinting": 2,
-            "subdomains": [
-                "tagger"
-            ],
-            "apis": {
-                "Date.prototype.getTimezoneOffset": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.colorDepth": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "13bbb7a71c3d0a4432b0a2c068e94b35bd4da4a688bdd795fecf5fc7ec629bac"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "foxnews.com",
-                "www.foxnews.com"
-            ]
-        },
-        {
-            "rule": "opecloud\\.com\\/fox\\/v2\\/pixel\\.gif",
-            "cookies": 0.000201,
+            "rule": "opecloud\\.com\\/groupm\\/pbfs\\.gif",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "tagger"
@@ -173,7 +187,154 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "journaldesfemmes.fr",
+                "forums.commentcamarche.net"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/weborama\\/pbfs\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tagger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "journaldesfemmes.fr",
+                "forums.commentcamarche.net"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/tradedesk\\/pbfs\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tagger"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "journaldesfemmes.fr",
+                "forums.commentcamarche.net",
+                "video.foxnews.com",
+                "www.foxnews.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/api\\/v1\\/raspl\\/profile",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "profiles.tagger"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000602,
+            "cnames": [],
+            "responseHashes": [
+                "b0c39ffa7cc8c38187532f6bd2fd1c687b5621565cd62c247df09ec91a9fb300",
+                "b0d9613fde86765081ba4c4c9c686d06f7ca38f6d35f5a67dc55be3ada90bb81",
+                "6401ce563d9f3c546da75ef4d859f4323117e511aa00a9ce7e527d2483a6b3dc",
+                "b5abd3fde1e35dc2cb49c3e0d1689b46a91e0f217a3954334044798846c9f771",
+                "35d5944e42d276aea0fa926e29533c32f3b517226d59fdf7e2d1ba559456acfd"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pclab.pl",
+                "forum.pclab.pl",
+                "www.fakt.pl",
+                "www.medonet.pl",
+                "www.onet.pl",
+                "zapytaj.onet.pl"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/raspl\\/v2\\/tcf-tagger\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tagger"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000502,
+            "cnames": [],
+            "responseHashes": [
+                "af88b52a9fd73b84f3e1f7b6466419101cb16f99668fd8bd040625db89a8ba7c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pclab.pl",
+                "www.fakt.pl",
+                "www.medonet.pl",
+                "www.onet.pl",
+                "zapytaj.onet.pl"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/ope-fox\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Document.prototype.interestCohort": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "afe31e3f6732c4648b1d14bc2b27f8a1d070f225e2a249753e7153635c4122e8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
                 "foxnews.com",
+                "www.foxnews.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/fox\\/v2\\/pixel\\.gif",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tagger"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxnews.com",
+                "video.foxnews.com",
                 "www.foxnews.com"
             ]
         },
@@ -198,108 +359,8 @@
             ]
         },
         {
-            "rule": "opecloud\\.com\\/tradedesk\\/pbfs\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tagger"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "foxnews.com",
-                "www.foxnews.com",
-                "www.lefigaro.fr",
-                "www.linternaute.fr"
-            ]
-        },
-        {
-            "rule": "opecloud\\.com\\/v1\\/targeting",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "asmi.profiles.tagger"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.000703,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "autobild.de",
-                "www.bild.de",
-                "www.computerbild.de",
-                "www.fitbook.de",
-                "www.finanzen.net",
-                "www.welt.de",
-                "www.wieistmeineip.de"
-            ]
-        },
-        {
-            "rule": "opecloud\\.com\\/v1\\/targeting",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "asmi.profiles.tagger"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.000703,
-            "cnames": [],
-            "responseHashes": [
-                "11304e66d682cbea1a5ce78ebc753f778eb7caa4c91038af0d9d68e95ddc1ecf",
-                "20d10f2436eba8a32230183a27a31d2ff2bc48fbd52d566125831df153249b27",
-                "0c1ea5ccbc8ec8120b8f412ce944539dfd7f8909cd2bbc0c41c4abac3eba2d2c",
-                "06b7208001c44774f16227ae63ec19879c4cd663a99efd493dce0719dfe9e0e6",
-                "de7751345c84647c1a1d6b49f00cd09f4aea4262861ddc57b2d48d61eb1ef003",
-                "1e76d9e16a164df97615d14712fcc22418017d133b84fea4ca482b12390d6f0c"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "autobild.de",
-                "www.bild.de",
-                "www.computerbild.de",
-                "www.fitbook.de",
-                "www.finanzen.net",
-                "www.welt.de",
-                "www.wieistmeineip.de"
-            ]
-        },
-        {
-            "rule": "opecloud\\.com\\/lefigaro\\/v2\\/pixel\\.gif",
-            "cookies": 0.000301,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tagger"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lefigaro.fr",
-                "www.lefigaro.fr",
-                "www.linternaute.fr"
-            ]
-        },
-        {
-            "rule": "opecloud\\.com\\/appnexus\\/pbfs\\.gif",
-            "cookies": 0,
+            "rule": "opecloud\\.com\\/goldbach\\/v2\\/custom-no-tagger",
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "tagger"
@@ -311,10 +372,68 @@
             "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "dakt_2_uuid": 0.00020074274816822243
+            },
+            "exampleSites": [
+                "20min.ch",
+                "www.20min.ch"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/ope-asmi\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 5,
+                "Date.prototype.getTimezoneOffset": 5,
+                "Screen.prototype.width": 5,
+                "Screen.prototype.height": 5,
+                "Screen.prototype.colorDepth": 5
+            },
+            "sites": 5,
+            "prevalence": 0.000502,
+            "cnames": [],
+            "responseHashes": [
+                "20eaaa339590adf775c2254232e23567215b71ab044e7058f642d6b81c8ac93f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "lefigaro.fr",
-                "www.linternaute.fr"
+                "bild.de",
+                "www.computerbild.de",
+                "www.finanzen.net",
+                "www.welt.de",
+                "www.wieistmeineip.de"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/asmi\\/v2\\/metrics\\/sdk-consent-delayed",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tagger"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000502,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bild.de",
+                "www.computerbild.de",
+                "www.finanzen.net",
+                "www.welt.de",
+                "www.wieistmeineip.de"
             ]
         },
         {
@@ -332,44 +451,22 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "get_top_level_domain_cookie": 0.00020092425155716296
+                "get_top_level_domain_cookie": 0.00020074274816822243
             },
             "exampleSites": [
                 "scmp.com",
                 "www.scmp.com"
             ]
-        },
-        {
-            "rule": "opecloud\\.com\\/api\\/v1\\/raspl\\/profile",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "profiles.tagger"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "84fa4322e324942c47a1d55af77041f74b3511bc49f9c6f19cf305bb4d4a8793"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "onet.pl",
-                "zapytaj.onet.pl"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000603,
+    "cookies": 0.000602,
     "types": {
-        "Script": 6,
-        "XHR": 13,
-        "Preflight": 10,
-        "Image": 19
+        "Script": 14,
+        "XHR": 15,
+        "Image": 27,
+        "Preflight": 2
     },
     "nameservers": [
         "ns-1454.awsdns-53.org",

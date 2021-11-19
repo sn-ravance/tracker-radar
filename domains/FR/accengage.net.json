@@ -7,13 +7,16 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
-        "websdk"
+        "websdk",
+        "rmc-by",
+        "01net-by",
+        "photoweb-by"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "accengage\\.net\\/v2\\/init\\.js",
@@ -38,13 +41,103 @@
                 "bfmtv.com",
                 "www.01net.com"
             ]
+        },
+        {
+            "rule": "accengage\\.net\\/pushweb\\/assets\\/t_main\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "rmc-by",
+                "01net-by",
+                "photoweb-by"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.languages": 3,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 3,
+                "window.name": 2,
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.permissions": 2,
+                "Navigator.prototype.vendor": 1,
+                "window.localStorage": 1,
+                "Document.cookie getter": 1
+            },
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [],
+            "responseHashes": [
+                "a6bed3c89e0535c53fe3d14286567eaca12e02cb04cce59c5afc1e3d80eaff43",
+                "c8ba4a55077e72bee6b45ba765f31a8587f77fd77e970e75337cf97cf4e17e7a",
+                "a4ec5fd98be9f321785750cbc470f520d9ba584e6b56748cce68d9fbf48555d9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bfmtv.com",
+                "rmc.bfmtv.com",
+                "www.01net.com",
+                "www.photoweb.fr"
+            ]
+        },
+        {
+            "rule": "accengage\\.net\\/pushweb\\/assets\\/m_main\\.html",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "rmc-by",
+                "photoweb-by"
+            ],
+            "apis": {
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 1,
+                "Navigator.prototype.permissions": 1,
+                "Date.prototype.getTime": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "4e009f518383805dd0f76a119558239ad72fb6b28bd047a9159007bbc8657585"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bfmtv.com",
+                "www.photoweb.fr"
+            ]
+        },
+        {
+            "rule": "accengage\\.net\\/pushweb\\/assets\\/d_main\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rmc-by",
+                "photoweb-by"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "ca902bee40cbdcd67023c919e718f201e89ac94988b9f2badbce72cc8570bea0"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bfmtv.com",
+                "www.photoweb.fr"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2
+        "Script": 6,
+        "Document": 2,
+        "Other": 2
     },
     "nameservers": [
         "wanda.ns.cloudflare.com",

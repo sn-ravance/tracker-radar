@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00352,
-    "sites": 35,
+    "prevalence": 0.00381,
+    "sites": 38,
     "subdomains": [
         "consentdeliveryfd",
         "fps-prod-na-frontdoor.z01",
+        "waypoint-content-prod",
         "voilaloginseconnecter",
         "sd-tagging"
     ],
@@ -28,20 +29,25 @@
         {
             "original": "wcpstatic.microsoft.com",
             "resolved": "consentdeliveryfd.azurefd.net"
+        },
+        {
+            "original": "wpcontent.svc.halowaypoint.com",
+            "resolved": "waypoint-content-prod.azurefd.net"
         }
     ],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "azurefd\\.net\\/mscc\\/lib\\/v2\\/wcp-consent\\.js",
-            "cookies": 0.001,
+            "cookies": 0.00261,
             "fingerprinting": 1,
             "subdomains": [
                 "consentdeliveryfd"
             ],
             "apis": {
-                "Document.cookie getter": 1,
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 4,
+                "Document.cookie getter": 4,
+                "Document.cookie setter": 4
             },
             "sites": 28,
             "prevalence": 0.00281,
@@ -57,58 +63,38 @@
             "type": "Script",
             "firstPartyCookies": {
                 "MSCC": {
-                    "ttl": 86403,
+                    "ttl": 86402,
                     "length": 2,
-                    "prevalence": 0.0008036162732295329,
-                    "uniqueness": 0.125
+                    "prevalence": 0.0013050898504166249,
+                    "uniqueness": 0.07692307692307693
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "microsoft.com",
-                "answers.microsoft.com",
                 "docs.microsoft.com",
-                "social.msdn.microsoft.com",
                 "social.technet.microsoft.com",
+                "social.msdn.microsoft.com",
                 "support.microsoft.com",
+                "techcommunity.microsoft.com",
+                "www.ageofempires.com",
                 "www.minecraft.net",
                 "support.xbox.com",
-                "azure.microsoft.com",
-                "zone.msn.com",
-                "marketplace.visualstudio.com",
-                "visualstudio.microsoft.com",
-                "games.msn.com",
-                "dotnet.microsoft.com",
-                "blogs.windows.com",
+                "products.office.com",
+                "devblogs.microsoft.com",
+                "community.powerbi.com",
+                "www.xbox.com",
+                "www.typescriptlang.org",
                 "code.visualstudio.com",
-                "techcommunity.microsoft.com",
-                "www.halowaypoint.com",
+                "www.skype.com",
                 "community.dynamics.com",
-                "www.typescriptlang.org"
+                "dotnet.microsoft.com",
+                "marketplace.visualstudio.com",
+                "forums.forzamotorsport.net"
             ]
         },
         {
-            "rule": "azurefd\\.net\\/fps\\/api\\/personalization_1_8\\/set",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "fps-prod-na-frontdoor.z01"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ford.com",
-                "www.ford.ca"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/fps\\/api\\/personalization_1_8\\/set",
+            "rule": "azurefd\\.net\\/fps\\/api\\/insights\\/count\\/bytime\\/t1newfpsid\\/day",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -119,7 +105,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "8fa15a1439f6ace94707b534a12ba2e861003f73e0e4430e4a2f18586e6c3deb"
+                "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -130,7 +116,31 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/fps\\/api\\/personalization_1_8\\/get",
+            "rule": "azurefd\\.net\\/fps\\/api\\/personalization_1_8\\/set",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fps-prod-na-frontdoor.z01"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "0e0eb57420da74356e99fb4a83b8663b49271cb04b201fd85e4953d5450ff2d8",
+                "203faccd434ab5b1e2c9015014fa772370e6af628e2016a7a88a34f401128920"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ford.com",
+                "www.ford.com",
+                "www.ford.ca"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/fps\\/api\\/personalization_1_8\\/set",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -143,9 +153,7 @@
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "gt_uid": 0.00010045203415369161
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ford.com",
                 "www.ford.ca"
@@ -164,17 +172,113 @@
             "cnames": [],
             "responseHashes": [
                 "b7a696b44b818831b764d14765e2307cf5f7badfff3e5cfdbe6c9ba0df50eb57",
-                "08a5e4356d955dcb2dec604ec8d016f5bee89cb32e9a5112e081acd3feb4978a"
+                "ac04270db61171e2fca372955d87e8af51b1ddebab6a08ee8096a501628878e9"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "gt_uid": 0.00010045203415369161
+                "gt_uid": 0.00010039152695512498
             },
             "exampleSites": [
                 "ford.com",
                 "www.ford.com",
                 "www.ford.ca"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/fps\\/api\\/personalization_1_8\\/get",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fps-prod-na-frontdoor.z01"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "gt_uid": 0.00010039152695512498
+            },
+            "exampleSites": [
+                "ford.com",
+                "www.ford.ca"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/fps\\/api\\/insights\\/count\\/bytime\\/tierdrop%7Ct1\\/day",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fps-prod-na-frontdoor.z01"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ford.com",
+                "www.ford.ca"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/purchase-content\\/game-purchase-modal",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "waypoint-content-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "wpcontent.svc.halowaypoint.com",
+                    "resolved": "waypoint-content-prod.azurefd.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "halowaypoint.com",
+                "www.halowaypoint.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/purchase-content\\/game-purchase-modal",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "waypoint-content-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "wpcontent.svc.halowaypoint.com",
+                    "resolved": "waypoint-content-prod.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "f472bbc80ae5286ddabb1698ee8c02bad340985df7263d2a10e3c7a30c25f34d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "halowaypoint.com",
+                "www.halowaypoint.com"
             ]
         },
         {
@@ -202,8 +306,8 @@
                 }
             ],
             "responseHashes": [
-                "e92ecfdc287172178688966a2a83c57d9965a6f97309cccd6f932cdea3538cc3",
-                "fbaea438ce86ac3b9014da9540b357a93811db510b1aab9284f19695f386e14b"
+                "81b5b13e67e634146fcfd7e1d726c5437730f7438d00665fedfe54e313910a18",
+                "1cd0c6c9831b655eadb031a45283b39553710584f1b494a48c0e77055d72badc"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -215,7 +319,110 @@
             ]
         },
         {
+            "rule": "azurefd\\.net\\/scripts\\/sdanalytics\\/sda\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 2,
+            "subdomains": [
+                "sd-tagging"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Navigator.prototype.plugins": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "4ca0795a607bb0f64b7d9bcaa73c29071c8ef90024857d2091a79f3f1e5b41b3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_sda:mazda:T1:user": {
+                    "ttl": 31536006,
+                    "length": 143,
+                    "prevalence": 0.00010039152695512498,
+                    "uniqueness": 1
+                },
+                "_sda:mazda:T1:session": {
+                    "ttl": null,
+                    "length": 174,
+                    "prevalence": 0.00010039152695512498,
+                    "uniqueness": 1
+                },
+                "_sda:mbusa:T1:user": {
+                    "ttl": 31536006,
+                    "length": 142,
+                    "prevalence": 0.00010039152695512498,
+                    "uniqueness": 1
+                },
+                "_sda:mbusa:T1:session": {
+                    "ttl": null,
+                    "length": 180,
+                    "prevalence": 0.00010039152695512498,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mazdausa.com",
+                "www.mbusa.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/id\\/sda_id\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sd-tagging"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c47c69693920cfe83a4a5be7be2a1a5e1f8cb335b0dc63ca912da8ee1d1f7e2f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mazdausa.com",
+                "www.mbusa.com"
+            ]
+        },
+        {
             "rule": "azurefd\\.net\\/id\\/3pc",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sd-tagging"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "76e83e20903b58dc9de94e2e86c484dc45a8a707974b0edf3eccb6dcb4449eba"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mazdausa.com",
+                "www.mazdausa.com",
+                "www.mbusa.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/endpoint\\/mazda\\/1x1\\.gif",
             "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
@@ -226,14 +433,14 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "5170694126c3f3959c86a734a5d8ab1e2ed7d4cd6f1048bfe5a11202c610e5c6"
+                "a11732bf41736baed4d00a1f73d63d0f9314f7917649d47143edc062cdc29658"
             ],
-            "type": "Script",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mbusa.com",
-                "www.mbusa.com"
+                "mazdausa.com",
+                "www.mazdausa.com"
             ]
         },
         {
@@ -248,7 +455,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "e7939a03248bb3f75e2f12226871e6e304b0c1e1fa506f3871548547cf24f32d"
+                "a11732bf41736baed4d00a1f73d63d0f9314f7917649d47143edc062cdc29658"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -261,12 +468,12 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00151,
+    "cookies": 0.00331,
     "types": {
-        "Script": 30,
-        "Preflight": 4,
-        "XHR": 8,
-        "Image": 2
+        "Script": 35,
+        "XHR": 15,
+        "Preflight": 6,
+        "Image": 4
     },
     "nameservers": [
         "ns1-09.azure-dns.com",

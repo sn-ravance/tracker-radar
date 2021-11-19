@@ -9,15 +9,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000138,
-    "sites": 2,
+    "prevalence": 0.0000207,
+    "sites": 3,
     "subdomains": [
         "api",
         "gateway",
         "ws"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "peer5\\.com\\/peer5\\.js",
@@ -27,9 +27,9 @@
                 "api"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
                 "window.sessionStorage": 1,
                 "RTCPeerConnection.prototype.constructor": 1,
+                "Navigator.prototype.userAgent": 1,
                 "Navigator.prototype.connection": 1,
                 "Navigator.prototype.permissions": 1,
                 "window.localStorage": 1,
@@ -40,7 +40,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "3ee37764046d10ce30ea6ed9ca15e3dcd624412915443d5d5a258c9db86da113"
+                "5abcb6849bc75e7e656de7bd55a3cbeb4a653e54a73e244a8a79d3c0ed585609"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -70,19 +70,44 @@
                 "dlive.tv",
                 "www.rtve.es"
             ]
+        },
+        {
+            "rule": "peer5\\.com\\/peer5\\.videojs5\\.plugin\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {
+                "HTMLMediaElement.prototype.canPlayType": 1,
+                "MediaSource.isTypeSupported": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "c8b0c6617c1797780ec17616a4ce608712048bd34b7fc69d6485598b23a11f68"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rtve.es",
+                "www.rtve.es"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2,
+        "Script": 4,
         "WebSocket": 2
     },
     "nameservers": [
         "ns-cloud-c1.googledomains.com",
-        "ns-cloud-c3.googledomains.com",
         "ns-cloud-c2.googledomains.com",
+        "ns-cloud-c3.googledomains.com",
         "ns-cloud-c4.googledomains.com"
     ]
 }

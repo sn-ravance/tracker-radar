@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000702,
+    "sites": 7,
     "subdomains": [
         "cdn1",
         "api-cf",
@@ -20,57 +20,110 @@
     "resources": [
         {
             "rule": "affirm\\.com\\/js\\/v2\\/affirm\\.js",
-            "cookies": 0,
+            "cookies": 0.000602,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn1"
             ],
             "apis": {
-                "console.memory": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.connection": 2,
-                "window.localStorage": 2,
-                "window.devicePixelRatio": 2,
-                "Date.prototype.getTime": 2
+                "console.memory": 6,
+                "Navigator.prototype.userAgent": 6,
+                "Navigator.prototype.connection": 6,
+                "Document.cookie getter": 6,
+                "Document.cookie setter": 6,
+                "window.localStorage": 6,
+                "window.devicePixelRatio": 6,
+                "Date.prototype.getTime": 6
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 6,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
-                "33cda1bdfd621a07ce3be9b044b7e236fbc3c1ce3310cd66a0ae8103b65dedca"
+                "aa69ae951c2927e5923417684df51c3b373f3320e64581a01bac0365babf9fa6"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "cookietest": {
+                    "ttl": -1637211033,
+                    "length": 1,
+                    "prevalence": 0.00060156406657309,
+                    "uniqueness": 0.16666666666666666
+                },
+                "tracker_device": {
+                    "ttl": 157680008,
+                    "length": 36,
+                    "prevalence": 0.00060156406657309,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "drop.com",
-                "www.hellotech.com"
+                "ouraring.com",
+                "www.comptia.org",
+                "www.hellotech.com",
+                "www.oakley.com",
+                "www.worldwidecyclery.com"
             ]
         },
         {
             "rule": "affirm\\.com\\/api\\/v2\\/session\\/touch_track",
-            "cookies": 0.000201,
+            "cookies": 0.000602,
             "fingerprinting": 0,
             "subdomains": [
                 "api-cf"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 6,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
-                "df548eb9ea9e42374b801c32b8e407ab5e4a695d076f1584fe6a84b72dc03894"
+                "651c03ad3f3a4faa299e96e981d1dde798821397e9219014c52c882479d40d82",
+                "d9cdf59e951c9560d4af7e623859480f3d93f857796a1504885045d4c6868971",
+                "68a748009d2eec81a0b2d4f20db768dba620eb298c94cea1aac47ef1221f8c04",
+                "71bf33d12ff6cdd6d80b86cf628b3a7d75210d5f84e19f2f3e6fb1e588000e5e",
+                "3d637273ec076bf9d5a2c2b2f1206a65e8669ec12d530563ba5d7220a5c74742"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "drop.com",
-                "www.hellotech.com"
+                "ouraring.com",
+                "www.comptia.org",
+                "www.hellotech.com",
+                "www.oakley.com",
+                "www.worldwidecyclery.com"
             ]
         },
         {
             "rule": "affirm\\.com\\/api\\/v2\\/cookie_sent",
+            "cookies": 0.000602,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000602,
+            "cnames": [],
+            "responseHashes": [
+                "924aebf24af414b12986f4af470b2ac7b61d765897f9e222c0af15805de9ae40"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "drop.com",
+                "ouraring.com",
+                "www.comptia.org",
+                "www.hellotech.com",
+                "www.oakley.com",
+                "www.worldwidecyclery.com"
+            ]
+        },
+        {
+            "rule": "affirm\\.com\\/api\\/axp\\/v1\\/assignments\\/fetch",
             "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
@@ -81,14 +134,34 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "924aebf24af414b12986f4af470b2ac7b61d765897f9e222c0af15805de9ae40"
+                "be24b0882077b78b2184f5d7914ac5a7dc3cb5478cd7d461c227916c21f300e4"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "drop.com",
-                "www.hellotech.com"
+                "www.oakley.com"
+            ]
+        },
+        {
+            "rule": "affirm\\.com\\/api\\/axp\\/v1\\/assignments\\/fetch",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "drop.com",
+                "www.oakley.com"
             ]
         },
         {
@@ -105,22 +178,23 @@
             "responseHashes": [
                 "70f07df8529a5da355e70cb8fd1a2c6cdbe6dec83a5332bfcf06f5a917e6e607"
             ],
-            "type": "Other",
+            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "hellotech.com",
-                "www.hellotech.com"
+                "ouraring.com",
+                "www.worldwidecyclery.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000602,
     "types": {
-        "Script": 2,
-        "Fetch": 4,
-        "Other": 2
+        "Script": 6,
+        "Fetch": 14,
+        "Preflight": 2,
+        "Ping": 2
     },
     "nameservers": [
         "ns-1463.awsdns-54.org",

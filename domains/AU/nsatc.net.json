@@ -4,19 +4,131 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000502,
-    "sites": 5,
+    "prevalence": 0.0013,
+    "sites": 13,
     "subdomains": [
-        "c.xbox.com"
+        "cdn.registerdisney.cre.go.com",
+        "c.xbox.com",
+        "compass.xbox.com"
     ],
     "cnames": [
         {
             "original": "c.xbox.com",
             "resolved": "c.xbox.com.nsatc.net"
+        },
+        {
+            "original": "cdn.registerdisney.go.com",
+            "resolved": "cdn.registerdisney.cre.go.com.nsatc.net"
+        },
+        {
+            "original": "compass.xbox.com",
+            "resolved": "compass.xbox.com.nsatc.net"
         }
     ],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "nsatc\\.net\\/v2\\/outer\\/DisneyID\\.js",
+            "cookies": 0.000501,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.registerdisney.cre.go.com"
+            ],
+            "apis": {},
+            "sites": 9,
+            "prevalence": 0.000902,
+            "cnames": [
+                {
+                    "original": "cdn.registerdisney.go.com",
+                    "resolved": "cdn.registerdisney.cre.go.com.nsatc.net"
+                }
+            ],
+            "responseHashes": [
+                "161473f9a0c880d607347a41604d2d1a3a768204900df61835d500cf67cd112f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "SWID": {
+                    "ttl": 31536006,
+                    "length": 36,
+                    "prevalence": 0.0004010427110487267,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "go.com",
+                "abc7news.com",
+                "abc7.com",
+                "fivethirtyeight.com",
+                "www.disney.com.au",
+                "www.espn.com",
+                "www.espn.com.au",
+                "www.marvel.com",
+                "www.nationalgeographic.com"
+            ]
+        },
+        {
+            "rule": "nsatc\\.net\\/v2\\/responder\\/responder\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.registerdisney.cre.go.com"
+            ],
+            "apis": {},
+            "sites": 9,
+            "prevalence": 0.000902,
+            "cnames": [
+                {
+                    "original": "cdn.registerdisney.go.com",
+                    "resolved": "cdn.registerdisney.cre.go.com.nsatc.net"
+                }
+            ],
+            "responseHashes": [
+                "6d816bacccdf3f6fc29e60dda16cf40ef4a3c9270579c95449102896084210d6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "go.com",
+                "abc7news.com",
+                "abc7.com",
+                "fivethirtyeight.com",
+                "www.disney.com.au",
+                "www.espn.com",
+                "www.espn.com.au",
+                "www.marvel.com",
+                "www.nationalgeographic.com"
+            ]
+        },
+        {
+            "rule": "nsatc\\.net\\/v2\\/ESPN-ONESITE\\.WEB-PROD\\/en-AU",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.registerdisney.cre.go.com"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.registerdisney.go.com",
+                    "resolved": "cdn.registerdisney.cre.go.com.nsatc.net"
+                }
+            ],
+            "responseHashes": [
+                "d9db57219718f0e75cfbc7acd26a6abf46711582d283febf6a37f6d37d5fd9d2"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "espn.com",
+                "www.espn.com.au"
+            ]
+        },
         {
             "rule": "nsatc\\.net\\/c\\.gif",
             "cookies": 0.000201,
@@ -34,8 +146,33 @@
                 }
             ],
             "responseHashes": [
-                "99c2917ee5b2a01459a923bdd1c676f15ee73b62b87f696e6735312d26f51e12"
+                "8f84c4ced509262009163e45994b45ed7ee9d4dbac88674be5f2db5c9e5be38e"
             ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "xbox.com",
+                "www.xbox.com"
+            ]
+        },
+        {
+            "rule": "nsatc\\.net\\/assets\\/84\\/37\\/84377d06-b16a-4248-a1c1-adb2c8e705ca\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "compass.xbox.com"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "compass.xbox.com",
+                    "resolved": "compass.xbox.com.nsatc.net"
+                }
+            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -47,9 +184,11 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000301,
+    "cookies": 0.000602,
     "types": {
-        "Image": 2
+        "Script": 18,
+        "Document": 2,
+        "Image": 4
     },
     "nameservers": []
 }

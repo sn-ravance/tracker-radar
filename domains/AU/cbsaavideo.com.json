@@ -8,7 +8,7 @@
     "sites": 4,
     "subdomains": [
         "availability-cloudfront.syncbak-mediastore-cedexis",
-        "availability-edgecast.syncbak-mediastore-cedexis"
+        "vod-gcs-cedexis"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -21,31 +21,6 @@
                 "availability-cloudfront.syncbak-mediastore-cedexis"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "comicbook.com",
-                "popculture.com",
-                "www.mtv.com",
-                "www.paramountnetwork.com"
-            ]
-        },
-        {
-            "rule": "cbsaavideo\\.com\\/measurements\\/1536197413045-1555KB\\.ts",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "availability-cloudfront.syncbak-mediastore-cedexis",
-                "availability-edgecast.syncbak-mediastore-cedexis"
-            ],
-            "apis": {},
             "sites": 3,
             "prevalence": 0.000301,
             "cnames": [],
@@ -56,9 +31,55 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mtv.com",
+                "comicbook.com",
                 "www.mtv.com",
                 "www.paramountnetwork.com"
+            ]
+        },
+        {
+            "rule": "cbsaavideo\\.com\\/measurements\\/1536197413045-1555KB\\.ts",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "availability-cloudfront.syncbak-mediastore-cedexis"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mtv.com",
+                "www.paramountnetwork.com"
+            ]
+        },
+        {
+            "rule": "cbsaavideo\\.com\\/upsells\\/australia_sept_landscape_final\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vod-gcs-cedexis"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "46cb8f9ce0e7f0b6bc61bc630eac7fab2bc54881fc859bc3901007e105f1d436"
+            ],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "prevPageType": 0.00020052135552436334
+            },
+            "exampleSites": [
+                "paramountplus.com",
+                "www.paramountplus.com"
             ]
         }
     ],
@@ -66,7 +87,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Fetch": 7
+        "Fetch": 5,
+        "Media": 2
     },
     "nameservers": [
         "ns-1404.awsdns-47.org",

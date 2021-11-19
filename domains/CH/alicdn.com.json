@@ -7,15 +7,60 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000903,
-    "sites": 9,
+    "prevalence": 0.0013,
+    "sites": 13,
     "subdomains": [
+        "at",
         "ae01",
         "retcode"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "alicdn\\.com\\/t\\/font_364147_pib1ede7byo\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "at"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "43ca92f2bba440cadc564b80a80db379a6fb91ee5bd613626d5cc1377b352b23"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "shein.com",
+                "us.shein.com"
+            ]
+        },
+        {
+            "rule": "alicdn\\.com\\/t\\/font_1890382_xf5tkrxmcra\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "at"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "69dd317c9982b83ee36a483253f9ca02c035e4dc5271358686a1e097555e8cfa"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "shein.com",
+                "us.shein.com"
+            ]
+        },
         {
             "rule": "alicdn\\.com\\/kf\\/HTB1fopbov9TBuNjy1zb760pepXaT\\/EN_300_250\\.png",
             "cookies": 0,
@@ -28,7 +73,7 @@
             "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "0f553893c3f87e27252e704ee7e2365fae1d73937a67d70aa6bf75d12a5088e7"
+                "ae437147ad19373e5686fa1910b31f8e6bb0273366fdb7662ae23cdcb3c3938b"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -41,7 +86,7 @@
         },
         {
             "rule": "alicdn\\.com\\/retcode\\/bl\\.js",
-            "cookies": 0,
+            "cookies": 0.000201,
             "fingerprinting": 2,
             "subdomains": [
                 "retcode"
@@ -51,6 +96,8 @@
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2,
                 "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
                 "window.sessionStorage": 2,
                 "window.devicePixelRatio": 2
             },
@@ -61,11 +108,18 @@
                 "caa17208ba4e8fc27121fb29036b6f39ae9d31778a453df5ed9f32cba2bf3197"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_bl_uid": {
+                    "ttl": 15552000,
+                    "length": 28,
+                    "prevalence": 0.00020060180541624874,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dji.com",
-                "www.seeedstudio.com"
+                "www.insta360.com"
             ]
         }
     ],
@@ -73,8 +127,9 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000201,
     "types": {
+        "Font": 4,
         "Image": 3,
         "Script": 2
     },

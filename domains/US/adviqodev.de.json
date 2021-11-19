@@ -7,7 +7,8 @@
     "prevalence": 0.0000138,
     "sites": 2,
     "subdomains": [
-        "ext-prod.ingress"
+        "ext-prod.ingress",
+        "tracking-service.prod-ext"
     ],
     "cnames": [
         {
@@ -47,6 +48,33 @@
             ]
         },
         {
+            "rule": "adviqodev\\.de\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ext-prod.ingress"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "graphql.questico.de",
+                    "resolved": "ext-prod.ingress.adviqodev.de"
+                }
+            ],
+            "responseHashes": [
+                "0808dba008317b8fe5487d289c2d7a9cfebc80f7bda47a55de3e3d0896cdb6da"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "questico.de",
+                "www.questico.de"
+            ]
+        },
+        {
             "rule": "adviqodev\\.de\\/auth\\/realms\\/questico\\/protocol\\/openid-connect\\/login-status-iframe\\.html",
             "cookies": 0,
             "fingerprinting": 0,
@@ -66,33 +94,6 @@
                 "266d2b010bdabdffb13c399965ef815be87b29204ce092d702f20f3b00c22f9b"
             ],
             "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "questico.de",
-                "www.questico.de"
-            ]
-        },
-        {
-            "rule": "adviqodev\\.de\\/graphql",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ext-prod.ingress"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "graphql.questico.de",
-                    "resolved": "ext-prod.ingress.adviqodev.de"
-                }
-            ],
-            "responseHashes": [
-                "5dca53df4e4079dfef6eda920e3a617204ce0d9527c38aa6c03b8bbc97c1359d"
-            ],
-            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -153,16 +154,63 @@
                 "questico.de",
                 "www.questico.de"
             ]
+        },
+        {
+            "rule": "adviqodev\\.de\\/session-data",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking-service.prod-ext"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "questico.de",
+                "www.questico.de"
+            ]
+        },
+        {
+            "rule": "adviqodev\\.de\\/session-data",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking-service.prod-ext"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "c5f6c8d18abff7c6ef074f29e6d6de05d40d8b957861ed84f3b0537d647e3587"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "questico.de",
+                "www.questico.de"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Preflight": 2,
+        "Preflight": 4,
+        "Fetch": 4,
         "Document": 4,
-        "Fetch": 2,
         "XHR": 2
     },
-    "nameservers": []
+    "nameservers": [
+        "ns-442.awsdns-55.com",
+        "ns-827.awsdns-39.net",
+        "ns-1271.awsdns-30.org",
+        "ns-1987.awsdns-56.co.uk"
+    ]
 }

@@ -7,27 +7,26 @@
     "prevalence": 0.000201,
     "sites": 2,
     "subdomains": [
-        "b2c",
-        "geoip"
+        "auth",
+        "geoip",
+        "eua"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "instiengage\\.com\\/v3\\/pages\\/usertracking",
+            "rule": "instiengage\\.com\\/auth\\/index\\.html",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
-                "b2c"
+                "auth"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "984bca55409990098cf74adc47ed650c3d22c68900739950bd14c04c9d45f8f7"
+                "fb7e70becd9b9f29c4afe8b2b82eef24739e120c0abafc812e24c8362657f37d"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -58,6 +57,76 @@
                 "mydramalist.com",
                 "stocktwits.com"
             ]
+        },
+        {
+            "rule": "instiengage\\.com\\/auth\\/bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "auth"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "window.name": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "f24a6a7d78e4a99caf119573507d8ccd650d0919ad9c647441b86d10dc1c8f85"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mydramalist.com",
+                "stocktwits.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/v1\\/auth\\/token",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eua"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mydramalist.com",
+                "stocktwits.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/v1\\/auth\\/token",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eua"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "fe20db41b56f0d7781c42f36c9d32e635e0999ee7952616695e641104f8ba303"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mydramalist.com",
+                "stocktwits.com"
+            ]
         }
     ],
     "categories": [],
@@ -65,7 +134,10 @@
     "cookies": 0,
     "types": {
         "Document": 2,
-        "XHR": 2
+        "XHR": 2,
+        "Script": 2,
+        "Preflight": 2,
+        "Fetch": 2
     },
     "nameservers": [
         "carl.ns.cloudflare.com",

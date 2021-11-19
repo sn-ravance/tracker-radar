@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000552,
-    "sites": 8,
+    "prevalence": 0.0000621,
+    "sites": 9,
     "subdomains": [
-        "sentry-prod"
+        "sentry-prod",
+        "prod-catalog.api"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -48,9 +49,9 @@
             "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "c52e9f46363bb1fd7a7fe8016c882402555a284d04d95e7e309f8c46bd909577",
-                "603129d53d6ce73c46627cbc2a36f11fb945a321dd130fba4a8980feed0771bb",
-                "5e140748475f81067af83f01a4e541e6b0cde1807f3001cd5f0194a313c739a8"
+                "e91612c54e2f5c07496729a2c3fb0be55e172eb0855a14121a1cab800b8ba10d",
+                "623c2d6486101e23387dedf3c21416f92af7ee7a57240a4acfa2a0417048b6fc",
+                "e3464ece2b8b7bd59e411a1dfb07dde536294d6e6ddd255f53346c74262a24d4"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -73,7 +74,9 @@
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "7cff5ee9731458d39a982da14baec2306a5996ec54eeb504daa9c36065adaf89"
+            ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -83,25 +86,45 @@
             ]
         },
         {
-            "rule": "loblaw\\.digital\\/api\\/5\\/envelope\\/",
+            "rule": "loblaw\\.digital\\/api\\/v1\\/products\\/21397724_EA",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "sentry-prod"
+                "prod-catalog.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "presidentschoice.ca",
+                "www.presidentschoice.ca"
+            ]
+        },
+        {
+            "rule": "loblaw\\.digital\\/api\\/v1\\/products",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-catalog.api"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+                "297e0e3fa559b891c8bb1f88f8c1d326f9f7d8fc3e7c806de3869cbca2fa5cbd"
             ],
-            "type": "Fetch",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "pcoptimum.ca",
-                "www.pcoptimum.ca"
+                "presidentschoice.ca",
+                "www.presidentschoice.ca"
             ]
         }
     ],
@@ -109,12 +132,13 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Fetch": 12
+        "Fetch": 10,
+        "XHR": 4
     },
     "nameservers": [
+        "ns-cloud-e4.googledomains.com",
         "ns-cloud-e3.googledomains.com",
         "ns-cloud-e1.googledomains.com",
-        "ns-cloud-e2.googledomains.com",
-        "ns-cloud-e4.googledomains.com"
+        "ns-cloud-e2.googledomains.com"
     ]
 }

@@ -9,11 +9,10 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000759,
-    "sites": 11,
+    "prevalence": 0.000069,
+    "sites": 10,
     "subdomains": [
-        "www",
-        "adservice"
+        "www"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -21,13 +20,14 @@
         {
             "rule": "google\\.it\\/coop\\/cse\\/brand",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "www"
             ],
             "apis": {
                 "Navigator.prototype.appName": 4,
-                "Navigator.prototype.platform": 4
+                "Navigator.prototype.platform": 4,
+                "Navigator.prototype.languages": 1
             },
             "sites": 4,
             "prevalence": 0.0000276,
@@ -39,52 +39,78 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "giardinaggio.net",
-                "www.giardinaggio.net",
+                "giardinaggio.it",
                 "www.giardinaggio.it",
-                "www.informazionefiscale.it"
+                "www.informazionefiscale.it",
+                "www.tasse-fisco.com"
             ]
         },
         {
-            "rule": "google\\.it\\/adsid\\/integrator\\.js",
+            "rule": "google\\.it\\/adsense\\/search\\/ads\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTimezoneOffset": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "window.name": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "a67a0664a2591c7f57f0f8de19bece402d2931a592fd9cbdbf459edce1e6d5c6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "reteimprese.it",
+                "www.reteimprese.it"
+            ]
+        },
+        {
+            "rule": "google\\.it\\/afs\\/ads\\/i\\/iframe\\.html",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "adservice"
+                "www"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "a4a1824defec1084ca81d496ee77891684c26196924bdc4fc21dd3482ce15e14"
+                "bc88f210f466bce47a3500063bc293eed464568c7b37ab82f9903bcf009ed4dc"
             ],
-            "type": "Script",
+            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "guiamais.com.br",
-                "www.paginemediche.it"
+                "reteimprese.it",
+                "www.reteimprese.it"
             ]
         },
         {
-            "rule": "google\\.it\\/adsense\\/search\\/ads\\.js",
+            "rule": "google\\.it\\/afs\\/gen_204",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "www"
             ],
-            "apis": {
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "e2865c9ba50bf9256d1a425816954656b9a7a52f7fe3a194ace23e04626beec6"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Script",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -97,11 +123,13 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 8
+        "Script": 6,
+        "Document": 2,
+        "Image": 2
     },
     "nameservers": [
-        "ns4.google.com",
         "ns1.google.com",
+        "ns4.google.com",
         "ns3.google.com",
         "ns2.google.com"
     ]

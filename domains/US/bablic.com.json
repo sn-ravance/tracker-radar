@@ -4,14 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000104,
-    "sites": 15,
+    "prevalence": 0.000124,
+    "sites": 18,
     "subdomains": [
         "cdn2",
         "e2",
         "d",
-        "c",
-        "uploads"
+        "uploads",
+        "c"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -19,17 +19,18 @@
         {
             "rule": "bablic\\.com\\/js\\/bablic\\.3\\.9\\.js",
             "cookies": 0.0000138,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "cdn2"
             ],
             "apis": {
                 "window.localStorage": 2,
                 "window.indexedDB": 2,
+                "Navigator.prototype.userAgent": 2,
                 "Document.cookie getter": 2,
                 "Document.cookie setter": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.language": 2
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.languages": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -40,21 +41,21 @@
             "type": "Script",
             "firstPartyCookies": {
                 "bab_locale": {
-                    "ttl": 31536002,
+                    "ttl": 31536004,
                     "length": 2,
-                    "prevalence": 0.000013808340237503452,
+                    "prevalence": 0.00001380748227464463,
                     "uniqueness": 0.5
                 },
                 "bab_original": {
-                    "ttl": 31536002,
+                    "ttl": 31536004,
                     "length": 2,
-                    "prevalence": 0.000013808340237503452,
+                    "prevalence": 0.00001380748227464463,
                     "uniqueness": 0.5
                 },
                 "bab_block": {
-                    "ttl": 31536002,
+                    "ttl": 31536005,
                     "length": 13,
-                    "prevalence": 0.000006904170118751726,
+                    "prevalence": 0.000006903741137322315,
                     "uniqueness": 1
                 }
             },
@@ -66,25 +67,37 @@
         },
         {
             "rule": "bablic\\.com\\/api\\/engine\\/ping",
-            "cookies": 0,
+            "cookies": 0.000069,
             "fingerprinting": 0,
             "subdomains": [
                 "e2"
             ],
             "apis": {},
-            "sites": 10,
-            "prevalence": 0.000069,
+            "sites": 11,
+            "prevalence": 0.0000759,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "54413ba79a1c80dd0976c5286d01d267c46f8f76f8f256f268f5ced8e8a8f657",
+                "525288766cdf434b30ef6d40e3044b3b69a2121152b5e1fc13af3df071e8f9ab",
+                "a4fc93c975aa018701b9677fb0749b44ac161be27cc2657e63a7377de81dced6",
+                "296ff7acdad70ab5be76ed653f66743fecbcac667a47b8bb1f35cb29447adc18",
+                "f9dbcf7e794f10f9a0f4ca5aed00f8a0dc6554e9cfd0839f7fb1a073185d99e2",
+                "d69650dce7c913d30a3b1f0deafd6d82ffee8c5a0c43c262b3664df75c0e398c",
+                "c3f6587e25056e6b274ba4cfe992bf5acb740073ee2179c84a0290789bdc563a",
+                "df0fc25b18c0972ad4cbf7dac4e2a23d2115a323768b2e394a96ac910a20276a",
+                "48ea45a332ce0f3d8c8fec6992fcf8ed68be86a78cec4740fbf08b00fb7eb2ba",
+                "2bb55817fd0f1597d44123d2b94c34fa10923798546b11122329e0290bc85b0b"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "IR_gbd": 0.000006904170118751726
+                "IR_gbd": 0.000006903741137322315
             },
             "exampleSites": [
                 "alternativeairlines.com",
                 "www.bajadesigns.com",
                 "www.bswhealth.com",
+                "www.coinmama.com",
                 "www.elegoo.com",
                 "www.fleshlight.com",
                 "www.mesaaz.gov",
@@ -96,35 +109,26 @@
         },
         {
             "rule": "bablic\\.com\\/api\\/engine\\/ping",
-            "cookies": 0.0000621,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "e2"
             ],
             "apis": {},
-            "sites": 10,
-            "prevalence": 0.000069,
+            "sites": 11,
+            "prevalence": 0.0000759,
             "cnames": [],
-            "responseHashes": [
-                "54413ba79a1c80dd0976c5286d01d267c46f8f76f8f256f268f5ced8e8a8f657",
-                "52c6d9e2534fe26ee59fb0ff0f4d8c91c5aabcf38249187445ffd21aa595eab2",
-                "dfc818ae456cf30f53aff0369eb9d53a0e324bab6734e0ff2e2d8c0fb20a8778",
-                "2aef3a58ea52fea768adf4b295891a0132bcf5ac0a9314211f6e62da4dba7683",
-                "e43ff211c2f3d0d62b12fdcf07e133ba341f3429d0561d665a26c512c788d6ac",
-                "0f2ad9fee6f09cb46de1cd0aff33024a3b952329e5dd6eb1d09fac24076954d1",
-                "df0fc25b18c0972ad4cbf7dac4e2a23d2115a323768b2e394a96ac910a20276a",
-                "83c2e2d20b26b89ea96c723f46300b3be2f826af30da323eb3224f273bc0e45c",
-                "a37e78632f14071ca367f46c4c351a1637fe7f46445b54ee5d31f6105664a107"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "IR_gbd": 0.000006904170118751726
+                "IR_gbd": 0.000006903741137322315
             },
             "exampleSites": [
                 "alternativeairlines.com",
                 "www.bajadesigns.com",
                 "www.bswhealth.com",
+                "www.coinmama.com",
                 "www.elegoo.com",
                 "www.fleshlight.com",
                 "www.mesaaz.gov",
@@ -137,37 +141,37 @@
         {
             "rule": "bablic\\.com\\/snippet\\/57c745d43bc985e6680df36a\\.js",
             "cookies": 0.0000138,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "d"
             ],
             "apis": {
-                "window.localStorage": 2,
-                "window.indexedDB": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.language": 2,
                 "Document.cookie setter": 2,
-                "Document.cookie getter": 2
+                "Document.cookie getter": 2,
+                "window.localStorage": 1,
+                "window.indexedDB": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.language": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "f4b96cf7028324d61cb013f4b74fe33b450a5ddfa26b90e3e007b7cd8491745a"
+                "00cc85b78cea416a83a9d42bef053584d9adf26eec9a182280881a0a3dcc787e"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "bab_locale": {
-                    "ttl": 31536004,
+                    "ttl": 31536000,
                     "length": 2,
-                    "prevalence": 0.000013808340237503452,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000006903741137322315,
+                    "uniqueness": 1
                 },
                 "bab_original": {
-                    "ttl": 31536004,
+                    "ttl": 31536000,
                     "length": 2,
-                    "prevalence": 0.000013808340237503452,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000006903741137322315,
+                    "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
@@ -177,18 +181,103 @@
             ]
         },
         {
-            "rule": "bablic\\.com\\/snippet\\/60bdd955d8b3e00001bed56d\\.js",
-            "cookies": 0,
+            "rule": "bablic\\.com\\/snippet\\/5fb54b12c741bb0001cf9df1\\.js",
+            "cookies": 0.0000138,
             "fingerprinting": 2,
             "subdomains": [
                 "d"
             ],
             "apis": {
                 "window.localStorage": 2,
+                "window.indexedDB": 2,
                 "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
                 "Navigator.prototype.languages": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "004d9df5eeccd71825956b943886a08cd23677101d84744d8711198fb9ee6c95"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "bab_locale": {
+                    "ttl": 31536000,
+                    "length": 2,
+                    "prevalence": 0.00001380748227464463,
+                    "uniqueness": 0.5
+                },
+                "bab_original": {
+                    "ttl": 31536000,
+                    "length": 2,
+                    "prevalence": 0.00001380748227464463,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coinmama.com",
+                "www.coinmama.com"
+            ]
+        },
+        {
+            "rule": "bablic\\.com\\/flags\\/24\\/en\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "uploads"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "7e19dac9a978bc977e29421f8964a389bd3bb4a114b4df6ea8b56eef9c31b796"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coinmama.com",
+                "www.coinmama.com"
+            ]
+        },
+        {
+            "rule": "bablic\\.com\\/flags\\/24\\/es\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "uploads"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "5eb40aca5a4b1b8a077d717272131a032f6d1ade75eb491a3471e8eb88e8ac75"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coinmama.com",
+                "www.coinmama.com"
+            ]
+        },
+        {
+            "rule": "bablic\\.com\\/snippet\\/60bdd955d8b3e00001bed56d\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "d"
+            ],
+            "apis": {
                 "Navigator.prototype.language": 2,
-                "window.indexedDB": 2
+                "window.indexedDB": 2,
+                "window.localStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -215,54 +304,32 @@
                 "window.localStorage": 2,
                 "window.indexedDB": 2,
                 "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
                 "Navigator.prototype.languages": 2,
-                "Navigator.prototype.language": 2,
                 "Document.cookie setter": 2,
-                "Document.cookie getter": 2
+                "Navigator.prototype.language": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "04080fff76b9b22e1f25dba9f58012416657367e0f59b3d4a14ef2636b10e455"
+                "38392df09aff7e29f6b1e38f02b6f74a3d5f7034c65bc7226a86c4c068589a5b"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "bab_locale": {
-                    "ttl": 31536004,
+                    "ttl": 31536001,
                     "length": 2,
-                    "prevalence": 0.000013808340237503452,
+                    "prevalence": 0.00001380748227464463,
                     "uniqueness": 0.5
                 },
                 "bab_original": {
-                    "ttl": 31536004,
+                    "ttl": 31536001,
                     "length": 2,
-                    "prevalence": 0.000013808340237503452,
+                    "prevalence": 0.00001380748227464463,
                     "uniqueness": 0.5
                 }
             },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fleshlight.com",
-                "www.fleshlight.com"
-            ]
-        },
-        {
-            "rule": "bablic\\.com\\/sites\\/5aa98afb2da59e5fb9e6f68e\\/conf\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "c"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "279ca6bef49cf35e60a57dc583e6975ddefd473d580704ae6b6ee6691742e38d"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fleshlight.com",
@@ -302,54 +369,32 @@
                 "window.localStorage": 2,
                 "window.indexedDB": 2,
                 "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.language": 2,
-                "Document.cookie setter": 2,
                 "Document.cookie getter": 2,
-                "Navigator.prototype.languages": 1
+                "Navigator.prototype.languages": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.language": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "f1b24186d3c06cf2d018a7ba65f5339968043ffda3f21e66425b4502d524e6b3"
+                "ef5dfa201cfdb0a4d5b51c08632a0abd9bc20af646f52c38f18837f8b7afa12c"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "bab_locale": {
-                    "ttl": 31536004,
+                    "ttl": 31536003,
                     "length": 2,
-                    "prevalence": 0.000013808340237503452,
+                    "prevalence": 0.00001380748227464463,
                     "uniqueness": 0.5
                 },
                 "bab_original": {
-                    "ttl": 31536004,
+                    "ttl": 31536003,
                     "length": 2,
-                    "prevalence": 0.000013808340237503452,
+                    "prevalence": 0.00001380748227464463,
                     "uniqueness": 0.5
                 }
             },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mesaaz.gov",
-                "www.mesaaz.gov"
-            ]
-        },
-        {
-            "rule": "bablic\\.com\\/sites\\/5ea8aacbc8ff6000016946f7\\/conf\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "c"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "cf22f7c6ce874e2191a8907bd253fcacaa97d8d0051aefd6afe58cd7f1012729"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mesaaz.gov",
@@ -368,7 +413,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "a6f60563da008a8e36d22cb775a39bca4ade4a44895ac144a83e2f72a191eb03"
+                "ca2e703bd9917c75b655ad8c754181d8d8ee880ad62367379bea19a856b8cbbf"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -390,7 +435,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "8b0cea246d34916fc585b39941267a5eacc5fa8dba22772630d620f0b32086e2"
+                "a59f64f81bce66742d0498b0fdb0f3435e37b18bfdaa4de24651f2e2faa9927a"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -398,6 +443,90 @@
             "exampleSites": [
                 "permatex.com",
                 "www.permatex.com"
+            ]
+        },
+        {
+            "rule": "bablic\\.com\\/api\\/engine\\/fallback",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "e2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "f3ba6859f86bbfcbdc704228d54565f81c67a7b46a50a383f5ef32fb9a20f647"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "permatex.com",
+                "www.permatex.com"
+            ]
+        },
+        {
+            "rule": "bablic\\.com\\/api\\/engine\\/fallback",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "e2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "permatex.com",
+                "www.permatex.com"
+            ]
+        },
+        {
+            "rule": "bablic\\.com\\/snippet\\/5f6a07e935f47b0001e1ace9\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "d"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "window.indexedDB": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "be2a23ab7b53469365f0384bb085962b59cf5f9713ee8cf74077354f8e3ee6ea"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "bab_locale": {
+                    "ttl": 31536002,
+                    "length": 5,
+                    "prevalence": 0.00001380748227464463,
+                    "uniqueness": 0.5
+                },
+                "bab_original": {
+                    "ttl": 31536002,
+                    "length": 5,
+                    "prevalence": 0.00001380748227464463,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "seedsman.com",
+                "www.seedsman.com"
             ]
         },
         {
@@ -412,7 +541,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "8002bd6bc00ccb6075af44bc6e6c74254ff82016b2882f48ab60cf8f48b429ac"
+                "8a6a9db5337e75194549ac8c462050fa40b26dea33da9b95c79beaf29a0e97a8"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -425,12 +554,12 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000898,
+    "cookies": 0.00011,
     "types": {
-        "Script": 12,
-        "Preflight": 10,
-        "XHR": 18,
-        "Image": 2
+        "Script": 16,
+        "XHR": 17,
+        "Preflight": 13,
+        "Image": 6
     },
     "nameservers": [
         "darwin.ns.cloudflare.com",

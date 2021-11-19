@@ -4,22 +4,29 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000401,
-    "sites": 4,
+    "prevalence": 0.000502,
+    "sites": 5,
     "subdomains": [
         "api.uk",
+        "dnb-api.us",
         "api",
         "api.us1"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "exponea-api.dnb.com",
+            "resolved": "dnb-api.us.exponea.com"
+        }
+    ],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "exponea\\.com\\/js\\/exponea\\.min\\.js",
-            "cookies": 0.000401,
+            "cookies": 0.000502,
             "fingerprinting": 2,
             "subdomains": [
                 "api.uk",
+                "dnb-api.us",
                 "api",
                 "api.us1"
             ],
@@ -33,10 +40,16 @@
                 "Navigator.prototype.vendor": 4,
                 "Document.cookie setter": 4
             },
-            "sites": 4,
-            "prevalence": 0.000401,
-            "cnames": [],
+            "sites": 5,
+            "prevalence": 0.000502,
+            "cnames": [
+                {
+                    "original": "exponea-api.dnb.com",
+                    "resolved": "dnb-api.us.exponea.com"
+                }
+            ],
             "responseHashes": [
+                "8cfb05dce43a73c055436e98786cc9e31f4b7b78482490fbf3b24388bc13a89a",
                 "72a339c52dae56b079129c93427f0b000fd309ec61666e93051895a8bf69e1b1",
                 "e46087a870db4aa0b43dc8a8b4a356be623db7ced080ec8f5fbdd04d9c4a0a2c",
                 "9d73408711ba4d304fef52b43c4deb128cf96420cde46a6c372fef1520da6450"
@@ -44,21 +57,22 @@
             "type": "Script",
             "firstPartyCookies": {
                 "__exponea_etc__": {
-                    "ttl": 94608003,
+                    "ttl": 94608004,
                     "length": 36,
-                    "prevalence": 0.0004011633737839735,
+                    "prevalence": 0.00040120361083249747,
                     "uniqueness": 1
                 },
                 "__exponea_time2__": {
-                    "ttl": 3603,
+                    "ttl": 3604,
                     "length": 22,
-                    "prevalence": 0.0004011633737839735,
+                    "prevalence": 0.00040120361083249747,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "patient.info",
+                "www.dnb.com",
                 "www.kfzteile24.de",
                 "www.sheetmusicplus.com",
                 "www.sunday.de"
@@ -66,27 +80,35 @@
         },
         {
             "rule": "exponea\\.com\\/bulk",
-            "cookies": 0.000401,
+            "cookies": 0.000502,
             "fingerprinting": 0,
             "subdomains": [
                 "api.uk",
+                "dnb-api.us",
                 "api",
                 "api.us1"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
-            "cnames": [],
+            "sites": 5,
+            "prevalence": 0.000502,
+            "cnames": [
+                {
+                    "original": "exponea-api.dnb.com",
+                    "resolved": "dnb-api.us.exponea.com"
+                }
+            ],
             "responseHashes": [
-                "df0a0d56f705293a61663d852d80f1e6331a5274995828b19b55ebae8d66feaf",
-                "e42a871c1deff7cb3fd405d6dcac4ba0a2f5326ab7bb0d25bcb383efcfd4f4ff",
-                "2d3d9f3bcaa8fbe7b22a1ecd4268a952b233eef09e66617bf88244be6a77458b"
+                "7fde659db61691cb891f5bfeb96303b56d633886ec5be918223001a506953ee0",
+                "1a8c0be1b89abe3eab3b3df5d8bebaf2cafb091ddaa4940f17235506594d1fcd",
+                "f8825ba4dc21c81c6bc8b8fb978e5c64af75f120bdfceae18d238c3b46de8e83",
+                "77943fbbcda2a126f6d2feafa2d987948c3a2aff0f2f264f1cb230bf36df3702"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "patient.info",
+                "www.dnb.com",
                 "www.kfzteile24.de",
                 "www.sheetmusicplus.com",
                 "www.sunday.de"
@@ -98,14 +120,21 @@
             "fingerprinting": 0,
             "subdomains": [
                 "api.uk",
+                "dnb-api.us",
                 "api",
                 "api.us1"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
-            "cnames": [],
+            "sites": 5,
+            "prevalence": 0.000502,
+            "cnames": [
+                {
+                    "original": "exponea-api.dnb.com",
+                    "resolved": "dnb-api.us.exponea.com"
+                }
+            ],
             "responseHashes": [
+                "d14658bec03413581821a29b258e2812e64dabaa669423214e0518a4cc340744",
                 "9ecc155c1a20b00b0ed06cb25a949c26ede5f170e02ec814bc6d9b444cc65d2d"
             ],
             "type": "Fetch",
@@ -113,18 +142,42 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "patient.info",
+                "www.dnb.com",
                 "www.kfzteile24.de",
                 "www.sheetmusicplus.com",
                 "www.sunday.de"
+            ]
+        },
+        {
+            "rule": "exponea\\.com\\/campaigns\\/banners\\/show",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api",
+                "api.us1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "d6f686fdd9781f5574049abda75bee818dc77c217db2a5417e4b567ee79c47e3"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kfzteile24.de",
+                "www.sheetmusicplus.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000401,
+    "cookies": 0.000502,
     "types": {
-        "Script": 4,
-        "Fetch": 8
+        "Script": 5,
+        "Fetch": 12
     },
     "nameservers": [
         "ns-cloud-e1.googledomains.com",

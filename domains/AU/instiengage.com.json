@@ -4,47 +4,44 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000703,
-    "sites": 7,
+    "prevalence": 0.000802,
+    "sites": 8,
     "subdomains": [
-        "b2c",
+        "auth",
         "geoip",
+        "eua",
         "event",
         "static",
+        "b2c",
         "cms"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "instiengage\\.com\\/v3\\/pages\\/usertracking",
+            "rule": "instiengage\\.com\\/auth\\/index\\.html",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
-                "b2c"
+                "auth"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 7,
-                "window.localStorage": 7,
-                "Navigator.prototype.doNotTrack": 7,
-                "Navigator.prototype.cookieEnabled": 7,
-                "Date.prototype.getTime": 7
-            },
-            "sites": 7,
-            "prevalence": 0.000703,
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.000802,
             "cnames": [],
             "responseHashes": [
-                "984bca55409990098cf74adc47ed650c3d22c68900739950bd14c04c9d45f8f7"
+                "fb7e70becd9b9f29c4afe8b2b82eef24739e120c0abafc812e24c8362657f37d"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "greenwichmeantime.com",
-                "holdtoreset.com",
                 "mydramalist.com",
+                "stocktwits.com",
                 "techraptor.net",
                 "www.allkpop.com",
+                "www.chordie.com",
                 "www.sherdog.com",
                 "www.thedesertreview.com"
             ]
@@ -58,20 +55,116 @@
             ],
             "apis": {},
             "sites": 7,
-            "prevalence": 0.000703,
+            "prevalence": 0.000702,
             "cnames": [],
             "responseHashes": [
-                "8769bbcd0d8df3cb2191a1117ede37fc61d0d7dd570ec0fdeb83599f4ad55b74"
+                "4fd8074d0dde65da4cf5a0efa541377c67972b40aadbea2676790d5cc6c18145"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "greenwichmeantime.com",
-                "holdtoreset.com",
                 "mydramalist.com",
+                "stocktwits.com",
+                "www.allkpop.com",
+                "www.chordie.com",
+                "www.sherdog.com",
+                "www.thedesertreview.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/auth\\/bundle\\.js",
+            "cookies": 0.000702,
+            "fingerprinting": 1,
+            "subdomains": [
+                "auth"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 8,
+                "Document.cookie getter": 8,
+                "window.localStorage": 8,
+                "window.name": 8,
+                "Navigator.prototype.cookieEnabled": 7,
+                "Document.cookie setter": 7,
+                "Date.prototype.getTime": 8
+            },
+            "sites": 8,
+            "prevalence": 0.000802,
+            "cnames": [],
+            "responseHashes": [
+                "f24a6a7d78e4a99caf119573507d8ccd650d0919ad9c647441b86d10dc1c8f85"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "greenwichmeantime.com",
+                "mydramalist.com",
+                "stocktwits.com",
                 "techraptor.net",
                 "www.allkpop.com",
+                "www.chordie.com",
+                "www.sherdog.com",
+                "www.thedesertreview.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/v1\\/auth\\/token",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eua"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.000802,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "greenwichmeantime.com",
+                "mydramalist.com",
+                "stocktwits.com",
+                "techraptor.net",
+                "www.allkpop.com",
+                "www.chordie.com",
+                "www.sherdog.com",
+                "www.thedesertreview.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/v1\\/auth\\/token",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eua"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.000802,
+            "cnames": [],
+            "responseHashes": [
+                "4d2a50354cf434c0fb2bb1df10744e41b94e7afe5963e9dc9df3b4da100f4744",
+                "84f47b923e2faca683414c4ec723237b6661cc7cc78d65d9441d31642f8bf368",
+                "f6ed41620b2a535ca2ebd75c575b007e9dd486607c419c56077a4533ac2aabb9",
+                "a5ca6bc49935314dbb58c68caadcca3e2b46a4d8eb714500ffbe990f2dfa0716",
+                "149e2b4d0b427844aab3fa1160286d57fbc529a4e1458c8c3c2d549abf1bf1b4",
+                "6c52f46198c58125857ca8854c180e9d466a64d98b1e70120eaa0b894fd4ba77",
+                "ae375e041d40de96b272ac9a23bcac5f7bddc6379a9609232fba0c451f342f01"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "greenwichmeantime.com",
+                "mydramalist.com",
+                "stocktwits.com",
+                "techraptor.net",
+                "www.allkpop.com",
+                "www.chordie.com",
                 "www.sherdog.com",
                 "www.thedesertreview.com"
             ]
@@ -134,7 +227,7 @@
             "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [
-                "b943ac9eb37bac5937d3fdec8a4295e7e330f8c1ff4b481fb2810d3ae4bca8dd"
+                "041979826ed9ca795c92b592f5b5af79277569cade7e941a57bf65c8b871b87d"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -158,7 +251,7 @@
             "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [
-                "151c4c52c25dd28c33321aaaeabe879c4814087d4eaf7545d93f5d81d4d1c4f3"
+                "34c2201cbfc3b501839820ae120c267b274aab5e3eaac1ed04dfc9703a274e28"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -182,9 +275,39 @@
             "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [
-                "695ce10188e5306fcbf679b7cc125b6eac681d124a85a5908bbd8d0079a47e9a"
+                "a0a936f1245488f21db005cf7c3fad543bba22c45e837bed399e066c374bf830"
             ],
             "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "greenwichmeantime.com",
+                "mydramalist.com",
+                "www.allkpop.com",
+                "www.sherdog.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/v3\\/pages\\/usertracking",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "b2c"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1,
+                "Navigator.prototype.doNotTrack": 1,
+                "Navigator.prototype.cookieEnabled": 1,
+                "Date.prototype.getTime": 1
+            },
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [],
+            "responseHashes": [
+                "984bca55409990098cf74adc47ed650c3d22c68900739950bd14c04c9d45f8f7"
+            ],
+            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -202,31 +325,29 @@
                 "cms"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
-            "responseHashes": [
-                "79092485687c507b9a3b66801c1cefeb618ee8562c3d7bc6518da709dfaba922",
-                "2cbcd596bb7f1c22500c7cddee3d2a89897829a7836a5efb90d516476b39a652"
-            ],
+            "responseHashes": [],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "greenwichmeantime.com",
                 "mydramalist.com",
-                "www.allkpop.com",
-                "www.sherdog.com"
+                "www.allkpop.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000702,
     "types": {
-        "Document": 7,
-        "XHR": 15,
-        "Preflight": 4,
+        "Document": 12,
+        "XHR": 14,
+        "Script": 8,
+        "Preflight": 12,
+        "Fetch": 8,
         "Image": 12
     },
     "nameservers": [

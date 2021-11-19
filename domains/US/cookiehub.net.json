@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000269,
-    "sites": 39,
+    "prevalence": 0.000283,
+    "sites": 41,
     "subdomains": [
         "ds"
     ],
@@ -18,8 +18,8 @@
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 8,
+            "prevalence": 0.0000552,
             "cnames": [],
             "responseHashes": [
                 "187968c6076956e75b521380c2ac8a964bcba278a36d4e725315b0907af077d8"
@@ -31,7 +31,9 @@
                 "cara.care",
                 "www.cined.com",
                 "www.compagnie-des-sens.fr",
-                "www.gutscheinsammler.de",
+                "www.da.nl",
+                "www.feiertage-oesterreich.at",
+                "www.fischersports.com",
                 "www.myllynparas.fi",
                 "www.sautershop.de"
             ]
@@ -53,9 +55,9 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "covve.com",
-                "hager.com",
                 "monday.com",
                 "support.monday.com",
+                "www.feiertage-oesterreich.at",
                 "www.myllynparas.fi",
                 "www.sautershop.de"
             ]
@@ -72,18 +74,78 @@
             "prevalence": 0.0000414,
             "cnames": [],
             "responseHashes": [
-                "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+                "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+                "4c794c4f071a0068ed1e04e8e04e0abef6d6b759d9d0e69089dad3239c0e889b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "covve.com",
-                "hager.com",
                 "monday.com",
                 "support.monday.com",
+                "www.feiertage-oesterreich.at",
                 "www.myllynparas.fi",
                 "www.sautershop.de"
+            ]
+        },
+        {
+            "rule": "cookiehub\\.net\\/region",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "ebc2f405be4fbb9007388a432cc656c63a35c5bff5aece50f3daf1ef5b9327f1"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hager.com",
+                "www.semrush.com"
+            ]
+        },
+        {
+            "rule": "cookiehub\\.net\\/region",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hager.com",
+                "www.semrush.com"
+            ]
+        },
+        {
+            "rule": "cookiehub\\.net\\/c2\\/css\\/2\\.4\\.0\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "dc4afa42f1e5ac0336b8f3cfe8d1d61366ed1a8ff00f7f12301732481b1b04de"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "techboomers.com",
+                "www.hel.fi",
+                "www.rechnungswesen-portal.de"
             ]
         },
         {
@@ -117,6 +179,7 @@
             "subdomains": [],
             "apis": {
                 "Navigator.prototype.doNotTrack": 2,
+                "Document.cookie getter": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.language": 2,
                 "Date.prototype.getTime": 2
@@ -136,16 +199,20 @@
             ]
         },
         {
-            "rule": "cookiehub\\.net\\/cc\\/f8d38b64\\.js",
+            "rule": "cookiehub\\.net\\/c2\\/f8d38b64\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.doNotTrack": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "6eafba37e9465955399ea7126ab6cb11a35ae1b875addcb9ca6244c1b556d419"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -156,47 +223,60 @@
             ]
         },
         {
-            "rule": "cookiehub\\.net\\/c2\\/c7e96adf\\.js",
-            "cookies": 0,
+            "rule": "cookiehub\\.net\\/c2\\/3034ac0d\\.js",
+            "cookies": 0.0000138,
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
                 "Navigator.prototype.doNotTrack": 2,
-                "Navigator.prototype.userAgent": 2
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.language": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "4346fe3c49c9b6efc8d06ffe503cbe9025e0e9e0a5940953e0a6f523bd01b52a"
+                "3a0a9039875f846c5228980ec87acdd4cab5eca9560802bbc48e32b11523f1d1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cookiehub": {
+                    "ttl": 31536002,
+                    "length": 671,
+                    "prevalence": 0.00001380748227464463,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "feiertage-oesterreich.at",
+                "www.feiertage-oesterreich.at"
+            ]
+        },
+        {
+            "rule": "cookiehub\\.net\\/c2\\/ced71437\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "031da9601466beeff54cc9862c91bdde426adf6f26b77b19fa9a9e51e72cfb24"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "hel.fi",
-                "www.hel.fi"
-            ]
-        },
-        {
-            "rule": "cookiehub\\.net\\/c2\\/css\\/2\\.4\\.0\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [],
-            "responseHashes": [
-                "dc4afa42f1e5ac0336b8f3cfe8d1d61366ed1a8ff00f7f12301732481b1b04de"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hel.fi",
-                "www.hel.fi",
-                "www.rechnungswesen-portal.de"
+                "fischersports.com",
+                "www.fischersports.com"
             ]
         },
         {
@@ -206,7 +286,7 @@
             "subdomains": [],
             "apis": {
                 "Navigator.prototype.doNotTrack": 2,
-                "Document.cookie getter": 1,
+                "Document.cookie getter": 2,
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
@@ -263,9 +343,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "cookiehub": {
-                    "ttl": 31536002,
+                    "ttl": 31536003,
                     "length": 671,
-                    "prevalence": 0.000013808340237503452,
+                    "prevalence": 0.00001380748227464463,
                     "uniqueness": 1
                 }
             },
@@ -295,9 +375,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "cookiehub": {
-                    "ttl": 31536003,
+                    "ttl": 31536002,
                     "length": 671,
-                    "prevalence": 0.000013808340237503452,
+                    "prevalence": 0.00001380748227464463,
                     "uniqueness": 1
                 }
             },
@@ -308,7 +388,39 @@
             ]
         },
         {
-            "rule": "cookiehub\\.net\\/c2\\/7d39a069\\.js",
+            "rule": "cookiehub\\.net\\/c2\\/06c77e2e\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.doNotTrack": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "c7e13f415edcbd3214bf6681728c9803d7d5d9f421cbbfc8b47c86ad26f8c82f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cookiehub": {
+                    "ttl": 31536001,
+                    "length": 803,
+                    "prevalence": 0.00001380748227464463,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "semrush.com",
+                "www.semrush.com"
+            ]
+        },
+        {
+            "rule": "cookiehub\\.net\\/c2\\/css\\/06c77e2e\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -317,29 +429,118 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "6e0d4b8bbf58610723027d85ed3cc6850f4580473972d815a77d989385508629"
+                "4e86ab39916f059416c8f085a8f57c2c8ea15654786ce254ea382d877effa98c"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "semrush.com",
+                "www.semrush.com"
+            ]
+        },
+        {
+            "rule": "cookiehub\\.net\\/c2\\/2b01d41f\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.doNotTrack": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "5ee71089d9f9a027eab895111e02d28a3a37fb7841d40b3085f8eed95d0252b8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "tinnitus.org.uk",
-                "www.tinnitus.org.uk"
+                "thetrevorproject.org",
+                "www.thetrevorproject.org"
+            ]
+        },
+        {
+            "rule": "cookiehub\\.net\\/c2\\/css\\/2\\.3\\.5\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "f3d2332deab5271e316c3cec0668c1def795edfc4f0cf33eabeede29f1f64c7c"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thetrevorproject.org",
+                "www.thetrevorproject.org"
+            ]
+        },
+        {
+            "rule": "cookiehub\\.net\\/c2\\/458e3f71\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.doNotTrack": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "c19e6e31d4be55c26cbdcb295a47b2c9dc0c982d224b4f813300fb78c78c316b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "visiticeland.com",
+                "www.visiticeland.com"
+            ]
+        },
+        {
+            "rule": "cookiehub\\.net\\/c2\\/css\\/2\\.4\\.1\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "56a479af43aeabbca9fb03cf060f4dfdcfca36ef8a9267d82d5677f756ec3302"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "visiticeland.com",
+                "www.visiticeland.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000621,
+    "cookies": 0.0000828,
     "types": {
-        "Stylesheet": 11,
-        "XHR": 12,
-        "Script": 16
+        "Stylesheet": 19,
+        "XHR": 14,
+        "Preflight": 2,
+        "Script": 22
     },
     "nameservers": [
-        "ns-225.awsdns-28.com",
-        "ns-704.awsdns-24.net",
+        "ns-1316.awsdns-36.org",
         "ns-1690.awsdns-19.co.uk",
-        "ns-1316.awsdns-36.org"
+        "ns-225.awsdns-28.com",
+        "ns-704.awsdns-24.net"
     ]
 }

@@ -7,21 +7,20 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000967,
-    "sites": 14,
+    "prevalence": 0.000117,
+    "sites": 17,
     "subdomains": [
         "netdreamersad",
         "obunshaad",
         "proto2ad",
         "sankei2ad",
-        "netdreamersimg",
         "ala",
         "obunshaimg",
         "consumer-api",
         "img-fujisan",
-        "proto2img",
         "img-goo",
-        "catalogphoto"
+        "catalogphoto",
+        "img08-magaseek"
     ],
     "cnames": [
         {
@@ -35,6 +34,10 @@
         {
             "original": "img.goo-net.com",
             "resolved": "img-goo.durasite.net"
+        },
+        {
+            "original": "img08.magaseek.com",
+            "resolved": "img08-magaseek.durasite.net"
         }
     ],
     "fingerprinting": 1,
@@ -50,12 +53,13 @@
                 "sankei2ad"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 7,
+            "prevalence": 0.0000483,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-                "75bd1b93b109d94f95238418e29990b5f4c836704d46974186c49cd9b0d56da9",
+                "c39b5759bb06f847aacce97127c1e1883f898303287bd680f11e258e527d1be4",
+                "9ce6173e10109fe33354d31357499c36e18ceeae295af2b55bc6dd235d4ae9b6",
+                "28df564527a8e6103c795a75f5e082383bac6a351fc998b8294b616d7b49c3e7",
                 "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
             ],
             "type": "Script",
@@ -65,36 +69,15 @@
                 "netkeiba.com",
                 "db.netkeiba.com",
                 "passnavi.evidus.com",
+                "race.netkeiba.com",
                 "www.goobike.com",
                 "www.goo-net.com",
                 "www.sankeibiz.jp"
             ]
         },
         {
-            "rule": "durasite\\.net\\/images\\/ui2\\/\\/upload\\/netkeiba\\/40271\\/40271\\/xn--20211015~-954h9bt4a\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "netdreamersimg"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "2f8f2298ef6bf192cf0f185cd166e3837c777ae2771cfd81f6bd5e8203fb24be"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "netkeiba.com",
-                "db.netkeiba.com"
-            ]
-        },
-        {
             "rule": "durasite\\.net\\/DuraUidSegmentMap\\.js",
-            "cookies": 0,
+            "cookies": 0.0000069,
             "fingerprinting": 1,
             "subdomains": [
                 "ala"
@@ -102,7 +85,8 @@
             "apis": {
                 "Navigator.prototype.userAgent": 2,
                 "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -111,7 +95,14 @@
                 "9e027eac78f0f934656571d7bb7a5b4e72d8e5337f30209e49ad250e4334b121"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "__duraSearchSeg": {
+                    "ttl": 7776003,
+                    "length": 13,
+                    "prevalence": 0.000006903741137322315,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "evidus.com",
@@ -130,7 +121,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "7c735471e8f047129b30255cda2941a7947f1d06e7a0d297ae2ff0d2f48c5009"
+                "f2c990bb16b2ceb4489b1a107319404e6a811e2fba7e73b8e80ad079681e6487"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -164,15 +155,15 @@
         },
         {
             "rule": "durasite\\.net\\/DuraDmpTracking\\.js",
-            "cookies": 0.0000069,
+            "cookies": 0.0000138,
             "fingerprinting": 1,
             "subdomains": [
                 "ala"
             ],
             "apis": {
-                "Document.cookie getter": 1,
+                "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
-                "Document.cookie setter": 1,
+                "Document.cookie setter": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.language": 2
             },
@@ -185,21 +176,21 @@
             "type": "Script",
             "firstPartyCookies": {
                 "__duraid": {
-                    "ttl": 7776005,
+                    "ttl": 7776004,
                     "length": 36,
-                    "prevalence": 0.000006904170118751726,
+                    "prevalence": 0.00001380748227464463,
                     "uniqueness": 1
                 },
                 "o_uid": {
-                    "ttl": 7776005,
+                    "ttl": 7776004,
                     "length": 36,
-                    "prevalence": 0.000006904170118751726,
+                    "prevalence": 0.00001380748227464463,
                     "uniqueness": 1
                 },
                 "__bid": {
-                    "ttl": 23328005,
+                    "ttl": 23328004,
                     "length": 36,
-                    "prevalence": 0.000006904170118751726,
+                    "prevalence": 0.00001380748227464463,
                     "uniqueness": 1
                 }
             },
@@ -248,9 +239,9 @@
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "__duraid": 0.000006904170118751726,
-                "o_uid": 0.000006904170118751726,
-                "__bid": 0.000006904170118751726
+                "__duraid": 0.00001380748227464463,
+                "o_uid": 0.00001380748227464463,
+                "__bid": 0.00001380748227464463
             },
             "exampleSites": [
                 "evidus.com",
@@ -258,7 +249,7 @@
             ]
         },
         {
-            "rule": "durasite\\.net\\/images\\/ui2\\/upload\\/passnavi\\/120442\\/124569\\/xn--pc-fi4awca9aes58a\\.jpg",
+            "rule": "durasite\\.net\\/images\\/ui2\\/upload\\/passnavi\\/124222\\/144210\\/xn--2021____pc-133q04g5wopubca107ditkca1821bs2h476kqbpb\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -269,7 +260,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "0559ba2bcc2862b9699be29fbae5b7626e8771687733649a69457cdb76f143cb"
+                "9e278e7a11a59d877a7f04c88be2b94ddc29b766aeb0f0d15b28a74c26639b01"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -296,7 +287,7 @@
                 }
             ],
             "responseHashes": [
-                "6ba55e4803225b2181a4fa8fab3cc3b26382e8ae44bb0245fdf1689f3579f6a5"
+                "2f51c53f643c562429d4e12c2e0d0703ae8699cd9749f3254318ab16b69f727e"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -318,31 +309,9 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "fe85781b7465164793cb38fc697112d7e1d1467a20c0088dcd59985059e5b534"
+                "1a0047734f73d471a2d0585e9e70f277579e54922ae4533d77b3eee6abf69fc2"
             ],
             "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "goobike.com",
-                "www.goobike.com"
-            ]
-        },
-        {
-            "rule": "durasite\\.net\\/images\\/proto\\/7295\\/7295img_special_contents01\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "proto2img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "5d65f9a0bdf2d4bf030bc5a05d3d980dfb6477a2c0f16fa97fddeee3990c275a"
-            ],
-            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -367,7 +336,7 @@
                 }
             ],
             "responseHashes": [
-                "5075fd6d65b1c6776c78573a747d589e81121b6856d50f83fa0af60e305b9bf6"
+                "858154a6497acc2fab3cb496bf9382711101ffeedff71a784298ff03bf087e73"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -394,7 +363,7 @@
                 }
             ],
             "responseHashes": [
-                "506dec7b9e48b138e1e23bf7175c148bd55465547c0daf85d9829d65c18fec88"
+                "525e8209c03856eef730d6f76257916d0b55c6b21b3159a93de5c73ea9135e0c"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -421,7 +390,7 @@
                 }
             ],
             "responseHashes": [
-                "9707da365a5ac3ff328cbd9c7a75fa430f8dfd0f5200d74b497f4d4d0be0dac6"
+                "80faebc46b3ac4dacebe268f9a5aa6cf0b85b5ae4ffc35648ce730d2e99e124e"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -448,7 +417,7 @@
                 }
             ],
             "responseHashes": [
-                "6c28dce0e10fb78bae8d3b111cb88335a17ba6de4259b938141596b3826279e0"
+                "c6fbbd11501e593c3cb6e935c7221d4818df228bc324a03ed0c0daee5bbf3463"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -459,7 +428,7 @@
             ]
         },
         {
-            "rule": "durasite\\.net\\/cache\\/common_v2\\/sprite_icon_kurumaService_v2\\.png",
+            "rule": "durasite\\.net\\/cache\\/common_v2\\/202110\\/sprite_icon_kurumaService_v2\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -475,7 +444,7 @@
                 }
             ],
             "responseHashes": [
-                "64637658eca948481823772f6a4356840b9e0af6f82edc881ff91a588fe2244c"
+                "7def5d7e75e6d083531c033f679e4857129c653eb097628e81aef645244fed8f"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -502,7 +471,7 @@
                 }
             ],
             "responseHashes": [
-                "190ab0ef285a3e163cbe5fb57f29d37a8dbb84a2788cc780d29950c5471badd5"
+                "127de1b6d884c6655f4a8bb5e10a168acca1e6349bd286f24f90efe915e08ef9"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -529,7 +498,7 @@
                 }
             ],
             "responseHashes": [
-                "22c5f3ea25f3d0a5fcecea2a4d82d431c9762a310e3f89824a04afa06410d1df"
+                "dff34d17dc1bd38aaf38698456e1167fef915744d5e2eb5ac57faf0ac4ab3c7e"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -556,7 +525,7 @@
                 }
             ],
             "responseHashes": [
-                "3d5aaf0ced59cb424edd017be4877988c6f0d2f01fa957baadd532c6b55225a7"
+                "a396f998e6eb8f73daee45a1a96c94031d208511a02bfca5e625b20ffb83f3fa"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -565,15 +534,1284 @@
                 "goo-net.com",
                 "www.goo-net.com"
             ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/img\\/img_headerLogo\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "b3b8ef73445808bc7b511785bf0d27afb077dc3ce455f9c736cb1cd58929270e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/item\\/20150715\\/001587145029\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "0ee36df7b7f404d28d28eab820df4c90575ddeeafa1749ad1859cf03a4079d4f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/logo\\/lo_NANUNI\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "bac80a9ce168ed66ff969e99c84521e03c10b01fcbee02eeb5b627d6fff945e0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/logo\\/lo_SPSSPW\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "7c0fb662d09b5e926a69df531be56556573a80923142c40bac49c81bc6a07a89"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/logo\\/lo_TOMTOM\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "da3325dee2ca4d11f6e94d97005d8e7951f52a8031a792cafbf5b785c228b804"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/update\\/201012\\/bt_docAbout\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "10334c7c227f4cad9ca7433987578f882f4d8f2c444e43663e1d60ce5091aa09"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/update\\/201012\\/bt_backnum\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "1d2062e945bbcb8c62070af659c68e82511659c342d0cbd3c6e8b0ee677f21c9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/update\\/201012\\/bt_HENPIN\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "49780e2a8671ae149760105a51f46e46b8fce7a22922095f2045033bdf09249b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/update\\/201012\\/bt_SPEIMGSRCH\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "9e7b00389d50565114f502d95c646b593cf30c5f6d41f9fe0ed5e3a0a3493661"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/update\\/201012\\/bt_VECTOR\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "5c7d0fcbc18390a724b56e3fe9f5e7cd4e54628681d2907a3442c855b9e9ee12"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/update\\/201012\\/bt_DPOINT\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "4461ee35235b2369a7e21fa36ffe5a855e7972b9054ce270157a03af883098ad"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/update\\/211112\\/bt_docMgcard\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "513907c34d9ba09b842bb4a05063c048241377ec58c617957c13023c79e95c97"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/update\\/201012\\/bt_MGCARDINPUT\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "61f8354bcc5b1901d08e635a83537810917aa0d05f9b7e0c23c572a150050136"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/update\\/201012\\/bt_MERPAY\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "f6cc75734e72c87870511e4995f6f4c40a7ccde93410454fc35d8a7c9654815f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/update\\/201012\\/bt_PAIDYATO\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "f71c79da08e2ca97b3d8ccb9b02622a49d736137e87c5fa435c7ec6d2acf97db"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/update\\/201026\\/bt_SUMALLYPKT\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "32cb2521e49a1538960af2609a985658b74f3139b6dbb46148759ed9f2c528d1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/update\\/201012\\/bt_APP1307\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "dc8af21dfa8aa1b95b6c4a03691b403913db8649539f5bcbda05c2bc8bdfcd01"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/update\\/201012\\/bt_LINEAT\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "7ad43f08e1e65c5ec9a141f2029878f797355323951e2336b3daa957f9ddb32e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/update\\/180510\\/bt_KJITAK_sp\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "e3f89725e60065d25c752578f170b525b87835eb3e38012f865f83f69c328d49"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg_sp\\/img\\/transparent\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/img\\/icn_shopcoupon\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "dd622e9996d93cd85c346c26901fec00e961075e993dcb39597a0cd316d7db42"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/item\\/20211015\\/5043690223J3\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "e19b894df49f14e57d266f539f43410c911f39b0b9883c4b0b0bb3b6ad3dd550"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/item\\/20211015\\/5043690273J3\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "c3404de2f64834d3b9c3e98fb6eeea6daaf4e96b10939e4dbc281373c497e257"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/item\\/20200908\\/5035241893J3\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "26e1a15d7a14938949b4b7ec0a46cad8f811fe8f8a15f59708646791f504e267"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/item\\/20200911\\/5035337410VD\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "3b46c8d997a2184a5573c1b4bb130937c5018b68bc87c42774c5a3436291460a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/item\\/20190719\\/50247127500T\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "e95d4715f44bff35e724ef4a38b4bc9442d9b9060be459465000995066f1138c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/img\\/icn_top\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "6ded30c7371b1fee19306af20e8f918d1e6695fa6d34ab4a232a5180d9646be0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg_sp\\/img\\/ajax-loader\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "b089fdd05aaa9807c28ba0aeb40c320edc9a9accb9b4e6e69f7ef254168f8f3e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/img\\/icn_rank\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "37f9e05215a0abc50f8c54efe6adc62d809912717c4d930de0bc67365d1bec63"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/img\\/btn_favorite_list_2\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "1770268a7ae242f983747f4bda337b855a159e57c25a6d1aa34525d85aad37c2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/update\\/190613\\/img_app\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "7c8fcafd4d1bf10403c495eb42e0d547ad8898ac171c6cbdd8b631d25611c81e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/update\\/190613\\/img_app_text\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "1d78197ae666d8ef937fc1ad8b420b8e33c30500b0345a1ea2cc31873c19126a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/update\\/190613\\/img_app_btn1\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "2f2c9cf23e0f248724f850a235da16ca708f9c6822e5fa26af87bfd2261e5cf2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/update\\/190613\\/img_app_btn2\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "7e3cdcef16053df0ad244cc787e443232bb909ed9698d2c2617f21d43fffc35d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/img\\/img_pmark\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "b185bcbe5027b4cb68419524da5b2b8d58d97c563410620db92e27c253c21991"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/img\\/img_secom\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "0cac56e21fbd16fc596e9368f0c2649aea7c4853ccad22b88d9afe03f4a73294"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/img\\/f_logo\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "14a3a022fbd9c0c53be5d0eef58a2207d460797e6cb9d3305324470f1bc04530"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/update\\/211116\\/bn_COST_TOP_TEST\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "79a4dcf2f926727a2faf4577c3ff071aa48e6894a32944135018e8670755b28d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/update\\/211117\\/bn_MGSMGALL_TOP\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "c5c01847a3aa3e1d71736c5e9a213b49977b5eb3472988c0df9ded0d7ae368ae"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/img\\/btn_previmg\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "6b08f3dd37df9a1a03f2a3c490f60fc23f9dc8f3a3dc0c42a0b7046dad835163"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/img\\/btn_nextimg\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "3aa1d7f471eedc5170d372693f265cda819eb87a1980407ae9701a580656962b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/mg\\/img\\/btn_close\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "6f0184fdd9a1be646d9527b2ff239495385e17e9ccb439a7a199ec0f57bc2164"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/item\\/20211108\\/50441048400H\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "a3741823660e5fc51805ea42d3ee762897eb2a24f8bb1f2e37a82a2293ef33fc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/item\\/20211027\\/504390861023\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "e137f96a3ac2a6d182a44c94bed9ed75e9ba85ac5a07bcc15e91e0523527dc04"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/item\\/20210826\\/504274297010\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "e0ba10ff68cb7079d031a35c6bf9f7277aebce3126502bfd671fcec505323f96"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/item\\/20211015\\/504368426001\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "7e7ab8660d2e8e140c6b4f0fb34dfcf034b2835ec79590d6a418c0a880af57e7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
+        },
+        {
+            "rule": "durasite\\.net\\/images\\/item\\/20211019\\/504376320025\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img08-magaseek"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img08.magaseek.com",
+                    "resolved": "img08-magaseek.durasite.net"
+                }
+            ],
+            "responseHashes": [
+                "ed17abfb545f9432dfdef98d65fd8c7f49ec91731a7841ed526ba0f2deb98b61"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magaseek.com",
+                "www.magaseek.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0.0000345,
     "types": {
-        "Script": 16,
-        "Image": 24,
+        "Script": 17,
         "XHR": 2,
+        "Image": 114,
         "Document": 2
     },
     "nameservers": [

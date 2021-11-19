@@ -12,7 +12,8 @@
     "prevalence": 0.001,
     "sites": 10,
     "subdomains": [
-        "dntcl"
+        "dntcl",
+        "geo"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -20,13 +21,15 @@
         {
             "rule": "qualaroo\\.com\\/frame\\.html",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "dntcl"
             ],
-            "apis": {},
-            "sites": 9,
-            "prevalence": 0.000903,
+            "apis": {
+                "Document.cookie getter": 5
+            },
+            "sites": 10,
+            "prevalence": 0.001,
             "cnames": [],
             "responseHashes": [
                 "2e8900ba4a5768754de4fc21bcdde72bdcafa25c6c766a7f3bc44bf6c21fc412"
@@ -36,14 +39,37 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mxtoolbox.com",
-                "petri.com",
-                "wikitravel.org",
+                "www.barrons.com",
+                "www.crunchyroll.com",
                 "www.etudier.com",
+                "www.flyertalk.com",
                 "www.goodrx.com",
-                "www.greencarreports.com",
                 "www.mathworks.com",
-                "www.metmuseum.org",
-                "www.theknot.com"
+                "www.theknot.com",
+                "www.twilio.com",
+                "www.udemy.com"
+            ]
+        },
+        {
+            "rule": "qualaroo\\.com\\/json\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "geo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "9226bf557cf8e3060dad6c3d18bb32a096ee09eb0ab14c17c68a49e2b89d7a9a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "twilio.com",
+                "www.udemy.com"
             ]
         }
     ],
@@ -55,9 +81,10 @@
         "Session Replay"
     ],
     "performance": {},
-    "cookies": 0.000301,
+    "cookies": 0.000502,
     "types": {
-        "Document": 9
+        "Document": 10,
+        "XHR": 2
     },
     "nameservers": [
         "ns1.dnsimple.com",

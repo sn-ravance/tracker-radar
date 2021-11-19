@@ -8,12 +8,35 @@
     "sites": 13,
     "subdomains": [
         "tagger",
-        "asmi.profiles.tagger",
+        "cdn",
         "profiles.tagger"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "opecloud\\.com\\/lefigaro\\/v2\\/tcf-tagger\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tagger"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "24c6612de1da047a4a8b295ac292fc290e0b603d217a34f8527ac932a94530cb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "commentcamarche.net",
+                "www.lefigaro.fr",
+                "www.linternaute.fr"
+            ]
+        },
         {
             "rule": "opecloud\\.com\\/dbm\\/opecs\\.gif",
             "cookies": 0,
@@ -26,7 +49,7 @@
             "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "6adc3d4c1056996e4e8b765a62604c78b1f867cceb3b15d0b9bedb7c4857f992"
+                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -52,7 +75,7 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "dakt_2_uuid": 0.00020066218521119696
+                "dakt_2_uuid": 0.0002006823198876179
             },
             "exampleSites": [
                 "20min.ch",
@@ -60,82 +83,58 @@
             ]
         },
         {
-            "rule": "opecloud\\.com\\/v1\\/targeting",
+            "rule": "opecloud\\.com\\/ope-asmi\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
-                "asmi.profiles.tagger"
+                "cdn"
             ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.000702,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "autobild.de",
-                "www.bild.de",
-                "www.clever-tanken.de",
-                "www.computerbild.de",
-                "www.finanzen.net",
-                "www.welt.de",
-                "www.wieistmeineip.de"
-            ]
-        },
-        {
-            "rule": "opecloud\\.com\\/v1\\/targeting",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "asmi.profiles.tagger"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.000702,
+            "apis": {
+                "window.localStorage": 5,
+                "Date.prototype.getTimezoneOffset": 5,
+                "Screen.prototype.width": 5,
+                "Screen.prototype.height": 5,
+                "Screen.prototype.colorDepth": 5
+            },
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
-                "11304e66d682cbea1a5ce78ebc753f778eb7caa4c91038af0d9d68e95ddc1ecf",
-                "c83caed7a75494ec05520a953757770139e24e3c570923085b522b7f36871e65",
-                "20d10f2436eba8a32230183a27a31d2ff2bc48fbd52d566125831df153249b27",
-                "06b7208001c44774f16227ae63ec19879c4cd663a99efd493dce0719dfe9e0e6",
-                "de7751345c84647c1a1d6b49f00cd09f4aea4262861ddc57b2d48d61eb1ef003",
-                "1e76d9e16a164df97615d14712fcc22418017d133b84fea4ca482b12390d6f0c"
+                "20eaaa339590adf775c2254232e23567215b71ab044e7058f642d6b81c8ac93f"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "autobild.de",
-                "www.bild.de",
-                "www.clever-tanken.de",
+                "bild.de",
                 "www.computerbild.de",
                 "www.finanzen.net",
-                "www.welt.de",
-                "www.wieistmeineip.de"
+                "www.wieistmeineip.de",
+                "www.welt.de"
             ]
         },
         {
-            "rule": "opecloud\\.com\\/lefigaro\\/v2\\/tcf-tagger\\.js",
+            "rule": "opecloud\\.com\\/asmi\\/v2\\/metrics\\/sdk-consent-delayed",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "tagger"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [
-                "24c6612de1da047a4a8b295ac292fc290e0b603d217a34f8527ac932a94530cb"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "lefigaro.fr",
-                "www.linternaute.com"
+                "bild.de",
+                "www.computerbild.de",
+                "www.wieistmeineip.de",
+                "www.welt.de"
             ]
         },
         {
@@ -153,7 +152,7 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "get_top_level_domain_cookie": 0.00020066218521119696
+                "get_top_level_domain_cookie": 0.0002006823198876179
             },
             "exampleSites": [
                 "scmp.com",
@@ -172,7 +171,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "84fa4322e324942c47a1d55af77041f74b3511bc49f9c6f19cf305bb4d4a8793"
+                "35d5944e42d276aea0fa926e29533c32f3b517226d59fdf7e2d1ba559456acfd"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -187,10 +186,9 @@
     "performance": {},
     "cookies": 0.000301,
     "types": {
+        "Script": 8,
         "Image": 7,
-        "Preflight": 7,
-        "XHR": 9,
-        "Script": 2
+        "XHR": 6
     },
     "nameservers": [
         "ns-1454.awsdns-53.org",

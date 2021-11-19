@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000502,
+    "sites": 5,
     "subdomains": [
         "web-sdk-cdn",
         "sdk-api-v1"
@@ -18,32 +18,44 @@
     "resources": [
         {
             "rule": "singular\\.net\\/singular-sdk\\/latest\\/singular-sdk\\.js",
-            "cookies": 0,
+            "cookies": 0.000201,
             "fingerprinting": 2,
             "subdomains": [
                 "web-sdk-cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 2,
-                "window.sessionStorage": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.width": 2,
-                "Navigator.prototype.platform": 2
+                "Navigator.prototype.userAgent": 5,
+                "window.localStorage": 5,
+                "Date.prototype.getTime": 5,
+                "window.sessionStorage": 5,
+                "Screen.prototype.height": 5,
+                "Screen.prototype.width": 5,
+                "Navigator.prototype.platform": 5,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
                 "8b0930c8a9ce89678281293e87176a0d8f491a9d957bb2d5006a2c9d8b3e69cb"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "singular_device_id": {
+                    "ttl": 31536004,
+                    "length": 36,
+                    "prevalence": 0.00020074274816822243,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "playvalorant.com",
-                "www.leagueoflegends.com"
+                "universe.leagueoflegends.com",
+                "www.leagueoflegends.com",
+                "www.viz.com",
+                "www.vive.com"
             ]
         },
         {
@@ -54,48 +66,82 @@
                 "sdk-api-v1"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "playvalorant.com",
-                "www.leagueoflegends.com"
-            ]
-        },
-        {
-            "rule": "singular\\.net\\/api\\/v1\\/event",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sdk-api-v1"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
                 "8a49ea5083c8030f058182dcd6ae7da0960e68a0d762f71e8e8375f5732fb2fb"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "singular_device_id": 0.00020074274816822243
+            },
             "exampleSites": [
                 "playvalorant.com",
-                "www.leagueoflegends.com"
+                "universe.leagueoflegends.com",
+                "www.leagueoflegends.com",
+                "www.viz.com",
+                "www.vive.com"
+            ]
+        },
+        {
+            "rule": "singular\\.net\\/api\\/v1\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk-api-v1"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000502,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "singular_device_id": 0.00020074274816822243
+            },
+            "exampleSites": [
+                "playvalorant.com",
+                "universe.leagueoflegends.com",
+                "www.leagueoflegends.com",
+                "www.viz.com",
+                "www.vive.com"
+            ]
+        },
+        {
+            "rule": "singular\\.net\\/singular-gtm-interface\\/latest\\/singular-gtm-interface\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web-sdk-cdn"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [],
+            "responseHashes": [
+                "229b005e2be041608b705607939624dfc0758f970a29d2c766bc53018c1d9fb4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "leagueoflegends.com",
+                "www.leagueoflegends.com",
+                "www.viz.com",
+                "www.vive.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000201,
     "types": {
-        "Script": 2,
-        "Preflight": 2,
-        "XHR": 2
+        "Script": 9,
+        "XHR": 5,
+        "Preflight": 5
     },
     "nameservers": [
         "ns-1422.awsdns-49.org",

@@ -10,58 +10,64 @@
     "prevalence": 0.000602,
     "sites": 6,
     "subdomains": [
-        "etam",
-        "123",
         "glenat",
-        "hachette"
+        "hachette",
+        "livre-de-poche",
+        "gifi-test",
+        "lacoste"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
-        {
-            "rule": "reach5\\.net\\/js\\/v1\\/identity\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "etam",
-                "123"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "67038eda9ae5b499d72ae4eb1f30ffa7dc89151e1939006b89ad88aa7bbf8d85"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "etam.com",
-                "www.maison123.com"
-            ]
-        },
         {
             "rule": "reach5\\.net\\/js\\/v1\\/fr\\/identity\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "glenat",
-                "hachette"
+                "hachette",
+                "livre-de-poche"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "9af3715febb5e1171c5da59d1c3daeee3b7ffe49cdd6e69ae6c45e3fbead4b57"
+                "81ca25818a0fe7f5bc8a9c16bff4fe904080ec23219e20982c8d6bc4aafb229a",
+                "3442644d04201b74f5cd6e34d41882b6a2353913581c8f096c19887524b63ed8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "glenat.com",
-                "www.hachette.fr"
+                "www.hachette.fr",
+                "www.livredepoche.com"
+            ]
+        },
+        {
+            "rule": "reach5\\.net\\/identity\\/v1\\/config",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gifi-test",
+                "lacoste"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "a2387ca6d93277ae6fa0237f8a032b712c3cd4ae42f922ea0b06b86fbeff0b45",
+                "9fafe8225c3e7bcf698348ded0b36bb18cba806d3ba1c4a7b8d01e83c4f37883"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gifi.fr",
+                "www.gifi.fr",
+                "www.lacoste.com"
             ]
         }
     ],
@@ -69,7 +75,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 4
+        "Script": 3,
+        "Fetch": 3
     },
     "nameservers": [
         "ns-18.awsdns-02.com",

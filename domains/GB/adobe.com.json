@@ -46,13 +46,13 @@
                 "client_type": {
                     "ttl": null,
                     "length": 5,
-                    "prevalence": 0.0002006823198876179,
+                    "prevalence": 0.00020074274816822243,
                     "uniqueness": 0.5
                 },
                 "client_version": {
                     "ttl": null,
                     "length": 5,
-                    "prevalence": 0.0002006823198876179,
+                    "prevalence": 0.00020074274816822243,
                     "uniqueness": 0.5
                 }
             },
@@ -93,7 +93,8 @@
             ],
             "apis": {
                 "console.memory": 2,
-                "window.localStorage": 2
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -120,8 +121,10 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "779c399237f4dedcd51dbe78446f0bf14002dabd308cb4af25c1fbe462992a7b"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -140,8 +143,28 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bleacherreport.com",
+                "www.bravotv.com"
+            ]
+        },
+        {
+            "rule": "adobe\\.com\\/o\\/client\\/token",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sp.auth"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
             "responseHashes": [
-                "865c085aeb4e1c871aacd49b8609414ba36f7245991f1895f998220b86bbdb3d"
+                "cc86146da532daf3e8f52187013f6a8cd9549fe274a4799b18f2eba91750fae8"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -170,28 +193,6 @@
                 "bleacherreport.com",
                 "www.bravotv.com"
             ]
-        },
-        {
-            "rule": "adobe\\.com\\/o\\/client\\/token",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sp.auth"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "8a968c4d8c581f0e35dc8effa03b5679b77d6b6afab50a3295a03588ddf5063b"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bleacherreport.com",
-                "www.bravotv.com"
-            ]
         }
     ],
     "categories": [],
@@ -200,8 +201,8 @@
     "types": {
         "Script": 4,
         "Document": 2,
-        "Preflight": 4,
-        "XHR": 4
+        "XHR": 4,
+        "Preflight": 4
     },
     "nameservers": [
         "a13-65.akam.net",

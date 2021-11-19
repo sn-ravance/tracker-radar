@@ -4,14 +4,16 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000603,
-    "sites": 6,
+    "prevalence": 0.000803,
+    "sites": 8,
     "subdomains": [
         "direct-events-collector",
         "publisher-assets",
         "pix",
         "events-collector",
-        "metrics-logger"
+        "metrics-logger",
+        "api-2-0",
+        "static-cdn"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -24,8 +26,8 @@
                 "direct-events-collector"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.000603,
+            "sites": 7,
+            "prevalence": 0.000703,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -34,11 +36,12 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "celebdirtylaundry.com",
+                "sheknows.com",
+                "www.celebdirtylaundry.com",
                 "www.dailywire.com",
                 "www.ign.com",
-                "www.realclearscience.com",
                 "www.realclearpolitics.com",
+                "www.realclearscience.com",
                 "www.silverdoctors.com"
             ]
         },
@@ -50,20 +53,51 @@
                 "publisher-assets"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.000703,
+            "sites": 8,
+            "prevalence": 0.000803,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "celebdirtylaundry.com",
+                "sheknows.com",
+                "soaps.sheknows.com",
                 "www.celebdirtylaundry.com",
                 "www.dailywire.com",
                 "www.ign.com",
-                "www.realclearscience.com",
                 "www.realclearpolitics.com",
+                "www.realclearscience.com",
+                "www.silverdoctors.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/api\\/v1\\/pixel",
+            "cookies": 0.000803,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pix"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.000803,
+            "cnames": [],
+            "responseHashes": [
+                "707d4c7f44dd33e874b5a09b6dba4702b12bfd3e19e470d601fcfc1d7009286c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sheknows.com",
+                "soaps.sheknows.com",
+                "www.celebdirtylaundry.com",
+                "www.dailywire.com",
+                "www.ign.com",
+                "www.realclearpolitics.com",
+                "www.realclearscience.com",
                 "www.silverdoctors.com"
             ]
         },
@@ -75,75 +109,53 @@
                 "pix"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.000703,
+            "sites": 8,
+            "prevalence": 0.000803,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "celebdirtylaundry.com",
+                "sheknows.com",
+                "soaps.sheknows.com",
                 "www.celebdirtylaundry.com",
                 "www.dailywire.com",
                 "www.ign.com",
-                "www.realclearscience.com",
                 "www.realclearpolitics.com",
-                "www.silverdoctors.com"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/api\\/v1\\/pixel",
-            "cookies": 0.000703,
-            "fingerprinting": 0,
-            "subdomains": [
-                "pix"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.000703,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "celebdirtylaundry.com",
-                "www.celebdirtylaundry.com",
-                "www.dailywire.com",
-                "www.ign.com",
                 "www.realclearscience.com",
-                "www.realclearpolitics.com",
                 "www.silverdoctors.com"
             ]
         },
         {
             "rule": "spot\\.im\\/api\\/v1\\/device_load",
-            "cookies": 0.000603,
+            "cookies": 0.000703,
             "fingerprinting": 0,
             "subdomains": [
                 "events-collector"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.000603,
+            "sites": 7,
+            "prevalence": 0.000703,
             "cnames": [],
             "responseHashes": [
-                "6a68f051dd19616d05dbb9c4dd7d6be2e537bacb0d8f59c942295f2948a6d44a",
-                "19130ca30a0398fa097c300d48cf2a1ee084cc4a2e64ae5bf1d410e2ae7b7f12",
-                "f1462a5d152aa21e2c65f672fc23400cc0520289a3417be0ad7e6768ec770b7f",
-                "0ccefacce05ca5d1d06e0519fd3c2f582e459accc1259ce54ff00af84b734326",
-                "9a97660e78af10935d499613eb5b206ab8c74f80f7b65964ac692de1fbc1f14e"
+                "742f6a76ee89949aaa0177284c39a2dfdcd60af1aaaedc3803e356678aaa23f7",
+                "7405cf134a73ac66ac27e34e4168cc73c315fc433289fe91098d642a2713b6fd",
+                "81617cb004ffd3eac02c85df883c4c4e6b8aec7e2177b1f1d6b4f24aa5f5375d",
+                "2d0b77789fe5d8b2ed35244cb84dfb2ea1cc2f523df21ff906e3c1ab542d9731",
+                "21da5f2012b6d75289fd4b5f759d641ad3c695d0baa404b9a8a3415618222d14",
+                "48f7f4f63f40d862112cb1bb36b87bb4e8b1d20e5edb3b210cf64de33bfcbaac"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "celebdirtylaundry.com",
+                "sheknows.com",
+                "www.celebdirtylaundry.com",
                 "www.dailywire.com",
                 "www.ign.com",
-                "www.realclearscience.com",
                 "www.realclearpolitics.com",
+                "www.realclearscience.com",
                 "www.silverdoctors.com"
             ]
         },
@@ -155,79 +167,229 @@
                 "metrics-logger"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.000603,
+            "sites": 8,
+            "prevalence": 0.000803,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sheknows.com",
+                "soaps.sheknows.com",
+                "www.celebdirtylaundry.com",
+                "www.dailywire.com",
+                "www.ign.com",
+                "www.realclearpolitics.com",
+                "www.realclearscience.com",
+                "www.silverdoctors.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/authenticate",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sheknows.com",
+                "www.ign.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/authenticate",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "celebdirtylaundry.com",
-                "www.dailywire.com",
-                "www.ign.com",
-                "www.realclearscience.com",
-                "www.realclearpolitics.com",
-                "www.silverdoctors.com"
+                "sheknows.com",
+                "www.ign.com"
             ]
         },
         {
-            "rule": "spot\\.im\\/api\\/v1\\/pixels",
-            "cookies": 0.000502,
-            "fingerprinting": 0,
-            "subdomains": [
-                "pix"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "celebdirtylaundry.com",
-                "www.dailywire.com",
-                "www.ign.com",
-                "www.realclearscience.com",
-                "www.realclearpolitics.com"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/yad\\/ad-choises\\.png",
+            "rule": "spot\\.im\\/production\\/launcher\\/tags\\/v2\\.65\\.1\\/vendor\\/vendor-bundle\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "publisher-assets"
+                "static-cdn"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "f27b4cdbd821100765224a52c7c8d544fa9fdd6d0aba21015eb66c11735e0989"
+                "ca41b626b0c40af7a0adedbf4119a770f01d932eb6681f5105a3aa3ff3966e17"
             ],
-            "type": "Image",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "realclearscience.com",
-                "www.realclearpolitics.com"
+                "sheknows.com",
+                "www.ign.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/conversation\\/tags\\/v3\\.45\\.10\\/conversation-bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sheknows.com",
+                "www.ign.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/popular-in-the-community\\/tags\\/v2\\.26\\.9\\/popular-in-the-community\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sheknows.com",
+                "www.ign.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/popular-in-the-community\\/tags\\/v2\\.26\\.9\\/popular-in-the-community\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c4288ea598515bb42c621803902b970fa13ef30493867e8754f3732c56835b19"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sheknows.com",
+                "www.ign.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/messages-count\\/tags\\/v1\\.0\\.0\\/messages-count-bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sheknows.com",
+                "www.ign.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/messages-count\\/tags\\/v1\\.0\\.0\\/messages-count-bundle\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e99927b117a431d002d016853f9d56ccf53065686c483f8ce0429fa938490271"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sheknows.com",
+                "www.ign.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/api\\/v1\\/pixels",
+            "cookies": 0.000602,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pix"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000602,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sheknows.com",
+                "www.celebdirtylaundry.com",
+                "www.dailywire.com",
+                "www.ign.com",
+                "www.realclearpolitics.com",
+                "www.realclearscience.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000603,
+    "cookies": 0.000703,
     "types": {
-        "XHR": 6,
-        "Fetch": 26,
-        "Preflight": 7,
-        "Other": 5,
-        "Image": 2
+        "XHR": 7,
+        "Fetch": 33,
+        "Preflight": 10,
+        "Script": 8,
+        "Stylesheet": 4,
+        "Ping": 6
     },
     "nameservers": [
         "ns-1202.awsdns-22.org",

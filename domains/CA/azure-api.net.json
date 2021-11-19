@@ -9,9 +9,10 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
+        "api-tanguay",
         "apim-gw-azu-nyc-prod"
     ],
     "cnames": [
@@ -22,6 +23,55 @@
     ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "azure-api\\.net\\/api-tanguay-recommandation\\/new-products-category-recommendation",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-tanguay"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "ef3541172a894fd313de729ffa53bb86e7c0b1b0551eea995ec22a049d46db74"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tanguay.ca",
+                "www.tanguay.ca"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/public\\/api\\/GetCalendar",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apim-gw-azu-nyc-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.nyc.gov",
+                    "resolved": "apim-gw-azu-nyc-prod.azure-api.net"
+                }
+            ],
+            "responseHashes": [
+                "293839b6de2199784faf14738aa7c50db040f3975553c09b11ecc9f39d627403"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyc.gov",
+                "www1.nyc.gov"
+            ]
+        },
         {
             "rule": "azure-api\\.net\\/public\\/api\\/GetCalendar",
             "cookies": 0,
@@ -46,41 +96,20 @@
                 "nyc.gov",
                 "www1.nyc.gov"
             ]
-        },
-        {
-            "rule": "azure-api\\.net\\/public\\/api\\/GetCalendar",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "apim-gw-azu-nyc-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "api.nyc.gov",
-                    "resolved": "apim-gw-azu-nyc-prod.azure-api.net"
-                }
-            ],
-            "responseHashes": [
-                "d5ea5daef823f5044bb5c76394084ccefed12b55261f10b53a5f7b66540ee4a1"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nyc.gov",
-                "www1.nyc.gov"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0001,
     "types": {
-        "Preflight": 2,
-        "XHR": 2
+        "Fetch": 2,
+        "XHR": 2,
+        "Preflight": 2
     },
-    "nameservers": []
+    "nameservers": [
+        "ns1-05.azure-dns.com",
+        "ns2-05.azure-dns.net",
+        "ns3-05.azure-dns.org",
+        "ns4-05.azure-dns.info"
+    ]
 }
