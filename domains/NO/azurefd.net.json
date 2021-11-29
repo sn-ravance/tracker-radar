@@ -4,16 +4,20 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.00352,
-    "sites": 35,
+    "prevalence": 0.00381,
+    "sites": 38,
     "subdomains": [
         "consentdeliveryfd",
-        "fps-prod-na-frontdoor.z01"
+        "waypoint-content-prod"
     ],
     "cnames": [
         {
             "original": "wcpstatic.microsoft.com",
             "resolved": "consentdeliveryfd.azurefd.net"
+        },
+        {
+            "original": "wpcontent.svc.halowaypoint.com",
+            "resolved": "waypoint-content-prod.azurefd.net"
         }
     ],
     "fingerprinting": 1,
@@ -26,10 +30,10 @@
                 "consentdeliveryfd"
             ],
             "apis": {
-                "Document.cookie getter": 1
+                "Document.cookie getter": 4
             },
-            "sites": 34,
-            "prevalence": 0.00342,
+            "sites": 37,
+            "prevalence": 0.00371,
             "cnames": [
                 {
                     "original": "wcpstatic.microsoft.com",
@@ -44,47 +48,77 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "microsoft.com",
-                "answers.microsoft.com",
                 "docs.microsoft.com",
-                "office.com",
-                "social.technet.microsoft.com",
                 "social.msdn.microsoft.com",
+                "social.technet.microsoft.com",
                 "support.microsoft.com",
                 "www.microsoft.com",
-                "news.xbox.com",
-                "www.xbox.com",
-                "forzamotorsport.net",
-                "devblogs.microsoft.com",
-                "www.nuget.org",
-                "community.powerbi.com",
-                "www.skype.com",
-                "developer.microsoft.com",
-                "www.typescriptlang.org",
                 "www.ageofempires.com",
+                "powerbi.microsoft.com",
+                "azure.microsoft.com",
+                "www.skype.com",
                 "powerusers.microsoft.com",
+                "forums.forzamotorsport.net",
+                "visualstudio.microsoft.com",
+                "office.live.com",
+                "news.xbox.com",
+                "www.office.com",
+                "www.typescriptlang.org",
+                "templates.office.com",
+                "www.nuget.org",
                 "onedrive.live.com"
             ]
         },
         {
-            "rule": "azurefd\\.net\\/fps\\/api\\/personalization_1_8\\/get",
+            "rule": "azurefd\\.net\\/purchase-content\\/game-purchase-modal",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "fps-prod-na-frontdoor.z01"
+                "waypoint-content-prod"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
-            "cnames": [],
+            "cnames": [
+                {
+                    "original": "wpcontent.svc.halowaypoint.com",
+                    "resolved": "waypoint-content-prod.azurefd.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "halowaypoint.com",
+                "www.halowaypoint.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/purchase-content\\/game-purchase-modal",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "waypoint-content-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "wpcontent.svc.halowaypoint.com",
+                    "resolved": "waypoint-content-prod.azurefd.net"
+                }
+            ],
             "responseHashes": [
-                "b7a696b44b818831b764d14765e2307cf5f7badfff3e5cfdbe6c9ba0df50eb57"
+                "f472bbc80ae5286ddabb1698ee8c02bad340985df7263d2a10e3c7a30c25f34d"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ford.com",
-                "www.ford.com"
+                "halowaypoint.com",
+                "www.halowaypoint.com"
             ]
         }
     ],
@@ -92,13 +126,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 34,
+        "Script": 37,
+        "Preflight": 2,
         "XHR": 2
     },
-    "nameservers": [
-        "ns1-09.azure-dns.com",
-        "ns2-09.azure-dns.net",
-        "ns3-09.azure-dns.org",
-        "ns4-09.azure-dns.info"
-    ]
+    "nameservers": []
 }

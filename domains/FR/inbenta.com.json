@@ -4,11 +4,11 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000904,
+    "prevalence": 0.000903,
     "sites": 9,
     "subdomains": [
+        "gmf",
         "atlantic-web",
-        "audiens",
         "bforbank",
         "direct-assurance",
         "monabanq",
@@ -24,6 +24,28 @@
     ],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "inbenta\\.com\\/index-compagnon\\.php",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gmf"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "3e3ad342088c62b25c6d15d8c6476c1b031a764229d418664706bbd4591bc4c2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gmf.fr",
+                "espace-assure.gmf.fr"
+            ]
+        },
         {
             "rule": "inbenta\\.com\\/atlantic-inbenta\\.js",
             "cookies": 0,
@@ -52,116 +74,7 @@
             "fingerprinting": 0,
             "subdomains": [
                 "atlantic-web",
-                "audiens",
                 "bforbank",
-                "direct-assurance",
-                "monabanq",
-                "vueling"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.000602,
-            "cnames": [
-                {
-                    "original": "aide.direct-assurance.fr",
-                    "resolved": "direct-assurance.inbenta.com"
-                }
-            ],
-            "responseHashes": [
-                "030cd5293ed8a8984bc89b926db7e95bdd6f22c072ab43dce2a10c68464ecee1",
-                "1c61967a80a445ff64031fca6afd240b1033670ce3e492bdacf121dc4110e0b9",
-                "0148d506ffb262565081893819c4a5020cee89e65816eef2d14d67d9a58e5c44",
-                "7aca6c45a316badf94a63301919111b41a1678c952df37fb96972da65be4c669",
-                "ab8a9e9d38107e38e7017c303a909edb4d2272ad0cd5436509ac1654972ac5bd"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "atlantic.fr",
-                "www.audiens.org",
-                "www.bforbank.com",
-                "www.direct-assurance.fr",
-                "www.monabanq.com",
-                "www.vueling.com"
-            ]
-        },
-        {
-            "rule": "inbenta\\.com\\/assets\\/js\\/inbenta\\.js",
-            "cookies": 0.000201,
-            "fingerprinting": 2,
-            "subdomains": [
-                "atlantic-web",
-                "audiens",
-                "bforbank",
-                "credit-agricole-compagnon",
-                "direct-assurance",
-                "monabanq",
-                "vueling"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 6,
-                "Navigator.prototype.appName": 6,
-                "Document.cookie getter": 3,
-                "Navigator.prototype.appCodeName": 6,
-                "Navigator.prototype.appVersion": 6,
-                "Navigator.prototype.cookieEnabled": 6,
-                "Navigator.prototype.userAgent": 6,
-                "Screen.prototype.width": 2,
-                "Event.prototype.timeStamp": 4,
-                "window.localStorage": 3,
-                "Navigator.prototype.onLine": 1,
-                "Screen.prototype.height": 1,
-                "Screen.prototype.pixelDepth": 1,
-                "Screen.prototype.colorDepth": 1,
-                "Navigator.prototype.language": 1,
-                "Navigator.prototype.javaEnabled": 1,
-                "Navigator.prototype.vendor": 1,
-                "Document.cookie setter": 1
-            },
-            "sites": 7,
-            "prevalence": 0.000703,
-            "cnames": [
-                {
-                    "original": "aide.direct-assurance.fr",
-                    "resolved": "direct-assurance.inbenta.com"
-                }
-            ],
-            "responseHashes": [
-                "86313094d67c70118d243b6492f3e5c9187c558f59bb7f7bf5f84ed3274db81f",
-                "38165e6c6e28a630b3c65d72b96c0b006ec07841e12de8f46fec02729a94343f",
-                "774cf0a7b0919dc91ea50c065fac98423e17c139fdd61e8b1413aa13e5c0e9b4",
-                "9f8b615b3578cf408930b200a2803e508b8cd0d40c15630117bc6913b4e50e82",
-                "4eb7907c8d000f448667d53d19b19c35ae674444cf12a706a3627db4feee4558",
-                "ca8be6b5989b1974e6ecd0c411c135ae3ea54d9195815c9093912982d48b10c3"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "inbenta-iaf-jsonp": {
-                    "ttl": null,
-                    "length": 26,
-                    "prevalence": 0.00010039152695512498,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "atlantic.fr",
-                "www.audiens.org",
-                "www.bforbank.com",
-                "www.credit-agricole.fr",
-                "www.direct-assurance.fr",
-                "www.monabanq.com",
-                "www.vueling.com"
-            ]
-        },
-        {
-            "rule": "inbenta\\.com\\/jsonp\\/inbenta\\.js",
-            "cookies": 0.0001,
-            "fingerprinting": 0,
-            "subdomains": [
-                "audiens",
-                "credit-agricole-compagnon",
                 "direct-assurance",
                 "monabanq",
                 "vueling"
@@ -176,16 +89,88 @@
                 }
             ],
             "responseHashes": [
-                "fc518d5f042e1bc931ea49b353c98dda0081c68cafd8f1b19bb772a46e74dcdf",
-                "cd79618a0035ce5e627785e323b9538e5201da8e1ba817d325c68d9feb85cf32",
-                "3a90544e35b833f6951fd6ade6c2414dfce50ebe5ee0ac5a2e74dc25e048d64a",
-                "cff9540eb0925464cf15778c147b83bb7e59781334f0be2adc901a52d586e252"
+                "1c61967a80a445ff64031fca6afd240b1033670ce3e492bdacf121dc4110e0b9",
+                "0148d506ffb262565081893819c4a5020cee89e65816eef2d14d67d9a58e5c44",
+                "7aca6c45a316badf94a63301919111b41a1678c952df37fb96972da65be4c669",
+                "ab8a9e9d38107e38e7017c303a909edb4d2272ad0cd5436509ac1654972ac5bd"
             ],
-            "type": "Script",
+            "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "audiens.org",
+                "atlantic.fr",
+                "www.bforbank.com",
+                "www.direct-assurance.fr",
+                "www.monabanq.com",
+                "www.vueling.com"
+            ]
+        },
+        {
+            "rule": "inbenta\\.com\\/assets\\/js\\/inbenta\\.js",
+            "cookies": 0.000502,
+            "fingerprinting": 2,
+            "subdomains": [
+                "atlantic-web",
+                "bforbank",
+                "credit-agricole-compagnon",
+                "direct-assurance",
+                "monabanq",
+                "vueling"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 5,
+                "Navigator.prototype.appName": 5,
+                "Document.cookie getter": 5,
+                "Navigator.prototype.appCodeName": 5,
+                "Navigator.prototype.appVersion": 5,
+                "Navigator.prototype.cookieEnabled": 5,
+                "Navigator.prototype.userAgent": 5,
+                "window.localStorage": 3,
+                "Navigator.prototype.onLine": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.pixelDepth": 1,
+                "Screen.prototype.colorDepth": 1,
+                "Navigator.prototype.language": 1,
+                "Navigator.prototype.javaEnabled": 1,
+                "Document.cookie setter": 3,
+                "Event.prototype.timeStamp": 3,
+                "Navigator.prototype.vendor": 1
+            },
+            "sites": 6,
+            "prevalence": 0.000602,
+            "cnames": [
+                {
+                    "original": "aide.direct-assurance.fr",
+                    "resolved": "direct-assurance.inbenta.com"
+                }
+            ],
+            "responseHashes": [
+                "38165e6c6e28a630b3c65d72b96c0b006ec07841e12de8f46fec02729a94343f",
+                "774cf0a7b0919dc91ea50c065fac98423e17c139fdd61e8b1413aa13e5c0e9b4",
+                "9f8b615b3578cf408930b200a2803e508b8cd0d40c15630117bc6913b4e50e82",
+                "4eb7907c8d000f448667d53d19b19c35ae674444cf12a706a3627db4feee4558",
+                "ca8be6b5989b1974e6ecd0c411c135ae3ea54d9195815c9093912982d48b10c3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "atidvisitor": {
+                    "ttl": 15724800,
+                    "length": 180,
+                    "prevalence": 0.00010037137408411121,
+                    "uniqueness": 1
+                },
+                "inbenta-iaf-jsonp": {
+                    "ttl": null,
+                    "length": 26,
+                    "prevalence": 0.00030111412225233364,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "atlantic.fr",
+                "www.bforbank.com",
                 "www.credit-agricole.fr",
                 "www.direct-assurance.fr",
                 "www.monabanq.com",
@@ -213,11 +198,11 @@
                 }
             ],
             "responseHashes": [
-                "2d6823c1ff5d540374c508f1d8089a8fad2c02533639e807ba8892a884c82cd3",
-                "e06a22839f66861eb4fe5ba96ac8f0fde5fcc28f000e66bf775063a8c9686399",
-                "6007708aecbaae52652ea7518f6b92ec0f8fa4cf906d9bae320892a286841c9d",
-                "3e3457dae5869f5f19a3194445257462942d251c6894c22d9588daca142358b9",
-                "b445e4e2098308838bf9ebea505ba7d569487b2ef1da5eed021e295226d626f2"
+                "a7d3dab3359fa8b9639acd87dc4b93565cfdad18601cfd568d22fb12181c7e7a",
+                "118c62aca4011db7951226ef6ba2044fcfc331242f38c2afaa8457837c0b3d07",
+                "c044af0d40287c47ad389a41431f745bd12eabe297d60a6e1339af368522dc22",
+                "6a1d76dc221e287f37c0f64a79c7730acd2665e29a91adc575b328cd4dd4fe51",
+                "3dd3ed643e4d8df7c749ce1c0bc6ac1d6267f69f518a6fbd03f25449aabbf1b9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -230,14 +215,48 @@
                 "www.maaf.fr",
                 "www.monabanq.com"
             ]
+        },
+        {
+            "rule": "inbenta\\.com\\/jsonp\\/inbenta\\.js",
+            "cookies": 0.0001,
+            "fingerprinting": 0,
+            "subdomains": [
+                "credit-agricole-compagnon",
+                "direct-assurance",
+                "monabanq",
+                "vueling"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [
+                {
+                    "original": "aide.direct-assurance.fr",
+                    "resolved": "direct-assurance.inbenta.com"
+                }
+            ],
+            "responseHashes": [
+                "cd79618a0035ce5e627785e323b9538e5201da8e1ba817d325c68d9feb85cf32",
+                "3a90544e35b833f6951fd6ade6c2414dfce50ebe5ee0ac5a2e74dc25e048d64a",
+                "cff9540eb0925464cf15778c147b83bb7e59781334f0be2adc901a52d586e252"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "credit-agricole.fr",
+                "www.direct-assurance.fr",
+                "www.monabanq.com",
+                "www.vueling.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000602,
+    "cookies": 0.000703,
     "types": {
         "Script": 20,
-        "Stylesheet": 6
+        "Stylesheet": 5
     },
     "nameservers": [
         "dns21.servidoresdns.net",

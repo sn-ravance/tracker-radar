@@ -7,10 +7,11 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000501,
-    "sites": 5,
+    "prevalence": 0.000401,
+    "sites": 4,
     "subdomains": [
         "charts.comdirect",
+        "push.onvista",
         "php5.s-broker"
     ],
     "cnames": [
@@ -21,6 +22,10 @@
         {
             "original": "idms.sbroker.de",
             "resolved": "php5.s-broker.mdgms.com"
+        },
+        {
+            "original": "push.onvista.de",
+            "resolved": "push.onvista.mdgms.com"
         }
     ],
     "fingerprinting": 1,
@@ -42,7 +47,7 @@
                 }
             ],
             "responseHashes": [
-                "99ea19749a94423a8e39a0843e0b10f29d0484ca5675ec9a177299393582b1ab"
+                "06f20cf08b4f471b1bfc749b352cfd78363ac3787e584e31316abdf3375d7d79"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -50,6 +55,31 @@
             "exampleSites": [
                 "comdirect.de",
                 "www.comdirect.de"
+            ]
+        },
+        {
+            "rule": "mdgms\\.com\\/files\\/js-api\\/1\\.6\\.4\\/blank\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "push.onvista"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "push.onvista.de",
+                    "resolved": "push.onvista.mdgms.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "onvista.de",
+                "www.onvista.de"
             ]
         },
         {
@@ -69,7 +99,7 @@
                 }
             ],
             "responseHashes": [
-                "1bd16353a7f6495edeaef5e4f2376ecd6815f1ffd1b40b2c90bdaf1475dd0b49"
+                "795a301a73c0e6df6fbef8f06bb507cb14d873ec78b700a465f999cd58b10d53"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -84,7 +114,8 @@
     "performance": {},
     "cookies": 0.0001,
     "types": {
-        "Image": 4
+        "Image": 4,
+        "Document": 2
     },
     "nameservers": []
 }

@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000602,
+    "sites": 6,
     "subdomains": [
         "global.stargate.cse"
     ],
@@ -21,34 +21,6 @@
     ],
     "fingerprinting": 0,
     "resources": [
-        {
-            "rule": "ss-inf\\.net\\/gasv3\\/api\\/v1\\/batch",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "global.stargate.cse"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [
-                {
-                    "original": "api-private.atlassian.com",
-                    "resolved": "global.stargate.cse.ss-inf.net"
-                }
-            ],
-            "responseHashes": [
-                "3f96c74846d55df29bbcd7837594612211f600110fcac55a29cf536f6073a410"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "atlassian.com",
-                "confluence.atlassian.com",
-                "www.atlassian.com"
-            ]
-        },
         {
             "rule": "ss-inf\\.net\\/metal\\/ingest",
             "cookies": 0,
@@ -70,7 +42,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "atlassian.com",
+                "bitbucket.org",
                 "www.atlassian.com"
             ]
         },
@@ -82,8 +54,8 @@
                 "global.stargate.cse"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [
                 {
                     "original": "api.atlassian.com",
@@ -91,13 +63,15 @@
                 }
             ],
             "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
                 "4c77f658ef5e2f949576fa5b76fc667097a122888791b209b156f7d12b764959"
             ],
-            "type": "Other",
+            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "atlassian.com",
+                "bitbucket.org",
+                "marketplace.atlassian.com",
                 "www.atlassian.com"
             ]
         },
@@ -118,14 +92,95 @@
                 }
             ],
             "responseHashes": [
-                "e77f4f5ad50214d4185b614e47c03e754a275de58caa86a1b731e34d43a9d763"
+                "319803407ffadc54a1bf3c521bed7d8c666c31c96834c8ee8f209a2da8b265e1"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bitbucket.org",
+                "www.atlassian.com"
+            ]
+        },
+        {
+            "rule": "ss-inf\\.net\\/flags\\/api\\/v1\\/frontend\\/featureFlagValues",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "global.stargate.cse"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.atlassian.com",
+                    "resolved": "global.stargate.cse.ss-inf.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "atlassian.com",
+                "marketplace.atlassian.com"
+            ]
+        },
+        {
+            "rule": "ss-inf\\.net\\/flags\\/api\\/v1\\/frontend\\/featureFlagValues",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "global.stargate.cse"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.atlassian.com",
+                    "resolved": "global.stargate.cse.ss-inf.net"
+                }
+            ],
+            "responseHashes": [
+                "beeab7f055fba393b0de64709c5c97032e31cce35d01f1f626d506b337eac8cd"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "atlassian.com",
-                "www.atlassian.com"
+                "marketplace.atlassian.com"
+            ]
+        },
+        {
+            "rule": "ss-inf\\.net\\/gasv3\\/api\\/v1\\/batch",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "global.stargate.cse"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [
+                {
+                    "original": "api-private.atlassian.com",
+                    "resolved": "global.stargate.cse.ss-inf.net"
+                }
+            ],
+            "responseHashes": [
+                "3f96c74846d55df29bbcd7837594612211f600110fcac55a29cf536f6073a410"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "atlassian.com",
+                "confluence.atlassian.com",
+                "jira.atlassian.com",
+                "marketplace.atlassian.com"
             ]
         }
     ],
@@ -133,10 +188,10 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 3,
-        "Preflight": 2,
-        "Other": 2,
-        "Fetch": 2
+        "Preflight": 4,
+        "Ping": 3,
+        "Fetch": 4,
+        "XHR": 4
     },
     "nameservers": []
 }

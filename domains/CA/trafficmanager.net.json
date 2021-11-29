@@ -9,14 +9,15 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00151,
-    "sites": 15,
+    "prevalence": 0.00141,
+    "sites": 14,
     "subdomains": [
-        "bingshoppingtool-t2app-prod",
         "nslc-prod-app",
+        "kaz-mtl1-tm-geoloc",
         "transat-nginx",
         "realm",
-        "naapimtm"
+        "naapimtm",
+        "jabpc-publicservice-tfm-prod"
     ],
     "cnames": [
         {
@@ -28,8 +29,16 @@
             "resolved": "transat-nginx.trafficmanager.net"
         },
         {
+            "original": "geoloc.kitco.com",
+            "resolved": "kaz-mtl1-tm-geoloc.trafficmanager.net"
+        },
+        {
             "original": "login.norton.com",
             "resolved": "nslc-prod-app.trafficmanager.net"
+        },
+        {
+            "original": "productcatalogueapi.jabra.com",
+            "resolved": "jabpc-publicservice-tfm-prod.trafficmanager.net"
         },
         {
             "original": "realm.hearstnp.com",
@@ -38,30 +47,6 @@
     ],
     "fingerprinting": 1,
     "resources": [
-        {
-            "rule": "trafficmanager\\.net\\/uet\\/tracking_script",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bingshoppingtool-t2app-prod"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-                "bf99156e7e0693e75e0b7fccc13d5e61f146d028bf1887ba20cebe20b5fb792c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bicyclewarehouse.com",
-                "www.spigen.com",
-                "www.vitasave.ca"
-            ]
-        },
         {
             "rule": "trafficmanager\\.net\\/sso\\/idp\\/SAML2",
             "cookies": 0.000201,
@@ -79,8 +64,8 @@
                 }
             ],
             "responseHashes": [
-                "ff574141d2bba059beee65af8cdae34afb9a5eb4ded70350a01044cbe383e3e2",
-                "b7e4f58f59a1b169e224c3d35be975ecfebcc5c5ef04784c3af43c5d8ee8ad27"
+                "b3c41d15d05ee406ac28c5a38d566c2beb4847dabb0864107fe9ded0d7e880e3",
+                "13a3853f77ebeb5a61f96c3f7ca7393c328ecd98df7b1fd7efcf3f70ca7c72ae"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -89,6 +74,33 @@
                 "norton.com",
                 "community.norton.com",
                 "support.norton.com"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "kaz-mtl1-tm-geoloc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "geoloc.kitco.com",
+                    "resolved": "kaz-mtl1-tm-geoloc.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [
+                "065db44fc09e793d51fca8ee8076358e09b368b6c91e121b511f4f525d0009cb"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kitco.com",
+                "online.kitco.com"
             ]
         },
         {
@@ -108,13 +120,13 @@
                 }
             ],
             "responseHashes": [
-                "efb21899ce502aa491b07f852f9f84cd804000c23541ea4b37348f869ed77de2"
+                "e080409a88d4eed1a53531dbf2a0f61caf0bfaa9735921d942647272fd1dcc84"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "__utmzz": 0.00020090406830738323,
-                "_ga": 0.00020090406830738323
+                "__utmzz": 0.000301174580865375,
+                "_ga": 0.00040156610782049993
             },
             "exampleSites": [
                 "airtransat.com",
@@ -168,11 +180,38 @@
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_li_dcdm_c": 0.00020090406830738323
+                "_li_dcdm_c": 0.00020078305391024997
             },
             "exampleSites": [
                 "chron.com",
                 "www.sfgate.com"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/api\\/users\\/guest\\/guid",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "naapimtm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.mps.ford.com",
+                    "resolved": "naapimtm.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [
+                "cff7d8b9030d3ec2a60eff67a1bf52a338334e6f9aea060d9890c3f17d900be4"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ford.com",
+                "www.ford.ca"
             ]
         },
         {
@@ -201,30 +240,55 @@
             ]
         },
         {
-            "rule": "trafficmanager\\.net\\/api\\/users\\/guest\\/guid",
-            "cookies": 0,
+            "rule": "trafficmanager\\.net\\/\\/v1\\/family\\/filter",
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
-                "naapimtm"
+                "jabpc-publicservice-tfm-prod"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "api.mps.ford.com",
-                    "resolved": "naapimtm.trafficmanager.net"
+                    "original": "productcatalogueapi.jabra.com",
+                    "resolved": "jabpc-publicservice-tfm-prod.trafficmanager.net"
                 }
             ],
-            "responseHashes": [
-                "a9b1abcce50b772e3a230f0b41f4f517e111a59fe16beec6aeb236b9f7965930"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ford.com",
-                "www.ford.ca"
+                "jabra.com",
+                "www.jabra.com"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/\\/v1\\/family\\/filter",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "jabpc-publicservice-tfm-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "productcatalogueapi.jabra.com",
+                    "resolved": "jabpc-publicservice-tfm-prod.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [
+                "95c5bd7f4e828eed17018344fae33fd51f902cb1009dc8b4445870b4831653f5"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jabra.com",
+                "www.jabra.com"
             ]
         }
     ],
@@ -232,17 +296,12 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000804,
+    "cookies": 0.000803,
     "types": {
-        "Script": 3,
         "Document": 7,
-        "XHR": 4,
-        "Preflight": 2
+        "XHR": 6,
+        "Preflight": 4,
+        "Fetch": 2
     },
-    "nameservers": [
-        "tm1.edgedns-tm.info",
-        "tm2.edgedns-tm.info",
-        "tm1.dns-tm.com",
-        "tm2.dns-tm.com"
-    ]
+    "nameservers": []
 }

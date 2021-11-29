@@ -7,11 +7,72 @@
     "prevalence": 0.0001,
     "sites": 1,
     "subdomains": [
+        "cdn",
         "vimp"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "weka-fachmedien\\.de\\/surveytracker\\/js\\/app\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2,
+                "Navigator.prototype.product": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "58877f5472161e709e1021a3f16fd24acd18147bb21597f67ea69f04df9d1e29"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "surveytracker": {
+                    "ttl": 86400,
+                    "length": 226,
+                    "prevalence": 0.00020060180541624874,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "elektroniknet.de",
+                "www.elektroniknet.de"
+            ]
+        },
+        {
+            "rule": "weka-fachmedien\\.de\\/js2\\/staging\\/app\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8f97748b35dab6775934b0c4f44b490d6e671750044aea957694ad4b3fc747bc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "elektroniknet.de",
+                "www.elektroniknet.de"
+            ]
+        },
         {
             "rule": "weka-fachmedien\\.de\\/api\\/getPicture",
             "cookies": 0.000201,
@@ -37,6 +98,7 @@
     "performance": {},
     "cookies": 0.0001,
     "types": {
+        "Script": 4,
         "Image": 2
     },
     "nameservers": [

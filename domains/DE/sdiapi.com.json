@@ -7,14 +7,42 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
+        "services",
         "reports"
     ],
     "cnames": [],
     "fingerprinting": 3,
     "resources": [
+        {
+            "rule": "sdiapi\\.com\\/bolt\\/1\\.0\\.3\\/bolt\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "services"
+            ],
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 3,
+                "Navigator.prototype.vendor": 3,
+                "Navigator.prototype.platform": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "7575daa118f338f4d91f419d3b2ca8895d6d96e16987d4e68df17f5dbb0fbf58"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blackrock.com",
+                "www.ishares.com",
+                "www.jack-wolfskin.de"
+            ]
+        },
         {
             "rule": "sdiapi\\.com\\/service\\/viceEvent",
             "cookies": 0,
@@ -23,8 +51,8 @@
                 "reports"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
@@ -33,7 +61,103 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ishares.com",
+                "blackrock.com",
+                "www.ishares.com",
+                "www.jack-wolfskin.de"
+            ]
+        },
+        {
+            "rule": "sdiapi\\.com\\/reporter\\/1\\.0\\.7\\.4\\/reporter\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "services"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "c4077609f98f376dd3159c9ccd1d7f298c14449baf14f215e644f50a7eecc792"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blackrock.com",
+                "www.ishares.com",
+                "www.jack-wolfskin.de"
+            ]
+        },
+        {
+            "rule": "sdiapi\\.com\\/reporter\\/1\\.0\\.7\\.4\\/reporter\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "services"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "0ddb197c040ceb4d9265073a4e6e33fe1e89ac219c10b24c0607447fd2641aa9"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blackrock.com",
+                "www.ishares.com",
+                "www.jack-wolfskin.de"
+            ]
+        },
+        {
+            "rule": "sdiapi\\.com\\/reporter\\/1\\.0\\.7\\.4\\/receiver\\.js",
+            "cookies": 0,
+            "fingerprinting": 3,
+            "subdomains": [
+                "services"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "SharedWorker.prototype.constructor": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "04d41517bb53b987e7324dbb58659cd20872d9fbff6c7e7ec0a04e4416104daf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blackrock.com",
+                "www.ishares.com",
+                "www.jack-wolfskin.de"
+            ]
+        },
+        {
+            "rule": "sdiapi\\.com\\/service\\/viceEvent",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "reports"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blackrock.com",
+                "www.ishares.com",
                 "www.jack-wolfskin.de"
             ]
         }
@@ -42,7 +166,10 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 2
+        "Script": 9,
+        "XHR": 3,
+        "Document": 3,
+        "Fetch": 3
     },
     "nameservers": [
         "ns1024.ui-dns.de",

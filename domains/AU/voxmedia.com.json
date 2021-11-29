@@ -11,30 +11,30 @@
     "sites": 2,
     "subdomains": [
         "phonograph2",
-        "auth"
+        "auth",
+        "optimize-stats"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "voxmedia\\.com\\/pickup\\.js",
-            "cookies": 0.000201,
+            "cookies": 0.000301,
             "fingerprinting": 2,
             "subdomains": [
                 "phonograph2"
             ],
             "apis": {
-                "Document.cookie getter": 2,
+                "Document.cookie getter": 3,
                 "window.localStorage": 3,
-                "Document.cookie setter": 2,
+                "Document.cookie setter": 3,
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2,
                 "Navigator.prototype.language": 2,
                 "Screen.prototype.colorDepth": 2,
                 "Navigator.prototype.mimeTypes": 2,
                 "Navigator.prototype.javaEnabled": 2,
-                "window.name": 2,
-                "Date.prototype.getTime": 1
+                "window.name": 2
             },
             "sites": 3,
             "prevalence": 0.000301,
@@ -45,45 +45,23 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_vm_uid": {
-                    "ttl": 63072007,
+                    "ttl": 63072010,
                     "length": 36,
-                    "prevalence": 0.00020074274816822243,
+                    "prevalence": 0.00020052135552436334,
                     "uniqueness": 1
                 },
                 "_vm_suid": {
-                    "ttl": 63072006,
+                    "ttl": 63072009,
                     "length": 36,
-                    "prevalence": 0.00020074274816822243,
+                    "prevalence": 0.00020052135552436334,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bloodyelbow.com",
-                "www.bloodyelbow.com",
-                "www.deseret.com"
-            ]
-        },
-        {
-            "rule": "voxmedia\\.com\\/sso\\/unison_request",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "auth"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "fc1f799d0c65454e35f972ff517fe260d2b423f7eb6b79e2076580d1afc4b27c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bloodyelbow.com",
-                "www.deseret.com"
+                "deseret.com",
+                "www.deseret.com",
+                "www.theringer.com"
             ]
         },
         {
@@ -104,8 +82,77 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bloodyelbow.com",
-                "www.deseret.com"
+                "deseret.com",
+                "www.theringer.com"
+            ]
+        },
+        {
+            "rule": "voxmedia\\.com\\/sso\\/unison_request",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "auth"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "deseret.com",
+                "www.theringer.com"
+            ]
+        },
+        {
+            "rule": "voxmedia\\.com\\/needle",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "phonograph2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "09f9f507e1b9603cb213244da6e536b850fc6934a4e28701a53a341562e62c34"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_vm_uid": 0.00020052135552436334,
+                "_vm_suid": 0.00020052135552436334
+            },
+            "exampleSites": [
+                "deseret.com",
+                "www.theringer.com"
+            ]
+        },
+        {
+            "rule": "voxmedia\\.com\\/alternatives",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "optimize-stats"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "979968ec72f62b76344d9511f11895e6eb1223456216f7026ab762e829b2f78a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "theringer.com",
+                "www.theringer.com"
             ]
         }
     ],
@@ -113,13 +160,14 @@
     "performance": {},
     "cookies": 0.000201,
     "types": {
-        "Script": 5,
-        "Document": 2
+        "Script": 7,
+        "Document": 2,
+        "Image": 2
     },
     "nameservers": [
+        "ns-1275.awsdns-31.org",
         "ns-1570.awsdns-04.co.uk",
         "ns-348.awsdns-43.com",
-        "ns-534.awsdns-02.net",
-        "ns-1275.awsdns-31.org"
+        "ns-534.awsdns-02.net"
     ]
 }

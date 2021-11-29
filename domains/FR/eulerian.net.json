@@ -7,16 +7,18 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.00271,
-    "sites": 27,
+    "prevalence": 0.00291,
+    "sites": 29,
     "subdomains": [
+        "sfr",
         "societegenerale-fr",
         "armandthiery.fr",
         "madeindesign-com",
         "orpi-com",
         "ricardocuisine-com",
         "voyages-sncf",
-        "photobox-fr"
+        "photobox-fr",
+        "mm"
     ],
     "cnames": [
         {
@@ -26,6 +28,10 @@
         {
             "original": "7lbd4.armandthiery.fr",
             "resolved": "armandthiery.fr.eulerian.net"
+        },
+        {
+            "original": "netc.sfr.fr",
+            "resolved": "sfr.eulerian.net"
         },
         {
             "original": "nmo1.orpi.com",
@@ -51,7 +57,34 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "eulerian\\.net\\/TEGENER7231\\.js",
+            "rule": "eulerian\\.net\\/col967a\\/-\\/1292547147",
+            "cookies": 0.0001,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sfr"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "netc.sfr.fr",
+                    "resolved": "sfr.eulerian.net"
+                }
+            ],
+            "responseHashes": [
+                "f37325ced9031343850b8e0c67ef8ad7c62296a4ba2aaea1b30b82893450b75a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sfr.fr",
+                "assistance.sfr.fr"
+            ]
+        },
+        {
+            "rule": "eulerian\\.net\\/SIONNE8014\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
@@ -67,7 +100,7 @@
                 }
             ],
             "responseHashes": [
-                "31faa85ac094254cc2ddcb94372adaa6e5a90126e0c4feaae1336b62bbed9397"
+                "2a1d224c394f2f9156da1556dfd89c539a7ae1486efad11261a04e20c25e9042"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -78,16 +111,18 @@
             ]
         },
         {
-            "rule": "eulerian\\.net\\/byB437\\.js",
+            "rule": "eulerian\\.net\\/wdW718\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
                 "armandthiery.fr",
-                "madeindesign-com"
+                "madeindesign-com",
+                "orpi-com",
+                "ricardocuisine-com"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000401,
             "cnames": [
                 {
                     "original": "7lbd4.armandthiery.fr",
@@ -96,31 +131,7 @@
                 {
                     "original": "uzd1.madeindesign.com",
                     "resolved": "madeindesign-com.eulerian.net"
-                }
-            ],
-            "responseHashes": [
-                "a214b96d228cda5c027904db26964ada08be3f8f53a1282a50ed626f68dfa8aa"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "armandthiery.fr",
-                "www.madeindesign.com"
-            ]
-        },
-        {
-            "rule": "eulerian\\.net\\/azA436\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "orpi-com",
-                "ricardocuisine-com"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
+                },
                 {
                     "original": "nmo1.orpi.com",
                     "resolved": "orpi-com.eulerian.net"
@@ -131,13 +142,17 @@
                 }
             ],
             "responseHashes": [
-                "4e7c60e99110a39474e901ebbc959cbdabfb4574fc6aa929bdfdd3fd64ad1888"
+                "c324bc6fffffa689a8cc02eb1a97febddd6f44715fea73e79db569971b5ef63a",
+                "0d6ae82d1f87d478059f837cea978dcb5f07c57e1e6e7438eb007a5a97836539",
+                "e727439f06c7d09bd979b2aa20144e09cca264df2cc63c2e0513160393b4abb1"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "orpi.com",
+                "armandthiery.fr",
+                "www.madeindesign.com",
+                "www.orpi.com",
                 "www.ricardocuisine.com"
             ]
         },
@@ -147,11 +162,21 @@
             "fingerprinting": 2,
             "subdomains": [
                 "voyages-sncf",
-                "photobox-fr"
+                "photobox-fr",
+                "mm"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "apis": {
+                "Navigator.prototype.appName": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.appVersion": 1,
+                "window.localStorage": 1,
+                "Screen.prototype.pixelDepth": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Navigator.prototype.plugins": 1
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [
                 {
                     "original": "v.oui.sncf",
@@ -163,22 +188,24 @@
                 }
             ],
             "responseHashes": [
-                "9c5c4852b6f3cafdcdc759c1bb9526415167a4e59e8df824d9b57e35681a5fdd"
+                "708c624d9aded7ea879396592a9535b82648b765df6a5f92fd5650853fa12f94",
+                "af98a8a230459dade0fd92dcde715e5dcd75539bb3034e93ef22c555ae406d74"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "oui.sncf",
-                "www.photobox.fr"
+                "www.photobox.fr",
+                "www.sofinco.fr"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00271,
+    "cookies": 0.00291,
     "types": {
-        "Script": 8
+        "Script": 11
     },
     "nameservers": []
 }

@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
         "peach-static",
         "pipe-collect"
@@ -15,13 +15,15 @@
     "resources": [
         {
             "rule": "ebu\\.io\\/peach-collector-1\\.x\\.min\\.js",
-            "cookies": 0,
+            "cookies": 0.000201,
             "fingerprinting": 2,
             "subdomains": [
                 "peach-static"
             ],
             "apis": {
                 "Navigator.prototype.doNotTrack": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.vendor": 2,
                 "Navigator.prototype.platform": 2,
@@ -35,7 +37,32 @@
                 "5fc44ca6f42bab7f2ba9e2b902c5dde018249448d25cd2e2185b9f441bb2e975"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_pc_c": {
+                    "ttl": 898131681,
+                    "length": 36,
+                    "prevalence": 0.00020074274816822243,
+                    "uniqueness": 1
+                },
+                "_pc_t": {
+                    "ttl": 898131681,
+                    "length": 16,
+                    "prevalence": 0.00020074274816822243,
+                    "uniqueness": 0.5
+                },
+                "_pc_lr": {
+                    "ttl": null,
+                    "length": 13,
+                    "prevalence": 0.00020074274816822243,
+                    "uniqueness": 1
+                },
+                "_pc_st": {
+                    "ttl": null,
+                    "length": 13,
+                    "prevalence": 0.00020074274816822243,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dw.com",
@@ -87,15 +114,15 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000301,
     "types": {
         "Script": 2,
         "XHR": 2,
         "Preflight": 2
     },
     "nameservers": [
-        "ns-1116.awsdns-11.org",
         "ns-247.awsdns-30.com",
-        "ns-969.awsdns-57.net"
+        "ns-969.awsdns-57.net",
+        "ns-1116.awsdns-11.org"
     ]
 }

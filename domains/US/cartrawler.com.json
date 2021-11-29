@@ -4,13 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000414,
-    "sites": 6,
+    "prevalence": 0.0000552,
+    "sites": 8,
     "subdomains": [
+        "otageo",
         "s7.ct",
         "ajaxgeo",
         "cars",
-        "otageo",
         "tag"
     ],
     "cnames": [
@@ -35,6 +35,10 @@
             "resolved": "s7.ct.cartrawler.com"
         },
         {
+            "original": "rentacar.edreams.net",
+            "resolved": "s7.ct.cartrawler.com"
+        },
+        {
             "original": "voiture.opodo.fr",
             "resolved": "s7.ct.cartrawler.com"
         }
@@ -42,15 +46,53 @@
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "cartrawler\\.com\\/cartrawlerota\\/json",
+            "cookies": 0.0000483,
+            "fingerprinting": 0,
+            "subdomains": [
+                "otageo"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000552,
+            "cnames": [],
+            "responseHashes": [
+                "c639e97711bb184011a06212ef05fb79e54ae678593cf0a8ce361b23ffe51bdd",
+                "0f9fbff800c7ae5b6c3d948ce0a8350f86021b6fac068ebad8ab7ecf43fcc01a",
+                "7b4cd0b1fd3155d950d0f82e953a46cddd2fd964be5da61d40bd5ec8f44b1d32",
+                "b87e24453de8ed585cf63ec18c6745e4de46409032d470522b8167ba1d853d3a",
+                "8434f9d0d55a327c63a44adad270afafba767044fd1a177d4cf18ec717b5f9c9",
+                "77481223b36047c28309997bef55cdce67b613c04573a26eabe5edf209f65534",
+                "ca56c860f096949be7c067087936b9936f48ce2e8ded583468feeb48efe154e8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "CT_PriorID": 0.000006903598155358573,
+                "step1ClientID": 0.000027614392621434293,
+                "_ga": 0.000027614392621434293
+            },
+            "exampleSites": [
+                "jetsmart.com",
+                "www.edreams.com",
+                "www.edreams.es",
+                "www.edreams.net",
+                "www.edreams.it",
+                "www.opodo.com",
+                "www.opodo.fr",
+                "www.opodo.de"
+            ]
+        },
+        {
             "rule": "cartrawler\\.com\\/search",
-            "cookies": 0.0000414,
+            "cookies": 0.0000483,
             "fingerprinting": 1,
             "subdomains": [
                 "s7.ct"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 7,
+            "prevalence": 0.0000483,
             "cnames": [
                 {
                     "original": "rentacar.edreams.com",
@@ -58,6 +100,10 @@
                 },
                 {
                     "original": "rentacar.edreams.es",
+                    "resolved": "s7.ct.cartrawler.com"
+                },
+                {
+                    "original": "rentacar.edreams.net",
                     "resolved": "s7.ct.cartrawler.com"
                 },
                 {
@@ -69,31 +115,35 @@
                     "resolved": "s7.ct.cartrawler.com"
                 },
                 {
-                    "original": "mietwagen.opodo.de",
+                    "original": "voiture.opodo.fr",
                     "resolved": "s7.ct.cartrawler.com"
                 },
                 {
-                    "original": "voiture.opodo.fr",
+                    "original": "mietwagen.opodo.de",
                     "resolved": "s7.ct.cartrawler.com"
                 }
             ],
             "responseHashes": [
-                "c41e203daf2176abb66860bf84036307ad48fd9563f7c364cde8499a88184c27",
-                "3088ee6e7f09fefd49185c4036ba9efbc1ed1ecc7344aafab7dcb178175901f2",
-                "cc3d190c1f207cd9f183882c0f98a296cb93b695a96b282e9e53469e1bc61a76",
-                "c7fab6f02b52933f02ac085d8e6b4609c26fce7e701e1bd9336c8b38f98b8668",
-                "59d5f89b6069804b04e59f4a41e3e3bba2d49b40ed4f54b287e8f23d568552a2"
+                "46972294ad5f7b27111306deaee0aea91f1025a9abc01f2ac47ad0323e1e8f8a",
+                "da49afa7e7c1bb91254bbd35843190c2c22891d96d93bf78f2cacd2af716f563",
+                "25de6633566fd7ca682645d874b882e0f5fbc5ca579037dce9c84cf03cbbae81",
+                "84ab3678f9e697ff247ef2191726014d3ebd15e05ea4f446daba51be37df3ae7",
+                "8484107837b0752a052f72f7d011e4b36f2c154b7548295919217ef62eaebecb",
+                "ee76743bc3db79bf9fdb23ca329c95983d3712b17aaceba4654d7fbbf7724e98"
             ],
             "type": "Document",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.000027614392621434293
+            },
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
+                "www.edreams.net",
                 "www.edreams.it",
                 "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.opodo.fr",
+                "www.opodo.de"
             ]
         },
         {
@@ -104,13 +154,14 @@
                 "ajaxgeo"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 5
+                "Navigator.prototype.userAgent": 6
             },
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 7,
+            "prevalence": 0.0000483,
             "cnames": [],
             "responseHashes": [
-                "daf89528ba46eaaa49ef21026fb9b5bc1e7d313d0248720d6e41d8e3d626fe15"
+                "f58fe2397df2ca335fc4370f8739ccbe53793dd972ae61dca52b5e0d4082153e",
+                "8202f06a1cf7c721a1c73db69bcc28411ac9c7444de7f169ef004e198a09dda0"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -118,10 +169,11 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
+                "www.edreams.net",
                 "www.edreams.it",
                 "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.opodo.fr",
+                "www.opodo.de"
             ]
         },
         {
@@ -132,11 +184,12 @@
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 7,
+            "prevalence": 0.0000483,
             "cnames": [],
             "responseHashes": [
-                "3307b311f9c5200e62662493c6527dc06287b7b01a0c93957fff6f0fd1146fdf"
+                "bf45f4f551c466cacf594ad48420833b25d6879fe4ded7c106cffebf7463bef6",
+                "add508dc2533c09b5f49776da94fb1f74df501cac3d5f82b5dc4d04708ad5410"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -144,25 +197,26 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
+                "www.edreams.net",
                 "www.edreams.it",
                 "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.opodo.fr",
+                "www.opodo.de"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/assets\\/microsites\\/edreams\\/css\\/custom1\\.414\\.0\\.css",
+            "rule": "cartrawler\\.com\\/assets\\/microsites\\/edreams\\/css\\/custom1\\.418\\.1\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "cars"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "42e0277cdfa70f0012643f9ee6fc19a7371d91fbd7342e9d30d1b548e6e79f9d"
+                "951cab7458a22a49dcc28ef60dbf73d4cb5c39b03c408fede4b89a1ab02b9473"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -170,6 +224,7 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
+                "www.edreams.net",
                 "www.edreams.it"
             ]
         },
@@ -181,8 +236,8 @@
                 "cars"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
                 "ce5e95503a864e0d17fd27693b89ebc3d643425a1aa6e63f6400f5a484e25455"
@@ -193,6 +248,7 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
+                "www.edreams.net",
                 "www.edreams.it"
             ]
         },
@@ -204,11 +260,12 @@
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 7,
+            "prevalence": 0.0000483,
             "cnames": [],
             "responseHashes": [
-                "818e1ddf06914b923a49d3de6f79035c77cbf9ff97d6cfef74ce6eb95d586f03"
+                "86a75e0d8899c747c6ffae3cb09092d2ce81de775602cafc2252da4c3ac5d1b7",
+                "e44b2a327efdbfababbdb55439ec538ff1126338c3b9ae39fbfcc62f8d896370"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -216,10 +273,11 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
+                "www.edreams.net",
                 "www.edreams.it",
                 "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.opodo.fr",
+                "www.opodo.de"
             ]
         },
         {
@@ -230,11 +288,12 @@
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 7,
+            "prevalence": 0.0000483,
             "cnames": [],
             "responseHashes": [
-                "3aa94e1dabc84fa661d8da3a99611deab4f11ea36801996c1da56ca8d9ced581"
+                "4bf9ed9de33818b7d547d48c8eae66a6df1adc4bf389fa2cbe07aa8d0de1a267",
+                "9a091b9ea6f58c501691473318b41cc2892ab341f02799797e0dde8e17aa6a2f"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -242,25 +301,26 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
+                "www.edreams.net",
                 "www.edreams.it",
                 "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.opodo.fr",
+                "www.opodo.de"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/8390a950909fd1929197\\.vendors\\.chunk\\.js",
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/c82c1f219581effb7c65\\.vendors\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "d94154e72333f1fcf747a230d38a4c8ffe87fc183a774c1b816d086778be01c6"
+                "9f1f34216a70ca48095574ccff84176a860121d211612e376deef632cf9f3036"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -268,10 +328,8 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.edreams.net",
+                "www.edreams.it"
             ]
         },
         {
@@ -282,16 +340,16 @@
                 "ajaxgeo"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 6,
-                "window.name": 6,
-                "Date.prototype.getTime": 6,
-                "Date.prototype.getTimezoneOffset": 6
+                "window.name": 7,
+                "Navigator.prototype.userAgent": 7,
+                "Date.prototype.getTime": 7,
+                "Date.prototype.getTimezoneOffset": 7
             },
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 7,
+            "prevalence": 0.0000483,
             "cnames": [],
             "responseHashes": [
-                "f748e9d0584f1d44991b1b8c8d85e041159d1aba89eacfd2ae020ab3b524722f"
+                "4f804839a147682387fd71a4dbc6c5b98ffb4b5e69f0404ec5c107ef494bd4cf"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -299,74 +357,73 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
+                "www.edreams.net",
                 "www.edreams.it",
                 "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.opodo.fr",
+                "www.opodo.de"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/fc94510687b7ef9d6ed2\\.ctscope~vendors\\.chunk\\.js",
-            "cookies": 0.0000345,
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/31a4c619eabb93df6154\\.ctscope~vendors\\.chunk\\.js",
+            "cookies": 0.0000276,
             "fingerprinting": 1,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 6,
-                "window.devicePixelRatio": 6,
-                "Screen.prototype.height": 6,
-                "Screen.prototype.width": 6,
-                "Date.prototype.getTime": 3,
-                "Document.cookie getter": 5,
-                "Document.cookie setter": 5
+                "Document.cookie getter": 4,
+                "Document.cookie setter": 4,
+                "Navigator.prototype.userAgent": 4,
+                "window.devicePixelRatio": 4,
+                "Screen.prototype.height": 4,
+                "Screen.prototype.width": 4,
+                "Date.prototype.getTime": 4
             },
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "9f34147d11a12dc7733d8da93f5b656490af6e80709d8f2bdae4a4d8115a8108"
+                "3de9ed4c1d330a8bf2fff7a0d81281f9c9c8c12a93999c655ce7f31d7e8a5460"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "CT_browserSessionID": {
                     "ttl": null,
                     "length": 15,
-                    "prevalence": 0.00003452085059375863,
+                    "prevalence": 0.000027614392621434293,
                     "uniqueness": 1
                 },
                 "step1ClientID": {
                     "ttl": null,
                     "length": 6,
-                    "prevalence": 0.000013808340237503452,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000027614392621434293,
+                    "uniqueness": 0.25
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.edreams.net",
+                "www.edreams.it"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/edde1a984da41da1907c\\.ctcommon~err-handler~vendors~main-all\\.chunk\\.js",
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/d79835037fe7c5442360\\.ctcommon~err-handler~vendors~main-all\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {
-                "Date.prototype.getTime": 6
+                "Date.prototype.getTime": 4
             },
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "83ab9a99d7bf04b7215cdb27c480d93f03ef0c1dd3cfa007b64e3f1de09208b3"
+                "7199d3ae41b206893393d7f220286e7caa16c37f3499134c680d031d2e79001c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -374,28 +431,26 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.edreams.net",
+                "www.edreams.it"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/584e764775439e625bc4\\.ctcommon~vendors~main-all\\.chunk\\.js",
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/78eb2df4b87ee35d3c92\\.ctcommon~vendors~main-all\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {
-                "window.localStorage": 6,
-                "window.sessionStorage": 6
+                "window.sessionStorage": 4,
+                "window.localStorage": 4
             },
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "13ad506724774ac25e52f6e86c7d1d9e2b1c37e20d1e6c7d0150f189415b2d93"
+                "03ebbe81d5a41350284b87d5c8821537b76c35d5715b61f1d719585ac40b5a48"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -403,10 +458,8 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.edreams.net",
+                "www.edreams.it"
             ]
         },
         {
@@ -417,33 +470,35 @@
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [
-                "b89385348eeaedafb613e0edd89dd5647bc1f47242bbf799a43c5da1cbdb37dd"
+                "4ba7dcdd07164861f5867c547a9e309b06ebc318c1db724ee98638dc63f1f695",
+                "1a096a9c902d3166ca9c49ce67361e80367ff48952deec2c1bda18459b4a00a3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "edreams.com",
+                "www.edreams.net",
                 "www.opodo.com"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/f813af5eced912ab6657\\.ctscope~main-all\\.chunk\\.js",
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/ceba3197eb7cb362b9f4\\.ctscope~main-all\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "5d380fd032122affd51ff92473e2b71bfd71f263a512a4aed76ee28a2cddc210"
+                "2db3bbb54e8a71b07d453f2bd69b2c402814ad5892cae867bf338a91e9f902e3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -451,28 +506,50 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.edreams.net",
+                "www.edreams.it"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/fe01ddc14bc89f08b406\\.main-desktop\\.chunk\\.js",
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/3a3a0538f43e1b308856\\.ctcommon~main-all~shared\\.demand-urgency-header~shared\\.super-filter~shared\\.included-items-banner\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000276,
+            "cnames": [],
+            "responseHashes": [
+                "584307783f1c9fe700b65931025f8b3d0d029627bbe221ab284daf2e8c1a0bee"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "edreams.com",
+                "www.edreams.es",
+                "www.edreams.net",
+                "www.edreams.it"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/4512ac8461f1d4e71025\\.main-desktop\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 6,
-                "Date.prototype.getTime": 6
+                "Date.prototype.getTime": 4,
+                "Navigator.prototype.userAgent": 3
             },
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "da957207b53a7fed26a974efc89004368db890c03658c85d7eb85f529fbea81b"
+                "94012de6dc7f322eb9f03fe340b06cd40ba108ca447ea805bd54e4ef1e1cc7c5"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -480,25 +557,23 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.edreams.net",
+                "www.edreams.it"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/453095b92347f296e56d\\.ctcommon~main-all~shared\\.demand-urgency-header~shared\\.super-filter~shared\\.included-items-banner\\.chunk\\.js",
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/cc0262bd56c95f1ae4a9\\.470\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "a36e121a318222941d127b7a6c72abbb207dc71d3bfee0d1822f94e0deb0b966"
+                "5ae26dc295dd09d0112ba2bc76bda28397112e84a79e392c326c29a6fab88b31"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -506,25 +581,23 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.edreams.net",
+                "www.edreams.it"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/77fb5d3526f4dda8e3be\\.471\\.chunk\\.js",
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/e02886e8ae94276a8ff2\\.592\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "e1fe205d094281991163806e0dcca54660ff46330f01c941e47bd36990f067da"
+                "ec72bba157680321f275965e09f6ebf50b37ec4c2a415168a8ead827e1a4f36a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -532,25 +605,23 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.edreams.net",
+                "www.edreams.it"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/e59a9bc8879278e72bd0\\.593\\.chunk\\.js",
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/16b61dc93f62275d57f2\\.492\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "2fa02c950e458927572583be1896a96442dbd8cf9168cfaeead17440fc7add8e"
+                "4e20d224c2d2830f68ace8ef5a15851574744f8683eb3f42e2920cc5ec167603"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -558,25 +629,23 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.edreams.net",
+                "www.edreams.it"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/4f351ae94d2c5cdb6370\\.493\\.chunk\\.js",
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/b19eb2f3cc2f7dcaeae4\\.474\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "a414d2f808ccc904462e56beb8c7d0112bba3972e1c689af762f9d5be0f5d57b"
+                "eef50049569e8423c63a0d140fbe94ed558a2f1ef550a8462a1a071e80f6e0c2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -584,51 +653,23 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.edreams.net",
+                "www.edreams.it"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/0924950af382e4781c58\\.475\\.chunk\\.js",
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.217\\.0\\/app-desktop\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "324811960a1a3a33e5293296fbef466a550fcfd167e7c9994596361ca63d9045"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "edreams.com",
-                "www.edreams.es",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
-            ]
-        },
-        {
-            "rule": "cartrawler\\.com\\/webapp-abe-5\\.213\\.1\\/app-desktop\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ajaxgeo"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000414,
-            "cnames": [],
-            "responseHashes": [
-                "3307b311f9c5200e62662493c6527dc06287b7b01a0c93957fff6f0fd1146fdf"
+                "bf45f4f551c466cacf594ad48420833b25d6879fe4ded7c106cffebf7463bef6"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -636,25 +677,23 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.edreams.net",
+                "www.edreams.it"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/09c19a8828f6b20c2436\\.18\\.chunk\\.js",
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/be7d850ac1fa924b4397\\.18\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "609aa50602f983abc7a75f06b1e88325f30d128270b6bb0aa7277fd1ed3704ee"
+                "bdb5ddc1f5589d044c0b1f274e6ec4cc409410f50cf49f2c43689e2d100d1077"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -662,57 +701,23 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.edreams.net",
+                "www.edreams.it"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/cartrawlerota\\/json",
-            "cookies": 0.0000345,
-            "fingerprinting": 0,
-            "subdomains": [
-                "otageo"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000414,
-            "cnames": [],
-            "responseHashes": [
-                "13b36f9b58176de21cd8f6e40ea891301045bbbbc4e270732741922dabd9cbc6",
-                "6c38601cf89a8366f3971ce08995cd5b096b10a944068d379c1ac080f3228700",
-                "47db5c59a57e6dcb05ae02cf7f6d893e894d529441132f3e8c5f99b49272ff90",
-                "3fd3ea3caa46593b0bf81683d8523a0d53ec1758792de425e7a591736586506f",
-                "0698a66c8593ec5c12ff662ccef0cffa1a656520ff5b03e1043909283f349076"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "step1ClientID": 0.000013808340237503452
-            },
-            "exampleSites": [
-                "edreams.com",
-                "www.edreams.es",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
-            ]
-        },
-        {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/ba22866cdcee8f0f6b99\\.shared\\.ranking-parser\\.chunk\\.js",
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/27355a74dcd8d6be6c14\\.shared\\.ranking-parser\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 7,
+            "prevalence": 0.0000483,
             "cnames": [],
             "responseHashes": [
-                "95eb456e70eabfe1a15eae2a214ca0bd10b74c4a610e143581dc5a705f65e52e"
+                "2843f5c194040d4d121606368703ecf1b2d34ba7d118d903be23ad106aa6cc0f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -720,25 +725,26 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
+                "www.edreams.net",
                 "www.edreams.it",
                 "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.opodo.fr",
+                "www.opodo.de"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/f0747dde40f6131c9396\\.shared\\.merchandising-block\\.chunk\\.js",
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/2758138dfbab2f5624f8\\.shared\\.merchandising-block\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 7,
+            "prevalence": 0.0000483,
             "cnames": [],
             "responseHashes": [
-                "522a740d4c82a001a3dafe8ac1062a34234445100c9d17b42d07f27bb4d09805"
+                "480264d16a3cfa4fd292b563693a56ed4b1710d4b6c1740f439ee108d22f8cbd"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -746,25 +752,26 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
+                "www.edreams.net",
                 "www.edreams.it",
                 "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.opodo.fr",
+                "www.opodo.de"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/8c345d752c155d579170\\.shared\\.demand-urgency-header\\.chunk\\.js",
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/0820c2f979b767b6c77f\\.shared\\.demand-urgency-header\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "090032313542094a96933143090915c738f73a401d25ebfcede2b70f9399baa2"
+                "301652a841eec89bb07c776fa5669983574fb253de43e7063d67c5740e3c6843"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -772,25 +779,23 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.edreams.net",
+                "www.edreams.it"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/bd1c5766427479c31374\\.shared\\.social-proofing\\.chunk\\.js",
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/b94024dfbb4ab9e2e6b6\\.shared\\.social-proofing\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 7,
+            "prevalence": 0.0000483,
             "cnames": [],
             "responseHashes": [
-                "1654f14aa150bbb61244ebc147916eca8e21751e06ed2081729fd1d89fed96e0"
+                "bdff1a2d8e38c8e85163edb4f05f142b84d9dee068b1e00b316d056f481fd5f3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -798,25 +803,26 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
+                "www.edreams.net",
                 "www.edreams.it",
                 "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.opodo.fr",
+                "www.opodo.de"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/6707133f8f7dbe433ea6\\.shared\\.countdown-timer\\.chunk\\.js",
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/355f9bd5bde801268695\\.shared\\.countdown-timer\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 7,
+            "prevalence": 0.0000483,
             "cnames": [],
             "responseHashes": [
-                "7f33f6f250e6e1286adaa90a29aa67a68c05d34b9f032d66924e22d00bb979c4"
+                "0278c6d58f7903d58aaf643c3fcd432d3f3d470aed0688bc1318c3a250f9e715"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -824,25 +830,26 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
+                "www.edreams.net",
                 "www.edreams.it",
                 "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.opodo.fr",
+                "www.opodo.de"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-5\\.213\\.1\\/langs\\/build-hash\\.json",
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.217\\.0\\/langs\\/build-hash\\.json",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "3aa94e1dabc84fa661d8da3a99611deab4f11ea36801996c1da56ca8d9ced581"
+                "4bf9ed9de33818b7d547d48c8eae66a6df1adc4bf389fa2cbe07aa8d0de1a267"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -850,14 +857,12 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.edreams.net",
+                "www.edreams.it"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-5\\.213\\.1\\/langs\\/desktop\\/en\\.js",
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.217\\.0\\/langs\\/desktop\\/en\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -868,29 +873,29 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "b89385348eeaedafb613e0edd89dd5647bc1f47242bbf799a43c5da1cbdb37dd"
+                "4ba7dcdd07164861f5867c547a9e309b06ebc318c1db724ee98638dc63f1f695"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "edreams.com",
-                "www.opodo.com"
+                "www.edreams.net"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/657d9f0370fd42fca530\\.components\\.search-cars-form\\.chunk\\.js",
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/aa6bc6d615ad0a955685\\.components\\.search-cars-form\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 7,
+            "prevalence": 0.0000483,
             "cnames": [],
             "responseHashes": [
-                "75574e0a3547bcbc23027cf67f81f56d042668218db60dcb79f8563c7a7f8951"
+                "47d3c1d10eaefa32cae6ddde6b620473327a675dd374f74548572d7a6f8c5f27"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -898,25 +903,26 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
+                "www.edreams.net",
                 "www.edreams.it",
                 "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.opodo.fr",
+                "www.opodo.de"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/9f0230908c9a2dc20f8d\\.316\\.chunk\\.js",
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/2fdcb72f1cf2abc34f02\\.315\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 7,
+            "prevalence": 0.0000483,
             "cnames": [],
             "responseHashes": [
-                "6d2577f5efafa950f1c812711b033bc37a3e58fde9bd1bc891c4eb068629f19b"
+                "98ba766332ce44c91391c6dfef0e3331e71d4b603d6727109b447513e3826061"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -924,25 +930,26 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
+                "www.edreams.net",
                 "www.edreams.it",
                 "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.opodo.fr",
+                "www.opodo.de"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/4436001a5f0493a9d174\\.488\\.chunk\\.js",
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/a443c928b0eb37919e60\\.487\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "70a8bf6b7a050d7e7046ae672b037571720ef7687fd89b65618ae1a33c7b3011"
+                "3dd349d03c9f4ad2140cb456689660c1975515505f5e9b2caa7a437532db1751"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -950,25 +957,23 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.edreams.net",
+                "www.edreams.it"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/6bb9631004c610aab283\\.499\\.chunk\\.js",
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/f7ed455f81c8ae955465\\.498\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "c2de6a10a070d7de63f911b537f2e113b9584e93705947eb7202fe0dbc2d81b5"
+                "c8d45e476e3357c004b7e7e43930aac8359c98ebe03712a29d438b26e7ba5aa8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -976,25 +981,23 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.edreams.net",
+                "www.edreams.it"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/26d654f7f0940b8fb976\\.533\\.chunk\\.js",
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/a4576d7976e28f94c855\\.532\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "904c21fdf7a57510c464966814c258f2497186392fa4314c6cb2b1fea9ee644c"
+                "95ce55d575caa8d07d2cc195287f851c0b730bdaed2820b9cd0e52f5f6a996d7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1002,25 +1005,23 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.edreams.net",
+                "www.edreams.it"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/16af03e17a59b3618509\\.295\\.chunk\\.js",
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/e4bc0e843b4010b27d9d\\.294\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "9d64848009ffe7f3210570e4ffcfec3b47db0c3172dc86ef56646173eddf8477"
+                "ab67b236a88f25d5af2d863457d924448f57591952e57594d5ab2a09bb5b86ed"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1028,25 +1029,23 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.edreams.net",
+                "www.edreams.it"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/be6c4e1e7bf0bb251715\\.components\\.ct-time-picker-custom\\.chunk\\.js",
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/c68c95f8b880e1e3bf35\\.components\\.ct-time-picker-custom\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "3919e73c96f2011e54ae6f36eac60b331e6bb1f9bfa617c30dfb8eca10ef8a3a"
+                "ef66aba9aa2d37264f31ca43bd990bd2eb7cb4abac5ae1cfd60fa65b8ec24f73"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1054,25 +1053,23 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.edreams.net",
+                "www.edreams.it"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/f4177d95fa5b8571f637\\.486\\.chunk\\.js",
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/5ae8b0d7831e94487772\\.485\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "c644d2e455c21ee91eef5d12918dcc63a68e98da38dde90a7488baa7e6f031ad"
+                "abb4e800cd4905a9fc2e12502a30b9bb82000458a81a1b4f3b69d4b9a6501085"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1080,25 +1077,23 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.edreams.net",
+                "www.edreams.it"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/af8eda334eed90dd10a9\\.component\\.search-button\\.chunk\\.js",
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/9110ed0a7cdc2dbad753\\.component\\.search-button\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "0cb52b29c9c2c4e96352ee18bc31c25fd2bcb12fef01d9607ff579ee448fca23"
+                "6ff36019376693adaddc4fda61156a576a0ed6772cbebab7b40990b6bebd7ec6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1106,25 +1101,23 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.edreams.net",
+                "www.edreams.it"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/f6543fa0aca0cebfc693\\.473\\.chunk\\.js",
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/8cbed415c8c7bccc96db\\.472\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 4,
+            "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "695ebbdb691ccf26b9aaac26f950d0da0f3965f98d31ea50da35f9494a2929f9"
+                "0c74f757e2c714091881c84654463b203f0b044e23918e94717b6f4f7cbb00f2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1132,14 +1125,34 @@
             "exampleSites": [
                 "edreams.com",
                 "www.edreams.es",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.edreams.net",
+                "www.edreams.it"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/assets\\/microsites\\/opodo\\/css\\/custom1\\.414\\.0\\.css",
+            "rule": "cartrawler\\.com\\/",
+            "cookies": 0.0000069,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tag"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "b6f8016d86e99bf3c623edc23965154f99210f89e3b4b656d73ccbffa40e04e9"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "edreams.com",
+                "www.edreams.es"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/assets\\/microsites\\/opodo\\/css\\/custom1\\.418\\.1\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1157,8 +1170,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.opodo.fr",
+                "www.opodo.de"
             ]
         },
         {
@@ -1180,63 +1193,571 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "opodo.com",
-                "www.opodo.de",
-                "www.opodo.fr"
+                "www.opodo.fr",
+                "www.opodo.de"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/",
-            "cookies": 0.0000138,
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/52e59734bdfefa7f1665\\.vendors\\.chunk\\.js",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "tag"
+                "ajaxgeo"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000207,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "2bb0bcab4a746d4bf574f91ba845cd74d3be5d1078b1994f7f1deac7c85da14a"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "opodo.de",
-                "www.opodo.fr"
+                "opodo.com",
+                "www.opodo.fr",
+                "www.opodo.de"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/f18fe991de2c57ac6364\\.ctscope~vendors\\.chunk\\.js",
+            "cookies": 0.0000207,
+            "fingerprinting": 1,
             "subdomains": [
-                "tag"
+                "ajaxgeo"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 3,
+                "window.devicePixelRatio": 3,
+                "Screen.prototype.height": 3,
+                "Screen.prototype.width": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [
-                "f34d084320dc2d48ae604fe154d3d44bc36c0d070ce4093871226c5aa70b5d07"
+                "b3212235541cd55f80e2a51a73436d4803e276be6b4a9ec605b7d3142a203f14"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "CT_browserSessionID": {
+                    "ttl": null,
+                    "length": 16,
+                    "prevalence": 0.000020710794466075717,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opodo.com",
+                "www.opodo.fr",
+                "www.opodo.de"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/87d04f8ed529f050157b\\.ctcommon~err-handler~vendors~main-all\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "e883625b6cd0a0b23186e677e9ec1b2cc3eb0ea9536bf7761ceb1f56da6ed106"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opodo.com",
+                "www.opodo.fr",
+                "www.opodo.de"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/56a8f8577576b8d10989\\.ctcommon~vendors~main-all\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {
+                "window.sessionStorage": 3,
+                "window.localStorage": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "a3ba519720f08d5283e8b8c27917543e6aa2acb0162b1ff9b93f00abe6cf47b7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opodo.com",
+                "www.opodo.fr",
+                "www.opodo.de"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/35029cacc1bb039cc619\\.ctscope~main-all\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "31c2536b2d5f0bada6786b02a317ded4e703bc313c3e8494cbcfb603881d13a9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opodo.com",
+                "www.opodo.fr",
+                "www.opodo.de"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/df3183830be1d4cc787a\\.main-desktop\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Date.prototype.getTime": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "61ede3113637dc3460cd226a3859b1c5d2da20d199f69db5d1d2ef33d8f59c00"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opodo.com",
+                "www.opodo.fr",
+                "www.opodo.de"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/0ee5d2c1d6004d3e5d82\\.ctcommon~main-all~shared\\.demand-urgency-header~shared\\.super-filter~shared\\.included-items-banner\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "2843a0d52a2f684347f0cd77f802b270b6189427d32c5d49393165d8b1d3cb76"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opodo.com",
+                "www.opodo.fr",
+                "www.opodo.de"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/ae4227097a10ac396340\\.470\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "21b09b03436f4b76e4b3a5f460a9bf07f1f32e1fb516938342062e359c7a5b86"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opodo.com",
+                "www.opodo.fr",
+                "www.opodo.de"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/e4757d546fc342179f78\\.592\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "9d162845011c846ace57b66ef3ff9d6993dafd2e41a0d64ffe4996a862aad3f4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opodo.com",
+                "www.opodo.fr",
+                "www.opodo.de"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/8ff024a6f1441beb580a\\.492\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "1b0b9aa898efea12d38e2e2033d38f5c7fdda2b174f2d24aeed57bae77123a7c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opodo.com",
+                "www.opodo.fr",
+                "www.opodo.de"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/79d03f9b5863abcd469b\\.474\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "db0d848ae681d69882c2726eee86d91529caa2959c4d1f8a937e55805f3c70ac"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opodo.com",
+                "www.opodo.fr",
+                "www.opodo.de"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.218\\.0\\/app-desktop\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "add508dc2533c09b5f49776da94fb1f74df501cac3d5f82b5dc4d04708ad5410"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opodo.com",
+                "www.opodo.fr",
+                "www.opodo.de"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/9afa86162353cc026b52\\.18\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "7f545088f88d6a67cbcb99847491803f160aa5b9f38f37cbf52241f43a711d7d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opodo.com",
+                "www.opodo.fr",
+                "www.opodo.de"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/339357b9c4d48e9c06a3\\.shared\\.demand-urgency-header\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "ca0d220b59b036a012488325c3a70f75a5aef646e8ef36d94f12ba9e69d8a855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opodo.com",
+                "www.opodo.fr",
+                "www.opodo.de"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.218\\.0\\/langs\\/build-hash\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "9a091b9ea6f58c501691473318b41cc2892ab341f02799797e0dde8e17aa6a2f"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "opodo.de",
-                "www.opodo.fr"
+                "opodo.com",
+                "www.opodo.fr",
+                "www.opodo.de"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/7d630639ba4ae5ee88a1\\.487\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "cedf38cb18619c6e0ca1f8e74e7bc629b84c32a63d07d91edbff1da70f7f4599"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opodo.com",
+                "www.opodo.fr",
+                "www.opodo.de"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/bfefec845cba9ea46641\\.498\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "258a72ed154a8912929a4c7f20e41e03181ec344c30ffd14fd6a2878411a575b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opodo.com",
+                "www.opodo.fr",
+                "www.opodo.de"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/52b13beaa439e19a8c53\\.532\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "8429ff8523db11f8269b718ec3dc85536386bb5bacb5165a39af61cf69cecab8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opodo.com",
+                "www.opodo.fr",
+                "www.opodo.de"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/93676893540261f9c67c\\.294\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "f2f9ce35650836100b92b8a8af3b7966690937c58d1a4d83105c24ced0e098ca"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opodo.com",
+                "www.opodo.fr",
+                "www.opodo.de"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/b66729e77fb3d29a9a22\\.components\\.ct-time-picker-custom\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "4274ff356a8797592b38748afaa6fcc6703210f4e9e01c9c85e7975db3f83e9a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opodo.com",
+                "www.opodo.fr",
+                "www.opodo.de"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/45065c1e5064cebd6a31\\.485\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "21fb83caa5dd9255f4bec717696490f23db5b8baa6058977127a1eac78cde6dd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opodo.com",
+                "www.opodo.fr",
+                "www.opodo.de"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/553b16fe1ebcdcefeab0\\.component\\.search-button\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "31a7cafad6fbc7496a3a51e11a4ac5062d309c164e2bbb6c23210452fd5a9ab7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opodo.com",
+                "www.opodo.fr",
+                "www.opodo.de"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/f774b038065320b9ca5b\\.472\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "e07b1b2b4666f03d5f467417d1414ae05d72afe68df8e0db6710ca18a5503809"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opodo.com",
+                "www.opodo.fr",
+                "www.opodo.de"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000414,
+    "cookies": 0.0000552,
     "types": {
-        "Document": 6,
-        "Script": 184,
-        "Stylesheet": 18,
-        "Fetch": 20,
-        "XHR": 6,
-        "Preflight": 2
+        "XHR": 8,
+        "Document": 7,
+        "Script": 215,
+        "Stylesheet": 21,
+        "Fetch": 23
     },
     "nameservers": [
         "ns1.p05.dynect.net",

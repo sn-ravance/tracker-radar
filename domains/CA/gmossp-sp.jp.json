@@ -18,7 +18,7 @@
     "resources": [
         {
             "rule": "gmossp-sp\\.jp\\/ads\\/loader\\.js",
-            "cookies": 0,
+            "cookies": 0.0001,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn"
@@ -26,22 +26,30 @@
             "apis": {
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.appVersion": 2,
+                "Document.cookie getter": 2,
                 "window.sessionStorage": 2,
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2,
                 "window.localStorage": 2,
                 "Navigator.prototype.platform": 2,
                 "Date.prototype.getTime": 2,
-                "Document.cookie getter": 1
+                "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "7824e008e94c37c50a44fd246b856e7d81b730f71bff92ee991c5487cfababc7"
+                "10bfac4502b9647e8d2fc43fb93ff566db23c54700eda4db2d2fa5f2b5576ffe"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "GMOSSP_USER": {
+                    "ttl": 630720015,
+                    "length": 16,
+                    "prevalence": 0.00010039152695512498,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "weblio.jp",
@@ -60,12 +68,13 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "43d957408d38eb34c72dcc291ed21bdeee1e9ef94b4071715e148ec54ca1c32c"
+                "01c333b7585919194655f9438af132b1d86b2e6bdc5a1111ae087e3eb55d4e0f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "cookies.js": 0.00020090406830738323
+                "GMOSSP_USER": 0.00020078305391024997,
+                "cookies.js": 0.00020078305391024997
             },
             "exampleSites": [
                 "weblio.jp",
@@ -74,24 +83,45 @@
         },
         {
             "rule": "gmossp-sp\\.jp\\/ads\\/sync\\.html",
-            "cookies": 0,
+            "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [
                 "sp"
             ],
             "apis": {
                 "Navigator.prototype.cookieEnabled": 2,
+                "Document.cookie getter": 2,
                 "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "83b40badb264084b9e5e16096321f9cd2f17e8eabb134118dcb610340e792134"
+                "33cfbc5515f6f92dfc602800aa041319d952813704ff12f122943ff65bb9f1bf"
             ],
             "type": "Document",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "sync_interval": {
+                    "ttl": 86421,
+                    "length": 10,
+                    "prevalence": 0.00020078305391024997,
+                    "uniqueness": 0.5
+                },
+                "dsp_freakout": {
+                    "ttl": 2592021,
+                    "length": 23,
+                    "prevalence": 0.00020078305391024997,
+                    "uniqueness": 0.5
+                },
+                "dmp_im": {
+                    "ttl": 8035221,
+                    "length": 23,
+                    "prevalence": 0.00020078305391024997,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "weblio.jp",
@@ -100,7 +130,7 @@
         },
         {
             "rule": "gmossp-sp\\.jp\\/ads\\/sync\\.ad",
-            "cookies": 0.000201,
+            "cookies": 0.0001,
             "fingerprinting": 0,
             "subdomains": [
                 "sp"
@@ -110,7 +140,7 @@
             "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "afe0dcfca292a0fae8bce08a48c14d3e59c9d82c6052ab6d48a22ecc6c48f277"
+                "6b3da89922d333d106b84fefeebd7b16bfebf4cfbd7bef37fa10a47c471ae64c"
             ],
             "type": "Image",
             "firstPartyCookies": {},

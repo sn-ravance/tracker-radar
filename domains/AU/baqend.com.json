@@ -4,14 +4,83 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
-        "bmw.app"
+        "bmw.app",
+        "swarovski.app"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "baqend\\.com\\/v1\\/speedkit\\/install\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 2,
+            "subdomains": [
+                "bmw.app",
+                "swarovski.app"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "window.indexedDB": 2,
+                "window.devicePixelRatio": 1,
+                "Screen.prototype.width": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "a53f9dd7f763624f05669c3fa572dd9688660c399b7ebdc5dc871e0600208690"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "baqend-speedkit-ab-test-info": {
+                    "ttl": 15552007,
+                    "length": 56,
+                    "prevalence": 0.00020052135552436334,
+                    "uniqueness": 1
+                },
+                "baqend-speedkit-user-id": {
+                    "ttl": 15552007,
+                    "length": 25,
+                    "prevalence": 0.00020052135552436334,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bmw.com",
+                "www.swarovski.com"
+            ]
+        },
+        {
+            "rule": "baqend\\.com\\/v1\\/rum\\/pi",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bmw.app",
+                "swarovski.app"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bmw.com",
+                "www.swarovski.com"
+            ]
+        },
         {
             "rule": "baqend\\.com\\/v1\\/asset\\/https:\\/\\/www\\.googletagmanager\\.com\\/gtag\\/js",
             "cookies": 0,
@@ -24,7 +93,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "50cf27ee80e76a47bf8e92fae2139feddde1320ada865c215ee3ad6ecb3d8e16"
+                "3aec3972562abd8d7f3556280ff521c53a7db16b4bc145f0a86acb0f73589f2b"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -37,8 +106,10 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000201,
     "types": {
+        "Script": 2,
+        "Ping": 2,
         "Fetch": 2
     },
     "nameservers": [

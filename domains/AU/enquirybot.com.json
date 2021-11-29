@@ -4,17 +4,92 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
+        "launcher",
         "prod-big"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "enquirybot\\.com\\/index\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "launcher"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.vendor": 2,
+                "Navigator.prototype.product": 2,
+                "URL.createObjectURL": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1b9b6ce0e370fe900dbbbcdce33afcd102fe7244b0d731fc46c379d9dd642f88"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "firstnational.com.au",
+                "www.raineandhorne.com.au"
+            ]
+        },
+        {
+            "rule": "enquirybot\\.com\\/socket\\.io\\/",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-big"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "firstnational.com.au",
+                "www.firstnational.com.au",
+                "www.raineandhorne.com.au"
+            ]
+        },
+        {
             "rule": "enquirybot\\.com\\/socket\\.io\\/",
             "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-big"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "2765f608d64253f1e77328e527c7d85da6d14135f8fd512b1c6e0d0a059c9e58",
+                "c00616265c6ee9104d756628983d9edacfc9e172ec68f4daadb746b1b6a3da4f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "firstnational.com.au",
+                "www.firstnational.com.au",
+                "www.raineandhorne.com.au"
+            ]
+        },
+        {
+            "rule": "enquirybot\\.com\\/socket\\.io\\/",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "prod-big"
@@ -24,43 +99,23 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
-            "type": "Preflight",
+            "type": "WebSocket",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "raineandhorne.com.au",
-                "www.raineandhorne.com.au"
-            ]
-        },
-        {
-            "rule": "enquirybot\\.com\\/socket\\.io\\/",
-            "cookies": 0.0001,
-            "fingerprinting": 0,
-            "subdomains": [
-                "prod-big"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "a97403256704adc3007ec71f6da86c5f732505c436bfc1d653114344fd5e99e9"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "raineandhorne.com.au",
+                "firstnational.com.au",
                 "www.raineandhorne.com.au"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000201,
     "types": {
-        "Preflight": 2,
-        "XHR": 2
+        "Script": 2,
+        "Preflight": 3,
+        "XHR": 3,
+        "WebSocket": 2
     },
     "nameservers": [
         "ns-120.awsdns-15.com",

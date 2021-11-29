@@ -7,10 +7,11 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "aux"
     ],
     "cnames": [],
     "fingerprinting": 3,
@@ -25,7 +26,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "dc9d7d44d5cc0685f713cb5d10f270749fe72610c1f3a7a13a34b438e2e7e516"
+                "13a0bcedb23f41a3669016e09ce259df343ebfc2e729d9e3649db75bb7f95143"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -67,7 +68,12 @@
                 "RTCPeerConnection.prototype.constructor": 1,
                 "PerformanceTiming.prototype.navigationStart": 2,
                 "Navigator.prototype.permissions": 2,
-                "Notification.permission": 2,
+                "DeviceOrientationEvent.prototype.alpha": 1,
+                "DeviceOrientationEvent.prototype.beta": 1,
+                "DeviceOrientationEvent.prototype.gamma": 1,
+                "DeviceMotionEvent.prototype.acceleration": 1,
+                "DeviceMotionEvent.prototype.accelerationIncludingGravity": 1,
+                "DeviceMotionEvent.prototype.rotationRate": 1,
                 "RTCPeerConnectionIceEvent.prototype.candidate": 1
             },
             "sites": 2,
@@ -103,6 +109,28 @@
                 "ibtimes.com",
                 "www.newsweek.com"
             ]
+        },
+        {
+            "rule": "fqtag\\.com\\/aux\\/d",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aux"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ibtimes.com",
+                "www.ibtimes.com"
+            ]
         }
     ],
     "categories": [],
@@ -110,12 +138,12 @@
     "cookies": 0,
     "types": {
         "Script": 4,
-        "XHR": 2
+        "XHR": 4
     },
     "nameservers": [
-        "ns-476.awsdns-59.com",
-        "ns-920.awsdns-51.net",
         "ns-1179.awsdns-19.org",
-        "ns-2022.awsdns-60.co.uk"
+        "ns-2022.awsdns-60.co.uk",
+        "ns-476.awsdns-59.com",
+        "ns-920.awsdns-51.net"
     ]
 }

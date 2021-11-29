@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000414,
-    "sites": 6,
+    "prevalence": 0.0000552,
+    "sites": 8,
     "subdomains": [],
     "cnames": [
         {
@@ -28,9 +28,13 @@
         {
             "original": "spoor-api.ft.com",
             "resolved": ".ft2.map.fastly.net"
+        },
+        {
+            "original": "static.ftadviser.com",
+            "resolved": ".ft2.map.fastly.net"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "ft2\\.map\\.fastly\\.net\\/v2\\/bundles\\/css",
@@ -46,9 +50,7 @@
                     "resolved": ".ft2.map.fastly.net"
                 }
             ],
-            "responseHashes": [
-                "7387086d8abc233dd12f5e6fb339cd1da8693b4ecc365af1498f7e6c66a6a733"
-            ],
+            "responseHashes": [],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -71,7 +73,9 @@
                     "resolved": ".ft2.map.fastly.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "2dc26da20f61334000ddd19ec24ef17919dc63253e9a395162fbbf71a7fe79cc"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -95,9 +99,9 @@
                 }
             ],
             "responseHashes": [
-                "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
+                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
             ],
-            "type": "Other",
+            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -194,7 +198,7 @@
                 }
             ],
             "responseHashes": [
-                "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629"
+                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -202,6 +206,31 @@
             "exampleSites": [
                 "ft.com",
                 "markets.ft.com"
+            ]
+        },
+        {
+            "rule": "ft2\\.map\\.fastly\\.net\\/common\\/js\\/sp\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 2,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "static.ftadviser.com",
+                    "resolved": ".ft2.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "3f5bee6d636dc9ad1937f6ed3b3d5cab51c21e3fc67f79fb094d1bdb92cd436a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ftadviser.com",
+                "www.ftadviser.com"
             ]
         }
     ],
@@ -216,11 +245,11 @@
         "Session Replay"
     ],
     "performance": {},
-    "cookies": 0.0000207,
+    "cookies": 0.0000276,
     "types": {
         "Stylesheet": 2,
-        "Script": 2,
-        "Other": 3,
+        "Script": 4,
+        "Ping": 3,
         "Fetch": 4,
         "Preflight": 2,
         "XHR": 2

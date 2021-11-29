@@ -58,7 +58,7 @@
             ]
         },
         {
-            "rule": "backslash\\.ch\\/js\\/global\\/jquery\\/jquery-ui\\/1\\.12\\.1\\/jquery-ui\\.min\\.css",
+            "rule": "backslash\\.ch\\/js\\/global\\/jquery\\/jquery-ui\\/1\\.13\\.0\\/jquery-ui\\.min\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -69,7 +69,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "f07938ff82e191e4c9161894474e5306e09c188600676a1ada8668f7db756a8b"
+                "096f196b783388020de0c96ab6a23a8a2919f058b4b9058b469fc803d8490c85"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -118,7 +118,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "625495dcf142b3a336a39b7c0ba6c44a91c2a207f9838da191269af7cd4df0b0"
+                "68afd7bedaf9776dcb4fd7d2ee979a4444ea3fb063ef6bb35c5e553c0d093cac"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -198,21 +198,21 @@
             ]
         },
         {
-            "rule": "backslash\\.ch\\/js\\/global\\/jquery\\/jquery-ui\\/jquery-ui-1\\.12\\.1\\.min\\.js",
+            "rule": "backslash\\.ch\\/js\\/global\\/jquery\\/jquery-ui\\/jquery-ui-1\\.13\\.0\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "ktsz01"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "963450c85077e273f884e12103096590707322d1e1bda006254ae18e6d47607c"
+                "86528b9b3691944f120890b52b0f33a146d4f01c40fbc911de0b1eb8a7cc8f10"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -246,13 +246,15 @@
         },
         {
             "rule": "backslash\\.ch\\/matomo\\.js",
-            "cookies": 0,
+            "cookies": 0.0000138,
             "fingerprinting": 2,
             "subdomains": [
                 "stat-sz"
             ],
             "apis": {
+                "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
                 "window.name": 2,
                 "Navigator.prototype.cookieEnabled": 2,
                 "Navigator.prototype.userAgent": 2,
@@ -266,10 +268,23 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "d3383dd19ed9aad4099c7b406339e82c23385d4d015eba91ec048bbdb8051f25"
+                "0ce713b6cef25179719f242dcfa4ed9e985f1443257722299df2768deeb5ab6e"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_pk_id.2.7984": {
+                    "ttl": 33955202,
+                    "length": 28,
+                    "prevalence": 0.000013807196310717146,
+                    "uniqueness": 1
+                },
+                "_pk_ses.2.7984": {
+                    "ttl": 1802,
+                    "length": 1,
+                    "prevalence": 0.000013807196310717146,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "sz.ch",
@@ -290,7 +305,7 @@
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Other",
+            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -301,15 +316,15 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000138,
     "types": {
         "Stylesheet": 6,
         "Script": 16,
-        "Other": 2
+        "Ping": 2
     },
     "nameservers": [
+        "ns1.backslash.ch",
         "ns2.backslash.ch",
-        "ns3.backslash.ch",
-        "ns1.backslash.ch"
+        "ns3.backslash.ch"
     ]
 }

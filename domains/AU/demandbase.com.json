@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.00462,
-    "sites": 46,
+    "prevalence": 0.00582,
+    "sites": 58,
     "subdomains": [
         "tag",
         "api",
@@ -34,7 +34,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "98e2bcf0f485c5184a17eec0966dab6f962f59e83b0d28097bead1859b4b97e9"
+                "b62d5c7efb6af87188c7cb737173c2b6ad1b7d7889bcbcfb63fd849211b116e0"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -52,17 +52,19 @@
                 "api"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.000803,
+            "sites": 12,
+            "prevalence": 0.0012,
             "cnames": [],
             "responseHashes": [
                 "dc9bd732b96982a16b9178f6ca2c7dd45bbfac43d0a8e463e2e1ba74bef4e45a",
-                "8fb928294f22550b54727929cf75820546be23876a45d6ffb5d5c85a80f83f2e",
+                "76fb984348e534d65a2fc3e29869f8656d6b2af8c80ddcd24d5a8ce56f99d79e",
+                "5318f6a8e58b0d50379d06de9adc3be576de52c8a4f7e3c9f768c9202013063e",
+                "1ed1b049b4778e754b9afff7421ead3409384ab65ed7225f5d9040c0000a7efa",
+                "809349a6ca51b52b33d8693104a1576e9859a377d5c33a5291b080a98e9b2277",
                 "0c11c7358b5a1658404486f1c4d6930cba4f7a87a5bed614afb0974085cf3799",
-                "be41de10a3bb8ed8cf5a3cbc985624661626decbe5a3252407bdd18c66a2fd4a",
-                "61f0feb372e6ec1b06d1e1eb704b46756a6cf88f9929eb4bdfdd480dcf946aa9",
-                "bf499960c3f66b5351cdfcf2347f89efc52041e4769c2ec90c6973c0136c5951",
-                "76fb984348e534d65a2fc3e29869f8656d6b2af8c80ddcd24d5a8ce56f99d79e"
+                "5b558d13b6be2656692a6cecd7aa43a2d47ab6cdcf54a16432f0a04f6b6ffaf9",
+                "e7a9ff8d92ba3a7579ff79bb83c1f7546965da7e38f5e8e0d2ad49f80aa5a723",
+                "bf499960c3f66b5351cdfcf2347f89efc52041e4769c2ec90c6973c0136c5951"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -70,12 +72,16 @@
             "exampleSites": [
                 "adobe.com",
                 "confluence.atlassian.com",
+                "docs.servicenow.com",
+                "fonts.adobe.com",
                 "get.adobe.com",
+                "helpx.adobe.com",
                 "opensource.com",
                 "stock.adobe.com",
                 "www.adobe.com",
                 "www.analog.com",
-                "www.juniper.net"
+                "www.juniper.net",
+                "www.servicenow.com"
             ]
         },
         {
@@ -89,7 +95,7 @@
                 "Navigator.prototype.userAgent": 5
             },
             "sites": 5,
-            "prevalence": 0.000502,
+            "prevalence": 0.000501,
             "cnames": [],
             "responseHashes": [
                 "7f2aa8ac8b44a1310579a15b5df8d4cae4359aba1d73ae4d5b2082d3c6df68f6"
@@ -106,60 +112,66 @@
             ]
         },
         {
-            "rule": "demandbase\\.com\\/api\\/v2\\/ip\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "demandbase\\.com\\/adobeanalytics\\/e78feef73ff94c88\\.min\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
             "subdomains": [
-                "api"
+                "scripts"
             ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "apis": {
+                "window.sessionStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "fc9c30eb7e2edf603d581de6dc241d7b57d26145e22b5a4593c238bc39a0e628",
-                "14fd40faf3f9a03feabab4225d617548d786e91085560e21d3985034d12a58ab",
-                "84f31b19836b5cad273bea3b9bcecb90d7da59383b27b71d2562392237ef5af6"
+                "c9c183c8efe02b849d685a1a9b5989159335f62e89d0510162efef636d90c84e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "dmdbase_cdc": {
+                    "ttl": 1809,
+                    "length": 5,
+                    "prevalence": 0.00020052135552436334,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paloaltonetworks.com",
+                "www.paloaltonetworks.com"
+            ]
+        },
+        {
+            "rule": "demandbase\\.com\\/e78feef73ff94c88\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.prototype.interestCohort": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8c3a92fc9bd6642f1ae78052a05a11b3518138a9445de3969351cdb859182267"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "vmware.com",
-                "docs.vmware.com",
-                "www.apc.com",
-                "www.vmware.com"
+                "paloaltonetworks.com",
+                "www.paloaltonetworks.com"
             ]
         },
         {
-            "rule": "demandbase\\.com\\/api\\/v2\\/ip\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.000703,
-            "cnames": [],
-            "responseHashes": [
-                "0b3a7ac6e79dfffacc18e2e525fa5393d551c8595ae0d479b36c4d4d707b5028"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "autodesk.com",
-                "knowledge.autodesk.com",
-                "opensource.com",
-                "www.autodesk.com.au",
-                "www.autodesk.com",
-                "www.malwarebytes.com",
-                "www.tinkercad.com"
-            ]
-        },
-        {
-            "rule": "demandbase\\.com\\/HWyTnY16\\.min\\.js",
+            "rule": "demandbase\\.com\\/lrNOHxvh\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -172,14 +184,114 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "16f961e4eedc84409f706d7043ec879d9a7783c6f317640b0d97a73e98e9e8ea"
+                "fe559d7644a96109148904cf143fd785ecfc8887a5777edbe7019d277970e70f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "malwarebytes.com",
+                "servicenow.com",
+                "www.servicenow.com"
+            ]
+        },
+        {
+            "rule": "demandbase\\.com\\/7a3ee8a1522c9470\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Document.prototype.interestCohort": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "0cd0be0dca497a7869f280269911aba3c8b75c60d16facba5e3d3ce70d219d44"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "unity3d.com",
+                "forum.unity.com",
+                "unity.com"
+            ]
+        },
+        {
+            "rule": "demandbase\\.com\\/api\\/v2\\/ip\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000501,
+            "cnames": [],
+            "responseHashes": [
+                "fc9c30eb7e2edf603d581de6dc241d7b57d26145e22b5a4593c238bc39a0e628",
+                "84f31b19836b5cad273bea3b9bcecb90d7da59383b27b71d2562392237ef5af6",
+                "14fd40faf3f9a03feabab4225d617548d786e91085560e21d3985034d12a58ab"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vmware.com",
+                "docs.vmware.com",
+                "kb.vmware.com",
+                "www.se.com",
+                "www.vmware.com"
+            ]
+        },
+        {
+            "rule": "demandbase\\.com\\/api\\/v2\\/ip\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "0b3a7ac6e79dfffacc18e2e525fa5393d551c8595ae0d479b36c4d4d707b5028"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opensource.com",
                 "www.malwarebytes.com"
+            ]
+        },
+        {
+            "rule": "demandbase\\.com\\/5wDCfOAs\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.prototype.interestCohort": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "89719b8de597945a560d539e55cb0311ff87337b8f2b15908f92295dd2d5887b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "citrix.com",
+                "www.citrix.com"
             ]
         },
         {
@@ -198,7 +310,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "c878f31939630dffad6ea34ff96f0e37c8faf70794d100ecffefac9b96ba8b1e"
+                "ed2d3dbdd5d3a554a0bdc8df2bade08dc75512722adff6b325d6f52d1dba2d85"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -209,11 +321,11 @@
             ]
         },
         {
-            "rule": "demandbase\\.com\\/ee38c350\\.min\\.js",
+            "rule": "demandbase\\.com\\/7mXYERjy\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "tag"
+                "scripts"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2
@@ -222,14 +334,14 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "a274dd3d80e88c7b7ec742422f85305c89f63195842f6cb955b8da91335bd368"
+                "86caa373f0c68abfc0a066820014fecf5bf3f505d2b4bfd5c7b4806c964b914d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bitdefender.com.au",
-                "www.bitdefender.com"
+                "autodesk.com.au",
+                "www.autodesk.com"
             ]
         },
         {
@@ -240,24 +352,23 @@
                 "tag"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 5,
-                "Document.prototype.interestCohort": 5
+                "Navigator.prototype.userAgent": 4,
+                "Document.prototype.interestCohort": 4
             },
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 4,
+            "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [
-                "0f6a1c95e18db40fe5ca0ff01b67017920985489808ed3c189ee0467890cc697"
+                "cbb221a53a42e526412f3b016f86d449a102e10265998c425d12d162dc33c4b1"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "gettyimages.com.au",
-                "www.gettyimages.ca",
+                "gettyimages.ca",
+                "www.gettyimages.com.au",
                 "www.gettyimages.com",
-                "www.gettyimages.in",
-                "www.gettyimages.no"
+                "www.gettyimages.in"
             ]
         }
     ],
@@ -269,10 +380,10 @@
         "Action Pixels"
     ],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000301,
     "types": {
-        "Script": 30,
-        "XHR": 7
+        "Script": 43,
+        "XHR": 2
     },
     "nameservers": [
         "ns-1260.awsdns-29.org",

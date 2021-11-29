@@ -7,11 +7,13 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000603,
-    "sites": 6,
+    "prevalence": 0.000803,
+    "sites": 8,
     "subdomains": [
         "config",
-        "s"
+        "s",
+        "cs",
+        "t"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -24,15 +26,13 @@
                 "config"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Navigator.prototype.connection": 3,
-                "window.localStorage": 3
+                "window.localStorage": 5
             },
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
-                "84a238f2afc2b6975405a531b43eadd320c52ebe70bc0810b165a86d251cbf17"
+                "9c4410649d0e60846650ffcac40cff62a3b0744ec1593f39d2d30dcf7105d265"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -40,56 +40,259 @@
             "exampleSites": [
                 "ccm.net",
                 "thenextweb.com",
-                "www.medisite.fr"
+                "www.medisite.fr",
+                "www.planetf1.com",
+                "www.scotsman.com"
             ]
         },
         {
-            "rule": "seedtag\\.com\\/st_4\\.7e777eb3dc7b313a3b8c\\.js",
-            "cookies": 0,
+            "rule": "seedtag\\.com\\/c\\/pv",
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
-                "config"
+                "s"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "531ccb6d0bffa6a96e41bc001ea57f26c6cde134636cf01f92ebab98a08beef0"
+                "a3cdae236ccd13f03fe44774be3307152c28128abc3660c6b27e4b5cbec9a782"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ccm.net",
-                "www.medisite.fr"
+                "www.planetf1.com"
             ]
         },
         {
-            "rule": "seedtag\\.com\\/st_9\\.cb94293fc3dfe370aac2\\.js",
+            "rule": "seedtag\\.com\\/cs\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cs"
+            ],
+            "apis": {
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "a8d5a595c9119e1c0004b67ef42d3613f57c86114da41653d8d82bae2b160557"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ccm.net",
+                "www.planetf1.com"
+            ]
+        },
+        {
+            "rule": "seedtag\\.com\\/e\\/ev",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "config"
+                "s"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "f800a1ca3fe9dfbeebc18af421cd90c08d40d1ab8b17d41450a67f22167a59bb"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ccm.net",
-                "www.medisite.fr"
+                "www.planetf1.com"
             ]
         },
         {
-            "rule": "seedtag\\.com\\/cs\\/cookiesync\\/adyoulike",
-            "cookies": 0,
+            "rule": "seedtag\\.com\\/cs\\/st\\/b",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ccm.net",
+                "www.planetf1.com"
+            ]
+        },
+        {
+            "rule": "seedtag\\.com\\/cs\\/st\\/nb",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ccm.net",
+                "www.planetf1.com"
+            ]
+        },
+        {
+            "rule": "seedtag\\.com\\/cs\\/cookiesync\\/ttd",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ccm.net",
+                "www.planetf1.com"
+            ]
+        },
+        {
+            "rule": "seedtag\\.com\\/cs\\/cookiesync\\/verizon",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ccm.net",
+                "www.planetf1.com"
+            ]
+        },
+        {
+            "rule": "seedtag\\.com\\/cs\\/cookiesync\\/appnexus",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ccm.net",
+                "www.planetf1.com"
+            ]
+        },
+        {
+            "rule": "seedtag\\.com\\/cs\\/cookiesync\\/improvedigital",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ccm.net",
+                "www.planetf1.com"
+            ]
+        },
+        {
+            "rule": "seedtag\\.com\\/cs\\/cookiesync\\/indexexchange",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ccm.net",
+                "www.planetf1.com"
+            ]
+        },
+        {
+            "rule": "seedtag\\.com\\/cs\\/cookiesync\\/spotx",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ccm.net",
+                "www.planetf1.com"
+            ]
+        },
+        {
+            "rule": "seedtag\\.com\\/cs\\/cookiesync\\/Bidswitch",
+            "cookies": 0.000301,
             "fingerprinting": 0,
             "subdomains": [
                 "s"
@@ -105,18 +308,111 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "ccm.net",
+                "www.fanduel.com",
+                "www.planetf1.com"
+            ]
+        },
+        {
+            "rule": "seedtag\\.com\\/cs\\/cookiesync\\/verizonvideo",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ccm.net",
+                "www.planetf1.com"
+            ]
+        },
+        {
+            "rule": "seedtag\\.com\\/cs\\/cookiesync\\/adyoulike",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
                 "classicfm.com",
-                "www.popbuzz.com",
-                "www.standard.co.uk"
+                "www.popbuzz.com"
+            ]
+        },
+        {
+            "rule": "seedtag\\.com\\/c\\/st_3\\.2e8ef52e9383df4e26c5\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c26f1c482a69de2ec9fb6c9ecec75539f13994b865aa2b592bdff89f04a43f56"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "medisite.fr",
+                "www.planetf1.com"
+            ]
+        },
+        {
+            "rule": "seedtag\\.com\\/c\\/st_2\\.6d638908d11c71bd0300\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "t"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.connection": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "3f5dba07b148179f5674be02d04e10fa234a59292090846f07e212be9269c49b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "medisite.fr",
+                "www.planetf1.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000301,
     "types": {
-        "Script": 7,
-        "Image": 3
+        "Script": 9,
+        "XHR": 4,
+        "Document": 2,
+        "Image": 23
     },
     "nameservers": [
         "gabe.ns.cloudflare.com",

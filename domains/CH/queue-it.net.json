@@ -4,39 +4,63 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000602,
-    "sites": 6,
+    "prevalence": 0.000702,
+    "sites": 7,
     "subdomains": [
-        "static"
+        "static",
+        "assets"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "queue-it\\.net\\/script\\/queueclient\\.min\\.js",
-            "cookies": 0,
+            "cookies": 0.000401,
             "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
             "apis": {
-                "Navigator.prototype.cookieEnabled": 2,
-                "Date.prototype.getTime": 2
+                "Document.cookie getter": 4,
+                "Navigator.prototype.cookieEnabled": 4,
+                "Date.prototype.getTime": 4,
+                "Document.cookie setter": 4
             },
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 6,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
                 "dd8752b6b1a8782f1892be6f711965a08e202d5a4188702dea43187cd41d9cf6"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "QueueITAccepted-SDFrts345E-V3_prodevent": {
+                    "ttl": 1204,
+                    "length": 194,
+                    "prevalence": 0.00010030090270812437,
+                    "uniqueness": 1
+                },
+                "QueueITAccepted-SDFrts345E-V3_dysonprod2021": {
+                    "ttl": 1266,
+                    "length": 198,
+                    "prevalence": 0.00020060180541624874,
+                    "uniqueness": 1
+                },
+                "QueueITAccepted-SDFrts345E-V3_lmsprod": {
+                    "ttl": 1204,
+                    "length": 192,
+                    "prevalence": 0.00010030090270812437,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "amd.com",
                 "www.carrefour.fr",
-                "www.olat.uzh.ch",
-                "www.stabilo.com"
+                "www.dyson.com",
+                "www.dyson.ch",
+                "www.footlocker.com",
+                "www.olat.uzh.ch"
             ]
         },
         {
@@ -47,10 +71,11 @@
                 "static"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 4,
+                "Document.cookie getter": 1
             },
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 6,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
                 "4225df2bcbc1ff668aedf803481007ccf04f2571e110efc87c251d27bb5a3275"
@@ -61,16 +86,40 @@
             "exampleSites": [
                 "amd.com",
                 "www.carrefour.fr",
-                "www.olat.uzh.ch",
-                "www.stabilo.com"
+                "www.dyson.com",
+                "www.dyson.ch",
+                "www.footlocker.com",
+                "www.olat.uzh.ch"
+            ]
+        },
+        {
+            "rule": "queue-it\\.net\\/dyson\\/integrationconfig\\/javascript\\/queueclientConfig\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1a56d18fe4db6fac3dc868b08fd258e320e1e3f46d0541ab8dd978210e33fe36"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dyson.com",
+                "www.dyson.ch"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000401,
+    "cookies": 0.000502,
     "types": {
-        "Script": 8
+        "Script": 14
     },
     "nameservers": [
         "ns-1175.awsdns-18.org",

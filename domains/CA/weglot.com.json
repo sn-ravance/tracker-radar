@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
         "cdn"
     ],
@@ -13,7 +13,57 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "weglot\\.com\\/projects-settings\\/cc088037748f85255e0ef5ae6a12507c4\\.json",
+            "rule": "weglot\\.com\\/weglot\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "19cd12ed753a7774b6d1bfa15ca9a9a46b0a23cefb547873e558845680595e92"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baffin.com",
+                "www.centredurasoir.com",
+                "www.snugglebugz.ca"
+            ]
+        },
+        {
+            "rule": "weglot\\.com\\/weglot\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "1b4fd0e91f1e3e3c84db3110561ea8d11cd01d7bc7b8a4accfe219b28107d4ec"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baffin.com",
+                "www.centredurasoir.com",
+                "www.snugglebugz.ca"
+            ]
+        },
+        {
+            "rule": "weglot\\.com\\/weglot_script_tag\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -24,14 +74,14 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "a6f8d8c3579e51b2ddec53be9376f53ef1672a655a57d7d8d6329bc7c70db15d"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Fetch",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "freedomtravelalliance.com",
-                "www.freedomtravelalliance.com"
+                "baffin.com",
+                "www.centredurasoir.com"
             ]
         }
     ],
@@ -39,7 +89,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Fetch": 2
+        "Script": 5,
+        "Stylesheet": 3
     },
     "nameservers": [
         "ns-1007.awsdns-61.net",

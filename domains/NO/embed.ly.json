@@ -7,14 +7,38 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000402,
-    "sites": 4,
+    "prevalence": 0.000703,
+    "sites": 7,
     "subdomains": [
-        "cdn"
+        "api-cdn",
+        "cdn",
+        "i-cdn"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "embed\\.ly\\/1\\/card-details",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e0c98fe730d796c565a9951da66bd91d2e4d17e687d99ecf2dc3825d0efba534"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sagepub.com",
+                "www.concertarchives.org"
+            ]
+        },
         {
             "rule": "embed\\.ly\\/player-0\\.1\\.0\\.min\\.js",
             "cookies": 0,
@@ -23,8 +47,8 @@
                 "cdn"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "eaf266c920ef8297bf135324d4c6232d117d1eb849a082850b8d0520c1966c2e"
@@ -34,7 +58,30 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "time.com",
-                "www.gbnews.uk"
+                "uberhumor.com",
+                "www.channelnewsasia.com"
+            ]
+        },
+        {
+            "rule": "embed\\.ly\\/1\\/display",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "f9c5518aa30f366dfc4357750d7f99caab543adc0cd781ece103151364a1dd81"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "concertarchives.org",
+                "www.concertarchives.org"
             ]
         },
         {
@@ -64,7 +111,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 4
+        "XHR": 2,
+        "Script": 5,
+        "Image": 2
     },
     "nameservers": [
         "ns-1278.awsdns-31.org",

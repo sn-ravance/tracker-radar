@@ -7,14 +7,15 @@
     "prevalence": 0.000301,
     "sites": 3,
     "subdomains": [
-        "home-a32"
+        "home-a32",
+        "api-a32"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "nice-incontact\\.com\\/inContact\\/ChatClient\\/js\\/embed\\.min\\.js",
-            "cookies": 0.000301,
+            "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [
                 "home-a32"
@@ -23,18 +24,17 @@
                 "Navigator.prototype.userAgent": 1,
                 "window.sessionStorage": 1
             },
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "538156e9b6ae8c1522aeccd859740dcf1805a601e2953ba574e002cfdf80c49b"
+                "ba972bc6ac3e153df38190a60fd008269ef9219b52399209187825b65e923260"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "caroma.com.au",
-                "www.cpaaustralia.com.au",
+                "cpaaustralia.com.au",
                 "www.greatsouthernbank.com.au"
             ]
         },
@@ -56,8 +56,50 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "caroma.com.au",
-                "specify.caroma.com.au"
+                "cpaaustralia.com.au",
+                "www.cpaaustralia.com.au"
+            ]
+        },
+        {
+            "rule": "nice-incontact\\.com\\/InContactAuthorizationServer\\/Token",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-a32"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cpaaustralia.com.au",
+                "www.sapowernetworks.com.au"
+            ]
+        },
+        {
+            "rule": "nice-incontact\\.com\\/InContactAuthorizationServer\\/Token",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-a32"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e319a803785d01b4f12705e33fec02aec149c0bb4a85d2e20a3aaceac4ab9414"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cpaaustralia.com.au",
+                "www.sapowernetworks.com.au"
             ]
         }
     ],
@@ -65,8 +107,10 @@
     "performance": {},
     "cookies": 0.000301,
     "types": {
-        "Script": 3,
-        "Stylesheet": 2
+        "Script": 2,
+        "Stylesheet": 2,
+        "Preflight": 2,
+        "XHR": 2
     },
     "nameservers": [
         "ns-1398.awsdns-46.org",

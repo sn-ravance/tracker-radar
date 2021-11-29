@@ -4,14 +4,88 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
+        "polls",
+        "forms",
+        "promoblocks-cms-api",
         "article-cms-api"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "incrowdsports\\.com\\/js\\/index\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "polls",
+                "forms"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2,
+                "Navigator.prototype.product": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "bbf1e08cd43776025c15e54483fc53b3e7d8b29a76641993b8fefa9ef45d49b0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "canaries.co.uk",
+                "www.canaries.co.uk"
+            ]
+        },
+        {
+            "rule": "incrowdsports\\.com\\/v1\\/NORWICHFC\\/campaigns\\/content",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "promoblocks-cms-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "4338025ea224a7915034b9cf8ba2044bfbc1fdd17000edfd9d8b19cc5b95e1e9"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "canaries.co.uk",
+                "www.canaries.co.uk"
+            ]
+        },
+        {
+            "rule": "incrowdsports\\.com\\/v1\\/PRL\\/campaigns\\/content\\/1d2de855-7bcb-52d5-a472-0f230f0d2ccd",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "promoblocks-cms-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "6434e65b0ea4675baa64b20885cddc37376a2aba3340829ad9f30fe5b9ee95a5"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "premiershiprugby.com",
+                "www.premiershiprugby.com"
+            ]
+        },
         {
             "rule": "incrowdsports\\.com\\/v2\\/articles",
             "cookies": 0,
@@ -44,7 +118,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "262371ebcb946848c3feb2fb0e06c19b176258b63c5eb94fb2e406cd31e80d94"
+                "7f4ea5f01f90f768bed87649aca4ad6835e4476e2f2204a300115d9642342747"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -59,8 +133,10 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Preflight": 2,
-        "XHR": 2
+        "Script": 2,
+        "Fetch": 2,
+        "XHR": 4,
+        "Preflight": 2
     },
     "nameservers": [
         "ns-102.awsdns-12.com",

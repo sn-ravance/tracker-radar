@@ -44,15 +44,15 @@
             "type": "Fetch",
             "firstPartyCookies": {
                 "pw_deviceid": {
-                    "ttl": 157680009,
+                    "ttl": 157680012,
                     "length": 36,
-                    "prevalence": 0.00020078305391024997,
+                    "prevalence": 0.00020074274816822243,
                     "uniqueness": 1
                 },
                 "pw_status_e924faaced168336f02f222c66d47f50a81954df26d071f4d30bfad270283120": {
-                    "ttl": 157680009,
-                    "length": 4,
-                    "prevalence": 0.00020078305391024997,
+                    "ttl": 157680012,
+                    "length": 7,
+                    "prevalence": 0.00020074274816822243,
                     "uniqueness": 0.5
                 }
             },
@@ -90,15 +90,15 @@
             "type": "Script",
             "firstPartyCookies": {
                 "pw_deviceid": {
-                    "ttl": 157680009,
+                    "ttl": 157680012,
                     "length": 36,
-                    "prevalence": 0.00020078305391024997,
+                    "prevalence": 0.00020074274816822243,
                     "uniqueness": 1
                 },
                 "pw_status_e924faaced168336f02f222c66d47f50a81954df26d071f4d30bfad270283120": {
-                    "ttl": 157680009,
-                    "length": 4,
-                    "prevalence": 0.00020078305391024997,
+                    "ttl": 157680012,
+                    "length": 7,
+                    "prevalence": 0.00020074274816822243,
                     "uniqueness": 0.5
                 }
             },
@@ -111,18 +111,16 @@
         {
             "rule": "push\\.world\\/getid\\/",
             "cookies": 0.000201,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "banggoodcom"
             ],
-            "apis": {
-                "Notification.permission": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "d578107073a5339a68defc8ca9287fcf943eb6a225f505d5289e9be673dd45ce"
+                "ef7a04e333fe836fe2934cfb5b1bad2c410329fb407b41e720a4ff8ea93cfe25"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -168,7 +166,7 @@
             "responseHashes": [
                 "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
             ],
-            "type": "Other",
+            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -178,16 +176,17 @@
         },
         {
             "rule": "push\\.world\\/landing\\.js",
-            "cookies": 0,
+            "cookies": 0.0001,
             "fingerprinting": 1,
             "subdomains": [
                 "banggoodcom"
             ],
             "apis": {
-                "console.memory": 2,
-                "window.localStorage": 2,
                 "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "console.memory": 1,
+                "window.localStorage": 1,
+                "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -211,7 +210,7 @@
         "Fetch": 2,
         "Script": 4,
         "Document": 4,
-        "Other": 2
+        "Ping": 2
     },
     "nameservers": [
         "melody.ns.cloudflare.com",

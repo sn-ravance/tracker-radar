@@ -14,7 +14,7 @@
     "resources": [
         {
             "rule": "qwerty24\\.net\\/desktop",
-            "cookies": 0,
+            "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [
                 "pub"
@@ -22,7 +22,9 @@
             "apis": {
                 "Navigator.prototype.userAgent": 2,
                 "Element.prototype.getClientRects": 2,
-                "Date.prototype.getTime": 2
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -31,7 +33,14 @@
                 "a1ea9491e346e1b9aef5476af4f79a2cad6554eb72a6f6fc74bf0abb98340e8f"
             ],
             "type": "Document",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "blocked_9dfd0b34a3cce2ab603d22e1cc49f789": {
+                    "ttl": 86406,
+                    "length": 1,
+                    "prevalence": 0.00020078305391024997,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "beeg.porn",
@@ -96,30 +105,8 @@
             "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
+                "31801846427907e9fe5791546dc5d3856a0662449c7ad7badc1d5a57f552e490",
                 "47073d2f389ff73d5a514898f9cbb4c868e58d818970617b1aefcde7309d3706"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "beeg.porn",
-                "fap18.net",
-                "hdpornpictures.net"
-            ]
-        },
-        {
-            "rule": "qwerty24\\.net\\/view\\/views",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "pub"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -133,9 +120,9 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000301,
     "types": {
-        "Document": 14
+        "Document": 11
     },
     "nameservers": [
         "mimi.ns.cloudflare.com",

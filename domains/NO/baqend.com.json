@@ -15,7 +15,7 @@
     "resources": [
         {
             "rule": "baqend\\.com\\/v1\\/speedkit\\/install\\.js",
-            "cookies": 0,
+            "cookies": 0.000201,
             "fingerprinting": 2,
             "subdomains": [
                 "bmw.app",
@@ -24,6 +24,8 @@
             "apis": {
                 "Navigator.prototype.userAgent": 2,
                 "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
                 "PerformanceTiming.prototype.navigationStart": 2,
                 "window.indexedDB": 2,
                 "window.devicePixelRatio": 1,
@@ -33,10 +35,23 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "e38e9182a818e2934fc646f87c7b058af1df30e80d3c48d6c9ee801416833fed"
+                "6a90edef4739f9989387b2f0a429e7d75396e435db2c35c0d92972abe0574316"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "baqend-speedkit-ab-test-info": {
+                    "ttl": 15552005,
+                    "length": 56,
+                    "prevalence": 0.00020074274816822243,
+                    "uniqueness": 1
+                },
+                "baqend-speedkit-user-id": {
+                    "ttl": 15552005,
+                    "length": 25,
+                    "prevalence": 0.00020074274816822243,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bmw.no",
@@ -58,7 +73,7 @@
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Other",
+            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -70,10 +85,10 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000201,
     "types": {
         "Script": 2,
-        "Other": 3
+        "Ping": 3
     },
     "nameservers": [
         "ns-224.awsdns-28.com",

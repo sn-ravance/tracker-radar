@@ -7,18 +7,20 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00104,
-    "sites": 150,
+    "prevalence": 0.0011,
+    "sites": 159,
     "subdomains": [
-        "acloudguru",
+        "cdn",
         "netapp-cloud-account",
         "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
         "chegg-experts.us",
         "homesnz-cd-zmq2n6ogmq12iykl.edge.tenants.au",
         "hashicorp-cd-uiujfnz9rprgm4yc.edge.tenants",
         "messari-cd-uxuyfsbhh8l0f9d7.edge.tenants",
+        "mudita-cd-vimm6pvjyuxxyibr.edge.tenants",
         "tv2dk-prod-cd-hz8d8hls0zj1lkbj.edge.tv2dk",
         "sonicdrivein-cd-wcwsddxjmcncnc1c.edge.tenants",
+        "schrotkorn-cd-ceizyc27hjmxozek.edge.tenants.eu",
         "tipsybartender-cd-ar00x3pukpgzniww.edge.tenants",
         "automationdirect-cd-bwjrpkrumxhdgr0a.edge.tenants",
         "beautybay-cd-0bajnkkecpwemtdi.edge.tenants.eu",
@@ -30,11 +32,10 @@
         "prageru-cd-0qyos3zmmqobf8rm.edge.tenants",
         "scm-id-prod-cd-vgbheljgfc9r2feg.edge.tenants.us",
         "texasmonthly-cd-cw4f4kjus7p0pg7w.edge.tenants",
+        "prod-theblock-cd-xbo49hgjjcmuwvrq.edge.tenants.us",
         "virginexperiencedays-cd-2fbfqocluxro6ea1.edge.tenants.eu",
         "gb-visionexpress-production-cd-kzxbrkbacflvzqzk.edge.tenants.eu",
         "westfield-prd-cd-xjlzsx4rkldlpzoc.edge.tenants.au",
-        "cdn",
-        "cdn.us",
         "autotrader_cd_huzk09q5tsfnet06.edge.tenants.au",
         "cdn.au"
     ],
@@ -76,8 +77,16 @@
             "resolved": "prageru-cd-0qyos3zmmqobf8rm.edge.tenants.auth0.com"
         },
         {
+            "original": "auth.schrotundkorn.de",
+            "resolved": "schrotkorn-cd-ceizyc27hjmxozek.edge.tenants.eu.auth0.com"
+        },
+        {
             "original": "auth.subaru.jp",
             "resolved": "scm-id-prod-cd-vgbheljgfc9r2feg.edge.tenants.us.auth0.com"
+        },
+        {
+            "original": "auth.theblockcrypto.com",
+            "resolved": "prod-theblock-cd-xbo49hgjjcmuwvrq.edge.tenants.us.auth0.com"
         },
         {
             "original": "auth.tipsybartender.com",
@@ -116,6 +125,10 @@
             "resolved": "mindvalley-cd-lyqfe0h32cchuc2l.edge.tenants.auth0.com"
         },
         {
+            "original": "login.mudita.com",
+            "resolved": "mudita-cd-vimm6pvjyuxxyibr.edge.tenants.auth0.com"
+        },
+        {
             "original": "login.texasmonthly.com",
             "resolved": "texasmonthly-cd-cw4f4kjus7p0pg7w.edge.tenants.auth0.com"
         },
@@ -127,19 +140,49 @@
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "auth0\\.com\\/js\\/auth0\\/9\\.11\\/auth0\\.min\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.appName": 4,
+                "Date.prototype.getTime": 4,
+                "Navigator.prototype.userAgent": 4,
+                "Document.cookie setter": 2
+            },
+            "sites": 4,
+            "prevalence": 0.0000276,
+            "cnames": [],
+            "responseHashes": [
+                "2ae5aed8aab32ad79a23003eee65fec603ddbeed83b296ba4735ff840e12b005"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "netapp.com",
+                "us.vwr.com",
+                "www.dispatchhealth.com",
+                "www.honeywellhome.com"
+            ]
+        },
+        {
             "rule": "auth0\\.com\\/authorize",
-            "cookies": 0.00018,
+            "cookies": 0.000193,
             "fingerprinting": 0,
             "subdomains": [
-                "acloudguru",
                 "netapp-cloud-account",
                 "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
                 "chegg-experts.us",
                 "homesnz-cd-zmq2n6ogmq12iykl.edge.tenants.au",
                 "hashicorp-cd-uiujfnz9rprgm4yc.edge.tenants",
                 "messari-cd-uxuyfsbhh8l0f9d7.edge.tenants",
+                "mudita-cd-vimm6pvjyuxxyibr.edge.tenants",
                 "tv2dk-prod-cd-hz8d8hls0zj1lkbj.edge.tv2dk",
                 "sonicdrivein-cd-wcwsddxjmcncnc1c.edge.tenants",
+                "schrotkorn-cd-ceizyc27hjmxozek.edge.tenants.eu",
                 "tipsybartender-cd-ar00x3pukpgzniww.edge.tenants",
                 "automationdirect-cd-bwjrpkrumxhdgr0a.edge.tenants",
                 "beautybay-cd-0bajnkkecpwemtdi.edge.tenants.eu",
@@ -151,13 +194,14 @@
                 "prageru-cd-0qyos3zmmqobf8rm.edge.tenants",
                 "scm-id-prod-cd-vgbheljgfc9r2feg.edge.tenants.us",
                 "texasmonthly-cd-cw4f4kjus7p0pg7w.edge.tenants",
+                "prod-theblock-cd-xbo49hgjjcmuwvrq.edge.tenants.us",
                 "virginexperiencedays-cd-2fbfqocluxro6ea1.edge.tenants.eu",
                 "gb-visionexpress-production-cd-kzxbrkbacflvzqzk.edge.tenants.eu",
                 "westfield-prd-cd-xjlzsx4rkldlpzoc.edge.tenants.au"
             ],
             "apis": {},
-            "sites": 26,
-            "prevalence": 0.00018,
+            "sites": 28,
+            "prevalence": 0.000193,
             "cnames": [
                 {
                     "original": "login.arduino.cc",
@@ -176,12 +220,20 @@
                     "resolved": "messari-cd-uxuyfsbhh8l0f9d7.edge.tenants.auth0.com"
                 },
                 {
+                    "original": "login.mudita.com",
+                    "resolved": "mudita-cd-vimm6pvjyuxxyibr.edge.tenants.auth0.com"
+                },
+                {
                     "original": "auth.tv2.dk",
                     "resolved": "tv2dk-prod-cd-hz8d8hls0zj1lkbj.edge.tv2dk.auth0.com"
                 },
                 {
                     "original": "account.sonicdrivein.com",
                     "resolved": "sonicdrivein-cd-wcwsddxjmcncnc1c.edge.tenants.auth0.com"
+                },
+                {
+                    "original": "auth.schrotundkorn.de",
+                    "resolved": "schrotkorn-cd-ceizyc27hjmxozek.edge.tenants.eu.auth0.com"
                 },
                 {
                     "original": "auth.tipsybartender.com",
@@ -228,6 +280,10 @@
                     "resolved": "texasmonthly-cd-cw4f4kjus7p0pg7w.edge.tenants.auth0.com"
                 },
                 {
+                    "original": "auth.theblockcrypto.com",
+                    "resolved": "prod-theblock-cd-xbo49hgjjcmuwvrq.edge.tenants.us.auth0.com"
+                },
+                {
                     "original": "auth.virginexperiencedays.co.uk",
                     "resolved": "virginexperiencedays-cd-2fbfqocluxro6ea1.edge.tenants.eu.auth0.com"
                 },
@@ -241,120 +297,61 @@
                 }
             ],
             "responseHashes": [
-                "88615a8387cc9ece734253102b1f98bf8bf4363be18293007b3921135af7668a",
-                "266ba97e9e2e17994780f03b5ce3de37b6e0a35a3bf9ddbe8076b332bb92f2f9",
-                "376147c4701eec254354f23dcf6045fe923928f304758af49503214e1dab4e64",
-                "54d12fc22817ea0c122c5c334e73fe81fae4b398697ce7e064dc690a741c8fce",
-                "162ed3d823d10efac71f5d918050599b116e111102372ea05f9358a09a672dc5",
-                "f9a8316392d9abbb1faf3f54f55556048d083bc0a087528ca1978f17ef5003a5",
-                "90465e2f5dd3ea72902e3af856474dd20f31de55baa3d896b3b6ea758fd8b669",
-                "03fbef1520db7c27498331ee11cb57b40413c66e3db8c789b627220899f9c580",
-                "145dab36e34903eaec58ee1b5bc4486e3b2aa0684ab3fbc04aa65931b06acef2",
-                "5a4fab23afe138c1c8e8807ec7e89fb3cbd4f84ff61173916de03d787d2f06ae",
-                "7d3a48e52a31cd0c433106402322d43a04c6e6bd275f5df9f9c2b5aebc10087b",
-                "9016cfbec574d8695fa5fe03f55d58a03d8bd1f69f00acfd22eae801b28a0405",
-                "137b402aead25c03c3fe66fba824bb24ea13e28de2511f74c76ece3a7ee88572",
-                "c26fe61fc75262ad2147625e46eb47f85443678067204188ac9de35bd12ed1e0",
-                "5e8a7126ee1b1d99ebde5a2c19f6a54c3983a9335efbf2c989eb722af37202e9",
-                "a34d9165071707c00a87c30292ee76b203a4f6bf363a2887c02a30811d9ac782",
-                "0793b892d29296ead2d9612f64781ba994cf25854e8bb818356b8b806f36c75f",
-                "592c404363f0f72eff0ea65cc630c4d5f35914ecdb0af0d27c4d83048daed14c",
-                "f0a84fb642476e329b9244131f55a4a6accd57479f9d16524dfdfaf40a362ffd",
-                "a28a4ab16399bd3df470d2149027de62efdf84282e3114f78aa9d3978197e88a",
+                "9d556f73d0dfd35c2ddeca15982424e9ce8234cdc47e32b479ac97286c4498b4",
+                "9e168809933a197737374dc0a428594e7aaa2f91caa3f799db40abc1452817d1",
+                "118640104ce3b156b2b1e2ebf7aa662abff35dda3898e99fdb70ad5b7bc9f903",
+                "6af2706d370d88a07784d7caf6863fd30e49f3983606089f8f7ca89806cc0bc1",
+                "78b9174a14576541cdf846c03ea6d6b68a39999bc6de4fd0a8487d84acbfa5c5",
+                "bd1f169f8a628e97ee4b198a9d56d8d594a230c3d721deaeff9b59dd3679fbef",
+                "c58be24d7a31f8630a962651c585de4bf9e7090a5d5d2963af5e10cd4adf4281",
+                "abcae1b74508203c2910c3ff12b22607ca8306a869b95b3debc52c89766df8f8",
+                "86c75d88dcf4daac1c32432bc286929e11481285591a18d557c926b568db0660",
+                "59d6dc4d7f7ef956a449d731b9c94072d783d365567eda58cbc6d787a4923a03",
+                "d4173ab0df055b15a4023127954c4ae2d75059b7d53959ac954268fb28ced2b5",
+                "2af9362e877a66981910c4aebf99233980528804b9fb4e5397f05439e9556fe1",
+                "4848affef0c0c068c069881ed2011fff80dfbaafedfd5da19f68526fc71cbdab",
+                "278db8ee918974e01db0983b3608ae6832a8f8e2185aa86f95d5731723b865ad",
+                "d41061c01a4315bb462f54c8aeeb187557057a83ea68bcd6ccceb0355ff562c2",
+                "340787dd1685569bf71b905767dcc6df567b89c71f1d4b4db44b60a1db3d1707",
+                "385f00b40bb74ce59e7781b17a573b17ade7b8f0afa8649385bfeebb85815206",
+                "ef4b407493fb819965cac687eb120f83640a17bbf59738e9bb1e9e70ea94d18d",
+                "e4efe10e120f51fbca796c43194dcc4372eb675772effa88c36651d028250998",
+                "c5fdd7a12f84bd99593c5dcfd1b6fb17809f1e728ad161318903c09fa2b43734",
+                "a02b8694d48cc4006c44deae8c18eb76c279a246dd77fc4a3ac141d514fa3aad",
                 "86f644721b43d9ded6c4ddbbf582fee469f5746e7a30241af147132b73ab96ba",
-                "3d43fcc5ee0209b3c5ea1d5475790dec9ecfd064f42170a398f7eb515b9eae88",
-                "e9f916124a6eef254ce3b67c8aa9c08b93ba8259cf57e98c030c53f81d82c9ec",
-                "6b0762cbd3834ba876430fa02a3ffddfbc39ceab551de8ed963ffb0325cef120",
-                "8374015209b2f7df58bfdd065df8f4f597aacaae4875c0bd14bfd47fdc951b55"
+                "ffcad68dcd997544540ee33742fc61fe08f8163e7c2bf7fcf45b7e095770c6ec",
+                "2e40841d75d1500ff8c25830072899c52eb5f819ca9849820940a5d87d52ee09",
+                "699c90da072ede3b50324c05fa0b1f50df06332a91211707174cc203cf22401f",
+                "73d51b1e7d2fd00d1b8271f9865764a60bab2e5d4821b6102885ce1a61934358",
+                "efb8ad498f3ed0d62b8e9d18a30b2c44674f730e8ed0ca696243d2488cee18cf"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_hjTLDTest": 0.000006904170118751726,
-                "IR_gbd": 0.000006904170118751726
+                "_hjTLDTest": 0.000006903598155358573,
+                "IR_gbd": 0.000006903598155358573
             },
             "exampleSites": [
-                "www.mindvalley.com",
-                "www.westfield.com.au",
-                "www.subaru.jp",
-                "acloud.guru",
-                "www.visionexpress.com",
-                "www.parachutehome.com",
-                "homes.co.nz",
-                "www.prageru.com",
-                "www.pearle.nl",
-                "nyheder.tv2.dk",
-                "messari.io",
-                "order.sonicdrivein.com",
                 "www.ireland.com",
-                "www.native-instruments.com",
-                "www.automationdirect.com",
+                "learn.hashicorp.com",
+                "www.parachutehome.com",
                 "tipsybartender.com",
-                "create.arduino.cc",
                 "docs.arduino.cc",
-                "www.texasmonthly.com",
-                "expert.chegg.com"
-            ]
-        },
-        {
-            "rule": "auth0\\.com\\/styleguide\\/components\\/1\\.0\\.8\\/media\\/logos\\/img\\/badge\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "33fb88f606a3f32f2f218df25dcc69283d9a555a0f8e253f2092f3af53404c11"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "acloud.guru",
-                "www.ireland.com"
-            ]
-        },
-        {
-            "rule": "auth0\\.com\\/js\\/auth0\\/9\\.11\\/auth0\\.min\\.js",
-            "cookies": 0.0000138,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.appName": 11,
-                "Date.prototype.getTime": 14,
-                "Navigator.prototype.userAgent": 11,
-                "Document.cookie setter": 2
-            },
-            "sites": 14,
-            "prevalence": 0.0000967,
-            "cnames": [],
-            "responseHashes": [
-                "2ae5aed8aab32ad79a23003eee65fec603ddbeed83b296ba4735ff840e12b005"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "polaris.com",
-                "atv.polaris.com",
-                "cloud.netapp.com",
-                "general.polaris.com",
-                "offroad.polaris.com",
-                "ranger.polaris.com",
-                "rzr.polaris.com",
-                "slingshot.polaris.com",
-                "snowmobiles.polaris.com",
-                "us.vwr.com",
-                "www.dispatchhealth.com",
-                "www.honeywellhome.com",
-                "www.indianmotorcycle.com",
-                "www.polaris.com"
+                "www.pearle.nl",
+                "schrotundkorn.de",
+                "www.prageru.com",
+                "mudita.com",
+                "www.beautybay.com",
+                "expert.chegg.com",
+                "homes.co.nz",
+                "nyheder.tv2.dk",
+                "order.sonicdrivein.com",
+                "netapp.com",
+                "www.mindvalley.com",
+                "www.arduino.cc",
+                "www.automationdirect.com",
+                "create.arduino.cc",
+                "www.theblockcrypto.com"
             ]
         },
         {
@@ -369,7 +366,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "d6d889e0896fb510681c350bf0feea9d44557759717b11909bd99bcce4ce3d71"
+                "bce5e75958a2f7647c0c174bb7ee357083bce3e2c890db83633b0955c591333e"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -387,12 +384,11 @@
                 "cdn"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
-                "window.localStorage": 2,
-                "Event.prototype.timeStamp": 2
+                "Date.prototype.getTime": 3,
+                "Event.prototype.timeStamp": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [
                 "b0a4cddde7716328b8e087a35ffc5bb30ba06bf6a2493c579eaf88a8e79ade90"
@@ -402,7 +398,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "chegg.com",
-                "expert.chegg.com"
+                "expert.chegg.com",
+                "www.ifit.com"
             ]
         },
         {
@@ -413,8 +410,8 @@
                 "cdn"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [
                 "274a08ddc700fc754cb977c38b9fa34cc0dac17b9d768da40c81b502b97862f6"
@@ -424,7 +421,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "chegg.com",
-                "expert.chegg.com"
+                "expert.chegg.com",
+                "www.ifit.com"
             ]
         },
         {
@@ -432,7 +430,7 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cdn.us"
+                "chegg-experts.us"
             ],
             "apis": {},
             "sites": 2,
@@ -536,9 +534,9 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.appName": 3,
+                "Navigator.prototype.appName": 4,
                 "Date.prototype.getTime": 4,
-                "Navigator.prototype.userAgent": 3
+                "Navigator.prototype.userAgent": 4
             },
             "sites": 4,
             "prevalence": 0.0000276,
@@ -632,6 +630,39 @@
             ]
         },
         {
+            "rule": "auth0\\.com\\/js\\/auth0-spa-js\\/1\\.13\\.6\\/auth0-spa-js\\.production\\.js",
+            "cookies": 0.0000483,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.sessionStorage": 7,
+                "Document.cookie getter": 7,
+                "window.localStorage": 7,
+                "Document.cookie setter": 7,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 7,
+            "prevalence": 0.0000483,
+            "cnames": [],
+            "responseHashes": [
+                "01d6389de5581a2a3eb0cd4d6a05cb136bf07d221306f89173a080c73a38e392"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bemidjipioneer.com",
+                "www.brainerddispatch.com",
+                "www.duluthnewstribune.com",
+                "www.grandforksherald.com",
+                "www.inforum.com",
+                "www.postbulletin.com",
+                "www.wctrib.com"
+            ]
+        },
+        {
             "rule": "auth0\\.com\\/js\\/auth0-spa-js\\/1\\.13\\/auth0-spa-js\\.production\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -639,13 +670,13 @@
                 "cdn"
             ],
             "apis": {
-                "window.sessionStorage": 27,
-                "window.localStorage": 26,
-                "Navigator.prototype.userAgent": 10,
-                "Document.cookie getter": 1
+                "Navigator.prototype.userAgent": 29,
+                "window.sessionStorage": 29,
+                "Document.cookie getter": 29,
+                "window.localStorage": 29
             },
-            "sites": 28,
-            "prevalence": 0.000193,
+            "sites": 39,
+            "prevalence": 0.000269,
             "cnames": [],
             "responseHashes": [
                 "01d6389de5581a2a3eb0cd4d6a05cb136bf07d221306f89173a080c73a38e392"
@@ -654,57 +685,26 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.lowellsun.com",
-                "www.theoaklandpress.com",
-                "www.reporterherald.com",
-                "www.timescall.com",
-                "www.twincities.com",
-                "www.dailycamera.com",
-                "www.dailylocal.com",
-                "www.eastbaytimes.com",
-                "www.denverpost.com",
-                "www.ocregister.com",
-                "www.greeleytribune.com",
-                "www.clarin.com",
-                "www.ole.com.ar",
-                "www.news-herald.com",
-                "www.dailybulletin.com",
-                "www.delcotimes.com",
-                "www.dailybreeze.com",
+                "www.timesheraldonline.com",
+                "www.montereyherald.com",
                 "www.sbsun.com",
-                "www.chicoer.com",
-                "www.pottsmerc.com"
-            ]
-        },
-        {
-            "rule": "auth0\\.com\\/js\\/auth0-spa-js\\/1\\.13\\.6\\/auth0-spa-js\\.production\\.js",
-            "cookies": 0.0000345,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.sessionStorage": 5,
-                "Document.cookie getter": 5,
-                "window.localStorage": 5,
-                "Document.cookie setter": 5
-            },
-            "sites": 5,
-            "prevalence": 0.0000345,
-            "cnames": [],
-            "responseHashes": [
-                "01d6389de5581a2a3eb0cd4d6a05cb136bf07d221306f89173a080c73a38e392"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "brainerddispatch.com",
-                "www.duluthnewstribune.com",
-                "www.grandforksherald.com",
-                "www.inforum.com",
-                "www.postbulletin.com"
+                "www.timesherald.com",
+                "www.troyrecord.com",
+                "www.marinij.com",
+                "www.macombdaily.com",
+                "www.trentonian.com",
+                "bostonherald.com",
+                "www.dailyfreeman.com",
+                "www.ole.com.ar",
+                "www.theoaklandpress.com",
+                "www.denverpost.com",
+                "www.dailycamera.com",
+                "www.morningjournal.com",
+                "www.presstelegram.com",
+                "www.eastbaytimes.com",
+                "www.santacruzsentinel.com",
+                "www.mercurynews.com",
+                "www.greeleytribune.com"
             ]
         },
         {
@@ -743,7 +743,7 @@
             "apis": {
                 "Navigator.prototype.userAgent": 3,
                 "Navigator.prototype.appName": 3,
-                "window.localStorage": 3
+                "window.localStorage": 2
             },
             "sites": 3,
             "prevalence": 0.0000207,
@@ -761,40 +761,13 @@
             ]
         },
         {
-            "rule": "auth0\\.com\\/js\\/auth0-spa-js\\/1\\.7\\/auth0-spa-js\\.production\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "URL.createObjectURL": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "2ad9c24df518babc0202d1b1e745821e357a35cc42e1633d3fa9721877609f0e"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "datree.io",
-                "www.datree.io"
-            ]
-        },
-        {
             "rule": "auth0\\.com\\/js\\/auth0-spa-js\\/1\\.12\\/auth0-spa-js\\.production\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {
-                "window.sessionStorage": 2,
-                "window.localStorage": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
@@ -807,6 +780,28 @@
             "exampleSites": [
                 "ey.com",
                 "www.ey.com"
+            ]
+        },
+        {
+            "rule": "auth0\\.com\\/styleguide\\/components\\/1\\.0\\.8\\/media\\/logos\\/img\\/badge\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "8ce9f639d0609bbca3d5362034f3d85efc0d75830259b3b1f56e6387fe9153a9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ireland.com",
+                "www.ireland.com"
             ]
         },
         {
@@ -864,28 +859,6 @@
             ]
         },
         {
-            "rule": "auth0\\.com\\/styleguide\\/1\\.0\\.0\\/img\\/badge\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "cb5013273a2d0216560c93d4019c4e64f3f793e0adddb569f275f385b60f1ad5"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lfgss.com",
-                "www.lfgss.com"
-            ]
-        },
-        {
             "rule": "auth0\\.com\\/js\\/auth0-spa-js\\/1\\.9\\/auth0-spa-js\\.production\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -939,13 +912,13 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000373,
+    "cookies": 0.000435,
     "types": {
-        "Document": 28,
-        "Image": 4,
-        "Script": 80,
+        "Script": 83,
+        "Document": 30,
         "XHR": 6,
-        "Preflight": 3
+        "Preflight": 3,
+        "Image": 2
     },
     "nameservers": [
         "monroe.ns.cloudflare.com",

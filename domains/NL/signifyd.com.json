@@ -7,15 +7,43 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000401,
+    "sites": 4,
     "subdomains": [
+        "cdn-scripts",
         "bt",
         "imgs"
     ],
     "cnames": [],
     "fingerprinting": 3,
     "resources": [
+        {
+            "rule": "signifyd\\.com\\/api\\/script-tag\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn-scripts"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 3,
+                "window.localStorage": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e17857cb74ff8bb8c18929844a2d0ff42bd36dee42113f85a8831ad42ef6eb79"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pandora.net",
+                "www.bax-shop.be",
+                "www.sram.com"
+            ]
+        },
         {
             "rule": "signifyd\\.com\\/onload",
             "cookies": 0,
@@ -24,8 +52,8 @@
                 "bt"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -35,7 +63,9 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "pandora.net",
-                "thepihut.com"
+                "thepihut.com",
+                "www.bax-shop.be",
+                "www.sram.com"
             ]
         },
         {
@@ -46,8 +76,32 @@
                 "bt"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pandora.net",
+                "thepihut.com",
+                "www.bax-shop.be",
+                "www.sram.com"
+            ]
+        },
+        {
+            "rule": "signifyd\\.com\\/ingest",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bt"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -55,56 +109,38 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "pandora.net",
-                "thepihut.com"
-            ]
-        },
-        {
-            "rule": "signifyd\\.com\\/ingest",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bt"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pandora.net",
-                "thepihut.com"
+                "thepihut.com",
+                "www.bax-shop.be",
+                "www.sram.com"
             ]
         },
         {
             "rule": "signifyd\\.com\\/fp\\/tags\\.js",
-            "cookies": 0.000201,
+            "cookies": 0.000301,
             "fingerprinting": 1,
             "subdomains": [
                 "imgs"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.vendor": 2,
-                "Navigator.prototype.platform": 2,
-                "Navigator.prototype.appVersion": 2
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.vendor": 3,
+                "Navigator.prototype.platform": 3,
+                "Navigator.prototype.appVersion": 3
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "0fc3d9a73d5c0e2962f4b6024526bf130b402eaf955c0039329530e816cea7f9"
+                "5c84bfda500a0478c3c3a5f5da2b58af74f303656c4639eb9adc820b5059785a",
+                "ffed6be0d51d3db3b78f3e4c83f2cac0e2173df4e2faa68b5dc3104c55fae555"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "pandora.net",
-                "thepihut.com"
+                "thepihut.com",
+                "www.sram.com"
             ]
         },
         {
@@ -115,48 +151,74 @@
                 "imgs"
             ],
             "apis": {
-                "Navigator.prototype.mimeTypes": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.vendor": 2,
-                "Navigator.prototype.platform": 2,
-                "Navigator.prototype.appVersion": 2,
-                "Date.prototype.getTimezoneOffset": 2,
-                "window.devicePixelRatio": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.availWidth": 2,
-                "Screen.prototype.availHeight": 2,
-                "Screen.prototype.colorDepth": 2,
-                "Navigator.prototype.plugins": 2,
-                "Navigator.prototype.hardwareConcurrency": 2,
-                "Navigator.prototype.deviceMemory": 2,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
-                "HTMLCanvasElement.prototype.toDataURL": 2,
-                "WebGLRenderingContext.prototype.getParameter": 2,
-                "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
-                "WebGLRenderingContext.prototype.getExtension": 2,
-                "window.localStorage": 2,
-                "window.indexedDB": 2,
-                "RTCPeerConnection.prototype.constructor": 2,
-                "Navigator.prototype.storage": 2,
-                "Navigator.prototype.getBattery": 2,
-                "OfflineAudioContext.prototype.constructor": 2,
-                "Navigator.prototype.mediaDevices": 2,
-                "AudioBuffer.prototype.getChannelData": 2,
-                "Date.prototype.getTime": 2
+                "Navigator.prototype.mimeTypes": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.vendor": 3,
+                "Navigator.prototype.platform": 3,
+                "Navigator.prototype.appVersion": 3,
+                "Date.prototype.getTimezoneOffset": 3,
+                "window.devicePixelRatio": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "Screen.prototype.availWidth": 3,
+                "Screen.prototype.availHeight": 3,
+                "Screen.prototype.colorDepth": 3,
+                "Navigator.prototype.plugins": 3,
+                "Navigator.prototype.hardwareConcurrency": 3,
+                "Navigator.prototype.deviceMemory": 3,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 3,
+                "HTMLCanvasElement.prototype.toDataURL": 3,
+                "WebGLRenderingContext.prototype.getParameter": 3,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 3,
+                "WebGLRenderingContext.prototype.getExtension": 3,
+                "window.localStorage": 3,
+                "window.indexedDB": 3,
+                "RTCPeerConnection.prototype.constructor": 3,
+                "Navigator.prototype.storage": 3,
+                "Navigator.prototype.getBattery": 3,
+                "OfflineAudioContext.prototype.constructor": 3,
+                "Navigator.prototype.mediaDevices": 3,
+                "AudioBuffer.prototype.getChannelData": 3,
+                "Date.prototype.getTime": 3
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "a4aa30ebc6e341c40781725305314af9dab5f81ed900efe69ce55e999fb0fa21"
+                "1bc7b6bb48aefdc63ae0e3d97c46646299f1e30dcc2e893f02caefa6821df046",
+                "94b450dafe828ebd78f0102594ff8e1951a94f00a11bf10c4e9eef3918e3a617"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "pandora.net",
-                "thepihut.com"
+                "thepihut.com",
+                "www.sram.com"
+            ]
+        },
+        {
+            "rule": "signifyd\\.com\\/fp\\/clear\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "imgs"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [],
+            "responseHashes": [
+                "6882437cef514eeafff92a4dde96489b049e439967c6c99faff992e2045d994c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pandora.net",
+                "nl.pandora.net",
+                "thepihut.com",
+                "www.sram.com"
             ]
         },
         {
@@ -171,15 +233,15 @@
             "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "95518cbec0d55a574a9c8ef72a2a7d62ac0d40a4de5dfe67a76a7d214dc8b743"
+                "6882437cef514eeafff92a4dde96489b049e439967c6c99faff992e2045d994c"
             ],
-            "type": "Image",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "pandora.net",
-                "nl.pandora.net",
-                "thepihut.com"
+                "thepihut.com",
+                "www.sram.com"
             ]
         },
         {
@@ -192,42 +254,20 @@
             "apis": {
                 "window.localStorage": 2
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "6a69085bed0b2d8f1f0234606788e509c79deef9a706434060de7e6651d6ab55"
+                "0cea37321e1bd3e7b82e80a3d21e00267ac4deda6e7672ae5e17d65801309325",
+                "77945e455127c323bca775bec453a077d5e49bdfc2d869160e6903468fa6c427"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "pandora.net",
-                "thepihut.com"
-            ]
-        },
-        {
-            "rule": "signifyd\\.com\\/fp\\/top_fp\\.html",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "imgs"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "fb2ce5ed44563380f3594f9ed6b970158a7e2f8c0dee22a5b0138ab8ee50a74b"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pandora.net",
-                "thepihut.com"
+                "thepihut.com",
+                "www.sram.com"
             ]
         },
         {
@@ -238,22 +278,50 @@
                 "imgs"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [
-                "95518cbec0d55a574a9c8ef72a2a7d62ac0d40a4de5dfe67a76a7d214dc8b743"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "pandora.net",
-                "thepihut.com"
+                "nl.pandora.net",
+                "thepihut.com",
+                "www.sram.com"
             ]
         },
         {
-            "rule": "signifyd\\.com\\/fp\\/clear\\.png",
+            "rule": "signifyd\\.com\\/fp\\/top_fp\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "imgs"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e4752f1ea76e7fa418bfcebf53219a2f9ff25b84cb4c31cdc79e1f3ffe813c0a",
+                "9e9c289953de2c027bd63a294e19ae36943760aa6fbf9f12734e27692d37562b"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pandora.net",
+                "thepihut.com",
+                "www.sram.com"
+            ]
+        },
+        {
+            "rule": "signifyd\\.com\\/fp\\/clear1\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -266,47 +334,25 @@
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pandora.net",
-                "nl.pandora.net",
-                "thepihut.com"
-            ]
-        },
-        {
-            "rule": "signifyd\\.com\\/fp\\/clear1\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "imgs"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "pandora.net",
-                "thepihut.com"
+                "thepihut.com",
+                "www.sram.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000301,
     "types": {
-        "XHR": 6,
-        "Preflight": 2,
-        "Script": 7,
-        "Image": 5,
-        "Document": 4
+        "Script": 13,
+        "XHR": 11,
+        "Preflight": 4,
+        "Image": 7,
+        "Document": 6
     },
     "nameservers": [
         "ns-1445.awsdns-52.org",

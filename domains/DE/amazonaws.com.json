@@ -9,15 +9,20 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.00311,
-    "sites": 31,
+    "prevalence": 0.00381,
+    "sites": 38,
     "subdomains": [
         "o9tt6h08li.execute-api.eu-west-1",
-        "qt-files.s3.eu-west-1",
         "cognito-identity.eu-central-1",
+        "logs.eu-central-1",
         "kinesis.ap-northeast-2",
+        "a2jvy22h0kr7b5-ats.iot.us-west-2",
         "zalywzdew6.execute-api.us-west-2",
-        "a2jvy22h0kr7b5-ats.iot.us-west-2"
+        "web-chat-tag-cdn.s3.eu-west-1",
+        "cicptqmkej.execute-api.eu-west-1",
+        "9mn3sm7015.execute-api.eu-west-1",
+        "s3.us-west-2",
+        "webpick-cdn.s3.us-west-2"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -57,7 +62,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "5445fc553755edc33f0ad10fe8154af20455a74dec166a5f6b73b646b75ce535"
+                "e8314483fe6279ff3c11f557c4820b4044ded5bce30f07172aa1abab19e97ae8"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -68,38 +73,17 @@
             ]
         },
         {
-            "rule": "amazonaws\\.com\\/banners\\/1140x300_QtWS21_Community_banner\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "qt-files.s3.eu-west-1"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "8508d2b4d8b9876e33e6e4ab37357440bdd36352ef870a2340fb5fe16767ba9f"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "qt.io",
-                "forum.qt.io"
-            ]
-        },
-        {
             "rule": "amazonaws\\.com\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "cognito-identity.eu-central-1",
+                "logs.eu-central-1",
                 "kinesis.ap-northeast-2"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -107,6 +91,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "sensiseeds.com",
+                "www.covid19.admin.ch",
                 "www.lg.com",
                 "www.medpets.de",
                 "www.wollplatz.de"
@@ -125,9 +110,9 @@
             "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [
-                "c058245002ad20dc52d84a3b9d1772c45d8541774787ba5ef1dde8b2791a46ec",
-                "6d2b941d552eef226dee22dd29a6f4773cbdb3a1c1c49579ab1a50c9fb453659",
-                "9e774e4bab6754b274628198f2189fe4f9de4d8fcfcfe9add21a9c1ebb121dbd"
+                "a78422e483d659f6f0dbe20695be0ff00df3e376930a8ffc85ae4620f4b2e6eb",
+                "a1a689c36e87d35642887f71114b153a8615d26ba6b08cdefdf4b381029549a0",
+                "2e7a10992f078cff5a7b2b9cd626ae57f4fccf2b1f9b55e672dbb891b25f54f6"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -140,27 +125,25 @@
             ]
         },
         {
-            "rule": "amazonaws\\.com\\/prod\\/v0\\/timing",
+            "rule": "amazonaws\\.com\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "zalywzdew6.execute-api.us-west-2"
+                "logs.eu-central-1"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "3abb9de197b95593eccc0726b5212966185fc61bcd6b3c09dad5a09b51c09d67",
-                "f0648a2da29ffcdfde63f93c2a54c78f1c283e53f55d8a3339be68395662dab6"
+                "84a3c52d7a11d258817752ebb1e33fe087851fa78e8f2ef9ae2f38c7fa907426"
             ],
-            "type": "Other",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "yamaha.com",
-                "www.gamestop.com",
-                "www.guitarcenter.com"
+                "admin.ch",
+                "www.covid19.admin.ch"
             ]
         },
         {
@@ -182,6 +165,144 @@
                 "expedia.de",
                 "www.expedia.com"
             ]
+        },
+        {
+            "rule": "amazonaws\\.com\\/prod\\/v0\\/timing",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "zalywzdew6.execute-api.us-west-2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "77682f6fbbc1b5f2c0ceb7bc1ac34f75349f1bc9c945ef90c079bf83bff5c546"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gamestop.com",
+                "www.gamestop.com"
+            ]
+        },
+        {
+            "rule": "amazonaws\\.com\\/Brie\\/chat\\.js\\.gz",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "web-chat-tag-cdn.s3.eu-west-1"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "89653cd6b8d2b8645362bb1da785cc15f943a40a2e3dc6d2e761ddd739d0cf75"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hellofresh.de",
+                "www.hellofresh.com"
+            ]
+        },
+        {
+            "rule": "amazonaws\\.com\\/live\\/public\\/feed\\/VUW-Z0wYRyytS2-2ORoo2w",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cicptqmkej.execute-api.eu-west-1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e33f0068994bf03ddebc0b3643757c5602f5eff949642f4565e561f3ea9334b5"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_flowbox": 0.00020060180541624874
+            },
+            "exampleSites": [
+                "hunkemoller.de",
+                "www.hunkemoller.de"
+            ]
+        },
+        {
+            "rule": "amazonaws\\.com\\/live\\/analytics\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "9mn3sm7015.execute-api.eu-west-1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hunkemoller.de",
+                "www.vertbaudet.de"
+            ]
+        },
+        {
+            "rule": "amazonaws\\.com\\/stamped\\.io\\/uploads\\/account\\/196597\\/meta\\/launcher_logo_image\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.us-west-2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "3fa2b111cb55792f3f8f089401bae6994fac8bf0198f0278b9af4c779fd2b48b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rollei.de",
+                "www.rollei.de"
+            ]
+        },
+        {
+            "rule": "amazonaws\\.com\\/getlaid\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webpick-cdn.s3.us-west-2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "9219c3955a8da58e87c00301a52378066f8ee53abfd4150f3708432f9f4b772d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "twuko.com",
+                "www.twuko.com"
+            ]
         }
     ],
     "categories": [
@@ -190,16 +311,19 @@
     "performance": {},
     "cookies": 0.000401,
     "types": {
-        "Other": 6,
+        "Other": 3,
         "XHR": 6,
-        "Image": 2,
-        "Preflight": 4,
-        "WebSocket": 2
+        "Preflight": 5,
+        "Fetch": 6,
+        "WebSocket": 2,
+        "Ping": 2,
+        "Script": 2,
+        "Image": 4
     },
     "nameservers": [
-        "r1.amazonaws.com",
-        "r2.amazonaws.com",
+        "u2.amazonaws.com",
         "u1.amazonaws.com",
-        "u2.amazonaws.com"
+        "r2.amazonaws.com",
+        "r1.amazonaws.com"
     ]
 }

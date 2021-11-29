@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000207,
-    "sites": 3,
+    "prevalence": 0.0000138,
+    "sites": 2,
     "subdomains": [
         "player.v",
         "webd.home",
@@ -19,7 +19,7 @@
     "resources": [
         {
             "rule": "news\\.cn\\/player\\/sdk\\/h5\\/DHYPlayer-latest\\.min\\.js",
-            "cookies": 0,
+            "cookies": 0.0000069,
             "fingerprinting": 2,
             "subdomains": [
                 "player.v"
@@ -28,10 +28,12 @@
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.product": 2,
                 "Date.prototype.getTime": 2,
+                "Element.prototype.getClientRects": 1,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1,
                 "Navigator.prototype.language": 1,
                 "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "Document.cookie getter": 1
+                "Screen.prototype.height": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -40,7 +42,14 @@
                 "39c9d3c2edbd1c90febfd12c359ea714b9c9ab5ee6803d44795d55f81f91d2b5"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "XHPLAYER-INSTANCE": {
+                    "ttl": 2592003,
+                    "length": 36,
+                    "prevalence": 0.000006903598155358573,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "xinhuanet.com",
@@ -49,50 +58,74 @@
         },
         {
             "rule": "news\\.cn\\/webdig\\.js",
-            "cookies": 0.0000069,
+            "cookies": 0.0000138,
             "fingerprinting": 2,
             "subdomains": [
                 "webd.home"
             ],
             "apis": {
-                "Navigator.prototype.appName": 1,
-                "Navigator.prototype.appVersion": 1,
-                "Navigator.prototype.userAgent": 1,
-                "Screen.prototype.width": 1,
-                "Navigator.prototype.plugins": 1,
-                "Date.prototype.getTimezoneOffset": 1,
-                "Screen.prototype.height": 1,
-                "Screen.prototype.colorDepth": 1,
-                "Screen.prototype.pixelDepth": 1,
-                "Navigator.prototype.language": 1,
-                "Navigator.prototype.javaEnabled": 1,
-                "Navigator.prototype.cookieEnabled": 1,
-                "Document.cookie getter": 1,
-                "Date.prototype.getTime": 1,
-                "Document.cookie setter": 1
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.width": 2,
+                "Navigator.prototype.plugins": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Screen.prototype.pixelDepth": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "beadea8f70b9ad816fa087a93b319abfefb207c46773a50bb344d97b0bcd9ba4"
+                "f72be80705702b92352a2cb49ae707ec0755e81e5c0379836b19d3ceaeb65504"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "wdcid": {
-                    "ttl": 511438301,
+                    "ttl": 508746114,
                     "length": 16,
-                    "prevalence": 0.000006904170118751726,
+                    "prevalence": 0.000013807196310717146,
                     "uniqueness": 1
                 },
                 "wdlast": {
-                    "ttl": 511438301,
+                    "ttl": 508746114,
                     "length": 10,
-                    "prevalence": 0.000006904170118751726,
-                    "uniqueness": 1
+                    "prevalence": 0.000013807196310717146,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "xinhuanet.com",
+                "www.xinhuanet.com"
+            ]
+        },
+        {
+            "rule": "news\\.cn\\/1\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webd.home"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "7d25ba0d42bcb549b550cda699a81f44187337f291a7e76ca5a1dd2361fbb9f3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "wdcid": 0.000013807196310717146
+            },
             "exampleSites": [
                 "xinhuanet.com",
                 "www.xinhuanet.com"
@@ -119,20 +152,42 @@
                 "xinhuanet.com",
                 "www.xinhuanet.com"
             ]
+        },
+        {
+            "rule": "news\\.cn\\/vms\\/api\\/pub\\/player\\/recordContent",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vodstat.v"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "xinhuanet.com",
+                "www.xinhuanet.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000069,
+    "cookies": 0.0000138,
     "types": {
         "Script": 4,
-        "XHR": 2
+        "Image": 2,
+        "XHR": 2,
+        "Preflight": 2
     },
     "nameservers": [
         "ns2.cdns.cn",
+        "ns3.news.cn",
         "ns1.news.cn",
         "ns1.cdns.cn",
-        "ns3.news.cn",
         "ns3.cdns.cn"
     ]
 }

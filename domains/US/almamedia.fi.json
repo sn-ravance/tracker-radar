@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000759,
-    "sites": 11,
+    "prevalence": 0.0000828,
+    "sites": 12,
     "subdomains": [
         "monster",
         "cdn",
@@ -30,7 +30,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "442ca67d5ac19f58c2ac0cb831650b977ae618695ea8e4370716ef229d3cb436"
+                "65a0cae87747f5b0dbc77f6e83c0b73294c8a13cdaa2ed65b0d8a1198a4f1faf"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -52,7 +52,7 @@
             "prevalence": 0.0000414,
             "cnames": [],
             "responseHashes": [
-                "970ebac1bf7897e8f4b8b8b5faaa16ee0685698ecd4442181440f02165a17260"
+                "459b3fbaa9715af3b4f0fa48cfe91d9ce60495f31fc2c5816990308f424350bb"
             ],
             "type": "Font",
             "firstPartyCookies": {},
@@ -78,7 +78,7 @@
             "prevalence": 0.0000414,
             "cnames": [],
             "responseHashes": [
-                "55f0c7e8f4ead93afb19053af736a379ccdea6eeae213d2297f0609b6e816319"
+                "db4ec07c5f9ad359046c2d40f9e71b008d5ec051b262f7bc201b50cacd12c6f6"
             ],
             "type": "Font",
             "firstPartyCookies": {},
@@ -130,7 +130,7 @@
             "prevalence": 0.0000414,
             "cnames": [],
             "responseHashes": [
-                "c9d2748d96fd95c196d8324e1d54a6687b9c457200743595296311f1355207bf"
+                "0f15c0db039d411be958bfccb64c6ec42c517a3e81ceb56a9e9626b986db1183"
             ],
             "type": "Other",
             "firstPartyCookies": {},
@@ -156,7 +156,7 @@
             "prevalence": 0.0000414,
             "cnames": [],
             "responseHashes": [
-                "db9b38f566a1417366bf0983717c0d5497fe0c554be183736212855de0eabdbd"
+                "b3eed6e200aebf560a3070238f8861c16e84da953f0aba0fa4c079158e71f3b1"
             ],
             "type": "Other",
             "firstPartyCookies": {},
@@ -264,8 +264,8 @@
                 "Navigator.prototype.platform": 6,
                 "Date.prototype.getTime": 6
             },
-            "sites": 6,
-            "prevalence": 0.0000414,
+            "sites": 7,
+            "prevalence": 0.0000483,
             "cnames": [],
             "responseHashes": [
                 "071dd2b879df72d3d994eb4fe6b62efeb153cdf75486be1cae82e723b1712965"
@@ -278,18 +278,21 @@
                 "www.ampparit.com",
                 "www.kauppalehti.fi",
                 "www.kotikokki.net",
+                "www.nettimoto.com",
                 "www.rantapallo.fi",
                 "www.vuokraovi.com"
             ]
         },
         {
             "rule": "almamedia\\.fi\\/cookies\\/cookieCheckStart\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
             "subdomains": [
                 "assets.tunnus"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie setter": 2
+            },
             "sites": 4,
             "prevalence": 0.0000276,
             "cnames": [],
@@ -297,7 +300,14 @@
                 "572171ad39bcc82843b2a32d4a6ae71fe9f71826f32cfc6bd0af36c2261d353a"
             ],
             "type": "Document",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "cookiecheck": {
+                    "ttl": null,
+                    "length": 5,
+                    "prevalence": 0.000013807196310717146,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "kauppalehti.fi",
@@ -307,60 +317,15 @@
             ]
         },
         {
-            "rule": "almamedia\\.fi\\/alma-amd\\/js-cookie\\/2\\.1\\.3\\/js-cookie\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "2ed63822ff38b9943c44cef0d2946dc7e950f5bce75d52f550238b410e7a7044"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kauppalehti.fi",
-                "www.kauppalehti.fi"
-            ]
-        },
-        {
-            "rule": "almamedia\\.fi\\/alma-amd\\/bows\\/1\\.6\\.0\\/bows\\.min\\.js",
+            "rule": "almamedia\\.fi\\/cookies\\/cookieCheckFinish\\.html",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "f9d59461ad8db1f9e6685d4c15ca49a36f8b8a4aa4550d4e40501add47090df1"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kauppalehti.fi",
-                "www.kauppalehti.fi"
-            ]
-        },
-        {
-            "rule": "almamedia\\.fi\\/cookies\\/cookieCheckFinish\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
                 "assets.tunnus"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 3
+            },
             "sites": 4,
             "prevalence": 0.0000276,
             "cnames": [],
@@ -459,7 +424,7 @@
             "prevalence": 0.0000276,
             "cnames": [],
             "responseHashes": [
-                "090974dd4dc39f4528d4b52108d3cc1402d4a924b0fc43f0d94bd0517356160b"
+                "00ab1bd9769ed2aec362e3ecb8a7255f3f1af9c106c2de24d640ebf459547c66"
             ],
             "type": "Font",
             "firstPartyCookies": {},
@@ -490,7 +455,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "a7f179dc82987f4feb4c0759d9d80c689b580f33f135fdd6b983515e6dad0b83"
+                "fd6ebe4ddf92b097e35974e73deea837b7545d0d2cb5720b0310e9b37de169ce"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -576,18 +541,18 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000276,
     "types": {
         "Document": 10,
         "Font": 16,
         "Other": 18,
-        "Script": 32,
+        "Script": 29,
         "XHR": 14
     },
     "nameservers": [
         "ns-375.awsdns-46.com",
-        "ns-711.awsdns-24.net",
         "ns-1391.awsdns-45.org",
+        "ns-711.awsdns-24.net",
         "ns-1892.awsdns-44.co.uk"
     ]
 }

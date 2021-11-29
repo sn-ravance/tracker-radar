@@ -7,40 +7,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000276,
-    "sites": 4,
+    "prevalence": 0.0000138,
+    "sites": 2,
     "subdomains": [
-        "foxford",
         "cybersport"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
-        {
-            "rule": "push4site\\.com\\/Static\\/Script\\/foxford\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "foxford"
-            ],
-            "apis": {
-                "Navigator.prototype.language": 2,
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "1e86206c6585ffcb39d8704748d6ffb2a34a3953a5005201f7ae67bee99fbf39"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "foxford.ru",
-                "externat.foxford.ru"
-            ]
-        },
         {
             "rule": "push4site\\.com\\/sdk",
             "cookies": 0,
@@ -50,7 +24,11 @@
             ],
             "apis": {
                 "Navigator.prototype.language": 2,
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Notification.permission": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -87,13 +65,34 @@
                 "cybersport.ru",
                 "www.cybersport.ru"
             ]
+        },
+        {
+            "rule": "push4site\\.com\\/Sdk\\/WidgetDisplayed",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cybersport.ru",
+                "www.cybersport.ru"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 6
+        "Script": 4,
+        "Fetch": 2
     },
     "nameservers": [
         "gene.ns.cloudflare.com",

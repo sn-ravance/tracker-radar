@@ -9,18 +9,20 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.00301,
-    "sites": 30,
+    "prevalence": 0.00331,
+    "sites": 33,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "o2",
+        "n2"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "mouseflow\\.com\\/projects\\/95790aba-5801-4f08-86ed-25088809a170\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "cdn"
             ],
@@ -28,7 +30,9 @@
                 "window.name": 3,
                 "window.localStorage": 3,
                 "Navigator.prototype.doNotTrack": 3,
-                "window.sessionStorage": 3
+                "window.sessionStorage": 3,
+                "Navigator.prototype.webdriver": 3,
+                "Navigator.prototype.userAgent": 3
             },
             "sites": 3,
             "prevalence": 0.000301,
@@ -55,7 +59,7 @@
             "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "9f64aca72ebc5e0e3775ae57bbce7389430bd345b23f038a9fc74054e727d684"
+                "bebc2305c0712d9862312c068ef45bd918db4e673a0aaf983c3b081242663c1f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -67,48 +71,101 @@
             ]
         },
         {
-            "rule": "mouseflow\\.com\\/projects\\/3c9f904a-c168-4fb3-9587-e183726ebff0\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
+            "rule": "mouseflow\\.com\\/init",
+            "cookies": 0.0001,
+            "fingerprinting": 0,
             "subdomains": [
-                "cdn"
+                "o2",
+                "n2"
             ],
-            "apis": {
-                "window.name": 2,
-                "window.localStorage": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Script",
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "s_srv": 0.00010030090270812437
+            },
             "exampleSites": [
-                "cath.ch",
-                "www.kath.ch"
+                "etihad.com",
+                "www.ptc.com",
+                "www.tonerpartner.ch"
             ]
         },
         {
-            "rule": "mouseflow\\.com\\/projects\\/3c9f904a-c168-4fb3-9587-e183726ebff0_eu\\.js",
-            "cookies": 0,
+            "rule": "mouseflow\\.com\\/html",
+            "cookies": 0.0001,
             "fingerprinting": 0,
             "subdomains": [
-                "cdn"
+                "o2",
+                "n2"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "etihad.com",
+                "www.ptc.com",
+                "www.tonerpartner.ch"
+            ]
+        },
+        {
+            "rule": "mouseflow\\.com\\/dom",
+            "cookies": 0.0001,
+            "fingerprinting": 0,
+            "subdomains": [
+                "o2",
+                "n2"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "8eef738ec2f3f7a48009ba972ce61055595aaf9796623f6161706d3609f6ecf7",
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "etihad.com",
+                "www.ptc.com",
+                "www.tonerpartner.ch"
+            ]
+        },
+        {
+            "rule": "mouseflow\\.com\\/events",
+            "cookies": 0.0001,
+            "fingerprinting": 0,
+            "subdomains": [
+                "o2",
+                "n2"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "4247fab2232e76befce7ae84f4affb18bf34958b78582e52a4e43224f8e05975"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cath.ch",
-                "www.kath.ch"
+                "etihad.com",
+                "www.ptc.com"
             ]
         }
     ],
@@ -120,15 +177,16 @@
         "Session Replay"
     ],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000802,
     "types": {
-        "Script": 10
+        "Script": 6,
+        "XHR": 11
     },
     "nameservers": [
-        "ns1.linode.com",
         "ns5.linode.com",
-        "ns4.linode.com",
+        "ns1.linode.com",
+        "ns2.linode.com",
         "ns3.linode.com",
-        "ns2.linode.com"
+        "ns4.linode.com"
     ]
 }

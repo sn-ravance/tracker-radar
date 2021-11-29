@@ -4,38 +4,86 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
-        "static"
+        "static",
+        "api"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "redeal\\.se\\/widget\\/js\\/redeal\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "static"
             ],
             "apis": {
                 "Date.prototype.getTime": 2,
                 "window.localStorage": 2,
-                "window.sessionStorage": 2
+                "window.sessionStorage": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.userAgent": 2
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "b7e537e8c7f6bdd139aabbf080c16ef6ea42ee48cb520fc493a7d25faca91189"
+                "3b845c9464a23e82f904bfa490264029ecc3235aad0467f5dc19d1c81f4f33a9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nikita.no",
-                "www.lekia.no"
+                "coolstuff.no",
+                "www.nordicnest.com",
+                "www.nordicnest.no"
+            ]
+        },
+        {
+            "rule": "redeal\\.se\\/api\\/check",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "aafd9dd038312e0c2a809bf9ae8a672ece81fa62f10d978055d7597d9b24c5ee"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nordicnest.com",
+                "www.nordicnest.no"
+            ]
+        },
+        {
+            "rule": "redeal\\.se\\/api\\/check",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nordicnest.com",
+                "www.nordicnest.no"
             ]
         }
     ],
@@ -43,7 +91,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2
+        "Script": 3,
+        "XHR": 2,
+        "Preflight": 2
     },
     "nameservers": [
         "ns1.loopia.se",

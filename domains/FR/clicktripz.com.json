@@ -4,17 +4,275 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000502,
+    "sites": 5,
     "subdomains": [
-        "www"
+        "static",
+        "compare-static.virail.fr",
+        "www",
+        "compare.virail.fr"
     ],
-    "cnames": [],
-    "fingerprinting": 1,
+    "cnames": [
+        {
+            "original": "compare-static.virail.fr",
+            "resolved": "compare-static.virail.fr.clicktripz.com"
+        },
+        {
+            "original": "compare.virail.fr",
+            "resolved": "compare.virail.fr.clicktripz.com"
+        }
+    ],
+    "fingerprinting": 2,
     "resources": [
         {
+            "rule": "clicktripz\\.com\\/tag\\.js",
+            "cookies": 0.000401,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static",
+                "compare-static.virail.fr"
+            ],
+            "apis": {
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 3,
+                "Navigator.prototype.userAgent": 3
+            },
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [
+                {
+                    "original": "compare-static.virail.fr",
+                    "resolved": "compare-static.virail.fr.clicktripz.com"
+                }
+            ],
+            "responseHashes": [
+                "5cfa159e90609e1c971e77bc8594b010a5afbfcc558ed43a476853353c9a7a15",
+                "d5dd6d7cdda00d9c33a878ca1f626fd646571ddd5f23cd3636de96cb15e11502"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_ctpuid": {
+                    "ttl": 7776002,
+                    "length": 36,
+                    "prevalence": 0.00030111412225233364,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "l-itineraire.com",
+                "www.liligo.com",
+                "www.virail.fr",
+                "www.webvilles.net"
+            ]
+        },
+        {
             "rule": "clicktripz\\.com\\/api\\/integrations\\/v1\\/constrain",
-            "cookies": 0.0001,
+            "cookies": 0.000502,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000502,
+            "cnames": [],
+            "responseHashes": [
+                "3ca25c1fdd9971d6815f6de08e21256469d50300030a7fb44fa777d962867e84",
+                "e370d94bf55762e9576ef2072d88a00939cf24eb72f91f16d7fbb3f191dbeaea",
+                "92af88180f20fdbac3914ba57d4cf7262f62c5af9eaf695776672084ae515b2b",
+                "8a4b53d88a4459342f897ee5deb7a5d0ea2ba7d7f3d3e69432e231dceedba5bb"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "l-itineraire.com",
+                "www.liligo.com",
+                "www.usatoday.com",
+                "www.virail.fr",
+                "www.webvilles.net"
+            ]
+        },
+        {
+            "rule": "clicktripz\\.com\\/asset\\/__adslot-bundle\\/5465ff2ad1564a5f0ee897956d03ca21767a6497\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.languages": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.platform": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Navigator.prototype.plugins": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "a03c8b2e1a7d384f8ee3b6439a06eebd992c2720e7957896e24c7d4fd392a564"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cookies.js": {
+                    "ttl": 2,
+                    "length": 9,
+                    "prevalence": 0.00020074274816822243,
+                    "uniqueness": 0.5
+                },
+                "_pageviewUUID": {
+                    "ttl": 603,
+                    "length": 36,
+                    "prevalence": 0.00020074274816822243,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "l-itineraire.com",
+                "www.webvilles.net"
+            ]
+        },
+        {
+            "rule": "clicktripz\\.com\\/logs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www",
+                "compare.virail.fr"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000502,
+            "cnames": [
+                {
+                    "original": "compare.virail.fr",
+                    "resolved": "compare.virail.fr.clicktripz.com"
+                }
+            ],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "l-itineraire.com",
+                "www.l-itineraire.com",
+                "www.liligo.com",
+                "www.virail.fr",
+                "www.webvilles.net"
+            ]
+        },
+        {
+            "rule": "clicktripz\\.com\\/x\\/pas",
+            "cookies": 0.000502,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www",
+                "compare.virail.fr"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000502,
+            "cnames": [
+                {
+                    "original": "compare.virail.fr",
+                    "resolved": "compare.virail.fr.clicktripz.com"
+                }
+            ],
+            "responseHashes": [
+                "6972d0f67748c8288c62a3e089f0ffe862020bf925d8d74dd887f33d2c1a945f",
+                "921aada12bb9cce17ed4fc6365e82d6f3df1781f6b3fd8b3fba7de1a9fb9c392",
+                "47f3c3ae0f18cb370c78de112d5a0246273f6017f446692c7a07867030ae183a",
+                "41c416a0a14866a58dc3ce12c91957a792cd712f9cdf0c8189f133d99f4aeca0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ctpuid": 0.00040148549633644485
+            },
+            "exampleSites": [
+                "l-itineraire.com",
+                "www.l-itineraire.com",
+                "www.liligo.com",
+                "www.virail.fr",
+                "www.webvilles.net"
+            ]
+        },
+        {
+            "rule": "clicktripz\\.com\\/pixel\\.php",
+            "cookies": 0.000502,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www",
+                "compare.virail.fr"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000502,
+            "cnames": [
+                {
+                    "original": "compare.virail.fr",
+                    "resolved": "compare.virail.fr.clicktripz.com"
+                }
+            ],
+            "responseHashes": [
+                "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ctpuid": 0.00040148549633644485,
+                "_pageviewUUID": 0.00040148549633644485
+            },
+            "exampleSites": [
+                "l-itineraire.com",
+                "www.l-itineraire.com",
+                "www.liligo.com",
+                "www.virail.fr",
+                "www.webvilles.net"
+            ]
+        },
+        {
+            "rule": "clicktripz\\.com\\/n3\\/crane\\/v0\\/render",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "2bdb8ebc32114e80f57272e3e6226b835ae27028bbb5c61a5bc9748036a5000c"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "l-itineraire.com",
+                "www.l-itineraire.com"
+            ]
+        },
+        {
+            "rule": "clicktripz\\.com\\/click\\.php",
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "www"
@@ -23,26 +281,34 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
+            "responseHashes": [
+                "4547ec1a1948262a9764fe03af8abd4062d5efca4467626d8ddf8b287a8dd607"
+            ],
+            "type": "Document",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "_ctpuid": 0.00020074274816822243
+            },
             "exampleSites": [
-                "usatoday.com",
-                "www.virail.fr"
+                "l-itineraire.com",
+                "www.l-itineraire.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000502,
     "types": {
-        "XHR": 2
+        "Script": 11,
+        "XHR": 5,
+        "Ping": 5,
+        "Image": 5,
+        "Document": 4
     },
     "nameservers": [
-        "ns-1486.awsdns-57.org",
-        "ns-1631.awsdns-11.co.uk",
         "ns-300.awsdns-37.com",
-        "ns-940.awsdns-53.net"
+        "ns-940.awsdns-53.net",
+        "ns-1631.awsdns-11.co.uk",
+        "ns-1486.awsdns-57.org"
     ]
 }

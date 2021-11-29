@@ -10,10 +10,11 @@
     "prevalence": 0.0000138,
     "sites": 2,
     "subdomains": [
-        "static"
+        "static",
+        "images"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "wbstatic\\.net\\/s\\/desktop\\/style\\/views\\/spa\\/main-v3\\.min\\.css",
@@ -27,7 +28,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "04b0810fea067ce2e5751172020af75d0785623eb93d6caee7f191df83e1c742"
+                "02e62fec73f2c3c2b9c3a7075f0f2989074a59b51d075198284e0f85ce4de7bc"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -49,7 +50,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "20b94f55b38efe63104361ff15a329523fe2c3243e3dc2b06b7d93ac6c9521fd"
+                "507c1c30282feaaa058441f9071aed1ad8675e499fa83888e1335cb258f1aa9d"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -71,7 +72,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "7fa96cf0239d525cec1c446c3ed976908a8ebcc01e84358e50f0be189ed89ce2"
+                "29a948377fda753e5915eb35cbc55b131331fc1dc7acd913cb4a823282f36352"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -93,7 +94,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "9d803b163ccb7c7ca89bd1eef701a67b443d2d30c62b9b4a3a4ddc1fe2f1840e"
+                "61f02f27328ccae82e95085a9ff97453c0854cff9c0e2fea4f34174de48da6a7"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -126,28 +127,6 @@
             ]
         },
         {
-            "rule": "wbstatic\\.net\\/i\\/blank\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "8f69e10876805b747a3ad08a818d46ac7e731b1af417ea6e259d9b6b7deb65c5"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wildberries.ru",
-                "www.wildberries.ru"
-            ]
-        },
-        {
             "rule": "wbstatic\\.net\\/j\\/jquery\\.plus\\.plugins\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 2,
@@ -157,9 +136,11 @@
             "apis": {
                 "Navigator.prototype.userAgent": 2,
                 "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
                 "window.sessionStorage": 2,
                 "Navigator.prototype.vendor": 2,
-                "Navigator.prototype.appCodeName": 2
+                "Navigator.prototype.appCodeName": 2,
+                "Event.prototype.timeStamp": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -184,13 +165,14 @@
             ],
             "apis": {
                 "window.sessionStorage": 2,
-                "window.localStorage": 2
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "38311cb65d3c0637e9e87b4424561adaf38f556a0b9f4417aa9ae41e78a21762"
+                "807eee1c74c09ac7f141de6f5a877f05d66dd3a3a2536097fb4798191d1fb031"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -202,25 +184,33 @@
         },
         {
             "rule": "wbstatic\\.net\\/j\\/spa\\/index\\.min\\.js",
-            "cookies": 0,
+            "cookies": 0.0000138,
             "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
-                "URL.createObjectURL": 2,
-                "window.localStorage": 2,
-                "window.sessionStorage": 2
+                "Document.cookie getter": 2,
+                "URL.createObjectURL": 1,
+                "Document.cookie setter": 2,
+                "window.localStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "7639ed9bc34eff76bdaba5ad18c8156e8a23f658f1ed8a91af678d25a97de1e9"
+                "de82325e762574dd1e1d24b1ec1f2065bc034f148dffcf41da5cf46816d3ccb5"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "BasketUID": {
+                    "ttl": 31536000,
+                    "length": 36,
+                    "prevalence": 0.000013807196310717146,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "wildberries.ru",
@@ -239,7 +229,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "228cbf060da45b150cb6eaf5570a573ea16917e652d028bb50ce911823a510b8"
+                "e123c3502c5e97cc4438ff47fe9082e9893d167b3c75c9d7e983d75808e4967c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -261,9 +251,49 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "7bdab967a12f6cbb1437296bdd776860bf937e183718375621d34430d4b8411b"
+                "57162b62f78cbb6b924f946c29f18d38a395eebed03597e74295716b1026601c"
             ],
             "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wildberries.ru",
+                "www.wildberries.ru"
+            ]
+        },
+        {
+            "rule": "wbstatic\\.net\\/i\\/blank\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wildberries.ru",
+                "www.wildberries.ru"
+            ]
+        },
+        {
+            "rule": "wbstatic\\.net\\/j\\/spa\\/modules\\/searchInput\\/suggestionsHelper\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -284,9 +314,7 @@
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [
-                "67b75e57393f280043651e7497830b006c5b395c37cf3daad46aab5ecf0d5382"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -308,9 +336,7 @@
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [
-                "ee628fa6ed63ac2a2aebb7102fa7f1da08bac8ac6c22fee3e0964dc8b1f5bfe4"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -330,9 +356,7 @@
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [
-                "00f560780dbd3ca9db8f0c8abd3a5f076f7003b97e2fb8fab72fc5cc6350407c"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -342,7 +366,7 @@
             ]
         },
         {
-            "rule": "wbstatic\\.net\\/s\\/jquery\\.tooltipster\\.min\\.css",
+            "rule": "wbstatic\\.net\\/s\\/desktop\\/style\\/views\\/site\\/main-page-v3\\.min\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -353,9 +377,632 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "2cb0a9d9261f61d7df46f394adbb47ab74e702391cfc947de975fae880a4cc42"
+                "eb8706c5c216d2319745e91a58af9283b765c7138f6e6c7dd39dcf821fae3cf8"
             ],
             "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wildberries.ru",
+                "www.wildberries.ru"
+            ]
+        },
+        {
+            "rule": "wbstatic\\.net\\/j\\/swiper\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "window.devicePixelRatio": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "f290fed955afaed581a1b171e582c7cd8bc8d920923c0f0b9e0d095a0309d857"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wildberries.ru",
+                "www.wildberries.ru"
+            ]
+        },
+        {
+            "rule": "wbstatic\\.net\\/j\\/spa\\/customTags\\/banners\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "9680d57ffd4bff7a495c59d8a7837ea4af01565dc31a1a35b5837826804c671c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wildberries.ru",
+                "www.wildberries.ru"
+            ]
+        },
+        {
+            "rule": "wbstatic\\.net\\/j\\/spa\\/customTags\\/lazyBlockLoader\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "16e56bb8ad7c28e6efb6aa4883b2a3eeb11b96ddcab06a2e26b884e77754a037"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wildberries.ru",
+                "www.wildberries.ru"
+            ]
+        },
+        {
+            "rule": "wbstatic\\.net\\/j\\/spa\\/customTags\\/spa\\.shortDeliveries\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e89352000f7ef97a76280058e5bef9604a9d7edc99adcbbe625fdb8dd464896a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wildberries.ru",
+                "www.wildberries.ru"
+            ]
+        },
+        {
+            "rule": "wbstatic\\.net\\/j\\/spa\\/models\\/home\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "0ec12daf41ac56836e644f9e75f47f2196c0d73088384cb4db4186bb7ae83c3f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wildberries.ru",
+                "www.wildberries.ru"
+            ]
+        },
+        {
+            "rule": "wbstatic\\.net\\/j\\/spa\\/modules\\/lazyBlockLoader\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "55337b6bd2bdbd7be62114b223dae633ca3a6ecc1056ecb8947900c51cb06151"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wildberries.ru",
+                "www.wildberries.ru"
+            ]
+        },
+        {
+            "rule": "wbstatic\\.net\\/bners1\\/3desk_ADIDAS_336x252\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "9831f310cc9d9aca01f46792156ab21624092dae8972c7f58171bd503767e649"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wildberries.ru",
+                "www.wildberries.ru"
+            ]
+        },
+        {
+            "rule": "wbstatic\\.net\\/bners1\\/3desk-jbl\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "524a8cbc4161023703821a17c39dc286d0764d890eb883f7b288b0f47b19cddd"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wildberries.ru",
+                "www.wildberries.ru"
+            ]
+        },
+        {
+            "rule": "wbstatic\\.net\\/bners1\\/3desk_UMKA\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e03606d7794397fa22ab6ef2794ba4f630794546f20c2a1fbe39c9056cac0153"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wildberries.ru",
+                "www.wildberries.ru"
+            ]
+        },
+        {
+            "rule": "wbstatic\\.net\\/bners1\\/desk-gillette\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "97497f79078070b96196b7f0d32951cb5325c7135897cc07d43980c6fce8a404"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wildberries.ru",
+                "www.wildberries.ru"
+            ]
+        },
+        {
+            "rule": "wbstatic\\.net\\/bners1\\/krasota_1400\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "1fc38516beeeeea041ecb06e98a55cb3bec745644e2107c88e232019b131c7a3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wildberries.ru",
+                "www.wildberries.ru"
+            ]
+        },
+        {
+            "rule": "wbstatic\\.net\\/bners1\\/kuk_14\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "7e800ae96b102121d0de9f655082810108c6d56ff5eff9264475c3b9d4246849"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wildberries.ru",
+                "www.wildberries.ru"
+            ]
+        },
+        {
+            "rule": "wbstatic\\.net\\/bners1\\/sokolov_1411\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "34cb83214951190dd52db38798d71fde66cef0e93e4bbe9419e681228d85861e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wildberries.ru",
+                "www.wildberries.ru"
+            ]
+        },
+        {
+            "rule": "wbstatic\\.net\\/bners1\\/3desk_philipsavent\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "ac5008dfb86a037388994edcd329db7a3b01f988bcb843ac4d242bc72aa6e4ae"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wildberries.ru",
+                "www.wildberries.ru"
+            ]
+        },
+        {
+            "rule": "wbstatic\\.net\\/bners1\\/huggies_1211\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "9731a555db77d42cf75bde860cbe77c7f87ec508e2865fbc74b79281fd0afe69"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wildberries.ru",
+                "www.wildberries.ru"
+            ]
+        },
+        {
+            "rule": "wbstatic\\.net\\/bners1\\/desk_mt3\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "56dd8a2fbe5d41f29e5cdcc8b7845a89b0ed24ea353ff534bdc67497ed937ef5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wildberries.ru",
+                "www.wildberries.ru"
+            ]
+        },
+        {
+            "rule": "wbstatic\\.net\\/bners1\\/coty_1211\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "c0984f121228dc3c34d789f4668f0638b8ecbe1b5aba0ba0af3f6207caafa78c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wildberries.ru",
+                "www.wildberries.ru"
+            ]
+        },
+        {
+            "rule": "wbstatic\\.net\\/bners1\\/desk_oral\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "faaa31d07fb5c4af9d4fc46fe888428f82f1548ee6a094880d24ec02c80a907f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wildberries.ru",
+                "www.wildberries.ru"
+            ]
+        },
+        {
+            "rule": "wbstatic\\.net\\/bners1\\/desk_fruto\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "30e142c528f613f7bef363953cc29d0c106f00437fa404bc806c02f4d48a060f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wildberries.ru",
+                "www.wildberries.ru"
+            ]
+        },
+        {
+            "rule": "wbstatic\\.net\\/bners1\\/desk-REEBOK\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "57089928a46aa4e9aa32810ebe6bba6b37481832375b093fe67cdf38736f1a8c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wildberries.ru",
+                "www.wildberries.ru"
+            ]
+        },
+        {
+            "rule": "wbstatic\\.net\\/bners1\\/midea_1211\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "9dd496c090b17ce4248504bb6f4e87fb595f92bc976fe084a6edaee74fb70ddd"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wildberries.ru",
+                "www.wildberries.ru"
+            ]
+        },
+        {
+            "rule": "wbstatic\\.net\\/bners1\\/desk_Soliver\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "02ab50e5f1dbf59523db1d9336660b957efbf2f36853503cf031b269e0eff53f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wildberries.ru",
+                "www.wildberries.ru"
+            ]
+        },
+        {
+            "rule": "wbstatic\\.net\\/bners1\\/payot_1711\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "ddee116ca103e994ac99139821bed98515a732fdd0c713cef8a8fec821f01193"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wildberries.ru",
+                "www.wildberries.ru"
+            ]
+        },
+        {
+            "rule": "wbstatic\\.net\\/bners1\\/desc_banners_WB-actionblack_704x252\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "9140d97a0a68fd6a05586521fd26247a7d484a45a71e69ed2528cf4d88dd974d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wildberries.ru",
+                "www.wildberries.ru"
+            ]
+        },
+        {
+            "rule": "wbstatic\\.net\\/bners1\\/fruto_main_desk_17112021\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "84bd520244bc889dc10d64c31aa6d17d6fdab3633c9d93876d63b77987a346a3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wildberries.ru",
+                "www.wildberries.ru"
+            ]
+        },
+        {
+            "rule": "wbstatic\\.net\\/bners1\\/zyyy\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "570075ab546b81c7bcb6bcd31981df039fd0e4eb34bf3f8ec968c27aceaa8829"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wildberries.ru",
+                "www.wildberries.ru"
+            ]
+        },
+        {
+            "rule": "wbstatic\\.net\\/bners1\\/big_autumn_winter_17_11\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "0d0b085c90d3bd3684b4562d488a2d83c1335348684b1a64c7c8c2a23ec18f54"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wildberries.ru",
+                "www.wildberries.ru"
+            ]
+        },
+        {
+            "rule": "wbstatic\\.net\\/bners1\\/big_food_15_11\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "232232521ac9b545d4a0f02956ca5ad54011648469d9aa6aa98e422e7ed9db4f"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -366,11 +1013,11 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000138,
     "types": {
         "Stylesheet": 10,
-        "Image": 6,
-        "Script": 14
+        "Image": 50,
+        "Script": 28
     },
     "nameservers": [
         "ns3.wildberries.ru",

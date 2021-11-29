@@ -4,42 +4,42 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000402,
+    "prevalence": 0.000401,
     "sites": 4,
     "subdomains": [
-        "b2c",
+        "auth",
         "geoip",
+        "eua",
         "event",
         "static",
+        "b2c",
         "cms"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "instiengage\\.com\\/v3\\/pages\\/usertracking",
+            "rule": "instiengage\\.com\\/auth\\/index\\.html",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
-                "b2c"
+                "auth"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 3
-            },
+            "apis": {},
             "sites": 4,
-            "prevalence": 0.000402,
+            "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [
-                "984bca55409990098cf74adc47ed650c3d22c68900739950bd14c04c9d45f8f7"
+                "fb7e70becd9b9f29c4afe8b2b82eef24739e120c0abafc812e24c8362657f37d"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mangajar.com",
                 "mydramalist.com",
                 "www.allkpop.com",
-                "www.instantstreetview.com"
+                "www.se80.co.uk",
+                "www.sherdog.com"
             ]
         },
         {
@@ -51,7 +51,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000402,
+            "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [
                 "1e52f92eeb50351a4f205aa3d95385065c94666c6a67f05d743083c2e1ec756e"
@@ -60,10 +60,90 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mangajar.com",
                 "mydramalist.com",
                 "www.allkpop.com",
-                "www.instantstreetview.com"
+                "www.se80.co.uk",
+                "www.sherdog.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/auth\\/bundle\\.js",
+            "cookies": 0.0001,
+            "fingerprinting": 1,
+            "subdomains": [
+                "auth"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 4,
+                "Document.cookie getter": 4,
+                "window.localStorage": 4,
+                "window.name": 4,
+                "Date.prototype.getTime": 4,
+                "Navigator.prototype.cookieEnabled": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [],
+            "responseHashes": [
+                "f24a6a7d78e4a99caf119573507d8ccd650d0919ad9c647441b86d10dc1c8f85"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mydramalist.com",
+                "www.allkpop.com",
+                "www.se80.co.uk",
+                "www.sherdog.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/v1\\/auth\\/token",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eua"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mydramalist.com",
+                "www.allkpop.com",
+                "www.se80.co.uk",
+                "www.sherdog.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/v1\\/auth\\/token",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eua"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [],
+            "responseHashes": [
+                "d6cf777c4a48b74d268ff2627d7c9c6d57e99da4c5afd72fbae6ca76de7f220f",
+                "1ebecb7490ec13408a490615fbd8b972d1bedc977abe50d0efe0c4b5bb37ce6d",
+                "ca2eca878263ae9934f83cea024acaf2678632a276be823b93cc448608416f2d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mydramalist.com",
+                "www.allkpop.com",
+                "www.se80.co.uk",
+                "www.sherdog.com"
             ]
         },
         {
@@ -120,7 +200,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "b943ac9eb37bac5937d3fdec8a4295e7e330f8c1ff4b481fb2810d3ae4bca8dd"
+                "041979826ed9ca795c92b592f5b5af79277569cade7e941a57bf65c8b871b87d"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -142,7 +222,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "151c4c52c25dd28c33321aaaeabe879c4814087d4eaf7545d93f5d81d4d1c4f3"
+                "34c2201cbfc3b501839820ae120c267b274aab5e3eaac1ed04dfc9703a274e28"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -164,9 +244,34 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "695ce10188e5306fcbf679b7cc125b6eac681d124a85a5908bbd8d0079a47e9a"
+                "a0a936f1245488f21db005cf7c3fad543bba22c45e837bed399e066c374bf830"
             ],
             "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mydramalist.com",
+                "www.allkpop.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/v3\\/pages\\/usertracking",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "b2c"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "984bca55409990098cf74adc47ed650c3d22c68900739950bd14c04c9d45f8f7"
+            ],
+            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -186,7 +291,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "b188fc7cf1172d3432894a596056d516bbc8cea7fb5f61ff75d218a2fad7ab71"
+                "9f773a649421ecc3f3db4d1292c3417e303aee3f1999be2cca6e9ee7de0818a3"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -199,11 +304,13 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0001,
     "types": {
-        "Document": 4,
+        "Document": 6,
         "XHR": 8,
-        "Preflight": 2,
+        "Script": 4,
+        "Preflight": 6,
+        "Fetch": 4,
         "Image": 6
     },
     "nameservers": [

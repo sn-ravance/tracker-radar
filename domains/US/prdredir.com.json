@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000345,
-    "sites": 5,
+    "prevalence": 0.0000483,
+    "sites": 7,
     "subdomains": [
-        "scripts"
+        "scripts",
+        "pixel"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "prdredir\\.com\\/scripts\\/b_banggood\\.js",
@@ -43,11 +44,11 @@
                 "scripts"
             ],
             "apis": {
-                "window.localStorage": 4,
-                "Date.prototype.getTime": 4
+                "window.localStorage": 3,
+                "Date.prototype.getTime": 5
             },
-            "sites": 4,
-            "prevalence": 0.0000276,
+            "sites": 5,
+            "prevalence": 0.0000345,
             "cnames": [],
             "responseHashes": [
                 "963b33b968ee14442d917bb14b6c8155b4bfa633a6ce3d00e89ff9f05d630828"
@@ -59,7 +60,83 @@
                 "banggood.com",
                 "uk.banggood.com",
                 "www.banggood.com",
-                "www.stoodi.com.br"
+                "www.stoodi.com.br",
+                "www.tomtop.com"
+            ]
+        },
+        {
+            "rule": "prdredir\\.com\\/scripts\\/b_tomtop\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "scripts"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "960732b45a4c198d9346c8d6e04ba1716aa3fa159fa6a8f05da9ee61e1dad58b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tomtop.com",
+                "www.tomtop.com"
+            ]
+        },
+        {
+            "rule": "prdredir\\.com\\/scripts\\/k_tomtop\\.js",
+            "cookies": 0.0000069,
+            "fingerprinting": 2,
+            "subdomains": [
+                "scripts"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1,
+                "Navigator.prototype.storage": 1,
+                "Date.prototype.getTimezoneOffset": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e257766ac09d66b54d2539d9c6afab877435f18962e5826b0851485f654fd56f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tomtop.com",
+                "www.tomtop.com"
+            ]
+        },
+        {
+            "rule": "prdredir\\.com\\/pixels\\/rtg\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pixel"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "77b1d2c0857d4e95d4c2ae7aa0abc5aaafa6bd4581b31203d1592759c26f5c44"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tomtop.com",
+                "www.tomtop.com"
             ]
         }
     ],
@@ -67,13 +144,14 @@
     "performance": {},
     "cookies": 0.0000069,
     "types": {
-        "Script": 3,
-        "Document": 4
+        "Script": 7,
+        "Document": 5,
+        "Image": 2
     },
     "nameservers": [
         "ns-10.awsdns-01.com",
-        "ns-524.awsdns-01.net",
         "ns-1044.awsdns-02.org",
-        "ns-2041.awsdns-63.co.uk"
+        "ns-2041.awsdns-63.co.uk",
+        "ns-524.awsdns-01.net"
     ]
 }

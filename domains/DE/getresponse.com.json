@@ -4,14 +4,75 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000401,
-    "sites": 4,
+    "prevalence": 0.000602,
+    "sites": 6,
     "subdomains": [
+        "app",
         "ga"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "getresponse\\.com\\/view_webform_v2\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {
+                "Document.cookie getter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "d0dd25b7929079cfc1bc0b5fc7992540ce81c2251f2625fd30c0731c8c3133a2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "asiastreetfood.com",
+                "www.gartenbista.de"
+            ]
+        },
+        {
+            "rule": "getresponse\\.com\\/script\\/ga\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ga"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "window.sessionStorage": 1,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "f36ea460ead8ecb9edb9544651cebc52463697e8afc39da923a1f7ae32eb656f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "gaVisitorUuid": {
+                    "ttl": 31536003,
+                    "length": 36,
+                    "prevalence": 0.00020060180541624874,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "asiastreetfood.com",
+                "lovebetter.de"
+            ]
+        },
         {
             "rule": "getresponse\\.com\\/index\\.php",
             "cookies": 0,
@@ -20,40 +81,79 @@
                 "ga"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "gaVisitorUuid": 0.00020060180541624874
+            },
+            "exampleSites": [
+                "asiastreetfood.com",
+                "lovebetter.de"
+            ]
+        },
+        {
+            "rule": "getresponse\\.com\\/index\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ga"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Image",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "tk_ro": 0.00010029084344599338,
-                "tk_rl": 0.00010029084344599338,
-                "tk_or": 0.00010029084344599338,
-                "tk_r3d": 0.00010029084344599338,
-                "tk_lr": 0.00010029084344599338,
-                "gaVisitorUuid": 0.00010029084344599338
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
-                "asiastreetfood.com",
-                "www.educba.com",
+                "educba.com",
                 "www.fotokoch.de"
+            ]
+        },
+        {
+            "rule": "getresponse\\.com\\/get_file_from_url\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "00820e3bdb32a2951792c3367026f2419f5ae55449ad6626d741811c4f6e0a2c"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gartenbista.de",
+                "www.gartenbista.de"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000301,
     "types": {
-        "Image": 3
+        "Script": 4,
+        "Fetch": 2,
+        "Image": 2,
+        "Stylesheet": 2
     },
     "nameservers": [
-        "ns3.dnsmadeeasy.com",
-        "ns0.dnsmadeeasy.com",
         "ns2.dnsmadeeasy.com",
-        "ns1.dnsmadeeasy.com",
-        "ns4.dnsmadeeasy.com"
+        "ns0.dnsmadeeasy.com",
+        "ns3.dnsmadeeasy.com",
+        "ns4.dnsmadeeasy.com",
+        "ns1.dnsmadeeasy.com"
     ]
 }
