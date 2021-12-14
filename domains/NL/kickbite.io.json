@@ -4,24 +4,114 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
+        "fsp",
+        "sp",
         "stats"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "kickbite\\.io\\/i",
+            "rule": "kickbite\\.io\\/kb\\.js",
             "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "fsp"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "7b0019f57202be8f2850255940470a24bdeabb938ac6b04d9d0eea1c9232b354"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "girav.nl",
+                "www.lucardi.nl"
+            ]
+        },
+        {
+            "rule": "kickbite\\.io\\/kb-sp\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 2,
+            "subdomains": [
+                "sp"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.plugins": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c77cd37b10ffcffb13458035508e7060d1dcb7f704b3142b226e38753c195067"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_sp_ses.0daa": {
+                    "ttl": 1804,
+                    "length": 1,
+                    "prevalence": 0.00010030090270812437,
+                    "uniqueness": 1
+                },
+                "_sp_id.0daa": {
+                    "ttl": 63072004,
+                    "length": 108,
+                    "prevalence": 0.00010030090270812437,
+                    "uniqueness": 1
+                },
+                "_sp_ses.ed8f": {
+                    "ttl": 1806,
+                    "length": 1,
+                    "prevalence": 0.00010030090270812437,
+                    "uniqueness": 1
+                },
+                "_sp_id.ed8f": {
+                    "ttl": 63072006,
+                    "length": 108,
+                    "prevalence": 0.00010030090270812437,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "girav.nl",
+                "www.lucardi.nl"
+            ]
+        },
+        {
+            "rule": "kickbite\\.io\\/i",
+            "cookies": 0.000301,
             "fingerprinting": 0,
             "subdomains": [
                 "stats"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "09f9f507e1b9603cb213244da6e536b850fc6934a4e28701a53a341562e62c34"
@@ -30,19 +120,21 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "lucardi.nl",
+                "girav.nl",
+                "www.girav.nl",
                 "www.lucardi.nl"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000201,
     "types": {
-        "Ping": 2
+        "Script": 4,
+        "Ping": 3
     },
     "nameservers": [
-        "brit.ns.cloudflare.com",
-        "plato.ns.cloudflare.com"
+        "plato.ns.cloudflare.com",
+        "brit.ns.cloudflare.com"
     ]
 }

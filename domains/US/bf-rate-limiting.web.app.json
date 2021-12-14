@@ -8,7 +8,7 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "bf-rate-limiting\\.web\\.app\\/assets\\/gtm_betslipVariables\\.js",
@@ -93,9 +93,11 @@
         {
             "rule": "bf-rate-limiting\\.web\\.app\\/polyfills\\.94daefd414b8355106ab\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
@@ -113,9 +115,15 @@
         {
             "rule": "bf-rate-limiting\\.web\\.app\\/main\\.75b18786794e76ee1af3\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [],
             "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "window.indexedDB": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.onLine": 2,
+                "Navigator.prototype.product": 2,
                 "Date.prototype.getTime": 1
             },
             "sites": 2,

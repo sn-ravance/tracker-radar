@@ -4,14 +4,47 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
-        "resources"
+        "mce-tv.my",
+        "le-porc-francais.my",
+        "resources",
+        "fonts"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "join-stories\\.com\\/web-components\\/index\\.list\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "mce-tv.my",
+                "le-porc-francais.my"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "a1e60bf0c54756f56bf633f1201855c7959cfd420209ff7d5b0422806af71c93"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ouest-france.fr",
+                "www.leporc.com"
+            ]
+        },
         {
             "rule": "join-stories\\.com\\/web-components\\/utils\\/play-button\\.svg",
             "cookies": 0,
@@ -31,6 +64,28 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ouest-france.fr",
+                "www.leporc.com"
+            ]
+        },
+        {
+            "rule": "join-stories\\.com\\/Didot-Bold\\.ttf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fonts"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "9a9eefcb6c85c9657b3efe4b8c6b1adc31b0e580157b7d85542ee6c93354ac91"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "marmiton.org",
                 "www.marmiton.org"
             ]
         }
@@ -39,7 +94,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Image": 2
+        "Script": 2,
+        "Image": 2,
+        "Font": 2
     },
     "nameservers": [
         "ns-374.awsdns-46.com",

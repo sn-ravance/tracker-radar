@@ -10,16 +10,65 @@
     "prevalence": 0.000602,
     "sites": 6,
     "subdomains": [
+        "consent",
+        "pdata",
         "s.gstat",
         "r",
-        "iz2",
-        "iz4",
-        "consent",
-        "pdata"
+        "login",
+        "c"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "orange\\.fr\\/global-cookies\\.a7467dbc0cf99e30f417f61ea657e6cc3cb0c21c\\.html",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "consent"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "eaade451e0f45fb6ddf0223c380288110a6901e44b1cd05146ada2f655c220d6"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "shop.sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "orange\\.fr\\/pconsent\\/_pdb\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pdata"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "1bd2aa0bb9f0a0fd919c42a18c81645bd6d9601f60086928b05db8a5be978689"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "shop.sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
         {
             "rule": "orange\\.fr\\/lib\\/gs\\.js",
             "cookies": 0.000201,
@@ -45,10 +94,10 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_gstat": {
-                    "ttl": 63072002,
-                    "length": 24,
-                    "prevalence": 0.00020074274816822243,
-                    "uniqueness": 1
+                    "ttl": 63072003,
+                    "length": 23,
+                    "prevalence": 0.00020080321285140563,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
@@ -74,7 +123,7 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_gstat": 0.00020074274816822243
+                "_gstat": 0.00020080321285140563
             },
             "exampleSites": [
                 "pagesperso-orange.fr",
@@ -82,7 +131,7 @@
             ]
         },
         {
-            "rule": "orange\\.fr\\/r\\/Oerreur_404",
+            "rule": "orange\\.fr\\/r\\/Oid_identification\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -93,100 +142,67 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pagesperso-orange.fr",
-                "acbon.pagesperso-orange.fr"
-            ]
-        },
-        {
-            "rule": "orange\\.fr\\/$v=3",
-            "cookies": 0.000301,
-            "fingerprinting": 0,
-            "subdomains": [
-                "iz2",
-                "iz4"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "42b3998cfc9e896e934d5aa68eac2d76fa4e973165c277942e8d8aa952ec486f",
-                "42def5bdae0f5c632630e02209f8b9db439145502edd25600f742ac368ea2461"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sosh.fr",
-                "communaute.sosh.fr",
-                "www.sosh.fr"
-            ]
-        },
-        {
-            "rule": "orange\\.fr\\/global-cookies\\.488353208f70ef332e8860559c06e8eca44c9069\\.html",
-            "cookies": 0.000301,
-            "fingerprinting": 1,
-            "subdomains": [
-                "consent"
-            ],
-            "apis": {
-                "window.localStorage": 3,
-                "Document.cookie setter": 3
-            },
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "215d46255cd9f7a959cdd5551ea79962a62cca334e0601afd70a90e7669c7734"
-            ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "sosh.fr",
-                "communaute.sosh.fr",
                 "www.sosh.fr"
             ]
         },
         {
-            "rule": "orange\\.fr\\/pconsent\\/_pdb\\.gif",
+            "rule": "orange\\.fr\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "pdata"
+                "login"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "orange\\.fr\\/z\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "c"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "1bd2aa0bb9f0a0fd919c42a18c81645bd6d9601f60086928b05db8a5be978689"
+                "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "sosh.fr",
-                "communaute.sosh.fr",
                 "www.sosh.fr"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000502,
+    "cookies": 0.000402,
     "types": {
-        "Script": 5,
-        "Image": 5,
-        "Font": 2,
-        "Document": 3
+        "Document": 7,
+        "Image": 7,
+        "Script": 2
     },
     "nameservers": [
-        "ns1.orange.fr",
-        "ns2.orange.fr"
+        "ns2.orange.fr",
+        "ns1.orange.fr"
     ]
 }

@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000402,
-    "sites": 4,
+    "prevalence": 0.000503,
+    "sites": 5,
     "subdomains": [
         "widget",
         "tracking",
@@ -34,7 +34,7 @@
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_szl_instant_merchant_id": 0.00020078305391024997
+                "_szl_instant_merchant_id": 0.00020112630732099757
             },
             "exampleSites": [
                 "houseofknives.ca",
@@ -76,9 +76,9 @@
             ],
             "apis": {
                 "Date.prototype.getTime": 4,
-                "Navigator.prototype.userAgent": 2,
+                "Document.cookie setter": 2,
                 "window.localStorage": 2,
-                "Document.cookie setter": 2
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 4,
             "prevalence": 0.000402,
@@ -104,8 +104,8 @@
                 "geoip"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 5,
+            "prevalence": 0.000503,
             "cnames": [],
             "responseHashes": [
                 "c0cb96548cecd4e5858b63a6c8eafe6f7f701714dc5567c97009e4655b0cb357"
@@ -117,7 +117,8 @@
                 "houseofknives.ca",
                 "knix.com",
                 "store.theshootingcentre.com",
-                "www.purehockey.com"
+                "www.purehockey.com",
+                "www.wickedweasel.com"
             ]
         },
         {
@@ -128,8 +129,8 @@
                 "media"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
                 "840d88ecf7a32d6f2d4262f61f4ecf051d080bba09962e263992bff0933f2833"
@@ -140,7 +141,29 @@
             "exampleSites": [
                 "houseofknives.ca",
                 "knix.com",
-                "store.theshootingcentre.com"
+                "store.theshootingcentre.com",
+                "www.wickedweasel.com"
+            ]
+        },
+        {
+            "rule": "sezzle\\.com\\/v1\\/event\\/log",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "houseofknives.ca",
+                "store.theshootingcentre.com",
+                "www.wickedweasel.com"
             ]
         },
         {
@@ -151,8 +174,8 @@
                 "media"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 5,
+            "prevalence": 0.000503,
             "cnames": [],
             "responseHashes": [
                 "8a1be3a01ccc730f46019fb647b740053eef36ace0738f4f42730e6792f44703"
@@ -164,7 +187,8 @@
                 "houseofknives.ca",
                 "knix.com",
                 "store.theshootingcentre.com",
-                "www.purehockey.com"
+                "www.purehockey.com",
+                "www.wickedweasel.com"
             ]
         },
         {
@@ -175,8 +199,8 @@
                 "widget"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "5042c15d11141a168aac36b91fefb9e8a5400de64b810b0d0bd53b10dcee07ab"
@@ -186,27 +210,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "houseofknives.ca",
-                "store.theshootingcentre.com"
-            ]
-        },
-        {
-            "rule": "sezzle\\.com\\/v1\\/event\\/log",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "widget"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "houseofknives.ca",
-                "store.theshootingcentre.com"
+                "store.theshootingcentre.com",
+                "www.wickedweasel.com"
             ]
         },
         {
@@ -230,22 +235,47 @@
                 "knix.com",
                 "www.purehockey.com"
             ]
+        },
+        {
+            "rule": "sezzle\\.com\\/v1\\/javascript\\/price-widget\\/initial",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {
+                "Document.cookie getter": 1,
+                "Navigator.prototype.language": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "98366f302b744d4a32d46e89c06124af7aaf6a241afd146a4c0765519da82a06"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wickedweasel.com",
+                "www.wickedweasel.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0.000201,
     "types": {
-        "Script": 8,
+        "Script": 10,
         "Document": 4,
-        "XHR": 12,
-        "Stylesheet": 3,
-        "Preflight": 2
+        "XHR": 15,
+        "Stylesheet": 4,
+        "Preflight": 3
     },
     "nameservers": [
-        "ns-377.awsdns-47.com",
-        "ns-837.awsdns-40.net",
         "ns-1112.awsdns-11.org",
-        "ns-1739.awsdns-25.co.uk"
+        "ns-1739.awsdns-25.co.uk",
+        "ns-377.awsdns-47.com",
+        "ns-837.awsdns-40.net"
     ]
 }

@@ -7,18 +7,24 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000903,
-    "sites": 9,
+    "prevalence": 0.0011,
+    "sites": 11,
     "subdomains": [
         "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
         "beautybay-cd-0bajnkkecpwemtdi.edge.tenants.eu",
+        "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu",
         "virginexperiencedays-cd-2fbfqocluxro6ea1.edge.tenants.eu",
-        "gb-visionexpress-production-cd-kzxbrkbacflvzqzk.edge.tenants.eu"
+        "gb-visionexpress-production-cd-kzxbrkbacflvzqzk.edge.tenants.eu",
+        "cdn"
     ],
     "cnames": [
         {
             "original": "auth.beautybay.com",
             "resolved": "beautybay-cd-0bajnkkecpwemtdi.edge.tenants.eu.auth0.com"
+        },
+        {
+            "original": "auth.native-instruments.com",
+            "resolved": "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu.auth0.com"
         },
         {
             "original": "auth.virginexperiencedays.co.uk",
@@ -37,17 +43,18 @@
     "resources": [
         {
             "rule": "auth0\\.com\\/authorize",
-            "cookies": 0.000401,
+            "cookies": 0.000502,
             "fingerprinting": 0,
             "subdomains": [
                 "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
                 "beautybay-cd-0bajnkkecpwemtdi.edge.tenants.eu",
+                "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu",
                 "virginexperiencedays-cd-2fbfqocluxro6ea1.edge.tenants.eu",
                 "gb-visionexpress-production-cd-kzxbrkbacflvzqzk.edge.tenants.eu"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [
                 {
                     "original": "login.arduino.cc",
@@ -56,6 +63,10 @@
                 {
                     "original": "auth.beautybay.com",
                     "resolved": "beautybay-cd-0bajnkkecpwemtdi.edge.tenants.eu.auth0.com"
+                },
+                {
+                    "original": "auth.native-instruments.com",
+                    "resolved": "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu.auth0.com"
                 },
                 {
                     "original": "auth.virginexperiencedays.co.uk",
@@ -67,21 +78,49 @@
                 }
             ],
             "responseHashes": [
-                "52965122d02513746196c6670c6a5dff2bc8416ed269a90ee55b9fcce5692714",
-                "0b986382a3fdb50347fd0272fb2df80bb55fe1570eb72fba5b8c3b1f0d4da666",
-                "92a83faf93a44126361f7a8fee0712a2fd300541452ca0c3c4bff25b22a613dc"
+                "bc6ce37a082c1e5e3c3b9bdbc07becf063d24b7543f30419f00b0740d1d5aee3",
+                "0faf135444a5effe22782a14975ebdfb648c4e7312b52f2190bad0a44f916fb8",
+                "ca5be2075e15172a503e649a2e60f4ca885856d437f9ba197bb08316ee9f3061",
+                "45f5e8e7e8b511f02045fed77c15531cfcd0f890c52d58e0d0c457bf7e7ccdec"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "dy_fs_page": 0.00010037137408411121,
-                "IR_gbd": 0.00010037137408411121
+                "dy_fs_page": 0.0001004217714400482,
+                "IR_gbd": 0.0001004217714400482
             },
             "exampleSites": [
                 "arduino.cc",
                 "www.beautybay.com",
+                "www.native-instruments.com",
                 "www.virginexperiencedays.co.uk",
                 "www.visionexpress.com"
+            ]
+        },
+        {
+            "rule": "auth0\\.com\\/js\\/auth0\\/9\\.18\\.0\\/auth0\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "727c4854cb09c121477e1669fda8b11a3669060eb051e8275af09a1e9a1e7e90"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hermesparcelreturn.co.uk",
+                "www.myhermes.co.uk"
             ]
         }
     ],
@@ -89,7 +128,11 @@
     "performance": {},
     "cookies": 0.000502,
     "types": {
-        "Document": 4
+        "Document": 5,
+        "Script": 2
     },
-    "nameservers": []
+    "nameservers": [
+        "monroe.ns.cloudflare.com",
+        "kolton.ns.cloudflare.com"
+    ]
 }

@@ -10,16 +10,19 @@
         "xdn"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "tf\\.rs\\/static\\/tfs\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "xdn"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 1,
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
@@ -65,8 +68,8 @@
         "Image": 2
     },
     "nameservers": [
-        "ns01.comtradecloud.com",
         "ns02.comtradecloud.com",
+        "ns01.comtradecloud.com",
         "ns03.comtradecloud.com"
     ]
 }

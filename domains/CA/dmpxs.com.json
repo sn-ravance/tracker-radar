@@ -13,8 +13,32 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "dmpxs\\.com\\/bob_002\\.gif",
-            "cookies": 0.0001,
+            "rule": "dmpxs\\.com\\/static\\/bob_001\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "bob"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8297a72ae82eb11b93c00fe323684cd978327cc1f13b99dfc0fb091ddfb5c497"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fox2now.com",
+                "kfor.com"
+            ]
+        },
+        {
+            "rule": "dmpxs\\.com\\/static\\/bob_001_p2\\.js",
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "bob"
@@ -24,14 +48,136 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
+                "2dd806add9527fbac94fe5144e94c50c757775559db093ff55181a2a949cea96"
             ],
-            "type": "Image",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "pitviper.com",
-                "www.pitviper.com"
+                "fox2now.com",
+                "kfor.com"
+            ]
+        },
+        {
+            "rule": "dmpxs\\.com\\/static\\/bob_eight-oh-eight\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bob"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "666d2347eecb6c2a81de4fd98fea0425e642dd9aebb4ca5dab525df995f40761"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fox2now.com",
+                "kfor.com"
+            ]
+        },
+        {
+            "rule": "dmpxs\\.com\\/static\\/bob_cookie\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "bob"
+            ],
+            "apis": {
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {
+                "repeat_visitor": {
+                    "ttl": 31536021,
+                    "length": 16,
+                    "prevalence": 0.00010056315366049879,
+                    "uniqueness": 1
+                },
+                "bob_session_id": {
+                    "ttl": 3621,
+                    "length": 16,
+                    "prevalence": 0.00010056315366049879,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fox2now.com",
+                "kfor.com"
+            ]
+        },
+        {
+            "rule": "dmpxs\\.com\\/static\\/bob_img_magnets\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bob"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fox2now.com",
+                "kfor.com"
+            ]
+        },
+        {
+            "rule": "dmpxs\\.com\\/static\\/bob_obk\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bob"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fox2now.com",
+                "kfor.com"
+            ]
+        },
+        {
+            "rule": "dmpxs\\.com\\/bob_001\\.gif",
+            "cookies": 0.000101,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bob"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "repeat_visitor": 0.00010056315366049879,
+                "bob_session_id": 0.00010056315366049879
+            },
+            "exampleSites": [
+                "fox2now.com",
+                "kfor.com"
             ]
         }
     ],
@@ -39,12 +185,13 @@
     "performance": {},
     "cookies": 0.000201,
     "types": {
+        "Script": 12,
         "Image": 2
     },
     "nameservers": [
-        "ns-1267.awsdns-30.org",
-        "ns-1663.awsdns-15.co.uk",
         "ns-412.awsdns-51.com",
-        "ns-864.awsdns-44.net"
+        "ns-864.awsdns-44.net",
+        "ns-1663.awsdns-15.co.uk",
+        "ns-1267.awsdns-30.org"
     ]
 }

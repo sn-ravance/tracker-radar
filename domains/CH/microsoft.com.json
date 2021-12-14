@@ -12,12 +12,66 @@
     "prevalence": 0.000602,
     "sites": 6,
     "subdomains": [
+        "web.vortex.data",
         "browser.pipe.aria",
         "browser.events.data"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "microsoft\\.com\\/collect\\/v1\\/t\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "web.vortex.data"
+            ],
+            "apis": {
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "71007717e43e75c6db796b607d9adb4db93febaf74c5dfb8e0cc3c5303488bbd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "MSFPC": {
+                    "ttl": 31536006,
+                    "length": 4,
+                    "prevalence": 0.0002006823198876179,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "minecraft.net",
+                "www.minecraft.net"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/collect\\/v1",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web.vortex.data"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "minecraft.net",
+                "www.minecraft.net"
+            ]
+        },
         {
             "rule": "microsoft\\.com\\/Collector\\/3\\.0\\/",
             "cookies": 0,
@@ -26,8 +80,8 @@
                 "browser.pipe.aria"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -37,28 +91,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "clevelandclinic.org",
-                "my.clevelandclinic.org",
-                "sanktionscenter.wordpress.com"
-            ]
-        },
-        {
-            "rule": "microsoft\\.com\\/OneCollector\\/1\\.0\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "browser.events.data"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "minecraft.net",
-                "www.minecraft.net"
+                "my.clevelandclinic.org"
             ]
         },
         {
@@ -83,6 +116,26 @@
                 "www.minecraft.net",
                 "www.trekbikes.com"
             ]
+        },
+        {
+            "rule": "microsoft\\.com\\/OneCollector\\/1\\.0\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "browser.events.data"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "minecraft.net",
+                "www.minecraft.net"
+            ]
         }
     ],
     "categories": [
@@ -94,13 +147,15 @@
     "performance": {},
     "cookies": 0.000301,
     "types": {
-        "XHR": 6,
+        "Script": 2,
+        "Ping": 2,
+        "XHR": 5,
         "Preflight": 2
     },
     "nameservers": [
-        "ns1-205.azure-dns.com",
         "ns2-205.azure-dns.net",
         "ns4-205.azure-dns.info",
-        "ns3-205.azure-dns.org"
+        "ns3-205.azure-dns.org",
+        "ns1-205.azure-dns.com"
     ]
 }

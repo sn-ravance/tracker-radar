@@ -9,15 +9,20 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000401,
-    "sites": 4,
+    "prevalence": 0.000502,
+    "sites": 5,
     "subdomains": [
-        "drinkaware-apim"
+        "drinkaware-apim",
+        "apim-gw-azu-nyc-prod"
     ],
     "cnames": [
         {
             "original": "api.drinkaware.co.uk",
             "resolved": "drinkaware-apim.azure-api.net"
+        },
+        {
+            "original": "api.nyc.gov",
+            "resolved": "apim-gw-azu-nyc-prod.azure-api.net"
         }
     ],
     "fingerprinting": 0,
@@ -73,14 +78,66 @@
                 "drinkaware.co.uk",
                 "www.drinkaware.co.uk"
             ]
+        },
+        {
+            "rule": "azure-api\\.net\\/public\\/api\\/GetCalendar",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apim-gw-azu-nyc-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.nyc.gov",
+                    "resolved": "apim-gw-azu-nyc-prod.azure-api.net"
+                }
+            ],
+            "responseHashes": [
+                "527e535dee3ec7a698f1ee410d0b059dd454d1e9a7ac3596c938506ba4399a08"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyc.gov",
+                "www1.nyc.gov"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/public\\/api\\/GetCalendar",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apim-gw-azu-nyc-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.nyc.gov",
+                    "resolved": "apim-gw-azu-nyc-prod.azure-api.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyc.gov",
+                "www1.nyc.gov"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0.0001,
     "types": {
-        "Preflight": 2,
-        "XHR": 2
+        "Preflight": 4,
+        "XHR": 4
     },
     "nameservers": []
 }

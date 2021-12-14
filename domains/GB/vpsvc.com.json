@@ -12,10 +12,11 @@
     "subdomains": [
         "pecs.ct",
         "sitewide-promobar-service.prod.merch",
-        "prod.puc.starbug"
+        "prod.puc.starbug",
+        "exp-config.personalization"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "vpsvc\\.com\\/api\\/Placements\\/nvhp\\/show",
@@ -50,8 +51,28 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vistaprint.co.uk",
+                "www.vistaprint.co.uk"
+            ]
+        },
+        {
+            "rule": "vpsvc\\.com\\/v1\\/promobar\\/vistaprint\\/en-GB",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sitewide-promobar-service.prod.merch"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
             "responseHashes": [
-                "c3b20d815aebde46fbd27589329934aaf8f95ef0f97bbbde158af386bb4df691"
+                "0a6731bc1f192ee21e35d487bc15439d51ce870718251c89325b377df53e7fd0"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -104,14 +125,37 @@
                 "vistaprint.co.uk",
                 "www.vistaprint.co.uk"
             ]
+        },
+        {
+            "rule": "vpsvc\\.com\\/datafiles\\/TL6bJ6aeorhsvy5X8LGMVX\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "exp-config.personalization"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "f8c690ddda3bf0dc874a6c80ae5b33e589876b35254fb4d597fee54f4cd9afb8"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vistaprint.co.uk",
+                "www.vistaprint.co.uk"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0001,
     "types": {
         "XHR": 4,
-        "Fetch": 4
+        "Preflight": 2,
+        "Fetch": 6
     },
     "nameservers": [
         "ns1-134.akam.net",

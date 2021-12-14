@@ -9,16 +9,117 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000602,
-    "sites": 6,
+    "prevalence": 0.000703,
+    "sites": 7,
     "subdomains": [
-        "browser.events.data",
+        "web.vortex.data",
         "browser.pipe.aria",
-        "teams"
+        "powerva",
+        "web.powerva",
+        "browser.events.data"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "microsoft\\.com\\/collect\\/v1\\/t\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "web.vortex.data"
+            ],
+            "apis": {
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1e6ec8ff28b808e386686a44afe18333555c2324e900089b7a72a5bc5362cfc5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "MSFPC": {
+                    "ttl": 31536005,
+                    "length": 4,
+                    "prevalence": 0.0002008435428800964,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "minecraft.net",
+                "www.minecraft.net"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/collect\\/v1",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web.vortex.data"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "minecraft.net",
+                "www.minecraft.net"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/Collector\\/3\\.0\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "browser.pipe.aria"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "clevelandclinic.org",
+                "my.clevelandclinic.org",
+                "www.blenheimpalace.com"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/webchat\\/bots\\/98ac1aca-0c50-481b-9470-5307006c13f1",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "powerva",
+                "web.powerva"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "86fd33ba55014e3f163c495d1ae16d9461407f10ec0a072cc25638b5d4f70e10"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blenheimpalace.com",
+                "www.blenheimpalace.com"
+            ]
+        },
         {
             "rule": "microsoft\\.com\\/OneCollector\\/1\\.0\\/",
             "cookies": 0,
@@ -30,6 +131,26 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "minecraft.net",
+                "www.minecraft.net"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/OneCollector\\/1\\.0\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "browser.events.data"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
             "responseHashes": [
                 "afd588d7d1c94d797ef932006d524de973f6fc54556e62f0f340412c87f99d58"
             ],
@@ -38,51 +159,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "minecraft.net",
+                "www.minecraft.net",
                 "www.trekbikes.com"
-            ]
-        },
-        {
-            "rule": "microsoft\\.com\\/Collector\\/3\\.0\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "browser.pipe.aria"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "clevelandclinic.org",
-                "my.clevelandclinic.org"
-            ]
-        },
-        {
-            "rule": "microsoft\\.com\\/share\\/launcher\\.js",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "teams"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "e0110424e9bab1a8121139a915743736e98ec8f432f221db9e3b704a14a374b7"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "quizizz.com",
-                "www.onmsft.com"
             ]
         }
     ],
@@ -95,8 +173,11 @@
     "performance": {},
     "cookies": 0.000301,
     "types": {
-        "XHR": 4,
-        "Script": 2
+        "Script": 2,
+        "Ping": 2,
+        "XHR": 6,
+        "Document": 2,
+        "Preflight": 2
     },
     "nameservers": [
         "ns1-205.azure-dns.com",

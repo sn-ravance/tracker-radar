@@ -9,11 +9,13 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000401,
-    "sites": 4,
+    "prevalence": 0.000602,
+    "sites": 6,
     "subdomains": [
         "entitlement.auth",
-        "sp.auth"
+        "sp.auth",
+        "adtag.primetime",
+        "animate"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -46,13 +48,13 @@
                 "client_type": {
                     "ttl": null,
                     "length": 5,
-                    "prevalence": 0.000300782033286545,
+                    "prevalence": 0.0003009328919650918,
                     "uniqueness": 0.3333333333333333
                 },
                 "client_version": {
                     "ttl": null,
                     "length": 5,
-                    "prevalence": 0.000300782033286545,
+                    "prevalence": 0.0003009328919650918,
                     "uniqueness": 0.3333333333333333
                 }
             },
@@ -125,8 +127,8 @@
             "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "e81a1d507c0fcbe6dd215687465a4d7f35b2ce1ce5cf35dd364ea62cacf434eb",
-                "3f5727a191691ec501471299f3a1bb1c648d8f61aa1ecb923272fd92d86fec3f"
+                "4e50587294b8718a2f7df27b1f63ce4ebf5656554cf2befdd39bb49e351f7699",
+                "494f56cc7819dbbdaea3557c4ee70207743526f0de3559db81425c87b0cef7cd"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -169,11 +171,8 @@
             "sites": 3,
             "prevalence": 0.000301,
             "cnames": [],
-            "responseHashes": [
-                "3da1c2eec56c8dc87920293d127c2dc3158e60ddf9d9381ad444ca46ded435fc",
-                "5b771fdd100c60e84e49f35ab764097bb8c18e692f17f91f6f1f812e17416e4e"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -193,8 +192,11 @@
             "sites": 3,
             "prevalence": 0.000301,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "07fcb26276eedb815af323cf5a8cef326b65bdca4e41c2dc4f7c69d69c3eafcf",
+                "c2301ba312e7f536827e2668998bfbd794facbec3bcfbf992cbd64afaade6881"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -202,16 +204,63 @@
                 "www.bravotv.com",
                 "www.history.com"
             ]
+        },
+        {
+            "rule": "adobe\\.com\\/adserver\\/trackdmgr",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "adtag.primetime"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anandtech.com",
+                "www.accuweather.com"
+            ]
+        },
+        {
+            "rule": "adobe\\.com\\/runtime\\/6\\.0\\.0\\/edge\\.6\\.0\\.0\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "animate"
+            ],
+            "apis": {
+                "HTMLMediaElement.prototype.canPlayType": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "4338ef4782c1cc60e27fb10ff29ef635553887f154aeaeaa547c8f492919898d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "smartcompany.com.au",
+                "www.smartcompany.com.au"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0.000301,
     "types": {
-        "Script": 6,
+        "Script": 8,
         "Document": 3,
         "XHR": 6,
-        "Preflight": 6
+        "Preflight": 6,
+        "Image": 2
     },
     "nameservers": [
         "a13-65.akam.net",

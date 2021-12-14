@@ -4,12 +4,27 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.000903,
-    "sites": 9,
+    "prevalence": 0.001,
+    "sites": 10,
     "subdomains": [
-        "tms.oracle.com"
+        "tags.asics.com",
+        "tms.oracle.com",
+        "tccd.douglas.nl",
+        "tccd.douglas.de"
     ],
     "cnames": [
+        {
+            "original": "tags.asics.com",
+            "resolved": "tags.asics.com.greylabeldelivery.com"
+        },
+        {
+            "original": "tccd.douglas.de",
+            "resolved": "tccd.douglas.de.greylabeldelivery.com"
+        },
+        {
+            "original": "tccd.douglas.nl",
+            "resolved": "tccd.douglas.nl.greylabeldelivery.com"
+        },
         {
             "original": "tms.oracle.com",
             "resolved": "tms.oracle.com.greylabeldelivery.com"
@@ -18,10 +33,11 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "greylabeldelivery\\.com\\/main\\/prod\\/utag\\.js",
-            "cookies": 0.000201,
-            "fingerprinting": 2,
+            "rule": "greylabeldelivery\\.com\\/main\\/prod\\/utag\\.sync\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
             "subdomains": [
+                "tags.asics.com",
                 "tms.oracle.com"
             ],
             "apis": {},
@@ -29,46 +45,55 @@
             "prevalence": 0.000201,
             "cnames": [
                 {
+                    "original": "tags.asics.com",
+                    "resolved": "tags.asics.com.greylabeldelivery.com"
+                },
+                {
                     "original": "tms.oracle.com",
                     "resolved": "tms.oracle.com.greylabeldelivery.com"
                 }
             ],
             "responseHashes": [
-                "cc1aeb34b865a7491afab43474c260a8ec6926b43b1e6ff15e59073578b8236f"
+                "a464ba74bdca7e68f206a61d939dc9c5b5bb253ef1bf8884dba5012f47836b7a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "oracle.com",
+                "asics.com",
                 "www.oracle.com"
             ]
         },
         {
-            "rule": "greylabeldelivery\\.com\\/main\\/prod\\/utag\\.5\\.js",
-            "cookies": 0,
+            "rule": "greylabeldelivery\\.com\\/douglas\\/www-douglas-at\\/2\\/i\\.gif",
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
-                "tms.oracle.com"
+                "tccd.douglas.nl",
+                "tccd.douglas.de"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "tms.oracle.com",
-                    "resolved": "tms.oracle.com.greylabeldelivery.com"
+                    "original": "tccd.douglas.nl",
+                    "resolved": "tccd.douglas.nl.greylabeldelivery.com"
+                },
+                {
+                    "original": "tccd.douglas.de",
+                    "resolved": "tccd.douglas.de.greylabeldelivery.com"
                 }
             ],
             "responseHashes": [
-                "6418777740203b7986cb664673136998b3046d829424bd36248d33bdd6f26014"
+                "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "oracle.com",
-                "www.oracle.com"
+                "douglas.nl",
+                "www.douglas.de"
             ]
         }
     ],
@@ -76,7 +101,8 @@
     "performance": {},
     "cookies": 0.000903,
     "types": {
-        "Script": 4
+        "Script": 2,
+        "XHR": 2
     },
     "nameservers": []
 }

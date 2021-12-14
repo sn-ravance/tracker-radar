@@ -4,22 +4,71 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000903,
-    "sites": 9,
+    "prevalence": 0.0014,
+    "sites": 14,
     "subdomains": [
-        "cdn",
+        "landi-ch-test.arc",
         "exlibris.arc",
         "post-ch.arc",
         "babymarkt-ch.arc",
-        "bikester-ch.arc",
+        "bogner-gb.arc",
         "gartenhaus-ch.arc",
+        "gastro-held-ch.arc",
         "landi-ch.arc",
+        "manor-ch.arc",
         "narayana-verlag-de.arc",
+        "cdn",
+        "rs",
+        "rs1",
         "iba-ch.arc"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "epoq\\.de\\/inbound-servletapi\\/event",
+            "cookies": 0.001,
+            "fingerprinting": 0,
+            "subdomains": [
+                "landi-ch-test.arc",
+                "exlibris.arc",
+                "post-ch.arc",
+                "babymarkt-ch.arc",
+                "bogner-gb.arc",
+                "gartenhaus-ch.arc",
+                "gastro-held-ch.arc",
+                "landi-ch.arc",
+                "manor-ch.arc",
+                "narayana-verlag-de.arc"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0011,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_eqsid": 0.0002006823198876179,
+                "eqsid_": 0.00010034115994380895,
+                "7cb54b_session_id": 0.00010034115994380895
+            },
+            "exampleSites": [
+                "landi.ch",
+                "m.exlibris.ch",
+                "shop.post.ch",
+                "www.baby-markt.ch",
+                "www.bogner.com",
+                "www.exlibris.ch",
+                "www.gartenhaus.ch",
+                "www.gastro-held.ch",
+                "www.landi.ch",
+                "www.manor.ch",
+                "www.narayana-verlag.de"
+            ]
+        },
         {
             "rule": "epoq\\.de\\/flow\\/exlibris\\.js",
             "cookies": 0,
@@ -46,7 +95,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "e0983190285f933b09f0f2b15f50acbda3dfda05a435406bfdf271a7d28986e3"
+                "70900d99db12b8ae60e9c02d42ac0f2b451d65a643e04208e9572a4083c0b3c8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -57,40 +106,61 @@
             ]
         },
         {
-            "rule": "epoq\\.de\\/inbound-servletapi\\/event",
-            "cookies": 0.000802,
-            "fingerprinting": 0,
+            "rule": "epoq\\.de\\/web-api\\/epoqgo\\.js",
+            "cookies": 0.0001,
+            "fingerprinting": 1,
             "subdomains": [
-                "exlibris.arc",
-                "post-ch.arc",
-                "babymarkt-ch.arc",
-                "bikester-ch.arc",
-                "gartenhaus-ch.arc",
-                "landi-ch.arc",
-                "narayana-verlag-de.arc"
+                "rs"
             ],
-            "apis": {},
-            "sites": 8,
-            "prevalence": 0.000802,
+            "apis": {
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "f2c2979e57b9dc0bce5987aa45de3cf2a805e39721309839148f62729dda8921"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "eqsid_": {
+                    "ttl": null,
+                    "length": 42,
+                    "prevalence": 0.00010034115994380895,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "post.ch",
+                "www.bogner.com"
+            ]
+        },
+        {
+            "rule": "epoq\\.de\\/inbound-servletapi\\/getRecommendations",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rs1",
+                "manor-ch.arc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "11e229104d2495c4371c2b75ea467691608d014468c6f69378e5f06198815a16"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "eqsid_": 0.00010030090270812437,
-                "_eqsid": 0.00010030090270812437
+                "eqsid_": 0.00010034115994380895
             },
             "exampleSites": [
-                "exlibris.ch",
-                "shop.post.ch",
-                "www.baby-markt.ch",
-                "www.exlibris.ch",
-                "www.fr.bikester.ch",
-                "www.gartenhaus.ch",
-                "www.landi.ch",
-                "www.narayana-verlag.de"
+                "post.ch",
+                "www.manor.ch"
             ]
         },
         {
@@ -98,30 +168,54 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "bikester-ch.arc",
-                "iba-ch.arc"
+                "iba-ch.arc",
+                "rs1"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "d00555a7e79a212cbad6897be351bb2a4090d20af87d51b3bb4bf66cf451589f"
+                "d158ef7da07bf227ea8214a6235e9b6ead07cb7a4f2528adfbf3b99dc966b516"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bikester.ch",
-                "www.iba.ch"
+                "iba.ch",
+                "www.japanwelt.de"
+            ]
+        },
+        {
+            "rule": "epoq\\.de\\/web-api\\/epoq\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "rs"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b64ebd1bb0e882fa6a5f4514f0efcd27439958c883bc2413e12e0acd9b86bb88"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "japanwelt.de",
+                "www.japanwelt.de"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000903,
+    "cookies": 0.0011,
     "types": {
-        "Script": 12
+        "Script": 21
     },
     "nameservers": [
         "ns10.dnsmadeeasy.com",

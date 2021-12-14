@@ -7,45 +7,100 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000602,
+    "prevalence": 0.000603,
     "sites": 6,
     "subdomains": [
+        "js",
         "bypass",
+        "ad",
+        "tr",
         "sync"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "ad-stir\\.com\\/js\\/adstir\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "js"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "window.devicePixelRatio": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "93b463daed8bdd220e8d1313892b790bf09a332cafe011c330e8fffe74dbcc1b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "5ch.net",
+                "dic.pixiv.net"
+            ]
+        },
+        {
             "rule": "ad-stir\\.com\\/push_sync",
-            "cookies": 0.000201,
+            "cookies": 0.000302,
             "fingerprinting": 0,
             "subdomains": [
                 "bypass"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "iwara.tv",
+                "5ch.net",
+                "ecchi.iwara.tv",
                 "en.whotwi.com"
             ]
         },
         {
-            "rule": "ad-stir\\.com\\/",
-            "cookies": 0.000301,
+            "rule": "ad-stir\\.com\\/ad",
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
-                "sync"
+                "ad"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "5cdde12e815e2cb46cbb4ae94b5a302f5e538be1bfca6d4987495102733e5e5e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "5ch.net",
+                "dic.pixiv.net"
+            ]
+        },
+        {
+            "rule": "ad-stir\\.com\\/rdr",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tr"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "77b1d2c0857d4e95d4c2ae7aa0abc5aaafa6bd4581b31203d1592759c26f5c44"
@@ -54,17 +109,39 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "hinative.com",
-                "www.1mg.com",
-                "www.carsguide.com.au"
+                "pixiv.net",
+                "dic.pixiv.net"
+            ]
+        },
+        {
+            "rule": "ad-stir\\.com\\/",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sync"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "77b1d2c0857d4e95d4c2ae7aa0abc5aaafa6bd4581b31203d1592759c26f5c44"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "1mg.com",
+                "www.tripadvisor.in"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000602,
+    "cookies": 0.000603,
     "types": {
-        "Image": 5
+        "Script": 4,
+        "Image": 7
     },
     "nameservers": [
         "ns-1074.awsdns-06.org",

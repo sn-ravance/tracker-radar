@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.0011,
-    "sites": 11,
+    "prevalence": 0.0013,
+    "sites": 13,
     "subdomains": [
         "ghs",
         "api.id.ghs",
@@ -14,6 +14,10 @@
     "cnames": [
         {
             "original": "a.et.nytimes.com",
+            "resolved": "ghs.googlehosted.com"
+        },
+        {
+            "original": "analytics.loxone.com",
             "resolved": "ghs.googlehosted.com"
         },
         {
@@ -33,39 +37,12 @@
             "resolved": "ghs.googlehosted.com"
         },
         {
-            "original": "tracksrv.zdf.de",
+            "original": "t.swatch.com",
             "resolved": "ghs.googlehosted.com"
         }
     ],
     "fingerprinting": 1,
     "resources": [
-        {
-            "rule": "googlehosted\\.com\\/event",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ghs"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "tracksrv.zdf.de",
-                    "resolved": "ghs.googlehosted.com"
-                }
-            ],
-            "responseHashes": [
-                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "zdf.de",
-                "www.zdf.de"
-            ]
-        },
         {
             "rule": "googlehosted\\.com\\/webhook\\/fh-wt",
             "cookies": 0,
@@ -132,6 +109,39 @@
             ]
         },
         {
+            "rule": "googlehosted\\.com\\/g\\/collect",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "analytics.loxone.com",
+                    "resolved": "ghs.googlehosted.com"
+                },
+                {
+                    "original": "t.swatch.com",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [
+                "e64954dc34e12c7190cc2338a54b07644ff0f102aa71cc7209bcbb49c3009f7c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.0003009328919650918
+            },
+            "exampleSites": [
+                "loxone.com",
+                "www.swatch.com"
+            ]
+        },
+        {
             "rule": "googlehosted\\.com\\/track",
             "cookies": 0.000201,
             "fingerprinting": 0,
@@ -161,11 +171,11 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000301,
+    "cookies": 0.000702,
     "types": {
-        "Image": 2,
         "Fetch": 2,
         "Script": 3,
+        "XHR": 2,
         "Ping": 2
     },
     "nameservers": []

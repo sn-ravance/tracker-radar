@@ -8,7 +8,8 @@
     "sites": 2,
     "subdomains": [
         "mw-prod.bluegrass.mktdata",
-        "wsj-prod.bluegrass.mktdata"
+        "wsj-prod.bluegrass.mktdata",
+        "video-api.shdsvc"
     ],
     "cnames": [
         {
@@ -44,7 +45,7 @@
                 }
             ],
             "responseHashes": [
-                "2f08eaad3010609dadbba463e976816776e274565c96e295d45d22bbfbe90ef0"
+                "28285917c1757d1bfeb2ff2ddac549ffd7f359aa51beb2e065e05f874f6a6eb8"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -115,14 +116,64 @@
                 "marketwatch.com",
                 "www.wsj.com"
             ]
+        },
+        {
+            "rule": "dowjones\\.io\\/api\\/time",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "video-api.shdsvc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "4465784ea9006714c718a2a80776d468395d42793ad8587bdab04f2d4fdd0461"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wsj.com",
+                "www.wsj.com"
+            ]
+        },
+        {
+            "rule": "dowjones\\.io\\/api\\/legacy\\/find-all-videos",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "video-api.shdsvc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "ed1b8e873a85aae05ff0055b7f8b28fd7d4ef91fe289208dc44ec59df664386b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wsj.com",
+                "www.wsj.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 4,
-        "WebSocket": 2
+        "XHR": 6,
+        "WebSocket": 2,
+        "Fetch": 2
     },
-    "nameservers": []
+    "nameservers": [
+        "ns-320.awsdns-40.com",
+        "ns-801.awsdns-36.net",
+        "ns-1288.awsdns-33.org",
+        "ns-1824.awsdns-36.co.uk"
+    ]
 }

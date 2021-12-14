@@ -9,15 +9,20 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.00231,
-    "sites": 23,
+    "prevalence": 0.00241,
+    "sites": 24,
     "subdomains": [
         "hubprodappgwfw0lqzkr.westeurope.cloudapp",
         "js.monitor",
-        "norwayeast-0.in.applicationinsights",
-        "westeurope-0.in.applicationinsights"
+        "eastus-5.in.applicationinsights",
+        "westeurope-0.in.applicationinsights",
+        "wafweblaliga.westeurope.cloudapp"
     ],
     "cnames": [
+        {
+            "original": "apim.laliga.com",
+            "resolved": "wafweblaliga.westeurope.cloudapp.azure.com"
+        },
         {
             "original": "components.avinor.no",
             "resolved": "hubprodappgwfw0lqzkr.westeurope.cloudapp.azure.com"
@@ -80,100 +85,56 @@
             ]
         },
         {
-            "rule": "azure\\.com\\/scripts\\/c\\/ms\\.analytics-web-3\\.gbl\\.min\\.js",
-            "cookies": 0.000201,
-            "fingerprinting": 2,
-            "subdomains": [
-                "js.monitor"
-            ],
-            "apis": {
-                "Navigator.prototype.product": 2,
-                "Document.cookie getter": 2,
-                "Navigator.prototype.language": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie setter": 2,
-                "Date.prototype.getTimezoneOffset": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.appVersion": 2,
-                "window.localStorage": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "527b0cc29a20669da90363160cdd707cd7e53ee72d5d2245c12a480f51177de6"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "MicrosoftApplicationsTelemetryDeviceId": {
-                    "ttl": 31536000,
-                    "length": 36,
-                    "prevalence": 0.00020074274816822243,
-                    "uniqueness": 1
-                },
-                "ai_session": {
-                    "ttl": 1805,
-                    "length": 50,
-                    "prevalence": 0.00020074274816822243,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "minecraft.net",
-                "www.minecraft.net"
-            ]
-        },
-        {
             "rule": "azure\\.com\\/scripts\\/b\\/ai\\.2\\.min\\.js",
-            "cookies": 0.0011,
+            "cookies": 0.00111,
             "fingerprinting": 2,
             "subdomains": [
                 "js.monitor"
             ],
             "apis": {
-                "Navigator.prototype.onLine": 14,
+                "Navigator.prototype.onLine": 15,
                 "window.sessionStorage": 12,
-                "Navigator.prototype.userAgent": 12,
-                "window.localStorage": 12,
-                "PerformanceTiming.prototype.navigationStart": 12,
                 "Document.cookie getter": 11,
-                "Document.cookie setter": 11
+                "Navigator.prototype.userAgent": 12,
+                "Document.cookie setter": 11,
+                "window.localStorage": 12,
+                "PerformanceTiming.prototype.navigationStart": 12
             },
-            "sites": 14,
-            "prevalence": 0.00141,
+            "sites": 15,
+            "prevalence": 0.00151,
             "cnames": [],
             "responseHashes": [
-                "cf02a343253e51e0f589dc999f6cc80528529c6764c3eec3866adfcb46224a9d"
+                "f9fa2bbbf048b49dca5b1207cf03a3d5867924372252df0196167810cea88780"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "ai_user": {
                     "ttl": 31536000,
                     "length": 47,
-                    "prevalence": 0.0011040851149252233,
+                    "prevalence": 0.0010052271813429834,
                     "uniqueness": 1
                 },
                 "ai_session": {
                     "ttl": 1800,
                     "length": 50,
-                    "prevalence": 0.001003713740841112,
+                    "prevalence": 0.0010052271813429834,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "clevelandclinic.org",
+                "eiendomsmeglervest.no",
+                "my.clevelandclinic.org",
+                "nettbutikk.byggern.no",
                 "no.daleofnorway.com",
-                "ohmyposh.dev",
                 "skole.salaby.no",
                 "www.ahlsell.no",
                 "www.banenor.no",
                 "www.christies.com",
                 "www.energinorge.no",
-                "www.komplettbank.no",
+                "www.jotun.com",
                 "www.monter.no",
-                "www.nhoreiseliv.no",
+                "www.nho.no",
                 "www.optimera.no",
                 "www.skiforeningen.no",
                 "www.thriftbooks.com"
@@ -184,7 +145,30 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "norwayeast-0.in.applicationinsights",
+                "eastus-5.in.applicationinsights",
+                "westeurope-0.in.applicationinsights"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "202f50229347a82b54f1ea61db1da9cf154cc6c319ac11b6715dadf8b426dcee"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gibson.com",
+                "www.monter.no"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/\\/v2\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eastus-5.in.applicationinsights",
                 "westeurope-0.in.applicationinsights"
             ],
             "apis": {},
@@ -196,46 +180,50 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "filmweb.no",
+                "gibson.com",
                 "www.monter.no"
             ]
         },
         {
-            "rule": "azure\\.com\\/\\/v2\\/track",
+            "rule": "azure\\.com\\/public-service\\/api\\/v1\\/subscriptions\\/laliga-santander-2021\\/standing",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "norwayeast-0.in.applicationinsights",
-                "westeurope-0.in.applicationinsights"
+                "wafweblaliga.westeurope.cloudapp"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
-            "cnames": [],
+            "cnames": [
+                {
+                    "original": "apim.laliga.com",
+                    "resolved": "wafweblaliga.westeurope.cloudapp.azure.com"
+                }
+            ],
             "responseHashes": [
-                "a0371d4fc59a21c844b13e45055c533e2410c7238808a8378e5f57d13f1db958"
+                "d21f24ccc2014b5edde571760d4dd9cccc151523efc40efd97b6566de4c63dd1"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "filmweb.no",
-                "www.monter.no"
+                "laliga.com",
+                "www.laliga.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0013,
+    "cookies": 0.00131,
     "types": {
-        "Script": 20,
-        "Preflight": 2,
-        "XHR": 2
+        "Script": 19,
+        "XHR": 4,
+        "Preflight": 2
     },
     "nameservers": [
+        "ns4-205.azure-dns.info",
         "ns3-205.azure-dns.org",
         "ns1-205.azure-dns.com",
-        "ns2-205.azure-dns.net",
-        "ns4-205.azure-dns.info"
+        "ns2-205.azure-dns.net"
     ]
 }

@@ -4,15 +4,82 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000603,
+    "sites": 6,
     "subdomains": [
         "tagger",
-        "profiles.tagger"
+        "cdn"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "opecloud\\.com\\/lefigaro\\/v2\\/tcf-tagger\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "tagger"
+            ],
+            "apis": {
+                "Date.prototype.getTimezoneOffset": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.colorDepth": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "24c6612de1da047a4a8b295ac292fc290e0b603d217a34f8527ac932a94530cb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "journaldesfemmes.fr",
+                "www.lefigaro.fr"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/fox\\/v2\\/pixel\\.gif",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tagger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxsports.com",
+                "www.foxsports.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/tradedesk\\/pbfs\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tagger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxsports.com",
+                "www.lefigaro.fr"
+            ]
+        },
         {
             "rule": "opecloud\\.com\\/lefigaro\\/v2\\/pixel\\.gif",
             "cookies": 0.000201,
@@ -54,24 +121,30 @@
             ]
         },
         {
-            "rule": "opecloud\\.com\\/api\\/v1\\/raspl\\/profile",
+            "rule": "opecloud\\.com\\/ope-raspl\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
-                "profiles.tagger"
+                "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "b5abd3fde1e35dc2cb49c3e0d1689b46a91e0f217a3954334044798846c9f771"
+                "ff484a62114e13fdc65a8c929bbee5b1b53c755d48cb159f585f03e655e350d1"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "onet.pl",
+                "medonet.pl",
                 "www.onet.pl"
             ]
         },
@@ -90,7 +163,7 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "get_top_level_domain_cookie": 0.00020074274816822243
+                "get_top_level_domain_cookie": 0.0002008435428800964
             },
             "exampleSites": [
                 "scmp.com",
@@ -100,10 +173,10 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000301,
     "types": {
-        "Image": 6,
-        "XHR": 2
+        "Script": 4,
+        "Image": 10
     },
     "nameservers": [
         "ns-1454.awsdns-53.org",

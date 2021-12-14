@@ -7,11 +7,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000138,
-    "sites": 20,
+    "prevalence": 0.000159,
+    "sites": 23,
     "subdomains": [
         "cricut",
         "ghirardelli",
+        "teachco",
         "site-azp",
         "offer"
     ],
@@ -20,41 +21,44 @@
     "resources": [
         {
             "rule": "slgnt\\.us\\/optiext\\/webtracker\\.dll",
-            "cookies": 0.0000138,
+            "cookies": 0.0000207,
             "fingerprinting": 1,
             "subdomains": [
                 "cricut",
-                "ghirardelli"
+                "ghirardelli",
+                "teachco"
             ],
             "apis": {
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [
-                "267bbb6ab8c9c82d6e9f4d1f1e1d55a6f22feb0914e3abc34e789f260a0dabc7"
+                "267bbb6ab8c9c82d6e9f4d1f1e1d55a6f22feb0914e3abc34e789f260a0dabc7",
+                "96ca99a52d718b0ddd853c1d59dd70f69f833b3b388406e4e358c3d539760f06"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "m_ses": {
                     "ttl": null,
                     "length": 14,
-                    "prevalence": 0.000013807196310717146,
+                    "prevalence": 0.000020740290087524024,
                     "uniqueness": 1
                 },
                 "m_cnt": {
                     "ttl": null,
                     "length": 1,
-                    "prevalence": 0.000013807196310717146,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000020740290087524024,
+                    "uniqueness": 0.3333333333333333
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cricut.com",
-                "www.ghirardelli.com"
+                "www.ghirardelli.com",
+                "www.thegreatcourses.com"
             ]
         },
         {
@@ -65,8 +69,8 @@
                 "site-azp"
             ],
             "apis": {},
-            "sites": 13,
-            "prevalence": 0.0000897,
+            "sites": 15,
+            "prevalence": 0.000104,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -74,6 +78,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cricut.com",
+                "us.sagepub.com",
                 "www.build.com",
                 "www.faucet.com",
                 "www.faucetdirect.com",
@@ -82,6 +87,7 @@
                 "www.lifeextension.com",
                 "www.lightingdirect.com",
                 "www.pullsdirect.com",
+                "www.sparklight.com",
                 "www.thegreatcourses.com",
                 "www.vikings.com",
                 "www.vitacost.com",
@@ -90,34 +96,37 @@
         },
         {
             "rule": "slgnt\\.us\\/frontend\\/api\\/track",
-            "cookies": 0.0000897,
+            "cookies": 0.000104,
             "fingerprinting": 0,
             "subdomains": [
                 "site-azp"
             ],
             "apis": {},
-            "sites": 13,
-            "prevalence": 0.0000897,
+            "sites": 15,
+            "prevalence": 0.000104,
             "cnames": [],
             "responseHashes": [
-                "e556c7d27e30e480bd1bfc3c07e12637e582e514d8099a142bbb2956a71e185d",
-                "a26f161da274d70e561ee94e88a7b2769f1fd821d51dec889bc57700cfbf3542",
-                "312cf851c999b1675030445e8039491996ab70ee35a8bddf2ad30c4ce22dab48",
-                "b4f7971a78854233562b6fd52d46020b0260bb036da9f7abfc5cdbdbc3e99b6b",
-                "18f2b2350846096aba8c47133a29853eeb8d9f679495896943e594faec039aa8",
-                "1c3f5148f823ede6fc7d3634b7c67d88c197856b309c24d3c770326ffeb7427e",
-                "6b446d491ee739ecf4550e31e594750ca48a7c1f21bd7fb21b255d651e9c2d7c",
-                "d04b83b6a929e0ab1d95abd60c8500647bc51c945666fd509d3153e32093e73f",
-                "bd695c6cd0915843ec0463599c5fbec3050852acaf02c847f9adea623a0d4af9",
-                "32d7071c0e6795a650cdc5b815729e26440ec1e897a413654fca96390496a5a7",
-                "c8dfea7b3464106ae6a35a59c6ff2de632d67c055e73a8c281232b14b0446be5",
-                "863ad35c61feecc948da92dbeb5083513b88cdb0b90deda0f209ed0c23854236"
+                "baf0736016aa7a646412f2a1ec5a696931ffab3d2afa44d4dddb131ea6120f37",
+                "57ea608f6f5d7d8df2db20dc9f5660aa0bd904d5b5b843329d234512fd3bf2db",
+                "8b6c6a88f18632724ed5640a21cb78e663a6105ff4b2d3737fdcbf54791028de",
+                "7ccf722b4810b1fd48833362d7bac049b510482cbbaacd7c15a524c1b4fd87d2",
+                "1a51229b335a753910d125fc7a60a09993e3649f3c5424b48975dd6278e54d87",
+                "f6ed9b03564fd65358376c2a7eb414938a42ae1d99635e269e62fe5977c6d88f",
+                "d57571b3ab0be26e7c086c09343aae311ae08e37b5759abdf4e8866b5a8faaec",
+                "3a25e59ad5fd088ac2baf07af3c43eae492ef08e639a23d8a42911091fb70551",
+                "70a50b8f7261b436399bf4f6a02f0915d6c0f68d37940d784bd65cb82ddbdb3b",
+                "7ddcf06888c45f4b3ae4523013ad3c5484015f4f5282a5adda4c5479ec337498",
+                "327402ba35fa22ca29a509a73f64c5bcc1714260090887efef9cfd6470eac5a8",
+                "499ebf3eb99b416c6a78ecde9aec991fad73415b5f91b7cb27b750faacb5f070",
+                "fa752940c97b0ed23dba61f42a7548416c3b85b57d9129a46929d807c75f8668",
+                "2d65f902f224b2bc025baccd527fc34a700378cae625aa8f354a77f595dc25e0"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cricut.com",
+                "us.sagepub.com",
                 "www.build.com",
                 "www.faucet.com",
                 "www.faucetdirect.com",
@@ -126,6 +135,7 @@
                 "www.lifeextension.com",
                 "www.lightingdirect.com",
                 "www.pullsdirect.com",
+                "www.sparklight.com",
                 "www.thegreatcourses.com",
                 "www.vikings.com",
                 "www.vitacost.com",
@@ -143,7 +153,7 @@
                 "Document.cookie getter": 1
             },
             "sites": 4,
-            "prevalence": 0.0000276,
+            "prevalence": 0.0000277,
             "cnames": [],
             "responseHashes": [
                 "4b9d634e72b129717cdb60f03d28ee3a5957fd7dac32988fa7db8d0fa655b4e1"
@@ -159,8 +169,8 @@
             ]
         },
         {
-            "rule": "slgnt\\.us\\/6d82828893de4d3b91bf3d50819e3d80\\/a606cef00f6d47\\.js",
-            "cookies": 0.0000069,
+            "rule": "slgnt\\.us\\/73fc16a46a964b8e9bb11374a23ef282\\/fb5b3c4d0ee24e\\.js",
+            "cookies": 0.00000691,
             "fingerprinting": 1,
             "subdomains": [
                 "offer"
@@ -175,7 +185,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "c57e0e717fe37186e771455aaaa7409b676dee01e78ca61b35324d2abfc76084"
+                "34692276605c409e3e381f241c605b5c28ed447734df119076535d298503014e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -186,8 +196,8 @@
             ]
         },
         {
-            "rule": "slgnt\\.us\\/2fc7475b5551491d889815a1f7e3a52c\\/9b1a9f790f264a\\.js",
-            "cookies": 0.0000069,
+            "rule": "slgnt\\.us\\/63b1688c571d46b9becf9d9f45dd3026\\/00224d7e0d394e\\.js",
+            "cookies": 0.0000138,
             "fingerprinting": 1,
             "subdomains": [
                 "offer"
@@ -196,16 +206,23 @@
                 "Navigator.prototype.userAgent": 2,
                 "Date.prototype.getTime": 2,
                 "Document.cookie getter": 2,
-                "Document.cookie setter": 1
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "c57e0e717fe37186e771455aaaa7409b676dee01e78ca61b35324d2abfc76084"
+                "34692276605c409e3e381f241c605b5c28ed447734df119076535d298503014e"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "th_u": {
+                    "ttl": 604833,
+                    "length": 24,
+                    "prevalence": 0.0000069134300291746744,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "vikings.com",
@@ -214,26 +231,6 @@
         },
         {
             "rule": "slgnt\\.us\\/api\\/e3e3d6df24ef40eab6035533f7c54790\\/iv\\/aHR0cHM6Ly93d3cudmlraW5ncy5jb20v",
-            "cookies": 0.0000069,
-            "fingerprinting": 0,
-            "subdomains": [
-                "offer"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vikings.com",
-                "www.vikings.com"
-            ]
-        },
-        {
-            "rule": "slgnt\\.us\\/api\\/e3e3d6df24ef40eab6035533f7c54790\\/iv\\/aHR0cHM6Ly93d3cudmlraW5ncy5jb20vd2F0Y2gtbGl2ZS1nYW1lcy93YXlzLXRvLXdhdGNo",
             "cookies": 0.0000138,
             "fingerprinting": 0,
             "subdomains": [
@@ -248,7 +245,9 @@
             ],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "th_u": 0.0000069134300291746744
+            },
             "exampleSites": [
                 "vikings.com",
                 "www.vikings.com"
@@ -279,20 +278,20 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000138,
+    "cookies": 0.000159,
     "types": {
-        "Script": 6,
-        "Preflight": 13,
-        "Fetch": 13,
+        "Script": 7,
+        "Preflight": 15,
+        "Fetch": 15,
         "Document": 4,
-        "XHR": 6
+        "XHR": 4
     },
     "nameservers": [
-        "ns10.dnsmadeeasy.com",
-        "ns12.dnsmadeeasy.com",
         "ns11.dnsmadeeasy.com",
-        "ns13.dnsmadeeasy.com",
+        "ns15.dnsmadeeasy.com",
+        "ns10.dnsmadeeasy.com",
         "ns14.dnsmadeeasy.com",
-        "ns15.dnsmadeeasy.com"
+        "ns12.dnsmadeeasy.com",
+        "ns13.dnsmadeeasy.com"
     ]
 }

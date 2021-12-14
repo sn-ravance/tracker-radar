@@ -4,24 +4,72 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
+        "v5api",
+        "script",
         "tracker"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
-            "rule": "thisisbeacon\\.com\\/tracker\\/",
+            "rule": "thisisbeacon\\.com\\/2\\.0\\/js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "v5api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "233b06aac2349552ec3441b2bbb3afe2fe213e8608abe583e45e1e9583ed67de",
+                "915502d5495ce0ddbc893f65ad53280252fed3ca7baf3f97278bdcdfc0b5e5d9"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goodbodyclinic.com",
+                "www.jonesbootmaker.com",
+                "www.pavers.co.uk"
+            ]
+        },
+        {
+            "rule": "thisisbeacon\\.com\\/BLoader\\/1\\.1\\/index\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "script"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "377e2bdcba8ceedea79d4da8cea7957267a221c8968f349a7c446f2932e9ad4e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jonesbootmaker.com",
+                "www.pavers.co.uk"
+            ]
+        },
+        {
+            "rule": "thisisbeacon\\.com\\/tracker\\/4\\.0\\.0\\/index\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "tracker"
+                "script"
             ],
             "apis": {
-                "window.localStorage": 2,
                 "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
                 "Navigator.prototype.platform": 2,
                 "Navigator.prototype.appName": 2,
                 "Navigator.prototype.appVersion": 2
@@ -30,7 +78,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "abd1daa124a8c03cd9b046b156180980557c52baeb14a0ccaf805ecce88b5c67"
+                "98543104834bdb533a91078ecb3a08fcaedadcee6abeeba411e14aa854e2d443"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -74,7 +122,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "1feffa7be8fba7aa16ae98907debb005b3a0ef02817d9ee60f01e40d69a87e6e"
+                "eea7ce99d4998fa3bf2639f655792596cb42a588ee08049d45c6517529d732e2"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -87,9 +135,10 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0001,
     "types": {
-        "Script": 2,
+        "Fetch": 3,
+        "Script": 4,
         "XHR": 4
     },
     "nameservers": [

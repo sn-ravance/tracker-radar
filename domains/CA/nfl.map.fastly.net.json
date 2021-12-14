@@ -9,19 +9,61 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000503,
+    "sites": 5,
     "subdomains": [
+        "http2.global",
         "global"
     ],
     "cnames": [
         {
+            "original": "api.nfl.com",
+            "resolved": "http2.global.nfl.map.fastly.net"
+        },
+        {
             "original": "api2.fantasy.nfl.com",
+            "resolved": "global.nfl.map.fastly.net"
+        },
+        {
+            "original": "p.nfltags.com",
+            "resolved": "global.nfl.map.fastly.net"
+        },
+        {
+            "original": "static.www.nfl.com",
             "resolved": "global.nfl.map.fastly.net"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "nfl\\.map\\.fastly\\.net\\/v1\\/config",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "http2.global"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [
+                {
+                    "original": "api.nfl.com",
+                    "resolved": "http2.global.nfl.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "fa3273b3f3882bb7f02bd4d213aea24f2267ab29a9b7f961da1c1faae533d1a5"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nfl.com",
+                "www.buccaneers.com",
+                "www.buffalobills.com",
+                "www.packers.com"
+            ]
+        },
         {
             "rule": "nfl\\.map\\.fastly\\.net\\/v2\\/game\\/state",
             "cookies": 0,
@@ -39,7 +81,7 @@
                 }
             ],
             "responseHashes": [
-                "520ad35f7615d40b559366001e8b11d7233abeadb75748b1ce599cf0311a8698"
+                "89f5097174e49a6674c8e7833bcce44cf45a8b67ec87cac7713508c2539c73c6"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -47,6 +89,365 @@
             "exampleSites": [
                 "nfl.com",
                 "fantasy.nfl.com"
+            ]
+        },
+        {
+            "rule": "nfl\\.map\\.fastly\\.net\\/t_q-best\\/league\\/api\\/clubs\\/logos\\/TB",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "static.www.nfl.com",
+                    "resolved": "global.nfl.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "224e0bed7e68719be7c7b0f98ed9805f05233001c708821e75d1deb03cdc5b48"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buccaneers.com",
+                "www.buffalobills.com"
+            ]
+        },
+        {
+            "rule": "nfl\\.map\\.fastly\\.net\\/t_q-best\\/league\\/api\\/clubs\\/logos\\/BUF",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "static.www.nfl.com",
+                    "resolved": "global.nfl.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "7435e26708e19716595a36fb48e5f62fdf4548b7a8e42745487864441d6284df"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buccaneers.com",
+                "www.buffalobills.com"
+            ]
+        },
+        {
+            "rule": "nfl\\.map\\.fastly\\.net\\/nfl\\/NflUmdComponents\\.vendor\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "global"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [
+                {
+                    "original": "p.nfltags.com",
+                    "resolved": "global.nfl.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "48415eac2d694ca49027770f3bd07a714f667f7ea6f1d907be7a68cf09468ad8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buccaneers.com",
+                "www.buffalobills.com",
+                "www.nfl.com",
+                "www.packers.com"
+            ]
+        },
+        {
+            "rule": "nfl\\.map\\.fastly\\.net\\/nfl\\/NflUmdComponents\\.common\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "global"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [
+                {
+                    "original": "p.nfltags.com",
+                    "resolved": "global.nfl.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "c032d79f71323942b1bf3eb5e2575a1c8f5faca71911dbb0d0ad6e6ba99b41a3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buccaneers.com",
+                "www.buffalobills.com",
+                "www.nfl.com",
+                "www.packers.com"
+            ]
+        },
+        {
+            "rule": "nfl\\.map\\.fastly\\.net\\/nfl\\/NflUmdComponents\\.WatchLiveButtons\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [
+                {
+                    "original": "p.nfltags.com",
+                    "resolved": "global.nfl.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "cd9da20c9ae09a4af14798702576399c917d75f12026bda900e1b52b81f2ed8f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buccaneers.com",
+                "www.buffalobills.com",
+                "www.packers.com"
+            ]
+        },
+        {
+            "rule": "nfl\\.map\\.fastly\\.net\\/nfl\\/NflUmdComponents\\.WatchLiveButtonsFallbackPromo\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [
+                {
+                    "original": "p.nfltags.com",
+                    "resolved": "global.nfl.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "768030f8327ac49f3e0083af8f52c535f613208520f432bdc546a0b01ef56103"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buccaneers.com",
+                "www.buffalobills.com",
+                "www.packers.com"
+            ]
+        },
+        {
+            "rule": "nfl\\.map\\.fastly\\.net\\/identity\\/v2\\/token",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "http2.global"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [
+                {
+                    "original": "api.nfl.com",
+                    "resolved": "http2.global.nfl.map.fastly.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buccaneers.com",
+                "www.buccaneers.com",
+                "www.buffalobills.com",
+                "www.packers.com"
+            ]
+        },
+        {
+            "rule": "nfl\\.map\\.fastly\\.net\\/identity\\/v2\\/token",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "http2.global"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [
+                {
+                    "original": "api.nfl.com",
+                    "resolved": "http2.global.nfl.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "3a59ef90751433c7b143a37c5d4040de102ccdaac9a16cb47243300a1166b15f",
+                "aae75953da1737cb2888d2807a4083921034d044ded05f680f0db845135158f0",
+                "e39a6caf124ff77025f9ddf7aec8e06f7a802f316f6c5f5b539f23395197e017"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buccaneers.com",
+                "www.buccaneers.com",
+                "www.buffalobills.com",
+                "www.packers.com"
+            ]
+        },
+        {
+            "rule": "nfl\\.map\\.fastly\\.net\\/football\\/v2\\/games\\/c59847b5-b37c-11eb-acb9-bc5b029089d3",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "http2.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.nfl.com",
+                    "resolved": "http2.global.nfl.map.fastly.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buccaneers.com",
+                "www.buffalobills.com"
+            ]
+        },
+        {
+            "rule": "nfl\\.map\\.fastly\\.net\\/football\\/v2\\/games\\/c59847b5-b37c-11eb-acb9-bc5b029089d3",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "http2.global"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.nfl.com",
+                    "resolved": "http2.global.nfl.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "cf30873f15508ecaa6af2693a02c7e4db229785a70f239bd1e1d40050f168f53"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buccaneers.com",
+                "www.buffalobills.com"
+            ]
+        },
+        {
+            "rule": "nfl\\.map\\.fastly\\.net\\/live\\/v1\\/livestreams",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "http2.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [
+                {
+                    "original": "api.nfl.com",
+                    "resolved": "http2.global.nfl.map.fastly.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buccaneers.com",
+                "www.buffalobills.com",
+                "www.packers.com"
+            ]
+        },
+        {
+            "rule": "nfl\\.map\\.fastly\\.net\\/live\\/v1\\/livestreams",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "http2.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [
+                {
+                    "original": "api.nfl.com",
+                    "resolved": "http2.global.nfl.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "ede01d19d81cda6a5c9f4d81f79d1a6b295c66f336e6ba19e717ae5e4c441e7d",
+                "5d59a39c6832e51792cc9fc3cb3b9e80f57417b8fe2d2c1ab6c357c4e81b24de"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buccaneers.com",
+                "www.buffalobills.com",
+                "www.packers.com"
+            ]
+        },
+        {
+            "rule": "nfl\\.map\\.fastly\\.net\\/v1\\/config",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "http2.global"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [
+                {
+                    "original": "api.nfl.com",
+                    "resolved": "http2.global.nfl.map.fastly.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buccaneers.com",
+                "www.buffalobills.com",
+                "www.packers.com"
             ]
         }
     ],
@@ -63,7 +464,10 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Fetch": 2
+        "Fetch": 15,
+        "Image": 4,
+        "Script": 14,
+        "Preflight": 12
     },
     "nameservers": []
 }

@@ -4,14 +4,16 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.000602,
-    "sites": 6,
+    "prevalence": 0.000502,
+    "sites": 5,
     "subdomains": [
         "ssl.cdne",
-        "server"
+        "server",
+        "saproxy",
+        "hcdn"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "cpmstar\\.com\\/cached\\/zonemasters\\/mobilemodules\\.js",
@@ -21,46 +23,51 @@
                 "ssl.cdne"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.platform": 2,
-                "Navigator.prototype.maxTouchPoints": 2,
-                "window.sessionStorage": 2,
-                "Date.prototype.getTime": 2
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.platform": 3,
+                "Navigator.prototype.maxTouchPoints": 3,
+                "window.sessionStorage": 3,
+                "Date.prototype.getTime": 3,
+                "window.localStorage": 1,
+                "Document.cookie getter": 1
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "fa4043f012fdde8cefc5fc54201e3757820cec02704e4a8e8b09ee2c5983d979"
+                "8ea2700db6e2809dbffb826ef3187ec73bb003dcd04b1cedb285e629b46d2400"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fortnitetracker.com",
-                "www.mmo-champion.com"
+                "www.minecraftskins.com",
+                "www.wcostream.com"
             ]
         },
         {
             "rule": "cpmstar\\.com\\/country\\.aspx",
-            "cookies": 0.000201,
+            "cookies": 0.000301,
             "fingerprinting": 0,
             "subdomains": [
                 "server"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "c05301f24b67475428a6361039ff40f9807974d9cc4725dcb1bc72be1f81d991"
+                "f18c70bf888db1c3cc5d9f3abdb9835591a362764660572b1200a3b4369d21dc",
+                "c5b2127c81aca185c89d29cdbf34aa7b13e63356acd2bd110db9b66c67373bdc"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fortnitetracker.com",
-                "www.mmo-champion.com"
+                "www.minecraftskins.com",
+                "www.wcostream.com"
             ]
         },
         {
@@ -82,22 +89,46 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fortnitetracker.com",
-                "www.mmo-champion.com"
+                "www.wcostream.com"
             ]
         },
         {
-            "rule": "cpmstar\\.com\\/view\\.aspx",
+            "rule": "cpmstar\\.com\\/cached\\/js\\/lib\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "server"
+                "ssl.cdne"
             ],
             "apis": {},
             "sites": 3,
             "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "750c57e7e843d1af37d61fb6b9d7c7d4647ac9c5bf83f4c336bfd7122db74225"
+                "35f808834cfb012b89e04de8be8e367b48678a3d2eaf22fec539b7f0152fbc72"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fortnitetracker.com",
+                "www.minecraftskins.com",
+                "www.wcostream.com"
+            ]
+        },
+        {
+            "rule": "cpmstar\\.com\\/view\\.aspx",
+            "cookies": 0.0001,
+            "fingerprinting": 0,
+            "subdomains": [
+                "server"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [],
+            "responseHashes": [
+                "18df97b6e0d58a9d612aae7bf8ddfb0a99ebbd729e7abd90d65c96f86179ffae",
+                "94ec4f8351b4bfd7fc615d610e346d1d628e30ca588c7e896f38496381674786"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -105,12 +136,56 @@
             "exampleSites": [
                 "fortnitetracker.com",
                 "tamugaia.com",
-                "www.mmo-champion.com"
+                "www.minecraftskins.com",
+                "www.wcostream.com"
+            ]
+        },
+        {
+            "rule": "cpmstar\\.com\\/cached\\/zonemasters\\/lib\\/prebid\\/starprebid\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "ssl.cdne"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Date.prototype.getTimezoneOffset": 1,
+                "Navigator.prototype.languages": 1,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Navigator.prototype.hardwareConcurrency": 1,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.colorDepth": 1,
+                "Navigator.prototype.vendor": 1,
+                "window.devicePixelRatio": 1,
+                "Navigator.prototype.connection": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "aa98209cbd3bb97fef39b1ffdcc95a0552d1ed8a5571a7dab33cbfaa6687c97c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "minecraftskins.com",
+                "www.wcostream.com"
             ]
         },
         {
             "rule": "cpmstar\\.com\\/view\\.aspx",
-            "cookies": 0.000201,
+            "cookies": 0.0001,
             "fingerprinting": 0,
             "subdomains": [
                 "server"
@@ -120,25 +195,176 @@
             "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "193fdc7a48ae60adfa28663712b68539bead2a82033545589d0d97565c6e983b",
-                "9716249ff66d57f0fb1ac9bd11b05a950a90f8bed0c941060f6c4db842139092"
+                "67cc1f45a6b6b629e7fa1077695a25cd26563a88ee22caa09064a61bbf17c6ba",
+                "774ccf3d6acbaf88ba6527069de9ff9147be097912d488ebdd8a8269cbc664b6"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "shellshock.io",
-                "slope.fun",
+                "minecraftskins.com",
+                "www.minecraftskins.com",
                 "www.speeleiland.nl"
+            ]
+        },
+        {
+            "rule": "cpmstar\\.com\\/v2\\/exchange",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "saproxy"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "minecraftskins.com",
+                "www.minecraftskins.com"
+            ]
+        },
+        {
+            "rule": "cpmstar\\.com\\/v2\\/exchange",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "saproxy"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "minecraftskins.com",
+                "www.minecraftskins.com"
+            ]
+        },
+        {
+            "rule": "cpmstar\\.com\\/nc\\.aspx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "server"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "minecraftskins.com",
+                "www.minecraftskins.com"
+            ]
+        },
+        {
+            "rule": "cpmstar\\.com\\/cached\\/creatives\\/1288653\\/Phantasy_Star_Online_2_Luster_Update_HD\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "be8262b73a513e85f60c9033defd14055ff371618d839db124f9285f24e0bfe7"
+            ],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "minecraftskins.com",
+                "www.minecraftskins.com"
+            ]
+        },
+        {
+            "rule": "cpmstar\\.com\\/pixel\\.aspx",
+            "cookies": 0.0001,
+            "fingerprinting": 0,
+            "subdomains": [
+                "server"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "minecraftskins.com",
+                "www.wcostream.com"
+            ]
+        },
+        {
+            "rule": "cpmstar\\.com\\/cached\\/creatives\\/1288653\\/Rogue_Company_Season_One\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "minecraftskins.com",
+                "www.minecraftskins.com"
+            ]
+        },
+        {
+            "rule": "cpmstar\\.com\\/cached\\/creatives\\/1292240\\/EPIC_Basegame_Key_art_1-_ESRB-300x600-English\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ssl.cdne"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "651db1d792ac781dae57e398d25e55cf7956473a04a03ae275b8a4cebe642baf"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wcostream.com",
+                "www.wcostream.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000602,
+    "cookies": 0.000502,
     "types": {
-        "Script": 9,
-        "XHR": 3
+        "Script": 19,
+        "XHR": 5,
+        "Preflight": 2,
+        "Media": 4,
+        "Image": 4
     },
     "nameservers": [
         "ns1.theplanet.com",
