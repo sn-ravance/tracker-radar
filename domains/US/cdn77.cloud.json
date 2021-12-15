@@ -64,15 +64,20 @@
         {
             "rule": "cdn77\\.cloud\\/scripts\\/in\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "tags"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1,
+                "Date.prototype.getTimezoneOffset": 1
+            },
             "sites": 4,
             "prevalence": 0.0000277,
             "cnames": [],
             "responseHashes": [
+                "58d270c9db15a00958323dfdd6cc2d752392d79da397439e43db294451ec3670",
                 "3b69dbf32872647ab14e3d00c71a610cd16ab16db42a9fb1dc7add247b2bde55"
             ],
             "type": "Script",
@@ -94,7 +99,7 @@
         "Script": 8
     },
     "nameservers": [
-        "nataly.ns.cloudflare.com",
-        "porter.ns.cloudflare.com"
+        "porter.ns.cloudflare.com",
+        "nataly.ns.cloudflare.com"
     ]
 }

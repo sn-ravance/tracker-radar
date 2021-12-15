@@ -12,8 +12,8 @@
     "prevalence": 0.00221,
     "sites": 22,
     "subdomains": [
-        "player",
         "embed",
+        "player",
         "pubsub-edge",
         "gql",
         "irc-ws.chat",
@@ -22,6 +22,30 @@
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "twitch\\.tv\\/embed\\/v1\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "eebda791e5cbcc710fdc1317ef226a149518e6a55d46cf74393f959939c7aede"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "agoratv.ch",
+                "newworldfans.com",
+                "twinfinite.net",
+                "www.madmoizelle.com"
+            ]
+        },
         {
             "rule": "twitch\\.tv\\/",
             "cookies": 0.00131,
@@ -176,30 +200,6 @@
             ]
         },
         {
-            "rule": "twitch\\.tv\\/embed\\/v1\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "embed"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [],
-            "responseHashes": [
-                "eebda791e5cbcc710fdc1317ef226a149518e6a55d46cf74393f959939c7aede"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "agoratv.ch",
-                "newworldfans.com",
-                "twinfinite.net",
-                "www.madmoizelle.com"
-            ]
-        },
-        {
             "rule": "twitch\\.tv\\/js\\/embed\\/v1\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -350,11 +350,11 @@
     "performance": {},
     "cookies": 0.00131,
     "types": {
+        "Script": 16,
         "Document": 13,
         "WebSocket": 20,
         "Fetch": 13,
         "Preflight": 13,
-        "Script": 16,
         "Image": 24
     },
     "nameservers": [

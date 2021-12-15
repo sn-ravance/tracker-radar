@@ -4,19 +4,122 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000401,
-    "sites": 4,
+    "prevalence": 0.001,
+    "sites": 10,
     "subdomains": [
+        "cdn.registerdisney.cre.go.com",
         "c.xbox.com"
     ],
     "cnames": [
         {
             "original": "c.xbox.com",
             "resolved": "c.xbox.com.nsatc.net"
+        },
+        {
+            "original": "cdn.registerdisney.go.com",
+            "resolved": "cdn.registerdisney.cre.go.com.nsatc.net"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "nsatc\\.net\\/v2\\/outer\\/DisneyID\\.js",
+            "cookies": 0.000401,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.registerdisney.cre.go.com"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.000702,
+            "cnames": [
+                {
+                    "original": "cdn.registerdisney.go.com",
+                    "resolved": "cdn.registerdisney.cre.go.com.nsatc.net"
+                }
+            ],
+            "responseHashes": [
+                "eed6a3afe9aba7f930db03a36138aeae9419283df22175ea2701580916b71dc1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "SWID": {
+                    "ttl": 31536007,
+                    "length": 36,
+                    "prevalence": 0.0004013243704223939,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abc7chicago.com",
+                "www.disney.com.au",
+                "www.espn.com.au",
+                "www.espn.com",
+                "www.marvel.com",
+                "www.nationalgeographic.com",
+                "www.starwars.com"
+            ]
+        },
+        {
+            "rule": "nsatc\\.net\\/v2\\/responder\\/responder\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.registerdisney.cre.go.com"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.000702,
+            "cnames": [
+                {
+                    "original": "cdn.registerdisney.go.com",
+                    "resolved": "cdn.registerdisney.cre.go.com.nsatc.net"
+                }
+            ],
+            "responseHashes": [
+                "6d816bacccdf3f6fc29e60dda16cf40ef4a3c9270579c95449102896084210d6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abc7chicago.com",
+                "www.disney.com.au",
+                "www.espn.com.au",
+                "www.espn.com",
+                "www.marvel.com",
+                "www.nationalgeographic.com",
+                "www.starwars.com"
+            ]
+        },
+        {
+            "rule": "nsatc\\.net\\/v2\\/ESPN-ONESITE\\.WEB-PROD\\/en-AU",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.registerdisney.cre.go.com"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn.registerdisney.go.com",
+                    "resolved": "cdn.registerdisney.cre.go.com.nsatc.net"
+                }
+            ],
+            "responseHashes": [
+                "803db6e5705525e8846661d501578678b397f3e70966939e4829a3d9192c1b49"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "espn.com.au",
+                "www.espn.com"
+            ]
+        },
         {
             "rule": "nsatc\\.net\\/c\\.gif",
             "cookies": 0.000201,
@@ -47,8 +150,10 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000602,
     "types": {
+        "Script": 14,
+        "Document": 2,
         "Image": 2
     },
     "nameservers": []
