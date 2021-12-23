@@ -7,39 +7,47 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000401,
+    "prevalence": 0.000402,
     "sites": 4,
     "subdomains": [
+        "c",
         "cdn",
-        "c"
+        "proxymedia"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "woopic\\.com\\/v1\\/AUTH_840aa06aeef64c848738c7997ff75b62\\/acsosh-prod\\/json\\/wording\\.repcat\\.raccrosh\\.json",
+            "rule": "woopic\\.com\\/libs\\/common\\/o_load_responsive\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "cdn"
+                "c"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 3,
+                "window.localStorage": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Document.cookie getter": 3,
+                "Navigator.prototype.appName": 1
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "f298d9be8e30e4a7014a5c9311272f9301d3ce6a03334dabde9c6804fb760715"
+                "80609d46774450db5c797f4a7538a0df0b109b75dadec1e8a0f63afd5eaf5f2b"
             ],
-            "type": "Fetch",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "sosh.fr",
-                "assistance.sosh.fr"
+                "shop.sosh.fr",
+                "www.sosh.fr"
             ]
         },
         {
-            "rule": "woopic\\.com\\/logo-sosh\\.svg",
+            "rule": "woopic\\.com\\/libs\\/2cd8c2af0e50eeb0547e7af37487990e\\/common\\/js\\/common\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -49,15 +57,34 @@
             "sites": 3,
             "prevalence": 0.000301,
             "cnames": [],
-            "responseHashes": [
-                "53d1be4f032a62f4bee273a1ef892f9c0443126fcae83a88d67c4dc2b5b7bd33"
-            ],
-            "type": "Image",
+            "responseHashes": [],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "sosh.fr",
-                "communaute.sosh.fr",
+                "shop.sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "woopic\\.com\\/libs\\/16acc407b1b3ebd0404e3efc762ebd69\\/common\\/css\\/common\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "c"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "shop.sosh.fr",
                 "www.sosh.fr"
             ]
         },
@@ -72,15 +99,13 @@
             "sites": 3,
             "prevalence": 0.000301,
             "cnames": [],
-            "responseHashes": [
-                "110fc0d903269e07466e6046d1133356354f9344421364cf22d04c477785e512"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "sosh.fr",
-                "communaute.sosh.fr",
+                "shop.sosh.fr",
                 "www.sosh.fr"
             ]
         },
@@ -97,20 +122,64 @@
             "sites": 3,
             "prevalence": 0.000301,
             "cnames": [],
-            "responseHashes": [
-                "48e3519db17530c83a984fda459577525b5a8e0b5d7eae6aff3983676df229d2"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "sosh.fr",
-                "communaute.sosh.fr",
+                "shop.sosh.fr",
                 "www.sosh.fr"
             ]
         },
         {
-            "rule": "woopic\\.com\\/libs\\/modules\\/sosh\\/dist\\/fonts\\/elcos\\/Sosh-Medium\\.0dc3b4d93cb76fdb04507708a531dd63\\.woff2",
+            "rule": "woopic\\.com\\/libs\\/modules\\/sosh\\/o_load_sosh_responsive\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "c"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "shop.sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "woopic\\.com\\/libs\\/f45ea63333df4306adcd60d4c0eabcfd\\/modules\\/sosh\\/dist\\/js\\/sosh2_core\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "c"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "shop.sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "woopic\\.com\\/libs\\/a426c55a2044415fadccfb6aaed2a7f8\\/modules\\/sosh\\/dist\\/css\\/sosh2_core\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -120,176 +189,13 @@
             "sites": 3,
             "prevalence": 0.000301,
             "cnames": [],
-            "responseHashes": [
-                "75bd498a98c97155bee6689aa6691c8b9287f9338f9784335fd52dbf97b34e09"
-            ],
-            "type": "Font",
+            "responseHashes": [],
+            "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "sosh.fr",
-                "communaute.sosh.fr",
-                "www.sosh.fr"
-            ]
-        },
-        {
-            "rule": "woopic\\.com\\/libs\\/modules\\/sosh\\/dist\\/fonts\\/elcos\\/Sosh-Bold\\.16d21e3e3c73184a827298824452cf8d\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "c"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "10605cad5ed84361e3fdf211b206719ee8ae44f23c12c4aff52e5778887931c6"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sosh.fr",
-                "communaute.sosh.fr",
-                "www.sosh.fr"
-            ]
-        },
-        {
-            "rule": "woopic\\.com\\/Magic\\/SoshV3\\.2\\.res\\.desktop\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "c"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "6cc821b37b914ca7689c4b20e697012e3757c201b6c09ec51ec6de72bb794dd1"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sosh.fr",
-                "communaute.sosh.fr",
-                "www.sosh.fr"
-            ]
-        },
-        {
-            "rule": "woopic\\.com\\/libs\\/modules\\/sosh\\/dist\\/icons\\/elcos\\/logo\\.ad3f09d018b0d7b92d405c0e181834f3\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "c"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "cb52cdcb08095425a452e6af8c638fe43266a7d034b3f624b92c165b9ea2730d"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sosh.fr",
-                "communaute.sosh.fr",
-                "www.sosh.fr"
-            ]
-        },
-        {
-            "rule": "woopic\\.com\\/libs\\/modules\\/sosh\\/dist\\/icons\\/elcos\\/accueil\\.6f4565431f1f275fe115a0a371385c6b\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "c"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "0d4689685509a61a68d989be7fa4b171b897f088146b532cfdf720d42f2663d8"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sosh.fr",
-                "communaute.sosh.fr",
-                "www.sosh.fr"
-            ]
-        },
-        {
-            "rule": "woopic\\.com\\/libs\\/modules\\/sosh\\/dist\\/icons\\/elcos\\/camion\\.7973a84518f4d52c9d1b215994ba9c88\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "c"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "0cbd0195291e597b6308f2c82ca7f8eb2e4f7682a9bcfa99dc13195bac856aca"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sosh.fr",
-                "communaute.sosh.fr",
-                "www.sosh.fr"
-            ]
-        },
-        {
-            "rule": "woopic\\.com\\/libs\\/modules\\/sosh\\/dist\\/icons\\/elcos\\/aide\\.2144ce6f6f11950e52229bcfbf03d2cc\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "c"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "10402e668fd532221a37bf4f0bf6a005c430f49335cdd2d27cfd65f39eacc825"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sosh.fr",
-                "communaute.sosh.fr",
-                "www.sosh.fr"
-            ]
-        },
-        {
-            "rule": "woopic\\.com\\/libs\\/modules\\/sosh\\/dist\\/icons\\/elcos\\/identification\\.7bcd9f60503b3a93e6371a028e667caf\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "c"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "b07890e768835d764fc73b1999329d327640820e006c05026e85d538f7b1e125"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sosh.fr",
-                "communaute.sosh.fr",
+                "shop.sosh.fr",
                 "www.sosh.fr"
             ]
         },
@@ -312,145 +218,579 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "sosh.fr",
-                "communaute.sosh.fr",
+                "shop.sosh.fr",
                 "www.sosh.fr"
             ]
         },
         {
-            "rule": "woopic\\.com\\/libs\\/common\\/o_load_responsive\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "c"
-            ],
-            "apis": {
-                "PerformanceTiming.prototype.navigationStart": 2,
-                "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 2,
-                "Navigator.prototype.appName": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "6c84de2444df54dba9533df8b533a3ca8cf6b6c8fa25f421493ae1f15b075a82"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sosh.fr",
-                "www.sosh.fr"
-            ]
-        },
-        {
-            "rule": "woopic\\.com\\/libs\\/aacee71c8d5bdebf2a63dc37c486f747\\/common\\/js\\/common\\.js",
+            "rule": "woopic\\.com\\/Magic\\/SoshV3\\.2\\.res\\.desktop\\.json",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "c"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "10cd51d65eaf85242c6f2b51f90fcf3a96f9def74a5acb0848740a198ea7b4dd"
+                "f22f8ee2700d14d8b1333adf4a31861b9c972017146e605654b34af18d421d2d"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "sosh.fr",
+                "shop.sosh.fr",
                 "www.sosh.fr"
             ]
         },
         {
-            "rule": "woopic\\.com\\/libs\\/4cfbea16f11a03c0a084494375567dd3\\/common\\/css\\/common\\.css",
+            "rule": "woopic\\.com\\/libs\\/modules\\/sosh\\/dist\\/icons\\/elcos\\/logo\\.ad3f09d018b0d7b92d405c0e181834f3\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "c"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "9d203ca69703024402ebf53d83e6a7aff3aec17c7b63993a63228aa467b463aa"
+                "cb52cdcb08095425a452e6af8c638fe43266a7d034b3f624b92c165b9ea2730d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "shop.sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "woopic\\.com\\/libs\\/modules\\/sosh\\/dist\\/icons\\/elcos\\/accueil\\.6f4565431f1f275fe115a0a371385c6b\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "c"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "0d4689685509a61a68d989be7fa4b171b897f088146b532cfdf720d42f2663d8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "shop.sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "woopic\\.com\\/libs\\/modules\\/sosh\\/dist\\/icons\\/elcos\\/camion\\.7973a84518f4d52c9d1b215994ba9c88\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "c"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "0cbd0195291e597b6308f2c82ca7f8eb2e4f7682a9bcfa99dc13195bac856aca"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "shop.sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "woopic\\.com\\/libs\\/modules\\/sosh\\/dist\\/icons\\/elcos\\/aide\\.2144ce6f6f11950e52229bcfbf03d2cc\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "c"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "10402e668fd532221a37bf4f0bf6a005c430f49335cdd2d27cfd65f39eacc825"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "shop.sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "woopic\\.com\\/libs\\/modules\\/sosh\\/dist\\/icons\\/elcos\\/identification\\.7bcd9f60503b3a93e6371a028e667caf\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "c"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "b07890e768835d764fc73b1999329d327640820e006c05026e85d538f7b1e125"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "shop.sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "woopic\\.com\\/libs\\/modules\\/sosh\\/dist\\/fonts\\/elcos\\/Sosh-Medium\\.0dc3b4d93cb76fdb04507708a531dd63\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "c"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "75bd498a98c97155bee6689aa6691c8b9287f9338f9784335fd52dbf97b34e09"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "shop.sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "woopic\\.com\\/libs\\/modules\\/sosh\\/dist\\/fonts\\/elcos\\/Sosh-Bold\\.16d21e3e3c73184a827298824452cf8d\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "c"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "10605cad5ed84361e3fdf211b206719ee8ae44f23c12c4aff52e5778887931c6"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "shop.sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "woopic\\.com\\/logo-sosh\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "c"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "53d1be4f032a62f4bee273a1ef892f9c0443126fcae83a88d67c4dc2b5b7bd33"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "shop.sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "woopic\\.com\\/v1\\/AUTH_554b37b875ca4080b294e446ada55787\\/hpsosh\\/assets\\/css\\/hptu\\.cf915075a10cc0ef5064\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "354340b7139b37c8caf950b24de3fa9ec8f86872aa8b9fd6f684e9d6f750ddfd"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "sosh.fr",
+                "shop.sosh.fr",
                 "www.sosh.fr"
             ]
         },
         {
-            "rule": "woopic\\.com\\/libs\\/modules\\/sosh\\/o_load_sosh_responsive\\.js",
+            "rule": "woopic\\.com\\/v1\\/AUTH_554b37b875ca4080b294e446ada55787\\/hpsosh\\/assets\\/js\\/module\\/head_common\\.110fbf1fad9b0cc3a0fc\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "c"
+                "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 3,
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.appName": 3,
+                "PerformanceTiming.prototype.navigationStart": 3
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "ba36c2df7c39679ab1cbedf3582ab1e2c017940ee5e25a346a66676d4eab8821"
+                "974f96bf9f8b67e2c062c27edc97c26fb465d9ad806040157a367be80b684272"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "sosh.fr",
+                "shop.sosh.fr",
                 "www.sosh.fr"
             ]
         },
         {
-            "rule": "woopic\\.com\\/libs\\/cac0fc42adc541b7acc5a4d356377098\\/modules\\/sosh\\/dist\\/js\\/sosh2_core\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "c"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "9be2f3c9f5294b6886609fbea90d9812f8ad4f86c449b285e364fe65628799d2"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sosh.fr",
-                "www.sosh.fr"
-            ]
-        },
-        {
-            "rule": "woopic\\.com\\/libs\\/e441b600208c4f2991bf9c3c74f21f11\\/modules\\/sosh\\/dist\\/css\\/sosh2_core\\.css",
+            "rule": "woopic\\.com\\/api\\/v1\\/images\\/1476%2Fportal-hpsosh-dev%2Fv4%2Ficons%2Fhptu%2F89ba954a392ffe6df26a5833675578b7\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "c"
+                "proxymedia"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "4943e30f4bf79d437d973bdae8090ff592a66a7a66762817ad5fd3d5141e27c0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "shop.sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "woopic\\.com\\/840aa06aeef64c848738c7997ff75b62\\/portal-hpsosh-dev\\/v4\\/icons\\/hptu\\/8b4121fa4744acffcf74ae3d49dad82b\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "7ddd2c2759a23db3d8f158acbc0eded21e27bfd1b1fc301b96493d9c72a60478"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "shop.sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "woopic\\.com\\/v1\\/AUTH_554b37b875ca4080b294e446ada55787\\/hpsosh\\/assets\\/js\\/module\\/hptu\\.cf915075a10cc0ef5064\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.maxTouchPoints": 3,
+                "Navigator.prototype.platform": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "window.localStorage": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "bfad0a65b5a69ddd8189cd129ebfe8380fe6544a1a3f76916c81e81778fec551"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "shop.sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "woopic\\.com\\/v1\\/AUTH_554b37b875ca4080b294e446ada55787\\/hpsosh\\/assets\\/fonts\\/icon-sosh\\.9ed83a9cf9102f83f2c3af39dec3f9b4\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "7d58c44246797befc87c4527da2074d1dbbb80b37ca22bf6c8f036680cd9fc49"
+                "739a5d80e90a203d067b8d1cd2006cf69afb2cb3dceb707d3a1f72f49e7c57a5"
             ],
-            "type": "Stylesheet",
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "woopic\\.com\\/api\\/v1\\/images\\/1476%2Fportal-hpsosh%2Fv4%2Ficons%2Fhptu%2Fa0c19bcc58e2e824b52e20022fec40ad\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "proxymedia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "84be5fc9db248297d460e4428a5041c79b682359223785ad2791059cae6a0727"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "woopic\\.com\\/api\\/v1\\/images\\/1476%2Fportal-hpsosh%2Fv4%2Ficons%2Fhptu%2F426e32cee945e5c044d0a1a52b74915f\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "proxymedia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "4f943469ea561f799e18c4eb7001c961978c64d4ee5e27c2db5769ccc6a45113"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "woopic\\.com\\/api\\/v1\\/images\\/1476%2Fportal-hpsosh%2Fv4%2Ficons%2Fhptu%2F918ac2e9a086216221a726395cb27906\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "proxymedia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "449cd8949e400caf4c647b245e492502c701fcf5beabf571ec6a1304dc8580e7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "woopic\\.com\\/api\\/v1\\/images\\/1476%2Fportal-hpsosh%2Fv4%2Ficons%2Fhptu%2F2b2059d6a3adcb3bf7772113122992dd\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "proxymedia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "961bdc3fb088fc215947e7e57197f30a297bb119865648a541c29765d212983f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "woopic\\.com\\/api\\/v1\\/images\\/1476%2Fportal-hpsosh%2Fv4%2Ficons%2Ftransverse%2Foffres%2Fc335a29be3cd2ea32c408a8cbe4c52a7\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "proxymedia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "32486c58092b7caa26879b5409ab4150be4e52d6b410ebf8591584fbf91a1d39"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "woopic\\.com\\/api\\/v1\\/images\\/1476%2Fportal-hpsosh%2Fv4%2Ficons%2Ftransverse%2Foffres%2Fae0d237b08c646ddf127139d6296eb2f\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "proxymedia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "6671e398aa788d2e2f0af5422133d5ece5e1efdea9fc6e027a4ec61b6a9cb694"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "woopic\\.com\\/api\\/v1\\/images\\/1476%2Fportal-hpsosh%2Fv4%2Ficons%2Ftransverse%2Foffres%2F637b68169541ba615c9014a1edbb4e09\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "proxymedia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "99de96c2594136b34f3902be5a5ecf5b87b179f89de8dd91ddd77ec7f6c37bef"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "woopic\\.com\\/api\\/v1\\/images\\/1476%2Fportal-hpsosh%2Fv4%2Ficons%2Ftransverse%2Foffres%2Fc3e8738f15b96307170eead6861f8b33\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "proxymedia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "77550f687b9a9c7baaab0930d7e93ec3ff8727ac9e350779e1a7defa98cf85bb"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "woopic\\.com\\/api\\/v1\\/images\\/1476%2Fportal-hpsosh%2Fv4%2Ficons%2Fhptu%2F2966315cd4215d48304fcbca4505f11d\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "proxymedia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "6568b3418e3a1891fdb9715fa0f4a1cb6d42fa17150584a12889b5407797297f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "woopic\\.com\\/api\\/v1\\/images\\/1476%2Fportal-hpsosh%2Fv4%2Ficons%2Fhptu%2Fca498d7682cead6d89e5d9b4762d02e0\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "proxymedia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "2cc9af2b27d580a9b8a4edfe4e496a81414ff289bb000de693dff0300f89977e"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -463,12 +803,11 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Fetch": 2,
-        "Image": 18,
-        "Script": 17,
-        "Font": 6,
+        "Script": 27,
+        "Stylesheet": 9,
         "XHR": 3,
-        "Stylesheet": 4
+        "Image": 44,
+        "Font": 8
     },
     "nameservers": [
         "ns1.fti.net",

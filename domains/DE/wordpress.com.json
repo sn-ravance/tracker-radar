@@ -9,12 +9,13 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.0013,
-    "sites": 13,
+    "prevalence": 0.00181,
+    "sites": 18,
     "subdomains": [
         "s-ssl",
         "r-login",
-        "public-api"
+        "public-api",
+        "nebadonia"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -49,12 +50,16 @@
                 "r-login"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 7,
+            "prevalence": 0.000702,
             "cnames": [],
             "responseHashes": [
                 "c3faa556878720c93d87f43fcef2a6b0384e8548a1a3ddf7d986654f1b400757",
-                "65efa68b1e79a432faee3104453ce35314a6ef45aa8cdb52fd2dcea52c5d18fd"
+                "a3993c2be2b16353869e409fe3eb1848dbcee713cc2a54e569f94506becc881e",
+                "d8937c40b4bf43e55026a7c4da1694d27596e0a657d16c848b5487b607b3d4f6",
+                "e075d9e0e816ec4279fd13f96b69bd503066cdf876a3419eeb2af825cc236865",
+                "470095292263870fdc0bc186d531a5cc13bca498d73fa0a2c58c4786ec67784d",
+                "c36ad528fca4f2408c2609f624a015d7a0968a392efa9580d3f0366f7f3ef908"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -63,12 +68,15 @@
                 "bumibahagia.com",
                 "fingersblog.com",
                 "geistblog.org",
-                "kaisertv.de"
+                "juergenfritz.com",
+                "kaisertv.de",
+                "linkezeitung.de",
+                "wirsindeins.org"
             ]
         },
         {
             "rule": "wordpress\\.com\\/wp-admin\\/rest-proxy\\/",
-            "cookies": 0.000401,
+            "cookies": 0.000301,
             "fingerprinting": 1,
             "subdomains": [
                 "public-api"
@@ -76,11 +84,11 @@
             "apis": {
                 "Document.cookie getter": 2
             },
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "88d90b4a44bfd2d4d3020266731c6c89a32110daa605c958c75c67cb483ff7bc"
+                "75490b5f68cfe62a2d6e860b7cf90cf334fdad632711ad56ef4ab549bb9c87fa"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -88,8 +96,7 @@
             "exampleSites": [
                 "bumibahagia.com",
                 "kaisertv.de",
-                "krisenfrei.com",
-                "texblog.org"
+                "krisenfrei.com"
             ]
         },
         {
@@ -104,16 +111,64 @@
             "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "0751493392618370cbcc937d638831aa227aaba31799ac9cf40eb3fd1155e0d4",
-                "696873a9dac3a5188c352e0671170f28d46771f5ed04187eef01d0fcf65df8f0"
+                "0018145b2b8fd970ddf85c9399135caf0c67df418c20e09c6d7d6c2d840fc640",
+                "028de2ebe709d3d404e50489ac96383684e5972f77c0b38cdb278fcef5e61d39"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "bumibahagia.com",
                 "kaisertv.de",
-                "krisenfrei.com",
-                "texblog.org"
+                "krisenfrei.com"
+            ]
+        },
+        {
+            "rule": "wordpress\\.com\\/geo\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "public-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "ed58ac8ebcada9fac1d3a5566995a9bd9a24880f6960ad6c60e9da91d22d97c0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globalnews.ca",
+                "linkezeitung.de"
+            ]
+        },
+        {
+            "rule": "wordpress\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "nebadonia"
+            ],
+            "apis": {
+                "HTMLCanvasElement.prototype.toDataURL": 1,
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "ef4797605478274b863f906896c5405b0fc47fe7365bdca4c48718a675543c2a"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wordpress.de",
+                "nebadonia.wordpress.de"
             ]
         },
         {
@@ -164,11 +219,11 @@
         "Embedded Content"
     ],
     "performance": {},
-    "cookies": 0.000401,
+    "cookies": 0.000301,
     "types": {
         "Image": 2,
-        "Document": 8,
-        "XHR": 3,
+        "Document": 12,
+        "XHR": 5,
         "Preflight": 2,
         "Fetch": 2
     },

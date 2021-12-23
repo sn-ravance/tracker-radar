@@ -4,15 +4,15 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000401,
-    "sites": 4,
+    "prevalence": 0.000502,
+    "sites": 5,
     "subdomains": [
         "cdn",
         "fast",
         "pbs"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "nexx360\\.io\\/glxm\\.js",
@@ -22,19 +22,20 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3
+                "Navigator.prototype.userAgent": 3,
+                "window.localStorage": 3
             },
             "sites": 3,
             "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "cda2731a7cc1bf475ca2a3a210e924184c1d119d194030e96d9814a7a838cf43"
+                "e91456f4c827cf710b1db4fa02d2b901ca6b3cb57bf06a1b36172ee3a6c5b3b3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "papergeek.fr",
+                "hitek.fr",
                 "www.phonandroid.com",
                 "www.tomsguide.fr"
             ]
@@ -42,23 +43,29 @@
         {
             "rule": "nexx360\\.io\\/loader\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "apis": {
+                "window.localStorage": 4,
+                "Navigator.prototype.connection": 4,
+                "Screen.prototype.width": 4,
+                "Navigator.prototype.userAgent": 3
+            },
+            "sites": 4,
+            "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [
-                "a13a3d30b2d6adf3b36f5e9d5e8631910d14c4edeafa049e3a96f3ab7725c58e"
+                "74395c681045971dd33c6fc32074340bce839b4db603e3aa47d95236ac77b039"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "papergeek.fr",
+                "hitek.fr",
                 "www.phonandroid.com",
+                "www.rustica.fr",
                 "www.tomsguide.fr"
             ]
         },
@@ -84,7 +91,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "papergeek.fr",
+                "hitek.fr",
                 "www.phonandroid.com",
                 "www.tomsguide.fr"
             ]
@@ -98,18 +105,19 @@
                 "pbs"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
-                "0225d7d75b96c3313172ea27c4b343718ae57ee9e738a3ba22af5da77190430f"
+                "e2929b9cb5c87c1a88335fd1ccc6d0a86dacb5ee6d7466d1c70a01cd9ce74dce"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "papergeek.fr",
+                "hitek.fr",
                 "www.phonandroid.com",
+                "www.rustica.fr",
                 "www.supersoluce.com",
                 "www.tomsguide.fr"
             ]
@@ -132,7 +140,31 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "papergeek.fr",
+                "hitek.fr",
+                "www.phonandroid.com",
+                "www.tomsguide.fr"
+            ]
+        },
+        {
+            "rule": "nexx360\\.io\\/requests",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fast"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "d3e9a59724b465021cd74d317ed737181b8c73c2c085f41bd5fd30c785766ee1",
+                "cf79d57b3c071d2b9685e4461e483a06ece8efb1d2fafe16ed13001aa8d8fc48"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hitek.fr",
                 "www.phonandroid.com",
                 "www.tomsguide.fr"
             ]
@@ -155,21 +187,46 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "papergeek.fr",
-                "www.papergeek.fr",
+                "hitek.fr",
                 "www.phonandroid.com",
+                "www.rustica.fr",
                 "www.supersoluce.com",
+                "www.tomsguide.fr"
+            ]
+        },
+        {
+            "rule": "nexx360\\.io\\/setuid",
+            "cookies": 0.000401,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fast"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [],
+            "responseHashes": [
+                "81b59f33be1b696c6fd8704e58709ed7dc7d4c8962180bb106371ec642a2f55c"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hitek.fr",
+                "www.phonandroid.com",
+                "www.rustica.fr",
                 "www.tomsguide.fr"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000401,
+    "cookies": 0.000502,
     "types": {
-        "Script": 9,
-        "XHR": 7,
-        "Image": 5
+        "Script": 10,
+        "XHR": 11,
+        "Image": 5,
+        "Document": 4
     },
     "nameservers": [
         "ns112.ovh.net",

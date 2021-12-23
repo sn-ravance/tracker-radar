@@ -4,13 +4,15 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.0011,
-    "sites": 11,
+    "prevalence": 0.00131,
+    "sites": 13,
     "subdomains": [
-        "front.activation"
+        "front.activation",
+        "tag",
+        "front.lytics"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "beyable\\.com\\/api\\/v2\\/displays",
@@ -20,16 +22,15 @@
                 "front.activation"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.000703,
+            "sites": 6,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
-                "b9ff84fb6f0c44183dbe2bf3544c2f1985e3cba67c948e86eb946415cb72ab20",
-                "b604dc290473bc1736fab2804a68e93f97371c19df46a6897f0006a509b631c9",
-                "5aca5b31481f08906ba0f6be798ec09e2f0a0c3d5599a6736750ff9790d0708d",
-                "cb8d314e2b587a8e3dcd57661e21380baa04eb3b460a21de41c97b08311df479",
-                "829b46a53f786ab1be7fc076bca0812484d6123a75d303ea5f00d0cc0b0c98a7",
-                "0381fdb3b73a112d2c863908c35ff4c67eaa9f3f906baeb4e783f234676b50d7"
+                "775a781d6d65105087e75e1e12f1c4d428c7d113201443c7bcb28690e686c0eb",
+                "f5d247b2ecb1192169454e6e6bdd1e8687070b20027c5bf534ef9357e7e35039",
+                "511a38ea7cc0bb53ac3dcf4334c35a4cbed5109d1315752de8ac790410595e01",
+                "1d2e9956c9c980659d730c4c3f6cfae25f7d9b4dbf72c6cbe618a49cacf9cc39",
+                "7f807c28c152b03d5dc39397bf2b45da6b6334ae01f10552d3dd960baea158bf"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -37,11 +38,99 @@
             "exampleSites": [
                 "wurth.fr",
                 "livraison.gifi.fr",
-                "www.aasgard.fr",
+                "web.digitick.com",
                 "www.berceaumagique.com",
-                "www.decathlonpro.fr",
-                "www.naturalforme.fr",
-                "www.seetickets.com"
+                "www.compex.com",
+                "www.naturalforme.fr"
+            ]
+        },
+        {
+            "rule": "beyable\\.com\\/api\\/beYableJS-analytics\\.js",
+            "cookies": 0.000402,
+            "fingerprinting": 2,
+            "subdomains": [
+                "tag"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 4,
+                "Document.cookie getter": 4,
+                "Navigator.prototype.webdriver": 4,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 4,
+                "Navigator.prototype.language": 4,
+                "Screen.prototype.width": 4,
+                "Screen.prototype.height": 4,
+                "Date.prototype.getTime": 4,
+                "Document.cookie setter": 4
+            },
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "fb58c0aca7fbd8fc2c811b4834cbe53c00ead0ded1615229e6161732d2592e55"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_bey_id": {
+                    "ttl": 1123206,
+                    "length": 32,
+                    "prevalence": 0.0004016467516818958,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "velovert.com",
+                "www.alltricks.fr",
+                "www.alltricks.com",
+                "www.mister-auto.com"
+            ]
+        },
+        {
+            "rule": "beyable\\.com\\/v1\\/api\\/pageview",
+            "cookies": 0.000402,
+            "fingerprinting": 0,
+            "subdomains": [
+                "front.lytics"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "b6946368c88d44be99baf11a5b3bd29e8ba18ab41306b4ec486678de2b03423f",
+                "a9521c305f7e7d5aa0b1139261a8ee677686c23bdffbd2c6dc7695f59f8e99ca",
+                "7c48d3d5cc9b95cd395306f6d764e36fb66256d2efccdd0ead49d24b0f2871f8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "velovert.com",
+                "www.alltricks.fr",
+                "www.alltricks.com",
+                "www.mister-auto.com"
+            ]
+        },
+        {
+            "rule": "beyable\\.com\\/v1\\/api\\/pageview",
+            "cookies": 0.000402,
+            "fingerprinting": 0,
+            "subdomains": [
+                "front.lytics"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "velovert.com",
+                "www.alltricks.fr",
+                "www.alltricks.com",
+                "www.mister-auto.com"
             ]
         },
         {
@@ -53,18 +142,18 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000401,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
-                "8413ae90d8b4e83781ba3288f66b9147722f1cd1ef54dab77285dc8fe2e38131",
-                "aafa2018ef05b297aa9377c9b2a27f213bdb27a8f19a3eb855df079ccab01d00",
-                "e4b59ae9da2e0e7cbffa4a1f0a3514ef7606494912050c88b3efc5b114c1aa8c"
+                "9838dfe3b4b6b32a3dfe84b84666d3c3ee058be5d6546fb081fd09407dcc4394",
+                "29787c6d4f862e6a2d9017c09bf5ccd3d1987e809fbaedbf2322795efe19e3b9",
+                "96671a9c1aefee458f65a95ec4318caf9f2aad354840f78735ba29e63a2e557d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "decathlonpro.fr",
+                "carrefour.fr",
                 "www.lexception.com",
                 "www.materiaux-naturels.fr",
                 "www.mister-auto.com"
@@ -73,9 +162,11 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000402,
     "types": {
-        "Script": 11
+        "Script": 14,
+        "XHR": 4,
+        "Preflight": 4
     },
     "nameservers": [
         "dns200.anycast.me",

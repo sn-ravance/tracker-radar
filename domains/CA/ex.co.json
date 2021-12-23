@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00191,
-    "sites": 19,
+    "prevalence": 0.00181,
+    "sites": 18,
     "subdomains": [
         "prd-collector-anon",
         "prd-collector-platform",
-        "cdn-channels-pixel",
-        "static"
+        "embed",
+        "static",
+        "pixel"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -24,8 +25,8 @@
                 "prd-collector-platform"
             ],
             "apis": {},
-            "sites": 19,
-            "prevalence": 0.00191,
+            "sites": 18,
+            "prevalence": 0.00181,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -34,98 +35,219 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ballotpedia.org",
+                "cartermatt.com",
                 "healthyeating.sfgate.com",
                 "homeguides.sfgate.com",
-                "newsinstact.com",
                 "perezhilton.com",
+                "ricksfreeautorepairadvice.com",
                 "smallbusiness.chron.com",
                 "work.chron.com",
-                "www.allkpop.com",
                 "www.askmen.com",
                 "www.chatelaine.com",
-                "www.chron.com",
+                "www.firstforwomen.com",
                 "www.golfdigest.com",
                 "www.macleans.ca",
                 "www.nationalreview.com",
+                "www.playbuzz.com",
                 "www.sfgate.com",
-                "www.thebeaverton.com",
                 "www.todaysparent.com",
                 "www.upi.com",
                 "www.womansworld.com"
             ]
         },
         {
-            "rule": "ex\\.co\\/events\\/0012000001fxZm9AAE",
+            "rule": "ex\\.co\\/main\\/events",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cdn-channels-pixel"
+                "prd-collector-platform"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "playbuzz.com",
+                "www.playbuzz.com",
+                "www.upi.com"
+            ]
+        },
+        {
+            "rule": "ex\\.co\\/sdk\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "0ee19182c702bbca12ffc34122aee8e9b6aece3bf5ad74cd01619fd4830149a5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "playbuzz.com",
+                "www.upi.com"
+            ]
+        },
+        {
+            "rule": "ex\\.co\\/pb-story\\/production\\/f0d85a162f8c407f9ba9b8eaada1f9a5572b1362-2021-12-13-12-03-37\\/story-viewer\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Navigator.prototype.cookieEnabled": 3,
+                "Date.prototype.getTime": 3,
+                "Document.cookie getter": 3,
+                "window.localStorage": 3,
+                "window.devicePixelRatio": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Event.prototype.timeStamp": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "ea169749832aacfb18fc008278d7be40fdb6434c21251319bb9e9fe59480e6fd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "playbuzz.com",
+                "www.playbuzz.com",
+                "www.upi.com"
+            ]
+        },
+        {
+            "rule": "ex\\.co\\/html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "embed"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "e5fc6d914f3e5935f3a1bb05f7ac9c595b0fea56cef7a2e973822ef3521eafb5"
             ],
-            "type": "Image",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "chron.com",
-                "www.sfgate.com"
+                "playbuzz.com",
+                "www.upi.com"
             ]
         },
         {
-            "rule": "ex\\.co\\/pb-story\\/production\\/346196c0a50fe87d16c53fe720a0df328a293013-2021-11-17-11-35-32\\/story-viewer\\.js",
-            "cookies": 0.000201,
+            "rule": "ex\\.co\\/cdn\\/content\\/monetization\\/pixel-sdk\\/production\\/cf3ecc7e6125d7bf47bb3f9244d2e491bd03dcf3\\/pixel-sdk\\.min\\.js",
+            "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
             "apis": {
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "Date.prototype.getTime": 2,
-                "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 2
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "f98144299c8312ceddb838d1b3f48844d1ae522b6c5ba016769a3236a7811cae"
+                "b20467618c120dfd9bdce32b8332271e6e5ada13bfad4c8a4e5390c1021a601e"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "playbuzz.com",
+                "www.upi.com"
+            ]
+        },
+        {
+            "rule": "ex\\.co\\/xdomain_cookie\\.html",
+            "cookies": 0.000101,
+            "fingerprinting": 1,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {
+                "Document.cookie getter": 1,
+                "window.localStorage": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "ef120b3854dcb45654a41cf35cbfd8bc64c3bf76116276705eb18379956e3ffe"
+            ],
+            "type": "Document",
             "firstPartyCookies": {
-                "desktopPoweredLink01112020": {
-                    "ttl": 31536000,
-                    "length": 49,
-                    "prevalence": 0.00020078305391024997,
-                    "uniqueness": 0.5
+                "pb-tracking-id": {
+                    "ttl": 2592000,
+                    "length": 16,
+                    "prevalence": 0.00010053282396702523,
+                    "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "upi.com",
+                "playbuzz.com",
+                "www.upi.com"
+            ]
+        },
+        {
+            "rule": "ex\\.co\\/v1\\/playbuzz-network\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pixel"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "playbuzz.com",
                 "www.upi.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00131,
+    "cookies": 0.00121,
     "types": {
-        "XHR": 19,
-        "Image": 2,
-        "Script": 2
+        "XHR": 22,
+        "Fetch": 3,
+        "Script": 7,
+        "Document": 2
     },
     "nameservers": [
-        "ns-1048.awsdns-03.org",
+        "ns-709.awsdns-24.net",
         "ns-141.awsdns-17.com",
         "ns-1853.awsdns-39.co.uk",
-        "ns-709.awsdns-24.net"
+        "ns-1048.awsdns-03.org"
     ]
 }

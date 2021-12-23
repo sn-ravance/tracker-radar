@@ -13,7 +13,9 @@
         "eu3-track",
         "eu2-track",
         "eu3-live",
-        "eu2-live"
+        "eu2-live",
+        "eu3-cdn",
+        "eu2-cdn"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -34,28 +36,34 @@
                 "window.localStorage": 2,
                 "Date.prototype.getTime": 2,
                 "Document.cookie setter": 2,
-                "Navigator.prototype.language": 1,
-                "Date.prototype.getTimezoneOffset": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "Navigator.prototype.appVersion": 1,
-                "Navigator.prototype.mediaDevices": 1,
-                "Element.prototype.getClientRects": 1,
-                "window.sessionStorage": 1,
+                "Navigator.prototype.language": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.mediaDevices": 2,
+                "Element.prototype.getClientRects": 2,
+                "window.sessionStorage": 2,
                 "window.devicePixelRatio": 1
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "9e9737c45b312ebe073599d0e41315e3204ad6642595b42ef2aa06f6d95dc7f8"
+                "bf5b370a25af2e1e7e16947bff04885e8e54e5ca78429d2da0a09319d0a87bd7"
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "inside-eu2": {
-                    "ttl": 31536008,
+                "inside-eu3": {
+                    "ttl": 31536027,
                     "length": 78,
-                    "prevalence": 0.00010030090270812437,
+                    "prevalence": 0.00010034115994380895,
+                    "uniqueness": 1
+                },
+                "inside-eu2": {
+                    "ttl": 31536016,
+                    "length": 78,
+                    "prevalence": 0.00010034115994380895,
                     "uniqueness": 1
                 }
             },
@@ -67,7 +75,100 @@
         },
         {
             "rule": "inside-graph\\.com\\/gettracker",
-            "cookies": 0.0001,
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eu3-live",
+                "eu2-live"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e4af8aa91bdfc467fee5d37cf611a1b8eff541a41f60008ec5244467c805bcba"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gucci.com",
+                "www.gucci.com",
+                "www.lenovo.com"
+            ]
+        },
+        {
+            "rule": "inside-graph\\.com\\/trackview",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eu3-live",
+                "eu2-live"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8308590130e69d403d6e537e21316f71120e3707dce4cbafb3dd726d811e3c91"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gucci.com",
+                "www.lenovo.com"
+            ]
+        },
+        {
+            "rule": "inside-graph\\.com\\/signalr\\/negotiate",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eu3-live",
+                "eu2-live"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "902a98eb4b8a00c7d8685c9d9df01ae7d633d1c35bbfee01452d3abca279a667"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gucci.com",
+                "www.lenovo.com"
+            ]
+        },
+        {
+            "rule": "inside-graph\\.com\\/\\/ig\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eu3-cdn",
+                "eu2-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "abf621535db0e6d8936396fcaec8431704f1b2a6a220a2e539bd84eaeca47207"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gucci.com",
+                "www.lenovo.com"
+            ]
+        },
+        {
+            "rule": "inside-graph\\.com\\/signalr\\/connect",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "eu3-live",
@@ -78,7 +179,30 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
-            "type": "Script",
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gucci.com",
+                "www.lenovo.com"
+            ]
+        },
+        {
+            "rule": "inside-graph\\.com\\/signalr\\/start",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eu3-live",
+                "eu2-live"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c50a0366bab0d95bd0dfbbf67ed889b5fd383ee7464a77660088c32e4ef91c20"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -91,7 +215,10 @@
     "performance": {},
     "cookies": 0.000201,
     "types": {
-        "Script": 4
+        "Script": 5,
+        "XHR": 6,
+        "Stylesheet": 2,
+        "WebSocket": 2
     },
     "nameservers": [
         "ns-1314.awsdns-36.org",

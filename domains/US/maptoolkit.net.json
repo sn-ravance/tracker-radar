@@ -4,37 +4,70 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000345,
+    "prevalence": 0.0000346,
     "sites": 5,
     "subdomains": [
-        "staticmap",
-        "static-cdn",
         "static",
+        "static-cdn",
+        "vtc-cdn",
+        "vtc",
+        "vdata",
         "tracking"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "maptoolkit\\.net\\/",
+            "rule": "maptoolkit\\.net\\/api\\/v9\\.7\\.7\\/mtk\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "URL.createObjectURL": 2,
+                "window.devicePixelRatio": 2,
+                "WebGLRenderingContext.prototype.getExtension": 2,
+                "WebGLRenderingContext.prototype.getParameter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "CanvasRenderingContext2D.prototype.getImageData": 2,
+                "window.matchMedia(\"prefers-reduced-motion\")": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "4030a7038a646ef8250e003089f1c8fbc2a456f490ec6c6563b66771b7e13274"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bayerischer-wald.de",
+                "www.schwarzwald-tourismus.info"
+            ]
+        },
+        {
+            "rule": "maptoolkit\\.net\\/api\\/v9\\.7\\.7\\/elevationprofile\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "staticmap"
+                "static"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "596c9714a963d68c3770adac820a3456021e768c69edd1cf3b3132649c6044fb"
+                "52449587a086006873327005672c93829cb04c754cf69d6584d9df5903e9545b"
             ],
-            "type": "Image",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bayerischer-wald.de",
-                "www.zermatt.ch"
+                "www.schwarzwald-tourismus.info"
             ]
         },
         {
@@ -42,8 +75,8 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "static-cdn",
-                "static"
+                "static",
+                "static-cdn"
             ],
             "apis": {},
             "sites": 3,
@@ -56,29 +89,54 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bikemap.net",
-                "www.hamburg-tourism.de",
+                "bayerischer-wald.de",
+                "www.bikemap.net",
                 "www.schwarzwald-tourismus.info"
             ]
         },
         {
-            "rule": "maptoolkit\\.net\\/tiles2\\.json",
+            "rule": "maptoolkit\\.net\\/hillshading\\.json",
             "cookies": 0,
             "fingerprinting": 0,
-            "subdomains": [],
+            "subdomains": [
+                "vtc-cdn",
+                "vtc"
+            ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "109a18c7929d68280e7c7f4f2c8093064ceb65363810ca99a3b35826b7f07f30"
+                "af3247c8e30b9f9625ba6b3cf677a53d90963d2deb1bbdf842687b6be0491a0d"
             ],
-            "type": "Script",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bikemap.net",
-                "www.hamburg-tourism.de"
+                "bayerischer-wald.de",
+                "www.schwarzwald-tourismus.info"
+            ]
+        },
+        {
+            "rule": "maptoolkit\\.net\\/toursprung\\/naturalearth\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vdata"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "c21eadf1d9ce25ac656a159cef6d5f4a37cae5012305bfeb1ca254d6b001e0cb"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bayerischer-wald.de",
+                "www.schwarzwald-tourismus.info"
             ]
         },
         {
@@ -90,7 +148,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000276,
+            "prevalence": 0.0000277,
             "cnames": [],
             "responseHashes": [
                 "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
@@ -99,9 +157,75 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bikemap.net",
+                "bayerischer-wald.de",
                 "www.bikemap.net",
                 "www.hamburg-tourism.de",
+                "www.schwarzwald-tourismus.info"
+            ]
+        },
+        {
+            "rule": "maptoolkit\\.net\\/fonts\\/Noto%20Sans%20Regular\\/0-255\\.pbf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "85557d431cb8216685904d321d20dac8cec7ca9ecb0da38a44cc0a0c75bcf188"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bayerischer-wald.de",
+                "www.schwarzwald-tourismus.info"
+            ]
+        },
+        {
+            "rule": "maptoolkit\\.net\\/fonts\\/Noto%20Sans%20Italic\\/0-255\\.pbf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "21fa0aa28c3f55331b6a3d85640f3439f90beb565147273eff44c3056fb37a4d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bayerischer-wald.de",
+                "www.schwarzwald-tourismus.info"
+            ]
+        },
+        {
+            "rule": "maptoolkit\\.net\\/fonts\\/Open%20Sans%20Bold\\/0-255\\.pbf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "2e1d246cb6960fa3868a6b40a172b44a804ccce7f6e692e6aacbe97057801ead"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bayerischer-wald.de",
                 "www.schwarzwald-tourismus.info"
             ]
         }
@@ -110,8 +234,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Image": 5,
-        "Script": 2,
+        "Script": 4,
+        "Image": 3,
+        "Fetch": 10,
         "XHR": 4
     },
     "nameservers": [

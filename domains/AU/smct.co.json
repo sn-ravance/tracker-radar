@@ -7,9 +7,11 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000802,
+    "prevalence": 0.000803,
     "sites": 8,
-    "subdomains": [],
+    "subdomains": [
+        "events"
+    ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
@@ -19,28 +21,29 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "window.sessionStorage": 2
+                "window.sessionStorage": 2,
+                "window.localStorage": 1
             },
             "sites": 6,
             "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
-                "105830f65734d2dad225b44a9a25d653872169940729bf2a3c626efe785d50b8",
                 "3cd3513f000b4250683dc126564f190edfa5cdbfb0c938aa9f60ef6393492870",
                 "01916ca1e04befd6c784fa39419636ad1c1def7574c88585d74ea6a12dd45e1c",
-                "b2aab5c7e02c1f888f6a2aec027f27518f9d594996ae93fa8777542095cf8af8",
-                "f8be98e5a73b82462b3e5d5ff173f1d00d22911502921cf08384c14f19ed70f9"
+                "0f0673acd9f27c6c2b0d12480a72493a7a918e3fdd41034b31cc7fe2eea3317c",
+                "f8be98e5a73b82462b3e5d5ff173f1d00d22911502921cf08384c14f19ed70f9",
+                "ccab259b6aea62edcc1ba631076b0fbd7a7cd903e3a1cf2b7a7b99459caec678"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dhgate.com",
-                "www.birdsnest.com.au",
+                "birdsnest.com.au",
                 "www.forevernew.com.au",
                 "www.lovehoney.com.au",
                 "www.politix.com.au",
-                "www.visiondirect.com.au"
+                "www.visiondirect.com.au",
+                "www.wildsecrets.com.au"
             ]
         },
         {
@@ -66,6 +69,30 @@
             ]
         },
         {
+            "rule": "smct\\.co\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "63f31f9a5988f712d22db3ca02b89ba5603b65abffe69cb8d7900bbf21264b34"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "smc_uid": 0.00020066218521119696
+            },
+            "exampleSites": [
+                "birdsnest.com.au",
+                "www.politix.com.au"
+            ]
+        },
+        {
             "rule": "smct\\.co\\/tm",
             "cookies": 0,
             "fingerprinting": 1,
@@ -77,7 +104,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "0c0e994402881ab023239d7b06b2ca9bce32a360e7465276e765583cf2b272c1"
+                "8103006bf76783b379709d81b5a971b91d8067c7c019238ced22a8b80f4544c0"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -93,12 +120,13 @@
     "cookies": 0,
     "types": {
         "Script": 8,
-        "Document": 2
+        "Document": 2,
+        "Image": 2
     },
     "nameservers": [
-        "ns-96.awsdns-12.com",
-        "ns-2014.awsdns-59.co.uk",
         "ns-1303.awsdns-34.org",
-        "ns-753.awsdns-30.net"
+        "ns-2014.awsdns-59.co.uk",
+        "ns-753.awsdns-30.net",
+        "ns-96.awsdns-12.com"
     ]
 }

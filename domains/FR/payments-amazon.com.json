@@ -9,48 +9,75 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000401,
-    "sites": 4,
+    "prevalence": 0.000803,
+    "sites": 8,
     "subdomains": [
-        "static-na",
-        "static-eu"
+        "static-eu",
+        "static-na"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "payments-amazon\\.com\\/checkout\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "payments-amazon\\.com\\/OffAmazonPayments\\/de\\/lpa\\/js\\/Widgets\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
             "subdomains": [
-                "static-na",
                 "static-eu"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.languages": 1
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "ff48675f540045b12cb672ed43688e34c85f53e7ab972b062581ac37e1b8d68a"
+                "57eec1ac5df14bf6d02a1e2f007965bb0de5838f92e86e218bd17aca9c472055"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "language": {
+                    "ttl": 86405,
+                    "length": 5,
+                    "prevalence": 0.00010041168792047395,
+                    "uniqueness": 1
+                },
+                "amazon-pay-connectedAuth": {
+                    "ttl": null,
+                    "length": 21,
+                    "prevalence": 0.00010041168792047395,
+                    "uniqueness": 1
+                },
+                "apay-session-set": {
+                    "ttl": 31536006,
+                    "length": 71,
+                    "prevalence": 0.0002008233758409479,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "belkin.com",
-                "www.pieces-online.com"
+                "peugeot-saveurs.com",
+                "www.bike-discount.de"
             ]
         },
         {
             "rule": "payments-amazon\\.com\\/v2\\/login\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "static-eu"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "apis": {
+                "Document.cookie getter": 1
+            },
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
                 "669bbeabcb7e507cef53fd2d402944fbff1cec8249b692109fcabe8fadf6be5b"
@@ -59,8 +86,36 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bike-discount.de",
-                "www.ruedeshommes.com"
+                "peugeot-saveurs.com",
+                "www.bike-discount.de",
+                "www.ruedeshommes.com",
+                "www.urbinfos.fr"
+            ]
+        },
+        {
+            "rule": "payments-amazon\\.com\\/checkout\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-eu",
+                "static-na"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "164220ab85f3ba11818ad3a7452cf00fe37ea6a04aaeb7f2dd768fc594587a70",
+                "ff48675f540045b12cb672ed43688e34c85f53e7ab972b062581ac37e1b8d68a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jemangefrancais.com",
+                "www.belkin.com",
+                "www.nutrimea.com",
+                "www.pieces-online.com"
             ]
         }
     ],
@@ -73,16 +128,16 @@
         "Embedded Content"
     ],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000402,
     "types": {
-        "Script": 4
+        "Script": 10
     },
     "nameservers": [
-        "pdns3.ultradns.org",
         "pdns4.ultradns.org",
         "pdns1.ultradns.net",
         "pdns2.ultradns.net",
         "pdns5.ultradns.info",
-        "pdns6.ultradns.co.uk"
+        "pdns6.ultradns.co.uk",
+        "pdns3.ultradns.org"
     ]
 }

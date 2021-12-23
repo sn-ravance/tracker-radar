@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.0012,
-    "sites": 12,
+    "prevalence": 0.00101,
+    "sites": 10,
     "subdomains": [
         "usage",
-        "cdn"
+        "cdn",
+        "capture"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -21,8 +22,8 @@
                 "usage"
             ],
             "apis": {},
-            "sites": 10,
-            "prevalence": 0.001,
+            "sites": 9,
+            "prevalence": 0.000905,
             "cnames": [],
             "responseHashes": [
                 "77b1d2c0857d4e95d4c2ae7aa0abc5aaafa6bd4581b31203d1592759c26f5c44"
@@ -33,59 +34,33 @@
             "exampleSites": [
                 "smallpdf.com",
                 "www.babylist.com",
+                "www.barenecessities.com",
                 "www.betterhelp.com",
                 "www.delta.com",
-                "www.flighthub.com",
                 "www.internations.org",
                 "www.kijijiautos.ca",
                 "www.nicehash.com",
-                "www.regain.us",
-                "www.trade-schools.net"
-            ]
-        },
-        {
-            "rule": "trackjs\\.com\\/releases\\/current\\/tracker\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "b083af11bff8f6237c9b83a2910ccb07625602e3c386de94daeedb8dab2b195d"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "babylist.com",
-                "www.flighthub.com"
+                "www.regain.us"
             ]
         },
         {
             "rule": "trackjs\\.com\\/agent\\/v3\\/latest\\/t\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
                 "Date.prototype.getTime": 2,
                 "Navigator.prototype.userAgent": 2,
-                "window.name": 1,
-                "window.devicePixelRatio": 1,
-                "window.indexedDB": 1,
-                "window.sessionStorage": 1,
-                "window.localStorage": 1
+                "window.name": 2,
+                "window.devicePixelRatio": 2,
+                "window.indexedDB": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2
             },
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "7b116ac42dfa848b8cbeff07cae0cc208a898111a7191ab266b4f0241683671a"
@@ -94,10 +69,32 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "blundstone.com",
+                "barenecessities.com",
                 "www.ibm.com",
+                "www.kijijiautos.ca"
+            ]
+        },
+        {
+            "rule": "trackjs\\.com\\/capture",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "capture"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "barenecessities.com",
                 "www.kijijiautos.ca",
-                "www.trade-schools.net"
+                "www.regain.us"
             ]
         }
     ],
@@ -105,11 +102,12 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Image": 10,
-        "Script": 6
+        "Image": 9,
+        "Script": 3,
+        "XHR": 3
     },
     "nameservers": [
-        "dns2.registrar-servers.com",
-        "dns1.registrar-servers.com"
+        "dns1.registrar-servers.com",
+        "dns2.registrar-servers.com"
     ]
 }

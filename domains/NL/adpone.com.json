@@ -7,10 +7,11 @@
     "prevalence": 0.000401,
     "sites": 4,
     "subdomains": [
-        "rtb"
+        "rtb",
+        "hb"
     ],
     "cnames": [],
-    "fingerprinting": 3,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "adpone\\.com\\/bid-request",
@@ -24,16 +25,45 @@
             "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "f1414ff6ddb865878c1942433e68810d1f38fd532f0ab63d50bc7d78364d7be0",
-                "34c62628b2863dd3dc4c0239d62d29ef2359a1fd21f30ad76073c6943909620c"
+                "4422cc67036bf7483b8f56dce8513eea6e8ee4cde65eeb8dfda596e6d5ad1c81",
+                "e04e41efc726e61819e5356ce054441fa5c088ffa56b434ae26e34b6f30ffb5d"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "sms24.me",
+                "jbzd.com.pl",
                 "www.azlyrics.com",
                 "www.woman.ru"
+            ]
+        },
+        {
+            "rule": "adpone\\.com\\/prebid_v4_38\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "hb"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.appName": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "621e239041447ad520be8f91bf01c61e630b2c70df70dd941f901d4d9e7cdd11"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jpost.com",
+                "www.jpost.com"
             ]
         }
     ],
@@ -41,7 +71,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 3
+        "XHR": 3,
+        "Script": 2
     },
     "nameservers": [
         "elma.ns.cloudflare.com",

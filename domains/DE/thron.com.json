@@ -7,10 +7,12 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
-        "whirlpool-cdn"
+        "whirlpool-cdn",
+        "woolrich-cdn",
+        "woolrich-view"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -20,14 +22,15 @@
             "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [
-                "whirlpool-cdn"
+                "whirlpool-cdn",
+                "woolrich-cdn"
             ],
             "apis": {
                 "Document.cookie getter": 2,
                 "Document.cookie setter": 2
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "cfa4678a1369f7595578b650a46b15eaa630d50b0edabcb9cd2aaf5469d1a684"
@@ -35,24 +38,86 @@
             "type": "Document",
             "firstPartyCookies": {
                 "_TA_TRACKING": {
-                    "ttl": 157680004,
+                    "ttl": 157680006,
                     "length": 145,
-                    "prevalence": 0.00020060180541624874,
+                    "prevalence": 0.00020070245860511792,
                     "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bauknecht.de",
-                "www.bauknecht.de"
+                "www.bauknecht.de",
+                "www.woolrich.com"
+            ]
+        },
+        {
+            "rule": "thron\\.com\\/shared\\/plugins\\/tracking\\/current\\/sp\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "whirlpool-cdn",
+                "woolrich-cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.plugins": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b4837c780336420f73a4f4946547d7c10bd261355494258661fd8c8d6553b733"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bauknecht.de",
+                "www.woolrich.com"
+            ]
+        },
+        {
+            "rule": "thron\\.com\\/api\\/xcontents\\/resources\\/delivery\\/getContentDetail",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "woolrich-view"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "60d3d70ad3ac1df90ad02ad0f7be06a8fb69f3a507ae073d78f8b32e0e7602b3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "woolrich.com",
+                "www.woolrich.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000201,
     "types": {
-        "Document": 2
+        "Document": 3,
+        "Script": 2,
+        "XHR": 2
     },
     "nameservers": [
         "ns-244.awsdns-30.com",

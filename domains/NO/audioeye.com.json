@@ -7,31 +7,61 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000903,
-    "sites": 9,
+    "prevalence": 0.00141,
+    "sites": 14,
     "subdomains": [
+        "wsmcdn",
         "ws",
+        "govws",
         "wsv3cdn",
+        "govwscdn",
         "analytics"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "audioeye\\.com\\/aem\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "wsmcdn"
+            ],
+            "apis": {
+                "window.localStorage": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8d43ca0b46630e1451cd51d0f54714d78aae145d23fec113f4afe3e4453af8e5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yamaha.com",
+                "www.fischersports.com"
+            ]
+        },
         {
             "rule": "audioeye\\.com\\/ae\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "ws"
+                "ws",
+                "govws"
             ],
             "apis": {
-                "window.localStorage": 8
+                "window.localStorage": 11,
+                "Date.prototype.getTime": 1
             },
-            "sites": 8,
-            "prevalence": 0.000803,
+            "sites": 12,
+            "prevalence": 0.00121,
             "cnames": [],
             "responseHashes": [
-                "8d43ca0b46630e1451cd51d0f54714d78aae145d23fec113f4afe3e4453af8e5"
+                "8d43ca0b46630e1451cd51d0f54714d78aae145d23fec113f4afe3e4453af8e5",
+                "745b09a6894952771371264efb2d38b3ad9312b1c53f4fbcb5c274fc80dba4d3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -43,7 +73,11 @@
                 "www.guitarcenter.com",
                 "www.kbb.com",
                 "www.musiciansfriend.com",
+                "www.q13fox.com",
+                "www.ssa.gov",
+                "www.visitnorway.de",
                 "www.visitnorway.no",
+                "www.visitsorlandet.com",
                 "www.visitnorway.com"
             ]
         },
@@ -55,16 +89,17 @@
                 "wsv3cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 8,
-                "Date.prototype.getTime": 8,
-                "window.localStorage": 8,
-                "Document.cookie getter": 8
+                "Navigator.prototype.userAgent": 12,
+                "Date.prototype.getTime": 12,
+                "window.localStorage": 12,
+                "Document.cookie getter": 11
             },
-            "sites": 8,
-            "prevalence": 0.000803,
+            "sites": 12,
+            "prevalence": 0.00121,
             "cnames": [],
             "responseHashes": [
-                "0a5bda44bdcfba8ee6dbeceb0c50ae92a00d4cb4df01ebbc41cdfa47b95e866d"
+                "7d3d1e70e5ebb664fb939a0f0f8e4872df2950cd61033276f9e22150b6c7d9f8",
+                "bc455e7858d4d82647d3749fcf77401338ae1622697860b6ebc1018be6fc4b66"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -73,39 +108,55 @@
                 "samsung.com",
                 "www.autotrader.com",
                 "www.cars.com",
+                "www.fischersports.com",
                 "www.guitarcenter.com",
                 "www.kbb.com",
                 "www.musiciansfriend.com",
+                "www.q13fox.com",
+                "www.visitnorway.de",
                 "www.visitnorway.no",
+                "www.visitsorlandet.com",
                 "www.visitnorway.com"
             ]
         },
         {
             "rule": "audioeye\\.com\\/scripts\\/loader\\.js",
-            "cookies": 0,
+            "cookies": 0.000101,
             "fingerprinting": 1,
             "subdomains": [
-                "wsv3cdn"
+                "wsv3cdn",
+                "govwscdn"
             ],
             "apis": {
-                "Date.prototype.getTime": 5,
-                "Navigator.prototype.userAgent": 5
+                "Date.prototype.getTime": 6,
+                "Navigator.prototype.userAgent": 6,
+                "Navigator.prototype.platform": 1,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
             },
-            "sites": 8,
-            "prevalence": 0.000803,
+            "sites": 12,
+            "prevalence": 0.00121,
             "cnames": [],
             "responseHashes": [
-                "8409ca63c0832413c9fceeb9eb1d5ddb3423585ece3ca314aa6987bd1881bae6",
-                "33dc49198c907ebec7a97e38d22d1470e114d69e70587a153bf405e963839c33",
-                "688b3dbf6404eb56b9d30c73be8c98ba383f8bc5e1fea5f8a5c67833c6287195",
-                "b981bc6234eeed828decf33e4391289a22a269479ba54591f80de854de5692c1",
-                "dd7e24bbcc56f9b860b4e1a0cd8f9697218e9531d29ca6d9922e91a0d29e8c96",
-                "8b3bc42630ce797308e3ad9ac29de81ae883fa51d646e0c84a1165b27646cffd"
+                "bce63677ee7257b06ad03d4be03beb276a50bf7b26be97954bd8a53bf5f228bb",
+                "6ddc18af34d93ccc7c04663edbe6cb69aab106077fe62ee401bed9c14ba53d0d",
+                "570e11ecddea302e3d31bcadf6da2fa607ca3734e534d3675e06f6f48bea4fa3",
+                "609ef8680627d5dcf9c7a382d2bae9b7586de33ddcb860ef65c4495484ab8e49",
+                "47c8b71621031c1f42b756adde62f8349d0aad78b11d4a386be6ac373d8240cd",
+                "8b3bc42630ce797308e3ad9ac29de81ae883fa51d646e0c84a1165b27646cffd",
+                "30fa135907f26f706f88d6c62bc5cacbc7621cab409abbaa9f8b2c0aa6d9e933"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "aeatstartmessage": {
+                    "ttl": null,
+                    "length": 4,
+                    "prevalence": 0.0001005126143330988,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {
-                "IR_gbd": 0.00020074274816822243
+                "IR_gbd": 0.0002010252286661976
             },
             "exampleSites": [
                 "samsung.com",
@@ -114,7 +165,11 @@
                 "www.guitarcenter.com",
                 "www.kbb.com",
                 "www.musiciansfriend.com",
+                "www.q13fox.com",
+                "www.ssa.gov",
+                "www.visitnorway.de",
                 "www.visitnorway.no",
+                "www.visitsorlandet.com",
                 "www.visitnorway.com"
             ]
         },
@@ -126,13 +181,13 @@
                 "wsv3cdn"
             ],
             "apis": {
-                "Element.prototype.getClientRects": 4
+                "Element.prototype.getClientRects": 3
             },
             "sites": 5,
-            "prevalence": 0.000502,
+            "prevalence": 0.000503,
             "cnames": [],
             "responseHashes": [
-                "12b248ddfe7a2b74ac34d612d0ee160ac7d048bd4e9634575f384278bbcf0622"
+                "47a242933d71a6e3af981a4ef4d00a3326c39b250b91d40cc9ce6bd26a28ca44"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -147,7 +202,7 @@
         },
         {
             "rule": "audioeye\\.com\\/build\\/startup\\.bundle\\.js",
-            "cookies": 0.000502,
+            "cookies": 0.000503,
             "fingerprinting": 1,
             "subdomains": [
                 "wsv3cdn"
@@ -156,27 +211,27 @@
                 "Navigator.prototype.userAgent": 5,
                 "Document.cookie getter": 5,
                 "Document.cookie setter": 5,
-                "window.sessionStorage": 5
+                "window.sessionStorage": 4
             },
             "sites": 5,
-            "prevalence": 0.000502,
+            "prevalence": 0.000503,
             "cnames": [],
             "responseHashes": [
-                "bc4d8ce839c085d314dc51f91fe07ab22c172a69cf59c80873a54064b9677c57"
+                "5dd2eab8f89127918ae412f668a7dbeff0e6541541909c9cdb01eeaa886dcb46"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_aeaid": {
-                    "ttl": 31536021,
+                    "ttl": 31536023,
                     "length": 36,
-                    "prevalence": 0.000501856870420556,
+                    "prevalence": 0.000502563071665494,
                     "uniqueness": 1
                 },
                 "aeatstartmessage": {
                     "ttl": null,
                     "length": 4,
-                    "prevalence": 0.000501856870420556,
-                    "uniqueness": 0.2
+                    "prevalence": 0.0004020504573323952,
+                    "uniqueness": 0.25
                 }
             },
             "firstPartyCookiesSent": {},
@@ -190,17 +245,16 @@
         },
         {
             "rule": "audioeye\\.com\\/frame\\/cookieStorage\\.html",
-            "cookies": 0.000201,
+            "cookies": 0.000101,
             "fingerprinting": 1,
             "subdomains": [
                 "wsv3cdn"
             ],
             "apis": {
-                "Document.cookie setter": 2,
-                "Document.cookie getter": 1
+                "Document.cookie setter": 1
             },
             "sites": 5,
-            "prevalence": 0.000502,
+            "prevalence": 0.000503,
             "cnames": [],
             "responseHashes": [
                 "e8fc432edf7cd8a6df1278ad9efa2b4be36077b90a0bfaea968ab7f105ed0e22"
@@ -210,8 +264,8 @@
                 "aeatstartmessage": {
                     "ttl": null,
                     "length": 4,
-                    "prevalence": 0.00020074274816822243,
-                    "uniqueness": 0.5
+                    "prevalence": 0.0001005126143330988,
+                    "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
@@ -232,7 +286,7 @@
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.000602,
+            "prevalence": 0.000603,
             "cnames": [],
             "responseHashes": [
                 "c1b3e4ea1f7f3bc6e1224157228947ff7d08afa05ccc967dab3147f6c1a485ac"
@@ -242,8 +296,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "autotrader.com",
-                "www.autotrader.com",
                 "www.cars.com",
+                "www.fischersports.com",
                 "www.guitarcenter.com",
                 "www.kbb.com",
                 "www.musiciansfriend.com"
@@ -258,7 +312,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.000502,
+            "prevalence": 0.000503,
             "cnames": [],
             "responseHashes": [
                 "dd3626c94ba218e9489f519032585e7e1087552f4c7ccd6dbb2af59a11ec5ed9"
@@ -277,9 +331,9 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000502,
+    "cookies": 0.000704,
     "types": {
-        "Script": 34,
+        "Script": 48,
         "Document": 5,
         "Ping": 6,
         "Stylesheet": 5

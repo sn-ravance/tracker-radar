@@ -4,10 +4,13 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000401,
+    "prevalence": 0.000402,
     "sites": 4,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "beam",
+        "client-context",
+        "cache-service"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -32,55 +35,71 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "fdd9429573b4107e97ba6c57bb8a7add1c7352822ee09cd960993dd29424b1f6"
+                "d0fa7866581a59c59c3692dc540664b98b4042b970247b5a6b64769ab2c383e6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "eurosport.co.uk",
-                "www.eurosport.com"
+                "eurosport.com",
+                "www.eurosport.co.uk"
             ]
         },
         {
-            "rule": "hubvisor\\.io\\/wrapper\\/01CE9HZCZVPW9QB522QNNS8MZQ\\/hubvisor\\.js",
+            "rule": "hubvisor\\.io\\/v2\\/",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 0,
             "subdomains": [
-                "cdn"
+                "beam"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "window.localStorage": 2,
-                "Document.cookie getter": 2,
-                "Navigator.prototype.product": 2,
-                "Navigator.prototype.appName": 2,
-                "window.sessionStorage": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "8b3476a18d37b6da58ce2b81a6025f257d50cfa8cab240af5f4ea91a304609e6"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "leboncoin.fr",
-                "www.leboncoin.fr"
+                "eurosport.co.uk",
+                "www.lefigaro.fr"
+            ]
+        },
+        {
+            "rule": "hubvisor\\.io\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "client-context",
+                "cache-service"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e627052058873de8adba60e4b3b5ea22a396b7b4fb5633395d63b8a62b6f4f7a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lefigaro.fr",
+                "www.lefigaro.fr"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0001,
     "types": {
-        "Script": 4
+        "Script": 2,
+        "XHR": 4
     },
     "nameservers": [
-        "simon.ns.cloudflare.com",
-        "grace.ns.cloudflare.com"
+        "grace.ns.cloudflare.com",
+        "simon.ns.cloudflare.com"
     ]
 }

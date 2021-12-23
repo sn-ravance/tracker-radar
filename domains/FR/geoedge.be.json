@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000903,
-    "sites": 9,
+    "prevalence": 0.0011,
+    "sites": 11,
     "subdomains": [
-        "rumcdn"
+        "rumcdn",
+        "gw"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -20,20 +21,21 @@
                 "rumcdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 3
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "4dc4abcd99f7976c1a0938575631974c55fa42bf76681e84ca56aeea3180966e"
+                "8bc0b040d915e37582f37ce50285d2961ba22ae69654f9920de09f596c0ed56e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "annoncesbateau.com",
-                "www.inautia.fr"
+                "www.inautia.fr",
+                "www.yachtworld.com"
             ]
         },
         {
@@ -44,14 +46,15 @@
                 "rumcdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Date.prototype.getTime": 2
+                "Navigator.prototype.userAgent": 4,
+                "Date.prototype.getTime": 1
             },
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
-                "9dc8794b7b10797626c0642e4450f7fc5d60e3f7dd4a3b070afc43fc0a2b8098"
+                "b81564ee0ab7d4df544ab9b2ed248d87691abe30d4620748c527efebf3b964e9",
+                "db7c4a94da7a76010e9d9363bccd0f0c724ba2d53367d0d58da76378b878dfab"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -59,6 +62,29 @@
             "exampleSites": [
                 "annoncesbateau.com",
                 "www.annoncesbateau.com",
+                "www.inautia.fr",
+                "www.yachtworld.com"
+            ]
+        },
+        {
+            "rule": "geoedge\\.be\\/api\\/stats",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gw"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "annoncesbateau.com",
                 "www.inautia.fr"
             ]
         },
@@ -70,20 +96,19 @@
                 "rumcdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 4
+                "Navigator.prototype.userAgent": 3
             },
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "4dc4abcd99f7976c1a0938575631974c55fa42bf76681e84ca56aeea3180966e"
+                "8bc0b040d915e37582f37ce50285d2961ba22ae69654f9920de09f596c0ed56e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "macworld.com",
-                "www.macworld.co.uk",
                 "www.pcworld.com",
                 "www.techadvisor.fr"
             ]
@@ -96,21 +121,41 @@
                 "rumcdn"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "78bbb22f092bdcea9ce3945fa2514b6b83e4d51fd18fdbd0a5d297cd9eb6d723",
-                "88f594ce40a2c1bfed126d09ce61be39057c3e466b10914815f024f4beed930d"
+                "a7cc883fea59bb613025b14b8afe716c47fa6c027402aa089b8a722e4efc2b4b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "macworld.com",
-                "www.macworld.co.uk",
                 "www.pcworld.com",
                 "www.techadvisor.fr"
+            ]
+        },
+        {
+            "rule": "geoedge\\.be\\/api\\/init",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gw"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yachtworld.com",
+                "www.yachtworld.com"
             ]
         }
     ],
@@ -118,12 +163,13 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 13
+        "Script": 13,
+        "XHR": 4
     },
     "nameservers": [
-        "ns-1097.awsdns-09.org",
         "ns-1611.awsdns-09.co.uk",
         "ns-189.awsdns-23.com",
-        "ns-880.awsdns-46.net"
+        "ns-880.awsdns-46.net",
+        "ns-1097.awsdns-09.org"
     ]
 }

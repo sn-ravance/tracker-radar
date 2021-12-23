@@ -10,21 +10,23 @@
         "iframe"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "ro\\.co\\/iframe\\.html",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "iframe"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 1
+            },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "ea7c415f2b1f22542accf1d474f2b645e6d6581dcee3fad72b9d51bad6f949fc"
+                "270f7cf73a42832dec74636e058672831ba6afa7dd390823f91e7d31dcaeeb65"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -37,11 +39,20 @@
         {
             "rule": "ro\\.co\\/cdn-cgi\\/bm\\/cv\\/669835187\\/api\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
                 "iframe"
             ],
-            "apis": {},
+            "apis": {
+                "HTMLCanvasElement.prototype.toDataURL": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.availHeight": 1,
+                "Screen.prototype.availWidth": 1,
+                "window.devicePixelRatio": 1,
+                "Screen.prototype.colorDepth": 1,
+                "Navigator.prototype.webdriver": 1
+            },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
@@ -88,7 +99,7 @@
         "XHR": 2
     },
     "nameservers": [
-        "joel.ns.cloudflare.com",
-        "amber.ns.cloudflare.com"
+        "amber.ns.cloudflare.com",
+        "joel.ns.cloudflare.com"
     ]
 }

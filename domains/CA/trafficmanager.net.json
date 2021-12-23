@@ -9,209 +9,40 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00141,
-    "sites": 14,
+    "prevalence": 0.00111,
+    "sites": 11,
     "subdomains": [
-        "nslc-prod-app",
-        "kaz-mtl1-tm-geoloc",
-        "transat-nginx",
-        "realm",
-        "naapimtm",
-        "jabpc-publicservice-tfm-prod"
+        "bingshoppingtool-t2app-prod",
+        "naapimtm"
     ],
     "cnames": [
         {
             "original": "api.mps.ford.com",
             "resolved": "naapimtm.trafficmanager.net"
-        },
-        {
-            "original": "apis.airtransat.com",
-            "resolved": "transat-nginx.trafficmanager.net"
-        },
-        {
-            "original": "geoloc.kitco.com",
-            "resolved": "kaz-mtl1-tm-geoloc.trafficmanager.net"
-        },
-        {
-            "original": "login.norton.com",
-            "resolved": "nslc-prod-app.trafficmanager.net"
-        },
-        {
-            "original": "productcatalogueapi.jabra.com",
-            "resolved": "jabpc-publicservice-tfm-prod.trafficmanager.net"
-        },
-        {
-            "original": "realm.hearstnp.com",
-            "resolved": "realm.trafficmanager.net"
         }
     ],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "trafficmanager\\.net\\/sso\\/idp\\/SAML2",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "nslc-prod-app"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [
-                {
-                    "original": "login.norton.com",
-                    "resolved": "nslc-prod-app.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [
-                "b3c41d15d05ee406ac28c5a38d566c2beb4847dabb0864107fe9ded0d7e880e3",
-                "13a3853f77ebeb5a61f96c3f7ca7393c328ecd98df7b1fd7efcf3f70ca7c72ae"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "norton.com",
-                "community.norton.com",
-                "support.norton.com"
-            ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/",
+            "rule": "trafficmanager\\.net\\/uet\\/tracking_script",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "kaz-mtl1-tm-geoloc"
+                "bingshoppingtool-t2app-prod"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "geoloc.kitco.com",
-                    "resolved": "kaz-mtl1-tm-geoloc.trafficmanager.net"
-                }
-            ],
+            "cnames": [],
             "responseHashes": [
-                "065db44fc09e793d51fca8ee8076358e09b368b6c91e121b511f4f525d0009cb"
+                "bf99156e7e0693e75e0b7fccc13d5e61f146d028bf1887ba20cebe20b5fb792c"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "kitco.com",
-                "online.kitco.com"
-            ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/client\\/Persistence\\/UpdateCookies\\/",
-            "cookies": 0.000201,
-            "fingerprinting": 1,
-            "subdomains": [
-                "transat-nginx"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "apis.airtransat.com",
-                    "resolved": "transat-nginx.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [
-                "e080409a88d4eed1a53531dbf2a0f61caf0bfaa9735921d942647272fd1dcc84"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "__utmzz": 0.000301174580865375,
-                "_ga": 0.00040156610782049993
-            },
-            "exampleSites": [
-                "airtransat.com",
-                "www.transat.com"
-            ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/\\.well-known\\/openid-configuration",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "realm"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "realm.hearstnp.com",
-                    "resolved": "realm.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [
-                "03bc90950a3cf3d2baae54d90e814b61d4066e0deec3a120d04f03b38c064f6b"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chron.com",
-                "www.sfgate.com"
-            ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/connect\\/authorize",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "realm"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "realm.hearstnp.com",
-                    "resolved": "realm.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "_li_dcdm_c": 0.00020078305391024997
-            },
-            "exampleSites": [
-                "chron.com",
-                "www.sfgate.com"
-            ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/api\\/users\\/guest\\/guid",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "naapimtm"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "api.mps.ford.com",
-                    "resolved": "naapimtm.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [
-                "cff7d8b9030d3ec2a60eff67a1bf52a338334e6f9aea060d9890c3f17d900be4"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ford.com",
-                "www.ford.ca"
+                "fieldcompany.com",
+                "www.vitasave.ca"
             ]
         },
         {
@@ -240,55 +71,30 @@
             ]
         },
         {
-            "rule": "trafficmanager\\.net\\/\\/v1\\/family\\/filter",
-            "cookies": 0.000201,
+            "rule": "trafficmanager\\.net\\/api\\/users\\/guest\\/guid",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "jabpc-publicservice-tfm-prod"
+                "naapimtm"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "productcatalogueapi.jabra.com",
-                    "resolved": "jabpc-publicservice-tfm-prod.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "jabra.com",
-                "www.jabra.com"
-            ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/\\/v1\\/family\\/filter",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "jabpc-publicservice-tfm-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "productcatalogueapi.jabra.com",
-                    "resolved": "jabpc-publicservice-tfm-prod.trafficmanager.net"
+                    "original": "api.mps.ford.com",
+                    "resolved": "naapimtm.trafficmanager.net"
                 }
             ],
             "responseHashes": [
-                "95c5bd7f4e828eed17018344fae33fd51f902cb1009dc8b4445870b4831653f5"
+                "4a6de231f7a8c5c705b6f159cdc2da1475afa696e7778f29c920ea1ae0962d26"
             ],
-            "type": "Fetch",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "jabra.com",
-                "www.jabra.com"
+                "ford.com",
+                "www.ford.ca"
             ]
         }
     ],
@@ -296,12 +102,16 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000803,
+    "cookies": 0.000503,
     "types": {
-        "Document": 7,
-        "XHR": 6,
-        "Preflight": 4,
-        "Fetch": 2
+        "Script": 2,
+        "Preflight": 2,
+        "XHR": 2
     },
-    "nameservers": []
+    "nameservers": [
+        "tm1.edgedns-tm.info",
+        "tm2.edgedns-tm.info",
+        "tm1.dns-tm.com",
+        "tm2.dns-tm.com"
+    ]
 }

@@ -8,7 +8,8 @@
     "sites": 3,
     "subdomains": [
         "castoramapl",
-        "rodzicepl"
+        "rodzicepl",
+        "push"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -16,24 +17,24 @@
         {
             "rule": "savecart\\.pl\\/d\\/script\\.php",
             "cookies": 0.0000138,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "castoramapl"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 2,
-                "PerformanceTiming.prototype.navigationStart": 1,
-                "window.localStorage": 2,
                 "Navigator.prototype.plugins": 2,
+                "window.localStorage": 2,
                 "window.sessionStorage": 2,
-                "Navigator.prototype.language": 2
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.language": 2,
+                "HTMLCanvasElement.prototype.toDataURL": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "183d291c581ee950f4abd2f5b95d4c0d919cd917ea90614f7f4429c40ef148f0"
+                "89d19917acd9ca1ed1ea40d979e516deb2c88ce75f48d0bb1b2d9810dd6f03ca"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -56,8 +57,8 @@
             "prevalence": 0.0000207,
             "cnames": [],
             "responseHashes": [
-                "e8f8761a1927429145931665349b75e796ac1171fa4ef5ce7b0e9eebea7726a4",
-                "78c962b69c561b63f9c82d83541794e3b71331b57e211def88a011f89f30c94a"
+                "c50d073ae615262e43157b48030cac37ec0cfb63493e9bfc9b4a7a0fe7cd5625",
+                "4224096528c3cf3ed481afcffe8583d46b0050ac06a46c082b01aec889d6ec67"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -67,6 +68,28 @@
                 "www.castorama.pl",
                 "www.rodzice.pl"
             ]
+        },
+        {
+            "rule": "savecart\\.pl\\/js\\/savecart-push\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "push"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "d0bcec533939fbd8a13078067a3fc32b7d342818097b154f4c678c6ac40ae7cf"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "castorama.pl",
+                "www.castorama.pl"
+            ]
         }
     ],
     "categories": [],
@@ -74,7 +97,8 @@
     "cookies": 0.0000207,
     "types": {
         "Script": 2,
-        "XHR": 3
+        "XHR": 3,
+        "Other": 2
     },
     "nameservers": [
         "kelly.ns.cloudflare.com",

@@ -11,7 +11,7 @@
         "tags"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "cdn77\\.cloud\\/pixel\\/in\\.gif",
@@ -60,11 +60,15 @@
         {
             "rule": "cdn77\\.cloud\\/scripts\\/in\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "tags"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1,
+                "Date.prototype.getTimezoneOffset": 1
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
@@ -88,9 +92,7 @@
         "Script": 4
     },
     "nameservers": [
-        "ns-47.awsdns-05.com",
-        "ns-886.awsdns-46.net",
-        "ns-1321.awsdns-37.org",
-        "ns-1699.awsdns-20.co.uk"
+        "porter.ns.cloudflare.com",
+        "nataly.ns.cloudflare.com"
     ]
 }

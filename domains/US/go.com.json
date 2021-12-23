@@ -7,12 +7,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000069,
+    "prevalence": 0.0000691,
     "sites": 10,
     "subdomains": [
         "cdn.registerdisney",
         "cdn.unid",
         "unid",
+        "fastcast.semfs.engsvc",
+        "p263c7525-0aba-4868-8561-1336e344180e-18-209-63-218.fastcast.semfs.engsvc",
+        "p850e8259-5c6c-4f3b-9637-8d5d8f797cf5-54-92-206-49.fastcast.semfs.engsvc",
         "go4.disney",
         "analytics.disney",
         "sw88"
@@ -22,7 +25,7 @@
     "resources": [
         {
             "rule": "go\\.com\\/v2\\/outer\\/DisneyID\\.js",
-            "cookies": 0.0000069,
+            "cookies": 0.00000691,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn.registerdisney"
@@ -31,27 +34,27 @@
                 "Navigator.prototype.userAgent": 4,
                 "window.sessionStorage": 4,
                 "Document.cookie getter": 4,
-                "Date.prototype.getTime": 3,
+                "Date.prototype.getTime": 4,
                 "Document.cookie setter": 1
             },
             "sites": 4,
-            "prevalence": 0.0000276,
+            "prevalence": 0.0000277,
             "cnames": [],
             "responseHashes": [
-                "161473f9a0c880d607347a41604d2d1a3a768204900df61835d500cf67cd112f"
+                "eed6a3afe9aba7f930db03a36138aeae9419283df22175ea2701580916b71dc1"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "SWID": {
-                    "ttl": 31536002,
+                    "ttl": 31536000,
                     "length": 36,
-                    "prevalence": 0.000006903598155358573,
+                    "prevalence": 0.000006913525621525954,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "kvia.com",
+                "espn.ph",
                 "www.espn.ph",
                 "www.natgeotv.com",
                 "www.shopdisney.co.uk"
@@ -65,13 +68,16 @@
                 "cdn.registerdisney"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "window.name": 1,
+                "window.devicePixelRatio": 1,
+                "Document.cookie getter": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "4e141cf0d69ff09e5d61f45456562907f5a50660e3617a2ca5580888630ca9ff"
+                "fef4e4f2473142d5df9619c14e472c8059415e71d9ea569859ba383e2c0fd117"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -89,11 +95,11 @@
                 "cdn.registerdisney"
             ],
             "apis": {
-                "Document.cookie getter": 4,
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 4,
+                "Document.cookie getter": 4
             },
             "sites": 4,
-            "prevalence": 0.0000276,
+            "prevalence": 0.0000277,
             "cnames": [],
             "responseHashes": [
                 "6d816bacccdf3f6fc29e60dda16cf40ef4a3c9270579c95449102896084210d6"
@@ -110,7 +116,7 @@
         },
         {
             "rule": "go\\.com\\/js\\/unid\\.min\\.js",
-            "cookies": 0.0000276,
+            "cookies": 0.0000277,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn.unid"
@@ -125,7 +131,7 @@
                 "window.localStorage": 4
             },
             "sites": 4,
-            "prevalence": 0.0000276,
+            "prevalence": 0.0000277,
             "cnames": [],
             "responseHashes": [
                 "fce9a2f431448206e4f577fa3d9be6e3053d7995ba2bef6a853a809f70696e5d"
@@ -135,7 +141,7 @@
                 "UNID": {
                     "ttl": 157680011,
                     "length": 36,
-                    "prevalence": 0.000006903598155358573,
+                    "prevalence": 0.000006913525621525954,
                     "uniqueness": 1
                 }
             },
@@ -149,16 +155,18 @@
         },
         {
             "rule": "go\\.com\\/inner\\/",
-            "cookies": 0,
+            "cookies": 0.0000207,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn.unid"
             ],
             "apis": {
-                "Date.prototype.getTime": 4
+                "Date.prototype.getTime": 4,
+                "Document.cookie setter": 3,
+                "Document.cookie getter": 2
             },
             "sites": 4,
-            "prevalence": 0.0000276,
+            "prevalence": 0.0000277,
             "cnames": [],
             "responseHashes": [
                 "954928d2afcf38fd769a7b9002d0f3ed8edf21099ed4b7b6ab6606142c3f5f17"
@@ -182,7 +190,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000276,
+            "prevalence": 0.0000277,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -206,7 +214,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000276,
+            "prevalence": 0.0000277,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -217,6 +225,49 @@
                 "www.espn.ph",
                 "www.natgeotv.com",
                 "www.shopdisney.co.uk"
+            ]
+        },
+        {
+            "rule": "go\\.com\\/public\\/websockethost",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fastcast.semfs.engsvc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "bcc9fc3e387913b74d8334c273d8c7ec4679bc8bcf05140b256e0b347b003d9c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "espn.ph",
+                "www.secsports.com"
+            ]
+        },
+        {
+            "rule": "go\\.com\\/FastcastService\\/pubsub\\/profiles\\/12000",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "p263c7525-0aba-4868-8561-1336e344180e-18-209-63-218.fastcast.semfs.engsvc",
+                "p850e8259-5c6c-4f3b-9637-8d5d8f797cf5-54-92-206-49.fastcast.semfs.engsvc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "espn.ph",
+                "www.secsports.com"
             ]
         },
         {
@@ -231,7 +282,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "558a04115b334664c8282df0b036e3d04bc5928d1e0560ebc159d82ea4a4a356"
+                "c8e1b89efeb36e2ec34e4f194f059e8318ffe41193e4c9a478cb20ac5491323a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -273,25 +324,25 @@
                 "AMCV_EDA101AC512D2B230A490D4C%40AdobeOrg": {
                     "ttl": 63072001,
                     "length": 264,
-                    "prevalence": 0.000013807196310717146,
+                    "prevalence": 0.000013827051243051907,
                     "uniqueness": 1
                 },
                 "mbox": {
                     "ttl": 63244803,
                     "length": 103,
-                    "prevalence": 0.000013807196310717146,
+                    "prevalence": 0.000013827051243051907,
                     "uniqueness": 1
                 },
                 "AMCVS_EDA101AC512D2B230A490D4C%40AdobeOrg": {
                     "ttl": null,
                     "length": 1,
-                    "prevalence": 0.000013807196310717146,
+                    "prevalence": 0.000013827051243051907,
                     "uniqueness": 0.5
                 },
                 "mboxEdgeCluster": {
                     "ttl": 1862,
                     "length": 2,
-                    "prevalence": 0.000013807196310717146,
+                    "prevalence": 0.000013827051243051907,
                     "uniqueness": 0.5
                 }
             },
@@ -334,13 +385,13 @@
                 "s_sess": {
                     "ttl": null,
                     "length": 137,
-                    "prevalence": 0.000013807196310717146,
+                    "prevalence": 0.000013827051243051907,
                     "uniqueness": 1
                 },
                 "s_pers": {
                     "ttl": 1802,
                     "length": 86,
-                    "prevalence": 0.000013807196310717146,
+                    "prevalence": 0.000013827051243051907,
                     "uniqueness": 1
                 }
             },
@@ -362,7 +413,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "8225cc4311d236cd30e7062bef6f09a9e24652d8019507edff826e69898d444c"
+                "da6dbec49c06998b53e15c2db0c7bda8a9e2e7697c86e2ff6cd1f84089666c88"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -389,7 +440,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "466a6daf66572bd1e9b560bb88049203e44cd40699cf0d7f2fb2632e982ac817"
+                "4ff86c4a66be90f2e67374b820e194240138fb323bc463dc22822b0f07af5eb7"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -402,12 +453,13 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000621,
+    "cookies": 0.0000484,
     "types": {
         "Script": 18,
         "Document": 8,
-        "XHR": 6,
-        "Preflight": 4
+        "XHR": 8,
+        "Preflight": 4,
+        "WebSocket": 2
     },
     "nameservers": [
         "ns1.twdcns.com",

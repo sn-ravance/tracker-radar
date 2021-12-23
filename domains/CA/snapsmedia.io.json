@@ -4,14 +4,101 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
-        "chat"
+        "pixel",
+        "chat",
+        "images"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "snapsmedia\\.io\\/sp\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "pixel"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "620aa831bb49437977d99f04dd7443640fc0f3d4a68f05a892a2d947829f9b59"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "snaps_channel_user_5ec42b3fcc70a7029118a9b6": {
+                    "ttl": 1816,
+                    "length": 24,
+                    "prevalence": 0.00020106564793405046,
+                    "uniqueness": 1
+                },
+                "snaps_channel_user_identified_5ec42b3fcc70a7029118a9b6": {
+                    "ttl": 1816,
+                    "length": 5,
+                    "prevalence": 0.00020106564793405046,
+                    "uniqueness": 0.5
+                },
+                "snaps_is_frame_open_5ec42b3fcc70a7029118a9b6": {
+                    "ttl": 1816,
+                    "length": 5,
+                    "prevalence": 0.00020106564793405046,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tiffany.ca",
+                "www.tiffany.com"
+            ]
+        },
+        {
+            "rule": "snapsmedia\\.io\\/api\\/pixels",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "9da25d2aeb9d83d75e573cd7dad1315b9bfdcc260726b3b5d499dda5872e9505"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tiffany.ca",
+                "www.tiffany.com"
+            ]
+        },
+        {
+            "rule": "snapsmedia\\.io\\/api\\/pixels\\/getWithChannel",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "a98c32bfdd294cccf24931b157faf30ff45bab038fabae1f212972cdeddf98d0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tiffany.ca",
+                "www.tiffany.com"
+            ]
+        },
         {
             "rule": "snapsmedia\\.io\\/tiffany\\.html",
             "cookies": 0,
@@ -20,8 +107,8 @@
                 "chat"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "b55bf24611b41873c3542a4ccb6466cd9d06538b3dd6dd686a47d299498fa32f"
@@ -29,10 +116,32 @@
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "snaps_channel_user_5ec42b3fcc70a7029118a9b6": 0.00020078305391024997
+                "snaps_channel_user_5ec42b3fcc70a7029118a9b6": 0.0003015984719010757
             },
             "exampleSites": [
-                "tiffany.com",
+                "tiffany.ca",
+                "www.tiffany.ca",
+                "www.tiffany.com"
+            ]
+        },
+        {
+            "rule": "snapsmedia\\.io\\/api\\/events\\/pixelEvent",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tiffany.ca",
+                "www.tiffany.ca",
                 "www.tiffany.com"
             ]
         },
@@ -44,8 +153,8 @@
                 "chat"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "448a4b3e0073e3d097721a97c9c25943bb1acf5c94a1d41f2f1789205a37d8d1"
@@ -54,7 +163,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "tiffany.com",
+                "tiffany.ca",
+                "www.tiffany.ca",
                 "www.tiffany.com"
             ]
         },
@@ -66,40 +176,21 @@
                 "chat"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Event.prototype.timeStamp": 2
+                "Navigator.prototype.userAgent": 3,
+                "Event.prototype.timeStamp": 3
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "09e39e4aa288fb3644fb9f75cef4a73e10f40e5d99a5aac72c57e2df8e4bd776"
+                "49d3e31bf1d88bc1b59dc265a31c6d8fe112c174992c5f982287001b42caa29b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "tiffany.com",
-                "www.tiffany.com"
-            ]
-        },
-        {
-            "rule": "snapsmedia\\.io\\/api\\/events\\/pixelEvent",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tiffany.com",
+                "tiffany.ca",
+                "www.tiffany.ca",
                 "www.tiffany.com"
             ]
         },
@@ -111,17 +202,62 @@
                 "chat"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "66a4950b0149a71576db29d81b18be87f1a5979ed2708cffc68c1cf1df814f0c"
+                "34fecc9b1f77f85ce0aae4a3fd5ae1d91b128765adb8e0c45bfc62d5ab263ff2"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "tiffany.com",
+                "tiffany.ca",
+                "www.tiffany.ca",
+                "www.tiffany.com"
+            ]
+        },
+        {
+            "rule": "snapsmedia\\.io\\/5bb2987b4331a700c5f3006c\\/production\\/60253d317b6009004b76fc0a\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "3b1b582d5a3beec367708b59645fe4682af10019fa53a1c69f5125d0ac78bd50"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tiffany.ca",
+                "www.tiffany.com"
+            ]
+        },
+        {
+            "rule": "snapsmedia\\.io\\/getTranscript",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chat"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tiffany.ca",
                 "www.tiffany.com"
             ]
         },
@@ -133,8 +269,8 @@
                 "chat"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "ccf093aa2347d16773744101ed9f428d050e09c46516eb51b81ebea80fb55900"
@@ -143,7 +279,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "tiffany.com",
+                "tiffany.ca",
+                "www.tiffany.ca",
                 "www.tiffany.com"
             ]
         },
@@ -155,35 +292,83 @@
                 "chat"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "2a51aa1cf9e4243ee2da81f025845dfb9fa3298e054a2862d6861363c1ccdd65"
+                "e385330f785f24ca592d535a673b4f5351e731fbc9ad982dea9a6721100d642a",
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "tiffany.com",
+                "tiffany.ca",
+                "www.tiffany.ca",
+                "www.tiffany.com"
+            ]
+        },
+        {
+            "rule": "snapsmedia\\.io\\/5bb2987b4331a700c5f3006c\\/production\\/60253d2a16854b004a724f34\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "82935fbf3778379ac68987080ed2e99afa25fe27e3f5f7734ee33975413ce532"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tiffany.ca",
+                "www.tiffany.com"
+            ]
+        },
+        {
+            "rule": "snapsmedia\\.io\\/sendMessage",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chat"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "800392684f09c88d5d9b9eb9bf3d2e0f124507b0781ed632ba8caedb09ef00a7"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tiffany.ca",
                 "www.tiffany.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000201,
     "types": {
-        "Document": 2,
-        "Stylesheet": 2,
-        "Script": 2,
-        "Ping": 2,
-        "Fetch": 6
+        "Script": 5,
+        "XHR": 4,
+        "Document": 3,
+        "Ping": 3,
+        "Stylesheet": 3,
+        "Fetch": 13,
+        "Image": 4
     },
     "nameservers": [
-        "ns-1073.awsdns-06.org",
-        "ns-1604.awsdns-08.co.uk",
         "ns-481.awsdns-60.com",
-        "ns-637.awsdns-15.net"
+        "ns-637.awsdns-15.net",
+        "ns-1073.awsdns-06.org",
+        "ns-1604.awsdns-08.co.uk"
     ]
 }

@@ -7,11 +7,13 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00221,
-    "sites": 22,
+    "prevalence": 0.00211,
+    "sites": 21,
     "subdomains": [
         "marvel-b2-cdn",
-        "marvel-b1-cdn"
+        "marvel-b1-cdn",
+        "cdn",
+        "marvel-processor"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -24,11 +26,11 @@
                 "marvel-b2-cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 5,
-                "Navigator.prototype.appVersion": 5
+                "Navigator.prototype.userAgent": 10,
+                "Navigator.prototype.appVersion": 10
             },
-            "sites": 11,
-            "prevalence": 0.0011,
+            "sites": 12,
+            "prevalence": 0.00121,
             "cnames": [],
             "responseHashes": [
                 "965fc05b277596a937ba9d14388799fd5217eb96179f0187b8b937347bdfaf59"
@@ -37,10 +39,11 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "eastlink.ca",
-                "www.aao.org",
+                "aao.org",
                 "www.akc.org",
-                "www.eastlink.ca",
+                "www.ama-assn.org",
+                "www.chubbiesshorts.com",
+                "www.cyberpowersystems.com",
                 "www.fjallraven.com",
                 "www.fortinet.com",
                 "www.peta.org",
@@ -84,7 +87,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "1c1cacdab7171bbb1623fcf80db7958bd3fe9e542971c43c2ae00462eaf6eee8"
+                "92a68113a9b04f6bf20b681c8c71dd50bd2e01841a997c9d049ad9193de4c069"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -92,6 +95,56 @@
             "exampleSites": [
                 "aao.org",
                 "www.aao.org"
+            ]
+        },
+        {
+            "rule": "bc0a\\.com\\/be_ixf_js_sdk\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.appVersion": 3,
+                "Date.prototype.getTimezoneOffset": 2
+            },
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "328acbb573b2b1f7a8bf0058495b6060d012ce87800b460ac8e68ec28ffafd0c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chubbiesshorts.com",
+                "www.laura.ca",
+                "www.reviewjournal.com"
+            ]
+        },
+        {
+            "rule": "bc0a\\.com\\/snowcloud\\/v1\\/api\\/loadUrl",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "marvel-processor"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chubbiesshorts.com",
+                "www.chubbiesshorts.com",
+                "www.cyberpowersystems.com",
+                "www.fortinet.com"
             ]
         },
         {
@@ -119,10 +172,10 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000101,
     "types": {
-        "Script": 11,
-        "Image": 6
+        "Script": 15,
+        "Image": 10
     },
     "nameservers": [
         "pdns09.domaincontrol.com",

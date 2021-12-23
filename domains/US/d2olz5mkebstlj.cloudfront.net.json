@@ -13,7 +13,7 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "d2olz5mkebstlj\\.cloudfront\\.net\\/assets\\/vendor-18cb7d1cb71250445d29048c6e452339\\.css",
@@ -57,15 +57,21 @@
         },
         {
             "rule": "d2olz5mkebstlj\\.cloudfront\\.net\\/assets\\/vendor-e5783242cbe60af3784a0eeaf4860fe5\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
+            "cookies": 0.0000138,
+            "fingerprinting": 2,
             "subdomains": [],
             "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.name": 2,
+                "window.devicePixelRatio": 2,
+                "window.indexedDB": 2,
+                "window.sessionStorage": 2,
                 "Date.prototype.getTimezoneOffset": 2,
                 "Date.prototype.getTime": 2,
-                "Event.prototype.timeStamp": 2,
-                "window.sessionStorage": 2,
-                "Document.cookie getter": 2
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Event.prototype.timeStamp": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -74,7 +80,20 @@
                 "483a96ce0072d781bb16272cca05a25f477297eeb46d2162b282d23bdc382a45"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "mn-user-session-cookie": {
+                    "ttl": 604801,
+                    "length": 34,
+                    "prevalence": 0.000013827051243051907,
+                    "uniqueness": 0.5
+                },
+                "mn-user-session-cookie:expiration_time": {
+                    "ttl": 604801,
+                    "length": 6,
+                    "prevalence": 0.000013827051243051907,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mommynearest.com",
@@ -168,7 +187,7 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000138,
     "types": {
         "Stylesheet": 4,
         "Script": 4,

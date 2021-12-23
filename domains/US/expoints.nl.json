@@ -7,10 +7,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000207,
-    "sites": 3,
+    "prevalence": 0.0000346,
+    "sites": 5,
     "subdomains": [
-        "anwb1"
+        "anwb1",
+        "gemeentedenhaag1",
+        "veh1"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -36,17 +38,104 @@
                 "anwb.nl",
                 "www.anwb.nl"
             ]
+        },
+        {
+            "rule": "expoints\\.nl\\/m\\/Scripts\\/dist\\/expoints-external-loader\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "gemeentedenhaag1",
+                "veh1"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "618937bd5dc4d7e4ee1028fd4275c5026b83d6ef05147f0b287b344c41bbd89d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "denhaag.nl",
+                "www.denhaag.nl",
+                "www.eigenhuis.nl"
+            ]
+        },
+        {
+            "rule": "expoints\\.nl\\/m\\/Scripts\\/dist\\/expoints-external\\.min\\.js",
+            "cookies": 0.0000207,
+            "fingerprinting": 1,
+            "subdomains": [
+                "gemeentedenhaag1",
+                "veh1"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "596be78433451a8ad707d01cc61c2e3802707ec1953c1ea5f3b8ff110e828878"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "expoints_external_previous_url": {
+                    "ttl": null,
+                    "length": 61,
+                    "prevalence": 0.00002074057686457786,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "denhaag.nl",
+                "www.denhaag.nl",
+                "www.eigenhuis.nl"
+            ]
+        },
+        {
+            "rule": "expoints\\.nl\\/m\\/api\\/ExternalConfig\\/GetExternalConfig",
+            "cookies": 0.0000207,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gemeentedenhaag1",
+                "veh1"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000207,
+            "cnames": [],
+            "responseHashes": [
+                "c5db0a40b571ac79f80b4b1265a91e1ba115e6a40afa6163899a1111142e8071",
+                "18c13b629bd94612bbac1d0dd6ff55de194b434af735257ea384cdfd43a1da71"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "denhaag.nl",
+                "www.denhaag.nl",
+                "www.eigenhuis.nl"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000069,
+    "cookies": 0.0000207,
     "types": {
-        "Script": 2
+        "Script": 8,
+        "Fetch": 3
     },
     "nameservers": [
-        "ns-cloud-e4.googledomains.com",
         "ns-cloud-e2.googledomains.com",
+        "ns-cloud-e4.googledomains.com",
         "ns-cloud-e1.googledomains.com",
         "ns-cloud-e3.googledomains.com"
     ]

@@ -7,13 +7,16 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
-        "statistics"
+        "statistics",
+        "q",
+        "imagecache",
+        "widget"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "crowdynews\\.com\\/bb",
@@ -23,8 +26,8 @@
                 "statistics"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068"
@@ -34,7 +37,146 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "femalefirst.co.uk",
-                "www.football365.com"
+                "www.football365.com",
+                "www.teamtalk.com"
+            ]
+        },
+        {
+            "rule": "crowdynews\\.com\\/v1\\/content\\/FirstRival",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "q"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "2a48fe3fab086e026d03b35806e1856091d9b77c94e00ec726f5831804b6265e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "femalefirst.co.uk",
+                "www.teamtalk.com"
+            ]
+        },
+        {
+            "rule": "crowdynews\\.com\\/resize\\/310\\/610\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "imagecache"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "166b187edae1bfa5ec76d5ca3081e72c3af5de5a0231a94b90a65792a8fee35a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "femalefirst.co.uk",
+                "www.femalefirst.co.uk"
+            ]
+        },
+        {
+            "rule": "crowdynews\\.com\\/vertical-new\\/css\\/app\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "bce80f99c337879d1b01cd7312c6e80d2dc878c9b449da3bda1ab5eaf90d57f1"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "football365.com",
+                "www.teamtalk.com"
+            ]
+        },
+        {
+            "rule": "crowdynews\\.com\\/vertical-new\\/js\\/app\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2,
+                "Navigator.prototype.product": 2,
+                "window.devicePixelRatio": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1426d186785b53dc0e275973bd638c3823f12b4da55c86c17e22a61d0f2473f5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "football365.com",
+                "www.teamtalk.com"
+            ]
+        },
+        {
+            "rule": "crowdynews\\.com\\/icons\\/style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8b90e069c9bb80c8034d087cd216945df6794bedb1f3e63639b32b7435d4b352"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "football365.com",
+                "www.teamtalk.com"
+            ]
+        },
+        {
+            "rule": "crowdynews\\.com\\/icons\\/fonts\\/crowdy\\.ttf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "36d969dde1b505d9b7de8d0f28c5984f7d9bf43180a862354ea5dc43940b7440"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "football365.com",
+                "www.teamtalk.com"
             ]
         }
     ],
@@ -42,7 +184,11 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 2
+        "XHR": 5,
+        "Image": 2,
+        "Stylesheet": 4,
+        "Script": 2,
+        "Font": 2
     },
     "nameservers": [
         "plato.ns.cloudflare.com",

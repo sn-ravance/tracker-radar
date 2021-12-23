@@ -4,10 +4,12 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000802,
-    "sites": 8,
+    "prevalence": 0.0011,
+    "sites": 11,
     "subdomains": [
-        "sdk"
+        "sdk",
+        "telemetries",
+        "users.api"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -20,14 +22,14 @@
                 "sdk"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "window.localStorage": 3,
-                "window.sessionStorage": 3,
-                "Notification.permission": 3,
-                "Date.prototype.getTime": 2
+                "Navigator.prototype.userAgent": 4,
+                "window.localStorage": 4,
+                "window.sessionStorage": 4,
+                "Date.prototype.getTime": 3,
+                "Notification.permission": 4
             },
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [
                 "3f01d879c8619ecdd39f9e3dd9e5d5f493e3f9272ca740ef0b5b43e4e3a3f26c"
@@ -36,9 +38,74 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "closerweekly.com",
-                "www.intouchweekly.com",
+                "dinarrecaps.com",
+                "www.closerweekly.com",
+                "www.lifeandstylemag.com",
                 "www.theurbanlist.com"
+            ]
+        },
+        {
+            "rule": "jeeng\\.com\\/api\\/events\\/user_visited_page",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "telemetries"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "okmagazine.com",
+                "thetruedefender.com"
+            ]
+        },
+        {
+            "rule": "jeeng\\.com\\/api\\/events\\/user_visited_page",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "telemetries"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "3d23d39a30bb7323f8ccfd64c52cf286138fba4f83e78f7edcf66703b7c23aaa"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "okmagazine.com",
+                "thetruedefender.com"
+            ]
+        },
+        {
+            "rule": "jeeng\\.com\\/entities",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "users.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "a2d7c4d167cf44a0123801a17aea52b59c2636720cad6ba24ed9cd5ead155fc3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thetruedefender.com",
+                "www.lifeandstylemag.com"
             ]
         }
     ],
@@ -46,7 +113,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 3
+        "Script": 4,
+        "Preflight": 2,
+        "XHR": 4
     },
     "nameservers": [
         "amber.ns.cloudflare.com",

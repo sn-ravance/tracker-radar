@@ -4,25 +4,26 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000602,
+    "prevalence": 0.000603,
     "sites": 6,
     "subdomains": [
         "fulcrum-antenna",
+        "cdn",
         "nestorix"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "imhd\\.io\\/getuid\\/imhd\\/liveramp",
-            "cookies": 0.000301,
+            "cookies": 0.000302,
             "fingerprinting": 0,
             "subdomains": [
                 "fulcrum-antenna"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [],
             "type": "Image",
@@ -36,18 +37,16 @@
         },
         {
             "rule": "imhd\\.io\\/getuid\\/imhd\\/throttle",
-            "cookies": 0.000602,
+            "cookies": 0.000603,
             "fingerprinting": 0,
             "subdomains": [
                 "fulcrum-antenna"
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.000602,
+            "prevalence": 0.000603,
             "cnames": [],
-            "responseHashes": [
-                "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -62,14 +61,14 @@
         },
         {
             "rule": "imhd\\.io\\/collect\\/pageview\\/297c2761-8f57-4e48-9846-c406b915ce0b\\/imhd",
-            "cookies": 0.000602,
+            "cookies": 0.000603,
             "fingerprinting": 0,
             "subdomains": [
                 "fulcrum-antenna"
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.000602,
+            "prevalence": 0.000603,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -107,7 +106,44 @@
             ]
         },
         {
-            "rule": "imhd\\.io\\/nestorix\\/organization\\/ae0a9e81-c22f-49cb-a086-d1e2f776a16b\\/user-data\\/type\\/HABU_1P_ID\\/user\\/7647bbcb-d162-4794-98dd-61b026dd3d5f",
+            "rule": "imhd\\.io\\/quarterdeck\\/4b3a323c-ba92-42b7-84f5-93b99c53c4fc\\/habu\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "bee5d44ce2dda63e58e26e2363bccc63b3aad8211041488ca7553e3d97a1a2a6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "HABU_1P_ID": {
+                    "ttl": 25920000,
+                    "length": 36,
+                    "prevalence": 0.00020106564793405046,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "origin.com",
+                "www.origin.com"
+            ]
+        },
+        {
+            "rule": "imhd\\.io\\/nestorix\\/organization\\/ae0a9e81-c22f-49cb-a086-d1e2f776a16b\\/user-data\\/type\\/HABU_1P_ID\\/user\\/66dbface-ae73-423a-a576-af958433f23b",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -123,29 +159,7 @@
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "HABU_1P_ID": 0.00020078305391024997
-            },
-            "exampleSites": [
-                "origin.com",
-                "www.origin.com"
-            ]
-        },
-        {
-            "rule": "imhd\\.io\\/nestorix\\/organization\\/ae0a9e81-c22f-49cb-a086-d1e2f776a16b\\/user-data\\/type\\/HABU_1P_ID\\/user\\/7647bbcb-d162-4794-98dd-61b026dd3d5f",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "nestorix"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "HABU_1P_ID": 0.00020078305391024997
+                "HABU_1P_ID": 0.00020106564793405046
             },
             "exampleSites": [
                 "origin.com",
@@ -155,11 +169,11 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000602,
+    "cookies": 0.000603,
     "types": {
         "Image": 9,
         "Fetch": 10,
-        "Preflight": 2
+        "Script": 2
     },
     "nameservers": [
         "ns-1213.awsdns-23.org",

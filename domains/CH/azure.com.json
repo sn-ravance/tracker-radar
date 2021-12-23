@@ -9,13 +9,12 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000903,
-    "sites": 9,
+    "prevalence": 0.001,
+    "sites": 10,
     "subdomains": [
-        "westeurope-0.in.applicationinsights",
-        "westeurope-2.in.applicationinsights",
         "js.monitor",
         "finnet-matomo.westeurope.cloudapp",
+        "wafweblaliga.westeurope.cloudapp",
         "production-n-toggo.westeurope.cloudapp"
     ],
     "cnames": [
@@ -24,56 +23,16 @@
             "resolved": "finnet-matomo.westeurope.cloudapp.azure.com"
         },
         {
+            "original": "apim.laliga.com",
+            "resolved": "wafweblaliga.westeurope.cloudapp.azure.com"
+        },
+        {
             "original": "production-n.toggo.de",
             "resolved": "production-n-toggo.westeurope.cloudapp.azure.com"
         }
     ],
     "fingerprinting": 2,
     "resources": [
-        {
-            "rule": "azure\\.com\\/\\/v2\\/track",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "westeurope-0.in.applicationinsights",
-                "westeurope-2.in.applicationinsights"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "msrthun.ch",
-                "www.deraktionaer.de"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/\\/v2\\/track",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "westeurope-0.in.applicationinsights",
-                "westeurope-2.in.applicationinsights"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "2f06451e2da9bcec5593f0e5f8be5aaf93a584def5560838666f6ddcc0f90a19"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "msrthun.ch",
-                "www.deraktionaer.de"
-            ]
-        },
         {
             "rule": "azure\\.com\\/scripts\\/b\\/ai\\.2\\.min\\.js",
             "cookies": 0.000201,
@@ -94,27 +53,27 @@
             "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "cf02a343253e51e0f589dc999f6cc80528529c6764c3eec3866adfcb46224a9d"
+                "f9fa2bbbf048b49dca5b1207cf03a3d5867924372252df0196167810cea88780"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "ai_user": {
                     "ttl": 31536000,
                     "length": 47,
-                    "prevalence": 0.00020060180541624874,
+                    "prevalence": 0.0002006823198876179,
                     "uniqueness": 1
                 },
                 "ai_session": {
                     "ttl": 1800,
                     "length": 50,
-                    "prevalence": 0.00020060180541624874,
+                    "prevalence": 0.0002006823198876179,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "clevelandclinic.org",
-                "www.christies.com",
+                "www.marc-o-polo.com",
                 "www.thriftbooks.com"
             ]
         },
@@ -173,28 +132,30 @@
             ]
         },
         {
-            "rule": "azure\\.com\\/api\\/assetstore\\/vod\\/asset",
+            "rule": "azure\\.com\\/public-service\\/api\\/v1\\/subscriptions\\/laliga-santander-2021\\/standing",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "production-n-toggo.westeurope.cloudapp"
+                "wafweblaliga.westeurope.cloudapp"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "production-n.toggo.de",
-                    "resolved": "production-n-toggo.westeurope.cloudapp.azure.com"
+                    "original": "apim.laliga.com",
+                    "resolved": "wafweblaliga.westeurope.cloudapp.azure.com"
                 }
             ],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "d21f24ccc2014b5edde571760d4dd9cccc151523efc40efd97b6566de4c63dd1"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "toggo.de",
-                "www.toggo.de"
+                "laliga.com",
+                "www.laliga.com"
             ]
         },
         {
@@ -238,8 +199,33 @@
                     "resolved": "production-n-toggo.westeurope.cloudapp.azure.com"
                 }
             ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toggo.de",
+                "www.toggo.de"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/api\\/assetstore\\/mixed_assets",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-n-toggo.westeurope.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "production-n.toggo.de",
+                    "resolved": "production-n-toggo.westeurope.cloudapp.azure.com"
+                }
+            ],
             "responseHashes": [
-                "0da99537f8bc38cb2a28ac0e293424fd345144794f4da4231f1df8d73a13f701"
+                "98e1a65bae383324e40ef1ca3724aaf5cefc3a139398927ad9edea8172164be6"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -266,7 +252,7 @@
                 }
             ],
             "responseHashes": [
-                "236e440a4288160356cbf99cd0fb00c84db33c0fca105f4e68b0493f7efa9632"
+                "a2ff7ad91982ac1a37abd468addce5444dd2e7a6581e362d763d34027ceba1b7"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -277,7 +263,7 @@
             ]
         },
         {
-            "rule": "azure\\.com\\/api\\/assetstore\\/vod\\/seo\\/home",
+            "rule": "azure\\.com\\/api\\/assetstore\\/vod\\/asset",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -293,7 +279,7 @@
                 }
             ],
             "responseHashes": [
-                "4276ca42776ec13ead1515c2345acc8301a829dce0304268eaac31d4187107cb"
+                "843564352f9b039db302d268a7a2bcb05e0bf3e6961ae00699525558883bbd34"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -306,18 +292,18 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000301,
+    "cookies": 0.000401,
     "types": {
-        "Preflight": 6,
-        "XHR": 2,
         "Script": 5,
         "Ping": 2,
+        "XHR": 2,
+        "Preflight": 4,
         "Fetch": 6
     },
     "nameservers": [
+        "ns1-205.azure-dns.com",
         "ns2-205.azure-dns.net",
         "ns4-205.azure-dns.info",
-        "ns3-205.azure-dns.org",
-        "ns1-205.azure-dns.com"
+        "ns3-205.azure-dns.org"
     ]
 }
